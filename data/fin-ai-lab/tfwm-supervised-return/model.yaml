@@ -1,0 +1,72 @@
+_id: 6ab872260ee90a881d34fec5
+id: fin-ai-lab/tfwm-supervised-return
+private: false
+pipeline_tag: feature-extraction
+library_name: pytorch
+tags:
+- pytorch
+- finance
+- time-series
+- market-data
+- supervised
+- tfwm
+- feature-extraction
+- dataset:fin-ai-lab/Market-1T-1Hz-2019H2-2020-daystore
+- license:other
+- region:us
+downloads: 0
+likes: 0
+modelId: fin-ai-lab/tfwm-supervised-return
+author: fin-ai-lab
+sha: a7474c06ef11e926e9277abdf23feaa5902045ce
+lastModified: '2026-09-27T02:14:48.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: other
+  license_name: derived-market-data
+  library_name: pytorch
+  pipeline_tag: feature-extraction
+  tags:
+  - finance
+  - time-series
+  - market-data
+  - supervised
+  - tfwm
+  datasets:
+  - fin-ai-lab/Market-1T-1Hz-2019H2-2020-daystore
+siblings:
+- rfilename: .gitattributes
+- rfilename: 2019-09/backbone.pt
+- rfilename: 2019-09/head.pt
+- rfilename: 2019-09/train_meta.json
+- rfilename: 2019-09/xs_ic.json
+- rfilename: 2020-01/backbone.pt
+- rfilename: 2020-01/head.pt
+- rfilename: 2020-01/train_meta.json
+- rfilename: 2020-01/xs_ic.json
+- rfilename: 2020-08/backbone.pt
+- rfilename: 2020-08/head.pt
+- rfilename: 2020-08/train_meta.json
+- rfilename: 2020-08/xs_ic.json
+- rfilename: 2020-09/backbone.pt
+- rfilename: 2020-09/head.pt
+- rfilename: 2020-09/train_meta.json
+- rfilename: 2020-09/xs_ic.json
+- rfilename: 2020-12/backbone.pt
+- rfilename: 2020-12/head.pt
+- rfilename: 2020-12/train_meta.json
+- rfilename: 2020-12/xs_ic.json
+- rfilename: README.md
+spaces: []
+createdAt: '2026-09-27T01:32:22.000Z'
+usedStorage: 452032190
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-09-27T09:09:01.000Z'

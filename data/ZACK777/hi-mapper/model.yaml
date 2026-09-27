@@ -1,0 +1,66 @@
+_id: 6ab7e86c0154a6bb4d90b939
+id: ZACK777/hi-mapper
+private: false
+pipeline_tag: feature-extraction
+library_name: pytorch
+tags:
+- pytorch
+- hyperbolic
+- lorentz
+- hierarchy
+- entailment
+- pedestrian-attribute-recognition
+- clip
+- promptpar
+- hi-mapper
+- vit
+- feature-extraction
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: ZACK777/hi-mapper
+author: ZACK777
+sha: 182b9981b77cbf3bdc292e2524368f5461f2524a
+lastModified: '2026-09-26T15:47:37.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: pytorch
+  tags:
+  - hyperbolic
+  - lorentz
+  - hierarchy
+  - entailment
+  - pedestrian-attribute-recognition
+  - clip
+  - promptpar
+  - hi-mapper
+  - vit
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: example.py
+- rfilename: hi_mapper/ARCHITECTURE.md
+- rfilename: hi_mapper/__init__.py
+- rfilename: hi_mapper/hi_mapper.py
+- rfilename: hi_mapper/hyp_diffusion.py
+- rfilename: hi_mapper/lorentz.py
+- rfilename: hi_mapper/tree.py
+- rfilename: requirements.txt
+- rfilename: weights/ViT-L-14.pt
+- rfilename: weights/jx_vit_base_p16_224-80ecf9dd.pth
+spaces: []
+createdAt: '2026-09-26T15:44:44.000Z'
+usedStorage: 1279060967
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-09-27T09:09:01.000Z'

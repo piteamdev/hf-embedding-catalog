@@ -1,0 +1,72 @@
+_id: 6ab8ab82f7bd8732d7c5184a
+id: KeisukeMiyamoto/whisper-cluster
+private: false
+pipeline_tag: feature-extraction
+library_name: tensorrt
+tags:
+- tensorrt
+- audio
+- speech
+- whisper
+- kmeans
+- clustering
+- discrete-units
+- feature-extraction
+- unsupervised-learning
+- japanese
+- float16
+- float32
+- ja
+- dataset:KeisukeMiyamoto/lambda-audio-courpus
+- base_model:openai/whisper-large-v3-turbo
+- base_model:finetune:openai/whisper-large-v3-turbo
+- region:us
+downloads: 0
+likes: 0
+modelId: KeisukeMiyamoto/whisper-cluster
+author: KeisukeMiyamoto
+sha: cdc3dc58c0299edf6f22e8dd3d077c26a2710c4a
+lastModified: '2026-09-27T06:05:29.000Z'
+gated: manual
+disabled: false
+model-index: null
+config: {}
+cardData:
+  language:
+  - ja
+  tags:
+  - audio
+  - speech
+  - whisper
+  - tensorrt
+  - kmeans
+  - clustering
+  - discrete-units
+  - feature-extraction
+  - unsupervised-learning
+  - japanese
+  - float16
+  - float32
+  base_model: openai/whisper-large-v3-turbo
+  datasets:
+  - KeisukeMiyamoto/lambda-audio-courpus
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: codebook/audio.jsonl
+- rfilename: codebook/centroids.npy
+- rfilename: codebook/chunks.npy
+- rfilename: codebook/cluster_validation.json
+- rfilename: codebook/codebook.json
+- rfilename: codebook/features.f32
+- rfilename: codebook/features.json
+spaces: []
+createdAt: '2026-09-27T05:37:06.000Z'
+usedStorage: 92204443776
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-09-27T09:09:01.000Z'

@@ -1,0 +1,67 @@
+_id: 6ab875afaf19ca84df48b7be
+id: fin-ai-lab/tfwm-cost
+private: false
+pipeline_tag: feature-extraction
+library_name: pytorch
+tags:
+- pytorch
+- finance
+- time-series
+- market-data
+- self-supervised
+- tfwm
+- feature-extraction
+- dataset:fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense
+- license:other
+- region:us
+downloads: 0
+likes: 0
+modelId: fin-ai-lab/tfwm-cost
+author: fin-ai-lab
+sha: a07255350d1858852e0bbbc2952242206be375dd
+lastModified: '2026-09-27T02:14:42.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: other
+  license_name: derived-market-data
+  library_name: pytorch
+  pipeline_tag: feature-extraction
+  tags:
+  - finance
+  - time-series
+  - market-data
+  - self-supervised
+  - tfwm
+  datasets:
+  - fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense
+siblings:
+- rfilename: .gitattributes
+- rfilename: 2019-09/config.json
+- rfilename: 2019-09/model.pt
+- rfilename: 2019-09/train_meta.json
+- rfilename: 2020-01/config.json
+- rfilename: 2020-01/model.pt
+- rfilename: 2020-01/train_meta.json
+- rfilename: 2020-08/config.json
+- rfilename: 2020-08/model.pt
+- rfilename: 2020-08/train_meta.json
+- rfilename: 2020-09/config.json
+- rfilename: 2020-09/model.pt
+- rfilename: 2020-09/train_meta.json
+- rfilename: 2020-12/config.json
+- rfilename: 2020-12/model.pt
+- rfilename: 2020-12/train_meta.json
+- rfilename: README.md
+spaces: []
+createdAt: '2026-09-27T01:47:27.000Z'
+usedStorage: 2032363535
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-09-27T09:09:01.000Z'

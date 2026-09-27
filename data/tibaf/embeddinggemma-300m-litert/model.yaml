@@ -1,0 +1,56 @@
+_id: 6ab8657bf820b8ed50aef8ea
+id: tibaf/embeddinggemma-300m-litert
+private: false
+pipeline_tag: sentence-similarity
+library_name: litert
+tags:
+- litert
+- tflite
+- on-device
+- embeddinggemma
+- sentence-similarity
+- base_model:google/embeddinggemma-300m
+- base_model:finetune:google/embeddinggemma-300m
+- license:gemma
+- region:us
+downloads: 0
+likes: 0
+modelId: tibaf/embeddinggemma-300m-litert
+author: tibaf
+sha: c8b3a1f31ca5b3adf6ae81f10587b73406a22bb1
+lastModified: '2026-09-27T00:42:25.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config: {}
+cardData:
+  license: gemma
+  license_link: https://ai.google.dev/gemma/terms
+  base_model: google/embeddinggemma-300m
+  pipeline_tag: sentence-similarity
+  tags:
+  - litert
+  - tflite
+  - on-device
+  - embeddinggemma
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: embeddinggemma-300M_seq256_mixed-precision.tflite
+- rfilename: sentencepiece_for_embeddinggemma.model
+spaces: []
+createdAt: '2026-09-27T00:38:19.000Z'
+usedStorage: 183815055
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-09-27T09:09:01.000Z'

@@ -1,0 +1,126 @@
+_id: 6ab7cd89380cbd8c039125f1
+id: thongbuind/SAI-Embedding_100M
+private: false
+pipeline_tag: sentence-similarity
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- sai_embedding
+- feature-extraction
+- embeddings
+- retrieval
+- llm2vec
+- matryoshka
+- custom-code
+- sentence-similarity
+- custom_code
+- vi
+- arxiv:2404.05961
+- arxiv:1807.03748
+- arxiv:2205.13147
+- arxiv:2101.06983
+- arxiv:2212.03533
+- arxiv:2104.08663
+- base_model:thongbuind/SAI_100M
+- base_model:finetune:thongbuind/SAI_100M
+- region:us
+downloads: 0
+likes: 1
+modelId: thongbuind/SAI-Embedding_100M
+author: thongbuind
+sha: 7812b29f84f3d69abb426b01d22902968b830b46
+lastModified: '2026-09-26T14:46:51.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - SAIEmbeddingModel
+  auto_map:
+    AutoConfig: configuration_sai_embedding.SAIEmbeddingConfig
+    AutoModel: modeling_sai_embedding.SAIEmbeddingModel
+  model_type: sai_embedding
+  tokenizer_config:
+    bos_token: '[BOS]'
+    eos_token: '[EOS]'
+    unk_token: '[UNK]'
+    pad_token: '[UNK]'
+cardData:
+  language:
+  - vi
+  library_name: transformers
+  pipeline_tag: sentence-similarity
+  base_model: thongbuind/SAI_100M
+  tags:
+  - embeddings
+  - retrieval
+  - llm2vec
+  - matryoshka
+  - custom-code
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_sai_embedding.SAIEmbeddingModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: DecoderBlock.py
+- rfilename: EmbeddingModel.py
+- rfilename: GroupedQueryAttention.py
+- rfilename: README.md
+- rfilename: RotaryPositionalEmbedding.py
+- rfilename: SwiGLU.py
+- rfilename: TransformerModel.py
+- rfilename: __init__.py
+- rfilename: config.json
+- rfilename: configuration_sai_embedding.py
+- rfilename: embedding_data.py
+- rfilename: model.safetensors
+- rfilename: modeling_sai_embedding.py
+- rfilename: tokenization_sai_embedding.py
+- rfilename: tokenizer.model
+- rfilename: tokenizer_config.json
+- rfilename: utils.py
+spaces: []
+createdAt: '2026-09-26T13:50:01.000Z'
+safetensors:
+  parameters:
+    F32: 113867520
+  total: 113867520
+usedStorage: 911134364
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - SAIEmbeddingModel
+  auto_map:
+    AutoConfig: configuration_sai_embedding.SAIEmbeddingConfig
+    AutoModel: modeling_sai_embedding.SAIEmbeddingModel
+  model_type: sai_embedding
+  vocab_size: 10000
+  d_model: 768
+  num_heads: 12
+  num_kv_heads: 6
+  num_layers: 12
+  ff_dim: 3072
+  max_seq_len: 2048
+  dropout: 0.05
+  causal: false
+  pooling: mean
+  query_prefix: 'truy vấn: '
+  passage_prefix: 'văn bản: '
+  mrl_dims:
+  - 768
+  - 512
+  - 256
+  - 128
+  - 64
+  pad_token_id: 0
+  bos_token_id: 1
+  eos_token_id: 2
+  tie_word_embeddings: true
+  dtype: float32
+onnxFiles: {}
+safetensorsSizeMb: 455.5
+approxSizeMb: 455.5
+fetchedAt: '2026-09-27T09:09:01.000Z'

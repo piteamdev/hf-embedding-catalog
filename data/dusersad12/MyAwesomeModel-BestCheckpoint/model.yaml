@@ -1,0 +1,54 @@
+_id: 6ab859a01f2e996ba1b0da26
+id: dusersad12/MyAwesomeModel-BestCheckpoint
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- pytorch
+- bert
+- feature-extraction
+- license:mit
+- endpoints_compatible
+- region:us
+downloads: 8
+likes: 0
+modelId: dusersad12/MyAwesomeModel-BestCheckpoint
+author: dusersad12
+sha: 629ce0b91110799bb64c92e11a6ad410e2442479
+lastModified: '2026-09-26T23:48:45.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  model_type: bert
+  architectures:
+  - BertModel
+cardData:
+  license: mit
+  library_name: transformers
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: figures/fig1.png
+- rfilename: figures/fig2.png
+- rfilename: figures/fig3.png
+- rfilename: pytorch_model.bin
+spaces: []
+createdAt: '2026-09-26T23:47:44.000Z'
+usedStorage: 23
+downloadsAllTime: 8
+inferenceProviderMapping: {}
+configJson:
+  model_type: bert
+  architectures:
+  - BertModel
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-09-27T09:09:01.000Z'

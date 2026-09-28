@@ -1,0 +1,207 @@
+_id: 6ab913489281fcce91995903
+id: seregadgl/granite-embedding-311m-multilingual-r2-biencoder-v2
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- modernbert
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:45000
+- loss:MatryoshkaLoss
+- loss:MultipleNegativesRankingLoss
+- arxiv:1908.10084
+- arxiv:2205.13147
+- arxiv:1807.03748
+- base_model:ibm-granite/granite-embedding-311m-multilingual-r2
+- base_model:finetune:ibm-granite/granite-embedding-311m-multilingual-r2
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 14
+likes: 0
+modelId: seregadgl/granite-embedding-311m-multilingual-r2-biencoder-v2
+author: seregadgl
+sha: d9070973c726fe04818cd943ab255780a0efa4b9
+lastModified: '2026-09-27T13:00:00.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: заглушка сосна 10мм 10штук
+  sentences:
+  - дверь жалюзийная хвоя сосна 594х715 мм
+  - заглушка d10 мм сосна 100 шт
+  - заглушка d10 мм сосна 10 шт
+- source_sentence: шпатель варяг 35223 80мм
+  sentences:
+  - саморез swfs 5х80 уп.5шт пакет
+  - шпатель варяг 35223 80 мм
+  - шпатель зубр эксперт 80 мм арт 10045-08
+- source_sentence: угол вн дкс 40х17 бел 00406
+  sentences:
+  - угол внеш 40х17 dкс 00406
+  - агшк 100мм nо200 h 2мм
+  - кабель канал dкс 40х17 мм белый 2 м 00327
+- source_sentence: винт swfs din 7985 м6х70 уп 1000шт
+  sentences:
+  - винт swfs din 7985 м6х70 100 шт
+  - винт swfs din 7985 м6х70 1000 шт
+  - анкер с гайкой swfs 6.5х75 120 шт
+- source_sentence: ключ комбин трещот 22мм
+  sentences:
+  - анкер клиновой swfs м16х200 15 шт
+  - ключ комбинированный с трещоткой 22 мм
+  - ключ комбинированный трещоточный 24 мм
+model-index: null
+config:
+  architectures:
+  - ModernBertModel
+  model_type: modernbert
+  tokenizer_config:
+    bos_token: <bos>
+    eos_token: <eos>
+    mask_token: <mask>
+    pad_token: <pad>
+    unk_token: <unk>
+    use_default_system_prompt: false
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:45000
+  - loss:MatryoshkaLoss
+  - loss:MultipleNegativesRankingLoss
+  base_model: ibm-granite/granite-embedding-311m-multilingual-r2
+  widget:
+  - source_sentence: заглушка сосна 10мм 10штук
+    sentences:
+    - дверь жалюзийная хвоя сосна 594х715 мм
+    - заглушка d10 мм сосна 100 шт
+    - заглушка d10 мм сосна 10 шт
+  - source_sentence: шпатель варяг 35223 80мм
+    sentences:
+    - саморез swfs 5х80 уп.5шт пакет
+    - шпатель варяг 35223 80 мм
+    - шпатель зубр эксперт 80 мм арт 10045-08
+  - source_sentence: угол вн дкс 40х17 бел 00406
+    sentences:
+    - угол внеш 40х17 dкс 00406
+    - агшк 100мм nо200 h 2мм
+    - кабель канал dкс 40х17 мм белый 2 м 00327
+  - source_sentence: винт swfs din 7985 м6х70 уп 1000шт
+    sentences:
+    - винт swfs din 7985 м6х70 100 шт
+    - винт swfs din 7985 м6х70 1000 шт
+    - анкер с гайкой swfs 6.5х75 120 шт
+  - source_sentence: ключ комбин трещот 22мм
+    sentences:
+    - анкер клиновой swfs м16х200 15 шт
+    - ключ комбинированный с трещоткой 22 мм
+    - ключ комбинированный трещоточный 24 мм
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Normalize/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-09-27T12:59:52.000Z'
+safetensors:
+  parameters:
+    BF16: 311664384
+  total: 311664384
+usedStorage: 656726770
+downloadsAllTime: 14
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - ModernBertModel
+  attention_bias: false
+  attention_dropout: 0.0
+  bos_token_id: 2
+  classifier_activation: silu
+  classifier_bias: false
+  classifier_dropout: 0.0
+  classifier_pooling: cls
+  cls_token_id: 2
+  decoder_bias: true
+  deterministic_flash_attn: false
+  dtype: bfloat16
+  embedding_dropout: 0.0
+  eos_token_id: 1
+  global_attn_every_n_layers: 3
+  gradient_checkpointing: false
+  hidden_activation: gelu
+  hidden_size: 768
+  initializer_cutoff_factor: 2.0
+  initializer_range: 0.02
+  intermediate_size: 1152
+  layer_norm_eps: 1.0e-12
+  layer_types:
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  local_attention: 128
+  max_position_embeddings: 32768
+  mlp_bias: false
+  mlp_dropout: 0.0
+  model_type: modernbert
+  norm_bias: false
+  norm_eps: 1.0e-12
+  num_attention_heads: 12
+  num_hidden_layers: 22
+  pad_token_id: 0
+  position_embedding_type: absolute
+  repad_logits_with_grad: false
+  rope_parameters:
+    full_attention:
+      rope_theta: 150000.0
+      rope_type: default
+    sliding_attention:
+      rope_theta: 160000.0
+      rope_type: default
+  sep_token_id: 1
+  sparse_pred_ignore_index: -100
+  sparse_prediction: false
+  tie_word_embeddings: true
+  transformers_version: 5.17.0
+  vocab_size: 262152
+onnxFiles: {}
+safetensorsSizeMb: 623.3
+approxSizeMb: 623.3
+fetchedAt: '2026-09-28T09:37:52.000Z'

@@ -1,0 +1,90 @@
+_id: 6ab4303fd9c9df88f94ede58
+id: Gaolaboratory/iona-base-100m
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- iona
+- pretraining
+- mass-spectrometry
+- proteomics
+- tandem-mass-spectrometry
+- custom_code
+- feature-extraction
+- license:apache-2.0
+- region:us
+downloads: 15
+likes: 0
+modelId: Gaolaboratory/iona-base-100m
+author: Gaolaboratory
+sha: bccd84f904d416831a2341e4d2fde699b1db827a
+lastModified: '2026-09-26T10:13:33.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - IonaForPreTraining
+  auto_map:
+    AutoConfig: configuration_iona.IonaConfig
+    AutoModelForPreTraining: modeling_iona.IonaForPreTraining
+  model_type: iona
+cardData:
+  license: apache-2.0
+  library_name: transformers
+  pipeline_tag: feature-extraction
+  tags:
+  - mass-spectrometry
+  - proteomics
+  - tandem-mass-spectrometry
+  - custom_code
+transformersInfo:
+  auto_model: AutoModelForPreTraining
+  custom_class: modeling_iona.IonaForPreTraining
+  pipeline_tag: pretraining
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: configuration_iona.py
+- rfilename: fourier.py
+- rfilename: model.safetensors
+- rfilename: modeling_iona.py
+- rfilename: preprocessor_config.json
+- rfilename: processing_iona.py
+spaces: []
+createdAt: '2026-09-23T20:02:07.000Z'
+safetensors:
+  parameters:
+    F32: 100785547
+  total: 100785547
+usedStorage: 403162316
+downloadsAllTime: 15
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - IonaForPreTraining
+  attention_probs_dropout_prob: 0.1
+  auto_map:
+    AutoConfig: configuration_iona.IonaConfig
+    AutoModelForPreTraining: modeling_iona.IonaForPreTraining
+  delta_bias_f_max: 190.0
+  delta_bias_f_min: 0.001
+  delta_bias_n_freqs: 256
+  delta_bias_per_head_hidden: 32
+  dtype: float32
+  hidden_dropout_prob: 0.1
+  hidden_size: 800
+  initializer_range: 0.02
+  intermediate_size: 3200
+  layer_norm_eps: 1.0e-05
+  model_type: iona
+  num_attention_heads: 10
+  num_hidden_layers: 13
+  transformers_version: 5.14.1
+onnxFiles: {}
+safetensorsSizeMb: 403.2
+approxSizeMb: 403.1
+fetchedAt: '2026-09-28T09:37:52.000Z'

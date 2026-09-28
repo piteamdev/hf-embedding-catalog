@@ -1,0 +1,88 @@
+_id: 6ab9365da8842e5c1f3b408c
+id: PierreGtch/eeg-fm-masking_mae_r12cm_L1
+private: false
+pipeline_tag: feature-extraction
+tags:
+- safetensors
+- eeg
+- self-supervised-learning
+- foundation-model
+- pytorch
+- masked-autoencoder
+- open-eeg-bench
+- feature-extraction
+- license:cc-by-4.0
+- region:us
+downloads: 12
+likes: 0
+modelId: PierreGtch/eeg-fm-masking_mae_r12cm_L1
+author: PierreGtch
+sha: d7f7aa20933bb6079bb9a717ecfac6c033374609
+lastModified: '2026-09-27T15:29:44.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: cc-by-4.0
+  pipeline_tag: feature-extraction
+  tags:
+  - eeg
+  - self-supervised-learning
+  - foundation-model
+  - pytorch
+  - masked-autoencoder
+  - open-eeg-bench
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: metadata.json
+- rfilename: model.safetensors
+spaces: []
+createdAt: '2026-09-27T15:29:33.000Z'
+safetensors:
+  parameters:
+    F32: 12692096
+  total: 12692096
+usedStorage: 50771472
+downloadsAllTime: 12
+inferenceProviderMapping: {}
+configJson:
+  clip_sigma: 15.0
+  factor: 1000000.0
+  feature_encoder:
+    dim: 512
+    modelName: LinearPatchEmbedding
+    patch_overlap: 20
+    patch_size: 200
+  masker:
+    length_blocks: 1
+    n_target_blocks: null
+    pct_unmasked: 0.44999999999999996
+    radius_blocks: 0.12
+    scalp_surface: 0.0942477796076938
+    vectorized: true
+  pos_encoder:
+    max_seconds: 600.0
+    max_x: 0.15
+    modelName: AdditivePositionalEncoder
+    sfreq_features: 1.1111111111111112
+    spat_dim: 384
+    time_dim: 128
+  scaler: median_std_clip
+  shared_feature_encoder: true
+  transformer:
+    activation: gelu
+    bias: false
+    d_model: 512
+    dim_feedforward: 1365
+    dropout: 0.0
+    glu: true
+    nhead: 8
+    norm: rms_norm
+    num_layers: 4
+onnxFiles: {}
+safetensorsSizeMb: 50.8
+approxSizeMb: 50.8
+fetchedAt: '2026-09-28T09:37:52.000Z'

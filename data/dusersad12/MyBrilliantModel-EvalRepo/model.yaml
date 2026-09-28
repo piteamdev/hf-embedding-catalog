@@ -1,0 +1,54 @@
+_id: 6ab94efb1f2e996ba1e8edfe
+id: dusersad12/MyBrilliantModel-EvalRepo
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- pytorch
+- llama
+- feature-extraction
+- license:mit
+- endpoints_compatible
+- region:us
+downloads: 14
+likes: 0
+modelId: dusersad12/MyBrilliantModel-EvalRepo
+author: dusersad12
+sha: ee63f9c09ea34e17aa04d62d1090f59172e6982e
+lastModified: '2026-09-27T17:14:47.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: llama
+  architectures:
+  - LlamaModel
+cardData:
+  license: mit
+  library_name: transformers
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: figures/fig1.png
+- rfilename: figures/fig2.png
+- rfilename: figures/fig3.png
+- rfilename: pytorch_model.bin
+spaces: []
+createdAt: '2026-09-27T17:14:35.000Z'
+usedStorage: 62
+downloadsAllTime: 14
+inferenceProviderMapping: {}
+configJson:
+  model_type: llama
+  architectures:
+  - LlamaModel
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-09-28T09:37:52.000Z'

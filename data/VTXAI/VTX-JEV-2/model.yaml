@@ -1,0 +1,105 @@
+_id: 6ab8ea3386bfe9fcae100633
+id: VTXAI/VTX-JEV-2
+private: false
+pipeline_tag: feature-extraction
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- model2vec
+- static-embeddings
+- decision-engine
+- jev
+- lf2
+- 2bit-quantization
+- cpu-optimized
+- feature-extraction
+- multilingual
+- en
+- hi
+- bn
+- ta
+- te
+- mr
+- ur
+- ar
+- es
+- ru
+- zh
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 24
+likes: 0
+modelId: VTXAI/VTX-JEV-2
+author: VTXAI
+sha: 879464b74538b2e389c9b9e1bff110f91b0b5695
+lastModified: '2026-09-27T10:18:29.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: model2vec
+  architectures:
+  - StaticModel
+cardData:
+  license: apache-2.0
+  base_model: VTXAI/vtx-jev-laya-multilingual
+  pipeline_tag: feature-extraction
+  language:
+  - multilingual
+  - en
+  - hi
+  - bn
+  - ta
+  - te
+  - mr
+  - ur
+  - ar
+  - es
+  - ru
+  - zh
+  tags:
+  - sentence-transformers
+  - static-embeddings
+  - model2vec
+  - decision-engine
+  - jev
+  - lf2
+  - 2bit-quantization
+  - cpu-optimized
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_lf2.json
+- rfilename: inference.py
+- rfilename: model.safetensors
+- rfilename: model_lf2.safetensors
+- rfilename: modules.json
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-09-27T10:04:35.000Z'
+safetensors:
+  parameters:
+    F16: 65472768
+  total: 65472768
+usedStorage: 165004621
+downloadsAllTime: 24
+inferenceProviderMapping: {}
+configJson:
+  model_type: model2vec
+  architectures:
+  - StaticModel
+  tokenizer_name: jhu-clsp/mmBERT-base
+  apply_pca: 256
+  sif_coefficient: 0.0001
+  hidden_dim: 256
+  seq_length: 1000000
+  normalize: true
+  pooling: mean
+  embedding_dtype: float16
+onnxFiles: {}
+safetensorsSizeMb: 151.4
+approxSizeMb: 130.9
+fetchedAt: '2026-09-28T09:37:52.000Z'

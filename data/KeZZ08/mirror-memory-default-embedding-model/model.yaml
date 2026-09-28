@@ -1,0 +1,164 @@
+_id: 6ab78d57ff5de70b9ff6f56b
+id: KeZZ08/mirror-memory-default-embedding-model
+private: false
+pipeline_tag: feature-extraction
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- embeddings
+- text-embeddings
+- semantic-search
+- information-retrieval
+- rag
+- retrieval
+- bge
+- feature-extraction
+- en
+- dataset:sentence-transformers/gooaq
+- base_model:BAAI/bge-small-en-v1.5
+- base_model:finetune:BAAI/bge-small-en-v1.5
+- license:mit
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 37
+likes: 0
+modelId: KeZZ08/mirror-memory-default-embedding-model
+author: KeZZ08
+sha: 058941cc1508b32bd69de951265554f7b0686445
+lastModified: '2026-09-26T10:56:39.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index:
+- name: Mirror Memory Default Embedding Model
+  results:
+  - task:
+      type: information-retrieval
+      name: Information Retrieval
+    dataset:
+      type: gooaq
+      name: GooAQ
+    metrics:
+    - type: recall_at_1
+      value: 0.8237
+      name: Recall@1
+      verified: false
+    - type: ndcg_at_10
+      value: 0.9075
+      name: NDCG@10
+      verified: false
+    - type: mrr_at_10
+      value: 0.8837
+      name: MRR@10
+      verified: false
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  language:
+  - en
+  license: mit
+  library_name: sentence-transformers
+  pipeline_tag: feature-extraction
+  base_model: BAAI/bge-small-en-v1.5
+  model-index:
+  - name: Mirror Memory Default Embedding Model
+    results:
+    - task:
+        type: information-retrieval
+        name: Information Retrieval
+      dataset:
+        type: gooaq
+        name: GooAQ
+      metrics:
+      - type: recall_at_1
+        value: 0.8237
+        name: Recall@1
+        verified: false
+      - type: ndcg_at_10
+        value: 0.9075
+        name: NDCG@10
+        verified: false
+      - type: mrr_at_10
+        value: 0.8837
+        name: MRR@10
+        verified: false
+  datasets:
+  - sentence-transformers/gooaq
+  tags:
+  - sentence-transformers
+  - embeddings
+  - text-embeddings
+  - semantic-search
+  - information-retrieval
+  - rag
+  - retrieval
+  - bge
+  - bert
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Normalize/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-09-26T09:16:07.000Z'
+safetensors:
+  parameters:
+    F32: 33360000
+  total: 33360000
+usedStorage: 266924224
+downloadsAllTime: 37
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  id2label:
+    '0': LABEL_0
+  initializer_range: 0.02
+  intermediate_size: 1536
+  is_decoder: false
+  label2id:
+    LABEL_0: 0
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.15.1
+  type_vocab_size: 2
+  use_cache: true
+  vocab_size: 30522
+onnxFiles: {}
+safetensorsSizeMb: 133.5
+approxSizeMb: 133.4
+fetchedAt: '2026-09-28T09:37:52.000Z'

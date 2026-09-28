@@ -1,0 +1,128 @@
+_id: 6ab9c4628f765b6dd990d005
+id: asayeed0/saga-embed-v1
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- modernbert
+- sentence-similarity
+- sv
+- 'no'
+- da
+- is
+- base_model:AI-Sweden-Models/ModernBERT-base
+- base_model:finetune:AI-Sweden-Models/ModernBERT-base
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 8
+likes: 0
+modelId: asayeed0/saga-embed-v1
+author: asayeed0
+sha: 9c41b6f178e30b5a6e0bce65b735741cd6d1b7e3
+lastModified: '2026-09-28T01:36:22.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  architectures:
+  - ModernBertModel
+  model_type: modernbert
+  tokenizer_config:
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  language:
+  - sv
+  - 'no'
+  - da
+  - is
+  base_model:
+  - AI-Sweden-Models/ModernBERT-base
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Dense/config.json
+- rfilename: 2_Dense/model.safetensors
+- rfilename: 3_Dense/config.json
+- rfilename: 3_Dense/model.safetensors
+- rfilename: 4_Dense/config.json
+- rfilename: 4_Dense/model.safetensors
+- rfilename: README.md
+- rfilename: code.txt
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: rng_state_0.pth
+- rfilename: rng_state_1.pth
+- rfilename: rng_state_2.pth
+- rfilename: rng_state_3.pth
+- rfilename: sentence_bert_config.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-09-28T01:35:30.000Z'
+safetensors:
+  parameters:
+    F32: 394781696
+  total: 394781696
+usedStorage: 1616958588
+downloadsAllTime: 8
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - ModernBertModel
+  attention_bias: false
+  attention_dropout: 0.0
+  bos_token_id: 50281
+  classifier_activation: silu
+  classifier_bias: false
+  classifier_dropout: 0.0
+  classifier_pooling: mean
+  cls_token_id: 50281
+  decoder_bias: true
+  deterministic_flash_attn: false
+  dtype: float32
+  embedding_dropout: 0.0
+  eos_token_id: 50282
+  global_attn_every_n_layers: 3
+  global_rope_theta: 160000.0
+  gradient_checkpointing: false
+  hidden_activation: gelu
+  hidden_size: 1024
+  initializer_cutoff_factor: 2.0
+  initializer_range: 0.02
+  intermediate_size: 2624
+  layer_norm_eps: 1.0e-05
+  local_attention: 128
+  local_rope_theta: 10000.0
+  max_position_embeddings: 8192
+  mlp_bias: false
+  mlp_dropout: 0.0
+  model_type: modernbert
+  norm_bias: false
+  norm_eps: 1.0e-05
+  num_attention_heads: 16
+  num_hidden_layers: 28
+  pad_token_id: 50283
+  position_embedding_type: absolute
+  repad_logits_with_grad: false
+  sep_token_id: 50282
+  sparse_pred_ignore_index: -100
+  sparse_prediction: false
+  transformers_version: 4.57.3
+  vocab_size: 50368
+onnxFiles: {}
+safetensorsSizeMb: 1616.9
+approxSizeMb: 1579.1
+fetchedAt: '2026-09-28T09:37:52.000Z'

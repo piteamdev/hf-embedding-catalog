@@ -1,0 +1,54 @@
+_id: 6ab967f1f7bd8732d7ec8cef
+id: dusersad12/NexusLM-BestCheckpoint
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- pytorch
+- gpt2
+- feature-extraction
+- license:mit
+- endpoints_compatible
+- region:us
+downloads: 18
+likes: 0
+modelId: dusersad12/NexusLM-BestCheckpoint
+author: dusersad12
+sha: 0045ed78a2f2759bbea327f00987057c0c2d5170
+lastModified: '2026-09-27T19:01:14.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: gpt2
+  architectures:
+  - GPT2Model
+cardData:
+  license: mit
+  library_name: transformers
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: figures/fig1.png
+- rfilename: figures/fig2.png
+- rfilename: figures/fig3.png
+- rfilename: pytorch_model.bin
+spaces: []
+createdAt: '2026-09-27T19:01:05.000Z'
+usedStorage: 256
+downloadsAllTime: 18
+inferenceProviderMapping: {}
+configJson:
+  model_type: gpt2
+  architectures:
+  - GPT2Model
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-09-28T09:37:52.000Z'

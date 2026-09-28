@@ -1,0 +1,88 @@
+_id: 6ab52887b27a08605d997532
+id: RKNNAI/RK182X-EMBEDDING-gme-Qwen2-VL-2B-Instruct
+private: false
+pipeline_tag: feature-extraction
+tags:
+- gguf
+- rknn
+- rk182x
+- embedding
+- feature-extraction
+- base_model:Alibaba-NLP/gme-Qwen2-VL-2B-Instruct
+- base_model:quantized:Alibaba-NLP/gme-Qwen2-VL-2B-Instruct
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+- conversational
+downloads: 2
+likes: 0
+modelId: RKNNAI/RK182X-EMBEDDING-gme-Qwen2-VL-2B-Instruct
+author: RKNNAI
+sha: 89c42b97eb612a4bc451ea105b7585eadfe31c18
+lastModified: '2026-09-28T07:38:49.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  tags:
+  - rknn
+  - rk182x
+  - embedding
+  pipeline_tag: feature-extraction
+  base_model: Alibaba-NLP/gme-Qwen2-VL-2B-Instruct
+  base_model_relation: quantized
+gguf:
+  total: 0
+  architecture: qwen2vl
+  context_length: 32768
+  chat_template: '{% set image_count = namespace(value=0) %}{% set video_count = namespace(value=0) %}{% for message in messages
+    %}{% if loop.first and message[''role''] != ''system'' %}<|im_start|>system
+
+    You are a helpful assistant.<|im_end|>
+
+    {% endif %}<|im_start|>{{ message[''role''] }}
+
+    {% if message[''content''] is string %}{{ message[''content''] }}<|im_end|>
+
+    {% else %}{% for content in message[''content''] %}{% if content[''type''] == ''image'' or ''image'' in content or ''image_url''
+    in content %}{% set image_count.value = image_count.value + 1 %}{% if add_vision_id %}Picture {{ image_count.value }}:
+    {% endif %}<|vision_start|><|image_pad|><|vision_end|>{% elif content[''type''] == ''video'' or ''video'' in content %}{%
+    set video_count.value = video_count.value + 1 %}{% if add_vision_id %}Video {{ video_count.value }}: {% endif %}<|vision_start|><|video_pad|><|vision_end|>{%
+    elif ''text'' in content %}{{ content[''text''] }}{% endif %}{% endfor %}<|im_end|>
+
+    {% endif %}{% endfor %}{% if add_generation_prompt %}<|im_start|>assistant
+
+    {% endif %}'
+  bos_token: <|endoftext|>
+  eos_token: <|im_end|>
+  totalFileSize: 5930299
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: README_CN.md
+- rfilename: gme-Qwen2-VL-2B-Instruct-448x448-w4a16-w6a16-8-2048/README.md
+- rfilename: gme-Qwen2-VL-2B-Instruct-448x448-w4a16-w6a16-8-2048/README_CN.md
+- rfilename: gme-Qwen2-VL-2B-Instruct-448x448-w4a16-w6a16-8-2048/SHA256SUMS
+- rfilename: gme-Qwen2-VL-2B-Instruct-448x448-w4a16-w6a16-8-2048/config.json
+- rfilename: gme-Qwen2-VL-2B-Instruct-448x448-w4a16-w6a16-8-2048/gme-Qwen2-VL-2B-Instruct-llm-model_report.html
+- rfilename: gme-Qwen2-VL-2B-Instruct-448x448-w4a16-w6a16-8-2048/gme-Qwen2-VL-2B-Instruct-llm.embed.bin
+- rfilename: gme-Qwen2-VL-2B-Instruct-448x448-w4a16-w6a16-8-2048/gme-Qwen2-VL-2B-Instruct-llm.rknn
+- rfilename: gme-Qwen2-VL-2B-Instruct-448x448-w4a16-w6a16-8-2048/gme-Qwen2-VL-2B-Instruct-llm.tokenizer.gguf
+- rfilename: gme-Qwen2-VL-2B-Instruct-448x448-w4a16-w6a16-8-2048/gme-Qwen2-VL-2B-Instruct-llm.weight
+- rfilename: gme-Qwen2-VL-2B-Instruct-448x448-w4a16-w6a16-8-2048/gme-Qwen2-VL-2B-Instruct-vision-model_report.html
+- rfilename: gme-Qwen2-VL-2B-Instruct-448x448-w4a16-w6a16-8-2048/gme-Qwen2-VL-2B-Instruct-vision.rknn
+- rfilename: gme-Qwen2-VL-2B-Instruct-448x448-w4a16-w6a16-8-2048/gme-Qwen2-VL-2B-Instruct-vision.weight
+spaces: []
+createdAt: '2026-09-24T13:41:27.000Z'
+usedStorage: 2082662931
+downloadsAllTime: 2
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-09-28T09:37:52.000Z'

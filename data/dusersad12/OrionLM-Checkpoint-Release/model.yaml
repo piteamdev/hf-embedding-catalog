@@ -1,0 +1,51 @@
+_id: 6ab957eda8842e5c1f4179b7
+id: dusersad12/OrionLM-Checkpoint-Release
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- pytorch
+- mistral
+- feature-extraction
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 20
+likes: 0
+modelId: dusersad12/OrionLM-Checkpoint-Release
+author: dusersad12
+sha: 7957b9e7f0729e3fc7da6d356438ccead79a3d4d
+lastModified: '2026-09-27T17:53:00.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: mistral
+  architectures:
+  - MistralModel
+cardData:
+  license: apache-2.0
+  library_name: transformers
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: pytorch_model.bin
+spaces: []
+createdAt: '2026-09-27T17:52:45.000Z'
+usedStorage: 27
+downloadsAllTime: 20
+inferenceProviderMapping: {}
+configJson:
+  model_type: mistral
+  architectures:
+  - MistralModel
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-09-28T09:37:52.000Z'

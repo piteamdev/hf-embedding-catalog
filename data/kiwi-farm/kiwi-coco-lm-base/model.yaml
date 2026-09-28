@@ -1,0 +1,155 @@
+_id: 6ab54adabd51a2c730e5082b
+id: kiwi-farm/kiwi-coco-lm-base
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- modernbert
+- fill-mask
+- masked-lm
+- long-context
+- coco-lm
+- feature-extraction
+- ko
+- en
+- arxiv:2102.08473
+- base_model:answerdotai/ModernBERT-base
+- base_model:finetune:answerdotai/ModernBERT-base
+- license:apache-2.0
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 44
+likes: 3
+modelId: kiwi-farm/kiwi-coco-lm-base
+author: kiwi-farm
+sha: 1159dd6bf11925d1ce0f721de76265ab996e577a
+lastModified: '2026-09-26T16:27:11.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  architectures:
+  - ModernBertForMaskedLM
+  model_type: modernbert
+  tokenizer_config:
+    bos_token: '[CLS]'
+    cls_token: '[CLS]'
+    eos_token: '[SEP]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[PAD]'
+cardData:
+  library_name: transformers
+  license: apache-2.0
+  language:
+  - ko
+  - en
+  base_model: answerdotai/ModernBERT-base
+  pipeline_tag: feature-extraction
+  tags:
+  - masked-lm
+  - long-context
+  - modernbert
+  - coco-lm
+transformersInfo:
+  auto_model: AutoModelForMaskedLM
+  pipeline_tag: fill-mask
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-09-24T16:07:54.000Z'
+safetensors:
+  parameters:
+    BF16: 161418496
+  total: 161418496
+usedStorage: 322851792
+downloadsAllTime: 44
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - ModernBertForMaskedLM
+  attention_bias: false
+  attention_dropout: 0.0
+  bos_token_id: 1
+  classifier_activation: gelu
+  classifier_bias: false
+  classifier_dropout: 0.0
+  classifier_pooling: cls
+  cls_token_id: 1
+  decoder_bias: true
+  deterministic_flash_attn: false
+  dtype: bfloat16
+  embedding_dropout: 0.0
+  eos_token_id: 2
+  global_attn_every_n_layers: 3
+  gradient_checkpointing: false
+  hidden_activation: gelu
+  hidden_size: 768
+  initializer_cutoff_factor: 2.0
+  initializer_range: 0.02
+  intermediate_size: 1152
+  layer_norm_eps: 1.0e-05
+  layer_types:
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  local_attention: 256
+  max_position_embeddings: 8192
+  mlp_bias: false
+  mlp_dropout: 0.0
+  model_type: modernbert
+  norm_bias: false
+  norm_eps: 1.0e-05
+  num_attention_heads: 12
+  num_hidden_layers: 22
+  pad_token_id: 0
+  position_embedding_type: absolute
+  rope_parameters:
+    full_attention:
+      rope_theta: 160000.0
+      rope_type: default
+    sliding_attention:
+      rope_theta: 10000.0
+      rope_type: default
+  scl_dim: 128
+  sep_token_id: 2
+  sparse_pred_ignore_index: -100
+  sparse_prediction: false
+  tie_word_embeddings: true
+  transformers_version: 5.8.1
+  use_cache: false
+  vocab_size: 64000
+onnxFiles: {}
+safetensorsSizeMb: 322.9
+approxSizeMb: 322.8
+fetchedAt: '2026-09-28T09:37:52.000Z'

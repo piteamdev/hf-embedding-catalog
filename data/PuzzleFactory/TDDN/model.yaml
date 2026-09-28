@@ -1,0 +1,71 @@
+_id: 6ab963fec6384d95870746f6
+id: PuzzleFactory/TDDN
+private: false
+pipeline_tag: feature-extraction
+tags:
+- safetensors
+- tddn_alignment
+- computer-vision
+- vision-language
+- representation-learning
+- diffusion
+- dinov3
+- feature-extraction
+- en
+- arxiv:2609.07937
+- base_model:Charles-Elena/stable-diffusion-2-1
+- base_model:finetune:Charles-Elena/stable-diffusion-2-1
+- license:apache-2.0
+- region:us
+downloads: 1
+likes: 0
+modelId: PuzzleFactory/TDDN
+author: PuzzleFactory
+sha: 5a1e3653fb1c0a60ff83123b447f885180cb8b5b
+lastModified: '2026-09-27T18:44:14.000Z'
+gated: auto
+disabled: false
+model-index: null
+config:
+  model_type: tddn_alignment
+  architectures:
+  - AlignmentModel
+cardData:
+  pipeline_tag: feature-extraction
+  tags:
+  - computer-vision
+  - vision-language
+  - representation-learning
+  - diffusion
+  - dinov3
+  - safetensors
+  base_model:
+  - facebook/dinov3-vith16plus-pretrain-lvd1689m
+  - sentence-transformers/all-roberta-large-v1
+  - CompVis/cleandift
+  - Charles-Elena/stable-diffusion-2-1
+  license: apache-2.0
+  language:
+  - en
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: assets/architecture.png
+- rfilename: assets/pca_chess.png
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: training_config.yaml
+spaces: []
+createdAt: '2026-09-27T18:44:14.000Z'
+safetensors:
+  parameters:
+    F32: 78459671
+  total: 78459671
+usedStorage: 315227070
+downloadsAllTime: 1
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 313.8
+approxSizeMb: 313.8
+fetchedAt: '2026-09-28T09:37:52.000Z'

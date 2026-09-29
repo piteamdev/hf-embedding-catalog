@@ -1,0 +1,441 @@
+_id: 6ab8def142535b9c605b2318
+id: MannasAI/axon-eeg
+private: false
+pipeline_tag: feature-extraction
+library_name: braindecode
+tags:
+- braindecode
+- safetensors
+- eeg
+- neuroscience
+- foundation-model
+- masked-autoencoder
+- brain-computer-interface
+- pytorch
+- feature-extraction
+- arxiv:2609.08788
+- license:apache-2.0
+- region:us
+downloads: 16
+likes: 1
+modelId: MannasAI/axon-eeg
+author: MannasAI
+sha: e55c7a5594bf27f5d57f795cc718539c3a69f0e1
+lastModified: '2026-09-28T06:08:20.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: braindecode
+  license: apache-2.0
+  pipeline_tag: feature-extraction
+  tags:
+  - eeg
+  - neuroscience
+  - foundation-model
+  - masked-autoencoder
+  - brain-computer-interface
+  - braindecode
+  - pytorch
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+spaces: []
+createdAt: '2026-09-27T09:16:33.000Z'
+safetensors:
+  parameters:
+    F32: 118629850
+  total: 118629850
+usedStorage: 474574184
+downloadsAllTime: 16
+inferenceProviderMapping: {}
+configJson:
+  n_outputs: 2
+  n_chans: null
+  chs_info:
+  - ch_name: Fp1
+    kind: 2
+    coil_type: 1
+    unit: 107
+    cal: 1.0
+    range: 1.0
+    loc:
+    - -0.03090258833242555
+    - 0.11458517879242798
+    - 0.02786657432908913
+    - 0.0
+    - 0.0
+    - 0.0
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+  - ch_name: Fp2
+    kind: 2
+    coil_type: 1
+    unit: 107
+    cal: 1.0
+    range: 1.0
+    loc:
+    - 0.028409495337624727
+    - 0.11534630990164213
+    - 0.027721257722525875
+    - 0.0
+    - 0.0
+    - 0.0
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+  - ch_name: F7
+    kind: 2
+    coil_type: 1
+    unit: 107
+    cal: 1.0
+    range: 1.0
+    loc:
+    - -0.07187662505917264
+    - 0.07310352742670875
+    - 0.025790455878913307
+    - 0.0
+    - 0.0
+    - 0.0
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+  - ch_name: F3
+    kind: 2
+    coil_type: 1
+    unit: 107
+    cal: 1.0
+    range: 1.0
+    loc:
+    - -0.05180903841183724
+    - 0.08668789888287941
+    - 0.07871409302883386
+    - 0.0
+    - 0.0
+    - 0.0
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+  - ch_name: Fz
+    kind: 2
+    coil_type: 1
+    unit: 107
+    cal: 1.0
+    range: 1.0
+    loc:
+    - -0.001229271161566281
+    - 0.09327445200029715
+    - 0.1026392934768164
+    - 0.0
+    - 0.0
+    - 0.0
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+  - ch_name: F4
+    kind: 2
+    coil_type: 1
+    unit: 107
+    cal: 1.0
+    range: 1.0
+    loc:
+    - 0.050274277731628736
+    - 0.08743838910239796
+    - 0.07727065434234194
+    - 0.0
+    - 0.0
+    - 0.0
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+  - ch_name: F8
+    kind: 2
+    coil_type: 1
+    unit: 107
+    cal: 1.0
+    range: 1.0
+    loc:
+    - 0.07143526925150917
+    - 0.07450512647808137
+    - 0.025101027393177114
+    - 0.0
+    - 0.0
+    - 0.0
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+  - ch_name: T7
+    kind: 2
+    coil_type: 1
+    unit: 107
+    cal: 1.0
+    range: 1.0
+    loc:
+    - -0.08598207795805729
+    - 0.014871638175652204
+    - 0.031173373739044698
+    - 0.0
+    - 0.0
+    - 0.0
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+  - ch_name: C3
+    kind: 2
+    coil_type: 1
+    unit: 107
+    cal: 1.0
+    range: 1.0
+    loc:
+    - -0.0671487229331174
+    - 0.023358230537446293
+    - 0.1045106810602483
+    - 0.0
+    - 0.0
+    - 0.0
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+  - ch_name: Cz
+    kind: 2
+    coil_type: 1
+    unit: 107
+    cal: 1.0
+    range: 1.0
+    loc:
+    - -0.0013741334028190722
+    - 0.027617093595102737
+    - 0.14019949417439556
+    - 0.0
+    - 0.0
+    - 0.0
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+  - ch_name: C4
+    kind: 2
+    coil_type: 1
+    unit: 107
+    cal: 1.0
+    range: 1.0
+    loc:
+    - 0.06532888071838541
+    - 0.023573104961569495
+    - 0.10369243420047652
+    - 0.0
+    - 0.0
+    - 0.0
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+  - ch_name: T8
+    kind: 2
+    coil_type: 1
+    unit: 107
+    cal: 1.0
+    range: 1.0
+    loc:
+    - 0.08326136985759491
+    - 0.015258189278681375
+    - 0.030972968524059938
+    - 0.0
+    - 0.0
+    - 0.0
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+  - ch_name: P7
+    kind: 2
+    coil_type: 1
+    unit: 107
+    cal: 1.0
+    range: 1.0
+    loc:
+    - -0.07445796452347851
+    - -0.04212316495850575
+    - 0.04127363138738122
+    - 0.0
+    - 0.0
+    - 0.0
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+  - ch_name: P3
+    kind: 2
+    coil_type: 1
+    unit: 107
+    cal: 1.0
+    range: 1.0
+    loc:
+    - -0.0550382318026169
+    - -0.044210304662340896
+    - 0.09990897692200876
+    - 0.0
+    - 0.0
+    - 0.0
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+  - ch_name: Pz
+    kind: 2
+    coil_type: 1
+    unit: 107
+    cal: 1.0
+    range: 1.0
+    loc:
+    - -0.001709445046746896
+    - -0.045212993324122014
+    - 0.12667292418209622
+    - 0.0
+    - 0.0
+    - 0.0
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+  - ch_name: P4
+    kind: 2
+    coil_type: 1
+    unit: 107
+    cal: 1.0
+    range: 1.0
+    loc:
+    - 0.05363601546337514
+    - -0.04433452185507687
+    - 0.10051602773215099
+    - 0.0
+    - 0.0
+    - 0.0
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+  - ch_name: P8
+    kind: 2
+    coil_type: 1
+    unit: 107
+    cal: 1.0
+    range: 1.0
+    loc:
+    - 0.07103247088902218
+    - -0.042259976012095204
+    - 0.0411988627819509
+    - 0.0
+    - 0.0
+    - 0.0
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+  - ch_name: O1
+    kind: 2
+    coil_type: 1
+    unit: 107
+    cal: 1.0
+    range: 1.0
+    loc:
+    - -0.03157355787465608
+    - -0.08056835212663661
+    - 0.05478964562404762
+    - 0.0
+    - 0.0
+    - 0.0
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+  - ch_name: O2
+    kind: 2
+    coil_type: 1
+    unit: 107
+    cal: 1.0
+    range: 1.0
+    loc:
+    - 0.027683100559624117
+    - -0.08048883980936473
+    - 0.0547340814777941
+    - 0.0
+    - 0.0
+    - 0.0
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+    - .nan
+  n_times: 2000
+  input_window_seconds: null
+  sfreq: 200.0
+  patch_size: 200
+  patch_stride: 180
+  embed_dim: 512
+  depth: 22
+  num_heads: 8
+  ffn_expansion: 4
+  temporal_window: 5
+  gate_reduction: 4
+  head_hidden_dim: 128
+  normalize_input: true
+  activation: torch.nn.modules.activation.GELU
+  head_activation: torch.nn.modules.activation.ELU
+  drop_prob: 0.3
+  att_drop_prob: 0.0
+  braindecode_version: 1.8.1
+onnxFiles: {}
+safetensorsSizeMb: 474.6
+approxSizeMb: 474.5
+fetchedAt: '2026-09-29T09:42:17.000Z'

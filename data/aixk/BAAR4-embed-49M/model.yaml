@@ -1,0 +1,133 @@
+_id: 6ab99faf88cbe1b217533421
+id: aixk/BAAR4-embed-49M
+private: false
+pipeline_tag: sentence-similarity
+tags:
+- safetensors
+- fhn_concept_gau_embedding
+- baar4
+- 49m
+- sentence-similarity
+- feature-extraction
+- embeddings
+- multilingual
+- ultra-lightweight
+- edge-ai
+- rag
+- ko
+- en
+- de
+- es
+- fr
+- ja
+- zh
+- it
+- nl
+- pl
+- pt
+- ru
+- ar
+- bg
+- el
+- hi
+- sw
+- th
+- tr
+- vi
+- license:other
+- region:us
+downloads: 0
+likes: 1
+modelId: aixk/BAAR4-embed-49M
+author: aixk
+sha: 38cb968adcebb4060c7c035139a943361bfe7f40
+lastModified: '2026-09-28T10:29:38.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - FHN_T4Max_Embedding_Universal
+  model_type: fhn_concept_gau_embedding
+  tokenizer_config:
+    bos_token: <bos>
+    eos_token: <eos>
+    unk_token: <unk>
+    pad_token: <pad>
+cardData:
+  pipeline_tag: sentence-similarity
+  language:
+  - ko
+  - en
+  - de
+  - es
+  - fr
+  - ja
+  - zh
+  - it
+  - nl
+  - pl
+  - pt
+  - ru
+  - ar
+  - bg
+  - el
+  - hi
+  - sw
+  - th
+  - tr
+  - vi
+  tags:
+  - baar4
+  - 49m
+  - sentence-similarity
+  - feature-extraction
+  - embeddings
+  - multilingual
+  - ultra-lightweight
+  - edge-ai
+  - rag
+  license: other
+  license_name: non-commercial-only
+  license_link: LICENSE
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: baar2_manifest.json
+- rfilename: checkpoint_step_49500.pt
+- rfilename: checkpoint_step_50000.pt
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: model_embed_pure_int4.baar2
+- rfilename: model_embed_pure_int8.baar2
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: tokenizer_state.json
+spaces: []
+createdAt: '2026-09-27T22:58:55.000Z'
+safetensors:
+  parameters:
+    F16: 49022848
+  total: 49022848
+usedStorage: 59002200262
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - FHN_T4Max_Embedding_Universal
+  model_type: fhn_concept_gau_embedding
+  hidden_size: 384
+  expansion_dim: 2048
+  attn_dim: 64
+  num_attention_heads: 1
+  num_hidden_layers: 20
+  vocab_size: 2048
+  concept_size: 1024
+  max_position_embeddings: 128
+  torch_dtype: float16
+  transformers_version: 4.44.0
+onnxFiles: {}
+safetensorsSizeMb: 98.1
+approxSizeMb: 98.0
+fetchedAt: '2026-09-29T09:42:17.000Z'

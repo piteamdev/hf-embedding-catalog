@@ -1,0 +1,210 @@
+_id: 6aba92bc4f2c2ba18367f3bb
+id: HarishMaths/Hotel-Policy-Embedding
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:3872
+- loss:MultipleNegativesRankingLoss
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: HarishMaths/Hotel-Policy-Embedding
+author: HarishMaths
+sha: 3c559339f633df1675d75a6b2fb6c49bd0b01066
+lastModified: '2026-09-28T16:23:07.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: (g) If a Member wishes to extend their stay and has enough Nightly Upgrade Award(s) to cover the extension,
+    the Member must book a separate reservation for the additional nights and request to use Nightly Upgrade Awards on Marriott
+    Websites or by calling Member Support; the Nightly Upgrade Award request cannot be processed at the Participating Property.
+  sentences:
+  - Flexible rates cancel up to a deadline the property sets.
+  - DONT book a non-refundable hotel without reading the cancellation policy because you must understand the exact penalty
+    structurewhether you forfeit one night, the full amount, or a percentageto determine your coverage needs and ensure your
+    insurance limit is adequate.
+  - As for semi-flexible plans, they might require notice at least five days before check-in.
+- source_sentence: Checking out late at a hotel isnt guaranteed, especially when it comes to complimentary late check-out.
+  sentences:
+  - However, the late check-out policy will vary based on the specific hotels policy.
+  - The hotel guest damage clause is a crucial aspect of your reservation agreement that aims to protect both the hotels property
+    and the guests interests.
+  - Yes, if a clean room is available.
+- source_sentence: refund terms and conditions
+  sentences:
+  - CANCELLATION OR MODIFICATION OF A SERVICE RESERVATION
+  - Elite status doesn't always change the written policy, but it can give you leverage with customer service if you need
+    an exception.
+  - 'Trick #2  Resell the nonrefundable hotel room'
+- source_sentence: occupancy rules guidelines for guests
+  sentences:
+  - Most hotel insurance policies provide coverage for theft, damage, or loss of personal property under certain conditions.
+  - Choose designated smoking areas outside the hotel.
+  - 'Semi-Flexible Rates : Some properties offer rates that allow cancellation with a fee (e.g., $50) or partial refund up
+    to a certain point.'
+- source_sentence: Smoking or vaping is allowed in designated rooms.
+  sentences:
+  - Some upgrades to Premium Rooms require payment in local currency and cannot be purchased with Points.
+  - Marriott is committed to providing its guests and associates with a smoke-free environment, and is proud to boast one
+    of the most comprehensive smoke-free hotel policies in the industry.
+  - Participating Properties outside the United States may provide alternative services and benefits to the Elite membership
+    benefits set forth in these Program Rules, depending on local law and policy.
+model-index:
+- name: SentenceTransformer
+  results:
+  - task:
+      type: semantic-similarity
+      name: Semantic Similarity
+    dataset:
+      name: val
+      type: val
+    metrics:
+    - type: pearson_cosine
+      value: 0.6244156998181909
+      name: Pearson Cosine
+      verified: false
+    - type: spearman_cosine
+      value: 0.6463453957364179
+      name: Spearman Cosine
+      verified: false
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:3872
+  - loss:MultipleNegativesRankingLoss
+  widget:
+  - source_sentence: (g) If a Member wishes to extend their stay and has enough Nightly Upgrade Award(s) to cover the extension,
+      the Member must book a separate reservation for the additional nights and request to use Nightly Upgrade Awards on Marriott
+      Websites or by calling Member Support; the Nightly Upgrade Award request cannot be processed at the Participating Property.
+    sentences:
+    - Flexible rates cancel up to a deadline the property sets.
+    - DONT book a non-refundable hotel without reading the cancellation policy because you must understand the exact penalty
+      structurewhether you forfeit one night, the full amount, or a percentageto determine your coverage needs and ensure
+      your insurance limit is adequate.
+    - As for semi-flexible plans, they might require notice at least five days before check-in.
+  - source_sentence: Checking out late at a hotel isnt guaranteed, especially when it comes to complimentary late check-out.
+    sentences:
+    - However, the late check-out policy will vary based on the specific hotels policy.
+    - The hotel guest damage clause is a crucial aspect of your reservation agreement that aims to protect both the hotels
+      property and the guests interests.
+    - Yes, if a clean room is available.
+  - source_sentence: refund terms and conditions
+    sentences:
+    - CANCELLATION OR MODIFICATION OF A SERVICE RESERVATION
+    - Elite status doesn't always change the written policy, but it can give you leverage with customer service if you need
+      an exception.
+    - 'Trick #2  Resell the nonrefundable hotel room'
+  - source_sentence: occupancy rules guidelines for guests
+    sentences:
+    - Most hotel insurance policies provide coverage for theft, damage, or loss of personal property under certain conditions.
+    - Choose designated smoking areas outside the hotel.
+    - 'Semi-Flexible Rates : Some properties offer rates that allow cancellation with a fee (e.g., $50) or partial refund
+      up to a certain point.'
+  - source_sentence: Smoking or vaping is allowed in designated rooms.
+    sentences:
+    - Some upgrades to Premium Rooms require payment in local currency and cannot be purchased with Points.
+    - Marriott is committed to providing its guests and associates with a smoke-free environment, and is proud to boast one
+      of the most comprehensive smoke-free hotel policies in the industry.
+    - Participating Properties outside the United States may provide alternative services and benefits to the Elite membership
+      benefits set forth in these Program Rules, depending on local law and policy.
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - pearson_cosine
+  - spearman_cosine
+  model-index:
+  - name: SentenceTransformer
+    results:
+    - task:
+        type: semantic-similarity
+        name: Semantic Similarity
+      dataset:
+        name: val
+        type: val
+      metrics:
+      - type: pearson_cosine
+        value: 0.6244156998181909
+        name: Pearson Cosine
+        verified: false
+      - type: spearman_cosine
+        value: 0.6463453957364179
+        name: Spearman Cosine
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-09-28T16:15:56.000Z'
+safetensors:
+  parameters:
+    F32: 22713216
+  total: 22713216
+usedStorage: 90864192
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  initializer_range: 0.02
+  intermediate_size: 1536
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 6
+  pad_token_id: 0
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.16.1
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 30522
+onnxFiles: {}
+safetensorsSizeMb: 90.9
+approxSizeMb: 90.9
+fetchedAt: '2026-09-29T09:42:17.000Z'

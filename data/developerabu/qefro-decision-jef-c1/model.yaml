@@ -1,0 +1,132 @@
+_id: 6abb82d65e722b92b24dbd34
+id: developerabu/qefro-decision-jef-c1
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- modernbert
+- decision-jef
+- routing
+- tool-selection
+- function-calling
+- qefro
+- agent
+- feature-extraction
+- en
+- multilingual
+- license:apache-2.0
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: developerabu/qefro-decision-jef-c1
+author: developerabu
+sha: dfd4c08cb91f46e3fec4949601b81300d89c7117
+lastModified: '2026-09-29T09:25:45.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - ModernBertModel
+  model_type: modernbert
+  tokenizer_config:
+    bos_token: <bos>
+    cls_token: <bos>
+    eos_token: <eos>
+    sep_token: <eos>
+    pad_token: <pad>
+    mask_token: <mask>
+    unk_token: <unk>
+cardData:
+  language:
+  - en
+  - multilingual
+  license: apache-2.0
+  tags:
+  - decision-jef
+  - onnx
+  - modernbert
+  - routing
+  - tool-selection
+  - function-calling
+  - qefro
+  - agent
+  metrics:
+  - accuracy
+  - f1
+  pipeline_tag: feature-extraction
+  library_name: onnx
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: c1_best.pt
+- rfilename: c1_decision_jef.onnx
+- rfilename: c1_decision_jef.onnx.data
+- rfilename: capabilities.json
+- rfilename: config.json
+- rfilename: evaluation_results_525.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-09-29T09:20:22.000Z'
+usedStorage: 2478634025
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  _name_or_path: mmBERT-base
+  architectures:
+  - ModernBertModel
+  attention_bias: false
+  attention_dropout: 0.0
+  bos_token_id: 2
+  classifier_activation: gelu
+  classifier_bias: false
+  classifier_dropout: 0.0
+  classifier_pooling: mean
+  cls_token_id: 1
+  decoder_bias: true
+  deterministic_flash_attn: false
+  embedding_dropout: 0.0
+  eos_token_id: 1
+  global_attn_every_n_layers: 3
+  global_rope_theta: 160000
+  gradient_checkpointing: false
+  hidden_activation: gelu
+  hidden_size: 768
+  initializer_cutoff_factor: 2.0
+  initializer_range: 0.02
+  intermediate_size: 1152
+  layer_norm_eps: 1.0e-05
+  local_attention: 128
+  local_rope_theta: 160000
+  max_position_embeddings: 8192
+  mlp_bias: false
+  mlp_dropout: 0.0
+  model_type: modernbert
+  norm_bias: false
+  norm_eps: 1.0e-05
+  num_attention_heads: 12
+  num_hidden_layers: 22
+  pad_token_id: 0
+  position_embedding_type: sans_pos
+  sep_token_id: 1
+  tie_word_embeddings: true
+  torch_dtype: float32
+  transformers_version: 4.47.0.dev0
+  vocab_size: 256000
+  mask_token_id: 4
+  decision_jef:
+    model_name: jhu-clsp/mmBERT-base
+    proj_dim: 256
+    noul_head: false
+    act_head: false
+onnxFiles:
+  c1_decision_jef.onnx: 2.3
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-09-29T09:42:17.000Z'

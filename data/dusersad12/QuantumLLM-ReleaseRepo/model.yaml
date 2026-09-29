@@ -1,0 +1,51 @@
+_id: 6abaaa82f636ba703e27c503
+id: dusersad12/QuantumLLM-ReleaseRepo
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- pytorch
+- gpt2
+- feature-extraction
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: dusersad12/QuantumLLM-ReleaseRepo
+author: dusersad12
+sha: 9583c4de02e32a004313ae466e3e519c4d25b595
+lastModified: '2026-09-28T17:57:32.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: gpt2
+  architectures:
+  - GPT2Model
+cardData:
+  license: apache-2.0
+  library_name: transformers
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: pytorch_model.bin
+spaces: []
+createdAt: '2026-09-28T17:57:22.000Z'
+usedStorage: 23
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  model_type: gpt2
+  architectures:
+  - GPT2Model
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-09-29T09:42:17.000Z'

@@ -1,0 +1,118 @@
+_id: 6ab7a4178f765b6dd91afbba
+id: mlx-community/CLM-v0.1-8B-MLX-8bit
+private: false
+pipeline_tag: feature-extraction
+library_name: mlx
+tags:
+- mlx
+- safetensors
+- qwen3
+- apple-silicon
+- contrastive
+- clm
+- embeddings
+- verifier
+- feature-extraction
+- base_model:Qwen/Qwen3-8B
+- base_model:quantized:Qwen/Qwen3-8B
+- license:apache-2.0
+- 8-bit
+- region:us
+downloads: 119
+likes: 4
+modelId: mlx-community/CLM-v0.1-8B-MLX-8bit
+author: mlx-community
+sha: eb39b6c777c579720f7a1458f2614be4508a4e15
+lastModified: '2026-09-29T06:08:16.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - Qwen3ForCausalLM
+  model_type: qwen3
+  quantization_config:
+    bits: 8
+cardData:
+  license: apache-2.0
+  library_name: mlx
+  base_model: Qwen/Qwen3-8B
+  pipeline_tag: feature-extraction
+  tags:
+  - mlx
+  - apple-silicon
+  - contrastive
+  - clm
+  - embeddings
+  - verifier
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: clm_mlx.json
+- rfilename: clm_mlx/__init__.py
+- rfilename: clm_mlx/encoder.py
+- rfilename: clm_mlx/engine.py
+- rfilename: clm_mlx/heads.py
+- rfilename: clm_mlx/schema.py
+- rfilename: config.json
+- rfilename: encoder/chat_template.jinja
+- rfilename: encoder/clm_source.json
+- rfilename: encoder/config.json
+- rfilename: encoder/generation_config.json
+- rfilename: encoder/model-00001-of-00002.safetensors
+- rfilename: encoder/model-00002-of-00002.safetensors
+- rfilename: encoder/model.safetensors.index.json
+- rfilename: encoder/tokenizer.json
+- rfilename: encoder/tokenizer_config.json
+- rfilename: heads/CLM_v0.1-8B.safetensors
+- rfilename: heads/config.json
+- rfilename: parity.json
+spaces: []
+createdAt: '2026-09-26T10:53:11.000Z'
+usedStorage: 8128798148
+downloadsAllTime: 119
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - Qwen3ForCausalLM
+  attention_bias: false
+  attention_dropout: 0.0
+  bos_token_id: 151643
+  eos_token_id:
+  - 151645
+  - 151643
+  head_dim: 128
+  hidden_act: silu
+  hidden_size: 4096
+  initializer_range: 0.02
+  intermediate_size: 12288
+  max_position_embeddings: 40960
+  max_window_layers: 36
+  model_type: qwen3
+  num_attention_heads: 32
+  num_hidden_layers: 36
+  num_key_value_heads: 8
+  quantization:
+    group_size: 64
+    bits: 8
+    mode: affine
+  quantization_config:
+    group_size: 64
+    bits: 8
+    mode: affine
+  rms_norm_eps: 1.0e-06
+  rope_scaling: null
+  rope_theta: 1000000
+  sliding_window: null
+  tie_word_embeddings: true
+  torch_dtype: bfloat16
+  transformers_version: 4.51.0
+  use_cache: true
+  use_sliding_window: false
+  vocab_size: 151936
+onnxFiles: {}
+safetensorsSizeMb: 8117.4
+approxSizeMb: 0.0
+fetchedAt: '2026-09-30T09:33:50.000Z'

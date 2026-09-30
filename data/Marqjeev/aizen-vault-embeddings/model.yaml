@@ -1,0 +1,428 @@
+_id: 6abc6a04dff18bd3d419e475
+id: Marqjeev/aizen-vault-embeddings
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- bert
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:42
+- loss:MultipleNegativesRankingLoss
+- arxiv:1908.10084
+- arxiv:1807.03748
+- base_model:sentence-transformers/all-MiniLM-L6-v2
+- base_model:finetune:sentence-transformers/all-MiniLM-L6-v2
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: Marqjeev/aizen-vault-embeddings
+author: Marqjeev
+sha: 02a969bee8a1047b4244211573070c51dcda3827
+lastModified: '2026-09-30T01:52:27.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: how do I take my coffee for office meetings
+  sentences:
+  - 'syn-coffee-preference-note
+
+    SYNTHETIC EXAMPLE — a standing personal preference about coffee orders for meetings hosted at the office
+
+    Standing preference: black coffee, no sugar, for any meeting hosted at the office; guests get asked their own preference
+    rather than assumed the same.
+
+
+    **Why this matters**: a small, low-stakes personal-preference fact, the kind that''s easy to forget and mildly annoying
+    to re-ask every time.'
+  - 'syn-coffee-preference-note
+
+    SYNTHETIC EXAMPLE — a standing personal preference about coffee orders for meetings hosted at the office
+
+    Standing preference: black coffee, no sugar, for any meeting hosted at the office; guests get asked their own preference
+    rather than assumed the same.
+
+
+    **Why this matters**: a small, low-stakes personal-preference fact, the kind that''s easy to forget and mildly annoying
+    to re-ask every time.'
+  - 'syn-velmoria-charter-amendments
+
+    SYNTHETIC — chronological list of amendments to Velmoria''s Founding Charter, 1962-2024
+
+    Major amendments to Velmoria''s Founding Charter: 1962 (judicial review powers expanded), 1979 (voting age lowered to
+    18), 1994 (provincial resource-revenue sharing formula rewritten), 2011 (Crown''s emergency powers narrowed), 2024 (digital-privacy
+    rights added).
+
+
+    **Why this matters**: fictional analog to a real constitutional-amendments tracking note, same structure, different content.'
+- source_sentence: what does the fictional central bank actually do
+  sentences:
+  - 'syn-velmoria-energy-commission
+
+    SYNTHETIC — Velmoria Energy Regulatory Commission, the fictional body that licenses electricity and gas providers
+
+    The Velmoria Energy Regulatory Commission licenses electricity and gas providers, sets transmission tariffs, and oversees
+    the Grid Authority''s compliance with the 2045 net-zero commitment. It is independent of the Ministry of Energy by statute,
+    though its commissioners are ministry-appointed.
+
+
+    **Why this matters**: fictional analog to a real energy regulator note.'
+  - 'syn-country-astrelle
+
+    SYNTHETIC — Astrelle, a fictional G7-style country, provinces and federal structure mapped
+
+    Astrelle is a fictional federal country with nine provinces and two autonomous territories. Its federal parliament sits
+    in the capital, Norvann, and each province retains control over education and healthcare policy, mirroring a real-world
+    federal/provincial split.
+
+
+    **Why this matters**: fictional analog to a real G7-style country-mapping note.'
+  - 'syn-velmoria-central-reserve
+
+    SYNTHETIC — the Velmoria Central Reserve, the fictional nation''s central bank
+
+    The Velmoria Central Reserve sets the benchmark interest rate, supervises retail banks, and manages the provincial currency
+    peg. Its governor is appointed for a seven-year term, deliberately longer than the Prime Minister''s electoral cycle to
+    insulate monetary policy from short-term politics.
+
+
+    **Why this matters**: fictional analog to a real central-bank note.'
+- source_sentence: provinces and territories of this fictional G7-style country
+  sentences:
+  - 'syn-harbor-pension-fund-contact
+
+    SYNTHETIC EXAMPLE — a warm contact at Harbor Pension Fund, a fictional retirement fund, met at an industry conference
+
+    Met a portfolio manager from Harbor Pension Fund (fictional entity) at an industry conference; genuine mutual interest
+    but no formal ask made yet. Real next step: a low-key follow-up email referencing the specific panel discussion they were
+    on, not a generic pitch.
+
+
+    **Why this matters**: an early-stage relationship, distinct from an active deal or a stalled one.'
+  - 'syn-country-astrelle
+
+    SYNTHETIC — Astrelle, a fictional G7-style country, provinces and federal structure mapped
+
+    Astrelle is a fictional federal country with nine provinces and two autonomous territories. Its federal parliament sits
+    in the capital, Norvann, and each province retains control over education and healthcare policy, mirroring a real-world
+    federal/provincial split.
+
+
+    **Why this matters**: fictional analog to a real G7-style country-mapping note.'
+  - 'syn-velmoria-central-reserve
+
+    SYNTHETIC — the Velmoria Central Reserve, the fictional nation''s central bank
+
+    The Velmoria Central Reserve sets the benchmark interest rate, supervises retail banks, and manages the provincial currency
+    peg. Its governor is appointed for a seven-year term, deliberately longer than the Prime Minister''s electoral cycle to
+    insulate monetary policy from short-term politics.
+
+
+    **Why this matters**: fictional analog to a real central-bank note.'
+- source_sentence: who regulates the stock exchange in this fictional country
+  sentences:
+  - 'syn-country-korvatia
+
+    SYNTHETIC — Korvatia, a fictional European-style country, regions and a contested overseas territory
+
+    Korvatia has 14 mainland regions and one contested overseas territory, Maren Island, currently in a decades-long independence-referendum
+    process. Korvatia''s regions each elect their own assembly, with the national government retaining control over defense
+    and foreign affairs.
+
+
+    **Why this matters**: fictional analog to a real European-style country-mapping note, including a contested-territory
+    subplot.'
+  - 'syn-velmoria-securities-commission
+
+    SYNTHETIC — Velmoria Securities Commission, the fictional regulator overseeing the national stock exchange
+
+    The Velmoria Securities Commission licenses brokers, enforces disclosure rules for listed companies, and oversees the
+    Velmoria Exchange. It gained expanded enforcement powers after a 2016 market-manipulation scandal involving a mid-cap
+    logistics firm.
+
+
+    **Why this matters**: fictional analog to a real securities regulator note.'
+  - 'syn-velmoria-national-trust
+
+    SYNTHETIC — the Velmoria National Trust, a fictional sovereign investment fund seeded by resource royalties
+
+    The Velmoria National Trust was seeded in 1985 from offshore gas royalties and now manages a diversified portfolio across
+    infrastructure, equities, and provincial development projects. It is legally separate from the annual government budget,
+    a deliberate design choice to prevent short-term raiding of long-term savings.
+
+
+    **Why this matters**: fictional analog to a real sovereign-wealth-style fund note.'
+- source_sentence: when is the annual report due and who audits it
+  sentences:
+  - 'syn-annual-report-deadline
+
+    SYNTHETIC EXAMPLE — the fictional company''s annual report deadline and which external auditor signs off
+
+    The annual report is due to the fictional regulator by March 31st each year; the external auditor (a fictional firm, Kestrel
+    & Boyd) needs the draft financials four weeks earlier to complete sign-off in time.
+
+
+    **Why this matters**: a recurring compliance deadline with a real external dependency (the auditor''s own lead time),
+    the kind of fact that''s costly to forget.'
+  - 'syn-velmoria-securities-commission
+
+    SYNTHETIC — Velmoria Securities Commission, the fictional regulator overseeing the national stock exchange
+
+    The Velmoria Securities Commission licenses brokers, enforces disclosure rules for listed companies, and oversees the
+    Velmoria Exchange. It gained expanded enforcement powers after a 2016 market-manipulation scandal involving a mid-cap
+    logistics firm.
+
+
+    **Why this matters**: fictional analog to a real securities regulator note.'
+  - 'example-quarterly-board-deck-deadline
+
+    SYNTHETIC EXAMPLE — a recurring quarterly board-deck deadline and who owns which section
+
+    The quarterly board deck is due the first Monday of the new quarter. Finance owns the numbers section, product owns the
+    roadmap slide, and the fictional CEO persona in this example always wants the risks slide reviewed by legal before it
+    goes to the board, not after.
+
+
+    **Why this matters**: recurring institutional deadlines with named owners are exactly what should live in permanent memory
+    rather than being re-explained every quarter.'
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:42
+  - loss:MultipleNegativesRankingLoss
+  base_model: sentence-transformers/all-MiniLM-L6-v2
+  widget:
+  - source_sentence: how do I take my coffee for office meetings
+    sentences:
+    - 'syn-coffee-preference-note
+
+      SYNTHETIC EXAMPLE — a standing personal preference about coffee orders for meetings hosted at the office
+
+      Standing preference: black coffee, no sugar, for any meeting hosted at the office; guests get asked their own preference
+      rather than assumed the same.
+
+
+      **Why this matters**: a small, low-stakes personal-preference fact, the kind that''s easy to forget and mildly annoying
+      to re-ask every time.'
+    - 'syn-coffee-preference-note
+
+      SYNTHETIC EXAMPLE — a standing personal preference about coffee orders for meetings hosted at the office
+
+      Standing preference: black coffee, no sugar, for any meeting hosted at the office; guests get asked their own preference
+      rather than assumed the same.
+
+
+      **Why this matters**: a small, low-stakes personal-preference fact, the kind that''s easy to forget and mildly annoying
+      to re-ask every time.'
+    - 'syn-velmoria-charter-amendments
+
+      SYNTHETIC — chronological list of amendments to Velmoria''s Founding Charter, 1962-2024
+
+      Major amendments to Velmoria''s Founding Charter: 1962 (judicial review powers expanded), 1979 (voting age lowered to
+      18), 1994 (provincial resource-revenue sharing formula rewritten), 2011 (Crown''s emergency powers narrowed), 2024 (digital-privacy
+      rights added).
+
+
+      **Why this matters**: fictional analog to a real constitutional-amendments tracking note, same structure, different
+      content.'
+  - source_sentence: what does the fictional central bank actually do
+    sentences:
+    - 'syn-velmoria-energy-commission
+
+      SYNTHETIC — Velmoria Energy Regulatory Commission, the fictional body that licenses electricity and gas providers
+
+      The Velmoria Energy Regulatory Commission licenses electricity and gas providers, sets transmission tariffs, and oversees
+      the Grid Authority''s compliance with the 2045 net-zero commitment. It is independent of the Ministry of Energy by statute,
+      though its commissioners are ministry-appointed.
+
+
+      **Why this matters**: fictional analog to a real energy regulator note.'
+    - 'syn-country-astrelle
+
+      SYNTHETIC — Astrelle, a fictional G7-style country, provinces and federal structure mapped
+
+      Astrelle is a fictional federal country with nine provinces and two autonomous territories. Its federal parliament sits
+      in the capital, Norvann, and each province retains control over education and healthcare policy, mirroring a real-world
+      federal/provincial split.
+
+
+      **Why this matters**: fictional analog to a real G7-style country-mapping note.'
+    - 'syn-velmoria-central-reserve
+
+      SYNTHETIC — the Velmoria Central Reserve, the fictional nation''s central bank
+
+      The Velmoria Central Reserve sets the benchmark interest rate, supervises retail banks, and manages the provincial currency
+      peg. Its governor is appointed for a seven-year term, deliberately longer than the Prime Minister''s electoral cycle
+      to insulate monetary policy from short-term politics.
+
+
+      **Why this matters**: fictional analog to a real central-bank note.'
+  - source_sentence: provinces and territories of this fictional G7-style country
+    sentences:
+    - 'syn-harbor-pension-fund-contact
+
+      SYNTHETIC EXAMPLE — a warm contact at Harbor Pension Fund, a fictional retirement fund, met at an industry conference
+
+      Met a portfolio manager from Harbor Pension Fund (fictional entity) at an industry conference; genuine mutual interest
+      but no formal ask made yet. Real next step: a low-key follow-up email referencing the specific panel discussion they
+      were on, not a generic pitch.
+
+
+      **Why this matters**: an early-stage relationship, distinct from an active deal or a stalled one.'
+    - 'syn-country-astrelle
+
+      SYNTHETIC — Astrelle, a fictional G7-style country, provinces and federal structure mapped
+
+      Astrelle is a fictional federal country with nine provinces and two autonomous territories. Its federal parliament sits
+      in the capital, Norvann, and each province retains control over education and healthcare policy, mirroring a real-world
+      federal/provincial split.
+
+
+      **Why this matters**: fictional analog to a real G7-style country-mapping note.'
+    - 'syn-velmoria-central-reserve
+
+      SYNTHETIC — the Velmoria Central Reserve, the fictional nation''s central bank
+
+      The Velmoria Central Reserve sets the benchmark interest rate, supervises retail banks, and manages the provincial currency
+      peg. Its governor is appointed for a seven-year term, deliberately longer than the Prime Minister''s electoral cycle
+      to insulate monetary policy from short-term politics.
+
+
+      **Why this matters**: fictional analog to a real central-bank note.'
+  - source_sentence: who regulates the stock exchange in this fictional country
+    sentences:
+    - 'syn-country-korvatia
+
+      SYNTHETIC — Korvatia, a fictional European-style country, regions and a contested overseas territory
+
+      Korvatia has 14 mainland regions and one contested overseas territory, Maren Island, currently in a decades-long independence-referendum
+      process. Korvatia''s regions each elect their own assembly, with the national government retaining control over defense
+      and foreign affairs.
+
+
+      **Why this matters**: fictional analog to a real European-style country-mapping note, including a contested-territory
+      subplot.'
+    - 'syn-velmoria-securities-commission
+
+      SYNTHETIC — Velmoria Securities Commission, the fictional regulator overseeing the national stock exchange
+
+      The Velmoria Securities Commission licenses brokers, enforces disclosure rules for listed companies, and oversees the
+      Velmoria Exchange. It gained expanded enforcement powers after a 2016 market-manipulation scandal involving a mid-cap
+      logistics firm.
+
+
+      **Why this matters**: fictional analog to a real securities regulator note.'
+    - 'syn-velmoria-national-trust
+
+      SYNTHETIC — the Velmoria National Trust, a fictional sovereign investment fund seeded by resource royalties
+
+      The Velmoria National Trust was seeded in 1985 from offshore gas royalties and now manages a diversified portfolio across
+      infrastructure, equities, and provincial development projects. It is legally separate from the annual government budget,
+      a deliberate design choice to prevent short-term raiding of long-term savings.
+
+
+      **Why this matters**: fictional analog to a real sovereign-wealth-style fund note.'
+  - source_sentence: when is the annual report due and who audits it
+    sentences:
+    - 'syn-annual-report-deadline
+
+      SYNTHETIC EXAMPLE — the fictional company''s annual report deadline and which external auditor signs off
+
+      The annual report is due to the fictional regulator by March 31st each year; the external auditor (a fictional firm,
+      Kestrel & Boyd) needs the draft financials four weeks earlier to complete sign-off in time.
+
+
+      **Why this matters**: a recurring compliance deadline with a real external dependency (the auditor''s own lead time),
+      the kind of fact that''s costly to forget.'
+    - 'syn-velmoria-securities-commission
+
+      SYNTHETIC — Velmoria Securities Commission, the fictional regulator overseeing the national stock exchange
+
+      The Velmoria Securities Commission licenses brokers, enforces disclosure rules for listed companies, and oversees the
+      Velmoria Exchange. It gained expanded enforcement powers after a 2016 market-manipulation scandal involving a mid-cap
+      logistics firm.
+
+
+      **Why this matters**: fictional analog to a real securities regulator note.'
+    - 'example-quarterly-board-deck-deadline
+
+      SYNTHETIC EXAMPLE — a recurring quarterly board-deck deadline and who owns which section
+
+      The quarterly board deck is due the first Monday of the new quarter. Finance owns the numbers section, product owns
+      the roadmap slide, and the fictional CEO persona in this example always wants the risks slide reviewed by legal before
+      it goes to the board, not after.
+
+
+      **Why this matters**: recurring institutional deadlines with named owners are exactly what should live in permanent
+      memory rather than being re-explained every quarter.'
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Normalize/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-09-30T01:46:44.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  initializer_range: 0.02
+  intermediate_size: 1536
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 6
+  pad_token_id: 0
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.17.0
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 30522
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-09-30T09:33:50.000Z'

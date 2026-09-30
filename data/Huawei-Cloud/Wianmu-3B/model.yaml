@@ -1,0 +1,60 @@
+_id: 6abb7bee461d7c89d532a8e0
+id: Huawei-Cloud/Wianmu-3B
+private: false
+pipeline_tag: feature-extraction
+tags:
+- audio
+- multimodal-embedding
+- audio-retrieval
+- audio-classification
+- feature-extraction
+- base_model:Qwen/Qwen2.5-Omni-3B
+- base_model:finetune:Qwen/Qwen2.5-Omni-3B
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 1
+modelId: Huawei-Cloud/Wianmu-3B
+author: Huawei-Cloud
+sha: ca5dfeb126853e925c8a2feba3ccc0846bda80f9
+lastModified: '2026-09-30T09:28:42.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  pipeline_tag: feature-extraction
+  base_model:
+  - tencent/WeMM-Embedding-2B
+  - Qwen/Qwen2.5-Omni-3B
+  tags:
+  - audio
+  - multimodal-embedding
+  - audio-retrieval
+  - audio-classification
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: modeling_wianmu.py
+- rfilename: resources/wianmu.png
+- rfilename: resources/wianmu_architecture.png
+spaces: []
+createdAt: '2026-09-29T08:50:54.000Z'
+usedStorage: 130108857
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  model_name: Wianmu-3B-v0
+  wemm_path: path/to/WeMM-Embedding-2B
+  qwen_omni_path: path/to/Qwen2.5-Omni-3B
+  audio_tower_dim: 2048
+  embedding_dim: 2048
+  audio_sample_rate: 16000
+  audio_max_seconds: 30
+  audio_min_seconds: 0.025
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-09-30T09:33:50.000Z'

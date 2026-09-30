@@ -1,0 +1,103 @@
+_id: 6abc57d2c142cf0a2c6f7675
+id: TigreGotico/wakehubert-mel-attn
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- wake-word
+- keyword-spotting
+- speech
+- distillation
+- hubert
+- int8
+- feature-extraction
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: TigreGotico/wakehubert-mel-attn
+author: TigreGotico
+sha: c99bac64c03912a4da73305e3d8b8280abdc339e
+lastModified: '2026-09-30T01:07:36.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  tags:
+  - wake-word
+  - keyword-spotting
+  - speech
+  - distillation
+  - hubert
+  - onnx
+  - int8
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: wakehubert.onnx
+- rfilename: wakehubert_int8.onnx
+spaces: []
+createdAt: '2026-09-30T00:29:06.000Z'
+usedStorage: 8739856
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  family: WakeHuBERT
+  license: apache-2.0
+  architecture: mel-attn
+  input:
+    name: waveform
+    shape:
+    - batch
+    - samples
+    dtype: float32
+    sample_rate: 16000
+  output:
+    name: features
+    shape:
+    - batch
+    - frames
+    - '128'
+    frame_rate_hz: 50.0
+    hop_samples: 320
+  feature_dim: 128
+  causal: true
+  streaming: true
+  delay_ms: 100.0
+  params: 1425152
+  streaming_context_samples: 64000
+  student:
+    student: mel-attn
+    channels: 256
+    blocks: 4
+    n_mels: 64
+    rnn_layers: 2
+    attn_layers: 2
+    attn_window: 50
+    mixconv: 0
+    mask_prob: 0.0
+    steps: 30000
+  teacher:
+    model: facebook/hubert-base-ls960
+    layers:
+    - 4
+    - 8
+    - 12
+  int8:
+    file: wakehubert_int8.onnx
+    feature_cosine_mean: 0.9933
+  files:
+    float32: wakehubert.onnx
+    int8: wakehubert_int8.onnx
+onnxFiles:
+  wakehubert.onnx: 6.4
+  wakehubert_int8.onnx: 2.3
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-09-30T09:33:50.000Z'

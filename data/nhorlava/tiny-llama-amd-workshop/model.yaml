@@ -1,0 +1,75 @@
+_id: 6abb92ff82e01c5572992d24
+id: nhorlava/tiny-llama-amd-workshop
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- tiny_llama_v2
+- feature-extraction
+- custom_code
+- arxiv:1910.09700
+- region:us
+downloads: 0
+likes: 0
+modelId: nhorlava/tiny-llama-amd-workshop
+author: nhorlava
+sha: 01e5727f48fa61c8f91e076e02aeb70c963a0daf
+lastModified: '2026-09-29T10:29:30.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - TinyLlamaV2
+  auto_map:
+    AutoConfig: tiny_llama.TinyLlamaConfig
+    AutoModel: tiny_llama.TinyLlamaV2
+  model_type: tiny_llama_v2
+cardData:
+  library_name: transformers
+  tags: []
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: tiny_llama.TinyLlamaV2
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: tiny_llama.py
+spaces: []
+createdAt: '2026-09-29T10:29:19.000Z'
+safetensors:
+  parameters:
+    F32: 142425600
+  total: 142425600
+usedStorage: 569710104
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - TinyLlamaV2
+  auto_map:
+    AutoConfig: tiny_llama.TinyLlamaConfig
+    AutoModel: tiny_llama.TinyLlamaV2
+  dropout: 0.1
+  dtype: float32
+  hidden_dim: 768
+  intermediate_dim: 3072
+  max_seq_len: 1024
+  model_type: tiny_llama_v2
+  n_heads: 12
+  n_kv_heads: 4
+  n_layers: 12
+  norm_eps: 1.0e-06
+  rope_theta: 10000.0
+  tie_word_embeddings: true
+  transformers_version: 5.17.0
+  vocab_size: 50257
+onnxFiles: {}
+safetensorsSizeMb: 569.7
+approxSizeMb: 569.7
+fetchedAt: '2026-09-30T09:33:50.000Z'

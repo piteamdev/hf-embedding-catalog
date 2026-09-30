@@ -1,0 +1,53 @@
+_id: 6ab66c64a4416b13aeb46e1b
+id: autoencodix/Disentanglix-Dim48-Disentanglix
+private: false
+pipeline_tag: feature-extraction
+library_name: autoencodix
+tags:
+- autoencodix
+- single-cell
+- scRNA-seq
+- autoencoder
+- variational-autoencoder
+- disentangled-representation
+- biology
+- feature-extraction
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: autoencodix/Disentanglix-Dim48-Disentanglix
+author: autoencodix
+sha: a96bd5a354d37efc78a682d351edb021fb4be9d6
+lastModified: '2026-09-29T11:38:01.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: autoencodix
+  tags:
+  - single-cell
+  - scRNA-seq
+  - autoencoder
+  - variational-autoencoder
+  - disentangled-representation
+  - biology
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: large_disentanglix_final_model_Dim48_Disentanglix.pkl
+- rfilename: large_disentanglix_final_model_Dim48_Disentanglix_model.pth
+- rfilename: large_disentanglix_final_model_Dim48_Disentanglix_preprocessor.pkl
+spaces: []
+createdAt: '2026-09-25T12:43:16.000Z'
+usedStorage: 2687716278
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-09-30T09:33:50.000Z'

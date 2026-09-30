@@ -1,0 +1,103 @@
+_id: 6abc5814e0244831941ca7c1
+id: TigreGotico/wakewav-mel-tcn
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- wake-word
+- keyword-spotting
+- speech
+- distillation
+- wavlm
+- int8
+- feature-extraction
+- license:cc-by-sa-3.0
+- region:us
+downloads: 0
+likes: 0
+modelId: TigreGotico/wakewav-mel-tcn
+author: TigreGotico
+sha: bb0c2f7143aac3219ca7999cb2753e8a710fe8c2
+lastModified: '2026-09-30T01:07:38.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: cc-by-sa-3.0
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  tags:
+  - wake-word
+  - keyword-spotting
+  - speech
+  - distillation
+  - wavlm
+  - onnx
+  - int8
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: wakehubert.onnx
+- rfilename: wakehubert_int8.onnx
+spaces: []
+createdAt: '2026-09-30T00:30:12.000Z'
+usedStorage: 4740592
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  family: WakeWav
+  license: cc-by-sa-3.0
+  architecture: mel-tcn
+  input:
+    name: waveform
+    shape:
+    - batch
+    - samples
+    dtype: float32
+    sample_rate: 16000
+  output:
+    name: features
+    shape:
+    - batch
+    - frames
+    - '128'
+    frame_rate_hz: 50.0
+    hop_samples: 320
+  feature_dim: 128
+  causal: true
+  streaming: true
+  delay_ms: 100.0
+  params: 641792
+  streaming_context_samples: 40000
+  student:
+    student: mel-tcn
+    channels: 256
+    blocks: 8
+    n_mels: 64
+    rnn_layers: 2
+    attn_layers: 2
+    attn_window: 50
+    mixconv: 0
+    mask_prob: 0.065
+    steps: 30000
+  teacher:
+    model: microsoft/wavlm-base-plus
+    layers:
+    - 4
+    - 8
+    - 12
+  int8:
+    file: wakehubert_int8.onnx
+    feature_cosine_mean: 0.9984
+  files:
+    float32: wakehubert.onnx
+    int8: wakehubert_int8.onnx
+onnxFiles:
+  wakehubert.onnx: 3.3
+  wakehubert_int8.onnx: 1.5
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-09-30T09:33:50.000Z'

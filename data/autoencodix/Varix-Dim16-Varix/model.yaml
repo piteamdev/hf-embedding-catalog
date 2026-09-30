@@ -1,0 +1,51 @@
+_id: 6ab66b13ff5de70b9fbaa964
+id: autoencodix/Varix-Dim16-Varix
+private: false
+pipeline_tag: feature-extraction
+library_name: autoencodix
+tags:
+- autoencodix
+- single-cell
+- scRNA-seq
+- autoencoder
+- variational-autoencoder
+- biology
+- feature-extraction
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: autoencodix/Varix-Dim16-Varix
+author: autoencodix
+sha: 004a5c2bc5059f3062b2bd9e2adb849b295da288
+lastModified: '2026-09-29T11:38:10.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: autoencodix
+  tags:
+  - single-cell
+  - scRNA-seq
+  - autoencoder
+  - variational-autoencoder
+  - biology
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: large_varix_final_model_Dim16_Varix.pkl
+- rfilename: large_varix_final_model_Dim16_Varix_model.pth
+- rfilename: large_varix_final_model_Dim16_Varix_preprocessor.pkl
+spaces: []
+createdAt: '2026-09-25T12:37:39.000Z'
+usedStorage: 2684390396
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-09-30T09:33:50.000Z'

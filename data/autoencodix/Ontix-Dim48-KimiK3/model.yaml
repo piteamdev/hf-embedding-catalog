@@ -1,0 +1,55 @@
+_id: 6ab669beeaeed75d3a1430e0
+id: autoencodix/Ontix-Dim48-KimiK3
+private: false
+pipeline_tag: feature-extraction
+library_name: autoencodix
+tags:
+- autoencodix
+- single-cell
+- scRNA-seq
+- autoencoder
+- variational-autoencoder
+- explainable-ai
+- biology
+- feature-extraction
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: autoencodix/Ontix-Dim48-KimiK3
+author: autoencodix
+sha: 8f4f2eeed24fd12ab214313a7a8df60d22194f39
+lastModified: '2026-09-29T11:38:09.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: autoencodix
+  tags:
+  - single-cell
+  - scRNA-seq
+  - autoencoder
+  - variational-autoencoder
+  - explainable-ai
+  - biology
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: large_ontix_final_model_Dim48_KimiK3.pkl
+- rfilename: large_ontix_final_model_Dim48_KimiK3_model.pth
+- rfilename: large_ontix_final_model_Dim48_KimiK3_preprocessor.pkl
+- rfilename: ontology/Dim48_KimiK3_ontology__ensembl_level1.tsv
+- rfilename: ontology/Dim48_KimiK3_ontology__ensembl_level2.tsv
+spaces: []
+createdAt: '2026-09-25T12:31:58.000Z'
+usedStorage: 3088578596
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-09-30T09:33:50.000Z'

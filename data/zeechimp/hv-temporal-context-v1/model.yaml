@@ -1,0 +1,119 @@
+_id: 6abbb635e0acf17d2ff55f0f
+id: zeechimp/hv-temporal-context-v1
+private: false
+pipeline_tag: feature-extraction
+library_name: hv-temporal-context
+tags:
+- hv-temporal-context
+- hyperdimensional-computing
+- vector-symbolic-architecture
+- retrieval
+- context-selection
+- temporal
+- tiny-models
+- cpu-only
+- feature-extraction
+- en
+- license:apache-2.0
+- model-index
+- region:us
+downloads: 0
+likes: 1
+modelId: zeechimp/hv-temporal-context-v1
+author: zeechimp
+sha: 87e9f47301e802d10cf285f266614e413e56e4a5
+lastModified: '2026-09-29T13:13:44.000Z'
+gated: false
+disabled: false
+model-index:
+- name: hv-temporal-context-2048
+  results:
+  - task:
+      type: text-retrieval
+      name: Conversation Context Selection
+    dataset:
+      type: custom
+      name: Synthetic multi-topic conversation
+    metrics:
+    - type: precision@5
+      value: 0.967
+      name: Precision@5 (position-conditional)
+      verified: false
+    - type: precision@5
+      value: 0.858
+      name: Precision@5 (pure similarity)
+      verified: false
+    - type: precision@5
+      value: 0.117
+      name: Random Baseline
+      verified: false
+config:
+  model_type: hv-temporal-context
+cardData:
+  language: en
+  license: apache-2.0
+  tags:
+  - hyperdimensional-computing
+  - vector-symbolic-architecture
+  - retrieval
+  - context-selection
+  - temporal
+  - tiny-models
+  - cpu-only
+  pipeline_tag: feature-extraction
+  library_name: hv-temporal-context
+  extra:
+    num_params: 382976
+    parameters_human: 383K
+  model-index:
+  - name: hv-temporal-context-2048
+    results:
+    - task:
+        type: text-retrieval
+        name: Conversation Context Selection
+      dataset:
+        type: custom
+        name: Synthetic multi-topic conversation
+      metrics:
+      - type: precision@5
+        value: 0.967
+        name: Precision@5 (position-conditional)
+        verified: false
+      - type: precision@5
+        value: 0.858
+        name: Precision@5 (pure similarity)
+        verified: false
+      - type: precision@5
+        value: 0.117
+        name: Random Baseline
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: context_model.npz
+- rfilename: evaluate.py
+- rfilename: example.py
+- rfilename: hv_temporal_context.py
+- rfilename: requirements.txt
+- rfilename: train_temporal_context.py
+spaces: []
+createdAt: '2026-09-29T12:59:33.000Z'
+usedStorage: 188935
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  model_type: hv-temporal-context
+  architecture: retrieval-based-context-selector-with-two-clock
+  dimension: 2048
+  vocabulary_size: 187
+  num_turns: 60
+  drop_threshold: 0.05
+  alpha_fast: 0.3
+  alpha_slow: 0.9
+  default_k: 5
+  weights_file: context_model.npz
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-09-30T09:33:50.000Z'

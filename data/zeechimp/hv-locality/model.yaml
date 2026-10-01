@@ -1,0 +1,61 @@
+_id: 6abd5061654b364a899e2b3e
+id: zeechimp/hv-locality
+private: false
+pipeline_tag: feature-extraction
+library_name: numpy
+tags:
+- numpy
+- locality
+- avalanche
+- feature-maps
+- diagnostics
+- incompatibility-theorem
+- reader-models
+- ml-tooling
+- cpu
+- feature-extraction
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 1
+modelId: zeechimp/hv-locality
+author: zeechimp
+sha: 45ca62a10e09faf1db08a92ddc1b476c4b64f3ea
+lastModified: '2026-09-30T18:19:49.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: numpy
+  tags:
+  - locality
+  - avalanche
+  - feature-maps
+  - diagnostics
+  - incompatibility-theorem
+  - reader-models
+  - ml-tooling
+  - numpy
+  - cpu
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: app.py
+- rfilename: example.py
+- rfilename: hv_locality.py
+- rfilename: push_to_hub.py
+- rfilename: requirements.txt
+spaces: []
+createdAt: '2026-09-30T18:09:37.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-01T10:00:06.000Z'

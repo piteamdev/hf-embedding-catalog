@@ -1,0 +1,107 @@
+_id: 6abcf5a43b0daef3ba0c2cf6
+id: zeechimp/hv-tctn-universal
+private: false
+pipeline_tag: feature-extraction
+tags:
+- hv_tctn_universal
+- delay-line
+- coincidence-detection
+- velocity-estimation
+- substrate-independent
+- numpy-only
+- no-training
+- signal-processing
+- feature-extraction
+- license:mit
+- region:us
+downloads: 12
+likes: 1
+modelId: zeechimp/hv-tctn-universal
+author: zeechimp
+sha: 78d86a11f6fa07e7cba845bfb554fa0757573880
+lastModified: '2026-09-30T17:26:33.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: hv_tctn_universal
+cardData:
+  license: mit
+  pipeline_tag: feature-extraction
+  tags:
+  - delay-line
+  - coincidence-detection
+  - velocity-estimation
+  - substrate-independent
+  - numpy-only
+  - no-training
+  - signal-processing
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: example.py
+- rfilename: hv_tctn_universal.py
+spaces: []
+createdAt: '2026-09-30T11:42:28.000Z'
+usedStorage: 0
+downloadsAllTime: 12
+inferenceProviderMapping: {}
+configJson:
+  model_type: hv_tctn_universal
+  version: 1
+  substrates:
+    spaced_8:
+      description: photodiode-style, 8 sensors, spacing 1/7
+      n_sensors: 8
+      positions: linspace(0, 1, 8)
+      response_tau: uniform 0.1
+      mode: pulse
+      differentiate: false
+    spaced_16:
+      description: EEG-style, 16 sensors, spacing 1/15
+      n_sensors: 16
+      positions: linspace(0, 1, 16)
+      response_tau: uniform 0.05
+      mode: pulse
+      differentiate: false
+    dielectric_8:
+      description: dielectric ladder, tau in [0.05, 0.5]
+      n_sensors: 8
+      positions: linspace(0, 1, 8)
+      response_tau: geomspace(0.05, 0.5, 8)
+      mode: step
+      differentiate: true
+    qubit_8:
+      description: qubit T2 ladder, T2 in [0.1, 1.0]
+      n_sensors: 8
+      positions: linspace(0, 1, 8)
+      response_tau: geomspace(0.1, 1.0, 8)
+      mode: step
+      differentiate: true
+  defaults:
+    dt: 0.02
+    t_center: 2.0
+    decay: 0.9
+    k_top: 3
+    n_delays: 30
+    v_min: 0.5
+    v_max: 8.0
+  benchmark_results:
+    spaced_8_mean_rel_err: 0.044
+    spaced_16_mean_rel_err: 0.022
+    dielectric_8_mean_rel_err: 0.055
+    qubit_8_mean_rel_err: 0.061
+    checks_passed: 85
+    checks_total: 85
+    noise_floor: 0.05
+  rules:
+  - single pulse per sensor (no periodic drive)
+  - differentiate step responses
+  - direction-aware reference sensor
+  - adaptive pulse width capped at spacing / |v| / 4
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-01T10:00:06.000Z'

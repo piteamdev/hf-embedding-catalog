@@ -1,0 +1,65 @@
+_id: 6abd389183f5361a007d5fd5
+id: zeechimp/hv-hologram-rhythm
+private: false
+pipeline_tag: feature-extraction
+library_name: numpy
+tags:
+- numpy
+- hyperdimensional-computing
+- vector-symbolic-architecture
+- feature-compression
+- low-rank
+- dimensionality-reduction
+- time-series
+- audio
+- cpu
+- feature-extraction
+- license:apache-2.0
+- region:us
+downloads: 5
+likes: 1
+modelId: zeechimp/hv-hologram-rhythm
+author: zeechimp
+sha: 23d98cace85b2ec0b53f0f72f7d66bc8f19492d4
+lastModified: '2026-09-30T16:43:02.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: numpy
+  tags:
+  - hyperdimensional-computing
+  - vector-symbolic-architecture
+  - feature-compression
+  - low-rank
+  - dimensionality-reduction
+  - time-series
+  - audio
+  - numpy
+  - cpu
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: example.py
+- rfilename: hv_hologram_rhythm.py
+- rfilename: push_to_hub.py
+- rfilename: requirements.txt
+spaces: []
+createdAt: '2026-09-30T16:28:01.000Z'
+usedStorage: 0
+downloadsAllTime: 5
+inferenceProviderMapping: {}
+configJson:
+  rank: 8
+  center: true
+  energy: null
+  version: 0.1.1
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-01T10:00:06.000Z'

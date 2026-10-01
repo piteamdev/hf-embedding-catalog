@@ -1,0 +1,132 @@
+_id: 6abd0a464c78b8bdc8e4a0cd
+id: zeechimp/hv-chemical-life
+private: false
+pipeline_tag: feature-extraction
+tags:
+- hv_chemical_life
+- chemical-computing
+- origin-of-life
+- hypercycle
+- error-threshold
+- topological-protection
+- numpy-only
+- no-training
+- feature-extraction
+- license:mit
+- region:us
+downloads: 17
+likes: 1
+modelId: zeechimp/hv-chemical-life
+author: zeechimp
+sha: 1dc4ad0f3f3209bee342673f13afce1c31083ecd
+lastModified: '2026-09-30T17:25:42.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: hv_chemical_life
+cardData:
+  license: mit
+  pipeline_tag: feature-extraction
+  tags:
+  - chemical-computing
+  - origin-of-life
+  - hypercycle
+  - error-threshold
+  - topological-protection
+  - numpy-only
+  - no-training
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: example.py
+- rfilename: hv_chemical_life.py
+spaces: []
+createdAt: '2026-09-30T13:10:30.000Z'
+usedStorage: 0
+downloadsAllTime: 17
+inferenceProviderMapping: {}
+configJson:
+  model_type: hv_chemical_life
+  version: 4
+  dependencies:
+  - numpy
+  substrates:
+    hypercycle:
+      model: mass_conserving_cyclic_autocatalysis
+      critical_N: 6
+      classical_reference: Eigen-Schuster 1979
+      instability_mechanism: internal mutants at large N
+      synthesis_floor: 0.0001
+    nested_zombie:
+      model: host_parasite_continuous_density
+      regimes:
+      - endosymbiont
+      - parasite
+      - host_only
+      - extinction
+      transition: escape_rate
+    error_threshold:
+      formula: L * mu_crit = 1 / (1 - 1/sigma)
+      sharpness_rule: sharp iff L >= 100
+      classical_reference: Eigen 1971
+    self_modifying:
+      model: dmu_dt = alpha * drift - beta * mu
+      steady_state: alpha * drift / beta
+    topological:
+      invariant: writhe mod 2
+      preserved_by:
+      - R2
+      - R3
+      broken_by:
+      - R1
+  retention_ladder:
+    implemented_rungs:
+    - 2
+    - 4
+    - 6
+    - 7
+    rungs:
+      '1':
+        name: agent_trajectory
+        mechanism: fitness_gradient
+      '2':
+        name: population_pattern
+        mechanism: hypercycle
+        implemented: true
+      '3':
+        name: classical_phase
+        mechanism: parameter_region
+      '4':
+        name: genome_sequence
+        mechanism: error_threshold
+        implemented: true
+      '5':
+        name: quantum_mbl
+        mechanism: eigenstate_property
+      '6':
+        name: topological_invariant
+        mechanism: crossing_count
+        implemented: true
+      '7':
+        name: self_modifying_rule
+        mechanism: evolved_mu
+        implemented: true
+  benchmark_results:
+    hypercycle_critical_N: 6
+    eigen_L_mu_crit_sigma_2: 2.0
+    eigen_L_mu_crit_sigma_5: 1.25
+    eigen_L_mu_crit_sigma_10: 1.1111
+    selfmod_constant_drift_final_mu: 0.25
+    zombie_transition_escape_rate: between 0.1 and 0.3
+    checks_passed: 27
+    checks_total: 27
+  source_chapters:
+    Ch3: amber wet memory, topological protection
+    Ch4: nested zombies, hypercycle, Eigen threshold, self-modifying genome
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-01T10:00:06.000Z'

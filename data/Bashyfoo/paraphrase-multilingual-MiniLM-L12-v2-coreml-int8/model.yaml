@@ -1,0 +1,57 @@
+_id: 6abdef5d7ff4655345442dbe
+id: Bashyfoo/paraphrase-multilingual-MiniLM-L12-v2-coreml-int8
+private: false
+pipeline_tag: sentence-similarity
+library_name: coreml
+tags:
+- coreml
+- sentence-similarity
+- multilingual
+- base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- base_model:finetune:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: Bashyfoo/paraphrase-multilingual-MiniLM-L12-v2-coreml-int8
+author: Bashyfoo
+sha: 2f5c60f0edd9bbcc9ddc4164242d7259e4bbb44e
+lastModified: '2026-10-01T05:47:47.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: coreml
+  tags:
+  - sentence-similarity
+  - coreml
+  - multilingual
+  base_model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: MeaningEncoder.mlmodelc/analytics/coremldata.bin
+- rfilename: MeaningEncoder.mlmodelc/coremldata.bin
+- rfilename: MeaningEncoder.mlmodelc/metadata.json
+- rfilename: MeaningEncoder.mlmodelc/model.mil
+- rfilename: MeaningEncoder.mlmodelc/weights/weight.bin
+- rfilename: README.md
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-10-01T05:27:57.000Z'
+usedStorage: 118068738
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-01T10:00:06.000Z'

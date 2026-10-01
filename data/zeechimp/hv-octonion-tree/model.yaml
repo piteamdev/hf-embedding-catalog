@@ -1,0 +1,92 @@
+_id: 6abcf75035afb2b5197ec774
+id: zeechimp/hv-octonion-tree
+private: false
+pipeline_tag: feature-extraction
+tags:
+- hv_octonion_tree
+- octonion
+- tree-algebra
+- non-associative
+- catalan
+- perfect-hash
+- numpy-only
+- no-training
+- feature-extraction
+- license:mit
+- region:us
+downloads: 17
+likes: 1
+modelId: zeechimp/hv-octonion-tree
+author: zeechimp
+sha: 58c2f7e1405468ccb1923d438c50d1e79446695a
+lastModified: '2026-09-30T17:23:19.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: hv_octonion_tree
+cardData:
+  license: mit
+  pipeline_tag: feature-extraction
+  tags:
+  - octonion
+  - tree-algebra
+  - non-associative
+  - catalan
+  - perfect-hash
+  - numpy-only
+  - no-training
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: example.py
+- rfilename: hv_octonion_tree.py
+spaces: []
+createdAt: '2026-09-30T11:49:36.000Z'
+usedStorage: 0
+downloadsAllTime: 17
+inferenceProviderMapping: {}
+configJson:
+  model_type: hv_octonion_tree
+  version: 1
+  dependencies:
+  - numpy
+  algebra: standard octonions (Cayley-Dickson construction)
+  corrections_to_source:
+    C1:
+      claim: '#100 says right Moufang fails'
+      correction: all three Moufang identities hold for octonions
+      evidence: error < 5e-16 on 1000 random triples
+    C2:
+      claim: '#100 says MITM saves ~2.7 bits'
+      correction: bits_saved grows linearly as n/2 + const
+      evidence: bits_saved = 3.39, 5.42, 7.44, 9.45, 11.46, 13.46, 17.47 for n = 6, 8, 10, 12, 14, 16, 20
+    C3:
+      claim: '#100 says noise error = sqrt(n) * sigma'
+      correction: scaling confirmed, constant is 2.4x larger
+      evidence: measured ratio stable at 2.4 +/- 0.1 across all (n, sigma)
+  benchmark_results:
+    exhaustive_injectivity_verified_to_n: 10
+    sampled_injectivity_verified_to_n: 32
+    hierarchical_programs_verified: 15558480
+    norm_preservation_verified_to_n: 1024
+    min_distance_n_10: 0.0858
+    min_distance_n_32_sampled: 0.1631
+    checks_passed: 18
+    checks_total: 18
+  structured_input_failure:
+    sparse_min_d: 0.0
+    two_valued_min_d: 0.0
+    constant_min_d: 0.0
+  limits:
+    exhaustive_n_max: 10
+    catalan_n_11: 58786
+    catalan_n_13: 742900
+    catalan_n_15: 9694845
+    catalan_n_19: 1767263190
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-01T10:00:06.000Z'

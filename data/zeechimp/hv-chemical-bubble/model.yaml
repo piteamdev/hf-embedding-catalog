@@ -1,0 +1,136 @@
+_id: 6abd16e540a05b0ed9b33779
+id: zeechimp/hv-chemical-bubble
+private: false
+pipeline_tag: feature-extraction
+tags:
+- hv_chemical_bubble
+- reservoir-computing
+- bubble-dynamics
+- keller-miksis
+- parity-certificate
+- capability-test
+- numpy-only
+- no-training
+- feature-extraction
+- license:mit
+- region:us
+downloads: 14
+likes: 1
+modelId: zeechimp/hv-chemical-bubble
+author: zeechimp
+sha: a0d371c81e4d01bfc94e895c0f99babd55f7df44
+lastModified: '2026-09-30T17:26:10.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: hv_chemical_bubble
+cardData:
+  license: mit
+  pipeline_tag: feature-extraction
+  tags:
+  - reservoir-computing
+  - bubble-dynamics
+  - keller-miksis
+  - parity-certificate
+  - capability-test
+  - numpy-only
+  - no-training
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: example.py
+- rfilename: hv_chemical_bubble.py
+spaces: []
+createdAt: '2026-09-30T14:04:21.000Z'
+usedStorage: 0
+downloadsAllTime: 14
+inferenceProviderMapping: {}
+configJson:
+  model_type: hv_chemical_bubble
+  version: 3
+  dependencies:
+  - numpy
+  physics:
+    equation: Keller-Miksis radial bubble dynamics
+    reference: Keller & Miksis 1980, J. Acoust. Soc. Am. 68, 628
+    integrator: RK4 with clamping
+    stability_clamps:
+      R_min_factor: 0.05
+      R_max_factor: 20.0
+      Rdot_max_factor: 0.9
+  default_parameters:
+    R0: 1.0e-06
+    rho: 1000.0
+    c: 1500.0
+    sigma: 0.072
+    mu: 0.001
+    p_inf: 101325.0
+    kappa: 1.4
+  derived:
+    minnaert_freq_at_R0_1um: 3283000.0
+    minnaert_freq_scaling: 1/R0
+  parity_certificate:
+    n_inputs: 2
+    n_functions: 16
+    fitness_threshold: 0.8
+    classification_thresholds:
+      linear_max: 8
+      single_threshold_layer:
+      - 12
+      - 14
+      multi_layer_min: 16
+    interpretation:
+      8/16: linear (linear separability bound)
+      12-14/16: single threshold layer
+      16/16: multi-layer nonlinear
+  reservoir_defaults:
+    n_bubbles: 5
+    detune_spread: 0.15
+    drive_amp_atm: 1.0
+    n_steps_per_bit: 500
+    dt: 1.0e-09
+    feature_window: 50
+  benchmark_results:
+    free_oscillation_range:
+    - 0.9845
+    - 1.02
+    driven_0.15_atm_range:
+    - 0.9577
+    - 1.0407
+    driven_0.50_atm_range:
+    - 0.8518
+    - 1.1353
+    driven_1.00_atm_range:
+    - 0.6939
+    - 1.2796
+    parity_fitness_by_n_bubbles:
+      '1': 0.875
+      '3': 1.0
+      '5': 1.0
+      '8': 1.0
+    lle_by_drive:
+      0.5x_minnaert_amp_0.5: -0.1412
+      0.5x_minnaert_amp_1.0: -0.0705
+      0.5x_minnaert_amp_1.5: -0.0088
+      1.0x_minnaert_amp_0.5: 0.1332
+      1.0x_minnaert_amp_1.0: 0.0599
+      1.0x_minnaert_amp_1.5: 0.0349
+      2.0x_minnaert_amp_0.5: 0.1423
+      2.0x_minnaert_amp_1.0: 0.2137
+      2.0x_minnaert_amp_1.5: 0.1817
+    checks_passed: 13
+    checks_total: 13
+  chaos_transition:
+    observation: LLE positive above Minnaert frequency, negative below
+    interpretation: subharmonic drive is periodic, superharmonic is chaotic
+  source_notes:
+    skills_document: XuanJi Skills and Anti-Skills — bubble RC section
+    parity_certificate_origin: 16-function capability battery from the SKILLS document
+    shared_normalization_origin: false +10 dB result reproducer from the SKILLS document
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-01T10:00:06.000Z'

@@ -1,0 +1,100 @@
+_id: 6abe1d88303828e10c7644ac
+id: Tohirju/tajik-embedding-giga3b
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- qwen3_bidirec
+- feature-extraction
+- sentence-similarity
+- retrieval
+- tajik
+- central-asia
+- lora
+- custom_code
+- tg
+- ru
+- en
+- uz
+- kk
+- ky
+- base_model:ai-sage/Giga-Embeddings-instruct-3B-0826
+- base_model:adapter:ai-sage/Giga-Embeddings-instruct-3B-0826
+- license:mit
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: Tohirju/tajik-embedding-giga3b
+author: Tohirju
+sha: 88d84c0ef82f3af691c15a8856e891f69759a5d4
+lastModified: '2026-10-01T08:58:47.000Z'
+gated: manual
+disabled: false
+model-index: null
+config:
+  architectures:
+  - Qwen3BidirectionalModel
+  auto_map:
+    AutoConfig: configuration_qwen3_bidirectional.Qwen3BidirectionalConfig
+    AutoModel: modeling_qwen3_bidirectional.Qwen3BidirectionalModel
+  model_type: qwen3_bidirec
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    pad_token: </s>
+    unk_token: <unk>
+cardData:
+  license: mit
+  language:
+  - tg
+  - ru
+  - en
+  - uz
+  - kk
+  - ky
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  base_model: ai-sage/Giga-Embeddings-instruct-3B-0826
+  tags:
+  - sentence-transformers
+  - feature-extraction
+  - sentence-similarity
+  - retrieval
+  - tajik
+  - central-asia
+  - lora
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: configuration_qwen3_bidirectional.py
+- rfilename: lora_adapter/adapter_config.json
+- rfilename: lora_adapter/adapter_model.safetensors
+- rfilename: model-00001-of-00002.safetensors
+- rfilename: model-00002-of-00002.safetensors
+- rfilename: model.safetensors.index.json
+- rfilename: modeling_qwen3_bidirectional.py
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-01T08:44:56.000Z'
+safetensors:
+  parameters:
+    BF16: 3150605312
+  total: 3150605312
+usedStorage: 6558593719
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 6547.9
+approxSizeMb: 6301.2
+fetchedAt: '2026-10-01T10:00:06.000Z'

@@ -1,0 +1,66 @@
+_id: 6abcf1c38cee0098dd6301d5
+id: infosecinnovations/all-MiniLM-L6-v2-GGUF
+private: false
+pipeline_tag: sentence-similarity
+library_name: gguf
+tags:
+- gguf
+- llama.cpp
+- embeddings
+- sentence-similarity
+- en
+- base_model:sentence-transformers/all-MiniLM-L6-v2
+- base_model:quantized:sentence-transformers/all-MiniLM-L6-v2
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+- feature-extraction
+downloads: 45
+likes: 0
+modelId: infosecinnovations/all-MiniLM-L6-v2-GGUF
+author: infosecinnovations
+sha: 3223bffb8f0e9e4f3256b8a74f8dc95ec35b0a53
+lastModified: '2026-09-30T11:34:07.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  language: en
+  base_model: sentence-transformers/all-MiniLM-L6-v2
+  base_model_relation: quantized
+  library_name: gguf
+  pipeline_tag: sentence-similarity
+  tags:
+  - gguf
+  - llama.cpp
+  - embeddings
+gguf:
+  total: 22565376
+  architecture: bert
+  context_length: 512
+  causal: false
+  bos_token: '[CLS]'
+  eos_token: '[SEP]'
+  totalFileSize: 25285600
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: all-MiniLM-L6-v2-Q8_0.gguf
+spaces: []
+createdAt: '2026-09-30T11:25:55.000Z'
+usedStorage: 25285600
+downloadsAllTime: 45
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-01T10:00:06.000Z'

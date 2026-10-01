@@ -1,0 +1,110 @@
+_id: 6abd1cfc9d7d6c8c1f8bdc1e
+id: zeechimp/hv-acausal-memory
+private: false
+pipeline_tag: feature-extraction
+tags:
+- hv_acausal_memory
+- vector-symbolic-architecture
+- sparse-ternary
+- memory-bank
+- forget-gate
+- resurrection
+- numpy-only
+- no-training
+- feature-extraction
+- license:mit
+- region:us
+downloads: 16
+likes: 1
+modelId: zeechimp/hv-acausal-memory
+author: zeechimp
+sha: 956e0a775925ea2cf2df03aad7d1b47e043fb95d
+lastModified: '2026-09-30T17:24:48.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: hv_acausal_memory
+cardData:
+  license: mit
+  pipeline_tag: feature-extraction
+  tags:
+  - vector-symbolic-architecture
+  - sparse-ternary
+  - memory-bank
+  - forget-gate
+  - resurrection
+  - numpy-only
+  - no-training
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: example.py
+- rfilename: hv_acausal_memory.py
+spaces: []
+createdAt: '2026-09-30T14:30:20.000Z'
+usedStorage: 0
+downloadsAllTime: 16
+inferenceProviderMapping: {}
+configJson:
+  model_type: hv_acausal_memory
+  version: 1
+  dependencies:
+  - numpy
+  primitive:
+    representation: sparse ternary (±1/0)
+    default_D: 5000
+    default_nnz: 200
+    default_max_anchors: 2000
+    similarity: weighted cosine
+  mechanisms:
+    forget_gate:
+      beta_base: 0.02
+      beta_max: 0.3
+      decay: exp(-beta * dt) applied per step
+      pressure: n_active / max_anchors
+    resurrection:
+      threshold: 0.3
+      boost: 0.5
+      trigger: cosine similarity between reminder and dead anchor's key
+    acausal_prefetch:
+      partial_query_keep_fraction: user-specified
+      similarity_restricted_to_known_dims: true
+    retrieval_boost: 0.5
+  capacity_bound:
+    formula: N ≈ D / (2 log D)
+    value_at_D_5000: 290
+    applies_to: noise-free recall
+    with_noise: effective bound is larger
+  storage_estimate:
+    dense_bytes_per_anchor: 2 * D
+    sparse_bytes_per_anchor: 2 * nnz * 3
+    at_D_5000_nnz_200:
+      dense_kb_per_anchor: 9.77
+      sparse_kb_per_anchor: 1.17
+      anchors_in_187KB: 160
+  benchmark_results:
+    noise_free_retrieval: 1.0
+    noise_p_0.2_retrieval: 1.0
+    noise_p_0.5_retrieval: 0.0
+    capacity_noise_free_N_4000: degrades below 1.0
+    capacity_p_0.2_N_4000: 1.0
+    exact_resurrection_rate: 1.0
+    partial_resurrection_rate_keep_0.5: 0.7
+    acausal_top1_keep_0.5_no_noise: 1.0
+    checks_passed: 16
+    checks_total: 16
+  source_notes:
+    issue: 'XuanJi #70'
+    title: Evolutionary Plugin Ecology — Hyper-NSV module
+    claims_in_source:
+    - 187 KB memory footprint
+    - acausal retrieval
+    - forget-gate prevents nostalgia loop
+    this_implementation: numpy-only reference with capacity, retrieval, and mechanism benchmarks
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-01T10:00:06.000Z'

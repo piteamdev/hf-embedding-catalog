@@ -1,0 +1,87 @@
+_id: 6a93cf157a697e518768a6c9
+id: harshaljanjani/gte-base-en-v1.5-hf
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- gte
+- feature-extraction
+- arxiv:1910.09700
+- endpoints_compatible
+- region:us
+downloads: 9
+likes: 0
+modelId: harshaljanjani/gte-base-en-v1.5-hf
+author: harshaljanjani
+sha: cbab990f5af1f3607b29a26d46b513547da79ab7
+lastModified: '2026-08-30T06:35:08.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  architectures:
+  - GteModel
+  model_type: gte
+  tokenizer_config:
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  library_name: transformers
+  tags: []
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-08-30T06:35:01.000Z'
+safetensors:
+  parameters:
+    F32: 136776192
+  total: 136776192
+usedStorage: 547119128
+downloadsAllTime: 49
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - GteModel
+  attention_probs_dropout_prob: 0.0
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 8192
+  model_type: gte
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  rope_parameters:
+    factor: 1.0218971486541166
+    rope_theta: 1000000.0
+    rope_type: linear
+  tie_word_embeddings: true
+  transformers_version: 5.16.0.dev0
+  type_vocab_size: 0
+  vocab_size: 30528
+onnxFiles: {}
+safetensorsSizeMb: 547.1
+approxSizeMb: 547.1
+fetchedAt: '2026-10-01T10:00:06.000Z'

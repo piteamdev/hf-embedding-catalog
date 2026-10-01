@@ -1,0 +1,93 @@
+_id: 6a93cecd5982f39f1ad27c2a
+id: harshaljanjani/gte-multilingual-base-hf
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- gte
+- feature-extraction
+- arxiv:1910.09700
+- endpoints_compatible
+- region:us
+downloads: 15
+likes: 0
+modelId: harshaljanjani/gte-multilingual-base-hf
+author: harshaljanjani
+sha: 9656a20bfacc9b9a24877e412b732e45d52ffd45
+lastModified: '2026-08-30T06:34:00.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - GteModel
+  model_type: gte
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: <unk>
+cardData:
+  library_name: transformers
+  tags: []
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-08-30T06:33:49.000Z'
+safetensors:
+  parameters:
+    F16: 305368320
+  total: 305368320
+usedStorage: 627834390
+downloadsAllTime: 65
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - GteModel
+  attention_probs_dropout_prob: 0.0
+  bos_token_id: null
+  classifier_dropout: 0.0
+  dtype: float16
+  eos_token_id: null
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  id2label:
+    '0': LABEL_0
+  initializer_range: 0.02
+  intermediate_size: 3072
+  label2id:
+    LABEL_0: 0
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 8192
+  model_type: gte
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 1
+  rope_parameters:
+    factor: 1.0671404006768237
+    rope_theta: 160000.0
+    rope_type: linear
+  tie_word_embeddings: true
+  transformers_version: 5.16.0.dev0
+  type_vocab_size: 1
+  vocab_size: 250048
+onnxFiles: {}
+safetensorsSizeMb: 610.8
+approxSizeMb: 610.7
+fetchedAt: '2026-10-01T10:00:06.000Z'

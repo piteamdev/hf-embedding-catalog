@@ -1,0 +1,233 @@
+_id: 6abd12ed5a830a9636e72eb1
+id: zeechimp/hv-chemical-compute
+private: false
+pipeline_tag: feature-extraction
+tags:
+- hv_chemical_compute
+- chemical-computing
+- crn
+- minsky-machine
+- dna-strand-displacement
+- compiler
+- numpy-only
+- no-training
+- feature-extraction
+- license:mit
+- region:us
+downloads: 25
+likes: 1
+modelId: zeechimp/hv-chemical-compute
+author: zeechimp
+sha: 224cd56959ddf408e215d612995d191d4d6bfc2f
+lastModified: '2026-09-30T17:23:46.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: hv_chemical_compute
+cardData:
+  license: mit
+  pipeline_tag: feature-extraction
+  tags:
+  - chemical-computing
+  - crn
+  - minsky-machine
+  - dna-strand-displacement
+  - compiler
+  - numpy-only
+  - no-training
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: example.py
+- rfilename: hv_chemical_compute.py
+spaces: []
+createdAt: '2026-09-30T13:47:25.000Z'
+usedStorage: 0
+downloadsAllTime: 25
+inferenceProviderMapping: {}
+configJson:
+  model_type: hv_chemical_compute
+  version: 2
+  dependencies:
+  - numpy
+  encoding:
+    register: multi_rail
+    rail_species_pattern: R_{r}_{k}
+    zero_detector_species_pattern: ZD_{r}
+    instruction_marker_pattern: I_{i}
+    waste_species: WASTE
+    n_max_auto_sizing: max register value in VM trace + 1
+  zero_detector_thresholds:
+    K_zd_max: 0.3
+    n_zd_min: 8
+    k_instr_min: 10.0
+  dsd_strand_budget:
+    formula: 2*bi + 2*uni + 1*src
+    practical_limit_low: 100
+    practical_limit_high: 200
+  reference_programs:
+    ADD_2_3:
+      n_regs: 2
+      initial:
+      - 2
+      - 3
+      expected:
+      - 5
+      - 0
+      n_max: 6
+      strands: 60
+    ADD_5_5:
+      n_regs: 2
+      initial:
+      - 5
+      - 5
+      expected:
+      - 10
+      - 0
+      n_max: 11
+      strands: 100
+    COPY_2:
+      n_regs: 2
+      initial:
+      - 2
+      - 0
+      expected:
+      - 0
+      - 2
+      n_max: 3
+      strands: 36
+    COPY_5:
+      n_regs: 2
+      initial:
+      - 5
+      - 0
+      expected:
+      - 0
+      - 5
+      n_max: 6
+      strands: 60
+    SUB_5_2:
+      n_regs: 2
+      initial:
+      - 5
+      - 2
+      expected:
+      - 3
+      - 0
+      n_max: 6
+      strands: 62
+    SUB_8_3:
+      n_regs: 2
+      initial:
+      - 8
+      - 3
+      expected:
+      - 5
+      - 0
+      n_max: 9
+      strands: 86
+    DOUBLE_3:
+      n_regs: 2
+      initial:
+      - 3
+      - 0
+      expected:
+      - 0
+      - 6
+      n_max: 7
+      strands: 82
+    COND_REL_0_0:
+      n_regs: 3
+      initial:
+      - 0
+      - 0
+      - 0
+      expected:
+      - 0
+      - 0
+      - 0
+      n_max: 1
+      strands: 29
+    COND_REL_0_1:
+      n_regs: 3
+      initial:
+      - 0
+      - 1
+      - 0
+      expected:
+      - 0
+      - 1
+      - 0
+      n_max: 2
+      strands: 41
+    COND_REL_1_0:
+      n_regs: 3
+      initial:
+      - 1
+      - 0
+      - 0
+      expected:
+      - 0
+      - 0
+      - 1
+      n_max: 2
+      strands: 41
+    COND_REL_1_1:
+      n_regs: 3
+      initial:
+      - 1
+      - 1
+      - 0
+      expected:
+      - 0
+      - 0
+      - 0
+      n_max: 2
+      strands: 41
+  isa_taxonomy:
+    n_isa: 16
+    n_implemented: 15
+    n_unimplemented: 1
+    unimplemented_name: HomoiconicISA
+    categories:
+      one-shot-marker:
+      - EnzymaticISA
+      - PeptideISA
+      - HomoiconicISA
+      - EvolvingISA
+      - AutocatalyticISA
+      - NestedISA
+      - ThresholdISA
+      - CascadeISA
+      - MechanicalISA
+      - PhotonicISA
+      pulse-quantum:
+      - OpticalISA
+      - ThermalISA
+      external-clock:
+      - OscillatoryISA
+      position-state:
+      - SpatialISA
+      - RedoxISA
+      - ChiralISA
+  benchmark_results:
+    n_programs: 11
+    n_verified: 11
+    checks_passed: 62
+    checks_total: 62
+    runtime_seconds: 0.9
+  source_notes:
+    minsky_1967: 'Computation: Finite and Infinite Machines'
+    cardelli_2009: Strand algebras for DNA computing
+    soloveichik_2008: DNA as a universal substrate for chemical kinetics
+    qian_winfree_2011: Scaling up digital circuit computation with DNA strand displacement cascades
+    xuanji_skills_3_5: Zero detector parameter thresholds
+    xuanji_skills_3_6: 16 ISA paradigm taxonomy
+    xuanji_skills_5_2: DSD strand budget formula
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-01T10:00:06.000Z'

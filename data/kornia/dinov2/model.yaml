@@ -1,0 +1,42 @@
+_id: 6abe0ffd4c81c77fde3f6ce5
+id: kornia/dinov2
+private: false
+pipeline_tag: feature-extraction
+tags:
+- kornia
+- feature-extraction
+- vision-transformer
+- arxiv:2304.07193
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: kornia/dinov2
+author: kornia
+sha: 4eabb0c4adaa6be6fd255f2ea1871e9d5d74aed9
+lastModified: '2026-10-01T07:52:58.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  tags:
+  - kornia
+  - feature-extraction
+  - vision-transformer
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: dinov2_vitl14_pretrain.safetensors
+spaces: []
+createdAt: '2026-10-01T07:47:09.000Z'
+usedStorage: 1217507104
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 1217.5
+approxSizeMb: 0.0
+fetchedAt: '2026-10-01T10:00:06.000Z'

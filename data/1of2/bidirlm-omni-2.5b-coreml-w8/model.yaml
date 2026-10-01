@@ -1,0 +1,99 @@
+_id: 6ab5f23420e275364f64e8ff
+id: 1of2/bidirlm-omni-2.5b-coreml-w8
+private: false
+pipeline_tag: feature-extraction
+library_name: coreml
+tags:
+- coreml
+- text-embeddings
+- image-embeddings
+- audio-embeddings
+- multimodal
+- apple-silicon
+- feature-extraction
+- base_model:BidirLM/BidirLM-Omni-2.5B-Embedding
+- base_model:finetune:BidirLM/BidirLM-Omni-2.5B-Embedding
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: 1of2/bidirlm-omni-2.5b-coreml-w8
+author: 1of2
+sha: c228769d56fad334c82d726c31f184122f04f5f9
+lastModified: '2026-10-01T04:11:16.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: BidirLM/BidirLM-Omni-2.5B-Embedding
+  pipeline_tag: feature-extraction
+  library_name: coreml
+  tags:
+  - coreml
+  - text-embeddings
+  - image-embeddings
+  - audio-embeddings
+  - multimodal
+  - apple-silicon
+siblings:
+- rfilename: .gitattributes
+- rfilename: BidirLMOmni.mlmodelc/analytics/coremldata.bin
+- rfilename: BidirLMOmni.mlmodelc/coremldata.bin
+- rfilename: BidirLMOmni.mlmodelc/metadata.json
+- rfilename: BidirLMOmni.mlmodelc/model.mil
+- rfilename: BidirLMOmni.mlmodelc/weights/weights_0.bin
+- rfilename: BidirLMOmni.mlmodelc/weights/weights_1.bin
+- rfilename: BidirLMOmni.mlmodelc/weights/weights_2.bin
+- rfilename: BidirLMOmniAudioANE.mlmodelc/analytics/coremldata.bin
+- rfilename: BidirLMOmniAudioANE.mlmodelc/coremldata.bin
+- rfilename: BidirLMOmniAudioANE.mlmodelc/metadata.json
+- rfilename: BidirLMOmniAudioANE.mlmodelc/model.mil
+- rfilename: BidirLMOmniAudioANE.mlmodelc/weights/weights_0.bin
+- rfilename: BidirLMOmniAudioANE.mlmodelc/weights/weights_2.bin
+- rfilename: BidirLMOmniLanguageANE.mlmodelc/analytics/coremldata.bin
+- rfilename: BidirLMOmniLanguageANE.mlmodelc/coremldata.bin
+- rfilename: BidirLMOmniLanguageANE.mlmodelc/metadata.json
+- rfilename: BidirLMOmniLanguageANE.mlmodelc/model.mil
+- rfilename: BidirLMOmniLanguageANE.mlmodelc/weights/weights_0.bin
+- rfilename: BidirLMOmniLanguageANE.mlmodelc/weights/weights_1.bin
+- rfilename: BidirLMOmniLanguageANE.mlmodelc/weights/weights_2.bin
+- rfilename: BidirLMOmniVisionANE.mlmodelc/analytics/coremldata.bin
+- rfilename: BidirLMOmniVisionANE.mlmodelc/coremldata.bin
+- rfilename: BidirLMOmniVisionANE.mlmodelc/metadata.json
+- rfilename: BidirLMOmniVisionANE.mlmodelc/model.mil
+- rfilename: BidirLMOmniVisionANE.mlmodelc/weights/weights_0.bin
+- rfilename: BidirLMOmniVisionANE.mlmodelc/weights/weights_2.bin
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: cos.f16
+- rfilename: cos.npy
+- rfilename: encoder.py
+- rfilename: inv_freq.f32
+- rfilename: inv_freq.npy
+- rfilename: manifest.json
+- rfilename: model.json
+- rfilename: requirements.txt
+- rfilename: sin.f16
+- rfilename: sin.npy
+- rfilename: streamed.json
+- rfilename: streamed_media.json
+- rfilename: token_embeddings.f16
+- rfilename: tokenizer/chat_template.jinja
+- rfilename: tokenizer/config.json
+- rfilename: tokenizer/processing_bidirlm_omni.py
+- rfilename: tokenizer/processor_config.json
+- rfilename: tokenizer/tokenizer.json
+- rfilename: tokenizer/tokenizer_config.json
+- rfilename: vision_pos_embed.f32
+spaces: []
+createdAt: '2026-09-25T04:01:56.000Z'
+usedStorage: 8413870107
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-01T10:00:06.000Z'

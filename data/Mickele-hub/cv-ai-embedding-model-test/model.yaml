@@ -1,0 +1,749 @@
+_id: 6abceadb44f6cbf4f2292307
+id: Mickele-hub/cv-ai-embedding-model-test
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:100
+- loss:CosineSimilarityLoss
+- arxiv:1908.10084
+- base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- base_model:finetune:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 13
+likes: 0
+modelId: Mickele-hub/cv-ai-embedding-model-test
+author: Mickele-hub
+sha: 3b086ceeea1f3884c68af4cb04440c3995c3002f
+lastModified: '2026-09-30T11:01:56.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: 'SummaryAccountant for a Medium sized Company
+
+    SkillsGuest servicesInventory control proceduresMerchandising expertiseLoss preventionCash register operationsProduct
+    promotions
+
+    ExperienceAccountant,01/2009toPresentAnimal Health International, Inc.–Mount Joy,PA,Hired by their CPA firm to handle
+    all accounting and job cost Reporting.Accountant,01/2007to01/2009Animal Health International, Inc.–Greeley,CO,Hired by
+    their CPA firm to handle all accounting functions..Accountant,01/1997to01/2007Animal Health International, Inc.–Manchester,IA,Installed
+    new Peachtree Accounting System.Installed new computer system using a local area network and Added a Web site.
+
+    Education and TrainingB.S:Business Administration Accounting,Expected in1974toUniversity of Cincinnati-Cincinnati,OHGPA:Business
+    Administration Accounting
+
+    Skillsaccounting, CPA, local area network, Peachtree Accounting, Reporting, Web site'
+  sentences:
+  - "Job Purpose: Perform designated tasks in the area of technical sub-ledger accounting related to all lines of business.\
+    \ Perform and review tasks related to period end financial closing.\nKey Responsibilities:Investigate and resolve discrepancies\
+    \ by actively collaborating and communicating across departments. Create policies and procedures for developing areas\
+    \ such as the Surety accounting.Review accounting entries posted to the general ledger to ensure proper accounting treatment.Work\
+    \ closely with other teams to ensure proper premium accounting and make manual corrections as needed.Prepare complex monthly\
+    \ bank reconciliations. Responsible for reconciling intercompany AP, AR, and P&L for all other BUs.Perform complex manual\
+    \ processes necessary to maintain proper accounting records and develop ways to automate them.Present to management premium\
+    \ results monthly including thorough explanations on insurance revenues, service revenues, and bad debt. Able to speak\
+    \ to analytical results.Perform regular analytics prior to, during, and post monthly close.Investigate and resolve discrepancies\
+    \ and fluctuations resulting from analytics performed by collaborating with other teams to determine accurate results.Responsible\
+    \ for preparing documentation and providing explanations as requested by internal and external auditors and regulators.\
+    \ \nKey Experience:7+ years accounting experience4+ years as a seasoned senior accountantPublic accounting a plusKnowledge\
+    \ of insurance accounting a plus\nKey Requirements:Bachelors Degree in Accounting  Finance Accounting and technical know-how,\
+    \ basis for understanding of accounting, and advanced technical systems. Good knowledge of MS Office suiteWillingness\
+    \ to work overtime as needed to meet monthly deadlinesStrong analytical, critical thinking & problem solving skillsStrong\
+    \ aptitude for accuracy and attention to detailExcellent written and verbal communication skills.Strong organizational\
+    \ skills and ability to manage deadlines. Ability to collaborate and influence internal partners to set up corrective\
+    \ action plansHigh level of initiative & ability to be autonomousAble to multi task"
+  - "Compensation: $30-$45hr\nLocation: Lakewood, CO (Hybrid)\nTITLE: Operational Accountant\nInceed has partnered with a\
+    \ great company to help find a skilled Operational Accountant to join their team!\nThe Operational Accountant is directly\
+    \ responsible for various aspects of closing the accounting books and billing, in accordance with GAAP and FERC, monthly\
+    \ for the crude segment.\nResponsibilities:\nPrepare adjusting close journal entries, including but not limited to: Revenue\
+    \ Accruals, Expense Accruals, Deferred Revenue. Analyze balance sheets and income statements monthly for accuracy.Assist\
+    \ the Accounting Manager with monthly, quarterly and yearly gross margin analysis.Responsible for certain monthly invoicing\
+    \ processes. Prepare balance sheet account reconciliations and maintain supporting schedules.  Required Qualifications\
+    \ & Experience:\nBachelors degree in Finance, Accounting or a related discipline3-4 years of experience actively involved\
+    \ in a relevant and related roleMust have a fundamental understanding of accounting and financial principlesAdvanced Excel\
+    \ experience  Nice to Have Skills & Experience:\nOil and gas industry experience preferred  Perks & Benefits: \n3 different\
+    \ medical health insurance plans, dental, and vision insuranceVoluntary and Long-term disability insurancePaid Time Off,\
+    \ 401k, and Holiday Pay*Weekly direct deposit or pay card deposit Other Information:\nThis position is a 6 month contractThis\
+    \ position requires a drug and background check\nIf you are interested in learning more about the Operational Accountant\
+    \ opportunity, please submit your resume for consideration. We are unable to provide sponsorship at this time.\nWe are\
+    \ Inceed, a staffing and direct placement firm who believes in the possibility of something better. Our mission is simple:\
+    \ Were here to help every person, whether client, candidate, or employee, find and secure whats better for them. \nInceed\
+    \ is an equal opportunity employer. Inceed prohibits discrimination and harassment of any type and affords equal employment\
+    \ opportunities to employees and applicants without regard to race, color, religion, sex, sexual orientation, gender identity\
+    \ or expression, pregnancy, age, national origin, disability status, genetic information, protected veteran status, or\
+    \ any other characteristic protected by law.\n"
+  - "HiETLData EngineerDallas tx-Onsite\nNeed only Local to DALLAS, TX- Onsite 1) Need Data Engineer with heavy Python Development\
+    \ Background.2) Must have worked on UNIXLINUX, Extensive Experience with SQLUnixLinux scripting is a must.3) Strong exp\
+    \ on AWS Cloud, Experience in Automating ETL process with Python and Automation around AWS Data & Infrastructure4) AWS\
+    \ Glue is must, with hold on ETL Concepts.5) Good to have Testing exp and familiarity with Test Strategies. \nRegards,Nisha\
+    \ JhaTechnical RecruiterNisha.j@peritussoft.com"
+- source_sentence: 'SummaryMotivatedSoftware Developerseeks employment as part of a dynamic software development team. Fluent
+    in C, C++, HTML, and JavaScript with extensive experience in Python and Java.
+
+    HighlightsProficient in multiple modern programming languagesRESTful web API developmentExperience with cloud based computing
+    including Google App EngineSuccessful leader and team player
+
+    ExperienceMechanical Engineer,02/2013to05/2015Viasat Inc.–DC,State,Develop, improve, and maintain Magnetic Bearing Analysis
+    SoftwareLead Engineer for Turbine-Generator Governor-Regulator dynamic modelingAssisted with testing of Advanced Control
+    Features on existing platformsAssisted with trouble-shooting Magnetic Bearing Engineering Model test platform.LEGO Robotics
+    Instructor,06/2012to07/2012Viasat Inc.–Linthicum Heights,MD,LEGO Robotics Instructor for Grades 4-6, responsible for curriculum
+    design and teaching.Mechanical Engineer,08/2008to11/2011Calportland–Avondale,AZ,Performed on-site Material Condition Assessments
+    on topside Fire Control SystemsOn-site representative and Quality Assurance for phased-array radar coating applicationFabricated
+    antenna and radome composite moisture standardsDeveloped Testing Procedures for Non-Destructive Polymer Cleaning PadsUpdated
+    branch training materials and official response messages.Mechanical Engineer, Intern,06/2005to2006Panasonic Avionics Corporation–City,STATE,Prototyping
+    & Assembly of Engineering Design Models Test Support & DocumentationThermal Chamber, Bench-Top Thermal & Vibration Shake-TableTechnical
+    Drawing Updates: Aluminum Sheet Metal and Electronic Cable Design
+
+    EducationBachelor of Science:Computer Science,Expected in2016toOregon State University-Corvallis,ORGPA:Bachelor of Science:Mechanical
+    Engineering / Mechatronics Concentration,Expected in2008toCalifornia Polytechnic State University-San Luis Obispo,CAGPA:
+
+    Skills'
+  sentences:
+  - "At Farmer Brothers, Sales Tax Accountant will be focused primarily on tax compliance with sales tax, property tax and\
+    \ business licenses. This role requires prior accounting experience, along with great knowledge of current law, regulations,\
+    \ and tax requirements. A successful candidate will have a keen attention to detail, be highly organized, and know a significant\
+    \ deal about tax management. They should also know how to recommend best tax processes that strictly adhere to all legal\
+    \ requirements while simultaneously promoting our companys financial prosperity. In this role, you will conduct and document\
+    \ sales tax audit support.  \nResponsibilitiesPrepares and files sales & use returns on a monthly, quarterly, and annual\
+    \ basis. (Vertex software tool)Prepares and files property tax returns. Renews business licenses, tax permits, and other\
+    \ occupational permits with cities and other taxing authorities. This includes Tribal and Casino Vendor licenses.Troubleshoots\
+    \ notices and responds to inquiries for all of the above tax-related payments and filings.Assists with various other Tax\
+    \ Department activities and projects including SalesUse and Property Tax audits.\nEducation & ExperienceBachelor's degree\
+    \ in Accounting or Finance required.CPA license preferred.Minimum of 3+ years of tax accounting experience.Public company\
+    \ experience is preferred.Enterprise systems knowledge preferred.Advanced proficiency in Microsoft Office internet, web-based\
+    \ and job specific software applications.Experience utilizing Vertex tax system (a plus) Personal & Professional SkillsetsResourcefulinnovativecreativelooks\
+    \ for better ways to do thingsExcellent problem-solving abilities and the ability to work with other departments within\
+    \ the organization to implement business solutions.Highly organized and willing to engage with internal departments and\
+    \ external auditors to comply with filing and reporting requirements.Ability to manage multiple projects simultaneously.Able\
+    \ to meet deadlines, follow through on commitments and deliver on promises.Strong written and verbal communication skills.Organized\
+    \ and can manage competing deadlines and due datesOpen and straightforward, with strong work ethic"
+  - 'RoleGaming Business AnalystResponsibilities Ability to understand vast amounts of data, identify and fix data issues
+    Strong in database and Data Warehousing concepts Strong in TSQL Data analysis and presentation Data insight generation
+    Strong reporting using Power BI, Power Apps & Excel Ability to succeed in a fast-paced, dynamic business environment Excellent
+    technical & analytical skills with strong business acumen Strong communication skillsRequired SkillsProven experience
+    as a Gaming Domain Expert, Game Analyst, or similar role within the gaming industry.Passion about gaming and a genuine
+    interest in the gaming industry.Strong communication and presentation skills to effectively convey research findings to
+    both technical and non-technical stakeholders.Strong analytical skills and ability to interpret complex data sets to derive
+    meaningful insights.Should be able to do the qualitative and quantitative Research on gaming data such as competitor trends,
+    product performance, consumers, games, and acquisitions .Excellent research abilities, with a proactive approach to stay
+    updated on industry developments.Must have Deep understanding of Gaming Industry trends to perform ad-hoc analysis and
+    research across a broad range of industries.Deep knowledge and understanding of gaming platforms, game genres, player
+    behavior, and industry trends, patterns, and insights for game console, games, and subscriptions across all gaming companies.Analyze
+    internal game meta data and KPIs and helping in curating the game, genre, publisher, developer etc.Identify key takeaways
+    based on research, prepare presentations, communicate with business stakeholders.Should be able to build the forecasting
+    model for any game or game franchise.Perform Market studies, consumer insights, competitive analysis, ad hoc reporting,
+    and market trends across the gaming and game development industries.Basic Understanding of T-SQLFamiliarity with data
+    analysis tools and techniques.Should be able to create the pivots in Excel from Relational models for slice and dice the
+    data.Ability to understand vast amounts of data.Identify and fix data issues ,Data analysis and presentation ,Data insight
+    generation.Ability to thrive in a fast-paced, dynamic business environment ,Excellent technical & analytical skills with
+    strong business acumen ,Strong communication skills,SQL, ExcelGood to have skillsDigital : PythonExperience Required (in
+    Yrs.)5+ YearsWork LocationBellevue, USA'
+  - "Location: Minneapolis, MN (Remote)Job Summary: \nSkillset: Azure Data factory, Databricks, SQL, Spark Scala, and couple\
+    \ internal frameworks (ADF template & Data-at-scale)\nResponsibilities: Good communication and proper accountability on\
+    \ assigned tasks. Develop and deploy ADF pipelines. Develop SQLs out of the requirement documentation. Design and implement\
+    \ yaml configurations for Spark framework. Working with Oracle Stored Procedures and Airflow scheduling.\nAdd-ons: Reusable\
+    \ Spark framework development. API development & integration from Spark Scala. Java Script to enhance existing framework\
+    \ to integrate with Azure APIs.\nNitesh JaiswalSr. Technical RecruiterEmail ID: niteshjaiswal@enterprisesolutioninc.comWebsite-www.enterprisesolutioninc.comContact\
+    \ No-469-824-3140Linkedin-https:www.linkedin.cominnitesh-jaiswal-a378b5222Address: 500 E. Diehl Road, Suite 130. Naperville,\
+    \ IL 60563"
+- source_sentence: 'Professional SummaryExperienced Data Entry Administrator with many years of experience in Office Administration.
+    Excellent reputation for resolving problems and improving customer satisfaction. To seek and maintain full-time position
+    that offers professional challenges utilizing interpersonal skills, excellent time management and problem-solving skills.
+
+    SkillsAdministrative Support ClericalCustomer Service Data Entry Maintain inventory ScanningAttention to DetailExcellent
+    CommunicationWritten CommunicationMultitasking AbilitiesMS Office
+
+    Work History02/2020toCurrentData Entry Administrator / Process and ControlCity Wide Facility Solutions–Westwood,NJ,Key
+    in paper applications and scan them to ensure appropriate documentation.Responsible for filing, sorting, and distributing
+    company mail.Reviewed reports daily to ensure proper call center procedures are followed for credit card fee reversals,
+    new card requests, application documentation, credit limit increases and billing disputes.Document non-compliant instances
+    for correction by call center.Investigate and analyzes determination on complex service-related disputes involving consumers
+    to ensure compliance with credit card regulations, avoid litigation costs and promote consumer goodwill.Perform other
+    duties as assigned.04/2018to02/2020Senior Service Representative/ Speciman ProcessorLabCorp–City,STATE,SortingComputer
+    proficient Complaint resolution Credit card processing Route dispatch, Assisted pathology team with skilled analyses by
+    preparing tissue samplesCollect blood and tissue samples with focus on accuracy and adherence to aseptic techniques Loaded
+    truck and properly secured items to prevent damage for over 20 deliveriesSafely loaded and unloaded 50 pounds of hazardous
+    material without incident06/2016to04/2018Data Entry Clerk IIIBank Of America/ Aerotek–City,STATE,Reviewed and updated
+    client correspondence files and database information to maintain accurate recordsKept optimal quality levels to prevent
+    critical errors and support team performance targets Corrected any data entry error to prevent later issues such as duplication
+    or data degradation Entered client information into databases quickly and with minimal errorsNegotiated agreements between
+    employees to clarify misunderstood directions and resolve conflicts affecting performance06/2013to02/2016Accounting AdministratorHorizon
+    Services–City,STATE,Managed all petty cashHandled payroll duties for 3 departmentsHandled billing plans and physical contracts
+    with vendors Processed bank deposits and reconciled financial statements, Kept physical files and digitized records organized
+    for easy updating and retrieval by authorized team membersImproved office operations by automating client correspondence,
+    record tracking and data communications
+
+    EducationExpected in08/2004totoCertificate: Medical Office Administrator:DPT Business School-Philadelphia,PAGPA:Expected
+    in06/1988totoHigh School Diploma:Long Beach High School-Long Beach,NYGPA:
+
+    SkillsAdministrative Support ClericalCustomer Service Data Entry Maintain inventory ScanningAttention to DetailExcellent
+    CommunicationWritten CommunicationMultitasking AbilitiesMS Office'
+  sentences:
+  - "Software Data Engineer (ScalaPython) Hybrid on-site in Chicago, IL - local candidates or those willing to relocate only!\
+    \ Proprietary Trading Firm is looking to grow their data engineering organization with two engineers. Please see the details\
+    \ for both profiles below:  1. Software Engineer (ScalaPython)3+ years experience programming in Scala andor Python Cloud\
+    \ data platform development and deployment using Infrastructure-as-CodeOperational dashboards to monitor data ingestion\
+    \ using Grafana, PrometheusOther technologies: GitLab, Bitbucket, Jenkins, RDS, S3 2. Software Engineer (Scala)3+ years\
+    \ experience programming in Python Large scale data platforms such a Spark, Kafka, Delta Lake Experience with ETL pipelines\
+    \ for batch and live streaming Other technologies: EKSKubernetes, MSKKafka, Spark, Databricks, Flink This is an opportunity\
+    \ to work at a data-driven organization in Chicago, IL with a collaborative, growing department. Other benefits include:\
+    \ Flexible hybrid work style - in office TuesThurs (downtown Chicago, IL)Competitive compensation structure with uncapped\
+    \ bonus potential Work with modern technologies, see the impact of your work on the direct businessInteract with all parts\
+    \ of the business such as Compliance, Quants and Trading. \n \n\nEOE Statement: Specialist Staffing Group is an equal\
+    \ opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color,\
+    \ religion, sex, sexual orientation, gender identity, national origin, disability, or veteran status.\n \nTo find out\
+    \ more about Huxley please visit www.huxley.com"
+  - Requirement -  Must have experience in FACETS.LeadExecute all or part of the business analysis on business featuresuser
+    stories. Provide oversight when junior BAs are involvedResponsible for gathering and understanding of business needs and
+    translating them into effective user storiesrequirements.Assist in the estimation, prioritization and implementation of
+    cost-effective business process and system solutions.Work with Product Owner Business in prioritization and implementation
+    of cost-effective business process and system solutions.On-boarding and mentoring BAsnew BAs into the organization.Proactively
+    acquire BU domain knowledge and facilitate the growth of domain knowledge throughout the technical teams. Lead or support
+    Knowledge management initiativesDevelop a strong understanding of the industry & the organizational vision, mission, strategic
+    goals
+  - Vaco has a client in Absecon that is looking for a property accountant with strong financial reporting skills and some
+    accounting experience with affordable multifamily properties. Any experience with industry software like Yardi or RealPage
+    is preferred, and strong Excel skills are required. This is a hybrid role and a chance to join an industry leading company
+    that is looking to grow and expand their portfolio.
+- source_sentence: 'SummaryTo participate as a team member in a dynamic work environment focused on promoting business growth
+    and building
+
+    University popularity by providing superior value and service. Effective as a team member and as an individual. Experienced
+    customer service representative          Experience with Oracle PeopleSoft SIS with excellent communication skills          Highly
+    proficient in Slate CRM systems Enthusiastic, resourceful and enjoy challenges          Passionate about prospective student
+    access Capable of effectively communicating at          to opportunity various levels with individuals and groups
+
+    Core QualificationsGuest servicesInventory control proceduresMerchandising expertiseLoss preventionCash register operationsProduct
+    promotions
+
+    Professional Experience08/2014toCurrentData ProcessorAltus Group Limited–Dallas,TX,Process and verify prospective student
+    application materials.Ensure data integrity for accurate dissemination among all offices of enrollment services.Manage
+    email marketing campaigns for various high school level search name purchases.Advise applicants on various requirements,
+    deadlines, and application status to drive application completion.06/2013to08/2013Executive AssistantAmerican Well–Cleveland,OH,Prepared
+    papers/reports for consideration and presentation by head Chartered Accountant.Responsible for all aspects of the day
+    to day running of the filing, copying, and report writing.Maintained expense reports of personal projects for head C.A.02/2011to05/2014Admissions
+    AssistantMiddlebury College–Middlebury,VT,Greet visitors, conduct tours as needed, provide basic information regarding
+    the University.Interact with a large number of staff, students (pre-college), faculty, and parents.Promote a positive
+    work atmosphere by behaving and communicating in a manner that supports students, staff, parents, and general public.Maintain
+    confidentiality of student records.10/2010to04/2014Assistant Cross-Country CoachPlatte Canyon District–Bailey,CO,Communicate
+    goals and expectations to team members.Lead team practices during scheduled summer weekdays.Promote a constructive and
+    safe learning environment to allow runners of all levels to advance both as athletes as well as mindful students.
+
+    Education and TrainingExpected in2014totoBachelor of Arts:Liberal Arts Environmental StudiesSoka University of America-Aliso
+    Viejo,CaliforniaGPA:Dean''s List MemberLiberal Arts Environmental Studies Dean''s List MemberExpected in2012totoIntensive
+    Language Program:La Universidad de San Francisco de Quito  Cumbaya-Quito,GPA:
+
+    SkillsAccountant, basic, C, copying, email, expense reports, filing, marketing, materials, report writing'
+  sentences:
+  - "Senior Salesforce Software Engineer, Salesforce declarative and Programmatic Customization(VISA INDEPENDENT ONLY)W2Remote\
+    \ (candidates must work CST hours)12 months Software Engineer with a Salesforce background Strong experience with an understanding\
+    \ of:o Salesforce Declarative and Programmatic Customizationo Salesforce design concepts that provide security and stabilityo\
+    \ Debugging code andor complex log files for troubleshooting and analysis of product defectso Querying databases for complex\
+    \ data lookupupdateo Version and revision control practices and procedures Financial Services Industry experience is preferred\
+    \ Preferred Salesforce Certifications: Salesforce Certified Administrator Salesforce Platform App Builder Salesforce Platform\
+    \ Developer I Salesforce Platform Developer II Salesforce OMNI Studio Developer\n Please share profiles to saran@focuzmindz.com"
+  - "***W2 ONLY** \nSoftware Engineer (12-month contract  REMOTE, team based in Mounds View, MN):\nTop 3 Skills:1. JavaScript2.\
+    \ Vue.js 3. Gitlab\nTarget Years of Experience: 0-2 years\nOther relevant software development Must Haves:DockerJSONPostgreSQLreact.jsREST\
+    \ APISpring BootSpring FrameworkSQLVue.JSXML\nPreferred Software experience:flaskGrailsGroovyPython\nDuties:Participate\
+    \ in requirements formulation, design, prototype, develop, and documentation of the software applications and ensure the\
+    \ solutions meets all requirements.Help determine technical direction for multiple projects to streamline workflow efficiencies.Will\
+    \ be responsible for creating brand new solutions with support to meet business process needs.Strong communicator with\
+    \ senior internal and external customers and vendors.Designs, develops, tests, debugs, and implements operating systems\
+    \ components, software tools and utilities. Determines systems software design requirements. Ensures that system improvements\
+    \ are successfully implemented and monitored to increase efficiency. Generates systems software engineering policies,\
+    \ standards, and procedures. \nRequired Knowledge and Experience: Requires practical knowledge and demonstrated competence\
+    \ within job area typically obtained through advanced education combined with experience. Requires a University Degree\
+    \ and minimum of 2 years of relevant experience, or advanced degree with 0 years of experience."
+  - 'RoleGaming Business AnalystResponsibilities Ability to understand vast amounts of data, identify and fix data issues
+    Strong in database and Data Warehousing concepts Strong in TSQL Data analysis and presentation Data insight generation
+    Strong reporting using Power BI, Power Apps & Excel Ability to succeed in a fast-paced, dynamic business environment Excellent
+    technical & analytical skills with strong business acumen Strong communication skillsRequired SkillsProven experience
+    as a Gaming Domain Expert, Game Analyst, or similar role within the gaming industry.Passion about gaming and a genuine
+    interest in the gaming industry.Strong communication and presentation skills to effectively convey research findings to
+    both technical and non-technical stakeholders.Strong analytical skills and ability to interpret complex data sets to derive
+    meaningful insights.Should be able to do the qualitative and quantitative Research on gaming data such as competitor trends,
+    product performance, consumers, games, and acquisitions .Excellent research abilities, with a proactive approach to stay
+    updated on industry developments.Must have Deep understanding of Gaming Industry trends to perform ad-hoc analysis and
+    research across a broad range of industries.Deep knowledge and understanding of gaming platforms, game genres, player
+    behavior, and industry trends, patterns, and insights for game console, games, and subscriptions across all gaming companies.Analyze
+    internal game meta data and KPIs and helping in curating the game, genre, publisher, developer etc.Identify key takeaways
+    based on research, prepare presentations, communicate with business stakeholders.Should be able to build the forecasting
+    model for any game or game franchise.Perform Market studies, consumer insights, competitive analysis, ad hoc reporting,
+    and market trends across the gaming and game development industries.Basic Understanding of T-SQLFamiliarity with data
+    analysis tools and techniques.Should be able to create the pivots in Excel from Relational models for slice and dice the
+    data.Ability to understand vast amounts of data.Identify and fix data issues ,Data analysis and presentation ,Data insight
+    generation.Ability to thrive in a fast-paced, dynamic business environment ,Excellent technical & analytical skills with
+    strong business acumen ,Strong communication skills,SQL, ExcelGood to have skillsDigital : PythonExperience Required (in
+    Yrs.)5+ YearsWork LocationBellevue, USA'
+- source_sentence: "SummaryHighly motivated Sales Associate with extensive customer service and sales experience. Outgoing\
+    \ sales professional with track record of driving increased sales, improving buying experience and elevating company profile\
+    \ with target market.\nHighlightsLabVIEW, Virtuoso (Cadence) Design Suite, P LE CS, Cadence Schematic editor, AWR Microwave\
+    \ Office,\n   MATLAB/SIMULINK, Code Composer Studio, National Instruments PXI, Texas Instruments VLCT for IC Testing-\n\
+    \   ATE\n   Programming Languages: C, C++, Python, Assembly and VHDL\nExperience06/2014toPresentElectrical Design Engineer|,,Working\
+    \ on developing next generation intelligent down-hole oil drilling tools.Working on automating Calibration process for\
+    \ Accelerometers and Magnetometers Working on developing automated test systems using LabVIEW and Python.toResearch AssistantRockwell\
+    \ Automation, Inc.|,,Worked on developing high accuracy GPS System and also on finding outliers in large collection of\
+    \ Cotton fiber cross-section scan data.toProduct Engineering InternDartmouth College|,,www.physitechelectronics.com) Developed\
+    \ Hardware and Software for various Major projects on embedded systems with variety of sensors.Developed Firmware for\
+    \ a Programmer to program AVR Microcontrollers through USB Port Served as the President of The Electronics Club, SNIST,\
+    \ Hyderabad for two years (2010-2012) Electronix Club is a student's organization founded in 2009 in Sreenidhi Institute\
+    \ of Science and Technology, Hyderabad, India by a group of electronics freaks to learn and share the concepts of electronics\
+    \ and prosper in the process Taught classes on basic Analog Circuits, Microcontroller Programming and Sensor interfaces\
+    \ during this period.\nEducationExpected inMay, 2014totoMaster of Science|Electrical EngineeringTexas Tech University,Lubbock,TXGPA:GPA:\
+    \ 3.9/4.0Electrical Engineering GPA: 3.9/4.0Expected inMay, 2012totoBachelor of Technology|Electronics and Communications\
+    \ EngineeringJawaharlal Nehru Technological University,,GPA:GPA: 3.7/4.0Electronics and Communications Engineering GPA:\
+    \ 3.7/4.0\nSkillsArchitect, basic, C, C++, CAD, Cadence, Calibration, com, Hardware, editor, Electronics, embedded systems,\
+    \ GPS, LabVIEW, MATLAB, Office, Microwave, Composer, Networks, next, oil, Programmer, Programming, prosper, Python, USB,\
+    \ VHDL"
+  sentences:
+  - "Duration: 6-Month contract - NO possibility to go perm - contract may be extended. \n\nFULLY REMOTE\n\nMust-Haves: 3+\
+    \ years of accounting experienceStrong Excel experience and knowledge (v lookups, pivot tables, etc) as well as analytical\
+    \ skills.Excellent oral and written communication skills, able to research invoices, work across teams to solve issues,\
+    \ and documentation.Bank reconciliation experienceMultifamily experience \n\n\n\nDay-to-Day: Our client is looking for\
+    \ a Staff Accountant that will be reporting to the Division Controller and responsible for assisting in all financial\
+    \ reporting and accounting related services required for the Division. This role is pivotal to the Accounting teams goals\
+    \ and outcomes of accurate and timely completion of all accounting deliverables. This person will be assisting in monthly\
+    \ financial close process and preparing and inputting journal entries, working with accounts payable, receivables, cash\
+    \ transactions, and other related duties."
+  - 'Data EngineerLength of Assignment: 6+ monthsWork Location: Remote US (NJ preferred)
+
+    SUMMARY OF ESSENTIAL JOB FUNCTIONS:Design and develop analytical models and be the face to the data consumers.Perform
+    data curation to meet the business requirements.Build batch and streaming data pipelines.Develop processes for automating,
+    testing, and deploying your work.Identify risks and opportunities of potential logic and data issues within the data environment.Collaborate
+    effectively with the global team and ensure day to day deliverables are met.
+
+    MINIMUN REUIREMENTS:MUST HAVE experience with GCPGoogle Cloud Platform andor Spark.Bachelors degree and 5+ years of industry
+    experience in software development, data engineering, business intelligence, data science, or related field with a track
+    record of manipulating, processing, and extracting value from large datasets.3+ years of experience as Data Engineer or
+    in a similar roleProven experience with AWS andor GCP, Hadoop, Vertica, Talend, Tableau, and other modern technology platforms
+    is required.Cloud to Cloud migration experience preferred.Have knowledge of data management fundamentals and data storage
+    principlesHave knowledge of systems as it pertains to data storage and computing.Strong source to target mapping experience
+    and ETL principlesknowledge.Excellent verbal and written communication skills.Strong quantitative and analytical skills
+    with accuracy and attention to detailAbility to work well independently with minimal supervision and can manage multiple
+    priorities.'
+  - At Monument, were building a vertical software platform for the self-storage industry. This is a rare opportunity to reinvent
+    a $30 billion market from the ground up.As a Lead Engineer, you will work closely with engineering and product leadership
+    to design and build the first version of Monuments software platform from scratch, using the most modern technologies
+    available - no tech debt, no legacy systems, just a blank whiteboard. Your ResponsibilitiesDesign highly-scalable solutions
+    for an enterprise application.Lead a team of engineers to deliver quality software, on time and on budget.Empower your
+    teammates to tackle projects by assisting with technical planning, reviewing code, and promoting strong engineering practices.
+    Participate in interviewing and hiring engineers.Troubleshoot and fix technical issues quickly. Who You Are5+ years of
+    experience building web apps; 3+ years building B2B SaaS apps.Experience leading a technical implementation.Experience
+    with JavaScript, React, Node.js, and Nest.js (or similar framework).Experience with one or more object-oriented programming
+    languages.Experience with MySQL or other relational database management systems.Experience optimizing web apps for both
+    performance and scalability. You have a deep understanding of and experience writing effective unit tests.You are passionate
+    about building something from scratch.You thrive in a team setting and are excited to mentor other engineers - you see
+    their successes as your own. You care as much about building great products as you do writing great code. Comp & BenefitsCompetitive
+    salary and equity grantMedical, Dental, and VisionUnlimited PTO Remote Work PolicyMonument supports remote work for this
+    position. We also have an office in Dallas, TX where team members are welcome to work.To ensure alignment and cohesion,
+    Monument holds quarterly in-person all-hands gatherings in the Dallas, Texas area. All team members are expected to attend.
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: <unk>
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:100
+  - loss:CosineSimilarityLoss
+  base_model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  widget:
+  - source_sentence: 'SummaryAccountant for a Medium sized Company
+
+      SkillsGuest servicesInventory control proceduresMerchandising expertiseLoss preventionCash register operationsProduct
+      promotions
+
+      ExperienceAccountant,01/2009toPresentAnimal Health International, Inc.–Mount Joy,PA,Hired by their CPA firm to handle
+      all accounting and job cost Reporting.Accountant,01/2007to01/2009Animal Health International, Inc.–Greeley,CO,Hired
+      by their CPA firm to handle all accounting functions..Accountant,01/1997to01/2007Animal Health International, Inc.–Manchester,IA,Installed
+      new Peachtree Accounting System.Installed new computer system using a local area network and Added a Web site.
+
+      Education and TrainingB.S:Business Administration Accounting,Expected in1974toUniversity of Cincinnati-Cincinnati,OHGPA:Business
+      Administration Accounting
+
+      Skillsaccounting, CPA, local area network, Peachtree Accounting, Reporting, Web site'
+    sentences:
+    - "Job Purpose: Perform designated tasks in the area of technical sub-ledger accounting related to all lines of business.\
+      \ Perform and review tasks related to period end financial closing.\nKey Responsibilities:Investigate and resolve discrepancies\
+      \ by actively collaborating and communicating across departments. Create policies and procedures for developing areas\
+      \ such as the Surety accounting.Review accounting entries posted to the general ledger to ensure proper accounting treatment.Work\
+      \ closely with other teams to ensure proper premium accounting and make manual corrections as needed.Prepare complex\
+      \ monthly bank reconciliations. Responsible for reconciling intercompany AP, AR, and P&L for all other BUs.Perform complex\
+      \ manual processes necessary to maintain proper accounting records and develop ways to automate them.Present to management\
+      \ premium results monthly including thorough explanations on insurance revenues, service revenues, and bad debt. Able\
+      \ to speak to analytical results.Perform regular analytics prior to, during, and post monthly close.Investigate and\
+      \ resolve discrepancies and fluctuations resulting from analytics performed by collaborating with other teams to determine\
+      \ accurate results.Responsible for preparing documentation and providing explanations as requested by internal and external\
+      \ auditors and regulators. \nKey Experience:7+ years accounting experience4+ years as a seasoned senior accountantPublic\
+      \ accounting a plusKnowledge of insurance accounting a plus\nKey Requirements:Bachelors Degree in Accounting  Finance\
+      \ Accounting and technical know-how, basis for understanding of accounting, and advanced technical systems. Good knowledge\
+      \ of MS Office suiteWillingness to work overtime as needed to meet monthly deadlinesStrong analytical, critical thinking\
+      \ & problem solving skillsStrong aptitude for accuracy and attention to detailExcellent written and verbal communication\
+      \ skills.Strong organizational skills and ability to manage deadlines. Ability to collaborate and influence internal\
+      \ partners to set up corrective action plansHigh level of initiative & ability to be autonomousAble to multi task"
+    - "Compensation: $30-$45hr\nLocation: Lakewood, CO (Hybrid)\nTITLE: Operational Accountant\nInceed has partnered with\
+      \ a great company to help find a skilled Operational Accountant to join their team!\nThe Operational Accountant is directly\
+      \ responsible for various aspects of closing the accounting books and billing, in accordance with GAAP and FERC, monthly\
+      \ for the crude segment.\nResponsibilities:\nPrepare adjusting close journal entries, including but not limited to:\
+      \ Revenue Accruals, Expense Accruals, Deferred Revenue. Analyze balance sheets and income statements monthly for accuracy.Assist\
+      \ the Accounting Manager with monthly, quarterly and yearly gross margin analysis.Responsible for certain monthly invoicing\
+      \ processes. Prepare balance sheet account reconciliations and maintain supporting schedules.  Required Qualifications\
+      \ & Experience:\nBachelors degree in Finance, Accounting or a related discipline3-4 years of experience actively involved\
+      \ in a relevant and related roleMust have a fundamental understanding of accounting and financial principlesAdvanced\
+      \ Excel experience  Nice to Have Skills & Experience:\nOil and gas industry experience preferred  Perks & Benefits:\
+      \ \n3 different medical health insurance plans, dental, and vision insuranceVoluntary and Long-term disability insurancePaid\
+      \ Time Off, 401k, and Holiday Pay*Weekly direct deposit or pay card deposit Other Information:\nThis position is a 6\
+      \ month contractThis position requires a drug and background check\nIf you are interested in learning more about the\
+      \ Operational Accountant opportunity, please submit your resume for consideration. We are unable to provide sponsorship\
+      \ at this time.\nWe are Inceed, a staffing and direct placement firm who believes in the possibility of something better.\
+      \ Our mission is simple: Were here to help every person, whether client, candidate, or employee, find and secure whats\
+      \ better for them. \nInceed is an equal opportunity employer. Inceed prohibits discrimination and harassment of any\
+      \ type and affords equal employment opportunities to employees and applicants without regard to race, color, religion,\
+      \ sex, sexual orientation, gender identity or expression, pregnancy, age, national origin, disability status, genetic\
+      \ information, protected veteran status, or any other characteristic protected by law.\n"
+    - "HiETLData EngineerDallas tx-Onsite\nNeed only Local to DALLAS, TX- Onsite 1) Need Data Engineer with heavy Python Development\
+      \ Background.2) Must have worked on UNIXLINUX, Extensive Experience with SQLUnixLinux scripting is a must.3) Strong\
+      \ exp on AWS Cloud, Experience in Automating ETL process with Python and Automation around AWS Data & Infrastructure4)\
+      \ AWS Glue is must, with hold on ETL Concepts.5) Good to have Testing exp and familiarity with Test Strategies. \nRegards,Nisha\
+      \ JhaTechnical RecruiterNisha.j@peritussoft.com"
+  - source_sentence: 'SummaryMotivatedSoftware Developerseeks employment as part of a dynamic software development team. Fluent
+      in C, C++, HTML, and JavaScript with extensive experience in Python and Java.
+
+      HighlightsProficient in multiple modern programming languagesRESTful web API developmentExperience with cloud based
+      computing including Google App EngineSuccessful leader and team player
+
+      ExperienceMechanical Engineer,02/2013to05/2015Viasat Inc.–DC,State,Develop, improve, and maintain Magnetic Bearing Analysis
+      SoftwareLead Engineer for Turbine-Generator Governor-Regulator dynamic modelingAssisted with testing of Advanced Control
+      Features on existing platformsAssisted with trouble-shooting Magnetic Bearing Engineering Model test platform.LEGO Robotics
+      Instructor,06/2012to07/2012Viasat Inc.–Linthicum Heights,MD,LEGO Robotics Instructor for Grades 4-6, responsible for
+      curriculum design and teaching.Mechanical Engineer,08/2008to11/2011Calportland–Avondale,AZ,Performed on-site Material
+      Condition Assessments on topside Fire Control SystemsOn-site representative and Quality Assurance for phased-array radar
+      coating applicationFabricated antenna and radome composite moisture standardsDeveloped Testing Procedures for Non-Destructive
+      Polymer Cleaning PadsUpdated branch training materials and official response messages.Mechanical Engineer, Intern,06/2005to2006Panasonic
+      Avionics Corporation–City,STATE,Prototyping & Assembly of Engineering Design Models Test Support & DocumentationThermal
+      Chamber, Bench-Top Thermal & Vibration Shake-TableTechnical Drawing Updates: Aluminum Sheet Metal and Electronic Cable
+      Design
+
+      EducationBachelor of Science:Computer Science,Expected in2016toOregon State University-Corvallis,ORGPA:Bachelor of Science:Mechanical
+      Engineering / Mechatronics Concentration,Expected in2008toCalifornia Polytechnic State University-San Luis Obispo,CAGPA:
+
+      Skills'
+    sentences:
+    - "At Farmer Brothers, Sales Tax Accountant will be focused primarily on tax compliance with sales tax, property tax and\
+      \ business licenses. This role requires prior accounting experience, along with great knowledge of current law, regulations,\
+      \ and tax requirements. A successful candidate will have a keen attention to detail, be highly organized, and know a\
+      \ significant deal about tax management. They should also know how to recommend best tax processes that strictly adhere\
+      \ to all legal requirements while simultaneously promoting our companys financial prosperity. In this role, you will\
+      \ conduct and document sales tax audit support.  \nResponsibilitiesPrepares and files sales & use returns on a monthly,\
+      \ quarterly, and annual basis. (Vertex software tool)Prepares and files property tax returns. Renews business licenses,\
+      \ tax permits, and other occupational permits with cities and other taxing authorities. This includes Tribal and Casino\
+      \ Vendor licenses.Troubleshoots notices and responds to inquiries for all of the above tax-related payments and filings.Assists\
+      \ with various other Tax Department activities and projects including SalesUse and Property Tax audits.\nEducation &\
+      \ ExperienceBachelor's degree in Accounting or Finance required.CPA license preferred.Minimum of 3+ years of tax accounting\
+      \ experience.Public company experience is preferred.Enterprise systems knowledge preferred.Advanced proficiency in Microsoft\
+      \ Office internet, web-based and job specific software applications.Experience utilizing Vertex tax system (a plus)\
+      \ Personal & Professional SkillsetsResourcefulinnovativecreativelooks for better ways to do thingsExcellent problem-solving\
+      \ abilities and the ability to work with other departments within the organization to implement business solutions.Highly\
+      \ organized and willing to engage with internal departments and external auditors to comply with filing and reporting\
+      \ requirements.Ability to manage multiple projects simultaneously.Able to meet deadlines, follow through on commitments\
+      \ and deliver on promises.Strong written and verbal communication skills.Organized and can manage competing deadlines\
+      \ and due datesOpen and straightforward, with strong work ethic"
+    - 'RoleGaming Business AnalystResponsibilities Ability to understand vast amounts of data, identify and fix data issues
+      Strong in database and Data Warehousing concepts Strong in TSQL Data analysis and presentation Data insight generation
+      Strong reporting using Power BI, Power Apps & Excel Ability to succeed in a fast-paced, dynamic business environment
+      Excellent technical & analytical skills with strong business acumen Strong communication skillsRequired SkillsProven
+      experience as a Gaming Domain Expert, Game Analyst, or similar role within the gaming industry.Passion about gaming
+      and a genuine interest in the gaming industry.Strong communication and presentation skills to effectively convey research
+      findings to both technical and non-technical stakeholders.Strong analytical skills and ability to interpret complex
+      data sets to derive meaningful insights.Should be able to do the qualitative and quantitative Research on gaming data
+      such as competitor trends, product performance, consumers, games, and acquisitions .Excellent research abilities, with
+      a proactive approach to stay updated on industry developments.Must have Deep understanding of Gaming Industry trends
+      to perform ad-hoc analysis and research across a broad range of industries.Deep knowledge and understanding of gaming
+      platforms, game genres, player behavior, and industry trends, patterns, and insights for game console, games, and subscriptions
+      across all gaming companies.Analyze internal game meta data and KPIs and helping in curating the game, genre, publisher,
+      developer etc.Identify key takeaways based on research, prepare presentations, communicate with business stakeholders.Should
+      be able to build the forecasting model for any game or game franchise.Perform Market studies, consumer insights, competitive
+      analysis, ad hoc reporting, and market trends across the gaming and game development industries.Basic Understanding
+      of T-SQLFamiliarity with data analysis tools and techniques.Should be able to create the pivots in Excel from Relational
+      models for slice and dice the data.Ability to understand vast amounts of data.Identify and fix data issues ,Data analysis
+      and presentation ,Data insight generation.Ability to thrive in a fast-paced, dynamic business environment ,Excellent
+      technical & analytical skills with strong business acumen ,Strong communication skills,SQL, ExcelGood to have skillsDigital
+      : PythonExperience Required (in Yrs.)5+ YearsWork LocationBellevue, USA'
+    - "Location: Minneapolis, MN (Remote)Job Summary: \nSkillset: Azure Data factory, Databricks, SQL, Spark Scala, and couple\
+      \ internal frameworks (ADF template & Data-at-scale)\nResponsibilities: Good communication and proper accountability\
+      \ on assigned tasks. Develop and deploy ADF pipelines. Develop SQLs out of the requirement documentation. Design and\
+      \ implement yaml configurations for Spark framework. Working with Oracle Stored Procedures and Airflow scheduling.\n\
+      Add-ons: Reusable Spark framework development. API development & integration from Spark Scala. Java Script to enhance\
+      \ existing framework to integrate with Azure APIs.\nNitesh JaiswalSr. Technical RecruiterEmail ID: niteshjaiswal@enterprisesolutioninc.comWebsite-www.enterprisesolutioninc.comContact\
+      \ No-469-824-3140Linkedin-https:www.linkedin.cominnitesh-jaiswal-a378b5222Address: 500 E. Diehl Road, Suite 130. Naperville,\
+      \ IL 60563"
+  - source_sentence: 'Professional SummaryExperienced Data Entry Administrator with many years of experience in Office Administration.
+      Excellent reputation for resolving problems and improving customer satisfaction. To seek and maintain full-time position
+      that offers professional challenges utilizing interpersonal skills, excellent time management and problem-solving skills.
+
+      SkillsAdministrative Support ClericalCustomer Service Data Entry Maintain inventory ScanningAttention to DetailExcellent
+      CommunicationWritten CommunicationMultitasking AbilitiesMS Office
+
+      Work History02/2020toCurrentData Entry Administrator / Process and ControlCity Wide Facility Solutions–Westwood,NJ,Key
+      in paper applications and scan them to ensure appropriate documentation.Responsible for filing, sorting, and distributing
+      company mail.Reviewed reports daily to ensure proper call center procedures are followed for credit card fee reversals,
+      new card requests, application documentation, credit limit increases and billing disputes.Document non-compliant instances
+      for correction by call center.Investigate and analyzes determination on complex service-related disputes involving consumers
+      to ensure compliance with credit card regulations, avoid litigation costs and promote consumer goodwill.Perform other
+      duties as assigned.04/2018to02/2020Senior Service Representative/ Speciman ProcessorLabCorp–City,STATE,SortingComputer
+      proficient Complaint resolution Credit card processing Route dispatch, Assisted pathology team with skilled analyses
+      by preparing tissue samplesCollect blood and tissue samples with focus on accuracy and adherence to aseptic techniques
+      Loaded truck and properly secured items to prevent damage for over 20 deliveriesSafely loaded and unloaded 50 pounds
+      of hazardous material without incident06/2016to04/2018Data Entry Clerk IIIBank Of America/ Aerotek–City,STATE,Reviewed
+      and updated client correspondence files and database information to maintain accurate recordsKept optimal quality levels
+      to prevent critical errors and support team performance targets Corrected any data entry error to prevent later issues
+      such as duplication or data degradation Entered client information into databases quickly and with minimal errorsNegotiated
+      agreements between employees to clarify misunderstood directions and resolve conflicts affecting performance06/2013to02/2016Accounting
+      AdministratorHorizon Services–City,STATE,Managed all petty cashHandled payroll duties for 3 departmentsHandled billing
+      plans and physical contracts with vendors Processed bank deposits and reconciled financial statements, Kept physical
+      files and digitized records organized for easy updating and retrieval by authorized team membersImproved office operations
+      by automating client correspondence, record tracking and data communications
+
+      EducationExpected in08/2004totoCertificate: Medical Office Administrator:DPT Business School-Philadelphia,PAGPA:Expected
+      in06/1988totoHigh School Diploma:Long Beach High School-Long Beach,NYGPA:
+
+      SkillsAdministrative Support ClericalCustomer Service Data Entry Maintain inventory ScanningAttention to DetailExcellent
+      CommunicationWritten CommunicationMultitasking AbilitiesMS Office'
+    sentences:
+    - "Software Data Engineer (ScalaPython) Hybrid on-site in Chicago, IL - local candidates or those willing to relocate\
+      \ only! Proprietary Trading Firm is looking to grow their data engineering organization with two engineers. Please see\
+      \ the details for both profiles below:  1. Software Engineer (ScalaPython)3+ years experience programming in Scala andor\
+      \ Python Cloud data platform development and deployment using Infrastructure-as-CodeOperational dashboards to monitor\
+      \ data ingestion using Grafana, PrometheusOther technologies: GitLab, Bitbucket, Jenkins, RDS, S3 2. Software Engineer\
+      \ (Scala)3+ years experience programming in Python Large scale data platforms such a Spark, Kafka, Delta Lake Experience\
+      \ with ETL pipelines for batch and live streaming Other technologies: EKSKubernetes, MSKKafka, Spark, Databricks, Flink\
+      \ This is an opportunity to work at a data-driven organization in Chicago, IL with a collaborative, growing department.\
+      \ Other benefits include: Flexible hybrid work style - in office TuesThurs (downtown Chicago, IL)Competitive compensation\
+      \ structure with uncapped bonus potential Work with modern technologies, see the impact of your work on the direct businessInteract\
+      \ with all parts of the business such as Compliance, Quants and Trading. \n \n\nEOE Statement: Specialist Staffing Group\
+      \ is an equal opportunity employer. All qualified applicants will receive consideration for employment without regard\
+      \ to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, or veteran status.\n\
+      \ \nTo find out more about Huxley please visit www.huxley.com"
+    - Requirement -  Must have experience in FACETS.LeadExecute all or part of the business analysis on business featuresuser
+      stories. Provide oversight when junior BAs are involvedResponsible for gathering and understanding of business needs
+      and translating them into effective user storiesrequirements.Assist in the estimation, prioritization and implementation
+      of cost-effective business process and system solutions.Work with Product Owner Business in prioritization and implementation
+      of cost-effective business process and system solutions.On-boarding and mentoring BAsnew BAs into the organization.Proactively
+      acquire BU domain knowledge and facilitate the growth of domain knowledge throughout the technical teams. Lead or support
+      Knowledge management initiativesDevelop a strong understanding of the industry & the organizational vision, mission,
+      strategic goals
+    - Vaco has a client in Absecon that is looking for a property accountant with strong financial reporting skills and some
+      accounting experience with affordable multifamily properties. Any experience with industry software like Yardi or RealPage
+      is preferred, and strong Excel skills are required. This is a hybrid role and a chance to join an industry leading company
+      that is looking to grow and expand their portfolio.
+  - source_sentence: 'SummaryTo participate as a team member in a dynamic work environment focused on promoting business growth
+      and building
+
+      University popularity by providing superior value and service. Effective as a team member and as an individual. Experienced
+      customer service representative          Experience with Oracle PeopleSoft SIS with excellent communication skills          Highly
+      proficient in Slate CRM systems Enthusiastic, resourceful and enjoy challenges          Passionate about prospective
+      student access Capable of effectively communicating at          to opportunity various levels with individuals and groups
+
+      Core QualificationsGuest servicesInventory control proceduresMerchandising expertiseLoss preventionCash register operationsProduct
+      promotions
+
+      Professional Experience08/2014toCurrentData ProcessorAltus Group Limited–Dallas,TX,Process and verify prospective student
+      application materials.Ensure data integrity for accurate dissemination among all offices of enrollment services.Manage
+      email marketing campaigns for various high school level search name purchases.Advise applicants on various requirements,
+      deadlines, and application status to drive application completion.06/2013to08/2013Executive AssistantAmerican Well–Cleveland,OH,Prepared
+      papers/reports for consideration and presentation by head Chartered Accountant.Responsible for all aspects of the day
+      to day running of the filing, copying, and report writing.Maintained expense reports of personal projects for head C.A.02/2011to05/2014Admissions
+      AssistantMiddlebury College–Middlebury,VT,Greet visitors, conduct tours as needed, provide basic information regarding
+      the University.Interact with a large number of staff, students (pre-college), faculty, and parents.Promote a positive
+      work atmosphere by behaving and communicating in a manner that supports students, staff, parents, and general public.Maintain
+      confidentiality of student records.10/2010to04/2014Assistant Cross-Country CoachPlatte Canyon District–Bailey,CO,Communicate
+      goals and expectations to team members.Lead team practices during scheduled summer weekdays.Promote a constructive and
+      safe learning environment to allow runners of all levels to advance both as athletes as well as mindful students.
+
+      Education and TrainingExpected in2014totoBachelor of Arts:Liberal Arts Environmental StudiesSoka University of America-Aliso
+      Viejo,CaliforniaGPA:Dean''s List MemberLiberal Arts Environmental Studies Dean''s List MemberExpected in2012totoIntensive
+      Language Program:La Universidad de San Francisco de Quito  Cumbaya-Quito,GPA:
+
+      SkillsAccountant, basic, C, copying, email, expense reports, filing, marketing, materials, report writing'
+    sentences:
+    - "Senior Salesforce Software Engineer, Salesforce declarative and Programmatic Customization(VISA INDEPENDENT ONLY)W2Remote\
+      \ (candidates must work CST hours)12 months Software Engineer with a Salesforce background Strong experience with an\
+      \ understanding of:o Salesforce Declarative and Programmatic Customizationo Salesforce design concepts that provide\
+      \ security and stabilityo Debugging code andor complex log files for troubleshooting and analysis of product defectso\
+      \ Querying databases for complex data lookupupdateo Version and revision control practices and procedures Financial\
+      \ Services Industry experience is preferred Preferred Salesforce Certifications: Salesforce Certified Administrator\
+      \ Salesforce Platform App Builder Salesforce Platform Developer I Salesforce Platform Developer II Salesforce OMNI Studio\
+      \ Developer\n Please share profiles to saran@focuzmindz.com"
+    - "***W2 ONLY** \nSoftware Engineer (12-month contract  REMOTE, team based in Mounds View, MN):\nTop 3 Skills:1. JavaScript2.\
+      \ Vue.js 3. Gitlab\nTarget Years of Experience: 0-2 years\nOther relevant software development Must Haves:DockerJSONPostgreSQLreact.jsREST\
+      \ APISpring BootSpring FrameworkSQLVue.JSXML\nPreferred Software experience:flaskGrailsGroovyPython\nDuties:Participate\
+      \ in requirements formulation, design, prototype, develop, and documentation of the software applications and ensure\
+      \ the solutions meets all requirements.Help determine technical direction for multiple projects to streamline workflow\
+      \ efficiencies.Will be responsible for creating brand new solutions with support to meet business process needs.Strong\
+      \ communicator with senior internal and external customers and vendors.Designs, develops, tests, debugs, and implements\
+      \ operating systems components, software tools and utilities. Determines systems software design requirements. Ensures\
+      \ that system improvements are successfully implemented and monitored to increase efficiency. Generates systems software\
+      \ engineering policies, standards, and procedures. \nRequired Knowledge and Experience: Requires practical knowledge\
+      \ and demonstrated competence within job area typically obtained through advanced education combined with experience.\
+      \ Requires a University Degree and minimum of 2 years of relevant experience, or advanced degree with 0 years of experience."
+    - 'RoleGaming Business AnalystResponsibilities Ability to understand vast amounts of data, identify and fix data issues
+      Strong in database and Data Warehousing concepts Strong in TSQL Data analysis and presentation Data insight generation
+      Strong reporting using Power BI, Power Apps & Excel Ability to succeed in a fast-paced, dynamic business environment
+      Excellent technical & analytical skills with strong business acumen Strong communication skillsRequired SkillsProven
+      experience as a Gaming Domain Expert, Game Analyst, or similar role within the gaming industry.Passion about gaming
+      and a genuine interest in the gaming industry.Strong communication and presentation skills to effectively convey research
+      findings to both technical and non-technical stakeholders.Strong analytical skills and ability to interpret complex
+      data sets to derive meaningful insights.Should be able to do the qualitative and quantitative Research on gaming data
+      such as competitor trends, product performance, consumers, games, and acquisitions .Excellent research abilities, with
+      a proactive approach to stay updated on industry developments.Must have Deep understanding of Gaming Industry trends
+      to perform ad-hoc analysis and research across a broad range of industries.Deep knowledge and understanding of gaming
+      platforms, game genres, player behavior, and industry trends, patterns, and insights for game console, games, and subscriptions
+      across all gaming companies.Analyze internal game meta data and KPIs and helping in curating the game, genre, publisher,
+      developer etc.Identify key takeaways based on research, prepare presentations, communicate with business stakeholders.Should
+      be able to build the forecasting model for any game or game franchise.Perform Market studies, consumer insights, competitive
+      analysis, ad hoc reporting, and market trends across the gaming and game development industries.Basic Understanding
+      of T-SQLFamiliarity with data analysis tools and techniques.Should be able to create the pivots in Excel from Relational
+      models for slice and dice the data.Ability to understand vast amounts of data.Identify and fix data issues ,Data analysis
+      and presentation ,Data insight generation.Ability to thrive in a fast-paced, dynamic business environment ,Excellent
+      technical & analytical skills with strong business acumen ,Strong communication skills,SQL, ExcelGood to have skillsDigital
+      : PythonExperience Required (in Yrs.)5+ YearsWork LocationBellevue, USA'
+  - source_sentence: "SummaryHighly motivated Sales Associate with extensive customer service and sales experience. Outgoing\
+      \ sales professional with track record of driving increased sales, improving buying experience and elevating company\
+      \ profile with target market.\nHighlightsLabVIEW, Virtuoso (Cadence) Design Suite, P LE CS, Cadence Schematic editor,\
+      \ AWR Microwave Office,\n   MATLAB/SIMULINK, Code Composer Studio, National Instruments PXI, Texas Instruments VLCT\
+      \ for IC Testing-\n   ATE\n   Programming Languages: C, C++, Python, Assembly and VHDL\nExperience06/2014toPresentElectrical\
+      \ Design Engineer|,,Working on developing next generation intelligent down-hole oil drilling tools.Working on automating\
+      \ Calibration process for Accelerometers and Magnetometers Working on developing automated test systems using LabVIEW\
+      \ and Python.toResearch AssistantRockwell Automation, Inc.|,,Worked on developing high accuracy GPS System and also\
+      \ on finding outliers in large collection of Cotton fiber cross-section scan data.toProduct Engineering InternDartmouth\
+      \ College|,,www.physitechelectronics.com) Developed Hardware and Software for various Major projects on embedded systems\
+      \ with variety of sensors.Developed Firmware for a Programmer to program AVR Microcontrollers through USB Port Served\
+      \ as the President of The Electronics Club, SNIST, Hyderabad for two years (2010-2012) Electronix Club is a student's\
+      \ organization founded in 2009 in Sreenidhi Institute of Science and Technology, Hyderabad, India by a group of electronics\
+      \ freaks to learn and share the concepts of electronics and prosper in the process Taught classes on basic Analog Circuits,\
+      \ Microcontroller Programming and Sensor interfaces during this period.\nEducationExpected inMay, 2014totoMaster of\
+      \ Science|Electrical EngineeringTexas Tech University,Lubbock,TXGPA:GPA: 3.9/4.0Electrical Engineering GPA: 3.9/4.0Expected\
+      \ inMay, 2012totoBachelor of Technology|Electronics and Communications EngineeringJawaharlal Nehru Technological University,,GPA:GPA:\
+      \ 3.7/4.0Electronics and Communications Engineering GPA: 3.7/4.0\nSkillsArchitect, basic, C, C++, CAD, Cadence, Calibration,\
+      \ com, Hardware, editor, Electronics, embedded systems, GPS, LabVIEW, MATLAB, Office, Microwave, Composer, Networks,\
+      \ next, oil, Programmer, Programming, prosper, Python, USB, VHDL"
+    sentences:
+    - "Duration: 6-Month contract - NO possibility to go perm - contract may be extended. \n\nFULLY REMOTE\n\nMust-Haves:\
+      \ 3+ years of accounting experienceStrong Excel experience and knowledge (v lookups, pivot tables, etc) as well as analytical\
+      \ skills.Excellent oral and written communication skills, able to research invoices, work across teams to solve issues,\
+      \ and documentation.Bank reconciliation experienceMultifamily experience \n\n\n\nDay-to-Day: Our client is looking for\
+      \ a Staff Accountant that will be reporting to the Division Controller and responsible for assisting in all financial\
+      \ reporting and accounting related services required for the Division. This role is pivotal to the Accounting teams\
+      \ goals and outcomes of accurate and timely completion of all accounting deliverables. This person will be assisting\
+      \ in monthly financial close process and preparing and inputting journal entries, working with accounts payable, receivables,\
+      \ cash transactions, and other related duties."
+    - 'Data EngineerLength of Assignment: 6+ monthsWork Location: Remote US (NJ preferred)
+
+      SUMMARY OF ESSENTIAL JOB FUNCTIONS:Design and develop analytical models and be the face to the data consumers.Perform
+      data curation to meet the business requirements.Build batch and streaming data pipelines.Develop processes for automating,
+      testing, and deploying your work.Identify risks and opportunities of potential logic and data issues within the data
+      environment.Collaborate effectively with the global team and ensure day to day deliverables are met.
+
+      MINIMUN REUIREMENTS:MUST HAVE experience with GCPGoogle Cloud Platform andor Spark.Bachelors degree and 5+ years of
+      industry experience in software development, data engineering, business intelligence, data science, or related field
+      with a track record of manipulating, processing, and extracting value from large datasets.3+ years of experience as
+      Data Engineer or in a similar roleProven experience with AWS andor GCP, Hadoop, Vertica, Talend, Tableau, and other
+      modern technology platforms is required.Cloud to Cloud migration experience preferred.Have knowledge of data management
+      fundamentals and data storage principlesHave knowledge of systems as it pertains to data storage and computing.Strong
+      source to target mapping experience and ETL principlesknowledge.Excellent verbal and written communication skills.Strong
+      quantitative and analytical skills with accuracy and attention to detailAbility to work well independently with minimal
+      supervision and can manage multiple priorities.'
+    - At Monument, were building a vertical software platform for the self-storage industry. This is a rare opportunity to
+      reinvent a $30 billion market from the ground up.As a Lead Engineer, you will work closely with engineering and product
+      leadership to design and build the first version of Monuments software platform from scratch, using the most modern
+      technologies available - no tech debt, no legacy systems, just a blank whiteboard. Your ResponsibilitiesDesign highly-scalable
+      solutions for an enterprise application.Lead a team of engineers to deliver quality software, on time and on budget.Empower
+      your teammates to tackle projects by assisting with technical planning, reviewing code, and promoting strong engineering
+      practices. Participate in interviewing and hiring engineers.Troubleshoot and fix technical issues quickly. Who You Are5+
+      years of experience building web apps; 3+ years building B2B SaaS apps.Experience leading a technical implementation.Experience
+      with JavaScript, React, Node.js, and Nest.js (or similar framework).Experience with one or more object-oriented programming
+      languages.Experience with MySQL or other relational database management systems.Experience optimizing web apps for both
+      performance and scalability. You have a deep understanding of and experience writing effective unit tests.You are passionate
+      about building something from scratch.You thrive in a team setting and are excited to mentor other engineers - you see
+      their successes as your own. You care as much about building great products as you do writing great code. Comp & BenefitsCompetitive
+      salary and equity grantMedical, Dental, and VisionUnlimited PTO Remote Work PolicyMonument supports remote work for
+      this position. We also have an office in Dallas, TX where team members are welcome to work.To ensure alignment and cohesion,
+      Monument holds quarterly in-person all-hands gatherings in the Dallas, Texas area. All team members are expected to
+      attend.
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-09-30T10:56:27.000Z'
+safetensors:
+  parameters:
+    F32: 117653760
+  total: 117653760
+usedStorage: 487720403
+downloadsAllTime: 13
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  initializer_range: 0.02
+  intermediate_size: 1536
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 1
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.17.0
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 250037
+onnxFiles: {}
+safetensorsSizeMb: 470.6
+approxSizeMb: 470.6
+fetchedAt: '2026-10-01T10:00:06.000Z'

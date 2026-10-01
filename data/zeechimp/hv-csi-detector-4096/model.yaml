@@ -1,0 +1,63 @@
+_id: 6abbdcc0858e372b927079d9
+id: zeechimp/hv-csi-detector-4096
+private: false
+pipeline_tag: feature-extraction
+library_name: numpy
+tags:
+- numpy
+- sequence-analysis
+- statistics
+- distribution-free
+- numpy-only
+- no-training
+- feature-extraction
+- en
+- license:mit
+- region:us
+downloads: 14
+likes: 1
+modelId: zeechimp/hv-csi-detector-4096
+author: zeechimp
+sha: e8fef14399ce30e9ee21921053375ed9c664497c
+lastModified: '2026-09-30T17:24:23.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  language: en
+  tags:
+  - sequence-analysis
+  - statistics
+  - distribution-free
+  - numpy-only
+  - no-training
+  license: mit
+  pipeline_tag: feature-extraction
+  library_name: numpy
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: csi_luts.npz
+- rfilename: hv_csi_detector.py
+- rfilename: make_model_artifact.py
+spaces: []
+createdAt: '2026-09-29T15:44:00.000Z'
+usedStorage: 992
+downloadsAllTime: 14
+inferenceProviderMapping: {}
+configJson:
+  spec:
+  - 4
+  - 5
+  - 6
+  - 7
+  projection: char_class
+  z95: 1.9
+  z99: 2.6
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-01T10:00:06.000Z'

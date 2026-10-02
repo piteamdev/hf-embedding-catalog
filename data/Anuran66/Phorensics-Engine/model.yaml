@@ -1,0 +1,78 @@
+_id: 6abeca669fed363840892112
+id: Anuran66/Phorensics-Engine
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- phorensics
+- feature-extraction
+- computer-vision
+- media-forensics
+- deepfake-detection
+- physics-based-vision
+- signal-processing
+- pytorch
+- custom_code
+- region:us
+downloads: 17
+likes: 0
+modelId: Anuran66/Phorensics-Engine
+author: Anuran66
+sha: dc93763272522323a5c1e11f1146bd3b764260f6
+lastModified: '2026-10-01T21:10:24.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - PhorensicsModel
+  auto_map:
+    AutoConfig: phorensics_model.PhorensicsConfig
+    AutoModel: phorensics_model.PhorensicsModel
+  model_type: phorensics
+cardData:
+  library_name: transformers
+  tags:
+  - computer-vision
+  - media-forensics
+  - deepfake-detection
+  - physics-based-vision
+  - signal-processing
+  - pytorch
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: phorensics_model.PhorensicsModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: phorensics_model.py
+spaces: []
+createdAt: '2026-10-01T21:02:30.000Z'
+safetensors:
+  parameters:
+    F32: 9
+  total: 9
+usedStorage: 288
+downloadsAllTime: 17
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - PhorensicsModel
+  auto_map:
+    AutoConfig: phorensics_model.PhorensicsConfig
+    AutoModel: phorensics_model.PhorensicsModel
+  dtype: float32
+  max_dim: 600
+  model_type: phorensics
+  patch_size: 128
+  stride: 64
+  transformers_version: 5.18.0
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-02T09:36:39.000Z'

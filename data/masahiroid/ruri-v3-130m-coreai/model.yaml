@@ -1,0 +1,66 @@
+_id: 6abe876a47c60c260a3b121e
+id: masahiroid/ruri-v3-130m-coreai
+private: false
+pipeline_tag: sentence-similarity
+tags:
+- sentence-similarity
+- feature-extraction
+- coreai
+- ios
+- macos
+- japanese
+- ruri
+- modernbert
+- ja
+- en
+- base_model:cl-nagoya/ruri-v3-130m
+- base_model:finetune:cl-nagoya/ruri-v3-130m
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: masahiroid/ruri-v3-130m-coreai
+author: masahiroid
+sha: f6550c3393bcee7398e9c80cea10949b7f538ee2
+lastModified: '2026-10-02T04:30:33.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  language:
+  - ja
+  - en
+  tags:
+  - sentence-similarity
+  - feature-extraction
+  - coreai
+  - ios
+  - macos
+  - japanese
+  - ruri
+  - modernbert
+  base_model: cl-nagoya/ruri-v3-130m
+  pipeline_tag: sentence-similarity
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: SECURITY.md
+- rfilename: ruri-v3-130m-ane_float16_seq256.aimodel/main.hash
+- rfilename: ruri-v3-130m-ane_float16_seq256.aimodel/main.mlirb
+- rfilename: ruri-v3-130m-ane_float16_seq256.aimodel/metadata.json
+- rfilename: ruri-v3-130m_float16_seq128.aimodel/main.hash
+- rfilename: ruri-v3-130m_float16_seq128.aimodel/main.mlirb
+- rfilename: ruri-v3-130m_float16_seq128.aimodel/metadata.json
+- rfilename: ruri_ane.py
+spaces: []
+createdAt: '2026-10-01T16:16:42.000Z'
+usedStorage: 529625749
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-02T09:36:39.000Z'

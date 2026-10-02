@@ -1,0 +1,39 @@
+_id: 6abf31fd5085184c6835c121
+id: yerim0210/REPAIR_Scientific_Retrievers
+private: false
+pipeline_tag: feature-extraction
+tags:
+- retrieval
+- scientific
+- feature-extraction
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: yerim0210/REPAIR_Scientific_Retrievers
+author: yerim0210
+sha: 1c530b3b8448fa0d57fa119751d6a693c9911d03
+lastModified: '2026-10-02T04:37:16.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  pipeline_tag: feature-extraction
+  tags:
+  - retrieval
+  - scientific
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+spaces: []
+createdAt: '2026-10-02T04:24:29.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-02T09:36:39.000Z'

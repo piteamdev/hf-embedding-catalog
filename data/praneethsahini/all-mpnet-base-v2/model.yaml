@@ -45,7 +45,7 @@ tags:
 - text-embeddings-inference
 - endpoints_compatible
 - region:us
-downloads: 104
+downloads: 103
 likes: 0
 modelId: praneethsahini/all-mpnet-base-v2
 author: praneethsahini
@@ -141,7 +141,7 @@ siblings:
 spaces: []
 createdAt: '2025-01-10T08:20:40.000Z'
 usedStorage: 1474
-downloadsAllTime: 384
+downloadsAllTime: 385
 inferenceProviderMapping: {}
 configJson:
   _name_or_path: microsoft/mpnet-base
@@ -176,4 +176,4 @@ onnxFiles:
   onnx/model_quint8_avx2.onnx: 0.0
 safetensorsSizeMb: 0.0
 approxSizeMb: 0.0
-fetchedAt: '2026-10-01T10:00:06.000Z'
+fetchedAt: '2026-10-02T09:36:39.000Z'

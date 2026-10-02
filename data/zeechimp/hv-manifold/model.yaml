@@ -1,0 +1,77 @@
+_id: 6abe4ab01aec00f4a161512c
+id: zeechimp/hv-manifold
+private: false
+pipeline_tag: feature-extraction
+library_name: numpy
+tags:
+- numpy
+- corpus-analysis
+- style
+- geometry
+- manifold
+- text-statistics
+- intrinsic-dimension
+- clustering
+- heuristic
+- cpu
+- feature-extraction
+- en
+- license:apache-2.0
+- region:us
+downloads: 8
+likes: 1
+modelId: zeechimp/hv-manifold
+author: zeechimp
+sha: 19e04a6c70f9e4905165480a12de3000a7b9e2f8
+lastModified: '2026-10-01T12:05:30.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: numpy
+  tags:
+  - corpus-analysis
+  - style
+  - geometry
+  - manifold
+  - text-statistics
+  - intrinsic-dimension
+  - clustering
+  - heuristic
+  - cpu
+  pipeline_tag: feature-extraction
+  language:
+  - en
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+spaces: []
+createdAt: '2026-10-01T11:57:36.000Z'
+usedStorage: 0
+downloadsAllTime: 8
+inferenceProviderMapping: {}
+configJson:
+  config:
+    knn: 5
+    boundary_factor: 1.5
+    version: 0.1.2
+  observations: 2
+  feature_names:
+  - lexical_diversity
+  - rare_rate
+  - hedge_rate
+  - certainty_rate
+  - negation_rate
+  - passive_rate
+  - clause_rate
+  - mean_sentence_length
+  - drift
+  - composition_depth
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-02T09:36:39.000Z'

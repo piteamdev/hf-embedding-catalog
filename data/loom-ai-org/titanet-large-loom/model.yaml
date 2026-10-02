@@ -1,0 +1,55 @@
+_id: 6abebb31af48d31fdf35c94d
+id: loom-ai-org/titanet-large-loom
+private: false
+pipeline_tag: feature-extraction
+library_name: loom-py-rt
+tags:
+- loom-py-rt
+- gguf
+- loom
+- audio-embedding
+- feature-extraction
+- en
+- base_model:nvidia/speakerverification_en_titanet_large
+- base_model:quantized:nvidia/speakerverification_en_titanet_large
+- license:cc-by-4.0
+- region:us
+downloads: 10
+likes: 0
+modelId: loom-ai-org/titanet-large-loom
+author: loom-ai-org
+sha: abf07a0f2c57700567c0f2c8ffc28f602c5a84be
+lastModified: '2026-10-01T19:59:09.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: cc-by-4.0
+  language:
+  - en
+  base_model:
+  - nvidia/speakerverification_en_titanet_large
+  pipeline_tag: feature-extraction
+  tags:
+  - loom
+  - audio-embedding
+  library_name: loom-py-rt
+gguf:
+  total: 22394250
+  architecture: loom-titanet
+  totalFileSize: 89620096
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: titanet-large.gguf
+spaces: []
+createdAt: '2026-10-01T19:57:37.000Z'
+usedStorage: 89620096
+downloadsAllTime: 10
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-02T09:36:39.000Z'

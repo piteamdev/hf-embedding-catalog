@@ -1,0 +1,443 @@
+_id: 6aba56b70fbd297da8ccac75
+id: Ehsanl/bidir1_7
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- tensorboard
+- safetensors
+- bidirlm
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:2072399
+- loss:CachedMultipleNegativesRankingLoss
+- loss:MultipleNegativesRankingLoss
+- custom_code
+- arxiv:1908.10084
+- arxiv:2101.06983
+- arxiv:1807.03748
+- base_model:BidirLM/BidirLM-1.7B-Embedding
+- base_model:finetune:BidirLM/BidirLM-1.7B-Embedding
+- model-index
+- endpoints_compatible
+- region:us
+downloads: 5
+likes: 0
+modelId: Ehsanl/bidir1_7
+author: Ehsanl
+sha: 323c37a7624baac3c15ea0114abfad27ed9c48cf
+lastModified: '2026-10-02T05:07:24.000Z'
+gated: manual
+disabled: false
+mask_token: <|mask|>
+widgetData:
+- source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query.
+
+    Query: Heeft een erfgenaam recht op inzage in de administratie van de erflater op grond van redelijkheid en billijkheid?'
+  sentences:
+  - Op de rechtsbetrekkingen tussen hoofdschuldenaar en borg en op die tussen borgen en voor de verbintenis aansprakelijke
+    niet-schuldenaren onderling is artikel 2 van Boek 6 van overeenkomstige toepassing.
+  - De arbeider is in het algemeen verplicht al datgene te doen en na te laten, wat een goed arbeider in gelijke omstandigheden
+    behoort te doen en na te laten.
+  - '1. Tot het indienen van het inartikel 447bedoelde verzoek is bevoegd: a. iedere belanghebbende; b. de advocaat-generaal
+    bij het gerechtshof te Amsterdam in het openbaar belang.
+
+    2. Tot het indienen van het verzoek is voorts bevoegd de Stichting Autoriteit Financiële Markten, voor zover het stukken
+    betreft die betrekking hebben op een effectenuitgevende instelling als bedoeld in artikel 1, onderdeel b, van de Wet toezicht
+    financiële verslaggeving en met inachtneming van het in artikel 4 van die wet bepaalde.'
+  - De executeur moet aan een erfgenaam alle door deze gewenste inlichtingen omtrent de uitoefening van zijn taak geven.
+  - De eindbeschikking kan tevens een veroordeling in de proceskosten inhouden.Artikel 244is van toepassing.
+- source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query.
+
+    Query: Wanneer is er sprake van ondubbelzinnig bezit van een recht van overpad?'
+  sentences:
+  - '1. Bezit is het houden van een goed voor zichzelf.
+
+    2. Bezit is onmiddellijk, wanneer iemand bezit zonder dat een ander het goed voor hem houdt.
+
+    3. Bezit is middellijk, wanneer iemand bezit door middel van een ander die het goed voor hem houdt.
+
+    4. Houderschap is op overeenkomstige wijze onmiddellijk of middellijk.'
+  - De bestuurder of commissaris van een rechtspersoon die, buiten het geval vanartikel 342, zijn medewerking heeft verleend
+    of zijn toestemming gegeven tot enige handeling in strijd met enige wettige bepaling van de statuten of reglementen, tengevolge
+    waarvan de rechtspersoon ernstig nadeel ondervindt, wordt gestraft met geldboete van de vijfde categorie.
+  - Tot het instellen van rechtsvorderingen en het indienen van verzoekschriften ter verkrijging van een rechterlijke uitspraak
+    die zowel het recht van de eigenaar als dat van de erfpachter betreft, is ieder van hen bevoegd, mits hij zorg draagt
+    dat de ander tijdig in het geding wordt geroepen.
+  - Bezit wordt verkregen door inbezitneming, door overdracht of door opvolging onder algemene titel.
+  - '1. In geval van verlies of beschadiging van bagage wordt de vordering tot schadevergoeding gewaardeerd naar de omstandigheden.
+
+    2. In geval van aan de reiziger overkomen letsel of van de dood van de reiziger zijn de artikelen 107 en 108 van Boek
+    3 niet van toepassing op de vorderingen die vervoerder als wederpartij van een andere vervoerder tegen deze instelt.'
+- source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query.
+
+    Query: Op welke vordering (van de curator of van bank C) dient de rechter als eerste te beslissen?'
+  sentences:
+  - '1. De bevoegdheid van de eigenaar van de grond om deze te gebruiken, omvat de bevoegdheid tot gebruik van de ruimte boven
+    en onder de oppervlakte.
+
+    2. Het gebruik van de ruimte boven en onder de oppervlakte is aan anderen toegestaan, indien dit zo hoog boven of zo diep
+    onder de oppervlakte plaats vindt, dat de eigenaar geen belang heeft zich daartegen te verzetten.
+
+    3. De vorige leden zijn niet van toepassing op de bevoegdheid tot vliegen.'
+  - Dit besluit treedt in werking op een bij koninklijk besluit te bepalen tijdstip.
+  - Op de schending van verplichtingen krachtens deze wet ten aanzien van beperkingenbesluiten als bedoeld in deartikelen
+    17a,17ben17cis artikel 162 van Boek 6 van het Burgerlijk Wetboek van toepassing.
+  - De trekker, of degene voor wiens rekening de chèque is getrokken, is verplicht zorg te dragen dat het noodige fonds tot
+    betaling op den dag der aanbieding in handen van den betrokkene zij, zelfs indien de chèque bij eenen derde is betaalbaar
+    gesteld, onverminderd de verplichting van den trekker overeenkomstigartikel 189.
+  - '1. De eigenaar van een erf dat aan een openbaar of stromend water grenst, mag van het water gebruik maken tot bespoeling,
+    tot drenking van vee of tot andere dergelijke doeleinden, mits hij daardoor aan eigenaars van andere erven geen hinder
+    toebrengt in een mate of op een wijze die volgens artikel 162 van Boek 6 onrechtmatig is.
+
+    2. Betreft het een openbaar water, dan is het vorige lid slechts van toepassing voor zover de aan dat water op grond van
+    de Omgevingswet toegekende functies zich er niet tegen verzetten.'
+- source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query.
+
+    Query: Rechtbank veroordeelt man tot 24 maanden gevangenisstraf voor beroving, mishandeling en diefstal.'
+  sentences:
+  - '1. Ontzetting van de rechten, vermeld inartikel 28, eerste lid, nos. 1 en 2 van het Wetboek van Strafrecht, kan worden
+    uitgesproken bij veroordeling wegens enig opzettelijk gepleegd misdrijf, in dit wetboek omschreven.
+
+    2. Ontzetting van het recht, vermeld in artikel 28, eerste lid, no. 3 van het Wetboek van Strafrecht, kan worden uitgesproken
+    bij veroordeling tot gevangenisstraf van tenminste een jaar wegens het plegen van een misdrijf als omschreven in hetTweede
+    Boek, Titel I, van dit wetboek.'
+  - '1. Indien van straf opgelegd bij het gewijsde, door gratie kwijtschelding is verleend, of in geval van voortzetting van
+    het geding tegen den benoemden bijzonderen vertegenwoordiger, kan in geen geval straf worden opgelegd.
+
+    2. Is de straf door gratie gewijzigd of verminderd, dan wordt in geen geval eene straf opgelegd, die de gewijzigde of
+    verminderde te boven gaat.'
+  - 'Deze wet wordt aangehaald als: Arbeidsomstandighedenwet.'
+  - '1. Verbeurdverklaring kan worden uitgesproken bij veroordeling wegens enig strafbaar feit.
+
+    2. Artikel 24is van overeenkomstige toepassing.'
+  - '1. Degene over wie één of meer persoonsgegevens in persoonsdossiers zijn verwerkt kan bij Onze Minister verzet hiertegen
+    aantekenen wegens bijzondere persoonlijke omstandigheden.
+
+    2. Onze Minister beoordeelt, gehoord het openbaar ministerie en de instelling die het rapport heeft opgemaakt, binnen
+    vier weken na ontvangst van het verzet of het verzet gerechtvaardigd is. Indien het verzet gerechtvaardigd is, beëindigt
+    hij terstond de verwerking.
+
+    3. Artikel 49is van overeenkomstige toepassing.'
+- source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query.
+
+    Query: gangbaar betaalmiddel voldoening verbintenis'
+  sentences:
+  - '1. Beslag onder een derde op een of meer vorderingen van de schuldenaar tot periodieke betalingen waaraan een beslagvrije
+    voet is verbonden, is slechts geldig voor zover een periodieke betaling de beslagvrije voet overtreft.
+
+    2. Ligt beslag onder verschillende derden op vorderingen van de schuldenaar tot periodieke betalingen waaraan een beslagvrije
+    voet is verbonden, dan wordt de beslagvrije voet omgeslagen in verhouding tot de hoogte van deze periodieke betalingen.
+
+    3. Beslag op nabetalingen is niet verder geldig dan indien de betaling gedurende het beslag tijdig was geschied.'
+  - Bij of krachtens algemene maatregel van bestuur kunnen inzake de belastingen, bedoeld inartikel 220, nadere, zo nodig
+    afwijkende, regels worden gegeven inzake de heffing en de invordering, alsmede inzake alle gemeentelijke belastingen andere
+    in het kader van deze paragraaf passende nadere regels ter aanvulling van de in deze paragraaf geregelde onderwerpen.
+  - Het geld dat ter voldoening van de verbintenis wordt betaald, moet op het tijdstip van de betaling gangbaar zijn in het
+    land in welks geld de betaling geschiedt.
+  - '1. De Hoge Verdragsluitende Partijen bepalen in onderlinge overeenstemming hun beleid met betrekking tot de wisselkoers
+    tussen de Nederlandse gulden en de Belgische en de Luxemburgse frank. Eveneens bepalen zij in onderlinge overeenstemming
+    hun beleid met betrekking tot de wisselkoers ten opzichte van de valuta''s van derde landen.
+
+    2. In het bijzonder gaan zij slechts in onderlinge overeenstemming over tot wijziging van de wisselkoersen.'
+  - De werkgever is verplicht de werknemer zijn loon op de bepaalde tijd te voldoen.
+model-index:
+- name: SentenceTransformer based on BidirLM/BidirLM-1.7B-Embedding
+  results:
+  - task:
+      type: rank-zero-ir
+      name: Rank Zero IR
+    dataset:
+      name: legal val
+      type: legal-val
+    metrics:
+    - type: cosine_accuracy@1
+      value: 0.472
+      name: Cosine Accuracy@1
+      verified: false
+    - type: cosine_accuracy@5
+      value: 0.712
+      name: Cosine Accuracy@5
+      verified: false
+    - type: cosine_accuracy@10
+      value: 0.796
+      name: Cosine Accuracy@10
+      verified: false
+    - type: cosine_precision@1
+      value: 0.472
+      name: Cosine Precision@1
+      verified: false
+    - type: cosine_precision@10
+      value: 0.14420000000000002
+      name: Cosine Precision@10
+      verified: false
+    - type: cosine_recall@1
+      value: 0.25468145638978057
+      name: Cosine Recall@1
+      verified: false
+    - type: cosine_recall@10
+      value: 0.5482142613844426
+      name: Cosine Recall@10
+      verified: false
+    - type: cosine_ndcg@10
+      value: 0.4790475765955212
+      name: Cosine Ndcg@10
+      verified: false
+    - type: cosine_mrr@10
+      value: 0.5762896825396826
+      name: Cosine Mrr@10
+      verified: false
+    - type: cosine_map@100
+      value: 0.40780927227411035
+      name: Cosine Map@100
+      verified: false
+config:
+  architectures:
+  - BidirLMModel
+  auto_map:
+    AutoConfig: configuration_bidirlm.BidirLMConfig
+    AutoModel: modeling_bidirlm.BidirLMModel
+    AutoModelForMaskedLM: modeling_bidirlm.BidirLMForMaskedLM
+    AutoModelForSequenceClassification: modeling_bidirlm.BidirLMForSequenceClassification
+    AutoModelForTokenClassification: modeling_bidirlm.BidirLMForTokenClassification
+  model_type: bidirlm
+  tokenizer_config:
+    bos_token: null
+    eos_token: <|endoftext|>
+    mask_token: <|mask|>
+    pad_token: <|endoftext|>
+    unk_token: null
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:2072399
+  - loss:CachedMultipleNegativesRankingLoss
+  - loss:MultipleNegativesRankingLoss
+  base_model: BidirLM/BidirLM-1.7B-Embedding
+  widget:
+  - source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query.
+
+      Query: Heeft een erfgenaam recht op inzage in de administratie van de erflater op grond van redelijkheid en billijkheid?'
+    sentences:
+    - Op de rechtsbetrekkingen tussen hoofdschuldenaar en borg en op die tussen borgen en voor de verbintenis aansprakelijke
+      niet-schuldenaren onderling is artikel 2 van Boek 6 van overeenkomstige toepassing.
+    - De arbeider is in het algemeen verplicht al datgene te doen en na te laten, wat een goed arbeider in gelijke omstandigheden
+      behoort te doen en na te laten.
+    - '1. Tot het indienen van het inartikel 447bedoelde verzoek is bevoegd: a. iedere belanghebbende; b. de advocaat-generaal
+      bij het gerechtshof te Amsterdam in het openbaar belang.
+
+      2. Tot het indienen van het verzoek is voorts bevoegd de Stichting Autoriteit Financiële Markten, voor zover het stukken
+      betreft die betrekking hebben op een effectenuitgevende instelling als bedoeld in artikel 1, onderdeel b, van de Wet
+      toezicht financiële verslaggeving en met inachtneming van het in artikel 4 van die wet bepaalde.'
+    - De executeur moet aan een erfgenaam alle door deze gewenste inlichtingen omtrent de uitoefening van zijn taak geven.
+    - De eindbeschikking kan tevens een veroordeling in de proceskosten inhouden.Artikel 244is van toepassing.
+  - source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query.
+
+      Query: Wanneer is er sprake van ondubbelzinnig bezit van een recht van overpad?'
+    sentences:
+    - '1. Bezit is het houden van een goed voor zichzelf.
+
+      2. Bezit is onmiddellijk, wanneer iemand bezit zonder dat een ander het goed voor hem houdt.
+
+      3. Bezit is middellijk, wanneer iemand bezit door middel van een ander die het goed voor hem houdt.
+
+      4. Houderschap is op overeenkomstige wijze onmiddellijk of middellijk.'
+    - De bestuurder of commissaris van een rechtspersoon die, buiten het geval vanartikel 342, zijn medewerking heeft verleend
+      of zijn toestemming gegeven tot enige handeling in strijd met enige wettige bepaling van de statuten of reglementen,
+      tengevolge waarvan de rechtspersoon ernstig nadeel ondervindt, wordt gestraft met geldboete van de vijfde categorie.
+    - Tot het instellen van rechtsvorderingen en het indienen van verzoekschriften ter verkrijging van een rechterlijke uitspraak
+      die zowel het recht van de eigenaar als dat van de erfpachter betreft, is ieder van hen bevoegd, mits hij zorg draagt
+      dat de ander tijdig in het geding wordt geroepen.
+    - Bezit wordt verkregen door inbezitneming, door overdracht of door opvolging onder algemene titel.
+    - '1. In geval van verlies of beschadiging van bagage wordt de vordering tot schadevergoeding gewaardeerd naar de omstandigheden.
+
+      2. In geval van aan de reiziger overkomen letsel of van de dood van de reiziger zijn de artikelen 107 en 108 van Boek
+      3 niet van toepassing op de vorderingen die vervoerder als wederpartij van een andere vervoerder tegen deze instelt.'
+  - source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query.
+
+      Query: Op welke vordering (van de curator of van bank C) dient de rechter als eerste te beslissen?'
+    sentences:
+    - '1. De bevoegdheid van de eigenaar van de grond om deze te gebruiken, omvat de bevoegdheid tot gebruik van de ruimte
+      boven en onder de oppervlakte.
+
+      2. Het gebruik van de ruimte boven en onder de oppervlakte is aan anderen toegestaan, indien dit zo hoog boven of zo
+      diep onder de oppervlakte plaats vindt, dat de eigenaar geen belang heeft zich daartegen te verzetten.
+
+      3. De vorige leden zijn niet van toepassing op de bevoegdheid tot vliegen.'
+    - Dit besluit treedt in werking op een bij koninklijk besluit te bepalen tijdstip.
+    - Op de schending van verplichtingen krachtens deze wet ten aanzien van beperkingenbesluiten als bedoeld in deartikelen
+      17a,17ben17cis artikel 162 van Boek 6 van het Burgerlijk Wetboek van toepassing.
+    - De trekker, of degene voor wiens rekening de chèque is getrokken, is verplicht zorg te dragen dat het noodige fonds
+      tot betaling op den dag der aanbieding in handen van den betrokkene zij, zelfs indien de chèque bij eenen derde is betaalbaar
+      gesteld, onverminderd de verplichting van den trekker overeenkomstigartikel 189.
+    - '1. De eigenaar van een erf dat aan een openbaar of stromend water grenst, mag van het water gebruik maken tot bespoeling,
+      tot drenking van vee of tot andere dergelijke doeleinden, mits hij daardoor aan eigenaars van andere erven geen hinder
+      toebrengt in een mate of op een wijze die volgens artikel 162 van Boek 6 onrechtmatig is.
+
+      2. Betreft het een openbaar water, dan is het vorige lid slechts van toepassing voor zover de aan dat water op grond
+      van de Omgevingswet toegekende functies zich er niet tegen verzetten.'
+  - source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query.
+
+      Query: Rechtbank veroordeelt man tot 24 maanden gevangenisstraf voor beroving, mishandeling en diefstal.'
+    sentences:
+    - '1. Ontzetting van de rechten, vermeld inartikel 28, eerste lid, nos. 1 en 2 van het Wetboek van Strafrecht, kan worden
+      uitgesproken bij veroordeling wegens enig opzettelijk gepleegd misdrijf, in dit wetboek omschreven.
+
+      2. Ontzetting van het recht, vermeld in artikel 28, eerste lid, no. 3 van het Wetboek van Strafrecht, kan worden uitgesproken
+      bij veroordeling tot gevangenisstraf van tenminste een jaar wegens het plegen van een misdrijf als omschreven in hetTweede
+      Boek, Titel I, van dit wetboek.'
+    - '1. Indien van straf opgelegd bij het gewijsde, door gratie kwijtschelding is verleend, of in geval van voortzetting
+      van het geding tegen den benoemden bijzonderen vertegenwoordiger, kan in geen geval straf worden opgelegd.
+
+      2. Is de straf door gratie gewijzigd of verminderd, dan wordt in geen geval eene straf opgelegd, die de gewijzigde of
+      verminderde te boven gaat.'
+    - 'Deze wet wordt aangehaald als: Arbeidsomstandighedenwet.'
+    - '1. Verbeurdverklaring kan worden uitgesproken bij veroordeling wegens enig strafbaar feit.
+
+      2. Artikel 24is van overeenkomstige toepassing.'
+    - '1. Degene over wie één of meer persoonsgegevens in persoonsdossiers zijn verwerkt kan bij Onze Minister verzet hiertegen
+      aantekenen wegens bijzondere persoonlijke omstandigheden.
+
+      2. Onze Minister beoordeelt, gehoord het openbaar ministerie en de instelling die het rapport heeft opgemaakt, binnen
+      vier weken na ontvangst van het verzet of het verzet gerechtvaardigd is. Indien het verzet gerechtvaardigd is, beëindigt
+      hij terstond de verwerking.
+
+      3. Artikel 49is van overeenkomstige toepassing.'
+  - source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query.
+
+      Query: gangbaar betaalmiddel voldoening verbintenis'
+    sentences:
+    - '1. Beslag onder een derde op een of meer vorderingen van de schuldenaar tot periodieke betalingen waaraan een beslagvrije
+      voet is verbonden, is slechts geldig voor zover een periodieke betaling de beslagvrije voet overtreft.
+
+      2. Ligt beslag onder verschillende derden op vorderingen van de schuldenaar tot periodieke betalingen waaraan een beslagvrije
+      voet is verbonden, dan wordt de beslagvrije voet omgeslagen in verhouding tot de hoogte van deze periodieke betalingen.
+
+      3. Beslag op nabetalingen is niet verder geldig dan indien de betaling gedurende het beslag tijdig was geschied.'
+    - Bij of krachtens algemene maatregel van bestuur kunnen inzake de belastingen, bedoeld inartikel 220, nadere, zo nodig
+      afwijkende, regels worden gegeven inzake de heffing en de invordering, alsmede inzake alle gemeentelijke belastingen
+      andere in het kader van deze paragraaf passende nadere regels ter aanvulling van de in deze paragraaf geregelde onderwerpen.
+    - Het geld dat ter voldoening van de verbintenis wordt betaald, moet op het tijdstip van de betaling gangbaar zijn in
+      het land in welks geld de betaling geschiedt.
+    - '1. De Hoge Verdragsluitende Partijen bepalen in onderlinge overeenstemming hun beleid met betrekking tot de wisselkoers
+      tussen de Nederlandse gulden en de Belgische en de Luxemburgse frank. Eveneens bepalen zij in onderlinge overeenstemming
+      hun beleid met betrekking tot de wisselkoers ten opzichte van de valuta''s van derde landen.
+
+      2. In het bijzonder gaan zij slechts in onderlinge overeenstemming over tot wijziging van de wisselkoersen.'
+    - De werkgever is verplicht de werknemer zijn loon op de bepaalde tijd te voldoen.
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - cosine_accuracy@1
+  - cosine_accuracy@5
+  - cosine_accuracy@10
+  - cosine_precision@1
+  - cosine_precision@10
+  - cosine_recall@1
+  - cosine_recall@10
+  - cosine_ndcg@10
+  - cosine_mrr@10
+  - cosine_map@100
+  model-index:
+  - name: SentenceTransformer based on BidirLM/BidirLM-1.7B-Embedding
+    results:
+    - task:
+        type: rank-zero-ir
+        name: Rank Zero IR
+      dataset:
+        name: legal val
+        type: legal-val
+      metrics:
+      - type: cosine_accuracy@1
+        value: 0.472
+        name: Cosine Accuracy@1
+        verified: false
+      - type: cosine_accuracy@5
+        value: 0.712
+        name: Cosine Accuracy@5
+        verified: false
+      - type: cosine_accuracy@10
+        value: 0.796
+        name: Cosine Accuracy@10
+        verified: false
+      - type: cosine_precision@1
+        value: 0.472
+        name: Cosine Precision@1
+        verified: false
+      - type: cosine_precision@10
+        value: 0.14420000000000002
+        name: Cosine Precision@10
+        verified: false
+      - type: cosine_recall@1
+        value: 0.25468145638978057
+        name: Cosine Recall@1
+        verified: false
+      - type: cosine_recall@10
+        value: 0.5482142613844426
+        name: Cosine Recall@10
+        verified: false
+      - type: cosine_ndcg@10
+        value: 0.4790475765955212
+        name: Cosine Ndcg@10
+        verified: false
+      - type: cosine_mrr@10
+        value: 0.5762896825396826
+        name: Cosine Mrr@10
+        verified: false
+      - type: cosine_map@100
+        value: 0.40780927227411035
+        name: Cosine Map@100
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: configuration_bidirlm.py
+- rfilename: last-checkpoint/1_Pooling/config.json
+- rfilename: last-checkpoint/README.md
+- rfilename: last-checkpoint/config.json
+- rfilename: last-checkpoint/config_sentence_transformers.json
+- rfilename: last-checkpoint/configuration_bidirlm.py
+- rfilename: last-checkpoint/model.safetensors
+- rfilename: last-checkpoint/modeling_bidirlm.py
+- rfilename: last-checkpoint/modules.json
+- rfilename: last-checkpoint/optimizer.pt
+- rfilename: last-checkpoint/rng_state.pth
+- rfilename: last-checkpoint/scheduler.pt
+- rfilename: last-checkpoint/sentence_bert_config.json
+- rfilename: last-checkpoint/tokenizer.json
+- rfilename: last-checkpoint/tokenizer_config.json
+- rfilename: last-checkpoint/trainer_state.json
+- rfilename: last-checkpoint/training_args.bin
+- rfilename: model.safetensors
+- rfilename: modeling_bidirlm.py
+- rfilename: modules.json
+- rfilename: runs/events.out.tfevents.1790783304.elotfi.172485.0
+- rfilename: runs/events.out.tfevents.1790783914.elotfi.175673.0
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: training_args.bin
+spaces: []
+createdAt: '2026-09-28T11:59:51.000Z'
+safetensors:
+  parameters:
+    F32: 1720574976
+  total: 1720574976
+usedStorage: 82600404300
+downloadsAllTime: 5
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 13764.7
+approxSizeMb: 6882.3
+fetchedAt: '2026-10-02T09:36:39.000Z'

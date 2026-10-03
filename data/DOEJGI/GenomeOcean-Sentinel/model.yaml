@@ -1,0 +1,115 @@
+_id: 6ac02cfdf4682a4335ba6a1a
+id: DOEJGI/GenomeOcean-Sentinel
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- mistral
+- feature-extraction
+- custom-code
+- gos
+- distillation
+- non-commercial
+- custom_code
+- license:other
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: DOEJGI/GenomeOcean-Sentinel
+author: DOEJGI
+sha: 7ad672818571cb63f7646539d60414e2d271b90b
+lastModified: '2026-10-02T23:20:40.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  architectures:
+  - GOSStudentForObserver
+  model_type: mistral
+  auto_map:
+    AutoModel: modeling_gos_student.GOSStudentForObserver
+  tokenizer_config:
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  license: other
+  license_name: berkeley-lab-non-commercial-use-only
+  license_link: LICENSE
+  library_name: transformers
+  tags:
+  - custom-code
+  - gos
+  - distillation
+  - mistral
+  - non-commercial
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_gos_student.GOSStudentForObserver
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: decision_head.json
+- rfilename: model.safetensors
+- rfilename: modeling_gos_student.py
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-02T22:15:25.000Z'
+safetensors:
+  parameters:
+    F32: 116411905
+  total: 116411905
+usedStorage: 465660300
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - GOSStudentForObserver
+  attention_dropout: 0.0
+  bos_token_id: null
+  classifier_dropout: 0.1
+  dtype: bfloat16
+  eos_token_id: null
+  hidden_act: silu
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_causal: true
+  max_position_embeddings: 32768
+  model_type: mistral
+  num_attention_heads: 8
+  num_hidden_layers: 12
+  num_key_value_heads: 8
+  output_router_logits: false
+  pad_token_id: 3
+  rms_norm_eps: 1.0e-05
+  rope_theta: 1000000.0
+  router_aux_loss_coef: 0.02
+  sliding_window: null
+  tie_word_embeddings: false
+  transformers_version: 4.56.2
+  use_cache: false
+  vocab_size: 4096
+  auto_map:
+    AutoModel: modeling_gos_student.GOSStudentForObserver
+  target_mean: -2.191271897027036e-06
+  target_std: 11.3706368339268
+  max_length: 200
+onnxFiles: {}
+safetensorsSizeMb: 465.7
+approxSizeMb: 465.6
+fetchedAt: '2026-10-03T09:02:58.000Z'

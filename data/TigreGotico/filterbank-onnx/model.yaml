@@ -1,0 +1,54 @@
+_id: 69c5daaad6e7024e0edee5df
+id: TigreGotico/filterbank-onnx
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- audio
+- speech
+- feature-extraction
+- feature-extractor
+- mel-filterbank
+- region:us
+downloads: 0
+likes: 0
+modelId: TigreGotico/filterbank-onnx
+author: TigreGotico
+sha: ac7e7ec3edce753818b2315279a90969faef304c
+lastModified: '2026-10-02T22:10:54.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  tags:
+  - audio
+  - speech
+  - feature-extraction
+  - feature-extractor
+  - mel-filterbank
+  - onnx
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: filterbank-mels128-fft512-hop160-onnx.onnx
+- rfilename: filterbank-mels40-fft400-hop160-onnx.onnx
+- rfilename: filterbank-mels64-fft400-hop160-onnx.onnx
+- rfilename: filterbank-mels80-fft400-hop160-onnx.onnx
+spaces: []
+createdAt: '2026-03-27T01:17:30.000Z'
+usedStorage: 305042
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  filterbank-mels128-fft512-hop160-onnx.onnx: 0.1
+  filterbank-mels40-fft400-hop160-onnx.onnx: 0.0
+  filterbank-mels64-fft400-hop160-onnx.onnx: 0.1
+  filterbank-mels80-fft400-hop160-onnx.onnx: 0.1
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-03T09:02:58.000Z'

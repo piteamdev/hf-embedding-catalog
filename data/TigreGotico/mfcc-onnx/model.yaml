@@ -1,0 +1,82 @@
+_id: 6908c5c339973bb3d4812470
+id: TigreGotico/mfcc-onnx
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- audio
+- speech
+- feature-extraction
+- feature-extractor
+- mfcc
+- region:us
+downloads: 0
+likes: 0
+modelId: TigreGotico/mfcc-onnx
+author: TigreGotico
+sha: 4aa0c0897e23aeb7bee2da7a46841575349ce0e9
+lastModified: '2026-10-02T22:10:56.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  tags:
+  - audio
+  - speech
+  - feature-extraction
+  - feature-extractor
+  - mfcc
+  - onnx
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: mfcc_sr16000_mfcc13_mels40_fft400_hop160.onnx
+- rfilename: mfcc_sr16000_mfcc13_mels40_fft400_hop160_int16.onnx
+- rfilename: mfcc_sr16000_mfcc13_mels40_fft400_hop160_int8.onnx
+- rfilename: mfcc_sr16000_mfcc20_mels64_fft400_hop160.onnx
+- rfilename: mfcc_sr16000_mfcc20_mels64_fft400_hop160_int16.onnx
+- rfilename: mfcc_sr16000_mfcc20_mels64_fft400_hop160_int8.onnx
+- rfilename: mfcc_sr16000_mfcc30_mels64_fft400_hop160.onnx
+- rfilename: mfcc_sr16000_mfcc30_mels64_fft400_hop160_int16.onnx
+- rfilename: mfcc_sr16000_mfcc30_mels64_fft400_hop160_int8.onnx
+- rfilename: mfcc_sr16000_mfcc40_mels40_fft400_hop160.onnx
+- rfilename: mfcc_sr16000_mfcc40_mels40_fft400_hop160_int16.onnx
+- rfilename: mfcc_sr16000_mfcc40_mels40_fft400_hop160_int8.onnx
+- rfilename: mfcc_sr16000_mfcc40_mels64_fft400_hop160.onnx
+- rfilename: mfcc_sr16000_mfcc40_mels64_fft400_hop160_int16.onnx
+- rfilename: mfcc_sr16000_mfcc40_mels64_fft400_hop160_int8.onnx
+- rfilename: mfcc_sr16000_mfcc40_mels80_fft512_hop160.onnx
+- rfilename: mfcc_sr16000_mfcc40_mels80_fft512_hop160_int16.onnx
+- rfilename: mfcc_sr16000_mfcc40_mels80_fft512_hop160_int8.onnx
+spaces: []
+createdAt: '2025-11-03T15:09:55.000Z'
+usedStorage: 777666
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  mfcc_sr16000_mfcc13_mels40_fft400_hop160.onnx: 0.0
+  mfcc_sr16000_mfcc13_mels40_fft400_hop160_int16.onnx: 0.0
+  mfcc_sr16000_mfcc13_mels40_fft400_hop160_int8.onnx: 0.0
+  mfcc_sr16000_mfcc20_mels64_fft400_hop160.onnx: 0.1
+  mfcc_sr16000_mfcc20_mels64_fft400_hop160_int16.onnx: 0.1
+  mfcc_sr16000_mfcc20_mels64_fft400_hop160_int8.onnx: 0.1
+  mfcc_sr16000_mfcc30_mels64_fft400_hop160.onnx: 0.1
+  mfcc_sr16000_mfcc30_mels64_fft400_hop160_int16.onnx: 0.1
+  mfcc_sr16000_mfcc30_mels64_fft400_hop160_int8.onnx: 0.1
+  mfcc_sr16000_mfcc40_mels40_fft400_hop160.onnx: 0.0
+  mfcc_sr16000_mfcc40_mels40_fft400_hop160_int16.onnx: 0.0
+  mfcc_sr16000_mfcc40_mels40_fft400_hop160_int8.onnx: 0.0
+  mfcc_sr16000_mfcc40_mels64_fft400_hop160.onnx: 0.1
+  mfcc_sr16000_mfcc40_mels64_fft400_hop160_int16.onnx: 0.1
+  mfcc_sr16000_mfcc40_mels64_fft400_hop160_int8.onnx: 0.1
+  mfcc_sr16000_mfcc40_mels80_fft512_hop160.onnx: 0.1
+  mfcc_sr16000_mfcc40_mels80_fft512_hop160_int16.onnx: 0.1
+  mfcc_sr16000_mfcc40_mels80_fft512_hop160_int8.onnx: 0.1
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-03T09:02:58.000Z'

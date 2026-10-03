@@ -1,0 +1,73 @@
+_id: 6abfcaf4538879d81e23cca5
+id: sosa123454321/atovika-waste-research-rag
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- waste-management
+- retrieval
+- rag
+- sentence-similarity
+- en
+- tr
+- fa
+- ar
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: sosa123454321/atovika-waste-research-rag
+author: sosa123454321
+sha: 3b03d8ed16db6d61758fc22acfcdd8b78088742a
+lastModified: '2026-10-03T09:03:24.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: sentence-transformers
+  tags:
+  - waste-management
+  - retrieval
+  - rag
+  - sentence-similarity
+  language:
+  - en
+  - tr
+  - fa
+  - ar
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: prompts/system.txt
+spaces: []
+createdAt: '2026-10-02T15:17:08.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  embedding_model: '@cf/baai/bge-m3'
+  reranker: '@cf/baai/bge-reranker-base'
+  chat_model: '@cf/mistralai/mistral-small-3.1-24b-instruct'
+  dims: 1024
+  shortlist: 24
+  top_k: 6
+  corpus:
+    papers: 226
+    standards: 121
+    posts: 119
+    organizations: 1252
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-03T09:02:58.000Z'

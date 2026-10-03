@@ -1,0 +1,145 @@
+_id: 6aa726d63eaa602a16e1ea2e
+id: MBZUAI/Omni-Embed-Mini-0.9B-onnx
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- multimodal
+- embeddings
+- retrieval
+- webgpu
+- transformers.js
+- feature-extraction
+- arxiv:2610.02148
+- license:apache-2.0
+- region:us
+downloads: 24
+likes: 0
+modelId: MBZUAI/Omni-Embed-Mini-0.9B-onnx
+author: MBZUAI
+sha: 6651def90dc84baee8ec34c07d02695b97c8bdde
+lastModified: '2026-10-02T16:11:19.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: onnx
+  license: apache-2.0
+  pipeline_tag: feature-extraction
+  tags:
+  - multimodal
+  - embeddings
+  - retrieval
+  - onnx
+  - webgpu
+  - transformers.js
+transformersInfo:
+  auto_model: AutoModel
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: fp16/backbone/conversion_metadata.json
+- rfilename: fp16/backbone/embed_tokens.onnx
+- rfilename: fp16/backbone/embed_tokens.onnx.data
+- rfilename: fp16/backbone/model.onnx
+- rfilename: fp16/backbone/model.onnx.data
+- rfilename: fp16/backbone/parity_report.json
+- rfilename: fp16/chat_template.jinja
+- rfilename: fp16/config.json
+- rfilename: fp16/dasheng_encoder/conversion_metadata.json
+- rfilename: fp16/dasheng_encoder/init_bn_bias.npy
+- rfilename: fp16/dasheng_encoder/init_bn_scale.npy
+- rfilename: fp16/dasheng_encoder/mel_filters.npy
+- rfilename: fp16/dasheng_encoder/model.onnx
+- rfilename: fp16/dasheng_encoder/model.onnx.data
+- rfilename: fp16/manifest.json
+- rfilename: fp16/processor_config.json
+- rfilename: fp16/projectors/conversion_metadata.json
+- rfilename: fp16/projectors/dasheng_down_proj.onnx
+- rfilename: fp16/projectors/dasheng_down_proj.onnx.data
+- rfilename: fp16/projectors/image_projector.onnx
+- rfilename: fp16/projectors/image_projector.onnx.data
+- rfilename: fp16/projectors/video_pooler.onnx
+- rfilename: fp16/projectors/video_pooler.onnx.data
+- rfilename: fp16/projectors/video_projector.onnx
+- rfilename: fp16/projectors/video_projector.onnx.data
+- rfilename: fp16/projectors/whisper_down_proj.onnx
+- rfilename: fp16/projectors/whisper_down_proj.onnx.data
+- rfilename: fp16/tokenizer.json
+- rfilename: fp16/tokenizer_config.json
+- rfilename: fp16/vision_encoder/conversion_metadata.json
+- rfilename: fp16/vision_encoder/model.onnx
+- rfilename: fp16/vision_encoder/model.onnx.data
+- rfilename: fp16/vision_encoder/pos_embed_table.npy
+- rfilename: fp16/vision_encoder/preprocessor_config.json
+- rfilename: fp16/vision_encoder/rotary_inv_freq.npy
+- rfilename: fp16/whisper_encoder/conversion_metadata.json
+- rfilename: fp16/whisper_encoder/mel_filters.npy
+- rfilename: fp16/whisper_encoder/model.onnx
+- rfilename: fp16/whisper_encoder/model.onnx.data
+- rfilename: fp16/whisper_encoder/preprocessor_config.json
+- rfilename: manifest.json
+- rfilename: q8/backbone/embed_tokens.onnx
+- rfilename: q8/backbone/embed_tokens.onnx.data
+- rfilename: q8/backbone/model.onnx
+- rfilename: q8/backbone/model.onnx.data
+- rfilename: q8/chat_template.jinja
+- rfilename: q8/config.json
+- rfilename: q8/dasheng_encoder/init_bn_bias.npy
+- rfilename: q8/dasheng_encoder/init_bn_scale.npy
+- rfilename: q8/dasheng_encoder/mel_filters.npy
+- rfilename: q8/dasheng_encoder/model.onnx
+- rfilename: q8/dasheng_encoder/model.onnx.data
+- rfilename: q8/manifest.json
+- rfilename: q8/processor_config.json
+- rfilename: q8/projectors/dasheng_down_proj.onnx
+- rfilename: q8/projectors/dasheng_down_proj.onnx.data
+- rfilename: q8/projectors/image_projector.onnx
+- rfilename: q8/projectors/image_projector.onnx.data
+- rfilename: q8/projectors/video_pooler.onnx
+- rfilename: q8/projectors/video_pooler.onnx.data
+- rfilename: q8/projectors/video_projector.onnx
+- rfilename: q8/projectors/video_projector.onnx.data
+- rfilename: q8/projectors/whisper_down_proj.onnx
+- rfilename: q8/projectors/whisper_down_proj.onnx.data
+- rfilename: q8/tokenizer.json
+- rfilename: q8/tokenizer_config.json
+- rfilename: q8/vision_encoder/model.onnx
+- rfilename: q8/vision_encoder/model.onnx.data
+- rfilename: q8/vision_encoder/pos_embed_table.npy
+- rfilename: q8/vision_encoder/rotary_inv_freq.npy
+- rfilename: q8/whisper_encoder/mel_filters.npy
+- rfilename: q8/whisper_encoder/model.onnx
+- rfilename: q8/whisper_encoder/model.onnx.data
+spaces: []
+createdAt: '2026-09-13T22:42:30.000Z'
+usedStorage: 2789557514
+downloadsAllTime: 24
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  fp16/backbone/embed_tokens.onnx: 0.0
+  fp16/backbone/model.onnx: 4.0
+  fp16/dasheng_encoder/model.onnx: 2.4
+  fp16/projectors/dasheng_down_proj.onnx: 0.0
+  fp16/projectors/image_projector.onnx: 0.0
+  fp16/projectors/video_pooler.onnx: 0.1
+  fp16/projectors/video_projector.onnx: 0.0
+  fp16/projectors/whisper_down_proj.onnx: 0.0
+  fp16/vision_encoder/model.onnx: 1.1
+  fp16/whisper_encoder/model.onnx: 1.0
+  q8/backbone/embed_tokens.onnx: 0.0
+  q8/backbone/model.onnx: 3.5
+  q8/dasheng_encoder/model.onnx: 2.4
+  q8/projectors/dasheng_down_proj.onnx: 0.0
+  q8/projectors/image_projector.onnx: 0.0
+  q8/projectors/video_pooler.onnx: 0.1
+  q8/projectors/video_projector.onnx: 0.0
+  q8/projectors/whisper_down_proj.onnx: 0.0
+  q8/vision_encoder/model.onnx: 1.0
+  q8/whisper_encoder/model.onnx: 0.9
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-03T09:02:58.000Z'

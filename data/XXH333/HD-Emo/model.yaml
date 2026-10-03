@@ -1,0 +1,52 @@
+_id: 6abbe56b8116eed910d4b94d
+id: XXH333/HD-Emo
+private: false
+pipeline_tag: feature-extraction
+tags:
+- audio
+- speech
+- speech-codec
+- emotion-recognition
+- automatic-speech-recognition
+- valence-arousal-dominance
+- feature-extraction
+- en
+- arxiv:2606.28249
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 1
+modelId: XXH333/HD-Emo
+author: XXH333
+sha: 6660fb1c8de71bef12eed88c5cd112a524224cf9
+lastModified: '2026-10-02T17:16:32.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  language:
+  - en
+  pipeline_tag: feature-extraction
+  tags:
+  - audio
+  - speech
+  - speech-codec
+  - emotion-recognition
+  - automatic-speech-recognition
+  - valence-arousal-dominance
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: model.pt
+spaces: []
+createdAt: '2026-09-29T16:20:59.000Z'
+usedStorage: 1329369388
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-03T09:02:58.000Z'

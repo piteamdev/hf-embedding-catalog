@@ -1,0 +1,61 @@
+_id: 6ac07b14f4f1ce50a984a9b1
+id: Kodep/jev-topic-head
+private: false
+pipeline_tag: feature-extraction
+library_name: peft
+tags:
+- peft
+- embeddings
+- text-classification
+- distillation
+- knowledge-distillation
+- generated-code
+- status:scaffold
+- feature-extraction
+- base_model:Qwen/Qwen3-Embedding-0.6B
+- base_model:adapter:Qwen/Qwen3-Embedding-0.6B
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: Kodep/jev-topic-head
+author: Kodep
+sha: 4f8fc413272e6f21054781eb54a192f265c00968
+lastModified: '2026-10-03T04:52:49.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  base_model: Qwen/Qwen3-Embedding-0.6B
+  base_model_relation: adapter
+  library_name: peft
+  pipeline_tag: feature-extraction
+  license: apache-2.0
+  pretty_name: Jev topic head — Qwen3-Embedding-0.6B (LoRA + prototype head)
+  tags:
+  - embeddings
+  - text-classification
+  - distillation
+  - knowledge-distillation
+  - generated-code
+  - status:scaffold
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: checkpoints/README.md
+- rfilename: data/README.md
+- rfilename: docs/report_claude_v1.md
+- rfilename: eval/README.md
+- rfilename: src/README.md
+spaces:
+- Kodep/jev-review
+createdAt: '2026-10-03T03:48:36.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-03T09:02:58.000Z'

@@ -1,0 +1,62 @@
+_id: 6a973b5c9888410ad0ee5990
+id: jxliu2/idiomsae-300M-L18-k32
+private: false
+pipeline_tag: feature-extraction
+tags:
+- biology
+- protein
+- interpretability
+- sparse-autoencoder
+- mechanistic-interpretability
+- intrinsically-disordered-proteins
+- feature-extraction
+- arxiv:2610.02189
+- license:mit
+- region:us
+downloads: 11
+likes: 0
+modelId: jxliu2/idiomsae-300M-L18-k32
+author: jxliu2
+sha: dfdaa116927499e846f0d771db415ff2fc9bda08
+lastModified: '2026-10-02T17:21:08.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  pipeline_tag: feature-extraction
+  tags:
+  - biology
+  - protein
+  - interpretability
+  - sparse-autoencoder
+  - mechanistic-interpretability
+  - intrinsically-disordered-proteins
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: sae.safetensors
+- rfilename: sae_config.json
+spaces:
+- hugging-apps/idiom-idr-design
+createdAt: '2026-09-01T20:53:48.000Z'
+usedStorage: 134287752
+downloadsAllTime: 11
+inferenceProviderMapping: {}
+configJson:
+  host_model: jxliu2/idiom-300M
+  layer: 18
+  region: idr
+  fim_mode: unprompted
+  d_in: 1024
+  num_latents: 16384
+  k: 32
+  expansion_factor: 16
+  activation: topk
+  multi_topk: false
+onnxFiles: {}
+safetensorsSizeMb: 134.3
+approxSizeMb: 0.0
+fetchedAt: '2026-10-03T09:02:58.000Z'

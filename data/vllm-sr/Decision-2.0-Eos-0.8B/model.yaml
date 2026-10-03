@@ -1,0 +1,131 @@
+_id: 6aba70d026ca99d03a00b219
+id: vllm-sr/Decision-2.0-Eos-0.8B
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- decision2
+- feature-extraction
+- decision-model
+- classification
+- system-one
+- custom_code
+- base_model:vllm-sr/Decision-1.0-Eos-0.8B
+- base_model:finetune:vllm-sr/Decision-1.0-Eos-0.8B
+- license:apache-2.0
+- region:us
+downloads: 24
+likes: 3
+modelId: vllm-sr/Decision-2.0-Eos-0.8B
+author: vllm-sr
+sha: 3594047d69f476f1d01cf84c593e213fc3a4dfe0
+lastModified: '2026-10-03T08:16:23.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - Decision2Model
+  auto_map:
+    AutoConfig: configuration_decision2.Decision2Config
+    AutoModel: modeling_decision2.Decision2Model
+  model_type: decision2
+  tokenizer_config:
+    bos_token: null
+    eos_token: <|im_end|>
+    pad_token: <|endoftext|>
+    unk_token: null
+cardData:
+  license: apache-2.0
+  base_model: vllm-sr/Decision-1.0-Eos-0.8B
+  base_model_relation: finetune
+  library_name: transformers
+  tags:
+  - decision-model
+  - classification
+  - system-one
+  - safetensors
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_decision2.Decision2Model
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: MODEL_MANIFEST.json
+- rfilename: README.md
+- rfilename: assets/banner.png
+- rfilename: assets/index-areas.png
+- rfilename: assets/index-pareto.png
+- rfilename: assets/jevarena-types.png
+- rfilename: assets/jevarena.png
+- rfilename: backbone/config.json
+- rfilename: backbone/model.safetensors
+- rfilename: config.json
+- rfilename: configuration_decision2.py
+- rfilename: decision2/__init__.py
+- rfilename: decision2/_vendor/__init__.py
+- rfilename: decision2/_vendor/dev2model/__init__.py
+- rfilename: decision2/_vendor/dev2model/calibration.py
+- rfilename: decision2/_vendor/dev2model/data.py
+- rfilename: decision2/_vendor/dev2model/decision_model.py
+- rfilename: decision2/_vendor/dev2model/infer.py
+- rfilename: decision2/_vendor/dev2model/lora.py
+- rfilename: decision2/_vendor/dev2model/score_bias.py
+- rfilename: decision2/_vendor/dev2model/source.py
+- rfilename: decision2/api.py
+- rfilename: decision2/fast.py
+- rfilename: decision2/fast_kernels.py
+- rfilename: decision2/qwen.py
+- rfilename: decision2/shared_ctx.py
+- rfilename: decision_config.json
+- rfilename: decision_head.safetensors
+- rfilename: modeling_decision2.py
+- rfilename: pipeline_decision2.py
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-09-28T13:51:12.000Z'
+usedStorage: 2040774081
+downloadsAllTime: 24
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - Decision2Model
+  auto_map:
+    AutoConfig: configuration_decision2.Decision2Config
+    AutoModel: modeling_decision2.Decision2Model
+  backbone:
+    config: backbone/config.json
+    weights:
+    - backbone/model.safetensors
+  calibration: null
+  custom_pipelines:
+    decision:
+      impl: pipeline_decision2.Decision2Pipeline
+      pt:
+      - AutoModel
+      type: text
+  decision_format: vllm-sr-decision
+  decision_weights:
+    decision_head: decision_head.safetensors
+  format_version: 2
+  manifest: MODEL_MANIFEST.json
+  max_input_tokens: 16384
+  model_config: decision_config.json
+  model_name: Decision-2.0-Eos-0.8B
+  model_type: decision2
+  package_schema: dev2-package/1
+  runtime:
+    entry: decision2.Decision2.from_pretrained
+    python_package: decision2
+  runtime_family: decision2-qwen-full
+  tokenizer:
+    config: tokenizer_config.json
+    json: tokenizer.json
+onnxFiles: {}
+safetensorsSizeMb: 2018.6
+approxSizeMb: 0.0
+fetchedAt: '2026-10-03T09:02:58.000Z'

@@ -1,0 +1,189 @@
+_id: 6ac047af137f93e079856fb5
+id: mahiyama/Sazanami-MetaEmbed-310m
+private: false
+pipeline_tag: feature-extraction
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- modernbert
+- late-interaction
+- multi-vector
+- colbert
+- matryoshka
+- information-retrieval
+- japanese
+- feature-extraction
+- ja
+- dataset:mahiyama/auto-wiki-qa
+- dataset:mahiyama/mqa-ja
+- dataset:mahiyama/mmarco-ja
+- dataset:mahiyama/miracl-retrieval
+- dataset:mahiyama/mrtydi
+- dataset:mahiyama/amagasaki-qna
+- dataset:mahiyama/quiz-works
+- dataset:mahiyama/quiz-no-mori
+- dataset:mahiyama/anlp-meeting-retrieval
+- dataset:mahiyama/kosodate-faq-pairs-ja
+- arxiv:2004.12832
+- arxiv:2112.01488
+- arxiv:2509.18095
+- base_model:sbintuitions/modernbert-ja-310m
+- base_model:finetune:sbintuitions/modernbert-ja-310m
+- license:mit
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: mahiyama/Sazanami-MetaEmbed-310m
+author: mahiyama
+sha: e7e4c26d9c4dbe67a04cd8c8a1269db2609187e7
+lastModified: '2026-10-03T00:09:33.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - ModernBertModel
+  model_type: modernbert
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <cls>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: <sep>
+    unk_token: <unk>
+    use_default_system_prompt: false
+cardData:
+  language:
+  - ja
+  license: mit
+  library_name: sentence-transformers
+  pipeline_tag: feature-extraction
+  tags:
+  - late-interaction
+  - multi-vector
+  - colbert
+  - matryoshka
+  - information-retrieval
+  - japanese
+  - modernbert
+  base_model: sbintuitions/modernbert-ja-310m
+  datasets:
+  - mahiyama/auto-wiki-qa
+  - mahiyama/mqa-ja
+  - mahiyama/mmarco-ja
+  - mahiyama/miracl-retrieval
+  - mahiyama/mrtydi
+  - mahiyama/amagasaki-qna
+  - mahiyama/quiz-works
+  - mahiyama/quiz-no-mori
+  - mahiyama/anlp-meeting-retrieval
+  - mahiyama/kosodate-faq-pairs-ja
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Dense/config.json
+- rfilename: 1_Dense/model.safetensors
+- rfilename: 2_Normalize/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: meta_modules.py
+- rfilename: meta_params.safetensors
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-03T00:09:19.000Z'
+safetensors:
+  parameters:
+    F32: 314611968
+  total: 314611968
+usedStorage: 1259101992
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - ModernBertModel
+  attention_bias: false
+  attention_dropout: 0.0
+  bos_token_id: 1
+  classifier_activation: gelu
+  classifier_bias: false
+  classifier_dropout: 0.0
+  classifier_pooling: cls
+  cls_token_id: 6
+  decoder_bias: true
+  deterministic_flash_attn: false
+  dtype: float32
+  embedding_dropout: 0.0
+  eos_token_id: 2
+  global_attn_every_n_layers: 3
+  gradient_checkpointing: false
+  hidden_activation: gelu
+  hidden_size: 768
+  initializer_cutoff_factor: 2.0
+  initializer_range: 0.02
+  intermediate_size: 3072
+  layer_norm_eps: 1.0e-05
+  layer_types:
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  local_attention: 128
+  max_position_embeddings: 8192
+  mlp_bias: false
+  mlp_dropout: 0.0
+  model_type: modernbert
+  norm_bias: false
+  norm_eps: 1.0e-05
+  num_attention_heads: 12
+  num_hidden_layers: 25
+  pad_token_id: 3
+  position_embedding_type: rope
+  repad_logits_with_grad: false
+  rope_parameters:
+    full_attention:
+      rope_theta: 160000.0
+      rope_type: default
+    sliding_attention:
+      rope_theta: 10000.0
+      rope_type: default
+  sep_token_id: 4
+  sparse_pred_ignore_index: -100
+  sparse_prediction: false
+  tie_word_embeddings: true
+  transformers_version: 5.17.0
+  use_cache: false
+  vocab_size: 102400
+onnxFiles: {}
+safetensorsSizeMb: 1259.1
+approxSizeMb: 1258.4
+fetchedAt: '2026-10-03T09:02:58.000Z'

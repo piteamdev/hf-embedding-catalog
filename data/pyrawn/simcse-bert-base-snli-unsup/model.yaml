@@ -1,0 +1,143 @@
+_id: 6ac069f8a71a1c451c8e36be
+id: pyrawn/simcse-bert-base-snli-unsup
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- sentence-similarity
+- feature-extraction
+- simcse
+- contrastive-learning
+- en
+- dataset:stanfordnlp/snli
+- arxiv:2104.08821
+- base_model:google-bert/bert-base-uncased
+- base_model:finetune:google-bert/bert-base-uncased
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: pyrawn/simcse-bert-base-snli-unsup
+author: pyrawn
+sha: 49a48bc73518c1e7068772fac078fd18c6246dc4
+lastModified: '2026-10-03T02:40:51.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index:
+- name: simcse-bert-base-snli-unsup
+  results:
+  - task:
+      type: semantic-similarity
+      name: Semantic Textual Similarity
+    dataset:
+      type: sentence-transformers/stsb
+      name: STS-B (test)
+      split: test
+    metrics:
+    - type: spearman_cosine
+      value: 68.33
+      name: Spearman (cosine) x100
+      verified: false
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  language: en
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  base_model: google-bert/bert-base-uncased
+  datasets:
+  - stanfordnlp/snli
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - simcse
+  - contrastive-learning
+  model-index:
+  - name: simcse-bert-base-snli-unsup
+    results:
+    - task:
+        type: semantic-similarity
+        name: Semantic Textual Similarity
+      dataset:
+        type: sentence-transformers/stsb
+        name: STS-B (test)
+        split: test
+      metrics:
+      - type: spearman_cosine
+        value: 68.33
+        name: Spearman (cosine) x100
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Normalize/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-03T02:35:36.000Z'
+safetensors:
+  parameters:
+    F32: 109482240
+  total: 109482240
+usedStorage: 437951304
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.18.0
+  type_vocab_size: 2
+  use_cache: true
+  vocab_size: 30522
+onnxFiles: {}
+safetensorsSizeMb: 438.0
+approxSizeMb: 437.9
+fetchedAt: '2026-10-03T09:02:58.000Z'

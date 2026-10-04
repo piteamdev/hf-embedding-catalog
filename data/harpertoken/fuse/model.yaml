@@ -1,0 +1,113 @@
+_id: 6ac2156e17c08e6d36efd21b
+id: harpertoken/fuse
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- fuse_matcher
+- feature-extraction
+- image-text-matching
+- flickr8k
+- cnn
+- vision-language
+- custom_code
+- en
+- dataset:flickr8k
+- license:mit
+- model-index
+- region:us
+downloads: 0
+likes: 0
+modelId: harpertoken/fuse
+author: harpertoken
+sha: a44ab22f1085ca08885dedf31035b9d9f0e23ca7
+lastModified: '2026-10-04T09:26:57.000Z'
+gated: false
+disabled: false
+model-index:
+- name: fuse
+  results:
+  - task:
+      type: image-text-matching
+    dataset:
+      name: Flickr8k
+      type: flickr8k
+      split: test
+    metrics:
+    - type: accuracy
+      value: 0.6933
+      verified: false
+config:
+  architectures:
+  - FuseMatcher
+  auto_map:
+    AutoConfig: modeling_fuse.FuseConfig
+    AutoModel: modeling_fuse.FuseMatcher
+  model_type: fuse_matcher
+cardData:
+  license: mit
+  language: en
+  library_name: transformers
+  tags:
+  - image-text-matching
+  - flickr8k
+  - cnn
+  - vision-language
+  datasets:
+  - flickr8k
+  metrics:
+  - accuracy
+  model-index:
+  - name: fuse
+    results:
+    - task:
+        type: image-text-matching
+      dataset:
+        name: Flickr8k
+        type: flickr8k
+        split: test
+      metrics:
+      - type: accuracy
+        value: 0.6933
+        verified: false
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_fuse.FuseMatcher
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: fuse_examples.png
+- rfilename: model.safetensors
+- rfilename: modeling_fuse.py
+spaces: []
+createdAt: '2026-10-04T08:59:26.000Z'
+safetensors:
+  parameters:
+    F32: 868864
+  total: 868864
+usedStorage: 3691915
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - FuseMatcher
+  auto_map:
+    AutoConfig: modeling_fuse.FuseConfig
+    AutoModel: modeling_fuse.FuseMatcher
+  dropout: 0.25
+  dtype: float32
+  id2label:
+    '0': LABEL_0
+  label2id:
+    LABEL_0: 0
+  model_type: fuse_matcher
+  transformers_version: 5.18.0
+  vocab_size: 4433
+onnxFiles: {}
+safetensorsSizeMb: 3.5
+approxSizeMb: 3.5
+fetchedAt: '2026-10-04T09:35:33.000Z'

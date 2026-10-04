@@ -1,0 +1,92 @@
+_id: 6ac1a0679057bb51ee292960
+id: yimingzhang/allie-2.0
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- allie
+- feature-extraction
+- chess
+- human-behavior
+- mixture-of-experts
+- custom_code
+- arxiv:2410.03893
+- arxiv:2605.19091
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: yimingzhang/allie-2.0
+author: yimingzhang
+sha: a8fb019ff41f4d3eb914d051f9f96d2d15b74685
+lastModified: '2026-10-04T09:22:05.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: allie
+  architectures:
+  - AllieModel
+  auto_map:
+    AutoConfig: configuration_allie.AllieConfig
+    AutoModel: modeling_allie.AllieModel
+cardData:
+  license: mit
+  library_name: transformers
+  tags:
+  - chess
+  - human-behavior
+  - mixture-of-experts
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_allie.AllieModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: api.py
+- rfilename: config.json
+- rfilename: configuration_allie.py
+- rfilename: fast.py
+- rfilename: model.py
+- rfilename: model.safetensors
+- rfilename: modeling_allie.py
+- rfilename: tokens.py
+spaces: []
+createdAt: '2026-10-04T00:40:07.000Z'
+safetensors:
+  parameters:
+    F32: 9085312
+    BF16: 5594140448
+  total: 5603225760
+usedStorage: 11224644832
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  layers: 24
+  width: 1536
+  heads: 24
+  head_dim: 64
+  vocab: 2432
+  value_embeds: 5
+  experts: 256
+  topk: 16
+  expert_hidden: 192
+  shared_hidden: 1024
+  gate_floor: 1.0e-12
+  attn_scale: 0.1
+  name: allie-2.0
+  step: 143051
+  checkpoint_sha256: b87705e99e4a845759ad95260803ec8aa595297018ef19631d4f5e5d22d38344
+  model_type: allie
+  architectures:
+  - AllieModel
+  auto_map:
+    AutoConfig: configuration_allie.AllieConfig
+    AutoModel: modeling_allie.AllieModel
+onnxFiles: {}
+safetensorsSizeMb: 11224.6
+approxSizeMb: 11224.6
+fetchedAt: '2026-10-04T09:35:33.000Z'

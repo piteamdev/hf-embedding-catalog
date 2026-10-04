@@ -1,0 +1,103 @@
+_id: 6aba9318cf9c7d49486d4002
+id: BenedictCarling/perch2-int8
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- audio
+- bioacoustics
+- feature-extraction
+- int8
+- stm32n6
+- perch
+- arxiv:2508.04665
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: BenedictCarling/perch2-int8
+author: BenedictCarling
+sha: 798512dc407a9849f2b6eb5b2b7915e84bf00b66
+lastModified: '2026-10-03T10:41:33.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  tags:
+  - audio
+  - bioacoustics
+  - feature-extraction
+  - onnx
+  - int8
+  - stm32n6
+  - perch
+siblings:
+- rfilename: .gitattributes
+- rfilename: CITATION.cff
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: SHA256SUMS
+- rfilename: SOURCE_COMMIT
+- rfilename: docs/CPU_PORTABILITY.md
+- rfilename: docs/EVALUATION.md
+- rfilename: example.wav
+- rfilename: manifest.json
+- rfilename: perch2_backbone_fp32.onnx
+- rfilename: perch2_backbone_int8.onnx
+- rfilename: perch2_mel_matrix.npy
+- rfilename: perch_int8.py
+- rfilename: requirements-dev.txt
+- rfilename: requirements.txt
+- rfilename: research/README.md
+- rfilename: research/debug/basic_reference.npz
+- rfilename: research/debug/compare_cpu_outputs.py
+- rfilename: research/requirements.txt
+- rfilename: research/src/audio_io.py
+- rfilename: research/src/export_backbone_n6.py
+- rfilename: research/src/extract_perch2_weights.py
+- rfilename: research/src/n6_beans.py
+- rfilename: research/src/n6_birdset.py
+- rfilename: research/src/n6_calib_mels.py
+- rfilename: research/src/n6_compile.py
+- rfilename: research/src/n6_conformance.py
+- rfilename: research/src/n6_embed.py
+- rfilename: research/src/n6_quantise.py
+- rfilename: research/src/n6_spatial.py
+- rfilename: research/src/padfix_n6.py
+- rfilename: research/src/perch2_leaf_mapping.json
+- rfilename: research/src/perch2_torch.py
+- rfilename: results/birdset_provenance.json
+- rfilename: results/cpu_portability.json
+- rfilename: results/n6_beans.json
+- rfilename: results/n6_birdset_HSN_NBP.json
+- rfilename: results/n6_birdset_SNE_PER.json
+- rfilename: results/n6_birdset_SSW.json
+- rfilename: results/n6_birdset_UHH_NES.json
+- rfilename: results/n6_compile_n6_divsmall_raw_asym.json
+- rfilename: results/n6_conformance.json
+- rfilename: results/release_validation.json
+- rfilename: synthetic_reference.npz
+- rfilename: tests/test_release.py
+- rfilename: tools/build_synthetic_reference.py
+- rfilename: tools/calibration_features.py
+- rfilename: tools/prepare_research.py
+- rfilename: tools/run_birdset_reproduction.py
+- rfilename: tools/sync_hf.py
+spaces: []
+createdAt: '2026-09-28T16:17:28.000Z'
+usedStorage: 57471328
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  perch2_backbone_fp32.onnx: 42.8
+  perch2_backbone_int8.onnx: 12.3
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-04T09:35:33.000Z'

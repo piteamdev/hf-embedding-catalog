@@ -1,0 +1,271 @@
+_id: 6ac1c9f7003f6638a7534082
+id: TeraSpace/TeraAnaly
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- tera_analy
+- feature-extraction
+- audio
+- speech
+- speech-emotion-recognition
+- age-estimation
+- gender-classification
+- russian-stress
+- custom-code
+- custom_code
+- ru
+- base_model:AigizK/w2v-bert-2.0-bashkort-russian-omnivoice
+- base_model:finetune:AigizK/w2v-bert-2.0-bashkort-russian-omnivoice
+- license:cc-by-nc-sa-4.0
+- region:us
+downloads: 0
+likes: 0
+modelId: TeraSpace/TeraAnaly
+author: TeraSpace
+sha: d1840efbf94886681cb1b8e5d556b2e7074f8cc8
+lastModified: '2026-10-04T04:06:52.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: tera_analy
+  architectures:
+  - TeraAnaly
+  auto_map:
+    AutoConfig: modeling_tera_analy.TeraAnalyConfig
+    AutoModel: modeling_tera_analy.TeraAnaly
+cardData:
+  license: cc-by-nc-sa-4.0
+  language:
+  - ru
+  library_name: transformers
+  base_model:
+  - AigizK/w2v-bert-2.0-bashkort-russian-omnivoice
+  tags:
+  - audio
+  - speech
+  - speech-emotion-recognition
+  - age-estimation
+  - gender-classification
+  - russian-stress
+  - custom-code
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_tera_analy.TeraAnaly
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: LICENSE.md
+- rfilename: README.md
+- rfilename: age.safetensors
+- rfilename: config.json
+- rfilename: ctc.safetensors
+- rfilename: emotion.safetensors
+- rfilename: encoder.safetensors
+- rfilename: example_inference.py
+- rfilename: gender.safetensors
+- rfilename: modeling_tera_analy.py
+- rfilename: stress.safetensors
+- rfilename: weights_manifest.json
+spaces: []
+createdAt: '2026-10-04T03:37:27.000Z'
+usedStorage: 2375686836
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  model_type: tera_analy
+  architectures:
+  - TeraAnaly
+  auto_map:
+    AutoConfig: modeling_tera_analy.TeraAnalyConfig
+    AutoModel: modeling_tera_analy.TeraAnaly
+  encoder_config:
+    activation_dropout: 0.0
+    adapter_act: relu
+    adapter_kernel_size: 3
+    adapter_stride: 2
+    add_adapter: true
+    apply_spec_augment: false
+    architectures:
+    - Wav2Vec2BertForCTC
+    attention_dropout: 0.0
+    bos_token_id: 1
+    classifier_proj_size: 768
+    codevector_dim: 768
+    conformer_conv_dropout: 0.1
+    contrastive_logits_temperature: 0.1
+    conv_depthwise_kernel_size: 31
+    ctc_loss_reduction: mean
+    ctc_zero_infinity: true
+    diversity_loss_weight: 0.1
+    dtype: float32
+    eos_token_id: 2
+    feat_proj_dropout: 0.0
+    feat_quantizer_dropout: 0.0
+    feature_projection_input_dim: 160
+    final_dropout: 0.1
+    hidden_act: swish
+    hidden_dropout: 0.0
+    hidden_size: 1024
+    initializer_range: 0.02
+    intermediate_size: 4096
+    layer_norm_eps: 1.0e-05
+    layerdrop: 0.0
+    left_max_position_embeddings: 64
+    mask_feature_length: 10
+    mask_feature_min_masks: 0
+    mask_feature_prob: 0.0
+    mask_time_length: 10
+    mask_time_min_masks: 2
+    mask_time_prob: 0.0
+    max_source_positions: 5000
+    model_type: wav2vec2-bert
+    num_adapter_layers: 1
+    num_attention_heads: 16
+    num_codevector_groups: 2
+    num_codevectors_per_group: 320
+    num_hidden_layers: 24
+    num_negatives: 100
+    output_hidden_size: 1024
+    pad_token_id: 44
+    position_embeddings_type: relative_key
+    proj_codevector_dim: 768
+    right_max_position_embeddings: 8
+    rotary_embedding_base: 10000
+    tdnn_dilation:
+    - 1
+    - 2
+    - 3
+    - 1
+    - 1
+    tdnn_dim:
+    - 512
+    - 512
+    - 512
+    - 512
+    - 1500
+    tdnn_kernel:
+    - 5
+    - 3
+    - 3
+    - 1
+    - 1
+    transformers_version: 5.5.3
+    use_intermediate_ffn_before_adapter: false
+    use_weighted_layer_sum: false
+    vocab_size: 47
+    xvector_output_dim: 512
+  vocab:
+    '[PAD]': 44
+    '[UNK]': 43
+    '|': 0
+    а: 1
+    б: 2
+    в: 3
+    г: 4
+    д: 5
+    е: 6
+    ж: 7
+    з: 8
+    и: 9
+    й: 10
+    к: 11
+    л: 12
+    м: 13
+    н: 14
+    о: 15
+    п: 16
+    р: 17
+    с: 18
+    т: 19
+    у: 20
+    ф: 21
+    х: 22
+    ц: 23
+    ч: 24
+    ш: 25
+    щ: 26
+    ъ: 27
+    ы: 28
+    ь: 29
+    э: 30
+    ю: 31
+    я: 32
+    ё: 33
+    ғ: 34
+    ҙ: 35
+    ҡ: 36
+    ң: 37
+    ҫ: 38
+    ү: 39
+    һ: 40
+    ә: 41
+    ө: 42
+  global_layers:
+  - 4
+  - 8
+  - 16
+  - 24
+  use_prosody_features: true
+  labels:
+    emotion:
+    - neutral
+    - angry
+    - positive
+    - sad
+    - other
+    gender:
+    - female
+    - male
+    - child
+  ctc:
+    layer: 16
+    blank: 44
+    hidden_size: 1024
+    output_size: 47
+  heads:
+    emotion:
+      dimension: 8200
+      widths:
+      - 256
+    age:
+      dimension: 8360
+      widths:
+      - 128
+      frames:
+      - layer: 8
+        width: 256
+        projection_dim: 64
+        global_dim: 8360
+        frame_stride: 2
+      blend_weight: 0.75
+    gender:
+      dimension: 8200
+      widths:
+      - 128
+      frames:
+      - layer: 8
+        width: 256
+        projection_dim: 64
+        global_dim: 8360
+        frame_stride: 2
+      blend_weight: 1.0
+    stress:
+      dimension: 3085
+      widths:
+      - 1024
+      layer: 16
+  source:
+    encoder: AigizK/w2v-bert-2.0-bashkort-russian-omnivoice
+    encoder_revision: e4c4278904c6359e9ac769cf04575be68f99ed4e
+    model_fingerprint: 111dc574069315e437a08a5708e50d86a249a0830de40748b2cb32567d1154b0
+    original_heads_sha256: 3da1e89e531e306481eac8d17222d4024d2f03f6234f5f106740365c41a96b12
+    original_ctc_sha256: a9ed240881a46352415d9eb6f5e78bcd32a19186b3e4f42fdfdece0856791b02
+    encoder_finetuned: false
+onnxFiles: {}
+safetensorsSizeMb: 2375.7
+approxSizeMb: 0.0
+fetchedAt: '2026-10-04T09:35:33.000Z'

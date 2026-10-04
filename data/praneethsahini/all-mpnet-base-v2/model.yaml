@@ -141,7 +141,7 @@ siblings:
 spaces: []
 createdAt: '2025-01-10T08:20:40.000Z'
 usedStorage: 1474
-downloadsAllTime: 386
+downloadsAllTime: 387
 inferenceProviderMapping: {}
 configJson:
   _name_or_path: microsoft/mpnet-base
@@ -176,4 +176,4 @@ onnxFiles:
   onnx/model_quint8_avx2.onnx: 0.0
 safetensorsSizeMb: 0.0
 approxSizeMb: 0.0
-fetchedAt: '2026-10-03T09:02:58.000Z'
+fetchedAt: '2026-10-04T09:35:33.000Z'

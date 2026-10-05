@@ -1,0 +1,203 @@
+_id: 6ac2448daadad5e049573113
+id: Forkulous/be-forkulous
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- sentence-similarity
+- feature-extraction
+- generated_from_trainer
+- dataset_size:7845
+- loss:CoSENTLoss
+- dataset:Forkulous/usda-retrieve-rerank
+- arxiv:1908.10084
+- base_model:sentence-transformers/all-MiniLM-L6-v2
+- base_model:finetune:sentence-transformers/all-MiniLM-L6-v2
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 21
+likes: 0
+modelId: Forkulous/be-forkulous
+author: Forkulous
+sha: ab690020ba70c7dafc3219d67f7b721cf4d6bf36
+lastModified: '2026-10-04T13:03:04.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: 'ingredient: 1 onion large, cut into 1/2-inch dice'
+  sentences:
+  - 'usda: Onions, welsh, raw'
+  - 'usda: Pretzels, soft, ready-to-eat, unsalted, buttered'
+  - 'usda: Carrots, raw, salad'
+- source_sentence: 'ingredient: 2 shallots halved and thinly sliced'
+  sentences:
+  - 'usda: Peas, green, split, mature seeds, raw'
+  - 'usda: Lettuce, Boston, raw'
+  - 'usda: Fish broth'
+- source_sentence: 'ingredient: 1 potato approx. 10oz, peeled, and cut into small chunks'
+  sentences:
+  - 'usda: Strawberries, raw'
+  - 'usda: Coffee, instant, pre-lightened and pre-sweetened with sugar, reconstituted'
+  - 'usda: Fish, haddock, raw'
+- source_sentence: 'ingredient: 1 box pound cake mix '
+  sentences:
+  - 'usda: Pancakes, plain, dry mix, incomplete (includes buttermilk)'
+  - 'usda: Energy drink (No Fear Motherload)'
+  - 'usda: Cake, pudding-type, white, enriched, dry mix'
+- source_sentence: 'ingredient: 6 tablespoons mascarpone cheese softened to room temperature'
+  sentences:
+  - 'usda: Cheese, tilsit'
+  - 'usda: Sauce, NFS'
+  - 'usda: Veal, variety meats and by-products, thymus, cooked, braised'
+model-index:
+- name: SentenceTransformer based on sentence-transformers/all-MiniLM-L6-v2
+  results:
+  - task:
+      type: semantic-similarity
+      name: Semantic Similarity
+    dataset:
+      name: Unknown
+      type: unknown
+    metrics:
+    - type: pearson_cosine
+      value: 0.8611980539629058
+      name: Pearson Cosine
+      verified: false
+    - type: spearman_cosine
+      value: 0.8619011435194792
+      name: Spearman Cosine
+      verified: false
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - generated_from_trainer
+  - dataset_size:7845
+  - loss:CoSENTLoss
+  base_model: sentence-transformers/all-MiniLM-L6-v2
+  widget:
+  - source_sentence: 'ingredient: 1 onion large, cut into 1/2-inch dice'
+    sentences:
+    - 'usda: Onions, welsh, raw'
+    - 'usda: Pretzels, soft, ready-to-eat, unsalted, buttered'
+    - 'usda: Carrots, raw, salad'
+  - source_sentence: 'ingredient: 2 shallots halved and thinly sliced'
+    sentences:
+    - 'usda: Peas, green, split, mature seeds, raw'
+    - 'usda: Lettuce, Boston, raw'
+    - 'usda: Fish broth'
+  - source_sentence: 'ingredient: 1 potato approx. 10oz, peeled, and cut into small chunks'
+    sentences:
+    - 'usda: Strawberries, raw'
+    - 'usda: Coffee, instant, pre-lightened and pre-sweetened with sugar, reconstituted'
+    - 'usda: Fish, haddock, raw'
+  - source_sentence: 'ingredient: 1 box pound cake mix '
+    sentences:
+    - 'usda: Pancakes, plain, dry mix, incomplete (includes buttermilk)'
+    - 'usda: Energy drink (No Fear Motherload)'
+    - 'usda: Cake, pudding-type, white, enriched, dry mix'
+  - source_sentence: 'ingredient: 6 tablespoons mascarpone cheese softened to room temperature'
+    sentences:
+    - 'usda: Cheese, tilsit'
+    - 'usda: Sauce, NFS'
+    - 'usda: Veal, variety meats and by-products, thymus, cooked, braised'
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - pearson_cosine
+  - spearman_cosine
+  model-index:
+  - name: SentenceTransformer based on sentence-transformers/all-MiniLM-L6-v2
+    results:
+    - task:
+        type: semantic-similarity
+        name: Semantic Similarity
+      dataset:
+        name: Unknown
+        type: unknown
+      metrics:
+      - type: pearson_cosine
+        value: 0.8611980539629058
+        name: Pearson Cosine
+        verified: false
+      - type: spearman_cosine
+        value: 0.8619011435194792
+        name: Spearman Cosine
+        verified: false
+  datasets:
+  - Forkulous/usda-retrieve-rerank
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: eval/Information-Retrieval_evaluation_ir-eval_results.csv
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: optimizer.pt
+- rfilename: rng_state.pth
+- rfilename: scheduler.pt
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: trainer_state.json
+- rfilename: training_args.bin
+spaces: []
+createdAt: '2026-10-04T12:20:29.000Z'
+safetensors:
+  parameters:
+    F32: 22713216
+  total: 22713216
+usedStorage: 271491020
+downloadsAllTime: 21
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  initializer_range: 0.02
+  intermediate_size: 1536
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 6
+  pad_token_id: 0
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.15.0
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 30522
+onnxFiles: {}
+safetensorsSizeMb: 90.9
+approxSizeMb: 90.9
+fetchedAt: '2026-10-05T10:16:54.000Z'

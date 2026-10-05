@@ -1,0 +1,771 @@
+_id: 6ac1bc9aa9a6a6806bb1023e
+id: TigreGotico/wakephonehubert
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- audio
+- speech
+- feature-extraction
+- voice-activity-detection
+- phoneme-recognition
+- forced-alignment
+- keyword-spotting
+- wake-word
+- streaming
+- causal
+- int8
+- safetensors
+- en
+- nl
+- fr
+- de
+- it
+- pl
+- pt
+- es
+- ca
+- cy
+- ru
+- fa
+- tr
+- uk
+- ar
+- cs
+- el
+- et
+- id
+- ky
+- mn
+- ro
+- sv
+- lv
+- dataset:openslr/librispeech_asr
+- dataset:MLCommons/ml_spoken_words
+- dataset:facebook/multilingual_librispeech
+- dataset:google/fleurs
+- dataset:agkphysics/AudioSet
+- base_model:TigreGotico/wakehubert-tiny
+- base_model:quantized:TigreGotico/wakehubert-tiny
+- license:apache-2.0
+- region:us
+downloads: 206
+likes: 0
+modelId: TigreGotico/wakephonehubert
+author: TigreGotico
+sha: ec9196dd9e6e392edd9838fb68270ef8037e8851
+lastModified: '2026-10-04T19:34:13.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  language:
+  - en
+  - nl
+  - fr
+  - de
+  - it
+  - pl
+  - pt
+  - es
+  - ca
+  - cy
+  - ru
+  - fa
+  - tr
+  - uk
+  - ar
+  - cs
+  - el
+  - et
+  - id
+  - ky
+  - mn
+  - ro
+  - sv
+  - lv
+  datasets:
+  - openslr/librispeech_asr
+  - MLCommons/ml_spoken_words
+  - facebook/multilingual_librispeech
+  - google/fleurs
+  - agkphysics/AudioSet
+  tags:
+  - audio
+  - speech
+  - feature-extraction
+  - voice-activity-detection
+  - phoneme-recognition
+  - forced-alignment
+  - keyword-spotting
+  - wake-word
+  - streaming
+  - causal
+  - onnx
+  - int8
+  - safetensors
+  base_model:
+  - TigreGotico/wakehubert-tiny
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: VALIDATION.md
+- rfilename: aligner/aligner_head.onnx
+- rfilename: aligner/aligner_head.safetensors
+- rfilename: checkpoints/training_checkpoint_round3.pt
+- rfilename: checkpoints/training_checkpoint_round4_final_ipa.pt
+- rfilename: checkpoints/training_checkpoint_v1.1_ipa.pt
+- rfilename: config.json
+- rfilename: heads/ipa_head.pt
+- rfilename: heads/ipa_head.safetensors
+- rfilename: heads/lid10_centroids.npz
+- rfilename: heads/lid10_linear.npz
+- rfilename: heads/phones_probe.npz
+- rfilename: heads/report.json
+- rfilename: heads/vad_head.pt
+- rfilename: heads/vad_head.safetensors
+- rfilename: heads/wakephonehubert_jarvis.onnx
+- rfilename: validation_clips.json
+- rfilename: validation_report.json
+- rfilename: vocab.json
+- rfilename: wakephonehubert.safetensors
+- rfilename: wakephonehubert_features_int8.onnx
+- rfilename: wakephonehubert_int8.onnx
+- rfilename: wph_model.py
+spaces:
+- TigreGotico/wakephonehubert-space
+createdAt: '2026-10-04T02:40:26.000Z'
+usedStorage: 75584108
+downloadsAllTime: 206
+inferenceProviderMapping: {}
+configJson:
+  family: WakePhoneHuBERT
+  architecture: frozen-int8-trunk+tap-heads(+mel-tcn side branch)
+  input:
+    name: waveform
+    shape:
+    - batch
+    - samples
+    dtype: float32
+    sample_rate: 16000
+  output:
+    name: features
+    shape:
+    - batch
+    - frames
+    - '521'
+    frame_rate_hz: 50.0
+    hop_samples: 320
+    layout:
+      hubert:
+      - 0
+      - 128
+      vad:
+      - 128
+      - 129
+      ipa:
+      - 129
+      - 521
+  outputs:
+    hubert:
+      shape:
+      - batch
+      - frames
+      - '128'
+      frame_rate_hz: 50.0
+      hop_samples: 320
+      description: WakeHuBERT-tiny int8 features, bit-identical to wakehubert_int8.onnx
+    layers:
+      shape:
+      - batch
+      - frames
+      - '9'
+      - '256'
+      frame_rate_hz: 50.0
+      hop_samples: 320
+      description: 'dequantised int8 trunk taps: stem output then the 8 block outputs, after ReLU'
+    logmel:
+      shape:
+      - batch
+      - mel_frames
+      - '64'
+      frame_rate_hz: 100.0
+      hop_samples: 160
+      description: BatchNorm-normalised log-mel, 2 frames per feature frame
+    mfcc:
+      shape:
+      - batch
+      - mel_frames
+      - '20'
+      frame_rate_hz: 100.0
+      hop_samples: 160
+      description: orthonormal DCT-II of the un-normalised log-mel
+    vad:
+      shape:
+      - batch
+      - frames
+      - '1'
+      frame_rate_hz: 50.0
+      hop_samples: 320
+      description: active-speaker probability (sigmoid)
+    ipa:
+      shape:
+      - batch
+      - frames
+      - '392'
+      frame_rate_hz: 50.0
+      hop_samples: 320
+      description: CTC posteriors (softmax) over the vocab ids; index 0 <pad> is the blank, indices 1-3 (<s>, </s>, <unk>)
+        are dropped when decoding; trained with a 5-frame (100 ms) teacher delay
+    features:
+      shape:
+      - batch
+      - frames
+      - '521'
+      frame_rate_hz: 50.0
+      hop_samples: 320
+      description: hubert, vad, ipa joined on the last axis
+  feature_dim: 521
+  streaming: true
+  causal: true
+  delay_ms: 100.0
+  receptive_field_samples: 41920
+  trunk:
+    repo: TigreGotico/wakehubert-tiny
+    revision: 3caa605725a932440442692f644b7217f54a29c3
+    file: wakehubert_int8.onnx
+    sha256: 0b6a70470cf8f8c053b19b0ec14f1098e620eca213c36736018d71681462e064
+    tap_dim: 256
+    taps: 9
+    n_mels: 64
+    n_mfcc: 20
+    receptive_field_samples: 40000
+  heads:
+    vad:
+      hidden: 32
+      side_branch_channels: 0
+      n_out: 1
+      activation: sigmoid
+      params: 85098
+      dtype: float16
+      source_checkpoint: heads/vad_head.pt
+      sha256: d9d2021c1ddaa6ca777c32a342c24b45b20f27f2d740404934a827189905edb5
+      side_branch_lookback_frames: 0
+      mix_weights:
+      - 0.015081421472132206
+      - 0.022473769262433052
+      - 0.03543561324477196
+      - 0.07578780502080917
+      - 0.750652551651001
+      - 0.03585625812411308
+      - 0.02173173800110817
+      - 0.024624740704894066
+      - 0.01835610903799534
+    ipa:
+      hidden: 192
+      side_branch_channels: 128
+      n_out: 392
+      activation: softmax
+      params: 903953
+      dtype: float16
+      source_checkpoint: heads/ipa_head.pt
+      sha256: 5b4cc5056b5817d9bef4b22b1f3df881cb1b88e2f17df745a6ba16f6f7b32c75
+      side_branch_lookback_frames: 62
+      mix_weights:
+      - 0.020296480506658554
+      - 0.4981604218482971
+      - 0.2189067155122757
+      - 0.0186313409358263
+      - 0.2223159223794937
+      - 0.009705251082777977
+      - 0.0041600000113248825
+      - 0.003935995511710644
+      - 0.003887816099449992
+  heads_dtype:
+    vad: float16
+    ipa: float16
+  heads_dtype_trials:
+    vad_int8-static:
+      head: vad
+      dtype: int8-static
+      max_abs_prob_diff: 0.14380240440368652
+      decision_agreement: 0.9926042593987536
+      decisions: 14603
+      pass: false
+      full_file_bytes: 5219019
+    vad_int8-weights:
+      head: vad
+      dtype: int8-weights
+      max_abs_prob_diff: 0.0332256555557251
+      decision_agreement: 0.9988358556461001
+      decisions: 14603
+      pass: false
+      full_file_bytes: 5201040
+    vad_float16:
+      head: vad
+      dtype: float16
+      max_abs_prob_diff: 0.0004902482032775879
+      decision_agreement: 0.9999315209203589
+      decisions: 14603
+      pass: true
+      full_file_bytes: 5285304
+    ipa_int8-static:
+      head: ipa
+      dtype: int8-static
+      max_abs_prob_diff: 0.5446023941040039
+      decision_agreement: 0.9615147572416627
+      decisions: 14603
+      pass: false
+      full_file_bytes: 2821898
+    ipa_int8-weights:
+      head: ipa
+      dtype: int8-weights
+      max_abs_prob_diff: 0.07965582609176636
+      decision_agreement: 0.9966445250975827
+      decisions: 14603
+      pass: false
+      full_file_bytes: 2765352
+    ipa_float16:
+      head: ipa
+      dtype: float16
+      max_abs_prob_diff: 0.002020120620727539
+      decision_agreement: 1.0
+      decisions: 14603
+      pass: true
+      full_file_bytes: 3652618
+  heads_dtype_final_check:
+    vad:
+      max_abs_prob_diff: 0.0004902482032775879
+      decision_agreement: 0.9999315209203589
+      decisions: 14603
+      pass: true
+    ipa:
+      max_abs_prob_diff: 0.002020120620727539
+      decision_agreement: 1.0
+      decisions: 14603
+      pass: true
+  acceptance_rule:
+    tol: 0.01
+    agree: 0.995
+  head_adapter_context_frames: 6
+  vocab:
+    symbols:
+    - <pad>
+    - <s>
+    - </s>
+    - <unk>
+    - n
+    - s
+    - t
+    - ə
+    - l
+    - a
+    - i
+    - k
+    - d
+    - m
+    - ɛ
+    - ɾ
+    - e
+    - ɪ
+    - p
+    - o
+    - ɐ
+    - z
+    - ð
+    - f
+    - j
+    - v
+    - b
+    - ɹ
+    - ʁ
+    - ʊ
+    - iː
+    - r
+    - w
+    - ʌ
+    - u
+    - ɡ
+    - æ
+    - aɪ
+    - ʃ
+    - h
+    - ɔ
+    - ɑː
+    - ŋ
+    - ɚ
+    - eɪ
+    - β
+    - uː
+    - y
+    - ɑ̃
+    - oʊ
+    - ᵻ
+    - eː
+    - θ
+    - aʊ
+    - ts
+    - oː
+    - ɔ̃
+    - ɣ
+    - ɜ
+    - ɑ
+    - dʒ
+    - əl
+    - x
+    - ɜː
+    - ç
+    - ʒ
+    - tʃ
+    - ɔː
+    - ɑːɹ
+    - ɛ̃
+    - ʎ
+    - ɔːɹ
+    - ʋ
+    - aː
+    - ɕ
+    - œ
+    - ø
+    - oːɹ
+    - ɲ
+    - yː
+    - ʔ
+    - iə
+    - i5
+    - s.
+    - tɕ
+    - ??
+    - nʲ
+    - ɛː
+    - œ̃
+    - ɭ
+    - ɔø
+    - ʑ
+    - tʲ
+    - ɨ
+    - ɛɹ
+    - ts.
+    - rʲ
+    - ɪɹ
+    - ɭʲ
+    - i.5
+    - ɔɪ
+    - q
+    - sʲ
+    - u5
+    - ʊɹ
+    - iɜ
+    - a5
+    - iɛ5
+    - øː
+    - ʕ
+    - ja
+    - əɜ
+    - th
+    - ɑ5
+    - oɪ
+    - dʲ
+    - ə5
+    - tɕh
+    - ts.h
+    - mʲ
+    - ɯ
+    - dʑ
+    - vʲ
+    - e̞
+    - tʃʲ
+    - ei5
+    - o5
+    - onɡ5
+    - ɑu5
+    - iɑ5
+    - ai5
+    - aɪɚ
+    - kh
+    - ə1
+    - ʐ
+    - i2
+    - ʉ
+    - ħ
+    - t[
+    - aɪə
+    - ʲ
+    - ju
+    - ə2
+    - u2
+    - oɜ
+    - pː
+    - iɛɜ
+    - ou5
+    - y5
+    - uɜ
+    - tː
+    - uo5
+    - d[
+    - uoɜ
+    - tsh
+    - ɑɜ
+    - ɵ
+    - i̪5
+    - uei5
+    - ɟ
+    - aɜ
+    - ɑɨ
+    - i.ɜ
+    - eʊ
+    - o2
+    - ɐ̃
+    - ä
+    - pʲ
+    - kʲ
+    - n̩
+    - ɒ
+    - ph
+    - ɑu2
+    - uɨ
+    - əɪ
+    - ɫ
+    - ɬ
+    - yɜ
+    - bʲ
+    - ɑ2
+    - s̪
+    - aiɜ
+    - χ
+    - ɐ̃ʊ̃
+    - '1'
+    - ə4
+    - yæɜ
+    - a2
+    - ɨː
+    - t̪
+    - iouɜ
+    - ũ
+    - onɡɜ
+    - aɨ
+    - iɛ2
+    - ɔɨ
+    - ɑuɜ
+    - o̞
+    - ei2
+    - iou2
+    - c
+    - kː
+    - y2
+    - ɖ
+    - oe
+    - dˤ
+    - yɛɜ
+    - əʊ
+    - S
+    - ɡʲ
+    - onɡ2
+    - u"
+    - eiɜ
+    - ʈ
+    - ɯᵝ
+    - iou5
+    - dZ
+    - r̝̊
+    - i.2
+    - tS
+    - s^
+    - ʝ
+    - yə5
+    - iɑɜ
+    - uə5
+    - pf
+    - ɨu
+    - iɑ2
+    - ou2
+    - ər2
+    - fʲ
+    - ai2
+    - r̝
+    - uəɜ
+    - ɳ
+    - əɨ
+    - ua5
+    - uɪ
+    - ɽ
+    - bː
+    - yu5
+    - uo2
+    - yɛ5
+    - l̩
+    - ɻ
+    - ərɜ
+    - ʂ
+    - i̪2
+    - ouɜ
+    - uaɜ
+    - a.
+    - a.ː
+    - yæ5
+    - dː
+    - r̩
+    - ee
+    - ɪu
+    - ər5
+    - i̪ɜ
+    - æi
+    - 'u:'
+    - i.ː
+    - t^
+    - o1
+    - ɪ^
+    - ai
+    - ueiɜ
+    - æː
+    - ɛɪ
+    - eə
+    - i.
+    - ɴ
+    - ie
+    - ua2
+    - ɑ1
+    - o4
+    - tʃː
+    - 'o:'
+    - 'ɑ:'
+    - u1
+    - N
+    - i̪1
+    - au
+    - yæ2
+    - u.
+    - qː
+    - yəɜ
+    - 'y:'
+    - kʰ
+    - tʃʰ
+    - iʊ
+    - sx
+    - õ
+    - uo
+    - tʰ
+    - uai5
+    - bʰ
+    - u.ː
+    - uə2
+    - ʊə
+    - d^
+    - s̪ː
+    - yiɜ
+    - dʰ
+    - r.
+    - 'oe:'
+    - i1
+    - ɟː
+    - yu2
+    - nʲʲ
+    - i̪4
+    - uei2
+    - tsʲ
+    - ɸ
+    - ĩ
+    - ɑ4
+    - t̪ː
+    - eɑ
+    - u4
+    - 'e:'
+    - tsː
+    - ʈʰ
+    - ɡʰ
+    - ɯɯ
+    - dʒʲ
+    - ʂʲ
+    - X
+    - ɵː
+    - uaiɜ
+    - tɕʲ
+    - ã
+    - t^ː
+    - ẽː
+    - yɛ2
+    - cː
+    - i.1
+    - ɛʊ
+    - dˤdˤ
+    - dʒː
+    - i4
+    - ɡː
+    - yi
+    - ɕʲ
+    - ɟʰ
+    - pʰ
+    - dʑʲ
+    - yuɜ
+    - ua1
+    - ua4
+    - æiː
+    - ɐɐ
+    - ui
+    - iou1
+    - ʊː
+    - a1
+    - iou4
+    - cʰ
+    - iɛ1
+    - yə2
+    - ɖʰ
+    - ẽ
+    - ʒʲ
+    - ää
+    - ər4
+    - iːː
+    - ɪː
+    - iɑ1
+    - ər1
+    - œː
+    - øi
+    - ɪuː
+    - cʰcʰ
+    - əː1
+    - iː1
+    - ũ
+    - kʰː
+    - o̞o̞
+    - xʲ
+    - ou1
+    - iɛ4
+    - e̞e̞
+    - y1
+    - dzː
+    - dʲʲ
+    - dʰː
+    - ɯᵝɯᵝ
+    - lː
+    - uo1
+    - i.4
+    - 'i:'
+    - yɛ5ʲ
+    - a4
+    blank_index: 0
+    dropped_ids:
+    - 0
+    - 1
+    - 2
+    - 3
+    size: 392
+    teacher_tokenizer: facebook/wav2vec2-xlsr-53-espeak-cv-ft
+    delay_frames: 5
+  files:
+    int8: wakephonehubert_int8.onnx
+    features_int8: wakephonehubert_features_int8.onnx
+    vocab: vocab.json
+  license: apache-2.0
+onnxFiles:
+  aligner/aligner_head.onnx: 1.3
+  heads/wakephonehubert_jarvis.onnx: 1.1
+  wakephonehubert_features_int8.onnx: 3.5
+  wakephonehubert_int8.onnx: 3.5
+safetensorsSizeMb: 12.5
+approxSizeMb: 0.0
+fetchedAt: '2026-10-05T10:16:54.000Z'

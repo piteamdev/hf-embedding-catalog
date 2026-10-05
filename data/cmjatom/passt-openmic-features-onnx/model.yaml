@@ -1,0 +1,46 @@
+_id: 6ac373fbb2f12e27b5c96602
+id: cmjatom/passt-openmic-features-onnx
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- audio
+- passt
+- openmic
+- feature-extraction
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: cmjatom/passt-openmic-features-onnx
+author: cmjatom
+sha: a61c5959bca6bf5b83246ebf5a2d9fc183a54b2b
+lastModified: '2026-10-05T09:55:38.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: onnx
+  tags:
+  - audio
+  - passt
+  - openmic
+  - feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: model.onnx
+spaces: []
+createdAt: '2026-10-05T09:55:07.000Z'
+usedStorage: 341835066
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  model.onnx: 341.8
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-05T10:16:54.000Z'

@@ -1,0 +1,305 @@
+_id: 6ac35b906a219bfd1bc0b26f
+id: UMCU/MedRoBERTa.nl_Miriad_QA
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- roberta
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:4486855
+- loss:MultipleNegativesRankingLoss
+- nl
+- dataset:UMCU/MIRIAD4.4.nl
+- arxiv:2604.25374
+- arxiv:2506.06091
+- arxiv:1908.10084
+- arxiv:1807.03748
+- base_model:CLTL/MedRoBERTa.nl
+- base_model:finetune:CLTL/MedRoBERTa.nl
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: UMCU/MedRoBERTa.nl_Miriad_QA
+author: UMCU
+sha: 88e35cb3a2805ba189d70f9ff32e00082ee4066d
+lastModified: '2026-10-05T08:20:48.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: Hoe dragen laminaire luchtstroomventilatiesystemen bij aan het verminderen van postoperatieve infecties,
+    en welke factoren naast de luchtkwaliteit beïnvloeden hun effectiviteit bij het voorkomen van infecties bij chirurgische
+    patiënten?
+  sentences:
+  - Radiologische genezing in de behandeling van deze fracturen wordt beoordeeld door bewijs van genezing van ten minste drie
+    van de vier cortices. Zodra radiologische genezing is bereikt, wordt een gefaseerd "trial of union" protocol gestart door
+    dynamisering van de externe fixator. De plaats van de genezende fractuur wordt handmatig belast, en als er geen pijn of
+    vervorming optreedt, krijgt de patiënt instructies om gewicht te dragen. Als de patiënt zonder pijn kan lopen, mag hij
+    naar huis terugkeren met een volledig gedynamiseerde frame. Vervolgens worden herhaalde röntgenfoto's vergeleken met die
+    van vóór de trial of union, en als er geen vervorming is ontstaan, wordt genezing bevestigd en wordt de externe fixator
+    verwijderd.
+  - Laminaire luchtstroomventilatiesystemen zijn aangetoond dat ze het niveau van deeltjes en bacteriën in de operatiekamerlucht
+    verminderen, waardoor het risico op postoperatieve infecties afneemt. De effectiviteit van deze systemen bij het voorkomen
+    van infecties hangt echter ook af van de kwaliteit van de aseptische techniek die tijdens chirurgische procedures wordt
+    toegepast. Daarnaast speelt het juiste gebruik van profylactische antibiotica een cruciale rol bij het verminderen van
+    infectierates na gewrichtsvervangingsoperaties.
+  - Hoewel mdx-muizen myofibre necrose vertonen, variërende vezelgrootte en een toename van centraal gelegen kernen, vertonen
+    ze niet de progressieve kenmerken van menselijke DMD. Bij mdx-muizen pieken necrose en regeneratie in skeletspieren rond
+    de leeftijd van 3-4 weken en stabiliseren daarna. Dit benadrukt het belang van het overwegen van het volledige spectrum
+    van DMD-pathologie bij het trekken van conclusies uit diermodellen.
+- source_sentence: Wat zijn de mogelijke complicaties en langetermijnresultaten die geassocieerd worden met phosphaturisch
+    mesenchymale tumor (PMT) in het hoofd- en halsgebied?
+  sentences:
+  - Het meten van urinezuur 4-hydroxyfenylazijnzuur kan worden gebruikt als screeningsmethode voor ziekte van de dunne darm
+    en bacteriële overgroei syndromen. Er is waargenomen dat een verhoogde uitscheiding van dit zuur geassocieerd is met aandoeningen
+    zoals Giardia lamblia-infectie, ileumresectie met blinde lus, en andere ziekten van de dunne darm die verband houden met
+    bacteriële overgroei. Daarom kan het meten van urinezuur 4-hydroxyfenylazijnzuur helpen bij het identificeren van patiënten
+    met deze aandoeningen.
+  - Phosphaturisch mesenchymale tumor (PMT) in het hoofd- en halsgebied kan leiden tot complicaties zoals tumor-geïnduceerde
+    osteomalacie (TIO), wat ernstige morbiditeit kan veroorzaken door botpijn, spierzwakte en pathologische fracturen. Echter,
+    als het vroeg wordt gediagnosticeerd en behandeld met curatieve resectie en nauwlettend follow-up, kunnen de langetermijnresultaten
+    voor patiënten met PMT in het hoofd- en halsgebied gunstig zijn, zonder bewijs van terugkeer of ontwikkeling van botpathologie.
+  - Het uitvoeren van SRS voor asymptomatische BMs bij patiënten met borstkanker, kanker van het gastro-intestinale kanaal
+    en nierkanker heeft het potentieel om een langdurige instandhouding van neurologische functies te bereiken en neurologisch
+    overlijden te minimaliseren. Hoewel de mediane overlevingstijd (MST) niet significant verschilde tussen patiënten die
+    SRS ondergingen en degenen die dat niet deden, kan SRS vóór de ontwikkeling van neurologische symptomen helpen om een
+    goede neurologische functie te behouden en de incidentie van neurologisch overlijden te verminderen.
+- source_sentence: Hoe moeten ACP-gesprekken worden aangepakt voor oudere personen met dementie?
+  sentences:
+  - Bij volwassen overlevenden van kinderkanker is er een significante correlatie tussen IGF-I-niveaus en verschillende maten
+    van lichaamssamenstelling. Lage IGF-I-niveaus worden geassocieerd met een hoge BMI, een hoog percentage totaal- en visceraal
+    vet, en een laag vetvrije massa. Het is echter belangrijk op te merken dat BMI alleen geen betrouwbare indicator is voor
+    vetmassa. In plaats daarvan zijn grote hoeveelheden totaal lichaamsvet, een hoog visceraal vetpercentage en een lage vetvrije
+    massa meer nauwkeurige markers voor de werkelijke lichaamssamenstelling en betere voorspellers voor het risico op het
+    ontwikkelen van hart- en vaatziekten of diabetes mellitus. Hoewel er een correlatie bestaat tussen IGF-I-niveaus en lichaamssamenstelling,
+    is de sterkte van deze correlatie zwak, wat suggereert dat lage IGF-I-niveaus slechts een klein percentage van de veranderingen
+    in lichaamssamenstelling verklaren.
+  - PET-scanning is een invasieve techniek waarbij patiënten worden geïnjecteerd met een radioactieve stof. De snelheid van
+    radioactief verval geeft de snelheid van hersenmetabolisme aan, wat over het algemeen evenredig is met hersenactiviteit.
+    PET-scanning heeft beperkingen, waaronder het feit dat beelden ongeveer 30 seconden uit elkaar worden genomen, waardoor
+    het niet mogelijk is om snelle veranderingen te detecteren. De risico's die gepaard gaan met radioactiviteit beperken
+    ook het aantal beelden dat voor elke patiënt kan worden geproduceerd. PET-scanners zijn duur, kosten ongeveer £4 miljoen
+    om aan te schaffen, en zijn alleen beschikbaar in grotere ziekenhuizen en onderzoekscentra. Elke scan kost ongeveer £1.000.
+  - Voor oudere personen met dementie moeten ze als bekwaam worden beschouwd, tenzij door de relevante arts als incompetent
+    wordt beoordeeld. Zelfs als ze niet bekwaam zijn om een juridisch document te ondertekenen, kunnen mensen met dementie
+    nog steeds deelnemen aan sommige aspecten van ACP. Het is belangrijk om hen bij het gesprek te betrekken en rekening te
+    houden met hun huidige en eerder uitgesproken wensen, evenals de mening van de familie over hun wensen. Besluiten moeten
+    volledig worden ondersteund door passende informatie.
+- source_sentence: Wat zijn enkele beperkingen en uitdagingen die gepaard gaan met de diagnose van SLAP-laesies?
+  sentences:
+  - De veelvoorkomende symptomen van Blau-syndroom omvatten granulomateuze dermatitis (aanhoudende uitslag met schilferige
+    of knobbige huidlaesies), artritis (ontsteking van de gewrichten), uveïtis (ontsteking van de middelste laag van het oog),
+    nefritis (nierontsteking), vasculitis (ontsteking van bloedvaten), en mogelijke betrokkenheid van andere organen zoals
+    de lever, milt, lymfeklieren, hersenen, bloedvaten, longen en hart. Deze symptomen kunnen variëren in ernst en kunnen
+    leiden tot gezichtsverlies, chronisch nierfalen en levensbedreigende complicaties.
+  - De Ds-waarde, bepaald door gebruik te maken van geselecteerde OTU's, kan worden gebruikt als een kwantitatieve beoordeling
+    van de darmmicroflora van een patiënt. Bij patiënten met een definitieve diagnose van UC kan een lage Ds-waarde stabiele
+    remissie aangeven, terwijl een hoge Ds-waarde actieve ziekte kan aangeven. Door de Ds-waarde te evalueren, kunnen zorgprofessionals
+    de klinische toestand van patiënten met UC beoordelen en weloverwogen beslissingen nemen over behandelbeleid.
+  - De diagnose van SLAP-laesies kan worden beperkt door natuurlijke anatomische varianten die de betrouwbaarheid van radiografische
+    diagnoses beïnvloeden. Daarnaast kan radiografie invasief, duur en mogelijk gevaarlijk zijn. Er zijn ook discrepanties
+    in de nauwkeurigheid van lichamelijke onderzoekstests voor SLAP-laesies, waarbij secundaire studies vaak lagere waarden
+    rapporteren voor sensitiviteit en specificiteit in vergelijking met de bevindingen van de oorspronkelijke auteurs. Deze
+    discrepanties kunnen te wijten zijn aan het feit dat SLAP-laesies zelden geïsoleerd voorkomen en vaak gepaard gaan met
+    andere glenohumerale laesies. Bovendien maken verschillen in studieprotocollen en verificatiemethoden het moeilijk om
+    de nauwkeurigheid van lichamelijke onderzoeken voor SLAP-laesies te vergelijken.
+- source_sentence: Wat zijn de voordelen van het gebruik van geofysische technieken bij forensisch slachtofferonderzoek?
+  sentences:
+  - Geofysische technieken bieden verschillende voordelen bij forensisch slachtofferonderzoek. Ze maken snelle en niet-invasieve
+    verkenningen van uitgebreide verdachte gebieden mogelijk, waardoor onderzoekers waardevolle tijd, geld en middelen besparen.
+    Deze technieken kunnen anomalieën opsporen die verder onderzocht kunnen worden op conventionele wijze. Daarnaast kunnen
+    vervolggeofysische onderzoeken kenmerken van de begrafenis vaststellen, zoals diepte, oriëntatie, grootte, distributie
+    en toestand. Echter, het succes van deze technieken hangt af van gunstige terreincondities, geschikte forensische protocollen
+    en de optimalisatie en het gebruik van geofysische technieken.
+  - Expressiegenomica door DNA-microarraytechnologie maakt het mogelijk om tegelijkertijd een groot aantal miRNAs en mRNAs
+    te analyseren. Deze technologie heeft het mogelijk gemaakt om de systematische zoektocht naar moleculaire markers te voltooien.
+    Door de expressieniveaus van miRNAs en mRNAs in een monster te analyseren, kunnen onderzoekers patronen en correlaties
+    identificeren die mogelijk indicatief zijn voor bepaalde aandoeningen of reacties op behandelingen. Deze aanpak biedt
+    een uitgebreid overzicht van het moleculaire landschap en kan helpen bij de ontdekking van biomarkers voor diverse ziekten
+    en therapieën.
+  - CD4+ cellen die constitutief CD25 tot expressie brengen, de interleukine-2-receptor α-keten, worden over het algemeen
+    beschouwd als natuurlijke Treg-cellen. Deze cellen spelen een rol bij het reguleren van immuunresponsen en het handhaven
+    van immuun tolerantie. Ze vormen 5-10% van alle perifere CD4+ T-cellen bij gezonde dieren en mensen.
+model-index: null
+config:
+  architectures:
+  - RobertaModel
+  model_type: roberta
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: <unk>
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:4486855
+  - loss:MultipleNegativesRankingLoss
+  base_model: CLTL/MedRoBERTa.nl
+  widget:
+  - source_sentence: Hoe dragen laminaire luchtstroomventilatiesystemen bij aan het verminderen van postoperatieve infecties,
+      en welke factoren naast de luchtkwaliteit beïnvloeden hun effectiviteit bij het voorkomen van infecties bij chirurgische
+      patiënten?
+    sentences:
+    - Radiologische genezing in de behandeling van deze fracturen wordt beoordeeld door bewijs van genezing van ten minste
+      drie van de vier cortices. Zodra radiologische genezing is bereikt, wordt een gefaseerd "trial of union" protocol gestart
+      door dynamisering van de externe fixator. De plaats van de genezende fractuur wordt handmatig belast, en als er geen
+      pijn of vervorming optreedt, krijgt de patiënt instructies om gewicht te dragen. Als de patiënt zonder pijn kan lopen,
+      mag hij naar huis terugkeren met een volledig gedynamiseerde frame. Vervolgens worden herhaalde röntgenfoto's vergeleken
+      met die van vóór de trial of union, en als er geen vervorming is ontstaan, wordt genezing bevestigd en wordt de externe
+      fixator verwijderd.
+    - Laminaire luchtstroomventilatiesystemen zijn aangetoond dat ze het niveau van deeltjes en bacteriën in de operatiekamerlucht
+      verminderen, waardoor het risico op postoperatieve infecties afneemt. De effectiviteit van deze systemen bij het voorkomen
+      van infecties hangt echter ook af van de kwaliteit van de aseptische techniek die tijdens chirurgische procedures wordt
+      toegepast. Daarnaast speelt het juiste gebruik van profylactische antibiotica een cruciale rol bij het verminderen van
+      infectierates na gewrichtsvervangingsoperaties.
+    - Hoewel mdx-muizen myofibre necrose vertonen, variërende vezelgrootte en een toename van centraal gelegen kernen, vertonen
+      ze niet de progressieve kenmerken van menselijke DMD. Bij mdx-muizen pieken necrose en regeneratie in skeletspieren
+      rond de leeftijd van 3-4 weken en stabiliseren daarna. Dit benadrukt het belang van het overwegen van het volledige
+      spectrum van DMD-pathologie bij het trekken van conclusies uit diermodellen.
+  - source_sentence: Wat zijn de mogelijke complicaties en langetermijnresultaten die geassocieerd worden met phosphaturisch
+      mesenchymale tumor (PMT) in het hoofd- en halsgebied?
+    sentences:
+    - Het meten van urinezuur 4-hydroxyfenylazijnzuur kan worden gebruikt als screeningsmethode voor ziekte van de dunne darm
+      en bacteriële overgroei syndromen. Er is waargenomen dat een verhoogde uitscheiding van dit zuur geassocieerd is met
+      aandoeningen zoals Giardia lamblia-infectie, ileumresectie met blinde lus, en andere ziekten van de dunne darm die verband
+      houden met bacteriële overgroei. Daarom kan het meten van urinezuur 4-hydroxyfenylazijnzuur helpen bij het identificeren
+      van patiënten met deze aandoeningen.
+    - Phosphaturisch mesenchymale tumor (PMT) in het hoofd- en halsgebied kan leiden tot complicaties zoals tumor-geïnduceerde
+      osteomalacie (TIO), wat ernstige morbiditeit kan veroorzaken door botpijn, spierzwakte en pathologische fracturen. Echter,
+      als het vroeg wordt gediagnosticeerd en behandeld met curatieve resectie en nauwlettend follow-up, kunnen de langetermijnresultaten
+      voor patiënten met PMT in het hoofd- en halsgebied gunstig zijn, zonder bewijs van terugkeer of ontwikkeling van botpathologie.
+    - Het uitvoeren van SRS voor asymptomatische BMs bij patiënten met borstkanker, kanker van het gastro-intestinale kanaal
+      en nierkanker heeft het potentieel om een langdurige instandhouding van neurologische functies te bereiken en neurologisch
+      overlijden te minimaliseren. Hoewel de mediane overlevingstijd (MST) niet significant verschilde tussen patiënten die
+      SRS ondergingen en degenen die dat niet deden, kan SRS vóór de ontwikkeling van neurologische symptomen helpen om een
+      goede neurologische functie te behouden en de incidentie van neurologisch overlijden te verminderen.
+  - source_sentence: Hoe moeten ACP-gesprekken worden aangepakt voor oudere personen met dementie?
+    sentences:
+    - Bij volwassen overlevenden van kinderkanker is er een significante correlatie tussen IGF-I-niveaus en verschillende
+      maten van lichaamssamenstelling. Lage IGF-I-niveaus worden geassocieerd met een hoge BMI, een hoog percentage totaal-
+      en visceraal vet, en een laag vetvrije massa. Het is echter belangrijk op te merken dat BMI alleen geen betrouwbare
+      indicator is voor vetmassa. In plaats daarvan zijn grote hoeveelheden totaal lichaamsvet, een hoog visceraal vetpercentage
+      en een lage vetvrije massa meer nauwkeurige markers voor de werkelijke lichaamssamenstelling en betere voorspellers
+      voor het risico op het ontwikkelen van hart- en vaatziekten of diabetes mellitus. Hoewel er een correlatie bestaat tussen
+      IGF-I-niveaus en lichaamssamenstelling, is de sterkte van deze correlatie zwak, wat suggereert dat lage IGF-I-niveaus
+      slechts een klein percentage van de veranderingen in lichaamssamenstelling verklaren.
+    - PET-scanning is een invasieve techniek waarbij patiënten worden geïnjecteerd met een radioactieve stof. De snelheid
+      van radioactief verval geeft de snelheid van hersenmetabolisme aan, wat over het algemeen evenredig is met hersenactiviteit.
+      PET-scanning heeft beperkingen, waaronder het feit dat beelden ongeveer 30 seconden uit elkaar worden genomen, waardoor
+      het niet mogelijk is om snelle veranderingen te detecteren. De risico's die gepaard gaan met radioactiviteit beperken
+      ook het aantal beelden dat voor elke patiënt kan worden geproduceerd. PET-scanners zijn duur, kosten ongeveer £4 miljoen
+      om aan te schaffen, en zijn alleen beschikbaar in grotere ziekenhuizen en onderzoekscentra. Elke scan kost ongeveer
+      £1.000.
+    - Voor oudere personen met dementie moeten ze als bekwaam worden beschouwd, tenzij door de relevante arts als incompetent
+      wordt beoordeeld. Zelfs als ze niet bekwaam zijn om een juridisch document te ondertekenen, kunnen mensen met dementie
+      nog steeds deelnemen aan sommige aspecten van ACP. Het is belangrijk om hen bij het gesprek te betrekken en rekening
+      te houden met hun huidige en eerder uitgesproken wensen, evenals de mening van de familie over hun wensen. Besluiten
+      moeten volledig worden ondersteund door passende informatie.
+  - source_sentence: Wat zijn enkele beperkingen en uitdagingen die gepaard gaan met de diagnose van SLAP-laesies?
+    sentences:
+    - De veelvoorkomende symptomen van Blau-syndroom omvatten granulomateuze dermatitis (aanhoudende uitslag met schilferige
+      of knobbige huidlaesies), artritis (ontsteking van de gewrichten), uveïtis (ontsteking van de middelste laag van het
+      oog), nefritis (nierontsteking), vasculitis (ontsteking van bloedvaten), en mogelijke betrokkenheid van andere organen
+      zoals de lever, milt, lymfeklieren, hersenen, bloedvaten, longen en hart. Deze symptomen kunnen variëren in ernst en
+      kunnen leiden tot gezichtsverlies, chronisch nierfalen en levensbedreigende complicaties.
+    - De Ds-waarde, bepaald door gebruik te maken van geselecteerde OTU's, kan worden gebruikt als een kwantitatieve beoordeling
+      van de darmmicroflora van een patiënt. Bij patiënten met een definitieve diagnose van UC kan een lage Ds-waarde stabiele
+      remissie aangeven, terwijl een hoge Ds-waarde actieve ziekte kan aangeven. Door de Ds-waarde te evalueren, kunnen zorgprofessionals
+      de klinische toestand van patiënten met UC beoordelen en weloverwogen beslissingen nemen over behandelbeleid.
+    - De diagnose van SLAP-laesies kan worden beperkt door natuurlijke anatomische varianten die de betrouwbaarheid van radiografische
+      diagnoses beïnvloeden. Daarnaast kan radiografie invasief, duur en mogelijk gevaarlijk zijn. Er zijn ook discrepanties
+      in de nauwkeurigheid van lichamelijke onderzoekstests voor SLAP-laesies, waarbij secundaire studies vaak lagere waarden
+      rapporteren voor sensitiviteit en specificiteit in vergelijking met de bevindingen van de oorspronkelijke auteurs. Deze
+      discrepanties kunnen te wijten zijn aan het feit dat SLAP-laesies zelden geïsoleerd voorkomen en vaak gepaard gaan met
+      andere glenohumerale laesies. Bovendien maken verschillen in studieprotocollen en verificatiemethoden het moeilijk om
+      de nauwkeurigheid van lichamelijke onderzoeken voor SLAP-laesies te vergelijken.
+  - source_sentence: Wat zijn de voordelen van het gebruik van geofysische technieken bij forensisch slachtofferonderzoek?
+    sentences:
+    - Geofysische technieken bieden verschillende voordelen bij forensisch slachtofferonderzoek. Ze maken snelle en niet-invasieve
+      verkenningen van uitgebreide verdachte gebieden mogelijk, waardoor onderzoekers waardevolle tijd, geld en middelen besparen.
+      Deze technieken kunnen anomalieën opsporen die verder onderzocht kunnen worden op conventionele wijze. Daarnaast kunnen
+      vervolggeofysische onderzoeken kenmerken van de begrafenis vaststellen, zoals diepte, oriëntatie, grootte, distributie
+      en toestand. Echter, het succes van deze technieken hangt af van gunstige terreincondities, geschikte forensische protocollen
+      en de optimalisatie en het gebruik van geofysische technieken.
+    - Expressiegenomica door DNA-microarraytechnologie maakt het mogelijk om tegelijkertijd een groot aantal miRNAs en mRNAs
+      te analyseren. Deze technologie heeft het mogelijk gemaakt om de systematische zoektocht naar moleculaire markers te
+      voltooien. Door de expressieniveaus van miRNAs en mRNAs in een monster te analyseren, kunnen onderzoekers patronen en
+      correlaties identificeren die mogelijk indicatief zijn voor bepaalde aandoeningen of reacties op behandelingen. Deze
+      aanpak biedt een uitgebreid overzicht van het moleculaire landschap en kan helpen bij de ontdekking van biomarkers voor
+      diverse ziekten en therapieën.
+    - CD4+ cellen die constitutief CD25 tot expressie brengen, de interleukine-2-receptor α-keten, worden over het algemeen
+      beschouwd als natuurlijke Treg-cellen. Deze cellen spelen een rol bij het reguleren van immuunresponsen en het handhaven
+      van immuun tolerantie. Ze vormen 5-10% van alle perifere CD4+ T-cellen bij gezonde dieren en mensen.
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  datasets:
+  - UMCU/MIRIAD4.4.nl
+  language:
+  - nl
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-05T08:10:56.000Z'
+safetensors:
+  parameters:
+    F32: 125978112
+  total: 125978112
+usedStorage: 503934800
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - RobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 514
+  model_type: roberta
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 1
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.3.0
+  type_vocab_size: 1
+  use_cache: true
+  vocab_size: 52000
+onnxFiles: {}
+safetensorsSizeMb: 503.9
+approxSizeMb: 503.9
+fetchedAt: '2026-10-05T10:16:54.000Z'

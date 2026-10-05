@@ -1,0 +1,121 @@
+_id: 6ac2301c137f93e079c498bb
+id: harpertoken/move
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- move_temporal
+- feature-extraction
+- action-recognition
+- kth
+- cnn
+- video
+- custom_code
+- en
+- dataset:kth-action-recognition
+- license:mit
+- model-index
+- region:us
+downloads: 21
+likes: 0
+modelId: harpertoken/move
+author: harpertoken
+sha: 321fe9b07faaf2e99f3a8cab0ead4c1a98e7663e
+lastModified: '2026-10-04T10:53:43.000Z'
+gated: false
+disabled: false
+model-index:
+- name: move
+  results:
+  - task:
+      type: video-classification
+    dataset:
+      name: KTH
+      type: kth-action-recognition
+      split: test
+    metrics:
+    - type: accuracy
+      value: 0.5046
+      verified: false
+config:
+  architectures:
+  - MoveTemporal
+  auto_map:
+    AutoConfig: modeling_move.MoveConfig
+    AutoModel: modeling_move.MoveTemporal
+  model_type: move_temporal
+cardData:
+  license: mit
+  language: en
+  library_name: transformers
+  tags:
+  - action-recognition
+  - kth
+  - cnn
+  - video
+  datasets:
+  - kth-action-recognition
+  metrics:
+  - accuracy
+  model-index:
+  - name: move
+    results:
+    - task:
+        type: video-classification
+      dataset:
+        name: KTH
+        type: kth-action-recognition
+        split: test
+      metrics:
+      - type: accuracy
+        value: 0.5046
+        verified: false
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_move.MoveTemporal
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: modeling_move.py
+spaces: []
+createdAt: '2026-10-04T10:53:16.000Z'
+safetensors:
+  parameters:
+    F32: 544006
+  total: 544006
+usedStorage: 2176680
+downloadsAllTime: 21
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - MoveTemporal
+  auto_map:
+    AutoConfig: modeling_move.MoveConfig
+    AutoModel: modeling_move.MoveTemporal
+  dropout: 0.25
+  dtype: float32
+  id2label:
+    '0': LABEL_0
+    '1': LABEL_1
+    '2': LABEL_2
+    '3': LABEL_3
+    '4': LABEL_4
+    '5': LABEL_5
+  label2id:
+    LABEL_0: 0
+    LABEL_1: 1
+    LABEL_2: 2
+    LABEL_3: 3
+    LABEL_4: 4
+    LABEL_5: 5
+  model_type: move_temporal
+  transformers_version: 5.18.0
+onnxFiles: {}
+safetensorsSizeMb: 2.2
+approxSizeMb: 2.2
+fetchedAt: '2026-10-05T10:16:54.000Z'

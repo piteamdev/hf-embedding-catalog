@@ -1,0 +1,811 @@
+_id: 6ac2c6be80abf307a7ab9683
+id: Severino2004/cv-ai-embedding-model-severino2004
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:1147
+- loss:CosineSimilarityLoss
+- arxiv:1908.10084
+- base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- base_model:finetune:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 14
+likes: 0
+modelId: Severino2004/cv-ai-embedding-model-severino2004
+author: Severino2004
+sha: 5556cb3edc6d0d7a24dff80ba1025a03e9b9b65c
+lastModified: '2026-10-04T21:56:29.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: 'Larissa Yamada — Agent·e Immobilier·ère — Toronto
+
+    BTS Professions Immobilières | 6 ans d''expérience
+
+    Expérience : Estimation et mise en vente de biens immobiliers
+
+    Compétences : négociation, droit immobilier, relation client, prospection'
+  sentences:
+  - 'Notre organisation est à la recherche d''un·e Commercial·e motivé·e.
+
+
+    Missions :
+
+    - Reporter l''activité commerciale via le CRM
+
+    - Négocier les contrats commerciaux
+
+    - Prospecter de nouveaux comptes
+
+
+    Profil recherché :
+
+    - CRM
+
+    - négociation
+
+    - objectifs de vente'
+  - 'Dans le cadre de notre développement, nous recrutons un·e Enseignant·e / Formateur·rice.
+
+
+    Missions :
+
+    - Préparer et animer des séances pédagogiques
+
+    - Assurer le suivi individualisé des apprenants
+
+
+    Profil recherché :
+
+    - préparation de cours
+
+    - pédagogie
+
+    - évaluation'
+  - 'Notre organisation est à la recherche d''un·e Responsable Qualité motivé·e.
+
+
+    Missions :
+
+    - Animer l''amélioration continue
+
+    - Réaliser des audits internes
+
+
+    Profil recherché :
+
+    - gestion des non-conformités
+
+    - documentation qualité
+
+    - amélioration continue
+
+    - audit qualité'
+- source_sentence: 'Hassan Tanaka
+
+    Acheteur·se
+
+    Paris
+
+
+    FORMATION
+
+    Master Achats et Supply Chain
+
+
+    EXPÉRIENCE PROFESSIONNELLE (6 ans)
+
+    - Négociation des conditions contractuelles et tarifaires
+
+
+    COMPÉTENCES
+
+    appels d''offres, sourcing, gestion de contrats, ERP'
+  sentences:
+  - 'Dans le cadre de notre développement, nous recrutons un·e Juriste d''Entreprise.
+
+
+    Missions :
+
+    - Rédiger et négocier des contrats commerciaux
+
+    - Suivre les éventuels contentieux
+
+
+    Profil recherché :
+
+    - rédaction d''actes
+
+    - droit des contrats
+
+    - droit du travail
+
+    - veille juridique'
+  - 'Dans le cadre de notre développement, nous recrutons un·e Chargé·e de Marketing Digital.
+
+
+    Missions :
+
+    - Animer les réseaux sociaux et produire du contenu
+
+    - Optimiser le référencement naturel du site
+
+
+    Profil recherché :
+
+    - réseaux sociaux
+
+    - Google Ads
+
+    - content marketing'
+  - 'Nous recherchons un·e Responsable Logistique pour rejoindre notre équipe.
+
+
+    Missions :
+
+    - Négocier avec les fournisseurs et prestataires
+
+    - Suivre les commandes via l''ERP
+
+    - Planifier et coordonner les transports
+
+
+    Profil recherché :
+
+    - planification des transports
+
+    - supply chain
+
+    - négociation fournisseurs'
+- source_sentence: 'Ravi Martin — Conducteur·rice de Travaux — Montréal
+
+    BTS Bâtiment | 4 ans d''expérience
+
+    Expérience : Lecture et interprétation de plans techniques
+
+    Compétences : AutoCAD, gestion d''équipe terrain, normes de sécurité, lecture de plans'
+  sentences:
+  - 'Nous recherchons un·e Data Scientist pour rejoindre notre équipe.
+
+
+    Missions :
+
+    - Concevoir et entraîner des modèles de machine learning
+
+    - Automatiser des pipelines de traitement de données
+
+
+    Profil recherché :
+
+    - Power BI
+
+    - Machine Learning
+
+    - Python'
+  - 'Notre organisation est à la recherche d''un·e Juriste d''Entreprise motivé·e.
+
+
+    Missions :
+
+    - Assurer la veille réglementaire
+
+    - Rédiger et négocier des contrats commerciaux
+
+
+    Profil recherché :
+
+    - rédaction d''actes
+
+    - négociation contractuelle
+
+    - droit du travail
+
+    - droit des contrats'
+  - 'Dans le cadre de notre développement, nous recrutons un·e Acheteur·se.
+
+
+    Missions :
+
+    - Négocier les contrats et les conditions tarifaires
+
+    - Suivre la performance et les coûts d''achat
+
+    - Piloter les appels d''offres
+
+
+    Profil recherché :
+
+    - appels d''offres
+
+    - négociation fournisseurs
+
+    - sourcing
+
+    - analyse de coûts'
+- source_sentence: 'Maya Popescu — Agent·e Immobilier·ère — Buenos Aires
+
+    BTS Professions Immobilières | 6 ans d''expérience
+
+    Expérience : Estimation et mise en vente de biens immobiliers
+
+    Compétences : prospection, négociation, droit immobilier, relation client, estimation immobilière'
+  sentences:
+  - 'Nous recherchons un·e Graphiste pour rejoindre notre équipe.
+
+
+    Missions :
+
+    - Décliner les chartes graphiques sur différents supports
+
+    - Assurer une veille sur les tendances graphiques
+
+
+    Profil recherché :
+
+    - Illustrator
+
+    - charte graphique
+
+    - Photoshop'
+  - 'Pour renforcer notre équipe, nous ouvrons un poste de Chef·fe de Cuisine.
+
+
+    Missions :
+
+    - Encadrer et former la brigade de cuisine
+
+    - Garantir le respect des normes d''hygiène
+
+
+    Profil recherché :
+
+    - gestion de brigade
+
+    - gestion des coûts matières
+
+    - normes HACCP
+
+    - élaboration de menus'
+  - 'Notre organisation est à la recherche d''un·e Travailleur·se Social·e motivé·e.
+
+
+    Missions :
+
+    - Accompagner socialement les usagers
+
+    - Orienter vers les dispositifs d''aide adaptés
+
+    - Travailler en réseau avec les partenaires
+
+
+    Profil recherché :
+
+    - travail en réseau
+
+    - écoute active
+
+    - médiation
+
+    - accompagnement social'
+- source_sentence: 'Anya Fernández
+
+    Chargé·e de Projet
+
+    Tokyo
+
+
+    FORMATION
+
+    Master en Management de Projet
+
+
+    EXPÉRIENCE PROFESSIONNELLE (5 ans)
+
+    - Identification et suivi des risques projet
+
+
+    COMPÉTENCES
+
+    budget, reporting, gestion des risques, Scrum'
+  sentences:
+  - 'Dans le cadre de notre développement, nous recrutons un·e Comptable.
+
+
+    Missions :
+
+    - Préparer les clôtures mensuelles et annuelles
+
+    - Participer à l''élaboration du budget prévisionnel
+
+
+    Profil recherché :
+
+    - déclarations TVA
+
+    - comptabilité générale
+
+    - Excel avancé
+
+    - SAGE
+
+    - clôtures comptables'
+  - 'Nous recherchons un·e Data Scientist pour rejoindre notre équipe.
+
+
+    Missions :
+
+    - Automatiser des pipelines de traitement de données
+
+    - Présenter les résultats aux équipes non techniques
+
+    - Concevoir et entraîner des modèles de machine learning
+
+
+    Profil recherché :
+
+    - statistiques
+
+    - Machine Learning
+
+    - SQL
+
+    - Power BI'
+  - 'Dans le cadre de notre développement, nous recrutons un·e Chargé·e de Projet.
+
+
+    Missions :
+
+    - Rendre compte de l''avancement à la direction
+
+    - Élaborer et suivre le planning et le budget des projets
+
+
+    Profil recherché :
+
+    - Scrum
+
+    - budget
+
+    - planning
+
+    - gestion des risques'
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: <unk>
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:1147
+  - loss:CosineSimilarityLoss
+  base_model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  widget:
+  - source_sentence: 'Larissa Yamada — Agent·e Immobilier·ère — Toronto
+
+      BTS Professions Immobilières | 6 ans d''expérience
+
+      Expérience : Estimation et mise en vente de biens immobiliers
+
+      Compétences : négociation, droit immobilier, relation client, prospection'
+    sentences:
+    - 'Notre organisation est à la recherche d''un·e Commercial·e motivé·e.
+
+
+      Missions :
+
+      - Reporter l''activité commerciale via le CRM
+
+      - Négocier les contrats commerciaux
+
+      - Prospecter de nouveaux comptes
+
+
+      Profil recherché :
+
+      - CRM
+
+      - négociation
+
+      - objectifs de vente'
+    - 'Dans le cadre de notre développement, nous recrutons un·e Enseignant·e / Formateur·rice.
+
+
+      Missions :
+
+      - Préparer et animer des séances pédagogiques
+
+      - Assurer le suivi individualisé des apprenants
+
+
+      Profil recherché :
+
+      - préparation de cours
+
+      - pédagogie
+
+      - évaluation'
+    - 'Notre organisation est à la recherche d''un·e Responsable Qualité motivé·e.
+
+
+      Missions :
+
+      - Animer l''amélioration continue
+
+      - Réaliser des audits internes
+
+
+      Profil recherché :
+
+      - gestion des non-conformités
+
+      - documentation qualité
+
+      - amélioration continue
+
+      - audit qualité'
+  - source_sentence: 'Hassan Tanaka
+
+      Acheteur·se
+
+      Paris
+
+
+      FORMATION
+
+      Master Achats et Supply Chain
+
+
+      EXPÉRIENCE PROFESSIONNELLE (6 ans)
+
+      - Négociation des conditions contractuelles et tarifaires
+
+
+      COMPÉTENCES
+
+      appels d''offres, sourcing, gestion de contrats, ERP'
+    sentences:
+    - 'Dans le cadre de notre développement, nous recrutons un·e Juriste d''Entreprise.
+
+
+      Missions :
+
+      - Rédiger et négocier des contrats commerciaux
+
+      - Suivre les éventuels contentieux
+
+
+      Profil recherché :
+
+      - rédaction d''actes
+
+      - droit des contrats
+
+      - droit du travail
+
+      - veille juridique'
+    - 'Dans le cadre de notre développement, nous recrutons un·e Chargé·e de Marketing Digital.
+
+
+      Missions :
+
+      - Animer les réseaux sociaux et produire du contenu
+
+      - Optimiser le référencement naturel du site
+
+
+      Profil recherché :
+
+      - réseaux sociaux
+
+      - Google Ads
+
+      - content marketing'
+    - 'Nous recherchons un·e Responsable Logistique pour rejoindre notre équipe.
+
+
+      Missions :
+
+      - Négocier avec les fournisseurs et prestataires
+
+      - Suivre les commandes via l''ERP
+
+      - Planifier et coordonner les transports
+
+
+      Profil recherché :
+
+      - planification des transports
+
+      - supply chain
+
+      - négociation fournisseurs'
+  - source_sentence: 'Ravi Martin — Conducteur·rice de Travaux — Montréal
+
+      BTS Bâtiment | 4 ans d''expérience
+
+      Expérience : Lecture et interprétation de plans techniques
+
+      Compétences : AutoCAD, gestion d''équipe terrain, normes de sécurité, lecture de plans'
+    sentences:
+    - 'Nous recherchons un·e Data Scientist pour rejoindre notre équipe.
+
+
+      Missions :
+
+      - Concevoir et entraîner des modèles de machine learning
+
+      - Automatiser des pipelines de traitement de données
+
+
+      Profil recherché :
+
+      - Power BI
+
+      - Machine Learning
+
+      - Python'
+    - 'Notre organisation est à la recherche d''un·e Juriste d''Entreprise motivé·e.
+
+
+      Missions :
+
+      - Assurer la veille réglementaire
+
+      - Rédiger et négocier des contrats commerciaux
+
+
+      Profil recherché :
+
+      - rédaction d''actes
+
+      - négociation contractuelle
+
+      - droit du travail
+
+      - droit des contrats'
+    - 'Dans le cadre de notre développement, nous recrutons un·e Acheteur·se.
+
+
+      Missions :
+
+      - Négocier les contrats et les conditions tarifaires
+
+      - Suivre la performance et les coûts d''achat
+
+      - Piloter les appels d''offres
+
+
+      Profil recherché :
+
+      - appels d''offres
+
+      - négociation fournisseurs
+
+      - sourcing
+
+      - analyse de coûts'
+  - source_sentence: 'Maya Popescu — Agent·e Immobilier·ère — Buenos Aires
+
+      BTS Professions Immobilières | 6 ans d''expérience
+
+      Expérience : Estimation et mise en vente de biens immobiliers
+
+      Compétences : prospection, négociation, droit immobilier, relation client, estimation immobilière'
+    sentences:
+    - 'Nous recherchons un·e Graphiste pour rejoindre notre équipe.
+
+
+      Missions :
+
+      - Décliner les chartes graphiques sur différents supports
+
+      - Assurer une veille sur les tendances graphiques
+
+
+      Profil recherché :
+
+      - Illustrator
+
+      - charte graphique
+
+      - Photoshop'
+    - 'Pour renforcer notre équipe, nous ouvrons un poste de Chef·fe de Cuisine.
+
+
+      Missions :
+
+      - Encadrer et former la brigade de cuisine
+
+      - Garantir le respect des normes d''hygiène
+
+
+      Profil recherché :
+
+      - gestion de brigade
+
+      - gestion des coûts matières
+
+      - normes HACCP
+
+      - élaboration de menus'
+    - 'Notre organisation est à la recherche d''un·e Travailleur·se Social·e motivé·e.
+
+
+      Missions :
+
+      - Accompagner socialement les usagers
+
+      - Orienter vers les dispositifs d''aide adaptés
+
+      - Travailler en réseau avec les partenaires
+
+
+      Profil recherché :
+
+      - travail en réseau
+
+      - écoute active
+
+      - médiation
+
+      - accompagnement social'
+  - source_sentence: 'Anya Fernández
+
+      Chargé·e de Projet
+
+      Tokyo
+
+
+      FORMATION
+
+      Master en Management de Projet
+
+
+      EXPÉRIENCE PROFESSIONNELLE (5 ans)
+
+      - Identification et suivi des risques projet
+
+
+      COMPÉTENCES
+
+      budget, reporting, gestion des risques, Scrum'
+    sentences:
+    - 'Dans le cadre de notre développement, nous recrutons un·e Comptable.
+
+
+      Missions :
+
+      - Préparer les clôtures mensuelles et annuelles
+
+      - Participer à l''élaboration du budget prévisionnel
+
+
+      Profil recherché :
+
+      - déclarations TVA
+
+      - comptabilité générale
+
+      - Excel avancé
+
+      - SAGE
+
+      - clôtures comptables'
+    - 'Nous recherchons un·e Data Scientist pour rejoindre notre équipe.
+
+
+      Missions :
+
+      - Automatiser des pipelines de traitement de données
+
+      - Présenter les résultats aux équipes non techniques
+
+      - Concevoir et entraîner des modèles de machine learning
+
+
+      Profil recherché :
+
+      - statistiques
+
+      - Machine Learning
+
+      - SQL
+
+      - Power BI'
+    - 'Dans le cadre de notre développement, nous recrutons un·e Chargé·e de Projet.
+
+
+      Missions :
+
+      - Rendre compte de l''avancement à la direction
+
+      - Élaborer et suivre le planning et le budget des projets
+
+
+      Profil recherché :
+
+      - Scrum
+
+      - budget
+
+      - planning
+
+      - gestion des risques'
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-04T21:35:58.000Z'
+safetensors:
+  parameters:
+    F32: 117653760
+  total: 117653760
+usedStorage: 487720403
+downloadsAllTime: 14
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  initializer_range: 0.02
+  intermediate_size: 1536
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 1
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.17.0
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 250037
+onnxFiles: {}
+safetensorsSizeMb: 470.6
+approxSizeMb: 470.6
+fetchedAt: '2026-10-05T10:16:54.000Z'

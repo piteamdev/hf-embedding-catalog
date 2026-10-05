@@ -1,0 +1,81 @@
+_id: 6ac2a4e80330fc67aed2778a
+id: eric-ml-nlp/Delveta-BGE-M3-v1
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- onnx
+- safetensors
+- retrieval
+- dense-retrieval
+- sentence-similarity
+- feature-extraction
+- bge-m3
+- capability-retrieval
+- multilingual
+- arxiv:2402.03216
+- base_model:BAAI/bge-m3
+- base_model:finetune:BAAI/bge-m3
+- license:mit
+- endpoints_compatible
+- region:us
+downloads: 4
+likes: 0
+modelId: eric-ml-nlp/Delveta-BGE-M3-v1
+author: eric-ml-nlp
+sha: 625d25d3749076cee90abcd1904da3a6e7ce4c9b
+lastModified: '2026-10-04T22:03:48.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  library_name: transformers
+  pipeline_tag: feature-extraction
+  base_model: BAAI/bge-m3
+  base_model_relation: finetune
+  tags:
+  - retrieval
+  - dense-retrieval
+  - sentence-similarity
+  - feature-extraction
+  - bge-m3
+  - capability-retrieval
+  language:
+  - multilingual
+transformersInfo:
+  auto_model: AutoModel
+siblings:
+- rfilename: .gitattributes
+- rfilename: FP16/README.md
+- rfilename: FP16/config.json
+- rfilename: FP16/model.safetensors
+- rfilename: FP16/special_tokens_map.json
+- rfilename: FP16/tokenizer.json
+- rfilename: FP16/tokenizer_config.json
+- rfilename: FP32/README.md
+- rfilename: FP32/config.json
+- rfilename: FP32/model.safetensors
+- rfilename: FP32/special_tokens_map.json
+- rfilename: FP32/tokenizer.json
+- rfilename: FP32/tokenizer_config.json
+- rfilename: INT8/README.md
+- rfilename: INT8/config.json
+- rfilename: INT8/model.onnx
+- rfilename: INT8/special_tokens_map.json
+- rfilename: INT8/tokenizer.json
+- rfilename: INT8/tokenizer_config.json
+- rfilename: README.md
+spaces: []
+createdAt: '2026-10-04T19:11:36.000Z'
+usedStorage: 3992228184
+downloadsAllTime: 4
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  INT8/model.onnx: 568.5
+safetensorsSizeMb: 3406.6
+approxSizeMb: 0.0
+fetchedAt: '2026-10-05T10:16:54.000Z'

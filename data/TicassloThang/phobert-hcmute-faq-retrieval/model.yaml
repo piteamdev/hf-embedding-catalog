@@ -1,0 +1,112 @@
+_id: 6ac22d7541c84ce96b3ff51e
+id: TicassloThang/phobert-hcmute-faq-retrieval
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- roberta
+- sentence-similarity
+- feature-extraction
+- phobert
+- vietnamese
+- faq
+- retrieval
+- vi
+- base_model:vinai/phobert-base-v2
+- base_model:finetune:vinai/phobert-base-v2
+- license:agpl-3.0
+- endpoints_compatible
+- region:us
+downloads: 11
+likes: 1
+modelId: TicassloThang/phobert-hcmute-faq-retrieval
+author: TicassloThang
+sha: a7991b5c8a478a508399238825874f97c95c68f0
+lastModified: '2026-10-04T10:50:51.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - RobertaModel
+  model_type: roberta
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: <unk>
+cardData:
+  language:
+  - vi
+  license: agpl-3.0
+  base_model: vinai/phobert-base-v2
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - phobert
+  - vietnamese
+  - faq
+  - retrieval
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: added_tokens.json
+- rfilename: bpe.codes
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer_config.json
+- rfilename: vocab.txt
+spaces: []
+createdAt: '2026-10-04T10:41:57.000Z'
+safetensors:
+  parameters:
+    F32: 134998272
+  total: 134998272
+usedStorage: 540015440
+downloadsAllTime: 11
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - RobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 258
+  model_type: roberta
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 1
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  tokenizer_class: PhobertTokenizer
+  transformers_version: 5.3.0
+  type_vocab_size: 1
+  use_cache: true
+  vocab_size: 64001
+onnxFiles: {}
+safetensorsSizeMb: 540.0
+approxSizeMb: 540.0
+fetchedAt: '2026-10-05T10:16:54.000Z'

@@ -1,0 +1,161 @@
+_id: 6a872c2e888626186e407893
+id: Papatpong/Walker
+private: false
+pipeline_tag: feature-extraction
+tags:
+- feature-extraction
+- en
+- dataset:wikimedia/wikipedia
+- dataset:bctnry/CosmopediaV2
+- dataset:nvidia/Nemotron-Pretraining-Specialized-v1
+- dataset:nvidia/Nemotron-Pretraining-Specialized-v1.2
+- dataset:nvidia/Nemotron-SFT-Science-v2
+- dataset:nvidia/Nemotron-Math-v2
+- dataset:OctoThinker/MegaMath-Web-Pro-Max
+- license:mit
+- region:us
+downloads: 0
+likes: 2
+modelId: Papatpong/Walker
+author: Papatpong
+sha: b9d2df4c94f5400b862104ded40b0184d807dea9
+lastModified: '2026-10-05T09:29:06.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  language:
+  - en
+  datasets:
+  - wikimedia/wikipedia
+  - bctnry/CosmopediaV2
+  - nvidia/Nemotron-Pretraining-Specialized-v1
+  - nvidia/Nemotron-Pretraining-Specialized-v1.2
+  - nvidia/Nemotron-SFT-Science-v2
+  - nvidia/Nemotron-Math-v2
+  - OctoThinker/MegaMath-Web-Pro-Max
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: checkpoints/ckpt_best.pt
+- rfilename: checkpoints/ckpt_knowledge15b_ongoing_step1000.pt
+- rfilename: checkpoints/ckpt_knowledge15b_ongoing_step1500.pt
+- rfilename: checkpoints/ckpt_knowledge15b_ongoing_step500.pt
+- rfilename: checkpoints/ckpt_ongoing.pt
+- rfilename: checkpoints/ckpt_ongoing.pt.metadata.json
+- rfilename: checkpoints/ckpt_ongoing_step10000.pt
+- rfilename: checkpoints/ckpt_ongoing_step10500.pt
+- rfilename: checkpoints/ckpt_ongoing_step11000.pt
+- rfilename: checkpoints/ckpt_ongoing_step11500.pt
+- rfilename: checkpoints/ckpt_ongoing_step12000.pt
+- rfilename: checkpoints/ckpt_ongoing_step12500.pt
+- rfilename: checkpoints/ckpt_ongoing_step13000.pt
+- rfilename: checkpoints/ckpt_ongoing_step13500.pt
+- rfilename: checkpoints/ckpt_ongoing_step14000.pt
+- rfilename: checkpoints/ckpt_ongoing_step14500.pt
+- rfilename: checkpoints/ckpt_ongoing_step15000.pt
+- rfilename: checkpoints/ckpt_ongoing_step15500.pt
+- rfilename: checkpoints/ckpt_ongoing_step16000.pt
+- rfilename: checkpoints/ckpt_ongoing_step16500.pt
+- rfilename: checkpoints/ckpt_ongoing_step17000.pt
+- rfilename: checkpoints/ckpt_ongoing_step17500.pt
+- rfilename: checkpoints/ckpt_ongoing_step18000.pt
+- rfilename: checkpoints/ckpt_ongoing_step18500.pt
+- rfilename: checkpoints/ckpt_ongoing_step19000.pt
+- rfilename: checkpoints/ckpt_ongoing_step19500.pt
+- rfilename: checkpoints/ckpt_ongoing_step2000.pt
+- rfilename: checkpoints/ckpt_ongoing_step20000.pt
+- rfilename: checkpoints/ckpt_ongoing_step20500.pt
+- rfilename: checkpoints/ckpt_ongoing_step21000.pt
+- rfilename: checkpoints/ckpt_ongoing_step21500.pt
+- rfilename: checkpoints/ckpt_ongoing_step22000.pt
+- rfilename: checkpoints/ckpt_ongoing_step22500.pt
+- rfilename: checkpoints/ckpt_ongoing_step23000.pt
+- rfilename: checkpoints/ckpt_ongoing_step23250.pt
+- rfilename: checkpoints/ckpt_ongoing_step23500.pt
+- rfilename: checkpoints/ckpt_ongoing_step23750.pt
+- rfilename: checkpoints/ckpt_ongoing_step24000.pt
+- rfilename: checkpoints/ckpt_ongoing_step24250.pt
+- rfilename: checkpoints/ckpt_ongoing_step24500.pt
+- rfilename: checkpoints/ckpt_ongoing_step24750.pt
+- rfilename: checkpoints/ckpt_ongoing_step2500.pt
+- rfilename: checkpoints/ckpt_ongoing_step25000.pt
+- rfilename: checkpoints/ckpt_ongoing_step25250.pt
+- rfilename: checkpoints/ckpt_ongoing_step25500.pt
+- rfilename: checkpoints/ckpt_ongoing_step25750.pt
+- rfilename: checkpoints/ckpt_ongoing_step26000.pt
+- rfilename: checkpoints/ckpt_ongoing_step26250.pt
+- rfilename: checkpoints/ckpt_ongoing_step26500.pt
+- rfilename: checkpoints/ckpt_ongoing_step26750.pt
+- rfilename: checkpoints/ckpt_ongoing_step27000.pt
+- rfilename: checkpoints/ckpt_ongoing_step27250.pt
+- rfilename: checkpoints/ckpt_ongoing_step27500.pt
+- rfilename: checkpoints/ckpt_ongoing_step27750.pt
+- rfilename: checkpoints/ckpt_ongoing_step28000.pt
+- rfilename: checkpoints/ckpt_ongoing_step29000.pt
+- rfilename: checkpoints/ckpt_ongoing_step3000.pt
+- rfilename: checkpoints/ckpt_ongoing_step30000.pt
+- rfilename: checkpoints/ckpt_ongoing_step31000.pt
+- rfilename: checkpoints/ckpt_ongoing_step3500.pt
+- rfilename: checkpoints/ckpt_ongoing_step4000.pt
+- rfilename: checkpoints/ckpt_ongoing_step4500.pt
+- rfilename: checkpoints/ckpt_ongoing_step5000.pt
+- rfilename: checkpoints/ckpt_ongoing_step5500.pt
+- rfilename: checkpoints/ckpt_ongoing_step6000.pt
+- rfilename: checkpoints/ckpt_ongoing_step6500.pt
+- rfilename: checkpoints/ckpt_ongoing_step7000.pt
+- rfilename: checkpoints/ckpt_ongoing_step7500.pt
+- rfilename: checkpoints/ckpt_ongoing_step8000.pt
+- rfilename: checkpoints/ckpt_ongoing_step8500.pt
+- rfilename: checkpoints/ckpt_ongoing_step9000.pt
+- rfilename: checkpoints/ckpt_ongoing_step9500.pt
+- rfilename: checkpoints/ckpt_phase_a_2k_step2000.pt
+- rfilename: checkpoints/ckpt_phase_a_2k_step3000.pt
+- rfilename: checkpoints/ckpt_phase_a_2k_step4000.pt
+- rfilename: checkpoints/ckpt_phase_a_2k_step5000.pt
+- rfilename: checkpoints/ckpt_phase_a_2k_step6000.pt
+- rfilename: checkpoints/ckpt_phase_a_2k_step7000.pt
+- rfilename: checkpoints/ckpt_phase_b_code_ongoing_step1000.pt
+- rfilename: checkpoints/ckpt_phase_b_code_ongoing_step2000.pt
+- rfilename: checkpoints/validation/mix_80ade381c70a6cce_524288.00-web_edu_dedup.bin
+- rfilename: checkpoints/validation/mix_80ade381c70a6cce_524288.01-cosmopedia_v2.bin
+- rfilename: checkpoints/validation/mix_80ade381c70a6cce_524288.02-pdf_edu_hq.bin
+- rfilename: checkpoints/validation/mix_80ade381c70a6cce_524288.03-megamath_web_pro_max.bin
+- rfilename: checkpoints/validation/mix_80ade381c70a6cce_524288.04-stem_rqa.bin
+- rfilename: checkpoints/validation/mix_80ade381c70a6cce_524288.05-fact_seeking.bin
+- rfilename: checkpoints/validation/mix_80ade381c70a6cce_524288.06-infinibyte.bin
+- rfilename: checkpoints/validation/mix_80ade381c70a6cce_524288.07-math_textbooks.bin
+- rfilename: checkpoints/validation/mix_80ade381c70a6cce_524288.meta.json
+- rfilename: checkpoints/validation/mix_8760c143425fe41a_524288.00-cosmopedia_v2.bin
+- rfilename: checkpoints/validation/mix_8760c143425fe41a_524288.01-wikipedia_en.bin
+- rfilename: checkpoints/validation/mix_8760c143425fe41a_524288.02-megamath_web_pro_max.bin
+- rfilename: checkpoints/validation/mix_8760c143425fe41a_524288.03-stem_rqa.bin
+- rfilename: checkpoints/validation/mix_8760c143425fe41a_524288.04-fact_seeking.bin
+- rfilename: checkpoints/validation/mix_8760c143425fe41a_524288.05-infinibyte.bin
+- rfilename: checkpoints/validation/mix_8760c143425fe41a_524288.06-math_textbooks.bin
+- rfilename: checkpoints/validation/mix_8760c143425fe41a_524288.07-sft_science_vendor.bin
+- rfilename: checkpoints/validation/mix_8760c143425fe41a_524288.08-sft_math.bin
+- rfilename: checkpoints/validation/mix_8760c143425fe41a_524288.meta.json
+- rfilename: checkpoints/validation/mix_98b93d4d8474612e_524288.00-cosmopedia_v2.bin
+- rfilename: checkpoints/validation/mix_98b93d4d8474612e_524288.01-pdf_edu_hq.bin
+- rfilename: checkpoints/validation/mix_98b93d4d8474612e_524288.02-megamath_web_pro_max.bin
+- rfilename: checkpoints/validation/mix_98b93d4d8474612e_524288.03-stem_rqa.bin
+- rfilename: checkpoints/validation/mix_98b93d4d8474612e_524288.04-fact_seeking.bin
+- rfilename: checkpoints/validation/mix_98b93d4d8474612e_524288.05-infinibyte.bin
+- rfilename: checkpoints/validation/mix_98b93d4d8474612e_524288.06-math_textbooks.bin
+- rfilename: checkpoints/validation/mix_98b93d4d8474612e_524288.07-sft_science_vendor.bin
+- rfilename: checkpoints/validation/mix_98b93d4d8474612e_524288.08-sft_math.bin
+- rfilename: checkpoints/validation/mix_98b93d4d8474612e_524288.meta.json
+spaces: []
+createdAt: '2026-08-20T16:32:46.000Z'
+usedStorage: 1688060524412
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-05T10:16:54.000Z'

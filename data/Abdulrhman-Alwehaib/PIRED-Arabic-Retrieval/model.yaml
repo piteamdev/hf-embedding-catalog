@@ -1,0 +1,111 @@
+_id: 6abedc133e986b76761b9968
+id: Abdulrhman-Alwehaib/PIRED-Arabic-Retrieval
+private: false
+pipeline_tag: sentence-similarity
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- arabic_encoder
+- feature-extraction
+- arabic
+- embeddings
+- retrieval
+- sentence-similarity
+- custom_code
+- ar
+- license:cc-by-nc-4.0
+- region:us
+downloads: 26
+likes: 0
+modelId: Abdulrhman-Alwehaib/PIRED-Arabic-Retrieval
+author: Abdulrhman-Alwehaib
+sha: 57f1999253d7d9b4aa262a48eb683cccf46470db
+lastModified: '2026-10-04T10:13:05.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: هذا شخص سعيد
+  sentences:
+  - هذا كلب سعيد
+  - هذا شخص سعيد جدا
+  - اليوم هو يوم مشمس
+model-index: null
+config:
+  architectures:
+  - ArabicEncoderModel
+  auto_map:
+    AutoConfig: configuration_pired.ArabicEncoderConfig
+    AutoModel: modeling_pired.ArabicEncoderModel
+  model_type: arabic_encoder
+  tokenizer_config:
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  language:
+  - ar
+  license: cc-by-nc-4.0
+  library_name: transformers
+  pipeline_tag: sentence-similarity
+  tags:
+  - arabic
+  - embeddings
+  - retrieval
+  - sentence-similarity
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_pired.ArabicEncoderModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: configuration_pired.py
+- rfilename: model.safetensors
+- rfilename: modeling_pired.py
+- rfilename: pooling_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-01T22:17:55.000Z'
+safetensors:
+  parameters:
+    F32: 134126592
+  total: 134126592
+usedStorage: 536516104
+downloadsAllTime: 26
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - ArabicEncoderModel
+  attention_dropout_prob: 0.0
+  auto_map:
+    AutoConfig: configuration_pired.ArabicEncoderConfig
+    AutoModel: modeling_pired.ArabicEncoderModel
+  cls_token_id: 2
+  dtype: float32
+  head_dim: 64
+  hidden_dropout_prob: 0.0
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 2048
+  layer_norm_eps: 1.0e-05
+  mask_token_id: 4
+  max_position_embeddings: 1024
+  model_type: arabic_encoder
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  rope_theta: 10000.0
+  sep_token_id: 3
+  tie_word_embeddings: true
+  transformers_version: 5.5.4
+  vocab_size: 64000
+onnxFiles: {}
+safetensorsSizeMb: 536.5
+approxSizeMb: 536.5
+fetchedAt: '2026-10-05T10:16:54.000Z'

@@ -1,0 +1,78 @@
+_id: 6ac2799bf820856669bb72d4
+id: sucrette/chatterbox-voice-encoders-coreai
+private: false
+pipeline_tag: feature-extraction
+library_name: coreai
+tags:
+- coreai
+- core-ai
+- apple
+- on-device
+- chatterbox
+- voice-cloning
+- speaker-embedding
+- speech-tokenizer
+- feature-extraction
+- base_model:ResembleAI/chatterbox-nano
+- base_model:quantized:ResembleAI/chatterbox-nano
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: sucrette/chatterbox-voice-encoders-coreai
+author: sucrette
+sha: 7d2ac96389caf87d6895bfe59695e2cbb99fb582
+lastModified: '2026-10-04T16:07:05.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  base_model:
+  - ResembleAI/chatterbox-nano
+  - ResembleAI/chatterbox-turbo
+  base_model_relation: quantized
+  pipeline_tag: feature-extraction
+  library_name: coreai
+  tags:
+  - coreai
+  - core-ai
+  - apple
+  - on-device
+  - chatterbox
+  - voice-cloning
+  - speaker-embedding
+  - speech-tokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: campplus.aimodel/main.hash
+- rfilename: campplus.aimodel/main.mlirb
+- rfilename: campplus.aimodel/metadata.json
+- rfilename: s3gen_mel.aimodel/main.hash
+- rfilename: s3gen_mel.aimodel/main.mlirb
+- rfilename: s3gen_mel.aimodel/metadata.json
+- rfilename: s3tok.aimodel/main.hash
+- rfilename: s3tok.aimodel/main.mlirb
+- rfilename: s3tok.aimodel/metadata.json
+- rfilename: t3cond_nano.aimodel/main.hash
+- rfilename: t3cond_nano.aimodel/main.mlirb
+- rfilename: t3cond_nano.aimodel/metadata.json
+- rfilename: t3cond_turbo.aimodel/main.hash
+- rfilename: t3cond_turbo.aimodel/main.mlirb
+- rfilename: t3cond_turbo.aimodel/metadata.json
+- rfilename: voice_encoder.aimodel/main.hash
+- rfilename: voice_encoder.aimodel/main.mlirb
+- rfilename: voice_encoder.aimodel/metadata.json
+spaces: []
+createdAt: '2026-10-04T16:06:51.000Z'
+usedStorage: 596594799
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-05T10:16:54.000Z'

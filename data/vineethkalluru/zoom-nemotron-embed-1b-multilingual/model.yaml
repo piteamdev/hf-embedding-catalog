@@ -1,0 +1,250 @@
+_id: 6ac3baa4db0ef7c3f70a3472
+id: vineethkalluru/zoom-nemotron-embed-1b-multilingual
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- ministral3
+- retrieval
+- nemotron
+- sentence-similarity
+- cy
+- el
+- hu
+- base_model:nvidia/Nemotron-3-Embed-1B-BF16
+- base_model:finetune:nvidia/Nemotron-3-Embed-1B-BF16
+- endpoints_compatible
+- region:us
+downloads: 1
+likes: 0
+modelId: vineethkalluru/zoom-nemotron-embed-1b-multilingual
+author: vineethkalluru
+sha: facb79f4153420207f1d8d000f9bfcc3cd3644d3
+lastModified: '2026-10-05T15:17:44.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - Ministral3Model
+  model_type: ministral3
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    pad_token: <pad>
+    unk_token: <unk>
+cardData:
+  language:
+  - cy
+  - el
+  - hu
+  tags:
+  - sentence-transformers
+  - retrieval
+  - nemotron
+  base_model: nvidia/Nemotron-3-Embed-1B-BF16
+  pipeline_tag: sentence-similarity
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: archive_manifest.json
+- rfilename: audit/best_checkpoint.json
+- rfilename: audit/finished.json
+- rfilename: audit/frozen_inputs.json
+- rfilename: audit/metrics.jsonl
+- rfilename: audit/training_finished.json
+- rfilename: audit/verified.json
+- rfilename: checkpoints/step-1588/config.yaml
+- rfilename: checkpoints/step-1588/dataloader/dataloader_dp_rank_0.pt
+- rfilename: checkpoints/step-1588/dataloader/dataloader_dp_rank_1.pt
+- rfilename: checkpoints/step-1588/dataloader/dataloader_dp_rank_2.pt
+- rfilename: checkpoints/step-1588/losses.json
+- rfilename: checkpoints/step-1588/model/.hf_metadata/1_Pooling/config.json
+- rfilename: checkpoints/step-1588/model/.hf_metadata/config.json
+- rfilename: checkpoints/step-1588/model/.hf_metadata/config_sentence_transformers.json
+- rfilename: checkpoints/step-1588/model/.hf_metadata/fqn_to_dtype_mapping.json
+- rfilename: checkpoints/step-1588/model/.hf_metadata/fqn_to_file_index_mapping.json
+- rfilename: checkpoints/step-1588/model/.hf_metadata/modules.json
+- rfilename: checkpoints/step-1588/model/.hf_metadata/sentence_bert_config.json
+- rfilename: checkpoints/step-1588/model/.hf_metadata/tokenizer.json
+- rfilename: checkpoints/step-1588/model/.hf_metadata/tokenizer_config.json
+- rfilename: checkpoints/step-1588/model/consolidate.sh
+- rfilename: checkpoints/step-1588/model/consolidated/1_Pooling/config.json
+- rfilename: checkpoints/step-1588/model/consolidated/config.json
+- rfilename: checkpoints/step-1588/model/consolidated/config_sentence_transformers.json
+- rfilename: checkpoints/step-1588/model/consolidated/model-00001-of-00001.safetensors
+- rfilename: checkpoints/step-1588/model/consolidated/model.safetensors.index.json
+- rfilename: checkpoints/step-1588/model/consolidated/modules.json
+- rfilename: checkpoints/step-1588/model/consolidated/sentence_bert_config.json
+- rfilename: checkpoints/step-1588/model/consolidated/tokenizer.json
+- rfilename: checkpoints/step-1588/model/consolidated/tokenizer_config.json
+- rfilename: checkpoints/step-1588/model/shard-00001-model-00001-of-00001.safetensors
+- rfilename: checkpoints/step-1588/model/shard-00002-model-00001-of-00001.safetensors
+- rfilename: checkpoints/step-1588/model/shard-00003-model-00001-of-00001.safetensors
+- rfilename: checkpoints/step-1588/optim/.metadata
+- rfilename: checkpoints/step-1588/optim/__0_0.distcp
+- rfilename: checkpoints/step-1588/optim/__1_0.distcp
+- rfilename: checkpoints/step-1588/optim/__2_0.distcp
+- rfilename: checkpoints/step-1588/rng/rng_dp_rank_0.pt
+- rfilename: checkpoints/step-1588/rng/rng_dp_rank_1.pt
+- rfilename: checkpoints/step-1588/rng/rng_dp_rank_2.pt
+- rfilename: checkpoints/step-1588/step_scheduler.pt
+- rfilename: checkpoints/step-2381/config.yaml
+- rfilename: checkpoints/step-2381/dataloader/dataloader_dp_rank_0.pt
+- rfilename: checkpoints/step-2381/dataloader/dataloader_dp_rank_1.pt
+- rfilename: checkpoints/step-2381/dataloader/dataloader_dp_rank_2.pt
+- rfilename: checkpoints/step-2381/losses.json
+- rfilename: checkpoints/step-2381/model/.hf_metadata/1_Pooling/config.json
+- rfilename: checkpoints/step-2381/model/.hf_metadata/config.json
+- rfilename: checkpoints/step-2381/model/.hf_metadata/config_sentence_transformers.json
+- rfilename: checkpoints/step-2381/model/.hf_metadata/fqn_to_dtype_mapping.json
+- rfilename: checkpoints/step-2381/model/.hf_metadata/fqn_to_file_index_mapping.json
+- rfilename: checkpoints/step-2381/model/.hf_metadata/modules.json
+- rfilename: checkpoints/step-2381/model/.hf_metadata/sentence_bert_config.json
+- rfilename: checkpoints/step-2381/model/.hf_metadata/tokenizer.json
+- rfilename: checkpoints/step-2381/model/.hf_metadata/tokenizer_config.json
+- rfilename: checkpoints/step-2381/model/consolidate.sh
+- rfilename: checkpoints/step-2381/model/consolidated/1_Pooling/config.json
+- rfilename: checkpoints/step-2381/model/consolidated/config.json
+- rfilename: checkpoints/step-2381/model/consolidated/config_sentence_transformers.json
+- rfilename: checkpoints/step-2381/model/consolidated/metadata.json
+- rfilename: checkpoints/step-2381/model/consolidated/model-00001-of-00001.safetensors
+- rfilename: checkpoints/step-2381/model/consolidated/model.safetensors.index.json
+- rfilename: checkpoints/step-2381/model/consolidated/modules.json
+- rfilename: checkpoints/step-2381/model/consolidated/sentence_bert_config.json
+- rfilename: checkpoints/step-2381/model/consolidated/tokenizer.json
+- rfilename: checkpoints/step-2381/model/consolidated/tokenizer_config.json
+- rfilename: checkpoints/step-2381/model/shard-00001-model-00001-of-00001.safetensors
+- rfilename: checkpoints/step-2381/model/shard-00002-model-00001-of-00001.safetensors
+- rfilename: checkpoints/step-2381/model/shard-00003-model-00001-of-00001.safetensors
+- rfilename: checkpoints/step-2381/optim/.metadata
+- rfilename: checkpoints/step-2381/optim/__0_0.distcp
+- rfilename: checkpoints/step-2381/optim/__1_0.distcp
+- rfilename: checkpoints/step-2381/optim/__2_0.distcp
+- rfilename: checkpoints/step-2381/rng/rng_dp_rank_0.pt
+- rfilename: checkpoints/step-2381/rng/rng_dp_rank_1.pt
+- rfilename: checkpoints/step-2381/rng/rng_dp_rank_2.pt
+- rfilename: checkpoints/step-2381/step_scheduler.pt
+- rfilename: checkpoints/step-794/config.yaml
+- rfilename: checkpoints/step-794/dataloader/dataloader_dp_rank_0.pt
+- rfilename: checkpoints/step-794/dataloader/dataloader_dp_rank_1.pt
+- rfilename: checkpoints/step-794/dataloader/dataloader_dp_rank_2.pt
+- rfilename: checkpoints/step-794/losses.json
+- rfilename: checkpoints/step-794/model/.hf_metadata/1_Pooling/config.json
+- rfilename: checkpoints/step-794/model/.hf_metadata/config.json
+- rfilename: checkpoints/step-794/model/.hf_metadata/config_sentence_transformers.json
+- rfilename: checkpoints/step-794/model/.hf_metadata/fqn_to_dtype_mapping.json
+- rfilename: checkpoints/step-794/model/.hf_metadata/fqn_to_file_index_mapping.json
+- rfilename: checkpoints/step-794/model/.hf_metadata/modules.json
+- rfilename: checkpoints/step-794/model/.hf_metadata/sentence_bert_config.json
+- rfilename: checkpoints/step-794/model/.hf_metadata/tokenizer.json
+- rfilename: checkpoints/step-794/model/.hf_metadata/tokenizer_config.json
+- rfilename: checkpoints/step-794/model/consolidate.sh
+- rfilename: checkpoints/step-794/model/consolidated/1_Pooling/config.json
+- rfilename: checkpoints/step-794/model/consolidated/config.json
+- rfilename: checkpoints/step-794/model/consolidated/config_sentence_transformers.json
+- rfilename: checkpoints/step-794/model/consolidated/model-00001-of-00001.safetensors
+- rfilename: checkpoints/step-794/model/consolidated/model.safetensors.index.json
+- rfilename: checkpoints/step-794/model/consolidated/modules.json
+- rfilename: checkpoints/step-794/model/consolidated/sentence_bert_config.json
+- rfilename: checkpoints/step-794/model/consolidated/tokenizer.json
+- rfilename: checkpoints/step-794/model/consolidated/tokenizer_config.json
+- rfilename: checkpoints/step-794/model/shard-00001-model-00001-of-00001.safetensors
+- rfilename: checkpoints/step-794/model/shard-00002-model-00001-of-00001.safetensors
+- rfilename: checkpoints/step-794/model/shard-00003-model-00001-of-00001.safetensors
+- rfilename: checkpoints/step-794/optim/.metadata
+- rfilename: checkpoints/step-794/optim/__0_0.distcp
+- rfilename: checkpoints/step-794/optim/__1_0.distcp
+- rfilename: checkpoints/step-794/optim/__2_0.distcp
+- rfilename: checkpoints/step-794/rng/rng_dp_rank_0.pt
+- rfilename: checkpoints/step-794/rng/rng_dp_rank_1.pt
+- rfilename: checkpoints/step-794/rng/rng_dp_rank_2.pt
+- rfilename: checkpoints/step-794/step_scheduler.pt
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: experiment/experiment-report.md
+- rfilename: experiment/figures/loss.svg
+- rfilename: experiment/figures/retrieval.svg
+- rfilename: experiment/figures/throughput.svg
+- rfilename: experiment/plot_experiment.py
+- rfilename: experiment/primer.md
+- rfilename: experiment/process.md
+- rfilename: experiment/training-metrics.jsonl
+- rfilename: experiment/verified.json
+- rfilename: model-00001-of-00001.safetensors
+- rfilename: model.safetensors.index.json
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-05T14:56:36.000Z'
+safetensors:
+  parameters:
+    BF16: 1140918272
+  total: 1140918272
+usedStorage: 54797362770
+downloadsAllTime: 1
+inferenceProviderMapping: {}
+configJson:
+  _name_or_path: /raid/home/vikalluru/zoom-welsh-hf-cache-20261001/hub/models--nvidia--Nemotron-3-Embed-1B-BF16/snapshots/c0c9fea93ea424587517f2c59e20db9f1d6bf615
+  architectures:
+  - Ministral3Model
+  attention_dropout: 0.0
+  bos_token_id: 1
+  chunk_size_feed_forward: 0
+  dtype: bfloat16
+  eos_token_id: 2
+  head_dim: 128
+  hidden_act: silu
+  hidden_size: 2048
+  id2label:
+    '0': LABEL_0
+    '1': LABEL_1
+  initializer_range: 0.02
+  intermediate_size: 6144
+  is_causal: false
+  is_encoder_decoder: false
+  label2id:
+    LABEL_0: 0
+    LABEL_1: 1
+  llama_4_scaling:
+    beta: 0.1
+    original_max_position_embeddings: 16384
+  max_position_embeddings: 262144
+  model_type: ministral3
+  nemo_version: 0.3.0rc0
+  num_attention_heads: 24
+  num_hidden_layers: 16
+  num_key_value_heads: 8
+  output_attentions: false
+  output_hidden_states: false
+  pad_token_id: 11
+  pooling: avg
+  problem_type: null
+  return_dict: true
+  rms_norm_eps: 1.0e-05
+  rope_parameters:
+    apply_yarn_scaling: false
+    beta_fast: 32.0
+    beta_slow: 1.0
+    factor: 16.0
+    llama_4_scaling_beta: 0.1
+    mscale: 1.0
+    mscale_all_dim: 1.0
+    original_max_position_embeddings: 16384
+    rope_theta: 1000000.0
+    rope_type: yarn
+    type: yarn
+  sliding_window: null
+  tie_word_embeddings: true
+  transformers_version: 5.12.1
+  use_cache: true
+  vocab_size: 131072
+onnxFiles: {}
+safetensorsSizeMb: 15973.2
+approxSizeMb: 2281.8
+fetchedAt: '2026-10-06T10:02:45.000Z'

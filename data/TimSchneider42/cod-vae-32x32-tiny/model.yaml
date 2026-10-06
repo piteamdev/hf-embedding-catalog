@@ -1,0 +1,50 @@
+_id: 6ac41de9ff94a737e73ff14e
+id: TimSchneider42/cod-vae-32x32-tiny
+private: false
+pipeline_tag: feature-extraction
+library_name: cod-vae
+tags:
+- cod-vae
+- 3d
+- shape-reconstruction
+- autoencoder
+- vae
+- occupancy
+- feature-extraction
+- arxiv:2503.08737
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: TimSchneider42/cod-vae-32x32-tiny
+author: TimSchneider42
+sha: b506a0dad54c5efb265b437d104c5048f86558de
+lastModified: '2026-10-05T22:00:14.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  library_name: cod-vae
+  pipeline_tag: feature-extraction
+  tags:
+  - 3d
+  - shape-reconstruction
+  - autoencoder
+  - vae
+  - occupancy
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: model.npz
+spaces: []
+createdAt: '2026-10-05T22:00:09.000Z'
+usedStorage: 24459019
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-06T10:02:45.000Z'

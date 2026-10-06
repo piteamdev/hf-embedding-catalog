@@ -1,0 +1,188 @@
+_id: 6ac39c175c1abd913fab1f26
+id: malma0/e5-gesn
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- onnx
+- safetensors
+- xlm-roberta
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:10134
+- loss:CachedMultipleNegativesRankingLoss
+- loss:MultipleNegativesRankingLoss
+- arxiv:1908.10084
+- arxiv:2101.06983
+- arxiv:1807.03748
+- base_model:intfloat/multilingual-e5-base
+- base_model:quantized:intfloat/multilingual-e5-base
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 20
+likes: 0
+modelId: malma0/e5-gesn
+author: malma0
+sha: a71924c1ae11c3d0ddbaa487f18bde6d7afae02d
+lastModified: '2026-10-05T13:16:19.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: 'query: грунтовка стен квартиры'
+  sentences:
+  - 'passage: Отделочные работы. Окраска фасадов с люлек по подготовленной поверхности: силикатная. Ед. изм.: 100 м2'
+  - 'passage: Отделочные работы. Покрытие поверхностей грунтовкой глубокого проникновения: за 1 раз стен. Ед. изм.: 100 м2'
+  - 'passage: Отделочные работы. Покрытие поверхностей грунтовкой глубокого проникновения: за 2 раза стен. Ед. изм.: 100 м2'
+- source_sentence: 'query: установ шкафных дверей'
+  sentences:
+  - 'passage: Деревянные конструкции. Антисептирование водными растворами: покрытий по фермам. Ед. изм.: 100 м2. Нанесение
+    готового состава на поверхность'
+  - 'passage: Деревянные конструкции. Установка дверных блоков: антресольных. Ед. изм.: 10 шт. Установка и крепление блоков
+    антресольных'
+  - 'passage: Деревянные конструкции. Установка дверных блоков: шкафных. Ед. изм.: 10 шт. Установка и крепление блоков дверных
+    шкафных'
+- source_sentence: 'query: пергаминовая обшивка стены 100м2'
+  sentences:
+  - 'passage: Деревянные конструкции. Обшивка каркасных стен: досками обшивки. Ед. изм.: 100 м2. Обшивка стен пергамином,
+    досками. Обшивка углов и пересечений'
+  - 'passage: Деревянные конструкции. Обшивка каркасных стен: пергамином. Ед. изм.: 100 м2. Обшивка стен пергамином'
+  - 'passage: Отделочные работы. Огнезащитная пропитка текстильных (тканевых) покрытий. Ед. изм.: 100 м2. Огнезащитная пропитка
+    текстильных покрытий'
+- source_sentence: 'query: окраска решеток для дачи'
+  sentences:
+  - 'passage: Отделочные работы. Окраска фасадов с люлек с подготовкой поверхности: силикатная. Ед. изм.: 100 м2'
+  - 'passage: Отделочные работы. Масляная окраска металлических поверхностей: решеток, переплетов, труб диаметром менее 50
+    мм и т.п., количество окрасок 2. Ед. изм.: 100 м2'
+  - 'passage: Отделочные работы. Окраска масляными составами трубопроводов по изоляции. Ед. изм.: 100 м2'
+- source_sentence: 'query: покрытие водными растворами'
+  sentences:
+  - 'passage: Деревянные конструкции. Антисептирование водными растворами: стен. Ед. изм.: 100 м2. Нанесение готового состава
+    на поверхность'
+  - 'passage: Отделочные работы. Улучшенная окраска масляными составами по сборным конструкциям: стен, подготовленных под
+    окраску. Ед. изм.: 100 м2'
+  - 'passage: Деревянные конструкции. Антисептирование водными растворами: покрытий по фермам. Ед. изм.: 100 м2. Нанесение
+    готового состава на поверхность'
+model-index: null
+config:
+  architectures:
+  - XLMRobertaModel
+  model_type: xlm-roberta
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: <unk>
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:10134
+  - loss:CachedMultipleNegativesRankingLoss
+  - loss:MultipleNegativesRankingLoss
+  base_model: intfloat/multilingual-e5-base
+  widget:
+  - source_sentence: 'query: грунтовка стен квартиры'
+    sentences:
+    - 'passage: Отделочные работы. Окраска фасадов с люлек по подготовленной поверхности: силикатная. Ед. изм.: 100 м2'
+    - 'passage: Отделочные работы. Покрытие поверхностей грунтовкой глубокого проникновения: за 1 раз стен. Ед. изм.: 100
+      м2'
+    - 'passage: Отделочные работы. Покрытие поверхностей грунтовкой глубокого проникновения: за 2 раза стен. Ед. изм.: 100
+      м2'
+  - source_sentence: 'query: установ шкафных дверей'
+    sentences:
+    - 'passage: Деревянные конструкции. Антисептирование водными растворами: покрытий по фермам. Ед. изм.: 100 м2. Нанесение
+      готового состава на поверхность'
+    - 'passage: Деревянные конструкции. Установка дверных блоков: антресольных. Ед. изм.: 10 шт. Установка и крепление блоков
+      антресольных'
+    - 'passage: Деревянные конструкции. Установка дверных блоков: шкафных. Ед. изм.: 10 шт. Установка и крепление блоков дверных
+      шкафных'
+  - source_sentence: 'query: пергаминовая обшивка стены 100м2'
+    sentences:
+    - 'passage: Деревянные конструкции. Обшивка каркасных стен: досками обшивки. Ед. изм.: 100 м2. Обшивка стен пергамином,
+      досками. Обшивка углов и пересечений'
+    - 'passage: Деревянные конструкции. Обшивка каркасных стен: пергамином. Ед. изм.: 100 м2. Обшивка стен пергамином'
+    - 'passage: Отделочные работы. Огнезащитная пропитка текстильных (тканевых) покрытий. Ед. изм.: 100 м2. Огнезащитная пропитка
+      текстильных покрытий'
+  - source_sentence: 'query: окраска решеток для дачи'
+    sentences:
+    - 'passage: Отделочные работы. Окраска фасадов с люлек с подготовкой поверхности: силикатная. Ед. изм.: 100 м2'
+    - 'passage: Отделочные работы. Масляная окраска металлических поверхностей: решеток, переплетов, труб диаметром менее
+      50 мм и т.п., количество окрасок 2. Ед. изм.: 100 м2'
+    - 'passage: Отделочные работы. Окраска масляными составами трубопроводов по изоляции. Ед. изм.: 100 м2'
+  - source_sentence: 'query: покрытие водными растворами'
+    sentences:
+    - 'passage: Деревянные конструкции. Антисептирование водными растворами: стен. Ед. изм.: 100 м2. Нанесение готового состава
+      на поверхность'
+    - 'passage: Отделочные работы. Улучшенная окраска масляными составами по сборным конструкциям: стен, подготовленных под
+      окраску. Ед. изм.: 100 м2'
+    - 'passage: Деревянные конструкции. Антисептирование водными растворами: покрытий по фермам. Ед. изм.: 100 м2. Нанесение
+      готового состава на поверхность'
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: onnx/model.onnx
+- rfilename: onnx/model_quantized.onnx
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-05T12:46:15.000Z'
+safetensors:
+  parameters:
+    F32: 278043648
+  total: 278043648
+usedStorage: 2517603910
+downloadsAllTime: 20
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - XLMRobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 514
+  model_type: xlm-roberta
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  output_past: true
+  pad_token_id: 1
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.16.1
+  type_vocab_size: 1
+  use_cache: false
+  vocab_size: 250002
+onnxFiles:
+  onnx/model.onnx: 1110.1
+  onnx/model_quantized.onnx: 278.3
+safetensorsSizeMb: 1112.2
+approxSizeMb: 1112.2
+fetchedAt: '2026-10-06T10:02:45.000Z'

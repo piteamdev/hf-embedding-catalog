@@ -1,0 +1,132 @@
+_id: 6a76b6661702714af31da11a
+id: handshake-ai-research/cue
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- cue
+- feature-extraction
+- user-simulation
+- dialogue
+- persona
+- custom_code
+- dataset:handshake-ai-research/cue-annotations
+- dataset:handshake-ai-research/cue-example-pool
+- arxiv:2610.02460
+- base_model:Qwen/Qwen3-0.6B-Base
+- base_model:finetune:Qwen/Qwen3-0.6B-Base
+- license:apache-2.0
+- region:us
+downloads: 13
+likes: 1
+modelId: handshake-ai-research/cue
+author: handshake-ai-research
+sha: 99f14a3ef12c85e50e782ff2820696b3509be27b
+lastModified: '2026-10-05T19:04:29.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - CueModel
+  auto_map:
+    AutoConfig: configuration_cue.CueConfig
+    AutoModel: modeling_cue.CueModel
+  model_type: cue
+cardData:
+  library_name: transformers
+  license: apache-2.0
+  tags:
+  - cue
+  - user-simulation
+  - dialogue
+  - persona
+  - custom_code
+  base_model:
+  - nomic-ai/modernbert-embed-base
+  - Qwen/Qwen3-0.6B-Base
+  datasets:
+  - handshake-ai-research/cue-annotations
+  - handshake-ai-research/cue-example-pool
+  inference: false
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_cue.CueModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: checkpoint.py
+- rfilename: config.json
+- rfilename: configuration_cue.py
+- rfilename: decoder_flamingo.py
+- rfilename: decoder_model.py
+- rfilename: encoder_layer_pool.py
+- rfilename: encoder_model.py
+- rfilename: encoder_system_fusion.py
+- rfilename: encoder_truncate.py
+- rfilename: example_pool.py
+- rfilename: faiss_index.py
+- rfilename: log.py
+- rfilename: model.safetensors
+- rfilename: modeling_cue.py
+- rfilename: processing_cue.py
+- rfilename: sampler.pt
+- rfilename: sampler_diffusion.py
+- rfilename: sampler_sample.py
+- rfilename: schema.py
+- rfilename: session_preprocess.py
+spaces: []
+createdAt: '2026-08-08T04:53:58.000Z'
+safetensors:
+  parameters:
+    F32: 459101415
+    BF16: 596049920
+  total: 1055151335
+usedStorage: 12526285220
+downloadsAllTime: 40
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - CueModel
+  auto_map:
+    AutoConfig: configuration_cue.CueConfig
+    AutoModel: modeling_cue.CueModel
+  command_slot_decode: true
+  decoder:
+    bottleneck_dim: 1024
+    dtype: bfloat16
+    freeze_lm: false
+    general_command_slots: 5
+    injection: flamingo_gated_xattn_dense
+    insert_every: 4
+    model_name: Qwen/Qwen3-0.6B-Base
+    num_heads: 8
+    num_persona_tokens: 16
+    slot_embedding_dim: 64
+    style_command_slots: 5
+    user_specific_command_slots: 5
+  dual_decode: true
+  encoder:
+    bottleneck_dim: 1024
+    max_length: 256
+    max_turns: 64
+    passage_prefix: 'search_document: '
+    query_prefix: 'search_query: '
+    session_dim: 1024
+    session_heads: 8
+    session_layers: 4
+    system_model_name: nomic-ai/modernbert-embed-base
+    user_model_name: nomic-ai/modernbert-embed-base
+  example_pool_id: handshake-ai-research/cue-example-pool
+  general_command_slots: 5
+  model_type: cue
+  slot_embedding_dim: 64
+  style_command_slots: 5
+  user_specific_command_slots: 5
+onnxFiles: {}
+safetensorsSizeMb: 3028.6
+approxSizeMb: 3028.5
+fetchedAt: '2026-10-06T10:02:45.000Z'

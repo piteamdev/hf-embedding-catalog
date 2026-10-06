@@ -1,0 +1,54 @@
+_id: 6ac440bc5de220c6efb235ed
+id: clinictronanon/ClinicTron-NV
+private: false
+pipeline_tag: feature-extraction
+library_name: peft
+tags:
+- peft
+- safetensors
+- embeddings
+- retrieval
+- biomedical
+- lora
+- feature-extraction
+- base_model:nvidia/NV-Embed-v2
+- base_model:adapter:nvidia/NV-Embed-v2
+- region:us
+downloads: 4
+likes: 0
+modelId: clinictronanon/ClinicTron-NV
+author: clinictronanon
+sha: 31d3f4992619828b417041da872e60fdd6fc7b21
+lastModified: '2026-10-06T08:20:47.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  peft:
+    base_model_name_or_path: nvidia/NV-Embed-v2
+cardData:
+  base_model: nvidia/NV-Embed-v2
+  library_name: peft
+  pipeline_tag: feature-extraction
+  tags:
+  - embeddings
+  - retrieval
+  - biomedical
+  - lora
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: SHA256SUMS
+- rfilename: adapter_config.json
+- rfilename: adapter_model.safetensors
+- rfilename: train_config.json
+spaces: []
+createdAt: '2026-10-06T00:28:44.000Z'
+usedStorage: 671146480
+downloadsAllTime: 4
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 671.1
+approxSizeMb: 0.0
+fetchedAt: '2026-10-06T10:02:45.000Z'

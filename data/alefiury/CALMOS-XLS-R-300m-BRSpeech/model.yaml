@@ -1,0 +1,94 @@
+_id: 6ac4c693cea46f32712a35e6
+id: alefiury/CALMOS-XLS-R-300m-BRSpeech
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- calmos
+- feature-extraction
+- audio
+- speech
+- speech-quality-assessment
+- mos-prediction
+- speech-foundation-models
+- cal-mos
+- interspeech-2026
+- custom_code
+- arxiv:2609.14956
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: alefiury/CALMOS-XLS-R-300m-BRSpeech
+author: alefiury
+sha: ff1c1f881104de8f79b3272557602b2373dfe9af
+lastModified: '2026-10-06T10:00:10.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: calmos
+  architectures:
+  - CalMOS
+  auto_map:
+    AutoConfig: configuration_calmos.CalMOSConfig
+    AutoModel: modeling_calmos.CalMOS
+cardData:
+  license: mit
+  library_name: transformers
+  tags:
+  - audio
+  - speech
+  - speech-quality-assessment
+  - mos-prediction
+  - speech-foundation-models
+  - cal-mos
+  - interspeech-2026
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_calmos.CalMOS
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: configuration_calmos.py
+- rfilename: model.safetensors
+- rfilename: modeling_calmos.py
+spaces: []
+createdAt: '2026-10-06T09:59:47.000Z'
+safetensors:
+  parameters:
+    F32: 53581825
+  total: 53581825
+usedStorage: 214343348
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  model_type: calmos
+  architectures:
+  - CalMOS
+  auto_map:
+    AutoConfig: configuration_calmos.CalMOSConfig
+    AutoModel: modeling_calmos.CalMOS
+  backbone_name: facebook/wav2vec2-xls-r-300m
+  num_feature_layers: 25
+  adapter_input_dim: 1024
+  adapter_dim: 1024
+  mlp_input_dim: 1024
+  mlp_hidden_dim: 1024
+  mlp_num_layers: 1
+  mlp_output_size: 1
+  mlp_dropout: 0.1
+  target_sr: 16000
+  mos_min: 1.0
+  mos_max: 5.0
+  layer_weight_strategy: layer_adapter
+  pooling_strategy: mean
+  freeze_backbone: true
+onnxFiles: {}
+safetensorsSizeMb: 214.3
+approxSizeMb: 214.3
+fetchedAt: '2026-10-06T10:02:45.000Z'

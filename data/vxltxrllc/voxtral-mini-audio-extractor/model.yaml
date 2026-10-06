@@ -1,0 +1,82 @@
+_id: 6ac3809b0330fc67aeeff388
+id: vxltxrllc/voxtral-mini-audio-extractor
+private: false
+pipeline_tag: feature-extraction
+tags:
+- safetensors
+- voxtral_audio_feature_extractor
+- audio
+- feature-extraction
+- whisper
+- voxtral
+- speech
+- custom_code
+- license:apache-2.0
+- region:us
+downloads: 47
+likes: 0
+modelId: vxltxrllc/voxtral-mini-audio-extractor
+author: vxltxrllc
+sha: c8a13b134f33f0bddc6703b70e38b02b5a671007
+lastModified: '2026-10-06T03:29:33.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - VoxtralAudioFeatureExtractor
+  model_type: voxtral_audio_feature_extractor
+  auto_map:
+    AutoConfig: modeling_voxtral_audio.VoxtralAudioFeatureConfig
+    AutoModel: modeling_voxtral_audio.VoxtralAudioFeatureExtractor
+cardData:
+  license: apache-2.0
+  tags:
+  - audio
+  - feature-extraction
+  - whisper
+  - voxtral
+  - speech
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: audio_tower_projector.safetensors
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: modeling_voxtral_audio.py
+- rfilename: preprocessor_config.json
+spaces: []
+createdAt: '2026-10-05T10:48:59.000Z'
+safetensors:
+  parameters:
+    F32: 1920000
+    BF16: 660214784
+  total: 662134784
+usedStorage: 1328165880
+downloadsAllTime: 47
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - VoxtralAudioFeatureExtractor
+  model_type: voxtral_audio_feature_extractor
+  auto_map:
+    AutoConfig: modeling_voxtral_audio.VoxtralAudioFeatureConfig
+    AutoModel: modeling_voxtral_audio.VoxtralAudioFeatureExtractor
+  concat_factor: 4
+  projector_hidden_act: gelu
+  torch_dtype: bfloat16
+  audio_config:
+    model_type: voxtral_encoder
+    d_model: 1280
+    encoder_attention_heads: 20
+    encoder_ffn_dim: 5120
+    encoder_layers: 32
+    num_mel_bins: 128
+  text_config:
+    model_type: llama
+    hidden_size: 3072
+onnxFiles: {}
+safetensorsSizeMb: 2656.3
+approxSizeMb: 1328.1
+fetchedAt: '2026-10-06T10:02:45.000Z'

@@ -1,0 +1,224 @@
+_id: 6ac385d7ee61c378cc4b674d
+id: hatemestinbejaia/R3mmarco-Arabic-mMiniLML-bi-encoder-KD-v1
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:5000000
+- loss:combine_dstilationLoss_studentLoss
+- arxiv:1908.10084
+- arxiv:2010.02666
+- arxiv:1705.00652
+- base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- base_model:finetune:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 21
+likes: 0
+modelId: hatemestinbejaia/R3mmarco-Arabic-mMiniLML-bi-encoder-KD-v1
+author: hatemestinbejaia
+sha: 22f8c3bed37be148b359a18e5ba34f4aba074857
+lastModified: '2026-10-05T11:11:58.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: ما هو كور يعني
+  sentences:
+  - 'تعريف cor . : وحدة قياس سعة عبرية وفينيقية قديمة .'
+  - رفعت منظمة صندوق ادخار الموظفين ( EPFO ) الحد الأدنى للراتب إلى 15000 روبية من 6500 روبية في وقت سابق .
+  - شكل الجمع بين الجلطة - o يعني _ _ . صيغة الجمع embol - o تعني _ _ . اللاحقة التي تعني أداة قياس الضغط هي _ _ . لاحقة غير
+    كلها تعني صغيرة هي _ _ . اللاحقة التي تعني التصلب هي _ _ .
+- source_sentence: ما هو يوم التصرف في المحكمة
+  sentences:
+  - في سياق قضية جنائية ، تاريخ التصرف هو التاريخ الذي حدثت فيه نتيجة قضية معينة . عادة ، لا يتم تضمين الحكم كتصرف .
+  - '1 . مائل أو مائل أو مائل . 2 . امتلاك الأفضلية أو التصرف أو الميل : ضغط أعضاء مجلس الشيوخ الذين يميلون بشكل إيجابي للضغط
+    من أجل تمرير مشروع القانون .'
+  - عادة ما تضع البطة بيضة واحدة إما كل يوم أو كل يوم .
+- source_sentence: فعال
+  sentences:
+  - مصنف تحت اللغة | الفرق بين الفعال وغير الفعال غير الفعال ' هي أن كلمة واحدة هي عكس الأخرى .
+  - فالكون هايتس ، مينيسوتا . فالكون هايتس هي إحدى ضواحي سانت بول ومدينة في مقاطعة رامزي ، مينيسوتا ، الولايات المتحدة . كان
+    عدد السكان 5321 في تعداد 2010 . أصبحت قرية في عام 1949 ومدينة في عام 1973 .
+  - 'الاستنتاجات : تسمح الطبيعة الواسعة لنهج CPTED بتكييفه مع أي وضع ، وتشير النتائج إلى أنه نهج فعال للحد من السرقة . ومع
+    ذلك ، لم يتم تقييم معظم التدخلات بشكل مستقل عن العوامل الأخرى المساهمة في مخاطر السرقة .'
+- source_sentence: ما هي الزيارة
+  sentences:
+  - الزيارة هي مسألة تتعلق بقانون الولاية ، ولكن بشكل عام ، تسمح كل ولاية للآباء بممارسة قدر معقول من الزيارة مع أطفالهم ،
+    وهو ما يعني عموما وقتا كافيا لإقامة علاقة مفيدة والحفاظ عليها .
+  - 2455 Visitation Drive ، Mendota Heights ، MN 55120651 - 683 - 1700 | [رابط] 1 تويتر . 2 فيسبوك . 3 يوتيوب . انستغرام .
+  - تيد كافر هو أسطورة الإنترنت . وثق رحلته إلى الجحيم كاملة بالصور ، ليختفي قبل 14 عاما . لا تزال قصته حية .
+- source_sentence: ماذا يعني اسم ديونيسوس
+  sentences:
+  - ديونيسوس . إله الكرمة ، وحصاد العنب ، وصناعة النبيذ ، والنبيذ ، وطقوس الجنون ، والنشوة الدينية ، والمسرح
+  - رقم هاتف مطبعة جامعة كامبريدج في نيويورك هو 3900 - 924 - 924 . مطبعة جامعة كامبريدج هي دار نشر مشهورة في الأسواق المحلية
+    والدولية وتنشر مجموعة متنوعة من الكتب المتعلقة بالأكاديمية والطب وتعليم اللغة والعلوم الإنسانية وغير ذلك الكثير .
+  - 'اسم دينيس هو اسم طفل إنجليزي . في اللغة الإنجليزية ، معنى الاسم Denise هو : من اللاتينية Dionysos أو Dionysus ، في إشارة
+    إلى إله النبيذ اليوناني . المعنى الأمريكي : اسم دينيس هو اسم طفل أمريكي .'
+model-index:
+- name: SentenceTransformer based on sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  results:
+  - task:
+      type: reranking
+      name: Reranking
+    dataset:
+      name: Unknown
+      type: unknown
+    metrics:
+    - type: map
+      value: 0.5750672778977942
+      name: Map
+      verified: false
+    - type: mrr@10
+      value: 0.5780277777777778
+      name: Mrr@10
+      verified: false
+    - type: ndcg@10
+      value: 0.6428641544098906
+      name: Ndcg@10
+      verified: false
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: <unk>
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:5000000
+  - loss:combine_dstilationLoss_studentLoss
+  base_model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  widget:
+  - source_sentence: ما هو كور يعني
+    sentences:
+    - 'تعريف cor . : وحدة قياس سعة عبرية وفينيقية قديمة .'
+    - رفعت منظمة صندوق ادخار الموظفين ( EPFO ) الحد الأدنى للراتب إلى 15000 روبية من 6500 روبية في وقت سابق .
+    - شكل الجمع بين الجلطة - o يعني _ _ . صيغة الجمع embol - o تعني _ _ . اللاحقة التي تعني أداة قياس الضغط هي _ _ . لاحقة
+      غير كلها تعني صغيرة هي _ _ . اللاحقة التي تعني التصلب هي _ _ .
+  - source_sentence: ما هو يوم التصرف في المحكمة
+    sentences:
+    - في سياق قضية جنائية ، تاريخ التصرف هو التاريخ الذي حدثت فيه نتيجة قضية معينة . عادة ، لا يتم تضمين الحكم كتصرف .
+    - '1 . مائل أو مائل أو مائل . 2 . امتلاك الأفضلية أو التصرف أو الميل : ضغط أعضاء مجلس الشيوخ الذين يميلون بشكل إيجابي
+      للضغط من أجل تمرير مشروع القانون .'
+    - عادة ما تضع البطة بيضة واحدة إما كل يوم أو كل يوم .
+  - source_sentence: فعال
+    sentences:
+    - مصنف تحت اللغة | الفرق بين الفعال وغير الفعال غير الفعال ' هي أن كلمة واحدة هي عكس الأخرى .
+    - فالكون هايتس ، مينيسوتا . فالكون هايتس هي إحدى ضواحي سانت بول ومدينة في مقاطعة رامزي ، مينيسوتا ، الولايات المتحدة .
+      كان عدد السكان 5321 في تعداد 2010 . أصبحت قرية في عام 1949 ومدينة في عام 1973 .
+    - 'الاستنتاجات : تسمح الطبيعة الواسعة لنهج CPTED بتكييفه مع أي وضع ، وتشير النتائج إلى أنه نهج فعال للحد من السرقة . ومع
+      ذلك ، لم يتم تقييم معظم التدخلات بشكل مستقل عن العوامل الأخرى المساهمة في مخاطر السرقة .'
+  - source_sentence: ما هي الزيارة
+    sentences:
+    - الزيارة هي مسألة تتعلق بقانون الولاية ، ولكن بشكل عام ، تسمح كل ولاية للآباء بممارسة قدر معقول من الزيارة مع أطفالهم
+      ، وهو ما يعني عموما وقتا كافيا لإقامة علاقة مفيدة والحفاظ عليها .
+    - 2455 Visitation Drive ، Mendota Heights ، MN 55120651 - 683 - 1700 | [رابط] 1 تويتر . 2 فيسبوك . 3 يوتيوب . انستغرام
+      .
+    - تيد كافر هو أسطورة الإنترنت . وثق رحلته إلى الجحيم كاملة بالصور ، ليختفي قبل 14 عاما . لا تزال قصته حية .
+  - source_sentence: ماذا يعني اسم ديونيسوس
+    sentences:
+    - ديونيسوس . إله الكرمة ، وحصاد العنب ، وصناعة النبيذ ، والنبيذ ، وطقوس الجنون ، والنشوة الدينية ، والمسرح
+    - رقم هاتف مطبعة جامعة كامبريدج في نيويورك هو 3900 - 924 - 924 . مطبعة جامعة كامبريدج هي دار نشر مشهورة في الأسواق المحلية
+      والدولية وتنشر مجموعة متنوعة من الكتب المتعلقة بالأكاديمية والطب وتعليم اللغة والعلوم الإنسانية وغير ذلك الكثير .
+    - 'اسم دينيس هو اسم طفل إنجليزي . في اللغة الإنجليزية ، معنى الاسم Denise هو : من اللاتينية Dionysos أو Dionysus ، في
+      إشارة إلى إله النبيذ اليوناني . المعنى الأمريكي : اسم دينيس هو اسم طفل أمريكي .'
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - map
+  - mrr@10
+  - ndcg@10
+  model-index:
+  - name: SentenceTransformer based on sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+    results:
+    - task:
+        type: reranking
+        name: Reranking
+      dataset:
+        name: Unknown
+        type: unknown
+      metrics:
+      - type: map
+        value: 0.5750672778977942
+        name: Map
+        verified: false
+      - type: mrr@10
+        value: 0.5780277777777778
+        name: Mrr@10
+        verified: false
+      - type: ndcg@10
+        value: 0.6428641544098906
+        name: Ndcg@10
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-05T11:11:19.000Z'
+safetensors:
+  parameters:
+    F32: 117653760
+  total: 117653760
+usedStorage: 487720403
+downloadsAllTime: 21
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  initializer_range: 0.02
+  intermediate_size: 1536
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 1
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.18.0
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 250037
+onnxFiles: {}
+safetensorsSizeMb: 470.6
+approxSizeMb: 470.6
+fetchedAt: '2026-10-06T10:02:45.000Z'

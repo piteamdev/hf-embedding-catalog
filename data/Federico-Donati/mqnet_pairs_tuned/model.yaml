@@ -1,0 +1,154 @@
+_id: 6ac4dc621669557ffcbb728a
+id: Federico-Donati/mqnet_pairs_tuned
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- mpnet
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:16000
+- loss:CosineSimilarityLoss
+- arxiv:1908.10084
+- base_model:sentence-transformers/all-mpnet-base-v2
+- base_model:finetune:sentence-transformers/all-mpnet-base-v2
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 16
+likes: 0
+modelId: Federico-Donati/mqnet_pairs_tuned
+author: Federico-Donati
+sha: 08715a1cbf0a72d4ae51e4f440784807981ce68d
+lastModified: '2026-10-06T11:35:59.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: where does rebel without a cause take place
+  sentences:
+  - Bill Masterton Memorial Trophy
+  - Wins
+  - Fibrous pericardium
+- source_sentence: who founded anushilan samiti at dhaka (decca)
+  sentences:
+  - It's been the ruin of many a poor girl
+  - Notre-Dame at the end of the 19th century
+  - Notable events
+- source_sentence: what is the force of gravity at the surface of mars
+  sentences:
+  - '[~112 km]'
+  - Final Space is also available on TBS's app.
+  - Wash. Code § 246-145-001 to 060
+- source_sentence: how many mp seats are there in india
+  sentences:
+  - 'Methods of determining pH include:'
+  - Constituencies of Daman and Diu
+  - Betty Lynn was born in Kansas City, Missouri,
+- source_sentence: how much sugar does angel food cake have
+  sentences:
+  - Wednesday 14 February, 09:05
+  - Temple presentation, di Fredi, 1388
+  - Angel food cake in a tube pan
+model-index: null
+config:
+  architectures:
+  - MPNetModel
+  model_type: mpnet
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: '[UNK]'
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:16000
+  - loss:CosineSimilarityLoss
+  base_model: sentence-transformers/all-mpnet-base-v2
+  widget:
+  - source_sentence: where does rebel without a cause take place
+    sentences:
+    - Bill Masterton Memorial Trophy
+    - Wins
+    - Fibrous pericardium
+  - source_sentence: who founded anushilan samiti at dhaka (decca)
+    sentences:
+    - It's been the ruin of many a poor girl
+    - Notre-Dame at the end of the 19th century
+    - Notable events
+  - source_sentence: what is the force of gravity at the surface of mars
+    sentences:
+    - '[~112 km]'
+    - Final Space is also available on TBS's app.
+    - Wash. Code § 246-145-001 to 060
+  - source_sentence: how many mp seats are there in india
+    sentences:
+    - 'Methods of determining pH include:'
+    - Constituencies of Daman and Diu
+    - Betty Lynn was born in Kansas City, Missouri,
+  - source_sentence: how much sugar does angel food cake have
+    sentences:
+    - Wednesday 14 February, 09:05
+    - Temple presentation, di Fredi, 1388
+    - Angel food cake in a tube pan
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Normalize/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-06T11:32:50.000Z'
+safetensors:
+  parameters:
+    F32: 109486464
+  total: 109486464
+usedStorage: 437967672
+downloadsAllTime: 16
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - MPNetModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  dtype: float32
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 514
+  model_type: mpnet
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 1
+  relative_attention_num_buckets: 32
+  tie_word_embeddings: true
+  transformers_version: 5.15.0
+  vocab_size: 30527
+onnxFiles: {}
+safetensorsSizeMb: 438.0
+approxSizeMb: 437.9
+fetchedAt: '2026-10-07T10:06:44.000Z'

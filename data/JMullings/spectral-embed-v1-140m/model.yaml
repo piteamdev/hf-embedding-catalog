@@ -1,0 +1,60 @@
+_id: 6ac4ed383adef08c54f824c3
+id: JMullings/spectral-embed-v1-140m
+private: false
+pipeline_tag: feature-extraction
+tags:
+- feature-extraction
+- sentence-similarity
+- embeddings
+- spectral-embeddings
+- linear-operator
+- cpu-only
+- ultra-fast
+- mteb
+- en
+- license:other
+- region:us
+downloads: 0
+likes: 0
+modelId: JMullings/spectral-embed-v1-140m
+author: JMullings
+sha: 6d2e310c3d9d31e75f9e796c8f5ddb9b4fc9f1f6
+lastModified: '2026-10-07T03:51:09.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  language:
+  - en
+  license: other
+  license_name: spectral-embeddings-community-license-v1.0
+  license_link: LICENSE
+  pipeline_tag: feature-extraction
+  tags:
+  - feature-extraction
+  - sentence-similarity
+  - embeddings
+  - spectral-embeddings
+  - linear-operator
+  - cpu-only
+  - ultra-fast
+  - mteb
+siblings:
+- rfilename: .gitattributes
+- rfilename: Dockerfile
+- rfilename: README.md
+- rfilename: app.py
+- rfilename: index.html
+- rfilename: requirements.txt
+- rfilename: spectral-embed-v1-140m.npz
+spaces: []
+createdAt: '2026-10-06T12:44:40.000Z'
+usedStorage: 557981966
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-07T10:06:44.000Z'

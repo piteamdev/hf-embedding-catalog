@@ -1,0 +1,113 @@
+_id: 6ac54ab8606cf9dd34fd71a7
+id: nau-ai/Nau-Embed-1.0
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- gemma3_text
+- dhivehi
+- thaana
+- maldives
+- feature-extraction
+- retrieval
+- embeddinggemma
+- sentence-similarity
+- dv
+- en
+- base_model:google/embeddinggemma-300m
+- base_model:finetune:google/embeddinggemma-300m
+- license:other
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 1
+modelId: nau-ai/Nau-Embed-1.0
+author: nau-ai
+sha: b37192a72211cbcada852adaa8fecd72a6abd0cc
+lastModified: '2026-10-06T20:20:40.000Z'
+gated: auto
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - Gemma3TextModel
+  model_type: gemma3_text
+  tokenizer_config:
+    bos_token: <bos>
+    eos_token: <eos>
+    mask_token: <mask>
+    pad_token: <pad>
+    unk_token: <unk>
+    use_default_system_prompt: false
+cardData:
+  license: other
+  license_name: cc-by-nc-sa-4.0-and-gemma-terms
+  license_link: LICENSE
+  base_model: google/embeddinggemma-300m
+  language:
+  - dv
+  - en
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  tags:
+  - dhivehi
+  - thaana
+  - maldives
+  - sentence-transformers
+  - feature-extraction
+  - retrieval
+  - embeddinggemma
+  extra_gated_prompt: 'Nau Embed is licensed under CC BY-NC-SA 4.0 and is also subject to Google''s Gemma Terms of Use, because
+    it is built on EmbeddingGemma. Non-commercial use is free: credit Nau and share anything you build from it under the same
+    licence. Commercial use, including running it inside a paid product or service, needs a separate commercial licence from
+    the Nau authors; ask by opening a discussion titled "Commercial licence" on this repository.'
+  extra_gated_fields:
+    Name: text
+    Organisation: text
+    Country: country
+    Intended use:
+      type: select
+      options:
+      - Research
+      - Education
+      - Personal or non-commercial project
+      - Government or public sector (non-commercial)
+      - Commercial (I will request a commercial licence)
+    I accept the CC BY-NC-SA licence and the Gemma Terms of Use, and will get a commercial licence before any commercial use: checkbox
+  extra_gated_button_content: Accept the licence and get access
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Dense/config.json
+- rfilename: 2_Dense/model.safetensors
+- rfilename: 3_Dense/config.json
+- rfilename: 3_Dense/model.safetensors
+- rfilename: 4_Normalize/config.json
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-06T19:23:36.000Z'
+safetensors:
+  parameters:
+    F32: 302863104
+  total: 302863104
+usedStorage: 1263745876
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 1230.4
+approxSizeMb: 1211.5
+fetchedAt: '2026-10-07T10:06:44.000Z'

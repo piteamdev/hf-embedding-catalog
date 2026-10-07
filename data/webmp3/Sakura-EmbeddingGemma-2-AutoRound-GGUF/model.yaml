@@ -1,0 +1,91 @@
+_id: 6ac56d1687c0e5e45f907713
+id: webmp3/Sakura-EmbeddingGemma-2-AutoRound-GGUF
+private: false
+pipeline_tag: feature-extraction
+library_name: gguf
+tags:
+- gguf
+- embedding
+- sentence-similarity
+- feature-extraction
+- llama.cpp
+- autoround
+- intel
+- matryoshka
+- en
+- multilingual
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:gemma
+- endpoints_compatible
+- region:us
+- conversational
+downloads: 69
+likes: 1
+modelId: webmp3/Sakura-EmbeddingGemma-2-AutoRound-GGUF
+author: webmp3
+sha: 0e63def392b4eb494a08db2fb5fc5e9776c6d071
+lastModified: '2026-10-07T09:43:31.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  base_model: google/embeddinggemma-2
+  library_name: gguf
+  pipeline_tag: feature-extraction
+  tags:
+  - embedding
+  - sentence-similarity
+  - feature-extraction
+  - gguf
+  - llama.cpp
+  - autoround
+  - intel
+  - matryoshka
+  language:
+  - en
+  - multilingual
+  license: gemma
+gguf:
+  total: 271002648
+  architecture: gemma-embedding2
+  context_length: 262144
+  causal: false
+  chat_template: '{%- for msg in messages if msg.get(''role'') == ''system'' -%}{%- if msg.get(''content'') is string -%}{{
+    msg[''content''] }}{%- else -%}{%- for item in msg[''content''] if item.get(''type'') == ''text'' -%}{{ item[''text'']
+    }}{%- endfor -%}{%- endif -%}{%- endfor -%}{%- for msg in messages if msg.get(''role'') != ''system'' -%}{%- if msg.get(''content'')
+    is string -%}{{ msg[''content''] }}{%- else -%}{%- set existing_text = msg[''content''] | selectattr(''type'', ''equalto'',
+    ''text'') | map(attribute=''text'') | join -%}{%- set has_manual_placeholders = (''<|image|>'' in existing_text) or (''<|video|>''
+    in existing_text) or (''<|audio|>'' in existing_text) -%}{%- for item in msg[''content''] -%}{%- if item.get(''type'')
+    == ''text'' -%}{{ item[''text''] }}{%- elif not has_manual_placeholders and item.get(''type'') == ''image'' -%}<|image|>{%-
+    elif not has_manual_placeholders and item.get(''type'') == ''video'' -%}<|video|>{%- elif not has_manual_placeholders
+    and item.get(''type'') == ''audio'' -%}<|audio|>{%- endif -%}{%- endfor -%}{%- endif -%}{%- endfor -%}'
+  bos_token: <bos>
+  eos_token: <eos>
+  totalFileSize: 178033120
+siblings:
+- rfilename: .gitattributes
+- rfilename: Q5_HQ_build_info.json
+- rfilename: Q5_HQ_tensor_breakdown.csv
+- rfilename: Q6_HQ_build_info.json
+- rfilename: Q6_HQ_tensor_breakdown.csv
+- rfilename: README.md
+- rfilename: SHA256SUMS-HQ.txt
+- rfilename: hq_benchmark_results.json
+- rfilename: hq_build_info.json
+- rfilename: hq_tensor_breakdown.csv
+- rfilename: quality_benchmark_results.json
+- rfilename: sakura-embeddinggemma-2-autoround-v2-Q4_K_S-HQ-cal256.gguf
+- rfilename: sakura-embeddinggemma-2-autoround-v2-Q5_K_S-HQ-cal256.gguf
+- rfilename: sakura-embeddinggemma-2-autoround-v2-Q6_K-HQ-cal256.gguf
+spaces: []
+createdAt: '2026-10-06T21:50:14.000Z'
+usedStorage: 799222912
+downloadsAllTime: 69
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-07T10:06:44.000Z'

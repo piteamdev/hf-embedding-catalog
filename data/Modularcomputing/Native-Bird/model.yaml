@@ -1,0 +1,143 @@
+_id: 6ac5e35c37365d0081eb5967
+id: Modularcomputing/Native-Bird
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- embeddings
+- cross-lingual
+- multilingual
+- igbo
+- hausa
+- yoruba
+- information-retrieval
+- semantic-search
+- sentence-similarity
+- ig
+- ha
+- yo
+- en
+- base_model:sentence-transformers/LaBSE
+- base_model:finetune:sentence-transformers/LaBSE
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 1
+modelId: Modularcomputing/Native-Bird
+author: Modularcomputing
+sha: 424aef96301b0bb5e84f313b3ef23e29bc9d68a0
+lastModified: '2026-10-07T06:23:47.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  language:
+  - ig
+  - ha
+  - yo
+  - en
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  tags:
+  - embeddings
+  - sentence-transformers
+  - cross-lingual
+  - multilingual
+  - igbo
+  - hausa
+  - yoruba
+  - information-retrieval
+  - semantic-search
+  base_model: sentence-transformers/LaBSE
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Dense/config.json
+- rfilename: 2_Dense/model.safetensors
+- rfilename: 3_Normalize/config.json
+- rfilename: MODEL_CARD.md
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: models/labse-ig-ha-yo/1_Pooling/config.json
+- rfilename: models/labse-ig-ha-yo/2_Dense/config.json
+- rfilename: models/labse-ig-ha-yo/2_Dense/model.safetensors
+- rfilename: models/labse-ig-ha-yo/3_Normalize/config.json
+- rfilename: models/labse-ig-ha-yo/README.md
+- rfilename: models/labse-ig-ha-yo/config.json
+- rfilename: models/labse-ig-ha-yo/config_sentence_transformers.json
+- rfilename: models/labse-ig-ha-yo/model.safetensors
+- rfilename: models/labse-ig-ha-yo/modules.json
+- rfilename: models/labse-ig-ha-yo/results.json
+- rfilename: models/labse-ig-ha-yo/sentence_bert_config.json
+- rfilename: models/labse-ig-ha-yo/tokenizer.json
+- rfilename: models/labse-ig-ha-yo/tokenizer_config.json
+- rfilename: modules.json
+- rfilename: results.json
+- rfilename: sentence_bert_config.json
+- rfilename: test_native_bird.py
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-07T06:14:52.000Z'
+safetensors:
+  parameters:
+    F32: 470926848
+  total: 470926848
+usedStorage: 1899724860
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  directionality: bidi
+  dtype: float32
+  eos_token_id: null
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  pooler_fc_size: 768
+  pooler_num_attention_heads: 12
+  pooler_num_fc_layers: 3
+  pooler_size_per_head: 128
+  pooler_type: first_token_transform
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.19.0
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 501153
+onnxFiles: {}
+safetensorsSizeMb: 3772.2
+approxSizeMb: 1883.7
+fetchedAt: '2026-10-07T10:06:44.000Z'

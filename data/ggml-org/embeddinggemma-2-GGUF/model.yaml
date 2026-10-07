@@ -1,0 +1,71 @@
+_id: 6ac51ce6533210a3e84f5d67
+id: ggml-org/embeddinggemma-2-GGUF
+private: false
+pipeline_tag: feature-extraction
+tags:
+- gguf
+- quantized
+- embedding
+- feature-extraction
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+- conversational
+downloads: 3842
+likes: 24
+modelId: ggml-org/embeddinggemma-2-GGUF
+author: ggml-org
+sha: bfcd298762cc34d0357ece5ebdd31791a3a374d8
+lastModified: '2026-10-06T16:08:10.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  pipeline_tag: feature-extraction
+  tags:
+  - gguf
+  - quantized
+  - embedding
+  base_model:
+  - google/embeddinggemma-2
+gguf:
+  total: 271002648
+  architecture: gemma-embedding2
+  context_length: 262144
+  causal: false
+  chat_template: '{%- for msg in messages if msg.get(''role'') == ''system'' -%}{%- if msg.get(''content'') is string -%}{{
+    msg[''content''] }}{%- else -%}{%- for item in msg[''content''] if item.get(''type'') == ''text'' -%}{{ item[''text'']
+    }}{%- endfor -%}{%- endif -%}{%- endfor -%}{%- for msg in messages if msg.get(''role'') != ''system'' -%}{%- if msg.get(''content'')
+    is string -%}{{ msg[''content''] }}{%- else -%}{%- set existing_text = msg[''content''] | selectattr(''type'', ''equalto'',
+    ''text'') | map(attribute=''text'') | join -%}{%- set has_manual_placeholders = (''<|image|>'' in existing_text) or (''<|video|>''
+    in existing_text) or (''<|audio|>'' in existing_text) -%}{%- for item in msg[''content''] -%}{%- if item.get(''type'')
+    == ''text'' -%}{{ item[''text''] }}{%- elif not has_manual_placeholders and item.get(''type'') == ''image'' -%}<|image|>{%-
+    elif not has_manual_placeholders and item.get(''type'') == ''video'' -%}<|video|>{%- elif not has_manual_placeholders
+    and item.get(''type'') == ''audio'' -%}<|audio|>{%- endif -%}{%- endfor -%}{%- endif -%}{%- endfor -%}'
+  bos_token: <bos>
+  eos_token: <eos>
+  totalFileSize: 557950176
+siblings:
+- rfilename: .gitattributes
+- rfilename: .src_sha
+- rfilename: README.md
+- rfilename: convert.log
+- rfilename: embeddinggemma-2-BF16.gguf
+- rfilename: embeddinggemma-2-Q8_0.gguf
+- rfilename: mmproj-embeddinggemma-2-BF16.gguf
+- rfilename: mmproj-embeddinggemma-2-Q8_0.gguf
+spaces:
+- tardellirs/model-pulse
+createdAt: '2026-10-06T16:08:06.000Z'
+usedStorage: 2404701440
+downloadsAllTime: 3842
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-07T10:06:44.000Z'

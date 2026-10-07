@@ -1,0 +1,156 @@
+_id: 6aa1ae549e9538cff61cab0e
+id: SepRQ/SepRQ
+private: false
+pipeline_tag: feature-extraction
+library_name: speechbrain
+tags:
+- speechbrain
+- speech
+- self-supervised-learning
+- ssl
+- best-rq
+- feature-extraction
+- arxiv:2610.04690
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: SepRQ/SepRQ
+author: SepRQ
+sha: b9b002bf68e5d6c570cc33cf990ebc139122283a
+lastModified: '2026-10-07T05:21:42.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: speechbrain
+  tags:
+  - speech
+  - self-supervised-learning
+  - ssl
+  - speechbrain
+  - best-rq
+  - feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: BestRQ_50Hz/model.ckpt
+- rfilename: README.md
+- rfilename: SepRQ/2_streams/model.ckpt
+- rfilename: SepRQ/2_streams/normalize.ckpt
+- rfilename: assets/seprq_architecture.png
+- rfilename: ex/DH3/mix1.wav
+- rfilename: ex/DH3/mix2.wav
+- rfilename: ex/DH3/mix3.wav
+- rfilename: ex/DH3/mix4.wav
+- rfilename: ex/DH3/mix5.wav
+- rfilename: ex/PSE/enroll1.wav
+- rfilename: ex/PSE/enroll2.wav
+- rfilename: ex/PSE/enroll3.wav
+- rfilename: ex/PSE/enroll4.wav
+- rfilename: ex/PSE/enroll5.wav
+- rfilename: ex/PSE/mix1.wav
+- rfilename: ex/PSE/mix2.wav
+- rfilename: ex/PSE/mix3.wav
+- rfilename: ex/PSE/mix4.wav
+- rfilename: ex/PSE/mix5.wav
+- rfilename: ex/PVAD/enroll1.wav
+- rfilename: ex/PVAD/enroll2.wav
+- rfilename: ex/PVAD/enroll3.wav
+- rfilename: ex/PVAD/enroll4.wav
+- rfilename: ex/PVAD/enroll5.wav
+- rfilename: ex/PVAD/mix1.wav
+- rfilename: ex/PVAD/mix2.wav
+- rfilename: ex/PVAD/mix3.wav
+- rfilename: ex/PVAD/mix4.wav
+- rfilename: ex/PVAD/mix5.wav
+- rfilename: ex/SD/mix1.wav
+- rfilename: ex/SD/mix2.wav
+- rfilename: ex/SD/mix3.wav
+- rfilename: ex/SD/mix4.wav
+- rfilename: ex/SD/mix5.wav
+- rfilename: ex/SE/mix1.wav
+- rfilename: ex/SE/mix2.wav
+- rfilename: ex/SE/mix3.wav
+- rfilename: ex/SE/mix4.wav
+- rfilename: ex/SE/mix5.wav
+- rfilename: ex/SS/mix1.wav
+- rfilename: ex/SS/mix2.wav
+- rfilename: ex/SS/mix3.wav
+- rfilename: ex/SS/mix4.wav
+- rfilename: ex/SS/mix5.wav
+- rfilename: ex/TS-ASR/enroll1.wav
+- rfilename: ex/TS-ASR/enroll2.wav
+- rfilename: ex/TS-ASR/enroll3.wav
+- rfilename: ex/TS-ASR/enroll4.wav
+- rfilename: ex/TS-ASR/enroll5.wav
+- rfilename: ex/TS-ASR/mix1.wav
+- rfilename: ex/TS-ASR/mix2.wav
+- rfilename: ex/TS-ASR/mix3.wav
+- rfilename: ex/TS-ASR/mix4.wav
+- rfilename: ex/TS-ASR/mix5.wav
+- rfilename: ex/TSE/enroll1.wav
+- rfilename: ex/TSE/enroll2.wav
+- rfilename: ex/TSE/enroll3.wav
+- rfilename: ex/TSE/enroll4.wav
+- rfilename: ex/TSE/enroll5.wav
+- rfilename: ex/TSE/mix1.wav
+- rfilename: ex/TSE/mix2.wav
+- rfilename: ex/TSE/mix3.wav
+- rfilename: ex/TSE/mix4.wav
+- rfilename: ex/TSE/mix5.wav
+- rfilename: ex/WSJ2/mix1.wav
+- rfilename: ex/WSJ2/mix2.wav
+- rfilename: ex/WSJ2/mix3.wav
+- rfilename: ex/WSJ2/mix4.wav
+- rfilename: ex/WSJ2/mix5.wav
+- rfilename: ex/WSJ3/mix1.wav
+- rfilename: ex/WSJ3/mix2.wav
+- rfilename: ex/WSJ3/mix3.wav
+- rfilename: ex/WSJ3/mix4.wav
+- rfilename: ex/WSJ3/mix5.wav
+- rfilename: ex/mix.wav
+- rfilename: ex/noisy.wav
+- rfilename: seprq_encoder.py
+- rfilename: seprq_inference.yaml
+- rfilename: superb/diarization-dihard3/HuBERT_BASE/head.ckpt
+- rfilename: superb/diarization-dihard3/WavLM_BASE/head.ckpt
+- rfilename: superb/diarization-dihard3/WavLM_BASE_PLUS/head.ckpt
+- rfilename: superb/diarization/HuBERT_BASE/head.ckpt
+- rfilename: superb/diarization/WavLM_BASE/head.ckpt
+- rfilename: superb/diarization/WavLM_BASE_PLUS/head.ckpt
+- rfilename: superb/enhancement/HuBERT_BASE/head.ckpt
+- rfilename: superb/enhancement/WavLM_BASE/head.ckpt
+- rfilename: superb/enhancement/WavLM_BASE_PLUS/head.ckpt
+- rfilename: superb/personalized-extraction/HuBERT_BASE/head.ckpt
+- rfilename: superb/personalized-extraction/WavLM_BASE/head.ckpt
+- rfilename: superb/personalized-extraction/WavLM_BASE_PLUS/head.ckpt
+- rfilename: superb/personalized-vad/HuBERT_BASE/head.ckpt
+- rfilename: superb/personalized-vad/WavLM_BASE/head.ckpt
+- rfilename: superb/personalized-vad/WavLM_BASE_PLUS/head.ckpt
+- rfilename: superb/separation-2spk/HuBERT_BASE/head.ckpt
+- rfilename: superb/separation-2spk/WavLM_BASE/head.ckpt
+- rfilename: superb/separation-2spk/WavLM_BASE_PLUS/head.ckpt
+- rfilename: superb/separation-wsj0-2mix/HuBERT_BASE/head.ckpt
+- rfilename: superb/separation-wsj0-2mix/WavLM_BASE/head.ckpt
+- rfilename: superb/separation-wsj0-2mix/WavLM_BASE_PLUS/head.ckpt
+- rfilename: superb/separation-wsj0-3mix/HuBERT_BASE/head.ckpt
+- rfilename: superb/separation-wsj0-3mix/WavLM_BASE/head.ckpt
+- rfilename: superb/separation-wsj0-3mix/WavLM_BASE_PLUS/head.ckpt
+- rfilename: superb/target-speaker-asr/HuBERT_BASE/head.ckpt
+- rfilename: superb/target-speaker-asr/WavLM_BASE/head.ckpt
+- rfilename: superb/target-speaker-asr/WavLM_BASE_PLUS/head.ckpt
+- rfilename: superb/target-speaker-extraction/HuBERT_BASE/head.ckpt
+- rfilename: superb/target-speaker-extraction/WavLM_BASE/head.ckpt
+- rfilename: superb/target-speaker-extraction/WavLM_BASE_PLUS/head.ckpt
+spaces: []
+createdAt: '2026-09-09T19:07:00.000Z'
+usedStorage: 3976278266
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-07T10:06:44.000Z'

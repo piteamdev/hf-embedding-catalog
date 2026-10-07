@@ -1,0 +1,194 @@
+_id: 6ac578ce98d9cddff2cedec5
+id: brishen/iron-embeddinggemma2-npu2
+private: false
+pipeline_tag: feature-extraction
+tags:
+- iron
+- amd-npu
+- ryzen-ai
+- xdna
+- feature-extraction
+- image-feature-extraction
+- embedding
+- npu2
+- base_model:google/embeddinggemma-2
+- base_model:finetune:google/embeddinggemma-2
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: brishen/iron-embeddinggemma2-npu2
+author: brishen
+sha: 052b6a44fe2478d86aec2cd65fbd03ea24279a9e
+lastModified: '2026-10-07T00:45:28.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: google/embeddinggemma-2
+  tags:
+  - iron
+  - amd-npu
+  - ryzen-ai
+  - xdna
+  - feature-extraction
+  - image-feature-extraction
+  - embedding
+  - npu2
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: kernels/mha.xclbin
+- rfilename: kernels/mha_1024.insts.bin
+- rfilename: kernels/mha_1152.insts.bin
+- rfilename: kernels/mha_128.insts.bin
+- rfilename: kernels/mha_1280.insts.bin
+- rfilename: kernels/mha_1408.insts.bin
+- rfilename: kernels/mha_1536.insts.bin
+- rfilename: kernels/mha_1664.insts.bin
+- rfilename: kernels/mha_1792.insts.bin
+- rfilename: kernels/mha_1920.insts.bin
+- rfilename: kernels/mha_2048.insts.bin
+- rfilename: kernels/mha_2176.insts.bin
+- rfilename: kernels/mha_2304.insts.bin
+- rfilename: kernels/mha_2432.insts.bin
+- rfilename: kernels/mha_256.insts.bin
+- rfilename: kernels/mha_2560.insts.bin
+- rfilename: kernels/mha_384.insts.bin
+- rfilename: kernels/mha_512.insts.bin
+- rfilename: kernels/mha_640.insts.bin
+- rfilename: kernels/mha_768.insts.bin
+- rfilename: kernels/mha_896.insts.bin
+- rfilename: kernels/t_down.insts.bin
+- rfilename: kernels/t_down_x2.insts.bin
+- rfilename: kernels/t_down_x3.insts.bin
+- rfilename: kernels/t_down_x4.insts.bin
+- rfilename: kernels/t_down_x5.insts.bin
+- rfilename: kernels/t_down_x6.insts.bin
+- rfilename: kernels/t_down_x7.insts.bin
+- rfilename: kernels/t_down_x8.insts.bin
+- rfilename: kernels/t_gu.insts.bin
+- rfilename: kernels/t_gu_x2.insts.bin
+- rfilename: kernels/t_gu_x3.insts.bin
+- rfilename: kernels/t_gu_x4.insts.bin
+- rfilename: kernels/t_gu_x5.insts.bin
+- rfilename: kernels/t_gu_x6.insts.bin
+- rfilename: kernels/t_gu_x7.insts.bin
+- rfilename: kernels/t_gu_x8.insts.bin
+- rfilename: kernels/t_o.insts.bin
+- rfilename: kernels/t_o_x2.insts.bin
+- rfilename: kernels/t_o_x3.insts.bin
+- rfilename: kernels/t_o_x4.insts.bin
+- rfilename: kernels/t_o_x5.insts.bin
+- rfilename: kernels/t_o_x6.insts.bin
+- rfilename: kernels/t_o_x7.insts.bin
+- rfilename: kernels/t_o_x8.insts.bin
+- rfilename: kernels/t_ple.insts.bin
+- rfilename: kernels/t_ple_x2.insts.bin
+- rfilename: kernels/t_ple_x3.insts.bin
+- rfilename: kernels/t_ple_x4.insts.bin
+- rfilename: kernels/t_ple_x5.insts.bin
+- rfilename: kernels/t_ple_x6.insts.bin
+- rfilename: kernels/t_ple_x7.insts.bin
+- rfilename: kernels/t_ple_x8.insts.bin
+- rfilename: kernels/t_pleg.insts.bin
+- rfilename: kernels/t_pleg_x2.insts.bin
+- rfilename: kernels/t_pleg_x3.insts.bin
+- rfilename: kernels/t_pleg_x4.insts.bin
+- rfilename: kernels/t_pleg_x5.insts.bin
+- rfilename: kernels/t_pleg_x6.insts.bin
+- rfilename: kernels/t_pleg_x7.insts.bin
+- rfilename: kernels/t_pleg_x8.insts.bin
+- rfilename: kernels/t_plep.insts.bin
+- rfilename: kernels/t_plep_x2.insts.bin
+- rfilename: kernels/t_plep_x3.insts.bin
+- rfilename: kernels/t_plep_x4.insts.bin
+- rfilename: kernels/t_plep_x5.insts.bin
+- rfilename: kernels/t_plep_x6.insts.bin
+- rfilename: kernels/t_plep_x7.insts.bin
+- rfilename: kernels/t_plep_x8.insts.bin
+- rfilename: kernels/t_qkv2048.insts.bin
+- rfilename: kernels/t_qkv2048_x2.insts.bin
+- rfilename: kernels/t_qkv2048_x3.insts.bin
+- rfilename: kernels/t_qkv2048_x4.insts.bin
+- rfilename: kernels/t_qkv2048_x5.insts.bin
+- rfilename: kernels/t_qkv2048_x6.insts.bin
+- rfilename: kernels/t_qkv2048_x7.insts.bin
+- rfilename: kernels/t_qkv2048_x8.insts.bin
+- rfilename: kernels/t_qkv3072.insts.bin
+- rfilename: kernels/t_qkv3072_x2.insts.bin
+- rfilename: kernels/t_qkv3072_x3.insts.bin
+- rfilename: kernels/t_qkv3072_x4.insts.bin
+- rfilename: kernels/t_qkv3072_x5.insts.bin
+- rfilename: kernels/t_qkv3072_x6.insts.bin
+- rfilename: kernels/t_qkv3072_x7.insts.bin
+- rfilename: kernels/t_qkv3072_x8.insts.bin
+- rfilename: kernels/tgemm.xclbin
+- rfilename: kernels/v_down.insts.bin
+- rfilename: kernels/v_down_x10.insts.bin
+- rfilename: kernels/v_down_x2.insts.bin
+- rfilename: kernels/v_down_x3.insts.bin
+- rfilename: kernels/v_down_x4.insts.bin
+- rfilename: kernels/v_down_x5.insts.bin
+- rfilename: kernels/v_down_x6.insts.bin
+- rfilename: kernels/v_down_x7.insts.bin
+- rfilename: kernels/v_down_x8.insts.bin
+- rfilename: kernels/v_down_x9.insts.bin
+- rfilename: kernels/v_ev.insts.bin
+- rfilename: kernels/v_ev_x2.insts.bin
+- rfilename: kernels/v_gu.insts.bin
+- rfilename: kernels/v_gu_x10.insts.bin
+- rfilename: kernels/v_gu_x2.insts.bin
+- rfilename: kernels/v_gu_x3.insts.bin
+- rfilename: kernels/v_gu_x4.insts.bin
+- rfilename: kernels/v_gu_x5.insts.bin
+- rfilename: kernels/v_gu_x6.insts.bin
+- rfilename: kernels/v_gu_x7.insts.bin
+- rfilename: kernels/v_gu_x8.insts.bin
+- rfilename: kernels/v_gu_x9.insts.bin
+- rfilename: kernels/v_o.insts.bin
+- rfilename: kernels/v_o_x10.insts.bin
+- rfilename: kernels/v_o_x2.insts.bin
+- rfilename: kernels/v_o_x3.insts.bin
+- rfilename: kernels/v_o_x4.insts.bin
+- rfilename: kernels/v_o_x5.insts.bin
+- rfilename: kernels/v_o_x6.insts.bin
+- rfilename: kernels/v_o_x7.insts.bin
+- rfilename: kernels/v_o_x8.insts.bin
+- rfilename: kernels/v_o_x9.insts.bin
+- rfilename: kernels/v_patch.insts.bin
+- rfilename: kernels/v_patch_x10.insts.bin
+- rfilename: kernels/v_patch_x2.insts.bin
+- rfilename: kernels/v_patch_x3.insts.bin
+- rfilename: kernels/v_patch_x4.insts.bin
+- rfilename: kernels/v_patch_x5.insts.bin
+- rfilename: kernels/v_patch_x6.insts.bin
+- rfilename: kernels/v_patch_x7.insts.bin
+- rfilename: kernels/v_patch_x8.insts.bin
+- rfilename: kernels/v_patch_x9.insts.bin
+- rfilename: kernels/v_qkv.insts.bin
+- rfilename: kernels/v_qkv_x10.insts.bin
+- rfilename: kernels/v_qkv_x2.insts.bin
+- rfilename: kernels/v_qkv_x3.insts.bin
+- rfilename: kernels/v_qkv_x4.insts.bin
+- rfilename: kernels/v_qkv_x5.insts.bin
+- rfilename: kernels/v_qkv_x6.insts.bin
+- rfilename: kernels/v_qkv_x7.insts.bin
+- rfilename: kernels/v_qkv_x8.insts.bin
+- rfilename: kernels/v_qkv_x9.insts.bin
+- rfilename: kernels/vgemm.xclbin
+- rfilename: manifest.txt
+- rfilename: tensors.bin
+- rfilename: tensors.txt
+spaces: []
+createdAt: '2026-10-06T22:40:14.000Z'
+usedStorage: 1882359515
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-07T10:06:44.000Z'

@@ -1,0 +1,127 @@
+_id: 6ac68e119ffaefeeb39335ee
+id: UMCU/MedRoBERTa.nl_Miriad_QA_sparse
+private: false
+pipeline_tag: feature-extraction
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- sparse-encoder
+- sparse
+- csr
+- generated_from_trainer
+- dataset_size:4486855
+- loss:_WandbLossLoggerWrapper
+- feature-extraction
+- nl
+- dataset:UMCU/MIRIAD4.4.nl
+- arxiv:2604.25374
+- arxiv:2506.06091
+- arxiv:1908.10084
+- base_model:UMCU/MedRoBERTa.nl_Miriad_QA
+- base_model:finetune:UMCU/MedRoBERTa.nl_Miriad_QA
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 14
+likes: 0
+modelId: UMCU/MedRoBERTa.nl_Miriad_QA_sparse
+author: UMCU
+sha: e7e5d556fcec4f5a0445c6f573d5c49ccfb7f5ea
+lastModified: '2026-10-07T18:32:06.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- text: Risicofactoren die de nierfunctie negatief beïnvloeden bij levertransplantatiepatiënten omvatten pretransplant renale
+    disfunctie, acute nierinsufficiëntie (AKI), hepatitis C-infectie en nefrotoxische immunosuppressieve regimes. Deze factoren
+    kunnen bijdragen aan het ontstaan van chronische nierziekte na levertransplantatie, wat een grote impact heeft op de mortaliteit.
+    Strategieën voor vroege detectie en preventieve maatregelen om de progressie van chronische nierziekte te vertragen, zijn
+    nodig.
+- text: Hoe draagt verhoogde plasma TMAO-niveaus bij aan de pathogenese van atherosclerose en hart- en vaatziekten?
+- text: De relatie tussen pulsdrukgolf-snelheid (PWV) en de afmetingen van het aortale lumen is complex. Volgens de Moens-Korteweg-
+    en Bramwell-Hill-vergelijkingen is PWV omgekeerd gerelateerd aan de grootte van het aortale lumen. Echter, verharding
+    en verwijding van de aortawand kunnen de belasting overbrengen op stijvere collageenvezels, wat resulteert in een toename
+    van PWV ondanks de toename in diameter.
+- text: Dopamine-infusie resulteert in een hoger zuurstofverbruik (VO2) in vergelijking met de gecombineerde dopamine-dobutamine-infusie.
+    Beide infusies hebben een vergelijkbaar effect op de hartoutput, maar de capaciteit van dopamine alleen om de hartoutput
+    te verbeteren kan bij sommige patiënten met hartfalen door uitputting van endogene noradrenalinevoorraden verminderd zijn.
+- text: Hoe verhoudt glucose-intolerantie bij zwangerschapsdiabetes mellitus (GDM) zich tot insulineresistentie en insulinesecretie?
+model-index: null
+config:
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: <unk>
+cardData:
+  tags:
+  - sentence-transformers
+  - sparse-encoder
+  - sparse
+  - csr
+  - generated_from_trainer
+  - dataset_size:4486855
+  - loss:_WandbLossLoggerWrapper
+  base_model: UMCU/MedRoBERTa.nl_Miriad_QA
+  widget:
+  - text: Risicofactoren die de nierfunctie negatief beïnvloeden bij levertransplantatiepatiënten omvatten pretransplant renale
+      disfunctie, acute nierinsufficiëntie (AKI), hepatitis C-infectie en nefrotoxische immunosuppressieve regimes. Deze factoren
+      kunnen bijdragen aan het ontstaan van chronische nierziekte na levertransplantatie, wat een grote impact heeft op de
+      mortaliteit. Strategieën voor vroege detectie en preventieve maatregelen om de progressie van chronische nierziekte
+      te vertragen, zijn nodig.
+  - text: Hoe draagt verhoogde plasma TMAO-niveaus bij aan de pathogenese van atherosclerose en hart- en vaatziekten?
+  - text: De relatie tussen pulsdrukgolf-snelheid (PWV) en de afmetingen van het aortale lumen is complex. Volgens de Moens-Korteweg-
+      en Bramwell-Hill-vergelijkingen is PWV omgekeerd gerelateerd aan de grootte van het aortale lumen. Echter, verharding
+      en verwijding van de aortawand kunnen de belasting overbrengen op stijvere collageenvezels, wat resulteert in een toename
+      van PWV ondanks de toename in diameter.
+  - text: Dopamine-infusie resulteert in een hoger zuurstofverbruik (VO2) in vergelijking met de gecombineerde dopamine-dobutamine-infusie.
+      Beide infusies hebben een vergelijkbaar effect op de hartoutput, maar de capaciteit van dopamine alleen om de hartoutput
+      te verbeteren kan bij sommige patiënten met hartfalen door uitputting van endogene noradrenalinevoorraden verminderd
+      zijn.
+  - text: Hoe verhoudt glucose-intolerantie bij zwangerschapsdiabetes mellitus (GDM) zich tot insulineresistentie en insulinesecretie?
+  pipeline_tag: feature-extraction
+  library_name: sentence-transformers
+  license: apache-2.0
+  datasets:
+  - UMCU/MIRIAD4.4.nl
+  language:
+  - nl
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_SparseAutoEncoder/config.json
+- rfilename: 2_SparseAutoEncoder/model.safetensors
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-07T18:23:13.000Z'
+safetensors:
+  parameters:
+    F32: 125978112
+  total: 125978112
+usedStorage: 513412312
+downloadsAllTime: 14
+inferenceProviderMapping: {}
+configJson:
+  word_embedding_dimension: 768
+  pooling_mode_cls_token: false
+  pooling_mode_mean_tokens: true
+  pooling_mode_max_tokens: false
+  pooling_mode_mean_sqrt_len_tokens: false
+  pooling_mode_weightedmean_tokens: false
+  pooling_mode_lasttoken: false
+  include_prompt: true
+onnxFiles: {}
+safetensorsSizeMb: 513.4
+approxSizeMb: 503.9
+fetchedAt: '2026-10-08T10:21:14.000Z'

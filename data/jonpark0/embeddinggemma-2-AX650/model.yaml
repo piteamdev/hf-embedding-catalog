@@ -1,0 +1,124 @@
+_id: 6ac6d2d05be985dedb959c2f
+id: jonpark0/embeddinggemma-2-AX650
+private: false
+pipeline_tag: feature-extraction
+tags:
+- embedding
+- multimodal-embedding
+- sentence-similarity
+- matryoshka
+- axera
+- ax650
+- ax8850
+- llm-8850
+- axcl
+- npu
+- pulsar2
+- feature-extraction
+- multilingual
+- en
+- ko
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: jonpark0/embeddinggemma-2-AX650
+author: jonpark0
+sha: 9037c05641f14232f360b847f7534f3b1d4897f8
+lastModified: '2026-10-07T23:17:28.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: google/embeddinggemma-2
+  base_model_relation: quantized
+  pipeline_tag: feature-extraction
+  language:
+  - multilingual
+  - en
+  - ko
+  tags:
+  - embedding
+  - multimodal-embedding
+  - sentence-similarity
+  - matryoshka
+  - axera
+  - ax650
+  - ax8850
+  - llm-8850
+  - axcl
+  - npu
+  - pulsar2
+siblings:
+- rfilename: .gitattributes
+- rfilename: GUIDE_ko.md
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: assets/audio_mel_filters.npy
+- rfilename: assets/audio_window.npy
+- rfilename: assets/config.json
+- rfilename: assets/eg2_audio_f1120.axmodel
+- rfilename: assets/eg2_text_l1024.axmodel
+- rfilename: assets/eg2_text_l128.axmodel
+- rfilename: assets/eg2_text_l512.axmodel
+- rfilename: assets/eg2_vision_p2520_a.axmodel
+- rfilename: assets/eg2_vision_p2520_b1.axmodel
+- rfilename: assets/eg2_vision_p2520_b2.axmodel
+- rfilename: assets/embed_tokens.bf16.bin
+- rfilename: assets/embeddinggemma2_tokenizer.txt
+- rfilename: assets/host_meta.json
+- rfilename: assets/tokenizer.json
+- rfilename: assets/vision_inv_freq.npy
+- rfilename: assets/vision_pos_table.npy
+- rfilename: assets/vision_proj.npy
+- rfilename: axcl_session.py
+- rfilename: build_axcl_driver.sh
+- rfilename: eg2-embed.service
+- rfilename: eg2_cli.py
+- rfilename: eg2_host.py
+- rfilename: eg2_server.py
+- rfilename: install_ubuntu.sh
+- rfilename: refs/files/bus.jpg
+- rfilename: refs/files/cat_0.jpeg
+- rfilename: refs/files/cat_1.jpeg
+- rfilename: refs/files/cat_2.jpg
+- rfilename: refs/files/dog_0.jpeg
+- rfilename: refs/files/dog_1.jpg
+- rfilename: refs/files/dog_2.jpeg
+- rfilename: refs/files/en_aurora.wav
+- rfilename: refs/files/en_bus.wav
+- rfilename: refs/files/en_code.wav
+- rfilename: refs/files/en_dog.wav
+- rfilename: refs/files/en_ev.wav
+- rfilename: refs/files/football.jpg
+- rfilename: refs/files/fox_0.jpeg
+- rfilename: refs/files/fox_1.jpeg
+- rfilename: refs/files/fox_2.jpeg
+- rfilename: refs/files/ko_cat.wav
+- rfilename: refs/files/ko_cooking.wav
+- rfilename: refs/files/ko_npu.wav
+- rfilename: refs/files/ko_train.wav
+- rfilename: refs/files/ko_weather.wav
+- rfilename: refs/files/rabbit_0.jpeg
+- rfilename: refs/files/rabbit_1.jpeg
+- rfilename: refs/files/rabbit_2.jpeg
+- rfilename: refs/files/ssd_horse.jpg
+- rfilename: refs/items.json
+- rfilename: refs/ref.npy
+- rfilename: requirements.txt
+- rfilename: selftest.py
+spaces: []
+createdAt: '2026-10-07T23:16:32.000Z'
+usedStorage: 1453015343
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-08T10:21:14.000Z'

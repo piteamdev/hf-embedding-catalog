@@ -1,0 +1,198 @@
+_id: 6ac6770819e5aa2b52e9e948
+id: alisha2006/beacon-minilm-v1
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:10500
+- loss:CosineSimilarityLoss
+- arxiv:1908.10084
+- base_model:sentence-transformers/all-MiniLM-L6-v2
+- base_model:finetune:sentence-transformers/all-MiniLM-L6-v2
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 61
+likes: 0
+modelId: alisha2006/beacon-minilm-v1
+author: alisha2006
+sha: 86a1f78b3a798c28d238233299427128b29c5c92
+lastModified: '2026-10-07T16:45:08.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: According to the previous minutes, the software enterprise SaaS licensing was officially finalized as $15,000
+    annually.
+  sentences:
+  - In the latest debrief, the team voted that the external branding agency is switched to DDB Mudra.
+  - During today's discussion, the beta product launch date was confirmed as June 1st.
+  - The updated review notes state that the user privacy consent mechanism has been updated to implicit opt-in checkbox.
+- source_sentence: Earlier discussions concluded that the frontend team lead responsibility would be Ananya Joshi.
+  sentences:
+  - In the current meeting, leadership decided that the monitoring stack is now Prometheus and Grafana.
+  - In the latest debrief, the team voted that the container orchestration is switched to Amazon EKS.
+  - In the latest sync, the team reaffirmed that the mobile framework remains React Native.
+- source_sentence: Earlier discussions concluded that the frontend state management would be MobX.
+  sentences:
+  - The updated review notes state that the vector database has been updated to Qdrant.
+  - The updated review notes state that the internship program duration has been updated to 3 months summer.
+  - During today's discussion, the statutory audit completion deadline was confirmed as October 31st extended deadline.
+- source_sentence: As recorded earlier, the agreed direction for the user privacy consent mechanism was cookie banner click.
+  sentences:
+  - Today's agenda concluded that the frontend team lead responsibility will currently operate with Ananya Joshi.
+  - The current status update reveals that the GDPR compliance audit lead is finalized as Deloitte advisory.
+  - During today's discussion, the travel and conference allowance was confirmed as ₹1.5 lakh per quarter.
+- source_sentence: As recorded earlier, the agreed direction for the Q3 marketing spend was ₹5 lakh.
+  sentences:
+  - Today's agenda concluded that the churn rate reduction goal will currently operate with targeted under 5%.
+  - During today's discussion, the frontend state management was confirmed as Context API.
+  - In the current meeting, leadership decided that the Q3 marketing spend is now ₹7.5 lakh.
+model-index:
+- name: SentenceTransformer based on sentence-transformers/all-MiniLM-L6-v2
+  results:
+  - task:
+      type: semantic-similarity
+      name: Semantic Similarity
+    dataset:
+      name: val evaluator
+      type: val_evaluator
+    metrics:
+    - type: pearson_cosine
+      value: 0.9966716474635399
+      name: Pearson Cosine
+      verified: false
+    - type: spearman_cosine
+      value: 0.8657175150670322
+      name: Spearman Cosine
+      verified: false
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:10500
+  - loss:CosineSimilarityLoss
+  base_model: sentence-transformers/all-MiniLM-L6-v2
+  widget:
+  - source_sentence: According to the previous minutes, the software enterprise SaaS licensing was officially finalized as
+      $15,000 annually.
+    sentences:
+    - In the latest debrief, the team voted that the external branding agency is switched to DDB Mudra.
+    - During today's discussion, the beta product launch date was confirmed as June 1st.
+    - The updated review notes state that the user privacy consent mechanism has been updated to implicit opt-in checkbox.
+  - source_sentence: Earlier discussions concluded that the frontend team lead responsibility would be Ananya Joshi.
+    sentences:
+    - In the current meeting, leadership decided that the monitoring stack is now Prometheus and Grafana.
+    - In the latest debrief, the team voted that the container orchestration is switched to Amazon EKS.
+    - In the latest sync, the team reaffirmed that the mobile framework remains React Native.
+  - source_sentence: Earlier discussions concluded that the frontend state management would be MobX.
+    sentences:
+    - The updated review notes state that the vector database has been updated to Qdrant.
+    - The updated review notes state that the internship program duration has been updated to 3 months summer.
+    - During today's discussion, the statutory audit completion deadline was confirmed as October 31st extended deadline.
+  - source_sentence: As recorded earlier, the agreed direction for the user privacy consent mechanism was cookie banner click.
+    sentences:
+    - Today's agenda concluded that the frontend team lead responsibility will currently operate with Ananya Joshi.
+    - The current status update reveals that the GDPR compliance audit lead is finalized as Deloitte advisory.
+    - During today's discussion, the travel and conference allowance was confirmed as ₹1.5 lakh per quarter.
+  - source_sentence: As recorded earlier, the agreed direction for the Q3 marketing spend was ₹5 lakh.
+    sentences:
+    - Today's agenda concluded that the churn rate reduction goal will currently operate with targeted under 5%.
+    - During today's discussion, the frontend state management was confirmed as Context API.
+    - In the current meeting, leadership decided that the Q3 marketing spend is now ₹7.5 lakh.
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - pearson_cosine
+  - spearman_cosine
+  model-index:
+  - name: SentenceTransformer based on sentence-transformers/all-MiniLM-L6-v2
+    results:
+    - task:
+        type: semantic-similarity
+        name: Semantic Similarity
+      dataset:
+        name: val evaluator
+        type: val_evaluator
+      metrics:
+      - type: pearson_cosine
+        value: 0.9966716474635399
+        name: Pearson Cosine
+        verified: false
+      - type: spearman_cosine
+        value: 0.8657175150670322
+        name: Spearman Cosine
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-07T16:44:56.000Z'
+safetensors:
+  parameters:
+    F32: 22713216
+  total: 22713216
+usedStorage: 90864192
+downloadsAllTime: 61
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  initializer_range: 0.02
+  intermediate_size: 1536
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 6
+  pad_token_id: 0
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.18.0
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 30522
+onnxFiles: {}
+safetensorsSizeMb: 90.9
+approxSizeMb: 90.9
+fetchedAt: '2026-10-08T10:21:14.000Z'

@@ -1,0 +1,91 @@
+_id: 6ac6a490e2b2ac2b09d34234
+id: webmp3/Sakura-EmbeddingGemma-2-HighQuality-GGUF
+private: false
+pipeline_tag: feature-extraction
+library_name: gguf
+tags:
+- gguf
+- llama.cpp
+- embeddinggemma
+- embeddinggemma-2
+- embeddings
+- quantized
+- imatrix
+- mixed-precision
+- sentence-similarity
+- feature-extraction
+- multilingual
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+- conversational
+downloads: 1382
+likes: 0
+modelId: webmp3/Sakura-EmbeddingGemma-2-HighQuality-GGUF
+author: webmp3
+sha: 04d4aebeb3231bef27e070bdc0b65a532934b476
+lastModified: '2026-10-07T21:51:04.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: gguf
+  pipeline_tag: feature-extraction
+  language:
+  - multilingual
+  base_model: google/embeddinggemma-2
+  base_model_relation: quantized
+  tags:
+  - gguf
+  - llama.cpp
+  - embeddinggemma
+  - embeddinggemma-2
+  - embeddings
+  - quantized
+  - imatrix
+  - mixed-precision
+  - sentence-similarity
+gguf:
+  total: 271002648
+  architecture: gemma-embedding2
+  context_length: 262144
+  causal: false
+  quantize_imatrix_file: track2/own.imatrix.gguf
+  chat_template: '{%- for msg in messages if msg.get(''role'') == ''system'' -%}{%- if msg.get(''content'') is string -%}{{
+    msg[''content''] }}{%- else -%}{%- for item in msg[''content''] if item.get(''type'') == ''text'' -%}{{ item[''text'']
+    }}{%- endfor -%}{%- endif -%}{%- endfor -%}{%- for msg in messages if msg.get(''role'') != ''system'' -%}{%- if msg.get(''content'')
+    is string -%}{{ msg[''content''] }}{%- else -%}{%- set existing_text = msg[''content''] | selectattr(''type'', ''equalto'',
+    ''text'') | map(attribute=''text'') | join -%}{%- set has_manual_placeholders = (''<|image|>'' in existing_text) or (''<|video|>''
+    in existing_text) or (''<|audio|>'' in existing_text) -%}{%- for item in msg[''content''] -%}{%- if item.get(''type'')
+    == ''text'' -%}{{ item[''text''] }}{%- elif not has_manual_placeholders and item.get(''type'') == ''image'' -%}<|image|>{%-
+    elif not has_manual_placeholders and item.get(''type'') == ''video'' -%}<|video|>{%- elif not has_manual_placeholders
+    and item.get(''type'') == ''audio'' -%}<|audio|>{%- endif -%}{%- endfor -%}{%- endif -%}{%- endfor -%}'
+  bos_token: <bos>
+  eos_token: <eos>
+  totalFileSize: 183338528
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: SHA256SUMS
+- rfilename: assets/indexed-bars.png
+- rfilename: assets/size-vs-distance.png
+- rfilename: embeddinggemma-2-Sakura-HQ-Q4-L.gguf
+- rfilename: embeddinggemma-2-Sakura-HQ-Q4.gguf
+- rfilename: embeddinggemma-2-Sakura-HQ-Q5-S.gguf
+- rfilename: embeddinggemma-2-Sakura-HQ-Q5.gguf
+- rfilename: embeddinggemma-2-Sakura-HQ-Q6.gguf
+- rfilename: imatrix-sakura-retrieval.gguf
+spaces: []
+createdAt: '2026-10-07T19:59:12.000Z'
+usedStorage: 1254019642
+downloadsAllTime: 1382
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-08T10:21:14.000Z'

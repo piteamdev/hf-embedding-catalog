@@ -1,0 +1,113 @@
+_id: 6ac760c5c0d5903eb8cbe3c5
+id: yangjiange/STP
+private: false
+pipeline_tag: feature-extraction
+library_name: pytorch
+tags:
+- pytorch
+- stp
+- robotics
+- robot-manipulation
+- self-supervised
+- masked-autoencoder
+- egocentric-video
+- visual-representation
+- feature-extraction
+- arxiv:2403.05304
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: yangjiange/STP
+author: yangjiange
+sha: 0fa7abf06b482a1d605e9f48a2cc89f979b11e67
+lastModified: '2026-10-08T09:58:35.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - STP
+  model_type: stp
+cardData:
+  license: apache-2.0
+  library_name: pytorch
+  tags:
+  - robotics
+  - robot-manipulation
+  - self-supervised
+  - masked-autoencoder
+  - egocentric-video
+  - visual-representation
+  - pytorch
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: loader.py
+- rfilename: models_stp.py
+- rfilename: stp_vitb.pth
+- rfilename: stp_vitb_encoder.pth
+- rfilename: util/__init__.py
+- rfilename: util/ckpt_io.py
+- rfilename: util/lr_sched.py
+- rfilename: util/misc.py
+- rfilename: util/pos_embed.py
+- rfilename: util/torch_six_compat.py
+spaces: []
+createdAt: '2026-10-08T09:22:13.000Z'
+usedStorage: 928742370
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - STP
+  model_type: stp
+  image_size: 224
+  patch_size: 16
+  encoder:
+    embed_dim: 768
+    depth: 12
+    num_heads: 12
+    pos_embed: fixed sincos
+  spatial_decoder:
+    embed_dim: 512
+    depth: 8
+    num_heads: 16
+  temporal_decoder:
+    embed_dim: 512
+    depth: 8
+    num_heads: 16
+    type: self-attn + cross-attn(context=Z_c) + FFN
+  mask_ratio_current: 0.75
+  mask_ratio_future: 0.95
+  frame_interval: 16
+  num_parameters: 146336000
+  source_epoch: 49
+  pretraining:
+    optimizer: AdamW
+    blr: 0.00015
+    weight_decay: 0.05
+    betas:
+    - 0.9
+    - 0.95
+    epochs: 50
+    warmup_epochs: 5
+    effective_batch_size: 4096
+    augmentation: RandomResizedCrop(0.8, 1.0)
+    dataset: EgoClip (Ego4D)
+    normalize_mean:
+    - 0.485
+    - 0.456
+    - 0.406
+    normalize_std:
+    - 0.229
+    - 0.224
+    - 0.225
+  usage: freeze the encoder, take the [CLS] token via forward_features()
+  paper: arXiv:2403.05304
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-08T10:21:14.000Z'

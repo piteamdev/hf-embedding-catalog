@@ -1,0 +1,121 @@
+_id: 6ac67efe19e5aa2b52eb16e2
+id: maolon/WeMM-Embedding-2B-CoreML-ANE
+private: false
+pipeline_tag: feature-extraction
+library_name: coreml
+tags:
+- coreml
+- apple-neural-engine
+- apple-silicon
+- on-device
+- embeddings
+- multimodal-embedding
+- text-embedding
+- image-embedding
+- video-embedding
+- feature-extraction
+- zh
+- en
+- arxiv:2608.24053
+- base_model:tencent/WeMM-Embedding-2B
+- base_model:quantized:tencent/WeMM-Embedding-2B
+- license:other
+- region:us
+downloads: 0
+likes: 0
+modelId: maolon/WeMM-Embedding-2B-CoreML-ANE
+author: maolon
+sha: 54183abcb7c5b1d9fcb23f27528b2a67df7b9a22
+lastModified: '2026-10-07T17:19:04.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  tokenizer_config:
+    bos_token: null
+    eos_token: <|endoftext|>
+    pad_token: <|endoftext|>
+    unk_token: null
+cardData:
+  license: other
+  license_name: apache-2.0
+  license_link: LICENSE
+  base_model:
+  - tencent/WeMM-Embedding-2B
+  base_model_relation: quantized
+  library_name: coreml
+  pipeline_tag: feature-extraction
+  language:
+  - zh
+  - en
+  tags:
+  - coreml
+  - apple-neural-engine
+  - apple-silicon
+  - on-device
+  - embeddings
+  - multimodal-embedding
+  - text-embedding
+  - image-embedding
+  - video-embedding
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: chunks/chunk0.mlmodelc/analytics/coremldata.bin
+- rfilename: chunks/chunk0.mlmodelc/coremldata.bin
+- rfilename: chunks/chunk0.mlmodelc/manifest.txt
+- rfilename: chunks/chunk0.mlmodelc/metadata.json
+- rfilename: chunks/chunk0.mlmodelc/model.mil
+- rfilename: chunks/chunk0.mlmodelc/weights/weight.bin
+- rfilename: chunks/chunk1.mlmodelc/analytics/coremldata.bin
+- rfilename: chunks/chunk1.mlmodelc/coremldata.bin
+- rfilename: chunks/chunk1.mlmodelc/manifest.txt
+- rfilename: chunks/chunk1.mlmodelc/metadata.json
+- rfilename: chunks/chunk1.mlmodelc/model.mil
+- rfilename: chunks/chunk1.mlmodelc/weights/weight.bin
+- rfilename: chunks/chunk2.mlmodelc/analytics/coremldata.bin
+- rfilename: chunks/chunk2.mlmodelc/coremldata.bin
+- rfilename: chunks/chunk2.mlmodelc/manifest.txt
+- rfilename: chunks/chunk2.mlmodelc/metadata.json
+- rfilename: chunks/chunk2.mlmodelc/model.mil
+- rfilename: chunks/chunk2.mlmodelc/weights/weight.bin
+- rfilename: chunks/chunk3.mlmodelc/analytics/coremldata.bin
+- rfilename: chunks/chunk3.mlmodelc/coremldata.bin
+- rfilename: chunks/chunk3.mlmodelc/manifest.txt
+- rfilename: chunks/chunk3.mlmodelc/metadata.json
+- rfilename: chunks/chunk3.mlmodelc/model.mil
+- rfilename: chunks/chunk3.mlmodelc/weights/weight.bin
+- rfilename: chunks/chunk4.mlmodelc/analytics/coremldata.bin
+- rfilename: chunks/chunk4.mlmodelc/coremldata.bin
+- rfilename: chunks/chunk4.mlmodelc/manifest.txt
+- rfilename: chunks/chunk4.mlmodelc/metadata.json
+- rfilename: chunks/chunk4.mlmodelc/model.mil
+- rfilename: chunks/chunk4.mlmodelc/weights/weight.bin
+- rfilename: chunks/chunk5.mlmodelc/analytics/coremldata.bin
+- rfilename: chunks/chunk5.mlmodelc/coremldata.bin
+- rfilename: chunks/chunk5.mlmodelc/manifest.txt
+- rfilename: chunks/chunk5.mlmodelc/metadata.json
+- rfilename: chunks/chunk5.mlmodelc/model.mil
+- rfilename: chunks/chunk5.mlmodelc/weights/weight.bin
+- rfilename: embed_table.fp16.npy
+- rfilename: spec.yaml
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: vision_abs_pos.fp32.npy
+- rfilename: vision_tower.mlmodelc/analytics/coremldata.bin
+- rfilename: vision_tower.mlmodelc/coremldata.bin
+- rfilename: vision_tower.mlmodelc/manifest.txt
+- rfilename: vision_tower.mlmodelc/metadata.json
+- rfilename: vision_tower.mlmodelc/model.mil
+- rfilename: vision_tower.mlmodelc/weights/weight.bin
+spaces: []
+createdAt: '2026-10-07T17:18:54.000Z'
+usedStorage: 4470860449
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-08T10:21:14.000Z'

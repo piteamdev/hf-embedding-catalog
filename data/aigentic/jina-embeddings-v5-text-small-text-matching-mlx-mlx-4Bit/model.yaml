@@ -1,0 +1,98 @@
+_id: 6ac6b724125299aa600ba273
+id: aigentic/jina-embeddings-v5-text-small-text-matching-mlx-mlx-4Bit
+private: false
+pipeline_tag: feature-extraction
+library_name: mlx
+tags:
+- mlx
+- safetensors
+- qwen3
+- embeddings
+- jina
+- jina-embeddings-v5
+- feature-extraction
+- mlx-my-repo
+- base_model:jinaai/jina-embeddings-v5-text-small-text-matching-mlx
+- base_model:quantized:jinaai/jina-embeddings-v5-text-small-text-matching-mlx
+- license:cc-by-nc-4.0
+- 4-bit
+- region:us
+downloads: 20
+likes: 0
+modelId: aigentic/jina-embeddings-v5-text-small-text-matching-mlx-mlx-4Bit
+author: aigentic
+sha: 752a0bd262fe25b7d48a23d998e0b1c9d17be1f7
+lastModified: '2026-10-07T21:18:30.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: qwen3
+  quantization_config:
+    bits: 4
+  tokenizer_config:
+    bos_token: null
+    eos_token: <|im_end|>
+    pad_token: <|endoftext|>
+    unk_token: null
+cardData:
+  library_name: mlx
+  tags:
+  - mlx
+  - embeddings
+  - jina
+  - jina-embeddings-v5
+  - feature-extraction
+  - mlx
+  - mlx-my-repo
+  pipeline_tag: feature-extraction
+  license: cc-by-nc-4.0
+  base_model: jinaai/jina-embeddings-v5-text-small-text-matching-mlx
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.py
+- rfilename: model.safetensors
+- rfilename: model.safetensors.index.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-07T21:18:28.000Z'
+safetensors:
+  parameters:
+    U32: 595984384
+    F16: 65536
+  total: 596049920
+usedStorage: 346872731
+downloadsAllTime: 20
+inferenceProviderMapping: {}
+configJson:
+  head_dim: 128
+  hidden_size: 1024
+  intermediate_size: 3072
+  max_position_embeddings: 32768
+  model_type: qwen3
+  num_attention_heads: 16
+  num_hidden_layers: 28
+  num_key_value_heads: 8
+  quantization:
+    group_size: 64
+    bits: 4
+    mode: affine
+  quantization_config:
+    group_size: 64
+    bits: 4
+    mode: affine
+  rms_norm_eps: 1.0e-06
+  rope_parameters:
+    rope_theta: 3500000
+    rope_type: default
+  rope_scaling: null
+  rope_theta: 3500000
+  tie_word_embeddings: true
+  vocab_size: 151936
+onnxFiles: {}
+safetensorsSizeMb: 335.5
+approxSizeMb: 2384.1
+fetchedAt: '2026-10-08T10:21:14.000Z'

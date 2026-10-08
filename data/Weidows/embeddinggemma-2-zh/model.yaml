@@ -1,0 +1,62 @@
+_id: 6ac76743a723411c6f8bff32
+id: Weidows/embeddinggemma-2-zh
+private: false
+pipeline_tag: feature-extraction
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- embeddinggemma
+- embedding
+- chinese
+- c-mteb
+- mteb
+- feature-extraction
+- zh
+- base_model:google/embeddinggemma-2
+- base_model:finetune:google/embeddinggemma-2
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: Weidows/embeddinggemma-2-zh
+author: Weidows
+sha: 234acf9b20aa7c5bf76b032d016b3e0f68fa8785
+lastModified: '2026-10-08T09:51:01.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  language:
+  - zh
+  library_name: sentence-transformers
+  base_model: google/embeddinggemma-2
+  pipeline_tag: feature-extraction
+  tags:
+  - embeddinggemma
+  - embedding
+  - chinese
+  - c-mteb
+  - mteb
+  - sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: eval/comparison.md
+- rfilename: eval/raw/mteb_base_261008_145213.json
+- rfilename: eval/raw/mteb_base_261008_145213.md
+- rfilename: eval/raw/mteb_bgem3_261008_165301.json
+- rfilename: eval/raw/mteb_bgem3_261008_165301.md
+- rfilename: eval/report.md
+spaces: []
+createdAt: '2026-10-08T09:49:55.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-08T10:21:14.000Z'

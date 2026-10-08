@@ -1,0 +1,74 @@
+_id: 6ac6aab20d028fddf0c709b6
+id: RecMind/paraphrase-multilingual-MiniLM-L12-v2-GGUF
+private: false
+pipeline_tag: sentence-similarity
+library_name: gguf
+tags:
+- gguf
+- sentence-transformers
+- feature-extraction
+- recmind
+- sentence-similarity
+- multilingual
+- it
+- fr
+- de
+- en
+- es
+- pt
+- base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- base_model:quantized:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 26
+likes: 0
+modelId: RecMind/paraphrase-multilingual-MiniLM-L12-v2-GGUF
+author: RecMind
+sha: 39bf6f1b606622bbf08c2bbc76392089e24625ee
+lastModified: '2026-10-07T20:25:28.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  pipeline_tag: sentence-similarity
+  library_name: gguf
+  language:
+  - multilingual
+  - it
+  - fr
+  - de
+  - en
+  - es
+  - pt
+  tags:
+  - gguf
+  - sentence-transformers
+  - feature-extraction
+  - recmind
+gguf:
+  total: 117505920
+  architecture: bert
+  context_length: 512
+  causal: false
+  bos_token: <s>
+  eos_token: </s>
+  totalFileSize: 132440544
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: paraphrase-multilingual-MiniLM-L12-v2-q8_0.gguf
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-10-07T20:25:22.000Z'
+usedStorage: 132440544
+downloadsAllTime: 26
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-08T10:21:14.000Z'

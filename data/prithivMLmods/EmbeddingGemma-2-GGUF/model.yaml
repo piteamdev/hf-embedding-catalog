@@ -1,0 +1,103 @@
+_id: 6ac681673e754d307394f1dd
+id: prithivMLmods/EmbeddingGemma-2-GGUF
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- gguf
+- text-generation-inference
+- llama-cpp
+- embedding
+- feature-extraction
+- sentence-transformers
+- multimodal-embedding
+- multimodal
+- vision
+- audio
+- video
+- image-feature-extraction
+- audio-feature-extraction
+- video-feature-extraction
+- sentence-similarity
+- multilingual
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+- conversational
+downloads: 568
+likes: 1
+modelId: prithivMLmods/EmbeddingGemma-2-GGUF
+author: prithivMLmods
+sha: ca17235333e975cb5044987c18316b83258b57e4
+lastModified: '2026-10-07T19:07:09.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  base_model:
+  - google/embeddinggemma-2
+  pipeline_tag: feature-extraction
+  tags:
+  - text-generation-inference
+  - llama-cpp
+  - embedding
+  - feature-extraction
+  - sentence-transformers
+  - multimodal-embedding
+  - multimodal
+  - vision
+  - audio
+  - video
+  - image-feature-extraction
+  - audio-feature-extraction
+  - video-feature-extraction
+  - sentence-similarity
+  language:
+  - multilingual
+  license: apache-2.0
+  library_name: transformers
+transformersInfo:
+  auto_model: AutoModel
+gguf:
+  total: 271002648
+  architecture: gemma-embedding2
+  context_length: 262144
+  causal: false
+  chat_template: '{%- for msg in messages if msg.get(''role'') == ''system'' -%}{%- if msg.get(''content'') is string -%}{{
+    msg[''content''] }}{%- else -%}{%- for item in msg[''content''] if item.get(''type'') == ''text'' -%}{{ item[''text'']
+    }}{%- endfor -%}{%- endif -%}{%- endfor -%}{%- for msg in messages if msg.get(''role'') != ''system'' -%}{%- if msg.get(''content'')
+    is string -%}{{ msg[''content''] }}{%- else -%}{%- set existing_text = msg[''content''] | selectattr(''type'', ''equalto'',
+    ''text'') | map(attribute=''text'') | join -%}{%- set has_manual_placeholders = (''<|image|>'' in existing_text) or (''<|video|>''
+    in existing_text) or (''<|audio|>'' in existing_text) -%}{%- for item in msg[''content''] -%}{%- if item.get(''type'')
+    == ''text'' -%}{{ item[''text''] }}{%- elif not has_manual_placeholders and item.get(''type'') == ''image'' -%}<|image|>{%-
+    elif not has_manual_placeholders and item.get(''type'') == ''video'' -%}<|video|>{%- elif not has_manual_placeholders
+    and item.get(''type'') == ''audio'' -%}<|audio|>{%- endif -%}{%- endfor -%}{%- endif -%}{%- endfor -%}'
+  bos_token: <bos>
+  eos_token: <eos>
+  totalFileSize: 557950240
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: embeddinggemma-2.BF16.gguf
+- rfilename: embeddinggemma-2.Q3_K_L.gguf
+- rfilename: embeddinggemma-2.Q3_K_M.gguf
+- rfilename: embeddinggemma-2.Q4_K_M.gguf
+- rfilename: embeddinggemma-2.Q4_K_S.gguf
+- rfilename: embeddinggemma-2.Q5_K_M.gguf
+- rfilename: embeddinggemma-2.Q5_K_S.gguf
+- rfilename: embeddinggemma-2.Q6_K.gguf
+- rfilename: embeddinggemma-2.mmproj-bf16.gguf
+spaces: []
+createdAt: '2026-10-07T17:29:11.000Z'
+usedStorage: 2872386304
+downloadsAllTime: 568
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-08T10:21:14.000Z'

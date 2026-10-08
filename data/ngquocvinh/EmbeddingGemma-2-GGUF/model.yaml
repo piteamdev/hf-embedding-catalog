@@ -1,0 +1,110 @@
+_id: 6ac7040a9ffaefeeb3a696cc
+id: ngquocvinh/EmbeddingGemma-2-GGUF
+private: false
+pipeline_tag: feature-extraction
+library_name: llama.cpp
+tags:
+- llama.cpp
+- gguf
+- embedding
+- multimodal
+- multilingual
+- quantized
+- sentence-transformers
+- feature-extraction
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+- imatrix
+- conversational
+downloads: 251
+likes: 1
+modelId: ngquocvinh/EmbeddingGemma-2-GGUF
+author: ngquocvinh
+sha: 8e83fab7c71a90d8f97ae7cacf6a488f654cb5b6
+lastModified: '2026-10-08T04:18:29.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: google/embeddinggemma-2
+  base_model_relation: quantized
+  library_name: llama.cpp
+  pipeline_tag: feature-extraction
+  tags:
+  - gguf
+  - llama.cpp
+  - embedding
+  - multimodal
+  - multilingual
+  - quantized
+  - sentence-transformers
+gguf:
+  total: 271002648
+  architecture: gemma-embedding2
+  context_length: 262144
+  causal: false
+  quantize_imatrix_file: /root/workspace/HF/calibration/embeddinggemma-2/embeddinggemma-2-sts.imatrix.gguf
+  chat_template: '{%- for msg in messages if msg.get(''role'') == ''system'' -%}{%- if msg.get(''content'') is string -%}{{
+    msg[''content''] }}{%- else -%}{%- for item in msg[''content''] if item.get(''type'') == ''text'' -%}{{ item[''text'']
+    }}{%- endfor -%}{%- endif -%}{%- endfor -%}{%- for msg in messages if msg.get(''role'') != ''system'' -%}{%- if msg.get(''content'')
+    is string -%}{{ msg[''content''] }}{%- else -%}{%- set existing_text = msg[''content''] | selectattr(''type'', ''equalto'',
+    ''text'') | map(attribute=''text'') | join -%}{%- set has_manual_placeholders = (''<|image|>'' in existing_text) or (''<|video|>''
+    in existing_text) or (''<|audio|>'' in existing_text) -%}{%- for item in msg[''content''] -%}{%- if item.get(''type'')
+    == ''text'' -%}{{ item[''text''] }}{%- elif not has_manual_placeholders and item.get(''type'') == ''image'' -%}<|image|>{%-
+    elif not has_manual_placeholders and item.get(''type'') == ''video'' -%}<|video|>{%- elif not has_manual_placeholders
+    and item.get(''type'') == ''audio'' -%}<|audio|>{%- endif -%}{%- endfor -%}{%- endif -%}{%- endfor -%}'
+  bos_token: <bos>
+  eos_token: <eos>
+  totalFileSize: 103040640
+siblings:
+- rfilename: .gitattributes
+- rfilename: EmbeddingGemma-2-IQ1_M.gguf
+- rfilename: EmbeddingGemma-2-IQ1_S.gguf
+- rfilename: EmbeddingGemma-2-IQ2_M.gguf
+- rfilename: EmbeddingGemma-2-IQ2_S.gguf
+- rfilename: EmbeddingGemma-2-IQ2_XS.gguf
+- rfilename: EmbeddingGemma-2-IQ2_XXS.gguf
+- rfilename: EmbeddingGemma-2-IQ3_M.gguf
+- rfilename: EmbeddingGemma-2-IQ3_S.gguf
+- rfilename: EmbeddingGemma-2-IQ3_XS.gguf
+- rfilename: EmbeddingGemma-2-IQ3_XXS.gguf
+- rfilename: EmbeddingGemma-2-IQ4_NL.gguf
+- rfilename: EmbeddingGemma-2-IQ4_XS.gguf
+- rfilename: EmbeddingGemma-2-Q1_0.gguf
+- rfilename: EmbeddingGemma-2-Q2_K.gguf
+- rfilename: EmbeddingGemma-2-Q2_K_S.gguf
+- rfilename: EmbeddingGemma-2-Q3_K_L.gguf
+- rfilename: EmbeddingGemma-2-Q3_K_M.gguf
+- rfilename: EmbeddingGemma-2-Q3_K_S.gguf
+- rfilename: EmbeddingGemma-2-Q4_K_M.gguf
+- rfilename: EmbeddingGemma-2-Q4_K_S.gguf
+- rfilename: EmbeddingGemma-2-Q5_K_M.gguf
+- rfilename: EmbeddingGemma-2-Q5_K_S.gguf
+- rfilename: EmbeddingGemma-2-Q6_K.gguf
+- rfilename: EmbeddingGemma-2-Q8_0.gguf
+- rfilename: EmbeddingGemma-2-TQ1_0.gguf
+- rfilename: EmbeddingGemma-2-TQ2_0.gguf
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: SHA256SUMS.txt
+- rfilename: mmproj-EmbeddingGemma-2-BF16.gguf
+- rfilename: reproducibility/artifact-measurements.tsv
+- rfilename: reproducibility/embedding-evaluation.tsv
+- rfilename: reproducibility/evaluate-stsbenchmark.py
+- rfilename: reproducibility/imatrix-gemma-embedding.patch
+- rfilename: reproducibility/manifest.md
+spaces: []
+createdAt: '2026-10-08T02:46:34.000Z'
+usedStorage: 4930914048
+downloadsAllTime: 251
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-08T10:21:14.000Z'

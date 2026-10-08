@@ -1,0 +1,117 @@
+_id: 6ac64f6b1659b86650774311
+id: DangerLabs/dm-jepa-1.5
+private: false
+pipeline_tag: feature-extraction
+tags:
+- pytorch
+- safetensors
+- dm_jepa
+- decision-making
+- jepa
+- open-weights
+- autonomous-driving
+- robotics
+- system-1
+- iso-26262
+- sub-quadratic
+- feature-extraction
+- en
+- license:other
+- region:us
+downloads: 28
+likes: 2
+modelId: DangerLabs/dm-jepa-1.5
+author: DangerLabs
+sha: 338056701a9e842d97b08427dcc109c7c58369e2
+lastModified: '2026-10-07T13:57:48.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: dm_jepa
+  architectures:
+  - DMBertJEPA2
+cardData:
+  license: other
+  license_name: danger-open-weights
+  license_link: LICENSE
+  language:
+  - en
+  pipeline_tag: feature-extraction
+  tags:
+  - decision-making
+  - jepa
+  - open-weights
+  - autonomous-driving
+  - robotics
+  - system-1
+  - iso-26262
+  - sub-quadratic
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: pytorch_model.bin
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-10-07T13:55:55.000Z'
+safetensors:
+  parameters:
+    F32: 127793153
+  total: 127793153
+usedStorage: 888214871
+downloadsAllTime: 28
+inferenceProviderMapping: {}
+configJson:
+  model_type: dm_jepa
+  architectures:
+  - DMBertJEPA2
+  name: DM-JEPA 1.5 (JEPA 2.0 Engine)
+  organization: Danger Labs
+  description: Decision-Making Joint-Embedding Predictive Architecture (System 1 Non-Autoregressive Decision Engine with Riemannian
+    Manifold Scorer and Cartesian Block Butterfly Factorization)
+  d_model: 1024
+  n_layers: 12
+  n_heads: 16
+  vocab_size: 32768
+  p_butterfly: 32
+  latent_predictor:
+    max_steps: 4
+    n_heads: 16
+    p_butterfly: 32
+    energy_threshold: 0.015
+    adaptive_early_exit: true
+  scorer:
+    type: riemannian_manifold
+    p_butterfly: 32
+    init_temperature: 14.0
+    null_action_barrier: -0.15
+  max_state_length: 32768
+  max_option_length: 512
+  system_1_latency_ms: 15.43
+  torch_dtype: float32
+  version: 1.5.0-jepa2
+  parameters: 94.24M
+  benchmarks:
+    decision_index_edition_0_3:
+      public_decision_index: 68.92
+      global_rank: 1
+      generalization_index_v: 65.69
+      coverage: 1.0
+      median_forward_latency_ms: 30.97
+    iso_26262_asil_d_autonomous_driving:
+      evaluated_scenarios: 5000
+      overall_accuracy_pct: 92.46
+      unprotected_left_turns_pct: 100.0
+      phantom_braking_rate_pct: 0.0
+      missed_crash_invariants_pct: 0.0
+      fail_safe_refusal_precision_pct: 100.0
+      fail_safe_refusal_recall_pct: 100.0
+      latency_p50_ms: 15.43
+      latency_p99_ms: 20.96
+onnxFiles: {}
+safetensorsSizeMb: 511.2
+approxSizeMb: 511.2
+fetchedAt: '2026-10-08T10:21:14.000Z'

@@ -1,0 +1,68 @@
+_id: 6ac7fc18c9d527ebb317b3cc
+id: zeechimp/holo-four-axis
+private: false
+pipeline_tag: feature-extraction
+library_name: holo-four-axis
+tags:
+- holo-four-axis
+- memory
+- associative-memory
+- consolidation
+- contradiction-detection
+- ordered-memory
+- hyperdimensional-computing
+- vector-symbolic-architecture
+- numpy
+- educational
+- research
+- feature-extraction
+- en
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 1
+modelId: zeechimp/holo-four-axis
+author: zeechimp
+sha: 5cd8135d5580ef1cab54c99224099a093a3f6cbd
+lastModified: '2026-10-08T20:27:57.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  language:
+  - en
+  license: apache-2.0
+  library_name: holo-four-axis
+  tags:
+  - memory
+  - associative-memory
+  - consolidation
+  - contradiction-detection
+  - ordered-memory
+  - hyperdimensional-computing
+  - vector-symbolic-architecture
+  - numpy
+  - educational
+  - research
+  datasets: []
+  metrics:
+  - retrieval-accuracy
+  - capacity
+  - contradiction-detection
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: holo_four_axis.py
+spaces: []
+createdAt: '2026-10-08T20:24:56.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-09T10:21:33.000Z'

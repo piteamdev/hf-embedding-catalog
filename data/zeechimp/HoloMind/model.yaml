@@ -1,0 +1,63 @@
+_id: 6ac7af632392a4260d9d639d
+id: zeechimp/HoloMind
+private: false
+pipeline_tag: feature-extraction
+library_name: holomind
+tags:
+- holomind
+- holographic-reduced-representations
+- vector-symbolic-architecture
+- hyperdimensional-computing
+- fhrr
+- associative-memory
+- educational
+- research
+- memory
+- sequence-modeling
+- binding
+- feature-extraction
+- en
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 1
+modelId: zeechimp/HoloMind
+author: zeechimp
+sha: fe1ab8023e2b8cf27ba308b63863a4a2d097aa78
+lastModified: '2026-10-08T15:01:06.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  language:
+  - en
+  tags:
+  - holographic-reduced-representations
+  - vector-symbolic-architecture
+  - hyperdimensional-computing
+  - fhrr
+  - associative-memory
+  - educational
+  - research
+  - memory
+  - sequence-modeling
+  - binding
+  library_name: holomind
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: holomind.py
+spaces: []
+createdAt: '2026-10-08T14:57:39.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-09T10:21:33.000Z'

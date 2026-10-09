@@ -1,0 +1,155 @@
+_id: 695d0538d58c0fd58741ed1b
+id: seanfarrell/icd11_synonym_model
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- mpnet
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:10000000
+- loss:MultipleNegativesRankingLoss
+- arxiv:1908.10084
+- arxiv:1705.00652
+- base_model:sentence-transformers/all-mpnet-base-v2
+- base_model:finetune:sentence-transformers/all-mpnet-base-v2
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: seanfarrell/icd11_synonym_model
+author: seanfarrell
+sha: 89c2c056901bebb9df9cdceef2da05af53a98bff
+lastModified: '2026-01-06T12:52:17.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: Arnold-Chiari malformation type I
+  sentences:
+  - ischiocapsular strain
+  - arnold-chiari obstruction type i
+  - keratosis follicularis spinulosa decalvans
+- source_sentence: adenocarcinoma of accessory sinuses
+  sentences:
+  - polyps of small intestine
+  - Open bite of lower leg
+  - Adenocarcinoma of accessory sinuses
+- source_sentence: rosacea
+  sentences:
+  - Brain-lung-thyroid syndrome
+  - hook nail
+  - Rosacea
+- source_sentence: Pulmonary adiaspiromycosis
+  sentences:
+  - Traumatic amputation of part of breast
+  - adiaspiromycosis
+  - inflammatory inclusion body myositis
+- source_sentence: other specified febrile seizures
+  sentences:
+  - congenital anomaly of an atrioventricular or ventriculo-arterial connection
+  - traumatic rupture of stomach
+  - Other specified febrile seizures
+model-index: null
+config:
+  architectures:
+  - MPNetModel
+  model_type: mpnet
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: '[UNK]'
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:10000000
+  - loss:MultipleNegativesRankingLoss
+  base_model: sentence-transformers/all-mpnet-base-v2
+  widget:
+  - source_sentence: Arnold-Chiari malformation type I
+    sentences:
+    - ischiocapsular strain
+    - arnold-chiari obstruction type i
+    - keratosis follicularis spinulosa decalvans
+  - source_sentence: adenocarcinoma of accessory sinuses
+    sentences:
+    - polyps of small intestine
+    - Open bite of lower leg
+    - Adenocarcinoma of accessory sinuses
+  - source_sentence: rosacea
+    sentences:
+    - Brain-lung-thyroid syndrome
+    - hook nail
+    - Rosacea
+  - source_sentence: Pulmonary adiaspiromycosis
+    sentences:
+    - Traumatic amputation of part of breast
+    - adiaspiromycosis
+    - inflammatory inclusion body myositis
+  - source_sentence: other specified febrile seizures
+    sentences:
+    - congenital anomaly of an atrioventricular or ventriculo-arterial connection
+    - traumatic rupture of stomach
+    - Other specified febrile seizures
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: vocab.txt
+spaces: []
+createdAt: '2026-01-06T12:51:04.000Z'
+safetensors:
+  parameters:
+    F32: 109486464
+  total: 109486464
+usedStorage: 437967672
+downloadsAllTime: 17
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - MPNetModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  dtype: float32
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 514
+  model_type: mpnet
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 1
+  relative_attention_num_buckets: 32
+  transformers_version: 4.57.3
+  vocab_size: 30527
+onnxFiles: {}
+safetensorsSizeMb: 438.0
+approxSizeMb: 437.9
+fetchedAt: '2026-10-09T10:21:33.000Z'

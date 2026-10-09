@@ -1,0 +1,150 @@
+_id: 6ac6af9c82cf3222c6f3b66f
+id: jgalego/orbit2vec
+private: false
+pipeline_tag: feature-extraction
+library_name: pytorch
+tags:
+- pytorch
+- safetensors
+- space
+- satellites
+- tle
+- embeddings
+- contrastive-learning
+- weird2vec
+- feature-extraction
+- dataset:jgalego/orbit2vec-windows
+- dataset:juliensimon/space-track-tle-history
+- dataset:juliensimon/space-track-satcat
+- dataset:RhynoWu/starlink-maneuver-db
+- license:mit
+- region:us
+downloads: 23
+likes: 0
+modelId: jgalego/orbit2vec
+author: jgalego
+sha: a5e56438b389ddd45dc46c94f39b63846f0df111
+lastModified: '2026-10-08T12:22:46.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  datasets:
+  - jgalego/orbit2vec-windows
+  - juliensimon/space-track-tle-history
+  - juliensimon/space-track-satcat
+  - RhynoWu/starlink-maneuver-db
+  library_name: pytorch
+  license: mit
+  model_name: orbit2vec
+  pipeline_tag: feature-extraction
+  tags:
+  - space
+  - satellites
+  - tle
+  - embeddings
+  - contrastive-learning
+  - weird2vec
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: assets/logo.svg
+- rfilename: assets/shells.svg
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: orbit2vec.py
+- rfilename: results/eval.json
+- rfilename: results/map.png
+- rfilename: results/train.json
+spaces: []
+createdAt: '2026-10-07T20:46:20.000Z'
+safetensors:
+  parameters:
+    F32: 3314479
+  total: 3314479
+usedStorage: 53572014
+downloadsAllTime: 23
+inferenceProviderMapping: {}
+configJson:
+  depth: 4
+  dim: 256
+  embed_dim: 256
+  feature_mean:
+  - 0.2595488131046295
+  - 0.008254659362137318
+  - -6.003311634063721
+  - 0.7771091461181641
+  - 0.009001758880913258
+  - 0.01654639281332493
+  - 0.028064265847206116
+  - 0.07831894606351852
+  - 0.020051907747983932
+  - 1.619292140007019
+  - 1.5279791355133057
+  feature_std:
+  - 0.4458872973918915
+  - 1.1697551012039185
+  - 2.424814224243164
+  - 0.3001880347728729
+  - 0.44748619198799133
+  - 0.7060166597366333
+  - 0.7074488997459412
+  - 0.7716799974441528
+  - 0.6308556795120239
+  - 2.0706324577331543
+  - 2.3363101482391357
+  groups:
+  - COSMOS
+  - FLOCK
+  - GLOBALSTAR
+  - HULIANWANG
+  - ICEYE
+  - INTELSAT
+  - IRIDIUM
+  - JILIN
+  - KUIPER
+  - LEMUR
+  - METEOR
+  - MOLNIYA
+  - NAVSTAR
+  - ONEWEB
+  - OPS
+  - PROGRESS
+  - QIANFAN
+  - SOYUZ
+  - SPACEBEE
+  - STARLINK
+  - STS
+  - TRANSPORTER
+  - USA
+  - YAOGAN
+  - debris
+  - other payload
+  - rocket body
+  - unknown
+  heads: 8
+  owners:
+  - CIS
+  - ESA
+  - FR
+  - GER
+  - IND
+  - IT
+  - ITSO
+  - JPN
+  - PRC
+  - TBD
+  - UK
+  - US
+  - other
+  target_mean:
+  - 70.28289794921875
+  - -0.09830036759376526
+  target_std:
+  - 27.541488647460938
+  - 0.5646975636482239
+onnxFiles: {}
+safetensorsSizeMb: 13.3
+approxSizeMb: 13.3
+fetchedAt: '2026-10-09T10:21:33.000Z'

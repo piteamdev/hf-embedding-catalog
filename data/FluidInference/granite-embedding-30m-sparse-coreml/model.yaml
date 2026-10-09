@@ -1,0 +1,117 @@
+_id: 6ac84a60a4cc3304ff4dec23
+id: FluidInference/granite-embedding-30m-sparse-coreml
+private: false
+pipeline_tag: feature-extraction
+library_name: coremltools
+tags:
+- coremltools
+- coreml
+- sparse
+- splade
+- sparse-encoder
+- information-retrieval
+- evoke
+- apple-silicon
+- neural-engine
+- feature-extraction
+- base_model:ibm-granite/granite-embedding-30m-sparse
+- base_model:quantized:ibm-granite/granite-embedding-30m-sparse
+- license:apache-2.0
+- region:us
+downloads: 32
+likes: 1
+modelId: FluidInference/granite-embedding-30m-sparse-coreml
+author: FluidInference
+sha: 504abb1b2ec2aa4b0bd6248793eaf80d5fff5cfc
+lastModified: '2026-10-09T02:08:52.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  tokenizer_config:
+    unk_token: <unk>
+    bos_token: <s>
+    eos_token: </s>
+    sep_token: </s>
+    cls_token: <s>
+    pad_token: <pad>
+    mask_token: <mask>
+cardData:
+  license: apache-2.0
+  library_name: coremltools
+  pipeline_tag: feature-extraction
+  base_model: ibm-granite/granite-embedding-30m-sparse
+  tags:
+  - coreml
+  - sparse
+  - splade
+  - sparse-encoder
+  - information-retrieval
+  - evoke
+  - apple-silicon
+  - neural-engine
+siblings:
+- rfilename: .gitattributes
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: granite-embedding-30m-sparse-L128-fp16.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: granite-embedding-30m-sparse-L128-fp16.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: granite-embedding-30m-sparse-L128-fp16.mlpackage/Manifest.json
+- rfilename: granite-embedding-30m-sparse-L256-fp16.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: granite-embedding-30m-sparse-L256-fp16.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: granite-embedding-30m-sparse-L256-fp16.mlpackage/Manifest.json
+- rfilename: granite-embedding-30m-sparse-L512-fp16.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: granite-embedding-30m-sparse-L512-fp16.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: granite-embedding-30m-sparse-L512-fp16.mlpackage/Manifest.json
+- rfilename: granite-embedding-30m-sparse-L64-fp16.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: granite-embedding-30m-sparse-L64-fp16.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: granite-embedding-30m-sparse-L64-fp16.mlpackage/Manifest.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-09T01:58:56.000Z'
+usedStorage: 243851363
+downloadsAllTime: 32
+inferenceProviderMapping: {}
+configJson:
+  base_model: ibm-granite/granite-embedding-30m-sparse
+  base_model_revision: ad82b1fd09541c998c8d45045d601c51fdb8a9b7
+  format: coreml
+  precision: fp16
+  sequence_lengths:
+  - 64
+  - 128
+  - 256
+  - 512
+  input:
+    name: input_ids
+    dtype: int32
+    shape:
+    - 1
+    - L
+    pad_token_id: 1
+    bos_token_id: 0
+    eos_token_id: 2
+  outputs:
+    max_logits: fp16[1,192] token-max-pooled MLM logits, sorted descending
+    vocab_ids: int32[1,192] RoBERTa vocab ids
+  top_k: 192
+  vocab_size: 50265
+  evoke:
+    source: Intelligent-Internet/Evoke-Model-Beta-1 (P2.2, evoke_p2_semantic_onnx_v2)
+    semantic_atom_offset: 29522
+    pooling: weight = (log1p(max(v, 0)) ** gamma) * scale over the first active_dims; keep weight > 0
+    query:
+      active_dims: 50
+      gamma: 1.8518644571304321
+      score_scale: 0.6963680386543274
+    document:
+      active_dims: 192
+      gamma: 0.5627960562705994
+      score_scale: 1.0
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-09T10:21:33.000Z'

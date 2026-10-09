@@ -1,0 +1,270 @@
+_id: 6ac7a2aeb301c5fd5dac49c5
+id: srv-sngh/embeddinggemma-2-mlx-8bit
+private: false
+pipeline_tag: feature-extraction
+library_name: mlx
+tags:
+- mlx
+- safetensors
+- embedding_gemma2
+- embeddings
+- sentence-similarity
+- quantized
+- krill
+- 8bit
+- embedding
+- multimodal-embedding
+- multimodal
+- vision
+- audio
+- video
+- apple-silicon
+- feature-extraction
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:apache-2.0
+- 8-bit
+- region:us
+downloads: 27
+likes: 0
+modelId: srv-sngh/embeddinggemma-2-mlx-8bit
+author: srv-sngh
+sha: 4bb53fa74360ebf2818d857d1f9ac6e39b51a7fe
+lastModified: '2026-10-08T15:12:46.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - EmbeddingGemma2Model
+  model_type: embedding_gemma2
+  quantization_config:
+    bits: 8
+  tokenizer_config:
+    bos_token: <bos>
+    eos_token: <eos>
+    mask_token: <mask>
+    pad_token: <pad>
+    unk_token: <unk>
+  chat_template_jinja: '{%- for msg in messages if msg.get(''role'') == ''system'' -%}{%- if msg.get(''content'') is string
+    -%}{{ msg[''content''] }}{%- else -%}{%- for item in msg[''content''] if item.get(''type'') == ''text'' -%}{{ item[''text'']
+    }}{%- endfor -%}{%- endif -%}{%- endfor -%}{%- for msg in messages if msg.get(''role'') != ''system'' -%}{%- if msg.get(''content'')
+    is string -%}{{ msg[''content''] }}{%- else -%}{%- set existing_text = msg[''content''] | selectattr(''type'', ''equalto'',
+    ''text'') | map(attribute=''text'') | join -%}{%- set has_manual_placeholders = (''<|image|>'' in existing_text) or (''<|video|>''
+    in existing_text) or (''<|audio|>'' in existing_text) -%}{%- for item in msg[''content''] -%}{%- if item.get(''type'')
+    == ''text'' -%}{{ item[''text''] }}{%- elif not has_manual_placeholders and item.get(''type'') == ''image'' -%}<|image|>{%-
+    elif not has_manual_placeholders and item.get(''type'') == ''video'' -%}<|video|>{%- elif not has_manual_placeholders
+    and item.get(''type'') == ''audio'' -%}<|audio|>{%- endif -%}{%- endfor -%}{%- endif -%}{%- endfor -%}'
+cardData:
+  base_model: google/embeddinggemma-2
+  library_name: mlx
+  pipeline_tag: feature-extraction
+  license: apache-2.0
+  tags:
+  - mlx
+  - embeddings
+  - sentence-similarity
+  - quantized
+  - krill
+  - 8bit
+  - embedding
+  - multimodal-embedding
+  - multimodal
+  - vision
+  - audio
+  - video
+  - apple-silicon
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Normalize/config.json
+- rfilename: README.md
+- rfilename: chat_template.jinja
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: preprocessor_config.json
+- rfilename: processor_config.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer.model
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-08T14:03:26.000Z'
+safetensors:
+  parameters:
+    U32: 728301568
+    BF16: 16069944
+  total: 744371512
+usedStorage: 843109303
+downloadsAllTime: 27
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - EmbeddingGemma2Model
+  audio_config:
+    _name_or_path: ''
+    architectures: null
+    attention_chunk_size: 12
+    attention_context_left: 13
+    attention_context_right: 0
+    attention_invalid_logits_value: -1000000000
+    attention_logit_cap: 50
+    chunk_size_feed_forward: 0
+    conv_kernel_size: 5
+    dtype: bfloat16
+    gradient_clipping: 10000000000
+    hidden_act: silu
+    hidden_size: 1024
+    id2label:
+      '0': LABEL_0
+      '1': LABEL_1
+    initializer_range: 0.02
+    is_encoder_decoder: false
+    label2id:
+      LABEL_0: 0
+      LABEL_1: 1
+    model_type: gemma4_audio
+    num_attention_heads: 8
+    num_hidden_layers: 12
+    output_attentions: false
+    output_hidden_states: false
+    output_proj_dims: 1536
+    problem_type: null
+    residual_weight: 0.5
+    return_dict: true
+    rms_norm_eps: 1.0e-06
+    subsampling_conv_channels:
+    - 128
+    - 32
+    use_clipped_linears: true
+  audio_token_id: 258881
+  boa_token_id: 256000
+  boi_token_id: 255999
+  dtype: bfloat16
+  eoa_token_index: 258883
+  eoi_token_id: 258882
+  image_token_id: 258880
+  initializer_range: 0.02
+  model_type: embedding_gemma2
+  quantization:
+    bits: 8
+    group_size: 64
+  quantization_config:
+    bits: 8
+    group_size: 64
+  text_config:
+    attention_bias: false
+    attention_dropout: 0
+    bos_token_id: 2
+    dtype: bfloat16
+    embedding_dim: 768
+    eos_token_id: 1
+    head_dim: 256
+    hidden_activation: gelu_pytorch_tanh
+    hidden_size: 512
+    hidden_size_per_layer_input: 512
+    initializer_range: 0.02
+    intermediate_size: 2048
+    layer_types:
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    max_position_embeddings: 262144
+    model_type: embedding_gemma2_text
+    num_attention_heads: 4
+    num_hidden_layers: 24
+    num_key_value_heads: 2
+    pad_token_id: 0
+    per_layer_config:
+      '05':
+        head_dim: 512
+        num_key_value_heads: 1
+      '11':
+        head_dim: 512
+        num_key_value_heads: 1
+      '17':
+        head_dim: 512
+        num_key_value_heads: 1
+      '23':
+        head_dim: 512
+        num_key_value_heads: 1
+    rms_norm_eps: 1.0e-06
+    rope_parameters:
+      full_attention:
+        rope_theta: 1000000
+        rope_type: default
+      sliding_attention:
+        rope_theta: 10000
+        rope_type: default
+    sliding_window: 512
+    vocab_size: 262144
+  transformers_version: 5.18.0.dev0
+  video_token_id: 258884
+  vision_config:
+    _name_or_path: ''
+    architectures: null
+    attention_bias: false
+    attention_dropout: 0
+    chunk_size_feed_forward: 0
+    default_output_length: 280
+    dtype: bfloat16
+    global_head_dim: 64
+    head_dim: 64
+    hidden_activation: gelu_pytorch_tanh
+    hidden_size: 768
+    id2label:
+      '0': LABEL_0
+      '1': LABEL_1
+    initializer_range: 0.02
+    intermediate_size: 3072
+    is_encoder_decoder: false
+    label2id:
+      LABEL_0: 0
+      LABEL_1: 1
+    max_position_embeddings: 131072
+    model_type: gemma4_vision
+    num_attention_heads: 12
+    num_hidden_layers: 16
+    num_key_value_heads: 12
+    output_attentions: false
+    output_hidden_states: false
+    patch_size: 16
+    pooling_kernel_size: 3
+    position_embedding_size: 10240
+    problem_type: null
+    return_dict: true
+    rms_norm_eps: 1.0e-06
+    rope_parameters:
+      rope_theta: 100
+      rope_type: axial
+    standardize: false
+    use_clipped_linears: false
+  vision_soft_tokens_per_image: 280
+onnxFiles: {}
+safetensorsSizeMb: 806.2
+approxSizeMb: 2945.3
+fetchedAt: '2026-10-09T10:21:33.000Z'

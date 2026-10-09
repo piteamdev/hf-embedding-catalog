@@ -1,0 +1,52 @@
+_id: 6ac82d7b1c3d50e18cfbacf2
+id: awkeng/embeddinggemma-2-rad
+private: false
+pipeline_tag: feature-extraction
+tags:
+- radiance
+- embeddings
+- multimodal
+- sentence-similarity
+- bf16
+- feature-extraction
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: awkeng/embeddinggemma-2-rad
+author: awkeng
+sha: d0850ddda3eaa643e7eb0bb3791535c1708e624f
+lastModified: '2026-10-08T23:55:49.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model:
+  - google/embeddinggemma-2
+  base_model_relation: quantized
+  pipeline_tag: feature-extraction
+  tags:
+  - radiance
+  - embeddings
+  - multimodal
+  - sentence-similarity
+  - bf16
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: embeddinggemma2-bf16.rad
+spaces: []
+createdAt: '2026-10-08T23:55:39.000Z'
+usedStorage: 1502429184
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-09T10:21:33.000Z'

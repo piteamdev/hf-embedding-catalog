@@ -1,0 +1,63 @@
+_id: 6ac7f136db5833789906ae90
+id: zeechimp/holo-invariance
+private: false
+pipeline_tag: feature-extraction
+library_name: holo-invariance
+tags:
+- holo-invariance
+- invariance
+- robustness
+- model-analysis
+- interpretability
+- evaluation
+- numpy
+- educational
+- research
+- feature-extraction
+- en
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 1
+modelId: zeechimp/holo-invariance
+author: zeechimp
+sha: 6fb954a0ea720f92c08c045346ee220302fc2a31
+lastModified: '2026-10-08T19:47:36.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  language:
+  - en
+  license: apache-2.0
+  library_name: holo-invariance
+  tags:
+  - invariance
+  - robustness
+  - model-analysis
+  - interpretability
+  - evaluation
+  - numpy
+  - educational
+  - research
+  datasets: []
+  metrics:
+  - similarity
+  - decision-change
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: holo_invariance.py
+spaces: []
+createdAt: '2026-10-08T19:38:30.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-09T10:21:33.000Z'

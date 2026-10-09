@@ -1,0 +1,91 @@
+_id: 6ac889971c3d50e18c0ae6b2
+id: DangerLabs/dm-jepa-1.5-coreml
+private: false
+pipeline_tag: feature-extraction
+tags:
+- coreml
+- dm_jepa_mlx
+- apple-neural-engine
+- ane
+- ios
+- swift
+- decision-making
+- jepa
+- system-1
+- autonomous-systems
+- robotics
+- sub-quadratic
+- feature-extraction
+- en
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: DangerLabs/dm-jepa-1.5-coreml
+author: DangerLabs
+sha: 1a6b3186ed18a6bfb69f60598f1039a29b793d77
+lastModified: '2026-10-09T06:29:12.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: dm_jepa_mlx
+  architectures:
+  - DMBertJEPA2
+cardData:
+  language:
+  - en
+  license: apache-2.0
+  tags:
+  - coreml
+  - apple-neural-engine
+  - ane
+  - ios
+  - swift
+  - decision-making
+  - jepa
+  - system-1
+  - autonomous-systems
+  - robotics
+  - sub-quadratic
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: DMJEPA15_ANE.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: DMJEPA15_ANE.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: DMJEPA15_ANE.mlpackage/Manifest.json
+- rfilename: DMJEPARunner.swift
+- rfilename: FastTokenizer.swift
+- rfilename: README.md
+- rfilename: ane_model.py
+- rfilename: config.json
+- rfilename: export_coreml.py
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-10-09T06:28:39.000Z'
+usedStorage: 188816712
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  model_type: dm_jepa_mlx
+  architectures:
+  - DMBertJEPA2
+  vocab_size: 32768
+  d_model: 1024
+  n_layers: 12
+  n_heads: 16
+  head_dim: 64
+  p_butterfly: 32
+  q_butterfly: 32
+  max_steps: 4
+  energy_threshold: 0.015
+  init_temperature: 14.0
+  max_seq_len: 32768
+  torch_dtype: float32
+  framework: mlx
+  target_hardware: Apple Silicon (M1/M2/M3/M4/M5)
+  sub_quadratic: true
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-09T10:21:33.000Z'

@@ -1,0 +1,88 @@
+_id: 6ac88476390c20f4d0ec2cc2
+id: DangerLabs/dm-jepa-1.5-mlx
+private: false
+pipeline_tag: feature-extraction
+library_name: mlx
+tags:
+- mlx
+- dm_jepa_mlx
+- apple-silicon
+- metal
+- decision-making
+- jepa
+- system-1
+- autonomous-systems
+- robotics
+- sub-quadratic
+- feature-extraction
+- en
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: DangerLabs/dm-jepa-1.5-mlx
+author: DangerLabs
+sha: 9da50ef84da2e8d4d532c022c2e2fca3ceb25160
+lastModified: '2026-10-09T06:09:50.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: dm_jepa_mlx
+  architectures:
+  - DMBertJEPA2
+cardData:
+  language:
+  - en
+  license: apache-2.0
+  tags:
+  - mlx
+  - apple-silicon
+  - metal
+  - decision-making
+  - jepa
+  - system-1
+  - autonomous-systems
+  - robotics
+  - sub-quadratic
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: __init__.py
+- rfilename: config.json
+- rfilename: convert_weights.py
+- rfilename: generate_decision.py
+- rfilename: model.py
+- rfilename: tokenizer.json
+- rfilename: verify.py
+- rfilename: weights.safetensors
+spaces: []
+createdAt: '2026-10-09T06:06:46.000Z'
+usedStorage: 511192034
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  model_type: dm_jepa_mlx
+  architectures:
+  - DMBertJEPA2
+  vocab_size: 32768
+  d_model: 1024
+  n_layers: 12
+  n_heads: 16
+  head_dim: 64
+  p_butterfly: 32
+  q_butterfly: 32
+  max_steps: 4
+  energy_threshold: 0.015
+  init_temperature: 14.0
+  max_seq_len: 32768
+  torch_dtype: float32
+  framework: mlx
+  target_hardware: Apple Silicon (M1/M2/M3/M4/M5)
+  sub_quadratic: true
+onnxFiles: {}
+safetensorsSizeMb: 511.2
+approxSizeMb: 0.0
+fetchedAt: '2026-10-09T10:21:33.000Z'

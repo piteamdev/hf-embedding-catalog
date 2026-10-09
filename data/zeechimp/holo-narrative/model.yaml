@@ -1,0 +1,70 @@
+_id: 6ac7f61f1c3d50e18cf3f055
+id: zeechimp/holo-narrative
+private: false
+pipeline_tag: feature-extraction
+library_name: holo-narrative
+tags:
+- holo-narrative
+- memory
+- associative-memory
+- sequence-modeling
+- narrative
+- event-sequences
+- temporal-memory
+- hyperdimensional-computing
+- vector-symbolic-architecture
+- numpy
+- educational
+- research
+- feature-extraction
+- en
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 1
+modelId: zeechimp/holo-narrative
+author: zeechimp
+sha: 25405fa508ffb332912af14a8b1459c178a6e1dd
+lastModified: '2026-10-08T20:01:39.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  language:
+  - en
+  license: apache-2.0
+  library_name: holo-narrative
+  tags:
+  - memory
+  - associative-memory
+  - sequence-modeling
+  - narrative
+  - event-sequences
+  - temporal-memory
+  - hyperdimensional-computing
+  - vector-symbolic-architecture
+  - numpy
+  - educational
+  - research
+  datasets: []
+  metrics:
+  - retrieval-accuracy
+  - chain-length
+  - hop-exactness
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: holo_narrative.py
+spaces: []
+createdAt: '2026-10-08T19:59:27.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-09T10:21:33.000Z'

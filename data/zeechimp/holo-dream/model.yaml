@@ -1,0 +1,72 @@
+_id: 6ac80b78d79bbc64ecc6aee3
+id: zeechimp/holo-dream
+private: false
+pipeline_tag: feature-extraction
+library_name: holo-dream
+tags:
+- holo-dream
+- memory
+- consolidation
+- sleep
+- dreaming
+- replay
+- pruning
+- associative-memory
+- hyperdimensional-computing
+- vector-symbolic-architecture
+- numpy
+- educational
+- research
+- feature-extraction
+- en
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 1
+modelId: zeechimp/holo-dream
+author: zeechimp
+sha: 6d4e84c88e21a1cb09fdf9784823560c8c466b81
+lastModified: '2026-10-08T21:32:38.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  language:
+  - en
+  license: apache-2.0
+  library_name: holo-dream
+  tags:
+  - memory
+  - consolidation
+  - sleep
+  - dreaming
+  - replay
+  - pruning
+  - associative-memory
+  - hyperdimensional-computing
+  - vector-symbolic-architecture
+  - numpy
+  - educational
+  - research
+  datasets: []
+  metrics:
+  - signal-to-noise-ratio
+  - item-retention
+  - hybrid-creation
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: holo_dream.py
+spaces: []
+createdAt: '2026-10-08T21:30:32.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-09T10:21:33.000Z'

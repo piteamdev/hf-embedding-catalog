@@ -1,0 +1,90 @@
+_id: 6ac7d76463dd33338c5d83a7
+id: 1of2/bidirlm-omni-2.5b-coreml-w8-gpu
+private: false
+pipeline_tag: feature-extraction
+library_name: coreml
+tags:
+- coreml
+- gpu
+- text-embeddings
+- image-embeddings
+- audio-embeddings
+- multimodal
+- apple-silicon
+- feature-extraction
+- base_model:BidirLM/BidirLM-Omni-2.5B-Embedding
+- base_model:finetune:BidirLM/BidirLM-Omni-2.5B-Embedding
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: 1of2/bidirlm-omni-2.5b-coreml-w8-gpu
+author: 1of2
+sha: 2b8382c97ab321ead712b7f177a09e122d1ceb0f
+lastModified: '2026-10-08T17:48:32.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: BidirLM/BidirLM-Omni-2.5B-Embedding
+  pipeline_tag: feature-extraction
+  library_name: coreml
+  tags:
+  - coreml
+  - gpu
+  - text-embeddings
+  - image-embeddings
+  - audio-embeddings
+  - multimodal
+  - apple-silicon
+siblings:
+- rfilename: .gitattributes
+- rfilename: BidirLMOmniAudio.mlmodelc/analytics/coremldata.bin
+- rfilename: BidirLMOmniAudio.mlmodelc/coremldata.bin
+- rfilename: BidirLMOmniAudio.mlmodelc/metadata.json
+- rfilename: BidirLMOmniAudio.mlmodelc/model.mil
+- rfilename: BidirLMOmniAudio.mlmodelc/weights/weights_0.bin
+- rfilename: BidirLMOmniLanguage.mlmodelc/analytics/coremldata.bin
+- rfilename: BidirLMOmniLanguage.mlmodelc/coremldata.bin
+- rfilename: BidirLMOmniLanguage.mlmodelc/metadata.json
+- rfilename: BidirLMOmniLanguage.mlmodelc/model.mil
+- rfilename: BidirLMOmniLanguage.mlmodelc/weights/weights_0.bin
+- rfilename: BidirLMOmniLanguage.mlmodelc/weights/weights_1.bin
+- rfilename: BidirLMOmniVision.mlmodelc/analytics/coremldata.bin
+- rfilename: BidirLMOmniVision.mlmodelc/coremldata.bin
+- rfilename: BidirLMOmniVision.mlmodelc/metadata.json
+- rfilename: BidirLMOmniVision.mlmodelc/model.mil
+- rfilename: BidirLMOmniVision.mlmodelc/weights/weights_0.bin
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: Resources/cos.f16
+- rfilename: Resources/inv_freq.f32
+- rfilename: Resources/sin.f16
+- rfilename: Resources/token_embeddings.f16
+- rfilename: Resources/tokenizer/chat_template.jinja
+- rfilename: Resources/tokenizer/config.json
+- rfilename: Resources/tokenizer/preprocessor_config.json
+- rfilename: Resources/tokenizer/processing_bidirlm_omni.py
+- rfilename: Resources/tokenizer/processor_config.json
+- rfilename: Resources/tokenizer/special_tokens_map.json
+- rfilename: Resources/tokenizer/tokenizer.json
+- rfilename: Resources/tokenizer/tokenizer_config.json
+- rfilename: Resources/tokenizer/video_preprocessor_config.json
+- rfilename: Resources/vision_pos_embed.f32
+- rfilename: THIRD_PARTY.md
+- rfilename: encoder.py
+- rfilename: manifest.json
+- rfilename: qualification.json
+- rfilename: requirements.txt
+spaces: []
+createdAt: '2026-10-08T17:48:20.000Z'
+usedStorage: 2756764197
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-09T10:21:33.000Z'

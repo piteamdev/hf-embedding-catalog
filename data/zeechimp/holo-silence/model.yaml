@@ -1,0 +1,72 @@
+_id: 6ac81571acf0654070d8fe4f
+id: zeechimp/holo-silence
+private: false
+pipeline_tag: feature-extraction
+library_name: holo-silence
+tags:
+- holo-silence
+- memory
+- loss
+- forgetting
+- tombstones
+- grief
+- acceptance
+- associative-memory
+- hyperdimensional-computing
+- vector-symbolic-architecture
+- numpy
+- educational
+- research
+- feature-extraction
+- en
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 1
+modelId: zeechimp/holo-silence
+author: zeechimp
+sha: 2ac2a7673c14fe3acb342fa5a8384dc75a19cce4
+lastModified: '2026-10-08T22:18:00.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  language:
+  - en
+  license: apache-2.0
+  library_name: holo-silence
+  tags:
+  - memory
+  - loss
+  - forgetting
+  - tombstones
+  - grief
+  - acceptance
+  - associative-memory
+  - hyperdimensional-computing
+  - vector-symbolic-architecture
+  - numpy
+  - educational
+  - research
+  datasets: []
+  metrics:
+  - silence-ratio
+  - survival-rate
+  - life-span-distribution
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: holo_silence.py
+spaces: []
+createdAt: '2026-10-08T22:13:05.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-09T10:21:33.000Z'

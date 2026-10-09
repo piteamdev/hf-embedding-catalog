@@ -1,0 +1,162 @@
+_id: 6ac84d5aa4cc3304ff4e6aeb
+id: FluidInference/embeddinggemma-2-coreml
+private: false
+pipeline_tag: feature-extraction
+library_name: coreml
+tags:
+- coreml
+- apple-neural-engine
+- on-device
+- embeddings
+- sentence-similarity
+- gemma
+- feature-extraction
+- multilingual
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:apache-2.0
+- region:us
+downloads: 33
+likes: 4
+modelId: FluidInference/embeddinggemma-2-coreml
+author: FluidInference
+sha: 3f978ddf92cac9aa07eb2dcf6eb36cf450f3dba4
+lastModified: '2026-10-09T06:01:30.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: google/embeddinggemma-2
+  library_name: coreml
+  pipeline_tag: feature-extraction
+  language:
+  - multilingual
+  tags:
+  - coreml
+  - apple-neural-engine
+  - on-device
+  - embeddings
+  - sentence-similarity
+  - gemma
+siblings:
+- rfilename: .gitattributes
+- rfilename: EmbeddingGemma2Audio.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: EmbeddingGemma2Audio.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: EmbeddingGemma2Audio.mlpackage/Manifest.json
+- rfilename: EmbeddingGemma2Text.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: EmbeddingGemma2Text.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: EmbeddingGemma2Text.mlpackage/Manifest.json
+- rfilename: EmbeddingGemma2Vision.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: EmbeddingGemma2Vision.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: EmbeddingGemma2Vision.mlpackage/Manifest.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: embeddings.bf16
+- rfilename: position_embeddings.f16
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-10-09T02:11:38.000Z'
+usedStorage: 1481898612
+downloadsAllTime: 33
+inferenceProviderMapping: {}
+configJson:
+  base_model: google/embeddinggemma-2
+  format: coreml
+  modality:
+  - text
+  - audio
+  - image
+  precision: fp16
+  hidden_size: 512
+  embedding_dim: 768
+  matryoshka_dims:
+  - 768
+  - 512
+  - 256
+  - 128
+  embed_scale: 22.627417
+  token_table:
+    file: embeddings.bf16
+    dtype: bfloat16
+    shape:
+    - 262144
+    - 512
+  functions:
+    embed_32:
+      tokens: 32
+    embed_48:
+      tokens: 48
+    embed_64:
+      tokens: 64
+    embed_128:
+      tokens: 128
+    embed_256:
+      tokens: 256
+    embed_512:
+      tokens: 512
+    pack_256:
+      tokens: 256
+      slots: 8
+  bos_token_id: 2
+  eos_token_id: 1
+  pad_token_id: 0
+  prompts:
+    document: 'title: none | text: '
+    search_query: 'task: search result | query: '
+    question_answering: 'task: question answering | query: '
+    fact_checking: 'task: fact checking | query: '
+    code_retrieval: 'task: code retrieval | query: '
+    classification: 'task: classification | query: '
+    clustering: 'task: clustering | query: '
+    sentence_similarity: 'task: sentence similarity | query: '
+  audio:
+    package: EmbeddingGemma2Audio.mlpackage
+    compute_units: cpuAndGPU
+    precision: fp16
+    sample_rate: 16000
+    window_seconds: 10
+    waveform_samples: 160160
+    left_pad_samples: 160
+    frames: 1000
+    frame_valid_if: i * 160 + 321 <= 160 + audio_samples
+    tokens_per_window: 250
+    token_ms: 40
+    boa_token_id: 256000
+    eoa_token_id: 258883
+    text_sequence: <bos> <|audio> [audio tokens] <audio|> <eos> -> embed_256
+  vision:
+    package: EmbeddingGemma2Vision.mlpackage
+    compute_units: cpuAndGPU
+    precision: fp16
+    functions:
+      vision_70:
+        tokens: 70
+        patches: 630
+      vision_140:
+        tokens: 140
+        patches: 1260
+      vision_280:
+        tokens: 280
+        patches: 2520
+    patch_size: 16
+    pooling_kernel: 3
+    resize: aspect-preserving, bicubic + antialias, sides multiple of 48 px, at most 9 x tokens patches
+    pixel_scale: RGB / 255 (the model applies 2x - 1)
+    patch_layout: row-major patches, each [16 rows][16 cols][RGB]
+    position_table:
+      file: position_embeddings.f16
+      dtype: float16
+      shape:
+      - 2
+      - 1024
+      - 768
+      use: table[0][x] + table[1][y] per patch, zero for padding
+    boi_token_id: 255999
+    eoi_token_id: 258882
+    text_sequence: <bos> <|image> [image tokens] <image|> <eos> -> smallest embed_S that fits
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-09T10:21:33.000Z'

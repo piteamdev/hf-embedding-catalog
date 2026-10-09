@@ -1,0 +1,65 @@
+_id: 6a2e295cbfd3dc9c38cae61d
+id: YusongZhao666/csae-ckpt
+private: false
+pipeline_tag: feature-extraction
+tags:
+- feature-extraction
+- arxiv:2606.16193
+- license:mit
+- region:us
+downloads: 7
+likes: 0
+modelId: YusongZhao666/csae-ckpt
+author: YusongZhao666
+sha: a5a4e40f150bda1de46a22bf045e8b8d8fd92a1f
+lastModified: '2026-10-08T16:01:48.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: ae.pt
+- rfilename: config.json
+spaces: []
+createdAt: '2026-06-14T04:09:00.000Z'
+usedStorage: 245922565
+downloadsAllTime: 31
+inferenceProviderMapping: {}
+configJson:
+  trainer:
+    trainer_class: TwoLevelBatchTopKTrainer
+    wandb_name: csae_ImageNet_Qwen_layer_model_visual_blocks_23_trainer_0
+    lm_name: Qwen
+    layer: model.visual.blocks.23
+    submodule_name: ImageNet_Qwen_layer_model_visual_blocks_23
+    device: cuda:1
+    steps: 488281
+    warmup_steps: 500
+    decay_start: 390624
+    activation_dim: 1024
+    dict_size1: 20000
+    dict_size2: 10000
+    k1_target: 6
+    k2_target: 1
+    lr1: 0.0001
+    lr2: 0.0001
+    threshold_beta: 0.999
+    threshold_start_step1: 1000
+    threshold_start_step2: 1000
+    sae2_start_step: 10000
+    sae2_update_every: 1
+    sae2_use_alive_only: true
+    sae2_min_alive: 1
+    k1_anneal_steps: 48828
+    k2_anneal_steps: 48828
+    sae2_loss_alpha: 1.0
+    seed: 0
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-09T10:21:33.000Z'

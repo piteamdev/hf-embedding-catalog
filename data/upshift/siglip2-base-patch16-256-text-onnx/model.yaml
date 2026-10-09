@@ -1,0 +1,89 @@
+_id: 6ac7967fc792fb9d0d4e3404
+id: upshift/siglip2-base-patch16-256-text-onnx
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- siglip
+- siglip2
+- onnxruntime-web
+- webgpu
+- text-embeddings
+- feature-extraction
+- arxiv:2502.14786
+- base_model:google/siglip2-base-patch16-256
+- base_model:quantized:google/siglip2-base-patch16-256
+- license:apache-2.0
+- region:us
+downloads: 13
+likes: 0
+modelId: upshift/siglip2-base-patch16-256-text-onnx
+author: upshift
+sha: f1d79339bfb8fb9391d9b5469d94258272b8f3df
+lastModified: '2026-10-08T13:11:29.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: siglip
+  tokenizer_config:
+    bos_token: <bos>
+    chat_template: '{{ bos_token }}{% if messages[0][''role''] == ''system'' %}{{ raise_exception(''System role not supported'')
+      }}{% endif %}{% for message in messages %}{% if (message[''role''] == ''user'') != (loop.index0 % 2 == 0) %}{{ raise_exception(''Conversation
+      roles must alternate user/assistant/user/assistant/...'') }}{% endif %}{% if (message[''role''] == ''assistant'') %}{%
+      set role = ''model'' %}{% else %}{% set role = message[''role''] %}{% endif %}{{ ''<start_of_turn>'' + role + ''
+
+      '' + message[''content''] | trim + ''<end_of_turn>
+
+      '' }}{% endfor %}{% if add_generation_prompt %}{{''<start_of_turn>model
+
+      ''}}{% endif %}'
+    eos_token: <eos>
+    pad_token: <pad>
+    unk_token: <unk>
+    use_default_system_prompt: false
+cardData:
+  license: apache-2.0
+  base_model: google/siglip2-base-patch16-256
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  tags:
+  - siglip2
+  - onnx
+  - onnxruntime-web
+  - webgpu
+  - text-embeddings
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: export_meta.json
+- rfilename: special_tokens_map.json
+- rfilename: text_model.onnx
+- rfilename: text_model.onnx_data
+- rfilename: text_model_fp16.onnx
+- rfilename: text_model_fp16.onnx_data
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-08T13:11:27.000Z'
+usedStorage: 1728604381
+downloadsAllTime: 13
+inferenceProviderMapping: {}
+configJson:
+  initializer_factor: 1.0
+  model_type: siglip
+  text_config:
+    model_type: siglip_text_model
+    vocab_size: 256000
+  transformers_version: 4.49.0.dev0
+  vision_config:
+    image_size: 256
+    model_type: siglip_vision_model
+onnxFiles:
+  text_model.onnx: 0.2
+  text_model_fp16.onnx: 0.2
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-09T10:21:33.000Z'

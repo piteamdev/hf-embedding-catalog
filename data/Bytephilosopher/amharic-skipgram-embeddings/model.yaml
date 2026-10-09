@@ -1,0 +1,129 @@
+_id: 6ac8865d6829b7e131728de2
+id: Bytephilosopher/amharic-skipgram-embeddings
+private: false
+pipeline_tag: feature-extraction
+tags:
+- word-embeddings
+- skip-gram
+- amharic
+- geez-script
+- nlp
+- low-resource-nlp
+- from-scratch
+- feature-extraction
+- am
+- license:mit
+- model-index
+- region:us
+downloads: 0
+likes: 1
+modelId: Bytephilosopher/amharic-skipgram-embeddings
+author: Bytephilosopher
+sha: 3273f628acc6418775e3588ab75e7dd0019a87b3
+lastModified: '2026-10-09T06:26:38.000Z'
+gated: false
+disabled: false
+model-index:
+- name: amharic-skipgram-embeddings-scratch
+  results:
+  - task:
+      type: feature-extraction
+      name: Amharic Word Embeddings
+    dataset:
+      name: Custom Amharic Corpus
+      type: text
+      args: 800 sentences, 3264 tokens
+    metrics:
+    - name: Dataset Cross-Entropy Loss (J)
+      type: loss
+      value: 2.9256
+      description: Mean negative log-likelihood over all valid pairs at epoch 15 (reduced from 5.0563).
+      verified: false
+    - name: Perplexity (PPL)
+      type: perplexity
+      value: 18.65
+      description: Effective branching factor exp(J). Represents an 88.1% drop in prediction uncertainty compared to random
+        uniform guessing (157.0).
+      verified: false
+    - name: Semantic Purity@3
+      type: precision
+      value: 1
+      description: Fraction of Top-3 nearest neighbors belonging to the ground-truth semantic class (family, crops, cities,
+        beverages, colors).
+      verified: false
+    - name: Out-of-Vocabulary (OOV) Rate
+      type: error_rate
+      value: 0.023
+      description: Percentage of tokens mapped to <UNK> using frequency threshold min_count=2 (75 of 3264 tokens).
+      verified: false
+    - name: Numerical Gradient Relative Error
+      type: accuracy
+      value: 1.07e-11
+      description: Central difference finite-difference precision checking analytical gradients against numeric baseline.
+      verified: false
+config: {}
+cardData:
+  language:
+  - am
+  license: mit
+  tags:
+  - word-embeddings
+  - skip-gram
+  - amharic
+  - geez-script
+  - nlp
+  - low-resource-nlp
+  - from-scratch
+  pipeline_tag: feature-extraction
+  model-index:
+  - name: amharic-skipgram-embeddings-scratch
+    results:
+    - task:
+        type: feature-extraction
+        name: Amharic Word Embeddings
+      dataset:
+        name: Custom Amharic Corpus
+        type: text
+        args: 800 sentences, 3264 tokens
+      metrics:
+      - name: Dataset Cross-Entropy Loss (J)
+        type: loss
+        value: 2.9256
+        description: Mean negative log-likelihood over all valid pairs at epoch 15 (reduced from 5.0563).
+        verified: false
+      - name: Perplexity (PPL)
+        type: perplexity
+        value: 18.65
+        description: Effective branching factor exp(J). Represents an 88.1% drop in prediction uncertainty compared to random
+          uniform guessing (157.0).
+        verified: false
+      - name: Semantic Purity@3
+        type: precision
+        value: 1
+        description: Fraction of Top-3 nearest neighbors belonging to the ground-truth semantic class (family, crops, cities,
+          beverages, colors).
+        verified: false
+      - name: Out-of-Vocabulary (OOV) Rate
+        type: error_rate
+        value: 0.023
+        description: Percentage of tokens mapped to <UNK> using frequency threshold min_count=2 (75 of 3264 tokens).
+        verified: false
+      - name: Numerical Gradient Relative Error
+        type: accuracy
+        value: 1.07e-11
+        description: Central difference finite-difference precision checking analytical gradients against numeric baseline.
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: model.json
+spaces: []
+createdAt: '2026-10-09T06:14:53.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-09T10:21:33.000Z'

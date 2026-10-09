@@ -1,0 +1,70 @@
+_id: 6ac81023f5cc1a0080c5a7d4
+id: zeechimp/holo-curiosity
+private: false
+pipeline_tag: feature-extraction
+library_name: holo-curiosity
+tags:
+- holo-curiosity
+- memory
+- curiosity
+- active-learning
+- question-generation
+- schema-completion
+- associative-memory
+- hyperdimensional-computing
+- vector-symbolic-architecture
+- numpy
+- educational
+- research
+- feature-extraction
+- en
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 1
+modelId: zeechimp/holo-curiosity
+author: zeechimp
+sha: 768433e383bd4291e1c911150b6a130a9f57da08
+lastModified: '2026-10-08T21:54:29.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  language:
+  - en
+  license: apache-2.0
+  library_name: holo-curiosity
+  tags:
+  - memory
+  - curiosity
+  - active-learning
+  - question-generation
+  - schema-completion
+  - associative-memory
+  - hyperdimensional-computing
+  - vector-symbolic-architecture
+  - numpy
+  - educational
+  - research
+  datasets: []
+  metrics:
+  - question-diversity
+  - info-gain-ranking
+  - schema-coverage
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: holo_curiosity.py
+spaces: []
+createdAt: '2026-10-08T21:50:27.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-09T10:21:33.000Z'

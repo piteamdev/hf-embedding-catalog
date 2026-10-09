@@ -1,0 +1,48 @@
+_id: 6ac87a49a4cc3304ff5615d1
+id: Nahom123/ethiopian-word-embeddings-from-scratch
+private: false
+pipeline_tag: feature-extraction
+tags:
+- word-embeddings
+- skip-gram
+- word2vec
+- ethiopian-languages
+- feature-extraction
+- am
+- license:mit
+- region:us
+downloads: 0
+likes: 1
+modelId: Nahom123/ethiopian-word-embeddings-from-scratch
+author: Nahom123
+sha: 5e4d165f81a6ebf1576264e355cac3c2c1ad946e
+lastModified: '2026-10-09T05:56:39.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  language:
+  - am
+  pipeline_tag: feature-extraction
+  tags:
+  - word-embeddings
+  - skip-gram
+  - word2vec
+  - ethiopian-languages
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: amharic_skipgram.json
+- rfilename: skipgram.py
+spaces: []
+createdAt: '2026-10-09T05:23:21.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-09T10:21:33.000Z'

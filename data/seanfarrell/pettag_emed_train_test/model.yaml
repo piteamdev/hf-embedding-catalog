@@ -1,0 +1,155 @@
+_id: 6ac9936ea58766dba42dfb24
+id: seanfarrell/pettag_emed_train_test
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- mpnet
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:10000000
+- loss:MultipleNegativesRankingLoss
+- arxiv:1908.10084
+- arxiv:1807.03748
+- base_model:sentence-transformers/all-mpnet-base-v2
+- base_model:finetune:sentence-transformers/all-mpnet-base-v2
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 12
+likes: 0
+modelId: seanfarrell/pettag_emed_train_test
+author: seanfarrell
+sha: 2b2d2ad159a4044b5292857ca04935fd9d0785cb
+lastModified: '2026-10-10T01:23:02.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: suntan
+  sentences:
+  - mpox
+  - Suntan
+  - acne rosacea
+- source_sentence: tetanus
+  sentences:
+  - periorchitis
+  - Dacryolith
+  - lock-jaw
+- source_sentence: Pruritus
+  sentences:
+  - Panuveitis
+  - otomycosis
+  - pruritus
+- source_sentence: ingrown nail
+  sentences:
+  - Amoebiasis
+  - onyxis
+  - Erysipelas
+- source_sentence: Pythiosis
+  sentences:
+  - Porphyrias
+  - Nasal step
+  - pythiosis
+model-index: null
+config:
+  architectures:
+  - MPNetModel
+  model_type: mpnet
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: '[UNK]'
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:10000000
+  - loss:MultipleNegativesRankingLoss
+  base_model: sentence-transformers/all-mpnet-base-v2
+  widget:
+  - source_sentence: suntan
+    sentences:
+    - mpox
+    - Suntan
+    - acne rosacea
+  - source_sentence: tetanus
+    sentences:
+    - periorchitis
+    - Dacryolith
+    - lock-jaw
+  - source_sentence: Pruritus
+    sentences:
+    - Panuveitis
+    - otomycosis
+    - pruritus
+  - source_sentence: ingrown nail
+    sentences:
+    - Amoebiasis
+    - onyxis
+    - Erysipelas
+  - source_sentence: Pythiosis
+    sentences:
+    - Porphyrias
+    - Nasal step
+    - pythiosis
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Normalize/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-10T01:22:54.000Z'
+safetensors:
+  parameters:
+    F32: 109486464
+  total: 109486464
+usedStorage: 437967672
+downloadsAllTime: 12
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - MPNetModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  dtype: float32
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 514
+  model_type: mpnet
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 1
+  relative_attention_num_buckets: 32
+  tie_word_embeddings: true
+  transformers_version: 5.19.0
+  vocab_size: 30527
+onnxFiles: {}
+safetensorsSizeMb: 438.0
+approxSizeMb: 437.9
+fetchedAt: '2026-10-10T09:41:39.000Z'

@@ -1,0 +1,201 @@
+_id: 6ac7dbf4f5cc1a0080bd082e
+id: eulogik/bharat-embed-270m-gemma2
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- onnx
+- safetensors
+- embedding_gemma2
+- hinglish
+- indic-rag
+- on-device
+- gguf
+- mrl
+- matryoshka
+- qdrant
+- hindi
+- sentence-similarity
+- hi
+- en
+- dataset:eulogik/bharat-embed-triplets-40k
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 11
+likes: 0
+modelId: eulogik/bharat-embed-270m-gemma2
+author: eulogik
+sha: 88c165eef9655be4fe8373f9f40ee93b2f1632af
+lastModified: '2026-10-09T10:57:59.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - EmbeddingGemma2Model
+  model_type: embedding_gemma2
+  tokenizer_config:
+    bos_token: <bos>
+    eos_token: <eos>
+    mask_token: <mask>
+    pad_token: <pad>
+    unk_token: <unk>
+  chat_template_jinja: '{%- for msg in messages if msg.get(''role'') == ''system'' -%}{%- if msg.get(''content'') is string
+    -%}{{ msg[''content''] }}{%- else -%}{%- for item in msg[''content''] if item.get(''type'') == ''text'' -%}{{ item[''text'']
+    }}{%- endfor -%}{%- endif -%}{%- endfor -%}{%- for msg in messages if msg.get(''role'') != ''system'' -%}{%- if msg.get(''content'')
+    is string -%}{{ msg[''content''] }}{%- else -%}{%- set existing_text = msg[''content''] | selectattr(''type'', ''equalto'',
+    ''text'') | map(attribute=''text'') | join -%}{%- set has_manual_placeholders = (''<|image|>'' in existing_text) or (''<|video|>''
+    in existing_text) or (''<|audio|>'' in existing_text) -%}{%- for item in msg[''content''] -%}{%- if item.get(''type'')
+    == ''text'' -%}{{ item[''text''] }}{%- elif not has_manual_placeholders and item.get(''type'') == ''image'' -%}<|image|>{%-
+    elif not has_manual_placeholders and item.get(''type'') == ''video'' -%}<|video|>{%- elif not has_manual_placeholders
+    and item.get(''type'') == ''audio'' -%}<|audio|>{%- endif -%}{%- endfor -%}{%- endif -%}{%- endfor -%}'
+cardData:
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  license: apache-2.0
+  base_model: google/embeddinggemma-2
+  language:
+  - hi
+  - en
+  tags:
+  - hinglish
+  - indic-rag
+  - on-device
+  - onnx
+  - gguf
+  - mrl
+  - matryoshka
+  - qdrant
+  - hindi
+  datasets:
+  - eulogik/bharat-embed-triplets-40k
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Normalize/config.json
+- rfilename: README.md
+- rfilename: assets/architecture.png
+- rfilename: assets/hero.png
+- rfilename: assets/truncation.png
+- rfilename: chat_template.jinja
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: eval/results.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: onnx/chat_template.jinja
+- rfilename: onnx/model.onnx
+- rfilename: onnx/model.onnx.data
+- rfilename: onnx/model_int8.onnx
+- rfilename: onnx/tokenizer.json
+- rfilename: onnx/tokenizer_config.json
+- rfilename: processor_config.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces:
+- eulogik/bharat-embed-search
+createdAt: '2026-10-08T18:07:48.000Z'
+safetensors:
+  parameters:
+    F32: 271002648
+  total: 271002648
+usedStorage: 3591631784
+downloadsAllTime: 11
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - EmbeddingGemma2Model
+  audio_config: null
+  audio_token_id: 258881
+  boa_token_id: 256000
+  boi_token_id: 255999
+  dtype: float32
+  eoa_token_index: 258883
+  eoi_token_id: 258882
+  image_token_id: 258880
+  initializer_range: 0.02
+  model_type: embedding_gemma2
+  text_config:
+    attention_bias: false
+    attention_dropout: 0.0
+    bos_token_id: 2
+    dtype: float32
+    embedding_dim: 768
+    eos_token_id: 1
+    head_dim: 256
+    hidden_activation: gelu_pytorch_tanh
+    hidden_size: 512
+    hidden_size_per_layer_input: 512
+    initializer_range: 0.02
+    intermediate_size: 2048
+    layer_types:
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    max_position_embeddings: 262144
+    model_type: embedding_gemma2_text
+    num_attention_heads: 4
+    num_hidden_layers: 24
+    num_key_value_heads: 2
+    pad_token_id: 0
+    per_layer_config:
+      '05':
+        head_dim: 512
+        num_key_value_heads: 1
+      '11':
+        head_dim: 512
+        num_key_value_heads: 1
+      '17':
+        head_dim: 512
+        num_key_value_heads: 1
+      '23':
+        head_dim: 512
+        num_key_value_heads: 1
+    rms_norm_eps: 1.0e-06
+    rope_parameters:
+      full_attention:
+        rope_theta: 1000000.0
+        rope_type: default
+      sliding_attention:
+        rope_theta: 10000.0
+        rope_type: default
+    sliding_window: 512
+    vocab_size: 262144
+  transformers_version: 5.19.0.dev0
+  use_cache: false
+  video_token_id: 258884
+  vision_config: null
+  vision_soft_tokens_per_image: 280
+onnxFiles:
+  onnx/model.onnx: 8.2
+  onnx/model_int8.onnx: 278.9
+safetensorsSizeMb: 1084.1
+approxSizeMb: 1084.0
+fetchedAt: '2026-10-10T09:41:39.000Z'

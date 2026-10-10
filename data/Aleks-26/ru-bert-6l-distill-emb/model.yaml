@@ -1,0 +1,65 @@
+_id: 6ac962eca58766dba42491b0
+id: Aleks-26/ru-bert-6l-distill-emb
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- sentence-similarity
+- feature-extraction
+- russian
+- distillation
+- semantic-search
+- ru
+- base_model:DeepPavlov/rubert-base-cased-sentence
+- base_model:finetune:DeepPavlov/rubert-base-cased-sentence
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: Aleks-26/ru-bert-6l-distill-emb
+author: Aleks-26
+sha: b9f0993a9f2a25428dfc21b8be583e08edc77baf
+lastModified: '2026-10-09T22:06:43.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  language:
+  - ru
+  base_model:
+  - DeepPavlov/rubert-base-cased-sentence
+  library_name: transformers
+  tags:
+  - sentence-similarity
+  - feature-extraction
+  - russian
+  - distillation
+  - semantic-search
+transformersInfo:
+  auto_model: AutoModel
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: attention_pooling.pt
+- rfilename: bert/config.json
+- rfilename: bert/model.safetensors
+- rfilename: meta.json
+- rfilename: tokenizer/tokenizer.json
+- rfilename: tokenizer/tokenizer_config.json
+- rfilename: usage.py
+- rfilename: whitening.npz
+spaces: []
+createdAt: '2026-10-09T21:55:56.000Z'
+usedStorage: 541321459
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 539.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-10T09:41:39.000Z'

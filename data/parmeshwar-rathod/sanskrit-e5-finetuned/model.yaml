@@ -1,0 +1,218 @@
+_id: 6ac9d493a58766dba43a0f0e
+id: parmeshwar-rathod/sanskrit-e5-finetuned
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:52
+- loss:MultipleNegativesRankingLoss
+- arxiv:1908.10084
+- arxiv:1807.03748
+- base_model:intfloat/multilingual-e5-small
+- base_model:finetune:intfloat/multilingual-e5-small
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: parmeshwar-rathod/sanskrit-e5-finetuned
+author: parmeshwar-rathod
+sha: 5183a64ad5ddc20a89d0ebfd79e4f35efe00b531
+lastModified: '2026-10-10T09:36:48.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: 'query: qualities that constitute true knowledge'
+  sentences:
+  - 'passage: यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः। तदर्थं कर्म कौन्तेय मुक्तसङ्गः समाचर॥ (yajnarthat karmano ''nyatra)
+    — Work done as an offering frees a person from bondage; all other work binds one to this world, so one should act without
+    attachment, treating action as an offering.'
+  - 'passage: अमानित्वमदम्भित्वमहिंसा क्षान्तिरार्जवम्। आचार्योपासनं शौचं स्थैर्यमात्मविनिग्रहः॥ (amanitvam adambhitvam ahimsa
+    ksantir arjavam) — Humility, freedom from pretension, non-violence, patience, honesty, service to a teacher, purity, steadfastness
+    and self-control are described as constituting true knowledge.'
+  - 'passage: अद्वेष्टा सर्वभूतानां मैत्रः करुण एव च। निर्ममो निरहङ्कारः समदुःखसुखः क्षमी॥ (advesta sarva-bhutanam maitrah
+    karuna eva ca) — One who bears no ill will toward any being, who is friendly and compassionate, free from possessiveness
+    and ego, equal in pleasure and pain, and forgiving — such a person is dear.'
+- source_sentence: 'query: krishna''s first response to arjuna''s sorrow'
+  sentences:
+  - 'passage: कर्मण्यकर्म यः पश्येदकर्मणि च कर्म यः। स बुद्धिमान्मनुष्येषु स युक्तः कृत्स्नकर्मकृत्॥ (karmany akarma yah pasyed)
+    — One who sees inaction in action, and action in inaction, is wise among people; such a person, though engaged in all
+    activities, remains a true practitioner of yoga.'
+  - 'passage: अशोच्यानन्वशोचस्त्वं प्रज्ञावादांश्च भाषसे। गतासूनगतासूंश्च नानुशोचन्ति पण्डिताः॥ (asocyan anvasocas tvam) —
+    You grieve for those who should not be grieved for, yet you speak words of wisdom; the truly wise do not mourn for the
+    living or the dead.'
+  - 'passage: अद्वेष्टा सर्वभूतानां मैत्रः करुण एव च। निर्ममो निरहङ्कारः समदुःखसुखः क्षमी॥ (advesta sarva-bhutanam maitrah
+    karuna eva ca) — One who bears no ill will toward any being, who is friendly and compassionate, free from possessiveness
+    and ego, equal in pleasure and pain, and forgiving — such a person is dear.'
+- source_sentence: 'query: what is the eternal fragment in living beings'
+  sentences:
+  - 'passage: ममैवांशो जीवलोके जीवभूतः सनातनः। मनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति॥ (mamaivamso jiva-loke) — The individual
+    soul in this world is an eternal fragment of the divine self, and it draws to itself the mind and the five senses situated
+    in material nature.'
+  - 'passage: मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः। आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत॥ (matra-sparsas tu kaunteya)
+    — Contact between the senses and their objects gives rise to heat and cold, pleasure and pain; these are fleeting and
+    impermanent, so one should learn to tolerate them.'
+  - 'passage: कर्मण्यकर्म यः पश्येदकर्मणि च कर्म यः। स बुद्धिमान्मनुष्येषु स युक्तः कृत्स्नकर्मकृत्॥ (karmany akarma yah pasyed)
+    — One who sees inaction in action, and action in inaction, is wise among people; such a person, though engaged in all
+    activities, remains a true practitioner of yoga.'
+- source_sentence: 'query: what should a person renounce'
+  sentences:
+  - 'passage: अद्वेष्टा सर्वभूतानां मैत्रः करुण एव च। निर्ममो निरहङ्कारः समदुःखसुखः क्षमी॥ (advesta sarva-bhutanam maitrah
+    karuna eva ca) — One who bears no ill will toward any being, who is friendly and compassionate, free from possessiveness
+    and ego, equal in pleasure and pain, and forgiving — such a person is dear.'
+  - 'passage: यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः। तदर्थं कर्म कौन्तेय मुक्तसङ्गः समाचर॥ (yajnarthat karmano ''nyatra)
+    — Work done as an offering frees a person from bondage; all other work binds one to this world, so one should act without
+    attachment, treating action as an offering.'
+  - 'passage: त्रिविधं नरकस्येदं द्वारं नाशनमात्मनः। कामः क्रोधस्तथा लोभस्तस्मादेतत्त्रयं त्यजेत्॥ (tri-vidham narakasyedam)
+    — Lust, anger and greed are the three gateways to self-destruction; a person should abandon all three.'
+- source_sentence: 'query: psychology of desire and anger'
+  sentences:
+  - 'passage: मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः। आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत॥ (matra-sparsas tu kaunteya)
+    — Contact between the senses and their objects gives rise to heat and cold, pleasure and pain; these are fleeting and
+    impermanent, so one should learn to tolerate them.'
+  - 'passage: अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते। तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम्॥ (ananyas cintayanto
+    mam) — For those who worship with single-minded devotion, thinking of nothing else, I personally provide for what they
+    lack and preserve what they have.'
+  - 'passage: ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते। सङ्गात्सञ्जायते कामः कामात्क्रोधोऽभिजायते॥ (dhyayato visayan pumsah sangas
+    tesupajayate) — Dwelling on sense objects creates attachment; attachment breeds desire; and desire, when frustrated, gives
+    rise to anger.'
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: <unk>
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:52
+  - loss:MultipleNegativesRankingLoss
+  base_model: intfloat/multilingual-e5-small
+  widget:
+  - source_sentence: 'query: qualities that constitute true knowledge'
+    sentences:
+    - 'passage: यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः। तदर्थं कर्म कौन्तेय मुक्तसङ्गः समाचर॥ (yajnarthat karmano ''nyatra)
+      — Work done as an offering frees a person from bondage; all other work binds one to this world, so one should act without
+      attachment, treating action as an offering.'
+    - 'passage: अमानित्वमदम्भित्वमहिंसा क्षान्तिरार्जवम्। आचार्योपासनं शौचं स्थैर्यमात्मविनिग्रहः॥ (amanitvam adambhitvam
+      ahimsa ksantir arjavam) — Humility, freedom from pretension, non-violence, patience, honesty, service to a teacher,
+      purity, steadfastness and self-control are described as constituting true knowledge.'
+    - 'passage: अद्वेष्टा सर्वभूतानां मैत्रः करुण एव च। निर्ममो निरहङ्कारः समदुःखसुखः क्षमी॥ (advesta sarva-bhutanam maitrah
+      karuna eva ca) — One who bears no ill will toward any being, who is friendly and compassionate, free from possessiveness
+      and ego, equal in pleasure and pain, and forgiving — such a person is dear.'
+  - source_sentence: 'query: krishna''s first response to arjuna''s sorrow'
+    sentences:
+    - 'passage: कर्मण्यकर्म यः पश्येदकर्मणि च कर्म यः। स बुद्धिमान्मनुष्येषु स युक्तः कृत्स्नकर्मकृत्॥ (karmany akarma yah
+      pasyed) — One who sees inaction in action, and action in inaction, is wise among people; such a person, though engaged
+      in all activities, remains a true practitioner of yoga.'
+    - 'passage: अशोच्यानन्वशोचस्त्वं प्रज्ञावादांश्च भाषसे। गतासूनगतासूंश्च नानुशोचन्ति पण्डिताः॥ (asocyan anvasocas tvam)
+      — You grieve for those who should not be grieved for, yet you speak words of wisdom; the truly wise do not mourn for
+      the living or the dead.'
+    - 'passage: अद्वेष्टा सर्वभूतानां मैत्रः करुण एव च। निर्ममो निरहङ्कारः समदुःखसुखः क्षमी॥ (advesta sarva-bhutanam maitrah
+      karuna eva ca) — One who bears no ill will toward any being, who is friendly and compassionate, free from possessiveness
+      and ego, equal in pleasure and pain, and forgiving — such a person is dear.'
+  - source_sentence: 'query: what is the eternal fragment in living beings'
+    sentences:
+    - 'passage: ममैवांशो जीवलोके जीवभूतः सनातनः। मनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति॥ (mamaivamso jiva-loke) — The individual
+      soul in this world is an eternal fragment of the divine self, and it draws to itself the mind and the five senses situated
+      in material nature.'
+    - 'passage: मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः। आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत॥ (matra-sparsas tu kaunteya)
+      — Contact between the senses and their objects gives rise to heat and cold, pleasure and pain; these are fleeting and
+      impermanent, so one should learn to tolerate them.'
+    - 'passage: कर्मण्यकर्म यः पश्येदकर्मणि च कर्म यः। स बुद्धिमान्मनुष्येषु स युक्तः कृत्स्नकर्मकृत्॥ (karmany akarma yah
+      pasyed) — One who sees inaction in action, and action in inaction, is wise among people; such a person, though engaged
+      in all activities, remains a true practitioner of yoga.'
+  - source_sentence: 'query: what should a person renounce'
+    sentences:
+    - 'passage: अद्वेष्टा सर्वभूतानां मैत्रः करुण एव च। निर्ममो निरहङ्कारः समदुःखसुखः क्षमी॥ (advesta sarva-bhutanam maitrah
+      karuna eva ca) — One who bears no ill will toward any being, who is friendly and compassionate, free from possessiveness
+      and ego, equal in pleasure and pain, and forgiving — such a person is dear.'
+    - 'passage: यज्ञार्थात्कर्मणोऽन्यत्र लोकोऽयं कर्मबन्धनः। तदर्थं कर्म कौन्तेय मुक्तसङ्गः समाचर॥ (yajnarthat karmano ''nyatra)
+      — Work done as an offering frees a person from bondage; all other work binds one to this world, so one should act without
+      attachment, treating action as an offering.'
+    - 'passage: त्रिविधं नरकस्येदं द्वारं नाशनमात्मनः। कामः क्रोधस्तथा लोभस्तस्मादेतत्त्रयं त्यजेत्॥ (tri-vidham narakasyedam)
+      — Lust, anger and greed are the three gateways to self-destruction; a person should abandon all three.'
+  - source_sentence: 'query: psychology of desire and anger'
+    sentences:
+    - 'passage: मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः। आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत॥ (matra-sparsas tu kaunteya)
+      — Contact between the senses and their objects gives rise to heat and cold, pleasure and pain; these are fleeting and
+      impermanent, so one should learn to tolerate them.'
+    - 'passage: अनन्याश्चिन्तयन्तो मां ये जनाः पर्युपासते। तेषां नित्याभियुक्तानां योगक्षेमं वहाम्यहम्॥ (ananyas cintayanto
+      mam) — For those who worship with single-minded devotion, thinking of nothing else, I personally provide for what they
+      lack and preserve what they have.'
+    - 'passage: ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते। सङ्गात्सञ्जायते कामः कामात्क्रोधोऽभिजायते॥ (dhyayato visayan pumsah
+      sangas tesupajayate) — Dwelling on sense objects creates attachment; attachment breeds desire; and desire, when frustrated,
+      gives rise to anger.'
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-10T06:00:51.000Z'
+safetensors:
+  parameters:
+    F32: 117653760
+  total: 117653760
+usedStorage: 487720404
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  initializer_range: 0.02
+  intermediate_size: 1536
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 1
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  tokenizer_class: XLMRobertaTokenizer
+  transformers_version: 5.15.0
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 250037
+onnxFiles: {}
+safetensorsSizeMb: 470.6
+approxSizeMb: 470.6
+fetchedAt: '2026-10-10T09:41:39.000Z'

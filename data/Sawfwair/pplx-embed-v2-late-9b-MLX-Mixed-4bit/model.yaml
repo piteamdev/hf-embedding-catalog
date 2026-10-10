@@ -1,0 +1,1020 @@
+_id: 6ac93278b0d942380f37bd94
+id: Sawfwair/pplx-embed-v2-late-9b-MLX-Mixed-4bit
+private: false
+pipeline_tag: feature-extraction
+library_name: mlx
+tags:
+- mlx
+- safetensors
+- qwen3_5
+- quantized
+- embeddings
+- feature-extraction
+- base_model:perplexity-ai/pplx-embed-v2-late-9b
+- base_model:finetune:perplexity-ai/pplx-embed-v2-late-9b
+- license:mit
+- region:us
+downloads: 14
+likes: 0
+modelId: Sawfwair/pplx-embed-v2-late-9b-MLX-Mixed-4bit
+author: Sawfwair
+sha: 7309bd8d28fd8e0a9a27033f3d13cc2d7a5cf219
+lastModified: '2026-10-09T19:02:14.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - Qwen3_5Model
+  model_type: qwen3_5
+  tokenizer_config:
+    bos_token: null
+    eos_token: <|im_end|>
+    pad_token: <|endoftext|>
+    unk_token: null
+  chat_template_jinja: '{%- for message in messages if message[''role''] == ''system'' -%}
+
+    {%- for content in message[''content''] -%}{{ content[''text''] }}{%- endfor -%}
+
+    {%- endfor -%}
+
+    {%- for message in messages if message[''role''] != ''system'' -%}
+
+    {%- for content in message[''content''] if content[''type''] == ''image'' -%}
+
+    {{ ''<|vision_start|><|image_pad|><|vision_end|>'' }}
+
+    {%- endfor -%}
+
+    {%- for content in message[''content''] if content[''type''] == ''text'' -%}
+
+    {{ content[''text''] }}
+
+    {%- endfor -%}
+
+    {%- endfor -%}'
+cardData:
+  license: mit
+  base_model: perplexity-ai/pplx-embed-v2-late-9b
+  pipeline_tag: feature-extraction
+  tags:
+  - mlx
+  - quantized
+  - embeddings
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Dense/config.json
+- rfilename: 1_Dense/model.safetensors
+- rfilename: 2_MultiVectorMask/config.json
+- rfilename: 3_Normalize/config.json
+- rfilename: MODIFICATIONS.md
+- rfilename: PPLX_APPLE_QUALIFICATION.json
+- rfilename: PPLX_CONVERSION.json
+- rfilename: PPLX_QUALIFICATION.json
+- rfilename: PPLX_REFERENCE_VECTORS.json
+- rfilename: README.md
+- rfilename: SHA256SUMS
+- rfilename: UPSTREAM_MODEL_CARD.md
+- rfilename: chat_template.jinja
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: convert_pplx_embed_v2_mlx.py
+- rfilename: diagnostic-image.png
+- rfilename: mererun_model.json
+- rfilename: model.safetensors
+- rfilename: model.safetensors.index.json
+- rfilename: modules.json
+- rfilename: processor_config.json
+- rfilename: publish_pplx_embed_v2_mlx.py
+- rfilename: qualify_pplx_embed_v2_mlx.py
+- rfilename: requirements.txt
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-09T18:29:12.000Z'
+safetensors:
+  parameters:
+    U32: 8946450432
+    F32: 463363312
+  total: 9409813744
+usedStorage: 7340069588
+downloadsAllTime: 14
+inferenceProviderMapping: {}
+configJson:
+  _conversion_notice: Sawfwair MLX mixed Q4/Q8; FP32 gates, norms, vision and output heads. See MODIFICATIONS.md.
+  architectures:
+  - Qwen3_5Model
+  dtype: float32
+  image_token_id: 248056
+  model_type: qwen3_5
+  quantization:
+    bits: 4
+    group_size: 64
+    mode: affine
+    modules:
+      embed_tokens:
+        bits: 8
+        group_size: 64
+        mode: affine
+      layers.0.linear_attn.in_proj_qkv:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.0.linear_attn.in_proj_z:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.0.linear_attn.out_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.0.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.0.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.0.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.1.linear_attn.in_proj_qkv:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.1.linear_attn.in_proj_z:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.1.linear_attn.out_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.1.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.1.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.1.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.10.linear_attn.in_proj_qkv:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.10.linear_attn.in_proj_z:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.10.linear_attn.out_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.10.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.10.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.10.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.11.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.11.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.11.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.11.self_attn.k_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.11.self_attn.o_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.11.self_attn.q_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.11.self_attn.v_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.12.linear_attn.in_proj_qkv:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.12.linear_attn.in_proj_z:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.12.linear_attn.out_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.12.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.12.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.12.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.13.linear_attn.in_proj_qkv:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.13.linear_attn.in_proj_z:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.13.linear_attn.out_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.13.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.13.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.13.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.14.linear_attn.in_proj_qkv:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.14.linear_attn.in_proj_z:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.14.linear_attn.out_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.14.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.14.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.14.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.15.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.15.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.15.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.15.self_attn.k_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.15.self_attn.o_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.15.self_attn.q_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.15.self_attn.v_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.16.linear_attn.in_proj_qkv:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.16.linear_attn.in_proj_z:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.16.linear_attn.out_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.16.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.16.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.16.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.17.linear_attn.in_proj_qkv:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.17.linear_attn.in_proj_z:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.17.linear_attn.out_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.17.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.17.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.17.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.18.linear_attn.in_proj_qkv:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.18.linear_attn.in_proj_z:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.18.linear_attn.out_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.18.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.18.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.18.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.19.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.19.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.19.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.19.self_attn.k_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.19.self_attn.o_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.19.self_attn.q_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.19.self_attn.v_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.2.linear_attn.in_proj_qkv:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.2.linear_attn.in_proj_z:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.2.linear_attn.out_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.2.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.2.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.2.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.20.linear_attn.in_proj_qkv:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.20.linear_attn.in_proj_z:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.20.linear_attn.out_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.20.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.20.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.20.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.21.linear_attn.in_proj_qkv:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.21.linear_attn.in_proj_z:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.21.linear_attn.out_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.21.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.21.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.21.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.22.linear_attn.in_proj_qkv:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.22.linear_attn.in_proj_z:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.22.linear_attn.out_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.22.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.22.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.22.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.23.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.23.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.23.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.23.self_attn.k_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.23.self_attn.o_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.23.self_attn.q_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.23.self_attn.v_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.24.linear_attn.in_proj_qkv:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.24.linear_attn.in_proj_z:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.24.linear_attn.out_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.24.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.24.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.24.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.25.linear_attn.in_proj_qkv:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.25.linear_attn.in_proj_z:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.25.linear_attn.out_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.25.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.25.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.25.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.26.linear_attn.in_proj_qkv:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.26.linear_attn.in_proj_z:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.26.linear_attn.out_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.26.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.26.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.26.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.27.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.27.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.27.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.27.self_attn.k_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.27.self_attn.o_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.27.self_attn.q_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.27.self_attn.v_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.28.linear_attn.in_proj_qkv:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.28.linear_attn.in_proj_z:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.28.linear_attn.out_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.28.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.28.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.28.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.29.linear_attn.in_proj_qkv:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.29.linear_attn.in_proj_z:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.29.linear_attn.out_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.29.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.29.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.29.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.3.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.3.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.3.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.3.self_attn.k_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.3.self_attn.o_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.3.self_attn.q_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.3.self_attn.v_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.30.linear_attn.in_proj_qkv:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.30.linear_attn.in_proj_z:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.30.linear_attn.out_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.30.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.30.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.30.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.31.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.31.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.31.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.31.self_attn.k_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.31.self_attn.o_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.31.self_attn.q_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.31.self_attn.v_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.4.linear_attn.in_proj_qkv:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.4.linear_attn.in_proj_z:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.4.linear_attn.out_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.4.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.4.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.4.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.5.linear_attn.in_proj_qkv:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.5.linear_attn.in_proj_z:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.5.linear_attn.out_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.5.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.5.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.5.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.6.linear_attn.in_proj_qkv:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.6.linear_attn.in_proj_z:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.6.linear_attn.out_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.6.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.6.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.6.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.7.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.7.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.7.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.7.self_attn.k_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.7.self_attn.o_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.7.self_attn.q_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.7.self_attn.v_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.8.linear_attn.in_proj_qkv:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.8.linear_attn.in_proj_z:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.8.linear_attn.out_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.8.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.8.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.8.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.9.linear_attn.in_proj_qkv:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.9.linear_attn.in_proj_z:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.9.linear_attn.out_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.9.mlp.down_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.9.mlp.gate_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+      layers.9.mlp.up_proj:
+        bits: 4
+        group_size: 64
+        mode: affine
+  text_config:
+    attention_bias: false
+    attention_dropout: 0.0
+    attn_output_gate: true
+    bos_token_id: null
+    dtype: float32
+    eos_token_id: 248044
+    full_attention_interval: 4
+    head_dim: 256
+    hidden_act: silu
+    hidden_size: 4096
+    initializer_range: 0.02
+    intermediate_size: 12288
+    is_causal: false
+    layer_types:
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    linear_conv_kernel_dim: 4
+    linear_key_head_dim: 128
+    linear_num_key_heads: 16
+    linear_num_value_heads: 32
+    linear_value_head_dim: 128
+    mamba_ssm_dtype: float32
+    max_position_embeddings: 262144
+    mlp_only_layers: []
+    model_type: qwen3_5_text
+    mtp_num_hidden_layers: 1
+    mtp_use_dedicated_embeddings: false
+    num_attention_heads: 16
+    num_hidden_layers: 32
+    num_key_value_heads: 4
+    pad_token_id: null
+    partial_rotary_factor: 0.25
+    rms_norm_eps: 1.0e-06
+    rope_parameters:
+      mrope_interleaved: true
+      mrope_section:
+      - 11
+      - 11
+      - 10
+      partial_rotary_factor: 0.25
+      rope_theta: 10000000
+      rope_type: default
+    tie_word_embeddings: false
+    use_cache: true
+    vocab_size: 248320
+  tie_word_embeddings: false
+  transformers_version: 5.3.0
+  video_token_id: 248057
+  vision_config:
+    deepstack_visual_indexes: []
+    depth: 27
+    dtype: float32
+    hidden_act: gelu_pytorch_tanh
+    hidden_size: 1152
+    in_channels: 3
+    initializer_range: 0.02
+    intermediate_size: 4304
+    model_type: qwen3_5
+    num_heads: 16
+    num_position_embeddings: 2304
+    out_hidden_size: 4096
+    patch_size: 16
+    spatial_merge_size: 2
+    temporal_patch_size: 2
+  vision_end_token_id: 248054
+  vision_start_token_id: 248053
+onnxFiles: {}
+safetensorsSizeMb: 7320.1
+approxSizeMb: 37639.3
+fetchedAt: '2026-10-10T09:41:39.000Z'

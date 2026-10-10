@@ -1,0 +1,90 @@
+_id: 6ac76384760a80df72f63599
+id: pantoniadis/RAGenome
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- ragenome
+- genomics
+- dna
+- language-model
+- feature-extraction
+- custom_code
+- arxiv:2610.11761
+- license:mit
+- endpoints_compatible
+- region:us
+downloads: 54
+likes: 1
+modelId: pantoniadis/RAGenome
+author: pantoniadis
+sha: 5b7ea9446367a8ed490a18f43b55ca2144c49903
+lastModified: '2026-10-09T13:06:28.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  auto_map:
+    AutoConfig: configuration_ragenome.RAGenomeConfig
+    AutoModel: modeling_ragenome.RAGenomeModel
+  model_type: ragenome
+  tokenizer_config:
+    bos_token: '[BOS]'
+    cls_token: '[CLS]'
+    eos_token: '[EOS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  library_name: transformers
+  license: mit
+  tags:
+  - genomics
+  - dna
+  - language-model
+  pipeline_tag: feature-extraction
+transformersInfo:
+  auto_model: AutoModel
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: configuration_ragenome.py
+- rfilename: model.safetensors
+- rfilename: modeling_ragenome.py
+- rfilename: ragenome_transformer.py
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-08T09:33:56.000Z'
+safetensors:
+  parameters:
+    F32: 167884635
+  total: 167884635
+usedStorage: 671556244
+downloadsAllTime: 54
+inferenceProviderMapping: {}
+configJson:
+  auto_map:
+    AutoConfig: configuration_ragenome.RAGenomeConfig
+    AutoModel: modeling_ragenome.RAGenomeModel
+  cross_depth: 3
+  dim: 1024
+  dim_head: 64
+  heads: 16
+  local_depth: 3
+  model_type: ragenome
+  retrieved_taxonomy_vocab_size: 317
+  rotary_emb_dim: 32
+  seq_vocab_size: 11
+  sliding_window: 512
+  transformers_version: 4.44.2
+onnxFiles: {}
+safetensorsSizeMb: 671.6
+approxSizeMb: 671.5
+fetchedAt: '2026-10-10T09:41:39.000Z'

@@ -1,0 +1,70 @@
+_id: 6ac990ba40d3356db8dc06b0
+id: peonist-ai/halogen-npu-qwen3-embedding-4b
+private: false
+pipeline_tag: feature-extraction
+library_name: halogen
+tags:
+- halogen
+- npu
+- ryzen-ai
+- xdna2
+- strix-halo
+- amd
+- embeddings
+- sentence-similarity
+- feature-extraction
+- base_model:Qwen/Qwen3-Embedding-4B
+- base_model:quantized:Qwen/Qwen3-Embedding-4B
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: peonist-ai/halogen-npu-qwen3-embedding-4b
+author: peonist-ai
+sha: 25a3bc00abb501b09bc98635f6b1faee5c0b8010
+lastModified: '2026-10-10T02:40:44.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: Qwen/Qwen3-Embedding-4B
+  base_model_relation: quantized
+  pipeline_tag: feature-extraction
+  library_name: halogen
+  inference: false
+  tags:
+  - halogen
+  - npu
+  - ryzen-ai
+  - xdna2
+  - strix-halo
+  - amd
+  - embeddings
+  - sentence-similarity
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: devices/NOTICE.md
+- rfilename: devices/consts.hnpb
+- rfilename: devices/devices.hnpm
+- rfilename: devices/u0.elf
+- rfilename: devices/u1.elf
+- rfilename: devices/u2.elf
+- rfilename: devices/u3.elf
+- rfilename: devices/u4.elf
+- rfilename: devices/u5.elf
+- rfilename: halogen.jpg
+- rfilename: qwen3-embedding-4b.hnpw
+- rfilename: tokenizer/tokenizer.json
+spaces: []
+createdAt: '2026-10-10T01:11:22.000Z'
+usedStorage: 4931687831
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-10T09:41:39.000Z'

@@ -1,0 +1,58 @@
+_id: 6ac945fde5b699dcf3e8cb6c
+id: bdrgon/clap-htsat-unfused-audio-embedder-onnx
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- audio
+- audio-embeddings
+- clap
+- feature-extraction
+- base_model:laion/clap-htsat-unfused
+- base_model:quantized:laion/clap-htsat-unfused
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: bdrgon/clap-htsat-unfused-audio-embedder-onnx
+author: bdrgon
+sha: 77d6240061941a614e0a0322cde680fed0e9c636
+lastModified: '2026-10-10T08:58:00.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: laion/clap-htsat-unfused
+  library_name: onnx
+  tags:
+  - audio
+  - audio-embeddings
+  - clap
+  - onnx
+  - feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: .gitignore
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: audio_model.onnx
+- rfilename: audio_model_int4.onnx
+- rfilename: audio_model_int8.onnx
+- rfilename: export_onnx.py
+spaces: []
+createdAt: '2026-10-09T19:52:29.000Z'
+usedStorage: 173346441
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  audio_model.onnx: 117.3
+  audio_model_int4.onnx: 22.3
+  audio_model_int8.onnx: 33.8
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-10T09:41:39.000Z'

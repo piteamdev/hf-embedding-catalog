@@ -1,0 +1,218 @@
+_id: 6ac9de0f33617a410d4e749d
+id: andreinsardi/bert-politica-br
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:148224
+- loss:MultipleNegativesRankingLoss
+- arxiv:1908.10084
+- arxiv:1807.03748
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: andreinsardi/bert-politica-br
+author: andreinsardi
+sha: 12ddea1ed66e34388001b2d54256565bfa556956
+lastModified: '2026-10-10T06:41:29.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: Olha o desespero deles, Tarcísio Gomes de Freitas reeleito no primeiro turno 🇧🇷🇧🇷🇧🇷🇧🇷🇧🇷🇧🇷🇧🇷🇧🇷🇧🇷
+  sentences:
+  - Cara sabotagem , para denegrirem imagem do Tarcísio Gomes de Freitas , saibamos que ele lidera pesquisas para governo
+    Sp . Não podemos descartar nada , Reeleito primeiro turno para governador sp.
+  - FLÁVIO BOLSONARO LAVADOR MASTER DE DINHEIRO ROUBADO!!!
+  - 'A 22 dias das eleições, a projeção para a bancada federal do Ceará aponta o PL como o maior partido do Estado, com 05
+    cadeiras. O cálculo considera votação superior a 400 mil votos para o deputado federal André Fernandes (PL-CE). ➡️ Para
+    mais informações, acesse cn7.com.br! 📱 #cn7 #cn7news #notícias #câmaradosdeputados #eleições2026'
+- source_sentence: '@OGloboPolitica Se alguém ainda enxergar o Lula como passaporte para um futuro melhor, depois do PT ficar
+    20 anos no poder, tem que ser muito burro ou muito malandro.'
+  sentences:
+  - 'Entrevista: ''Classe C não enxerga Lula ou Flávio como passaporte para futuro melhor'', diz presidente do Locomotiva
+    https://t.co/cqLhvyHsWb'
+  - Mendonça se recusa a entregar celular do vorcaro numa ação de auto blindagem e blindagem ao Flávio Bolsonaro e seus familiares
+    pois devem ter trocado centenas de mensagens muito comprometedoras criminosas quando acertavam propinas valores encontros
+    etc e talvez até o próprio Mendonça tenha trocado mensagens com vorcaro quando existiu entre eles um vínculo de amizade
+    aproximação com vorcaro deu presentes ternos a Mendonça e sabe Deus mais o que
+  - Gilmar e Dino entram em confronto com Fachin no STF bocadopovonews.com.br https://bocadopovonews.com.br/gilmar-e-dino-entram-em-confronto-com-fachin-no-stf/
+- source_sentence: "@enghumanista Claro que não. \n\nAlguém precisa ser os laranjas pra ele guardar o dinheiro.  \n\nUm filho\
+    \ saiu de tratador de elefante no zoológico de sp pra milionário.  \U0001F923\n\nCom filho na política: fica muito visível\
+    \ o enriquecimento ilícito. \n\nOs filhos do Lula são os laranja dele!"
+  sentences:
+  - Gente, é verdade que Flávio Bolsonaro quer destronar Senhora Aparecida dos católicos pra fazer São Vorcaro padroeiro do
+    Brasil? 😆
+  - O deputado Marcos pollom do Mato Grosso e a deputada Bia Kicis do DF devem pedir votos ao povo de São Paulo ! E não aos
+    povos do Mato Grosso no caso pollom ! E nem ao povo do DF no caso de Bia Kicis ! Só se os povos do Mato Grosso e DF não
+    tiverem vergonha nas caras para reelegerem Bia Kicis e Marcos pollom !!
+  - O Lula não colocou a família inteira na política. Pensem nisso.
+- source_sentence: Destaques O governador e candidato à reeleição, Rafael Fonteles, visitou três empreendedores em Teresina
+    e conheceu histórias de quem transformou pequenos negócios em fonte de renda para suas famílias e de oportunidades para
+    outras pessoas. Agna Brasil...
+  sentences:
+  - '@juliovschneider 2 bandidos....João Roma Bahia....🙏🙏🇧🇷🇧🇷🇧🇷🇧🇷'
+  - Viana. Esse diretor polícia federal prendeu vorcaro. Investigou áudio André Mendonça Alexandre Moraes com vorcaro. Áudio
+    Nicolas Flavio Rachadinhas . Mendonça pra parar investigação demitir diretor polícia federal Mendonça você esta igual
+    bolsonaro nao aceita investigação contra seus amigos.
+  - O governador e candidato à reeleição, Rafael Fonteles, visitou três empreendedores em Teresina e conheceu histórias de
+    quem transformou pequenos negócios em fonte de renda para suas famílias e de oportunidades para outras pessoas. Agna Brasil,
+    da Geleias Brasil, Anderson Bezerra, do Primavera Hotel, e Francisco das Chagas, comerciante de ovos, chegaram a diferentes
+    resultados a partir do acesso a programas de apoio, crédito e incentivo ao empreendedorismo. À frente da Geleias Brasil,
+    Agna Brasil começou a produção há seis anos, ainda em casa, preparando geleias com frutas e vendendo de porta em porta.
+    Hoje, a empresa conta com nove colaboradores, comercializa os produtos em supermercados de Teresina e do Maranhão e se
+    prepara para iniciar a exportação para o Uruguai.
+- source_sentence: '@savasco_of O projeto que se tornou a Lei foi de iniciativa do Poder Executivo( Luiz Inácio Lula da Silva).Além
+    de o governo ter enviado o projeto ao Congresso, a bancada do PT na Câmara votou a favor da aprovação, incluindo os jogos
+    online/cassinos virtuais.'
+  sentences:
+  - '...última quinta-feira (27/08), a condenação de Julio Cesar Magalhães a 18 anos e quatro meses de prisão por tentativa
+    de feminicídio contra a ex-companheira. O crime ocorreu em março de 2024, no bairro de Itaipuaçu, em Maricá. Segundo a
+    denúncia do...'
+  - Parabéns ao grande governador Jorginho de Santa Catarina, o único estado que precisa de favores de LULA PT
+  - '@l_montacci @Gustavramski_ Além do que logo na sua entrada no Governo o Lula pediu a revisão desses valores abusivos
+    e foi barrado pelo congresso, e no Governo Lula a PF teve autonomia e está investigando esse escândalo, até mesmo com
+    participação desses Ptistas.'
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:148224
+  - loss:MultipleNegativesRankingLoss
+  widget:
+  - source_sentence: Olha o desespero deles, Tarcísio Gomes de Freitas reeleito no primeiro turno 🇧🇷🇧🇷🇧🇷🇧🇷🇧🇷🇧🇷🇧🇷🇧🇷🇧🇷
+    sentences:
+    - Cara sabotagem , para denegrirem imagem do Tarcísio Gomes de Freitas , saibamos que ele lidera pesquisas para governo
+      Sp . Não podemos descartar nada , Reeleito primeiro turno para governador sp.
+    - FLÁVIO BOLSONARO LAVADOR MASTER DE DINHEIRO ROUBADO!!!
+    - 'A 22 dias das eleições, a projeção para a bancada federal do Ceará aponta o PL como o maior partido do Estado, com
+      05 cadeiras. O cálculo considera votação superior a 400 mil votos para o deputado federal André Fernandes (PL-CE). ➡️
+      Para mais informações, acesse cn7.com.br! 📱 #cn7 #cn7news #notícias #câmaradosdeputados #eleições2026'
+  - source_sentence: '@OGloboPolitica Se alguém ainda enxergar o Lula como passaporte para um futuro melhor, depois do PT
+      ficar 20 anos no poder, tem que ser muito burro ou muito malandro.'
+    sentences:
+    - 'Entrevista: ''Classe C não enxerga Lula ou Flávio como passaporte para futuro melhor'', diz presidente do Locomotiva
+      https://t.co/cqLhvyHsWb'
+    - Mendonça se recusa a entregar celular do vorcaro numa ação de auto blindagem e blindagem ao Flávio Bolsonaro e seus
+      familiares pois devem ter trocado centenas de mensagens muito comprometedoras criminosas quando acertavam propinas valores
+      encontros etc e talvez até o próprio Mendonça tenha trocado mensagens com vorcaro quando existiu entre eles um vínculo
+      de amizade aproximação com vorcaro deu presentes ternos a Mendonça e sabe Deus mais o que
+    - Gilmar e Dino entram em confronto com Fachin no STF bocadopovonews.com.br https://bocadopovonews.com.br/gilmar-e-dino-entram-em-confronto-com-fachin-no-stf/
+  - source_sentence: "@enghumanista Claro que não. \n\nAlguém precisa ser os laranjas pra ele guardar o dinheiro.  \n\nUm\
+      \ filho saiu de tratador de elefante no zoológico de sp pra milionário.  \U0001F923\n\nCom filho na política: fica muito\
+      \ visível o enriquecimento ilícito. \n\nOs filhos do Lula são os laranja dele!"
+    sentences:
+    - Gente, é verdade que Flávio Bolsonaro quer destronar Senhora Aparecida dos católicos pra fazer São Vorcaro padroeiro
+      do Brasil? 😆
+    - O deputado Marcos pollom do Mato Grosso e a deputada Bia Kicis do DF devem pedir votos ao povo de São Paulo ! E não
+      aos povos do Mato Grosso no caso pollom ! E nem ao povo do DF no caso de Bia Kicis ! Só se os povos do Mato Grosso e
+      DF não tiverem vergonha nas caras para reelegerem Bia Kicis e Marcos pollom !!
+    - O Lula não colocou a família inteira na política. Pensem nisso.
+  - source_sentence: Destaques O governador e candidato à reeleição, Rafael Fonteles, visitou três empreendedores em Teresina
+      e conheceu histórias de quem transformou pequenos negócios em fonte de renda para suas famílias e de oportunidades para
+      outras pessoas. Agna Brasil...
+    sentences:
+    - '@juliovschneider 2 bandidos....João Roma Bahia....🙏🙏🇧🇷🇧🇷🇧🇷🇧🇷'
+    - Viana. Esse diretor polícia federal prendeu vorcaro. Investigou áudio André Mendonça Alexandre Moraes com vorcaro. Áudio
+      Nicolas Flavio Rachadinhas . Mendonça pra parar investigação demitir diretor polícia federal Mendonça você esta igual
+      bolsonaro nao aceita investigação contra seus amigos.
+    - O governador e candidato à reeleição, Rafael Fonteles, visitou três empreendedores em Teresina e conheceu histórias
+      de quem transformou pequenos negócios em fonte de renda para suas famílias e de oportunidades para outras pessoas. Agna
+      Brasil, da Geleias Brasil, Anderson Bezerra, do Primavera Hotel, e Francisco das Chagas, comerciante de ovos, chegaram
+      a diferentes resultados a partir do acesso a programas de apoio, crédito e incentivo ao empreendedorismo. À frente da
+      Geleias Brasil, Agna Brasil começou a produção há seis anos, ainda em casa, preparando geleias com frutas e vendendo
+      de porta em porta. Hoje, a empresa conta com nove colaboradores, comercializa os produtos em supermercados de Teresina
+      e do Maranhão e se prepara para iniciar a exportação para o Uruguai.
+  - source_sentence: '@savasco_of O projeto que se tornou a Lei foi de iniciativa do Poder Executivo( Luiz Inácio Lula da
+      Silva).Além de o governo ter enviado o projeto ao Congresso, a bancada do PT na Câmara votou a favor da aprovação, incluindo
+      os jogos online/cassinos virtuais.'
+    sentences:
+    - '...última quinta-feira (27/08), a condenação de Julio Cesar Magalhães a 18 anos e quatro meses de prisão por tentativa
+      de feminicídio contra a ex-companheira. O crime ocorreu em março de 2024, no bairro de Itaipuaçu, em Maricá. Segundo
+      a denúncia do...'
+    - Parabéns ao grande governador Jorginho de Santa Catarina, o único estado que precisa de favores de LULA PT
+    - '@l_montacci @Gustavramski_ Além do que logo na sua entrada no Governo o Lula pediu a revisão desses valores abusivos
+      e foi barrado pelo congresso, e no Governo Lula a PF teve autonomia e está investigando esse escândalo, até mesmo com
+      participação desses Ptistas.'
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-10T06:41:19.000Z'
+safetensors:
+  parameters:
+    F32: 108923136
+  total: 108923136
+usedStorage: 435714904
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  directionality: bidi
+  dtype: float32
+  eos_token_id: null
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  output_past: true
+  pad_token_id: 0
+  pooler_fc_size: 768
+  pooler_num_attention_heads: 12
+  pooler_num_fc_layers: 3
+  pooler_size_per_head: 128
+  pooler_type: first_token_transform
+  tie_word_embeddings: true
+  transformers_version: 5.18.0
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 29794
+onnxFiles: {}
+safetensorsSizeMb: 435.7
+approxSizeMb: 435.7
+fetchedAt: '2026-10-10T09:41:39.000Z'

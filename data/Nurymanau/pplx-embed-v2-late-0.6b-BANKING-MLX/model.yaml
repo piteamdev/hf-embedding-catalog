@@ -1,0 +1,183 @@
+_id: 6ac970341aeb4a97756ddf1e
+id: Nurymanau/pplx-embed-v2-late-0.6b-BANKING-MLX
+private: false
+pipeline_tag: feature-extraction
+library_name: mlx
+tags:
+- mlx
+- safetensors
+- qwen3_5
+- apple-silicon
+- embeddings
+- retrieval
+- late-interaction
+- colbert
+- semantic-search
+- fine-tuned
+- banking77
+- feature-extraction
+- en
+- dataset:PolyAI/banking77
+- arxiv:2003.04807
+- base_model:perplexity-ai/pplx-embed-v2-late-0.6b
+- base_model:finetune:perplexity-ai/pplx-embed-v2-late-0.6b
+- license:mit
+- region:us
+downloads: 27
+likes: 0
+modelId: Nurymanau/pplx-embed-v2-late-0.6b-BANKING-MLX
+author: Nurymanau
+sha: 1c03663f70bae3dbd699f5be3947e403fd0bc9c8
+lastModified: '2026-10-09T22:55:59.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - Qwen3_5Model
+  model_type: qwen3_5
+cardData:
+  library_name: mlx
+  pipeline_tag: feature-extraction
+  license: mit
+  base_model: perplexity-ai/pplx-embed-v2-late-0.6b
+  base_model_relation: finetune
+  language:
+  - en
+  datasets:
+  - PolyAI/banking77
+  tags:
+  - mlx
+  - apple-silicon
+  - embeddings
+  - retrieval
+  - late-interaction
+  - colbert
+  - semantic-search
+  - fine-tuned
+  - banking77
+siblings:
+- rfilename: .gitattributes
+- rfilename: 2_MultiVectorMask/config.json
+- rfilename: DATA_LICENSE.txt
+- rfilename: LICENSE
+- rfilename: P10_README.md
+- rfilename: P10_VALIDATION.json
+- rfilename: PROVENANCE.json
+- rfilename: README.md
+- rfilename: SHA256SUMS.json
+- rfilename: UPSTREAM_MODEL_CARD.md
+- rfilename: VALIDATION.json
+- rfilename: WEIGHTS_LICENSE.txt
+- rfilename: code/pplx_mlx/NOTICE
+- rfilename: code/pplx_mlx/__init__.py
+- rfilename: code/pplx_mlx/adapter.py
+- rfilename: code/pplx_mlx/checkpoint.py
+- rfilename: code/pplx_mlx/cli.py
+- rfilename: code/pplx_mlx/gated_delta.py
+- rfilename: code/pplx_mlx/model.py
+- rfilename: code/pplx_mlx/next/__init__.py
+- rfilename: code/pplx_mlx/next/student.py
+- rfilename: code/pplx_mlx/processor.py
+- rfilename: code/pplx_mlx/resize.py
+- rfilename: config.json
+- rfilename: licenses/PYTORCH_LICENSE
+- rfilename: licenses/mlx-lm-LICENSE
+- rfilename: licenses/mlx-vlm-LICENSE
+- rfilename: licenses/transformers-LICENSE
+- rfilename: mlx_checkpoint.json
+- rfilename: mlx_model.safetensors
+- rfilename: requirements.txt
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-10-09T22:52:36.000Z'
+usedStorage: 1209327508
+downloadsAllTime: 27
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - Qwen3_5Model
+  dtype: float32
+  image_token_id: 248056
+  model_type: qwen3_5
+  text_config:
+    attention_bias: false
+    attention_dropout: 0.0
+    attn_output_gate: true
+    bos_token_id: null
+    dtype: float32
+    eos_token_id: 248044
+    full_attention_interval: 4
+    head_dim: 256
+    hidden_act: silu
+    hidden_size: 1024
+    initializer_range: 0.02
+    intermediate_size: 3584
+    is_causal: false
+    layer_types:
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - full_attention
+    linear_conv_kernel_dim: 4
+    linear_key_head_dim: 128
+    linear_num_key_heads: 16
+    linear_num_value_heads: 16
+    linear_value_head_dim: 128
+    mamba_ssm_dtype: float32
+    max_position_embeddings: 262144
+    mlp_only_layers: []
+    model_type: qwen3_5_text
+    mtp_num_hidden_layers: 1
+    mtp_use_dedicated_embeddings: false
+    num_attention_heads: 8
+    num_hidden_layers: 12
+    num_key_value_heads: 2
+    pad_token_id: null
+    partial_rotary_factor: 0.25
+    rms_norm_eps: 1.0e-06
+    rope_parameters:
+      mrope_interleaved: true
+      mrope_section:
+      - 11
+      - 11
+      - 10
+      partial_rotary_factor: 0.25
+      rope_theta: 10000000
+      rope_type: default
+    tie_word_embeddings: true
+    use_cache: true
+    vocab_size: 248320
+  tie_word_embeddings: true
+  transformers_version: 5.3.0
+  video_token_id: 248057
+  vision_config:
+    deepstack_visual_indexes: []
+    depth: 12
+    dtype: float32
+    hidden_act: gelu_pytorch_tanh
+    hidden_size: 768
+    in_channels: 3
+    initializer_range: 0.02
+    intermediate_size: 3072
+    model_type: qwen3_5
+    num_heads: 12
+    num_position_embeddings: 2304
+    out_hidden_size: 1024
+    patch_size: 16
+    spatial_merge_size: 2
+    temporal_patch_size: 2
+  vision_end_token_id: 248054
+  vision_start_token_id: 248053
+onnxFiles: {}
+safetensorsSizeMb: 1189.3
+approxSizeMb: 0.0
+fetchedAt: '2026-10-10T09:41:39.000Z'

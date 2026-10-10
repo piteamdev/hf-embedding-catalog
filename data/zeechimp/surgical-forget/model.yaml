@@ -1,0 +1,109 @@
+_id: 6ac8bf5e1bab2b7122fad7cb
+id: zeechimp/surgical-forget
+private: false
+pipeline_tag: feature-extraction
+library_name: surgical-forget
+tags:
+- surgical-forget
+- vector-symbolic-architectures
+- hyperdimensional-computing
+- holographic-memory
+- machine-unlearning
+- continual-learning
+- gdpr
+- memory-editing
+- phase-only-vectors
+- complex-phasors
+- numpy
+- custom-library
+- feature-extraction
+- en
+- license:mit
+- model-index
+- region:us
+downloads: 0
+likes: 1
+modelId: zeechimp/surgical-forget
+author: zeechimp
+sha: 108e940b534b617be4985c4f8ac370cdf819192c
+lastModified: '2026-10-09T10:26:31.000Z'
+gated: false
+disabled: false
+model-index:
+- name: surgical-forget
+  results:
+  - task:
+      type: feature-extraction
+      name: Trace-level fact removal
+    dataset:
+      type: custom
+      name: Synthetic capital-city facts
+      config: None
+      split: test
+      revision: main
+    metrics:
+    - type: accuracy
+      value: 1
+      name: Retrieval accuracy (8 facts, D=512)
+      verified: false
+    - type: accuracy
+      value: 1
+      name: Non-target interference (0 / 5 facts affected)
+      verified: false
+config: {}
+cardData:
+  language: en
+  license: mit
+  library_name: surgical-forget
+  tags:
+  - vector-symbolic-architectures
+  - hyperdimensional-computing
+  - holographic-memory
+  - machine-unlearning
+  - continual-learning
+  - gdpr
+  - memory-editing
+  - phase-only-vectors
+  - complex-phasors
+  - numpy
+  - custom-library
+  pipeline_tag: feature-extraction
+  datasets: []
+  metrics:
+  - accuracy
+  model-index:
+  - name: surgical-forget
+    results:
+    - task:
+        type: feature-extraction
+        name: Trace-level fact removal
+      dataset:
+        type: custom
+        name: Synthetic capital-city facts
+        config: None
+        split: test
+        revision: main
+      metrics:
+      - type: accuracy
+        value: 1
+        name: Retrieval accuracy (8 facts, D=512)
+        verified: false
+      - type: accuracy
+        value: 1
+        name: Non-target interference (0 / 5 facts affected)
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: surgical_forget.py
+spaces: []
+createdAt: '2026-10-09T10:18:06.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-10T09:41:39.000Z'

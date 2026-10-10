@@ -1,0 +1,118 @@
+_id: 6ac96aba40d3356db8d49328
+id: Nurymanau/pplx-embed-v2-late-0.6b-MLX
+private: false
+pipeline_tag: feature-extraction
+library_name: mlx
+tags:
+- mlx
+- safetensors
+- apple-silicon
+- retrieval
+- embeddings
+- late-interaction
+- semantic-search
+- colbert
+- fine-tuned
+- quantized
+- feature-extraction
+- dataset:PolyAI/banking77
+- arxiv:2003.04807
+- base_model:perplexity-ai/pplx-embed-v2-late-0.6b
+- base_model:finetune:perplexity-ai/pplx-embed-v2-late-0.6b
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: Nurymanau/pplx-embed-v2-late-0.6b-MLX
+author: Nurymanau
+sha: 552285152928bf08b796a6b15181db25d429f2cb
+lastModified: '2026-10-09T22:55:53.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: mlx
+  pipeline_tag: feature-extraction
+  license: mit
+  base_model: perplexity-ai/pplx-embed-v2-late-0.6b
+  tags:
+  - mlx
+  - apple-silicon
+  - retrieval
+  - embeddings
+  - late-interaction
+  - semantic-search
+  - colbert
+  - fine-tuned
+  - quantized
+  datasets:
+  - PolyAI/banking77
+siblings:
+- rfilename: .gitattributes
+- rfilename: DATA_LICENSE.txt
+- rfilename: LICENSE
+- rfilename: P10_README.md
+- rfilename: P10_VALIDATION.json
+- rfilename: P10_VERIFICATION.json
+- rfilename: P1_P9_RESULTS.md
+- rfilename: README.md
+- rfilename: SHA256SUMS.json
+- rfilename: UPSTREAM_MODEL_CARD.md
+- rfilename: VALIDATION.json
+- rfilename: VERIFICATION.json
+- rfilename: WEIGHTS_LICENSE.txt
+- rfilename: code/pplx_mlx/NOTICE
+- rfilename: code/pplx_mlx/__init__.py
+- rfilename: code/pplx_mlx/adapter.py
+- rfilename: code/pplx_mlx/checkpoint.py
+- rfilename: code/pplx_mlx/cli.py
+- rfilename: code/pplx_mlx/gated_delta.py
+- rfilename: code/pplx_mlx/model.py
+- rfilename: code/pplx_mlx/next/__init__.py
+- rfilename: code/pplx_mlx/next/student.py
+- rfilename: code/pplx_mlx/processor.py
+- rfilename: code/pplx_mlx/resize.py
+- rfilename: licenses/PYTORCH_LICENSE
+- rfilename: licenses/mlx-lm-LICENSE
+- rfilename: licenses/mlx-vlm-LICENSE
+- rfilename: licenses/transformers-LICENSE
+- rfilename: requirements.txt
+- rfilename: weights/banking-adapter/DATA_LICENSE.txt
+- rfilename: weights/banking-adapter/adapter.json
+- rfilename: weights/banking-adapter/adapter.safetensors
+- rfilename: weights/banking-full-p10-fp16/2_MultiVectorMask/config.json
+- rfilename: weights/banking-full-p10-fp16/config.json
+- rfilename: weights/banking-full-p10-fp16/mlx_checkpoint.json
+- rfilename: weights/banking-full-p10-fp16/mlx_model.safetensors
+- rfilename: weights/banking-full-p10-fp16/tokenizer.json
+- rfilename: weights/banking-student6-p10/2_MultiVectorMask/config.json
+- rfilename: weights/banking-student6-p10/config.json
+- rfilename: weights/banking-student6-p10/student.json
+- rfilename: weights/banking-student6-p10/student.safetensors
+- rfilename: weights/banking-student6-p10/tokenizer.json
+- rfilename: weights/base-fp16/2_MultiVectorMask/config.json
+- rfilename: weights/base-fp16/config.json
+- rfilename: weights/base-fp16/mlx_checkpoint.json
+- rfilename: weights/base-fp16/mlx_model.safetensors
+- rfilename: weights/base-fp16/tokenizer.json
+- rfilename: weights/base-mlp-q4/2_MultiVectorMask/config.json
+- rfilename: weights/base-mlp-q4/config.json
+- rfilename: weights/base-mlp-q4/mlx_checkpoint.json
+- rfilename: weights/base-mlp-q4/mlx_model.safetensors
+- rfilename: weights/base-mlp-q4/tokenizer.json
+- rfilename: weights/student6-experimental/2_MultiVectorMask/config.json
+- rfilename: weights/student6-experimental/config.json
+- rfilename: weights/student6-experimental/student.json
+- rfilename: weights/student6-experimental/student.safetensors
+- rfilename: weights/student6-experimental/tokenizer.json
+spaces: []
+createdAt: '2026-10-09T22:29:14.000Z'
+usedStorage: 4895302839
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 4875.3
+approxSizeMb: 0.0
+fetchedAt: '2026-10-10T09:41:39.000Z'

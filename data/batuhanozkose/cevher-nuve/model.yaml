@@ -1,0 +1,152 @@
+_id: 6aca21306fa844eabe58eeb0
+id: batuhanozkose/cevher-nuve
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- onnx
+- safetensors
+- openvino
+- cevher-nuve
+- sentence-embeddings
+- turkish
+- retrieval
+- distillation
+- matryoshka
+- sentence-similarity
+- tr
+- en
+- license:gemma
+- endpoints_compatible
+- region:us
+downloads: 17
+likes: 1
+modelId: batuhanozkose/cevher-nuve
+author: batuhanozkose
+sha: 68156998d725155877015023c012fb374752eb1d
+lastModified: '2026-10-10T11:36:45.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: cevher-nuve
+  tokenizer_config:
+    bos_token: <bos>
+    eos_token: <eos>
+    pad_token: <pad>
+    unk_token: <unk>
+cardData:
+  language:
+  - tr
+  - en
+  license: gemma
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  tags:
+  - sentence-transformers
+  - sentence-embeddings
+  - turkish
+  - retrieval
+  - distillation
+  - matryoshka
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: cevher_nuve.py
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: onnx/model.onnx
+- rfilename: openvino/int8/model.bin
+- rfilename: openvino/int8/model.xml
+- rfilename: reports/hardtests/FINDINGS.md
+- rfilename: reports/hardtests/SUMMARY.md
+- rfilename: reports/hardtests/bge-m3.json
+- rfilename: reports/hardtests/cevher-rel-v0.3c.json
+- rfilename: reports/hardtests/cevher-rel-v0.7-tinit-L512.json
+- rfilename: reports/hardtests/cevher-rel-v0.7-tinit-chunk.json
+- rfilename: reports/hardtests/cevher-rel-v0.7-tinit.json
+- rfilename: reports/hardtests/cevher-rel-v0.8-pre.json
+- rfilename: reports/hardtests/cevher-rel-v0.9-noise-chunk.json
+- rfilename: reports/hardtests/cevher-rel-v0.9-noise.json
+- rfilename: reports/hardtests/embeddinggemma-2.json
+- rfilename: reports/hardtests/granite-311m-r2.json
+- rfilename: reports/hardtests/granite-97m-r2.json
+- rfilename: reports/hardtests/labse.json
+- rfilename: reports/hardtests/me5-base.json
+- rfilename: reports/hardtests/me5-small.json
+- rfilename: reports/hardtests/minilm-l12-multi.json
+- rfilename: reports/hardtests/mpnet-multi.json
+- rfilename: reports/hardtests/potion-multi-128m.json
+- rfilename: reports/hardtests/qwen3-0.6b.json
+- rfilename: reports/hardtests/qwen3-8b.json
+- rfilename: reports/hardtests/static-mrl-multi.json
+- rfilename: reports/hardtests/summary.json
+- rfilename: reports/hardtests/trmteb-berturk.json
+- rfilename: reports/hardtests/turkish-e5-large.json
+- rfilename: reports/mteb/bge-m3.json
+- rfilename: reports/mteb/cevher-rel-v0.2.json
+- rfilename: reports/mteb/cevher-rel-v0.3c.json
+- rfilename: reports/mteb/cevher-rel-v0.6-deep.json
+- rfilename: reports/mteb/cevher-rel-v0.7-tinit.json
+- rfilename: reports/mteb/cevher-rel-v0.9-noise.json
+- rfilename: reports/mteb/embeddinggemma-2.json
+- rfilename: reports/mteb/granite-311m-r2.json
+- rfilename: reports/mteb/granite-97m-r2.json
+- rfilename: reports/mteb/labse.json
+- rfilename: reports/mteb/me5-base.json
+- rfilename: reports/mteb/me5-small.json
+- rfilename: reports/mteb/minilm-l12-multi.json
+- rfilename: reports/mteb/mpnet-multi.json
+- rfilename: reports/mteb/potion-multi-128m.json
+- rfilename: reports/mteb/qwen3-0.6b.json
+- rfilename: reports/mteb/qwen3-8b.json
+- rfilename: reports/mteb/static-mrl-multi.json
+- rfilename: reports/mteb/trmteb-berturk.json
+- rfilename: reports/mteb/turkish-e5-large.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-10T11:27:44.000Z'
+safetensors:
+  parameters:
+    F32: 15207424
+  total: 15207424
+usedStorage: 137116493
+downloadsAllTime: 17
+inferenceProviderMapping: {}
+configJson:
+  arch: transformer
+  vocab_size: 49155
+  dim: 256
+  pad_id: 0
+  layers: 4
+  hidden: 256
+  heads: 4
+  head_dim: 64
+  ffn: 512
+  rope_theta: 10000.0
+  model_type: cevher-nuve
+  version: v0.9-noise
+  max_length: 256
+  role_tokens:
+    query: '[QRY]'
+    doc: '[DOC]'
+    sym: '[SYM]'
+  pooling: mean
+  normalize: true
+  matryoshka_dims:
+  - 256
+  - 128
+  chunking:
+    words: 56
+    stride: 40
+onnxFiles:
+  onnx/model.onnx: 60.9
+safetensorsSizeMb: 60.8
+approxSizeMb: 60.8
+fetchedAt: '2026-10-11T09:53:16.000Z'

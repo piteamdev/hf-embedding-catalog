@@ -1,0 +1,81 @@
+_id: 6aca13ab6b97a2fd638fd4ff
+id: infosave/EmbeddingGemma-2-cmf
+private: false
+pipeline_tag: feature-extraction
+library_name: cortiq
+tags:
+- cortiq
+- cmf
+- embeddings
+- sentence-similarity
+- multimodal-embedding
+- image-feature-extraction
+- audio-feature-extraction
+- video-feature-extraction
+- matryoshka
+- feature-extraction
+- multilingual
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:apache-2.0
+- region:us
+downloads: 59
+likes: 1
+modelId: infosave/EmbeddingGemma-2-cmf
+author: infosave
+sha: 30d176c53135d8fa569a0d6be508f6fedbdc3fd3
+lastModified: '2026-10-10T16:08:08.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: cortiq
+  base_model: google/embeddinggemma-2
+  base_model_relation: quantized
+  pipeline_tag: feature-extraction
+  tags:
+  - cmf
+  - cortiq
+  - embeddings
+  - sentence-similarity
+  - multimodal-embedding
+  - image-feature-extraction
+  - audio-feature-extraction
+  - video-feature-extraction
+  - matryoshka
+  language:
+  - multilingual
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: embeddinggemma-2-bf16.cmf
+- rfilename: embeddinggemma-2-bf16.cmf.sha256
+- rfilename: embeddinggemma-2-q4tp.cmf
+- rfilename: embeddinggemma-2-q4tp.cmf.sha256
+- rfilename: embeddinggemma-2-q8_2f.cmf
+- rfilename: embeddinggemma-2-q8_2f.cmf.sha256
+- rfilename: examples/baikal_poster.jpg
+- rfilename: examples/code.jsonl
+- rfilename: examples/corgi_chef.jpg
+- rfilename: examples/es_whales.wav
+- rfilename: examples/fox_beach.jpg
+- rfilename: examples/fox_snow.jpg
+- rfilename: examples/image_to_text.jsonl
+- rfilename: examples/neon_sign.jpg
+- rfilename: examples/ru_baikal.wav
+- rfilename: examples/search.jsonl
+- rfilename: examples/speech.jsonl
+- rfilename: examples/text_to_image.jsonl
+spaces:
+- infosave/EmbeddingGemma-2-cmf
+createdAt: '2026-10-10T10:30:03.000Z'
+usedStorage: 2967411869
+downloadsAllTime: 59
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-11T09:53:16.000Z'

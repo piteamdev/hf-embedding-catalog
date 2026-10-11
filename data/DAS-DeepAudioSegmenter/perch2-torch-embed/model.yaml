@@ -1,0 +1,54 @@
+_id: 6aca8542a58766dba4593ac8
+id: DAS-DeepAudioSegmenter/perch2-torch-embed
+private: false
+pipeline_tag: feature-extraction
+library_name: pytorch
+tags:
+- pytorch
+- audio
+- bioacoustics
+- embeddings
+- torch-export
+- das
+- feature-extraction
+- base_model:DAS-DeepAudioSegmenter/perch2-torch
+- base_model:finetune:DAS-DeepAudioSegmenter/perch2-torch
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: DAS-DeepAudioSegmenter/perch2-torch-embed
+author: DAS-DeepAudioSegmenter
+sha: fb3c11b38b259fca8e80b8f6d172673c398bd54f
+lastModified: '2026-10-10T18:34:56.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: pytorch
+  pipeline_tag: feature-extraction
+  base_model:
+  - DAS-DeepAudioSegmenter/perch2-torch
+  tags:
+  - audio
+  - bioacoustics
+  - embeddings
+  - torch-export
+  - das
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: perch2_embed.py
+- rfilename: perch_v2_embed.pt2
+spaces: []
+createdAt: '2026-10-10T18:34:42.000Z'
+usedStorage: 47595286
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-11T09:53:16.000Z'

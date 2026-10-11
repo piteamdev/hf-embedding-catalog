@@ -1,0 +1,52 @@
+_id: 6aca572e623e8e00171dd161
+id: asdsa132dsa/MyAwesomeModel
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- pytorch
+- bert
+- feature-extraction
+- license:mit
+- endpoints_compatible
+- region:us
+downloads: 36
+likes: 0
+modelId: asdsa132dsa/MyAwesomeModel
+author: asdsa132dsa
+sha: 425a57553ff7667192ee8c23c64c1b64596e424e
+lastModified: '2026-10-10T15:24:21.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  model_type: bert
+  architectures:
+  - BertModel
+cardData:
+  license: mit
+  library_name: transformers
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: pytorch_model.bin
+spaces: []
+createdAt: '2026-10-10T15:18:06.000Z'
+usedStorage: 23
+downloadsAllTime: 36
+inferenceProviderMapping: {}
+configJson:
+  model_type: bert
+  architectures:
+  - BertModel
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-11T09:53:16.000Z'

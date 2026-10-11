@@ -1,0 +1,1694 @@
+_id: 6aca33407b0e3f051db8797d
+id: faizaltkl/medical-gemma-300m-emb
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- embedding_gemma2
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:14000
+- loss:MultipleNegativesRankingLoss
+- unsloth
+- arxiv:1908.10084
+- arxiv:1807.03748
+- base_model:unsloth/embeddinggemma-2
+- base_model:finetune:unsloth/embeddinggemma-2
+- model-index
+- endpoints_compatible
+- region:us
+downloads: 19
+likes: 0
+modelId: faizaltkl/medical-gemma-300m-emb
+author: faizaltkl
+sha: 7af37e06a2cf4bad86de012ea530f17bdcb5790a
+lastModified: '2026-10-10T12:44:54.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: 'How does the production of TNF, IL-1, and IL-6 differ in the hyper-IgD syndrome during attacks compared
+    to infectious diseases such as meningococcal sepsis and typhoid fever?
+
+    '
+  sentences:
+  - "In addition to its role in angiogenesis, IL8 induces a chemotactic infiltration of neutrophils into the tumor site, thereby\
+    \ generating protumoral microenvironment (38) . Secretion of inflammatory cytokines has been known to constitutively activate\
+    \ NF-kB and STAT3, which directly regulate numerous genes, such as Bcl-2, cyclin D1, and c-myc, which have been associated\
+    \ with cell survival and chemoresistance (37, 40, 42, 44) . TNF was reported to mediate constitutive activation of NF-kB\
+    \ in SCCHN cells (40) . IL6 is a key downstream target of NF-kB and is a potent activator of STAT3 as well (45) . Inhibition\
+    \ of PLA2G2A, a ratelimiting enzyme in tumor-stimulating eicosanoid production, reduced cell proliferation and NF-kB activity\
+    \ in non-small cell lung cancer (41) . In addition, PLA2G2A induced proliferation of (46) . IL6 has been known to induce\
+    \ resistance to anticancer therapy in different types of cancer (43, 45) . To complement IL6 overexpression (>6-fold)\
+    \ in local tumor microenvironment, we compared the concentrations of plasma IL6 in patients with CB and non-CB on dacomitinib.\
+    \ Despite similar IL6 concentrations at baseline between two groups, its concentration at day 14 of dacomitinib was significantly\
+    \ higher in non-CB patients than in CB patients. This may suggest that IL6 induced by dacomitinib from tumor or stromal\
+    \ cells promoted resistance to dacomitinib in non-CB patients. This is in accordance with our previous report that dacomitinib\
+    \ induced STAT3 activation via autocrine IL6 production, promoting de novo resistance to dacomitinib (43) . It will be\
+    \ important to determine usefulness of plasma IL6 detection for monitoring therapeutic response to EGFR inhibitors in\
+    \ the future study.\n\n Combination strategies targeting the PI3K pathway or inflammatory pathway can be a potential therapeutic\
+    \ option to overcome resistance and enhance efficacy of dacomitinib in R/M-SCCHN. Several agents targeting the PI3K pathway\
+    \ (e.g., BYL719, XL147; refs. 47, 48) , inflammatory cytokines/mediators (e.g., ruxolitinib; ref. 49 ), or COX-2 pathway\
+    \ (e.g., celecoxib; ref. 50) in combination with EGFR inhibitors are under active investigation.\n\n In conclusion, dacomitinib\
+    \ demonstrated promising efficacy with manageable toxicity in platinum-failed R/M-SCCHN patients. Screening of PI3K pathway\
+    \ mutation and expression of inflammatory mediators may help identify patients with R/M-SCCHN most likely benefit from\
+    \ dacomitinib.\n\n No potential conflicts of interest were disclosed."
+  - "The higher concentrations we found during remissions (104 5 20 pg/mL) and attacks ( 1 17 -+ I5 pg/mL) in the hyper-IgD\
+    \ syndrome are most likely due to detection of both free TNF and TNF bound to sTNFr. The role of IL-1 was tested in a\
+    \ study of 18 FMF patients, 9 symptomatic and 9 asymptomatic, and mean IL-1 activity in patients (either during attack\
+    \ or remission) was comparable with the values obtained in controls.'* We studied the effect of bacterial LPS on the cytokine\
+    \ production as generated in whole blood. In contrast to Tcell mitogens such as concavalin A, in our experience, LPS is\
+    \ a reliable stimulator of cytokine production. The effect of LPS is dose-dependent, and dosages at 10 &mL as used in\
+    \ our study have yielded reproducible result^.^' It is of interest that we detected an augmented LPS-stimulated ex vivo\
+    \ production of TNFa, E-lP, and IL-lra in our whole blood culture system during attacks.\n\n This enhanced production\
+    \ capacity in the hyper-IgD syndrome during attacks is in contrast with findings obtained in various infectious diseases\
+    \ such as meningococcal sepsis and typhoid fever, where the ex vivo production of TNF, IL-1, and IL-6 is depressed during\
+    \ the acute stage and is gradually restored during re~overy.~'.~~ Also, TNFa and IL-1 production, as stimulated by LPS,\
+    \ has been reported to be markedly decreased during attacks patients and detected decreased ex vivo production of TNFa,\
+    \ IL-lP, and IL-lra during attacks (Drenth JPH, unpublished observations). These findings clearly differ from the increased\
+    \ production during the febrile attacks of the hyperIgD syndrome. It is possible that the monocytes/macrophages in the\
+    \ hyper-IgD syndrome are already primed in vivo to produce increased amounts of these cytokines. This could be the result\
+    \ of increased concentrations of AGP and CRP, because these acute-phase proteins have been shown to potentiate the in\
+    \ vitro production of cytokines and of in ~~. 3 4 , 3 6 . 4 0 We could confirm these results in three Fh4F\n\n For personal\
+    \ use only. on November 11, 2017. by guest www.bloodjournal.org From"
+  - "This suggests that the efficacy of DPP-4 inhibition in the vasculature of WD-fed female mice occurs without significant\
+    \ changes in AGE. To the best of our knowledge this is the only study demonstrating that a DPP-4 inhibitor prevents development\
+    \ of diet-induced vascular stiffness. Further studies are needed to clarify if other DPP-4 inhibitors share these beneficial\
+    \ effects.\n\n Despite abundant preclinical evidence of cardiovascular benefits of DPP-4 inhibitors, including results\
+    \ presented herein, meta-analyses of clinical data raise concerns regarding evidence of increased risk of heart failure\
+    \ with administration of certain DPP-4 inhibitors [56] . On the other hand, other recent analyses have produced differing\
+    \ conclusions regarding heart failure risk assessment [57] . In the SAVOR-TIMI 53 trial the use of saxagliptin was associated\
+    \ with increased risk of heart failure [58] . Importantly, the risk was higher in the subjects with previous heart failure,\
+    \ elevated natriuretic peptides and impaired renal function [59] . In the EXAMINE trial that explored the use of alogliptin\
+    \ in type 2 diabetics with post-acute coronary events there was no increased risk of major CV events [60] . Nevertheless,\
+    \ a recent post hoc analysis of the EXAMINE trial did find a statistically significant increase in hospitalization rate\
+    \ from heart failure in the group of subjects without heart failure history [61] . On the contrary, the sitagliptin TECOS\
+    \ trial did not find differences in the rate of hospitalization for heart failure between the treatment and the control\
+    \ group [62] . Similarly, a recent pre-specified patient-level pooled analysis of available trials of LGT did not report\
+    \ an association between the DPP-4 inhibitor and increased CV risk (including heart failure) [63] . Results from two ongoing\
+    \ trials using LGT, the CAROLINA (NCT01243424) and CARMELINA (NCT01897532), will further clarify the role and safety of\
+    \ this agent in regard to diabetic CVD.\n\n To summarize, the current investigation demonstrates that DPP-4 inhibition\
+    \ prevents abnormal increases in vascular stiffness, aortic fibrosis, oxidative stress and FGF-23/Klotho expression induced\
+    \ by a WD in female mice and these benefits occur independent of AGE reduction. Our findings have clinical relevance as\
+    \ obese diabetic women are more frequently affected by increased vascular stiffness that likely promotes higher incident\
+    \ CVD compared to their male counterparts. Ultimately, only the results of well-designed clinical trials will clarify\
+    \ the role of LGT in the management of diabetic CVD."
+- source_sentence: How is the expression of periostin/OSF-2 regulated and what does this suggest about its function in the
+    endometrium?
+  sentences:
+  - "The expression of periostin/OSF-2 mRNA increased after the menstrual period, as seen during the early and middle parts\
+    \ of the proliferative phase. These data indicate the participation of periostin/OSF2 in remodeling of the endometrium.\n\
+    \n Female periostin null mice are infertile [9] . When the oviducts of plugged periostin null mice were sectioned, both\
+    \ two-cell and four-cell zygotes were found, indicating that periostin/OSF-2 plays a crucial role in implantation. There\
+    \ are two possible targets of periostin/OSF-2 during implantation. One of them is the uterine endometrium. We showed that\
+    \ the expression of periostin/OSF-2 increased during the early secretory phase of the menstrual cycle, which indicates\
+    \ that secreted periostin/OSF-2 may activate the differentiation of the endometrium for implantation. Periostin/OSF-2\
+    \ has been shown to be a ligand for αvβ3 and αvβ5 integrins promoting integrin-dependent cell adhesion and motility [4,\
+    \ 8] . Lessey et al. reported that the expression of αvβ3 integrin increased in the putative window of implantation, suggesting\
+    \ its role in the establishment of uterine receptiveness [18] . There was no difference in the expression of αvβ3 integrin\
+    \ in women who were pregnant or infertile [19] . It is possible that perisotin/ OSF-2 plays an important role for uterine\
+    \ receptiveness as a ligand for integrins on human endometrium. Another possible target of perisotin/OSF-2 is the trophoblast.\
+    \ Kabir-Salmani et al. reported that αvβ3 integrin was expressed in the core focal adhesions of extravillous trophoblast\
+    \ cells, and that αvβ3 integrin signaling pathways are activated in insulin-like growth factor-I mediated migration of\
+    \ these cells [20] . αvβ3 integrin is expressed in human endometrium at the beginning of pregnancy. In the human trophoblast,\
+    \ αvβ3 integrin is detected in distal, invasive and endovascular extravillous cytotrophoblast [21] .\n\n In conclusion,\
+    \ periostin/OSF-2 is expressed in rat uterus and human endometrium, and is regulated by ovarian steroid hormones. The\
+    \ expression of this gene changes throughout the menstrual cycle. The pattern of periostin/OSF-2 expression indicates\
+    \ that this gene may be related to the function of the endometrium."
+  - "2 The differential diagnosis of a lung SFT includes numerous malignant and benign tumors, including hemangiopericytoma,\
+    \ mesothelioma, monophasic synovial sarcoma, sarcomatoid renal cell carcinoma, spindle cell lipoma, fibrosarcoma, leiomyosarcoma\
+    \ and neurogenic tumors, including schwan-noma and malignant peripheral nerve sheath tumors. 6 Immunohistochemistry is\
+    \ significant for differentiating between these tumors. For example, leiomyosarcomas are CD34-negative and positive for\
+    \ SMA and desmin. Thus, the presence of different markers in leiomyosarcoma distinguishes it from an SFT.\n\n The most\
+    \ successful treatment for SFTs is surgery. In the present case, two surgical approaches were prepared depending on the\
+    \ intraoperative frozen section. If the tumor was benign, a total tumor excision was to be performed. A lower left lung\
+    \ lobe resection was to be performed for a malignant tumor, as well as a lymph node dissection involving radical dissection\
+    \ of the mediastinum. In the present case, the tumor was identified as benign. The efficacy of surgery depends on the\
+    \ entirety of the tumor resection. 8 Previous studies have reported the use of adjuvant radiotherapy or chemotherapy for\
+    \ malignant SFTs; however, the effectiveness of such treatment has yet to be elucidated. 3 Metastases are usually blood-borne\
+    \ and have been identified in the liver, bone, brain, lungs and muscles. 2 Chen et al. 9 reported the case of a 78-year-old\
+    \ male who presented with a left gluteal soft tissue mass with a twomonth history of a newly-diagnosed metastatic lung\
+    \ adenocarcinoma. H&E staining of the mass revealed an SFT containing metastases from the adenocarcinoma. 9 Furthermore,\
+    \ Schirosi et al. 10 reported that high p53 expression in SFTs may be significantly correlated with a poor prognosis.\
+    \ Due to the potential for metastasis and recurrence, long-term follow-up for several years is required. Watanabe et al.\
+    \ 11 described the case of a 57-year old female who was diagnosed with adenocarcinoma of the right, middle lung lobe and\
+    \ malignant visceral pleura SFT of the left, upper lung lobe. The patient received a median sternotomy. The study illustrated\
+    \ the importance of the diagnosis and treatment of two coexisting primary malignancies.\n\n In conclusion, the present\
+    \ study described a rare case of an SFT arising from the lung in a male patient. A tumor resection was successfully performed\
+    \ and the diagnosis of an SFT was determined based on the immunohistochemical findings. Long-term follow-up with radiological\
+    \ imaging is required to monitor the recurrence and metastasis of this type of tumor."
+  - "MVD as assessed by HVD and AVD ×400 magnification may be a useful parameter to determine which cases of PDB will have\
+    \ DCIS or invasive carcinoma disease present. Identifying those cases with a low MVD may allow a more conservative approach\
+    \ in the surgical management of PDB. A different mechanism may be involved in the growth and progression of PDV. It is\
+    \ possible that in PDV, Paget cells can migrate and progress to invasive disease by utilising the existing vasculature,\
+    \ without the need for the formation of new blood vessels. This could explain why there was no difference in the microvessel\
+    \ counts between PDV with or without underlying invasive disease. Tumour progression in the absence of neoangiogenesis\
+    \ has been described by several authors [40] [41] [42] . \"Cooption\", the utilisation of preexisting vasculature by tumours\
+    \ to obtain its blood supply and therefore to grow and progress, has been reported in malignant melanomas, brain metastases,\
+    \ and lung cancer. Döme et al. [40] demonstrated the incorporation of the existing host vascular plexus into a progressing\
+    \ malignant melanoma. Others have described growth of tumour cells in non small cell carcinoma of the lung without morphological\
+    \ evidence of neoangiogenesis [43] and the development of brain metastases, without the induction of sprouting angiogenesis,\
+    \ even in the presence of high levels of VEGF [41] .\n\n It is well documented that the growth and disease progression\
+    \ of many cancers is due in part to the loss of cellcell adhesion. We have demonstrated that the cell adhesion molecule\
+    \ E-cadherin is significantly reduced (P = 0.039) in Paget's disease of the vulva cases with invasive disease when compared\
+    \ with Paget's disease of the vulva cases without invasive disease. E-cadherin expression was normal in PDB and there\
+    \ was no difference between those cases of PDB with or without DCIS or invasive disease [44] . These findings and the\
+    \ results from this current study demonstrate the critical steps involved in the pathogenesis of PDB and PDV may occur\
+    \ by different mechanisms.\n\n In conclusion, this is the first study to assess MVD in PDV and PDB. MVD can be a useful\
+    \ parameter in determining the presence of PDB with or without DCIS or invasive disease. Additional work is needed to\
+    \ assess the relationship between MVD and other stimulators of angiogenesis in the pathogenesis of PDB and PDV. What impact\
+    \ the differences in the pathogenesis in PDB and PDV, as described in this study, have on the histogenesis of these two\
+    \ diseases remains to be clarified."
+- source_sentence: What are the treatment options for multiple epidermal nevi (VEN)?
+  sentences:
+  - "(10, (17) (18) (19) There is evidence that TRALI is more common in recipients of blood products from multiparous female\
+    \ donors who are more likely to possess anti-HLA antibodies and anti-neutrophil-specific antibodies. (20) However, in\
+    \ about 5-15% of cases, no antibody is identified in either the donor or recipient. The second is a two-event model. (13,\
+    \ (18) (19) (20) The first event (first hit) is the clinical condition of the patient resulting in pulmonary endothelial\
+    \ activation and polimorphonuclear (PMN) sequestration, and the second event is the transfusion of a biologic response\
+    \ modifier (including anti-granulocyte antibodies, lipids, and CD40 ligand) that activates these adherent PMNs resulting\
+    \ in endothelial damage, capillary leak, and TRALI. These two mechanisms of injury may not be mutually exclusive and a\
+    \ patient may develop TRALI through either one or both mechanisms.\n\n TRALI prevention is a complex issue, and comprehensive\
+    \ and effective preventive treatment steps are still unknown. (19, 21) Although it is probably impossible to prevent all\
+    \ cases of TRALI, there are certain measures that can be taken to at least prevent TRALI as much as possible. Specific\
+    \ measures that could be considered in critical care practice include better compliance with evidence based triggers for\
+    \ transfusion, greater use of near patient testing to determine the need for transfusion, and minimizing blood loss due\
+    \ to sampling. All TRALI reactions should be reported to the transfusion service. All associated donors are tested for\
+    \ HLA class I and II antibodies as well as HNA antibodies.\n\n As the transfused units are usually not available for testing,\
+    \ this involves recalling the donors. Associated donors may continue donating while being investigated but only plasma\
+    \ for fractionation is used. All implicated donors (i.e. donors who are cross match positive with the patient's leucocytes\
+    \ or donors who have the cognate antibody to HLA class I, II or neutrophil antigens of the patient) are permanently deferred\
+    \ from donation. The permanent deferral is considered consistent with the 2004 consensus conference statement (21) and\
+    \ is supported by two retrospective studies that showed that a TRALI-implicated donor may cause multiple transfusion reactions\
+    \ in different recipients.\n\n The management of both the classic and delayed TRALI syndrome is essentially supportive\
+    \ and includes gentle ventilation (lung protective ventilation).\n\n Further work is required to define: 1) the effects\
+    \ of this life threatening syndrome; 2) patients who are at risk of TRALI and 3) a consensus international definition\
+    \ so that clinicians may properly diagnose TRALI."
+  - "Combining with vessel resection and reconstruction, especially radical resection of pancreatic cancer combined with artificial\
+    \ vessel reconstruction has been carried out and reported at Fudan University, Central South University, Nanjing Medical\
+    \ University and other larger medical centers [5] [7]- [15] . The resection rate of combined with vessel resection was\
+    \ up to 47%, operative mortality rate was <5% [16] [17] and 5-year survival rate was up to 20% [18] . There are 9 cases\
+    \ of pancreatic cancer patients in our cohort all cured and the perioperative mortality rate was 0%. 4 cases with pancreatic\
+    \ cancer died of malignancy recurrence and metastasis in 4, 9, 35, 37 months after operation, respectively. The remaining\
+    \ 5 cases are all alive so far. The postoperative survival time ≥20.2 months, and the median survival time was longer\
+    \ compared with overall pancreatic cancer patients. Although the number of cancer patients adopted in our cohort was small,\
+    \ it could reflect that the pancreatic resection combined with vessel resection could improve the prognosis of patients.\
+    \ In addition, the cohort includes 3 cases of hepatic alveolar echinococcus eroded vessel heavily, and the conventional\
+    \ surgery cannot resect the lesions. The lesions were completely resected after vessel resection and reconstruction, and\
+    \ there were no serious postoperative complications after surgery. Hepatectomy of hepatocellular carcinoma combined with\
+    \ vessel resection and reconstruction has not been reported in China before, thus, this study is the first in our country.\
+    \ Although the alveolar hydatid disease of liver was a benign disease, its property of growth is similar to malignancy\
+    \ and there is a possibility of recurrence and metastasis. Thus it is well known as \"worm malignancy\". The 3 alveolar\
+    \ hydatid cases in our cohort have no recurrences and metastasis so far ( Table 3 ). The follow-up time is short and the\
+    \ number of cases is small, so we cannot draw an exact conclusion that lesion resection combined with vessel resection\
+    \ and reconstruction contributes to the treatment of liver cancer, but it has a valuable reference and guiding significance\
+    \ for surgical treatment in the future.\n\n With the continuous progress of imaging technology and operation, resection\
+    \ combined with vessel resection and reconstruction, more complex and risky than traditional common operation, must become\
+    \ a more popular choice in clinical practice. It not only reflects the progression of surgery technique, but also improves\
+    \ patients' outcome importantly for its providing more opportunity to cure or relieve symptoms of patients with occupying"
+  - "Widespread multiple epidermal nevi may reflect genetic or chromosomal mosaicism. Blaschko has documented characteristic\
+    \ linear, zosteriform, unilateral or systematized patterns with streaks and swirls. [6] In some cases, when there are\
+    \ multiple lesions, there may be associated defects in other tissues, particularly the skeleton and the central nervous\
+    \ system, then called \"epidermal nevus syndrome.\" [3] The common sites are trunk and limbs and involvement of the head\
+    \ and neck region and involvement of the ear lobe is rarely reported [9, 10] as in our case where involvement of ear and\
+    \ scalp was seen with cicatricial alopecia.\n\n A case of linear tan colored verrucous skin lesions over right side of\
+    \ the face, extending to the scalp, right upper and lower limbs is reported where hair were long, fuzzy, differing in\
+    \ texture with patchy alopecia. Verrucosity of the lesions and the extensive distribution suggested it as VEN. As histopathological\
+    \ examination could not be done from the lesion over the scalp, it was difficult to differentiate it from nevus sebaceous,\
+    \ same as in our case. [11] Risk of developing basal cell carcinoma in a nevus sebaceous, a type of epidermal nevus is\
+    \ higher (6.550%), compared to the more common VEN, in spite of the fact that both arise from pluripotent primary epithelial\
+    \ germ cells which have the capacity to differentiate different epithelial structures. [12] Histologically, VEN are characterized\
+    \ by acanthosis, orthohyperkeratosis, papillomatosis, and an expanded papillary dermis sharply demarcated from the surrounding\
+    \ normal skin. [8] Immunohistochemical studies further help differentiate inflammatory linear (IL) VEN from other non-IL\
+    \ epidermal nevus.\n\n The treatment of VEN is difficult and often unsatisfactory. Treatment involves topical therapy\
+    \ such as corticosteroids, retinoic acid, tars, anthralin, 5-fluorouracil, and podophyllin, but they are of limited benefit.\
+    \ Surgical modalities include excision with full thickness graft, cryotherapy, [13] carbon dioxide laser vaporization,\
+    \ [14] and erbium: YAG laser therapy. [15] It is important to have a long term follow-up in such cases as there are chances\
+    \ of development of malignancy.\n\n Case is presented for its rarity in the form of extensive VEN in a male gender with\
+    \ involvement of ear lobe and scalp of left side with cicatricial alopecia.\n\n Nil.\n\n There are no conflicts of interest."
+- source_sentence: 'What are some risk factors for stroke in patients with atrial fibrillation?
+
+    '
+  sentences:
+  - "In this study, we aimed to evaluate myocardial injury in our PICU patients using cTnT assay. This prospective study showed\
+    \ that critically ill children had significantly higher level of cTnT when compared with healthy children. The same finding\
+    \ was documented in Clark et al. study [12] which investigated cTnT levels in critically ill ventilated infants. Other\
+    \ studies describe elevated cardiac troponin I among different groups of critically ill children as children with sepsis\
+    \ [7] , meningococcemia [8] , and RSV infections [6] .\n\n In ICU patients, physiologic stresses can occur in the form\
+    \ of either increased myocardial oxygen demands (e.g., fever, tachycardia) or decreased myocardial oxygen delivery (e.g.,\
+    \ anemia, hypotension, and hypoxemia) resulting in cardiac dysfunction, cardiac injury, or both [13] . This potential\
+    \ for an imbalance between oxygen supply and demand and the known propensity of critically ill patients to develop acute\
+    \ thrombosis may explain the increase in the risk of myocardial injury [14, 15] .\n\n In our study, cTnT levels were positively\
+    \ correlated with the duration of ventilation. Trevisanuto et al. [16] found significant positive correlation between\
+    \ the levels of cTnT and the duration of ventilation in neonates. However, Clark et al. [12] and Eisenhut et al. [6] found\
+    \ no relation between cTnT levels and the duration of ventilation in infants.\n\n In the current study, there were highly\
+    \ significant positive correlations between the level of cTnT and PIM II score as a measure of disease severity. Clark\
+    \ et al. [12] and Fenton et al. [17] documented this result in their studies.\n\n As regards echocardiographic data, the\
+    \ current study revealed a highly significant negative correlation between levels of cTnT and left ventricular fractional\
+    \ shortening. In preterm neonates, El-Khuffash et al. [18] stated that there was a significant inverse correlation between\
+    \ cTnT and echocardiographic markers of myocardial function.\n\n Results of our study also showed that there was highly\
+    \ significant difference between levels of cTnT in cases who died and those who survived, being higher in nonsurvivors.\
+    \ This finding was in agreement with that of Spies et al. study [19] in which cTnT as associated with an increased mortality\
+    \ rate. Also, in adult patients, Quenot et al. [20] stated that myocardial injury was shown to be an independent determinant\
+    \ of in-hospital mortality.\n\n Myocardial injury, detected with elevated cTnT levels, occurs in critically ill children.\
+    \ CTnT levels correlated significantly with disease severity and left ventricular systolic functions. An association between\
+    \ mortality and elevated cTnT levels was found."
+  - "5 Both categories of patients at low and high risk of stroke were stratified in terms of stroke risk using LA reservoir\
+    \ strain and PA-TDI. In practice, although the CHA 2 DS 2 -VASc score provides a good indication of stroke risk based\
+    \ on common clinical risk factors, there remains the occurrence of stroke in patients with CHA 2 DS 2 -VASc score < _1\
+    \ (a rate of < _2.8% per year) in whom the European Society of Cardiology Guidelines do not routinely recommend antithrombotic\
+    \ therapy. 2 In this group of patients, it is therefore desirable to provide personalized treatment according to tailored\
+    \ risk stratification, even if it is not well codified. The upcoming European Association of Cardiovascular Imaging AF\
+    \ Registry has been designed to provide additional insights into the relationships between LA structure and function with\
+    \ the development of ischaemic stroke and individual patient bleeding risk profiles. 14 While the above-mentioned strengths\
+    \ must be emphasized, the only weakness of the study of Leung et al. 5 corresponds to the use of advanced echocardiography\
+    \ itself as possible means of supporting CHA 2 DS 2 -VASc risk score in non-valvular AF patients. In particular, PA-TDI\
+    \ is a parameter that presupposes the use of colour TDI, which is angle-dependent and needs a high frame rate of recording.\
+    \ Therefore, its application in routine clinical practice has gradually been reduced. LA strain is a much more solid parameter,\
+    \ since it is obtainable on simple 2D images by speckle tracking echocardiography, which has high feasibility and good\
+    \ reproducibility. 3, 15 However, this technique is affected by a limited availability and the need for vendorspecific\
+    \ software on dedicated workstations for post hoc analyses, which cannot be obtained directly on the echocardiogram machine.\
+    \ Because of its recognized value, echocardiography has become established in guidelines for the management of AF. 2 In\
+    \ fact, echocardiography has a unique and important role in the assessment of cardiac structure and function, and risk\
+    \ stratification in AF patients. 3 Altogether, the findings of Leung et al. 5 figure) . Beyond LA enlargement, LA dysfunction\
+    \ can make AF patients more prone to the development of LA internal cavity thrombi and subsequent ischaemic stroke. Further\
+    \ prospective data are needed to confirm the incremental prognostic value of LA function assessment in patients considered\
+    \ at low-intermediate risk.\n\n Conflict of interest: none declared."
+  - "A second patient was reported in the same article. This patient developed PTLD after autologous BMT for T cell lymphoblastic\
+    \ lymphoma, although little clinical data were provided.\n\n Both patients in our report received acyclovir and developed\
+    \ PTLD despite the use of this antiviral agent. Patient 1 received acyclovir prior to diagnosis and was receiving intravenous\
+    \ ganciclovir at the time PTLD was diagnosed. Patient 2 received acyclovir from the time of transplant due to positive\
+    \ herpes simplex serology. The patients in three other reports were also treated with acyclovir and steroids. [13] [14]\
+    \ [15] The favorable outcome in the patient described by Shepherd et al may be due to the polyclonal nature of the lymphoproliferation\
+    \ although Patient 1 in our series also had a polyclonal PTLD. Acyclovir is frequently used in an attempt to control PTLD,\
+    \ but it has minimal activity in the replicative phase of EBV infection. 25 In the reports by Briz and Young, the patients\
+    \ received bone marrow purged with T cell-specific monoclonal antibody. This T cell depletion could increase the risk\
+    \ for developing PTLD, much as it does in allogeneic BMT. 10, 11 Specific recommendations regarding therapy are difficult\
+    \ to make given the small number of reported cases. Decreasing immunosuppression is not an option in these patients. The\
+    \ role of antivirals is controversial and did not appear to benefit our patients. Five of the seven reported patients\
+    \ received acyclovir and/or ganciclovir, but only one patient survived. Chemotherapy was given to three patients with\
+    \ only one of these surviving. Furthermore, chemotherapy may be difficult to tolerate in the post-transplant setting.\n\
+    \n Use of T cell infusions and monoclonal anti-B cell antibodies has been used with limited success in PTLD after allogeneic\
+    \ BMT but, to our knowledge, these treatments have not been attempted in patients with PTLD after autologous BMT. 26,\
+    \ 27 Immune modulation with interferon (used by Shephard et al) is another option but little can be said about its effectiveness\
+    \ based on one case.\n\n To conclude, post-transplant lymphoproliferative disorders can develop after autologous bone\
+    \ marrow transplantation. The symptoms of PTLD are frequently nonspecific; thus, this condition may be under-diagnosed.\
+    \ Post-transplant lymphoproliferative disorders should be considered in the differential diagnosis of any BMT patient\
+    \ with adenopathy, unexplained fever or pulmonary infiltrates. The use of bone marrow purged with T cell-specific monoclonal\
+    \ antibody may increase the risk for the development of PTLD in these patients."
+- source_sentence: 'Why is systemic immunosuppression not necessarily the optimal approach for ocular GVHD?
+
+    '
+  sentences:
+  - "[156] demonstrated that LDLLT for post-HSCT patients with respiratory failure (n = 7) was effective, with less rejection\
+    \ episodes compared with control patients without prior HSCT (n = 41), but they suggested that LDLLT may have a higher\
+    \ risk for the development of infectious complications.\n\n In summary, there is no comparative study of therapy for steroid-refractory\
+    \ chronic GVHD in Japan, even a retrospective study.\n\n Interventions including topical corticosteroids, topical Tac,\
+    \ CsA eye drops, and other nonsystemic therapies, as well as supportive care to prevent infections, osteoporosis, metabolic\
+    \ abnormalities, and other problems, are important components of the management of chronic GVHD. However, only a few studies\
+    \ of nonsystemic therapy have been reported from Japan (Table 4) .\n\n Because the severity of ocular disease often does\
+    \ not correlate with that of systemic disease, systemic immunosuppression is not necessarily an optimal approach for ocular\
+    \ GVHD, except in occasional cases. Ogawa et al. are involved in the establishment of topical treatment for ocular chronic\
+    \ GVHD (Table 4) . They reported the safety and efficacy of topical tranilast for mild dry eye [158] , autologous serum\
+    \ eye drops for severe dry eye [159] , and lacrimal punctal cauterization for dry eye with recurrent punctal plug extrusion\
+    \ [160] in Japanese patients with chronic GVHD affecting the eyes.\n\n This review has documented how many studies on\
+    \ prophylactic and therapeutic treatment of acute and chronic GVHD have been conducted in Japan. We should not play down\
+    \ our own data. However, what was surprising is that most studies were performed in a single institute and included a\
+    \ small number of patients, resulting in biased conclusions. Given the establishment of the \"Transplant Registry Unified\
+    \ Management Program\" in the JSHCT [161] , it is important to actively use not only detailed data in limited institutions,\
+    \ but also large-scale registry data to obtain more reliable results in the future.\n\n Unfortunately, only one phase\
+    \ 3 study has been conducted in Japan [28] . A prospective, randomized study of GVHD treatment is extremely difficult,\
+    \ partly due to the small number of eligible patients in each transplant institute, the need for prompt initiation of\
+    \ therapy, and, maybe in Japan, the thought of leaving the question of GVHD to other countries. This review may provide\
+    \ a baseline for starting prospective studies to create new evidence for GVHD treatment from Japan."
+  - "Both morphologic and molecular analyses have shown that by the time of cancer diagnosis, more than 80% of prostates harbor\
+    \ multiple separate cancer foci (47) , and these foci may each have a distinct molecular profile (48) . Within one focus,\
+    \ there tends to be homogeneity. For instance, TMPRSS2-ERG fusions, when present, are distributed among all nuclei within\
+    \ a discrete tumor lesion (49) . Therefore, challenges in biomarker development will be assessing and prioritizing tumor\
+    \ foci with clinically significant alterations that may play a biologic role in disease progression. Evaluating for concordance\
+    \ of molecular alterations between primary tumors and metastases also provides clues toward identifying early events.\
+    \ For instance, several genes were identified as altered in both primary tumors and CRPC in the recent exome sequencing\
+    \ studies, including those that regulate AR (FOXA1, CDKN1B, MLL2, ASL20; refs. [6] [7] [8] , and these may be important\
+    \ for disease initiation, as opposed to the AR amplifications and mutations implicated in treatment resistance.\n\n Another\
+    \ challenge lies in determining molecular concordance between different sites of tumor metastases, as this has important\
+    \ biologic and therapeutic implications (50) . Biopsies are not routinely conducted in advanced disease, and if conducted,\
+    \ are usually limited to single biopsies of one site. But is this biopsy representative of the overall tumor burden? Will\
+    \ choosing therapies based on the mutational profile of this single site lead to ineffective therapy for the patient?\
+    \ Studies focused on systematic evaluation of disease heterogeneity within prostate cancer are planned and one hopes they\
+    \ will help answer many of these unanswered questions.\n\n Characterizing the genomic landscape of prostate cancer and\
+    \ defining a molecular subclassification system have enormous potential to translate into clinically relevant biomarkers\
+    \ and new targeted therapeutic approaches. However, many challenges lie ahead, including distinguishing drivers from passengers\
+    \ and understanding disease heterogeneity and treatment resistance. As we exploit rapidly developing genome sequencing\
+    \ technologies, basic scientists and clinicians must come together to understand what drives prostate cancer and design\
+    \ effective biomarker validation trials to rationally and effectively move the field toward precision cancer care for\
+    \ patients with prostate cancer. In the end, a welldesigned targeted therapy study that incorporates biopsies and NGS\
+    \ of metastatic tumors before and during treatment will provide important insights that can allow investigators to learn\
+    \ from each clinical trial. Means of determining resistance, even for rare cases, will help drive the field forward and\
+    \ represent a more precise application of cancer care."
+  - "Correspondingly, mouse cells that can't synthesise metallothionein proved to be particularly sensitive to oxidative stress\
+    \ (Liu et al, 1995) .\n\n 'Markers for the determination of Cu status and Cu requirement (SOD); mechanisms of Cu homeostasis\
+    \ at the molecular level; Cu and gene expression; polymorphisms, the regulation of Cu transport at the blood -tissue barrier,\
+    \ molecular mechanisms of age-dependent Cu transport across the blood -brain barrier and of the distribution in blood\
+    \ (fractions); molecular mechanisms of chronic toxicity in relation to the cellular and subcellular Cu distribution.'\n\
+    \n The significance of Cu for human nutrition has not been adequately elucidated. In particular, reliable biomarkers are\
+    \ lacking to permit reliable determination and interpretation of the individual Cu status. Research preferences in this\
+    \ field should be on the clinical applicability. The lack of reliable markers for Cu status makes it difficult to assess\
+    \ the benefit of increased Cu intake for risk groups or in the prevention of disease and to determine threshold values\
+    \ for Cu toxicity. From a toxicological point of view, Cu metabolism in the neonate needs to be investigated in detail,\
+    \ particularly absorption and hepatic retention and excretion of Cu. Therefore, a better understanding of the mechanisms\
+    \ of Cu homeostasis would be helpful, eg the dependence of Cu transport across the blood -brain barrier on concentration\
+    \ and age. Using molecular methods it should be possible to study the effects of marginal Cu intake on the gene expression\
+    \ of CuHohenheim Consensus Workshop K Schümann et al dependent transcription factors. A particular challenge for the future\
+    \ is the demonstration of genetic polymorphisms in the expression of Cu-dependent proteins and their functional consequences.\
+    \ With such data it will it be possible to define risk groups for excessive or inadequate Cu intake and prophylactic treatment.\n\
+    \n The 15th Hohenheim Consensus Workshop took place in March 1999 at the University of Stuttgart-Hohenheim. The subject\
+    \ of this conference was copper (Cu). Seven German and Austrian scientists who had published and reviewed scientific and\
+    \ regulatory papers on Cu were invited, among them basic researchers, toxicologists, clinical chemists, nutritionists\
+    \ and scientific regulators from the Umweltbundesamt. The participants were presented with 11 questions, which were discussed\
+    \ and answered at the workshop, with the aim of summarising the current state of knowledge on Cu. The explicatory text\
+    \ accompanying the short answers was produced and agreed on after the conference and was backed up by corresponding references.\
+    \ Because of the lack of space, it was not possible to include all references provided by the authors."
+model-index:
+- name: SentenceTransformer based on unsloth/embeddinggemma-2
+  results:
+  - task:
+      type: information-retrieval
+      name: Information Retrieval
+    dataset:
+      name: miriad
+      type: miriad
+    metrics:
+    - type: cosine_accuracy@1
+      value: 0.8943333333333333
+      name: Cosine Accuracy@1
+      verified: false
+    - type: cosine_accuracy@3
+      value: 0.958
+      name: Cosine Accuracy@3
+      verified: false
+    - type: cosine_accuracy@5
+      value: 0.975
+      name: Cosine Accuracy@5
+      verified: false
+    - type: cosine_accuracy@10
+      value: 0.988
+      name: Cosine Accuracy@10
+      verified: false
+    - type: cosine_precision@1
+      value: 0.8943333333333333
+      name: Cosine Precision@1
+      verified: false
+    - type: cosine_precision@3
+      value: 0.31933333333333336
+      name: Cosine Precision@3
+      verified: false
+    - type: cosine_precision@5
+      value: 0.195
+      name: Cosine Precision@5
+      verified: false
+    - type: cosine_precision@10
+      value: 0.0988
+      name: Cosine Precision@10
+      verified: false
+    - type: cosine_recall@1
+      value: 0.8943333333333333
+      name: Cosine Recall@1
+      verified: false
+    - type: cosine_recall@3
+      value: 0.958
+      name: Cosine Recall@3
+      verified: false
+    - type: cosine_recall@5
+      value: 0.975
+      name: Cosine Recall@5
+      verified: false
+    - type: cosine_recall@10
+      value: 0.988
+      name: Cosine Recall@10
+      verified: false
+    - type: cosine_ndcg@10
+      value: 0.9439348936090421
+      name: Cosine Ndcg@10
+      verified: false
+    - type: cosine_mrr@10
+      value: 0.929513095238095
+      name: Cosine Mrr@10
+      verified: false
+    - type: cosine_map@100
+      value: 0.9300672974786356
+      name: Cosine Map@100
+      verified: false
+  - task:
+      type: information-retrieval
+      name: Information Retrieval
+    dataset:
+      name: NanoNFCorpus
+      type: NanoNFCorpus
+    metrics:
+    - type: cosine_accuracy@1
+      value: 0.46
+      name: Cosine Accuracy@1
+      verified: false
+    - type: cosine_accuracy@3
+      value: 0.54
+      name: Cosine Accuracy@3
+      verified: false
+    - type: cosine_accuracy@5
+      value: 0.62
+      name: Cosine Accuracy@5
+      verified: false
+    - type: cosine_accuracy@10
+      value: 0.64
+      name: Cosine Accuracy@10
+      verified: false
+    - type: cosine_precision@1
+      value: 0.46
+      name: Cosine Precision@1
+      verified: false
+    - type: cosine_precision@3
+      value: 0.3733333333333333
+      name: Cosine Precision@3
+      verified: false
+    - type: cosine_precision@5
+      value: 0.3440000000000001
+      name: Cosine Precision@5
+      verified: false
+    - type: cosine_precision@10
+      value: 0.28200000000000003
+      name: Cosine Precision@10
+      verified: false
+    - type: cosine_recall@1
+      value: 0.04365641268275218
+      name: Cosine Recall@1
+      verified: false
+    - type: cosine_recall@3
+      value: 0.0682416401700699
+      name: Cosine Recall@3
+      verified: false
+    - type: cosine_recall@5
+      value: 0.10716878532819393
+      name: Cosine Recall@5
+      verified: false
+    - type: cosine_recall@10
+      value: 0.13808707386781977
+      name: Cosine Recall@10
+      verified: false
+    - type: cosine_ndcg@10
+      value: 0.34569289318798896
+      name: Cosine Ndcg@10
+      verified: false
+    - type: cosine_mrr@10
+      value: 0.5175238095238095
+      name: Cosine Mrr@10
+      verified: false
+    - type: cosine_map@100
+      value: 0.1506879048026917
+      name: Cosine Map@100
+      verified: false
+  - task:
+      type: information-retrieval
+      name: Information Retrieval
+    dataset:
+      name: NanoSciFact
+      type: NanoSciFact
+    metrics:
+    - type: cosine_accuracy@1
+      value: 0.78
+      name: Cosine Accuracy@1
+      verified: false
+    - type: cosine_accuracy@3
+      value: 0.88
+      name: Cosine Accuracy@3
+      verified: false
+    - type: cosine_accuracy@5
+      value: 0.9
+      name: Cosine Accuracy@5
+      verified: false
+    - type: cosine_accuracy@10
+      value: 0.92
+      name: Cosine Accuracy@10
+      verified: false
+    - type: cosine_precision@1
+      value: 0.78
+      name: Cosine Precision@1
+      verified: false
+    - type: cosine_precision@3
+      value: 0.32666666666666666
+      name: Cosine Precision@3
+      verified: false
+    - type: cosine_precision@5
+      value: 0.204
+      name: Cosine Precision@5
+      verified: false
+    - type: cosine_precision@10
+      value: 0.10399999999999998
+      name: Cosine Precision@10
+      verified: false
+    - type: cosine_recall@1
+      value: 0.735
+      name: Cosine Recall@1
+      verified: false
+    - type: cosine_recall@3
+      value: 0.875
+      name: Cosine Recall@3
+      verified: false
+    - type: cosine_recall@5
+      value: 0.9
+      name: Cosine Recall@5
+      verified: false
+    - type: cosine_recall@10
+      value: 0.92
+      name: Cosine Recall@10
+      verified: false
+    - type: cosine_ndcg@10
+      value: 0.852259508025645
+      name: Cosine Ndcg@10
+      verified: false
+    - type: cosine_mrr@10
+      value: 0.8301904761904763
+      name: Cosine Mrr@10
+      verified: false
+    - type: cosine_map@100
+      value: 0.8339197691197691
+      name: Cosine Map@100
+      verified: false
+  - task:
+      type: information-retrieval
+      name: Information Retrieval
+    dataset:
+      name: NanoFiQA2018
+      type: NanoFiQA2018
+    metrics:
+    - type: cosine_accuracy@1
+      value: 0.4
+      name: Cosine Accuracy@1
+      verified: false
+    - type: cosine_accuracy@3
+      value: 0.46
+      name: Cosine Accuracy@3
+      verified: false
+    - type: cosine_accuracy@5
+      value: 0.56
+      name: Cosine Accuracy@5
+      verified: false
+    - type: cosine_accuracy@10
+      value: 0.62
+      name: Cosine Accuracy@10
+      verified: false
+    - type: cosine_precision@1
+      value: 0.4
+      name: Cosine Precision@1
+      verified: false
+    - type: cosine_precision@3
+      value: 0.20666666666666667
+      name: Cosine Precision@3
+      verified: false
+    - type: cosine_precision@5
+      value: 0.16
+      name: Cosine Precision@5
+      verified: false
+    - type: cosine_precision@10
+      value: 0.09999999999999998
+      name: Cosine Precision@10
+      verified: false
+    - type: cosine_recall@1
+      value: 0.21141269841269839
+      name: Cosine Recall@1
+      verified: false
+    - type: cosine_recall@3
+      value: 0.29693650793650794
+      name: Cosine Recall@3
+      verified: false
+    - type: cosine_recall@5
+      value: 0.3646031746031746
+      name: Cosine Recall@5
+      verified: false
+    - type: cosine_recall@10
+      value: 0.42768253968253966
+      name: Cosine Recall@10
+      verified: false
+    - type: cosine_ndcg@10
+      value: 0.37911505711723736
+      name: Cosine Ndcg@10
+      verified: false
+    - type: cosine_mrr@10
+      value: 0.46169047619047615
+      name: Cosine Mrr@10
+      verified: false
+    - type: cosine_map@100
+      value: 0.3337469785841535
+      name: Cosine Map@100
+      verified: false
+  - task:
+      type: information-retrieval
+      name: Information Retrieval
+    dataset:
+      name: NanoArguAna
+      type: NanoArguAna
+    metrics:
+    - type: cosine_accuracy@1
+      value: 0.14
+      name: Cosine Accuracy@1
+      verified: false
+    - type: cosine_accuracy@3
+      value: 0.7
+      name: Cosine Accuracy@3
+      verified: false
+    - type: cosine_accuracy@5
+      value: 0.84
+      name: Cosine Accuracy@5
+      verified: false
+    - type: cosine_accuracy@10
+      value: 0.94
+      name: Cosine Accuracy@10
+      verified: false
+    - type: cosine_precision@1
+      value: 0.14
+      name: Cosine Precision@1
+      verified: false
+    - type: cosine_precision@3
+      value: 0.2333333333333333
+      name: Cosine Precision@3
+      verified: false
+    - type: cosine_precision@5
+      value: 0.16799999999999998
+      name: Cosine Precision@5
+      verified: false
+    - type: cosine_precision@10
+      value: 0.09399999999999999
+      name: Cosine Precision@10
+      verified: false
+    - type: cosine_recall@1
+      value: 0.14
+      name: Cosine Recall@1
+      verified: false
+    - type: cosine_recall@3
+      value: 0.7
+      name: Cosine Recall@3
+      verified: false
+    - type: cosine_recall@5
+      value: 0.84
+      name: Cosine Recall@5
+      verified: false
+    - type: cosine_recall@10
+      value: 0.94
+      name: Cosine Recall@10
+      verified: false
+    - type: cosine_ndcg@10
+      value: 0.5556073600444988
+      name: Cosine Ndcg@10
+      verified: false
+    - type: cosine_mrr@10
+      value: 0.4303253968253968
+      name: Cosine Mrr@10
+      verified: false
+    - type: cosine_map@100
+      value: 0.43464357864357867
+      name: Cosine Map@100
+      verified: false
+  - task:
+      type: nano-beir
+      name: Nano BEIR
+    dataset:
+      name: NanoBEIR mean
+      type: NanoBEIR_mean
+    metrics:
+    - type: cosine_accuracy@1
+      value: 0.44500000000000006
+      name: Cosine Accuracy@1
+      verified: false
+    - type: cosine_accuracy@3
+      value: 0.645
+      name: Cosine Accuracy@3
+      verified: false
+    - type: cosine_accuracy@5
+      value: 0.73
+      name: Cosine Accuracy@5
+      verified: false
+    - type: cosine_accuracy@10
+      value: 0.78
+      name: Cosine Accuracy@10
+      verified: false
+    - type: cosine_precision@1
+      value: 0.44500000000000006
+      name: Cosine Precision@1
+      verified: false
+    - type: cosine_precision@3
+      value: 0.285
+      name: Cosine Precision@3
+      verified: false
+    - type: cosine_precision@5
+      value: 0.21900000000000003
+      name: Cosine Precision@5
+      verified: false
+    - type: cosine_precision@10
+      value: 0.145
+      name: Cosine Precision@10
+      verified: false
+    - type: cosine_recall@1
+      value: 0.28251727777386265
+      name: Cosine Recall@1
+      verified: false
+    - type: cosine_recall@3
+      value: 0.48504453702664446
+      name: Cosine Recall@3
+      verified: false
+    - type: cosine_recall@5
+      value: 0.5529429899828421
+      name: Cosine Recall@5
+      verified: false
+    - type: cosine_recall@10
+      value: 0.6064424033875899
+      name: Cosine Recall@10
+      verified: false
+    - type: cosine_ndcg@10
+      value: 0.5331687045938426
+      name: Cosine Ndcg@10
+      verified: false
+    - type: cosine_mrr@10
+      value: 0.5599325396825396
+      name: Cosine Mrr@10
+      verified: false
+    - type: cosine_map@100
+      value: 0.43824955778754826
+      name: Cosine Map@100
+      verified: false
+config:
+  architectures:
+  - EmbeddingGemma2Model
+  model_type: embedding_gemma2
+  tokenizer_config:
+    bos_token: <bos>
+    eos_token: <eos>
+    mask_token: <mask>
+    pad_token: <pad>
+    unk_token: <unk>
+  chat_template_jinja: '{%- for msg in messages if msg.get(''role'') == ''system'' -%}{%- if msg.get(''content'') is string
+    -%}{{ msg[''content''] }}{%- else -%}{%- for item in msg[''content''] if item.get(''type'') == ''text'' -%}{{ item[''text'']
+    }}{%- endfor -%}{%- endif -%}{%- endfor -%}{%- for msg in messages if msg.get(''role'') != ''system'' -%}{%- if msg.get(''content'')
+    is string -%}{{ msg[''content''] }}{%- else -%}{%- set existing_text = msg[''content''] | selectattr(''type'', ''equalto'',
+    ''text'') | map(attribute=''text'') | join -%}{%- set has_manual_placeholders = (''<|image|>'' in existing_text) or (''<|video|>''
+    in existing_text) or (''<|audio|>'' in existing_text) -%}{%- for item in msg[''content''] -%}{%- if item.get(''type'')
+    == ''text'' -%}{{ item[''text''] }}{%- elif not has_manual_placeholders and item.get(''type'') == ''image'' -%}<|image|>{%-
+    elif not has_manual_placeholders and item.get(''type'') == ''video'' -%}<|video|>{%- elif not has_manual_placeholders
+    and item.get(''type'') == ''audio'' -%}<|audio|>{%- endif -%}{%- endfor -%}{%- endif -%}{%- endfor -%}'
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:14000
+  - loss:MultipleNegativesRankingLoss
+  - unsloth
+  base_model: unsloth/embeddinggemma-2
+  widget:
+  - source_sentence: 'How does the production of TNF, IL-1, and IL-6 differ in the hyper-IgD syndrome during attacks compared
+      to infectious diseases such as meningococcal sepsis and typhoid fever?
+
+      '
+    sentences:
+    - "In addition to its role in angiogenesis, IL8 induces a chemotactic infiltration of neutrophils into the tumor site,\
+      \ thereby generating protumoral microenvironment (38) . Secretion of inflammatory cytokines has been known to constitutively\
+      \ activate NF-kB and STAT3, which directly regulate numerous genes, such as Bcl-2, cyclin D1, and c-myc, which have\
+      \ been associated with cell survival and chemoresistance (37, 40, 42, 44) . TNF was reported to mediate constitutive\
+      \ activation of NF-kB in SCCHN cells (40) . IL6 is a key downstream target of NF-kB and is a potent activator of STAT3\
+      \ as well (45) . Inhibition of PLA2G2A, a ratelimiting enzyme in tumor-stimulating eicosanoid production, reduced cell\
+      \ proliferation and NF-kB activity in non-small cell lung cancer (41) . In addition, PLA2G2A induced proliferation of\
+      \ (46) . IL6 has been known to induce resistance to anticancer therapy in different types of cancer (43, 45) . To complement\
+      \ IL6 overexpression (>6-fold) in local tumor microenvironment, we compared the concentrations of plasma IL6 in patients\
+      \ with CB and non-CB on dacomitinib. Despite similar IL6 concentrations at baseline between two groups, its concentration\
+      \ at day 14 of dacomitinib was significantly higher in non-CB patients than in CB patients. This may suggest that IL6\
+      \ induced by dacomitinib from tumor or stromal cells promoted resistance to dacomitinib in non-CB patients. This is\
+      \ in accordance with our previous report that dacomitinib induced STAT3 activation via autocrine IL6 production, promoting\
+      \ de novo resistance to dacomitinib (43) . It will be important to determine usefulness of plasma IL6 detection for\
+      \ monitoring therapeutic response to EGFR inhibitors in the future study.\n\n Combination strategies targeting the PI3K\
+      \ pathway or inflammatory pathway can be a potential therapeutic option to overcome resistance and enhance efficacy\
+      \ of dacomitinib in R/M-SCCHN. Several agents targeting the PI3K pathway (e.g., BYL719, XL147; refs. 47, 48) , inflammatory\
+      \ cytokines/mediators (e.g., ruxolitinib; ref. 49 ), or COX-2 pathway (e.g., celecoxib; ref. 50) in combination with\
+      \ EGFR inhibitors are under active investigation.\n\n In conclusion, dacomitinib demonstrated promising efficacy with\
+      \ manageable toxicity in platinum-failed R/M-SCCHN patients. Screening of PI3K pathway mutation and expression of inflammatory\
+      \ mediators may help identify patients with R/M-SCCHN most likely benefit from dacomitinib.\n\n No potential conflicts\
+      \ of interest were disclosed."
+    - "The higher concentrations we found during remissions (104 5 20 pg/mL) and attacks ( 1 17 -+ I5 pg/mL) in the hyper-IgD\
+      \ syndrome are most likely due to detection of both free TNF and TNF bound to sTNFr. The role of IL-1 was tested in\
+      \ a study of 18 FMF patients, 9 symptomatic and 9 asymptomatic, and mean IL-1 activity in patients (either during attack\
+      \ or remission) was comparable with the values obtained in controls.'* We studied the effect of bacterial LPS on the\
+      \ cytokine production as generated in whole blood. In contrast to Tcell mitogens such as concavalin A, in our experience,\
+      \ LPS is a reliable stimulator of cytokine production. The effect of LPS is dose-dependent, and dosages at 10 &mL as\
+      \ used in our study have yielded reproducible result^.^' It is of interest that we detected an augmented LPS-stimulated\
+      \ ex vivo production of TNFa, E-lP, and IL-lra in our whole blood culture system during attacks.\n\n This enhanced production\
+      \ capacity in the hyper-IgD syndrome during attacks is in contrast with findings obtained in various infectious diseases\
+      \ such as meningococcal sepsis and typhoid fever, where the ex vivo production of TNF, IL-1, and IL-6 is depressed during\
+      \ the acute stage and is gradually restored during re~overy.~'.~~ Also, TNFa and IL-1 production, as stimulated by LPS,\
+      \ has been reported to be markedly decreased during attacks patients and detected decreased ex vivo production of TNFa,\
+      \ IL-lP, and IL-lra during attacks (Drenth JPH, unpublished observations). These findings clearly differ from the increased\
+      \ production during the febrile attacks of the hyperIgD syndrome. It is possible that the monocytes/macrophages in the\
+      \ hyper-IgD syndrome are already primed in vivo to produce increased amounts of these cytokines. This could be the result\
+      \ of increased concentrations of AGP and CRP, because these acute-phase proteins have been shown to potentiate the in\
+      \ vitro production of cytokines and of in ~~. 3 4 , 3 6 . 4 0 We could confirm these results in three Fh4F\n\n For personal\
+      \ use only. on November 11, 2017. by guest www.bloodjournal.org From"
+    - "This suggests that the efficacy of DPP-4 inhibition in the vasculature of WD-fed female mice occurs without significant\
+      \ changes in AGE. To the best of our knowledge this is the only study demonstrating that a DPP-4 inhibitor prevents\
+      \ development of diet-induced vascular stiffness. Further studies are needed to clarify if other DPP-4 inhibitors share\
+      \ these beneficial effects.\n\n Despite abundant preclinical evidence of cardiovascular benefits of DPP-4 inhibitors,\
+      \ including results presented herein, meta-analyses of clinical data raise concerns regarding evidence of increased\
+      \ risk of heart failure with administration of certain DPP-4 inhibitors [56] . On the other hand, other recent analyses\
+      \ have produced differing conclusions regarding heart failure risk assessment [57] . In the SAVOR-TIMI 53 trial the\
+      \ use of saxagliptin was associated with increased risk of heart failure [58] . Importantly, the risk was higher in\
+      \ the subjects with previous heart failure, elevated natriuretic peptides and impaired renal function [59] . In the\
+      \ EXAMINE trial that explored the use of alogliptin in type 2 diabetics with post-acute coronary events there was no\
+      \ increased risk of major CV events [60] . Nevertheless, a recent post hoc analysis of the EXAMINE trial did find a\
+      \ statistically significant increase in hospitalization rate from heart failure in the group of subjects without heart\
+      \ failure history [61] . On the contrary, the sitagliptin TECOS trial did not find differences in the rate of hospitalization\
+      \ for heart failure between the treatment and the control group [62] . Similarly, a recent pre-specified patient-level\
+      \ pooled analysis of available trials of LGT did not report an association between the DPP-4 inhibitor and increased\
+      \ CV risk (including heart failure) [63] . Results from two ongoing trials using LGT, the CAROLINA (NCT01243424) and\
+      \ CARMELINA (NCT01897532), will further clarify the role and safety of this agent in regard to diabetic CVD.\n\n To\
+      \ summarize, the current investigation demonstrates that DPP-4 inhibition prevents abnormal increases in vascular stiffness,\
+      \ aortic fibrosis, oxidative stress and FGF-23/Klotho expression induced by a WD in female mice and these benefits occur\
+      \ independent of AGE reduction. Our findings have clinical relevance as obese diabetic women are more frequently affected\
+      \ by increased vascular stiffness that likely promotes higher incident CVD compared to their male counterparts. Ultimately,\
+      \ only the results of well-designed clinical trials will clarify the role of LGT in the management of diabetic CVD."
+  - source_sentence: How is the expression of periostin/OSF-2 regulated and what does this suggest about its function in the
+      endometrium?
+    sentences:
+    - "The expression of periostin/OSF-2 mRNA increased after the menstrual period, as seen during the early and middle parts\
+      \ of the proliferative phase. These data indicate the participation of periostin/OSF2 in remodeling of the endometrium.\n\
+      \n Female periostin null mice are infertile [9] . When the oviducts of plugged periostin null mice were sectioned, both\
+      \ two-cell and four-cell zygotes were found, indicating that periostin/OSF-2 plays a crucial role in implantation. There\
+      \ are two possible targets of periostin/OSF-2 during implantation. One of them is the uterine endometrium. We showed\
+      \ that the expression of periostin/OSF-2 increased during the early secretory phase of the menstrual cycle, which indicates\
+      \ that secreted periostin/OSF-2 may activate the differentiation of the endometrium for implantation. Periostin/OSF-2\
+      \ has been shown to be a ligand for αvβ3 and αvβ5 integrins promoting integrin-dependent cell adhesion and motility\
+      \ [4, 8] . Lessey et al. reported that the expression of αvβ3 integrin increased in the putative window of implantation,\
+      \ suggesting its role in the establishment of uterine receptiveness [18] . There was no difference in the expression\
+      \ of αvβ3 integrin in women who were pregnant or infertile [19] . It is possible that perisotin/ OSF-2 plays an important\
+      \ role for uterine receptiveness as a ligand for integrins on human endometrium. Another possible target of perisotin/OSF-2\
+      \ is the trophoblast. Kabir-Salmani et al. reported that αvβ3 integrin was expressed in the core focal adhesions of\
+      \ extravillous trophoblast cells, and that αvβ3 integrin signaling pathways are activated in insulin-like growth factor-I\
+      \ mediated migration of these cells [20] . αvβ3 integrin is expressed in human endometrium at the beginning of pregnancy.\
+      \ In the human trophoblast, αvβ3 integrin is detected in distal, invasive and endovascular extravillous cytotrophoblast\
+      \ [21] .\n\n In conclusion, periostin/OSF-2 is expressed in rat uterus and human endometrium, and is regulated by ovarian\
+      \ steroid hormones. The expression of this gene changes throughout the menstrual cycle. The pattern of periostin/OSF-2\
+      \ expression indicates that this gene may be related to the function of the endometrium."
+    - "2 The differential diagnosis of a lung SFT includes numerous malignant and benign tumors, including hemangiopericytoma,\
+      \ mesothelioma, monophasic synovial sarcoma, sarcomatoid renal cell carcinoma, spindle cell lipoma, fibrosarcoma, leiomyosarcoma\
+      \ and neurogenic tumors, including schwan-noma and malignant peripheral nerve sheath tumors. 6 Immunohistochemistry\
+      \ is significant for differentiating between these tumors. For example, leiomyosarcomas are CD34-negative and positive\
+      \ for SMA and desmin. Thus, the presence of different markers in leiomyosarcoma distinguishes it from an SFT.\n\n The\
+      \ most successful treatment for SFTs is surgery. In the present case, two surgical approaches were prepared depending\
+      \ on the intraoperative frozen section. If the tumor was benign, a total tumor excision was to be performed. A lower\
+      \ left lung lobe resection was to be performed for a malignant tumor, as well as a lymph node dissection involving radical\
+      \ dissection of the mediastinum. In the present case, the tumor was identified as benign. The efficacy of surgery depends\
+      \ on the entirety of the tumor resection. 8 Previous studies have reported the use of adjuvant radiotherapy or chemotherapy\
+      \ for malignant SFTs; however, the effectiveness of such treatment has yet to be elucidated. 3 Metastases are usually\
+      \ blood-borne and have been identified in the liver, bone, brain, lungs and muscles. 2 Chen et al. 9 reported the case\
+      \ of a 78-year-old male who presented with a left gluteal soft tissue mass with a twomonth history of a newly-diagnosed\
+      \ metastatic lung adenocarcinoma. H&E staining of the mass revealed an SFT containing metastases from the adenocarcinoma.\
+      \ 9 Furthermore, Schirosi et al. 10 reported that high p53 expression in SFTs may be significantly correlated with a\
+      \ poor prognosis. Due to the potential for metastasis and recurrence, long-term follow-up for several years is required.\
+      \ Watanabe et al. 11 described the case of a 57-year old female who was diagnosed with adenocarcinoma of the right,\
+      \ middle lung lobe and malignant visceral pleura SFT of the left, upper lung lobe. The patient received a median sternotomy.\
+      \ The study illustrated the importance of the diagnosis and treatment of two coexisting primary malignancies.\n\n In\
+      \ conclusion, the present study described a rare case of an SFT arising from the lung in a male patient. A tumor resection\
+      \ was successfully performed and the diagnosis of an SFT was determined based on the immunohistochemical findings. Long-term\
+      \ follow-up with radiological imaging is required to monitor the recurrence and metastasis of this type of tumor."
+    - "MVD as assessed by HVD and AVD ×400 magnification may be a useful parameter to determine which cases of PDB will have\
+      \ DCIS or invasive carcinoma disease present. Identifying those cases with a low MVD may allow a more conservative approach\
+      \ in the surgical management of PDB. A different mechanism may be involved in the growth and progression of PDV. It\
+      \ is possible that in PDV, Paget cells can migrate and progress to invasive disease by utilising the existing vasculature,\
+      \ without the need for the formation of new blood vessels. This could explain why there was no difference in the microvessel\
+      \ counts between PDV with or without underlying invasive disease. Tumour progression in the absence of neoangiogenesis\
+      \ has been described by several authors [40] [41] [42] . \"Cooption\", the utilisation of preexisting vasculature by\
+      \ tumours to obtain its blood supply and therefore to grow and progress, has been reported in malignant melanomas, brain\
+      \ metastases, and lung cancer. Döme et al. [40] demonstrated the incorporation of the existing host vascular plexus\
+      \ into a progressing malignant melanoma. Others have described growth of tumour cells in non small cell carcinoma of\
+      \ the lung without morphological evidence of neoangiogenesis [43] and the development of brain metastases, without the\
+      \ induction of sprouting angiogenesis, even in the presence of high levels of VEGF [41] .\n\n It is well documented\
+      \ that the growth and disease progression of many cancers is due in part to the loss of cellcell adhesion. We have demonstrated\
+      \ that the cell adhesion molecule E-cadherin is significantly reduced (P = 0.039) in Paget's disease of the vulva cases\
+      \ with invasive disease when compared with Paget's disease of the vulva cases without invasive disease. E-cadherin expression\
+      \ was normal in PDB and there was no difference between those cases of PDB with or without DCIS or invasive disease\
+      \ [44] . These findings and the results from this current study demonstrate the critical steps involved in the pathogenesis\
+      \ of PDB and PDV may occur by different mechanisms.\n\n In conclusion, this is the first study to assess MVD in PDV\
+      \ and PDB. MVD can be a useful parameter in determining the presence of PDB with or without DCIS or invasive disease.\
+      \ Additional work is needed to assess the relationship between MVD and other stimulators of angiogenesis in the pathogenesis\
+      \ of PDB and PDV. What impact the differences in the pathogenesis in PDB and PDV, as described in this study, have on\
+      \ the histogenesis of these two diseases remains to be clarified."
+  - source_sentence: What are the treatment options for multiple epidermal nevi (VEN)?
+    sentences:
+    - "(10, (17) (18) (19) There is evidence that TRALI is more common in recipients of blood products from multiparous female\
+      \ donors who are more likely to possess anti-HLA antibodies and anti-neutrophil-specific antibodies. (20) However, in\
+      \ about 5-15% of cases, no antibody is identified in either the donor or recipient. The second is a two-event model.\
+      \ (13, (18) (19) (20) The first event (first hit) is the clinical condition of the patient resulting in pulmonary endothelial\
+      \ activation and polimorphonuclear (PMN) sequestration, and the second event is the transfusion of a biologic response\
+      \ modifier (including anti-granulocyte antibodies, lipids, and CD40 ligand) that activates these adherent PMNs resulting\
+      \ in endothelial damage, capillary leak, and TRALI. These two mechanisms of injury may not be mutually exclusive and\
+      \ a patient may develop TRALI through either one or both mechanisms.\n\n TRALI prevention is a complex issue, and comprehensive\
+      \ and effective preventive treatment steps are still unknown. (19, 21) Although it is probably impossible to prevent\
+      \ all cases of TRALI, there are certain measures that can be taken to at least prevent TRALI as much as possible. Specific\
+      \ measures that could be considered in critical care practice include better compliance with evidence based triggers\
+      \ for transfusion, greater use of near patient testing to determine the need for transfusion, and minimizing blood loss\
+      \ due to sampling. All TRALI reactions should be reported to the transfusion service. All associated donors are tested\
+      \ for HLA class I and II antibodies as well as HNA antibodies.\n\n As the transfused units are usually not available\
+      \ for testing, this involves recalling the donors. Associated donors may continue donating while being investigated\
+      \ but only plasma for fractionation is used. All implicated donors (i.e. donors who are cross match positive with the\
+      \ patient's leucocytes or donors who have the cognate antibody to HLA class I, II or neutrophil antigens of the patient)\
+      \ are permanently deferred from donation. The permanent deferral is considered consistent with the 2004 consensus conference\
+      \ statement (21) and is supported by two retrospective studies that showed that a TRALI-implicated donor may cause multiple\
+      \ transfusion reactions in different recipients.\n\n The management of both the classic and delayed TRALI syndrome is\
+      \ essentially supportive and includes gentle ventilation (lung protective ventilation).\n\n Further work is required\
+      \ to define: 1) the effects of this life threatening syndrome; 2) patients who are at risk of TRALI and 3) a consensus\
+      \ international definition so that clinicians may properly diagnose TRALI."
+    - "Combining with vessel resection and reconstruction, especially radical resection of pancreatic cancer combined with\
+      \ artificial vessel reconstruction has been carried out and reported at Fudan University, Central South University,\
+      \ Nanjing Medical University and other larger medical centers [5] [7]- [15] . The resection rate of combined with vessel\
+      \ resection was up to 47%, operative mortality rate was <5% [16] [17] and 5-year survival rate was up to 20% [18] .\
+      \ There are 9 cases of pancreatic cancer patients in our cohort all cured and the perioperative mortality rate was 0%.\
+      \ 4 cases with pancreatic cancer died of malignancy recurrence and metastasis in 4, 9, 35, 37 months after operation,\
+      \ respectively. The remaining 5 cases are all alive so far. The postoperative survival time ≥20.2 months, and the median\
+      \ survival time was longer compared with overall pancreatic cancer patients. Although the number of cancer patients\
+      \ adopted in our cohort was small, it could reflect that the pancreatic resection combined with vessel resection could\
+      \ improve the prognosis of patients. In addition, the cohort includes 3 cases of hepatic alveolar echinococcus eroded\
+      \ vessel heavily, and the conventional surgery cannot resect the lesions. The lesions were completely resected after\
+      \ vessel resection and reconstruction, and there were no serious postoperative complications after surgery. Hepatectomy\
+      \ of hepatocellular carcinoma combined with vessel resection and reconstruction has not been reported in China before,\
+      \ thus, this study is the first in our country. Although the alveolar hydatid disease of liver was a benign disease,\
+      \ its property of growth is similar to malignancy and there is a possibility of recurrence and metastasis. Thus it is\
+      \ well known as \"worm malignancy\". The 3 alveolar hydatid cases in our cohort have no recurrences and metastasis so\
+      \ far ( Table 3 ). The follow-up time is short and the number of cases is small, so we cannot draw an exact conclusion\
+      \ that lesion resection combined with vessel resection and reconstruction contributes to the treatment of liver cancer,\
+      \ but it has a valuable reference and guiding significance for surgical treatment in the future.\n\n With the continuous\
+      \ progress of imaging technology and operation, resection combined with vessel resection and reconstruction, more complex\
+      \ and risky than traditional common operation, must become a more popular choice in clinical practice. It not only reflects\
+      \ the progression of surgery technique, but also improves patients' outcome importantly for its providing more opportunity\
+      \ to cure or relieve symptoms of patients with occupying"
+    - "Widespread multiple epidermal nevi may reflect genetic or chromosomal mosaicism. Blaschko has documented characteristic\
+      \ linear, zosteriform, unilateral or systematized patterns with streaks and swirls. [6] In some cases, when there are\
+      \ multiple lesions, there may be associated defects in other tissues, particularly the skeleton and the central nervous\
+      \ system, then called \"epidermal nevus syndrome.\" [3] The common sites are trunk and limbs and involvement of the\
+      \ head and neck region and involvement of the ear lobe is rarely reported [9, 10] as in our case where involvement of\
+      \ ear and scalp was seen with cicatricial alopecia.\n\n A case of linear tan colored verrucous skin lesions over right\
+      \ side of the face, extending to the scalp, right upper and lower limbs is reported where hair were long, fuzzy, differing\
+      \ in texture with patchy alopecia. Verrucosity of the lesions and the extensive distribution suggested it as VEN. As\
+      \ histopathological examination could not be done from the lesion over the scalp, it was difficult to differentiate\
+      \ it from nevus sebaceous, same as in our case. [11] Risk of developing basal cell carcinoma in a nevus sebaceous, a\
+      \ type of epidermal nevus is higher (6.550%), compared to the more common VEN, in spite of the fact that both arise\
+      \ from pluripotent primary epithelial germ cells which have the capacity to differentiate different epithelial structures.\
+      \ [12] Histologically, VEN are characterized by acanthosis, orthohyperkeratosis, papillomatosis, and an expanded papillary\
+      \ dermis sharply demarcated from the surrounding normal skin. [8] Immunohistochemical studies further help differentiate\
+      \ inflammatory linear (IL) VEN from other non-IL epidermal nevus.\n\n The treatment of VEN is difficult and often unsatisfactory.\
+      \ Treatment involves topical therapy such as corticosteroids, retinoic acid, tars, anthralin, 5-fluorouracil, and podophyllin,\
+      \ but they are of limited benefit. Surgical modalities include excision with full thickness graft, cryotherapy, [13]\
+      \ carbon dioxide laser vaporization, [14] and erbium: YAG laser therapy. [15] It is important to have a long term follow-up\
+      \ in such cases as there are chances of development of malignancy.\n\n Case is presented for its rarity in the form\
+      \ of extensive VEN in a male gender with involvement of ear lobe and scalp of left side with cicatricial alopecia.\n\
+      \n Nil.\n\n There are no conflicts of interest."
+  - source_sentence: 'What are some risk factors for stroke in patients with atrial fibrillation?
+
+      '
+    sentences:
+    - "In this study, we aimed to evaluate myocardial injury in our PICU patients using cTnT assay. This prospective study\
+      \ showed that critically ill children had significantly higher level of cTnT when compared with healthy children. The\
+      \ same finding was documented in Clark et al. study [12] which investigated cTnT levels in critically ill ventilated\
+      \ infants. Other studies describe elevated cardiac troponin I among different groups of critically ill children as children\
+      \ with sepsis [7] , meningococcemia [8] , and RSV infections [6] .\n\n In ICU patients, physiologic stresses can occur\
+      \ in the form of either increased myocardial oxygen demands (e.g., fever, tachycardia) or decreased myocardial oxygen\
+      \ delivery (e.g., anemia, hypotension, and hypoxemia) resulting in cardiac dysfunction, cardiac injury, or both [13]\
+      \ . This potential for an imbalance between oxygen supply and demand and the known propensity of critically ill patients\
+      \ to develop acute thrombosis may explain the increase in the risk of myocardial injury [14, 15] .\n\n In our study,\
+      \ cTnT levels were positively correlated with the duration of ventilation. Trevisanuto et al. [16] found significant\
+      \ positive correlation between the levels of cTnT and the duration of ventilation in neonates. However, Clark et al.\
+      \ [12] and Eisenhut et al. [6] found no relation between cTnT levels and the duration of ventilation in infants.\n\n\
+      \ In the current study, there were highly significant positive correlations between the level of cTnT and PIM II score\
+      \ as a measure of disease severity. Clark et al. [12] and Fenton et al. [17] documented this result in their studies.\n\
+      \n As regards echocardiographic data, the current study revealed a highly significant negative correlation between levels\
+      \ of cTnT and left ventricular fractional shortening. In preterm neonates, El-Khuffash et al. [18] stated that there\
+      \ was a significant inverse correlation between cTnT and echocardiographic markers of myocardial function.\n\n Results\
+      \ of our study also showed that there was highly significant difference between levels of cTnT in cases who died and\
+      \ those who survived, being higher in nonsurvivors. This finding was in agreement with that of Spies et al. study [19]\
+      \ in which cTnT as associated with an increased mortality rate. Also, in adult patients, Quenot et al. [20] stated that\
+      \ myocardial injury was shown to be an independent determinant of in-hospital mortality.\n\n Myocardial injury, detected\
+      \ with elevated cTnT levels, occurs in critically ill children. CTnT levels correlated significantly with disease severity\
+      \ and left ventricular systolic functions. An association between mortality and elevated cTnT levels was found."
+    - "5 Both categories of patients at low and high risk of stroke were stratified in terms of stroke risk using LA reservoir\
+      \ strain and PA-TDI. In practice, although the CHA 2 DS 2 -VASc score provides a good indication of stroke risk based\
+      \ on common clinical risk factors, there remains the occurrence of stroke in patients with CHA 2 DS 2 -VASc score <\
+      \ _1 (a rate of < _2.8% per year) in whom the European Society of Cardiology Guidelines do not routinely recommend antithrombotic\
+      \ therapy. 2 In this group of patients, it is therefore desirable to provide personalized treatment according to tailored\
+      \ risk stratification, even if it is not well codified. The upcoming European Association of Cardiovascular Imaging\
+      \ AF Registry has been designed to provide additional insights into the relationships between LA structure and function\
+      \ with the development of ischaemic stroke and individual patient bleeding risk profiles. 14 While the above-mentioned\
+      \ strengths must be emphasized, the only weakness of the study of Leung et al. 5 corresponds to the use of advanced\
+      \ echocardiography itself as possible means of supporting CHA 2 DS 2 -VASc risk score in non-valvular AF patients. In\
+      \ particular, PA-TDI is a parameter that presupposes the use of colour TDI, which is angle-dependent and needs a high\
+      \ frame rate of recording. Therefore, its application in routine clinical practice has gradually been reduced. LA strain\
+      \ is a much more solid parameter, since it is obtainable on simple 2D images by speckle tracking echocardiography, which\
+      \ has high feasibility and good reproducibility. 3, 15 However, this technique is affected by a limited availability\
+      \ and the need for vendorspecific software on dedicated workstations for post hoc analyses, which cannot be obtained\
+      \ directly on the echocardiogram machine. Because of its recognized value, echocardiography has become established in\
+      \ guidelines for the management of AF. 2 In fact, echocardiography has a unique and important role in the assessment\
+      \ of cardiac structure and function, and risk stratification in AF patients. 3 Altogether, the findings of Leung et\
+      \ al. 5 figure) . Beyond LA enlargement, LA dysfunction can make AF patients more prone to the development of LA internal\
+      \ cavity thrombi and subsequent ischaemic stroke. Further prospective data are needed to confirm the incremental prognostic\
+      \ value of LA function assessment in patients considered at low-intermediate risk.\n\n Conflict of interest: none declared."
+    - "A second patient was reported in the same article. This patient developed PTLD after autologous BMT for T cell lymphoblastic\
+      \ lymphoma, although little clinical data were provided.\n\n Both patients in our report received acyclovir and developed\
+      \ PTLD despite the use of this antiviral agent. Patient 1 received acyclovir prior to diagnosis and was receiving intravenous\
+      \ ganciclovir at the time PTLD was diagnosed. Patient 2 received acyclovir from the time of transplant due to positive\
+      \ herpes simplex serology. The patients in three other reports were also treated with acyclovir and steroids. [13] [14]\
+      \ [15] The favorable outcome in the patient described by Shepherd et al may be due to the polyclonal nature of the lymphoproliferation\
+      \ although Patient 1 in our series also had a polyclonal PTLD. Acyclovir is frequently used in an attempt to control\
+      \ PTLD, but it has minimal activity in the replicative phase of EBV infection. 25 In the reports by Briz and Young,\
+      \ the patients received bone marrow purged with T cell-specific monoclonal antibody. This T cell depletion could increase\
+      \ the risk for developing PTLD, much as it does in allogeneic BMT. 10, 11 Specific recommendations regarding therapy\
+      \ are difficult to make given the small number of reported cases. Decreasing immunosuppression is not an option in these\
+      \ patients. The role of antivirals is controversial and did not appear to benefit our patients. Five of the seven reported\
+      \ patients received acyclovir and/or ganciclovir, but only one patient survived. Chemotherapy was given to three patients\
+      \ with only one of these surviving. Furthermore, chemotherapy may be difficult to tolerate in the post-transplant setting.\n\
+      \n Use of T cell infusions and monoclonal anti-B cell antibodies has been used with limited success in PTLD after allogeneic\
+      \ BMT but, to our knowledge, these treatments have not been attempted in patients with PTLD after autologous BMT. 26,\
+      \ 27 Immune modulation with interferon (used by Shephard et al) is another option but little can be said about its effectiveness\
+      \ based on one case.\n\n To conclude, post-transplant lymphoproliferative disorders can develop after autologous bone\
+      \ marrow transplantation. The symptoms of PTLD are frequently nonspecific; thus, this condition may be under-diagnosed.\
+      \ Post-transplant lymphoproliferative disorders should be considered in the differential diagnosis of any BMT patient\
+      \ with adenopathy, unexplained fever or pulmonary infiltrates. The use of bone marrow purged with T cell-specific monoclonal\
+      \ antibody may increase the risk for the development of PTLD in these patients."
+  - source_sentence: 'Why is systemic immunosuppression not necessarily the optimal approach for ocular GVHD?
+
+      '
+    sentences:
+    - "[156] demonstrated that LDLLT for post-HSCT patients with respiratory failure (n = 7) was effective, with less rejection\
+      \ episodes compared with control patients without prior HSCT (n = 41), but they suggested that LDLLT may have a higher\
+      \ risk for the development of infectious complications.\n\n In summary, there is no comparative study of therapy for\
+      \ steroid-refractory chronic GVHD in Japan, even a retrospective study.\n\n Interventions including topical corticosteroids,\
+      \ topical Tac, CsA eye drops, and other nonsystemic therapies, as well as supportive care to prevent infections, osteoporosis,\
+      \ metabolic abnormalities, and other problems, are important components of the management of chronic GVHD. However,\
+      \ only a few studies of nonsystemic therapy have been reported from Japan (Table 4) .\n\n Because the severity of ocular\
+      \ disease often does not correlate with that of systemic disease, systemic immunosuppression is not necessarily an optimal\
+      \ approach for ocular GVHD, except in occasional cases. Ogawa et al. are involved in the establishment of topical treatment\
+      \ for ocular chronic GVHD (Table 4) . They reported the safety and efficacy of topical tranilast for mild dry eye [158]\
+      \ , autologous serum eye drops for severe dry eye [159] , and lacrimal punctal cauterization for dry eye with recurrent\
+      \ punctal plug extrusion [160] in Japanese patients with chronic GVHD affecting the eyes.\n\n This review has documented\
+      \ how many studies on prophylactic and therapeutic treatment of acute and chronic GVHD have been conducted in Japan.\
+      \ We should not play down our own data. However, what was surprising is that most studies were performed in a single\
+      \ institute and included a small number of patients, resulting in biased conclusions. Given the establishment of the\
+      \ \"Transplant Registry Unified Management Program\" in the JSHCT [161] , it is important to actively use not only detailed\
+      \ data in limited institutions, but also large-scale registry data to obtain more reliable results in the future.\n\n\
+      \ Unfortunately, only one phase 3 study has been conducted in Japan [28] . A prospective, randomized study of GVHD treatment\
+      \ is extremely difficult, partly due to the small number of eligible patients in each transplant institute, the need\
+      \ for prompt initiation of therapy, and, maybe in Japan, the thought of leaving the question of GVHD to other countries.\
+      \ This review may provide a baseline for starting prospective studies to create new evidence for GVHD treatment from\
+      \ Japan."
+    - "Both morphologic and molecular analyses have shown that by the time of cancer diagnosis, more than 80% of prostates\
+      \ harbor multiple separate cancer foci (47) , and these foci may each have a distinct molecular profile (48) . Within\
+      \ one focus, there tends to be homogeneity. For instance, TMPRSS2-ERG fusions, when present, are distributed among all\
+      \ nuclei within a discrete tumor lesion (49) . Therefore, challenges in biomarker development will be assessing and\
+      \ prioritizing tumor foci with clinically significant alterations that may play a biologic role in disease progression.\
+      \ Evaluating for concordance of molecular alterations between primary tumors and metastases also provides clues toward\
+      \ identifying early events. For instance, several genes were identified as altered in both primary tumors and CRPC in\
+      \ the recent exome sequencing studies, including those that regulate AR (FOXA1, CDKN1B, MLL2, ASL20; refs. [6] [7] [8]\
+      \ , and these may be important for disease initiation, as opposed to the AR amplifications and mutations implicated\
+      \ in treatment resistance.\n\n Another challenge lies in determining molecular concordance between different sites of\
+      \ tumor metastases, as this has important biologic and therapeutic implications (50) . Biopsies are not routinely conducted\
+      \ in advanced disease, and if conducted, are usually limited to single biopsies of one site. But is this biopsy representative\
+      \ of the overall tumor burden? Will choosing therapies based on the mutational profile of this single site lead to ineffective\
+      \ therapy for the patient? Studies focused on systematic evaluation of disease heterogeneity within prostate cancer\
+      \ are planned and one hopes they will help answer many of these unanswered questions.\n\n Characterizing the genomic\
+      \ landscape of prostate cancer and defining a molecular subclassification system have enormous potential to translate\
+      \ into clinically relevant biomarkers and new targeted therapeutic approaches. However, many challenges lie ahead, including\
+      \ distinguishing drivers from passengers and understanding disease heterogeneity and treatment resistance. As we exploit\
+      \ rapidly developing genome sequencing technologies, basic scientists and clinicians must come together to understand\
+      \ what drives prostate cancer and design effective biomarker validation trials to rationally and effectively move the\
+      \ field toward precision cancer care for patients with prostate cancer. In the end, a welldesigned targeted therapy\
+      \ study that incorporates biopsies and NGS of metastatic tumors before and during treatment will provide important insights\
+      \ that can allow investigators to learn from each clinical trial. Means of determining resistance, even for rare cases,\
+      \ will help drive the field forward and represent a more precise application of cancer care."
+    - "Correspondingly, mouse cells that can't synthesise metallothionein proved to be particularly sensitive to oxidative\
+      \ stress (Liu et al, 1995) .\n\n 'Markers for the determination of Cu status and Cu requirement (SOD); mechanisms of\
+      \ Cu homeostasis at the molecular level; Cu and gene expression; polymorphisms, the regulation of Cu transport at the\
+      \ blood -tissue barrier, molecular mechanisms of age-dependent Cu transport across the blood -brain barrier and of the\
+      \ distribution in blood (fractions); molecular mechanisms of chronic toxicity in relation to the cellular and subcellular\
+      \ Cu distribution.'\n\n The significance of Cu for human nutrition has not been adequately elucidated. In particular,\
+      \ reliable biomarkers are lacking to permit reliable determination and interpretation of the individual Cu status. Research\
+      \ preferences in this field should be on the clinical applicability. The lack of reliable markers for Cu status makes\
+      \ it difficult to assess the benefit of increased Cu intake for risk groups or in the prevention of disease and to determine\
+      \ threshold values for Cu toxicity. From a toxicological point of view, Cu metabolism in the neonate needs to be investigated\
+      \ in detail, particularly absorption and hepatic retention and excretion of Cu. Therefore, a better understanding of\
+      \ the mechanisms of Cu homeostasis would be helpful, eg the dependence of Cu transport across the blood -brain barrier\
+      \ on concentration and age. Using molecular methods it should be possible to study the effects of marginal Cu intake\
+      \ on the gene expression of CuHohenheim Consensus Workshop K Schümann et al dependent transcription factors. A particular\
+      \ challenge for the future is the demonstration of genetic polymorphisms in the expression of Cu-dependent proteins\
+      \ and their functional consequences. With such data it will it be possible to define risk groups for excessive or inadequate\
+      \ Cu intake and prophylactic treatment.\n\n The 15th Hohenheim Consensus Workshop took place in March 1999 at the University\
+      \ of Stuttgart-Hohenheim. The subject of this conference was copper (Cu). Seven German and Austrian scientists who had\
+      \ published and reviewed scientific and regulatory papers on Cu were invited, among them basic researchers, toxicologists,\
+      \ clinical chemists, nutritionists and scientific regulators from the Umweltbundesamt. The participants were presented\
+      \ with 11 questions, which were discussed and answered at the workshop, with the aim of summarising the current state\
+      \ of knowledge on Cu. The explicatory text accompanying the short answers was produced and agreed on after the conference\
+      \ and was backed up by corresponding references. Because of the lack of space, it was not possible to include all references\
+      \ provided by the authors."
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - cosine_accuracy@1
+  - cosine_accuracy@3
+  - cosine_accuracy@5
+  - cosine_accuracy@10
+  - cosine_precision@1
+  - cosine_precision@3
+  - cosine_precision@5
+  - cosine_precision@10
+  - cosine_recall@1
+  - cosine_recall@3
+  - cosine_recall@5
+  - cosine_recall@10
+  - cosine_ndcg@10
+  - cosine_mrr@10
+  - cosine_map@100
+  model-index:
+  - name: SentenceTransformer based on unsloth/embeddinggemma-2
+    results:
+    - task:
+        type: information-retrieval
+        name: Information Retrieval
+      dataset:
+        name: miriad
+        type: miriad
+      metrics:
+      - type: cosine_accuracy@1
+        value: 0.8943333333333333
+        name: Cosine Accuracy@1
+        verified: false
+      - type: cosine_accuracy@3
+        value: 0.958
+        name: Cosine Accuracy@3
+        verified: false
+      - type: cosine_accuracy@5
+        value: 0.975
+        name: Cosine Accuracy@5
+        verified: false
+      - type: cosine_accuracy@10
+        value: 0.988
+        name: Cosine Accuracy@10
+        verified: false
+      - type: cosine_precision@1
+        value: 0.8943333333333333
+        name: Cosine Precision@1
+        verified: false
+      - type: cosine_precision@3
+        value: 0.31933333333333336
+        name: Cosine Precision@3
+        verified: false
+      - type: cosine_precision@5
+        value: 0.195
+        name: Cosine Precision@5
+        verified: false
+      - type: cosine_precision@10
+        value: 0.0988
+        name: Cosine Precision@10
+        verified: false
+      - type: cosine_recall@1
+        value: 0.8943333333333333
+        name: Cosine Recall@1
+        verified: false
+      - type: cosine_recall@3
+        value: 0.958
+        name: Cosine Recall@3
+        verified: false
+      - type: cosine_recall@5
+        value: 0.975
+        name: Cosine Recall@5
+        verified: false
+      - type: cosine_recall@10
+        value: 0.988
+        name: Cosine Recall@10
+        verified: false
+      - type: cosine_ndcg@10
+        value: 0.9439348936090421
+        name: Cosine Ndcg@10
+        verified: false
+      - type: cosine_mrr@10
+        value: 0.929513095238095
+        name: Cosine Mrr@10
+        verified: false
+      - type: cosine_map@100
+        value: 0.9300672974786356
+        name: Cosine Map@100
+        verified: false
+    - task:
+        type: information-retrieval
+        name: Information Retrieval
+      dataset:
+        name: NanoNFCorpus
+        type: NanoNFCorpus
+      metrics:
+      - type: cosine_accuracy@1
+        value: 0.46
+        name: Cosine Accuracy@1
+        verified: false
+      - type: cosine_accuracy@3
+        value: 0.54
+        name: Cosine Accuracy@3
+        verified: false
+      - type: cosine_accuracy@5
+        value: 0.62
+        name: Cosine Accuracy@5
+        verified: false
+      - type: cosine_accuracy@10
+        value: 0.64
+        name: Cosine Accuracy@10
+        verified: false
+      - type: cosine_precision@1
+        value: 0.46
+        name: Cosine Precision@1
+        verified: false
+      - type: cosine_precision@3
+        value: 0.3733333333333333
+        name: Cosine Precision@3
+        verified: false
+      - type: cosine_precision@5
+        value: 0.3440000000000001
+        name: Cosine Precision@5
+        verified: false
+      - type: cosine_precision@10
+        value: 0.28200000000000003
+        name: Cosine Precision@10
+        verified: false
+      - type: cosine_recall@1
+        value: 0.04365641268275218
+        name: Cosine Recall@1
+        verified: false
+      - type: cosine_recall@3
+        value: 0.0682416401700699
+        name: Cosine Recall@3
+        verified: false
+      - type: cosine_recall@5
+        value: 0.10716878532819393
+        name: Cosine Recall@5
+        verified: false
+      - type: cosine_recall@10
+        value: 0.13808707386781977
+        name: Cosine Recall@10
+        verified: false
+      - type: cosine_ndcg@10
+        value: 0.34569289318798896
+        name: Cosine Ndcg@10
+        verified: false
+      - type: cosine_mrr@10
+        value: 0.5175238095238095
+        name: Cosine Mrr@10
+        verified: false
+      - type: cosine_map@100
+        value: 0.1506879048026917
+        name: Cosine Map@100
+        verified: false
+    - task:
+        type: information-retrieval
+        name: Information Retrieval
+      dataset:
+        name: NanoSciFact
+        type: NanoSciFact
+      metrics:
+      - type: cosine_accuracy@1
+        value: 0.78
+        name: Cosine Accuracy@1
+        verified: false
+      - type: cosine_accuracy@3
+        value: 0.88
+        name: Cosine Accuracy@3
+        verified: false
+      - type: cosine_accuracy@5
+        value: 0.9
+        name: Cosine Accuracy@5
+        verified: false
+      - type: cosine_accuracy@10
+        value: 0.92
+        name: Cosine Accuracy@10
+        verified: false
+      - type: cosine_precision@1
+        value: 0.78
+        name: Cosine Precision@1
+        verified: false
+      - type: cosine_precision@3
+        value: 0.32666666666666666
+        name: Cosine Precision@3
+        verified: false
+      - type: cosine_precision@5
+        value: 0.204
+        name: Cosine Precision@5
+        verified: false
+      - type: cosine_precision@10
+        value: 0.10399999999999998
+        name: Cosine Precision@10
+        verified: false
+      - type: cosine_recall@1
+        value: 0.735
+        name: Cosine Recall@1
+        verified: false
+      - type: cosine_recall@3
+        value: 0.875
+        name: Cosine Recall@3
+        verified: false
+      - type: cosine_recall@5
+        value: 0.9
+        name: Cosine Recall@5
+        verified: false
+      - type: cosine_recall@10
+        value: 0.92
+        name: Cosine Recall@10
+        verified: false
+      - type: cosine_ndcg@10
+        value: 0.852259508025645
+        name: Cosine Ndcg@10
+        verified: false
+      - type: cosine_mrr@10
+        value: 0.8301904761904763
+        name: Cosine Mrr@10
+        verified: false
+      - type: cosine_map@100
+        value: 0.8339197691197691
+        name: Cosine Map@100
+        verified: false
+    - task:
+        type: information-retrieval
+        name: Information Retrieval
+      dataset:
+        name: NanoFiQA2018
+        type: NanoFiQA2018
+      metrics:
+      - type: cosine_accuracy@1
+        value: 0.4
+        name: Cosine Accuracy@1
+        verified: false
+      - type: cosine_accuracy@3
+        value: 0.46
+        name: Cosine Accuracy@3
+        verified: false
+      - type: cosine_accuracy@5
+        value: 0.56
+        name: Cosine Accuracy@5
+        verified: false
+      - type: cosine_accuracy@10
+        value: 0.62
+        name: Cosine Accuracy@10
+        verified: false
+      - type: cosine_precision@1
+        value: 0.4
+        name: Cosine Precision@1
+        verified: false
+      - type: cosine_precision@3
+        value: 0.20666666666666667
+        name: Cosine Precision@3
+        verified: false
+      - type: cosine_precision@5
+        value: 0.16
+        name: Cosine Precision@5
+        verified: false
+      - type: cosine_precision@10
+        value: 0.09999999999999998
+        name: Cosine Precision@10
+        verified: false
+      - type: cosine_recall@1
+        value: 0.21141269841269839
+        name: Cosine Recall@1
+        verified: false
+      - type: cosine_recall@3
+        value: 0.29693650793650794
+        name: Cosine Recall@3
+        verified: false
+      - type: cosine_recall@5
+        value: 0.3646031746031746
+        name: Cosine Recall@5
+        verified: false
+      - type: cosine_recall@10
+        value: 0.42768253968253966
+        name: Cosine Recall@10
+        verified: false
+      - type: cosine_ndcg@10
+        value: 0.37911505711723736
+        name: Cosine Ndcg@10
+        verified: false
+      - type: cosine_mrr@10
+        value: 0.46169047619047615
+        name: Cosine Mrr@10
+        verified: false
+      - type: cosine_map@100
+        value: 0.3337469785841535
+        name: Cosine Map@100
+        verified: false
+    - task:
+        type: information-retrieval
+        name: Information Retrieval
+      dataset:
+        name: NanoArguAna
+        type: NanoArguAna
+      metrics:
+      - type: cosine_accuracy@1
+        value: 0.14
+        name: Cosine Accuracy@1
+        verified: false
+      - type: cosine_accuracy@3
+        value: 0.7
+        name: Cosine Accuracy@3
+        verified: false
+      - type: cosine_accuracy@5
+        value: 0.84
+        name: Cosine Accuracy@5
+        verified: false
+      - type: cosine_accuracy@10
+        value: 0.94
+        name: Cosine Accuracy@10
+        verified: false
+      - type: cosine_precision@1
+        value: 0.14
+        name: Cosine Precision@1
+        verified: false
+      - type: cosine_precision@3
+        value: 0.2333333333333333
+        name: Cosine Precision@3
+        verified: false
+      - type: cosine_precision@5
+        value: 0.16799999999999998
+        name: Cosine Precision@5
+        verified: false
+      - type: cosine_precision@10
+        value: 0.09399999999999999
+        name: Cosine Precision@10
+        verified: false
+      - type: cosine_recall@1
+        value: 0.14
+        name: Cosine Recall@1
+        verified: false
+      - type: cosine_recall@3
+        value: 0.7
+        name: Cosine Recall@3
+        verified: false
+      - type: cosine_recall@5
+        value: 0.84
+        name: Cosine Recall@5
+        verified: false
+      - type: cosine_recall@10
+        value: 0.94
+        name: Cosine Recall@10
+        verified: false
+      - type: cosine_ndcg@10
+        value: 0.5556073600444988
+        name: Cosine Ndcg@10
+        verified: false
+      - type: cosine_mrr@10
+        value: 0.4303253968253968
+        name: Cosine Mrr@10
+        verified: false
+      - type: cosine_map@100
+        value: 0.43464357864357867
+        name: Cosine Map@100
+        verified: false
+    - task:
+        type: nano-beir
+        name: Nano BEIR
+      dataset:
+        name: NanoBEIR mean
+        type: NanoBEIR_mean
+      metrics:
+      - type: cosine_accuracy@1
+        value: 0.44500000000000006
+        name: Cosine Accuracy@1
+        verified: false
+      - type: cosine_accuracy@3
+        value: 0.645
+        name: Cosine Accuracy@3
+        verified: false
+      - type: cosine_accuracy@5
+        value: 0.73
+        name: Cosine Accuracy@5
+        verified: false
+      - type: cosine_accuracy@10
+        value: 0.78
+        name: Cosine Accuracy@10
+        verified: false
+      - type: cosine_precision@1
+        value: 0.44500000000000006
+        name: Cosine Precision@1
+        verified: false
+      - type: cosine_precision@3
+        value: 0.285
+        name: Cosine Precision@3
+        verified: false
+      - type: cosine_precision@5
+        value: 0.21900000000000003
+        name: Cosine Precision@5
+        verified: false
+      - type: cosine_precision@10
+        value: 0.145
+        name: Cosine Precision@10
+        verified: false
+      - type: cosine_recall@1
+        value: 0.28251727777386265
+        name: Cosine Recall@1
+        verified: false
+      - type: cosine_recall@3
+        value: 0.48504453702664446
+        name: Cosine Recall@3
+        verified: false
+      - type: cosine_recall@5
+        value: 0.5529429899828421
+        name: Cosine Recall@5
+        verified: false
+      - type: cosine_recall@10
+        value: 0.6064424033875899
+        name: Cosine Recall@10
+        verified: false
+      - type: cosine_ndcg@10
+        value: 0.5331687045938426
+        name: Cosine Ndcg@10
+        verified: false
+      - type: cosine_mrr@10
+        value: 0.5599325396825396
+        name: Cosine Mrr@10
+        verified: false
+      - type: cosine_map@100
+        value: 0.43824955778754826
+        name: Cosine Map@100
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Normalize/config.json
+- rfilename: README.md
+- rfilename: adapter_config.json
+- rfilename: adapter_model.safetensors
+- rfilename: chat_template.jinja
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: modules.json
+- rfilename: processor_config.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer.model
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-10T12:44:48.000Z'
+usedStorage: 77277312
+downloadsAllTime: 19
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - EmbeddingGemma2Model
+  audio_config: null
+  audio_token_id: 258881
+  boa_token_id: 256000
+  boi_token_id: 255999
+  dtype: bfloat16
+  eoa_token_index: 258883
+  eoi_token_id: 258882
+  image_token_id: 258880
+  initializer_range: 0.02
+  model_name: unsloth/embeddinggemma-2
+  model_type: embedding_gemma2
+  pad_token_id: 0
+  text_config:
+    attention_bias: false
+    attention_dropout: 0.0
+    bos_token_id: 2
+    dtype: bfloat16
+    embedding_dim: 768
+    eos_token_id: 1
+    head_dim: 256
+    hidden_activation: gelu_pytorch_tanh
+    hidden_size: 512
+    hidden_size_per_layer_input: 512
+    initializer_range: 0.02
+    intermediate_size: 2048
+    layer_types:
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    max_position_embeddings: 262144
+    model_type: embedding_gemma2_text
+    num_attention_heads: 4
+    num_hidden_layers: 24
+    num_key_value_heads: 2
+    pad_token_id: 0
+    per_layer_config:
+      '05':
+        head_dim: 512
+        num_key_value_heads: 1
+      '11':
+        head_dim: 512
+        num_key_value_heads: 1
+      '17':
+        head_dim: 512
+        num_key_value_heads: 1
+      '23':
+        head_dim: 512
+        num_key_value_heads: 1
+    rms_norm_eps: 1.0e-06
+    rope_parameters:
+      full_attention:
+        rope_theta: 1000000.0
+        rope_type: default
+      sliding_attention:
+        rope_theta: 10000.0
+        rope_type: default
+    sliding_window: 512
+    use_cache: false
+    vocab_size: 262144
+  tokenizer_class: EmbeddingGemma2Processor
+  transformers_version: 5.19.0.dev0
+  unsloth_version: 2026.10.3
+  use_cache: false
+  video_token_id: 258884
+  vision_config: null
+  vision_soft_tokens_per_image: 280
+onnxFiles: {}
+safetensorsSizeMb: 40.4
+approxSizeMb: 0.0
+fetchedAt: '2026-10-11T09:53:16.000Z'

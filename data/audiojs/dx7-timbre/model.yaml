@@ -1,0 +1,57 @@
+_id: 6acb7f9c40d3356db833ae6e
+id: audiojs/dx7-timbre
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- audio
+- timbre
+- synthesizer
+- preset-retrieval
+- yamaha-dx7
+- contrastive-learning
+- feature-extraction
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: audiojs/dx7-timbre
+author: audiojs
+sha: 2dd88e107183463c5a40609a92b0545d8857c635
+lastModified: '2026-10-11T12:22:55.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  tags:
+  - audio
+  - timbre
+  - synthesizer
+  - preset-retrieval
+  - yamaha-dx7
+  - contrastive-learning
+  - onnx
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: SHA256SUMS
+- rfilename: catalogs/dx7-all.json
+- rfilename: catalogs/dx7-factory.json
+- rfilename: encoder.int8.onnx
+spaces: []
+createdAt: '2026-10-11T12:22:52.000Z'
+usedStorage: 1871901
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  encoder.int8.onnx: 1.9
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-12T10:35:09.000Z'

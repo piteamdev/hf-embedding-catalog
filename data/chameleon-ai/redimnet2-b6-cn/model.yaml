@@ -1,0 +1,45 @@
+_id: 6acb9be13fdba004e4c1e66b
+id: chameleon-ai/redimnet2-b6-cn
+private: false
+pipeline_tag: feature-extraction
+library_name: openasr
+tags:
+- openasr
+- speaker-diarization
+- oasr
+- feature-extraction
+- license:mit
+- region:us
+downloads: 2
+likes: 0
+modelId: chameleon-ai/redimnet2-b6-cn
+author: chameleon-ai
+sha: cb3fdc9734bba15b11fb13b6db70fb7a508b8500
+lastModified: '2026-10-11T14:23:30.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  base_model: PalabraAI/redimnet2
+  pipeline_tag: feature-extraction
+  library_name: openasr
+  tags:
+  - speaker-diarization
+  - openasr
+  - oasr
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: redimnet2-b6-cn-fp16.oasr
+spaces: []
+createdAt: '2026-10-11T14:23:29.000Z'
+usedStorage: 27775520
+downloadsAllTime: 2
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-12T10:35:09.000Z'

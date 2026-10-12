@@ -1,0 +1,158 @@
+_id: 6ac73f5e8f31d72eff24a961
+id: nlpai-lab/KURE-Sparse-nano
+private: false
+pipeline_tag: feature-extraction
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- modernbert
+- sparse-encoder
+- sparse
+- splade
+- learned-sparse-retrieval
+- feature-extraction
+- ko
+- en
+- base_model:nlpai-lab/KURE-v2-unsupervised
+- base_model:finetune:nlpai-lab/KURE-v2-unsupervised
+- license:apache-2.0
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 96
+likes: 2
+modelId: nlpai-lab/KURE-Sparse-nano
+author: nlpai-lab
+sha: 1eb281e81edcf44cbb401d475054f817b49fddbd
+lastModified: '2026-10-12T06:43:59.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - ModernBertForMaskedLM
+  model_type: modernbert
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <cls>
+    eos_token: <\s>
+    mask_token: <mask>
+    pad_token: <mask>
+    sep_token: <sep>
+    unk_token: <unk>
+cardData:
+  tags:
+  - sentence-transformers
+  - sparse-encoder
+  - sparse
+  - splade
+  - learned-sparse-retrieval
+  - feature-extraction
+  language:
+  - ko
+  - en
+  base_model: nlpai-lab/KURE-v2-unsupervised
+  pipeline_tag: feature-extraction
+  library_name: sentence-transformers
+  license: apache-2.0
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_ShiftedTopKSpladePooling/config.json
+- rfilename: 1_ShiftedTopKSpladePooling/pooling.py
+- rfilename: README.md
+- rfilename: assets/ndcg_flops.png
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: pooling.py
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-08T06:59:42.000Z'
+safetensors:
+  parameters:
+    BF16: 149373778
+  total: 149373778
+usedStorage: 298871625
+downloadsAllTime: 96
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - ModernBertForMaskedLM
+  attention_bias: false
+  attention_dropout: 0.0
+  bos_token_id: 0
+  classifier_activation: gelu
+  classifier_bias: false
+  classifier_dropout: 0.0
+  classifier_pooling: mean
+  cls_token_id: 0
+  decoder_bias: true
+  deterministic_flash_attn: false
+  dtype: bfloat16
+  embedding_dropout: 0.0
+  eos_token_id: 1
+  global_attn_every_n_layers: 3
+  gradient_checkpointing: false
+  hidden_activation: gelu
+  hidden_size: 768
+  initializer_cutoff_factor: 2.0
+  initializer_range: 0.02
+  intermediate_size: 1152
+  layer_norm_eps: 1.0e-05
+  layer_types:
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  local_attention: 128
+  max_position_embeddings: 16384
+  mlp_bias: false
+  mlp_dropout: 0.0
+  model_type: modernbert
+  norm_bias: false
+  norm_eps: 1.0e-05
+  num_attention_heads: 12
+  num_hidden_layers: 22
+  pad_token_id: 4
+  position_embedding_type: absolute
+  repad_logits_with_grad: false
+  rope_parameters:
+    full_attention:
+      rope_theta: 160000
+      rope_type: default
+    sliding_attention:
+      rope_theta: 10000.0
+      rope_type: default
+  sep_token_id: 1
+  sparse_pred_ignore_index: -100
+  sparse_prediction: false
+  tie_word_embeddings: true
+  transformers_version: 5.14.1
+  vocab_size: 50002
+onnxFiles: {}
+safetensorsSizeMb: 298.8
+approxSizeMb: 298.7
+fetchedAt: '2026-10-12T10:35:09.000Z'

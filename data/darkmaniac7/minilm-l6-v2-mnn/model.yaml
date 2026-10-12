@@ -1,0 +1,63 @@
+_id: 69d08a5686f23ed3d8106ea1
+id: darkmaniac7/minilm-l6-v2-mnn
+private: false
+pipeline_tag: sentence-similarity
+tags:
+- onnx
+- gguf
+- tokforge
+- on-device
+- sentence-similarity
+- base_model:sentence-transformers/all-MiniLM-L6-v2
+- base_model:quantized:sentence-transformers/all-MiniLM-L6-v2
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 36
+likes: 0
+modelId: darkmaniac7/minilm-l6-v2-mnn
+author: darkmaniac7
+sha: 1f941721919a7516a094b9286f9ab3a678f7796e
+lastModified: '2026-10-12T00:22:59.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config: {}
+cardData:
+  tags:
+  - tokforge
+  - on-device
+  license: apache-2.0
+  base_model: sentence-transformers/all-MiniLM-L6-v2
+  base_model_relation: quantized
+  pipeline_tag: sentence-similarity
+gguf:
+  total: 22565376
+  architecture: bert
+  context_length: 512
+  totalFileSize: 45887744
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: all-MiniLM-L6-v2-Q8_0.gguf
+- rfilename: all-MiniLM-L6-v2-f16.gguf
+- rfilename: minilm.mnn
+- rfilename: model.onnx
+- rfilename: vocab.txt
+spaces: []
+createdAt: '2026-04-04T03:49:42.000Z'
+usedStorage: 206654502
+downloadsAllTime: 191
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  model.onnx: 90.4
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-12T10:35:09.000Z'

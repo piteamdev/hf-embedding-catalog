@@ -1,0 +1,170 @@
+_id: 6acb6c81623e8e00174e5f71
+id: pocket-mind/pocket-embed-22m-128
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- onnx
+- safetensors
+- bert
+- feature-extraction
+- semantic-search
+- dimensionality-reduction
+- cpu
+- miniLM
+- sentence-similarity
+- en
+- dataset:rajpurkar/squad
+- base_model:sentence-transformers/all-MiniLM-L6-v2
+- base_model:quantized:sentence-transformers/all-MiniLM-L6-v2
+- license:cc-by-sa-4.0
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 42
+likes: 0
+modelId: pocket-mind/pocket-embed-22m-128
+author: pocket-mind
+sha: 44ef6b7277a2e419e20f1087a3af16ac45ef1de5
+lastModified: '2026-10-12T01:02:56.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  language: en
+  license: cc-by-sa-4.0
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  base_model: sentence-transformers/all-MiniLM-L6-v2
+  datasets:
+  - rajpurkar/squad
+  tags:
+  - sentence-transformers
+  - feature-extraction
+  - semantic-search
+  - dimensionality-reduction
+  - cpu
+  - miniLM
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 3_Dense/config.json
+- rfilename: 3_Dense/model.safetensors
+- rfilename: BASE_MODEL_CARD.md
+- rfilename: LICENSE
+- rfilename: LICENSE_BASE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: audit/PROTOCOL.md
+- rfilename: audit/README.md
+- rfilename: audit/audit.py
+- rfilename: audit/completed.json
+- rfilename: audit/config.json
+- rfilename: audit/exact_search_fixture.json
+- rfilename: audit/fiqa_bge.json
+- rfilename: audit/fiqa_int8.json
+- rfilename: audit/fiqa_minilm.json
+- rfilename: audit/fiqa_pocket.json
+- rfilename: audit/fiqa_raw128.json
+- rfilename: audit/hardware.json
+- rfilename: audit/metrics.py
+- rfilename: audit/protocol.json
+- rfilename: audit/quora_bge.json
+- rfilename: audit/quora_int8.json
+- rfilename: audit/quora_minilm.json
+- rfilename: audit/quora_pocket.json
+- rfilename: audit/quora_raw128.json
+- rfilename: audit/results.json
+- rfilename: browser/README.md
+- rfilename: browser/browser_validation.json
+- rfilename: browser/export_browser.py
+- rfilename: browser/int8_browser_validation.json
+- rfilename: browser/metrics.py
+- rfilename: browser/model_fp32.onnx
+- rfilename: browser/model_int8.onnx
+- rfilename: browser/quantize_eval.py
+- rfilename: browser/quantized_decision.json
+- rfilename: browser/quantized_results.json
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: efficiency.json
+- rfilename: examples/README.md
+- rfilename: examples/pocket_search.py
+- rfilename: examples/validation.json
+- rfilename: export_validation.json
+- rfilename: hardware.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: release_decision.json
+- rfilename: reproduce/LICENSE
+- rfilename: reproduce/config.json
+- rfilename: reproduce/environment.txt
+- rfilename: reproduce/experiment.py
+- rfilename: reproduce/experiment_README.md
+- rfilename: reproduce/metrics.py
+- rfilename: reproduce/project.py
+- rfilename: reproduce/requirements.txt
+- rfilename: results.json
+- rfilename: selection.json
+- rfilename: sentence_bert_config.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: vocab.txt
+spaces:
+- pocket-mind/pocket-embed-search
+createdAt: '2026-10-11T11:01:21.000Z'
+safetensors:
+  parameters:
+    F32: 22713216
+  total: 22713216
+usedStorage: 204744050
+downloadsAllTime: 42
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  classifier_dropout: null
+  dtype: float32
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  initializer_range: 0.02
+  intermediate_size: 1536
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 6
+  pad_token_id: 0
+  position_embedding_type: absolute
+  transformers_version: 4.57.1
+  type_vocab_size: 2
+  use_cache: true
+  vocab_size: 30522
+onnxFiles:
+  browser/model_fp32.onnx: 90.6
+  browser/model_int8.onnx: 23.1
+safetensorsSizeMb: 91.1
+approxSizeMb: 90.9
+fetchedAt: '2026-10-12T10:35:09.000Z'

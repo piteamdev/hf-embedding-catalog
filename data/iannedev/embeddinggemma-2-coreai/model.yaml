@@ -1,0 +1,83 @@
+_id: 6acc9b8581800b2f2d541b76
+id: iannedev/embeddinggemma-2-coreai
+private: false
+pipeline_tag: feature-extraction
+library_name: coreai
+tags:
+- coreai
+- apple-neural-engine
+- on-device
+- embeddings
+- sentence-similarity
+- gemma
+- macos
+- feature-extraction
+- multilingual
+- base_model:google/embeddinggemma-2
+- base_model:finetune:google/embeddinggemma-2
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: iannedev/embeddinggemma-2-coreai
+author: iannedev
+sha: dfe210b668db64edf85d93707b384475c9ca16f5
+lastModified: '2026-10-12T08:34:51.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: google/embeddinggemma-2
+  library_name: coreai
+  pipeline_tag: feature-extraction
+  language:
+  - multilingual
+  tags:
+  - coreai
+  - apple-neural-engine
+  - on-device
+  - embeddings
+  - sentence-similarity
+  - gemma
+  - macos
+siblings:
+- rfilename: .gitattributes
+- rfilename: CHANGELOG.md
+- rfilename: CHECKSUMS.sha256
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: export/eg2_text.py
+- rfilename: export/export.py
+- rfilename: model/MODEL-ATTRIBUTION.json
+- rfilename: model/config.json
+- rfilename: model/embeddinggemma-2-text.aimodel/main.hash
+- rfilename: model/embeddinggemma-2-text.aimodel/main.mlirb
+- rfilename: model/embeddinggemma-2-text.aimodel/metadata.json
+- rfilename: model/tokenizer/tokenizer.json
+- rfilename: model/tokenizer/tokenizer_config.json
+- rfilename: python/embeddinggemma2_coreai.py
+- rfilename: python/requirements.lock
+- rfilename: python/requirements.txt
+- rfilename: python/smoke_test.py
+- rfilename: swift/Package.swift
+- rfilename: swift/Sources/EmbeddingGemma2CoreAI/Embedder.swift
+- rfilename: swift/Sources/EmbeddingGemma2CoreAI/ExactJSON.swift
+- rfilename: swift/Sources/EmbeddingGemma2CoreAI/GemmaTokenizer.swift
+- rfilename: swift/Sources/eg2-cli/main.swift
+- rfilename: tests/make_smoke_reference.py
+- rfilename: tests/make_tokenizer_cases.py
+- rfilename: tests/smoke-reference.json
+- rfilename: tests/tokenizer-cases.json
+spaces: []
+createdAt: '2026-10-12T08:34:13.000Z'
+usedStorage: 663700470
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-12T10:35:09.000Z'

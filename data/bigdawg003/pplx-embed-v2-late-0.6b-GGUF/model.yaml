@@ -1,0 +1,87 @@
+_id: 6acbab52eb7016a886bf245f
+id: bigdawg003/pplx-embed-v2-late-0.6b-GGUF
+private: false
+pipeline_tag: feature-extraction
+library_name: gguf
+tags:
+- gguf
+- llama.cpp
+- late-interaction
+- colbert
+- multi-vector
+- multimodal
+- q8_0
+- feature-extraction
+- base_model:perplexity-ai/pplx-embed-v2-late-0.6b
+- base_model:quantized:perplexity-ai/pplx-embed-v2-late-0.6b
+- license:mit
+- endpoints_compatible
+- region:us
+- conversational
+downloads: 85
+likes: 0
+modelId: bigdawg003/pplx-embed-v2-late-0.6b-GGUF
+author: bigdawg003
+sha: 07ebf344332880f14f72673df5d41549826872f7
+lastModified: '2026-10-11T15:38:55.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  base_model: perplexity-ai/pplx-embed-v2-late-0.6b
+  base_model_relation: quantized
+  library_name: gguf
+  pipeline_tag: feature-extraction
+  tags:
+  - gguf
+  - llama.cpp
+  - late-interaction
+  - colbert
+  - multi-vector
+  - multimodal
+  - q8_0
+gguf:
+  total: 493859776
+  architecture: qwen35
+  context_length: 262144
+  causal: false
+  chat_template: '{%- for message in messages if message[''role''] == ''system'' -%}
+
+    {%- for content in message[''content''] -%}{{ content[''text''] }}{%- endfor -%}
+
+    {%- endfor -%}
+
+    {%- for message in messages if message[''role''] != ''system'' -%}
+
+    {%- for content in message[''content''] if content[''type''] == ''image'' -%}
+
+    {{ ''<|vision_start|><|image_pad|><|vision_end|>'' }}
+
+    {%- endfor -%}
+
+    {%- for content in message[''content''] if content[''type''] == ''text'' -%}
+
+    {{ content[''text''] }}
+
+    {%- endfor -%}
+
+    {%- endfor -%}'
+  eos_token: <|im_end|>
+  totalFileSize: 536190688
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: pplx-late-Q8_0.gguf
+- rfilename: pplx-late-mmproj-Q8_0.gguf
+spaces: []
+createdAt: '2026-10-11T15:29:22.000Z'
+usedStorage: 652114272
+downloadsAllTime: 85
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-12T10:35:09.000Z'

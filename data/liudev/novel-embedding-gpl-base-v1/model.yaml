@@ -1,0 +1,188 @@
+_id: 6accf716e286ddd270aa8825
+id: liudev/novel-embedding-gpl-base-v1
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- tensorboard
+- safetensors
+- bert
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:435262
+- loss:MarginMSELoss
+- arxiv:1908.10084
+- arxiv:2010.02666
+- base_model:BAAI/bge-base-zh-v1.5
+- base_model:finetune:BAAI/bge-base-zh-v1.5
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 49
+likes: 0
+modelId: liudev/novel-embedding-gpl-base-v1
+author: liudev
+sha: ac3b4ee47efe71008b1568157294951c040541cc
+lastModified: '2026-10-13T10:01:08.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: 同伴因祸得福武功大进
+  sentences:
+  - 跟随队伍一同进城采购
+  - 击退邪神后，邪神夺舍村民
+  - 说服父母改变只求多生的老旧生育观念
+- source_sentence: 得知儿子未来会灭族后陷入迷茫
+  sentences:
+  - 在野外历练结束后突破升级
+  - 目睹恐怖的献祭重现
+  - 换了一个地方白手起家建立家族
+- source_sentence: 出发前去求取药酒
+  sentences:
+  - 穿越到军中绝境逆风翻盘
+  - 长达一年的高强度攻守防御战
+  - 分别时叮嘱对方低调行事
+- source_sentence: 封锁全城立规矩
+  sentences:
+  - 各方势力介入下达成保护天才的协议
+  - 主角编造虚假身份让别人深信不疑
+  - 受到资助后带着人出发拜师
+- source_sentence: 在异能觉醒爆发时安抚对方并带走宝物
+  sentences:
+  - 凶暴巨兽冲破防线引发骚乱
+  - 宴席上有人当众示爱引发全场震惊
+  - 山贼讲述当年的恐惧往事，结果再次遭遇强敌被瞬杀
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:435262
+  - loss:MarginMSELoss
+  base_model: BAAI/bge-base-zh-v1.5
+  widget:
+  - source_sentence: 同伴因祸得福武功大进
+    sentences:
+    - 跟随队伍一同进城采购
+    - 击退邪神后，邪神夺舍村民
+    - 说服父母改变只求多生的老旧生育观念
+  - source_sentence: 得知儿子未来会灭族后陷入迷茫
+    sentences:
+    - 在野外历练结束后突破升级
+    - 目睹恐怖的献祭重现
+    - 换了一个地方白手起家建立家族
+  - source_sentence: 出发前去求取药酒
+    sentences:
+    - 穿越到军中绝境逆风翻盘
+    - 长达一年的高强度攻守防御战
+    - 分别时叮嘱对方低调行事
+  - source_sentence: 封锁全城立规矩
+    sentences:
+    - 各方势力介入下达成保护天才的协议
+    - 主角编造虚假身份让别人深信不疑
+    - 受到资助后带着人出发拜师
+  - source_sentence: 在异能觉醒爆发时安抚对方并带走宝物
+    sentences:
+    - 凶暴巨兽冲破防线引发骚乱
+    - 宴席上有人当众示爱引发全场震惊
+    - 山贼讲述当年的恐惧往事，结果再次遭遇强敌被瞬杀
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: last-checkpoint/1_Pooling/config.json
+- rfilename: last-checkpoint/README.md
+- rfilename: last-checkpoint/config.json
+- rfilename: last-checkpoint/config_sentence_transformers.json
+- rfilename: last-checkpoint/model.safetensors
+- rfilename: last-checkpoint/modules.json
+- rfilename: last-checkpoint/optimizer.pt
+- rfilename: last-checkpoint/rng_state_0.pth
+- rfilename: last-checkpoint/rng_state_1.pth
+- rfilename: last-checkpoint/scaler.pt
+- rfilename: last-checkpoint/scheduler.pt
+- rfilename: last-checkpoint/sentence_bert_config.json
+- rfilename: last-checkpoint/tokenizer.json
+- rfilename: last-checkpoint/tokenizer_config.json
+- rfilename: last-checkpoint/trainer_state.json
+- rfilename: last-checkpoint/training_args.bin
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: runs/Oct12_15-05-02_5885a2de8f71/events.out.tfevents.1791817502.5885a2de8f71.615.0
+- rfilename: runs/Oct13_03-11-27_8edabccc9bb8/events.out.tfevents.1791861087.8edabccc9bb8.613.0
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: training_args.bin
+spaces: []
+createdAt: '2026-10-12T15:04:54.000Z'
+safetensors:
+  parameters:
+    F32: 102267648
+  total: 102267648
+usedStorage: 15897483057
+downloadsAllTime: 49
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  directionality: bidi
+  dtype: float32
+  eos_token_id: null
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  id2label:
+    '0': LABEL_0
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  label2id:
+    LABEL_0: 0
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  output_past: true
+  pad_token_id: 0
+  pooler_fc_size: 768
+  pooler_num_attention_heads: 12
+  pooler_num_fc_layers: 3
+  pooler_size_per_head: 128
+  pooler_type: first_token_transform
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.16.1
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 21128
+onnxFiles: {}
+safetensorsSizeMb: 818.2
+approxSizeMb: 409.1
+fetchedAt: '2026-10-13T10:23:21.000Z'

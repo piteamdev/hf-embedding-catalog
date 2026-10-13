@@ -1,0 +1,56 @@
+_id: 6acdc9ef2916ad2cc810435d
+id: konradjr007/embeddinggemma-2-litert
+private: false
+pipeline_tag: feature-extraction
+library_name: litert
+tags:
+- litert
+- litertlm
+- embeddings
+- feature-extraction
+- sentence-similarity
+- edge-ai
+- on-device
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 1
+modelId: konradjr007/embeddinggemma-2-litert
+author: konradjr007
+sha: de3ade0169e3a05b3627fd568f4746c7d15f04b7
+lastModified: '2026-10-13T10:17:44.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  tags:
+  - litert
+  - litertlm
+  - embeddings
+  - feature-extraction
+  - sentence-similarity
+  - edge-ai
+  - on-device
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: embeddinggemma-2-740m.litertlm
+- rfilename: int4/cpu/embeddinggemma-2-740m.litertlm
+- rfilename: int4/gpu/embeddinggemma-2-740m.litertlm
+- rfilename: int8/cpu/embeddinggemma-2-740m.litertlm
+- rfilename: int8/gpu/embeddinggemma-2-740m.litertlm
+- rfilename: npu/qualcomm/embeddinggemma-2-740m.litertlm
+- rfilename: npu/qualcomm/int8/embeddinggemma-2-740m.litertlm
+spaces: []
+createdAt: '2026-10-13T06:04:31.000Z'
+usedStorage: 674150608
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-13T10:23:21.000Z'

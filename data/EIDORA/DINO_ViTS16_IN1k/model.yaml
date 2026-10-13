@@ -1,0 +1,59 @@
+_id: 6acd47bf30ec71aff2a0dea2
+id: EIDORA/DINO_ViTS16_IN1k
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- eidora
+- eidora-model-zoo
+- image
+- embeddings
+- dino
+- feature-extraction
+- dataset:imagenet-1k
+- base_model:facebook/dino-vits16
+- base_model:quantized:facebook/dino-vits16
+- license:apache-2.0
+- region:us
+downloads: 28
+likes: 0
+modelId: EIDORA/DINO_ViTS16_IN1k
+author: EIDORA
+sha: 97a685288ee61ff974daa113b268fa7927bb323a
+lastModified: '2026-10-12T20:49:30.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  license: apache-2.0
+  base_model: facebook/dino-vits16
+  tags:
+  - eidora
+  - eidora-model-zoo
+  - onnx
+  - image
+  - embeddings
+  - dino
+  datasets:
+  - imagenet-1k
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.yaml
+- rfilename: model.onnx
+spaces: []
+createdAt: '2026-10-12T20:49:03.000Z'
+usedStorage: 86871748
+downloadsAllTime: 28
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  model.onnx: 86.9
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-13T10:23:21.000Z'

@@ -1,0 +1,59 @@
+_id: 6acde66aff6cb97c97de9837
+id: mikillicious/bim-wiki-search
+private: false
+pipeline_tag: sentence-similarity
+tags:
+- gguf
+- sentence-similarity
+- base_model:Snowflake/snowflake-arctic-embed-l-v2.0
+- base_model:quantized:Snowflake/snowflake-arctic-embed-l-v2.0
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+- feature-extraction
+downloads: 0
+likes: 1
+modelId: mikillicious/bim-wiki-search
+author: mikillicious
+sha: b6260587821edaabaa230c5d21226be3b58617e9
+lastModified: '2026-10-13T08:06:19.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: Snowflake/snowflake-arctic-embed-l-v2.0
+  base_model_relation: quantized
+  tags:
+  - gguf
+  - sentence-similarity
+gguf:
+  total: 566703104
+  architecture: bert
+  context_length: 8192
+  causal: false
+  bos_token: <s>
+  eos_token: </s>
+  totalFileSize: 1160285024
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: snowflake-arctic-embed-l-v2.0-F16.gguf
+spaces: []
+createdAt: '2026-10-13T08:06:02.000Z'
+usedStorage: 1160285024
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-13T10:23:21.000Z'

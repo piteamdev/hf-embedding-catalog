@@ -1,0 +1,1010 @@
+_id: 6acda39454cc57f9dc7425fc
+id: doiceladev/ateneo-bge-m3-ecuador-v2
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- xlm-roberta
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:1178
+- loss:MultipleNegativesRankingLoss
+- arxiv:1908.10084
+- arxiv:1807.03748
+- base_model:BAAI/bge-m3
+- base_model:finetune:BAAI/bge-m3
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 4
+likes: 1
+modelId: doiceladev/ateneo-bge-m3-ecuador-v2
+author: doiceladev
+sha: 152c720cdcedc419a781d628c3c6cd02b57e225c
+lastModified: '2026-10-13T03:22:59.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: '¿Cuáles son los criterios clínicos, diagnóstico y conducta médica recomendada para Evidencias y recomendaciones
+    - Esquema y Criterios Normados según la GPC de Guia de Practica Clinica: Diagnostico y Tratamiento de la Anemia en el
+    Embarazo del MSP Ecuador?'
+  sentences:
+  - "Clasificación CIE-10\n\nE75.2\t Enfermedad de Gaucher\n\nCódigo internacional OMIM\n\nOMIM #: 230800 Gaucher tipo I,\
+    \ Gene map locus 1q21\n\nJustificación\n\nLa intervención temprana, así como el manejo integral e interdisciplinario sistematizado\
+    \ de esta patología, permitirá su diagnóstico precoz, tratamiento oportuno y seguimiento adecuado, mejorando la calidad\
+    \ de vida de los pacientes. Esta GPC conforma un conjunto de recomendaciones desarrolladas de manera sistemática y con\
+    \ sustento en el mayor nivel de evidencia científica disponible, cuyo propósito es optimizar y estandarizar el manejo,\
+    \ mejorar el uso de recursos, y los mecanismos de referencia y contrarreferencia de los pacientes con Enfermedad de Gaucher\
+    \ tipo 1.\n\nPropósito de esta GPC\n\nEsta GPC forma parte de las guías que desarrolla la Dirección Nacional de Normatización\
+    \ del MSP, y la Subsecretaría de Gobernanza de la Salud Pública.\n\nLa finalidad de esta GPC es establecer un referente\
+    \ nacional para orientar la toma de decisiones clínicas basadas en recomendaciones sustentadas en la mejor evidencia disponible."
+  - '[Tabla 1]
+
+    |Anemia en el embarazo<br>Hemoglobina (Hb) con valores menores a 11 g/dL (Hcto < 33%) en el primer y tercer tri-<br>mestre,
+    o hemoglobina (Hb) con valores menores <10,5 g/L (Hcto < 32%) en el segundo<br>trimestre.|E-1b|
+
+    |---|---|
+
+    |**Anemia posparto**<br>Hemoglobina (Hb) con valor < 10 g/dL|E-2b|
+
+    |**Anemia en mujeres NO embarazadas**<br>Hemoglobina (Hb) con valor < 12 g/dL o Hcto < 36%|E|'
+  - "[Tabla 3]\n|Todas las instituciones que asisten partos deben estar preparadas para la eventualidad<br>de una emergencia\
+    \ durante el parto y sus posibles complicaciones.|\09|\n|---|---|\n|Pueden emplearse diferentes enfoques de prevención\
+    \ y manejo, según el ámbito de<br>atencióny la disponibilidad de insumosy personal especializado en la atención departos.6|C|"
+- source_sentence: '¿Qué intervenciones farmacológicas y no farmacológicas de grado A/B están normadas por el MSP en 3 Prevención
+    secundaria y progresión de la ERC - Esquema y Criterios Normados para Guia de Practica Clinica: Enfermedad Renal Cronica?'
+  sentences:
+  - ' N 18 Enfermedad renal crónica  N 18.0 Insuficiencia renal terminal  N 18.1 Insuficiencia renal crónica, Estadio 1
+     N 18.2 Insuficiencia renal crónica, Estadio 2  N 18.3 Insuficiencia renal crónica, Estadio 3  N 18.4 Insuficiencia
+    renal crónica, Estadio 4  N 18.5 Insuficiencia renal crónica, Estadio 5  N 18.8 Otras insuficiencias renales crónicas
+     N 18.9 Insuficiencia renal crónica, no especificada
+
+
+    3. Preguntas que responde esta guía de práctica clínica
+
+
+    Prevención primaria
+
+
+    1. ¿Cuáles son los factores de riesgo (iniciadores, de progresión, modificables y no modificables) de enfermedad renal
+    crónica?
+
+
+    Sospecha y diagnóstico
+
+
+    2. ¿Cómo se define la enfermedad renal crónica? 3. ¿Cuáles son los criterios diagnósticos de enfermedad renal crónica?
+    4. ¿Cuáles son las consideraciones acerca de los estudios principales en pacientes con enfermedad renal crónica? 5. ¿Cómo
+    se clasifica la enfermedad renal crónica? 6. ¿Cuándo utilizar la estimación de la tasa de filtración glomerular en base
+    a cistatina C para diagnosticar enfermedad de renal crónica?
+
+
+    Prevención secundaria y progresión de la enfermedad renal crónica (ERC)'
+  - '8. Apoyo psicosocial a la familia
+
+
+    Las preguntas que se van a responder son:
+
+
+    • ¿Cómo se identifican las necesidades de apoyo psicosocial a la familia? • ¿Cuál es la mejor forma de atender las necesidades
+    psicosociales y de apoyo a la familia? • ¿Cuáles son los factores de riesgo de la claudicación familiar?
+
+
+    8.1. Necesidades de apoyo psicosocial de la familia
+
+
+    Las necesidades psicosociales de la familia son: económicas, emocionales, de comunicacion, de asesoramiento (con respecto
+    a recursos con los que cuentan públicos y privados, redes de apoyo, bonos, ayudas técnicas), de soporte, de reorganización
+    familiar.383
+
+
+    Según la RS de Harding,316 existe mucha información acerca de las necesidades de los cuidadores de pacientes que reciben
+    atención domiciliaria de cáncer y de CP, pero poca sobre la efectividad de las intervenciones. Según los estudios, las
+    necesidades son: ayuda domiciliaria, apoyo informal, información, ayuda económica y ayudas para el cansancio, la ansiedad
+    y el aislamiento. Los temas prioritarios para los cuidadores son la información y el apoyo psicológico.
+
+
+    RS de distintos tipos de estudios 1+/2+/3/Q
+
+
+    Otra revisión proporciona información sobre este tema,315 aunque no está referida a pacientes en CP, sino a cuidadores
+    de adultos mayores. Los estudios que incluye son, en su mayoría, en pacientes con demencia, donde la distinción entre
+    crónico y terminal no resulta tan clara.
+
+
+    RS de distintos tipos de estudios
+
+
+    2+/Q
+
+
+    Las necesidades y deseos que expresan los cuidadores de pacientes adultos mayores son:
+
+
+    • Desean satisfacer sus necesidades de formación en grupos de cuidadores. • Desean centros de CP especializados. • Experimentan
+    emociones negativas como carga, estrés y preocupación cuando cuidan a un adulto mayor en casa. • Desean que exista una
+    red de grupos de apoyo. • Temen el aislamiento social. • Temen la pérdida de control, los cambios de rol en las relaciones
+    y la pérdida de reciprocidad.
+
+
+    Estudio cualitativo
+
+
+    orgullo, apoyo y refuerzo que les ayuda en el proceso de duelo. Por tanto, es importante encontrar un equilibrio entre
+    la ayuda que a veces puedan necesitar y lo que no están dispuestas a delegar en otros; lo que puede llevarles a renunciar
+    a ciertas medidas de apoyo como centros de CP, ingresos, etc.'
+  - '[Tabla 1]
+
+    |Col1|R-B|Col3|Col4|siguiente modo(9,366,367):|Col6|
+
+    |---|---|---|---|---|---|
+
+    ||**R-A**|**R-A**|**R-A**|**R-A**|**R-A**|
+
+    |||||||
+
+    ||||<br> <br>|Se sugiere que la administración de hierro sea vía oral, ya que el paciente|<br>|
+
+    ||||<br> <br>|es un probable candidato para TSR (tratamiento renal sustitutivo), y de|es un probable candidato para TSR
+    (tratamiento renal sustitutivo), y de|
+
+    |||||||
+
+    |||||ese modo preservar la vasculatura en miembros superiores.|ese modo preservar la vasculatura en miembros superiores.|
+
+    ||**E-2b**|||||
+
+    ||**R-B**|**R-B**|**R-B**|**R-B**|**R-B**|
+
+    |||||||
+
+    ||**E-2b**||<br> <br>|Se recomienda mantener valores de ferritina mayores a 100 ng/mL y TSat|<br>|
+
+    ||**E-2b**||<br> <br>|(porcentaje de saturación de la transferrina) mayor al 20 % y de glóbulos|(porcentaje de saturación
+    de la transferrina) mayor al 20 % y de glóbulos|
+
+    ||**R-B**|**R-B**|**R-B**|**R-B**|**R-B**|
+
+    ||**R-B**|**R-B**|**R-B**|rojos hipocrómicos menor al 10 %.(368,369)|rojos hipocrómicos menor al 10 %.(368,369)|'
+- source_sentence: Describa el protocolo de manejo clínico inmediato y contraindicaciones normadas en C. Complicaciones -
+    Esquema y Criterios Normados según la GPC oficial del Ecuador.
+  sentences:
+  - '[Tabla 1]
+
+    | Indicador / Criterio Clínico | Descripción Normativa |
+
+    |---|---|
+
+    | »» Proceder a atender el parto en libre posición para la mujer y con enfoque de derecho humano e intercultural, según
+    GPC del parto. »» Canalizar vía venosa empleando solución salina al 0.9% Ringer Lactato »» Preeclampsia/eclampsia: Manejo
+    de emergencia (p. 42) »» RPM: ver manejo de emergencia (p. 42) »» Prever alta probabilidad de Reanimación Neonatal (p.45)
+    »» Prever referir en postparto inmediato a la madre y RN. | **SI, además de una o más de la señales**<br>**del cuadro
+    superior y presenta:**<br>• <br>3 o más contracciones intensas en 10<br>minutos y/o<br>• <br>Ganas de pujar y/o<br>• <br>Adelgazamiento
+    de periné y/o<br>• <br>Apertura de la vagina, cabeza fetal visible |
+
+    | »» Proceder a atender el parto según GPC del parto. »» Preparar el nacimiento considerando probabilidad de Maniobras
+    de Reanimación Neonatal (p. 45) | **Si la mujer no tiene las características de**<br>**las clasifcaciones anteriores pero
+    tiene.**<br>• <br>3 o más contracciones intensas en 10<br>minutos y/o<br>• <br>Ganas de pujar y/o<br>• <br>Adelgazamiento
+    de periné y/o<br>• <br>Apertura de la vagina, cabeza fetal visible |
+
+    | »» Colocar en decúbitos lateral izquierdo »» Referir al establecimiento de salud adecuado para la atención al parto.
+    | Si la mujer no tiene las características<br>de las clasifcaciones anteriores y el<br>parto no es inminente |'
+  - '[Tabla 1]
+
+    |Pancreáticas|Col2|
+
+    |---|---|
+
+    |**• **Insufciencia pancreática<br>• Pancreatitis|**• **Insufciencia pancreática<br>• Pancreatitis|
+
+    |**Nutricionales**|**Nutricionales**|
+
+    |**• **Fallo del crecimiento<br>• Malnutrición / Kwashiorkor<br>• Edemas generalizados y anemia (lactantes)<br>• Defciencia
+    de macronutrientes|**• **Fallo del crecimiento<br>• Malnutrición / Kwashiorkor<br>• Edemas generalizados y anemia (lactantes)<br>•
+    Defciencia de macronutrientes|
+
+    |**Esófagicas**|**Esófagicas**|
+
+    |**• **RGE<br>• Esofagitis<br>• Várices esofágicas|**• **RGE<br>• Esofagitis<br>• Várices esofágicas|
+
+    |**Intestinales**|**Intestinales**|
+
+    |• Íleo meconial<br>• Síndrome de obstrucción intestinal distal<br>• Estreñimiento<br>• Prolapso rectal<br>• Colonopatía
+    fbrosante|• Íleo meconial<br>• Síndrome de obstrucción intestinal distal<br>• Estreñimiento<br>• Prolapso rectal<br>•
+    Colonopatía fbrosante|
+
+    |**Hepatobiliares**|**Hepatobiliares**|
+
+    |**Extrahepáticas**|**Intrahepáticas**|
+
+    |**• **Microvesícula<br>• Dilatación vesicular<br>• Colelitiasis<br>• Estenosis del conducto biliar común<br>• Colangiocarcinoma<br>•
+    Colangitis esclerosante|• Colestasis neonatal<br>• Esteatosis<br>• Cirrosis biliar focal, multifocal|'
+  - "La consulta preconcepcional es imprescindible en toda pareja en la cual por lo menos uno de los componentes presenta\
+    \ FQ. Si es la mujer la que padece la enfermedad, es necesario valorar de forma individualizada el riesgo de llevar adelante\
+    \ un embarazo. Cuando una mujer con FQ está dispuesta a comenzar un embarazo es necesario conocer: 37\n\nEl embarazo por\
+    \ sí solo de forma fisiológica supone una importante sobrecarga para el organismo tanto en la función pulmonar como en\
+    \ su aparato circulatorio y en sus necesidades nutricionales. Esta sobrecarga fisiológica puede tener consecuencias muy\
+    \ negativas en una paciente con FQ cuyo estado de salud no sea razonablemente apropiado para afrontar una gestación.7\n\
+    \nC. El embarazo\n\nCuando sea posible, las mujeres deben ser alentadas a discutir sobre el embarazo con su equipo de\
+    \ FQ antes de quedar embarazadas. Por tanto, la asistencia prenatal del embarazo de toda mujer con una fibrosis quística\
+    \ debe comenzar en la etapa preconcepcional, puesto que la salud durante el embarazo, tanto de la madre cuanto del feto,\
+    \ depende en gran medida del estado de salud o de enfermedad de la mujer antes de la concepción.\n\nEs fundamental valorar\
+    \ el grado de nutrición y la situación cardiopulmonar en esta etapa, pues sabemos que la gestación produce una serie de\
+    \ repercusiones más o menos graves sobre la mujer con fibrosis quística, que, de forma esquemática, son las siguientes:\n\
+    \n1.\t Desnutrición importante\n\n2.\t Desencadenamiento de diabetes gestacional\n\n3.\t Empeoramiento de la situación\
+    \ cardiopulmonar\n\n4.\t Deterioro transitorio o permanente de la función pulmonar posparto\n\nDebe informarse además,\
+    \ de forma clara y comprensible para la paciente, los posibles riesgos descritos en lo que respecta a los resultados perinatales,\
+    \ es decir, los riesgos para sus hijos como consecuencia del embarazo, de la tasa de aborto aumentado, así como la morbimortalidad\
+    \ perinatal como consecuencia  fundamentalmente de dos causas:\n\n1.\t Prematuridad\n\n2.\t Crecimiento intrauterino restringido\
+    \ (peso y tamaño por debajo de lo habitual para\n\nesa edad)"
+- source_sentence: '¿Cuáles son los criterios clínicos, diagnóstico y conducta médica recomendada para Anexos - Esquema y
+    Criterios Normados según la GPC de Guia de Practica Clinica: Enfermedad Renal Cronica del MSP Ecuador?'
+  sentences:
+  - 'Anexo 2. Algoritmo 1: Identificación de persona con sospecha de TB pulmonar y extrapulmonar
+
+
+    Fuente: MSP. Manual de Normas y Procedimientos para el Control de la Tuberculosis. Ecuador.2010 (20) Elaboración: propia
+
+
+    Anexo 3. Algoritmo 2: Diagnóstico de tuberculosis pulmonar sensible y resistente en adultos
+
+
+    * En PVV no importa el tiempo de evolución de los síntomas respiratorios Fuente: MSP. Manual de Normas y Procedimientos
+    para el Control de la Tuberculosis. Ecuador.2010 (20) Elaboración: Propia
+
+
+    Anexo 4. Algoritmo 3: Identificación de Mycobacterium tuberculosis por biología molecular
+
+
+    * RR no detectado significa que el afectado es sensible a la Rifampicina ** RR detectado significa que el afectado es
+    resistente a la Rifampicina
+
+
+    Adaptado: GLI model TB diagnostic algorithms, march 2017. (212) Elaboración propia
+
+
+    Anexo 5. Algoritmo 4: Diagnóstico de tuberculosis en menores de 5 años
+
+
+    Fuente: MSP. Manual de Normas y Procedimientos para el Control de la Tuberculosis. Ecuador.2010. (20) Elaboración: propia
+
+
+    Anexo 6. Criterios del sistema de puntaje Stegen, Kaplan y Toledo
+
+
+    De existir aún sospecha clínica con resultado de baciloscopía negativo y Rx anormal se recomienda aplicar los siguientes
+    criterios del sistema de puntaje Stegen, Kaplan y Toledo:
+
+
+    Adaptado de: Dr. Rubén F. Arispe Vidal. Diagnóstico de tuberculosis infantil (I): sistema de puntaje y algoritmo de manejo
+    de contacto. Revista científica Ciencia Médica. Bolivia. 2010 (120)
+
+
+    Una vez aplicados los criterios de diagnóstico según la puntuación del sistema de puntaje Stegen, Kaplan y Toledo, se
+    debe definir el criterio segúnsos siguientes rangos:
+
+
+    Tomado de: Dr. Rubén F. Arispe Vidal. Diagnóstico de tuberculosis infantil (I): sistema de puntaje y algoritmo de manejo
+    de contactos. Revista científica Ciencia Médica. Bolivia. 2010'
+  - '[Tabla 1]
+
+    | Indicador / Criterio Clínico | Descripción Normativa |
+
+    |---|---|
+
+    | Col7 | **Fluoxetina**<br>20 mg/24h<br>D<br>No ajustar<br>No ajustar<br>No ajustar |
+
+    | D | **Fluoxetina**<br>20 mg/24h<br>D<br>No ajustar<br>No ajustar<br>No ajustar |
+
+    | Col9 | **Fluoxetina**<br>20 mg/24h<br>D<br>No ajustar<br>No ajustar<br>No ajustar |
+
+    | Col10 | **Fluoxetina**<br>20 mg/24h<br>D<br>No ajustar<br>No ajustar<br>No ajustar |
+
+    | No ajustar | **Fluoxetina**<br>20 mg/24h<br>D<br>No ajustar<br>No ajustar<br>No ajustar |
+
+    | Col12 | **Fluoxetina**<br>20 mg/24h<br>D<br>No ajustar<br>No ajustar<br>No ajustar |
+
+    | Col13 | **Fluoxetina**<br>20 mg/24h<br>D<br>No ajustar<br>No ajustar<br>No ajustar |
+
+    | No ajustar | **Fluoxetina**<br>20 mg/24h<br>D<br>No ajustar<br>No ajustar<br>No ajustar |
+
+    | Col15 | **Fluoxetina**<br>20 mg/24h<br>D<br>No ajustar<br>No ajustar<br>No ajustar |'
+  - '[Tabla 1]
+
+    | Indicador / Criterio Clínico | Descripción Normativa |
+
+    |---|---|
+
+    | Col17 | **Ticarcilina/ácido**<br>**clavulánico**<br>3,1 g/4h<br>D e I<br>2g/4-8h<br>2g/4-8h<br>2g/12h |
+
+    | Col18 | **Ticarcilina/ácido**<br>**clavulánico**<br>3,1 g/4h<br>D e I<br>2g/4-8h<br>2g/4-8h<br>2g/12h |
+
+    ||||||||**Tetraciclinas**|||||||||||
+
+    |||||||||||||||||||
+
+    | Azitromicina 500 mg/día No No ajustar No ajustar No ajustar | **Doxiciclina**<br>100 mg/12h<br>No<br>No ajustar<br>No
+    ajustar<br>No ajustar |
+
+    | Col2 | **Doxiciclina**<br>100 mg/12h<br>No<br>No ajustar<br>No ajustar<br>No ajustar |
+
+    | Col3 | **Doxiciclina**<br>100 mg/12h<br>No<br>No ajustar<br>No ajustar<br>No ajustar |
+
+    | Col4 | **Doxiciclina**<br>100 mg/12h<br>No<br>No ajustar<br>No ajustar<br>No ajustar |
+
+    | Col5 | **Doxiciclina**<br>100 mg/12h<br>No<br>No ajustar<br>No ajustar<br>No ajustar |'
+- source_sentence: Describa el protocolo de manejo clínico inmediato y contraindicaciones normadas en Procedimientos según
+    la GPC oficial del Ecuador.
+  sentences:
+  - '[Tabla 1]
+
+    |Título de la guía|Recién nacido prematuro|
+
+    |---|---|
+
+    |**Validación**|Validación del protocolo de búsqueda y GPC que adaptar_"_Método de<br>validación GPC: validación por pares
+    clínicos_"_ Validación: Dirección de<br>Normatización – Sistema Nacional de Salud|
+
+    |**Fuente de**<br>**fnanciamiento**|Ministerio de Salud Pública del Ecuador. Dirección Nacional de<br>Normatización. Organización
+    Panamericana de la Salud.|
+
+    |**Conficto de**<br>**interés**|Todos los miembros involucrados en el desarrollo de esta GPC han<br>declarado la ausencia
+    de conficto de interés en relación a la información,<br>objetivosy propósitos de lapresenteguía depráctica clínica.|
+
+    |**Actualización**|A partir de la fecha de edición, cada dos años, o según cambios<br>demostrados en la práctica clínica
+    basados en evidencia y publicaciones<br>científcas en el tema.|'
+  - "Inserción velamentosa del cordón: los vasos umbilicales se abren dentro de las membranas a cierta distancia del borde\
+    \ placentario, el cual alcanzan circundados solo por un pliegue de amnios [12].\n\nVasa previa: condición de alto riesgo\
+    \ obstétrico en la cual los vasos sanguíneos aberrantes procedentes de la placenta o del cordón umbilical, cruzan la entrada\
+    \ del canal del parto por delante de la presentación fetal [13].\n\n9.\t Aspectos relevantes de las anomalías de inserción\
+    \ placentaria y vasos\n\nsanguíneos fetales\n\nLas anomalías de la inserción placentaria y de los vasos sanguíneos fetales\
+    \ se clasifican en placenta previa, acretismo placentario, vasa previa e inserción velamentosa del cordón umbilical.\n\
+    \nLa sospecha clínica de placenta previa debe darse cuando clásicamente se presenta un sangrado indoloro generalmente\
+    \ rojo. Se piensa que el sangrado se produce en asociación con el desarrollo del segmento uterino inferior en el tercer\
+    \ trimestre, es una de las principales causas de hemorragia en el tercer trimestre [14].\n\nLa placenta previa puede asociarse\
+    \ a placenta acreta, increta o percreta. Esa fijación anormalmente firme de la placenta podría deberse a una disminución\
+    \ del grosor de la capa basal del endometrio que generaría deciduas que están poco desarrolladas, condición que puede\
+    \ ocurrir por lesiones secundarias a legrados y cirugías previas con la cesárea; por tanto, es más frecuente que se presente\
+    \ en el segmento uterino inferior. En la placenta acreta puede haber adicionalmente un desarrollo imperfecto de la capa\
+    \ fibrinoide o de Nitabuch, lo que hace que las vellosidades se fijen al miometrio. En la placenta increta, estas invaden\
+    \ al miometrio y, en la placenta percreta, penetran a través del miometrio. Es posible que esté adherido todo o parte\
+    \ de un solo lóbulo o todos los cotiledones. El diagnóstico histológico de placenta acreta no puede establecerse con la\
+    \ placenta sola, se necesita el útero o material de raspado con miometrio [12]."
+  - '• Score radiológico
+
+
+    En los niños menores de cinco años o en las formas leves de la enfermedad, la radiografía de tórax puede ser normal; no
+    obstante, se recomienda realizarla al momento del diagnóstico. En lo posterior, se instará de forma progresiva cambios
+    como el atrapamiento aéreo, imágenes varias de consolidación (neumonía, atelectasias), bronquiectasias, lesiones quísticas
+    y finalmente imágenes de fibrosis pulmonar claramente establecida. Por eso es útil emplear un sistema de puntuación, que
+    permita evaluar las alteraciones radiológicas; para ello, el más utilizado es el score de Brasfield, que se lo obtiene
+    restando los 25  puntos de la radiología normal de los obtenidos en cada categoría.
+
+
+    Anexo 2. Score de Brasfield'
+model-index:
+- name: SentenceTransformer based on BAAI/bge-m3
+  results:
+  - task:
+      type: information-retrieval
+      name: Information Retrieval
+    dataset:
+      name: ateneo val evaluator
+      type: ateneo_val_evaluator
+    metrics:
+    - type: cosine_accuracy@1
+      value: 0.24497991967871485
+      name: Cosine Accuracy@1
+      verified: false
+    - type: cosine_accuracy@3
+      value: 0.41767068273092367
+      name: Cosine Accuracy@3
+      verified: false
+    - type: cosine_accuracy@5
+      value: 0.4738955823293173
+      name: Cosine Accuracy@5
+      verified: false
+    - type: cosine_precision@1
+      value: 0.24497991967871485
+      name: Cosine Precision@1
+      verified: false
+    - type: cosine_precision@3
+      value: 0.13922356091030788
+      name: Cosine Precision@3
+      verified: false
+    - type: cosine_precision@5
+      value: 0.09477911646586344
+      name: Cosine Precision@5
+      verified: false
+    - type: cosine_precision@10
+      value: 0.055020080321285136
+      name: Cosine Precision@10
+      verified: false
+    - type: cosine_recall@1
+      value: 0.24497991967871485
+      name: Cosine Recall@1
+      verified: false
+    - type: cosine_recall@3
+      value: 0.41767068273092367
+      name: Cosine Recall@3
+      verified: false
+    - type: cosine_recall@5
+      value: 0.4738955823293173
+      name: Cosine Recall@5
+      verified: false
+    - type: cosine_recall@10
+      value: 0.5502008032128514
+      name: Cosine Recall@10
+      verified: false
+    - type: cosine_ndcg@1
+      value: 0.24497991967871485
+      name: Cosine Ndcg@1
+      verified: false
+    - type: cosine_ndcg@5
+      value: 0.3681554333367562
+      name: Cosine Ndcg@5
+      verified: false
+    - type: cosine_ndcg@10
+      value: 0.3927441196952694
+      name: Cosine Ndcg@10
+      verified: false
+    - type: cosine_mrr@1
+      value: 0.24497991967871485
+      name: Cosine Mrr@1
+      verified: false
+    - type: cosine_mrr@5
+      value: 0.3327978580990629
+      name: Cosine Mrr@5
+      verified: false
+    - type: cosine_mrr@10
+      value: 0.3429017657933321
+      name: Cosine Mrr@10
+      verified: false
+    - type: cosine_map@100
+      value: 0.3566035225284961
+      name: Cosine Map@100
+      verified: false
+config:
+  architectures:
+  - XLMRobertaModel
+  model_type: xlm-roberta
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: <unk>
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:1178
+  - loss:MultipleNegativesRankingLoss
+  base_model: BAAI/bge-m3
+  widget:
+  - source_sentence: '¿Cuáles son los criterios clínicos, diagnóstico y conducta médica recomendada para Evidencias y recomendaciones
+      - Esquema y Criterios Normados según la GPC de Guia de Practica Clinica: Diagnostico y Tratamiento de la Anemia en el
+      Embarazo del MSP Ecuador?'
+    sentences:
+    - "Clasificación CIE-10\n\nE75.2\t Enfermedad de Gaucher\n\nCódigo internacional OMIM\n\nOMIM #: 230800 Gaucher tipo I,\
+      \ Gene map locus 1q21\n\nJustificación\n\nLa intervención temprana, así como el manejo integral e interdisciplinario\
+      \ sistematizado de esta patología, permitirá su diagnóstico precoz, tratamiento oportuno y seguimiento adecuado, mejorando\
+      \ la calidad de vida de los pacientes. Esta GPC conforma un conjunto de recomendaciones desarrolladas de manera sistemática\
+      \ y con sustento en el mayor nivel de evidencia científica disponible, cuyo propósito es optimizar y estandarizar el\
+      \ manejo, mejorar el uso de recursos, y los mecanismos de referencia y contrarreferencia de los pacientes con Enfermedad\
+      \ de Gaucher tipo 1.\n\nPropósito de esta GPC\n\nEsta GPC forma parte de las guías que desarrolla la Dirección Nacional\
+      \ de Normatización del MSP, y la Subsecretaría de Gobernanza de la Salud Pública.\n\nLa finalidad de esta GPC es establecer\
+      \ un referente nacional para orientar la toma de decisiones clínicas basadas en recomendaciones sustentadas en la mejor\
+      \ evidencia disponible."
+    - '[Tabla 1]
+
+      |Anemia en el embarazo<br>Hemoglobina (Hb) con valores menores a 11 g/dL (Hcto < 33%) en el primer y tercer tri-<br>mestre,
+      o hemoglobina (Hb) con valores menores <10,5 g/L (Hcto < 32%) en el segundo<br>trimestre.|E-1b|
+
+      |---|---|
+
+      |**Anemia posparto**<br>Hemoglobina (Hb) con valor < 10 g/dL|E-2b|
+
+      |**Anemia en mujeres NO embarazadas**<br>Hemoglobina (Hb) con valor < 12 g/dL o Hcto < 36%|E|'
+    - "[Tabla 3]\n|Todas las instituciones que asisten partos deben estar preparadas para la eventualidad<br>de una emergencia\
+      \ durante el parto y sus posibles complicaciones.|\09|\n|---|---|\n|Pueden emplearse diferentes enfoques de prevención\
+      \ y manejo, según el ámbito de<br>atencióny la disponibilidad de insumosy personal especializado en la atención departos.6|C|"
+  - source_sentence: '¿Qué intervenciones farmacológicas y no farmacológicas de grado A/B están normadas por el MSP en 3 Prevención
+      secundaria y progresión de la ERC - Esquema y Criterios Normados para Guia de Practica Clinica: Enfermedad Renal Cronica?'
+    sentences:
+    - ' N 18 Enfermedad renal crónica  N 18.0 Insuficiencia renal terminal  N 18.1 Insuficiencia renal crónica, Estadio
+      1  N 18.2 Insuficiencia renal crónica, Estadio 2  N 18.3 Insuficiencia renal crónica, Estadio 3  N 18.4 Insuficiencia
+      renal crónica, Estadio 4  N 18.5 Insuficiencia renal crónica, Estadio 5  N 18.8 Otras insuficiencias renales crónicas
+       N 18.9 Insuficiencia renal crónica, no especificada
+
+
+      3. Preguntas que responde esta guía de práctica clínica
+
+
+      Prevención primaria
+
+
+      1. ¿Cuáles son los factores de riesgo (iniciadores, de progresión, modificables y no modificables) de enfermedad renal
+      crónica?
+
+
+      Sospecha y diagnóstico
+
+
+      2. ¿Cómo se define la enfermedad renal crónica? 3. ¿Cuáles son los criterios diagnósticos de enfermedad renal crónica?
+      4. ¿Cuáles son las consideraciones acerca de los estudios principales en pacientes con enfermedad renal crónica? 5.
+      ¿Cómo se clasifica la enfermedad renal crónica? 6. ¿Cuándo utilizar la estimación de la tasa de filtración glomerular
+      en base a cistatina C para diagnosticar enfermedad de renal crónica?
+
+
+      Prevención secundaria y progresión de la enfermedad renal crónica (ERC)'
+    - '8. Apoyo psicosocial a la familia
+
+
+      Las preguntas que se van a responder son:
+
+
+      • ¿Cómo se identifican las necesidades de apoyo psicosocial a la familia? • ¿Cuál es la mejor forma de atender las necesidades
+      psicosociales y de apoyo a la familia? • ¿Cuáles son los factores de riesgo de la claudicación familiar?
+
+
+      8.1. Necesidades de apoyo psicosocial de la familia
+
+
+      Las necesidades psicosociales de la familia son: económicas, emocionales, de comunicacion, de asesoramiento (con respecto
+      a recursos con los que cuentan públicos y privados, redes de apoyo, bonos, ayudas técnicas), de soporte, de reorganización
+      familiar.383
+
+
+      Según la RS de Harding,316 existe mucha información acerca de las necesidades de los cuidadores de pacientes que reciben
+      atención domiciliaria de cáncer y de CP, pero poca sobre la efectividad de las intervenciones. Según los estudios, las
+      necesidades son: ayuda domiciliaria, apoyo informal, información, ayuda económica y ayudas para el cansancio, la ansiedad
+      y el aislamiento. Los temas prioritarios para los cuidadores son la información y el apoyo psicológico.
+
+
+      RS de distintos tipos de estudios 1+/2+/3/Q
+
+
+      Otra revisión proporciona información sobre este tema,315 aunque no está referida a pacientes en CP, sino a cuidadores
+      de adultos mayores. Los estudios que incluye son, en su mayoría, en pacientes con demencia, donde la distinción entre
+      crónico y terminal no resulta tan clara.
+
+
+      RS de distintos tipos de estudios
+
+
+      2+/Q
+
+
+      Las necesidades y deseos que expresan los cuidadores de pacientes adultos mayores son:
+
+
+      • Desean satisfacer sus necesidades de formación en grupos de cuidadores. • Desean centros de CP especializados. • Experimentan
+      emociones negativas como carga, estrés y preocupación cuando cuidan a un adulto mayor en casa. • Desean que exista una
+      red de grupos de apoyo. • Temen el aislamiento social. • Temen la pérdida de control, los cambios de rol en las relaciones
+      y la pérdida de reciprocidad.
+
+
+      Estudio cualitativo
+
+
+      orgullo, apoyo y refuerzo que les ayuda en el proceso de duelo. Por tanto, es importante encontrar un equilibrio entre
+      la ayuda que a veces puedan necesitar y lo que no están dispuestas a delegar en otros; lo que puede llevarles a renunciar
+      a ciertas medidas de apoyo como centros de CP, ingresos, etc.'
+    - '[Tabla 1]
+
+      |Col1|R-B|Col3|Col4|siguiente modo(9,366,367):|Col6|
+
+      |---|---|---|---|---|---|
+
+      ||**R-A**|**R-A**|**R-A**|**R-A**|**R-A**|
+
+      |||||||
+
+      ||||<br> <br>|Se sugiere que la administración de hierro sea vía oral, ya que el paciente|<br>|
+
+      ||||<br> <br>|es un probable candidato para TSR (tratamiento renal sustitutivo), y de|es un probable candidato para
+      TSR (tratamiento renal sustitutivo), y de|
+
+      |||||||
+
+      |||||ese modo preservar la vasculatura en miembros superiores.|ese modo preservar la vasculatura en miembros superiores.|
+
+      ||**E-2b**|||||
+
+      ||**R-B**|**R-B**|**R-B**|**R-B**|**R-B**|
+
+      |||||||
+
+      ||**E-2b**||<br> <br>|Se recomienda mantener valores de ferritina mayores a 100 ng/mL y TSat|<br>|
+
+      ||**E-2b**||<br> <br>|(porcentaje de saturación de la transferrina) mayor al 20 % y de glóbulos|(porcentaje de saturación
+      de la transferrina) mayor al 20 % y de glóbulos|
+
+      ||**R-B**|**R-B**|**R-B**|**R-B**|**R-B**|
+
+      ||**R-B**|**R-B**|**R-B**|rojos hipocrómicos menor al 10 %.(368,369)|rojos hipocrómicos menor al 10 %.(368,369)|'
+  - source_sentence: Describa el protocolo de manejo clínico inmediato y contraindicaciones normadas en C. Complicaciones
+      - Esquema y Criterios Normados según la GPC oficial del Ecuador.
+    sentences:
+    - '[Tabla 1]
+
+      | Indicador / Criterio Clínico | Descripción Normativa |
+
+      |---|---|
+
+      | »» Proceder a atender el parto en libre posición para la mujer y con enfoque de derecho humano e intercultural, según
+      GPC del parto. »» Canalizar vía venosa empleando solución salina al 0.9% Ringer Lactato »» Preeclampsia/eclampsia: Manejo
+      de emergencia (p. 42) »» RPM: ver manejo de emergencia (p. 42) »» Prever alta probabilidad de Reanimación Neonatal (p.45)
+      »» Prever referir en postparto inmediato a la madre y RN. | **SI, además de una o más de la señales**<br>**del cuadro
+      superior y presenta:**<br>• <br>3 o más contracciones intensas en 10<br>minutos y/o<br>• <br>Ganas de pujar y/o<br>•
+      <br>Adelgazamiento de periné y/o<br>• <br>Apertura de la vagina, cabeza fetal visible |
+
+      | »» Proceder a atender el parto según GPC del parto. »» Preparar el nacimiento considerando probabilidad de Maniobras
+      de Reanimación Neonatal (p. 45) | **Si la mujer no tiene las características de**<br>**las clasifcaciones anteriores
+      pero tiene.**<br>• <br>3 o más contracciones intensas en 10<br>minutos y/o<br>• <br>Ganas de pujar y/o<br>• <br>Adelgazamiento
+      de periné y/o<br>• <br>Apertura de la vagina, cabeza fetal visible |
+
+      | »» Colocar en decúbitos lateral izquierdo »» Referir al establecimiento de salud adecuado para la atención al parto.
+      | Si la mujer no tiene las características<br>de las clasifcaciones anteriores y el<br>parto no es inminente |'
+    - '[Tabla 1]
+
+      |Pancreáticas|Col2|
+
+      |---|---|
+
+      |**• **Insufciencia pancreática<br>• Pancreatitis|**• **Insufciencia pancreática<br>• Pancreatitis|
+
+      |**Nutricionales**|**Nutricionales**|
+
+      |**• **Fallo del crecimiento<br>• Malnutrición / Kwashiorkor<br>• Edemas generalizados y anemia (lactantes)<br>• Defciencia
+      de macronutrientes|**• **Fallo del crecimiento<br>• Malnutrición / Kwashiorkor<br>• Edemas generalizados y anemia (lactantes)<br>•
+      Defciencia de macronutrientes|
+
+      |**Esófagicas**|**Esófagicas**|
+
+      |**• **RGE<br>• Esofagitis<br>• Várices esofágicas|**• **RGE<br>• Esofagitis<br>• Várices esofágicas|
+
+      |**Intestinales**|**Intestinales**|
+
+      |• Íleo meconial<br>• Síndrome de obstrucción intestinal distal<br>• Estreñimiento<br>• Prolapso rectal<br>• Colonopatía
+      fbrosante|• Íleo meconial<br>• Síndrome de obstrucción intestinal distal<br>• Estreñimiento<br>• Prolapso rectal<br>•
+      Colonopatía fbrosante|
+
+      |**Hepatobiliares**|**Hepatobiliares**|
+
+      |**Extrahepáticas**|**Intrahepáticas**|
+
+      |**• **Microvesícula<br>• Dilatación vesicular<br>• Colelitiasis<br>• Estenosis del conducto biliar común<br>• Colangiocarcinoma<br>•
+      Colangitis esclerosante|• Colestasis neonatal<br>• Esteatosis<br>• Cirrosis biliar focal, multifocal|'
+    - "La consulta preconcepcional es imprescindible en toda pareja en la cual por lo menos uno de los componentes presenta\
+      \ FQ. Si es la mujer la que padece la enfermedad, es necesario valorar de forma individualizada el riesgo de llevar\
+      \ adelante un embarazo. Cuando una mujer con FQ está dispuesta a comenzar un embarazo es necesario conocer: 37\n\nEl\
+      \ embarazo por sí solo de forma fisiológica supone una importante sobrecarga para el organismo tanto en la función pulmonar\
+      \ como en su aparato circulatorio y en sus necesidades nutricionales. Esta sobrecarga fisiológica puede tener consecuencias\
+      \ muy negativas en una paciente con FQ cuyo estado de salud no sea razonablemente apropiado para afrontar una gestación.7\n\
+      \nC. El embarazo\n\nCuando sea posible, las mujeres deben ser alentadas a discutir sobre el embarazo con su equipo de\
+      \ FQ antes de quedar embarazadas. Por tanto, la asistencia prenatal del embarazo de toda mujer con una fibrosis quística\
+      \ debe comenzar en la etapa preconcepcional, puesto que la salud durante el embarazo, tanto de la madre cuanto del feto,\
+      \ depende en gran medida del estado de salud o de enfermedad de la mujer antes de la concepción.\n\nEs fundamental valorar\
+      \ el grado de nutrición y la situación cardiopulmonar en esta etapa, pues sabemos que la gestación produce una serie\
+      \ de repercusiones más o menos graves sobre la mujer con fibrosis quística, que, de forma esquemática, son las siguientes:\n\
+      \n1.\t Desnutrición importante\n\n2.\t Desencadenamiento de diabetes gestacional\n\n3.\t Empeoramiento de la situación\
+      \ cardiopulmonar\n\n4.\t Deterioro transitorio o permanente de la función pulmonar posparto\n\nDebe informarse además,\
+      \ de forma clara y comprensible para la paciente, los posibles riesgos descritos en lo que respecta a los resultados\
+      \ perinatales, es decir, los riesgos para sus hijos como consecuencia del embarazo, de la tasa de aborto aumentado,\
+      \ así como la morbimortalidad perinatal como consecuencia  fundamentalmente de dos causas:\n\n1.\t Prematuridad\n\n\
+      2.\t Crecimiento intrauterino restringido (peso y tamaño por debajo de lo habitual para\n\nesa edad)"
+  - source_sentence: '¿Cuáles son los criterios clínicos, diagnóstico y conducta médica recomendada para Anexos - Esquema
+      y Criterios Normados según la GPC de Guia de Practica Clinica: Enfermedad Renal Cronica del MSP Ecuador?'
+    sentences:
+    - 'Anexo 2. Algoritmo 1: Identificación de persona con sospecha de TB pulmonar y extrapulmonar
+
+
+      Fuente: MSP. Manual de Normas y Procedimientos para el Control de la Tuberculosis. Ecuador.2010 (20) Elaboración: propia
+
+
+      Anexo 3. Algoritmo 2: Diagnóstico de tuberculosis pulmonar sensible y resistente en adultos
+
+
+      * En PVV no importa el tiempo de evolución de los síntomas respiratorios Fuente: MSP. Manual de Normas y Procedimientos
+      para el Control de la Tuberculosis. Ecuador.2010 (20) Elaboración: Propia
+
+
+      Anexo 4. Algoritmo 3: Identificación de Mycobacterium tuberculosis por biología molecular
+
+
+      * RR no detectado significa que el afectado es sensible a la Rifampicina ** RR detectado significa que el afectado es
+      resistente a la Rifampicina
+
+
+      Adaptado: GLI model TB diagnostic algorithms, march 2017. (212) Elaboración propia
+
+
+      Anexo 5. Algoritmo 4: Diagnóstico de tuberculosis en menores de 5 años
+
+
+      Fuente: MSP. Manual de Normas y Procedimientos para el Control de la Tuberculosis. Ecuador.2010. (20) Elaboración: propia
+
+
+      Anexo 6. Criterios del sistema de puntaje Stegen, Kaplan y Toledo
+
+
+      De existir aún sospecha clínica con resultado de baciloscopía negativo y Rx anormal se recomienda aplicar los siguientes
+      criterios del sistema de puntaje Stegen, Kaplan y Toledo:
+
+
+      Adaptado de: Dr. Rubén F. Arispe Vidal. Diagnóstico de tuberculosis infantil (I): sistema de puntaje y algoritmo de
+      manejo de contacto. Revista científica Ciencia Médica. Bolivia. 2010 (120)
+
+
+      Una vez aplicados los criterios de diagnóstico según la puntuación del sistema de puntaje Stegen, Kaplan y Toledo, se
+      debe definir el criterio segúnsos siguientes rangos:
+
+
+      Tomado de: Dr. Rubén F. Arispe Vidal. Diagnóstico de tuberculosis infantil (I): sistema de puntaje y algoritmo de manejo
+      de contactos. Revista científica Ciencia Médica. Bolivia. 2010'
+    - '[Tabla 1]
+
+      | Indicador / Criterio Clínico | Descripción Normativa |
+
+      |---|---|
+
+      | Col7 | **Fluoxetina**<br>20 mg/24h<br>D<br>No ajustar<br>No ajustar<br>No ajustar |
+
+      | D | **Fluoxetina**<br>20 mg/24h<br>D<br>No ajustar<br>No ajustar<br>No ajustar |
+
+      | Col9 | **Fluoxetina**<br>20 mg/24h<br>D<br>No ajustar<br>No ajustar<br>No ajustar |
+
+      | Col10 | **Fluoxetina**<br>20 mg/24h<br>D<br>No ajustar<br>No ajustar<br>No ajustar |
+
+      | No ajustar | **Fluoxetina**<br>20 mg/24h<br>D<br>No ajustar<br>No ajustar<br>No ajustar |
+
+      | Col12 | **Fluoxetina**<br>20 mg/24h<br>D<br>No ajustar<br>No ajustar<br>No ajustar |
+
+      | Col13 | **Fluoxetina**<br>20 mg/24h<br>D<br>No ajustar<br>No ajustar<br>No ajustar |
+
+      | No ajustar | **Fluoxetina**<br>20 mg/24h<br>D<br>No ajustar<br>No ajustar<br>No ajustar |
+
+      | Col15 | **Fluoxetina**<br>20 mg/24h<br>D<br>No ajustar<br>No ajustar<br>No ajustar |'
+    - '[Tabla 1]
+
+      | Indicador / Criterio Clínico | Descripción Normativa |
+
+      |---|---|
+
+      | Col17 | **Ticarcilina/ácido**<br>**clavulánico**<br>3,1 g/4h<br>D e I<br>2g/4-8h<br>2g/4-8h<br>2g/12h |
+
+      | Col18 | **Ticarcilina/ácido**<br>**clavulánico**<br>3,1 g/4h<br>D e I<br>2g/4-8h<br>2g/4-8h<br>2g/12h |
+
+      ||||||||**Tetraciclinas**|||||||||||
+
+      |||||||||||||||||||
+
+      | Azitromicina 500 mg/día No No ajustar No ajustar No ajustar | **Doxiciclina**<br>100 mg/12h<br>No<br>No ajustar<br>No
+      ajustar<br>No ajustar |
+
+      | Col2 | **Doxiciclina**<br>100 mg/12h<br>No<br>No ajustar<br>No ajustar<br>No ajustar |
+
+      | Col3 | **Doxiciclina**<br>100 mg/12h<br>No<br>No ajustar<br>No ajustar<br>No ajustar |
+
+      | Col4 | **Doxiciclina**<br>100 mg/12h<br>No<br>No ajustar<br>No ajustar<br>No ajustar |
+
+      | Col5 | **Doxiciclina**<br>100 mg/12h<br>No<br>No ajustar<br>No ajustar<br>No ajustar |'
+  - source_sentence: Describa el protocolo de manejo clínico inmediato y contraindicaciones normadas en Procedimientos según
+      la GPC oficial del Ecuador.
+    sentences:
+    - '[Tabla 1]
+
+      |Título de la guía|Recién nacido prematuro|
+
+      |---|---|
+
+      |**Validación**|Validación del protocolo de búsqueda y GPC que adaptar_"_Método de<br>validación GPC: validación por
+      pares clínicos_"_ Validación: Dirección de<br>Normatización – Sistema Nacional de Salud|
+
+      |**Fuente de**<br>**fnanciamiento**|Ministerio de Salud Pública del Ecuador. Dirección Nacional de<br>Normatización.
+      Organización Panamericana de la Salud.|
+
+      |**Conficto de**<br>**interés**|Todos los miembros involucrados en el desarrollo de esta GPC han<br>declarado la ausencia
+      de conficto de interés en relación a la información,<br>objetivosy propósitos de lapresenteguía depráctica clínica.|
+
+      |**Actualización**|A partir de la fecha de edición, cada dos años, o según cambios<br>demostrados en la práctica clínica
+      basados en evidencia y publicaciones<br>científcas en el tema.|'
+    - "Inserción velamentosa del cordón: los vasos umbilicales se abren dentro de las membranas a cierta distancia del borde\
+      \ placentario, el cual alcanzan circundados solo por un pliegue de amnios [12].\n\nVasa previa: condición de alto riesgo\
+      \ obstétrico en la cual los vasos sanguíneos aberrantes procedentes de la placenta o del cordón umbilical, cruzan la\
+      \ entrada del canal del parto por delante de la presentación fetal [13].\n\n9.\t Aspectos relevantes de las anomalías\
+      \ de inserción placentaria y vasos\n\nsanguíneos fetales\n\nLas anomalías de la inserción placentaria y de los vasos\
+      \ sanguíneos fetales se clasifican en placenta previa, acretismo placentario, vasa previa e inserción velamentosa del\
+      \ cordón umbilical.\n\nLa sospecha clínica de placenta previa debe darse cuando clásicamente se presenta un sangrado\
+      \ indoloro generalmente rojo. Se piensa que el sangrado se produce en asociación con el desarrollo del segmento uterino\
+      \ inferior en el tercer trimestre, es una de las principales causas de hemorragia en el tercer trimestre [14].\n\nLa\
+      \ placenta previa puede asociarse a placenta acreta, increta o percreta. Esa fijación anormalmente firme de la placenta\
+      \ podría deberse a una disminución del grosor de la capa basal del endometrio que generaría deciduas que están poco\
+      \ desarrolladas, condición que puede ocurrir por lesiones secundarias a legrados y cirugías previas con la cesárea;\
+      \ por tanto, es más frecuente que se presente en el segmento uterino inferior. En la placenta acreta puede haber adicionalmente\
+      \ un desarrollo imperfecto de la capa fibrinoide o de Nitabuch, lo que hace que las vellosidades se fijen al miometrio.\
+      \ En la placenta increta, estas invaden al miometrio y, en la placenta percreta, penetran a través del miometrio. Es\
+      \ posible que esté adherido todo o parte de un solo lóbulo o todos los cotiledones. El diagnóstico histológico de placenta\
+      \ acreta no puede establecerse con la placenta sola, se necesita el útero o material de raspado con miometrio [12]."
+    - '• Score radiológico
+
+
+      En los niños menores de cinco años o en las formas leves de la enfermedad, la radiografía de tórax puede ser normal;
+      no obstante, se recomienda realizarla al momento del diagnóstico. En lo posterior, se instará de forma progresiva cambios
+      como el atrapamiento aéreo, imágenes varias de consolidación (neumonía, atelectasias), bronquiectasias, lesiones quísticas
+      y finalmente imágenes de fibrosis pulmonar claramente establecida. Por eso es útil emplear un sistema de puntuación,
+      que permita evaluar las alteraciones radiológicas; para ello, el más utilizado es el score de Brasfield, que se lo obtiene
+      restando los 25  puntos de la radiología normal de los obtenidos en cada categoría.
+
+
+      Anexo 2. Score de Brasfield'
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - cosine_accuracy@1
+  - cosine_accuracy@3
+  - cosine_accuracy@5
+  - cosine_precision@1
+  - cosine_precision@3
+  - cosine_precision@5
+  - cosine_precision@10
+  - cosine_recall@1
+  - cosine_recall@3
+  - cosine_recall@5
+  - cosine_recall@10
+  - cosine_ndcg@1
+  - cosine_ndcg@5
+  - cosine_ndcg@10
+  - cosine_mrr@1
+  - cosine_mrr@5
+  - cosine_mrr@10
+  - cosine_map@100
+  model-index:
+  - name: SentenceTransformer based on BAAI/bge-m3
+    results:
+    - task:
+        type: information-retrieval
+        name: Information Retrieval
+      dataset:
+        name: ateneo val evaluator
+        type: ateneo_val_evaluator
+      metrics:
+      - type: cosine_accuracy@1
+        value: 0.24497991967871485
+        name: Cosine Accuracy@1
+        verified: false
+      - type: cosine_accuracy@3
+        value: 0.41767068273092367
+        name: Cosine Accuracy@3
+        verified: false
+      - type: cosine_accuracy@5
+        value: 0.4738955823293173
+        name: Cosine Accuracy@5
+        verified: false
+      - type: cosine_precision@1
+        value: 0.24497991967871485
+        name: Cosine Precision@1
+        verified: false
+      - type: cosine_precision@3
+        value: 0.13922356091030788
+        name: Cosine Precision@3
+        verified: false
+      - type: cosine_precision@5
+        value: 0.09477911646586344
+        name: Cosine Precision@5
+        verified: false
+      - type: cosine_precision@10
+        value: 0.055020080321285136
+        name: Cosine Precision@10
+        verified: false
+      - type: cosine_recall@1
+        value: 0.24497991967871485
+        name: Cosine Recall@1
+        verified: false
+      - type: cosine_recall@3
+        value: 0.41767068273092367
+        name: Cosine Recall@3
+        verified: false
+      - type: cosine_recall@5
+        value: 0.4738955823293173
+        name: Cosine Recall@5
+        verified: false
+      - type: cosine_recall@10
+        value: 0.5502008032128514
+        name: Cosine Recall@10
+        verified: false
+      - type: cosine_ndcg@1
+        value: 0.24497991967871485
+        name: Cosine Ndcg@1
+        verified: false
+      - type: cosine_ndcg@5
+        value: 0.3681554333367562
+        name: Cosine Ndcg@5
+        verified: false
+      - type: cosine_ndcg@10
+        value: 0.3927441196952694
+        name: Cosine Ndcg@10
+        verified: false
+      - type: cosine_mrr@1
+        value: 0.24497991967871485
+        name: Cosine Mrr@1
+        verified: false
+      - type: cosine_mrr@5
+        value: 0.3327978580990629
+        name: Cosine Mrr@5
+        verified: false
+      - type: cosine_mrr@10
+        value: 0.3429017657933321
+        name: Cosine Mrr@10
+        verified: false
+      - type: cosine_map@100
+        value: 0.3566035225284961
+        name: Cosine Map@100
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Normalize/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: pre_post_table.tex
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-13T03:20:52.000Z'
+safetensors:
+  parameters:
+    F32: 567754752
+  total: 567754752
+usedStorage: 2288162794
+downloadsAllTime: 4
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - XLMRobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 1024
+  initializer_range: 0.02
+  intermediate_size: 4096
+  is_decoder: false
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 8194
+  model_type: xlm-roberta
+  num_attention_heads: 16
+  num_hidden_layers: 24
+  output_past: true
+  pad_token_id: 1
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.18.0
+  type_vocab_size: 1
+  use_cache: false
+  vocab_size: 250002
+onnxFiles: {}
+safetensorsSizeMb: 2271.1
+approxSizeMb: 2271.0
+fetchedAt: '2026-10-13T10:23:21.000Z'

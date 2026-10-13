@@ -1,0 +1,392 @@
+_id: 6accb42f0fdd3575a63f1796
+id: Shailu1492/Tib-MB-Tibetan-listwise-EWTS-v3
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- modernbert
+- sentence-similarity
+- feature-extraction
+- generated_from_trainer
+- dataset_size:5000
+- loss:ChainTriangulationInBatchAnchorsLoss
+- dataset_size:1000
+- loss:CoSENTLoss
+- arxiv:1908.10084
+- base_model:Shailu1492/tibetan-modernbert-v4-b64-consecutive-segments
+- base_model:finetune:Shailu1492/tibetan-modernbert-v4-b64-consecutive-segments
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 3
+likes: 0
+modelId: Shailu1492/Tib-MB-Tibetan-listwise-EWTS-v3
+author: Shailu1492
+sha: 65857c68440490ab50d01d5e955507a2f79a359d
+lastModified: '2026-10-12T10:32:45.000Z'
+gated: manual
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: rigs kyi bu mo de dag nyid kyi ched du bcom ldan 'das kyis bshad du gsol/
+  sentences:
+  - de nas bcom ldan 'das kyis rigs kyi lha mo la 'di skad ces bka' stsal to//
+  - de'i tshe na rigs kyi bu dang rigs kyi bu mo dag gis bcom ldan 'das la 'di skad ces gsol to//
+  - rigs kyi bu mo gang dag chos bstan pa 'di bshad pa na nyan par bgyid pa de dag ni bla na med pa yang dag par rdzogs pa'i
+    byang chub tu lung bstan par 'gyur ba lags so//
+  - rigs kyi bu mo theg pa chen po la yang dag par zhugs pa rnams la phan 'dogs par gyur pa ni bcom ldan 'das ngo mtshar to//
+  - bcom ldan 'das rigs kyi bu'am rigs kyi bu mo byang chub sems dpa'i theg pa la yang dag par zhugs pa dag/
+  - bcom ldan 'das rigs kyi bu dang rigs kyi bu mo gang dag bla na med pa yang dag par rdzogs pa'i byang chub la yang dag
+    par zhugs shing /
+  - bcom ldan 'das rigs kyi bu dang rigs kyi bu mo de dag ni bla na med pa yang dag par rdzogs pa'i byang chub tu lung bstan
+    pa dang nye bar gyur pa ste/bla na med pa yang dag par rdzogs pa'i byang chub tu lung bstan par 'gyur ro//
+  - bcom ldan 'das rigs kyi bu dang rigs kyi bu mo de dag gi yon tan 'di dag ni bcom ldan 'das kyis yongs su brjod na/
+  - rigs kyi bu mo de dag nyid kyi ched du bshad du gsol/
+  - rigs kyi bu mo de dag gi bla na med pa yang dag par rdzogs pa'i byang chub ni the tshom ma mchis par 'tshal bar bgyi lags
+    so//
+  - bcom ldan 'das bdag gis bcom ldan 'das kyis gsungs pa'i don 'tshal te/rigs kyi bu'am/
+  - de nas bcom ldan 'das kyis 'khor gyi dkyil 'khor na 'dus pa'i rigs kyi bu dang rigs kyi bu mo rnams la bka' stsal pa/
+  - rigs kyi bu mo de dag gi don du shes rab kyi pha rol tu phyin pa bstan pa 'di byin gyis brlab tu gsol/
+  - de nas de dag gi nang nas byang chub sems dpa'i theg pa pa'i rigs kyi bu gcig gis bcom ldan 'das la 'di skad ces gsol
+    to//
+  - bcom ldan 'das de'i slad du rigs kyi bu dang /
+  - bcom ldan 'das rigs kyi bu'am rigs kyi bu mo de dag gis ji skad du bstan na/
+- source_sentence: rdzogs pa'i byang chub mngon par rdzogs par 'tshang rgya ste/bdun gang zhe na/
+  sentences:
+  - byang chub kyi tshogs mang po bstsags te/bla na med pa yang dag par rdzogs pa'i byang chub tu mngon par rdzogs par 'tshang
+    rgya bar bya'o//
+  - de ltar byang chub sems dpa' sems dpa' chen po bla na med pa yang dag par rdzogs pa'i byang chub tu mngon par rdzogs par
+    'tshang rgya ste/bla na med pa yang dag par rdzogs pa'i byang chub tu mngon par rdzogs par sangs rgyas pa dang /
+  - byang chub mngon par 'tshang rgya bar 'gyur te/de bzhin gshegs pa dgra bcom pa yang dag par rdzogs pa'i sangs rgyas/
+  - shAri'i bu gzhan yang chos drug dang ldan na byang chub sems dpa' myur du bla na med pa yang dag par rdzogs pa'i byang
+    chub mngon par 'tshang rgya zhing 'jig rten thams cad las mngon par
+  - klu'i rgyal po chos gcig gis byang chub sems dpa' rnams myur du bla na med pa yang dag par rdzogs pa'i byang chub tu mngon
+    par rdzogs par 'tshang rgya ste/chos gcig po gang zhe na/
+  - rigs kyi bu chos bcu po de dag dang ldan na byang chub sems dpa' myur du bla na med pa yang dag par rdzogs pa'i byang
+    chub mngon par rdzogs par 'tshang rgya'o//
+  - '''i byang chub mngon par rdzogs par ''tshang rgya bar ''gyur te thams cad kyang ''di lta ste/'
+  - sangs rgyas kyis yongs su rdzogs par byas nas byang chub sems dpa' sems dpa' chen po bla na med pa yang dag par rdzogs
+    pa'i byang chub tu mngon par rdzogs par 'tshang rgya'o//
+  - yongs su rdzogs pas sangs rgyas bcom ldan 'das rnams byang chub tu mngon par 'tshang rgya'o//
+  - bla na med pa yang dag par rdzogs pa'i byang chub mngon par rdzogs par 'tshang rgya'o//
+  - bla na med pa yang dag par rdzogs pa'i byang chub tu mngon par rdzogs par 'tshang rgya bar ma gyur na de'i tshe bla na
+    med pa yang dag par rdzogs pa'i byang chub dang /
+  - mngon par rdzogs par sangs ma rgyas na bla na med pa yang dag par rdzogs pa'i byang chub dang /
+  - khye'u gzhan yang byang chub sems dpa' chos bzhi dang ldan na myur du bla na med pa yang dag par rdzogs pa'i byang chub
+    mngon par rdzogs par 'tshang rgya ste/bzhi gang zhe na/
+  - byang chub tu mngon par rdzogs par 'tshang rgya ste/de yang byang chub sems dpa'i thabs mkhas par blta'o//
+  - '''dus ma byas kyi rnam par smin par gyur nas myur du bla na med pa yang dag par rdzogs pa''i byang chub mngon par rdzogs
+    par ''tshang rgya ste/bla na med pa yang dag par'
+  - rdzogs pa'i byang chub mngon par rdzogs par 'tshang rgya ste/brgyad gang zhe na/
+- source_sentence: kye nang rje gos dag ci ste skya bor gyur des 'di skad ces 'phags ma khyod kyis ma byas grang zhes smras
+    pa dang /
+  sentences:
+  - de'i dge slong ma dag gis che zhe 'u bu cag nub mo chos gos gsher bzhin du 'dir ci la 'ongs zhes dris pa dang /
+  - dge slong mas ji tsam cung zad dge slong ma rnams kyis smras pa na 'di skad ces phu nu mo dag kho mo la ci yang ma smra
+    shig ces/
+  - des 'phags ma su'i yang ma lags te mgon med pa'o zhes smras pa dang /
+  - na chung gzhon nu ma zhig 'grong gdangs te 'dug nas des 'phags pa tshur spyon 'di dang 'di mdzod cig ces smras pa dang
+    /
+  - de dag gis 'phags ma ci khyod kyang logs shig na smad 'tshong ba byed dam zhes smras pa dang /
+  - des 'phags ma bdag gis smad 'tshong byas pas na de la 'di lta bu dag rnyed do zhes smras pa dang /
+  - des 'di skad ces gal te kho mo la gos byin na de'i 'og tu khyod bsnyen par rdzogs par bya'o zhes smras pa na/
+  - des 'phags pa 'di la de dag phyag dar khrod kyi gos yin na rab tu legs so zhes smras pa dang /
+  - de nas mdza' mos phu nu mo la 'di skad ces 'phags ma gal te na bdag do mod 'gum yang gdas ma bzhud par 'dir bzhugs shig
+    ces smras pa dang /
+  - tshod sngon mang ngam/des 'di skad ces 'phags ma 'di ni khyod kyis byas mod ces smras pa dang /
+  - des ma ma de ltar na bdag mi 'gros ma byed cig 'dug go zhes smras pa dang /
+  - des smras pa/'phags ma bdag gis khyod la nyes pa ci zhig byas na khrus byas zin pa la skyu ru ra'i phye mas mgo la gtor/
+  - '''phags pa dag ''o na de la bdag gis ci zhig bgyi sring mo khyod tshur shog/'
+  - '''phags pa dgongs su gsol des bsams pa re zhig dge sbyong mgo reg ma ''di dag ci smra ba lta''o snyam ste cang ma smras
+    pa dang /'
+  - des 'phags ma gang sus bdag la zas dang gos byin pa de'i las kyang bdag gis bgyi'o zhes smras so//
+  - des smras pa/bu mo de ltar na logs shig na smad 'tshong ba ci phyir mi byed ces byas pa dang de rna ba bkag ste 'phags
+    ma de skad ma gsung shig/
+- source_sentence: ji lta bar bsgom pa'i lam gyi dbang du byas pas sa dgu pa la de'i gnyen por lam gyi rnam pa chen po'i chen
+    por 'gyur ro zhes so//
+  sentences:
+  - gzugs med pa'i khams kyis bsdus pa'i sa dgu po rnams la so sor rnam par rtog pa'i rnam pa chen po'i chen po la sogs pa
+    dgu'i gnyen po bsgom pa'i lam chung ngu'i chung ngu la sogs pa rnam pa dgur phye ba yin no//
+  - de la lam shes pa nyid las dgu po rnams kyi nyon mongs pa chen po'i chen po la sogs pa spang ba'i don du chung ngu'i chung
+    ngu la sogs pa'i dbye bas sgom pa'i lam rnam pa dgu
+  - sbyor ba'i gnas skabs dang bcas pa'i bsgom pa'i lam rnam pa dgu zhes pa rnam pa sum cu'o//
+  - rnam par rtog pa chung ngu'i chung ngu'i gnyen po lam chen po ni nam mkha' ltar shes bya'i sgrib pa dang bral ba tsam
+    du bstan par bya ba nyid kyi phyir ro zhes pa'i mthar thug pa
+  - de nyid kyi phyir tshig le'ur byas pa 'di'i 'grel par 'dod pa'i khams la sogs pa sa dgu rnams su rnam pa dgu rgyun chags
+    su 'byung ba ni bsgom pa'i lam mo zhes seng ge bzang pos bshad pa/
+  - de la yang khyad par 'di yin te/sa so so la lam chung ngu'i chung ngu'i rnam pas nyon mongs pa chen po'i chen po rnam
+    par spong bar 'gyur ro//
+  - sa dgu'i nyon mongs pa chung ngu'i gnyen po lam chen po'i chen po'o//
+  - sa dgu'i chen po'i chen po nyon mongs pa'i gnyen po chung ngu'i chung ngu lam dang /
+  - gnyen por lam chen po'i chen po'i rnam par 'gyur ba zhes gsungs so//
+  - '''phags pa rnam par grol sdes kyang /sems can gyi don gyi nges par ''byung ba''i ''grel par sa bcu pa la ni rnam par
+    rtog pa chung ngu''i chung ngu''i gnyen por lam'
+  - chen po'i chen po la sogs pa mi mthun pa'i phyogs rnam pa dgu'i gnyen po'i phyogs nyid ni chung ngu'i chung ngu la sogs
+    pa'i lam gyi rim pa ji lta ba bzhin du rnam pa dgu'o//
+  - de bas na sa dgu la bsgom pa'i lam rnam pa dgur bstan par bya ste/sa dgu la ni chen po yi//
+  - tshad yod pa rtogs pas bsdus pas sgom pa'i lam gyi dbang du byas nas sa dgu pa la de'i gnyen po lam gyi rnam pa chen po'i
+    chen por ji ltar 'gyur ba gang gsungs pa ni ji skad du/
+  - ces pa'i tshig le'ur byas pa'i rnam par bshad pa rnam par rtog pa chung ngu'i chung ngu ni bsgom pa'i lam gyi dbang du
+    byas pas na sa dgu pa la de'i
+  - de ma thag tu gsungs pa'i bsgom pa'i lam mi mthun pa'i phyogs kyi rnam pa las bzlog pas chung ngu 'bring chen po rnams
+    yang chung ngu'i chung ngu la sogs pa'i dbye bas rnam pa brgyad cu rtsa gcig go//
+  - snga ma bzhin te/bzhi pa la rnam par rtog pa chen po'i chung ngu'i gnyen po lam chung ngu'i chen pos de rnams mi mthong
+    ba'i phyir ro//
+- source_sentence: '''gro don mngon zhugs zhes bya ba gsungs te/''gro ba''i don ni ci rigs par byang chub gsum thob pa yin
+    no//'
+  sentences:
+  - de'i phyir thabs kyi bye brag gis mngon par byang chub pa rnam pa gsum thob par bya'o zhes bstan pa'i phyir/
+  - byang chub mchog ces bya ba gsungs te/'bras bu bla na med pa yang dag par rdzogs pa'i byang chub yin no//
+  - de'i phyir rnam gnyis mchog ste zhes bya ba smos te/bla na med pa'i byang chub kyi phun sum tshogs pa de'ang phun sum
+    tshogs pa rnam pa gnyis las khyad par du gyur pa yin no zhes bya ba'i don to//
+  - rdzogs pa'i byang chub ni rnam pa gsum po ste/'dis ni byang chub gsum la 'god pa'i gzhan gyi don phun sum tshogs pa bstan
+    to//
+  - byang chub sems dpa' ni byang chub kyi sems yin pas byang chub don du gnyer ba ste/byang chub tu smon lam btab pa zhes
+    bya ba'i sgras ston par byed do//
+  - '''di skad ston pa yin te/byang chub mngon par rtogs nas sems can rnams ''khor ba''i btson ra las gdon par bya''o zhes
+    gang la de lta bu''i sems yod pa de ni byang chub sems dpa''o//'
+  - theg pa gsum po thams cad du yang lam 'di nyid kho na byang chub gsum 'thob pa'i rgyu yin gyi gzhan 'ga' zhig 'di bas
+    lhag pa'i byang chub kyi lam ni yod pa ma yin no zhes bya ba ni tshig gi lhag ma'o//
+  - byang chub sems dpa' zhes bya ba la sogs pa gsungs te/gal te byang chub sems dpa' 'gro ba'i don la mngon du phyogs pa
+    na brtson pa'o//
+  - byang chub ji lta ba de lta bu yin pa bla ma'i man ngag mdor bsdus te/bstan pas 'jug pa'i sgo nas tshig le'ur byas pa
+    las ma smos pa'i don gyi shugs kyis 'phangs pa bstan par bya ba'i phyir/
+  - '''gro don mngon zhugs zhes bya ba la sogs pa gsungs te/''gro ba sems can ma lus pa rnams kyi don skal ba ji lta ba bzhin
+    du mngon par mtho ba dang /'
+  - byang chub sems dpa' gsum ni bla na med pa yang dag par rdzogs pa'i byang chub tu nges pa'i 'gro ba pa yin no//
+  - mngon par rtogs pa dang po 'di'i don ni 'di yin te/tshul ji lta ba bzhin byang chub kyi sems rnam pa gnyis bskyed pa na
+    de mthar thug par 'gro bar bya ba'i don du
+  - '''gro ba zhes bya ba la sogs pa smos te/don bya zhes bya ba ni bdag gi don ''ba'' zhig tu brtson par bya bar ma zad kyi
+    ''jig rten gyi don du yang bya''o snyam du sems pa''o//'
+  - nyan thos dang rang sangs rgyas dang bla na med pa yang dag par rdzogs pa'i byang chub 'thob par byed pa yin pas na rdzogs
+    pa'i byang chub tu 'gro ba'o//
+  - lhag ma rnams ni byang chub thob nas yin no zhes smras pa/
+  - de ltar ji skad bshad pa gsum ni yang dag par rdzogs pa'i byang chub thob par byed pa'i rgyu yin par shes par bya'o//
+model-index:
+- name: SentenceTransformer based on Shailu1492/tibetan-modernbert-v4-b64-consecutive-segments
+  results:
+  - task:
+      type: semantic-similarity
+      name: Semantic Similarity
+    dataset:
+      name: Tibetan gold STS pairs (4-fold cross-validation, held-out test splits)
+      type: tibetan-gold-sts-4fold
+    metrics:
+    - type: pearson_cosine
+      value: 0.8675391517744059
+      name: Pearson Cosine (mean over 4 held-out test folds)
+      verified: false
+    - type: spearman_cosine
+      value: 0.8673461721382996
+      name: Spearman Cosine (mean over 4 held-out test folds)
+      verified: false
+config:
+  architectures:
+  - ModernBertModel
+  model_type: modernbert
+  tokenizer_config:
+    bos_token: <bos>
+    cls_token: <bos>
+    eos_token: <eos>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: <eos>
+    unk_token: <unk>
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - generated_from_trainer
+  - dataset_size:5000
+  - loss:ChainTriangulationInBatchAnchorsLoss
+  - dataset_size:1000
+  - loss:CoSENTLoss
+  base_model: Shailu1492/tibetan-modernbert-v4-b64-consecutive-segments
+  widget:
+  - source_sentence: rigs kyi bu mo de dag nyid kyi ched du bcom ldan 'das kyis bshad du gsol/
+    sentences:
+    - de nas bcom ldan 'das kyis rigs kyi lha mo la 'di skad ces bka' stsal to//
+    - de'i tshe na rigs kyi bu dang rigs kyi bu mo dag gis bcom ldan 'das la 'di skad ces gsol to//
+    - rigs kyi bu mo gang dag chos bstan pa 'di bshad pa na nyan par bgyid pa de dag ni bla na med pa yang dag par rdzogs
+      pa'i byang chub tu lung bstan par 'gyur ba lags so//
+    - rigs kyi bu mo theg pa chen po la yang dag par zhugs pa rnams la phan 'dogs par gyur pa ni bcom ldan 'das ngo mtshar
+      to//
+    - bcom ldan 'das rigs kyi bu'am rigs kyi bu mo byang chub sems dpa'i theg pa la yang dag par zhugs pa dag/
+    - bcom ldan 'das rigs kyi bu dang rigs kyi bu mo gang dag bla na med pa yang dag par rdzogs pa'i byang chub la yang dag
+      par zhugs shing /
+    - bcom ldan 'das rigs kyi bu dang rigs kyi bu mo de dag ni bla na med pa yang dag par rdzogs pa'i byang chub tu lung bstan
+      pa dang nye bar gyur pa ste/bla na med pa yang dag par rdzogs pa'i byang chub tu lung bstan par 'gyur ro//
+    - bcom ldan 'das rigs kyi bu dang rigs kyi bu mo de dag gi yon tan 'di dag ni bcom ldan 'das kyis yongs su brjod na/
+    - rigs kyi bu mo de dag nyid kyi ched du bshad du gsol/
+    - rigs kyi bu mo de dag gi bla na med pa yang dag par rdzogs pa'i byang chub ni the tshom ma mchis par 'tshal bar bgyi
+      lags so//
+    - bcom ldan 'das bdag gis bcom ldan 'das kyis gsungs pa'i don 'tshal te/rigs kyi bu'am/
+    - de nas bcom ldan 'das kyis 'khor gyi dkyil 'khor na 'dus pa'i rigs kyi bu dang rigs kyi bu mo rnams la bka' stsal pa/
+    - rigs kyi bu mo de dag gi don du shes rab kyi pha rol tu phyin pa bstan pa 'di byin gyis brlab tu gsol/
+    - de nas de dag gi nang nas byang chub sems dpa'i theg pa pa'i rigs kyi bu gcig gis bcom ldan 'das la 'di skad ces gsol
+      to//
+    - bcom ldan 'das de'i slad du rigs kyi bu dang /
+    - bcom ldan 'das rigs kyi bu'am rigs kyi bu mo de dag gis ji skad du bstan na/
+  - source_sentence: rdzogs pa'i byang chub mngon par rdzogs par 'tshang rgya ste/bdun gang zhe na/
+    sentences:
+    - byang chub kyi tshogs mang po bstsags te/bla na med pa yang dag par rdzogs pa'i byang chub tu mngon par rdzogs par 'tshang
+      rgya bar bya'o//
+    - de ltar byang chub sems dpa' sems dpa' chen po bla na med pa yang dag par rdzogs pa'i byang chub tu mngon par rdzogs
+      par 'tshang rgya ste/bla na med pa yang dag par rdzogs pa'i byang chub tu mngon par rdzogs par sangs rgyas pa dang /
+    - byang chub mngon par 'tshang rgya bar 'gyur te/de bzhin gshegs pa dgra bcom pa yang dag par rdzogs pa'i sangs rgyas/
+    - shAri'i bu gzhan yang chos drug dang ldan na byang chub sems dpa' myur du bla na med pa yang dag par rdzogs pa'i byang
+      chub mngon par 'tshang rgya zhing 'jig rten thams cad las mngon par
+    - klu'i rgyal po chos gcig gis byang chub sems dpa' rnams myur du bla na med pa yang dag par rdzogs pa'i byang chub tu
+      mngon par rdzogs par 'tshang rgya ste/chos gcig po gang zhe na/
+    - rigs kyi bu chos bcu po de dag dang ldan na byang chub sems dpa' myur du bla na med pa yang dag par rdzogs pa'i byang
+      chub mngon par rdzogs par 'tshang rgya'o//
+    - '''i byang chub mngon par rdzogs par ''tshang rgya bar ''gyur te thams cad kyang ''di lta ste/'
+    - sangs rgyas kyis yongs su rdzogs par byas nas byang chub sems dpa' sems dpa' chen po bla na med pa yang dag par rdzogs
+      pa'i byang chub tu mngon par rdzogs par 'tshang rgya'o//
+    - yongs su rdzogs pas sangs rgyas bcom ldan 'das rnams byang chub tu mngon par 'tshang rgya'o//
+    - bla na med pa yang dag par rdzogs pa'i byang chub mngon par rdzogs par 'tshang rgya'o//
+    - bla na med pa yang dag par rdzogs pa'i byang chub tu mngon par rdzogs par 'tshang rgya bar ma gyur na de'i tshe bla
+      na med pa yang dag par rdzogs pa'i byang chub dang /
+    - mngon par rdzogs par sangs ma rgyas na bla na med pa yang dag par rdzogs pa'i byang chub dang /
+    - khye'u gzhan yang byang chub sems dpa' chos bzhi dang ldan na myur du bla na med pa yang dag par rdzogs pa'i byang chub
+      mngon par rdzogs par 'tshang rgya ste/bzhi gang zhe na/
+    - byang chub tu mngon par rdzogs par 'tshang rgya ste/de yang byang chub sems dpa'i thabs mkhas par blta'o//
+    - '''dus ma byas kyi rnam par smin par gyur nas myur du bla na med pa yang dag par rdzogs pa''i byang chub mngon par rdzogs
+      par ''tshang rgya ste/bla na med pa yang dag par'
+    - rdzogs pa'i byang chub mngon par rdzogs par 'tshang rgya ste/brgyad gang zhe na/
+  - source_sentence: kye nang rje gos dag ci ste skya bor gyur des 'di skad ces 'phags ma khyod kyis ma byas grang zhes smras
+      pa dang /
+    sentences:
+    - de'i dge slong ma dag gis che zhe 'u bu cag nub mo chos gos gsher bzhin du 'dir ci la 'ongs zhes dris pa dang /
+    - dge slong mas ji tsam cung zad dge slong ma rnams kyis smras pa na 'di skad ces phu nu mo dag kho mo la ci yang ma smra
+      shig ces/
+    - des 'phags ma su'i yang ma lags te mgon med pa'o zhes smras pa dang /
+    - na chung gzhon nu ma zhig 'grong gdangs te 'dug nas des 'phags pa tshur spyon 'di dang 'di mdzod cig ces smras pa dang
+      /
+    - de dag gis 'phags ma ci khyod kyang logs shig na smad 'tshong ba byed dam zhes smras pa dang /
+    - des 'phags ma bdag gis smad 'tshong byas pas na de la 'di lta bu dag rnyed do zhes smras pa dang /
+    - des 'di skad ces gal te kho mo la gos byin na de'i 'og tu khyod bsnyen par rdzogs par bya'o zhes smras pa na/
+    - des 'phags pa 'di la de dag phyag dar khrod kyi gos yin na rab tu legs so zhes smras pa dang /
+    - de nas mdza' mos phu nu mo la 'di skad ces 'phags ma gal te na bdag do mod 'gum yang gdas ma bzhud par 'dir bzhugs shig
+      ces smras pa dang /
+    - tshod sngon mang ngam/des 'di skad ces 'phags ma 'di ni khyod kyis byas mod ces smras pa dang /
+    - des ma ma de ltar na bdag mi 'gros ma byed cig 'dug go zhes smras pa dang /
+    - des smras pa/'phags ma bdag gis khyod la nyes pa ci zhig byas na khrus byas zin pa la skyu ru ra'i phye mas mgo la gtor/
+    - '''phags pa dag ''o na de la bdag gis ci zhig bgyi sring mo khyod tshur shog/'
+    - '''phags pa dgongs su gsol des bsams pa re zhig dge sbyong mgo reg ma ''di dag ci smra ba lta''o snyam ste cang ma smras
+      pa dang /'
+    - des 'phags ma gang sus bdag la zas dang gos byin pa de'i las kyang bdag gis bgyi'o zhes smras so//
+    - des smras pa/bu mo de ltar na logs shig na smad 'tshong ba ci phyir mi byed ces byas pa dang de rna ba bkag ste 'phags
+      ma de skad ma gsung shig/
+  - source_sentence: ji lta bar bsgom pa'i lam gyi dbang du byas pas sa dgu pa la de'i gnyen por lam gyi rnam pa chen po'i
+      chen por 'gyur ro zhes so//
+    sentences:
+    - gzugs med pa'i khams kyis bsdus pa'i sa dgu po rnams la so sor rnam par rtog pa'i rnam pa chen po'i chen po la sogs
+      pa dgu'i gnyen po bsgom pa'i lam chung ngu'i chung ngu la sogs pa rnam pa dgur phye ba yin no//
+    - de la lam shes pa nyid las dgu po rnams kyi nyon mongs pa chen po'i chen po la sogs pa spang ba'i don du chung ngu'i
+      chung ngu la sogs pa'i dbye bas sgom pa'i lam rnam pa dgu
+    - sbyor ba'i gnas skabs dang bcas pa'i bsgom pa'i lam rnam pa dgu zhes pa rnam pa sum cu'o//
+    - rnam par rtog pa chung ngu'i chung ngu'i gnyen po lam chen po ni nam mkha' ltar shes bya'i sgrib pa dang bral ba tsam
+      du bstan par bya ba nyid kyi phyir ro zhes pa'i mthar thug pa
+    - de nyid kyi phyir tshig le'ur byas pa 'di'i 'grel par 'dod pa'i khams la sogs pa sa dgu rnams su rnam pa dgu rgyun chags
+      su 'byung ba ni bsgom pa'i lam mo zhes seng ge bzang pos bshad pa/
+    - de la yang khyad par 'di yin te/sa so so la lam chung ngu'i chung ngu'i rnam pas nyon mongs pa chen po'i chen po rnam
+      par spong bar 'gyur ro//
+    - sa dgu'i nyon mongs pa chung ngu'i gnyen po lam chen po'i chen po'o//
+    - sa dgu'i chen po'i chen po nyon mongs pa'i gnyen po chung ngu'i chung ngu lam dang /
+    - gnyen por lam chen po'i chen po'i rnam par 'gyur ba zhes gsungs so//
+    - '''phags pa rnam par grol sdes kyang /sems can gyi don gyi nges par ''byung ba''i ''grel par sa bcu pa la ni rnam par
+      rtog pa chung ngu''i chung ngu''i gnyen por lam'
+    - chen po'i chen po la sogs pa mi mthun pa'i phyogs rnam pa dgu'i gnyen po'i phyogs nyid ni chung ngu'i chung ngu la sogs
+      pa'i lam gyi rim pa ji lta ba bzhin du rnam pa dgu'o//
+    - de bas na sa dgu la bsgom pa'i lam rnam pa dgur bstan par bya ste/sa dgu la ni chen po yi//
+    - tshad yod pa rtogs pas bsdus pas sgom pa'i lam gyi dbang du byas nas sa dgu pa la de'i gnyen po lam gyi rnam pa chen
+      po'i chen por ji ltar 'gyur ba gang gsungs pa ni ji skad du/
+    - ces pa'i tshig le'ur byas pa'i rnam par bshad pa rnam par rtog pa chung ngu'i chung ngu ni bsgom pa'i lam gyi dbang
+      du byas pas na sa dgu pa la de'i
+    - de ma thag tu gsungs pa'i bsgom pa'i lam mi mthun pa'i phyogs kyi rnam pa las bzlog pas chung ngu 'bring chen po rnams
+      yang chung ngu'i chung ngu la sogs pa'i dbye bas rnam pa brgyad cu rtsa gcig go//
+    - snga ma bzhin te/bzhi pa la rnam par rtog pa chen po'i chung ngu'i gnyen po lam chung ngu'i chen pos de rnams mi mthong
+      ba'i phyir ro//
+  - source_sentence: '''gro don mngon zhugs zhes bya ba gsungs te/''gro ba''i don ni ci rigs par byang chub gsum thob pa yin
+      no//'
+    sentences:
+    - de'i phyir thabs kyi bye brag gis mngon par byang chub pa rnam pa gsum thob par bya'o zhes bstan pa'i phyir/
+    - byang chub mchog ces bya ba gsungs te/'bras bu bla na med pa yang dag par rdzogs pa'i byang chub yin no//
+    - de'i phyir rnam gnyis mchog ste zhes bya ba smos te/bla na med pa'i byang chub kyi phun sum tshogs pa de'ang phun sum
+      tshogs pa rnam pa gnyis las khyad par du gyur pa yin no zhes bya ba'i don to//
+    - rdzogs pa'i byang chub ni rnam pa gsum po ste/'dis ni byang chub gsum la 'god pa'i gzhan gyi don phun sum tshogs pa
+      bstan to//
+    - byang chub sems dpa' ni byang chub kyi sems yin pas byang chub don du gnyer ba ste/byang chub tu smon lam btab pa zhes
+      bya ba'i sgras ston par byed do//
+    - '''di skad ston pa yin te/byang chub mngon par rtogs nas sems can rnams ''khor ba''i btson ra las gdon par bya''o zhes
+      gang la de lta bu''i sems yod pa de ni byang chub sems dpa''o//'
+    - theg pa gsum po thams cad du yang lam 'di nyid kho na byang chub gsum 'thob pa'i rgyu yin gyi gzhan 'ga' zhig 'di bas
+      lhag pa'i byang chub kyi lam ni yod pa ma yin no zhes bya ba ni tshig gi lhag ma'o//
+    - byang chub sems dpa' zhes bya ba la sogs pa gsungs te/gal te byang chub sems dpa' 'gro ba'i don la mngon du phyogs pa
+      na brtson pa'o//
+    - byang chub ji lta ba de lta bu yin pa bla ma'i man ngag mdor bsdus te/bstan pas 'jug pa'i sgo nas tshig le'ur byas pa
+      las ma smos pa'i don gyi shugs kyis 'phangs pa bstan par bya ba'i phyir/
+    - '''gro don mngon zhugs zhes bya ba la sogs pa gsungs te/''gro ba sems can ma lus pa rnams kyi don skal ba ji lta ba
+      bzhin du mngon par mtho ba dang /'
+    - byang chub sems dpa' gsum ni bla na med pa yang dag par rdzogs pa'i byang chub tu nges pa'i 'gro ba pa yin no//
+    - mngon par rtogs pa dang po 'di'i don ni 'di yin te/tshul ji lta ba bzhin byang chub kyi sems rnam pa gnyis bskyed pa
+      na de mthar thug par 'gro bar bya ba'i don du
+    - '''gro ba zhes bya ba la sogs pa smos te/don bya zhes bya ba ni bdag gi don ''ba'' zhig tu brtson par bya bar ma zad
+      kyi ''jig rten gyi don du yang bya''o snyam du sems pa''o//'
+    - nyan thos dang rang sangs rgyas dang bla na med pa yang dag par rdzogs pa'i byang chub 'thob par byed pa yin pas na
+      rdzogs pa'i byang chub tu 'gro ba'o//
+    - lhag ma rnams ni byang chub thob nas yin no zhes smras pa/
+    - de ltar ji skad bshad pa gsum ni yang dag par rdzogs pa'i byang chub thob par byed pa'i rgyu yin par shes par bya'o//
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - pearson_cosine
+  - spearman_cosine
+  model-index:
+  - name: SentenceTransformer based on Shailu1492/tibetan-modernbert-v4-b64-consecutive-segments
+    results:
+    - task:
+        type: semantic-similarity
+        name: Semantic Similarity
+      dataset:
+        name: Tibetan gold STS pairs (4-fold cross-validation, held-out test splits)
+        type: tibetan-gold-sts-4fold
+      metrics:
+      - type: pearson_cosine
+        value: 0.8675391517744059
+        name: Pearson Cosine (mean over 4 held-out test folds)
+        verified: false
+      - type: spearman_cosine
+        value: 0.8673461721382996
+        name: Spearman Cosine (mean over 4 held-out test folds)
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-12T10:19:27.000Z'
+safetensors:
+  parameters:
+    F32: 311019264
+  total: 311019264
+usedStorage: 1279430820
+downloadsAllTime: 3
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 1244.1
+approxSizeMb: 1244.1
+fetchedAt: '2026-10-13T10:23:21.000Z'

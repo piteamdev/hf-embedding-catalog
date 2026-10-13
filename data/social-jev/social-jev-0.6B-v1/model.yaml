@@ -1,0 +1,200 @@
+_id: 6acd8690e286ddd270c1913a
+id: social-jev/social-jev-0.6B-v1
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- social_jev
+- feature-extraction
+- social-jev
+- classification
+- custom_code
+- base_model:Qwen/Qwen3-0.6B
+- base_model:finetune:Qwen/Qwen3-0.6B
+- region:us
+downloads: 23
+likes: 0
+modelId: social-jev/social-jev-0.6B-v1
+author: social-jev
+sha: 5a771de704724bb53fc8d01f649319304c71bc26
+lastModified: '2026-10-13T01:17:28.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - SocialJev
+  auto_map:
+    AutoConfig: config.SocialJevConfig
+    AutoModel: model.SocialJev
+  model_type: social_jev
+  tokenizer_config:
+    bos_token: null
+    eos_token: <|im_end|>
+    pad_token: <|endoftext|>
+    unk_token: null
+  chat_template_jinja: '{%- set option_codes = option_codes|default(''ABCDEFGHIJKLMNOPQRSTUVWXYZ'') %}
+
+    {%- set role_start = role_start|default(''<|im_start|>'') %}
+
+    {%- set role_end = role_end|default(''<|im_end|>'') %}
+
+    {%- set counter = namespace(option=0) %}
+
+    {%- for message in messages %}
+
+    {%- if message.role == ''query'' %}{%- set counter.option = 0 %}{%- endif %}
+
+    {{- role_start + message.role + ''\n'' }}
+
+    {%- if message.role == ''example'' %}
+
+    {{- role_start + ''state\n'' + message.content.state + role_end }}
+
+    {{- role_start + ''option\n'' + message.content.choice + role_end }}
+
+    {%- elif message.role == ''option'' %}
+
+    {%- if counter.option >= option_codes|length %}
+
+    {{- raise_exception(''More options than available letter codes'') }}
+
+    {%- endif %}
+
+    {{- option_codes[counter.option] + '': '' + message.content }}
+
+    {%- set counter.option = counter.option + 1 %}
+
+    {%- else %}
+
+    {{- message.content }}
+
+    {%- endif %}
+
+    {{- role_end }}
+
+    {%- if message.role == ''option'' and (loop.last or messages[loop.index].role != ''option'') %}
+
+    {{- role_start + ''answer\n'' }}
+
+    {%- endif %}
+
+    {%- endfor %}
+
+    '
+cardData:
+  base_model: Qwen/Qwen3-0.6B
+  library_name: transformers
+  tags:
+  - social-jev
+  - classification
+  - custom_code
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: model.SocialJev
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: attention.py
+- rfilename: chat_template.jinja
+- rfilename: config.json
+- rfilename: config.py
+- rfilename: data.py
+- rfilename: head.py
+- rfilename: model.py
+- rfilename: model.safetensors
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: training_config.toml
+spaces: []
+createdAt: '2026-10-13T01:17:04.000Z'
+safetensors:
+  parameters:
+    BF16: 751632384
+  total: 751632384
+usedStorage: 1514723706
+downloadsAllTime: 23
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - SocialJev
+  auto_map:
+    AutoConfig: config.SocialJevConfig
+    AutoModel: model.SocialJev
+  backbone_config:
+    _name_or_path: Qwen/Qwen3-0.6B
+    architectures:
+    - Qwen3ForCausalLM
+    attention_bias: false
+    attention_dropout: 0.0
+    bos_token_id: 151643
+    dtype: bfloat16
+    eos_token_id: 151645
+    head_dim: 128
+    hidden_act: silu
+    hidden_size: 1024
+    initializer_range: 0.02
+    intermediate_size: 3072
+    layer_types:
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    max_position_embeddings: 40960
+    max_window_layers: 28
+    model_type: qwen3
+    num_attention_heads: 16
+    num_hidden_layers: 28
+    num_key_value_heads: 8
+    pad_token_id: null
+    rms_norm_eps: 1.0e-06
+    rope_parameters:
+      rope_theta: 1000000
+      rope_type: default
+    sliding_window: null
+    tie_word_embeddings: false
+    use_cache: true
+    use_sliding_window: false
+    vocab_size: 151936
+  decision_head:
+    activation: gelu
+    dims: []
+    type: lm_head
+  dtype: bfloat16
+  model_type: social_jev
+  option_codes: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+  role_end: <|im_end|>
+  role_start: <|im_start|>
+  tie_word_embeddings: false
+  transformers_version: 5.17.0
+onnxFiles: {}
+safetensorsSizeMb: 1503.3
+approxSizeMb: 1503.3
+fetchedAt: '2026-10-13T10:23:21.000Z'

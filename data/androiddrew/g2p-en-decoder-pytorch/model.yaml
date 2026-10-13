@@ -1,0 +1,76 @@
+_id: 6acce0780628f31e092af3e5
+id: androiddrew/g2p-en-decoder-pytorch
+private: false
+pipeline_tag: feature-extraction
+library_name: naptrap
+tags:
+- naptrap
+- safetensors
+- grapheme-to-phoneme
+- g2p
+- keyword-spotting
+- wake-word
+- pytorch
+- feature-extraction
+- en
+- license:apache-2.0
+- region:us
+downloads: 27
+likes: 1
+modelId: androiddrew/g2p-en-decoder-pytorch
+author: androiddrew
+sha: fc55559c25a12fce6e0cf9062729e7f2a9fc1ddc
+lastModified: '2026-10-12T13:28:25.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: naptrap
+  language:
+  - en
+  pipeline_tag: feature-extraction
+  tags:
+  - grapheme-to-phoneme
+  - g2p
+  - keyword-spotting
+  - wake-word
+  - pytorch
+  - safetensors
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: conversion/convert.py
+- rfilename: model.safetensors
+spaces: []
+createdAt: '2026-10-12T13:28:24.000Z'
+safetensors:
+  parameters:
+    F32: 834890
+  total: 834890
+usedStorage: 3340544
+downloadsAllTime: 27
+inferenceProviderMapping: {}
+configJson:
+  format: naptrap-g2p-en-decoder-v1
+  hidden_size: 256
+  graphemes: 29
+  phonemes: 74
+  max_decoder_steps: 20
+  output: greedy decoder hidden states per word, separated by the <pad> phoneme embedding
+  source:
+    package: g2p_en
+    version: 2.1.0
+    file: g2p_en/checkpoint20.npz
+    sha256: b8af35e4596d8dd5836dfd3fe9b2ba4f97b9c311efe8879544cbcfcbd566d8c6
+    license: Apache-2.0
+  sha256:
+    model.safetensors: bba37553a3414f90c7ed0cd465925aa15def67f42cc59bf43b8c633e1eb7b445
+onnxFiles: {}
+safetensorsSizeMb: 3.3
+approxSizeMb: 3.3
+fetchedAt: '2026-10-13T10:23:21.000Z'

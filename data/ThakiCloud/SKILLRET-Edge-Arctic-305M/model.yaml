@@ -1,0 +1,135 @@
+_id: 6ace3f6f88becff6b69e0a8c
+id: ThakiCloud/SKILLRET-Edge-Arctic-305M
+private: false
+pipeline_tag: sentence-similarity
+library_name: onnx
+tags:
+- onnx
+- safetensors
+- gte
+- skill-retrieval
+- agent-skills
+- embedding
+- cpu
+- korean
+- distillation
+- sentence-similarity
+- custom_code
+- en
+- ko
+- dataset:ThakiCloud/SKILLRET
+- base_model:Snowflake/snowflake-arctic-embed-m-v2.0
+- base_model:finetune:Snowflake/snowflake-arctic-embed-m-v2.0
+- license:apache-2.0
+- region:us
+downloads: 13
+likes: 0
+modelId: ThakiCloud/SKILLRET-Edge-Arctic-305M
+author: ThakiCloud
+sha: c03a7b601c81d91a0549fdf8017d0e5fe80cb65f
+lastModified: '2026-10-13T14:26:42.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config:
+  architectures:
+  - GteModel
+  auto_map:
+    AutoConfig: configuration_hf_alibaba_nlp_gte.GteConfig
+    AutoModel: modeling_hf_alibaba_nlp_gte.GteModel
+  model_type: gte
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: <unk>
+cardData:
+  license: apache-2.0
+  base_model: Snowflake/snowflake-arctic-embed-m-v2.0
+  base_model_relation: finetune
+  language:
+  - en
+  - ko
+  library_name: onnx
+  pipeline_tag: sentence-similarity
+  datasets:
+  - ThakiCloud/SKILLRET
+  tags:
+  - skill-retrieval
+  - agent-skills
+  - embedding
+  - onnx
+  - cpu
+  - korean
+  - distillation
+siblings:
+- rfilename: .gitattributes
+- rfilename: MANIFEST.json
+- rfilename: MODEL_CARD.ko.md
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: configuration_hf_alibaba_nlp_gte.py
+- rfilename: edge_meta.json
+- rfilename: model.safetensors
+- rfilename: modeling_hf_alibaba_nlp_gte.py
+- rfilename: onnx/model.onnx
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-13T14:25:51.000Z'
+safetensors:
+  parameters:
+    F32: 305368320
+  total: 305368320
+usedStorage: 2464645678
+downloadsAllTime: 13
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - GteModel
+  attention_probs_dropout_prob: 0.0
+  auto_map:
+    AutoConfig: configuration_hf_alibaba_nlp_gte.GteConfig
+    AutoModel: modeling_hf_alibaba_nlp_gte.GteModel
+  classifier_dropout: 0.1
+  dtype: float32
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  layer_norm_eps: 1.0e-12
+  layer_norm_type: layer_norm
+  logn_attention_clip1: false
+  logn_attention_scale: false
+  matryoshka_dimensions:
+  - 256
+  max_position_embeddings: 8192
+  model_type: gte
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pack_qkv: true
+  pad_token_id: 1
+  position_embedding_type: rope
+  rope_parameters: null
+  rope_theta: 160000
+  transformers_version: 5.14.1
+  type_vocab_size: 1
+  unpad_inputs: false
+  use_memory_efficient_attention: false
+  vocab_size: 250048
+onnxFiles:
+  onnx/model.onnx: 1226.1
+safetensorsSizeMb: 1221.5
+approxSizeMb: 1221.5
+fetchedAt: '2026-10-15T08:10:19.000Z'

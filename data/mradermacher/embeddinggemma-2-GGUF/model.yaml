@@ -1,0 +1,79 @@
+_id: 6acec0bd8062f0aba381aac5
+id: mradermacher/embeddinggemma-2-GGUF
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- gguf
+- embedding
+- feature-extraction
+- sentence-transformers
+- multimodal-embedding
+- multimodal
+- vision
+- audio
+- video
+- image-feature-extraction
+- audio-feature-extraction
+- video-feature-extraction
+- sentence-similarity
+- multilingual
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 16
+likes: 0
+modelId: mradermacher/embeddinggemma-2-GGUF
+author: mradermacher
+sha: 7bbb877c462b72e738775900667ce64e38198530
+lastModified: '2026-10-14T00:00:15.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  base_model: google/embeddinggemma-2
+  language:
+  - multilingual
+  library_name: transformers
+  license: apache-2.0
+  mradermacher:
+    readme_rev: 1
+  quantized_by: mradermacher
+  tags:
+  - embedding
+  - feature-extraction
+  - sentence-transformers
+  - multimodal-embedding
+  - multimodal
+  - vision
+  - audio
+  - video
+  - image-feature-extraction
+  - audio-feature-extraction
+  - video-feature-extraction
+  - sentence-similarity
+transformersInfo:
+  auto_model: AutoModel
+gguf:
+  total: 473369344
+  architecture: clip
+  totalFileSize: 980895232
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: embeddinggemma-2.mmproj-Q8_0.gguf
+- rfilename: embeddinggemma-2.mmproj-f16.gguf
+spaces: []
+createdAt: '2026-10-13T23:37:33.000Z'
+usedStorage: 1535716352
+downloadsAllTime: 16
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-15T08:10:19.000Z'

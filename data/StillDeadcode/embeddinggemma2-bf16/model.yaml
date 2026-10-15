@@ -1,0 +1,57 @@
+_id: 6ace84b022d7157d30cd98e4
+id: StillDeadcode/embeddinggemma2-bf16
+private: false
+pipeline_tag: feature-extraction
+tags:
+- radiance
+- rocm
+- amd
+- rdna4
+- bf16
+- embedding
+- multimodal-embedding
+- sentence-similarity
+- feature-extraction
+- base_model:google/embeddinggemma-2
+- base_model:finetune:google/embeddinggemma-2
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 1
+modelId: StillDeadcode/embeddinggemma2-bf16
+author: StillDeadcode
+sha: dcdf64e041b278cef779b1a72997db669d2de6de
+lastModified: '2026-10-13T19:22:49.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model:
+  - google/embeddinggemma-2
+  pipeline_tag: feature-extraction
+  tags:
+  - radiance
+  - rocm
+  - amd
+  - rdna4
+  - bf16
+  - embedding
+  - multimodal-embedding
+  - sentence-similarity
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: embeddinggemma2-bf16.rad
+spaces: []
+createdAt: '2026-10-13T19:21:20.000Z'
+usedStorage: 1502429184
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-15T08:10:19.000Z'

@@ -1,0 +1,53 @@
+_id: 6acdc0a49198ea90389640bf
+id: Starlinghq/embeddinggemma-2-vision-onnx
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- embeddinggemma
+- starlings
+- feature-extraction
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: Starlinghq/embeddinggemma-2-vision-onnx
+author: Starlinghq
+sha: 1a22d40bf395c7f0a42388df72c883b661a7b3d6
+lastModified: '2026-10-13T05:25:00.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: google/embeddinggemma-2
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  tags:
+  - onnx
+  - embeddinggemma
+  - starlings
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE-Apache-2.0.txt
+- rfilename: NOTICE.txt
+- rfilename: README.md
+- rfilename: SHA256SUMS
+- rfilename: embeddinggemma2-text-mm-fp32.onnx
+- rfilename: embeddinggemma2-vision-fp32.onnx
+spaces: []
+createdAt: '2026-10-13T05:24:52.000Z'
+usedStorage: 1755583970
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  embeddinggemma2-text-mm-fp32.onnx: 1084.3
+  embeddinggemma2-vision-fp32.onnx: 671.3
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-15T08:10:19.000Z'

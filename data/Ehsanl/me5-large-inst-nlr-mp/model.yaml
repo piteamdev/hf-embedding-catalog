@@ -1,0 +1,791 @@
+_id: 6ac4f4be258b9c2894270b98
+id: Ehsanl/me5-large-inst-nlr-mp
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- tensorboard
+- safetensors
+- xlm-roberta
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:2072272
+- loss:CachedMultipleNegativesRankingLoss
+- loss:MultipleNegativesRankingLoss
+- arxiv:1908.10084
+- arxiv:2101.06983
+- arxiv:1807.03748
+- base_model:intfloat/multilingual-e5-large-instruct
+- base_model:finetune:intfloat/multilingual-e5-large-instruct
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: Ehsanl/me5-large-inst-nlr-mp
+author: Ehsanl
+sha: 8c1f287011e4f9f09ea835214dc75a3c566f89e9
+lastModified: '2026-10-14T11:01:00.000Z'
+gated: manual
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query.
+
+    Query: Opzeggen samenlevingsovereenkomst brengt in dit geval mee dat vanaf datum beëindiging samenleving de regel van
+    BW van toepassing is op het gemeenschappelijk eigendom.'
+  sentences:
+  - '1. De rechter, die het bedrag van een uitkering tot levensonderhoud bepaalt, wijzigt of intrekt, stelt tevens de dag
+    vast, van welke dit bedrag verschuldigd is of ophoudt verschuldigd te zijn.
+
+    2. Bij de vaststelling van een bedrag bepaalt de rechter tevens of dit wekelijks, maandelijks of driemaandelijks moet
+    worden voldaan.
+
+    3. Zouden op de dag, dat de uitspraak ten uitvoer kan worden gelegd, reeds meer dan één termijn verschenen zijn of meer
+    dan één termijn terugbetaald moeten worden, dan kan de rechter ook daarvoor een betaling in termijnen toestaan.'
+  - De rechter vult ambtshalve de rechtsgronden aan.
+  - Indien de rechter in hoger beroep een vonnis of beschikking van een lagere rechter, waarbij deze zich onbevoegd had verklaard
+    wegens ontbreken van rechtsmacht of in verband met een overeenkomst tot arbitrage, vernietigt, verwijst de rechter de
+    zaak naar deze lagere rechter om op de hoofdzaak te worden beslist, tenzij partijen verklaren te verlangen dat de rechter
+    in beroep de zaak aan zich houdt.
+  - Tenzij een regeling anders bepaalt, delen de deelgenoten naar evenredigheid van hun aandelen in de vruchten en andere
+    voordelen die het gemeenschappelijke goed oplevert, en moeten zij in dezelfde evenredigheid bijdragen tot de uitgaven
+    die voortvloeien uit handelingen welke bevoegdelijk ten behoeve van de gemeenschap zijn verricht.
+  - '1. De kosten der huishouding, daaronder begrepen de kosten van verzorging en opvoeding van de kinderen, komen ten laste
+    van het gemene inkomen van de echtgenoten en, voor zover dit ontoereikend is, ten laste van hun eigen inkomens in evenredigheid
+    daarvan; voor zover de inkomens ontoereikend zijn, komen deze kosten ten laste van het gemene vermogen en, voor zover
+    ook dit ontoereikend is, ten laste van de eigen vermogens naar evenredigheid daarvan. Een en ander geldt niet voor zover
+    bijzondere omstandigheden zich er tegen verzetten.
+
+    2. De echtgenoten zijn jegens elkaar verplicht dienovereenkomstig tot de bestrijding van de in het eerste lid bedoelde
+    uitgaven voldoende gelden ter beschikking te stellen uit de onder hun bestuur staande goederen, voor zover bijzondere
+    omstandigheden zich daartegen niet verzetten.
+
+    3. Bij schriftelijke overeenkomst kan een van het eerste en tweede lid afwijkende regeling worden getroffen.
+
+    4. Geschillen tussen de echtgenoten omtrent de toepassing van het eerste tot en met derde lid worden door de rechtbank
+    op verzoek van beiden of een van hen beslist.
+
+    5. Op verzoek van beide of van een van de echtgenoten kan de rechtbank een gegeven beschikking of een onderling getroffen
+    regeling wijzigen op grond van veranderde omstandigheden.'
+  - '1. De bevoegdheid tot vernietiging op grond van deartikelen 228en229vervalt, wanneer de wederpartij tijdig een wijziging
+    van de gevolgen van de overeenkomst voorstelt, die het nadeel dat de tot vernietiging bevoegde bij intstandhouding van
+    de overeenkomst lijdt, op afdoende wijze opheft.
+
+    2. Bovendien kan de rechter op verlangen van een der partijen, in plaats van de vernietiging uit te spreken, de gevolgen
+    van de overeenkomst ter opheffing van dit nadeel wijzigen.'
+  - '1. Lesgeld is verschuldigd ter zake van het door een leerling die vóór de aanvang van het desbetreffende cursusjaar de
+    leeftijd van 16 jaren heeft bereikt, volgen van uit de openbare kas bekostigd onderwijs - daaronder begrepen de van het
+    onderwijs deel uitmakende praktijktijd - aan een dagschool. Geen lesgeld is verschuldigd voor een leerling die uit de
+    openbare kas bekostigd speciaal onderwijs of voortgezet speciaal onderwijs volgt en vóór de aanvang van het desbetreffende
+    cursusjaar de leeftijd van 19 jaren heeft bereikt.
+
+    2. Het lesgeld is verschuldigd door de leerling dan wel, indien deze de leeftijd van 18 jaren nog niet heeft bereikt en
+    minderjarig is, door zijn wettelijke vertegenwoordiger.
+
+    3. Het lesgeld is verschuldigd per cursusjaar en wordt voldaan aan de Informatie Beheer Groep.'
+  - De ambtenaar is verplicht de dienstkleding en de onderscheidingstekenen te dragen, voor zover dit door Onze Minister voorgeschreven
+    is.
+  - De kosten van landinrichting worden gedragen door de provincie, voor zover zij niet worden gedragen door het Rijk, andere
+    openbare lichamen en eigenaren met inachtneming van deartikelen 90 tot en met 91.
+- source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query.
+
+    Query: Mondelinge uitspraak, asiel, Dublin Italië, interstatelijk vertrouwensbeginsel, regering Meloni, beroep ongegrond'
+  sentences:
+  - '1. Indien bijzondere omstandigheden Onze Minister aanleiding geven om, zonder dat een daartoe strekkend verzoekschrift
+    is ingediend, een voorstel tot gratieverlening in overweging te nemen, wordt het advies ingewonnen van het inartikel 4aangewezen
+    gerecht. Tenzij, met Onze machtiging, Onze Minister anders bepaalt, zijn de artikelen 6:7:4 van het Wetboek van Strafvordering
+    en5 tot en met 7en9 tot en met 11 van deze wetvan overeenkomstige toepassing.
+
+    2. Wanneer in zodanig geval gratie wordt verleend, zijn deartikelen 13 tot en met 17en18, eerste, derde, vierde en vijfde
+    lid, van toepassing.'
+  - Twee of meer Staten kunnen, met toestemming van de ontvangende Staat, eenzelfde persoon als consulair ambtenaar in die
+    Staat benoemen.
+  - '1. Het is verboden een volgens het tweede lid aangewezen stof, die behoort tot de in de bijlage van dit besluit opgenomen
+    afvalstoffen, verontreinigende of schadelijke stoffen, op welke wijze ook, in enig oppervlaktewater te brengen.
+
+    2. De in het eerste lid bedoelde aanwijzing geschiedt door Onze Minister in overeenstemming met Onze Minister van Volkshuisvesting,
+    Ruimtelijke Ordening en Milieubeheer, de Raad van de Waterstaat gehoord.
+
+    3. Het eerste lid is niet van toepassing met betrekking tot stoffen, die slechts als sporen in andere stoffen voorkomen
+    en die daaraan niet zijn toegevoegd om te zamen met die andere stoffen in enig oppervlaktewater te worden gebracht. Bij
+    het in het tweede lid bedoelde besluit kan worden aangegeven welke concentraties of hoeveelheden per tijdseenheid van
+    de aangewezen stof gelden als sporen.'
+  - Bij de beoordeling of een verblijfsvergunning voor bepaalde tijd, die is verleend op grond van artikel 29, eerste lid,
+    onder a of b, van de Wet, wordt ingetrokken op grond van artikel 32, eerste lid, onder c, van de Wet, of de aanvraag voor
+    verlenging van de geldigheidsduur ervan wordt afgewezen op die grond, wordt in aanmerking genomen of de wijziging van
+    de omstandigheden een voldoende ingrijpend en niet-voorbijgaand karakter heeft om de gegronde vrees voor vervolging dan
+    wel het reële risico op ernstige schade weg te nemen. De rechtsgrond voor verlening van de desbetreffende verblijfsvergunning
+    heeft niet opgehouden te bestaan indien de vreemdeling dwingende redenen kan aanvoeren die voorvloeien uit vroegere vervolging
+    dan wel uit vroegere ernstige schade, om te weigeren de bescherming in te roepen van het land waarvan hij de nationaliteit
+    bezit, of, in het geval van een staatloze, van het land waar hij vroeger zijn gewone verblijfsplaats had.
+  - '1. Een aanvraag tot het verlenen van een verblijfsvergunning voor bepaalde tijd als bedoeld inartikel 28wordt niet in
+    behandeling genomen, indien op grond van de Dublinverordening is vastgesteld dat een andere lidstaat verantwoordelijk
+    is voor de behandeling van de aanvraag.
+
+    2. De vreemdeling wordt gehoord over zijn eventuele bezwaren tegen overdracht naar de verantwoordelijke lidstaat.
+
+    3. Bij of krachtens algemene maatregel van bestuur kunnen nadere regels worden gesteld over de toepassing van het eerste
+    en tweede lid.'
+  - De verdragsluitende partijen verbieden de verbranding op zee van afval of andere stoffen.
+  - '1. Niettemin is degene die een schuld aan de gefailleerde of een vordering op de gefailleerde vóór de faillietverklaring
+    van een derde heeft overgenomen, niet bevoegd tot verrekening, indien hij bij de overneming niet te goeder trouw heeft
+    gehandeld.
+
+    2. Na de faillietverklaring overgenomen vorderingen of schulden kunnen niet worden verrekend.'
+  - De doodstraf kan niet worden opgelegd.
+  - '1. Iedere Staat die Partij is, verbindt zich ertoe in alle gebieden onder zijn rechtsmacht andere vormen van wrede, onmenselijke
+    of onterende behandeling of bestraffing, die geen foltering inhouden zoals omschreven in artikel 1, te voorkomen, wanneer
+    zulke handelingen worden gepleegd door of op aanstichten van dan wel met instemming of gedogen van een overheidsfunctionaris
+    of andere persoon die in een officiële hoedanigheid handelt. Inzonderheid zijn de verplichtingen vervat in de artikelen
+    10, 11, 12 en 13 van toepassing, met vervanging van de verwijzingen naar foltering door verwijzingen naar andere vormen
+    van wrede, onmenselijke of onterende behandeling of bestraffing.
+
+    2. De bepalingen van dit Verdrag laten onverlet de bepalingen van andere internationale verdragen of van nationale wetten,
+    waarin wrede, onmenselijke of onterende behandeling of bestraffing zijn verboden, of die betrekking hebben op uitlevering
+    of uitzetting.'
+- source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query.
+
+    Query: Is een mede-erfgenaam verplicht mee te werken aan het herstellen van de watertoevoer in een onverdeelde woning?'
+  sentences:
+  - '1. De waarden die dienen tot dekking van de technische voorzieningen voor de vanuit de vestigingen in Nederland aangegane
+    verplichtingen uit of krachtens overeenkomsten van natura-uitvaartverzekering, worden als zodanig door de verzekeraar
+    geadministreerd.
+
+    2. In een der staten, bedoeld inartikel 33, vermeldt de verzekeraar de bedragen die de in het eerste lid bedoelde waarden
+    per categorie, als aangegeven in de desbetreffende staat, in totaal belopen.'
+  - '1. De voogd zorgt dat het vermogen van de minderjarige, zoals dit bij het begin van zijn voogdij is samengesteld, zo
+    spoedig mogelijk wordt geïnventariseerd.
+
+    2. Binnen acht weken na het begin van zijn voogdij doet de voogd ter griffie van de rechtbank van het arrondissement waarin
+    de woonplaats van de minderjarige is gelegen schriftelijk opgave van de bij dat begin aanwezige gerede gelden, effecten
+    aan toonder en spaarbankboekjes.
+
+    3. Binnen acht maanden na het begin van zijn voogdij levert de voogd een ter bevestiging van haar deugdelijkheid door
+    hem ondertekende boedelbeschrijving in ter griffie van de rechtbank van het arrondissement waarin de woonplaats van de
+    minderjarige is gelegen.
+
+    4. In de boedelbeschrijving is begrepen een opgave van de wijzigingen in de samenstelling van het vermogen tot het ogenblik
+    dat zij wordt opgemaakt.'
+  - Het bevoegd gezag stelt een verslag op van het onderzoek. Het zendt zo spoedig mogelijk een exemplaar van het verslag
+    aan degene die de activiteit onderneemt, aan de commissie en aan de adviseurs. Het maakt het verslag gelijktijdig bekend
+    met overeenkomstige toepassing vanartikel 7.20, derde lid, onder a en c.
+  - Gedurende de vereffening zijn van titel 7 van Boek 3 slechts van toepassing de artikelen 166, 167, 169, 170 lid 1 en 194
+    lid 2.
+  - Tenzij de kantonrechter anders bepaalt, oefenen de erfgenamen hun bevoegdheden als vereffenaars van de beneficiair aanvaarde
+    nalatenschap tezamen uit, doch kunnen daden van gewoon onderhoud en tot behoud van de goederen, en in het algemeen daden
+    die geen uitstel kunnen lijden, door ieder van hen zo nodig zelfstandig worden verricht.
+  - '1. Gemeenschap is aanwezig, wanneer een of meer goederen toebehoren aan twee of meer deelgenoten gezamenlijk.
+
+    2. De aandelen van de deelgenoten zijn gelijk, tenzij uit hun rechtsverhouding anders voortvloeit.
+
+    3. Op de rechtsbetrekkingen tussen de deelgenoten is artikel 2 van Boek 6 van overeenkomstige toepassing.'
+  - '1. Schuldeiser en schuldenaar zijn verplicht zich jegens elkaar te gedragen overeenkomstig de eisen van redelijkheid
+    en billijkheid.
+
+    2. Een tussen hen krachtens wet, gewoonte of rechtshandeling geldende regel is niet van toepassing, voor zover dit in
+    de gegeven omstandigheden naar maatstaven van redelijkheid en billijkheid onaanvaardbaar zou zijn.'
+  - 'Op de overeenkomst van bijstand bij verhandelen en de uitwisselingsovereenkomst zijnartikel 50b, leden 1 tot en met 5
+    alsmede lid 7, en deartikelen 50c,50d,50e lid 1 en lid 2, aanhef en onderdeel c, alsmedeartikel 50fvan overeenkomstige
+    toepassing, met dien verstande dat: a. ten aanzien van de overeenkomst van bijstand bij verhandelen: 1°. de informatie,
+    bedoeld inartikel 50b, wordt verstrekt overeenkomstig het in bijlage III bij de richtlijn opgenomen model; en 2°. artikel
+    50ftoepassing vindt tot de overdracht of overname heeft plaatsgevonden of de overeenkomst op andere wijze wordt beëindigd;
+    b. ten aanzien van uitwisselingsovereenkomst: 1°. de informatie, bedoeld inartikel 50b, wordt verstrekt overeenkomstig
+    het in bijlage IV bij de richtlijn opgenomen model; en 2°. als de overeenkomst wordt aangeboden samen met en op hetzelfde
+    tijdstip als een overeenkomst betreffende gebruik in deeltijd, slechts een enkele termijn voor ontbinding als bedoeld
+    inartikel 50d lid 1geldt, waarbij de termijn voor beide overeenkomsten wordt berekend overeenkomstig lid 1 van dat artikel.'
+  - '1. Tenzij uit de rechtsverhouding tussen de deelgenoten anders voortvloeit, kan ieder van hen over zijn aandeel in een
+    gemeenschappelijk goed beschikken.
+
+    2. Indien uit de rechtsverhouding tussen de deelgenoten voortvloeit dat zij niet, tenzij met aller toestemming, bevoegd
+    zijn over hun aandeel te beschikken, zijn deleden 3 en 4 van artikel 168van overeenkomstige toepassing.
+
+    3. De schuldeisers van een deelgenoot kunnen zijn aandeel in een gemeenschappelijk goed uitwinnen. Na de uitwinning van
+    een aandeel kunnen beperkingen van de bevoegdheid om over de aandelen te beschikken niet worden ingeroepen tussen de verkrijger
+    van dat aandeel en de overige deelgenoten.'
+- source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query.
+
+    Query: Een verdachte belt met zijn mobiele telefoon naar een mededader om te overleggen over een aanstaande gewapende
+    overval. Tijdens het gesprek meldt de verdachte dat de kust veilig is en dat de kluis gevuld is. De verdachte wordt aangeklaagd
+    voor strafbare voorbereiding van diefstal met geweld. De officier van justitie stelt dat de telefoon een voorwerp is dat
+    bestemd is tot het begaan van de overval, omdat zonder dit overleg het misdrijf niet op die wijze gepleegd had kunnen
+    worden.'
+  sentences:
+  - Voor zover de vervoerder aansprakelijk is wegens niet nakomen van de op hem uit hoofde van deartikelen 1095en1096rustende
+    verplichtingen, is hij niet aansprakelijk boven bij of krachtens algemene maatregel van bestuur te bepalen bedragen.
+  - '1. Het college en elk van zijn leden afzonderlijk zijn aan de raad verantwoording schuldig over het door het college
+    gevoerde bestuur.
+
+    2. Zij geven de raad alle inlichtingen die de raad voor de uitoefening van zijn taak nodig heeft.
+
+    3. Zij geven de raad mondeling of schriftelijk de door een of meer leden gevraagde inlichtingen, tenzij het verstrekken
+    ervan in strijd is met het openbaar belang.
+
+    4. Zij geven de raad vooraf inlichtingen over de uitoefening van de bevoegdheden, bedoeld inartikel 160, eerste lid, onder
+    e, f, g en h, indien de raad daarom verzoekt of indien de uitoefening ingrijpende gevolgen kan hebben voor de gemeente.
+    In het laatste geval neemt het college geen besluit dan nadat de raad zijn wensen en bedenkingen terzake ter kennis van
+    het college heeft kunnen brengen.'
+  - '1. Voor elke akte, proces-verbaal, beschikking of een andere beslissing, gedaan, gegeven of opgemaakt door een rechter
+    of een griffier anders dan in de gevallen waarvoor in de voorgaande artikelen het griffierecht geregeld is, wordt een
+    griffierecht geheven van € 110.
+
+    2. Voor de noodzakelijke afschriften van akten, processen-verbaal of andere beslissingen wordt geen griffierecht geheven.
+
+    3. Bij regeling van Onze Minister kunnen nadere regels worden gesteld ter uitvoering van het tweede lid.'
+  - De bepalingen vande Titels I-VIII A van dit Boekzijn ook toepasselijk op feiten waarop bij andere wetten of verordeningen
+    straf is gesteld, tenzij de wet anders bepaalt.
+  - Waar van misdrijf in het algemeen of van enig misdrijf in het bijzonder gesproken wordt, wordt daaronder medeplichtigheid
+    aan, poging tot en voorbereiding van dat misdrijf begrepen, voorzover niet uit enige bepaling het tegendeel volgt.
+  - 'Het is verboden een middel als bedoeld in de bij deze wet behorendelijst IIdan wel aangewezen krachtensartikel 3a, vijfde
+    lid: A. binnen of buiten het grondgebied van Nederland te brengen; B. te telen, te bereiden, te bewerken, te verwerken,
+    te verkopen, af te leveren, te verstrekken of te vervoeren; C. aanwezig te hebben; D. te vervaardigen.'
+  - '1. Voor de behandeling van het beroep is geen recht verschuldigd.
+
+    2. De kosten, die de belanghebbende in verband met de behandeling van het beroep redelijkerwijs heeft moeten maken, worden
+    door het bestuursorgaan uitsluitend vergoed op verzoek van de belanghebbende voorzover het bestreden besluit wordt herroepen
+    wegens aan het bestuursorgaan te wijten onrechtmatigheid. In dat geval stelt het beroepsorgaan de vergoeding vast die
+    het bestuursorgaan verschuldigd is.
+
+    3. Indien aan de belanghebbende in verband met het beroep een toevoeging is verleend op grond van de Wet op de rechtsbijstand,
+    betaalt het bestuursorgaan de toe te kennen vergoeding aan de rechtsbijstandverlener. De rechtsbijstandverlener stelt
+    de belanghebbende zoveel mogelijk schadeloos voor de door deze voldane eigen bijdrage. De rechtsbijstandverlener doet
+    aan de Raad voor rechtsbijstand opgave van een kostenvergoeding door het bestuursorgaan.
+
+    4. Het verzoek wordt gedaan voordat het beroepsorgaan op het beroep heeft beslist. Het beroepsorgaan beslist op het verzoek
+    bij de beslissing op het beroep.
+
+    5. Bij algemene maatregel van bestuur worden nadere regels gesteld over de kosten waarop de vergoeding uitsluitend betrekking
+    kan hebben en over de wijze waarop het bedrag van de kosten wordt vastgesteld.'
+  - Indien de Hoge Raad oordeelt dat een aangevoerde klacht niet tot cassatie kan leiden en niet noopt tot beantwoording van
+    rechtsvragen in het belang van de rechtseenheid of de rechtsontwikkeling, kan hij zich bij de vermelding van de gronden
+    van zijn beslissing beperken tot dit oordeel.
+  - Waar in eenige wettelijke bepaling van misdrijf in het algemeen of van eenig misdrijf in het bijzonder wordt gesproken,
+    wordt daaronder voor de toepassing van dit besluit samenspanning tot dat misdrijf mede begrepen, voor zoover dit met de
+    strekking dier bepaling niet onvereenigbaar is; onverminderd het bepaalde in artikel 78 van het Wetboek van Strafrecht.
+- source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query.
+
+    Query: beheer effectenportefeuille stichting materiële onderneming'
+  sentences:
+  - 'Onder het drijven van een onderneming als bedoeld inartikel 2, eerste lid, onderdeel d, wordt mede verstaan: a. een uiterlijk
+    daarmee overeenkomende werkzaamheid waardoor in concurrentie wordt getreden met ondernemingen, gedreven door natuurlijke
+    personen, dan wel door lichamen, vermeld inartikel 2, eerste lid, onderdelen a, b en c; b. een werkzaamheid die bestaat
+    uit de verzorging van werknemers of gewezen werknemers, van hun echtgenoten of gewezen echtgenoten, dan wel hun partners
+    of gewezen partners en van hun kinderen of pleegkinderen door middel van uitkeringen op grond van een regeling voor vervroegde
+    uittreding (VUT-uitkeringen) of pensioen, uit het verzekeren van dergelijke uitkeringen, dan wel uit het verzekeren van
+    lijfrenten of kapitaalsuitkeringen uit levensverzekering.'
+  - 'Wij behouden ons voor onder daartoe te stellen voorwaarden van de belasting vrij te stellen lichamen waarbij het streven
+    naar winst – opgevat met inachtneming van de aftrekken vanartikel 9, eerste lid, onderdelen i en j, in verbinding met
+    hetvierde en vijfde lid van dat artikel– hetzij geheel ontbreekt, hetzij van bijkomstige betekenis is, en bij welke: a.
+    de behartiging van een algemeen maatschappelijk belang op de voorgrond staat, of b. de behartiging van een sociaal belang
+    op de voorgrond staat en de winst hoofdzakelijk wordt behaald met behulp van arbeid die door natuurlijke personen om niet
+    of naar een loon dat in belangrijke mate lager is dan hetgeen in het economische verkeer gebruikelijk is, wordt verricht.'
+  - Bij het vaststellen van de hoogte van de vordering uit hoofde van een verzekering, waarbij de verzekeraar zich heeft verbonden
+    tot het verrichten van uitkeringen waarvan de hoogte, het tijdstip of de duur afhankelijk is gesteld van het wel of niet
+    in leven zijn van een verzekerde, wordt een op het moment van de vaststelling algemeen aanvaarde overlevingstafel gehanteerd.
+  - Van artikel 5:2 van de wet zijn vrijgesteld degenen die effecten aanbieden aan het publiek, voorzover de effecten worden
+    aangeboden aan personen, niet zijnde gekwalificeerde beleggers, die een schriftelijke overeenkomst van lastgeving hebben
+    afgesloten met een vermogensbeheerder die op grond van de wet in Nederland beleggingsdiensten mag verlenen en die op grond
+    van die overeenkomst zonder last of ruggespraak met de volmachtgever naar eigen inzicht transacties kan verrichten of
+    bewerkstelligen.
+  - '1. Degene die tabaksproducten die in strijd met de wettelijke bepalingen niet zijn voorzien van de voorgeschreven accijnszegels
+    uitslaat tot verbruik, wordt gestraft met geldboete van de derde categorie.
+
+    2. Degene die het in het eerste lid bedoelde verbod opzettelijk overtreedt, wordt gestraft met gevangenisstraf van ten
+    hoogste twee jaren of geldboete van de vierde categorie.'
+  - '1. Er worden openbare registers gehouden, waarin feiten die voor de rechtstoestand van registergoederen van belang zijn,
+    worden ingeschreven.
+
+    2. Welke deze openbare registers zijn, waar en op welke wijze een inschrijving in de registers kan worden verkregen, welke
+    stukken daartoe aan de bewaarder moeten worden aangeboden, wat deze stukken moeten inhouden, hoe de registers worden ingericht,
+    hoe de inschrijvingen daarin geschieden, en hoe de registers kunnen worden geraadpleegd, wordt geregeld bij de wet.'
+  - '1. Indien de rechtbank het beroep gegrond verklaart, kan zij, indien daarvoor gronden zijn, op verzoek van een partij
+    de door haar aangewezen rechtspersoon veroordelen tot vergoeding van de schade die die partij lijdt.
+
+    2. Indien de rechtbank de omvang van de schadevergoeding bij haar uitspraak niet of niet volledig kan vaststellen, bepaalt
+    zij in haar uitspraak dat ter voorbereiding van een nadere uitspraak daarover het onderzoek wordt heropend. De rechtbank
+    bepaalt daarbij op welke wijze het onderzoek wordt voortgezet.'
+  - '1. De schriftelijke uitspraak vermeldt: a. de namen van partijen en van hun vertegenwoordigers of gemachtigden, b. de
+    gronden van de beslissing, c. de beslissing, d. de naam van de rechter of de namen van de rechters die de zaak heeft onderscheidenlijk
+    hebben behandeld, e. de dag waarop de beslissing is uitgesproken, en f. door wie, binnen welke termijn en bij welke administratieve
+    rechter welk rechtsmiddel kan worden aangewend.
+
+    2. Indien de uitspraak strekt tot gegrondverklaring van het beroep, wordt in de uitspraak vermeld welke geschreven of
+    ongeschreven rechtsregel of welk algemeen rechtsbeginsel geschonden wordt geoordeeld.
+
+    3. De uitspraak wordt ondertekend door de voorzitter van de meervoudige kamer en de griffier. Bij verhindering van de
+    voorzitter of de griffier wordt dit in de uitspraak vermeld.'
+  - '[Bevat wijzigingen in andere regelgeving.]'
+model-index:
+- name: SentenceTransformer based on intfloat/multilingual-e5-large-instruct
+  results:
+  - task:
+      type: rank-zero-ir
+      name: Rank Zero IR
+    dataset:
+      name: legal val
+      type: legal-val
+    metrics:
+    - type: cosine_accuracy@1
+      value: 0.346
+      name: Cosine Accuracy@1
+      verified: false
+    - type: cosine_accuracy@5
+      value: 0.652
+      name: Cosine Accuracy@5
+      verified: false
+    - type: cosine_accuracy@10
+      value: 0.73
+      name: Cosine Accuracy@10
+      verified: false
+    - type: cosine_precision@1
+      value: 0.346
+      name: Cosine Precision@1
+      verified: false
+    - type: cosine_precision@10
+      value: 0.1218
+      name: Cosine Precision@10
+      verified: false
+    - type: cosine_recall@1
+      value: 0.1765330936414178
+      name: Cosine Recall@1
+      verified: false
+    - type: cosine_recall@10
+      value: 0.47943181699630566
+      name: Cosine Recall@10
+      verified: false
+    - type: cosine_ndcg@10
+      value: 0.39366500753390565
+      name: Cosine Ndcg@10
+      verified: false
+    - type: cosine_mrr@10
+      value: 0.4746992063492062
+      name: Cosine Mrr@10
+      verified: false
+    - type: cosine_map@100
+      value: 0.3201718416893849
+      name: Cosine Map@100
+      verified: false
+config:
+  architectures:
+  - XLMRobertaModel
+  model_type: xlm-roberta
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: <unk>
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:2072272
+  - loss:CachedMultipleNegativesRankingLoss
+  - loss:MultipleNegativesRankingLoss
+  base_model: intfloat/multilingual-e5-large-instruct
+  widget:
+  - source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query.
+
+      Query: Opzeggen samenlevingsovereenkomst brengt in dit geval mee dat vanaf datum beëindiging samenleving de regel van
+      BW van toepassing is op het gemeenschappelijk eigendom.'
+    sentences:
+    - '1. De rechter, die het bedrag van een uitkering tot levensonderhoud bepaalt, wijzigt of intrekt, stelt tevens de dag
+      vast, van welke dit bedrag verschuldigd is of ophoudt verschuldigd te zijn.
+
+      2. Bij de vaststelling van een bedrag bepaalt de rechter tevens of dit wekelijks, maandelijks of driemaandelijks moet
+      worden voldaan.
+
+      3. Zouden op de dag, dat de uitspraak ten uitvoer kan worden gelegd, reeds meer dan één termijn verschenen zijn of meer
+      dan één termijn terugbetaald moeten worden, dan kan de rechter ook daarvoor een betaling in termijnen toestaan.'
+    - De rechter vult ambtshalve de rechtsgronden aan.
+    - Indien de rechter in hoger beroep een vonnis of beschikking van een lagere rechter, waarbij deze zich onbevoegd had
+      verklaard wegens ontbreken van rechtsmacht of in verband met een overeenkomst tot arbitrage, vernietigt, verwijst de
+      rechter de zaak naar deze lagere rechter om op de hoofdzaak te worden beslist, tenzij partijen verklaren te verlangen
+      dat de rechter in beroep de zaak aan zich houdt.
+    - Tenzij een regeling anders bepaalt, delen de deelgenoten naar evenredigheid van hun aandelen in de vruchten en andere
+      voordelen die het gemeenschappelijke goed oplevert, en moeten zij in dezelfde evenredigheid bijdragen tot de uitgaven
+      die voortvloeien uit handelingen welke bevoegdelijk ten behoeve van de gemeenschap zijn verricht.
+    - '1. De kosten der huishouding, daaronder begrepen de kosten van verzorging en opvoeding van de kinderen, komen ten laste
+      van het gemene inkomen van de echtgenoten en, voor zover dit ontoereikend is, ten laste van hun eigen inkomens in evenredigheid
+      daarvan; voor zover de inkomens ontoereikend zijn, komen deze kosten ten laste van het gemene vermogen en, voor zover
+      ook dit ontoereikend is, ten laste van de eigen vermogens naar evenredigheid daarvan. Een en ander geldt niet voor zover
+      bijzondere omstandigheden zich er tegen verzetten.
+
+      2. De echtgenoten zijn jegens elkaar verplicht dienovereenkomstig tot de bestrijding van de in het eerste lid bedoelde
+      uitgaven voldoende gelden ter beschikking te stellen uit de onder hun bestuur staande goederen, voor zover bijzondere
+      omstandigheden zich daartegen niet verzetten.
+
+      3. Bij schriftelijke overeenkomst kan een van het eerste en tweede lid afwijkende regeling worden getroffen.
+
+      4. Geschillen tussen de echtgenoten omtrent de toepassing van het eerste tot en met derde lid worden door de rechtbank
+      op verzoek van beiden of een van hen beslist.
+
+      5. Op verzoek van beide of van een van de echtgenoten kan de rechtbank een gegeven beschikking of een onderling getroffen
+      regeling wijzigen op grond van veranderde omstandigheden.'
+    - '1. De bevoegdheid tot vernietiging op grond van deartikelen 228en229vervalt, wanneer de wederpartij tijdig een wijziging
+      van de gevolgen van de overeenkomst voorstelt, die het nadeel dat de tot vernietiging bevoegde bij intstandhouding van
+      de overeenkomst lijdt, op afdoende wijze opheft.
+
+      2. Bovendien kan de rechter op verlangen van een der partijen, in plaats van de vernietiging uit te spreken, de gevolgen
+      van de overeenkomst ter opheffing van dit nadeel wijzigen.'
+    - '1. Lesgeld is verschuldigd ter zake van het door een leerling die vóór de aanvang van het desbetreffende cursusjaar
+      de leeftijd van 16 jaren heeft bereikt, volgen van uit de openbare kas bekostigd onderwijs - daaronder begrepen de van
+      het onderwijs deel uitmakende praktijktijd - aan een dagschool. Geen lesgeld is verschuldigd voor een leerling die uit
+      de openbare kas bekostigd speciaal onderwijs of voortgezet speciaal onderwijs volgt en vóór de aanvang van het desbetreffende
+      cursusjaar de leeftijd van 19 jaren heeft bereikt.
+
+      2. Het lesgeld is verschuldigd door de leerling dan wel, indien deze de leeftijd van 18 jaren nog niet heeft bereikt
+      en minderjarig is, door zijn wettelijke vertegenwoordiger.
+
+      3. Het lesgeld is verschuldigd per cursusjaar en wordt voldaan aan de Informatie Beheer Groep.'
+    - De ambtenaar is verplicht de dienstkleding en de onderscheidingstekenen te dragen, voor zover dit door Onze Minister
+      voorgeschreven is.
+    - De kosten van landinrichting worden gedragen door de provincie, voor zover zij niet worden gedragen door het Rijk, andere
+      openbare lichamen en eigenaren met inachtneming van deartikelen 90 tot en met 91.
+  - source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query.
+
+      Query: Mondelinge uitspraak, asiel, Dublin Italië, interstatelijk vertrouwensbeginsel, regering Meloni, beroep ongegrond'
+    sentences:
+    - '1. Indien bijzondere omstandigheden Onze Minister aanleiding geven om, zonder dat een daartoe strekkend verzoekschrift
+      is ingediend, een voorstel tot gratieverlening in overweging te nemen, wordt het advies ingewonnen van het inartikel
+      4aangewezen gerecht. Tenzij, met Onze machtiging, Onze Minister anders bepaalt, zijn de artikelen 6:7:4 van het Wetboek
+      van Strafvordering en5 tot en met 7en9 tot en met 11 van deze wetvan overeenkomstige toepassing.
+
+      2. Wanneer in zodanig geval gratie wordt verleend, zijn deartikelen 13 tot en met 17en18, eerste, derde, vierde en vijfde
+      lid, van toepassing.'
+    - Twee of meer Staten kunnen, met toestemming van de ontvangende Staat, eenzelfde persoon als consulair ambtenaar in die
+      Staat benoemen.
+    - '1. Het is verboden een volgens het tweede lid aangewezen stof, die behoort tot de in de bijlage van dit besluit opgenomen
+      afvalstoffen, verontreinigende of schadelijke stoffen, op welke wijze ook, in enig oppervlaktewater te brengen.
+
+      2. De in het eerste lid bedoelde aanwijzing geschiedt door Onze Minister in overeenstemming met Onze Minister van Volkshuisvesting,
+      Ruimtelijke Ordening en Milieubeheer, de Raad van de Waterstaat gehoord.
+
+      3. Het eerste lid is niet van toepassing met betrekking tot stoffen, die slechts als sporen in andere stoffen voorkomen
+      en die daaraan niet zijn toegevoegd om te zamen met die andere stoffen in enig oppervlaktewater te worden gebracht.
+      Bij het in het tweede lid bedoelde besluit kan worden aangegeven welke concentraties of hoeveelheden per tijdseenheid
+      van de aangewezen stof gelden als sporen.'
+    - Bij de beoordeling of een verblijfsvergunning voor bepaalde tijd, die is verleend op grond van artikel 29, eerste lid,
+      onder a of b, van de Wet, wordt ingetrokken op grond van artikel 32, eerste lid, onder c, van de Wet, of de aanvraag
+      voor verlenging van de geldigheidsduur ervan wordt afgewezen op die grond, wordt in aanmerking genomen of de wijziging
+      van de omstandigheden een voldoende ingrijpend en niet-voorbijgaand karakter heeft om de gegronde vrees voor vervolging
+      dan wel het reële risico op ernstige schade weg te nemen. De rechtsgrond voor verlening van de desbetreffende verblijfsvergunning
+      heeft niet opgehouden te bestaan indien de vreemdeling dwingende redenen kan aanvoeren die voorvloeien uit vroegere
+      vervolging dan wel uit vroegere ernstige schade, om te weigeren de bescherming in te roepen van het land waarvan hij
+      de nationaliteit bezit, of, in het geval van een staatloze, van het land waar hij vroeger zijn gewone verblijfsplaats
+      had.
+    - '1. Een aanvraag tot het verlenen van een verblijfsvergunning voor bepaalde tijd als bedoeld inartikel 28wordt niet
+      in behandeling genomen, indien op grond van de Dublinverordening is vastgesteld dat een andere lidstaat verantwoordelijk
+      is voor de behandeling van de aanvraag.
+
+      2. De vreemdeling wordt gehoord over zijn eventuele bezwaren tegen overdracht naar de verantwoordelijke lidstaat.
+
+      3. Bij of krachtens algemene maatregel van bestuur kunnen nadere regels worden gesteld over de toepassing van het eerste
+      en tweede lid.'
+    - De verdragsluitende partijen verbieden de verbranding op zee van afval of andere stoffen.
+    - '1. Niettemin is degene die een schuld aan de gefailleerde of een vordering op de gefailleerde vóór de faillietverklaring
+      van een derde heeft overgenomen, niet bevoegd tot verrekening, indien hij bij de overneming niet te goeder trouw heeft
+      gehandeld.
+
+      2. Na de faillietverklaring overgenomen vorderingen of schulden kunnen niet worden verrekend.'
+    - De doodstraf kan niet worden opgelegd.
+    - '1. Iedere Staat die Partij is, verbindt zich ertoe in alle gebieden onder zijn rechtsmacht andere vormen van wrede,
+      onmenselijke of onterende behandeling of bestraffing, die geen foltering inhouden zoals omschreven in artikel 1, te
+      voorkomen, wanneer zulke handelingen worden gepleegd door of op aanstichten van dan wel met instemming of gedogen van
+      een overheidsfunctionaris of andere persoon die in een officiële hoedanigheid handelt. Inzonderheid zijn de verplichtingen
+      vervat in de artikelen 10, 11, 12 en 13 van toepassing, met vervanging van de verwijzingen naar foltering door verwijzingen
+      naar andere vormen van wrede, onmenselijke of onterende behandeling of bestraffing.
+
+      2. De bepalingen van dit Verdrag laten onverlet de bepalingen van andere internationale verdragen of van nationale wetten,
+      waarin wrede, onmenselijke of onterende behandeling of bestraffing zijn verboden, of die betrekking hebben op uitlevering
+      of uitzetting.'
+  - source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query.
+
+      Query: Is een mede-erfgenaam verplicht mee te werken aan het herstellen van de watertoevoer in een onverdeelde woning?'
+    sentences:
+    - '1. De waarden die dienen tot dekking van de technische voorzieningen voor de vanuit de vestigingen in Nederland aangegane
+      verplichtingen uit of krachtens overeenkomsten van natura-uitvaartverzekering, worden als zodanig door de verzekeraar
+      geadministreerd.
+
+      2. In een der staten, bedoeld inartikel 33, vermeldt de verzekeraar de bedragen die de in het eerste lid bedoelde waarden
+      per categorie, als aangegeven in de desbetreffende staat, in totaal belopen.'
+    - '1. De voogd zorgt dat het vermogen van de minderjarige, zoals dit bij het begin van zijn voogdij is samengesteld, zo
+      spoedig mogelijk wordt geïnventariseerd.
+
+      2. Binnen acht weken na het begin van zijn voogdij doet de voogd ter griffie van de rechtbank van het arrondissement
+      waarin de woonplaats van de minderjarige is gelegen schriftelijk opgave van de bij dat begin aanwezige gerede gelden,
+      effecten aan toonder en spaarbankboekjes.
+
+      3. Binnen acht maanden na het begin van zijn voogdij levert de voogd een ter bevestiging van haar deugdelijkheid door
+      hem ondertekende boedelbeschrijving in ter griffie van de rechtbank van het arrondissement waarin de woonplaats van
+      de minderjarige is gelegen.
+
+      4. In de boedelbeschrijving is begrepen een opgave van de wijzigingen in de samenstelling van het vermogen tot het ogenblik
+      dat zij wordt opgemaakt.'
+    - Het bevoegd gezag stelt een verslag op van het onderzoek. Het zendt zo spoedig mogelijk een exemplaar van het verslag
+      aan degene die de activiteit onderneemt, aan de commissie en aan de adviseurs. Het maakt het verslag gelijktijdig bekend
+      met overeenkomstige toepassing vanartikel 7.20, derde lid, onder a en c.
+    - Gedurende de vereffening zijn van titel 7 van Boek 3 slechts van toepassing de artikelen 166, 167, 169, 170 lid 1 en
+      194 lid 2.
+    - Tenzij de kantonrechter anders bepaalt, oefenen de erfgenamen hun bevoegdheden als vereffenaars van de beneficiair aanvaarde
+      nalatenschap tezamen uit, doch kunnen daden van gewoon onderhoud en tot behoud van de goederen, en in het algemeen daden
+      die geen uitstel kunnen lijden, door ieder van hen zo nodig zelfstandig worden verricht.
+    - '1. Gemeenschap is aanwezig, wanneer een of meer goederen toebehoren aan twee of meer deelgenoten gezamenlijk.
+
+      2. De aandelen van de deelgenoten zijn gelijk, tenzij uit hun rechtsverhouding anders voortvloeit.
+
+      3. Op de rechtsbetrekkingen tussen de deelgenoten is artikel 2 van Boek 6 van overeenkomstige toepassing.'
+    - '1. Schuldeiser en schuldenaar zijn verplicht zich jegens elkaar te gedragen overeenkomstig de eisen van redelijkheid
+      en billijkheid.
+
+      2. Een tussen hen krachtens wet, gewoonte of rechtshandeling geldende regel is niet van toepassing, voor zover dit in
+      de gegeven omstandigheden naar maatstaven van redelijkheid en billijkheid onaanvaardbaar zou zijn.'
+    - 'Op de overeenkomst van bijstand bij verhandelen en de uitwisselingsovereenkomst zijnartikel 50b, leden 1 tot en met
+      5 alsmede lid 7, en deartikelen 50c,50d,50e lid 1 en lid 2, aanhef en onderdeel c, alsmedeartikel 50fvan overeenkomstige
+      toepassing, met dien verstande dat: a. ten aanzien van de overeenkomst van bijstand bij verhandelen: 1°. de informatie,
+      bedoeld inartikel 50b, wordt verstrekt overeenkomstig het in bijlage III bij de richtlijn opgenomen model; en 2°. artikel
+      50ftoepassing vindt tot de overdracht of overname heeft plaatsgevonden of de overeenkomst op andere wijze wordt beëindigd;
+      b. ten aanzien van uitwisselingsovereenkomst: 1°. de informatie, bedoeld inartikel 50b, wordt verstrekt overeenkomstig
+      het in bijlage IV bij de richtlijn opgenomen model; en 2°. als de overeenkomst wordt aangeboden samen met en op hetzelfde
+      tijdstip als een overeenkomst betreffende gebruik in deeltijd, slechts een enkele termijn voor ontbinding als bedoeld
+      inartikel 50d lid 1geldt, waarbij de termijn voor beide overeenkomsten wordt berekend overeenkomstig lid 1 van dat artikel.'
+    - '1. Tenzij uit de rechtsverhouding tussen de deelgenoten anders voortvloeit, kan ieder van hen over zijn aandeel in
+      een gemeenschappelijk goed beschikken.
+
+      2. Indien uit de rechtsverhouding tussen de deelgenoten voortvloeit dat zij niet, tenzij met aller toestemming, bevoegd
+      zijn over hun aandeel te beschikken, zijn deleden 3 en 4 van artikel 168van overeenkomstige toepassing.
+
+      3. De schuldeisers van een deelgenoot kunnen zijn aandeel in een gemeenschappelijk goed uitwinnen. Na de uitwinning
+      van een aandeel kunnen beperkingen van de bevoegdheid om over de aandelen te beschikken niet worden ingeroepen tussen
+      de verkrijger van dat aandeel en de overige deelgenoten.'
+  - source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query.
+
+      Query: Een verdachte belt met zijn mobiele telefoon naar een mededader om te overleggen over een aanstaande gewapende
+      overval. Tijdens het gesprek meldt de verdachte dat de kust veilig is en dat de kluis gevuld is. De verdachte wordt
+      aangeklaagd voor strafbare voorbereiding van diefstal met geweld. De officier van justitie stelt dat de telefoon een
+      voorwerp is dat bestemd is tot het begaan van de overval, omdat zonder dit overleg het misdrijf niet op die wijze gepleegd
+      had kunnen worden.'
+    sentences:
+    - Voor zover de vervoerder aansprakelijk is wegens niet nakomen van de op hem uit hoofde van deartikelen 1095en1096rustende
+      verplichtingen, is hij niet aansprakelijk boven bij of krachtens algemene maatregel van bestuur te bepalen bedragen.
+    - '1. Het college en elk van zijn leden afzonderlijk zijn aan de raad verantwoording schuldig over het door het college
+      gevoerde bestuur.
+
+      2. Zij geven de raad alle inlichtingen die de raad voor de uitoefening van zijn taak nodig heeft.
+
+      3. Zij geven de raad mondeling of schriftelijk de door een of meer leden gevraagde inlichtingen, tenzij het verstrekken
+      ervan in strijd is met het openbaar belang.
+
+      4. Zij geven de raad vooraf inlichtingen over de uitoefening van de bevoegdheden, bedoeld inartikel 160, eerste lid,
+      onder e, f, g en h, indien de raad daarom verzoekt of indien de uitoefening ingrijpende gevolgen kan hebben voor de
+      gemeente. In het laatste geval neemt het college geen besluit dan nadat de raad zijn wensen en bedenkingen terzake ter
+      kennis van het college heeft kunnen brengen.'
+    - '1. Voor elke akte, proces-verbaal, beschikking of een andere beslissing, gedaan, gegeven of opgemaakt door een rechter
+      of een griffier anders dan in de gevallen waarvoor in de voorgaande artikelen het griffierecht geregeld is, wordt een
+      griffierecht geheven van € 110.
+
+      2. Voor de noodzakelijke afschriften van akten, processen-verbaal of andere beslissingen wordt geen griffierecht geheven.
+
+      3. Bij regeling van Onze Minister kunnen nadere regels worden gesteld ter uitvoering van het tweede lid.'
+    - De bepalingen vande Titels I-VIII A van dit Boekzijn ook toepasselijk op feiten waarop bij andere wetten of verordeningen
+      straf is gesteld, tenzij de wet anders bepaalt.
+    - Waar van misdrijf in het algemeen of van enig misdrijf in het bijzonder gesproken wordt, wordt daaronder medeplichtigheid
+      aan, poging tot en voorbereiding van dat misdrijf begrepen, voorzover niet uit enige bepaling het tegendeel volgt.
+    - 'Het is verboden een middel als bedoeld in de bij deze wet behorendelijst IIdan wel aangewezen krachtensartikel 3a,
+      vijfde lid: A. binnen of buiten het grondgebied van Nederland te brengen; B. te telen, te bereiden, te bewerken, te
+      verwerken, te verkopen, af te leveren, te verstrekken of te vervoeren; C. aanwezig te hebben; D. te vervaardigen.'
+    - '1. Voor de behandeling van het beroep is geen recht verschuldigd.
+
+      2. De kosten, die de belanghebbende in verband met de behandeling van het beroep redelijkerwijs heeft moeten maken,
+      worden door het bestuursorgaan uitsluitend vergoed op verzoek van de belanghebbende voorzover het bestreden besluit
+      wordt herroepen wegens aan het bestuursorgaan te wijten onrechtmatigheid. In dat geval stelt het beroepsorgaan de vergoeding
+      vast die het bestuursorgaan verschuldigd is.
+
+      3. Indien aan de belanghebbende in verband met het beroep een toevoeging is verleend op grond van de Wet op de rechtsbijstand,
+      betaalt het bestuursorgaan de toe te kennen vergoeding aan de rechtsbijstandverlener. De rechtsbijstandverlener stelt
+      de belanghebbende zoveel mogelijk schadeloos voor de door deze voldane eigen bijdrage. De rechtsbijstandverlener doet
+      aan de Raad voor rechtsbijstand opgave van een kostenvergoeding door het bestuursorgaan.
+
+      4. Het verzoek wordt gedaan voordat het beroepsorgaan op het beroep heeft beslist. Het beroepsorgaan beslist op het
+      verzoek bij de beslissing op het beroep.
+
+      5. Bij algemene maatregel van bestuur worden nadere regels gesteld over de kosten waarop de vergoeding uitsluitend betrekking
+      kan hebben en over de wijze waarop het bedrag van de kosten wordt vastgesteld.'
+    - Indien de Hoge Raad oordeelt dat een aangevoerde klacht niet tot cassatie kan leiden en niet noopt tot beantwoording
+      van rechtsvragen in het belang van de rechtseenheid of de rechtsontwikkeling, kan hij zich bij de vermelding van de
+      gronden van zijn beslissing beperken tot dit oordeel.
+    - Waar in eenige wettelijke bepaling van misdrijf in het algemeen of van eenig misdrijf in het bijzonder wordt gesproken,
+      wordt daaronder voor de toepassing van dit besluit samenspanning tot dat misdrijf mede begrepen, voor zoover dit met
+      de strekking dier bepaling niet onvereenigbaar is; onverminderd het bepaalde in artikel 78 van het Wetboek van Strafrecht.
+  - source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query.
+
+      Query: beheer effectenportefeuille stichting materiële onderneming'
+    sentences:
+    - 'Onder het drijven van een onderneming als bedoeld inartikel 2, eerste lid, onderdeel d, wordt mede verstaan: a. een
+      uiterlijk daarmee overeenkomende werkzaamheid waardoor in concurrentie wordt getreden met ondernemingen, gedreven door
+      natuurlijke personen, dan wel door lichamen, vermeld inartikel 2, eerste lid, onderdelen a, b en c; b. een werkzaamheid
+      die bestaat uit de verzorging van werknemers of gewezen werknemers, van hun echtgenoten of gewezen echtgenoten, dan
+      wel hun partners of gewezen partners en van hun kinderen of pleegkinderen door middel van uitkeringen op grond van een
+      regeling voor vervroegde uittreding (VUT-uitkeringen) of pensioen, uit het verzekeren van dergelijke uitkeringen, dan
+      wel uit het verzekeren van lijfrenten of kapitaalsuitkeringen uit levensverzekering.'
+    - 'Wij behouden ons voor onder daartoe te stellen voorwaarden van de belasting vrij te stellen lichamen waarbij het streven
+      naar winst – opgevat met inachtneming van de aftrekken vanartikel 9, eerste lid, onderdelen i en j, in verbinding met
+      hetvierde en vijfde lid van dat artikel– hetzij geheel ontbreekt, hetzij van bijkomstige betekenis is, en bij welke:
+      a. de behartiging van een algemeen maatschappelijk belang op de voorgrond staat, of b. de behartiging van een sociaal
+      belang op de voorgrond staat en de winst hoofdzakelijk wordt behaald met behulp van arbeid die door natuurlijke personen
+      om niet of naar een loon dat in belangrijke mate lager is dan hetgeen in het economische verkeer gebruikelijk is, wordt
+      verricht.'
+    - Bij het vaststellen van de hoogte van de vordering uit hoofde van een verzekering, waarbij de verzekeraar zich heeft
+      verbonden tot het verrichten van uitkeringen waarvan de hoogte, het tijdstip of de duur afhankelijk is gesteld van het
+      wel of niet in leven zijn van een verzekerde, wordt een op het moment van de vaststelling algemeen aanvaarde overlevingstafel
+      gehanteerd.
+    - Van artikel 5:2 van de wet zijn vrijgesteld degenen die effecten aanbieden aan het publiek, voorzover de effecten worden
+      aangeboden aan personen, niet zijnde gekwalificeerde beleggers, die een schriftelijke overeenkomst van lastgeving hebben
+      afgesloten met een vermogensbeheerder die op grond van de wet in Nederland beleggingsdiensten mag verlenen en die op
+      grond van die overeenkomst zonder last of ruggespraak met de volmachtgever naar eigen inzicht transacties kan verrichten
+      of bewerkstelligen.
+    - '1. Degene die tabaksproducten die in strijd met de wettelijke bepalingen niet zijn voorzien van de voorgeschreven accijnszegels
+      uitslaat tot verbruik, wordt gestraft met geldboete van de derde categorie.
+
+      2. Degene die het in het eerste lid bedoelde verbod opzettelijk overtreedt, wordt gestraft met gevangenisstraf van ten
+      hoogste twee jaren of geldboete van de vierde categorie.'
+    - '1. Er worden openbare registers gehouden, waarin feiten die voor de rechtstoestand van registergoederen van belang
+      zijn, worden ingeschreven.
+
+      2. Welke deze openbare registers zijn, waar en op welke wijze een inschrijving in de registers kan worden verkregen,
+      welke stukken daartoe aan de bewaarder moeten worden aangeboden, wat deze stukken moeten inhouden, hoe de registers
+      worden ingericht, hoe de inschrijvingen daarin geschieden, en hoe de registers kunnen worden geraadpleegd, wordt geregeld
+      bij de wet.'
+    - '1. Indien de rechtbank het beroep gegrond verklaart, kan zij, indien daarvoor gronden zijn, op verzoek van een partij
+      de door haar aangewezen rechtspersoon veroordelen tot vergoeding van de schade die die partij lijdt.
+
+      2. Indien de rechtbank de omvang van de schadevergoeding bij haar uitspraak niet of niet volledig kan vaststellen, bepaalt
+      zij in haar uitspraak dat ter voorbereiding van een nadere uitspraak daarover het onderzoek wordt heropend. De rechtbank
+      bepaalt daarbij op welke wijze het onderzoek wordt voortgezet.'
+    - '1. De schriftelijke uitspraak vermeldt: a. de namen van partijen en van hun vertegenwoordigers of gemachtigden, b.
+      de gronden van de beslissing, c. de beslissing, d. de naam van de rechter of de namen van de rechters die de zaak heeft
+      onderscheidenlijk hebben behandeld, e. de dag waarop de beslissing is uitgesproken, en f. door wie, binnen welke termijn
+      en bij welke administratieve rechter welk rechtsmiddel kan worden aangewend.
+
+      2. Indien de uitspraak strekt tot gegrondverklaring van het beroep, wordt in de uitspraak vermeld welke geschreven of
+      ongeschreven rechtsregel of welk algemeen rechtsbeginsel geschonden wordt geoordeeld.
+
+      3. De uitspraak wordt ondertekend door de voorzitter van de meervoudige kamer en de griffier. Bij verhindering van de
+      voorzitter of de griffier wordt dit in de uitspraak vermeld.'
+    - '[Bevat wijzigingen in andere regelgeving.]'
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - cosine_accuracy@1
+  - cosine_accuracy@5
+  - cosine_accuracy@10
+  - cosine_precision@1
+  - cosine_precision@10
+  - cosine_recall@1
+  - cosine_recall@10
+  - cosine_ndcg@10
+  - cosine_mrr@10
+  - cosine_map@100
+  model-index:
+  - name: SentenceTransformer based on intfloat/multilingual-e5-large-instruct
+    results:
+    - task:
+        type: rank-zero-ir
+        name: Rank Zero IR
+      dataset:
+        name: legal val
+        type: legal-val
+      metrics:
+      - type: cosine_accuracy@1
+        value: 0.346
+        name: Cosine Accuracy@1
+        verified: false
+      - type: cosine_accuracy@5
+        value: 0.652
+        name: Cosine Accuracy@5
+        verified: false
+      - type: cosine_accuracy@10
+        value: 0.73
+        name: Cosine Accuracy@10
+        verified: false
+      - type: cosine_precision@1
+        value: 0.346
+        name: Cosine Precision@1
+        verified: false
+      - type: cosine_precision@10
+        value: 0.1218
+        name: Cosine Precision@10
+        verified: false
+      - type: cosine_recall@1
+        value: 0.1765330936414178
+        name: Cosine Recall@1
+        verified: false
+      - type: cosine_recall@10
+        value: 0.47943181699630566
+        name: Cosine Recall@10
+        verified: false
+      - type: cosine_ndcg@10
+        value: 0.39366500753390565
+        name: Cosine Ndcg@10
+        verified: false
+      - type: cosine_mrr@10
+        value: 0.4746992063492062
+        name: Cosine Mrr@10
+        verified: false
+      - type: cosine_map@100
+        value: 0.3201718416893849
+        name: Cosine Map@100
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Normalize/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: last-checkpoint/1_Pooling/config.json
+- rfilename: last-checkpoint/2_Normalize/config.json
+- rfilename: last-checkpoint/README.md
+- rfilename: last-checkpoint/config.json
+- rfilename: last-checkpoint/config_sentence_transformers.json
+- rfilename: last-checkpoint/model.safetensors
+- rfilename: last-checkpoint/modules.json
+- rfilename: last-checkpoint/optimizer.pt
+- rfilename: last-checkpoint/rng_state_0.pth
+- rfilename: last-checkpoint/rng_state_1.pth
+- rfilename: last-checkpoint/scheduler.pt
+- rfilename: last-checkpoint/sentence_bert_config.json
+- rfilename: last-checkpoint/tokenizer.json
+- rfilename: last-checkpoint/tokenizer_config.json
+- rfilename: last-checkpoint/trainer_state.json
+- rfilename: last-checkpoint/training_args.bin
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: runs/events.out.tfevents.1791895380.67be5e9a566f.5998.0
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: training_args.bin
+spaces: []
+createdAt: '2026-10-06T13:16:46.000Z'
+safetensors:
+  parameters:
+    F32: 559890432
+  total: 559890432
+usedStorage: 20149250984
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 4479.2
+approxSizeMb: 2239.6
+fetchedAt: '2026-10-15T08:10:19.000Z'

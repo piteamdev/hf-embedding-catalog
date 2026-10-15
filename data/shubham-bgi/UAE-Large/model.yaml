@@ -21,7 +21,7 @@ tags:
 - text-embeddings-inference
 - endpoints_compatible
 - region:us
-downloads: 77
+downloads: 74
 likes: 0
 modelId: shubham-bgi/UAE-Large
 author: shubham-bgi
@@ -7236,20 +7236,10 @@ siblings:
 - rfilename: tokenizer.json
 - rfilename: tokenizer_config.json
 - rfilename: vocab.txt
-spaces:
-- mteb/leaderboard_legacy
-- SmileXing/leaderboard
-- sq66/leaderboard_legacy
-- yanciyuyu/1
-- Chengyanci/11
-- n8n-1/8
-- reader-1/1
-- lake-synctv/leaderboard
-- shiwan7788/leaderboard-uni
-- hhyz/Leaderboard
+spaces: []
 createdAt: '2024-01-30T20:13:36.000Z'
 usedStorage: 404
-downloadsAllTime: 482
+downloadsAllTime: 483
 inferenceProviderMapping: {}
 configJson:
   _name_or_path: UAE-Large-V1
@@ -7284,4 +7274,4 @@ onnxFiles:
   onnx/model_quantized.onnx: 0.0
 safetensorsSizeMb: 0.0
 approxSizeMb: 0.0
-fetchedAt: '2026-10-13T10:23:21.000Z'
+fetchedAt: '2026-10-15T08:10:19.000Z'

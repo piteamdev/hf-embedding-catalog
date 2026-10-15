@@ -1,0 +1,57 @@
+_id: 6ace5b0f662a21394a817d3d
+id: amithroy/lazarus-hand-tracking
+private: false
+pipeline_tag: feature-extraction
+tags:
+- joblib
+- hand-tracking
+- gesture-recognition
+- mouse-pointer
+- human-computer-interaction
+- mediapipe
+- lazarus-companion
+- windows-automation
+- feature-extraction
+- en
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: amithroy/lazarus-hand-tracking
+author: amithroy
+sha: 97a59bc188e4a040ae76b0210567e939ee651c37
+lastModified: '2026-10-14T01:29:18.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  language:
+  - en
+  license: mit
+  tags:
+  - hand-tracking
+  - gesture-recognition
+  - mouse-pointer
+  - human-computer-interaction
+  - mediapipe
+  - lazarus-companion
+  - windows-automation
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: gesture_dataset.json
+- rfilename: gesture_model.joblib
+- rfilename: gestures_config.json
+- rfilename: hand_landmarker.task
+spaces: []
+createdAt: '2026-10-13T16:23:43.000Z'
+usedStorage: 8255291
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-15T08:10:19.000Z'

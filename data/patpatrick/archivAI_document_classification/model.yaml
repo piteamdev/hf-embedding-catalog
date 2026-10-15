@@ -1,0 +1,64 @@
+_id: 6acc4cfcf21b7c4db67df6b8
+id: patpatrick/archivAI_document_classification
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- bertopic
+- topic-modeling
+- unsupervised-learning
+- document-clustering
+- document-archiving
+- human-in-the-loop
+- sentence-similarity
+- en
+- base_model:sentence-transformers/all-MiniLM-L6-v2
+- base_model:finetune:sentence-transformers/all-MiniLM-L6-v2
+- license:mit
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: patpatrick/archivAI_document_classification
+author: patpatrick
+sha: 8c6afba0441e4d7218f716e386d635865b02f021
+lastModified: '2026-10-15T05:12:05.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config: {}
+cardData:
+  license: mit
+  language:
+  - en
+  base_model:
+  - sentence-transformers/all-MiniLM-L6-v2
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  tags:
+  - bertopic
+  - topic-modeling
+  - unsupervised-learning
+  - document-clustering
+  - document-archiving
+  - human-in-the-loop
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+spaces: []
+createdAt: '2026-10-12T02:59:08.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-15T08:10:19.000Z'

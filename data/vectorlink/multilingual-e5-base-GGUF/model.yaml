@@ -1,0 +1,59 @@
+_id: 6ace8c134898bd7961d475cd
+id: vectorlink/multilingual-e5-base-GGUF
+private: false
+pipeline_tag: feature-extraction
+library_name: gguf
+tags:
+- gguf
+- feature-extraction
+- sentence-similarity
+- embeddings
+- base_model:intfloat/multilingual-e5-base
+- base_model:quantized:intfloat/multilingual-e5-base
+- license:mit
+- endpoints_compatible
+- region:us
+downloads: 40
+likes: 1
+modelId: vectorlink/multilingual-e5-base-GGUF
+author: vectorlink
+sha: 200e6ee86bf24294c977b0d3e04d4537e2dfd7a8
+lastModified: '2026-10-13T20:00:19.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  base_model: intfloat/multilingual-e5-base
+  library_name: gguf
+  tags:
+  - feature-extraction
+  - sentence-similarity
+  - embeddings
+  - gguf
+  pipeline_tag: feature-extraction
+gguf:
+  total: 277451520
+  architecture: bert
+  context_length: 512
+  causal: false
+  bos_token: <s>
+  eos_token: </s>
+  pooling_type: 1
+  totalFileSize: 303137504
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: multilingual-e5-base-Q8_0.gguf
+spaces: []
+createdAt: '2026-10-13T19:52:51.000Z'
+usedStorage: 303137504
+downloadsAllTime: 40
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-15T08:10:19.000Z'

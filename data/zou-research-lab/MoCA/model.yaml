@@ -1,0 +1,93 @@
+_id: 6acea6149ae86ab1bdd32f16
+id: zou-research-lab/MoCA
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- moca
+- feature-extraction
+- time-series
+- human-activity-recognition
+- accelerometer
+- gyroscope
+- wearable
+- masked-autoencoder
+- digital-health
+- custom_code
+- arxiv:2506.02260
+- license:cc-by-nc-4.0
+- region:us
+downloads: 17
+likes: 2
+modelId: zou-research-lab/MoCA
+author: zou-research-lab
+sha: 02d94b721efadd1f48e63d8274e9264bc0b084f5
+lastModified: '2026-10-13T22:04:04.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - MoCAModel
+  auto_map:
+    AutoConfig: modeling_moca.MoCAConfig
+    AutoModel: modeling_moca.MoCAModel
+    AutoModelForSequenceClassification: modeling_moca.MoCAForSequenceClassification
+  model_type: moca
+cardData:
+  license: cc-by-nc-4.0
+  library_name: transformers
+  pipeline_tag: feature-extraction
+  tags:
+  - time-series
+  - human-activity-recognition
+  - accelerometer
+  - gyroscope
+  - wearable
+  - masked-autoencoder
+  - digital-health
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_moca.MoCAModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: modeling_moca.py
+- rfilename: ucihar-classifier/config.json
+- rfilename: ucihar-classifier/model.safetensors
+- rfilename: ucihar-classifier/modeling_moca.py
+spaces: []
+createdAt: '2026-10-13T21:43:48.000Z'
+safetensors:
+  parameters:
+    F32: 110775572
+  total: 110775572
+usedStorage: 783641324
+downloadsAllTime: 17
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - MoCAModel
+  auto_map:
+    AutoConfig: modeling_moca.MoCAConfig
+    AutoModel: modeling_moca.MoCAModel
+    AutoModelForSequenceClassification: modeling_moca.MoCAForSequenceClassification
+  hidden_size: 768
+  layer_norm_eps: 1.0e-06
+  mlp_ratio: 4.0
+  model_type: moca
+  num_attention_heads: 12
+  num_channels: 6
+  num_hidden_layers: 12
+  patch_len: 20
+  seq_len: 200
+  transformers_version: 5.3.0
+onnxFiles: {}
+safetensorsSizeMb: 783.6
+approxSizeMb: 443.1
+fetchedAt: '2026-10-15T08:10:19.000Z'

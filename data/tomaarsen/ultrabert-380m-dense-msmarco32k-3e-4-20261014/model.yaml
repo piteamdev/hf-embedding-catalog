@@ -1,0 +1,252 @@
+_id: 6acf52534a2e25efd5154202
+id: tomaarsen/ultrabert-380m-dense-msmarco32k-3e-4-20261014
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- ultrabert
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:32768
+- loss:CachedMultipleNegativesRankingLoss
+- loss:MultipleNegativesRankingLoss
+- custom_code
+- en
+- arxiv:1908.10084
+- arxiv:2101.06983
+- arxiv:1807.03748
+- base_model:dmis-lab/UltraBERT-380M
+- base_model:finetune:dmis-lab/UltraBERT-380M
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: tomaarsen/ultrabert-380m-dense-msmarco32k-3e-4-20261014
+author: tomaarsen
+sha: a44e568f4491d17af17eacddae03a8b5a8b0af3e
+lastModified: '2026-10-14T10:13:38.000Z'
+gated: false
+disabled: false
+mask_token: <|mask|>
+widgetData:
+- source_sentence: how many calories in jim beam black
+  sentences:
+  - The current President pro tempore of the Senate is Utah Republican Orrin Hatch. Elected on January 6, 2015, he is the
+    90th person to serve in this office.
+  - 'There are 69 calories in a 1 fl oz serving of Jim Beam Bourbon. Calorie breakdown: 0% fat, 0% carbs, 0% protein.'
+  - 'There are 64 calories in a 1 oz serving of Black Velvet Whisky. Calorie breakdown: 0% fat, 0% carbs, 100% protein.'
+- source_sentence: calorie for coltons
+  sentences:
+  - "BERKLEY, Mich., May 3, 2012 â\x80\x94 CRDN, an international organization of textile restoration experts serving the\
+    \ insurance industry, has introduced a new corporate brand image, along with publicly launching its redesigned website\
+    \ and new mobile phone app."
+  - 'There are 235 calories in a 1 bottle serving of Mike''s The Classic Margarita Raspberry. Calorie breakdown: 0% fat, 100%
+    carbs, 0% protein.'
+  - 'There are 120 calories in a 1 roll serving of Colton''s Yeast Roll. Calorie breakdown: 8% fat, 82% carbs, 10% protein.'
+- source_sentence: when does pidgey evolve in pokemon planet
+  sentences:
+  - The flying-type and normal-type Pidgey Pokemon character evolves into a Pidgeotto starting at level 18. It evolves into
+    a Pidgeot at level 36.
+  - "Cry. Pidgey (Japanese: ã\x83\x9Dã\x83\x83ã\x83\x9D Poppo) is a Normal / Flying-type Pokemon pokÃ©mon introduced In Generation.\
+    \ i"
+  - 'There are 27 calories in 1 piece of Cheese Filled Ravioli. Calorie breakdown: 34% fat, 46% carbs, 19% protein.'
+- source_sentence: india and sydney time difference
+  sentences:
+  - Time difference between Sydney, Australia and New York, New York, USA. Sydney is 14 hours ahead of New York.
+  - The US Naval Academy is located in Annapolis, Maryland.
+  - 'Time difference between New Delhi, India and Sydney, Australia is: 5:30 hours. Sydney is 5:30 hours ahead of New Delhi.
+    When it is 9:00 am in New Delhi, it is 2:30 pm in Sydney.'
+- source_sentence: goldman sachs contact number
+  sentences:
+  - The Director of Supply Chain will be responsible for ensuring supply and availability of finished goods and services to
+    optimize customer services at the lowest... 5 days ago - save job - more... -
+  - The customer support phone number of Goldman Sachs Contact is 1-212-902-0300 (Click phone number to call).
+  - Goldman Sachs Bank USA is an FDIC insured institution located in New York, NY. It was founded in 1990 and has approximately
+    $122.68 billion in assets. Customers can open an account via one of its 5 branches.
+model-index: null
+config:
+  architectures:
+  - UltrabertModel
+  auto_map:
+    AutoConfig: configuration_ultrabert.UltrabertConfig
+    AutoModel: modeling_ultrabert.UltrabertModel
+    AutoModelForMaskedLM: modeling_ultrabert.UltrabertForMaskedLM
+    AutoModelForQuestionAnswering: modeling_ultrabert.UltrabertForQuestionAnswering
+    AutoModelForSequenceClassification: modeling_ultrabert.UltrabertForSequenceClassification
+    AutoModelForTokenClassification: modeling_ultrabert.UltrabertForTokenClassification
+  model_type: ultrabert
+  tokenizer_config:
+    bos_token: <|endoftext|>
+    eos_token: <|endoftext|>
+    mask_token: <|mask|>
+    pad_token: <|endoftext|>
+    sep_token: <|sep|>
+    unk_token: <|endoftext|>
+cardData:
+  language:
+  - en
+  license: apache-2.0
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:32768
+  - loss:CachedMultipleNegativesRankingLoss
+  - loss:MultipleNegativesRankingLoss
+  base_model: dmis-lab/UltraBERT-380M
+  widget:
+  - source_sentence: how many calories in jim beam black
+    sentences:
+    - The current President pro tempore of the Senate is Utah Republican Orrin Hatch. Elected on January 6, 2015, he is the
+      90th person to serve in this office.
+    - 'There are 69 calories in a 1 fl oz serving of Jim Beam Bourbon. Calorie breakdown: 0% fat, 0% carbs, 0% protein.'
+    - 'There are 64 calories in a 1 oz serving of Black Velvet Whisky. Calorie breakdown: 0% fat, 0% carbs, 100% protein.'
+  - source_sentence: calorie for coltons
+    sentences:
+    - "BERKLEY, Mich., May 3, 2012 â\x80\x94 CRDN, an international organization of textile restoration experts serving the\
+      \ insurance industry, has introduced a new corporate brand image, along with publicly launching its redesigned website\
+      \ and new mobile phone app."
+    - 'There are 235 calories in a 1 bottle serving of Mike''s The Classic Margarita Raspberry. Calorie breakdown: 0% fat,
+      100% carbs, 0% protein.'
+    - 'There are 120 calories in a 1 roll serving of Colton''s Yeast Roll. Calorie breakdown: 8% fat, 82% carbs, 10% protein.'
+  - source_sentence: when does pidgey evolve in pokemon planet
+    sentences:
+    - The flying-type and normal-type Pidgey Pokemon character evolves into a Pidgeotto starting at level 18. It evolves into
+      a Pidgeot at level 36.
+    - "Cry. Pidgey (Japanese: ã\x83\x9Dã\x83\x83ã\x83\x9D Poppo) is a Normal / Flying-type Pokemon pokÃ©mon introduced In\
+      \ Generation. i"
+    - 'There are 27 calories in 1 piece of Cheese Filled Ravioli. Calorie breakdown: 34% fat, 46% carbs, 19% protein.'
+  - source_sentence: india and sydney time difference
+    sentences:
+    - Time difference between Sydney, Australia and New York, New York, USA. Sydney is 14 hours ahead of New York.
+    - The US Naval Academy is located in Annapolis, Maryland.
+    - 'Time difference between New Delhi, India and Sydney, Australia is: 5:30 hours. Sydney is 5:30 hours ahead of New Delhi.
+      When it is 9:00 am in New Delhi, it is 2:30 pm in Sydney.'
+  - source_sentence: goldman sachs contact number
+    sentences:
+    - The Director of Supply Chain will be responsible for ensuring supply and availability of finished goods and services
+      to optimize customer services at the lowest... 5 days ago - save job - more... -
+    - The customer support phone number of Goldman Sachs Contact is 1-212-902-0300 (Click phone number to call).
+    - Goldman Sachs Bank USA is an FDIC insured institution located in New York, NY. It was founded in 1990 and has approximately
+      $122.68 billion in assets. Customers can open an account via one of its 5 branches.
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Normalize/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: configuration_ultrabert.py
+- rfilename: experiment.json
+- rfilename: model.safetensors
+- rfilename: modeling_ultrabert.py
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: source_manifest.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: training_args.bin
+spaces: []
+createdAt: '2026-10-14T09:58:43.000Z'
+safetensors:
+  parameters:
+    F32: 377537536
+  total: 377537536
+usedStorage: 6040700369
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - UltrabertModel
+  attention_bias: false
+  attention_dropout: 0.0
+  attention_windows:
+  - 128
+  - 128
+  - null
+  - 128
+  - 128
+  - null
+  - 128
+  - 128
+  - null
+  - 128
+  - 128
+  - null
+  - 128
+  - 128
+  - null
+  - 128
+  - 128
+  - null
+  - 128
+  - 128
+  - null
+  - 128
+  - 128
+  - null
+  auto_map:
+    AutoConfig: configuration_ultrabert.UltrabertConfig
+    AutoModel: modeling_ultrabert.UltrabertModel
+    AutoModelForMaskedLM: modeling_ultrabert.UltrabertForMaskedLM
+    AutoModelForQuestionAnswering: modeling_ultrabert.UltrabertForQuestionAnswering
+    AutoModelForSequenceClassification: modeling_ultrabert.UltrabertForSequenceClassification
+    AutoModelForTokenClassification: modeling_ultrabert.UltrabertForTokenClassification
+  bos_token_id: 0
+  classifier_dropout: 0.0
+  dtype: float32
+  eos_token_id: 0
+  head_dim: 128
+  hidden_act: silu
+  hidden_size: 1024
+  initializer_range: 0.02
+  intermediate_size: 3072
+  mlp_bias: false
+  model_type: ultrabert
+  num_attention_heads: 8
+  num_hidden_layers: 24
+  num_key_value_heads: 8
+  pad_token_id: 0
+  prediction_head_size: 1024
+  rms_norm_eps: 1.0e-06
+  rope_theta:
+  - 10000.0
+  - 10000.0
+  - 2560000.0
+  - 10000.0
+  - 10000.0
+  - 2560000.0
+  - 10000.0
+  - 10000.0
+  - 2560000.0
+  - 10000.0
+  - 10000.0
+  - 2560000.0
+  - 10000.0
+  - 10000.0
+  - 2560000.0
+  - 10000.0
+  - 10000.0
+  - 2560000.0
+  - 10000.0
+  - 10000.0
+  - 2560000.0
+  - 10000.0
+  - 10000.0
+  - 2560000.0
+  tie_word_embeddings: false
+  transformers_version: 5.16.1
+  vocab_size: 49152
+onnxFiles: {}
+safetensorsSizeMb: 1510.2
+approxSizeMb: 1510.2
+fetchedAt: '2026-10-15T08:10:19.000Z'

@@ -1,0 +1,168 @@
+_id: 6ad0473a2e58c851faa42fda
+id: pastel-labs/UltraBERT-Embed-150M-ONNX
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers.js
+tags:
+- transformers.js
+- onnx
+- ultrabert
+- feature-extraction
+- custom_code
+- en
+- base_model:dmis-lab/UltraBERT-Embed-150M
+- base_model:quantized:dmis-lab/UltraBERT-Embed-150M
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: pastel-labs/UltraBERT-Embed-150M-ONNX
+author: pastel-labs
+sha: 932b2b7639699d25bb60621b74897d665d238fd5
+lastModified: '2026-10-15T04:19:20.000Z'
+gated: false
+disabled: false
+mask_token: <|mask|>
+model-index: null
+config:
+  architectures:
+  - UltrabertModel
+  auto_map:
+    AutoConfig: configuration_ultrabert.UltrabertConfig
+    AutoModel: modeling_ultrabert.UltrabertModel
+    AutoModelForMaskedLM: modeling_ultrabert.UltrabertForMaskedLM
+    AutoModelForQuestionAnswering: modeling_ultrabert.UltrabertForQuestionAnswering
+    AutoModelForSequenceClassification: modeling_ultrabert.UltrabertForSequenceClassification
+    AutoModelForTokenClassification: modeling_ultrabert.UltrabertForTokenClassification
+  model_type: ultrabert
+  tokenizer_config:
+    bos_token: <|endoftext|>
+    eos_token: <|endoftext|>
+    mask_token: <|mask|>
+    pad_token: <|endoftext|>
+    sep_token: <|sep|>
+    unk_token: <|endoftext|>
+cardData:
+  license: apache-2.0
+  language:
+  - en
+  base_model: dmis-lab/UltraBERT-Embed-150M
+  library_name: transformers.js
+  pipeline_tag: feature-extraction
+  tags:
+  - onnx
+  - transformers.js
+  - ultrabert
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_ultrabert.UltrabertModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: configuration_ultrabert.py
+- rfilename: modeling_ultrabert.py
+- rfilename: modules.json
+- rfilename: onnx/model.onnx
+- rfilename: onnx/model_fp16.onnx
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-15T03:23:38.000Z'
+usedStorage: 907553855
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - UltrabertModel
+  attention_bias: false
+  attention_dropout: 0.0
+  attention_windows:
+  - 128
+  - 128
+  - null
+  - 128
+  - 128
+  - null
+  - 128
+  - 128
+  - null
+  - 128
+  - 128
+  - null
+  - 128
+  - 128
+  - null
+  - 128
+  - 128
+  - null
+  - 128
+  - 128
+  - null
+  - 128
+  - 128
+  - null
+  auto_map:
+    AutoConfig: configuration_ultrabert.UltrabertConfig
+    AutoModel: modeling_ultrabert.UltrabertModel
+    AutoModelForMaskedLM: modeling_ultrabert.UltrabertForMaskedLM
+    AutoModelForQuestionAnswering: modeling_ultrabert.UltrabertForQuestionAnswering
+    AutoModelForSequenceClassification: modeling_ultrabert.UltrabertForSequenceClassification
+    AutoModelForTokenClassification: modeling_ultrabert.UltrabertForTokenClassification
+  bos_token_id: 0
+  classifier_dropout: 0.0
+  dtype: float32
+  eos_token_id: 0
+  head_dim: 128
+  hidden_act: silu
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 1024
+  mlp_bias: false
+  model_type: ultrabert
+  num_attention_heads: 6
+  num_hidden_layers: 24
+  num_key_value_heads: 6
+  pad_token_id: 0
+  prediction_head_size: 768
+  rms_norm_eps: 1.0e-06
+  rope_theta:
+  - 10000.0
+  - 10000.0
+  - 2560000.0
+  - 10000.0
+  - 10000.0
+  - 2560000.0
+  - 10000.0
+  - 10000.0
+  - 2560000.0
+  - 10000.0
+  - 10000.0
+  - 2560000.0
+  - 10000.0
+  - 10000.0
+  - 2560000.0
+  - 10000.0
+  - 10000.0
+  - 2560000.0
+  - 10000.0
+  - 10000.0
+  - 2560000.0
+  - 10000.0
+  - 10000.0
+  - 2560000.0
+  tie_word_embeddings: false
+  transformers_version: 5.16.1
+  use_cache: false
+  vocab_size: 49152
+onnxFiles:
+  onnx/model.onnx: 604.6
+  onnx/model_fp16.onnx: 302.9
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-15T08:10:19.000Z'

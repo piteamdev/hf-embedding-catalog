@@ -1,0 +1,233 @@
+_id: 69e4aaac0df119ea17875fdc
+id: Tumo505/SSL-ECG-Classification-model-card
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- ecg_cnn_multilabel
+- feature-extraction
+- ecg
+- time-series
+- multi-label-classification
+- self-supervised-learning
+- custom_code
+- en
+- dataset:ptb-xl
+- arxiv:2006.07733
+- doi:10.57967/hf/8469
+- license:apache-2.0
+- region:us
+downloads: 767
+likes: 0
+modelId: Tumo505/SSL-ECG-Classification-model-card
+author: Tumo505
+sha: 6ec2ee1a1badd9508f9c1219fb07de38f3f6936b
+lastModified: '2026-10-14T18:38:02.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - ECGModel
+  auto_map:
+    AutoConfig: configuration_ecg.ECGConfig
+    AutoModel: modeling_ecg.ECGModel
+  model_type: ecg_cnn_multilabel
+cardData:
+  language: en
+  license: apache-2.0
+  library_name: transformers
+  tags:
+  - ecg
+  - time-series
+  - multi-label-classification
+  - self-supervised-learning
+  - custom_code
+  datasets:
+  - ptb-xl
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_ecg.ECGModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: RELEASE_INSTRUCTIONS.txt
+- rfilename: config.json
+- rfilename: configuration_ecg.py
+- rfilename: inference.py
+- rfilename: model.safetensors
+- rfilename: modeling_ecg.py
+- rfilename: models/byol_domain_finetuned/seed_102/config.json
+- rfilename: models/byol_domain_finetuned/seed_102/configuration_ecg.py
+- rfilename: models/byol_domain_finetuned/seed_102/model.safetensors
+- rfilename: models/byol_domain_finetuned/seed_102/modeling_ecg.py
+- rfilename: models/byol_domain_finetuned/seed_102/provenance.json
+- rfilename: models/byol_domain_finetuned/seed_112/config.json
+- rfilename: models/byol_domain_finetuned/seed_112/configuration_ecg.py
+- rfilename: models/byol_domain_finetuned/seed_112/model.safetensors
+- rfilename: models/byol_domain_finetuned/seed_112/modeling_ecg.py
+- rfilename: models/byol_domain_finetuned/seed_112/provenance.json
+- rfilename: models/byol_domain_finetuned/seed_122/config.json
+- rfilename: models/byol_domain_finetuned/seed_122/configuration_ecg.py
+- rfilename: models/byol_domain_finetuned/seed_122/model.safetensors
+- rfilename: models/byol_domain_finetuned/seed_122/modeling_ecg.py
+- rfilename: models/byol_domain_finetuned/seed_122/provenance.json
+- rfilename: models/byol_domain_finetuned/seed_132/config.json
+- rfilename: models/byol_domain_finetuned/seed_132/configuration_ecg.py
+- rfilename: models/byol_domain_finetuned/seed_132/model.safetensors
+- rfilename: models/byol_domain_finetuned/seed_132/modeling_ecg.py
+- rfilename: models/byol_domain_finetuned/seed_132/provenance.json
+- rfilename: models/byol_domain_finetuned/seed_42/config.json
+- rfilename: models/byol_domain_finetuned/seed_42/configuration_ecg.py
+- rfilename: models/byol_domain_finetuned/seed_42/model.safetensors
+- rfilename: models/byol_domain_finetuned/seed_42/modeling_ecg.py
+- rfilename: models/byol_domain_finetuned/seed_42/provenance.json
+- rfilename: models/byol_domain_finetuned/seed_52/config.json
+- rfilename: models/byol_domain_finetuned/seed_52/configuration_ecg.py
+- rfilename: models/byol_domain_finetuned/seed_52/model.safetensors
+- rfilename: models/byol_domain_finetuned/seed_52/modeling_ecg.py
+- rfilename: models/byol_domain_finetuned/seed_52/provenance.json
+- rfilename: models/byol_domain_finetuned/seed_62/config.json
+- rfilename: models/byol_domain_finetuned/seed_62/configuration_ecg.py
+- rfilename: models/byol_domain_finetuned/seed_62/model.safetensors
+- rfilename: models/byol_domain_finetuned/seed_62/modeling_ecg.py
+- rfilename: models/byol_domain_finetuned/seed_62/provenance.json
+- rfilename: models/byol_domain_finetuned/seed_72/config.json
+- rfilename: models/byol_domain_finetuned/seed_72/configuration_ecg.py
+- rfilename: models/byol_domain_finetuned/seed_72/model.safetensors
+- rfilename: models/byol_domain_finetuned/seed_72/modeling_ecg.py
+- rfilename: models/byol_domain_finetuned/seed_72/provenance.json
+- rfilename: models/byol_domain_finetuned/seed_82/config.json
+- rfilename: models/byol_domain_finetuned/seed_82/configuration_ecg.py
+- rfilename: models/byol_domain_finetuned/seed_82/model.safetensors
+- rfilename: models/byol_domain_finetuned/seed_82/modeling_ecg.py
+- rfilename: models/byol_domain_finetuned/seed_82/provenance.json
+- rfilename: models/byol_domain_finetuned/seed_92/config.json
+- rfilename: models/byol_domain_finetuned/seed_92/configuration_ecg.py
+- rfilename: models/byol_domain_finetuned/seed_92/model.safetensors
+- rfilename: models/byol_domain_finetuned/seed_92/modeling_ecg.py
+- rfilename: models/byol_domain_finetuned/seed_92/provenance.json
+- rfilename: models/simclr_domain_finetuned/seed_102/config.json
+- rfilename: models/simclr_domain_finetuned/seed_102/configuration_ecg.py
+- rfilename: models/simclr_domain_finetuned/seed_102/model.safetensors
+- rfilename: models/simclr_domain_finetuned/seed_102/modeling_ecg.py
+- rfilename: models/simclr_domain_finetuned/seed_102/provenance.json
+- rfilename: models/simclr_domain_finetuned/seed_112/config.json
+- rfilename: models/simclr_domain_finetuned/seed_112/configuration_ecg.py
+- rfilename: models/simclr_domain_finetuned/seed_112/model.safetensors
+- rfilename: models/simclr_domain_finetuned/seed_112/modeling_ecg.py
+- rfilename: models/simclr_domain_finetuned/seed_112/provenance.json
+- rfilename: models/simclr_domain_finetuned/seed_122/config.json
+- rfilename: models/simclr_domain_finetuned/seed_122/configuration_ecg.py
+- rfilename: models/simclr_domain_finetuned/seed_122/model.safetensors
+- rfilename: models/simclr_domain_finetuned/seed_122/modeling_ecg.py
+- rfilename: models/simclr_domain_finetuned/seed_122/provenance.json
+- rfilename: models/simclr_domain_finetuned/seed_132/config.json
+- rfilename: models/simclr_domain_finetuned/seed_132/configuration_ecg.py
+- rfilename: models/simclr_domain_finetuned/seed_132/model.safetensors
+- rfilename: models/simclr_domain_finetuned/seed_132/modeling_ecg.py
+- rfilename: models/simclr_domain_finetuned/seed_132/provenance.json
+- rfilename: models/simclr_domain_finetuned/seed_42/config.json
+- rfilename: models/simclr_domain_finetuned/seed_42/configuration_ecg.py
+- rfilename: models/simclr_domain_finetuned/seed_42/model.safetensors
+- rfilename: models/simclr_domain_finetuned/seed_42/modeling_ecg.py
+- rfilename: models/simclr_domain_finetuned/seed_42/provenance.json
+- rfilename: models/simclr_domain_finetuned/seed_52/config.json
+- rfilename: models/simclr_domain_finetuned/seed_52/configuration_ecg.py
+- rfilename: models/simclr_domain_finetuned/seed_52/model.safetensors
+- rfilename: models/simclr_domain_finetuned/seed_52/modeling_ecg.py
+- rfilename: models/simclr_domain_finetuned/seed_52/provenance.json
+- rfilename: models/simclr_domain_finetuned/seed_62/config.json
+- rfilename: models/simclr_domain_finetuned/seed_62/configuration_ecg.py
+- rfilename: models/simclr_domain_finetuned/seed_62/model.safetensors
+- rfilename: models/simclr_domain_finetuned/seed_62/modeling_ecg.py
+- rfilename: models/simclr_domain_finetuned/seed_62/provenance.json
+- rfilename: models/simclr_domain_finetuned/seed_72/config.json
+- rfilename: models/simclr_domain_finetuned/seed_72/configuration_ecg.py
+- rfilename: models/simclr_domain_finetuned/seed_72/model.safetensors
+- rfilename: models/simclr_domain_finetuned/seed_72/modeling_ecg.py
+- rfilename: models/simclr_domain_finetuned/seed_72/provenance.json
+- rfilename: models/simclr_domain_finetuned/seed_82/config.json
+- rfilename: models/simclr_domain_finetuned/seed_82/configuration_ecg.py
+- rfilename: models/simclr_domain_finetuned/seed_82/model.safetensors
+- rfilename: models/simclr_domain_finetuned/seed_82/modeling_ecg.py
+- rfilename: models/simclr_domain_finetuned/seed_82/provenance.json
+- rfilename: models/simclr_domain_finetuned/seed_92/config.json
+- rfilename: models/simclr_domain_finetuned/seed_92/configuration_ecg.py
+- rfilename: models/simclr_domain_finetuned/seed_92/model.safetensors
+- rfilename: models/simclr_domain_finetuned/seed_92/modeling_ecg.py
+- rfilename: models/simclr_domain_finetuned/seed_92/provenance.json
+- rfilename: provenance.json
+- rfilename: release.json
+- rfilename: release_manifest.json
+- rfilename: requirements.txt
+- rfilename: study_metrics.json
+- rfilename: upload.py
+- rfilename: validation_report.json
+spaces:
+- Tumo505/SSL-ECG-Classification
+createdAt: '2026-04-19T10:13:00.000Z'
+safetensors:
+  parameters:
+    F32: 541701
+  total: 541701
+usedStorage: 45583164
+downloadsAllTime: 918
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - ECGModel
+  auto_map:
+    AutoConfig: configuration_ecg.ECGConfig
+    AutoModel: modeling_ecg.ECGModel
+  best_epoch: 18
+  classification_threshold: 0.5
+  framework: simclr
+  id2label:
+    '0': NORM
+    '1': CD
+    '2': HYP
+    '3': MI
+    '4': STTC
+  input_channels: 12
+  input_samples: 1000
+  label2id:
+    CD: 1
+    HYP: 2
+    MI: 3
+    NORM: 0
+    STTC: 4
+  labelled_fraction: 0.1
+  labelled_records: 1708
+  lead_order:
+  - I
+  - II
+  - III
+  - aVR
+  - aVL
+  - aVF
+  - V1
+  - V2
+  - V3
+  - V4
+  - V5
+  - V6
+  model_type: ecg_cnn_multilabel
+  normalization: per_record_per_lead_population_std_v1
+  normalization_epsilon: 1.0e-06
+  policy: domain
+  problem_type: multi_label_classification
+  sampling_rate: 100
+  study_fingerprint: 46c635f454953f181841c551333e6c3048947857e0fbdc257442cb142fee604a
+  training_seed: 42
+  transformers_version: 5.19.0
+  width: 64
+  freeze_encoder: false
+onnxFiles: {}
+safetensorsSizeMb: 45.6
+approxSizeMb: 2.2
+fetchedAt: '2026-10-15T08:10:19.000Z'

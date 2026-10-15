@@ -1,0 +1,58 @@
+_id: 6aceb20a5e3438e7c37623ec
+id: zeromodels/multi-qa-mpnet-base-dot-v1
+private: false
+pipeline_tag: sentence-similarity
+library_name: zeromodels
+tags:
+- zeromodels
+- keras
+- sentence-transformers
+- sentence-similarity
+- mpnet
+- text-embeddings
+- base_model:sentence-transformers/multi-qa-mpnet-base-dot-v1
+- base_model:finetune:sentence-transformers/multi-qa-mpnet-base-dot-v1
+- region:us
+downloads: 6
+likes: 0
+modelId: zeromodels/multi-qa-mpnet-base-dot-v1
+author: zeromodels
+sha: 8316b15ce97a1da8a42445147837317dbc5e6d07
+lastModified: '2026-10-13T23:18:42.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config: {}
+cardData:
+  pipeline_tag: sentence-similarity
+  base_model: sentence-transformers/multi-qa-mpnet-base-dot-v1
+  library_name: zeromodels
+  tags:
+  - keras
+  - zeromodels
+  - sentence-transformers
+  - sentence-similarity
+  - mpnet
+  - text-embeddings
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: model.weights.h5
+- rfilename: tokenizer.json
+- rfilename: zm_config.json
+spaces: []
+createdAt: '2026-10-13T22:34:50.000Z'
+usedStorage: 436037960
+downloadsAllTime: 6
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-15T08:10:19.000Z'

@@ -1,0 +1,88 @@
+_id: 6ad191ca4ab4104a4694d72e
+id: ManyCamDS/ToarimEmbedder
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- toarim
+- feature-extraction
+- sentence-similarity
+- stateful-embeddings
+- nested-learning
+- rag
+- industrial-rag
+- cpu-optimized
+- sherman-morrison
+- low-rank-svd
+- custom_code
+- es
+- en
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: ManyCamDS/ToarimEmbedder
+author: ManyCamDS
+sha: fe48849cbbd097dfd9eae3ba63ef9762820aefd7
+lastModified: '2026-10-16T02:54:39.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - TóarimEmbeddingModel
+  model_type: toarim
+  auto_map:
+    AutoModel: toarim_embedder.TóarimEmbeddingModel
+cardData:
+  language:
+  - es
+  - en
+  license: apache-2.0
+  tags:
+  - feature-extraction
+  - sentence-similarity
+  - stateful-embeddings
+  - nested-learning
+  - rag
+  - industrial-rag
+  - cpu-optimized
+  - sherman-morrison
+  - low-rank-svd
+  pipeline_tag: feature-extraction
+  library_name: transformers
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: toarim_embedder.TóarimEmbeddingModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: toarim_embedder.py
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-10-16T02:54:02.000Z'
+safetensors:
+  parameters:
+    F32: 24305282
+  total: 24305282
+usedStorage: 97222872
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - TóarimEmbeddingModel
+  model_type: toarim
+  vocab_size: 30522
+  embed_dim: 768
+  latent_k: 128
+  auto_map:
+    AutoModel: toarim_embedder.TóarimEmbeddingModel
+onnxFiles: {}
+safetensorsSizeMb: 97.2
+approxSizeMb: 97.2
+fetchedAt: '2026-10-16T08:03:31.000Z'

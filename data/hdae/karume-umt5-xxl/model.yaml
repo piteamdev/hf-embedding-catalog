@@ -1,0 +1,81 @@
+_id: 6ad184c19f2f06b3b574094b
+id: hdae/karume-umt5-xxl
+private: false
+pipeline_tag: feature-extraction
+library_name: karume
+tags:
+- karume
+- feature-extraction
+- text-encoder
+- umt5
+- wan
+- webgpu
+- base_model:google/umt5-xxl
+- base_model:quantized:google/umt5-xxl
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: hdae/karume-umt5-xxl
+author: hdae
+sha: c66a8db12e005ba37027f2afa5b15efee4a681a7
+lastModified: '2026-10-16T02:01:52.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: karume
+  pipeline_tag: feature-extraction
+  base_model: google/umt5-xxl
+  base_model_relation: quantized
+  license: apache-2.0
+  tags:
+  - feature-extraction
+  - text-encoder
+  - umt5
+  - wan
+  - webgpu
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE.md
+- rfilename: NOTICE.md
+- rfilename: README.md
+- rfilename: karume.json
+- rfilename: xxl/text_encoder/model.i8-00001-of-00026.krm
+- rfilename: xxl/text_encoder/model.i8-00002-of-00026.krm
+- rfilename: xxl/text_encoder/model.i8-00003-of-00026.krm
+- rfilename: xxl/text_encoder/model.i8-00004-of-00026.krm
+- rfilename: xxl/text_encoder/model.i8-00005-of-00026.krm
+- rfilename: xxl/text_encoder/model.i8-00006-of-00026.krm
+- rfilename: xxl/text_encoder/model.i8-00007-of-00026.krm
+- rfilename: xxl/text_encoder/model.i8-00008-of-00026.krm
+- rfilename: xxl/text_encoder/model.i8-00009-of-00026.krm
+- rfilename: xxl/text_encoder/model.i8-00010-of-00026.krm
+- rfilename: xxl/text_encoder/model.i8-00011-of-00026.krm
+- rfilename: xxl/text_encoder/model.i8-00012-of-00026.krm
+- rfilename: xxl/text_encoder/model.i8-00013-of-00026.krm
+- rfilename: xxl/text_encoder/model.i8-00014-of-00026.krm
+- rfilename: xxl/text_encoder/model.i8-00015-of-00026.krm
+- rfilename: xxl/text_encoder/model.i8-00016-of-00026.krm
+- rfilename: xxl/text_encoder/model.i8-00017-of-00026.krm
+- rfilename: xxl/text_encoder/model.i8-00018-of-00026.krm
+- rfilename: xxl/text_encoder/model.i8-00019-of-00026.krm
+- rfilename: xxl/text_encoder/model.i8-00020-of-00026.krm
+- rfilename: xxl/text_encoder/model.i8-00021-of-00026.krm
+- rfilename: xxl/text_encoder/model.i8-00022-of-00026.krm
+- rfilename: xxl/text_encoder/model.i8-00023-of-00026.krm
+- rfilename: xxl/text_encoder/model.i8-00024-of-00026.krm
+- rfilename: xxl/text_encoder/model.i8-00025-of-00026.krm
+- rfilename: xxl/text_encoder/model.i8-00026-of-00026.krm
+- rfilename: xxl/tokenizer/tokenizer.json
+spaces: []
+createdAt: '2026-10-16T01:58:25.000Z'
+usedStorage: 5686920763
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-16T08:03:31.000Z'

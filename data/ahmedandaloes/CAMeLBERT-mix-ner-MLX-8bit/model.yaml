@@ -1,0 +1,111 @@
+_id: 6ad0ce64ff4e577a22842f1a
+id: ahmedandaloes/CAMeLBERT-mix-ner-MLX-8bit
+private: false
+pipeline_tag: feature-extraction
+library_name: mlx
+tags:
+- mlx
+- safetensors
+- bert
+- feature-extraction
+- ar
+- base_model:CAMeL-Lab/bert-base-arabic-camelbert-mix-ner
+- base_model:finetune:CAMeL-Lab/bert-base-arabic-camelbert-mix-ner
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: ahmedandaloes/CAMeLBERT-mix-ner-MLX-8bit
+author: ahmedandaloes
+sha: 1cbe9460c26f72a82a4bc0e4a3d986ef2cae79a0
+lastModified: '2026-10-15T13:00:34.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  architectures:
+  - BertForTokenClassification
+  model_type: bert
+  tokenizer_config: {}
+cardData:
+  library_name: mlx
+  pipeline_tag: feature-extraction
+  base_model: CAMeL-Lab/bert-base-arabic-camelbert-mix-ner
+  language:
+  - ar
+  license: apache-2.0
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer_config.json
+- rfilename: validation-mlx.json
+- rfilename: vocab.txt
+spaces: []
+createdAt: '2026-10-15T13:00:20.000Z'
+safetensors:
+  parameters:
+    F32: 23556105
+    U32: 84941568
+  total: 108497673
+usedStorage: 189822226
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertForTokenClassification
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  id2label:
+    '0': B-LOC
+    '1': B-MISC
+    '2': B-ORG
+    '3': B-PERS
+    '4': I-LOC
+    '5': I-MISC
+    '6': I-ORG
+    '7': I-PERS
+    '8': O
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  label2id:
+    B-LOC: 0
+    B-MISC: 1
+    B-ORG: 2
+    B-PERS: 3
+    I-LOC: 4
+    I-MISC: 5
+    I-ORG: 6
+    I-PERS: 7
+    O: 8
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.19.0
+  type_vocab_size: 2
+  use_cache: true
+  vocab_size: 30000
+  quantization:
+    group_size: 64
+    bits: 8
+onnxFiles: {}
+safetensorsSizeMb: 189.8
+approxSizeMb: 434.0
+fetchedAt: '2026-10-16T08:03:31.000Z'

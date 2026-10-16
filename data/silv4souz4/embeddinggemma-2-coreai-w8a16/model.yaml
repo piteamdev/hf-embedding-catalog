@@ -1,0 +1,194 @@
+_id: 6ad12cdec51f1a47f85c8c61
+id: silv4souz4/embeddinggemma-2-coreai-w8a16
+private: false
+pipeline_tag: feature-extraction
+library_name: coreai
+tags:
+- coreai
+- embeddinggemma
+- gemma4
+- embedding
+- multimodal-embedding
+- sentence-similarity
+- apple-silicon
+- on-device
+- int8
+- w8a16
+- feature-extraction
+- multilingual
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: silv4souz4/embeddinggemma-2-coreai-w8a16
+author: silv4souz4
+sha: 8ef8d51143175ecd87af1cc22a104685cbbbb514
+lastModified: '2026-10-15T19:45:03.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  tokenizer_config:
+    bos_token: <bos>
+    eos_token: <eos>
+    mask_token: <mask>
+    pad_token: <pad>
+    unk_token: <unk>
+  chat_template_jinja: '{%- for msg in messages if msg.get(''role'') == ''system'' -%}{%- if msg.get(''content'') is string
+    -%}{{ msg[''content''] }}{%- else -%}{%- for item in msg[''content''] if item.get(''type'') == ''text'' -%}{{ item[''text'']
+    }}{%- endfor -%}{%- endif -%}{%- endfor -%}{%- for msg in messages if msg.get(''role'') != ''system'' -%}{%- if msg.get(''content'')
+    is string -%}{{ msg[''content''] }}{%- else -%}{%- set existing_text = msg[''content''] | selectattr(''type'', ''equalto'',
+    ''text'') | map(attribute=''text'') | join -%}{%- set has_manual_placeholders = (''<|image|>'' in existing_text) or (''<|video|>''
+    in existing_text) or (''<|audio|>'' in existing_text) -%}{%- for item in msg[''content''] -%}{%- if item.get(''type'')
+    == ''text'' -%}{{ item[''text''] }}{%- elif not has_manual_placeholders and item.get(''type'') == ''image'' -%}<|image|>{%-
+    elif not has_manual_placeholders and item.get(''type'') == ''video'' -%}<|video|>{%- elif not has_manual_placeholders
+    and item.get(''type'') == ''audio'' -%}<|audio|>{%- endif -%}{%- endfor -%}{%- endif -%}{%- endfor -%}'
+cardData:
+  license: apache-2.0
+  library_name: coreai
+  pipeline_tag: feature-extraction
+  base_model: google/embeddinggemma-2
+  base_model_relation: quantized
+  language:
+  - multilingual
+  tags:
+  - embeddinggemma
+  - gemma4
+  - embedding
+  - multimodal-embedding
+  - sentence-similarity
+  - coreai
+  - apple-silicon
+  - on-device
+  - int8
+  - w8a16
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: SHA256SUMS.txt
+- rfilename: chat_template.jinja
+- rfilename: config.json
+- rfilename: embeddinggemma2_audio_mel.npz
+- rfilename: embeddinggemma2_audio_w8a16.aimodel/main.hash
+- rfilename: embeddinggemma2_audio_w8a16.aimodel/main.mlirb
+- rfilename: embeddinggemma2_audio_w8a16.aimodel/metadata.json
+- rfilename: embeddinggemma2_embed_tokens_int8.npz
+- rfilename: embeddinggemma2_text_w8a16.aimodel/main.hash
+- rfilename: embeddinggemma2_text_w8a16.aimodel/main.mlirb
+- rfilename: embeddinggemma2_text_w8a16.aimodel/metadata.json
+- rfilename: embeddinggemma2_vision_pos_table.npz
+- rfilename: embeddinggemma2_vision_w8a16.aimodel/main.hash
+- rfilename: embeddinggemma2_vision_w8a16.aimodel/main.mlirb
+- rfilename: embeddinggemma2_vision_w8a16.aimodel/metadata.json
+- rfilename: host/embeddinggemma2_coreai_host.py
+- rfilename: preprocessor_config.json
+- rfilename: processor_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-15T19:43:26.000Z'
+usedStorage: 888365120
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  library_name: coreai
+  format: Apple Core AI portable .aimodel
+  base_model: google/embeddinggemma-2
+  architecture:
+    name: EmbeddingGemma 2 (Gemma 4 based multimodal embedder)
+    text: 24-layer bidirectional encoder, hidden 512, per-layer inputs, 4 heads, local window 512 (+4 global layers), mean
+      pooling, projection 512 -> 768
+    vision: 16-layer ViT, hidden 768, 16x16 patches, axial 2-D RoPE, 3x3 pooling
+    audio: 12-layer Conformer, hidden 1024, local attention (12 frames), 128 log-mel
+    embedding_dim: 768
+    matryoshka_dims:
+    - 768
+    - 512
+    - 256
+    - 128
+  quantization:
+    method: int8 symmetric weights in blocks of 32 (W8A16)
+    layers: all nn.Linear (convolutions of the audio subsampling in fp16)
+    embedding: int8 per row with fp16 scale (host-side gather)
+    activations: float16 (RMSNorm scaled by the row maximum)
+  minimum_os:
+    macOS: '27.0'
+    iOS: 27.0 (untested)
+  files:
+    text: embeddinggemma2_text_w8a16.aimodel
+    vision: embeddinggemma2_vision_w8a16.aimodel
+    audio: embeddinggemma2_audio_w8a16.aimodel
+    embedding_table: embeddinggemma2_embed_tokens_int8.npz
+    vision_position_table: embeddinggemma2_vision_pos_table.npz
+    audio_mel: embeddinggemma2_audio_mel.npz
+  functions:
+    embeddinggemma2_texto_l128_w8a16_g32:
+      inputs:
+        x: '[1,128,512] inputs_embeds'
+        valid: '[1,128] 1 = real token'
+      outputs:
+        emb: '[1,768] mean over valid tokens, L2-normalised'
+    embeddinggemma2_texto_l512_w8a16_g32:
+      inputs:
+        x: '[1,512,512] inputs_embeds'
+        valid: '[1,512] 1 = real token'
+      outputs:
+        emb: '[1,768] mean over valid tokens, L2-normalised'
+    embeddinggemma2_texto_l2048_w8a16_g32:
+      inputs:
+        x: '[1,2048,512] inputs_embeds'
+        valid: '[1,2048] 1 = real token'
+      outputs:
+        emb: '[1,768] mean over valid tokens, L2-normalised'
+    embeddinggemma2_visao_p2520_w8a16_g32:
+      inputs:
+        pv: '[1,2520,768]'
+        pos_emb: '[1,2520,768]'
+        cos: '[1,2520,64]'
+        sin: '[1,2520,64]'
+        valid: '[1,2520]'
+        pool: '[1,280,2520]'
+      outputs:
+        soft: '[1,280,512] soft tokens in the text space'
+    embeddinggemma2_visao_p1260_w8a16_g32:
+      inputs:
+        pv: '[1,1260,768]'
+        pos_emb: '[1,1260,768]'
+        cos: '[1,1260,64]'
+        sin: '[1,1260,64]'
+        valid: '[1,1260]'
+        pool: '[1,140,1260]'
+      outputs:
+        soft: '[1,140,512] soft tokens in the text space'
+    embeddinggemma2_audio_t1000_w8a16_g32:
+      inputs:
+        feat: '[1,1000,128] log-mel'
+        fmask: '[1,1000]'
+      outputs:
+        soft: '[1,250,512] soft tokens in the text space'
+    embeddinggemma2_audio_t3000_w8a16_g32:
+      inputs:
+        feat: '[1,3000,128] log-mel'
+        fmask: '[1,3000]'
+      outputs:
+        soft: '[1,750,512] soft tokens in the text space'
+  context_window:
+    text_tokens: 2048
+    image_soft_tokens: 280
+    video_soft_tokens_per_frame: 140
+    audio_seconds: 30
+  tokenizer:
+    file: tokenizer.json
+    bos_token_id: 2
+    eos_token_id: 1
+    pad_token_id: 0
+  host: host/embeddinggemma2_coreai_host.py
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-16T08:03:31.000Z'

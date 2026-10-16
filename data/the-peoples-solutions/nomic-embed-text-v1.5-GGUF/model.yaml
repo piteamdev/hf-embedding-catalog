@@ -1,0 +1,68 @@
+_id: 6ad13bf55d551b0111670c54
+id: the-peoples-solutions/nomic-embed-text-v1.5-GGUF
+private: false
+pipeline_tag: sentence-similarity
+library_name: gguf
+tags:
+- gguf
+- llama.cpp
+- mirror
+- sentence-similarity
+- base_model:nomic-ai/nomic-embed-text-v1.5
+- base_model:quantized:nomic-ai/nomic-embed-text-v1.5
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+- feature-extraction
+downloads: 0
+likes: 0
+modelId: the-peoples-solutions/nomic-embed-text-v1.5-GGUF
+author: the-peoples-solutions
+sha: 714290c986cd9e957819183dd0bda38f974133c6
+lastModified: '2026-10-15T20:47:53.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model:
+  - nomic-ai/nomic-embed-text-v1.5
+  base_model_relation: quantized
+  pipeline_tag: sentence-similarity
+  library_name: gguf
+  tags:
+  - gguf
+  - llama.cpp
+  - mirror
+gguf:
+  total: 136727040
+  architecture: nomic-bert
+  context_length: 2048
+  causal: false
+  bos_token: '[CLS]'
+  eos_token: '[SEP]'
+  pooling_type: 1
+  totalFileSize: 274290560
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: nomic-embed-text-v1.5.f16.gguf
+spaces: []
+createdAt: '2026-10-15T20:47:49.000Z'
+usedStorage: 274290560
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-16T08:03:31.000Z'

@@ -1,0 +1,110 @@
+_id: 6ad11f2abaf60db623f91b1d
+id: judicialmind/IndiaTables-Embed-0.6B
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bidirectional_pplx_qwen3
+- table-retrieval
+- india
+- open-government-data
+- sentence-similarity
+- custom_code
+- en
+- hi
+- base_model:perplexity-ai/pplx-embed-v1-0.6b
+- base_model:finetune:perplexity-ai/pplx-embed-v1-0.6b
+- license:cc-by-nc-sa-4.0
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 1
+modelId: judicialmind/IndiaTables-Embed-0.6B
+author: judicialmind
+sha: d688cad373bb253b3536ac934450e883d31326b0
+lastModified: '2026-10-15T19:12:53.000Z'
+gated: manual
+disabled: false
+mask_token: â½Ĺ
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config:
+  architectures:
+  - PPLXQwen3Model
+  auto_map:
+    AutoConfig: configuration.PPLXQwen3Config
+    AutoModel: modeling.PPLXQwen3Model
+  model_type: bidirectional_pplx_qwen3
+  tokenizer_config:
+    bos_token: null
+    eos_token: <|endoftext|>
+    mask_token: â½Ĺ
+    pad_token: <|endoftext|>
+    sep_token: <|endoftext|>
+    unk_token: null
+cardData:
+  license: cc-by-nc-sa-4.0
+  base_model: perplexity-ai/pplx-embed-v1-0.6b
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  language:
+  - en
+  - hi
+  tags:
+  - sentence-transformers
+  - table-retrieval
+  - india
+  - open-government-data
+  extra_gated_prompt: 'This model is released under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 licence
+    (CC BY-NC-SA 4.0): research, academic, personal and other non-commercial use is permitted with attribution; adaptations
+    must be shared under the same licence; commercial use is not permitted. The original public source data remains under
+    the Government Open Data License - India (GODL-India). Commercial use: contact surya@judicialmind.ai or hello@judicialmind.ai.'
+  extra_gated_fields:
+    Name: text
+    Email: text
+    Organization: text
+    I accept the CC BY-NC-SA licence terms (research and non-commercial use only): checkbox
+  extra_gated_button_content: Accept and request access
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_FlexibleQuantizer/st_quantize.py
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: THIRD_PARTY_NOTICES.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: configuration.py
+- rfilename: metrics.json
+- rfilename: model.safetensors
+- rfilename: modeling.py
+- rfilename: modules.json
+- rfilename: requirements.txt
+- rfilename: search.py
+- rfilename: sentence_bert_config.json
+- rfilename: st_quantize.py
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces:
+- judicialmind/OpenGovtData-MCP
+createdAt: '2026-10-15T18:44:58.000Z'
+safetensors:
+  parameters:
+    BF16: 596049920
+  total: 596049920
+usedStorage: 1203556331
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 1192.1
+approxSizeMb: 1192.1
+fetchedAt: '2026-10-16T08:03:31.000Z'

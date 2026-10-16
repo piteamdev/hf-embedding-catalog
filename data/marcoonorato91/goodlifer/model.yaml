@@ -1,0 +1,97 @@
+_id: 6aca6333e431a8f2d5740ee9
+id: marcoonorato91/goodlifer
+private: false
+pipeline_tag: sentence-similarity
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- tool_scorer
+- feature-extraction
+- text-classification
+- zero-shot
+- tool-calling
+- sentence-similarity
+- custom_code
+- en
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: marcoonorato91/goodlifer
+author: marcoonorato91
+sha: 60e39a00b413e4f4ad123bf7bf41c7cbf7174427
+lastModified: '2026-10-16T01:49:00.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config:
+  architectures:
+  - ToolScorerModel
+  auto_map:
+    AutoConfig: modeling_tool_scorer.ToolScorerConfig
+    AutoModel: modeling_tool_scorer.ToolScorerModel
+  model_type: tool_scorer
+  tokenizer_config:
+    pad_token: '[PAD]'
+    unk_token: '[UNK]'
+cardData:
+  library_name: transformers
+  pipeline_tag: sentence-similarity
+  license: mit
+  language:
+  - en
+  tags:
+  - text-classification
+  - zero-shot
+  - tool-calling
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_tool_scorer.ToolScorerModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: goodlifer.png
+- rfilename: model.safetensors
+- rfilename: modeling_tool_scorer.py
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-10T16:09:23.000Z'
+safetensors:
+  parameters:
+    F32: 150940416
+  total: 150940416
+usedStorage: 607438851
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - ToolScorerModel
+  attn_impl: flex
+  auto_map:
+    AutoConfig: modeling_tool_scorer.ToolScorerConfig
+    AutoModel: modeling_tool_scorer.ToolScorerModel
+  d_model: 768
+  dropout: 0.2
+  dtype: float32
+  max_len: 1024
+  model_type: tool_scorer
+  n_heads: 12
+  n_layers: 14
+  pad_token_id: 0
+  tau: 0.05
+  transformers_version: 5.19.0
+  vocab_size: 65536
+onnxFiles: {}
+safetensorsSizeMb: 603.8
+approxSizeMb: 603.8
+fetchedAt: '2026-10-16T08:03:31.000Z'

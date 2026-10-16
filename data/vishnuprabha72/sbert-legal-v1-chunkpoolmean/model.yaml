@@ -1,0 +1,155 @@
+_id: 6ad0bc57b23362744e42419d
+id: vishnuprabha72/sbert-legal-v1-chunkpoolmean
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- feature-extraction
+- sentence-similarity
+- legal
+- legal-retrieval
+- indian-law
+- retrieval
+- long-document
+- en
+- dataset:custom
+- base_model:sentence-transformers/all-MiniLM-L6-v2
+- base_model:finetune:sentence-transformers/all-MiniLM-L6-v2
+- license:apache-2.0
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: vishnuprabha72/sbert-legal-v1-chunkpoolmean
+author: vishnuprabha72
+sha: 0a644138b9cffb124425923e08b3af26bd56f751
+lastModified: '2026-10-15T12:12:07.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: What are the essential conditions for granting a temporary injunction?
+  sentences:
+  - The cardinal principles for grant of temporary injunction require a strong prima facie case, that non-interference would
+    cause irreparable injury with no other remedy available, and that the balance of convenience favours the party seeking
+    relief.
+  - The plaintiff filed suits for declaration and specific performance against the defendant companies regarding a total area
+    of 19,685 square metres of land, contending a concluded contract existed after negotiations for a total sum running into
+    several crores of rupees.
+  - The appeals are allowed and the orders of injunction granted by the trial court and affirmed by the High Court are set
+    aside.
+- source_sentence: Why does delay in filing a suit count against the plaintiff?
+  sentences:
+  - The suit was filed seven months after the plaintiff acknowledged receiving a refund of its advance payment; in commercial
+    dealings involving high-stake matters, such delay is a vital consideration against the grant of equitable relief.
+  - Section 36 of the Specific Relief Act, 1963 provides for grant of preventive relief, and Section 37 provides that temporary
+    injunction in a suit shall be regulated by the Code of Civil Procedure.
+  - The Principal Civil Judge held that the terms and conditions for sale stood finalised by e-mail and restrained the defendants
+    from creating third-party rights in the suit lands.
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  language:
+  - en
+  license: apache-2.0
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  base_model: sentence-transformers/all-MiniLM-L6-v2
+  tags:
+  - sentence-transformers
+  - feature-extraction
+  - sentence-similarity
+  - legal
+  - legal-retrieval
+  - indian-law
+  - retrieval
+  - long-document
+  widget:
+  - source_sentence: What are the essential conditions for granting a temporary injunction?
+    sentences:
+    - The cardinal principles for grant of temporary injunction require a strong prima facie case, that non-interference would
+      cause irreparable injury with no other remedy available, and that the balance of convenience favours the party seeking
+      relief.
+    - The plaintiff filed suits for declaration and specific performance against the defendant companies regarding a total
+      area of 19,685 square metres of land, contending a concluded contract existed after negotiations for a total sum running
+      into several crores of rupees.
+    - The appeals are allowed and the orders of injunction granted by the trial court and affirmed by the High Court are set
+      aside.
+  - source_sentence: Why does delay in filing a suit count against the plaintiff?
+    sentences:
+    - The suit was filed seven months after the plaintiff acknowledged receiving a refund of its advance payment; in commercial
+      dealings involving high-stake matters, such delay is a vital consideration against the grant of equitable relief.
+    - Section 36 of the Specific Relief Act, 1963 provides for grant of preventive relief, and Section 37 provides that temporary
+      injunction in a suit shall be regulated by the Code of Civil Procedure.
+    - The Principal Civil Judge held that the terms and conditions for sale stood finalised by e-mail and restrained the defendants
+      from creating third-party rights in the suit lands.
+  datasets:
+  - custom
+  metrics:
+  - ndcg@10
+  - mrr@10
+  - accuracy@k
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-15T11:43:19.000Z'
+safetensors:
+  parameters:
+    F32: 22713216
+  total: 22713216
+usedStorage: 90864192
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  initializer_range: 0.02
+  intermediate_size: 1536
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 6
+  pad_token_id: 0
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.13.1
+  type_vocab_size: 2
+  use_cache: true
+  vocab_size: 30522
+onnxFiles: {}
+safetensorsSizeMb: 90.9
+approxSizeMb: 90.9
+fetchedAt: '2026-10-16T08:03:31.000Z'

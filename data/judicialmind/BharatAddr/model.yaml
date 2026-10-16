@@ -1,0 +1,107 @@
+_id: 6ad1256fa97a814b3e86eb8f
+id: judicialmind/BharatAddr
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- address-parsing
+- geocoding
+- entity-resolution
+- india
+- lgd
+- pincode
+- open-government-data
+- feature-extraction
+- en
+- hi
+- multilingual
+- dataset:judicialmind/BharatAddr-Gazetteer
+- base_model:Qwen/Qwen3-Embedding-0.6B
+- base_model:finetune:Qwen/Qwen3-Embedding-0.6B
+- license:cc-by-nc-sa-4.0
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: judicialmind/BharatAddr
+author: judicialmind
+sha: caf2a7cb5959f27a02480868f691f319815817d8
+lastModified: '2026-10-15T19:12:58.000Z'
+gated: manual
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: cc-by-nc-sa-4.0
+  pretty_name: BharatAddr
+  language:
+  - en
+  - hi
+  - multilingual
+  library_name: transformers
+  pipeline_tag: feature-extraction
+  base_model:
+  - Qwen/Qwen3-Embedding-0.6B
+  datasets:
+  - judicialmind/BharatAddr-Gazetteer
+  tags:
+  - address-parsing
+  - geocoding
+  - entity-resolution
+  - india
+  - lgd
+  - pincode
+  - open-government-data
+  extra_gated_prompt: 'This model is released under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 licence
+    (CC BY-NC-SA 4.0): research, academic, personal and other non-commercial use is permitted with attribution; adaptations
+    must be shared under the same licence; commercial use is not permitted. The original public source data remains under
+    the Government Open Data License - India (GODL-India). Commercial use: contact surya@judicialmind.ai or hello@judicialmind.ai.'
+  extra_gated_fields:
+    Name: text
+    Email: text
+    Organization: text
+    I accept the CC BY-NC-SA licence terms (research and non-commercial use only): checkbox
+  extra_gated_button_content: Accept and request access
+transformersInfo:
+  auto_model: AutoModel
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: THIRD_PARTY_NOTICES.md
+- rfilename: bharataddr/__init__.py
+- rfilename: bharataddr/baseline.py
+- rfilename: bharataddr/evaluate.py
+- rfilename: bharataddr/neural.py
+- rfilename: bharataddr/resolve.py
+- rfilename: bharataddr/text.py
+- rfilename: eval/pred_bharataddr_test_district.parquet
+- rfilename: eval/pred_bharataddr_test_random.parquet
+- rfilename: gazetteer/entries.parquet
+- rfilename: gazetteer/pins.parquet
+- rfilename: gazetteer/stats.json
+- rfilename: gazetteer/units.parquet
+- rfilename: index/doc_emb.f16.npy
+- rfilename: index/docs.parquet
+- rfilename: metrics.json
+- rfilename: model/1_Pooling/config.json
+- rfilename: model/chat_template.jinja
+- rfilename: model/config.json
+- rfilename: model/config_sentence_transformers.json
+- rfilename: model/model.safetensors
+- rfilename: model/modules.json
+- rfilename: model/tokenizer.json
+- rfilename: model/tokenizer_config.json
+- rfilename: requirements.txt
+spaces: []
+createdAt: '2026-10-15T19:11:43.000Z'
+usedStorage: 2659210564
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 1191.6
+approxSizeMb: 0.0
+fetchedAt: '2026-10-16T08:03:31.000Z'

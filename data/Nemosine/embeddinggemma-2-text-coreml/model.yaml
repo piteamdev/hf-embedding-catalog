@@ -1,0 +1,54 @@
+_id: 6ad0e88e935fcd29d26f5ee3
+id: Nemosine/embeddinggemma-2-text-coreml
+private: false
+pipeline_tag: feature-extraction
+library_name: coreml
+tags:
+- coreml
+- embedding
+- apple-neural-engine
+- feature-extraction
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: Nemosine/embeddinggemma-2-text-coreml
+author: Nemosine
+sha: 33278de77582ee8b85e3743f7b0dd1fd50713aa5
+lastModified: '2026-10-15T14:52:11.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: google/embeddinggemma-2
+  pipeline_tag: feature-extraction
+  library_name: coreml
+  tags:
+  - embedding
+  - coreml
+  - apple-neural-engine
+siblings:
+- rfilename: .gitattributes
+- rfilename: EmbeddingGemma2TextANE.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: EmbeddingGemma2TextANE.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: EmbeddingGemma2TextANE.mlpackage/Manifest.json
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: conversion_report.json
+- rfilename: manifest.json
+- rfilename: tokenizer.model
+spaces: []
+createdAt: '2026-10-15T14:51:58.000Z'
+usedStorage: 578347569
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-16T08:03:31.000Z'

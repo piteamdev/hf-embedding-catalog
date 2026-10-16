@@ -1,0 +1,169 @@
+_id: 6acf6c7f103f6e7e642b3db2
+id: jayyun98/Humanizer-12B-Draftfit-DFlash2
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- qwen3_dflash2
+- feature-extraction
+- draftfit
+- speculative-decoding
+- dflash2
+- humanizer
+- text-rewriting
+- rewriting
+- paraphrase
+- style-transfer
+- gemma4
+- custom_code
+- en
+- zh
+- base_model:jialinyyzz/humanizer
+- base_model:finetune:jialinyyzz/humanizer
+- license:apache-2.0
+- region:us
+downloads: 20
+likes: 0
+modelId: jayyun98/Humanizer-12B-Draftfit-DFlash2
+author: jayyun98
+sha: 10012da5c58fe4ebffba5c331d8a8077519ad656
+lastModified: '2026-10-15T09:14:03.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - DFlash2DraftModel
+  auto_map:
+    AutoModel: dflash2.DFlash2DraftModel
+  model_type: qwen3_dflash2
+cardData:
+  base_model: jialinyyzz/humanizer
+  base_model_relation: finetune
+  license: apache-2.0
+  language:
+  - en
+  - zh
+  tags:
+  - draftfit
+  - speculative-decoding
+  - dflash2
+  - humanizer
+  - transformers
+  - safetensors
+  - text-rewriting
+  - rewriting
+  - paraphrase
+  - style-transfer
+  - gemma4
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: dflash2.DFlash2DraftModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: LICENSE-DFlash
+- rfilename: LICENSE-mlx-dspark
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: evaluation.json
+- rfilename: evaluation.md
+- rfilename: mlx-runtime.patch
+- rfilename: model.safetensors
+- rfilename: run_mlx.py
+- rfilename: runtime-setup.md
+- rfilename: training.md
+spaces: []
+createdAt: '2026-10-14T11:50:23.000Z'
+safetensors:
+  parameters:
+    BF16: 899715328
+  total: 899715328
+usedStorage: 3598879072
+downloadsAllTime: 20
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - DFlash2DraftModel
+  attention_bias: false
+  attention_dropout: 0.0
+  auto_map:
+    AutoModel: dflash2.DFlash2DraftModel
+  block_size: 16
+  bos_token_id: 2
+  conv_group_size: 16
+  conv_kernel_size: 2
+  dflash_config:
+    block_size: 16
+    conv_group_size: 16
+    conv_kernel_size: 2
+    final_logit_softcapping: 30.0
+    mask_token_id: 4
+    sample_from_anchor: false
+    selector_rank: 256
+    selector_top_k: 16
+    target_layer_ids:
+    - 1
+    - 10
+    - 19
+    - 27
+    - 36
+    - 45
+  draft_vocab_size: 262144
+  dtype: bfloat16
+  eos_token_id: 1
+  fc_norm: false
+  final_logit_softcapping: 30.0
+  head_dim: 128
+  hidden_act: silu
+  hidden_size: 3840
+  initializer_range: 0.02
+  input_embedding_scale: 1.0
+  intermediate_size: 7680
+  is_causal: null
+  layer_types:
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  mask_token_id: 4
+  max_position_embeddings: 262144
+  max_window_layers: 5
+  model_type: qwen3_dflash2
+  num_attention_heads: 32
+  num_hidden_layers: 5
+  num_key_value_heads: 8
+  num_target_layers: 6
+  output_multiplier: 1.0
+  pad_token_id: 0
+  rms_norm_eps: 1.0e-06
+  rope_parameters:
+    rope_theta: 1000000
+    rope_type: default
+  rope_theta: 1000000
+  selector_rank: 256
+  selector_top_k: 16
+  sliding_window: 2048
+  target_hidden_size: 3840
+  target_layer_ids:
+  - 1
+  - 10
+  - 19
+  - 27
+  - 36
+  - 45
+  target_num_hidden_layers: 48
+  tie_word_embeddings: false
+  transformers_version: 5.14.1
+  use_cache: true
+  use_sliding_window: true
+  vocab_size: 262144
+onnxFiles: {}
+safetensorsSizeMb: 1799.4
+approxSizeMb: 1799.4
+fetchedAt: '2026-10-16T08:03:31.000Z'

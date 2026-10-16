@@ -1,0 +1,84 @@
+_id: 6ad0c1f455bdc30db58c0dcb
+id: jmgang/tuklas-tagalog-512d
+private: false
+pipeline_tag: sentence-similarity
+library_name: model2vec
+tags:
+- model2vec
+- safetensors
+- tagalog
+- filipino
+- static-embeddings
+- retrieval
+- sea-lion
+- tokenlearn
+- sentence-similarity
+- tl
+- fil
+- base_model:aisingapore/SEA-LION-E5-Embedding-600M
+- base_model:finetune:aisingapore/SEA-LION-E5-Embedding-600M
+- license:mit
+- 8-bit
+- region:us
+downloads: 0
+likes: 0
+modelId: jmgang/tuklas-tagalog-512d
+author: jmgang
+sha: 4c74aaf533cc9ac10cd9d29f37ff59ab6e397aca
+lastModified: '2026-10-15T12:12:57.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: model2vec
+  architectures:
+  - StaticModel
+cardData:
+  language:
+  - tl
+  - fil
+  library_name: model2vec
+  base_model: aisingapore/SEA-LION-E5-Embedding-600M
+  pipeline_tag: sentence-similarity
+  license: mit
+  tags:
+  - tagalog
+  - filipino
+  - model2vec
+  - static-embeddings
+  - retrieval
+  - sea-lion
+  - tokenlearn
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-10-15T12:07:16.000Z'
+safetensors:
+  parameters:
+    I8: 35734016
+  total: 35734016
+usedStorage: 35734104
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  model_type: model2vec
+  architectures:
+  - StaticModel
+  normalize: true
+  query_prefix: '[QRY] '
+  hidden_dim: 512
+  dimension: 512
+  dtype: int8
+  base_model_revision: 6a97cedd22714f3d4eb7c6fd1a452bf310899683
+  direct_parent_model2vec: true
+  tokenlearn_same_parent: true
+  embedding_dtype: int8
+onnxFiles: {}
+safetensorsSizeMb: 35.7
+approxSizeMb: 35.7
+fetchedAt: '2026-10-16T08:03:31.000Z'

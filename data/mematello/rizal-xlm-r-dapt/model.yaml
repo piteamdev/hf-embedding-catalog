@@ -1,0 +1,166 @@
+_id: 6ad134a4b23362744e57b905
+id: mematello/rizal-xlm-r-dapt
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- xlm-roberta
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:15512
+- loss:DenoisingAutoEncoderLoss
+- arxiv:1908.10084
+- arxiv:2104.06979
+- base_model:sentence-transformers/paraphrase-xlm-r-multilingual-v1
+- base_model:finetune:sentence-transformers/paraphrase-xlm-r-multilingual-v1
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: mematello/rizal-xlm-r-dapt
+author: mematello
+sha: 61d56cacff8bb3ee07a4e4f5b008ed5466d62e55
+lastModified: '2026-10-15T20:22:38.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: Walang pinag-ibhan sa pamahalaan!
+  sentences:
+  - Inulit-ulit ang pagpalo ng yantok, ngunit nanatili si Tarsilo sa pagwawalang bahala.
+  - Walang pinag-ibhan sa pamahalaan!
+  - siya'y nagbigti?
+- source_sentence: Ano nila
+  sentences:
+  - At sino ang nakakaalam kung sila nga ang may katuwiran?
+  - Sayang at hindi natin kaharap ngayon si Padre Salvi upang magpakilala sa atin ng pinagmulan ng binatang iyan!
+  - Ano ang sinasabi nila?
+- source_sentence: kanyang hindi hanggang hindi yumayaman inisip ano man
+  sentences:
+  - Nandoon din ang byenan ni Andong na walang tigil sa kakasigaw na walang karapatang hulihin si Andong sa salang pag- upo
+    sa ilalim ng puno ng saging.
+  - Sa kanyang pagkadala sa dagat, hindi niya inibig umuwi sa España hanggang hindi siya yumayaman, at inisip niyang maghanap-buhay
+    sa ano man.
+  - 'Pinagdirimlan si Ibarra: nangangatal ang kanyang katawan umiinog sa kinalalagyan ang kanyang mga matang nangagbabala.'
+- source_sentence: bibingka
+  sentences:
+  - na kanyang tinitingnan ng makabulugan si Linares.
+  - Kaawaawang Padre Camorra!
+  - Ang bibingka!
+- source_sentence: ang sinabi nito
+  sentences:
+  - ang muling sinabi nito.
+  - Ngunit ang mga sigwa?
+  - ang maginoong ito....
+model-index: null
+config:
+  architectures:
+  - XLMRobertaModel
+  model_type: xlm-roberta
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: <unk>
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:15512
+  - loss:DenoisingAutoEncoderLoss
+  base_model: sentence-transformers/paraphrase-xlm-r-multilingual-v1
+  widget:
+  - source_sentence: Walang pinag-ibhan sa pamahalaan!
+    sentences:
+    - Inulit-ulit ang pagpalo ng yantok, ngunit nanatili si Tarsilo sa pagwawalang bahala.
+    - Walang pinag-ibhan sa pamahalaan!
+    - siya'y nagbigti?
+  - source_sentence: Ano nila
+    sentences:
+    - At sino ang nakakaalam kung sila nga ang may katuwiran?
+    - Sayang at hindi natin kaharap ngayon si Padre Salvi upang magpakilala sa atin ng pinagmulan ng binatang iyan!
+    - Ano ang sinasabi nila?
+  - source_sentence: kanyang hindi hanggang hindi yumayaman inisip ano man
+    sentences:
+    - Nandoon din ang byenan ni Andong na walang tigil sa kakasigaw na walang karapatang hulihin si Andong sa salang pag-
+      upo sa ilalim ng puno ng saging.
+    - Sa kanyang pagkadala sa dagat, hindi niya inibig umuwi sa España hanggang hindi siya yumayaman, at inisip niyang maghanap-buhay
+      sa ano man.
+    - 'Pinagdirimlan si Ibarra: nangangatal ang kanyang katawan umiinog sa kinalalagyan ang kanyang mga matang nangagbabala.'
+  - source_sentence: bibingka
+    sentences:
+    - na kanyang tinitingnan ng makabulugan si Linares.
+    - Kaawaawang Padre Camorra!
+    - Ang bibingka!
+  - source_sentence: ang sinabi nito
+    sentences:
+    - ang muling sinabi nito.
+    - Ngunit ang mga sigwa?
+    - ang maginoong ito....
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces:
+- mematello/rizal-thematic-search-api
+createdAt: '2026-10-15T20:16:36.000Z'
+safetensors:
+  parameters:
+    F32: 278043648
+  total: 278043648
+usedStorage: 1128978803
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - XLMRobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 514
+  model_type: xlm-roberta
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  output_past: true
+  pad_token_id: 1
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.0.0
+  type_vocab_size: 1
+  use_cache: true
+  vocab_size: 250002
+onnxFiles: {}
+safetensorsSizeMb: 1112.2
+approxSizeMb: 1112.2
+fetchedAt: '2026-10-16T08:03:31.000Z'

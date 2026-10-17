@@ -1,0 +1,51 @@
+_id: 6ad206f4495386eafc658333
+id: eduardo-terres2/Wianmu-Embedding
+private: false
+pipeline_tag: feature-extraction
+tags:
+- audio
+- multimodal-embedding
+- audio-retrieval
+- audio-classification
+- feature-extraction
+- base_model:Qwen/Qwen2.5-Omni-3B
+- base_model:finetune:Qwen/Qwen2.5-Omni-3B
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: eduardo-terres2/Wianmu-Embedding
+author: eduardo-terres2
+sha: f57aab4f9b280d4ac3245e249037742af66b7a6a
+lastModified: '2026-10-16T15:00:27.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  pipeline_tag: feature-extraction
+  base_model:
+  - tencent/WeMM-Embedding-2B
+  - tencent/WeMM-Embedding-4B
+  - tencent/WeMM-Embedding-9B
+  - Qwen/Qwen2.5-Omni-3B
+  tags:
+  - audio
+  - multimodal-embedding
+  - audio-retrieval
+  - audio-classification
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: resources/wianmu_all.png
+spaces: []
+createdAt: '2026-10-16T11:13:56.000Z'
+usedStorage: 2158295
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-17T07:40:55.000Z'

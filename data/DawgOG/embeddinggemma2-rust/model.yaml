@@ -1,0 +1,56 @@
+_id: 6ad1fd6342387e69fd3dda9f
+id: DawgOG/embeddinggemma2-rust
+private: false
+pipeline_tag: feature-extraction
+tags:
+- rust
+- cuda
+- embeddings
+- sentence-similarity
+- multimodal
+- gemma
+- embeddinggemma
+- feature-extraction
+- base_model:google/embeddinggemma-2
+- base_model:finetune:google/embeddinggemma-2
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: DawgOG/embeddinggemma2-rust
+author: DawgOG
+sha: c1344044425b9cb353a06e03a92d65fde0205c1f
+lastModified: '2026-10-16T11:45:35.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: google/embeddinggemma-2
+  pipeline_tag: feature-extraction
+  tags:
+  - rust
+  - cuda
+  - embeddings
+  - sentence-similarity
+  - multimodal
+  - gemma
+  - embeddinggemma
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: releases/v0.1.0/egemma2-v0.1.0-linux-x64.tar.gz
+- rfilename: releases/v0.1.0/egemma2-v0.1.0-windows-x64.zip
+- rfilename: releases/v0.2.0/egemma2-v0.2.0-linux-x64.tar.gz
+- rfilename: releases/v0.2.0/egemma2-v0.2.0-windows-x64.zip
+spaces: []
+createdAt: '2026-10-16T10:33:07.000Z'
+usedStorage: 12536101
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-17T07:40:55.000Z'

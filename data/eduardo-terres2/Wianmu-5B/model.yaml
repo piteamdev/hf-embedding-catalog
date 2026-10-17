@@ -1,0 +1,59 @@
+_id: 6ad22ef9bc3ff19aaf0bf6e4
+id: eduardo-terres2/Wianmu-5B
+private: false
+pipeline_tag: feature-extraction
+tags:
+- audio
+- multimodal-embedding
+- audio-retrieval
+- audio-classification
+- feature-extraction
+- base_model:Qwen/Qwen2.5-Omni-3B
+- base_model:finetune:Qwen/Qwen2.5-Omni-3B
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: eduardo-terres2/Wianmu-5B
+author: eduardo-terres2
+sha: 4c3c349423f48b4455633286d597638f968ea418
+lastModified: '2026-10-16T15:08:01.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  pipeline_tag: feature-extraction
+  base_model:
+  - tencent/WeMM-Embedding-4B
+  - Qwen/Qwen2.5-Omni-3B
+  tags:
+  - audio
+  - multimodal-embedding
+  - audio-retrieval
+  - audio-classification
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: modeling_wianmu.py
+- rfilename: resources/wianmu_architecture.png
+spaces: []
+createdAt: '2026-10-16T14:04:41.000Z'
+usedStorage: 3768912
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  model_name: Wianmu-5B-v0
+  wemm_path: path/to/WeMM-Embedding-4B
+  qwen_omni_path: path/to/Qwen2.5-Omni-3B
+  audio_tower_dim: 2048
+  embedding_dim: 2560
+  audio_sample_rate: 16000
+  audio_max_seconds: 30
+  audio_min_seconds: 0.025
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-17T07:40:55.000Z'

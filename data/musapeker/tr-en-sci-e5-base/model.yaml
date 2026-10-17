@@ -1,0 +1,117 @@
+_id: 6ad25ec35aeee0d74f3c7814
+id: musapeker/tr-en-sci-e5-base
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- onnx
+- safetensors
+- xlm-roberta
+- feature-extraction
+- sentence-similarity
+- cross-lingual-retrieval
+- scientific-literature
+- turkish
+- tr
+- en
+- dataset:musapeker/dergipark-tr-en-abstracts
+- base_model:intfloat/multilingual-e5-base
+- base_model:quantized:intfloat/multilingual-e5-base
+- license:cc-by-nc-4.0
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: musapeker/tr-en-sci-e5-base
+author: musapeker
+sha: fb8c8449bbedb7e01a6573b762959d8ffcbaeecd
+lastModified: '2026-10-16T19:02:52.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - XLMRobertaModel
+  model_type: xlm-roberta
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: <unk>
+cardData:
+  language:
+  - tr
+  - en
+  license: cc-by-nc-4.0
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  base_model: intfloat/multilingual-e5-base
+  tags:
+  - sentence-transformers
+  - feature-extraction
+  - sentence-similarity
+  - cross-lingual-retrieval
+  - scientific-literature
+  - turkish
+  datasets:
+  - musapeker/dergipark-tr-en-abstracts
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: onnx/model_quantized.onnx
+- rfilename: sentence_bert_config.json
+- rfilename: sentencepiece.bpe.model
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces:
+- musapeker/tr-en-sci-search
+createdAt: '2026-10-16T17:28:35.000Z'
+safetensors:
+  parameters:
+    F32: 278043648
+  total: 278043648
+usedStorage: 1413187528
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - XLMRobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 514
+  model_type: xlm-roberta
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  output_past: true
+  pad_token_id: 1
+  position_embedding_type: absolute
+  transformers_version: 4.56.2
+  type_vocab_size: 1
+  use_cache: true
+  vocab_size: 250002
+onnxFiles:
+  onnx/model_quantized.onnx: 278.8
+safetensorsSizeMb: 1112.2
+approxSizeMb: 1112.2
+fetchedAt: '2026-10-17T07:40:55.000Z'

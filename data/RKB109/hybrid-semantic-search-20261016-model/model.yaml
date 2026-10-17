@@ -1,0 +1,66 @@
+_id: 6ad25e01bc3cce23c992e677
+id: RKB109/hybrid-semantic-search-20261016-model
+private: false
+pipeline_tag: sentence-similarity
+library_name: custom
+tags:
+- custom
+- synthetic-data
+- transparent-baseline
+- semantic-search
+- sentence-similarity
+- feature-extraction
+- text-ranking
+- question-answering
+- dataset:RKB109/hybrid-semantic-search-20261016-dataset
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: RKB109/hybrid-semantic-search-20261016-model
+author: RKB109
+sha: 2da76f6c7f3fab7e283f7eed402e369a7ad0c090
+lastModified: '2026-10-16T17:25:21.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config: {}
+cardData:
+  license: mit
+  library_name: custom
+  pipeline_tag: sentence-similarity
+  datasets:
+  - RKB109/hybrid-semantic-search-20261016-dataset
+  tags:
+  - synthetic-data
+  - transparent-baseline
+  - semantic-search
+  - sentence-similarity
+  - feature-extraction
+  - text-ranking
+  - question-answering
+  metrics:
+  - accuracy
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: evaluation.json
+- rfilename: inference.py
+- rfilename: model.json
+- rfilename: project.json
+spaces: []
+createdAt: '2026-10-16T17:25:21.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-17T07:40:55.000Z'

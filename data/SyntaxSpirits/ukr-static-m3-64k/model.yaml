@@ -1,0 +1,93 @@
+_id: 6ad3d8a215f776094855ba9e
+id: SyntaxSpirits/ukr-static-m3-64k
+private: false
+pipeline_tag: sentence-similarity
+library_name: model2vec
+tags:
+- model2vec
+- safetensors
+- static-embeddings
+- sentence-transformers
+- embeddings
+- retrieval
+- ukrainian
+- sentence-similarity
+- uk
+- dataset:wikimedia/wikipedia
+- dataset:HuggingFaceFW/fineweb-2
+- base_model:BAAI/bge-m3
+- base_model:finetune:BAAI/bge-m3
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: SyntaxSpirits/ukr-static-m3-64k
+author: SyntaxSpirits
+sha: 96c3b3195bfafbebd666f2aab42621811bd9ec9d
+lastModified: '2026-10-17T20:20:53.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: model2vec
+  architectures:
+  - StaticModel
+cardData:
+  language:
+  - uk
+  license: mit
+  library_name: model2vec
+  base_model: BAAI/bge-m3
+  pipeline_tag: sentence-similarity
+  tags:
+  - model2vec
+  - static-embeddings
+  - sentence-transformers
+  - embeddings
+  - retrieval
+  - ukrainian
+  datasets:
+  - wikimedia/wikipedia
+  - HuggingFaceFW/fineweb-2
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-10-17T20:20:50.000Z'
+safetensors:
+  parameters:
+    F16: 16384768
+  total: 16384768
+usedStorage: 32769624
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  model_type: model2vec
+  architectures:
+  - StaticModel
+  tokenizer_name: BAAI/bge-m3
+  apply_pca: 256
+  sif_coefficient: 0.0001
+  hidden_dim: 256
+  seq_length: 1000000
+  normalize: true
+  pooling: mean
+  n_words: 32000
+  max_length: 512
+  embedding_dtype: float16
+  tokenlearn:
+    samples: 119430
+    val: 10000
+    lr: 0.001
+    batch: 256
+    best_val: 0.2401214860379696
+onnxFiles: {}
+safetensorsSizeMb: 32.8
+approxSizeMb: 32.8
+fetchedAt: '2026-10-18T07:56:39.000Z'

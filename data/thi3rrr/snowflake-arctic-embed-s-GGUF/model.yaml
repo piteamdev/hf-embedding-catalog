@@ -1,0 +1,55 @@
+_id: 6ad37c989c761eddc73530ed
+id: thi3rrr/snowflake-arctic-embed-s-GGUF
+private: false
+pipeline_tag: feature-extraction
+tags:
+- gguf
+- feature-extraction
+- sentence-similarity
+- en
+- base_model:Snowflake/snowflake-arctic-embed-s
+- base_model:quantized:Snowflake/snowflake-arctic-embed-s
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: thi3rrr/snowflake-arctic-embed-s-GGUF
+author: thi3rrr
+sha: ce822a9ef9d0064b9ea1a3d7090de59882270cb1
+lastModified: '2026-10-17T13:48:23.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model:
+  - Snowflake/snowflake-arctic-embed-s
+  tags:
+  - gguf
+  - feature-extraction
+  - sentence-similarity
+  language:
+  - en
+gguf:
+  total: 33212160
+  architecture: bert
+  context_length: 512
+  causal: false
+  pooling_type: 2
+  totalFileSize: 36685536
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: snowflake-arctic-embed-s.Q8_0.gguf
+spaces: []
+createdAt: '2026-10-17T13:48:08.000Z'
+usedStorage: 36685536
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-18T07:56:39.000Z'

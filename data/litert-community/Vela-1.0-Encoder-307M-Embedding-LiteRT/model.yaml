@@ -1,0 +1,68 @@
+_id: 6ad4315afccdebd3c394e50e
+id: litert-community/Vela-1.0-Encoder-307M-Embedding-LiteRT
+private: false
+pipeline_tag: sentence-similarity
+library_name: litert
+tags:
+- litert
+- tflite
+- litert-lm
+- embeddings
+- modernbert
+- sentence-transformers
+- android
+- sentence-similarity
+- multilingual
+- base_model:vllm-sr/Vela-1.0-Encoder-307M-Embedding
+- base_model:finetune:vllm-sr/Vela-1.0-Encoder-307M-Embedding
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: litert-community/Vela-1.0-Encoder-307M-Embedding-LiteRT
+author: litert-community
+sha: f92189a9b751b3c5c927f3114419aa6c408012d3
+lastModified: '2026-10-18T02:48:39.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: vllm-sr/Vela-1.0-Encoder-307M-Embedding
+  pipeline_tag: sentence-similarity
+  library_name: litert
+  tags:
+  - litert
+  - litert-lm
+  - embeddings
+  - modernbert
+  - sentence-transformers
+  - android
+  language:
+  - multilingual
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: Vela-1.0-Encoder-307M-Embedding_fp16.litertlm
+- rfilename: tok_embeddings_fp16.bin
+- rfilename: tok_embeddings_fp16.json
+- rfilename: tokenizer.json
+- rfilename: vela_L128_embeds_fp16.tflite
+- rfilename: vela_L128_fp16.tflite
+- rfilename: vela_L256_embeds_fp16.tflite
+- rfilename: vela_L256_fp16.tflite
+- rfilename: vela_L512_embeds_fp16.tflite
+- rfilename: vela_L512_fp16.tflite
+- rfilename: vela_L64_embeds_fp16.tflite
+- rfilename: vela_L64_fp16.tflite
+spaces: []
+createdAt: '2026-10-18T02:39:22.000Z'
+usedStorage: 4397163269
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-18T07:56:39.000Z'

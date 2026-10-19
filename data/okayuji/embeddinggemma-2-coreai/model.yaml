@@ -1,0 +1,91 @@
+_id: 6ad4f6dbfccdebd3c3b5764d
+id: okayuji/embeddinggemma-2-coreai
+private: false
+pipeline_tag: feature-extraction
+library_name: coreai
+tags:
+- coreai
+- core-ai
+- apple
+- ios
+- on-device
+- embeddings
+- multimodal-embedding
+- image-feature-extraction
+- sentence-similarity
+- feature-extraction
+- multilingual
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: okayuji/embeddinggemma-2-coreai
+author: okayuji
+sha: daab6dbfbae1610a87d9f181458419e3ea5ce682
+lastModified: '2026-10-18T18:15:24.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: google/embeddinggemma-2
+  base_model_relation: quantized
+  library_name: coreai
+  pipeline_tag: feature-extraction
+  language:
+  - multilingual
+  tags:
+  - coreai
+  - core-ai
+  - apple
+  - ios
+  - on-device
+  - embeddings
+  - multimodal-embedding
+  - image-feature-extraction
+  - sentence-similarity
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: fp16/LICENSE
+- rfilename: fp16/MODEL_LICENSE.txt
+- rfilename: fp16/README.md
+- rfilename: fp16/embedding-manifest.json
+- rfilename: fp16/text.aimodel/main.hash
+- rfilename: fp16/text.aimodel/main.mlirb
+- rfilename: fp16/text.aimodel/metadata.json
+- rfilename: fp16/token_embeddings.bf16
+- rfilename: fp16/tokenizer.json
+- rfilename: fp16/tokenizer_config.json
+- rfilename: fp16/vision.aimodel/main.hash
+- rfilename: fp16/vision.aimodel/main.mlirb
+- rfilename: fp16/vision.aimodel/metadata.json
+- rfilename: int4-int8/LICENSE
+- rfilename: int4-int8/MODEL_LICENSE.txt
+- rfilename: int4-int8/README.md
+- rfilename: int4-int8/embedding-manifest.json
+- rfilename: int4-int8/quantization-quality.json
+- rfilename: int4-int8/quantized-reference.json
+- rfilename: int4-int8/text.aimodel/main.hash
+- rfilename: int4-int8/text.aimodel/main.mlirb
+- rfilename: int4-int8/text.aimodel/metadata.json
+- rfilename: int4-int8/token_embedding_scales.f32
+- rfilename: int4-int8/token_embeddings.int4
+- rfilename: int4-int8/tokenizer.json
+- rfilename: int4-int8/tokenizer_config.json
+- rfilename: int4-int8/vision.aimodel/main.hash
+- rfilename: int4-int8/vision.aimodel/main.mlirb
+- rfilename: int4-int8/vision.aimodel/metadata.json
+spaces: []
+createdAt: '2026-10-18T16:42:03.000Z'
+usedStorage: 1222870429
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-19T08:43:20.000Z'

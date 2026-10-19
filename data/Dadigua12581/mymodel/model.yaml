@@ -1,0 +1,66 @@
+_id: 6ad4ce6da6e143550bf874a0
+id: Dadigua12581/mymodel
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- M
+- feature-extraction
+- custom_code
+- arxiv:1910.09700
+- region:us
+downloads: 0
+likes: 0
+modelId: Dadigua12581/mymodel
+author: Dadigua12581
+sha: 5977ced52e250a6760ec3aa5eb36b1a039488bb0
+lastModified: '2026-10-18T13:58:48.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - MModel
+  auto_map:
+    AutoConfig: config.MConfig
+    AutoModel: mode.MModel
+  model_type: M
+cardData:
+  library_name: transformers
+  tags: []
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: mode.MModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config.py
+- rfilename: mode.py
+- rfilename: model.safetensors
+spaces: []
+createdAt: '2026-10-18T13:49:33.000Z'
+safetensors:
+  parameters:
+    F32: 73
+  total: 73
+usedStorage: 1192
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - MModel
+  auto_map:
+    AutoConfig: config.MConfig
+    AutoModel: mode.MModel
+  dtype: float32
+  hidden: 24
+  model_type: M
+  transformers_version: 5.20.1
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-19T08:43:20.000Z'

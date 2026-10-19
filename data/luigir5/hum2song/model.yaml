@@ -1,0 +1,55 @@
+_id: 6ad4fe88a150e48c97380775
+id: luigir5/hum2song
+private: false
+pipeline_tag: feature-extraction
+library_name: pytorch
+tags:
+- pytorch
+- safetensors
+- audio
+- music
+- query-by-humming
+- music-information-retrieval
+- melody
+- feature-extraction
+- license:cc-by-4.0
+- region:us
+downloads: 0
+likes: 0
+modelId: luigir5/hum2song
+author: luigir5
+sha: d5bd04d2c6e8c9f83bf3411d864cf2842527ae12
+lastModified: '2026-10-18T17:14:51.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: cc-by-4.0
+  library_name: pytorch
+  pipeline_tag: feature-extraction
+  tags:
+  - audio
+  - music
+  - query-by-humming
+  - music-information-retrieval
+  - melody
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: e2b/best.pt
+- rfilename: e2b/config.json
+- rfilename: e2b/model.safetensors
+- rfilename: whistle_closedset_ft/best.pt
+- rfilename: whistle_closedset_ft/config.json
+- rfilename: whistle_closedset_ft/model.safetensors
+spaces: []
+createdAt: '2026-10-18T17:14:48.000Z'
+usedStorage: 82747446
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 41.4
+approxSizeMb: 0.0
+fetchedAt: '2026-10-19T08:43:20.000Z'

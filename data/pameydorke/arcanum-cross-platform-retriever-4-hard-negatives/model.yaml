@@ -1,0 +1,623 @@
+_id: 6ad5a1069909b60864696f61
+id: pameydorke/arcanum-cross-platform-retriever-4-hard-negatives
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- xlm-roberta
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:16596
+- loss:GISTEmbedLoss
+- arxiv:1908.10084
+- arxiv:2402.16829
+- base_model:BAAI/bge-m3
+- base_model:finetune:BAAI/bge-m3
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: pameydorke/arcanum-cross-platform-retriever-4-hard-negatives
+author: pameydorke
+sha: de3272aea025f449e2ad1143a85373ffb2be69f4
+lastModified: '2026-10-19T04:48:35.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: accuracy penalty tarant sewers
+  sentences:
+  - "Original Post: What Patches are there and do you recommend?. Hi! I've not played Arcanum for years and recently discovered\
+    \ that there are quite a few patches (and even mods?) out there.   \nSo I'm a bit confused - can you give me an overview\
+    \ of patches and maybe even recommend some?And do these patches work with different language versions, too?  \n\n\nThank\
+    \ you very much! :) User 1: At a bare minimum you'll want the 1.0.7.4 official patch. Options after that are all fan made.\
+    \ I recommend Drog's UAP (2.02) as it keeps the main game pretty much intact while fixing a ton of bugs and adding some\
+    \ nifty new content. There are a few mods that go after balancing issues but those heavily change gameplay so YMMV. User\
+    \ 2: What the other commenter said plus the wide-screen and graphic mods for towns. Unless those are included in the unofficial\
+    \ patch now."
+  - "Original Post: Caladon/Tarant Ending still bugged in latest Unofficial Patch?. Just completed my first playthrough in\
+    \ a couple of years - am I right in thinking the \"***Caladon &amp; Tarant Both at Peace***\" ending is bugged, specifically\
+    \ the negotiations requirement?\n\nFrom what I can tell, the ending checks your 'score' from the negotiations as to the\
+    \ stability of the two cities*. \n\nHOWEVER, the 'score' you get is how positive towards Tarant the outcome is, NOT the\
+    \ fairness of the arrangement. \n\nBy following the 'balanced &amp; fair' criteria outlined in the negotiating documents,\
+    \ you fail the Persuasion Master quest (which is understandable), but instead of the game marking 'both sides agree to\
+    \ fair terms' as the dossier makes clear, it instead flags 'negotiations went poorly'. \n\nSo if you're trying to get\
+    \ the best ending for both, despite what the game is telling you, **you need to somewhat-but-not-completely** favour Tarant\
+    \ in the negotiations. \n\nJust wanted to flag this in case anyone is in the middle of a replay.\n\n\n\n(*I'm including\
+    \ Don Throgg's election &amp; returning the camera to Maxim as a given) User 1: I am not sure if I understand where is\
+    \ the bug (perhaps I only played patched version). As far as I remember: you receive quest for negotiations for Tarant,\
+    \ they want to screw Caladon as much as they can, but it's obviously better for the rest of the world if neither of these\
+    \ cities have major advantage on the other, so the best outcome and the end of the game is when Caladon joins the Kingdom\
+    \ but at pretty fair terms. Can't recall game ever telling me that for the sake of the Arcanum I need to screw Caladon\
+    \ (in fact, I think you can get persuasion mastery and still end up with the best ending - I believe I achieved it in\
+    \ my last playthrough) Am I missing something? Is there any mention in game that best for Tarant = best for the world?\
+    \ User 2: It's a feature, not a bug. It is possible to get mastery training AND the \"good\" ending, but it is a fine\
+    \ line to walk and you won't get the repudiation title. FWIW there are several competing quests in the game where you\
+    \ can only complete one or the other, not both. Or if you are able to complete them both you cannot do so with maximum\
+    \ results. &amp;nbsp; On a side note, calling the endings \"good\" is relative ;) I think the industrial council is garbage\
+    \ for the half-ogre breeding program, but there is no way in game to punish them per se. My solution is to get the endings\
+    \ were Dernholm and Caladon win wars against Tarant, and where the sewers back up and throw the city into chaos. Bye-bye\
+    \ industrial council!"
+  - 'Original Post: Targets marked as obscured even though they''re not?. Hey all, I''ve been playing Arcanum (my first time!),
+    having a blast and shit, but I''ve encountered something that baffles me; I''m in the Tarant Sewers, killing Ghouls, but
+    even when I have a clear, direct line of fire, the targeting icon for partially obscured target shows up and my accuracy
+    is lower than usual (65% to hit instead of 85), but strangely, sometimes I feel like the penalty isn''t there, hitting
+    4 or 5 shots in a row even though the penalty is displayed (though it could just be chance), even when I haven''t changed
+    my loadout.  This doesn''t happen with any other enemies or areas.
+
+
+    Is this a known bug? Is there a mechanic I haven''t noticed? Or are the sewers just like this? User 1: There are darkness
+    penalties. Training with the Melee skill ignores these penalties, but I don''t think that''s the case with other ranged
+    weapons. There are also tech vs. magick penalties, in firing a Firearm (or tech Bow, etc.) will come at a to-hit penalty
+    against magickal enemies. I know certainly some types of ghouls class as magickal, others don''t. That''s about all I
+    can think of off the top of my head. User 2: maybe this is the darkness penalty to accuracy??? User 3: There is also range
+    penalties unless you have master firearms skill.'
+- source_sentence: how to make murgo follow me
+  sentences:
+  - Vooriden. Vooriden. Location. The village is located at 868W 1191S, south-southwest of Tarant in the Morbihan Plains.
+    It is marked on the player's map after accepting a quest from the ghost of Stringy Pete to free him from his curse. Temple
+    of Halcyon. Vooriden is home to the temple and altar of Halcyon, which you can use in the Ancient Gods quest when it is
+    fixed (point 1). Next to the temple is Murgo (point 2) who is an Half-Ogre helper to the priests of Halcyon. He'll join
+    you group as a temporary follower if you accept a quest to restore the altar. However he will leave the group once you
+    return to Vooriden, or if you deviate from the quest.
+  - "Original Post: New playthrough. If you wanna start a new playthhrough is the Arcanum Multiverse Edition\n https://arcanum.fandom.com/wiki/Modding_and_Patches\n\
+    \na way to go or is it better to stick with Unofficial Patch 2.02? Or is there no difference in gameplay?\n\nCheers User\
+    \ 1: I’m using the 2.02 on my Steam Deck and it’s been virtually perfect (considering it’s Arcanum!). I’ve had 2 glitches\
+    \ that I worked around. One was I had to kill the guard to get into Wheel Clan mine. The other was I had a grave that\
+    \ was not diggable so had to skip a step in main quest. Also performance is perfect, and load times are instant. Had to\
+    \ use a 5.xxx version of Proton. User 2: I swear by the Unofficial, I’m doing a playthrough right now and it’s super smooth,\
+    \ only encountered one crash during the pit sequence on the isle of despair, but even the janky Virgil late game stuff\
+    \ has worked perfectly- User 3: It depends upon what you are looking for. Basically AME is like UAP, but with a lot of\
+    \ extras like new spells, new quests, extended game play after defeating the final boss, etc. Some people like the \"\
+    new game\" feel of AME, while others prefer a new play through with stuff that they already know. I've tried both mods,\
+    \ and both are good at what they set out to do."
+  - 'Original Post: Milo''s quest bug. Hey everyone,
+
+    I started playing the game recently and I love it. I have run up to a problem in the boil. I have started the questline
+    for joining the Maug gang. After finishing the collect from lars quest I was directed to the hotel where Maug lives. Unfortunately
+    Milo, the doorman does not want to give me the Kill Treat quest. I tried doing it anyways and the shapeshift does happend
+    but still no way to enter the hotel. Any ideas how to fix this? User 1: i had never experience this bug Do you use UAP?
+    i m currently stealing the alcohol of this guys and will let you know if i face similar bug lizard-guy killed prematurely
+    because its easier without quest User 2: The step by step solution can be [Found Here](https://arcanum.fandom.com/wiki/Kill_Treat),
+    and the previous quest can be [Found Here](https://arcanum.fandom.com/wiki/Collect_from_Larrs). If it is still not working
+    for you then it is an unknown bug :( User 1: hey man, are you doing okey? i wasnt been able to hear from you on discord
+    and i wonder if you got the quest working or what?'
+- source_sentence: virgil leaving party glitch
+  sentences:
+  - 'Rid Mr. Plough''s Warehouses of Rats. Rid Mr. Plough''s Warehouses of Rats. Rid Mr. Plough''s Warehouses of Rats Start:
+    Tarant, Simon Plough''s Warehouse End: Tarant, Simon Plough''s Warehouse Location: Tarant Rewards: 3,100 XP+Good alignment.
+    Simon Plough in Tarant has recently bought a couple of warehouses, but it turns out that they are infested with rats.
+    If you talk to him, he will ask you to clear the rats for him. He cannot offer you any rewards for doing so, but you can
+    loot anything you find in there, plus you will gain quite a lot of experience for killing the monsters. Walkthrough. Talk
+    to Simon Plough at the warehouse entrance and ask about his problem. Visit the smaller warehouse to the left first and
+    kill the rats inside. You will also find a key in one of the barrels. Use the key to enter the bigger warehouse and kill
+    everything inside. Return to Simon to finish the quest. Rewards. 3,100 XP +Good alignment'
+  - 'Exploits. Exploits. "Come with me Virgil, we must break the game."—Jesse (Troika Games). A bug, also known as a glitch
+    is a mistake in computer software. In games, bugs are issues such as dissapearing items, repeating dialogue, missing dialogue,
+    etc. Some use the term "glitch" only to describe visual errors such as missing textures or incorrect rendering. An exploit
+    is a beneficial bug which can be "exploited" to give the player an unintended advantage. All bugs listed here are known
+    to work on the latest official patch (1.0.7.4). If you are using an older version of Arcanum, please test the bugs you
+    intend to post here to see if they work on the latest version as well. As always: SPOILER WARNING!. List of bugs, glitches
+    and exploits. Bugs / Glitches. Arronax''s Shell. Arronax''s "indestructible" shell is actually just an untargetable object
+    with a low HP, so it''s possible to destroy it with AoE spells, although only visually. Arcanum ~ Arronax''s Shell Glitch.
+    Indoor Windows Glitch. Some separate map buildings (e.g. Bates'' Mansion) have windows indoors for aesthetic purposes.
+    Breaking these windows and then jumping out of them will allow the player to stand on the black tiles surrounding the
+    map, but not be able to do anything remarkable such as walk all the way off screen on them (just 1 tile away from the
+    wall). This is because there are no invisible blocking tiles set on the outer side of these windows. It may be possible
+    to walk on the outer side of the walls and enter rooms which are ordinarily locked or otherwise inaccessible, although
+    no examples of this have been found yet. Avoid Instant Kill in Falcon''s Ache. By having Dweomer Shield or Reflection
+    Shield cast on yourself when attacking the creatures or loggers in Falcon''s Ache, you will not get instantly killed by
+    the Quench Life-like spell. Disintegrate Glitch on Isle of Despair. If you are on theIsle of Despair and you challenge
+    someone to fight in the pit and you kill them using the spell "Disintegrate" the game will glitch and not consider your
+    kill counted and you will not be able to leave the pit. Yet Another Pit Glitch. Pit glitch. Permanent Stun Bug. If you
+    play Fast Turn Based combat mode and get stunned by an enemy (such as Arbalah) just before they die, you may get stuck
+    in a permanent stun. Your character will keep spinning in a state of dizzy confusion, and time will pass by very quickly.
+    Even after waiting 5 minutes (in real life) the character was still stunned. It is worth noting that I was stunned multiple
+    times, so this may have contributed to the glitch. I haven''t tried replicating this, it seemed very odd and possibly
+    random. To fix it, simply go to options and set combat mode to Real Time (press SPACE). Palette Issues. Casting Body of
+    Air on a demon summoned through the Hellgate spell will cause it to permanently change its palette after Body of Air is
+    cancelled from sustain. NPC Generator Issues. Killing certain NPCs important to storyline progression will respawn the'
+  - 'Original Post: Raven bugged (returning from dark elves). Did the main Q talked to the leader of the molecan hand etc.
+    and returned to quintarra. But the dialogue with Raven is not where. I can ask her if I may ask a Q, she says yes, but
+    then my only option is "good bye", and i need to go in and talk to the silver mother again. What have i messed up/can
+    it be redeem/debugged? User 1: I don''t know if that specific bug is fixed by the Unofficial Arcanum Patch but many are.
+    Do you have it installed? If not, I highly recommend it: [https://terra-arcanum.com/drog/uap.html#download](https://terra-arcanum.com/drog/uap.html#download)
+    User 2: Did you talk to Min Gorad? You have to either loot a note from her, or get an answer from her directly, or kill
+    her and use conjure spirit If you simply insulted and/or killed her without getting an answer from her, then you are stuck.
+    You will have to go to an earlier save and try talking to her again. User 3: Was Virgil in your party and did he just
+    leave the party? He might be stuck in that area, the entrance to the dark elf place. Happened to me and I couldn''t figure
+    out how to proceed from there.'
+- source_sentence: find nasrudin rebirth info
+  sentences:
+  - Panarii. Panarii. Panarii is the most widespread religion in Arcanum. The Panarii Religion is based on the teachings of
+    Nasrudin. According to Panarii religion, it is said that the Living One constitutes the spirit of Nasrudin, will be reborn
+    on wings of fire in hills shrouded in fog, and will fight the final battle with Arronax. It is said that there would be
+    something unusual about her or his appearance. Notable characters. Nasrudin Arronax K'an Hua Saint Mannox Elder Joachim
+    Virgil Living One. See also. Panarii Pamphlet Discover the Truth about the Panarii (quest) First Panarii Temple in Caladon
+  - Portraits. Portraits. Follower portraits. Arronax Magnus Shale Fist The Bane of Kree Murgo Chukka Perriman Smythe Cynthia
+    Boggs Raven Dante Sebastian Doc Roberts Sogg Mead Mug Dog (Worthless Mutt) Swyft Franklin Payne Thorvald Two Stones Gar
+    Tollo Underhill Geoffrey Tarellond-Ashe Torian Kel Gorgoth Virgil Brummond Jayna Stiles Vollinger Jormund Waromon Kraka-tur
+    Weldo Rubin Loghaire Thunder Stone Z'an Al'urin. Player character portraits. Human male Human female Dwarf male Elf male
+    Elf female Half-elf male Half-elf female Gnome male Halfling male Half-orc male Half-orc female Half-ogre male
+  - Gateway to the Wastes. Gateway to the Wastes. Location. The Gateway is found 466W 741S. it is north of Ashbury along the
+    coast, where the Vendigroth Wastes begin. It is marked on the player's map either by Nasrudin or K'an Hua when you accept
+    their respective quests. Area. The site is home to Weldo Rubin and his camp (point 1). It sits at the foot of an ancient
+    bridge leading to the Wastes.
+- source_sentence: multiverse edition graphic glitch
+  sentences:
+  - 'Stringy Pete. Stringy Pete. Stringy Pete Location: Stringy Petes Cove. "I don''t talk much about him..I''ll just say
+    that Stringy Pete was the meanest, cold-blooded, murdering pirate who ever put to sail, and be done with it..there are
+    stories and legends, and most of ''em are true.  He''s been dead for more''n two hundred years, and people still whisper
+    his name when they talk about him..". —Captain Edward Teach. The most cruel, ruthless and Ax-Crazy pirate of all times,
+    feared all over Arcanum. He died more than two centuries ago, but rumors are that his spirit still sails the seas, punishing
+    anyone who plays with his name..'
+  - 'Original Post: Weird graphic bug while using Multiverse edition. https://imgur.com/a/eh6d2TU
+
+
+    Any ideas? There seems to be a sort of outline around sprites, in buildings this results in these lines you can see that
+    can go vertically and horizontally, it''s not visible in this particular shot but it also shows around characters, as
+    a sort of frame around the player model.
+
+
+    I tried messing with the launcher options but nothing worked.
+
+
+    On this subject, is Multiverse edition really supposed to be more unstable than vanilla + some patches? Because I remember
+    playing this game a few years ago for a little while (didn''t even beat Black Mountain clan dungeon IIRC) and it had a
+    lot less issues than the version I''m using now, and if I remember correctly I just had a few patches and the resolution
+    patch back then.
+
+
+    With Multiverse edition I ran into a lot of bugs so far, random crashes but also a specific one that triggers always if
+    I try to access a certain part of the log book, once during the bank robbery in Shrouded Hills my disposition towards
+    everyone skyrocketed to 5000+, this visual bug, probably a few others I forgot... It doesn''t seem very stable at all.'
+  - 'Original Post: Visual Background Bug. I tried playing the vanilla game but I had this bug where the UI (the brown part
+    where your inventory and info is) would be covered in black pixels you had to hover your mouse above to clear, so I went
+    and installed the UAP but now it''s gone to hell
+
+    ----------EDIT-------------
+
+    my bad y''all, it was an old UAP, I think it was v0.9 I found on a very old Arcanum site, I tried again with V2.2 on the
+    Nexus and this bug is gone, the game works fine now but the loading times after each transition take soooooooo long. User
+    1: Try installing a more recent ddraw.dll. The one from the UAP''s high res patch is too old. https://github.com/narzoul/DDrawCompat/releases
+    User 2: I don''t know if this will work for you but for similar issues I''ve found adding -doublebuffer to the launch
+    parameters helped. User 3: Updating my GPU firmware helped me with this in the past.'
+model-index:
+- name: SentenceTransformer based on BAAI/bge-m3
+  results:
+  - task:
+      type: information-retrieval
+      name: Information Retrieval
+    dataset:
+      name: val hard negatives
+      type: val-hard-negatives
+    metrics:
+    - type: cosine_accuracy@1
+      value: 0.5602775368603643
+      name: Cosine Accuracy@1
+      verified: false
+    - type: cosine_accuracy@3
+      value: 0.7528187337380746
+      name: Cosine Accuracy@3
+      verified: false
+    - type: cosine_accuracy@5
+      value: 0.8100607111882047
+      name: Cosine Accuracy@5
+      verified: false
+    - type: cosine_accuracy@10
+      value: 0.8742411101474414
+      name: Cosine Accuracy@10
+      verified: false
+    - type: cosine_precision@1
+      value: 0.5602775368603643
+      name: Cosine Precision@1
+      verified: false
+    - type: cosine_precision@3
+      value: 0.2509395779126915
+      name: Cosine Precision@3
+      verified: false
+    - type: cosine_precision@5
+      value: 0.16201214223764093
+      name: Cosine Precision@5
+      verified: false
+    - type: cosine_precision@10
+      value: 0.08742411101474414
+      name: Cosine Precision@10
+      verified: false
+    - type: cosine_recall@1
+      value: 0.5602775368603643
+      name: Cosine Recall@1
+      verified: false
+    - type: cosine_recall@3
+      value: 0.7528187337380746
+      name: Cosine Recall@3
+      verified: false
+    - type: cosine_recall@5
+      value: 0.8100607111882047
+      name: Cosine Recall@5
+      verified: false
+    - type: cosine_recall@10
+      value: 0.8742411101474414
+      name: Cosine Recall@10
+      verified: false
+    - type: cosine_ndcg@10
+      value: 0.7173232383616462
+      name: Cosine Ndcg@10
+      verified: false
+    - type: cosine_mrr@10
+      value: 0.6669788268010296
+      name: Cosine Mrr@10
+      verified: false
+    - type: cosine_map@100
+      value: 0.6719417577306801
+      name: Cosine Map@100
+      verified: false
+config:
+  architectures:
+  - XLMRobertaModel
+  model_type: xlm-roberta
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: <unk>
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:16596
+  - loss:GISTEmbedLoss
+  base_model: BAAI/bge-m3
+  widget:
+  - source_sentence: accuracy penalty tarant sewers
+    sentences:
+    - "Original Post: What Patches are there and do you recommend?. Hi! I've not played Arcanum for years and recently discovered\
+      \ that there are quite a few patches (and even mods?) out there.   \nSo I'm a bit confused - can you give me an overview\
+      \ of patches and maybe even recommend some?And do these patches work with different language versions, too?  \n\n\n\
+      Thank you very much! :) User 1: At a bare minimum you'll want the 1.0.7.4 official patch. Options after that are all\
+      \ fan made. I recommend Drog's UAP (2.02) as it keeps the main game pretty much intact while fixing a ton of bugs and\
+      \ adding some nifty new content. There are a few mods that go after balancing issues but those heavily change gameplay\
+      \ so YMMV. User 2: What the other commenter said plus the wide-screen and graphic mods for towns. Unless those are included\
+      \ in the unofficial patch now."
+    - "Original Post: Caladon/Tarant Ending still bugged in latest Unofficial Patch?. Just completed my first playthrough\
+      \ in a couple of years - am I right in thinking the \"***Caladon &amp; Tarant Both at Peace***\" ending is bugged, specifically\
+      \ the negotiations requirement?\n\nFrom what I can tell, the ending checks your 'score' from the negotiations as to\
+      \ the stability of the two cities*. \n\nHOWEVER, the 'score' you get is how positive towards Tarant the outcome is,\
+      \ NOT the fairness of the arrangement. \n\nBy following the 'balanced &amp; fair' criteria outlined in the negotiating\
+      \ documents, you fail the Persuasion Master quest (which is understandable), but instead of the game marking 'both sides\
+      \ agree to fair terms' as the dossier makes clear, it instead flags 'negotiations went poorly'. \n\nSo if you're trying\
+      \ to get the best ending for both, despite what the game is telling you, **you need to somewhat-but-not-completely**\
+      \ favour Tarant in the negotiations. \n\nJust wanted to flag this in case anyone is in the middle of a replay.\n\n\n\
+      \n(*I'm including Don Throgg's election &amp; returning the camera to Maxim as a given) User 1: I am not sure if I understand\
+      \ where is the bug (perhaps I only played patched version). As far as I remember: you receive quest for negotiations\
+      \ for Tarant, they want to screw Caladon as much as they can, but it's obviously better for the rest of the world if\
+      \ neither of these cities have major advantage on the other, so the best outcome and the end of the game is when Caladon\
+      \ joins the Kingdom but at pretty fair terms. Can't recall game ever telling me that for the sake of the Arcanum I need\
+      \ to screw Caladon (in fact, I think you can get persuasion mastery and still end up with the best ending - I believe\
+      \ I achieved it in my last playthrough) Am I missing something? Is there any mention in game that best for Tarant =\
+      \ best for the world? User 2: It's a feature, not a bug. It is possible to get mastery training AND the \"good\" ending,\
+      \ but it is a fine line to walk and you won't get the repudiation title. FWIW there are several competing quests in\
+      \ the game where you can only complete one or the other, not both. Or if you are able to complete them both you cannot\
+      \ do so with maximum results. &amp;nbsp; On a side note, calling the endings \"good\" is relative ;) I think the industrial\
+      \ council is garbage for the half-ogre breeding program, but there is no way in game to punish them per se. My solution\
+      \ is to get the endings were Dernholm and Caladon win wars against Tarant, and where the sewers back up and throw the\
+      \ city into chaos. Bye-bye industrial council!"
+    - 'Original Post: Targets marked as obscured even though they''re not?. Hey all, I''ve been playing Arcanum (my first
+      time!), having a blast and shit, but I''ve encountered something that baffles me; I''m in the Tarant Sewers, killing
+      Ghouls, but even when I have a clear, direct line of fire, the targeting icon for partially obscured target shows up
+      and my accuracy is lower than usual (65% to hit instead of 85), but strangely, sometimes I feel like the penalty isn''t
+      there, hitting 4 or 5 shots in a row even though the penalty is displayed (though it could just be chance), even when
+      I haven''t changed my loadout.  This doesn''t happen with any other enemies or areas.
+
+
+      Is this a known bug? Is there a mechanic I haven''t noticed? Or are the sewers just like this? User 1: There are darkness
+      penalties. Training with the Melee skill ignores these penalties, but I don''t think that''s the case with other ranged
+      weapons. There are also tech vs. magick penalties, in firing a Firearm (or tech Bow, etc.) will come at a to-hit penalty
+      against magickal enemies. I know certainly some types of ghouls class as magickal, others don''t. That''s about all
+      I can think of off the top of my head. User 2: maybe this is the darkness penalty to accuracy??? User 3: There is also
+      range penalties unless you have master firearms skill.'
+  - source_sentence: how to make murgo follow me
+    sentences:
+    - Vooriden. Vooriden. Location. The village is located at 868W 1191S, south-southwest of Tarant in the Morbihan Plains.
+      It is marked on the player's map after accepting a quest from the ghost of Stringy Pete to free him from his curse.
+      Temple of Halcyon. Vooriden is home to the temple and altar of Halcyon, which you can use in the Ancient Gods quest
+      when it is fixed (point 1). Next to the temple is Murgo (point 2) who is an Half-Ogre helper to the priests of Halcyon.
+      He'll join you group as a temporary follower if you accept a quest to restore the altar. However he will leave the group
+      once you return to Vooriden, or if you deviate from the quest.
+    - "Original Post: New playthrough. If you wanna start a new playthhrough is the Arcanum Multiverse Edition\n https://arcanum.fandom.com/wiki/Modding_and_Patches\n\
+      \na way to go or is it better to stick with Unofficial Patch 2.02? Or is there no difference in gameplay?\n\nCheers\
+      \ User 1: I’m using the 2.02 on my Steam Deck and it’s been virtually perfect (considering it’s Arcanum!). I’ve had\
+      \ 2 glitches that I worked around. One was I had to kill the guard to get into Wheel Clan mine. The other was I had\
+      \ a grave that was not diggable so had to skip a step in main quest. Also performance is perfect, and load times are\
+      \ instant. Had to use a 5.xxx version of Proton. User 2: I swear by the Unofficial, I’m doing a playthrough right now\
+      \ and it’s super smooth, only encountered one crash during the pit sequence on the isle of despair, but even the janky\
+      \ Virgil late game stuff has worked perfectly- User 3: It depends upon what you are looking for. Basically AME is like\
+      \ UAP, but with a lot of extras like new spells, new quests, extended game play after defeating the final boss, etc.\
+      \ Some people like the \"new game\" feel of AME, while others prefer a new play through with stuff that they already\
+      \ know. I've tried both mods, and both are good at what they set out to do."
+    - 'Original Post: Milo''s quest bug. Hey everyone,
+
+      I started playing the game recently and I love it. I have run up to a problem in the boil. I have started the questline
+      for joining the Maug gang. After finishing the collect from lars quest I was directed to the hotel where Maug lives.
+      Unfortunately Milo, the doorman does not want to give me the Kill Treat quest. I tried doing it anyways and the shapeshift
+      does happend but still no way to enter the hotel. Any ideas how to fix this? User 1: i had never experience this bug
+      Do you use UAP? i m currently stealing the alcohol of this guys and will let you know if i face similar bug lizard-guy
+      killed prematurely because its easier without quest User 2: The step by step solution can be [Found Here](https://arcanum.fandom.com/wiki/Kill_Treat),
+      and the previous quest can be [Found Here](https://arcanum.fandom.com/wiki/Collect_from_Larrs). If it is still not working
+      for you then it is an unknown bug :( User 1: hey man, are you doing okey? i wasnt been able to hear from you on discord
+      and i wonder if you got the quest working or what?'
+  - source_sentence: virgil leaving party glitch
+    sentences:
+    - 'Rid Mr. Plough''s Warehouses of Rats. Rid Mr. Plough''s Warehouses of Rats. Rid Mr. Plough''s Warehouses of Rats Start:
+      Tarant, Simon Plough''s Warehouse End: Tarant, Simon Plough''s Warehouse Location: Tarant Rewards: 3,100 XP+Good alignment.
+      Simon Plough in Tarant has recently bought a couple of warehouses, but it turns out that they are infested with rats.
+      If you talk to him, he will ask you to clear the rats for him. He cannot offer you any rewards for doing so, but you
+      can loot anything you find in there, plus you will gain quite a lot of experience for killing the monsters. Walkthrough.
+      Talk to Simon Plough at the warehouse entrance and ask about his problem. Visit the smaller warehouse to the left first
+      and kill the rats inside. You will also find a key in one of the barrels. Use the key to enter the bigger warehouse
+      and kill everything inside. Return to Simon to finish the quest. Rewards. 3,100 XP +Good alignment'
+    - 'Exploits. Exploits. "Come with me Virgil, we must break the game."—Jesse (Troika Games). A bug, also known as a glitch
+      is a mistake in computer software. In games, bugs are issues such as dissapearing items, repeating dialogue, missing
+      dialogue, etc. Some use the term "glitch" only to describe visual errors such as missing textures or incorrect rendering.
+      An exploit is a beneficial bug which can be "exploited" to give the player an unintended advantage. All bugs listed
+      here are known to work on the latest official patch (1.0.7.4). If you are using an older version of Arcanum, please
+      test the bugs you intend to post here to see if they work on the latest version as well. As always: SPOILER WARNING!.
+      List of bugs, glitches and exploits. Bugs / Glitches. Arronax''s Shell. Arronax''s "indestructible" shell is actually
+      just an untargetable object with a low HP, so it''s possible to destroy it with AoE spells, although only visually.
+      Arcanum ~ Arronax''s Shell Glitch. Indoor Windows Glitch. Some separate map buildings (e.g. Bates'' Mansion) have windows
+      indoors for aesthetic purposes. Breaking these windows and then jumping out of them will allow the player to stand on
+      the black tiles surrounding the map, but not be able to do anything remarkable such as walk all the way off screen on
+      them (just 1 tile away from the wall). This is because there are no invisible blocking tiles set on the outer side of
+      these windows. It may be possible to walk on the outer side of the walls and enter rooms which are ordinarily locked
+      or otherwise inaccessible, although no examples of this have been found yet. Avoid Instant Kill in Falcon''s Ache. By
+      having Dweomer Shield or Reflection Shield cast on yourself when attacking the creatures or loggers in Falcon''s Ache,
+      you will not get instantly killed by the Quench Life-like spell. Disintegrate Glitch on Isle of Despair. If you are
+      on theIsle of Despair and you challenge someone to fight in the pit and you kill them using the spell "Disintegrate"
+      the game will glitch and not consider your kill counted and you will not be able to leave the pit. Yet Another Pit Glitch.
+      Pit glitch. Permanent Stun Bug. If you play Fast Turn Based combat mode and get stunned by an enemy (such as Arbalah)
+      just before they die, you may get stuck in a permanent stun. Your character will keep spinning in a state of dizzy confusion,
+      and time will pass by very quickly. Even after waiting 5 minutes (in real life) the character was still stunned. It
+      is worth noting that I was stunned multiple times, so this may have contributed to the glitch. I haven''t tried replicating
+      this, it seemed very odd and possibly random. To fix it, simply go to options and set combat mode to Real Time (press
+      SPACE). Palette Issues. Casting Body of Air on a demon summoned through the Hellgate spell will cause it to permanently
+      change its palette after Body of Air is cancelled from sustain. NPC Generator Issues. Killing certain NPCs important
+      to storyline progression will respawn the'
+    - 'Original Post: Raven bugged (returning from dark elves). Did the main Q talked to the leader of the molecan hand etc.
+      and returned to quintarra. But the dialogue with Raven is not where. I can ask her if I may ask a Q, she says yes, but
+      then my only option is "good bye", and i need to go in and talk to the silver mother again. What have i messed up/can
+      it be redeem/debugged? User 1: I don''t know if that specific bug is fixed by the Unofficial Arcanum Patch but many
+      are. Do you have it installed? If not, I highly recommend it: [https://terra-arcanum.com/drog/uap.html#download](https://terra-arcanum.com/drog/uap.html#download)
+      User 2: Did you talk to Min Gorad? You have to either loot a note from her, or get an answer from her directly, or kill
+      her and use conjure spirit If you simply insulted and/or killed her without getting an answer from her, then you are
+      stuck. You will have to go to an earlier save and try talking to her again. User 3: Was Virgil in your party and did
+      he just leave the party? He might be stuck in that area, the entrance to the dark elf place. Happened to me and I couldn''t
+      figure out how to proceed from there.'
+  - source_sentence: find nasrudin rebirth info
+    sentences:
+    - Panarii. Panarii. Panarii is the most widespread religion in Arcanum. The Panarii Religion is based on the teachings
+      of Nasrudin. According to Panarii religion, it is said that the Living One constitutes the spirit of Nasrudin, will
+      be reborn on wings of fire in hills shrouded in fog, and will fight the final battle with Arronax. It is said that there
+      would be something unusual about her or his appearance. Notable characters. Nasrudin Arronax K'an Hua Saint Mannox Elder
+      Joachim Virgil Living One. See also. Panarii Pamphlet Discover the Truth about the Panarii (quest) First Panarii Temple
+      in Caladon
+    - Portraits. Portraits. Follower portraits. Arronax Magnus Shale Fist The Bane of Kree Murgo Chukka Perriman Smythe Cynthia
+      Boggs Raven Dante Sebastian Doc Roberts Sogg Mead Mug Dog (Worthless Mutt) Swyft Franklin Payne Thorvald Two Stones
+      Gar Tollo Underhill Geoffrey Tarellond-Ashe Torian Kel Gorgoth Virgil Brummond Jayna Stiles Vollinger Jormund Waromon
+      Kraka-tur Weldo Rubin Loghaire Thunder Stone Z'an Al'urin. Player character portraits. Human male Human female Dwarf
+      male Elf male Elf female Half-elf male Half-elf female Gnome male Halfling male Half-orc male Half-orc female Half-ogre
+      male
+    - Gateway to the Wastes. Gateway to the Wastes. Location. The Gateway is found 466W 741S. it is north of Ashbury along
+      the coast, where the Vendigroth Wastes begin. It is marked on the player's map either by Nasrudin or K'an Hua when you
+      accept their respective quests. Area. The site is home to Weldo Rubin and his camp (point 1). It sits at the foot of
+      an ancient bridge leading to the Wastes.
+  - source_sentence: multiverse edition graphic glitch
+    sentences:
+    - 'Stringy Pete. Stringy Pete. Stringy Pete Location: Stringy Petes Cove. "I don''t talk much about him..I''ll just say
+      that Stringy Pete was the meanest, cold-blooded, murdering pirate who ever put to sail, and be done with it..there are
+      stories and legends, and most of ''em are true.  He''s been dead for more''n two hundred years, and people still whisper
+      his name when they talk about him..". —Captain Edward Teach. The most cruel, ruthless and Ax-Crazy pirate of all times,
+      feared all over Arcanum. He died more than two centuries ago, but rumors are that his spirit still sails the seas, punishing
+      anyone who plays with his name..'
+    - 'Original Post: Weird graphic bug while using Multiverse edition. https://imgur.com/a/eh6d2TU
+
+
+      Any ideas? There seems to be a sort of outline around sprites, in buildings this results in these lines you can see
+      that can go vertically and horizontally, it''s not visible in this particular shot but it also shows around characters,
+      as a sort of frame around the player model.
+
+
+      I tried messing with the launcher options but nothing worked.
+
+
+      On this subject, is Multiverse edition really supposed to be more unstable than vanilla + some patches? Because I remember
+      playing this game a few years ago for a little while (didn''t even beat Black Mountain clan dungeon IIRC) and it had
+      a lot less issues than the version I''m using now, and if I remember correctly I just had a few patches and the resolution
+      patch back then.
+
+
+      With Multiverse edition I ran into a lot of bugs so far, random crashes but also a specific one that triggers always
+      if I try to access a certain part of the log book, once during the bank robbery in Shrouded Hills my disposition towards
+      everyone skyrocketed to 5000+, this visual bug, probably a few others I forgot... It doesn''t seem very stable at all.'
+    - 'Original Post: Visual Background Bug. I tried playing the vanilla game but I had this bug where the UI (the brown part
+      where your inventory and info is) would be covered in black pixels you had to hover your mouse above to clear, so I
+      went and installed the UAP but now it''s gone to hell
+
+      ----------EDIT-------------
+
+      my bad y''all, it was an old UAP, I think it was v0.9 I found on a very old Arcanum site, I tried again with V2.2 on
+      the Nexus and this bug is gone, the game works fine now but the loading times after each transition take soooooooo long.
+      User 1: Try installing a more recent ddraw.dll. The one from the UAP''s high res patch is too old. https://github.com/narzoul/DDrawCompat/releases
+      User 2: I don''t know if this will work for you but for similar issues I''ve found adding -doublebuffer to the launch
+      parameters helped. User 3: Updating my GPU firmware helped me with this in the past.'
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - cosine_accuracy@1
+  - cosine_accuracy@3
+  - cosine_accuracy@5
+  - cosine_accuracy@10
+  - cosine_precision@1
+  - cosine_precision@3
+  - cosine_precision@5
+  - cosine_precision@10
+  - cosine_recall@1
+  - cosine_recall@3
+  - cosine_recall@5
+  - cosine_recall@10
+  - cosine_ndcg@10
+  - cosine_mrr@10
+  - cosine_map@100
+  model-index:
+  - name: SentenceTransformer based on BAAI/bge-m3
+    results:
+    - task:
+        type: information-retrieval
+        name: Information Retrieval
+      dataset:
+        name: val hard negatives
+        type: val-hard-negatives
+      metrics:
+      - type: cosine_accuracy@1
+        value: 0.5602775368603643
+        name: Cosine Accuracy@1
+        verified: false
+      - type: cosine_accuracy@3
+        value: 0.7528187337380746
+        name: Cosine Accuracy@3
+        verified: false
+      - type: cosine_accuracy@5
+        value: 0.8100607111882047
+        name: Cosine Accuracy@5
+        verified: false
+      - type: cosine_accuracy@10
+        value: 0.8742411101474414
+        name: Cosine Accuracy@10
+        verified: false
+      - type: cosine_precision@1
+        value: 0.5602775368603643
+        name: Cosine Precision@1
+        verified: false
+      - type: cosine_precision@3
+        value: 0.2509395779126915
+        name: Cosine Precision@3
+        verified: false
+      - type: cosine_precision@5
+        value: 0.16201214223764093
+        name: Cosine Precision@5
+        verified: false
+      - type: cosine_precision@10
+        value: 0.08742411101474414
+        name: Cosine Precision@10
+        verified: false
+      - type: cosine_recall@1
+        value: 0.5602775368603643
+        name: Cosine Recall@1
+        verified: false
+      - type: cosine_recall@3
+        value: 0.7528187337380746
+        name: Cosine Recall@3
+        verified: false
+      - type: cosine_recall@5
+        value: 0.8100607111882047
+        name: Cosine Recall@5
+        verified: false
+      - type: cosine_recall@10
+        value: 0.8742411101474414
+        name: Cosine Recall@10
+        verified: false
+      - type: cosine_ndcg@10
+        value: 0.7173232383616462
+        name: Cosine Ndcg@10
+        verified: false
+      - type: cosine_mrr@10
+        value: 0.6669788268010296
+        name: Cosine Mrr@10
+        verified: false
+      - type: cosine_map@100
+        value: 0.6719417577306801
+        name: Cosine Map@100
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-19T04:48:06.000Z'
+safetensors:
+  parameters:
+    F32: 567754752
+  total: 567754752
+usedStorage: 2288162795
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - XLMRobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 1024
+  initializer_range: 0.02
+  intermediate_size: 4096
+  is_decoder: false
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 8194
+  model_type: xlm-roberta
+  num_attention_heads: 16
+  num_hidden_layers: 24
+  output_past: true
+  pad_token_id: 1
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.18.0
+  type_vocab_size: 1
+  use_cache: false
+  vocab_size: 250002
+onnxFiles: {}
+safetensorsSizeMb: 2271.1
+approxSizeMb: 2271.0
+fetchedAt: '2026-10-19T08:43:20.000Z'

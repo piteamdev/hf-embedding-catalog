@@ -1,0 +1,90 @@
+_id: 6ad5bcdc5195b706acc02f83
+id: pkcpkc/gbert-base-mlx
+private: false
+pipeline_tag: feature-extraction
+library_name: mlx
+tags:
+- mlx
+- safetensors
+- bert
+- omlx
+- feature-extraction
+- de
+- base_model:deepset/gbert-base
+- base_model:quantized:deepset/gbert-base
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: pkcpkc/gbert-base-mlx
+author: pkcpkc
+sha: 013877f80cd962e93f0442b2c7344da966faa154
+lastModified: '2026-10-19T06:47:05.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    cls_token: '[CLS]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    unk_token: '[UNK]'
+    mask_token: '[MASK]'
+cardData:
+  license: mit
+  base_model: deepset/gbert-base
+  base_model_relation: quantized
+  library_name: mlx
+  pipeline_tag: feature-extraction
+  language:
+  - de
+  tags:
+  - mlx
+  - bert
+  - omlx
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: license.txt
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: tokenizer_config.json
+- rfilename: vocab.txt
+spaces: []
+createdAt: '2026-10-19T06:46:52.000Z'
+safetensors:
+  parameters:
+    F16: 109927680
+  total: 109927680
+usedStorage: 219877610
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  max_position_embeddings: 512
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  type_vocab_size: 2
+  vocab_size: 31102
+  model_type: bert
+  layer_norm_eps: 1.0e-12
+  pad_token_id: 0
+  position_embedding_type: absolute
+  _name_or_path: deepset/gbert-base
+onnxFiles: {}
+safetensorsSizeMb: 219.9
+approxSizeMb: 219.9
+fetchedAt: '2026-10-19T08:43:20.000Z'

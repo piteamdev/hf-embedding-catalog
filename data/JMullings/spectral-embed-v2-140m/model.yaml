@@ -1,0 +1,57 @@
+_id: 6ad4f50a6a9ae2f10423ff47
+id: JMullings/spectral-embed-v2-140m
+private: false
+pipeline_tag: feature-extraction
+tags:
+- feature-extraction
+- sentence-similarity
+- embeddings
+- spectral-embeddings
+- linear-operator
+- cpu-only
+- ultra-fast
+- mteb
+- en
+- license:other
+- region:us
+downloads: 0
+likes: 0
+modelId: JMullings/spectral-embed-v2-140m
+author: JMullings
+sha: 6943d55ebe5e317f00701b574c12d4f39ca6f03b
+lastModified: '2026-10-19T04:07:57.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  language:
+  - en
+  license: other
+  license_name: spectral-embeddings-community-license-v1.0
+  license_link: LICENSE
+  pipeline_tag: feature-extraction
+  tags:
+  - feature-extraction
+  - sentence-similarity
+  - embeddings
+  - spectral-embeddings
+  - linear-operator
+  - cpu-only
+  - ultra-fast
+  - mteb
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: spectral-embed-v2-140m.npz
+spaces: []
+createdAt: '2026-10-18T16:34:18.000Z'
+usedStorage: 3181821518
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-19T08:43:20.000Z'

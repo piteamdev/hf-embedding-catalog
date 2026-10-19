@@ -1,0 +1,339 @@
+_id: 6ad5629fb5a5d3139ad2e1f0
+id: seanfarrell/icd11_embed_model_v2_large
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- gemma3_text
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:8089600
+- loss:MultipleNegativesRankingLoss
+- arxiv:1908.10084
+- arxiv:1807.03748
+- base_model:sentence-transformers/embeddinggemma-300m-medical
+- base_model:finetune:sentence-transformers/embeddinggemma-300m-medical
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: seanfarrell/icd11_embed_model_v2_large
+author: seanfarrell
+sha: 042a190f06ee06a81bf33967216620a23f80fd49
+lastModified: '2026-10-19T00:22:07.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: anaemia
+  sentences:
+  - anaemic nos
+  - scurvy
+  - foreign body
+- source_sentence: paludism
+  sentences:
+  - congestive fever
+  - ocular myiasis
+  - gnathophyma
+- source_sentence: amniocele
+  sentences:
+  - inefction
+  - omphalocele
+  - chylous effusion
+- source_sentence: polyploid
+  sentences:
+  - polyploidy
+  - monosomy 19p13.12
+  - otorrhagia
+- source_sentence: polysplenia
+  sentences:
+  - cut cysts
+  - splenunculi
+  - spleen agenesis
+model-index:
+- name: SentenceTransformer based on sentence-transformers/embeddinggemma-300m-medical
+  results:
+  - task:
+      type: information-retrieval
+      name: Information Retrieval
+    dataset:
+      name: icd11 val
+      type: icd11-val
+    metrics:
+    - type: cosine_accuracy@1
+      value: 0.7742690058479532
+      name: Cosine Accuracy@1
+      verified: false
+    - type: cosine_accuracy@5
+      value: 0.8432748538011696
+      name: Cosine Accuracy@5
+      verified: false
+    - type: cosine_accuracy@10
+      value: 0.8643274853801169
+      name: Cosine Accuracy@10
+      verified: false
+    - type: cosine_precision@1
+      value: 0.7742690058479532
+      name: Cosine Precision@1
+      verified: false
+    - type: cosine_precision@3
+      value: 0.6912280701754386
+      name: Cosine Precision@3
+      verified: false
+    - type: cosine_precision@5
+      value: 0.5929824561403508
+      name: Cosine Precision@5
+      verified: false
+    - type: cosine_precision@10
+      value: 0.43543859649122807
+      name: Cosine Precision@10
+      verified: false
+    - type: cosine_recall@1
+      value: 0.16470727696455337
+      name: Cosine Recall@1
+      verified: false
+    - type: cosine_recall@3
+      value: 0.4096813550232527
+      name: Cosine Recall@3
+      verified: false
+    - type: cosine_recall@5
+      value: 0.5202410469498723
+      name: Cosine Recall@5
+      verified: false
+    - type: cosine_recall@10
+      value: 0.6459809458753583
+      name: Cosine Recall@10
+      verified: false
+    - type: cosine_ndcg@10
+      value: 0.7291630675233993
+      name: Cosine Ndcg@10
+      verified: false
+    - type: cosine_mrr@10
+      value: 0.8052028218694884
+      name: Cosine Mrr@10
+      verified: false
+    - type: cosine_map@10
+      value: 0.6770894371068766
+      name: Cosine Map@10
+      verified: false
+config:
+  architectures:
+  - Gemma3TextModel
+  model_type: gemma3_text
+  tokenizer_config:
+    bos_token: <bos>
+    eos_token: <eos>
+    pad_token: <pad>
+    unk_token: <unk>
+    use_default_system_prompt: false
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:8089600
+  - loss:MultipleNegativesRankingLoss
+  base_model: sentence-transformers/embeddinggemma-300m-medical
+  widget:
+  - source_sentence: anaemia
+    sentences:
+    - anaemic nos
+    - scurvy
+    - foreign body
+  - source_sentence: paludism
+    sentences:
+    - congestive fever
+    - ocular myiasis
+    - gnathophyma
+  - source_sentence: amniocele
+    sentences:
+    - inefction
+    - omphalocele
+    - chylous effusion
+  - source_sentence: polyploid
+    sentences:
+    - polyploidy
+    - monosomy 19p13.12
+    - otorrhagia
+  - source_sentence: polysplenia
+    sentences:
+    - cut cysts
+    - splenunculi
+    - spleen agenesis
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - cosine_accuracy@1
+  - cosine_accuracy@5
+  - cosine_accuracy@10
+  - cosine_precision@1
+  - cosine_precision@3
+  - cosine_precision@5
+  - cosine_precision@10
+  - cosine_recall@1
+  - cosine_recall@3
+  - cosine_recall@5
+  - cosine_recall@10
+  - cosine_ndcg@10
+  - cosine_mrr@10
+  - cosine_map@10
+  model-index:
+  - name: SentenceTransformer based on sentence-transformers/embeddinggemma-300m-medical
+    results:
+    - task:
+        type: information-retrieval
+        name: Information Retrieval
+      dataset:
+        name: icd11 val
+        type: icd11-val
+      metrics:
+      - type: cosine_accuracy@1
+        value: 0.7742690058479532
+        name: Cosine Accuracy@1
+        verified: false
+      - type: cosine_accuracy@5
+        value: 0.8432748538011696
+        name: Cosine Accuracy@5
+        verified: false
+      - type: cosine_accuracy@10
+        value: 0.8643274853801169
+        name: Cosine Accuracy@10
+        verified: false
+      - type: cosine_precision@1
+        value: 0.7742690058479532
+        name: Cosine Precision@1
+        verified: false
+      - type: cosine_precision@3
+        value: 0.6912280701754386
+        name: Cosine Precision@3
+        verified: false
+      - type: cosine_precision@5
+        value: 0.5929824561403508
+        name: Cosine Precision@5
+        verified: false
+      - type: cosine_precision@10
+        value: 0.43543859649122807
+        name: Cosine Precision@10
+        verified: false
+      - type: cosine_recall@1
+        value: 0.16470727696455337
+        name: Cosine Recall@1
+        verified: false
+      - type: cosine_recall@3
+        value: 0.4096813550232527
+        name: Cosine Recall@3
+        verified: false
+      - type: cosine_recall@5
+        value: 0.5202410469498723
+        name: Cosine Recall@5
+        verified: false
+      - type: cosine_recall@10
+        value: 0.6459809458753583
+        name: Cosine Recall@10
+        verified: false
+      - type: cosine_ndcg@10
+        value: 0.7291630675233993
+        name: Cosine Ndcg@10
+        verified: false
+      - type: cosine_mrr@10
+        value: 0.8052028218694884
+        name: Cosine Mrr@10
+        verified: false
+      - type: cosine_map@10
+        value: 0.6770894371068766
+        name: Cosine Map@10
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Dense/config.json
+- rfilename: 2_Dense/model.safetensors
+- rfilename: 3_Dense/config.json
+- rfilename: 3_Dense/model.safetensors
+- rfilename: 4_Normalize/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-19T00:21:51.000Z'
+safetensors:
+  parameters:
+    F32: 302863104
+  total: 302863104
+usedStorage: 1263745876
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  _sliding_window_pattern: 6
+  architectures:
+  - Gemma3TextModel
+  attention_bias: false
+  attention_dropout: 0.0
+  attn_logit_softcapping: null
+  bos_token_id: 2
+  dtype: float32
+  eos_token_id: 1
+  final_logit_softcapping: null
+  head_dim: 256
+  hidden_activation: gelu_pytorch_tanh
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 1152
+  layer_types:
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  max_position_embeddings: 1024
+  model_type: gemma3_text
+  num_attention_heads: 3
+  num_hidden_layers: 24
+  num_key_value_heads: 1
+  pad_token_id: 0
+  query_pre_attn_scalar: 256
+  rms_norm_eps: 1.0e-06
+  rope_local_base_freq: 10000.0
+  rope_scaling: null
+  rope_theta: 1000000.0
+  sliding_window: 129
+  transformers_version: 4.57.3
+  use_bidirectional_attention: true
+  use_cache: true
+  vocab_size: 262144
+onnxFiles: {}
+safetensorsSizeMb: 1230.4
+approxSizeMb: 1211.5
+fetchedAt: '2026-10-19T08:43:20.000Z'

@@ -1,0 +1,76 @@
+_id: 6ad4dff56a9ae2f1042067f4
+id: Dadigua12581/quadratic
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- M
+- feature-extraction
+- generated_from_trainer
+- custom_code
+- region:us
+downloads: 0
+likes: 0
+modelId: Dadigua12581/quadratic
+author: Dadigua12581
+sha: 02835a378fc2019d25d509fb94a2047e4e5ffe58
+lastModified: '2026-10-18T15:05:36.000Z'
+gated: false
+disabled: false
+model-index:
+- name: quadratic
+  results: []
+config:
+  architectures:
+  - MModel
+  auto_map:
+    AutoConfig: config.MConfig
+    AutoModel: mode.MModel
+  model_type: M
+cardData:
+  library_name: transformers
+  tags:
+  - generated_from_trainer
+  model-index:
+  - name: quadratic
+    results: []
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: mode.MModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: all_results.json
+- rfilename: config.json
+- rfilename: config.py
+- rfilename: eval_results.json
+- rfilename: mode.py
+- rfilename: model.safetensors
+- rfilename: training_args.bin
+spaces: []
+createdAt: '2026-10-18T15:04:21.000Z'
+safetensors:
+  parameters:
+    F32: 193
+  total: 193
+usedStorage: 6285
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - MModel
+  auto_map:
+    AutoConfig: config.MConfig
+    AutoModel: mode.MModel
+  dtype: float32
+  hidden: 64
+  model_type: M
+  transformers_version: 5.20.1
+  use_cache: false
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-19T08:43:20.000Z'

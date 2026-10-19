@@ -1,0 +1,220 @@
+_id: 6ad5292bc6ea46c7f5d20acb
+id: SolvrenAI/bge-base-en-v1.5-hipaa
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- feature-extraction
+- retrieval
+- rag
+- healthcare
+- hipaa
+- regulatory
+- sentence-similarity
+- en
+- dataset:SolvrenAI/hipaa-retrieval-pairs
+- arxiv:2309.07597
+- base_model:BAAI/bge-base-en-v1.5
+- base_model:finetune:BAAI/bge-base-en-v1.5
+- license:mit
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: SolvrenAI/bge-base-en-v1.5-hipaa
+author: SolvrenAI
+sha: 208b245fb3090ce9a6da459e29331c7206d242d3
+lastModified: '2026-10-19T05:53:50.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index:
+- name: bge-base-en-v1.5-hipaa
+  results:
+  - task:
+      type: retrieval
+    dataset:
+      name: HIPAA val queries over full 304-chunk corpus
+      type: SolvrenAI/hipaa-retrieval-pairs
+      split: validation
+    metrics:
+    - type: ndcg_at_10
+      value: 0.9071
+      verified: false
+    - type: mrr_at_10
+      value: 0.8759
+      verified: false
+    - type: accuracy_at_1
+      value: 0.7879
+      verified: false
+    - type: accuracy_at_10
+      value: 1
+      verified: false
+  - task:
+      type: retrieval
+    dataset:
+      name: HIPAA val queries over 33 val chunks
+      type: SolvrenAI/hipaa-retrieval-pairs
+      split: validation
+    metrics:
+    - type: ndcg_at_10
+      value: 0.9256
+      verified: false
+    - type: mrr_at_10
+      value: 0.9004
+      verified: false
+    - type: accuracy_at_1
+      value: 0.8283
+      verified: false
+  - task:
+      type: retrieval
+    dataset:
+      name: BEIR SciFact
+      type: mteb/scifact
+      split: test
+    metrics:
+    - type: ndcg_at_10
+      value: 0.7427
+      verified: false
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  language: en
+  license: mit
+  base_model: BAAI/bge-base-en-v1.5
+  datasets:
+  - SolvrenAI/hipaa-retrieval-pairs
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  tags:
+  - sentence-transformers
+  - feature-extraction
+  - retrieval
+  - rag
+  - healthcare
+  - hipaa
+  - regulatory
+  model-index:
+  - name: bge-base-en-v1.5-hipaa
+    results:
+    - task:
+        type: retrieval
+      dataset:
+        name: HIPAA val queries over full 304-chunk corpus
+        type: SolvrenAI/hipaa-retrieval-pairs
+        split: validation
+      metrics:
+      - type: ndcg_at_10
+        value: 0.9071
+        verified: false
+      - type: mrr_at_10
+        value: 0.8759
+        verified: false
+      - type: accuracy_at_1
+        value: 0.7879
+        verified: false
+      - type: accuracy_at_10
+        value: 1
+        verified: false
+    - task:
+        type: retrieval
+      dataset:
+        name: HIPAA val queries over 33 val chunks
+        type: SolvrenAI/hipaa-retrieval-pairs
+        split: validation
+      metrics:
+      - type: ndcg_at_10
+        value: 0.9256
+        verified: false
+      - type: mrr_at_10
+        value: 0.9004
+        verified: false
+      - type: accuracy_at_1
+        value: 0.8283
+        verified: false
+    - task:
+        type: retrieval
+      dataset:
+        name: BEIR SciFact
+        type: mteb/scifact
+        split: test
+      metrics:
+      - type: ndcg_at_10
+        value: 0.7427
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Normalize/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-18T20:16:43.000Z'
+safetensors:
+  parameters:
+    F32: 109482240
+  total: 109482240
+usedStorage: 437951328
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  id2label:
+    '0': LABEL_0
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  label2id:
+    LABEL_0: 0
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.20.1
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 30522
+onnxFiles: {}
+safetensorsSizeMb: 438.0
+approxSizeMb: 437.9
+fetchedAt: '2026-10-19T08:43:20.000Z'

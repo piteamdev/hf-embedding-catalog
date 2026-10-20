@@ -1,0 +1,113 @@
+_id: 6ad707bf47bbbd535a850efb
+id: t-firefly/gte-multilingual-base-rknn2-rk3588
+private: false
+pipeline_tag: sentence-similarity
+tags:
+- new
+- firefly
+- rockchip
+- rk3588
+- llamapi
+- edge-ai
+- sentence-similarity
+- custom_code
+- base_model:Alibaba-NLP/gte-multilingual-base
+- base_model:finetune:Alibaba-NLP/gte-multilingual-base
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 1
+modelId: t-firefly/gte-multilingual-base-rknn2-rk3588
+author: t-firefly
+sha: 7e10b88f6cc4eb20e87306ab4bacaf8708adb81c
+lastModified: '2026-10-20T06:27:30.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config:
+  architectures:
+  - NewModel
+  - NewForTokenClassification
+  auto_map:
+    AutoConfig: configuration.NewConfig
+    AutoModelForMaskedLM: modeling.NewForMaskedLM
+    AutoModel: modeling.NewModel
+    AutoModelForMultipleChoice: modeling.NewForMultipleChoice
+    AutoModelForQuestionAnswering: modeling.NewForQuestionAnswering
+    AutoModelForSequenceClassification: modeling.NewForSequenceClassification
+    AutoModelForTokenClassification: modeling.NewForTokenClassification
+  model_type: new
+cardData:
+  license: apache-2.0
+  license_link: https://www.apache.org/licenses/LICENSE-2.0
+  base_model:
+  - Alibaba-NLP/gte-multilingual-base
+  pipeline_tag: sentence-similarity
+  tags:
+  - firefly
+  - rockchip
+  - rk3588
+  - llamapi
+  - edge-ai
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: firefly-logo-outline.png
+- rfilename: gte_multilingual_base_dynamic.rknn
+- rfilename: model.toml
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-10-20T06:18:39.000Z'
+usedStorage: 681489319
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - NewModel
+  - NewForTokenClassification
+  attention_probs_dropout_prob: 0.0
+  auto_map:
+    AutoConfig: configuration.NewConfig
+    AutoModelForMaskedLM: modeling.NewForMaskedLM
+    AutoModel: modeling.NewModel
+    AutoModelForMultipleChoice: modeling.NewForMultipleChoice
+    AutoModelForQuestionAnswering: modeling.NewForQuestionAnswering
+    AutoModelForSequenceClassification: modeling.NewForSequenceClassification
+    AutoModelForTokenClassification: modeling.NewForTokenClassification
+  classifier_dropout: 0.0
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  layer_norm_eps: 1.0e-12
+  layer_norm_type: layer_norm
+  max_position_embeddings: 8192
+  model_type: new
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  num_labels: 1
+  pack_qkv: true
+  pad_token_id: 1
+  position_embedding_type: rope
+  rope_scaling:
+    factor: 8.0
+    type: ntk
+  rope_theta: 20000
+  torch_dtype: float16
+  transformers_version: 4.39.1
+  type_vocab_size: 1
+  unpad_inputs: false
+  use_memory_efficient_attention: false
+  vocab_size: 250048
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-20T08:23:57.000Z'

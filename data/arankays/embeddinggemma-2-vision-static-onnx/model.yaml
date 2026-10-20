@@ -1,0 +1,58 @@
+_id: 6ad6647c6320a55467774159
+id: arankays/embeddinggemma-2-vision-static-onnx
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- openvino
+- npu
+- embedding
+- image-feature-extraction
+- feature-extraction
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: arankays/embeddinggemma-2-vision-static-onnx
+author: arankays
+sha: 16414206c27ee4bc435a7c03467155063fee1d9f
+lastModified: '2026-10-19T18:42:07.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: google/embeddinggemma-2
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  tags:
+  - openvino
+  - npu
+  - onnx
+  - embedding
+  - image-feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: onnx/vision_encoder.onnx_data
+- rfilename: onnx/vision_encoder_static_140.onnx
+- rfilename: onnx/vision_encoder_static_280.onnx
+- rfilename: onnx/vision_encoder_static_70.onnx
+- rfilename: processor_config.json
+spaces: []
+createdAt: '2026-10-19T18:42:04.000Z'
+usedStorage: 671389987
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  onnx/vision_encoder_static_140.onnx: 0.1
+  onnx/vision_encoder_static_280.onnx: 0.1
+  onnx/vision_encoder_static_70.onnx: 0.1
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-20T08:23:57.000Z'

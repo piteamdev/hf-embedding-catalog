@@ -1,0 +1,189 @@
+_id: 6ad7171cc82d3afea8bea746
+id: SwarajSolanke-turtle/make-model-mapping-TSDAE
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:86450
+- loss:DenoisingAutoEncoderLoss
+- arxiv:1908.10084
+- arxiv:2104.06979
+- base_model:google-bert/bert-base-uncased
+- base_model:finetune:google-bert/bert-base-uncased
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: SwarajSolanke-turtle/make-model-mapping-TSDAE
+author: SwarajSolanke-turtle
+sha: 507e9e8f2e5133be0877b68ebd8fea9ca2e0a68b
+lastModified: '2026-10-20T07:34:07.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: mini
+  sentences:
+  - mini contryman e electric 1
+  - tata safari xm diesel 1956
+  - daewoo cielo glx petrol 1498
+- source_sentence: '1462'
+  sentences:
+  - maruti alto 800 lxi cng 796
+  - toyota rumion g at petrol 1462
+  - honda city v mt petrol 1498
+- source_sentence: go.t cng
+  sentences:
+  - datsun go plus .t cng 1198
+  - bmw m5 standard petrol 4999
+  - volvo xc60 d4 diesel 1984
+- source_sentence: tesla y l
+  sentences:
+  - tesla model y l premium awd
+  - toyota townace townace petrol 2200
+  - maruti 1000 ac petrol 970
+- source_sentence: subaru -
+  sentences:
+  - subaru impreza - petrol 2000
+  - honda br - v s diesel 1498
+  - tata indica gls cng 1193
+model-index:
+- name: SentenceTransformer based on google-bert/bert-base-uncased
+  results:
+  - task:
+      type: triplet
+      name: Triplet
+    dataset:
+      name: fw variant dev
+      type: fw-variant-dev
+    metrics:
+    - type: cosine_accuracy
+      value: 0.9660000205039978
+      name: Cosine Accuracy
+      verified: false
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:86450
+  - loss:DenoisingAutoEncoderLoss
+  base_model: google-bert/bert-base-uncased
+  widget:
+  - source_sentence: mini
+    sentences:
+    - mini contryman e electric 1
+    - tata safari xm diesel 1956
+    - daewoo cielo glx petrol 1498
+  - source_sentence: '1462'
+    sentences:
+    - maruti alto 800 lxi cng 796
+    - toyota rumion g at petrol 1462
+    - honda city v mt petrol 1498
+  - source_sentence: go.t cng
+    sentences:
+    - datsun go plus .t cng 1198
+    - bmw m5 standard petrol 4999
+    - volvo xc60 d4 diesel 1984
+  - source_sentence: tesla y l
+    sentences:
+    - tesla model y l premium awd
+    - toyota townace townace petrol 2200
+    - maruti 1000 ac petrol 970
+  - source_sentence: subaru -
+    sentences:
+    - subaru impreza - petrol 2000
+    - honda br - v s diesel 1498
+    - tata indica gls cng 1193
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - cosine_accuracy
+  model-index:
+  - name: SentenceTransformer based on google-bert/bert-base-uncased
+    results:
+    - task:
+        type: triplet
+        name: Triplet
+      dataset:
+        name: fw variant dev
+        type: fw-variant-dev
+      metrics:
+      - type: cosine_accuracy
+        value: 0.9660000205039978
+        name: Cosine Accuracy
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: tsda.ipynb
+spaces: []
+createdAt: '2026-10-20T07:24:12.000Z'
+safetensors:
+  parameters:
+    F32: 109482240
+  total: 109482240
+usedStorage: 437951304
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.20.1
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 30522
+onnxFiles: {}
+safetensorsSizeMb: 438.0
+approxSizeMb: 437.9
+fetchedAt: '2026-10-20T08:23:57.000Z'

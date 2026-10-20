@@ -1,0 +1,101 @@
+_id: 6ad6017538ef1f3885720ebb
+id: KvaytG/rubert-tiny2-onnx
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- onnx
+- bert
+- pretraining
+- rubert
+- russian
+- embeddings
+- feature-extraction
+- ru
+- base_model:cointegrated/rubert-tiny2
+- base_model:quantized:cointegrated/rubert-tiny2
+- license:mit
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 1
+modelId: KvaytG/rubert-tiny2-onnx
+author: KvaytG
+sha: ae3a110a715ec08a79abecc526a6ea6dbf620a03
+lastModified: '2026-10-19T11:45:07.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  architectures:
+  - BertForPreTraining
+  model_type: bert
+  tokenizer_config:
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  license: mit
+  language:
+  - ru
+  base_model: cointegrated/rubert-tiny2
+  library_name: transformers
+  pipeline_tag: feature-extraction
+  tags:
+  - rubert
+  - russian
+  - onnx
+  - embeddings
+  - feature-extraction
+transformersInfo:
+  auto_model: AutoModelForPreTraining
+  pipeline_tag: pretraining
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.onnx
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: vocab.txt
+spaces: []
+createdAt: '2026-10-19T11:39:33.000Z'
+usedStorage: 116463471
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - BertForPreTraining
+  attention_probs_dropout_prob: 0.1
+  classifier_dropout: null
+  dtype: float32
+  emb_size: 312
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 312
+  initializer_range: 0.02
+  intermediate_size: 600
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 2048
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 3
+  pad_token_id: 0
+  position_embedding_type: absolute
+  transformers_version: 4.57.6
+  type_vocab_size: 2
+  use_cache: true
+  vocab_size: 83828
+onnxFiles:
+  model.onnx: 116.5
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-20T08:23:57.000Z'

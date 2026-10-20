@@ -1,0 +1,64 @@
+_id: 6ad63d7ae6bdd34f148e0097
+id: ido-pluto/SamBERT-Hebrew-Embedding-GGUF
+private: false
+pipeline_tag: sentence-similarity
+library_name: gguf
+tags:
+- gguf
+- llama-cpp
+- bert
+- embeddings
+- feature-extraction
+- sentence-similarity
+- he
+- base_model:MPA/sambert
+- base_model:quantized:MPA/sambert
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: ido-pluto/SamBERT-Hebrew-Embedding-GGUF
+author: ido-pluto
+sha: 91cddd723c7e48df9b15be0746da0b44b705e5bd
+lastModified: '2026-10-19T15:56:30.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  language:
+  - he
+  base_model: MPA/sambert
+  base_model_relation: quantized
+  pipeline_tag: sentence-similarity
+  library_name: gguf
+  tags:
+  - gguf
+  - llama-cpp
+  - bert
+  - embeddings
+  - feature-extraction
+  - sentence-similarity
+gguf:
+  total: 183754752
+  architecture: bert
+  context_length: 512
+  causal: false
+  bos_token: '[CLS]'
+  eos_token: '[SEP]'
+  pooling_type: 1
+  totalFileSize: 138000992
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: sambert-Q4_K_M.gguf
+spaces: []
+createdAt: '2026-10-19T15:55:38.000Z'
+usedStorage: 138000992
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-20T08:23:57.000Z'

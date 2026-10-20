@@ -1,0 +1,124 @@
+_id: 6ad65cfd691b27c0ca5bd19e
+id: mnmly/vjepa2.1-vit-large-384
+private: false
+pipeline_tag: feature-extraction
+library_name: mlx
+tags:
+- mlx
+- safetensors
+- vjepa2_1
+- mlx-swift
+- apple-silicon
+- video
+- self-supervised
+- v-jepa
+- feature-extraction
+- arxiv:2603.14482
+- arxiv:2506.09985
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: mnmly/vjepa2.1-vit-large-384
+author: mnmly
+sha: 2594eca8e13354b2ac4e8ed806561e4d6d8a98e8
+lastModified: '2026-10-19T20:27:09.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: vjepa2_1
+cardData:
+  license: mit
+  library_name: mlx
+  tags:
+  - mlx
+  - mlx-swift
+  - apple-silicon
+  - video
+  - self-supervised
+  - v-jepa
+  - feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model-fp16.safetensors
+- rfilename: model.safetensors
+- rfilename: predictor-fp16.safetensors
+- rfilename: predictor.safetensors
+spaces: []
+createdAt: '2026-10-19T18:10:05.000Z'
+safetensors:
+  parameters:
+    F32: 304680960
+  total: 304680960
+usedStorage: 1966014200
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  model_type: vjepa2_1
+  architecture: VisionTransformer (app/vjepa_2_1/models/vision_transformer.py)
+  hub_entry_point: vjepa2_1_vit_large_384
+  swift_configuration: vitLarge384
+  embed_dim: 1024
+  depth: 24
+  num_heads: 16
+  mlp_hidden_dim: 4096
+  patch_size: 16
+  tubelet_size: 2
+  img_temporal_dim_size: 1
+  image_size: 384
+  use_rope: true
+  interpolate_rope: true
+  pretrained_grid_size: 16
+  modality_embedding: true
+  hierarchical_layers:
+  - 5
+  - 11
+  - 17
+  - 23
+  layer_norm_eps: 1.0e-06
+  hidden_act: gelu
+  preprocessing:
+    resize_short_side: 438
+    interpolation: bilinear (cv2.INTER_LINEAR)
+    center_crop: 384
+    rescale: 0.00392156862745098
+    mean:
+    - 0.485
+    - 0.456
+    - 0.406
+    std:
+    - 0.229
+    - 0.224
+    - 0.225
+  files:
+    float32: model.safetensors
+    float16: model-fp16.safetensors
+    predictor_float32: predictor.safetensors
+    predictor_float16: predictor-fp16.safetensors
+  predictor:
+    architecture: VisionTransformerPredictor (app/vjepa_2_1/models/predictor.py)
+    swift_configuration: vitLarge384
+    embed_dim: 384
+    depth: 12
+    num_heads: 12
+    input_dim: 1024
+    output_dim: 1664
+    num_mask_tokens: 8
+    trained_mask_tokens:
+    - 0
+    num_parameters: 22973056
+    checkpoint_key: predictor
+  num_parameters: 304680960
+  source_checkpoint: https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitl_dist_vitG_384.pt
+  checkpoint_key: ema_encoder
+  upstream_repo: https://github.com/facebookresearch/vjepa2
+  upstream_commit: 204698b45b3712590f06245fbfba32d3be539812
+  license: MIT
+onnxFiles: {}
+safetensorsSizeMb: 1966.0
+approxSizeMb: 1218.7
+fetchedAt: '2026-10-20T08:23:57.000Z'

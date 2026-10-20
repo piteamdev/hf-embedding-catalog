@@ -1,0 +1,98 @@
+_id: 6acfb069093aba9665bfb207
+id: MulinLab/hEVO-base-o
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- bert
+- feature-extraction
+- biology
+- DNA
+- genomics
+- masked-language-modeling
+- custom_code
+- hevo
+- region:us
+downloads: 6
+likes: 0
+modelId: MulinLab/hEVO-base-o
+author: MulinLab
+sha: ee94e974f6db67048d7f8b107f1fd7513dd7025a
+lastModified: '2026-10-19T15:20:58.000Z'
+gated: manual
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- text: ACGTTGCATGTCGCATGATGCATGAGAGCT
+  example_title: DNA sequence representation
+model-index: null
+config:
+  architectures:
+  - FlashBertForMaskedLM
+  auto_map:
+    AutoConfig: model.CustomBertConfig
+    AutoModel: model.FlashBertForMaskedLM
+    AutoModelForMaskedLM: model.FlashBertForMaskedLM
+    AutoModelForSequenceClassification: model.FlashBertForSequenceClassification
+  model_type: bert
+  tokenizer_config:
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  library_name: transformers
+  pipeline_tag: feature-extraction
+  widget:
+  - text: ACGTTGCATGTCGCATGATGCATGAGAGCT
+    example_title: DNA sequence representation
+  tags:
+  - biology
+  - DNA
+  - genomics
+  - masked-language-modeling
+  - feature-extraction
+  - custom_code
+  - hevo
+  gated: true
+  extra_gated_heading: Reviewer access request
+  extra_gated_description: This repository is reserved for peer reviewers. Please sign in to Hugging Face and submit an access
+    request with your review purpose. MulinLab will review requests manually.
+  extra_gated_button_content: Request reviewer access
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: model.FlashBertForMaskedLM
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: assets/header.png
+- rfilename: config.json
+- rfilename: data.py
+- rfilename: model.py
+- rfilename: model.safetensors
+- rfilename: provenance.json
+- rfilename: release_manifest.json
+- rfilename: requirements.txt
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer_config.json
+- rfilename: vocab.json
+- rfilename: vocab.txt
+spaces: []
+createdAt: '2026-10-14T16:40:09.000Z'
+safetensors:
+  parameters:
+    BF16: 87094932
+  total: 87094932
+usedStorage: 175839123
+downloadsAllTime: 6
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 174.2
+approxSizeMb: 174.2
+fetchedAt: '2026-10-20T08:23:57.000Z'

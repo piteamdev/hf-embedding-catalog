@@ -1,0 +1,57 @@
+_id: 6ad7d50efa2abef7c28db4fa
+id: Polydim-Einsof/phi4_14b_PMTP_polydim_einsof
+private: false
+pipeline_tag: feature-extraction
+tags:
+- safetensors
+- pmtp
+- polydim
+- stiefel-manifold
+- turing-protocol
+- zero-worm
+- latent-reasoning
+- fp64-precision
+- feature-extraction
+- base_model:microsoft/phi-4
+- base_model:finetune:microsoft/phi-4
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: Polydim-Einsof/phi4_14b_PMTP_polydim_einsof
+author: Polydim-Einsof
+sha: 2099cbde3e4793f30468656588e600a673df9d0f
+lastModified: '2026-10-20T20:55:01.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  tags:
+  - pmtp
+  - polydim
+  - stiefel-manifold
+  - turing-protocol
+  - zero-worm
+  - latent-reasoning
+  - fp64-precision
+  base_model: microsoft/phi-4
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: Modelfile
+- rfilename: README.md
+- rfilename: adapter_config.json
+- rfilename: adapter_model.safetensors
+- rfilename: adapter_weights.safetensors
+spaces: []
+createdAt: '2026-10-20T20:54:38.000Z'
+usedStorage: 83886160
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 167.8
+approxSizeMb: 0.0
+fetchedAt: '2026-10-21T08:27:24.000Z'

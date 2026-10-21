@@ -1,0 +1,63 @@
+_id: 6ad730c174257c630c5dab3b
+id: elcodabra/seklu-e5-small-coreml
+private: false
+pipeline_tag: sentence-similarity
+library_name: coreml
+tags:
+- coreml
+- sentence-embeddings
+- e5
+- macos
+- sentence-similarity
+- en
+- ru
+- es
+- base_model:intfloat/multilingual-e5-small
+- base_model:finetune:intfloat/multilingual-e5-small
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: elcodabra/seklu-e5-small-coreml
+author: elcodabra
+sha: ff606303100576abe0f9dc4f7fcce1c075026b0c
+lastModified: '2026-10-20T09:20:55.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config: {}
+cardData:
+  license: mit
+  base_model: intfloat/multilingual-e5-small
+  library_name: coreml
+  pipeline_tag: sentence-similarity
+  language:
+  - en
+  - ru
+  - es
+  tags:
+  - coreml
+  - sentence-embeddings
+  - e5
+  - macos
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: e5-small-coreml-v1.zip
+spaces: []
+createdAt: '2026-10-20T09:13:37.000Z'
+usedStorage: 112357732
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-21T08:27:24.000Z'

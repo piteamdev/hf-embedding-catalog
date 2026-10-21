@@ -1,0 +1,57 @@
+_id: 6ad7d4f74f93a379ba448cd1
+id: Polydim-Einsof/pplx_decider_27b_PMTP_polydim_einsof
+private: false
+pipeline_tag: feature-extraction
+tags:
+- safetensors
+- pmtp
+- polydim
+- stiefel-manifold
+- turing-protocol
+- zero-worm
+- latent-reasoning
+- fp64-precision
+- feature-extraction
+- base_model:perplexity-ai/pplx-decider-v1.2
+- base_model:finetune:perplexity-ai/pplx-decider-v1.2
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: Polydim-Einsof/pplx_decider_27b_PMTP_polydim_einsof
+author: Polydim-Einsof
+sha: 308910df2511d56d549068f3be70fb925a4df9e6
+lastModified: '2026-10-20T20:54:37.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  tags:
+  - pmtp
+  - polydim
+  - stiefel-manifold
+  - turing-protocol
+  - zero-worm
+  - latent-reasoning
+  - fp64-precision
+  base_model: perplexity-ai/pplx-decider-v1.2
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: Modelfile
+- rfilename: README.md
+- rfilename: adapter_config.json
+- rfilename: adapter_model.safetensors
+- rfilename: adapter_weights.safetensors
+spaces: []
+createdAt: '2026-10-20T20:54:15.000Z'
+usedStorage: 83886160
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 167.8
+approxSizeMb: 0.0
+fetchedAt: '2026-10-21T08:27:24.000Z'

@@ -1,0 +1,74 @@
+_id: 6ad7cfe232e56cdf65ebd03c
+id: Dragos-Datcu/Sentio
+private: false
+pipeline_tag: feature-extraction
+tags:
+- audio
+- multimodal-embedding
+- audio-retrieval
+- audio-classification
+- video-moment-retrieval
+- feature-extraction
+- base_model:Qwen/Qwen2.5-Omni-3B
+- base_model:finetune:Qwen/Qwen2.5-Omni-3B
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: Dragos-Datcu/Sentio
+author: Dragos-Datcu
+sha: 90cb9032c72c6db9ebbd7c61a30d67149eaa42bb
+lastModified: '2026-10-20T20:33:20.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  pipeline_tag: feature-extraction
+  base_model:
+  - tencent/WeMM-Embedding-9B
+  - Qwen/Qwen2.5-Omni-3B
+  tags:
+  - audio
+  - multimodal-embedding
+  - audio-retrieval
+  - audio-classification
+  - video-moment-retrieval
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: modeling_sentio.py
+- rfilename: resources/sentio_architecture.png
+spaces: []
+createdAt: '2026-10-20T20:32:34.000Z'
+usedStorage: 145812
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  model_name: Sentio
+  wemm_path: path/to/WeMM-Embedding-9B
+  wemm_adapter_path: path/to/sentio/vdr_lora_adapter
+  qwen_omni_path: path/to/Qwen2.5-Omni-3B
+  trainable_path: path/to/sentio/trainable.pt
+  audio_tower_dim: 2048
+  embedding_dim: 4096
+  audio_sample_rate: 16000
+  audio_max_seconds: 30
+  audio_min_seconds: 0.025
+  audio_lora:
+    r: 16
+    alpha: 32
+    dropout: 0.05
+    targets:
+    - q_proj
+    - k_proj
+    - v_proj
+    - out_proj
+    - fc1
+    - fc2
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-21T08:27:24.000Z'

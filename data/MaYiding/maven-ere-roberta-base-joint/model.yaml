@@ -1,0 +1,333 @@
+_id: 6ad70ed6ada773eeec956329
+id: MaYiding/maven-ere-roberta-base-joint
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- maven_ere
+- feature-extraction
+- maven-ere
+- event-coreference
+- temporal-relation-extraction
+- causal-relation-extraction
+- subevent-relation-extraction
+- custom_code
+- en
+- dataset:MaYiding/MAVEN-ERE
+- arxiv:1907.11692
+- base_model:FacebookAI/roberta-base
+- base_model:finetune:FacebookAI/roberta-base
+- license:gpl-3.0
+- region:us
+downloads: 0
+likes: 0
+modelId: MaYiding/maven-ere-roberta-base-joint
+author: MaYiding
+sha: 7e539b7632f399806b1220c666f8f86a0b2caeee
+lastModified: '2026-10-21T04:40:42.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - MavenEreModel
+  auto_map:
+    AutoConfig: configuration_maven_ere.MavenEreConfig
+    AutoModel: modeling_maven_ere.MavenEreModel
+  model_type: maven_ere
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: <unk>
+cardData:
+  license: gpl-3.0
+  language:
+  - en
+  library_name: transformers
+  base_model: FacebookAI/roberta-base
+  datasets:
+  - MaYiding/MAVEN-ERE
+  tags:
+  - maven-ere
+  - event-coreference
+  - temporal-relation-extraction
+  - causal-relation-extraction
+  - subevent-relation-extraction
+  - custom_code
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_maven_ere.MavenEreModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: CITATION.cff
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: ROBERTA-MIT-LICENSE
+- rfilename: UPSTREAM_NOTICE.md
+- rfilename: config.json
+- rfilename: configuration_maven_ere.py
+- rfilename: corrected-512-seed42-snapshot-u1500/CITATION.cff
+- rfilename: corrected-512-seed42-snapshot-u1500/LICENSE
+- rfilename: corrected-512-seed42-snapshot-u1500/README.md
+- rfilename: corrected-512-seed42-snapshot-u1500/ROBERTA-MIT-LICENSE
+- rfilename: corrected-512-seed42-snapshot-u1500/UPSTREAM_NOTICE.md
+- rfilename: corrected-512-seed42-snapshot-u1500/checkpoint_identity.json
+- rfilename: corrected-512-seed42-snapshot-u1500/config.json
+- rfilename: corrected-512-seed42-snapshot-u1500/configuration_maven_ere.py
+- rfilename: corrected-512-seed42-snapshot-u1500/dev_metrics.json
+- rfilename: corrected-512-seed42-snapshot-u1500/merges.txt
+- rfilename: corrected-512-seed42-snapshot-u1500/model.safetensors
+- rfilename: corrected-512-seed42-snapshot-u1500/modeling_maven_ere.py
+- rfilename: corrected-512-seed42-snapshot-u1500/special_tokens_map.json
+- rfilename: corrected-512-seed42-snapshot-u1500/tokenizer_config.json
+- rfilename: corrected-512-seed42-snapshot-u1500/training_completion.json
+- rfilename: corrected-512-seed42-snapshot-u1500/validation.json
+- rfilename: corrected-512-seed42-snapshot-u1500/vocab.json
+- rfilename: dev_metrics.json
+- rfilename: merges.txt
+- rfilename: model.safetensors
+- rfilename: modeling_maven_ere.py
+- rfilename: positive2-256-seed42-snapshot-u750/CITATION.cff
+- rfilename: positive2-256-seed42-snapshot-u750/LICENSE
+- rfilename: positive2-256-seed42-snapshot-u750/README.md
+- rfilename: positive2-256-seed42-snapshot-u750/ROBERTA-MIT-LICENSE
+- rfilename: positive2-256-seed42-snapshot-u750/UPSTREAM_NOTICE.md
+- rfilename: positive2-256-seed42-snapshot-u750/checkpoint_identity.json
+- rfilename: positive2-256-seed42-snapshot-u750/config.json
+- rfilename: positive2-256-seed42-snapshot-u750/configuration_maven_ere.py
+- rfilename: positive2-256-seed42-snapshot-u750/dev_metrics.json
+- rfilename: positive2-256-seed42-snapshot-u750/merges.txt
+- rfilename: positive2-256-seed42-snapshot-u750/model.safetensors
+- rfilename: positive2-256-seed42-snapshot-u750/modeling_maven_ere.py
+- rfilename: positive2-256-seed42-snapshot-u750/special_tokens_map.json
+- rfilename: positive2-256-seed42-snapshot-u750/tokenizer_config.json
+- rfilename: positive2-256-seed42-snapshot-u750/training_completion.json
+- rfilename: positive2-256-seed42-snapshot-u750/training_recipe.json
+- rfilename: positive2-256-seed42-snapshot-u750/validation.json
+- rfilename: positive2-256-seed42-snapshot-u750/vocab.json
+- rfilename: positive4-256-seed42-snapshot-u750/CITATION.cff
+- rfilename: positive4-256-seed42-snapshot-u750/LICENSE
+- rfilename: positive4-256-seed42-snapshot-u750/README.md
+- rfilename: positive4-256-seed42-snapshot-u750/ROBERTA-MIT-LICENSE
+- rfilename: positive4-256-seed42-snapshot-u750/UPSTREAM_NOTICE.md
+- rfilename: positive4-256-seed42-snapshot-u750/checkpoint_identity.json
+- rfilename: positive4-256-seed42-snapshot-u750/config.json
+- rfilename: positive4-256-seed42-snapshot-u750/configuration_maven_ere.py
+- rfilename: positive4-256-seed42-snapshot-u750/dev_metrics.json
+- rfilename: positive4-256-seed42-snapshot-u750/merges.txt
+- rfilename: positive4-256-seed42-snapshot-u750/model.safetensors
+- rfilename: positive4-256-seed42-snapshot-u750/modeling_maven_ere.py
+- rfilename: positive4-256-seed42-snapshot-u750/special_tokens_map.json
+- rfilename: positive4-256-seed42-snapshot-u750/tokenizer_config.json
+- rfilename: positive4-256-seed42-snapshot-u750/training_completion.json
+- rfilename: positive4-256-seed42-snapshot-u750/training_recipe.json
+- rfilename: positive4-256-seed42-snapshot-u750/validation.json
+- rfilename: positive4-256-seed42-snapshot-u750/vocab.json
+- rfilename: publication_notes.json
+- rfilename: reference-seed42/causal/CITATION.cff
+- rfilename: reference-seed42/causal/LICENSE
+- rfilename: reference-seed42/causal/ROBERTA-MIT-LICENSE
+- rfilename: reference-seed42/causal/UPSTREAM_NOTICE.md
+- rfilename: reference-seed42/causal/config.json
+- rfilename: reference-seed42/causal/configuration_maven_ere.py
+- rfilename: reference-seed42/causal/dev_metrics.json
+- rfilename: reference-seed42/causal/gpu_reference_comparison.json
+- rfilename: reference-seed42/causal/merges.txt
+- rfilename: reference-seed42/causal/model.safetensors
+- rfilename: reference-seed42/causal/modeling_maven_ere.py
+- rfilename: reference-seed42/causal/reference_provenance.json
+- rfilename: reference-seed42/causal/special_tokens_map.json
+- rfilename: reference-seed42/causal/tokenizer_config.json
+- rfilename: reference-seed42/causal/validation.json
+- rfilename: reference-seed42/causal/vocab.json
+- rfilename: reference-seed42/coreference/CITATION.cff
+- rfilename: reference-seed42/coreference/LICENSE
+- rfilename: reference-seed42/coreference/ROBERTA-MIT-LICENSE
+- rfilename: reference-seed42/coreference/UPSTREAM_NOTICE.md
+- rfilename: reference-seed42/coreference/config.json
+- rfilename: reference-seed42/coreference/configuration_maven_ere.py
+- rfilename: reference-seed42/coreference/dev_metrics.json
+- rfilename: reference-seed42/coreference/gpu_reference_comparison.json
+- rfilename: reference-seed42/coreference/merges.txt
+- rfilename: reference-seed42/coreference/model.safetensors
+- rfilename: reference-seed42/coreference/modeling_maven_ere.py
+- rfilename: reference-seed42/coreference/reference_provenance.json
+- rfilename: reference-seed42/coreference/special_tokens_map.json
+- rfilename: reference-seed42/coreference/tokenizer_config.json
+- rfilename: reference-seed42/coreference/validation.json
+- rfilename: reference-seed42/coreference/vocab.json
+- rfilename: reference-seed42/four_model_combination.json
+- rfilename: reference-seed42/subevent/CITATION.cff
+- rfilename: reference-seed42/subevent/LICENSE
+- rfilename: reference-seed42/subevent/ROBERTA-MIT-LICENSE
+- rfilename: reference-seed42/subevent/UPSTREAM_NOTICE.md
+- rfilename: reference-seed42/subevent/config.json
+- rfilename: reference-seed42/subevent/configuration_maven_ere.py
+- rfilename: reference-seed42/subevent/dev_metrics.json
+- rfilename: reference-seed42/subevent/gpu_reference_comparison.json
+- rfilename: reference-seed42/subevent/merges.txt
+- rfilename: reference-seed42/subevent/model.safetensors
+- rfilename: reference-seed42/subevent/modeling_maven_ere.py
+- rfilename: reference-seed42/subevent/reference_provenance.json
+- rfilename: reference-seed42/subevent/special_tokens_map.json
+- rfilename: reference-seed42/subevent/tokenizer_config.json
+- rfilename: reference-seed42/subevent/validation.json
+- rfilename: reference-seed42/subevent/vocab.json
+- rfilename: reference-seed42/temporal/CITATION.cff
+- rfilename: reference-seed42/temporal/LICENSE
+- rfilename: reference-seed42/temporal/ROBERTA-MIT-LICENSE
+- rfilename: reference-seed42/temporal/UPSTREAM_NOTICE.md
+- rfilename: reference-seed42/temporal/config.json
+- rfilename: reference-seed42/temporal/configuration_maven_ere.py
+- rfilename: reference-seed42/temporal/dev_metrics.json
+- rfilename: reference-seed42/temporal/gpu_reference_comparison.json
+- rfilename: reference-seed42/temporal/merges.txt
+- rfilename: reference-seed42/temporal/model.safetensors
+- rfilename: reference-seed42/temporal/modeling_maven_ere.py
+- rfilename: reference-seed42/temporal/reference_provenance.json
+- rfilename: reference-seed42/temporal/special_tokens_map.json
+- rfilename: reference-seed42/temporal/tokenizer_config.json
+- rfilename: reference-seed42/temporal/validation.json
+- rfilename: reference-seed42/temporal/vocab.json
+- rfilename: reference-seed42/validation_summary.json
+- rfilename: release_manifest.json
+- rfilename: release_verification.json
+- rfilename: requirements-lock.txt
+- rfilename: source_manifest.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer_config.json
+- rfilename: training_recipe.json
+- rfilename: vocab.json
+spaces: []
+createdAt: '2026-10-20T06:48:54.000Z'
+safetensors:
+  parameters:
+    F32: 126192245
+  total: 126192245
+usedStorage: 4038363488
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - MavenEreModel
+  auto_map:
+    AutoConfig: configuration_maven_ere.MavenEreConfig
+    AutoModel: modeling_maven_ere.MavenEreModel
+  causal_label2id:
+    CAUSE: 2
+    NONE: 0
+    PRECONDITION: 1
+  chunk_length: 512
+  dropout: 0.2
+  dtype: float32
+  encoder_attention_implementation: eager
+  encoder_config:
+    _name_or_path: base_model
+    add_cross_attention: false
+    architectures:
+    - RobertaForMaskedLM
+    attention_probs_dropout_prob: 0.1
+    attn_implementation: null
+    bad_words_ids: null
+    begin_suppress_tokens: null
+    bos_token_id: 0
+    chunk_size_feed_forward: 0
+    classifier_dropout: null
+    cross_attention_hidden_size: null
+    decoder_start_token_id: null
+    diversity_penalty: 0.0
+    do_sample: false
+    dtype: null
+    early_stopping: false
+    encoder_no_repeat_ngram_size: 0
+    eos_token_id: 2
+    exponential_decay_length_penalty: null
+    finetuning_task: null
+    forced_bos_token_id: null
+    forced_eos_token_id: null
+    hidden_act: gelu
+    hidden_dropout_prob: 0.1
+    hidden_size: 768
+    id2label:
+      '0': LABEL_0
+      '1': LABEL_1
+    initializer_range: 0.02
+    intermediate_size: 3072
+    is_decoder: false
+    is_encoder_decoder: false
+    label2id:
+      LABEL_0: 0
+      LABEL_1: 1
+    layer_norm_eps: 1.0e-05
+    length_penalty: 1.0
+    max_length: 20
+    max_position_embeddings: 514
+    min_length: 0
+    model_type: roberta
+    no_repeat_ngram_size: 0
+    num_attention_heads: 12
+    num_beam_groups: 1
+    num_beams: 1
+    num_hidden_layers: 12
+    num_return_sequences: 1
+    output_attentions: false
+    output_hidden_states: false
+    output_scores: false
+    pad_token_id: 1
+    position_embedding_type: absolute
+    prefix: null
+    problem_type: null
+    pruned_heads: {}
+    remove_invalid_values: false
+    repetition_penalty: 1.0
+    return_dict: true
+    return_dict_in_generate: false
+    sep_token_id: null
+    suppress_tokens: null
+    task_specific_params: null
+    temperature: 1.0
+    tf_legacy_loss: false
+    tie_encoder_decoder: false
+    tie_word_embeddings: true
+    tokenizer_class: null
+    top_k: 50
+    top_p: 1.0
+    torchscript: false
+    transformers_version: 4.57.6
+    type_vocab_size: 1
+    typical_p: 1.0
+    use_bfloat16: false
+    use_cache: true
+    vocab_size: 50265
+  loss_weights:
+    causal: 4.0
+    coreference: 0.4
+    subevent: 4.0
+    temporal: 2.0
+  model_type: maven_ere
+  scorer_hidden_size: 200
+  span_pooling: mean
+  subevent_label2id:
+    NONE: 0
+    subevent: 1
+  temporal_label2id:
+    BEFORE: 0
+    BEGINS-ON: 5
+    CONTAINS: 2
+    ENDS-ON: 4
+    NONE: 6
+    OVERLAP: 1
+    SIMULTANEOUS: 3
+  transformers_version: 4.57.6
+onnxFiles: {}
+safetensorsSizeMb: 4038.4
+approxSizeMb: 504.8
+fetchedAt: '2026-10-21T08:27:24.000Z'

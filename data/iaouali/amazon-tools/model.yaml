@@ -1,0 +1,202 @@
+_id: 6aa8722482023d2e7757fc63
+id: iaouali/amazon-tools
+private: false
+pipeline_tag: feature-extraction
+tags:
+- recommendation
+- information-retrieval
+- feature-extraction
+- en
+- base_model:Qwen/Qwen3-Embedding-0.6B
+- base_model:finetune:Qwen/Qwen3-Embedding-0.6B
+- license:other
+- region:us
+downloads: 0
+likes: 0
+modelId: iaouali/amazon-tools
+author: iaouali
+sha: 4fc5b15b9351fe01af883bf32725c96073ac3b5b
+lastModified: '2026-10-20T17:34:31.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: other
+  language:
+  - en
+  tags:
+  - recommendation
+  - information-retrieval
+  - feature-extraction
+  base_model: Qwen/Qwen3-Embedding-0.6B
+siblings:
+- rfilename: .gitattributes
+- rfilename: Electronics/data/interactions.parquet
+- rfilename: Electronics/data/product_query_seed.json
+- rfilename: Electronics/data/product_texts.json
+- rfilename: Electronics/data/subcategories.json
+- rfilename: Electronics/embeddings/complementarity_embeddings_qwen.pt
+- rfilename: Electronics/embeddings/item_embeddings_qwen.pt
+- rfilename: Electronics/manifest.json
+- rfilename: Electronics/models/retrieval_model_qwen.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/embeddings/comp_embeddings_qwen.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/manifest.json
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/metrics/complementarity_history_qwen.json
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/metrics/complementarity_split.json
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/metrics/retrieval_baseline_qwen.json
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/metrics/retrieval_history_qwen.json
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/mining/hard_negatives_qwen.json
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0001.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0002.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0003.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0004.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0005.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0006.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0007.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0008.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0009.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0010.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0011.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0012.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0013.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0014.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0015.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0016.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0017.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0018.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0019.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0020.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/models/comp_checkpoints_qwen/latest.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/models/comp_model_qwen.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/models/recsys_checkpoints_qwen/latest.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/models/recsys_model_qwen.pt
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/queries/benchmark_split_metadata.json
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/queries/product_queries.json
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/queries/product_queries_test.json
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/queries/product_queries_train.json
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/queries/queries.json
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/queries/queries_test.json
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/queries/queries_train.json
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/queries/query_types.json
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/release_manifest.json
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/simple_v1_gpt_5_6_luna_cache.json
+- rfilename: Electronics/runs/shared-train-year2020-best-recipes-v1/training_recipe.json
+- rfilename: LICENSE
+- rfilename: Musical_Instruments/data/interactions.parquet
+- rfilename: Musical_Instruments/data/product_query_seed.json
+- rfilename: Musical_Instruments/data/product_texts.json
+- rfilename: Musical_Instruments/data/subcategories.json
+- rfilename: Musical_Instruments/embeddings/complementarity_embeddings_qwen.pt
+- rfilename: Musical_Instruments/embeddings/item_embeddings_qwen.pt
+- rfilename: Musical_Instruments/manifest.json
+- rfilename: Musical_Instruments/models/retrieval_model_qwen.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/embeddings/comp_embeddings_qwen.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/environment.txt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/input_audit.json
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/manifest.json
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/metrics/complementarity_history_qwen.json
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/metrics/complementarity_split.json
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/metrics/retrieval_baseline_qwen.json
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/metrics/retrieval_history_qwen.json
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/mining/hard_negatives_qwen.json
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0001.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0002.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0003.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0004.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0005.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0006.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0007.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0008.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0009.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0010.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0011.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0012.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0013.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0014.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0015.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0016.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0017.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0018.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0019.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0020.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/latest.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/models/comp_model_qwen.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/models/recsys_checkpoints_qwen/latest.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/models/recsys_model_qwen.pt
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/queries/benchmark_split_metadata.json
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/queries/product_queries.json
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/queries/product_queries_test.json
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/queries/product_queries_train.json
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/queries/queries.json
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/queries/queries_test.json
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/queries/queries_train.json
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/queries/query_types.json
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/query_backfill.json
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/release_manifest.json
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/simple_v1_gpt_5_6_luna_cache.json
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/training_recipe.before_rng_resume_fix.json
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/training_recipe.before_upload_batching.json
+- rfilename: Musical_Instruments/runs/shared-train-best-recipes-v1/training_recipe.json
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: Video_Games/data/interactions.parquet
+- rfilename: Video_Games/data/product_query_seed.json
+- rfilename: Video_Games/data/product_texts.json
+- rfilename: Video_Games/data/subcategories.json
+- rfilename: Video_Games/embeddings/complementarity_embeddings_qwen.pt
+- rfilename: Video_Games/embeddings/item_embeddings_qwen.pt
+- rfilename: Video_Games/manifest.json
+- rfilename: Video_Games/models/retrieval_model_qwen.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/embeddings/comp_embeddings_qwen.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/manifest.json
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/metrics/complementarity_history_qwen.json
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/metrics/complementarity_split.json
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/metrics/retrieval_baseline_qwen.json
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/metrics/retrieval_history_qwen.json
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/mining/hard_negatives_qwen.json
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0001.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0002.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0003.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0004.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0005.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0006.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0007.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0008.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0009.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0010.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0011.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0012.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0013.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0014.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0015.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0016.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0017.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0018.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0019.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/epoch_0020.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/models/comp_checkpoints_qwen/latest.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/models/comp_model_qwen.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/models/recsys_checkpoints_qwen/latest.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/models/recsys_model_qwen.pt
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/queries/benchmark_split_metadata.json
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/queries/product_queries.json
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/queries/product_queries_test.json
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/queries/product_queries_train.json
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/queries/queries.json
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/queries/queries_test.json
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/queries/queries_train.json
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/queries/query_types.json
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/release_manifest.json
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/simple_v1_gpt_5_6_luna_cache.json
+- rfilename: Video_Games/runs/shared-train-best-recipes-v1/training_recipe.json
+spaces: []
+createdAt: '2026-09-14T22:16:04.000Z'
+usedStorage: 12457958759
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-21T08:27:24.000Z'

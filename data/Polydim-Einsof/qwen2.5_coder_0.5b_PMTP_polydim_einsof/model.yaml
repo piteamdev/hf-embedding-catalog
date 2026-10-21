@@ -1,0 +1,57 @@
+_id: 6ad7d499df69b48f86aceac1
+id: Polydim-Einsof/qwen2.5_coder_0.5b_PMTP_polydim_einsof
+private: false
+pipeline_tag: feature-extraction
+tags:
+- safetensors
+- pmtp
+- polydim
+- stiefel-manifold
+- turing-protocol
+- zero-worm
+- latent-reasoning
+- fp64-precision
+- feature-extraction
+- base_model:Qwen/Qwen2.5-Coder-0.5B
+- base_model:finetune:Qwen/Qwen2.5-Coder-0.5B
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: Polydim-Einsof/qwen2.5_coder_0.5b_PMTP_polydim_einsof
+author: Polydim-Einsof
+sha: 5d7d5d5fc6db66538182ad4ecb8abae6f0f10ffd
+lastModified: '2026-10-20T20:52:48.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  tags:
+  - pmtp
+  - polydim
+  - stiefel-manifold
+  - turing-protocol
+  - zero-worm
+  - latent-reasoning
+  - fp64-precision
+  base_model: Qwen/Qwen2.5-Coder-0.5B
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: Modelfile
+- rfilename: README.md
+- rfilename: adapter_config.json
+- rfilename: adapter_model.safetensors
+- rfilename: adapter_weights.safetensors
+spaces: []
+createdAt: '2026-10-20T20:52:41.000Z'
+usedStorage: 7340112
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 14.7
+approxSizeMb: 0.0
+fetchedAt: '2026-10-21T08:27:24.000Z'

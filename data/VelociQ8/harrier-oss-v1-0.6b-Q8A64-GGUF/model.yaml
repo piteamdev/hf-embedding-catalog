@@ -1,0 +1,61 @@
+_id: 6ad813968a82325523d194a1
+id: VelociQ8/harrier-oss-v1-0.6b-Q8A64-GGUF
+private: false
+pipeline_tag: feature-extraction
+tags:
+- gguf
+- velociq8
+- q8a64
+- cpu
+- embeddings
+- sentence-similarity
+- feature-extraction
+- multilingual
+- base_model:microsoft/harrier-oss-v1-0.6b
+- base_model:quantized:microsoft/harrier-oss-v1-0.6b
+- license:mit
+- region:us
+downloads: 0
+likes: 1
+modelId: VelociQ8/harrier-oss-v1-0.6b-Q8A64-GGUF
+author: VelociQ8
+sha: 3f2616b078779bbfd712336079293698a4d6d80a
+lastModified: '2026-10-21T06:40:39.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  base_model: microsoft/harrier-oss-v1-0.6b
+  base_model_relation: quantized
+  pipeline_tag: feature-extraction
+  inference: false
+  language:
+  - multilingual
+  tags:
+  - gguf
+  - velociq8
+  - q8a64
+  - cpu
+  - embeddings
+  - sentence-similarity
+gguf:
+  total: 620823680
+  architecture: a64b9e07
+  totalFileSize: 620823840
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: harrier-oss-v1-0.6b-Q8A64.gguf
+spaces: []
+createdAt: '2026-10-21T01:21:26.000Z'
+usedStorage: 620823840
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-21T08:27:24.000Z'

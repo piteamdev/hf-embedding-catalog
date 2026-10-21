@@ -1,0 +1,97 @@
+_id: 6ad66b9aada773eeec78fc14
+id: madrisight/madrimed1.2-vision-embed
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- qwen3_vl_vision
+- feature-extraction
+- medical
+- vision-encoder
+- radiology
+- ct
+- mri
+- x-ray
+- graph-rag
+- en
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: madrisight/madrimed1.2-vision-embed
+author: madrisight
+sha: 90aa0dbfc7f32a37247a5e6d28eab5942133e6ae
+lastModified: '2026-10-20T21:55:55.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - Qwen3VLVisionModel
+  model_type: qwen3_vl_vision
+cardData:
+  language:
+  - en
+  license: apache-2.0
+  library_name: transformers
+  tags:
+  - medical
+  - vision-encoder
+  - radiology
+  - ct
+  - mri
+  - x-ray
+  - graph-rag
+  - feature-extraction
+  pipeline_tag: feature-extraction
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: preprocessor_config.json
+spaces: []
+createdAt: '2026-10-19T19:12:26.000Z'
+safetensors:
+  parameters:
+    F32: 406957056
+  total: 406957056
+usedStorage: 1627859264
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - Qwen3VLVisionModel
+  deepstack_visual_indexes:
+  - 5
+  - 11
+  - 17
+  depth: 24
+  dtype: float32
+  hidden_act: gelu_pytorch_tanh
+  hidden_size: 1024
+  in_channels: 3
+  initializer_range: 0.02
+  intermediate_size: 4096
+  model_type: qwen3_vl_vision
+  num_heads: 16
+  num_position_embeddings: 2304
+  out_hidden_size: 2048
+  patch_size: 16
+  rope_parameters:
+    rope_theta: 10000.0
+    rope_type: axial
+  spatial_merge_size: 2
+  temporal_patch_size: 2
+  transformers_version: 5.17.0
+onnxFiles: {}
+safetensorsSizeMb: 1627.9
+approxSizeMb: 1627.8
+fetchedAt: '2026-10-21T08:27:24.000Z'

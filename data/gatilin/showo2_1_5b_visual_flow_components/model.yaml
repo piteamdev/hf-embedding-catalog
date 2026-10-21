@@ -1,0 +1,81 @@
+_id: 6ad81d4da4131568065b704b
+id: gatilin/showo2_1_5b_visual_flow_components
+private: false
+pipeline_tag: feature-extraction
+library_name: pytorch
+tags:
+- pytorch
+- safetensors
+- show-o2
+- unified-multimodal
+- flow-matching
+- visual-components
+- component-extraction
+- feature-extraction
+- base_model:Wan-AI/Wan2.1-T2V-14B
+- base_model:finetune:Wan-AI/Wan2.1-T2V-14B
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: gatilin/showo2_1_5b_visual_flow_components
+author: gatilin
+sha: b46df1b73a11ee22e922ec7f10bc4732754ad5d1
+lastModified: '2026-10-21T02:07:01.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: pytorch
+  pipeline_tag: feature-extraction
+  base_model:
+  - showlab/show-o2-1.5B
+  - Wan-AI/Wan2.1-T2V-14B
+  tags:
+  - show-o2
+  - unified-multimodal
+  - flow-matching
+  - visual-components
+  - component-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: code_provenance.json
+- rfilename: component.py
+- rfilename: extraction.json
+- rfilename: model.safetensors
+- rfilename: native/__init__.py
+- rfilename: native/misc.py
+- rfilename: native/modeling_showo2_qwen2_5.py
+- rfilename: native/modeling_siglip.py
+- rfilename: native/modules.py
+- rfilename: native/wan21_vae.py
+- rfilename: release_manifest.json
+- rfilename: requirements.txt
+- rfilename: siglip_config.json
+- rfilename: source_config.json
+- rfilename: tensor_mapping.json
+- rfilename: tensor_sha256.json
+- rfilename: vae/LICENSE
+- rfilename: vae/extraction.json
+- rfilename: vae/source.pth
+- rfilename: validate.py
+- rfilename: validation.json
+spaces: []
+createdAt: '2026-10-21T02:02:53.000Z'
+safetensors:
+  parameters:
+    BF16: 1287472864
+  total: 1287472864
+usedStorage: 3082620896
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 2575.0
+approxSizeMb: 2574.9
+fetchedAt: '2026-10-21T08:27:24.000Z'

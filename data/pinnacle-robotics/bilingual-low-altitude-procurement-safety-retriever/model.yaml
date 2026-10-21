@@ -1,0 +1,172 @@
+_id: 6ad5b576e4d5ee0fad32bf87
+id: pinnacle-robotics/bilingual-low-altitude-procurement-safety-retriever
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- xlm-roberta
+- retrieval
+- dense-retrieval
+- bilingual
+- procurement
+- ascend
+- sentence-similarity
+- zh
+- en
+- base_model:intfloat/multilingual-e5-base
+- base_model:finetune:intfloat/multilingual-e5-base
+- license:mit
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 79
+likes: 0
+modelId: pinnacle-robotics/bilingual-low-altitude-procurement-safety-retriever
+author: pinnacle-robotics
+sha: 8a6309b9a9521ee89f6c4bd7ebd3e9332c27a111
+lastModified: '2026-10-21T08:25:56.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: 那是 個快樂的人
+  sentences:
+  - 那是 條快樂的狗
+  - 那是 個非常幸福的人
+  - 今天是晴天
+model-index: null
+config:
+  architectures:
+  - XLMRobertaModel
+  model_type: xlm-roberta
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token:
+      __type: AddedToken
+      content: <mask>
+      lstrip: true
+      normalized: true
+      rstrip: false
+      single_word: false
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: <unk>
+cardData:
+  language:
+  - zh
+  - en
+  library_name: sentence-transformers
+  base_model: intfloat/multilingual-e5-base
+  license: mit
+  tags:
+  - sentence-transformers
+  - retrieval
+  - dense-retrieval
+  - bilingual
+  - procurement
+  - ascend
+  pipeline_tag: sentence-similarity
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Dense/config.json
+- rfilename: 2_Dense/model.safetensors
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: base_model_manifest.json
+- rfilename: checksums.sha256
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: evaluation/ascend_job_record.json
+- rfilename: evaluation/ascend_metrics.jsonl
+- rfilename: evaluation/ascend_npu_smi.txt
+- rfilename: evaluation/ascend_results_dev.json
+- rfilename: evaluation/ascend_results_test.json
+- rfilename: evaluation/cpu_roundtrip.json
+- rfilename: evaluation/dgx_validation.json
+- rfilename: evaluation/export_record.json
+- rfilename: evaluation/head_final_dev.json
+- rfilename: evaluation/public_fixtures.jsonl
+- rfilename: evaluation/results_head_dev.json
+- rfilename: evaluation/zeroshot_e5_dev.json
+- rfilename: inference.py
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: sentencepiece.bpe.model
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: training/code/assemble_briefs.py
+- rfilename: training/code/audit_pairs.py
+- rfilename: training/code/boot_v02.py
+- rfilename: training/code/build_pairs.py
+- rfilename: training/code/build_workdirs.py
+- rfilename: training/code/collect_lanes.py
+- rfilename: training/code/encode_cache.py
+- rfilename: training/code/eval_v02.py
+- rfilename: training/code/evaluate.py
+- rfilename: training/code/export_release.py
+- rfilename: training/code/export_v02.py
+- rfilename: training/code/make_model_card.py
+- rfilename: training/code/make_query_table.py
+- rfilename: training/code/prep_v02.py
+- rfilename: training/code/prepare_data.py
+- rfilename: training/code/probe_backend.py
+- rfilename: training/code/publish_hf.sh
+- rfilename: training/code/run_pipeline.sh
+- rfilename: training/code/shard_corpus.py
+- rfilename: training/code/train_head.py
+- rfilename: training/code/verify_cpu.py
+- rfilename: training/code/verify_v02.py
+- rfilename: training/code/xlmr_lite.py
+- rfilename: training/dataset_card.md
+- rfilename: training/eval_pool_manifest.json
+- rfilename: training/pair_audit_applied.json
+- rfilename: training/pairs_summary.json
+spaces: []
+createdAt: '2026-10-19T06:15:18.000Z'
+safetensors:
+  parameters:
+    F32: 278043648
+  total: 278043648
+usedStorage: 2248909479
+downloadsAllTime: 79
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - XLMRobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 514
+  model_type: xlm-roberta
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  output_past: true
+  pad_token_id: 1
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.20.1
+  type_vocab_size: 1
+  use_cache: true
+  vocab_size: 250002
+onnxFiles: {}
+safetensorsSizeMb: 1114.6
+approxSizeMb: 1112.2
+fetchedAt: '2026-10-21T08:27:24.000Z'

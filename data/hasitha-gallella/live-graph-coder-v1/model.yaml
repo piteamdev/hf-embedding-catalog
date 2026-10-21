@@ -1,0 +1,57 @@
+_id: 6ad85870446ff2b3db826da8
+id: hasitha-gallella/live-graph-coder-v1
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- code
+- code-search
+- embeddings
+- int4
+- quantized
+- feature-extraction
+- base_model:nomic-ai/CodeRankEmbed
+- base_model:quantized:nomic-ai/CodeRankEmbed
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: hasitha-gallella/live-graph-coder-v1
+author: hasitha-gallella
+sha: 4ca3e052066797eee338b84552dc95e9bfb13470
+lastModified: '2026-10-21T06:50:34.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  base_model: nomic-ai/CodeRankEmbed
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  tags:
+  - code
+  - code-search
+  - embeddings
+  - onnx
+  - int4
+  - quantized
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: SHA256SUMS
+- rfilename: model_int4_qkv8.onnx
+- rfilename: vocab.txt
+spaces: []
+createdAt: '2026-10-21T06:15:12.000Z'
+usedStorage: 66269535
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  model_int4_qkv8.onnx: 66.3
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-21T08:27:24.000Z'

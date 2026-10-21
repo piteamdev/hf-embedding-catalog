@@ -1,0 +1,135 @@
+_id: 6ad8695a8a82325523df0e6a
+id: penji2803/lidar-vjepa-turtlebot3
+private: false
+pipeline_tag: feature-extraction
+library_name: pytorch
+tags:
+- pytorch
+- safetensors
+- lidar_vjepa
+- lidar
+- self-supervised-learning
+- jepa
+- v-jepa
+- world-model
+- robotics
+- mobile-robot
+- turtlebot3
+- representation-learning
+- feature-extraction
+- dataset:penji2803/turtlebot3-moving-obstacles-lidar-1.5m
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: penji2803/lidar-vjepa-turtlebot3
+author: penji2803
+sha: b91b45d17219ed1206623bf7488ac1c2c59361e5
+lastModified: '2026-10-21T07:27:57.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: lidar_vjepa
+cardData:
+  license: mit
+  library_name: pytorch
+  pipeline_tag: feature-extraction
+  tags:
+  - lidar
+  - self-supervised-learning
+  - jepa
+  - v-jepa
+  - world-model
+  - robotics
+  - mobile-robot
+  - turtlebot3
+  - representation-learning
+  datasets:
+  - penji2803/turtlebot3-moving-obstacles-lidar-1.5m
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: encoder_config.json
+- rfilename: encoder_last8.safetensors
+- rfilename: example.py
+- rfilename: figures/jepa_training.png
+- rfilename: figures/probe_table.png
+- rfilename: jepa_encoder.py
+- rfilename: lidar_jepa/__init__.py
+- rfilename: lidar_jepa/data.py
+- rfilename: lidar_jepa/encoders.py
+- rfilename: lidar_jepa/hub.py
+- rfilename: lidar_jepa/inference.py
+- rfilename: lidar_jepa/masking.py
+- rfilename: lidar_jepa/model.py
+- rfilename: lidar_jepa/predictor.py
+- rfilename: lidar_jepa/preprocess.py
+- rfilename: lidar_jepa/tokenizer.py
+- rfilename: lidar_jepa/train.py
+- rfilename: model.safetensors
+- rfilename: requirements.txt
+- rfilename: windows.py
+spaces: []
+createdAt: '2026-10-21T07:27:22.000Z'
+safetensors:
+  parameters:
+    F32: 3235328
+  total: 3235328
+usedStorage: 18442341
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  model_type: lidar_vjepa
+  architecture:
+    T: 20
+    R: 360
+    dim: 128
+    enc_depth: 6
+    pred_depth: 4
+    heads: 4
+    mlp_dim: 512
+    tubelet:
+    - 2
+    - 10
+    n_t: 10
+    n_a: 36
+    masks:
+    - block: 3
+      k: 8
+    - block: 12
+      k: 2
+    r_min: 0.12
+    r_max: 3.5
+    n_params: 3235328
+  training:
+    L: 20
+    batch_size: 128
+    epochs: 40
+    lr: 0.0005
+    start_lr: 0.0001
+    final_lr: 1.0e-06
+    warmup_frac: 0.05
+    wd: 0.04
+    final_wd: 0.4
+    ema: 0.996
+    final_ema: 1.0
+    betas:
+    - 0.9
+    - 0.999
+    clip: 1.0
+    bf16: true
+    seed: 0
+    balance: ''
+  checkpoint:
+    epoch: 16
+    best_val_loss: 0.1676105558872223
+    trivial_zero_baseline_val_loss: 0.74
+  inputs: scans (B, 20, 360) metres in [0.12, 3.5] (3.5 = no return), 5 Hz, oldest first; valid (B, 20) bool; cmd (B, 19,
+    2, 2) velocity commands [v m/s, w rad/s] (predictor only)
+onnxFiles: {}
+safetensorsSizeMb: 18.0
+approxSizeMb: 12.9
+fetchedAt: '2026-10-21T08:27:24.000Z'

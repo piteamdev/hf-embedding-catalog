@@ -1,0 +1,152 @@
+_id: 6ad7fe077517c737f78562b2
+id: juliensimon/Octen-Embedding-8B-mlx-8bit
+private: false
+pipeline_tag: feature-extraction
+library_name: mlx-embeddings
+tags:
+- mlx-embeddings
+- safetensors
+- qwen3
+- mlx
+- apple-silicon
+- embeddings
+- text-embeddings
+- sentence-similarity
+- retrieval
+- multilingual
+- feature-extraction
+- en
+- zh
+- arxiv:2506.05176
+- base_model:Octen/Octen-Embedding-8B
+- base_model:quantized:Octen/Octen-Embedding-8B
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: juliensimon/Octen-Embedding-8B-mlx-8bit
+author: juliensimon
+sha: cf212b94e7527f8b478e1eaaf7fb07884a2f14bc
+lastModified: '2026-10-20T23:52:01.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - Qwen3Model
+  model_type: qwen3
+  tokenizer_config:
+    bos_token: null
+    eos_token: <|im_end|>
+    pad_token: <|endoftext|>
+    unk_token: null
+cardData:
+  license: apache-2.0
+  base_model: Octen/Octen-Embedding-8B
+  base_model_relation: quantized
+  library_name: mlx-embeddings
+  pipeline_tag: feature-extraction
+  language:
+  - en
+  - zh
+  - multilingual
+  tags:
+  - mlx
+  - mlx-embeddings
+  - apple-silicon
+  - qwen3
+  - embeddings
+  - text-embeddings
+  - sentence-similarity
+  - retrieval
+  - multilingual
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: added_tokens.json
+- rfilename: config.json
+- rfilename: model-00001-of-00002.safetensors
+- rfilename: model-00002-of-00002.safetensors
+- rfilename: model.safetensors.index.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: vocab.json
+spaces: []
+createdAt: '2026-10-20T23:49:27.000Z'
+usedStorage: 8052066547
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - Qwen3Model
+  attention_bias: false
+  attention_dropout: 0.0
+  bos_token_id: 151643
+  dtype: bfloat16
+  eos_token_id: 151645
+  head_dim: 128
+  hidden_act: silu
+  hidden_size: 4096
+  initializer_range: 0.02
+  intermediate_size: 12288
+  layer_types:
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  max_position_embeddings: 40960
+  max_window_layers: 36
+  model_type: qwen3
+  num_attention_heads: 32
+  num_hidden_layers: 36
+  num_key_value_heads: 8
+  quantization:
+    group_size: 64
+    bits: 8
+    mode: affine
+  rms_norm_eps: 1.0e-06
+  rope_scaling: null
+  rope_theta: 1000000
+  sliding_window: null
+  tie_word_embeddings: false
+  transformers_version: 4.57.1
+  use_cache: true
+  use_sliding_window: false
+  vocab_size: 151665
+onnxFiles: {}
+safetensorsSizeMb: 8040.6
+approxSizeMb: 0.0
+fetchedAt: '2026-10-21T08:27:24.000Z'

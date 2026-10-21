@@ -1,0 +1,84 @@
+_id: 6ad4df582b4bd6a951468406
+id: moeshawky/qwen-siglip2-embed
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- vision-embeddings
+- feature-extraction
+- siglip2
+- qwen3
+- onnx
+- onnxruntime
+- multimodal
+- image-retrieval
+- face-verification
+- zero-shot
+- base_model:google/siglip2-so400m-patch16-naflex
+- base_model:finetune:google/siglip2-so400m-patch16-naflex
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: moeshawky/qwen-siglip2-embed
+author: moeshawky
+sha: a7cbe360617e630cdac91b268b43afd4627d5714
+lastModified: '2026-10-20T09:53:40.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: transformers
+  pipeline_tag: feature-extraction
+  base_model:
+  - moeshawky/qwen3-embedding-0.6b-vl
+  - google/siglip2-so400m-patch16-naflex
+  tags:
+  - vision-embeddings
+  - feature-extraction
+  - siglip2
+  - qwen3
+  - onnx
+  - onnxruntime
+  - multimodal
+  - image-retrieval
+  - face-verification
+  - zero-shot
+transformersInfo:
+  auto_model: AutoModel
+siblings:
+- rfilename: .gitattributes
+- rfilename: .gitignore
+- rfilename: .pre-commit-config.yaml
+- rfilename: .python-version
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: pyproject.toml
+- rfilename: src/qwen_siglip2_embed/__init__.py
+- rfilename: src/qwen_siglip2_embed/cli.py
+- rfilename: src/qwen_siglip2_embed/mmproj.py
+- rfilename: src/qwen_siglip2_embed/onnx_embedder.py
+- rfilename: src/qwen_siglip2_embed/preprocess.py
+- rfilename: src/qwen_siglip2_embed/reference.py
+- rfilename: src/qwen_siglip2_embed/safetensors_wrapper.py
+- rfilename: tests/__init__.py
+- rfilename: tests/conftest.py
+- rfilename: tests/test_cli.py
+- rfilename: tests/test_mmproj.py
+- rfilename: tests/test_parity.py
+- rfilename: tests/test_preprocess.py
+- rfilename: tests/test_safetensors_wrapper.py
+spaces: []
+createdAt: '2026-10-18T15:01:44.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-21T08:27:24.000Z'

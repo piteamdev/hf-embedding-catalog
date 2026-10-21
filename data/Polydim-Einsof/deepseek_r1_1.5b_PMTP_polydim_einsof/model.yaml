@@ -1,0 +1,57 @@
+_id: 6ad7d4a6b41b5e7b3884dcdc
+id: Polydim-Einsof/deepseek_r1_1.5b_PMTP_polydim_einsof
+private: false
+pipeline_tag: feature-extraction
+tags:
+- safetensors
+- pmtp
+- polydim
+- stiefel-manifold
+- turing-protocol
+- zero-worm
+- latent-reasoning
+- fp64-precision
+- feature-extraction
+- base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
+- base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: Polydim-Einsof/deepseek_r1_1.5b_PMTP_polydim_einsof
+author: Polydim-Einsof
+sha: 061ba21d807766ba58ef04524e1fc85a0d263c52
+lastModified: '2026-10-20T20:52:59.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  tags:
+  - pmtp
+  - polydim
+  - stiefel-manifold
+  - turing-protocol
+  - zero-worm
+  - latent-reasoning
+  - fp64-precision
+  base_model: deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: Modelfile
+- rfilename: README.md
+- rfilename: adapter_config.json
+- rfilename: adapter_model.safetensors
+- rfilename: adapter_weights.safetensors
+spaces: []
+createdAt: '2026-10-20T20:52:54.000Z'
+usedStorage: 18874448
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 37.7
+approxSizeMb: 0.0
+fetchedAt: '2026-10-21T08:27:24.000Z'

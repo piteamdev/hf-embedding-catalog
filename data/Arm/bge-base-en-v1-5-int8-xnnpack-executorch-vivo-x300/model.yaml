@@ -1,0 +1,55 @@
+_id: 6accdff3527e6db98b1691ac
+id: Arm/bge-base-en-v1-5-int8-xnnpack-executorch-vivo-x300
+private: false
+pipeline_tag: feature-extraction
+library_name: executorch
+tags:
+- executorch
+- arm
+- premium-smartphone
+- xnnpack
+- int8
+- feature-extraction
+- base_model:BAAI/bge-base-en-v1.5
+- base_model:quantized:BAAI/bge-base-en-v1.5
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: Arm/bge-base-en-v1-5-int8-xnnpack-executorch-vivo-x300
+author: Arm
+sha: 168f8663840dd0cf03c42c1af2d5c85579ed9f1d
+lastModified: '2026-10-19T18:03:53.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  pipeline_tag: feature-extraction
+  library_name: executorch
+  base_model: BAAI/bge-base-en-v1.5
+  base_model_relation: quantized
+  tags:
+  - arm
+  - premium-smartphone
+  - executorch
+  - xnnpack
+  - int8
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: benchmarks/bge-base-en-v1-5-vivo-x300-fp16.yaml
+- rfilename: benchmarks/bge-base-en-v1-5-vivo-x300-int8.yaml
+- rfilename: metadata.yaml
+- rfilename: model.pte
+spaces: []
+createdAt: '2026-10-12T13:26:11.000Z'
+usedStorage: 182873728
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-21T08:27:24.000Z'

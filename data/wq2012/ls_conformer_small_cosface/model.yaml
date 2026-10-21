@@ -1,0 +1,365 @@
+_id: 6ad02e7e7bb3b24952985ff8
+id: wq2012/ls_conformer_small_cosface
+private: false
+pipeline_tag: feature-extraction
+library_name: flaxspeaker
+tags:
+- flaxspeaker
+- jax
+- safetensors
+- audio
+- speaker-verification
+- speaker-recognition
+- speaker-embeddings
+- flax
+- conformer
+- cosface
+- cosine
+- feature-extraction
+- dataset:librispeech_asr
+- dataset:cnceleb
+- dataset:voxceleb
+- arxiv:1710.10467
+- arxiv:2104.01989
+- arxiv:2202.12163
+- arxiv:2203.05642
+- license:apache-2.0
+- region:us
+downloads: 28
+likes: 0
+modelId: wq2012/ls_conformer_small_cosface
+author: wq2012
+sha: 033081dd93dc59e5d919527b497243a9477c0b3f
+lastModified: '2026-10-20T18:27:41.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: flaxspeaker
+cardData:
+  license: apache-2.0
+  library_name: flaxspeaker
+  pipeline_tag: feature-extraction
+  tags:
+  - audio
+  - speaker-verification
+  - speaker-recognition
+  - speaker-embeddings
+  - jax
+  - flax
+  - safetensors
+  - conformer
+  - cosface
+  - cosine
+  datasets:
+  - librispeech_asr
+  - cnceleb
+  - voxceleb
+  metrics:
+  - eer
+  - min_dcf
+  - roc_auc
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: eval_results.json
+- rfilename: flax_model.msgpack
+- rfilename: model.safetensors
+spaces: []
+createdAt: '2026-10-15T01:38:06.000Z'
+safetensors:
+  parameters:
+    F32: 2029892
+  total: 2029892
+usedStorage: 16254934
+downloadsAllTime: 28
+inferenceProviderMapping: {}
+configJson:
+  _explicit_embedding_dim: true
+  backbone: conformer
+  embedding_dim: 192
+  experiment_dict:
+    data:
+      audio_format: .flac
+      dataset_name: librispeech
+      dataset_type: librispeech
+      domain_temp_alpha: 0.35
+      speaker_label_index: -2
+      test_csv: data/speaker_datasets/splits/librispeech/eval.csv
+      test_dir: ''
+      test_librispeech_dir: ''
+      train_csv: data/speaker_datasets/splits/librispeech/train.csv
+      train_dir: ''
+      train_librispeech_dir: ''
+      trials_file: data/speaker_datasets/splits/librispeech/trials.tsv
+      within_domain_prob: 0.75
+    eval:
+      apply_as_norm: false
+      as_norm_cohort_size: 100
+      as_norm_top_k: 100
+      dcf_c_fa: 1.0
+      dcf_c_miss: 1.0
+      full_sequence_inference: true
+      num_enroll_utts: 1
+      num_triplets: 1000
+      threshold_step: 0.001
+      use_as_norm: false
+    export:
+      export_tflite: true
+      output_dir: exported_model
+      sequence_length: 180
+    frontend:
+      apply_cmvn: true
+      cmvn_norm_vars: false
+      feature_type: log_mel
+      fmax: 7600.0
+      fmin: 20.0
+      frame_size_ms: 25.0
+      frame_step_ms: 10.0
+      frame_stride: 1
+      hf_extractor_name: openai/whisper-tiny
+      log_offset: 1.0e-06
+      n_fft: 512
+      n_mels: 80
+      n_mfcc: 80
+      preemph: 0.97
+      sample_rate: 16000
+      stack_left_context: 0
+      stack_right_context: 0
+    loss:
+      ext_softmax_normalize_by_num_speakers: true
+      ext_softmax_row_softmax_weight: 0.5
+      ge2e_contrast_b_grad_scale: 0.0
+      ge2e_contrast_surrogate: false
+      ge2e_exact_leave_one_out: true
+      ge2e_init_b: -5.0
+      ge2e_init_w: 10.0
+      ge2e_learn_wb: true
+      ge2e_split_batch: false
+      loss_type: cosface
+      margin: 0.2
+      multi_row_window: 0
+      num_speakers_per_batch: 8
+      num_utts_per_speaker: 4
+      pure_extended_set: false
+      scale: 30.0
+      scoring_type: cosine
+      sphereface_lambda_base: 1000.0
+      sphereface_lambda_gamma: 0.12
+      sphereface_lambda_min: 5.0
+      sphereface_lambda_power: 1.0
+      sphereface_m: 1.35
+      triplet_alpha: 0.1
+    model:
+      backbone: conformer
+      conformer:
+        conv_kernel_size: 15
+        dim: 192
+        ffn_dim: 384
+        layer_order: mhsa_before_conv
+        normalize_output: false
+        num_heads: 4
+        num_layers: 3
+        subsample_after_layer: 3
+        subsample_factor: 1
+        use_conv_stem: true
+        use_group_norm: true
+        use_positional_encoding: false
+      dr_vector:
+        activation: relu
+        add_cosine_to_network_output: true
+        append_cosine_as_feature_to_network_input: true
+        append_cosine_to_final_hidden: false
+        cosine_dims: 0
+        hidden_dims:
+        - 128
+        - 64
+        include_cosine_in_input: true
+        leaky_relu_slope: 0.2
+        num_cosine_terms: 1
+        readout: linear
+        residual_weight: 0.25
+        symmetric_input: false
+        trainable_affine: false
+        use_layer_norm: true
+      ecapa_tdnn:
+        channels: 256
+        dilations:
+        - 1
+        - 2
+        - 3
+        - 4
+        kernel_sizes:
+        - 5
+        - 3
+        - 3
+        - 3
+        mfa_dim: 512
+        norm_after_activation: false
+        scale: 4
+        se_bottleneck_dim: 64
+      embedding_dim: 192
+      frame_aggregation_mean: true
+      full_sequence_inference: true
+      lstm:
+        bidirectional: false
+        frame_aggregation_mean: true
+        hidden_size: 256
+        num_layers: 3
+        proj_size: 0
+        use_layer_norm: true
+      mamba:
+        bidirectional: false
+        d_conv: 4
+        d_state: 16
+        dim: 192
+        dt_rank: 16
+        expand_factor: 2
+        num_layers: 3
+      max_eval_seq_len: 500
+      max_seq_len: 180
+      min_seq_len: 90
+      n_mfcc: 80
+      normalize_embedding: true
+      pfas:
+        apply_global_l2_norm_to_concat_form: true
+        apply_l2_norm_to_keys: true
+        apply_l2_norm_to_values: false
+        apply_softmax_per_test_key: false
+        atp_ffn_use_layer_norm: true
+        attention_dim: 128
+        attention_type: shared_nonlinear
+        key_dim: 32
+        local_value_scale: 0.25
+        normalize_keys_and_values: false
+        normalize_overall_output: false
+        num_keys: 4
+        per_trial_softmax: true
+        scale_factor: 16.0
+        use_global_anchor: true
+        use_trainable_scale_factor: true
+        value_dim: 128
+      pooling:
+        attention_dim: 128
+        bottleneck_dim: 256
+        epsilon: 0.0001
+        num_heads: 4
+        pooling_type: atp
+        stats_type: MEAN_STD
+        subspace_heads: true
+        use_global_context: true
+        use_nonlinear_bottleneck: true
+      resnet:
+        base_channels: 24
+        num_blocks:
+        - 2
+        - 2
+        - 2
+        - 2
+        out_dim: 192
+        use_se: true
+      saved_model_path: ''
+      scoring_type: cosine
+      seq_len: 180
+      size_variant: small
+      sliding_window_step: 50
+      transformer:
+        dim: 192
+        mlp_dim: 384
+        num_encoder_layers: 3
+        num_heads: 4
+        use_conv_stem: true
+        use_positional_encoding: false
+      use_transformer: false
+      variable_length_training: true
+    train:
+      batch_size: 32
+      ge2e_grad_scale: 0.01
+      grad_clip_norm: 3.0
+      learning_rate: 0.0015
+      loss:
+        ext_softmax_normalize_by_num_speakers: true
+        ext_softmax_row_softmax_weight: 0.5
+        ge2e_contrast_b_grad_scale: 0.0
+        ge2e_contrast_surrogate: false
+        ge2e_exact_leave_one_out: true
+        ge2e_init_b: -5.0
+        ge2e_init_w: 10.0
+        ge2e_learn_wb: true
+        ge2e_split_batch: false
+        loss_type: cosface
+        margin: 0.2
+        multi_row_window: 0
+        num_speakers_per_batch: 8
+        num_utts_per_speaker: 4
+        pure_extended_set: false
+        scale: 30.0
+        scoring_type: cosine
+        sphereface_lambda_base: 1000.0
+        sphereface_lambda_gamma: 0.12
+        sphereface_lambda_min: 5.0
+        sphereface_lambda_power: 1.0
+        sphereface_m: 1.35
+        triplet_alpha: 0.1
+      lr_schedule_cosine: true
+      min_learning_rate: 1.5e-05
+      num_processes: 4
+      num_spks_per_batch: 8
+      num_steps: 400
+      num_utts_per_spk: 4
+      optimizer: adamw
+      save_model_frequency: 0
+      saved_model_dir: ''
+      seed: 42
+      specaug:
+        apply_prob: 0.5
+        freq_mask_max_width: 8
+        freq_mask_prob: 0.5
+        gaussian_noise_std: 0.0
+        num_freq_masks: 2
+        num_time_masks: 2
+        time_mask_max_width: 12
+        time_mask_prob: 0.5
+        use_specaug: true
+      triplet_alpha: 0.1
+      warmup_steps: 40
+      waveform_aug:
+        aug_prob: 0.35
+        enabled: true
+        reverb_prob: 0.4
+        reverb_rt60_max: 0.2
+        reverb_rt60_min: 0.05
+        snr_max_db: 20.0
+        snr_min_db: 12.0
+        use_waveform_aug: true
+      weight_decay: 0.0001
+    vad:
+      adaptive_percentile: 10.0
+      apply_agc: true
+      enabled: true
+      energy_db_threshold: 26.0
+      energy_threshold_db: -42.0
+      frame_size_ms: 25.0
+      frame_step_ms: 10.0
+      hangover_frames: 8
+      min_speech_frames: 3
+      mode: energy
+      sample_rate: 16000
+      snr_margin_db: 4.5
+      spectral_flatness_threshold: 0.65
+  feature_type: log_mel
+  loss_type: cosface
+  model_type: flaxspeaker
+  n_mels: 80
+  n_mfcc: 80
+  pooling_type: atp
+  sample_rate: 16000
+  scoring_type: cosine
+  seq_len: 180
+  size_variant: small
+  transformers_version: 5.17.0
+onnxFiles: {}
+safetensorsSizeMb: 8.1
+approxSizeMb: 8.1
+fetchedAt: '2026-10-21T08:27:24.000Z'

@@ -1,0 +1,55 @@
+_id: 6acce2aa01b728a31a9d51a7
+id: Arm/minilm-l6-v2-int8-xnnpack-executorch-vivo-x300
+private: false
+pipeline_tag: feature-extraction
+library_name: executorch
+tags:
+- executorch
+- arm
+- premium-smartphone
+- xnnpack
+- int8
+- feature-extraction
+- base_model:sentence-transformers/all-MiniLM-L6-v2
+- base_model:quantized:sentence-transformers/all-MiniLM-L6-v2
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: Arm/minilm-l6-v2-int8-xnnpack-executorch-vivo-x300
+author: Arm
+sha: 91c5ae63c5d043ab0f49e9e168a5bdd1f9495951
+lastModified: '2026-10-19T18:03:56.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  pipeline_tag: feature-extraction
+  library_name: executorch
+  base_model: sentence-transformers/all-MiniLM-L6-v2
+  base_model_relation: quantized
+  tags:
+  - arm
+  - premium-smartphone
+  - executorch
+  - xnnpack
+  - int8
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: benchmarks/minilm-l6-v2-vivo-x300-fp16.yaml
+- rfilename: benchmarks/minilm-l6-v2-vivo-x300-int8.yaml
+- rfilename: metadata.yaml
+- rfilename: model.pte
+spaces: []
+createdAt: '2026-10-12T13:37:46.000Z'
+usedStorage: 35144704
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-21T08:27:24.000Z'

@@ -1,0 +1,57 @@
+_id: 6ad7d4b2446ff2b3db6c9b50
+id: Polydim-Einsof/xiaomi_mimo_9b_PMTP_polydim_einsof
+private: false
+pipeline_tag: feature-extraction
+tags:
+- safetensors
+- pmtp
+- polydim
+- stiefel-manifold
+- turing-protocol
+- zero-worm
+- latent-reasoning
+- fp64-precision
+- feature-extraction
+- base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
+- base_model:finetune:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: Polydim-Einsof/xiaomi_mimo_9b_PMTP_polydim_einsof
+author: Polydim-Einsof
+sha: bf70a7de35f4509254aa5217600897fef5d549c4
+lastModified: '2026-10-20T20:53:18.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  tags:
+  - pmtp
+  - polydim
+  - stiefel-manifold
+  - turing-protocol
+  - zero-worm
+  - latent-reasoning
+  - fp64-precision
+  base_model: XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: Modelfile
+- rfilename: README.md
+- rfilename: adapter_config.json
+- rfilename: adapter_model.safetensors
+- rfilename: adapter_weights.safetensors
+spaces: []
+createdAt: '2026-10-20T20:53:06.000Z'
+usedStorage: 58720336
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 117.4
+approxSizeMb: 0.0
+fetchedAt: '2026-10-21T08:27:24.000Z'

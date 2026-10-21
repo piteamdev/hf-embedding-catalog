@@ -1,0 +1,62 @@
+_id: 6abba948081424263bcfa4b0
+id: Arm/bge-base-en-v1-5-int8-xnnpack-executorch-raspberrypi5
+private: false
+pipeline_tag: feature-extraction
+library_name: executorch
+tags:
+- executorch
+- arm
+- edge-linux
+- xnnpack
+- int8
+- beir
+- feature-extraction
+- base_model:BAAI/bge-base-en-v1.5
+- base_model:quantized:BAAI/bge-base-en-v1.5
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: Arm/bge-base-en-v1-5-int8-xnnpack-executorch-raspberrypi5
+author: Arm
+sha: ad0880d56564cf5a9727dfd5788ecc67e18a754a
+lastModified: '2026-10-19T18:02:54.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  pipeline_tag: feature-extraction
+  library_name: executorch
+  base_model: BAAI/bge-base-en-v1.5
+  base_model_relation: quantized
+  tags:
+  - arm
+  - edge-linux
+  - executorch
+  - xnnpack
+  - int8
+  - beir
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: benchmarks/bge-base-en-v1-5-raspberrypi5-fp16.yaml
+- rfilename: benchmarks/bge-base-en-v1-5-raspberrypi5-int8.yaml
+- rfilename: metadata.yaml
+- rfilename: model.pte
+- rfilename: np_recipe/calibration.json
+- rfilename: np_recipe/evaluation.json
+- rfilename: np_recipe/project.json
+- rfilename: np_recipe/run.detail.yaml
+- rfilename: np_recipe/run.yaml
+spaces: []
+createdAt: '2026-09-29T12:04:24.000Z'
+usedStorage: 134392704
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-21T08:27:24.000Z'

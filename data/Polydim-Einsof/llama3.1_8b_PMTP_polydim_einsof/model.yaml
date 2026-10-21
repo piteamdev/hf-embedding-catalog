@@ -1,0 +1,57 @@
+_id: 6ad7d4c9c406e87e4e37c854
+id: Polydim-Einsof/llama3.1_8b_PMTP_polydim_einsof
+private: false
+pipeline_tag: feature-extraction
+tags:
+- safetensors
+- pmtp
+- polydim
+- stiefel-manifold
+- turing-protocol
+- zero-worm
+- latent-reasoning
+- fp64-precision
+- feature-extraction
+- base_model:meta-llama/Llama-3.1-8B
+- base_model:finetune:meta-llama/Llama-3.1-8B
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: Polydim-Einsof/llama3.1_8b_PMTP_polydim_einsof
+author: Polydim-Einsof
+sha: 2a7cbb9891e2a45f2ac07ac5270f55fe90e82652
+lastModified: '2026-10-20T20:53:35.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  tags:
+  - pmtp
+  - polydim
+  - stiefel-manifold
+  - turing-protocol
+  - zero-worm
+  - latent-reasoning
+  - fp64-precision
+  base_model: meta-llama/Llama-3.1-8B
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: Modelfile
+- rfilename: README.md
+- rfilename: adapter_config.json
+- rfilename: adapter_model.safetensors
+- rfilename: adapter_weights.safetensors
+spaces: []
+createdAt: '2026-10-20T20:53:29.000Z'
+usedStorage: 67108944
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 134.2
+approxSizeMb: 0.0
+fetchedAt: '2026-10-21T08:27:24.000Z'

@@ -1,0 +1,62 @@
+_id: 6ad81680a64a2cd6f0bee4bc
+id: VelociQ8/F2LLM-v2-330M-Q8A64-GGUF
+private: false
+pipeline_tag: feature-extraction
+tags:
+- gguf
+- velociq8
+- q8a64
+- cpu
+- embeddings
+- sentence-similarity
+- feature-extraction
+- multilingual
+- arxiv:2603.19223
+- base_model:codefuse-ai/F2LLM-v2-330M
+- base_model:quantized:codefuse-ai/F2LLM-v2-330M
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: VelociQ8/F2LLM-v2-330M-Q8A64-GGUF
+author: VelociQ8
+sha: c1af2bda6ead06b80c81f189288020efa886aa63
+lastModified: '2026-10-21T06:40:35.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: codefuse-ai/F2LLM-v2-330M
+  base_model_relation: quantized
+  pipeline_tag: feature-extraction
+  inference: false
+  language:
+  - multilingual
+  tags:
+  - gguf
+  - velociq8
+  - q8a64
+  - cpu
+  - embeddings
+  - sentence-similarity
+gguf:
+  total: 350842784
+  architecture: a64b9e07
+  totalFileSize: 350842944
+siblings:
+- rfilename: .gitattributes
+- rfilename: F2LLM-v2-330M-Q8A64.gguf
+- rfilename: LICENSE
+- rfilename: README.md
+spaces: []
+createdAt: '2026-10-21T01:33:52.000Z'
+usedStorage: 350842944
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-21T08:27:24.000Z'

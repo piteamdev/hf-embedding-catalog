@@ -1,0 +1,1193 @@
+_id: 6ad3428a79bd246cc158a840
+id: AI999X/physics-ai999x
+private: false
+pipeline_tag: sentence-similarity
+library_name: physics-ai999x
+tags:
+- physics-ai999x
+- onnx
+- safetensors
+- physics
+- physics-solver
+- step-by-step-solutions
+- homework-help
+- education
+- offline
+- verified-ai
+- zero-hallucination
+- sentence-similarity
+- feature-extraction
+- semantic-search
+- decision-model
+- physics-calculator
+- kinematics
+- mechanics
+- dynamics
+- thermodynamics
+- electromagnetism
+- circuits
+- optics
+- waves
+- fluids
+- units-conversion
+- word-problems
+- neuro-symbolic
+- symbolic-ai
+- deterministic
+- cpu-only
+- edge-ai
+- stem
+- edtech
+- tutoring
+- latex
+- python
+- sympy
+- ai999x
+- en
+- license:apache-2.0
+- model-index
+- region:us
+downloads: 46
+likes: 0
+modelId: AI999X/physics-ai999x
+author: AI999X
+sha: 3094e94f98bb202b2e770c48607312d142b988d7
+lastModified: '2026-10-22T03:54:25.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index:
+- name: physics-ai999x
+  results:
+  - task:
+      type: question-answering
+      name: physics question answering
+    dataset:
+      name: Development probes
+      type: ai999x-evaluation
+    metrics:
+    - type: accuracy
+      value: 0.6071
+      name: correct (of all questions)
+      verified: false
+    - type: wrong_answers
+      value: 0
+      name: wrong answers
+      verified: false
+  - task:
+      type: question-answering
+      name: physics question answering
+    dataset:
+      name: 'Held-out: fresh questions (2026-10-15)'
+      type: ai999x-evaluation
+    metrics:
+    - type: accuracy
+      value: 0.7619
+      name: correct (of all questions)
+      verified: false
+    - type: wrong_answers
+      value: 0
+      name: wrong answers
+      verified: false
+  - task:
+      type: question-answering
+      name: physics question answering
+    dataset:
+      name: 'Held-out: probes'
+      type: ai999x-evaluation
+    metrics:
+    - type: accuracy
+      value: 0.8824
+      name: correct (of all questions)
+      verified: false
+    - type: wrong_answers
+      value: 0
+      name: wrong answers
+      verified: false
+  - task:
+      type: question-answering
+      name: physics question answering
+    dataset:
+      name: 'Held-out: promotion checks (2026-10-13)'
+      type: ai999x-evaluation
+    metrics:
+    - type: accuracy
+      value: 0.5185
+      name: correct (of all questions)
+      verified: false
+    - type: wrong_answers
+      value: 0
+      name: wrong answers
+      verified: false
+  - task:
+      type: question-answering
+      name: physics question answering
+    dataset:
+      name: 'Held-out: multi-body systems (2026-10-15)'
+      type: ai999x-evaluation
+    metrics:
+    - type: accuracy
+      value: 0.7674
+      name: correct (of all questions)
+      verified: false
+    - type: wrong_answers
+      value: 0
+      name: wrong answers
+      verified: false
+  - task:
+      type: question-answering
+      name: physics question answering
+    dataset:
+      name: 'Held-out: unused-input traps'
+      type: ai999x-evaluation
+    metrics:
+    - type: accuracy
+      value: 0.5625
+      name: correct (of all questions)
+      verified: false
+    - type: wrong_answers
+      value: 0
+      name: wrong answers
+      verified: false
+  - task:
+      type: question-answering
+      name: physics question answering
+    dataset:
+      name: Verified natural-language questions (physics-questions-1)
+      type: ai999x-evaluation
+    metrics:
+    - type: accuracy
+      value: 0.305
+      name: correct (of all questions)
+      verified: false
+    - type: wrong_answers
+      value: 0
+      name: wrong answers
+      verified: false
+  - task:
+      type: question-answering
+      name: physics question answering
+    dataset:
+      name: Golden answers (859 documented questions, Windows + Linux Python 3.10-3.14)
+      type: ai999x-evaluation
+    metrics:
+    - type: accuracy
+      value: 1
+      name: identical on every platform
+      verified: false
+  - task:
+      type: question-answering
+      name: physics question answering
+    dataset:
+      name: Capability search, 776 held-out verified questions across all AI999X models
+      type: ai999x-evaluation
+    metrics:
+    - type: recall_at_1
+      value: 0.89
+      name: right capability first
+      verified: false
+    - type: recall_at_5
+      value: 0.977
+      name: in the top five
+      verified: false
+  - task:
+      type: question-answering
+      name: physics question answering
+    dataset:
+      name: Decision model through the verification gate, held-out test (questions the rule-based reader refuses)
+      type: ai999x-evaluation
+    metrics:
+    - type: answered
+      value: 19
+      name: questions answered
+      verified: false
+    - type: wrong_answers
+      value: 0
+      name: wrong
+      verified: false
+config: {}
+cardData:
+  license: apache-2.0
+  license_link: LICENSE
+  library_name: physics-ai999x
+  language:
+  - en
+  inference: false
+  pipeline_tag: sentence-similarity
+  tags:
+  - physics
+  - physics-solver
+  - step-by-step-solutions
+  - homework-help
+  - education
+  - offline
+  - verified-ai
+  - zero-hallucination
+  - onnx
+  - safetensors
+  - sentence-similarity
+  - feature-extraction
+  - semantic-search
+  - decision-model
+  - physics-calculator
+  - kinematics
+  - mechanics
+  - dynamics
+  - thermodynamics
+  - electromagnetism
+  - circuits
+  - optics
+  - waves
+  - fluids
+  - units-conversion
+  - word-problems
+  - neuro-symbolic
+  - symbolic-ai
+  - deterministic
+  - cpu-only
+  - edge-ai
+  - stem
+  - edtech
+  - tutoring
+  - latex
+  - python
+  - sympy
+  - ai999x
+  model-index:
+  - name: physics-ai999x
+    results:
+    - task:
+        type: question-answering
+        name: physics question answering
+      dataset:
+        name: Development probes
+        type: ai999x-evaluation
+      metrics:
+      - type: accuracy
+        value: 0.6071
+        name: correct (of all questions)
+        verified: false
+      - type: wrong_answers
+        value: 0
+        name: wrong answers
+        verified: false
+    - task:
+        type: question-answering
+        name: physics question answering
+      dataset:
+        name: 'Held-out: fresh questions (2026-10-15)'
+        type: ai999x-evaluation
+      metrics:
+      - type: accuracy
+        value: 0.7619
+        name: correct (of all questions)
+        verified: false
+      - type: wrong_answers
+        value: 0
+        name: wrong answers
+        verified: false
+    - task:
+        type: question-answering
+        name: physics question answering
+      dataset:
+        name: 'Held-out: probes'
+        type: ai999x-evaluation
+      metrics:
+      - type: accuracy
+        value: 0.8824
+        name: correct (of all questions)
+        verified: false
+      - type: wrong_answers
+        value: 0
+        name: wrong answers
+        verified: false
+    - task:
+        type: question-answering
+        name: physics question answering
+      dataset:
+        name: 'Held-out: promotion checks (2026-10-13)'
+        type: ai999x-evaluation
+      metrics:
+      - type: accuracy
+        value: 0.5185
+        name: correct (of all questions)
+        verified: false
+      - type: wrong_answers
+        value: 0
+        name: wrong answers
+        verified: false
+    - task:
+        type: question-answering
+        name: physics question answering
+      dataset:
+        name: 'Held-out: multi-body systems (2026-10-15)'
+        type: ai999x-evaluation
+      metrics:
+      - type: accuracy
+        value: 0.7674
+        name: correct (of all questions)
+        verified: false
+      - type: wrong_answers
+        value: 0
+        name: wrong answers
+        verified: false
+    - task:
+        type: question-answering
+        name: physics question answering
+      dataset:
+        name: 'Held-out: unused-input traps'
+        type: ai999x-evaluation
+      metrics:
+      - type: accuracy
+        value: 0.5625
+        name: correct (of all questions)
+        verified: false
+      - type: wrong_answers
+        value: 0
+        name: wrong answers
+        verified: false
+    - task:
+        type: question-answering
+        name: physics question answering
+      dataset:
+        name: Verified natural-language questions (physics-questions-1)
+        type: ai999x-evaluation
+      metrics:
+      - type: accuracy
+        value: 0.305
+        name: correct (of all questions)
+        verified: false
+      - type: wrong_answers
+        value: 0
+        name: wrong answers
+        verified: false
+    - task:
+        type: question-answering
+        name: physics question answering
+      dataset:
+        name: Golden answers (859 documented questions, Windows + Linux Python 3.10-3.14)
+        type: ai999x-evaluation
+      metrics:
+      - type: accuracy
+        value: 1
+        name: identical on every platform
+        verified: false
+    - task:
+        type: question-answering
+        name: physics question answering
+      dataset:
+        name: Capability search, 776 held-out verified questions across all AI999X models
+        type: ai999x-evaluation
+      metrics:
+      - type: recall_at_1
+        value: 0.89
+        name: right capability first
+        verified: false
+      - type: recall_at_5
+        value: 0.977
+        name: in the top five
+        verified: false
+    - task:
+        type: question-answering
+        name: physics question answering
+      dataset:
+        name: Decision model through the verification gate, held-out test (questions the rule-based reader refuses)
+        type: ai999x-evaluation
+      metrics:
+      - type: answered
+        value: 19
+        name: questions answered
+        verified: false
+      - type: wrong_answers
+        value: 0
+        name: wrong
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: CITATION.cff
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: dist/physics_ai999x-2.0.0-py3-none-any.whl
+- rfilename: docs/physics_ai999x_capabilities.html
+- rfilename: docs/physics_ai999x_capabilities.md
+- rfilename: docs/physics_ai999x_capabilities.pdf
+- rfilename: docs/physics_ai999x_onnx_formulas.html
+- rfilename: docs/physics_ai999x_onnx_formulas.md
+- rfilename: docs/physics_ai999x_onnx_formulas.pdf
+- rfilename: evaluation/KNOWLEDGE_CARD.md
+- rfilename: evaluation/benchmark_summary.json
+- rfilename: evaluation/release_gate.md
+- rfilename: model.safetensors
+- rfilename: onnx/decision.int8.onnx
+- rfilename: onnx/decision.safetensors
+- rfilename: onnx/formulas/absolute_pressure_depth__P.onnx
+- rfilename: onnx/formulas/absolute_pressure_depth__P0.onnx
+- rfilename: onnx/formulas/absolute_pressure_depth__g.onnx
+- rfilename: onnx/formulas/absolute_pressure_depth__h.onnx
+- rfilename: onnx/formulas/absolute_pressure_depth__rho.onnx
+- rfilename: onnx/formulas/acceleration_frictionless_incline__a.onnx
+- rfilename: onnx/formulas/acceleration_frictionless_incline__g.onnx
+- rfilename: onnx/formulas/acceleration_frictionless_incline__theta.onnx
+- rfilename: onnx/formulas/angular_frequency__f.onnx
+- rfilename: onnx/formulas/angular_frequency__omega.onnx
+- rfilename: onnx/formulas/angular_momentum__Ir.onnx
+- rfilename: onnx/formulas/angular_momentum__L.onnx
+- rfilename: onnx/formulas/angular_momentum__omega.onnx
+- rfilename: onnx/formulas/angular_momentum_point_mass__L.onnx
+- rfilename: onnx/formulas/angular_momentum_point_mass__m.onnx
+- rfilename: onnx/formulas/angular_momentum_point_mass__r.onnx
+- rfilename: onnx/formulas/angular_momentum_point_mass__v.onnx
+- rfilename: onnx/formulas/angular_velocity_angle__alpha.onnx
+- rfilename: onnx/formulas/angular_velocity_angle__omega.onnx
+- rfilename: onnx/formulas/angular_velocity_angle__omega0.onnx
+- rfilename: onnx/formulas/angular_velocity_angle__theta.onnx
+- rfilename: onnx/formulas/angular_velocity_time__alpha.onnx
+- rfilename: onnx/formulas/angular_velocity_time__omega.onnx
+- rfilename: onnx/formulas/angular_velocity_time__omega0.onnx
+- rfilename: onnx/formulas/angular_velocity_time__t.onnx
+- rfilename: onnx/formulas/area_expansion__A.onnx
+- rfilename: onnx/formulas/area_expansion__alpha_t.onnx
+- rfilename: onnx/formulas/area_expansion__dA.onnx
+- rfilename: onnx/formulas/area_expansion__dT.onnx
+- rfilename: onnx/formulas/average_force_from_momentum_change__F.onnx
+- rfilename: onnx/formulas/average_force_from_momentum_change__p1.onnx
+- rfilename: onnx/formulas/average_force_from_momentum_change__p2.onnx
+- rfilename: onnx/formulas/average_force_from_momentum_change__t.onnx
+- rfilename: onnx/formulas/average_velocity_displacement__t.onnx
+- rfilename: onnx/formulas/average_velocity_displacement__v.onnx
+- rfilename: onnx/formulas/average_velocity_displacement__v0.onnx
+- rfilename: onnx/formulas/average_velocity_displacement__x.onnx
+- rfilename: onnx/formulas/capacitance_definition__C.onnx
+- rfilename: onnx/formulas/capacitance_definition__Q.onnx
+- rfilename: onnx/formulas/capacitance_definition__V.onnx
+- rfilename: onnx/formulas/capacitive_reactance__C.onnx
+- rfilename: onnx/formulas/capacitive_reactance__X.onnx
+- rfilename: onnx/formulas/capacitive_reactance__f.onnx
+- rfilename: onnx/formulas/capacitor_energy__C.onnx
+- rfilename: onnx/formulas/capacitor_energy__Ecap.onnx
+- rfilename: onnx/formulas/capacitor_energy__V.onnx
+- rfilename: onnx/formulas/carnot_efficiency__Tc.onnx
+- rfilename: onnx/formulas/carnot_efficiency__Th.onnx
+- rfilename: onnx/formulas/carnot_efficiency__eff.onnx
+- rfilename: onnx/formulas/catalog.json
+- rfilename: onnx/formulas/centripetal_acceleration__a.onnx
+- rfilename: onnx/formulas/centripetal_acceleration__r.onnx
+- rfilename: onnx/formulas/centripetal_acceleration__v.onnx
+- rfilename: onnx/formulas/centripetal_acceleration_omega__a.onnx
+- rfilename: onnx/formulas/centripetal_acceleration_omega__omega.onnx
+- rfilename: onnx/formulas/centripetal_acceleration_omega__r.onnx
+- rfilename: onnx/formulas/centripetal_force__F.onnx
+- rfilename: onnx/formulas/centripetal_force__m.onnx
+- rfilename: onnx/formulas/centripetal_force__r.onnx
+- rfilename: onnx/formulas/centripetal_force__v.onnx
+- rfilename: onnx/formulas/charge_current__I.onnx
+- rfilename: onnx/formulas/charge_current__Q.onnx
+- rfilename: onnx/formulas/charge_current__t.onnx
+- rfilename: onnx/formulas/cop_heat_pump__Qh.onnx
+- rfilename: onnx/formulas/cop_heat_pump__W.onnx
+- rfilename: onnx/formulas/cop_heat_pump__cop.onnx
+- rfilename: onnx/formulas/cop_refrigerator__Qc.onnx
+- rfilename: onnx/formulas/cop_refrigerator__W.onnx
+- rfilename: onnx/formulas/cop_refrigerator__cop.onnx
+- rfilename: onnx/formulas/cyclotron_radius__B.onnx
+- rfilename: onnx/formulas/cyclotron_radius__m.onnx
+- rfilename: onnx/formulas/cyclotron_radius__q.onnx
+- rfilename: onnx/formulas/cyclotron_radius__r.onnx
+- rfilename: onnx/formulas/cyclotron_radius__theta.onnx
+- rfilename: onnx/formulas/cyclotron_radius__v.onnx
+- rfilename: onnx/formulas/de_broglie__h.onnx
+- rfilename: onnx/formulas/de_broglie__lam.onnx
+- rfilename: onnx/formulas/de_broglie__p.onnx
+- rfilename: onnx/formulas/density__V.onnx
+- rfilename: onnx/formulas/density__m.onnx
+- rfilename: onnx/formulas/density__rho.onnx
+- rfilename: onnx/formulas/displacement_time__a.onnx
+- rfilename: onnx/formulas/displacement_time__t.onnx
+- rfilename: onnx/formulas/displacement_time__v0.onnx
+- rfilename: onnx/formulas/displacement_time__x.onnx
+- rfilename: onnx/formulas/electric_force_in_field__Ef.onnx
+- rfilename: onnx/formulas/electric_force_in_field__F.onnx
+- rfilename: onnx/formulas/electric_force_in_field__q.onnx
+- rfilename: onnx/formulas/electric_power__I.onnx
+- rfilename: onnx/formulas/electric_power__P.onnx
+- rfilename: onnx/formulas/electric_power__V.onnx
+- rfilename: onnx/formulas/engine_efficiency__Qh.onnx
+- rfilename: onnx/formulas/engine_efficiency__W.onnx
+- rfilename: onnx/formulas/engine_efficiency__eff.onnx
+- rfilename: onnx/formulas/engine_energy_balance__Qc.onnx
+- rfilename: onnx/formulas/engine_energy_balance__Qh.onnx
+- rfilename: onnx/formulas/engine_energy_balance__W.onnx
+- rfilename: onnx/formulas/flow_rate_area_speed__A.onnx
+- rfilename: onnx/formulas/flow_rate_area_speed__Q.onnx
+- rfilename: onnx/formulas/flow_rate_area_speed__v.onnx
+- rfilename: onnx/formulas/flow_rate_volume_time__Q.onnx
+- rfilename: onnx/formulas/flow_rate_volume_time__V.onnx
+- rfilename: onnx/formulas/flow_rate_volume_time__t.onnx
+- rfilename: onnx/formulas/formula-pack.d.ts
+- rfilename: onnx/formulas/formula-pack.js
+- rfilename: onnx/formulas/formulas.json
+- rfilename: onnx/formulas/gravitational_pe__U.onnx
+- rfilename: onnx/formulas/gravitational_pe__g.onnx
+- rfilename: onnx/formulas/gravitational_pe__h.onnx
+- rfilename: onnx/formulas/gravitational_pe__m.onnx
+- rfilename: onnx/formulas/heat__Q.onnx
+- rfilename: onnx/formulas/heat__c.onnx
+- rfilename: onnx/formulas/heat__dT.onnx
+- rfilename: onnx/formulas/heat__m.onnx
+- rfilename: onnx/formulas/hydrostatic_pressure__P.onnx
+- rfilename: onnx/formulas/hydrostatic_pressure__g.onnx
+- rfilename: onnx/formulas/hydrostatic_pressure__h.onnx
+- rfilename: onnx/formulas/hydrostatic_pressure__rho.onnx
+- rfilename: onnx/formulas/ideal_gas_moles__P.onnx
+- rfilename: onnx/formulas/ideal_gas_moles__R.onnx
+- rfilename: onnx/formulas/ideal_gas_moles__T.onnx
+- rfilename: onnx/formulas/ideal_gas_moles__V.onnx
+- rfilename: onnx/formulas/ideal_gas_moles__n.onnx
+- rfilename: onnx/formulas/impulse__F.onnx
+- rfilename: onnx/formulas/impulse__J.onnx
+- rfilename: onnx/formulas/impulse__t.onnx
+- rfilename: onnx/formulas/index_of_refraction__c.onnx
+- rfilename: onnx/formulas/index_of_refraction__n.onnx
+- rfilename: onnx/formulas/index_of_refraction__v.onnx
+- rfilename: onnx/formulas/inductive_reactance__L.onnx
+- rfilename: onnx/formulas/inductive_reactance__X.onnx
+- rfilename: onnx/formulas/inductive_reactance__f.onnx
+- rfilename: onnx/formulas/intensity_power_area__A.onnx
+- rfilename: onnx/formulas/intensity_power_area__I.onnx
+- rfilename: onnx/formulas/intensity_power_area__P.onnx
+- rfilename: onnx/formulas/kinetic_energy__K.onnx
+- rfilename: onnx/formulas/kinetic_energy__m.onnx
+- rfilename: onnx/formulas/kinetic_energy__v.onnx
+- rfilename: onnx/formulas/kinetic_friction__N.onnx
+- rfilename: onnx/formulas/kinetic_friction__f.onnx
+- rfilename: onnx/formulas/kinetic_friction__mu.onnx
+- rfilename: onnx/formulas/latent_heat_fusion__Lf.onnx
+- rfilename: onnx/formulas/latent_heat_fusion__Q.onnx
+- rfilename: onnx/formulas/latent_heat_fusion__m.onnx
+- rfilename: onnx/formulas/latent_heat_vaporization__Lv.onnx
+- rfilename: onnx/formulas/latent_heat_vaporization__Q.onnx
+- rfilename: onnx/formulas/latent_heat_vaporization__m.onnx
+- rfilename: onnx/formulas/lc_resonance__C.onnx
+- rfilename: onnx/formulas/lc_resonance__L.onnx
+- rfilename: onnx/formulas/lc_resonance__f.onnx
+- rfilename: onnx/formulas/linear_expansion__L.onnx
+- rfilename: onnx/formulas/linear_expansion__alpha_t.onnx
+- rfilename: onnx/formulas/linear_expansion__dL.onnx
+- rfilename: onnx/formulas/linear_expansion__dT.onnx
+- rfilename: onnx/formulas/long_wire_field__B.onnx
+- rfilename: onnx/formulas/long_wire_field__I.onnx
+- rfilename: onnx/formulas/long_wire_field__mu0.onnx
+- rfilename: onnx/formulas/long_wire_field__r.onnx
+- rfilename: onnx/formulas/loop_center_field__B.onnx
+- rfilename: onnx/formulas/loop_center_field__I.onnx
+- rfilename: onnx/formulas/loop_center_field__mu0.onnx
+- rfilename: onnx/formulas/loop_center_field__r.onnx
+- rfilename: onnx/formulas/magnetic_force_charge__B.onnx
+- rfilename: onnx/formulas/magnetic_force_charge__F.onnx
+- rfilename: onnx/formulas/magnetic_force_charge__q.onnx
+- rfilename: onnx/formulas/magnetic_force_charge__theta.onnx
+- rfilename: onnx/formulas/magnetic_force_charge__v.onnx
+- rfilename: onnx/formulas/magnetic_force_wire__B.onnx
+- rfilename: onnx/formulas/magnetic_force_wire__F.onnx
+- rfilename: onnx/formulas/magnetic_force_wire__I.onnx
+- rfilename: onnx/formulas/magnetic_force_wire__L.onnx
+- rfilename: onnx/formulas/magnetic_force_wire__theta.onnx
+- rfilename: onnx/formulas/max_height_vertical_throw__g.onnx
+- rfilename: onnx/formulas/max_height_vertical_throw__h.onnx
+- rfilename: onnx/formulas/max_height_vertical_throw__v0.onnx
+- rfilename: onnx/formulas/mirror_focal_length__R.onnx
+- rfilename: onnx/formulas/mirror_focal_length__f.onnx
+- rfilename: onnx/formulas/momentum__m.onnx
+- rfilename: onnx/formulas/momentum__p.onnx
+- rfilename: onnx/formulas/momentum__v.onnx
+- rfilename: onnx/formulas/motional_emf__B.onnx
+- rfilename: onnx/formulas/motional_emf__emf.onnx
+- rfilename: onnx/formulas/motional_emf__l.onnx
+- rfilename: onnx/formulas/motional_emf__v.onnx
+- rfilename: onnx/formulas/net_force_friction__F_upper.onnx
+- rfilename: onnx/formulas/net_force_friction__P.onnx
+- rfilename: onnx/formulas/net_force_friction__f.onnx
+- rfilename: onnx/formulas/net_work_kinetic_energy__W.onnx
+- rfilename: onnx/formulas/net_work_kinetic_energy__m.onnx
+- rfilename: onnx/formulas/net_work_kinetic_energy__v.onnx
+- rfilename: onnx/formulas/net_work_kinetic_energy__v0.onnx
+- rfilename: onnx/formulas/newton_second__F.onnx
+- rfilename: onnx/formulas/newton_second__a.onnx
+- rfilename: onnx/formulas/newton_second__m.onnx
+- rfilename: onnx/formulas/normal_force_incline__N.onnx
+- rfilename: onnx/formulas/normal_force_incline__g.onnx
+- rfilename: onnx/formulas/normal_force_incline__m.onnx
+- rfilename: onnx/formulas/normal_force_incline__theta.onnx
+- rfilename: onnx/formulas/normal_on_level__N.onnx
+- rfilename: onnx/formulas/normal_on_level__W.onnx
+- rfilename: onnx/formulas/ohm__I.onnx
+- rfilename: onnx/formulas/ohm__R.onnx
+- rfilename: onnx/formulas/ohm__V.onnx
+- rfilename: onnx/formulas/ohm_power_current__I.onnx
+- rfilename: onnx/formulas/ohm_power_current__P.onnx
+- rfilename: onnx/formulas/ohm_power_current__R.onnx
+- rfilename: onnx/formulas/ohm_power_voltage__P.onnx
+- rfilename: onnx/formulas/ohm_power_voltage__R.onnx
+- rfilename: onnx/formulas/ohm_power_voltage__V.onnx
+- rfilename: onnx/formulas/orbital_period__G.onnx
+- rfilename: onnx/formulas/orbital_period__M.onnx
+- rfilename: onnx/formulas/orbital_period__T.onnx
+- rfilename: onnx/formulas/orbital_period__r.onnx
+- rfilename: onnx/formulas/orbital_speed__G.onnx
+- rfilename: onnx/formulas/orbital_speed__M.onnx
+- rfilename: onnx/formulas/orbital_speed__r.onnx
+- rfilename: onnx/formulas/orbital_speed__v.onnx
+- rfilename: onnx/formulas/parallel_plate_capacitor__A.onnx
+- rfilename: onnx/formulas/parallel_plate_capacitor__C.onnx
+- rfilename: onnx/formulas/parallel_plate_capacitor__d.onnx
+- rfilename: onnx/formulas/parallel_plate_capacitor__eps0.onnx
+- rfilename: onnx/formulas/pendulum_period__Lp.onnx
+- rfilename: onnx/formulas/pendulum_period__T.onnx
+- rfilename: onnx/formulas/pendulum_period__g.onnx
+- rfilename: onnx/formulas/period_frequency__T.onnx
+- rfilename: onnx/formulas/period_frequency__f.onnx
+- rfilename: onnx/formulas/photon_energy__E.onnx
+- rfilename: onnx/formulas/photon_energy__f.onnx
+- rfilename: onnx/formulas/photon_energy__h.onnx
+- rfilename: onnx/formulas/photon_energy_wavelength__E.onnx
+- rfilename: onnx/formulas/photon_energy_wavelength__c.onnx
+- rfilename: onnx/formulas/photon_energy_wavelength__h.onnx
+- rfilename: onnx/formulas/photon_energy_wavelength__lam.onnx
+- rfilename: onnx/formulas/photon_momentum__h.onnx
+- rfilename: onnx/formulas/photon_momentum__lam.onnx
+- rfilename: onnx/formulas/photon_momentum__p.onnx
+- rfilename: onnx/formulas/point_charge_field__Ef.onnx
+- rfilename: onnx/formulas/point_charge_field__Q.onnx
+- rfilename: onnx/formulas/point_charge_field__ke.onnx
+- rfilename: onnx/formulas/point_charge_field__r.onnx
+- rfilename: onnx/formulas/point_charge_potential__Q.onnx
+- rfilename: onnx/formulas/point_charge_potential__V.onnx
+- rfilename: onnx/formulas/point_charge_potential__ke.onnx
+- rfilename: onnx/formulas/point_charge_potential__r.onnx
+- rfilename: onnx/formulas/power_energy__E.onnx
+- rfilename: onnx/formulas/power_energy__P.onnx
+- rfilename: onnx/formulas/power_energy__t.onnx
+- rfilename: onnx/formulas/power_force_speed__F.onnx
+- rfilename: onnx/formulas/power_force_speed__P.onnx
+- rfilename: onnx/formulas/power_force_speed__v.onnx
+- rfilename: onnx/formulas/pressure_force__A.onnx
+- rfilename: onnx/formulas/pressure_force__F.onnx
+- rfilename: onnx/formulas/pressure_force__P.onnx
+- rfilename: onnx/formulas/rc_charging__C.onnx
+- rfilename: onnx/formulas/rc_charging__R.onnx
+- rfilename: onnx/formulas/rc_charging__V.onnx
+- rfilename: onnx/formulas/rc_charging__emf.onnx
+- rfilename: onnx/formulas/rc_charging__t.onnx
+- rfilename: onnx/formulas/rc_discharging__C.onnx
+- rfilename: onnx/formulas/rc_discharging__R.onnx
+- rfilename: onnx/formulas/rc_discharging__V.onnx
+- rfilename: onnx/formulas/rc_discharging__V0.onnx
+- rfilename: onnx/formulas/rc_discharging__t.onnx
+- rfilename: onnx/formulas/rc_time_constant__C.onnx
+- rfilename: onnx/formulas/rc_time_constant__R.onnx
+- rfilename: onnx/formulas/rc_time_constant__tau.onnx
+- rfilename: onnx/formulas/resistivity__A.onnx
+- rfilename: onnx/formulas/resistivity__L.onnx
+- rfilename: onnx/formulas/resistivity__R.onnx
+- rfilename: onnx/formulas/resistivity__rho_e.onnx
+- rfilename: onnx/formulas/rest_energy__E0.onnx
+- rfilename: onnx/formulas/rest_energy__c.onnx
+- rfilename: onnx/formulas/rest_energy__m.onnx
+- rfilename: onnx/formulas/rl_current_decay__I.onnx
+- rfilename: onnx/formulas/rl_current_decay__I0.onnx
+- rfilename: onnx/formulas/rl_current_decay__t.onnx
+- rfilename: onnx/formulas/rl_current_decay__tau.onnx
+- rfilename: onnx/formulas/rl_time_constant__L.onnx
+- rfilename: onnx/formulas/rl_time_constant__R.onnx
+- rfilename: onnx/formulas/rl_time_constant__tau.onnx
+- rfilename: onnx/formulas/rms_current__I0.onnx
+- rfilename: onnx/formulas/rms_current__Irms.onnx
+- rfilename: onnx/formulas/rms_voltage__V0.onnx
+- rfilename: onnx/formulas/rms_voltage__Vrms.onnx
+- rfilename: onnx/formulas/rotational_kinetic_energy__Ir.onnx
+- rfilename: onnx/formulas/rotational_kinetic_energy__KR.onnx
+- rfilename: onnx/formulas/rotational_kinetic_energy__omega.onnx
+- rfilename: onnx/formulas/shm_max_speed__X.onnx
+- rfilename: onnx/formulas/shm_max_speed__k.onnx
+- rfilename: onnx/formulas/shm_max_speed__m.onnx
+- rfilename: onnx/formulas/shm_max_speed__v.onnx
+- rfilename: onnx/formulas/solenoid_field__B.onnx
+- rfilename: onnx/formulas/solenoid_field__I.onnx
+- rfilename: onnx/formulas/solenoid_field__mu0.onnx
+- rfilename: onnx/formulas/solenoid_field__nt.onnx
+- rfilename: onnx/formulas/speed_after_fall_from_rest__g.onnx
+- rfilename: onnx/formulas/speed_after_fall_from_rest__h.onnx
+- rfilename: onnx/formulas/speed_after_fall_from_rest__v.onnx
+- rfilename: onnx/formulas/spring_energy__U.onnx
+- rfilename: onnx/formulas/spring_energy__k.onnx
+- rfilename: onnx/formulas/spring_energy__x.onnx
+- rfilename: onnx/formulas/spring_force__F.onnx
+- rfilename: onnx/formulas/spring_force__k.onnx
+- rfilename: onnx/formulas/spring_force__x.onnx
+- rfilename: onnx/formulas/spring_launch_speed__k.onnx
+- rfilename: onnx/formulas/spring_launch_speed__m.onnx
+- rfilename: onnx/formulas/spring_launch_speed__v.onnx
+- rfilename: onnx/formulas/spring_launch_speed__x.onnx
+- rfilename: onnx/formulas/spring_oscillation_period__T.onnx
+- rfilename: onnx/formulas/spring_oscillation_period__k.onnx
+- rfilename: onnx/formulas/spring_oscillation_period__m.onnx
+- rfilename: onnx/formulas/surface_gravity__G_upper.onnx
+- rfilename: onnx/formulas/surface_gravity__M.onnx
+- rfilename: onnx/formulas/surface_gravity__g.onnx
+- rfilename: onnx/formulas/surface_gravity__r.onnx
+- rfilename: onnx/formulas/tangential_acceleration__a.onnx
+- rfilename: onnx/formulas/tangential_acceleration__alpha.onnx
+- rfilename: onnx/formulas/tangential_acceleration__r.onnx
+- rfilename: onnx/formulas/tangential_speed__omega.onnx
+- rfilename: onnx/formulas/tangential_speed__r.onnx
+- rfilename: onnx/formulas/tangential_speed__v.onnx
+- rfilename: onnx/formulas/tension_hanging_at_rest__T.onnx
+- rfilename: onnx/formulas/tension_hanging_at_rest__g.onnx
+- rfilename: onnx/formulas/tension_hanging_at_rest__m.onnx
+- rfilename: onnx/formulas/thin_lens__d_i.onnx
+- rfilename: onnx/formulas/thin_lens__d_o.onnx
+- rfilename: onnx/formulas/thin_lens__f.onnx
+- rfilename: onnx/formulas/time_to_top_vertical_throw__g.onnx
+- rfilename: onnx/formulas/time_to_top_vertical_throw__t.onnx
+- rfilename: onnx/formulas/time_to_top_vertical_throw__v0.onnx
+- rfilename: onnx/formulas/torque_lever__F.onnx
+- rfilename: onnx/formulas/torque_lever__r.onnx
+- rfilename: onnx/formulas/torque_lever__tau.onnx
+- rfilename: onnx/formulas/torque_lever__theta.onnx
+- rfilename: onnx/formulas/uniform_field_potential__Ef.onnx
+- rfilename: onnx/formulas/uniform_field_potential__V.onnx
+- rfilename: onnx/formulas/uniform_field_potential__d.onnx
+- rfilename: onnx/formulas/uniform_motion__d.onnx
+- rfilename: onnx/formulas/uniform_motion__t.onnx
+- rfilename: onnx/formulas/uniform_motion__v.onnx
+- rfilename: onnx/formulas/velocity_displacement__a.onnx
+- rfilename: onnx/formulas/velocity_displacement__v.onnx
+- rfilename: onnx/formulas/velocity_displacement__v0.onnx
+- rfilename: onnx/formulas/velocity_displacement__x.onnx
+- rfilename: onnx/formulas/velocity_time__a.onnx
+- rfilename: onnx/formulas/velocity_time__t.onnx
+- rfilename: onnx/formulas/velocity_time__v.onnx
+- rfilename: onnx/formulas/velocity_time__v0.onnx
+- rfilename: onnx/formulas/volume_expansion__V0.onnx
+- rfilename: onnx/formulas/volume_expansion__beta.onnx
+- rfilename: onnx/formulas/volume_expansion__dT.onnx
+- rfilename: onnx/formulas/volume_expansion__dV.onnx
+- rfilename: onnx/formulas/wave_speed__f.onnx
+- rfilename: onnx/formulas/wave_speed__lam.onnx
+- rfilename: onnx/formulas/wave_speed__v.onnx
+- rfilename: onnx/formulas/wavelength_in_medium__lam.onnx
+- rfilename: onnx/formulas/wavelength_in_medium__lam_n.onnx
+- rfilename: onnx/formulas/wavelength_in_medium__n.onnx
+- rfilename: onnx/formulas/weight__W.onnx
+- rfilename: onnx/formulas/weight__g.onnx
+- rfilename: onnx/formulas/weight__m.onnx
+- rfilename: onnx/formulas/weight_component_along_incline__F.onnx
+- rfilename: onnx/formulas/weight_component_along_incline__g.onnx
+- rfilename: onnx/formulas/weight_component_along_incline__m.onnx
+- rfilename: onnx/formulas/weight_component_along_incline__theta.onnx
+- rfilename: onnx/formulas/work__F.onnx
+- rfilename: onnx/formulas/work__W.onnx
+- rfilename: onnx/formulas/work__d.onnx
+- rfilename: onnx/formulas/work__theta.onnx
+- rfilename: onnx/labels.json
+- rfilename: onnx/search/encoder.int8.onnx
+- rfilename: onnx/search/index.json
+- rfilename: onnx/search/tokenizer.json
+- rfilename: onnx/tokenizer.json
+spaces: []
+createdAt: '2026-10-17T09:40:26.000Z'
+safetensors:
+  parameters:
+    F32: 4715520
+  total: 4715520
+usedStorage: 246348045
+downloadsAllTime: 46
+inferenceProviderMapping: {}
+configJson:
+  library_name: physics-ai999x
+  import_name: physics_ai999x
+  version: 2.0.0
+  knowledge_pack: 0.6.0
+  capabilities: 148
+  license: apache-2.0
+  install: pip install physics-ai999x
+  author: Ibnul Jaif Farabi
+  organization: AI999X
+onnxFiles:
+  onnx/decision.int8.onnx: 37.4
+  onnx/formulas/absolute_pressure_depth__P.onnx: 0.0
+  onnx/formulas/absolute_pressure_depth__P0.onnx: 0.0
+  onnx/formulas/absolute_pressure_depth__g.onnx: 0.0
+  onnx/formulas/absolute_pressure_depth__h.onnx: 0.0
+  onnx/formulas/absolute_pressure_depth__rho.onnx: 0.0
+  onnx/formulas/acceleration_frictionless_incline__a.onnx: 0.0
+  onnx/formulas/acceleration_frictionless_incline__g.onnx: 0.0
+  onnx/formulas/acceleration_frictionless_incline__theta.onnx: 0.0
+  onnx/formulas/angular_frequency__f.onnx: 0.0
+  onnx/formulas/angular_frequency__omega.onnx: 0.0
+  onnx/formulas/angular_momentum__Ir.onnx: 0.0
+  onnx/formulas/angular_momentum__L.onnx: 0.0
+  onnx/formulas/angular_momentum__omega.onnx: 0.0
+  onnx/formulas/angular_momentum_point_mass__L.onnx: 0.0
+  onnx/formulas/angular_momentum_point_mass__m.onnx: 0.0
+  onnx/formulas/angular_momentum_point_mass__r.onnx: 0.0
+  onnx/formulas/angular_momentum_point_mass__v.onnx: 0.0
+  onnx/formulas/angular_velocity_angle__alpha.onnx: 0.0
+  onnx/formulas/angular_velocity_angle__omega.onnx: 0.0
+  onnx/formulas/angular_velocity_angle__omega0.onnx: 0.0
+  onnx/formulas/angular_velocity_angle__theta.onnx: 0.0
+  onnx/formulas/angular_velocity_time__alpha.onnx: 0.0
+  onnx/formulas/angular_velocity_time__omega.onnx: 0.0
+  onnx/formulas/angular_velocity_time__omega0.onnx: 0.0
+  onnx/formulas/angular_velocity_time__t.onnx: 0.0
+  onnx/formulas/area_expansion__A.onnx: 0.0
+  onnx/formulas/area_expansion__alpha_t.onnx: 0.0
+  onnx/formulas/area_expansion__dA.onnx: 0.0
+  onnx/formulas/area_expansion__dT.onnx: 0.0
+  onnx/formulas/average_force_from_momentum_change__F.onnx: 0.0
+  onnx/formulas/average_force_from_momentum_change__p1.onnx: 0.0
+  onnx/formulas/average_force_from_momentum_change__p2.onnx: 0.0
+  onnx/formulas/average_force_from_momentum_change__t.onnx: 0.0
+  onnx/formulas/average_velocity_displacement__t.onnx: 0.0
+  onnx/formulas/average_velocity_displacement__v.onnx: 0.0
+  onnx/formulas/average_velocity_displacement__v0.onnx: 0.0
+  onnx/formulas/average_velocity_displacement__x.onnx: 0.0
+  onnx/formulas/capacitance_definition__C.onnx: 0.0
+  onnx/formulas/capacitance_definition__Q.onnx: 0.0
+  onnx/formulas/capacitance_definition__V.onnx: 0.0
+  onnx/formulas/capacitive_reactance__C.onnx: 0.0
+  onnx/formulas/capacitive_reactance__X.onnx: 0.0
+  onnx/formulas/capacitive_reactance__f.onnx: 0.0
+  onnx/formulas/capacitor_energy__C.onnx: 0.0
+  onnx/formulas/capacitor_energy__Ecap.onnx: 0.0
+  onnx/formulas/capacitor_energy__V.onnx: 0.0
+  onnx/formulas/carnot_efficiency__Tc.onnx: 0.0
+  onnx/formulas/carnot_efficiency__Th.onnx: 0.0
+  onnx/formulas/carnot_efficiency__eff.onnx: 0.0
+  onnx/formulas/centripetal_acceleration__a.onnx: 0.0
+  onnx/formulas/centripetal_acceleration__r.onnx: 0.0
+  onnx/formulas/centripetal_acceleration__v.onnx: 0.0
+  onnx/formulas/centripetal_acceleration_omega__a.onnx: 0.0
+  onnx/formulas/centripetal_acceleration_omega__omega.onnx: 0.0
+  onnx/formulas/centripetal_acceleration_omega__r.onnx: 0.0
+  onnx/formulas/centripetal_force__F.onnx: 0.0
+  onnx/formulas/centripetal_force__m.onnx: 0.0
+  onnx/formulas/centripetal_force__r.onnx: 0.0
+  onnx/formulas/centripetal_force__v.onnx: 0.0
+  onnx/formulas/charge_current__I.onnx: 0.0
+  onnx/formulas/charge_current__Q.onnx: 0.0
+  onnx/formulas/charge_current__t.onnx: 0.0
+  onnx/formulas/cop_heat_pump__Qh.onnx: 0.0
+  onnx/formulas/cop_heat_pump__W.onnx: 0.0
+  onnx/formulas/cop_heat_pump__cop.onnx: 0.0
+  onnx/formulas/cop_refrigerator__Qc.onnx: 0.0
+  onnx/formulas/cop_refrigerator__W.onnx: 0.0
+  onnx/formulas/cop_refrigerator__cop.onnx: 0.0
+  onnx/formulas/cyclotron_radius__B.onnx: 0.0
+  onnx/formulas/cyclotron_radius__m.onnx: 0.0
+  onnx/formulas/cyclotron_radius__q.onnx: 0.0
+  onnx/formulas/cyclotron_radius__r.onnx: 0.0
+  onnx/formulas/cyclotron_radius__theta.onnx: 0.0
+  onnx/formulas/cyclotron_radius__v.onnx: 0.0
+  onnx/formulas/de_broglie__h.onnx: 0.0
+  onnx/formulas/de_broglie__lam.onnx: 0.0
+  onnx/formulas/de_broglie__p.onnx: 0.0
+  onnx/formulas/density__V.onnx: 0.0
+  onnx/formulas/density__m.onnx: 0.0
+  onnx/formulas/density__rho.onnx: 0.0
+  onnx/formulas/displacement_time__a.onnx: 0.0
+  onnx/formulas/displacement_time__t.onnx: 0.0
+  onnx/formulas/displacement_time__v0.onnx: 0.0
+  onnx/formulas/displacement_time__x.onnx: 0.0
+  onnx/formulas/electric_force_in_field__Ef.onnx: 0.0
+  onnx/formulas/electric_force_in_field__F.onnx: 0.0
+  onnx/formulas/electric_force_in_field__q.onnx: 0.0
+  onnx/formulas/electric_power__I.onnx: 0.0
+  onnx/formulas/electric_power__P.onnx: 0.0
+  onnx/formulas/electric_power__V.onnx: 0.0
+  onnx/formulas/engine_efficiency__Qh.onnx: 0.0
+  onnx/formulas/engine_efficiency__W.onnx: 0.0
+  onnx/formulas/engine_efficiency__eff.onnx: 0.0
+  onnx/formulas/engine_energy_balance__Qc.onnx: 0.0
+  onnx/formulas/engine_energy_balance__Qh.onnx: 0.0
+  onnx/formulas/engine_energy_balance__W.onnx: 0.0
+  onnx/formulas/flow_rate_area_speed__A.onnx: 0.0
+  onnx/formulas/flow_rate_area_speed__Q.onnx: 0.0
+  onnx/formulas/flow_rate_area_speed__v.onnx: 0.0
+  onnx/formulas/flow_rate_volume_time__Q.onnx: 0.0
+  onnx/formulas/flow_rate_volume_time__V.onnx: 0.0
+  onnx/formulas/flow_rate_volume_time__t.onnx: 0.0
+  onnx/formulas/gravitational_pe__U.onnx: 0.0
+  onnx/formulas/gravitational_pe__g.onnx: 0.0
+  onnx/formulas/gravitational_pe__h.onnx: 0.0
+  onnx/formulas/gravitational_pe__m.onnx: 0.0
+  onnx/formulas/heat__Q.onnx: 0.0
+  onnx/formulas/heat__c.onnx: 0.0
+  onnx/formulas/heat__dT.onnx: 0.0
+  onnx/formulas/heat__m.onnx: 0.0
+  onnx/formulas/hydrostatic_pressure__P.onnx: 0.0
+  onnx/formulas/hydrostatic_pressure__g.onnx: 0.0
+  onnx/formulas/hydrostatic_pressure__h.onnx: 0.0
+  onnx/formulas/hydrostatic_pressure__rho.onnx: 0.0
+  onnx/formulas/ideal_gas_moles__P.onnx: 0.0
+  onnx/formulas/ideal_gas_moles__R.onnx: 0.0
+  onnx/formulas/ideal_gas_moles__T.onnx: 0.0
+  onnx/formulas/ideal_gas_moles__V.onnx: 0.0
+  onnx/formulas/ideal_gas_moles__n.onnx: 0.0
+  onnx/formulas/impulse__F.onnx: 0.0
+  onnx/formulas/impulse__J.onnx: 0.0
+  onnx/formulas/impulse__t.onnx: 0.0
+  onnx/formulas/index_of_refraction__c.onnx: 0.0
+  onnx/formulas/index_of_refraction__n.onnx: 0.0
+  onnx/formulas/index_of_refraction__v.onnx: 0.0
+  onnx/formulas/inductive_reactance__L.onnx: 0.0
+  onnx/formulas/inductive_reactance__X.onnx: 0.0
+  onnx/formulas/inductive_reactance__f.onnx: 0.0
+  onnx/formulas/intensity_power_area__A.onnx: 0.0
+  onnx/formulas/intensity_power_area__I.onnx: 0.0
+  onnx/formulas/intensity_power_area__P.onnx: 0.0
+  onnx/formulas/kinetic_energy__K.onnx: 0.0
+  onnx/formulas/kinetic_energy__m.onnx: 0.0
+  onnx/formulas/kinetic_energy__v.onnx: 0.0
+  onnx/formulas/kinetic_friction__N.onnx: 0.0
+  onnx/formulas/kinetic_friction__f.onnx: 0.0
+  onnx/formulas/kinetic_friction__mu.onnx: 0.0
+  onnx/formulas/latent_heat_fusion__Lf.onnx: 0.0
+  onnx/formulas/latent_heat_fusion__Q.onnx: 0.0
+  onnx/formulas/latent_heat_fusion__m.onnx: 0.0
+  onnx/formulas/latent_heat_vaporization__Lv.onnx: 0.0
+  onnx/formulas/latent_heat_vaporization__Q.onnx: 0.0
+  onnx/formulas/latent_heat_vaporization__m.onnx: 0.0
+  onnx/formulas/lc_resonance__C.onnx: 0.0
+  onnx/formulas/lc_resonance__L.onnx: 0.0
+  onnx/formulas/lc_resonance__f.onnx: 0.0
+  onnx/formulas/linear_expansion__L.onnx: 0.0
+  onnx/formulas/linear_expansion__alpha_t.onnx: 0.0
+  onnx/formulas/linear_expansion__dL.onnx: 0.0
+  onnx/formulas/linear_expansion__dT.onnx: 0.0
+  onnx/formulas/long_wire_field__B.onnx: 0.0
+  onnx/formulas/long_wire_field__I.onnx: 0.0
+  onnx/formulas/long_wire_field__mu0.onnx: 0.0
+  onnx/formulas/long_wire_field__r.onnx: 0.0
+  onnx/formulas/loop_center_field__B.onnx: 0.0
+  onnx/formulas/loop_center_field__I.onnx: 0.0
+  onnx/formulas/loop_center_field__mu0.onnx: 0.0
+  onnx/formulas/loop_center_field__r.onnx: 0.0
+  onnx/formulas/magnetic_force_charge__B.onnx: 0.0
+  onnx/formulas/magnetic_force_charge__F.onnx: 0.0
+  onnx/formulas/magnetic_force_charge__q.onnx: 0.0
+  onnx/formulas/magnetic_force_charge__theta.onnx: 0.0
+  onnx/formulas/magnetic_force_charge__v.onnx: 0.0
+  onnx/formulas/magnetic_force_wire__B.onnx: 0.0
+  onnx/formulas/magnetic_force_wire__F.onnx: 0.0
+  onnx/formulas/magnetic_force_wire__I.onnx: 0.0
+  onnx/formulas/magnetic_force_wire__L.onnx: 0.0
+  onnx/formulas/magnetic_force_wire__theta.onnx: 0.0
+  onnx/formulas/max_height_vertical_throw__g.onnx: 0.0
+  onnx/formulas/max_height_vertical_throw__h.onnx: 0.0
+  onnx/formulas/max_height_vertical_throw__v0.onnx: 0.0
+  onnx/formulas/mirror_focal_length__R.onnx: 0.0
+  onnx/formulas/mirror_focal_length__f.onnx: 0.0
+  onnx/formulas/momentum__m.onnx: 0.0
+  onnx/formulas/momentum__p.onnx: 0.0
+  onnx/formulas/momentum__v.onnx: 0.0
+  onnx/formulas/motional_emf__B.onnx: 0.0
+  onnx/formulas/motional_emf__emf.onnx: 0.0
+  onnx/formulas/motional_emf__l.onnx: 0.0
+  onnx/formulas/motional_emf__v.onnx: 0.0
+  onnx/formulas/net_force_friction__F_upper.onnx: 0.0
+  onnx/formulas/net_force_friction__P.onnx: 0.0
+  onnx/formulas/net_force_friction__f.onnx: 0.0
+  onnx/formulas/net_work_kinetic_energy__W.onnx: 0.0
+  onnx/formulas/net_work_kinetic_energy__m.onnx: 0.0
+  onnx/formulas/net_work_kinetic_energy__v.onnx: 0.0
+  onnx/formulas/net_work_kinetic_energy__v0.onnx: 0.0
+  onnx/formulas/newton_second__F.onnx: 0.0
+  onnx/formulas/newton_second__a.onnx: 0.0
+  onnx/formulas/newton_second__m.onnx: 0.0
+  onnx/formulas/normal_force_incline__N.onnx: 0.0
+  onnx/formulas/normal_force_incline__g.onnx: 0.0
+  onnx/formulas/normal_force_incline__m.onnx: 0.0
+  onnx/formulas/normal_force_incline__theta.onnx: 0.0
+  onnx/formulas/normal_on_level__N.onnx: 0.0
+  onnx/formulas/normal_on_level__W.onnx: 0.0
+  onnx/formulas/ohm__I.onnx: 0.0
+  onnx/formulas/ohm__R.onnx: 0.0
+  onnx/formulas/ohm__V.onnx: 0.0
+  onnx/formulas/ohm_power_current__I.onnx: 0.0
+  onnx/formulas/ohm_power_current__P.onnx: 0.0
+  onnx/formulas/ohm_power_current__R.onnx: 0.0
+  onnx/formulas/ohm_power_voltage__P.onnx: 0.0
+  onnx/formulas/ohm_power_voltage__R.onnx: 0.0
+  onnx/formulas/ohm_power_voltage__V.onnx: 0.0
+  onnx/formulas/orbital_period__G.onnx: 0.0
+  onnx/formulas/orbital_period__M.onnx: 0.0
+  onnx/formulas/orbital_period__T.onnx: 0.0
+  onnx/formulas/orbital_period__r.onnx: 0.0
+  onnx/formulas/orbital_speed__G.onnx: 0.0
+  onnx/formulas/orbital_speed__M.onnx: 0.0
+  onnx/formulas/orbital_speed__r.onnx: 0.0
+  onnx/formulas/orbital_speed__v.onnx: 0.0
+  onnx/formulas/parallel_plate_capacitor__A.onnx: 0.0
+  onnx/formulas/parallel_plate_capacitor__C.onnx: 0.0
+  onnx/formulas/parallel_plate_capacitor__d.onnx: 0.0
+  onnx/formulas/parallel_plate_capacitor__eps0.onnx: 0.0
+  onnx/formulas/pendulum_period__Lp.onnx: 0.0
+  onnx/formulas/pendulum_period__T.onnx: 0.0
+  onnx/formulas/pendulum_period__g.onnx: 0.0
+  onnx/formulas/period_frequency__T.onnx: 0.0
+  onnx/formulas/period_frequency__f.onnx: 0.0
+  onnx/formulas/photon_energy__E.onnx: 0.0
+  onnx/formulas/photon_energy__f.onnx: 0.0
+  onnx/formulas/photon_energy__h.onnx: 0.0
+  onnx/formulas/photon_energy_wavelength__E.onnx: 0.0
+  onnx/formulas/photon_energy_wavelength__c.onnx: 0.0
+  onnx/formulas/photon_energy_wavelength__h.onnx: 0.0
+  onnx/formulas/photon_energy_wavelength__lam.onnx: 0.0
+  onnx/formulas/photon_momentum__h.onnx: 0.0
+  onnx/formulas/photon_momentum__lam.onnx: 0.0
+  onnx/formulas/photon_momentum__p.onnx: 0.0
+  onnx/formulas/point_charge_field__Ef.onnx: 0.0
+  onnx/formulas/point_charge_field__Q.onnx: 0.0
+  onnx/formulas/point_charge_field__ke.onnx: 0.0
+  onnx/formulas/point_charge_field__r.onnx: 0.0
+  onnx/formulas/point_charge_potential__Q.onnx: 0.0
+  onnx/formulas/point_charge_potential__V.onnx: 0.0
+  onnx/formulas/point_charge_potential__ke.onnx: 0.0
+  onnx/formulas/point_charge_potential__r.onnx: 0.0
+  onnx/formulas/power_energy__E.onnx: 0.0
+  onnx/formulas/power_energy__P.onnx: 0.0
+  onnx/formulas/power_energy__t.onnx: 0.0
+  onnx/formulas/power_force_speed__F.onnx: 0.0
+  onnx/formulas/power_force_speed__P.onnx: 0.0
+  onnx/formulas/power_force_speed__v.onnx: 0.0
+  onnx/formulas/pressure_force__A.onnx: 0.0
+  onnx/formulas/pressure_force__F.onnx: 0.0
+  onnx/formulas/pressure_force__P.onnx: 0.0
+  onnx/formulas/rc_charging__C.onnx: 0.0
+  onnx/formulas/rc_charging__R.onnx: 0.0
+  onnx/formulas/rc_charging__V.onnx: 0.0
+  onnx/formulas/rc_charging__emf.onnx: 0.0
+  onnx/formulas/rc_charging__t.onnx: 0.0
+  onnx/formulas/rc_discharging__C.onnx: 0.0
+  onnx/formulas/rc_discharging__R.onnx: 0.0
+  onnx/formulas/rc_discharging__V.onnx: 0.0
+  onnx/formulas/rc_discharging__V0.onnx: 0.0
+  onnx/formulas/rc_discharging__t.onnx: 0.0
+  onnx/formulas/rc_time_constant__C.onnx: 0.0
+  onnx/formulas/rc_time_constant__R.onnx: 0.0
+  onnx/formulas/rc_time_constant__tau.onnx: 0.0
+  onnx/formulas/resistivity__A.onnx: 0.0
+  onnx/formulas/resistivity__L.onnx: 0.0
+  onnx/formulas/resistivity__R.onnx: 0.0
+  onnx/formulas/resistivity__rho_e.onnx: 0.0
+  onnx/formulas/rest_energy__E0.onnx: 0.0
+  onnx/formulas/rest_energy__c.onnx: 0.0
+  onnx/formulas/rest_energy__m.onnx: 0.0
+  onnx/formulas/rl_current_decay__I.onnx: 0.0
+  onnx/formulas/rl_current_decay__I0.onnx: 0.0
+  onnx/formulas/rl_current_decay__t.onnx: 0.0
+  onnx/formulas/rl_current_decay__tau.onnx: 0.0
+  onnx/formulas/rl_time_constant__L.onnx: 0.0
+  onnx/formulas/rl_time_constant__R.onnx: 0.0
+  onnx/formulas/rl_time_constant__tau.onnx: 0.0
+  onnx/formulas/rms_current__I0.onnx: 0.0
+  onnx/formulas/rms_current__Irms.onnx: 0.0
+  onnx/formulas/rms_voltage__V0.onnx: 0.0
+  onnx/formulas/rms_voltage__Vrms.onnx: 0.0
+  onnx/formulas/rotational_kinetic_energy__Ir.onnx: 0.0
+  onnx/formulas/rotational_kinetic_energy__KR.onnx: 0.0
+  onnx/formulas/rotational_kinetic_energy__omega.onnx: 0.0
+  onnx/formulas/shm_max_speed__X.onnx: 0.0
+  onnx/formulas/shm_max_speed__k.onnx: 0.0
+  onnx/formulas/shm_max_speed__m.onnx: 0.0
+  onnx/formulas/shm_max_speed__v.onnx: 0.0
+  onnx/formulas/solenoid_field__B.onnx: 0.0
+  onnx/formulas/solenoid_field__I.onnx: 0.0
+  onnx/formulas/solenoid_field__mu0.onnx: 0.0
+  onnx/formulas/solenoid_field__nt.onnx: 0.0
+  onnx/formulas/speed_after_fall_from_rest__g.onnx: 0.0
+  onnx/formulas/speed_after_fall_from_rest__h.onnx: 0.0
+  onnx/formulas/speed_after_fall_from_rest__v.onnx: 0.0
+  onnx/formulas/spring_energy__U.onnx: 0.0
+  onnx/formulas/spring_energy__k.onnx: 0.0
+  onnx/formulas/spring_energy__x.onnx: 0.0
+  onnx/formulas/spring_force__F.onnx: 0.0
+  onnx/formulas/spring_force__k.onnx: 0.0
+  onnx/formulas/spring_force__x.onnx: 0.0
+  onnx/formulas/spring_launch_speed__k.onnx: 0.0
+  onnx/formulas/spring_launch_speed__m.onnx: 0.0
+  onnx/formulas/spring_launch_speed__v.onnx: 0.0
+  onnx/formulas/spring_launch_speed__x.onnx: 0.0
+  onnx/formulas/spring_oscillation_period__T.onnx: 0.0
+  onnx/formulas/spring_oscillation_period__k.onnx: 0.0
+  onnx/formulas/spring_oscillation_period__m.onnx: 0.0
+  onnx/formulas/surface_gravity__G_upper.onnx: 0.0
+  onnx/formulas/surface_gravity__M.onnx: 0.0
+  onnx/formulas/surface_gravity__g.onnx: 0.0
+  onnx/formulas/surface_gravity__r.onnx: 0.0
+  onnx/formulas/tangential_acceleration__a.onnx: 0.0
+  onnx/formulas/tangential_acceleration__alpha.onnx: 0.0
+  onnx/formulas/tangential_acceleration__r.onnx: 0.0
+  onnx/formulas/tangential_speed__omega.onnx: 0.0
+  onnx/formulas/tangential_speed__r.onnx: 0.0
+  onnx/formulas/tangential_speed__v.onnx: 0.0
+  onnx/formulas/tension_hanging_at_rest__T.onnx: 0.0
+  onnx/formulas/tension_hanging_at_rest__g.onnx: 0.0
+  onnx/formulas/tension_hanging_at_rest__m.onnx: 0.0
+  onnx/formulas/thin_lens__d_i.onnx: 0.0
+  onnx/formulas/thin_lens__d_o.onnx: 0.0
+  onnx/formulas/thin_lens__f.onnx: 0.0
+  onnx/formulas/time_to_top_vertical_throw__g.onnx: 0.0
+  onnx/formulas/time_to_top_vertical_throw__t.onnx: 0.0
+  onnx/formulas/time_to_top_vertical_throw__v0.onnx: 0.0
+  onnx/formulas/torque_lever__F.onnx: 0.0
+  onnx/formulas/torque_lever__r.onnx: 0.0
+  onnx/formulas/torque_lever__tau.onnx: 0.0
+  onnx/formulas/torque_lever__theta.onnx: 0.0
+  onnx/formulas/uniform_field_potential__Ef.onnx: 0.0
+  onnx/formulas/uniform_field_potential__V.onnx: 0.0
+  onnx/formulas/uniform_field_potential__d.onnx: 0.0
+  onnx/formulas/uniform_motion__d.onnx: 0.0
+  onnx/formulas/uniform_motion__t.onnx: 0.0
+  onnx/formulas/uniform_motion__v.onnx: 0.0
+  onnx/formulas/velocity_displacement__a.onnx: 0.0
+  onnx/formulas/velocity_displacement__v.onnx: 0.0
+  onnx/formulas/velocity_displacement__v0.onnx: 0.0
+  onnx/formulas/velocity_displacement__x.onnx: 0.0
+  onnx/formulas/velocity_time__a.onnx: 0.0
+  onnx/formulas/velocity_time__t.onnx: 0.0
+  onnx/formulas/velocity_time__v.onnx: 0.0
+  onnx/formulas/velocity_time__v0.onnx: 0.0
+  onnx/formulas/volume_expansion__V0.onnx: 0.0
+  onnx/formulas/volume_expansion__beta.onnx: 0.0
+  onnx/formulas/volume_expansion__dT.onnx: 0.0
+  onnx/formulas/volume_expansion__dV.onnx: 0.0
+  onnx/formulas/wave_speed__f.onnx: 0.0
+  onnx/formulas/wave_speed__lam.onnx: 0.0
+  onnx/formulas/wave_speed__v.onnx: 0.0
+  onnx/formulas/wavelength_in_medium__lam.onnx: 0.0
+  onnx/formulas/wavelength_in_medium__lam_n.onnx: 0.0
+  onnx/formulas/wavelength_in_medium__n.onnx: 0.0
+  onnx/formulas/weight__W.onnx: 0.0
+  onnx/formulas/weight__g.onnx: 0.0
+  onnx/formulas/weight__m.onnx: 0.0
+  onnx/formulas/weight_component_along_incline__F.onnx: 0.0
+  onnx/formulas/weight_component_along_incline__g.onnx: 0.0
+  onnx/formulas/weight_component_along_incline__m.onnx: 0.0
+  onnx/formulas/weight_component_along_incline__theta.onnx: 0.0
+  onnx/formulas/work__F.onnx: 0.0
+  onnx/formulas/work__W.onnx: 0.0
+  onnx/formulas/work__d.onnx: 0.0
+  onnx/formulas/work__theta.onnx: 0.0
+  onnx/search/encoder.int8.onnx: 4.9
+safetensorsSizeMb: 153.0
+approxSizeMb: 18.9
+fetchedAt: '2026-10-22T08:29:45.000Z'

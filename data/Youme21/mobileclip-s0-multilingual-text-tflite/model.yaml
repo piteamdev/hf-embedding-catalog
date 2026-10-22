@@ -1,0 +1,65 @@
+_id: 6ad888a32aa38bdf790878d8
+id: Youme21/mobileclip-s0-multilingual-text-tflite
+private: false
+pipeline_tag: feature-extraction
+tags:
+- tflite
+- clip
+- mobileclip
+- multilingual
+- sentencepiece
+- cross-lingual-retrieval
+- on-device
+- android
+- feature-extraction
+- en
+- ar
+- fr
+- ru
+- es
+- license:cc-by-nc-4.0
+- region:us
+downloads: 0
+likes: 1
+modelId: Youme21/mobileclip-s0-multilingual-text-tflite
+author: Youme21
+sha: 314c9b9e512649712b522fa82189484900baa891
+lastModified: '2026-10-21T09:47:33.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  language:
+  - en
+  - ar
+  - fr
+  - ru
+  - es
+  license: cc-by-nc-4.0
+  tags:
+  - clip
+  - mobileclip
+  - multilingual
+  - tflite
+  - sentencepiece
+  - cross-lingual-retrieval
+  - on-device
+  - android
+  pipeline_tag: feature-extraction
+  inference: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: spm.model
+- rfilename: text_encoder_int8w.tflite
+spaces: []
+createdAt: '2026-10-21T09:40:51.000Z'
+usedStorage: 68102105
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-22T08:29:45.000Z'

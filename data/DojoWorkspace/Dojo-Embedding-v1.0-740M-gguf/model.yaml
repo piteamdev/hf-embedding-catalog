@@ -1,0 +1,79 @@
+_id: 6ad8c566340bdb9ea3ebcda8
+id: DojoWorkspace/Dojo-Embedding-v1.0-740M-gguf
+private: false
+pipeline_tag: feature-extraction
+library_name: gguf
+tags:
+- gguf
+- llama.cpp
+- embeddings
+- multimodal
+- on-device
+- dojo
+- feature-extraction
+- en
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: DojoWorkspace/Dojo-Embedding-v1.0-740M-gguf
+author: DojoWorkspace
+sha: 3ef84b46869a0131bca4c77588451d045c016a31
+lastModified: '2026-10-21T14:00:12.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  language:
+  - en
+  base_model:
+  - google/embeddinggemma-2
+  base_model_relation: quantized
+  pipeline_tag: feature-extraction
+  library_name: gguf
+  tags:
+  - gguf
+  - llama.cpp
+  - embeddings
+  - multimodal
+  - on-device
+  - dojo
+gguf:
+  total: 271002648
+  architecture: gemma-embedding2
+  context_length: 262144
+  causal: false
+  chat_template: '{%- for msg in messages if msg.get(''role'') == ''system'' -%}{%- if msg.get(''content'') is string -%}{{
+    msg[''content''] }}{%- else -%}{%- for item in msg[''content''] if item.get(''type'') == ''text'' -%}{{ item[''text'']
+    }}{%- endfor -%}{%- endif -%}{%- endfor -%}{%- for msg in messages if msg.get(''role'') != ''system'' -%}{%- if msg.get(''content'')
+    is string -%}{{ msg[''content''] }}{%- else -%}{%- set existing_text = msg[''content''] | selectattr(''type'', ''equalto'',
+    ''text'') | map(attribute=''text'') | join -%}{%- set has_manual_placeholders = (''<|image|>'' in existing_text) or (''<|video|>''
+    in existing_text) or (''<|audio|>'' in existing_text) -%}{%- for item in msg[''content''] -%}{%- if item.get(''type'')
+    == ''text'' -%}{{ item[''text''] }}{%- elif not has_manual_placeholders and item.get(''type'') == ''image'' -%}<|image|>{%-
+    elif not has_manual_placeholders and item.get(''type'') == ''video'' -%}<|video|>{%- elif not has_manual_placeholders
+    and item.get(''type'') == ''audio'' -%}<|audio|>{%- endif -%}{%- endfor -%}{%- endif -%}{%- endfor -%}'
+  bos_token: <bos>
+  eos_token: <eos>
+  pooling_type: 1
+  totalFileSize: 309855456
+siblings:
+- rfilename: .gitattributes
+- rfilename: Dojo-Embedding-v1.0-270M-Q8_0.gguf
+- rfilename: README.md
+- rfilename: mmproj-Dojo-Embedding-v1.0-audio-300M-Q8_0.gguf
+- rfilename: mmproj-Dojo-Embedding-v1.0-vision-170M-Q8_0.gguf
+spaces: []
+createdAt: '2026-10-21T14:00:06.000Z'
+usedStorage: 864677312
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-22T08:29:45.000Z'

@@ -1,0 +1,66 @@
+_id: 6ad9336e2a198e4a69c1b5fb
+id: hherb/snowflake-arctic-embed-l-v2.0-gguf
+private: false
+pipeline_tag: sentence-similarity
+library_name: llama.cpp
+tags:
+- llama.cpp
+- gguf
+- sentence-similarity
+- feature-extraction
+- base_model:Snowflake/snowflake-arctic-embed-l-v2.0
+- base_model:quantized:Snowflake/snowflake-arctic-embed-l-v2.0
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: hherb/snowflake-arctic-embed-l-v2.0-gguf
+author: hherb
+sha: c0a1ca8894e853259b9e2aeb1a873f6d50ae5701
+lastModified: '2026-10-21T23:09:04.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: Snowflake/snowflake-arctic-embed-l-v2.0
+  base_model_relation: quantized
+  library_name: llama.cpp
+  tags:
+  - gguf
+  - sentence-similarity
+  - feature-extraction
+  pipeline_tag: sentence-similarity
+gguf:
+  total: 566703104
+  architecture: bert
+  context_length: 8192
+  causal: false
+  bos_token: <s>
+  eos_token: </s>
+  pooling_type: 2
+  totalFileSize: 1157672160
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: manifest.json
+- rfilename: snowflake-arctic-embed-l-v2.0-F16.gguf
+- rfilename: snowflake-arctic-embed-l-v2.0-Q8_0.gguf
+spaces: []
+createdAt: '2026-10-21T21:49:34.000Z'
+usedStorage: 1792226880
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-22T08:29:45.000Z'

@@ -1,0 +1,421 @@
+_id: 6ad92e9916dc06b532d59ed2
+id: AI999X/mechanics-ai999x
+private: false
+pipeline_tag: sentence-similarity
+library_name: mechanics-ai999x
+tags:
+- mechanics-ai999x
+- onnx
+- safetensors
+- classical-mechanics
+- physics
+- step-by-step-solutions
+- homework-help
+- education
+- offline
+- verified-ai
+- zero-hallucination
+- sentence-similarity
+- feature-extraction
+- semantic-search
+- physics-solver
+- mechanics
+- oscillations
+- damped-oscillator
+- normal-modes
+- double-pendulum
+- orbital-mechanics
+- escape-velocity
+- kepler
+- moment-of-inertia
+- rigid-body-dynamics
+- rocket-equation
+- word-problems
+- neuro-symbolic
+- symbolic-ai
+- deterministic
+- cpu-only
+- edge-ai
+- stem
+- edtech
+- tutoring
+- latex
+- python
+- sympy
+- ai999x
+- en
+- license:apache-2.0
+- model-index
+- region:us
+downloads: 0
+likes: 0
+modelId: AI999X/mechanics-ai999x
+author: AI999X
+sha: aa126ff0d9553074455224d9a00cc4d65de86953
+lastModified: '2026-10-22T03:54:47.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index:
+- name: mechanics-ai999x
+  results:
+  - task:
+      type: question-answering
+      name: classical mechanics question answering
+    dataset:
+      name: Golden answers (234 documented questions, Windows + Linux Python 3.10-3.14)
+      type: ai999x-evaluation
+    metrics:
+    - type: accuracy
+      value: 1
+      name: identical on every platform
+      verified: false
+  - task:
+      type: question-answering
+      name: classical mechanics question answering
+    dataset:
+      name: Capability search, 776 held-out verified questions across all AI999X models
+      type: ai999x-evaluation
+    metrics:
+    - type: recall_at_1
+      value: 0.89
+      name: right capability first
+      verified: false
+    - type: recall_at_5
+      value: 0.977
+      name: in the top five
+      verified: false
+config: {}
+cardData:
+  license: apache-2.0
+  license_link: LICENSE
+  library_name: mechanics-ai999x
+  language:
+  - en
+  inference: false
+  pipeline_tag: sentence-similarity
+  tags:
+  - classical-mechanics
+  - physics
+  - step-by-step-solutions
+  - homework-help
+  - education
+  - offline
+  - verified-ai
+  - zero-hallucination
+  - onnx
+  - safetensors
+  - sentence-similarity
+  - feature-extraction
+  - semantic-search
+  - physics-solver
+  - mechanics
+  - oscillations
+  - damped-oscillator
+  - normal-modes
+  - double-pendulum
+  - orbital-mechanics
+  - escape-velocity
+  - kepler
+  - moment-of-inertia
+  - rigid-body-dynamics
+  - rocket-equation
+  - word-problems
+  - neuro-symbolic
+  - symbolic-ai
+  - deterministic
+  - cpu-only
+  - edge-ai
+  - stem
+  - edtech
+  - tutoring
+  - latex
+  - python
+  - sympy
+  - ai999x
+  model-index:
+  - name: mechanics-ai999x
+    results:
+    - task:
+        type: question-answering
+        name: classical mechanics question answering
+      dataset:
+        name: Golden answers (234 documented questions, Windows + Linux Python 3.10-3.14)
+        type: ai999x-evaluation
+      metrics:
+      - type: accuracy
+        value: 1
+        name: identical on every platform
+        verified: false
+    - task:
+        type: question-answering
+        name: classical mechanics question answering
+      dataset:
+        name: Capability search, 776 held-out verified questions across all AI999X models
+        type: ai999x-evaluation
+      metrics:
+      - type: recall_at_1
+        value: 0.89
+        name: right capability first
+        verified: false
+      - type: recall_at_5
+        value: 0.977
+        name: in the top five
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: CITATION.cff
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: dist/mechanics_ai999x-2.0.0-py3-none-any.whl
+- rfilename: docs/mechanics_ai999x_capabilities.html
+- rfilename: docs/mechanics_ai999x_capabilities.md
+- rfilename: docs/mechanics_ai999x_capabilities.pdf
+- rfilename: docs/mechanics_ai999x_onnx_formulas.html
+- rfilename: docs/mechanics_ai999x_onnx_formulas.md
+- rfilename: docs/mechanics_ai999x_onnx_formulas.pdf
+- rfilename: evaluation/KNOWLEDGE_CARD.md
+- rfilename: evaluation/release_gate.md
+- rfilename: model.safetensors
+- rfilename: onnx/formulas/amplitude_resonance_frequency__b.onnx
+- rfilename: onnx/formulas/amplitude_resonance_frequency__k.onnx
+- rfilename: onnx/formulas/amplitude_resonance_frequency__m.onnx
+- rfilename: onnx/formulas/amplitude_resonance_frequency__wr.onnx
+- rfilename: onnx/formulas/atwood_massive_pulley__Ir.onnx
+- rfilename: onnx/formulas/atwood_massive_pulley__R.onnx
+- rfilename: onnx/formulas/atwood_massive_pulley__a.onnx
+- rfilename: onnx/formulas/atwood_massive_pulley__g.onnx
+- rfilename: onnx/formulas/atwood_massive_pulley__m1.onnx
+- rfilename: onnx/formulas/atwood_massive_pulley__m2.onnx
+- rfilename: onnx/formulas/bead_hoop_equilibrium__R.onnx
+- rfilename: onnx/formulas/bead_hoop_equilibrium__g.onnx
+- rfilename: onnx/formulas/bead_hoop_equilibrium__theta.onnx
+- rfilename: onnx/formulas/bead_hoop_equilibrium__w.onnx
+- rfilename: onnx/formulas/catalog.json
+- rfilename: onnx/formulas/coupled_fast_mode__k.onnx
+- rfilename: onnx/formulas/coupled_fast_mode__kc.onnx
+- rfilename: onnx/formulas/coupled_fast_mode__m.onnx
+- rfilename: onnx/formulas/coupled_fast_mode__w2.onnx
+- rfilename: onnx/formulas/damped_angular_frequency__b.onnx
+- rfilename: onnx/formulas/damped_angular_frequency__k.onnx
+- rfilename: onnx/formulas/damped_angular_frequency__m.onnx
+- rfilename: onnx/formulas/damped_angular_frequency__wd.onnx
+- rfilename: onnx/formulas/damping_ratio__b.onnx
+- rfilename: onnx/formulas/damping_ratio__k.onnx
+- rfilename: onnx/formulas/damping_ratio__m.onnx
+- rfilename: onnx/formulas/damping_ratio__zeta.onnx
+- rfilename: onnx/formulas/double_pendulum_fast_mode__L.onnx
+- rfilename: onnx/formulas/double_pendulum_fast_mode__g.onnx
+- rfilename: onnx/formulas/double_pendulum_fast_mode__w.onnx
+- rfilename: onnx/formulas/double_pendulum_slow_mode__L.onnx
+- rfilename: onnx/formulas/double_pendulum_slow_mode__g.onnx
+- rfilename: onnx/formulas/double_pendulum_slow_mode__w.onnx
+- rfilename: onnx/formulas/driven_amplitude__A.onnx
+- rfilename: onnx/formulas/driven_amplitude__F0.onnx
+- rfilename: onnx/formulas/driven_amplitude__b.onnx
+- rfilename: onnx/formulas/driven_amplitude__k.onnx
+- rfilename: onnx/formulas/driven_amplitude__m.onnx
+- rfilename: onnx/formulas/driven_amplitude__w.onnx
+- rfilename: onnx/formulas/elastic_collision_first_final__m1.onnx
+- rfilename: onnx/formulas/elastic_collision_first_final__m2.onnx
+- rfilename: onnx/formulas/elastic_collision_first_final__v1.onnx
+- rfilename: onnx/formulas/elastic_collision_first_final__v1f.onnx
+- rfilename: onnx/formulas/elastic_collision_first_final__v2.onnx
+- rfilename: onnx/formulas/elastic_collision_second_final__m1.onnx
+- rfilename: onnx/formulas/elastic_collision_second_final__m2.onnx
+- rfilename: onnx/formulas/elastic_collision_second_final__v1.onnx
+- rfilename: onnx/formulas/elastic_collision_second_final__v2.onnx
+- rfilename: onnx/formulas/elastic_collision_second_final__v2f.onnx
+- rfilename: onnx/formulas/escape_speed__G.onnx
+- rfilename: onnx/formulas/escape_speed__M.onnx
+- rfilename: onnx/formulas/escape_speed__r.onnx
+- rfilename: onnx/formulas/escape_speed__v.onnx
+- rfilename: onnx/formulas/formula-pack.d.ts
+- rfilename: onnx/formulas/formula-pack.js
+- rfilename: onnx/formulas/formulas.json
+- rfilename: onnx/formulas/foucault_precession_period__T.onnx
+- rfilename: onnx/formulas/foucault_precession_period__W.onnx
+- rfilename: onnx/formulas/foucault_precession_period__phi.onnx
+- rfilename: onnx/formulas/inertia_hollow_sphere__Ir.onnx
+- rfilename: onnx/formulas/inertia_hollow_sphere__R.onnx
+- rfilename: onnx/formulas/inertia_hollow_sphere__m.onnx
+- rfilename: onnx/formulas/inertia_rod_center__Ir.onnx
+- rfilename: onnx/formulas/inertia_rod_center__Lr.onnx
+- rfilename: onnx/formulas/inertia_rod_center__m.onnx
+- rfilename: onnx/formulas/inertia_rod_end__Ir.onnx
+- rfilename: onnx/formulas/inertia_rod_end__Lr.onnx
+- rfilename: onnx/formulas/inertia_rod_end__m.onnx
+- rfilename: onnx/formulas/inertia_solid_disk__Ir.onnx
+- rfilename: onnx/formulas/inertia_solid_disk__R.onnx
+- rfilename: onnx/formulas/inertia_solid_disk__m.onnx
+- rfilename: onnx/formulas/inertia_solid_sphere__Ir.onnx
+- rfilename: onnx/formulas/inertia_solid_sphere__R.onnx
+- rfilename: onnx/formulas/inertia_solid_sphere__m.onnx
+- rfilename: onnx/formulas/kepler_period_semi_major__G.onnx
+- rfilename: onnx/formulas/kepler_period_semi_major__M.onnx
+- rfilename: onnx/formulas/kepler_period_semi_major__T.onnx
+- rfilename: onnx/formulas/kepler_period_semi_major__a.onnx
+- rfilename: onnx/formulas/physical_pendulum_period__Ir.onnx
+- rfilename: onnx/formulas/physical_pendulum_period__T.onnx
+- rfilename: onnx/formulas/physical_pendulum_period__d.onnx
+- rfilename: onnx/formulas/physical_pendulum_period__g.onnx
+- rfilename: onnx/formulas/physical_pendulum_period__m.onnx
+- rfilename: onnx/formulas/quality_factor__Qf.onnx
+- rfilename: onnx/formulas/quality_factor__b.onnx
+- rfilename: onnx/formulas/quality_factor__k.onnx
+- rfilename: onnx/formulas/quality_factor__m.onnx
+- rfilename: onnx/formulas/rocket_delta_v__dv.onnx
+- rfilename: onnx/formulas/rocket_delta_v__m0.onnx
+- rfilename: onnx/formulas/rocket_delta_v__mf.onnx
+- rfilename: onnx/formulas/rocket_delta_v__ve.onnx
+- rfilename: onnx/formulas/rolling_incline_acceleration__Ir.onnx
+- rfilename: onnx/formulas/rolling_incline_acceleration__R.onnx
+- rfilename: onnx/formulas/rolling_incline_acceleration__a.onnx
+- rfilename: onnx/formulas/rolling_incline_acceleration__g.onnx
+- rfilename: onnx/formulas/rolling_incline_acceleration__m.onnx
+- rfilename: onnx/formulas/rolling_incline_acceleration__theta.onnx
+- rfilename: onnx/formulas/torque_free_precession__I1.onnx
+- rfilename: onnx/formulas/torque_free_precession__I3.onnx
+- rfilename: onnx/formulas/torque_free_precession__Wp.onnx
+- rfilename: onnx/formulas/torque_free_precession__w3.onnx
+- rfilename: onnx/formulas/vis_viva__G.onnx
+- rfilename: onnx/formulas/vis_viva__M.onnx
+- rfilename: onnx/formulas/vis_viva__a.onnx
+- rfilename: onnx/formulas/vis_viva__r.onnx
+- rfilename: onnx/formulas/vis_viva__v.onnx
+- rfilename: onnx/search/encoder.int8.onnx
+- rfilename: onnx/search/index.json
+- rfilename: onnx/search/tokenizer.json
+spaces: []
+createdAt: '2026-10-21T21:28:57.000Z'
+safetensors:
+  parameters:
+    F32: 4715520
+  total: 4715520
+usedStorage: 34991490
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  library_name: mechanics-ai999x
+  import_name: mechanics_ai999x
+  version: 2.0.0
+  knowledge_pack: 0.1.0
+  capabilities: 25
+  license: apache-2.0
+  install: pip install mechanics-ai999x
+  author: Ibnul Jaif Farabi
+  organization: AI999X
+onnxFiles:
+  onnx/formulas/amplitude_resonance_frequency__b.onnx: 0.0
+  onnx/formulas/amplitude_resonance_frequency__k.onnx: 0.0
+  onnx/formulas/amplitude_resonance_frequency__m.onnx: 0.0
+  onnx/formulas/amplitude_resonance_frequency__wr.onnx: 0.0
+  onnx/formulas/atwood_massive_pulley__Ir.onnx: 0.0
+  onnx/formulas/atwood_massive_pulley__R.onnx: 0.0
+  onnx/formulas/atwood_massive_pulley__a.onnx: 0.0
+  onnx/formulas/atwood_massive_pulley__g.onnx: 0.0
+  onnx/formulas/atwood_massive_pulley__m1.onnx: 0.0
+  onnx/formulas/atwood_massive_pulley__m2.onnx: 0.0
+  onnx/formulas/bead_hoop_equilibrium__R.onnx: 0.0
+  onnx/formulas/bead_hoop_equilibrium__g.onnx: 0.0
+  onnx/formulas/bead_hoop_equilibrium__theta.onnx: 0.0
+  onnx/formulas/bead_hoop_equilibrium__w.onnx: 0.0
+  onnx/formulas/coupled_fast_mode__k.onnx: 0.0
+  onnx/formulas/coupled_fast_mode__kc.onnx: 0.0
+  onnx/formulas/coupled_fast_mode__m.onnx: 0.0
+  onnx/formulas/coupled_fast_mode__w2.onnx: 0.0
+  onnx/formulas/damped_angular_frequency__b.onnx: 0.0
+  onnx/formulas/damped_angular_frequency__k.onnx: 0.0
+  onnx/formulas/damped_angular_frequency__m.onnx: 0.0
+  onnx/formulas/damped_angular_frequency__wd.onnx: 0.0
+  onnx/formulas/damping_ratio__b.onnx: 0.0
+  onnx/formulas/damping_ratio__k.onnx: 0.0
+  onnx/formulas/damping_ratio__m.onnx: 0.0
+  onnx/formulas/damping_ratio__zeta.onnx: 0.0
+  onnx/formulas/double_pendulum_fast_mode__L.onnx: 0.0
+  onnx/formulas/double_pendulum_fast_mode__g.onnx: 0.0
+  onnx/formulas/double_pendulum_fast_mode__w.onnx: 0.0
+  onnx/formulas/double_pendulum_slow_mode__L.onnx: 0.0
+  onnx/formulas/double_pendulum_slow_mode__g.onnx: 0.0
+  onnx/formulas/double_pendulum_slow_mode__w.onnx: 0.0
+  onnx/formulas/driven_amplitude__A.onnx: 0.0
+  onnx/formulas/driven_amplitude__F0.onnx: 0.0
+  onnx/formulas/driven_amplitude__b.onnx: 0.0
+  onnx/formulas/driven_amplitude__k.onnx: 0.0
+  onnx/formulas/driven_amplitude__m.onnx: 0.0
+  onnx/formulas/driven_amplitude__w.onnx: 0.0
+  onnx/formulas/elastic_collision_first_final__m1.onnx: 0.0
+  onnx/formulas/elastic_collision_first_final__m2.onnx: 0.0
+  onnx/formulas/elastic_collision_first_final__v1.onnx: 0.0
+  onnx/formulas/elastic_collision_first_final__v1f.onnx: 0.0
+  onnx/formulas/elastic_collision_first_final__v2.onnx: 0.0
+  onnx/formulas/elastic_collision_second_final__m1.onnx: 0.0
+  onnx/formulas/elastic_collision_second_final__m2.onnx: 0.0
+  onnx/formulas/elastic_collision_second_final__v1.onnx: 0.0
+  onnx/formulas/elastic_collision_second_final__v2.onnx: 0.0
+  onnx/formulas/elastic_collision_second_final__v2f.onnx: 0.0
+  onnx/formulas/escape_speed__G.onnx: 0.0
+  onnx/formulas/escape_speed__M.onnx: 0.0
+  onnx/formulas/escape_speed__r.onnx: 0.0
+  onnx/formulas/escape_speed__v.onnx: 0.0
+  onnx/formulas/foucault_precession_period__T.onnx: 0.0
+  onnx/formulas/foucault_precession_period__W.onnx: 0.0
+  onnx/formulas/foucault_precession_period__phi.onnx: 0.0
+  onnx/formulas/inertia_hollow_sphere__Ir.onnx: 0.0
+  onnx/formulas/inertia_hollow_sphere__R.onnx: 0.0
+  onnx/formulas/inertia_hollow_sphere__m.onnx: 0.0
+  onnx/formulas/inertia_rod_center__Ir.onnx: 0.0
+  onnx/formulas/inertia_rod_center__Lr.onnx: 0.0
+  onnx/formulas/inertia_rod_center__m.onnx: 0.0
+  onnx/formulas/inertia_rod_end__Ir.onnx: 0.0
+  onnx/formulas/inertia_rod_end__Lr.onnx: 0.0
+  onnx/formulas/inertia_rod_end__m.onnx: 0.0
+  onnx/formulas/inertia_solid_disk__Ir.onnx: 0.0
+  onnx/formulas/inertia_solid_disk__R.onnx: 0.0
+  onnx/formulas/inertia_solid_disk__m.onnx: 0.0
+  onnx/formulas/inertia_solid_sphere__Ir.onnx: 0.0
+  onnx/formulas/inertia_solid_sphere__R.onnx: 0.0
+  onnx/formulas/inertia_solid_sphere__m.onnx: 0.0
+  onnx/formulas/kepler_period_semi_major__G.onnx: 0.0
+  onnx/formulas/kepler_period_semi_major__M.onnx: 0.0
+  onnx/formulas/kepler_period_semi_major__T.onnx: 0.0
+  onnx/formulas/kepler_period_semi_major__a.onnx: 0.0
+  onnx/formulas/physical_pendulum_period__Ir.onnx: 0.0
+  onnx/formulas/physical_pendulum_period__T.onnx: 0.0
+  onnx/formulas/physical_pendulum_period__d.onnx: 0.0
+  onnx/formulas/physical_pendulum_period__g.onnx: 0.0
+  onnx/formulas/physical_pendulum_period__m.onnx: 0.0
+  onnx/formulas/quality_factor__Qf.onnx: 0.0
+  onnx/formulas/quality_factor__b.onnx: 0.0
+  onnx/formulas/quality_factor__k.onnx: 0.0
+  onnx/formulas/quality_factor__m.onnx: 0.0
+  onnx/formulas/rocket_delta_v__dv.onnx: 0.0
+  onnx/formulas/rocket_delta_v__m0.onnx: 0.0
+  onnx/formulas/rocket_delta_v__mf.onnx: 0.0
+  onnx/formulas/rocket_delta_v__ve.onnx: 0.0
+  onnx/formulas/rolling_incline_acceleration__Ir.onnx: 0.0
+  onnx/formulas/rolling_incline_acceleration__R.onnx: 0.0
+  onnx/formulas/rolling_incline_acceleration__a.onnx: 0.0
+  onnx/formulas/rolling_incline_acceleration__g.onnx: 0.0
+  onnx/formulas/rolling_incline_acceleration__m.onnx: 0.0
+  onnx/formulas/rolling_incline_acceleration__theta.onnx: 0.0
+  onnx/formulas/torque_free_precession__I1.onnx: 0.0
+  onnx/formulas/torque_free_precession__I3.onnx: 0.0
+  onnx/formulas/torque_free_precession__Wp.onnx: 0.0
+  onnx/formulas/torque_free_precession__w3.onnx: 0.0
+  onnx/formulas/vis_viva__G.onnx: 0.0
+  onnx/formulas/vis_viva__M.onnx: 0.0
+  onnx/formulas/vis_viva__a.onnx: 0.0
+  onnx/formulas/vis_viva__r.onnx: 0.0
+  onnx/formulas/vis_viva__v.onnx: 0.0
+  onnx/search/encoder.int8.onnx: 4.9
+safetensorsSizeMb: 18.9
+approxSizeMb: 18.9
+fetchedAt: '2026-10-22T08:29:45.000Z'

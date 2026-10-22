@@ -1,0 +1,265 @@
+_id: 6ad8ca4f526b39219b923d19
+id: tt-hous/embeddinggemma-2
+private: false
+pipeline_tag: feature-extraction
+tags:
+- blackhole
+- p150
+- tt-dit-server
+- tt-model-cache
+- tt-model-catalog
+- tt-model-container
+- feature-extraction
+- base_model:google/embeddinggemma-2
+- base_model:finetune:google/embeddinggemma-2
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: tt-hous/embeddinggemma-2
+author: tt-hous
+sha: fd8f67574d73580e6ce9bcf1b7334f3f783ad70e
+lastModified: '2026-10-21T15:26:02.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  tags:
+  - blackhole
+  - p150
+  - tt-dit-server
+  - tt-model-cache
+  - tt-model-catalog
+  - tt-model-container
+  license: apache-2.0
+  pipeline_tag: feature-extraction
+  base_model:
+  - google/embeddinggemma-2
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/.gitignore
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/README.md
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/__init__.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/check_queries.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/facts.json
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/hf_reference.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/index.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/LICENSES.md
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/audio/aud-blackbird.flac
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/audio/aud-cat-meow.flac
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/audio/aud-church-bells.flac
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/audio/aud-dog-bark.flac
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/audio/aud-drums.flac
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/audio/aud-frogs.flac
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/audio/aud-guitar.flac
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/audio/aud-librispeech-320s.flac
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/audio/aud-librispeech-quilter-short.flac
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/audio/aud-ocean-waves.flac
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/audio/aud-piano.flac
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/audio/aud-rain.flac
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/audio/aud-rooster.flac
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/audio/aud-siren.flac
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/audio/aud-spoken-self-handicapping-applications.flac
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/audio/aud-spoken-self-handicapping-overview.flac
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/audio/aud-steam-train.flac
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/audio/aud-thunder.flac
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/audio/aud-violin.flac
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/audio/aud-wind.flac
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/build_library.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-cpp-eltwise-sfpu-kernel.cpp
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-cpp-freelist-deallocate.cpp
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-cpp-freelist-find-block-to-shrink.cpp
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-cpp-hardswish-kernel.cpp
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-cpp-merge-allocated-ranges.cpp
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-cpp-reader-batch-norm.cpp
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-cpp-validate-num-banks.cpp
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-js-anchor-id.js
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-js-first-fail-in-window.js
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-js-list-commits-between.js
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-js-render-commits-table.js
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-js-setup-scroll-spy.js
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-js-time-since-last-success.js
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-py-capture-stack-trace.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-py-comp-nonfinite.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-py-comp-ulp.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-py-download-sfpi.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-py-make-dot-access-dict.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-py-pretty-format.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-py-ulp.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-rs-binary-heap-into-sorted-vec.rs
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-rs-binary-heap-rebuild-tail.rs
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-rs-binary-heap-sift-down-range.rs
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-rs-binary-heap-sift-up.rs
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-rs-sync-channel.rs
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-sql-add-pytest-args.sql
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-sql-sweep-run.sql
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-sql-sweep-test.sql
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/code/code-sql-trace-run.sql
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-airplane.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-astronaut-moon.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-aurora.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-basketball.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-beach.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-bicycle.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-bread.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-burger.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-butterfly.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-cats-sofa.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-cherry-blossoms.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-clownfish.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-coffee.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-colosseum.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-declaration-painting.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-desert-dunes.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-document-rainfall.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-dog-labrador.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-earth.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-eiffel-tower.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-elephant.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-everest.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-football.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-forest.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-giraffes.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-giza-pyramids.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-golden-gate.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-great-wall.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-great-wave.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-handwritten-letter.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-horse-iceland.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-hot-air-balloon.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-kingfisher.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-kitchen.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-lava.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-library.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-line-chart.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-lion.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-living-room.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-london-bus.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-machu-picchu.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-mona-lisa.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-mount-fuji.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-pearl-earring.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-penguin.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-pillars-of-creation.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-pizza.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-printed-page.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-sailboat.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-salad.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-skiing.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-starry-night.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-steam-train.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-strawberries.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-sushi.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-swimming.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-sydney-opera.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-taj-mahal.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-tennis.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-waterfall.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/images/img-world-map.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/manifest.json
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/queries.json
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/queries/q-aud-blackbird.flac
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/queries/q-aud-dog-bark.flac
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/queries/q-aud-fireworks.flac
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/queries/q-aud-sea-waves.flac
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/queries/q-aud-street-traffic.flac
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/queries/q-img-cat.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/queries/q-img-dog.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/queries/q-img-eiffel.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/queries/q-img-pizza.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/queries/q-img-taj.jpg
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/videos/vid-cat-lizard.mp4
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/videos/vid-cooking-frying.mp4
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/videos/vid-fireworks.mp4
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/videos/vid-ocean-waves.mp4
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/videos/vid-pelican-flying.mp4
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/videos/vid-puppies-playing.mp4
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/videos/vid-rocket-launch.mp4
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/videos/vid-scenes-compilation.mp4
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/videos/vid-street-traffic.mp4
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/videos/vid-train-arriving.mp4
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/library/videos/vid-waterfall.mp4
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/make_facts.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/mount.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/demo/ui.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/doc/context_contract.json
+- rfilename: code/models/autoports/google_embeddinggemma_2/server/__init__.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/server/app.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/server/engine.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/__init__.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/audio_encoder.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/custom_geglu.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/custom_sdpa.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/embedder.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/functional_decoder.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/functional_encoder_layer.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/fused_decoder.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/fused_encoder_layer.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/kernels/geglu/compute.cpp
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/kernels/geglu/dm_in0_sender.cpp
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/kernels/geglu/dm_in1_sender_out.cpp
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/kernels/geglu/matmul_dataflow_common.hpp
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/kernels/geglu/swiglu_sfpu.hpp
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/kernels/sdpa/compute_common.hpp
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/kernels/sdpa/dataflow_common.hpp
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/kernels/sdpa/reader_interleaved.cpp
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/kernels/sdpa/sdpa.cpp
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/kernels/sdpa/sliding_window_k_range.hpp
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/kernels/sdpa/windowed_mask_gen.hpp
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/kernels/sdpa/writer_interleaved.cpp
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/mm_inputs.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/model.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/multimodal.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/optimized_decoder.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/optimized_encoder_layer.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/precision_policy.json
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/precision_policy.py
+- rfilename: code/models/autoports/google_embeddinggemma_2/tt/vision_encoder.py
+- rfilename: code/models/common/lightweightmodule.py
+- rfilename: code/models/tt_dit/utils/tensor.py
+- rfilename: image/blobs/sha256/0bd59b87edea4b92e96656bdead06a361eac00643fecbca5a1a247c55a460fed
+- rfilename: image/blobs/sha256/1bfe1becf29e080cde867ea83273cc271f89d4aa5d1e03072d3d4c2023fd1ad5
+- rfilename: image/blobs/sha256/229487199676033e7f4475017c0d8717d719429ce5eeae256e90dd4160c2925f
+- rfilename: image/blobs/sha256/246bf69d316f37f893fdd6ca0e1b6a9dfd2496df809d934747e89f0004dfdfd0
+- rfilename: image/blobs/sha256/3129b0782917119f77fef8dbd067b1bc25dc62520c9b4e0f79d194e33916637a
+- rfilename: image/blobs/sha256/3634bcd964bae60bc52e5812c0ba3d526ff81f0973e0e9aab54aa7bb32a9075d
+- rfilename: image/blobs/sha256/398b141b0c8b4ff904b74e545fd23e595a51b12a60a34ffa647311c82b65acf0
+- rfilename: image/blobs/sha256/3e88ace052c0b2d77a8aec33330ed2387af4a0d4f70ee382ece9faa26739a799
+- rfilename: image/blobs/sha256/44a10ad77f89c27c6dcf8a4489fe0c2cd4bc209d263ccb9c1f3350c5683cf635
+- rfilename: image/blobs/sha256/468f5474fec5781afd1d4819ed518b57789ecddf1a33c4b26e4ae24b943beb2b
+- rfilename: image/blobs/sha256/4b30923806c45caff71513ec3e81797253f5bc240d27874612b4bbccae95efad
+- rfilename: image/blobs/sha256/4bbd042d5a48f78d42374a9ff7099c61ef4155fce27d055a3e5d572ea2887230
+- rfilename: image/blobs/sha256/4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1
+- rfilename: image/blobs/sha256/510954577bc5f9942a88171596d66e859741843fbe9eaac1f58e6268baf88c5e
+- rfilename: image/blobs/sha256/5a009e1245fa4110a9b1e473cd2feba0a201d8d85dbec0941269e4592d27c506
+- rfilename: image/blobs/sha256/5d85ec83334f0a3af355a319fbf5bbf743180ace7d77fe9081a84a78cc2f3f3d
+- rfilename: image/blobs/sha256/65de262429bc470f1e6c7de03c08d57a9eb77a30ba82d226fecce3aafbeb306c
+- rfilename: image/blobs/sha256/668c29e85693f432d66ce28da65b9880d72f8152431dc87462f2155aa0d29105
+- rfilename: image/blobs/sha256/9dd63fc5eb57989e0662b806e787ab5f6f1be5072b780ef84ae960c9aaf27439
+- rfilename: image/blobs/sha256/b349c5f82ec7e1c9285f4c41a294f1aa9efebbd757791dc3712f4b869d2b4cd5
+- rfilename: image/blobs/sha256/b7aba87d343d132afe8e86260c91474534ceabd8928b068eff7e3669a861b3ec
+- rfilename: image/blobs/sha256/b891528e3c01140e7ab06a4836d79cff05712ae577e3b798c81b5de12095d35b
+- rfilename: image/blobs/sha256/be74ff0f8fffc8c250798344d8e2fa17f6a6a69c79586273b64b1fcf4b55c713
+- rfilename: image/blobs/sha256/cf1a5487baaf7d71eb78fd0888933c6cdecb40e59edb896511aa0ef4a896031e
+- rfilename: image/blobs/sha256/d7161b2ea02a42b9f3b038066bb83ede992815f0461a5e35644ca91594aa6ac6
+- rfilename: image/blobs/sha256/d853bc77781c2b20971eb04b2a3bd79e993f899c6ac962b5211ba7bf81064a22
+- rfilename: image/blobs/sha256/df20c74836f348e00350c8f20fc9ec5948ed47ebdaaa0321afa85de40d341fab
+- rfilename: image/blobs/sha256/e10f09843c9b4d73e9fd19f406e6bd9634c867ccdc92552898cfc760fc56ef6f
+- rfilename: image/blobs/sha256/f38ef5e3e335490fe8905045047f1bd8276adc0add86089deceb7151d573dd42
+- rfilename: image/index.json
+- rfilename: image/manifest.json
+- rfilename: image/oci-layout
+- rfilename: requirements.lock
+- rfilename: tt_kernel_manifest.json
+spaces: []
+createdAt: '2026-10-21T14:21:03.000Z'
+usedStorage: 2233022701
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-22T08:29:45.000Z'

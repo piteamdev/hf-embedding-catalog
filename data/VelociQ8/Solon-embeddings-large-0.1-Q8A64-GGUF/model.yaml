@@ -1,0 +1,77 @@
+_id: 6ad8faaa16dc06b532cf3eb3
+id: VelociQ8/Solon-embeddings-large-0.1-Q8A64-GGUF
+private: false
+pipeline_tag: feature-extraction
+tags:
+- gguf
+- velociq8
+- q8a64
+- cpu
+- embeddings
+- sentence-similarity
+- arm64
+- aarch64
+- x86_64
+- 8-bit
+- quantized
+- retrieval
+- semantic-search
+- rag
+- feature-extraction
+- fr
+- base_model:OrdalieTech/Solon-embeddings-large-0.1
+- base_model:quantized:OrdalieTech/Solon-embeddings-large-0.1
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: VelociQ8/Solon-embeddings-large-0.1-Q8A64-GGUF
+author: VelociQ8
+sha: 138435c91c221e5c8ebda0a1f8728182b9687354
+lastModified: '2026-10-21T17:50:46.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  base_model: OrdalieTech/Solon-embeddings-large-0.1
+  base_model_relation: quantized
+  pipeline_tag: feature-extraction
+  inference: false
+  language:
+  - fr
+  tags:
+  - gguf
+  - velociq8
+  - q8a64
+  - cpu
+  - embeddings
+  - sentence-similarity
+  - arm64
+  - aarch64
+  - x86_64
+  - 8-bit
+  - quantized
+  - retrieval
+  - semantic-search
+  - rag
+gguf:
+  total: 833661760
+  architecture: a64b9e07
+  totalFileSize: 833661920
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: Solon-embeddings-large-0.1-Q8A64.gguf
+spaces: []
+createdAt: '2026-10-21T17:47:22.000Z'
+usedStorage: 833661920
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-22T08:29:45.000Z'

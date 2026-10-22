@@ -1,0 +1,278 @@
+_id: 69a9941cff9239f9b4e1d2c4
+id: arturmatos/qwen-0.6b-embeddings-msmarco-ckpt800
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- qwen3
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:25863649
+- loss:MultipleNegativesRankingLoss
+- pt
+- dataset:cnmoro/AllTripletsMsMarco-PTBR
+- arxiv:1908.10084
+- arxiv:1705.00652
+- base_model:unsloth/Qwen3-Embedding-0.6B
+- base_model:finetune:unsloth/Qwen3-Embedding-0.6B
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: arturmatos/qwen-0.6b-embeddings-msmarco-ckpt800
+author: arturmatos
+sha: 2fcb047fe2092a304bb65d178f4fac9b832653eb
+lastModified: '2026-03-05T14:35:32.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: o que é um dreno de cérebro
+  sentences:
+  - Um aneurisma cerebral (também chamado de aneurisma cerebral ou um aneurisma intracraniano) é um balão decorrente de uma
+    área enfraquecida na parede de um vaso sanguíneo no cérebro. Se o aneurisma cerebral se expandir e a parede dos vasos
+    sanguíneos se tornar muito fina, o aneurisma se romperá e sangrárárá no espaço ao redor do cérebro".
+  - Pixel Shift é um impulso de resolução que existe há muito tempo, e sim é uma boa coisa (acredite em várias táticas de
+    marketing que tentam retratar-lo como qualquer outra coisa). Se me lembro corretamente, a Panasonic inventou, mas a maioria
+    dos fabricantes de filmadoras de três chips o usam nos dias de hoje".
+  - isso afetou mais os países mais pobres, já que alguns países ricos tentam os trabalhadores, e os trabalhadores procuram
+    escapar de situações sombrias em seus países pobres. Esta página da web tem as seguintes subseções:"
+- source_sentence: qual é o melhor mês do ano
+  sentences:
+  - o outono é a melhor temporada".
+  - Os meses Janeiro, Fevereiro, Março, Abril e Maio têm bom tempo com uma boa temperatura média. A maioria das chuvas (estação
+    de chuva) é vista em janeiro, abril, maio, junho, julho, agosto, setembro, outubro, novembro e dezembro. Em média, o mês
+    mais quente é abril. Em média, o mês mais legal é agosto".
+  - Naproxen é um anti-inflamatório não esteroide (AID) usado para aliviar os sintomas da artrite (osteoartrite, artrite reumatoide
+    ou artrite juvenil), como inflamação, inchaço, rigidez e dor nas articulações".
+- source_sentence: o que é um succubus
+  sentences:
+  - 'Definição de succubus. plural. succubi. play --b..: a demon assume a forma feminina de ter relações sexuais com os homens
+    em seu sono - comparar incubus".'
+  - ETHINYL ESTRADIOL; DESOGESTREL é um contraceptivo oral. Os produtos combinam dois tipos de hormônios femininos, um estrogênio
+    e uma progestina. Eles são usados para prevenir a ovulação e a gravidez. O menor preço GoodRx para a versão mais comum
+    de kariva é de cerca de $23,00, 61% de desconto no preço médio de varejo de $59,99. Comparar combinações de estrogénio/progestina".
+  - Os currículos são plantas com hastes carnudas maiores que ajudam as plantas a reter água em áreas secas. Algumas hastes
+    são subterrâneas, como lâmpadas e tubérculos. Há também hastes que não podem se manter, mas precisam ser apoiadas".
+- source_sentence: nos é código parte da constituição
+  sentences:
+  - A Constituição dos Estados Unidos da América é a lei suprema dos Estados Unidos. É a fundação e fonte da autoridade jurídica
+    subjacente à existência dos Estados Unidos da América e do Governo Federal dos Estados Unidos.
+  - sim, às vezes, o Código dos EUA, ou promulgações do Congresso, pode ser uma extensão direta da própria Constituição. Até
+    que o SC rege é inconstitucional, é a lei da terra de acordo com a cláusula de Supremacia do Artigo 6".
+  - Denial é muito mais reconfortante neste caso. Eu poderia obter um aspecto religioso disso, mas você está certo, você tem
+    que ignorar o medo da morte. A religião ajuda a acalmar o medo da morte, colocando toda a sua fé em uma vida após a morte.
+    Minha sugestão colocou de lado e lembre-se de que você está vivo agora".
+- source_sentence: quantas horas de delta
+  sentences:
+  - Yes, você pode fazer o check-in para o seu voo Delta Air Lines (DL) com o seu dispositivo móvel a partir de 24 horas e
+    terminando 60 minutos antes da hora de partida programada (dependendo da sua cidade de partida e destino) para receber
+    um cartão de embarque móvel no seu dispositivo móvel. Você pode usar esta opção se:"
+  - quanto faz um administrador doméstico de enfermagem? O salário anual do administrador do Lar de Enfermagem é de US$ 106,636,
+    a partir de 31 de março de 2017, com um intervalo geralmente entre US$ 92.939 a US$ 189.797, no entanto, isso pode variar
+    amplamente dependendo de uma variedade de fatores".
+  - Yes pode fazer o check-in no seu voo Delta Air Lines (DL) no quiosque de autoatendimento do aeroporto de 30 a minutos
+    e 4 horas antes da hora de partida programada e receber um cartão de embarque impresso".
+model-index: null
+config:
+  architectures:
+  - Qwen3Model
+  model_type: qwen3
+  tokenizer_config:
+    bos_token: null
+    eos_token: <|im_end|>
+    pad_token: <|endoftext|>
+    unk_token: null
+  chat_template_jinja: "{%- if tools %}\n    {{- '<|im_start|>system\\n' }}\n    {%- if messages[0].role == 'system' %}\n\
+    \        {{- messages[0].content + '\\n\\n' }}\n    {%- endif %}\n    {{- \"# Tools\\n\\nYou may call one or more functions\
+    \ to assist with the user query.\\n\\nYou are provided with function signatures within <tools></tools> XML tags:\\n<tools>\"\
+    \ }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\
+    \\n</tools>\\n\\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call>\
+    \ XML tags:\\n<tool_call>\\n{\\\"name\\\": <function-name>, \\\"arguments\\\": <args-json-object>}\\n</tool_call><|im_end|>\\\
+    n\" }}\n{%- else %}\n    {%- if messages[0].role == 'system' %}\n        {{- '<|im_start|>system\\n' + messages[0].content\
+    \ + '<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- set ns = namespace(multi_step_tool=true, last_query_index=messages|length\
+    \ - 1) %}\n{%- for message in messages[::-1] %}\n    {%- set index = (messages|length - 1) - loop.index0 %}\n    {%- if\
+    \ ns.multi_step_tool and message.role == \"user\" and not(message.content.startswith('<tool_response>') and message.content.endswith('</tool_response>'))\
+    \ %}\n        {%- set ns.multi_step_tool = false %}\n        {%- set ns.last_query_index = index %}\n    {%- endif %}\n\
+    {%- endfor %}\n{%- for message in messages %}\n    {%- if (message.role == \"user\") or (message.role == \"system\" and\
+    \ not loop.first) %}\n        {{- '<|im_start|>' + message.role + '\\n' + message.content + '<|im_end|>' + '\\n' }}\n\
+    \    {%- elif message.role == \"assistant\" %}\n        {%- set content = message.content %}\n        {%- set reasoning_content\
+    \ = '' %}\n        {%- if message.reasoning_content is defined and message.reasoning_content is not none %}\n        \
+    \    {%- set reasoning_content = message.reasoning_content %}\n        {%- else %}\n            {%- if '</think>' in message.content\
+    \ %}\n                {%- set content = message.content.split('</think>')[-1].lstrip('\\n') %}\n                {%- set\
+    \ reasoning_content = message.content.split('</think>')[0].rstrip('\\n').split('<think>')[-1].lstrip('\\n') %}\n     \
+    \       {%- endif %}\n        {%- endif %}\n        {%- if loop.index0 > ns.last_query_index %}\n            {%- if loop.last\
+    \ or (not loop.last and reasoning_content) %}\n                {{- '<|im_start|>' + message.role + '\\n<think>\\n' + reasoning_content.strip('\\\
+    n') + '\\n</think>\\n\\n' + content.lstrip('\\n') }}\n            {%- else %}\n                {{- '<|im_start|>' + message.role\
+    \ + '\\n' + content }}\n            {%- endif %}\n        {%- else %}\n            {{- '<|im_start|>' + message.role +\
+    \ '\\n' + content }}\n        {%- endif %}\n        {%- if message.tool_calls %}\n            {%- for tool_call in message.tool_calls\
+    \ %}\n                {%- if (loop.first and content) or (not loop.first) %}\n                    {{- '\\n' }}\n     \
+    \           {%- endif %}\n                {%- if tool_call.function %}\n                    {%- set tool_call = tool_call.function\
+    \ %}\n                {%- endif %}\n                {{- '<tool_call>\\n{\"name\": \"' }}\n                {{- tool_call.name\
+    \ }}\n                {{- '\", \"arguments\": ' }}\n                {%- if tool_call.arguments is string %}\n        \
+    \            {{- tool_call.arguments }}\n                {%- else %}\n                    {{- tool_call.arguments | tojson\
+    \ }}\n                {%- endif %}\n                {{- '}\\n</tool_call>' }}\n            {%- endfor %}\n        {%-\
+    \ endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if loop.first or (messages[loop.index0\
+    \ - 1].role != \"tool\") %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\\
+    n' }}\n        {{- message.content }}\n        {{- '\\n</tool_response>' }}\n        {%- if loop.last or (messages[loop.index0\
+    \ + 1].role != \"tool\") %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n\
+    {%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n    {%- if enable_thinking is defined and enable_thinking\
+    \ is false %}\n        {{- '<think>\\n\\n</think>\\n\\n' }}\n    {%- endif %}\n{%- endif %}"
+cardData:
+  language:
+  - pt
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:25863649
+  - loss:MultipleNegativesRankingLoss
+  base_model: unsloth/Qwen3-Embedding-0.6B
+  widget:
+  - source_sentence: o que é um dreno de cérebro
+    sentences:
+    - Um aneurisma cerebral (também chamado de aneurisma cerebral ou um aneurisma intracraniano) é um balão decorrente de
+      uma área enfraquecida na parede de um vaso sanguíneo no cérebro. Se o aneurisma cerebral se expandir e a parede dos
+      vasos sanguíneos se tornar muito fina, o aneurisma se romperá e sangrárárá no espaço ao redor do cérebro".
+    - Pixel Shift é um impulso de resolução que existe há muito tempo, e sim é uma boa coisa (acredite em várias táticas de
+      marketing que tentam retratar-lo como qualquer outra coisa). Se me lembro corretamente, a Panasonic inventou, mas a
+      maioria dos fabricantes de filmadoras de três chips o usam nos dias de hoje".
+    - isso afetou mais os países mais pobres, já que alguns países ricos tentam os trabalhadores, e os trabalhadores procuram
+      escapar de situações sombrias em seus países pobres. Esta página da web tem as seguintes subseções:"
+  - source_sentence: qual é o melhor mês do ano
+    sentences:
+    - o outono é a melhor temporada".
+    - Os meses Janeiro, Fevereiro, Março, Abril e Maio têm bom tempo com uma boa temperatura média. A maioria das chuvas (estação
+      de chuva) é vista em janeiro, abril, maio, junho, julho, agosto, setembro, outubro, novembro e dezembro. Em média, o
+      mês mais quente é abril. Em média, o mês mais legal é agosto".
+    - Naproxen é um anti-inflamatório não esteroide (AID) usado para aliviar os sintomas da artrite (osteoartrite, artrite
+      reumatoide ou artrite juvenil), como inflamação, inchaço, rigidez e dor nas articulações".
+  - source_sentence: o que é um succubus
+    sentences:
+    - 'Definição de succubus. plural. succubi. play --b..: a demon assume a forma feminina de ter relações sexuais com os
+      homens em seu sono - comparar incubus".'
+    - ETHINYL ESTRADIOL; DESOGESTREL é um contraceptivo oral. Os produtos combinam dois tipos de hormônios femininos, um estrogênio
+      e uma progestina. Eles são usados para prevenir a ovulação e a gravidez. O menor preço GoodRx para a versão mais comum
+      de kariva é de cerca de $23,00, 61% de desconto no preço médio de varejo de $59,99. Comparar combinações de estrogénio/progestina".
+    - Os currículos são plantas com hastes carnudas maiores que ajudam as plantas a reter água em áreas secas. Algumas hastes
+      são subterrâneas, como lâmpadas e tubérculos. Há também hastes que não podem se manter, mas precisam ser apoiadas".
+  - source_sentence: nos é código parte da constituição
+    sentences:
+    - A Constituição dos Estados Unidos da América é a lei suprema dos Estados Unidos. É a fundação e fonte da autoridade
+      jurídica subjacente à existência dos Estados Unidos da América e do Governo Federal dos Estados Unidos.
+    - sim, às vezes, o Código dos EUA, ou promulgações do Congresso, pode ser uma extensão direta da própria Constituição.
+      Até que o SC rege é inconstitucional, é a lei da terra de acordo com a cláusula de Supremacia do Artigo 6".
+    - Denial é muito mais reconfortante neste caso. Eu poderia obter um aspecto religioso disso, mas você está certo, você
+      tem que ignorar o medo da morte. A religião ajuda a acalmar o medo da morte, colocando toda a sua fé em uma vida após
+      a morte. Minha sugestão colocou de lado e lembre-se de que você está vivo agora".
+  - source_sentence: quantas horas de delta
+    sentences:
+    - Yes, você pode fazer o check-in para o seu voo Delta Air Lines (DL) com o seu dispositivo móvel a partir de 24 horas
+      e terminando 60 minutos antes da hora de partida programada (dependendo da sua cidade de partida e destino) para receber
+      um cartão de embarque móvel no seu dispositivo móvel. Você pode usar esta opção se:"
+    - quanto faz um administrador doméstico de enfermagem? O salário anual do administrador do Lar de Enfermagem é de US$
+      106,636, a partir de 31 de março de 2017, com um intervalo geralmente entre US$ 92.939 a US$ 189.797, no entanto, isso
+      pode variar amplamente dependendo de uma variedade de fatores".
+    - Yes pode fazer o check-in no seu voo Delta Air Lines (DL) no quiosque de autoatendimento do aeroporto de 30 a minutos
+      e 4 horas antes da hora de partida programada e receber um cartão de embarque impresso".
+  datasets:
+  - cnmoro/AllTripletsMsMarco-PTBR
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: added_tokens.json
+- rfilename: chat_template.jinja
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: generation_config.json
+- rfilename: merges.txt
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: vocab.json
+spaces: []
+createdAt: '2026-03-05T14:33:00.000Z'
+safetensors:
+  parameters:
+    BF16: 595776512
+  total: 595776512
+usedStorage: 2406020774
+downloadsAllTime: 26
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - Qwen3Model
+  attention_bias: false
+  attention_dropout: 0.0
+  bos_token_id: 151643
+  dtype: bfloat16
+  eos_token_id: 151643
+  head_dim: 128
+  hidden_act: silu
+  hidden_size: 1024
+  initializer_range: 0.02
+  intermediate_size: 3072
+  layer_types:
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  max_position_embeddings: 32768
+  max_window_layers: 28
+  model_name: unsloth/Qwen3-Embedding-0.6B
+  model_type: qwen3
+  num_attention_heads: 16
+  num_hidden_layers: 28
+  num_key_value_heads: 8
+  pad_token_id: 151643
+  rms_norm_eps: 1.0e-06
+  rope_scaling: null
+  rope_theta: 1000000
+  sliding_window: null
+  tie_word_embeddings: true
+  tokenizer_class: Qwen2TokenizerFast
+  transformers_version: 4.56.2
+  unsloth_version: 2026.3.3
+  use_cache: true
+  use_sliding_window: false
+  vocab_size: 151669
+onnxFiles: {}
+safetensorsSizeMb: 1191.6
+approxSizeMb: 1191.6
+fetchedAt: '2026-10-22T08:29:45.000Z'

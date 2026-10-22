@@ -1,0 +1,115 @@
+_id: 6ad71294f782d1009c711d18
+id: SkyIsNotGreen/splinter-encoder
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- embedding
+- context-curation
+- long-context
+- memory-management
+- retrieval
+- sentence-similarity
+- base_model:sentence-transformers/paraphrase-MiniLM-L3-v2
+- base_model:finetune:sentence-transformers/paraphrase-MiniLM-L3-v2
+- license:mit
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: SkyIsNotGreen/splinter-encoder
+author: SkyIsNotGreen
+sha: 3a4d935c244f8609ad7d4a28725fe82a7c59a632
+lastModified: '2026-10-21T21:35:50.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  license: mit
+  library_name: sentence-transformers
+  tags:
+  - sentence-transformers
+  - embedding
+  - context-curation
+  - long-context
+  - memory-management
+  - retrieval
+  pipeline_tag: sentence-similarity
+  base_model: sentence-transformers/paraphrase-MiniLM-L3-v2
+siblings:
+- rfilename: .gitattributes
+- rfilename: CITATION.cff
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: finetune_meta.json
+- rfilename: gate.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces:
+- SkyIsNotGreen/hive-cascade-paper
+createdAt: '2026-10-20T07:04:52.000Z'
+safetensors:
+  parameters:
+    F32: 17389824
+  total: 17389824
+usedStorage: 69565312
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  initializer_range: 0.02
+  intermediate_size: 1536
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 3
+  pad_token_id: 0
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.17.0
+  type_vocab_size: 2
+  use_cache: true
+  vocab_size: 30522
+onnxFiles: {}
+safetensorsSizeMb: 69.6
+approxSizeMb: 69.6
+fetchedAt: '2026-10-22T08:29:45.000Z'

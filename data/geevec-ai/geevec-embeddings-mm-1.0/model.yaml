@@ -1,0 +1,47 @@
+_id: 6ad97f749dae438d617c36a9
+id: geevec-ai/geevec-embeddings-mm-1.0
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- feature-extraction
+- sentence-similarity
+- multimodal
+- arxiv:2608.02148
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 2
+modelId: geevec-ai/geevec-embeddings-mm-1.0
+author: geevec-ai
+sha: d150b530b23b3d52e0661eabf0ea8969b8317ea5
+lastModified: '2026-10-22T06:50:52.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  tags:
+  - feature-extraction
+  - sentence-similarity
+  - transformers
+  - multimodal
+  license: apache-2.0
+transformersInfo:
+  auto_model: AutoModel
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: modeling.py
+spaces: []
+createdAt: '2026-10-22T03:13:56.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-22T08:29:45.000Z'

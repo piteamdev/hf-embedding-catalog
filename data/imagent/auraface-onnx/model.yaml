@@ -1,0 +1,45 @@
+_id: 6ada7c3809261d3fcb7626d3
+id: imagent/auraface-onnx
+private: false
+pipeline_tag: feature-extraction
+tags:
+- onnx
+- imagent
+- feature-extraction
+- face-recognition
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: imagent/auraface-onnx
+author: imagent
+sha: 42acd9e373f68ab75dd72e9d0bffe455286d03cd
+lastModified: '2026-10-22T21:12:46.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  tags:
+  - imagent
+  - onnx
+  - feature-extraction
+  - face-recognition
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: auraface.onnx
+- rfilename: export_faces.py
+spaces: []
+createdAt: '2026-10-22T21:12:24.000Z'
+usedStorage: 260694211
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  auraface.onnx: 260.7
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-23T08:26:04.000Z'

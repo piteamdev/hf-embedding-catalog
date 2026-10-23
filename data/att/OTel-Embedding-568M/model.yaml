@@ -1,0 +1,110 @@
+_id: 6adafb31d1462de67351d34b
+id: att/OTel-Embedding-568M
+private: false
+pipeline_tag: feature-extraction
+tags:
+- safetensors
+- xlm-roberta
+- telecom
+- telecommunications
+- gsma
+- rag
+- full-parameter-fine-tuning
+- fine-tuned
+- feature-extraction
+- en
+- dataset:farbodtavakkoli/OTel-Embedding
+- base_model:BAAI/bge-m3
+- base_model:finetune:BAAI/bge-m3
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: att/OTel-Embedding-568M
+author: att
+sha: 156bf445b6ae907e7de15a487accbfa195263e09
+lastModified: '2026-10-23T06:14:15.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - XLMRobertaModel
+  model_type: xlm-roberta
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: <unk>
+cardData:
+  license: apache-2.0
+  language:
+  - en
+  base_model:
+  - BAAI/bge-m3
+  datasets:
+  - farbodtavakkoli/OTel-Embedding
+  tags:
+  - telecom
+  - telecommunications
+  - gsma
+  - rag
+  - full-parameter-fine-tuning
+  - fine-tuned
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-23T06:14:09.000Z'
+safetensors:
+  parameters:
+    BF16: 567754752
+  total: 567754752
+usedStorage: 1152336427
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - XLMRobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: bfloat16
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 1024
+  initializer_range: 0.02
+  intermediate_size: 4096
+  is_decoder: false
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 8194
+  model_type: xlm-roberta
+  num_attention_heads: 16
+  num_hidden_layers: 24
+  output_past: true
+  pad_token_id: 1
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.0.0.dev0
+  type_vocab_size: 1
+  use_cache: false
+  vocab_size: 250002
+onnxFiles: {}
+safetensorsSizeMb: 1135.6
+approxSizeMb: 1135.5
+fetchedAt: '2026-10-23T08:26:04.000Z'

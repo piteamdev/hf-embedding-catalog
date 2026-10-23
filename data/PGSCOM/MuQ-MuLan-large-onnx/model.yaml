@@ -1,0 +1,63 @@
+_id: 6ad9d11e1d67b0a5a132ef57
+id: PGSCOM/MuQ-MuLan-large-onnx
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- music
+- audio
+- muq-mulan
+- music-similarity
+- feature-extraction
+- arxiv:2501.01108
+- base_model:OpenMuQ/MuQ-MuLan-large
+- base_model:quantized:OpenMuQ/MuQ-MuLan-large
+- license:cc-by-nc-4.0
+- region:us
+downloads: 0
+likes: 0
+modelId: PGSCOM/MuQ-MuLan-large-onnx
+author: PGSCOM
+sha: 249eb659c2e7fbecee54cbdedc8e7eeb8c6f2ef7
+lastModified: '2026-10-22T09:02:38.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: cc-by-nc-4.0
+  base_model: OpenMuQ/MuQ-MuLan-large
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  tags:
+  - music
+  - audio
+  - onnx
+  - muq-mulan
+  - music-similarity
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: audio_q4.onnx
+- rfilename: audio_q4f16.onnx
+- rfilename: mel.onnx
+- rfilename: texto_fp16.onnx
+- rfilename: texto_q4.onnx
+spaces:
+- PGSCOM/MusicSearcher
+createdAt: '2026-10-22T09:02:22.000Z'
+usedStorage: 1493912419
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  audio_q4.onnx: 363.2
+  audio_q4f16.onnx: 249.1
+  mel.onnx: 17.3
+  texto_fp16.onnx: 657.0
+  texto_q4.onnx: 207.3
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-23T08:26:04.000Z'

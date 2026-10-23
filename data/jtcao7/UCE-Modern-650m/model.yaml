@@ -1,0 +1,99 @@
+_id: 6ad9ac44e0ebee0bb740e0e1
+id: jtcao7/UCE-Modern-650m
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- uce
+- feature-extraction
+- biology
+- single-cell
+- scRNA-seq
+- cell-embedding
+- foundation-model
+- custom_code
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: jtcao7/UCE-Modern-650m
+author: jtcao7
+sha: ecaf655dc5f28491c588b874c8880a6398211f59
+lastModified: '2026-10-22T20:18:30.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - UCEModel
+  auto_map:
+    AutoConfig: configuration_uce.UCEConfig
+    AutoModel: modeling_uce.UCEModel
+  model_type: uce
+cardData:
+  license: mit
+  library_name: transformers
+  pipeline_tag: feature-extraction
+  tags:
+  - biology
+  - single-cell
+  - scRNA-seq
+  - cell-embedding
+  - foundation-model
+  - uce
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_uce.UCEModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: configuration_uce.py
+- rfilename: gene_vocab.csv
+- rfilename: model.safetensors
+- rfilename: modeling_uce.py
+- rfilename: processing_uce.py
+spaces: []
+createdAt: '2026-10-22T06:25:08.000Z'
+safetensors:
+  parameters:
+    F32: 1421513217
+  total: 1421513217
+usedStorage: 5686103948
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - UCEModel
+  auto_map:
+    AutoConfig: configuration_uce.UCEConfig
+    AutoModel: modeling_uce.UCEModel
+  chrom_token_left_idx: 1
+  chrom_token_offset: 143574
+  chrom_token_right_idx: 2
+  cls_token_idx: 3
+  d_hid: 5120
+  d_model: 1280
+  dropout: 0.05
+  dtype: float32
+  legacy_float_padding_mask: true
+  max_position_embeddings: 1536
+  model_type: uce
+  nhead: 20
+  nlayers: 33
+  output_dim: 1280
+  pad_length: 1536
+  pad_token_id: 0
+  pad_token_idx: 0
+  sample_size: 1024
+  token_dim: 5120
+  transformers_version: 5.20.2
+  vocab_size: 145469
+onnxFiles: {}
+safetensorsSizeMb: 5686.1
+approxSizeMb: 5686.1
+fetchedAt: '2026-10-23T08:26:04.000Z'

@@ -1,0 +1,493 @@
+_id: 6acf32d7051b71b8bd587c84
+id: Deepnoid/GLINT-CT
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- feature-extraction
+- medical
+- radiology
+- vision-language
+- chest-ct
+- 3d-medical-imaging
+- glint
+- custom_code
+- arxiv:2606.03180
+- dataset:ibrahimhamamci/CT-RATE
+- license:cc-by-nc-4.0
+- region:us
+downloads: 3
+likes: 0
+modelId: Deepnoid/GLINT-CT
+author: Deepnoid
+sha: c5a246d6bceae849079f24016870bec664b26419
+lastModified: '2026-10-23T05:35:46.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - GLINTModel
+  auto_map:
+    AutoConfig: configuration_glint.GLINTConfig
+    AutoModel: modeling_glint.GLINTModel
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: '[UNK]'
+cardData:
+  library_name: transformers
+  license: cc-by-nc-4.0
+  tags:
+  - medical
+  - radiology
+  - vision-language
+  - chest-ct
+  - 3d-medical-imaging
+  - glint
+  - custom_code
+  - arxiv:2606.03180
+  datasets:
+  - ibrahimhamamci/CT-RATE
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_glint.GLINTModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: LICENSES/Apache-2.0.txt
+- rfilename: LICENSES/MIT.txt
+- rfilename: README.md
+- rfilename: align_layers.py
+- rfilename: common_layers.py
+- rfilename: config.json
+- rfilename: configuration_glint.py
+- rfilename: data/README.md
+- rfilename: data/splits/ct_rate/pretrain_exclusions.txt
+- rfilename: data/splits/ct_rate/test.txt
+- rfilename: data/splits/ct_rate/train.txt
+- rfilename: data/splits/ct_rate/val.txt
+- rfilename: data/splits/lidc_idri/test.txt
+- rfilename: data/splits/lidc_idri/train.txt
+- rfilename: data/splits/lidc_idri/val.txt
+- rfilename: data/splits/msd_lung/test.txt
+- rfilename: data/splits/msd_lung/train.txt
+- rfilename: data/splits/msd_lung/val.txt
+- rfilename: data/splits/nsclc_radiomics/test.txt
+- rfilename: data/splits/nsclc_radiomics/train.txt
+- rfilename: data/splits/nsclc_radiomics/val.txt
+- rfilename: data/splits/rsna_pe/test.txt
+- rfilename: data/splits/rsna_pe/train.txt
+- rfilename: data/splits/rsna_pe/val.txt
+- rfilename: dfr.py
+- rfilename: inference.py
+- rfilename: losses.py
+- rfilename: model.safetensors
+- rfilename: modeling_glint.py
+- rfilename: text_encoders.py
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: utils.py
+- rfilename: vision_encoders.py
+- rfilename: vjepa21_encoder.py
+- rfilename: vocab.txt
+spaces: []
+createdAt: '2026-10-14T07:44:23.000Z'
+safetensors:
+  parameters:
+    F32: 427025154
+  total: 427025154
+usedStorage: 1708162556
+downloadsAllTime: 3
+inferenceProviderMapping: {}
+configJson:
+  align_layer_config:
+    _name_or_path: ''
+    add_cross_attention: false
+    architectures: null
+    bad_words_ids: null
+    begin_suppress_tokens: null
+    bos_token_id: null
+    chunk_size_feed_forward: 0
+    cross_attention_hidden_size: null
+    decoder_start_token_id: null
+    diversity_penalty: 0.0
+    do_sample: false
+    dtype: null
+    early_stopping: false
+    encoder_no_repeat_ngram_size: 0
+    eos_token_id: null
+    exponential_decay_length_penalty: null
+    finetuning_task: null
+    forced_bos_token_id: null
+    forced_eos_token_id: null
+    hidden_size: 768
+    id2label:
+      '0': LABEL_0
+      '1': LABEL_1
+    input_dim: 1024
+    is_decoder: false
+    is_encoder_decoder: false
+    label2id:
+      LABEL_0: 0
+      LABEL_1: 1
+    length_penalty: 1.0
+    max_length: 20
+    min_length: 0
+    model_type: linear
+    no_repeat_ngram_size: 0
+    num_beam_groups: 1
+    num_beams: 1
+    num_return_sequences: 1
+    output_attentions: false
+    output_hidden_states: false
+    output_scores: false
+    pad_token_id: null
+    prefix: null
+    problem_type: null
+    projector_config: null
+    pruned_heads: {}
+    remove_invalid_values: false
+    repetition_penalty: 1.0
+    return_dict: true
+    return_dict_in_generate: false
+    sep_token_id: null
+    suppress_tokens: null
+    task_specific_params: null
+    temperature: 1.0
+    tf_legacy_loss: false
+    tie_encoder_decoder: false
+    tie_word_embeddings: true
+    tokenizer_class: null
+    top_k: 50
+    top_p: 1.0
+    torchscript: false
+    typical_p: 1.0
+    use_bfloat16: false
+  architectures:
+  - GLINTModel
+  auto_map:
+    AutoConfig: configuration_glint.GLINTConfig
+    AutoModel: modeling_glint.GLINTModel
+  can_return_loss: true
+  compute_logits_type: vl_alignment
+  dfr_config:
+    _name_or_path: ''
+    add_cross_attention: false
+    architectures: null
+    bad_words_ids: null
+    begin_suppress_tokens: null
+    bos_token_id: null
+    chunk_size_feed_forward: 0
+    cross_attention_hidden_size: null
+    decoder_start_token_id: null
+    diversity_penalty: 0.0
+    do_sample: false
+    dtype: null
+    early_stopping: false
+    encoder_no_repeat_ngram_size: 0
+    eos_token_id: null
+    exponential_decay_length_penalty: null
+    finetuning_task: null
+    forced_bos_token_id: null
+    forced_eos_token_id: null
+    id2label:
+      '0': LABEL_0
+      '1': LABEL_1
+    is_decoder: false
+    is_encoder_decoder: false
+    label2id:
+      LABEL_0: 0
+      LABEL_1: 1
+    layer_mapping:
+      student_layers:
+      - 22
+      teacher_layers:
+      - 44
+      use_multiple_projectors: true
+    length_penalty: 1.0
+    max_length: 20
+    min_length: 0
+    model_type: ''
+    no_repeat_ngram_size: 0
+    num_beam_groups: 1
+    num_beams: 1
+    num_return_sequences: 1
+    output_attentions: false
+    output_hidden_states: false
+    output_scores: false
+    pad_token_id: null
+    prefix: null
+    problem_type: null
+    projector_config:
+      _name_or_path: ''
+      activation: silu
+      add_cross_attention: false
+      architectures: null
+      bad_words_ids: null
+      begin_suppress_tokens: null
+      bos_token_id: null
+      chunk_size_feed_forward: 0
+      cross_attention_hidden_size: null
+      decoder_start_token_id: null
+      diversity_penalty: 0.0
+      do_sample: false
+      dropout: 0.0
+      dtype: null
+      early_stopping: false
+      encoder_no_repeat_ngram_size: 0
+      eos_token_id: null
+      exponential_decay_length_penalty: null
+      finetuning_task: null
+      forced_bos_token_id: null
+      forced_eos_token_id: null
+      hidden_dim: 2048
+      id2label:
+        '0': LABEL_0
+        '1': LABEL_1
+      input_dim: 1024
+      is_decoder: false
+      is_encoder_decoder: false
+      label2id:
+        LABEL_0: 0
+        LABEL_1: 1
+      length_penalty: 1.0
+      max_length: 20
+      min_length: 0
+      model_type: mlp
+      no_repeat_ngram_size: 0
+      num_beam_groups: 1
+      num_beams: 1
+      num_layers: 3
+      num_return_sequences: 1
+      out_dim: 1664
+      output_attentions: false
+      output_hidden_states: false
+      output_scores: false
+      pad_token_id: null
+      prefix: null
+      problem_type: null
+      pruned_heads: {}
+      remove_invalid_values: false
+      repetition_penalty: 1.0
+      return_dict: true
+      return_dict_in_generate: false
+      sep_token_id: null
+      suppress_tokens: null
+      task_specific_params: null
+      temperature: 1.0
+      tf_legacy_loss: false
+      tie_encoder_decoder: false
+      tie_word_embeddings: true
+      tokenizer_class: null
+      top_k: 50
+      top_p: 1.0
+      torchscript: false
+      typical_p: 1.0
+      use_bfloat16: false
+    pruned_heads: {}
+    remove_invalid_values: false
+    repetition_penalty: 1.0
+    return_dict: true
+    return_dict_in_generate: false
+    sep_token_id: null
+    suppress_tokens: null
+    task_specific_params: null
+    temperature: 1.0
+    tf_legacy_loss: false
+    tie_encoder_decoder: false
+    tie_word_embeddings: true
+    tokenizer_class: null
+    top_k: 50
+    top_p: 1.0
+    torchscript: false
+    typical_p: 1.0
+    use_bfloat16: false
+    use_cache: true
+    vfm_teacher_config: null
+  dtype: float32
+  loss:
+    AlignmentLoss:
+      local_loss: true
+      loss_kwargs:
+        temperature: 0.07
+      loss_type: mpnce
+      rank: 0
+      vl_logit_kwargs:
+        embed_dim: 768
+        gate_hidden_dim: 768
+        gate_log_temperature: 2.302585
+        gate_proj_mode: mlp
+        sem_hidden_dim: 768
+        sem_proj_mode: identity
+      vl_logit_type: gate_confidence_shift
+      world_size: 1
+    DFRLoss:
+      rank: 0
+      use_token_wise: true
+      world_size: 1
+    apply:
+    - AlignmentLoss
+    - DFRLoss
+    ratio:
+    - 1.0
+    - 8.0
+  text_config:
+    _name_or_path: sentence-transformers/all-mpnet-base-v2
+    add_cross_attention: false
+    architectures:
+    - MPNetForMaskedLM
+    attention_probs_dropout_prob: 0.1
+    bad_words_ids: null
+    begin_suppress_tokens: null
+    bos_token_id: 0
+    chunk_size_feed_forward: 0
+    cross_attention_hidden_size: null
+    decoder_start_token_id: null
+    diversity_penalty: 0.0
+    do_sample: false
+    dtype: null
+    early_stopping: false
+    encoder_no_repeat_ngram_size: 0
+    eos_token_id: 2
+    exponential_decay_length_penalty: null
+    finetuning_task: null
+    forced_bos_token_id: null
+    forced_eos_token_id: null
+    hidden_act: gelu
+    hidden_dropout_prob: 0.1
+    hidden_size: 768
+    id2label:
+      '0': LABEL_0
+      '1': LABEL_1
+    initializer_range: 0.02
+    intermediate_size: 3072
+    is_decoder: false
+    is_encoder_decoder: false
+    label2id:
+      LABEL_0: 0
+      LABEL_1: 1
+    layer_norm_eps: 1.0e-05
+    length_penalty: 1.0
+    max_length: 20
+    max_position_embeddings: 514
+    min_length: 0
+    model_type: mpnet
+    no_repeat_ngram_size: 0
+    num_attention_heads: 12
+    num_beam_groups: 1
+    num_beams: 1
+    num_hidden_layers: 12
+    num_return_sequences: 1
+    output_attentions: false
+    output_hidden_states: false
+    output_scores: false
+    pad_token_id: 1
+    prefix: null
+    problem_type: null
+    pruned_heads: {}
+    relative_attention_num_buckets: 32
+    remove_invalid_values: false
+    repetition_penalty: 1.0
+    return_dict: true
+    return_dict_in_generate: false
+    sep_token_id: null
+    suppress_tokens: null
+    task_specific_params: null
+    temperature: 1.0
+    tf_legacy_loss: false
+    tie_encoder_decoder: false
+    tie_word_embeddings: true
+    tokenizer_class: null
+    top_k: 50
+    top_p: 1.0
+    torchscript: false
+    typical_p: 1.0
+    use_bfloat16: false
+    use_cls_token: false
+    vocab_size: 30527
+  transformers_version: 4.56.1
+  use_text_layer_norm: true
+  use_vision_layer_norm: true
+  vision_config:
+    _name_or_path: ''
+    add_cross_attention: false
+    arch: vjepa2_1_vit_large_384
+    architectures: null
+    bad_words_ids: null
+    begin_suppress_tokens: null
+    bos_token_id: null
+    chunk_size_feed_forward: 0
+    cross_attention_hidden_size: null
+    decoder_start_token_id: null
+    diversity_penalty: 0.0
+    do_sample: false
+    dtype: null
+    early_stopping: false
+    encoder_no_repeat_ngram_size: 0
+    eos_token_id: null
+    exponential_decay_length_penalty: null
+    finetuning_task: null
+    forced_bos_token_id: null
+    forced_eos_token_id: null
+    hidden_size: 1024
+    id2label:
+      '0': LABEL_0
+      '1': LABEL_1
+    img_size: 384
+    input_modality: 3
+    input_slices: 240
+    is_decoder: false
+    is_encoder_decoder: false
+    label2id:
+      LABEL_0: 0
+      LABEL_1: 1
+    length_penalty: 1.0
+    max_length: 20
+    min_length: 0
+    model_type: vjepa2.1
+    no_repeat_ngram_size: 0
+    num_beam_groups: 1
+    num_beams: 1
+    num_channels: 3
+    num_frames: 80
+    num_return_sequences: 1
+    output_attentions: false
+    output_hidden_states: false
+    output_scores: false
+    pad_token_id: null
+    prefix: null
+    pretrained_checkpoint: null
+    problem_type: null
+    pruned_heads: {}
+    remove_invalid_values: false
+    repetition_penalty: 1.0
+    return_dict: true
+    return_dict_in_generate: false
+    sep_token_id: null
+    suppress_tokens: null
+    task_specific_params: null
+    temperature: 1.0
+    tf_legacy_loss: false
+    tie_encoder_decoder: false
+    tie_word_embeddings: true
+    tokenizer_class: null
+    top_k: 50
+    top_p: 1.0
+    torchscript: false
+    typical_p: 1.0
+    use_bfloat16: false
+    use_hierarchical: false
+  vision_only: false
+onnxFiles: {}
+safetensorsSizeMb: 1708.2
+approxSizeMb: 1708.1
+fetchedAt: '2026-10-23T08:26:04.000Z'

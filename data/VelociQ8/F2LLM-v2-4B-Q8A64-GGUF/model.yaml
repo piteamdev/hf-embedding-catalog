@@ -1,0 +1,88 @@
+_id: 6adab1628e8d07dfba5c1671
+id: VelociQ8/F2LLM-v2-4B-Q8A64-GGUF
+private: false
+pipeline_tag: feature-extraction
+tags:
+- gguf
+- velociq8
+- q8a64
+- cpu
+- embeddings
+- sentence-similarity
+- arm64
+- aarch64
+- x86_64
+- 8-bit
+- quantized
+- retrieval
+- semantic-search
+- rag
+- feature-extraction
+- multilingual
+- arxiv:2603.19223
+- base_model:codefuse-ai/F2LLM-v2-4B
+- base_model:quantized:codefuse-ai/F2LLM-v2-4B
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: VelociQ8/F2LLM-v2-4B-Q8A64-GGUF
+author: VelociQ8
+sha: e9dc008c340fc03ce19556613fb8a1025efd783d
+lastModified: '2026-10-23T01:01:08.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: codefuse-ai/F2LLM-v2-4B
+  base_model_relation: quantized
+  pipeline_tag: feature-extraction
+  inference: false
+  language:
+  - multilingual
+  tags:
+  - gguf
+  - velociq8
+  - q8a64
+  - cpu
+  - embeddings
+  - sentence-similarity
+  - arm64
+  - aarch64
+  - x86_64
+  - 8-bit
+  - quantized
+  - retrieval
+  - semantic-search
+  - rag
+gguf:
+  total: 4154710944
+  architecture: a64b9e07
+  context_length: 40960
+  pooling_type: 3
+  totalFileSize: 4154711200
+siblings:
+- rfilename: .gitattributes
+- rfilename: F2LLM-v2-4B-Q8A64.gguf
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: runtime/SHA256SUMS
+- rfilename: runtime/velociq8-1.2-linux-arm64-multi.tar.gz
+- rfilename: runtime/velociq8-1.2-linux-arm64.tar.gz
+- rfilename: runtime/velociq8-1.2-linux-x64.tar.gz
+- rfilename: runtime/velociq8-1.2-ollama-0.40.8-linux-arm64.tar.gz
+- rfilename: runtime/velociq8-1.2-ollama-0.40.8-linux-x64.tar.gz
+- rfilename: runtime/velociq8-1.2-ollama-0.40.8-windows-x64.zip
+- rfilename: runtime/velociq8-1.2-windows-x64.zip
+spaces: []
+createdAt: '2026-10-23T00:59:14.000Z'
+usedStorage: 4317845829
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-23T08:26:04.000Z'

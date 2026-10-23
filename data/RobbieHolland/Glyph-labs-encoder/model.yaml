@@ -1,0 +1,53 @@
+_id: 6ada85931a664cf1a81a5500
+id: RobbieHolland/Glyph-labs-encoder
+private: false
+pipeline_tag: feature-extraction
+library_name: pytorch
+tags:
+- pytorch
+- glyph
+- feature-extraction
+- laboratory
+- clinical-research
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: RobbieHolland/Glyph-labs-encoder
+author: RobbieHolland
+sha: 972acbaea6d7ea2249a84d562a5f6dbabb994827
+lastModified: '2026-10-22T21:52:24.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: pytorch
+  license: mit
+  tags:
+  - glyph
+  - feature-extraction
+  - laboratory
+  - clinical-research
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: README_labs_mapping.md
+- rfilename: bundle.json
+- rfilename: lab_catalog.csv
+- rfilename: lab_loinc_map.csv
+- rfilename: lab_loinc_mapping_provenance.json
+- rfilename: lab_loinc_source_audit.csv
+- rfilename: lab_metadata.json
+- rfilename: labs_encoder.ckpt
+spaces: []
+createdAt: '2026-10-22T21:52:19.000Z'
+usedStorage: 87852155
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-23T08:26:04.000Z'

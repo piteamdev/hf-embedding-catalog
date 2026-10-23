@@ -1,0 +1,65 @@
+_id: 6ad9e5265cb602c5edad37d6
+id: gorse-io/MERT-v1-95M-GGUF
+private: false
+pipeline_tag: feature-extraction
+library_name: gguf
+tags:
+- gguf
+- audio
+- music
+- embeddings
+- mert
+- feature-extraction
+- arxiv:2306.00107
+- base_model:m-a-p/MERT-v1-95M
+- base_model:quantized:m-a-p/MERT-v1-95M
+- license:cc-by-nc-4.0
+- region:us
+downloads: 0
+likes: 0
+modelId: gorse-io/MERT-v1-95M-GGUF
+author: gorse-io
+sha: de292b02ece0c9e26d7d54ad83bd03d2dd989912
+lastModified: '2026-10-22T18:40:29.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: cc-by-nc-4.0
+  base_model: m-a-p/MERT-v1-95M
+  pipeline_tag: feature-extraction
+  library_name: gguf
+  tags:
+  - gguf
+  - audio
+  - music
+  - embeddings
+  - mert
+  inference: false
+gguf:
+  total: 94370816
+  architecture: mert
+  totalFileSize: 189006432
+siblings:
+- rfilename: .gitattributes
+- rfilename: MERT-v1-95M-f16.gguf
+- rfilename: MERT-v1-95M-f32.gguf
+- rfilename: MERT-v1-95M-q4_k_m.gguf
+- rfilename: MERT-v1-95M-q8_0.gguf
+- rfilename: README.md
+- rfilename: SHA256SUMS
+- rfilename: provenance.json
+- rfilename: quantization-provenance.json
+- rfilename: quantization-validation.json
+- rfilename: validation.json
+spaces: []
+createdAt: '2026-10-22T10:27:50.000Z'
+usedStorage: 786761376
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-23T08:26:04.000Z'

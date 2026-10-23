@@ -1,0 +1,177 @@
+_id: 6adb0eaae10fd5801141b851
+id: Gaurav30/mpnet-finetuned
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- mpnet
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:23156
+- loss:CosineSimilarityLoss
+- arxiv:1908.10084
+- base_model:sentence-transformers/all-mpnet-base-v2
+- base_model:finetune:sentence-transformers/all-mpnet-base-v2
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: Gaurav30/mpnet-finetuned
+author: Gaurav30
+sha: fa7abfb1f69a757f08fdb694fa138e3184973a44
+lastModified: '2026-10-23T07:54:04.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: The rules established in Section 70 were repealed as of January 1, 1957.
+  sentences:
+  - "Section 70:\n Rules of Procedure.\n Rep. by s. 7 ibid, (w.e.f. 1-1-1957)."
+  - "Section ORDER V - Rule 2:\n Copy of plaint annexed to summons.\n Every summon shall be accompanied by a copy of the plaint."
+  - "Section ORDER XLV - Rule 6:\n Effect of refusal of certificate.\n Where such certificate is refused, the petition shall\
+    \ be dismissed."
+- source_sentence: Section 71 discusses the penalties for civil disobedience.
+  sentences:
+  - "Section 71:\n Jurisdiction of Civil Courts barred.\n Rep. by s. 7 ibid, (w.e.f. 1-1-1957)."
+  - "Section ORDER XVI-A - Rule 1:\n Definitions.\n In this Order,—\n Clause a:\n \"detained\" includes detained under any\
+    \ law providing for preventive detention;"
+  - "Section 107:\n Appeals to Appellate Authority.\n Subsection 8:\n The Appellate Authority shall give an opportunity to\
+    \ the appellant of being heard."
+- source_sentence: Many people enjoy watching movies on weekends.
+  sentences:
+  - "Section 2:\n Definitions.\n In this Act, unless the context otherwise requires,––\n Clause 63:\n \"input tax credit\"\
+    \ means the credit of input tax;"
+  - "Section ORDER XIV - Rule 1:\n Framing of issues.\n Subsection 4:\n Issues are of two kinds:\n Clause a:\n issues of fact,"
+  - "Section 1:\n Short title, extent, commencement and application.\n Subsection 1:\n This Act may be called the Consumer\
+    \ Protection Act, 2019."
+- source_sentence: The Collector is recognized as performing judicial functions under Section 72.
+  sentences:
+  - "Section 2:\n Definitions.\n In this Act, unless the context otherwise requires,—\n Subsection 15:\n \"fissile material\"\
+    \ means––\n Clause c:\n uranium-235;"
+  - "Section 2:\n Definitions.\n In this Act, unless the context otherwise requires,––\n Clause 84:\n \"person\" includes—\n\
+    \ Sub-Clause a:\n an individual;"
+  - "Section 72:\n Collector to deemed to be acting judicially.\n Rep. by s. 7 ibid, (w.e.f. 1-1-1957)."
+- source_sentence: The weather today is particularly pleasant and sunny.
+  sentences:
+  - "Section ORDER XLVII - Rule 6:\n Application where rejected.\n Subsection 2:\n Where there is a majority, the decision\
+    \ shall be according to the opinion of the majority."
+  - "Section 42:\n Establishment of State Consumer Disputes Redressal Commission.\n Subsection 3:\n Each State Commission\
+    \ shall consist of—\n Clause a:\n a President; and"
+  - "Section 101:\n Second appeal on no other grounds.\n No second appeal shall lie except on the ground mentioned in section\
+    \ 100."
+model-index: null
+config:
+  architectures:
+  - MPNetModel
+  model_type: mpnet
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: '[UNK]'
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:23156
+  - loss:CosineSimilarityLoss
+  base_model: sentence-transformers/all-mpnet-base-v2
+  widget:
+  - source_sentence: The rules established in Section 70 were repealed as of January 1, 1957.
+    sentences:
+    - "Section 70:\n Rules of Procedure.\n Rep. by s. 7 ibid, (w.e.f. 1-1-1957)."
+    - "Section ORDER V - Rule 2:\n Copy of plaint annexed to summons.\n Every summon shall be accompanied by a copy of the\
+      \ plaint."
+    - "Section ORDER XLV - Rule 6:\n Effect of refusal of certificate.\n Where such certificate is refused, the petition shall\
+      \ be dismissed."
+  - source_sentence: Section 71 discusses the penalties for civil disobedience.
+    sentences:
+    - "Section 71:\n Jurisdiction of Civil Courts barred.\n Rep. by s. 7 ibid, (w.e.f. 1-1-1957)."
+    - "Section ORDER XVI-A - Rule 1:\n Definitions.\n In this Order,—\n Clause a:\n \"detained\" includes detained under any\
+      \ law providing for preventive detention;"
+    - "Section 107:\n Appeals to Appellate Authority.\n Subsection 8:\n The Appellate Authority shall give an opportunity\
+      \ to the appellant of being heard."
+  - source_sentence: Many people enjoy watching movies on weekends.
+    sentences:
+    - "Section 2:\n Definitions.\n In this Act, unless the context otherwise requires,––\n Clause 63:\n \"input tax credit\"\
+      \ means the credit of input tax;"
+    - "Section ORDER XIV - Rule 1:\n Framing of issues.\n Subsection 4:\n Issues are of two kinds:\n Clause a:\n issues of\
+      \ fact,"
+    - "Section 1:\n Short title, extent, commencement and application.\n Subsection 1:\n This Act may be called the Consumer\
+      \ Protection Act, 2019."
+  - source_sentence: The Collector is recognized as performing judicial functions under Section 72.
+    sentences:
+    - "Section 2:\n Definitions.\n In this Act, unless the context otherwise requires,—\n Subsection 15:\n \"fissile material\"\
+      \ means––\n Clause c:\n uranium-235;"
+    - "Section 2:\n Definitions.\n In this Act, unless the context otherwise requires,––\n Clause 84:\n \"person\" includes—\n\
+      \ Sub-Clause a:\n an individual;"
+    - "Section 72:\n Collector to deemed to be acting judicially.\n Rep. by s. 7 ibid, (w.e.f. 1-1-1957)."
+  - source_sentence: The weather today is particularly pleasant and sunny.
+    sentences:
+    - "Section ORDER XLVII - Rule 6:\n Application where rejected.\n Subsection 2:\n Where there is a majority, the decision\
+      \ shall be according to the opinion of the majority."
+    - "Section 42:\n Establishment of State Consumer Disputes Redressal Commission.\n Subsection 3:\n Each State Commission\
+      \ shall consist of—\n Clause a:\n a President; and"
+    - "Section 101:\n Second appeal on no other grounds.\n No second appeal shall lie except on the ground mentioned in section\
+      \ 100."
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Normalize/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-23T07:37:14.000Z'
+safetensors:
+  parameters:
+    F32: 109486464
+  total: 109486464
+usedStorage: 437967672
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - MPNetModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  dtype: float32
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 514
+  model_type: mpnet
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 1
+  relative_attention_num_buckets: 32
+  tie_word_embeddings: true
+  transformers_version: 5.15.1
+  use_cache: false
+  vocab_size: 30527
+onnxFiles: {}
+safetensorsSizeMb: 438.0
+approxSizeMb: 437.9
+fetchedAt: '2026-10-23T08:26:04.000Z'

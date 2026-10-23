@@ -1,0 +1,76 @@
+_id: 6ad99b16b701bb3784accfc5
+id: mrochk/unifyrna_mrnafm_rnafm_10-21-06-41-08
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- encoder
+- feature-extraction
+- custom_code
+- arxiv:1910.09700
+- region:us
+downloads: 3
+likes: 0
+modelId: mrochk/unifyrna_mrnafm_rnafm_10-21-06-41-08
+author: mrochk
+sha: 13124fcf85e3a3b07328dafa237a3b73793daa84
+lastModified: '2026-10-22T05:11:55.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - Encoder
+  auto_map:
+    AutoConfig: student.EncoderConfig
+    AutoModel: student.Encoder
+  model_type: encoder
+cardData:
+  library_name: transformers
+  tags: []
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: student.Encoder
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: losses.py
+- rfilename: model.safetensors
+- rfilename: student.py
+- rfilename: utils.py
+spaces: []
+createdAt: '2026-10-22T05:11:50.000Z'
+safetensors:
+  parameters:
+    F32: 103059456
+  total: 103059456
+usedStorage: 412244848
+downloadsAllTime: 3
+inferenceProviderMapping: {}
+configJson:
+  activation: gelu
+  architectures:
+  - Encoder
+  auto_map:
+    AutoConfig: student.EncoderConfig
+    AutoModel: student.Encoder
+  bias: false
+  d_model: 768
+  dim_feedforward: 5120
+  dtype: float32
+  hidden_size: 768
+  max_position: 1022
+  model_type: encoder
+  n_head: 12
+  n_layers: 10
+  pad_token_id: 0
+  transformers_version: 5.15.1
+  vocab_size: 28
+onnxFiles: {}
+safetensorsSizeMb: 412.2
+approxSizeMb: 412.2
+fetchedAt: '2026-10-23T08:26:04.000Z'

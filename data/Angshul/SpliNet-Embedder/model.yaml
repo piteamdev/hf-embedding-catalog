@@ -1,0 +1,61 @@
+_id: 6ada2f7cde73f3e649eb1fca
+id: Angshul/SpliNet-Embedder
+private: false
+pipeline_tag: feature-extraction
+tags:
+- sentence-embeddings
+- sentence-similarity
+- splinet
+- torchscript
+- feature-extraction
+- en
+- license:agpl-3.0
+- region:us
+downloads: 0
+likes: 0
+modelId: Angshul/SpliNet-Embedder
+author: Angshul
+sha: 795547db493ee4b7f9a8328951e7535966f6dd8c
+lastModified: '2026-10-22T15:45:24.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: agpl-3.0
+  pipeline_tag: feature-extraction
+  language:
+  - en
+  tags:
+  - sentence-embeddings
+  - sentence-similarity
+  - splinet
+  - torchscript
+siblings:
+- rfilename: .gitattributes
+- rfilename: MANIFEST.json
+- rfilename: README.md
+- rfilename: api.py
+- rfilename: evaluation/FINAL_EVALUATION_SUMMARY.json
+- rfilename: evaluation/STSBenchmark.json
+- rfilename: evaluation/SciFact.json
+- rfilename: evaluation/TwentyNewsgroupsClustering.json
+- rfilename: evaluation/inference_vram_autotune.json
+- rfilename: model_info.json
+- rfilename: requirements.txt
+- rfilename: spiece.model
+- rfilename: splinet_embedder.ts
+- rfilename: splinet_embedder_full_qqp.pt
+- rfilename: training/TRAINING_COMPLETE.json
+- rfilename: training/embedder_config.json
+- rfilename: training/vram_autotune.json
+spaces: []
+createdAt: '2026-10-22T15:45:00.000Z'
+usedStorage: 659327457
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-23T08:26:04.000Z'

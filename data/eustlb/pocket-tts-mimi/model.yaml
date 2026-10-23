@@ -1,0 +1,75 @@
+_id: 6ada31b88471772857fd37fc
+id: eustlb/pocket-tts-mimi
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- pocket_tts_audio_tokenizer
+- feature-extraction
+- audio
+- codec
+- base_model:kyutai/pocket-tts
+- base_model:finetune:kyutai/pocket-tts
+- license:cc-by-4.0
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: eustlb/pocket-tts-mimi
+author: eustlb
+sha: a1328015d7e62fe9fcbed4d96d760b744b46cbb1
+lastModified: '2026-10-22T15:54:35.000Z'
+gated: auto
+disabled: false
+model-index: null
+config:
+  architectures:
+  - PocketTTSAudioTokenizerModel
+  model_type: pocket_tts_audio_tokenizer
+cardData:
+  license: cc-by-4.0
+  library_name: transformers
+  base_model: kyutai/pocket-tts
+  tags:
+  - audio
+  - codec
+  extra_gated_prompt: 'Prohibited use: Use of our model must comply with all applicable laws and regulations and must not
+    result in, involve, or facilitate any illegal, harmful, deceptive, fraudulent, or unauthorized activity. Prohibited uses
+    include, without limitation, voice impersonation or cloning without explicit and lawful consent; misinformation, disinformation,
+    or deception (including fake news, fraudulent calls, or presenting generated content as genuine recordings of real people
+    or events); and the generation of unlawful, harmful, libelous, abusive, harassing, discriminatory, hateful, or privacy-invasive
+    content. We disclaim all liability for any non-compliant use.'
+  extra_gated_fields:
+    Company or university if applicable: text
+    I want to use this model for:
+      type: select
+      options:
+      - Work
+      - Studies
+      - Fun
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoFeatureExtractor
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: preprocessor_config.json
+spaces: []
+createdAt: '2026-10-22T15:54:32.000Z'
+safetensors:
+  parameters:
+    F32: 20054337
+  total: 20054337
+usedStorage: 80229028
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 80.2
+approxSizeMb: 80.2
+fetchedAt: '2026-10-23T08:26:04.000Z'

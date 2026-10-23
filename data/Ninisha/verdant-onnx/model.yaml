@@ -1,0 +1,62 @@
+_id: 6adb0936e7666d8b83cdd892
+id: Ninisha/verdant-onnx
+private: false
+pipeline_tag: sentence-similarity
+tags:
+- onnx
+- int8
+- image-classification
+- sentence-similarity
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: Ninisha/verdant-onnx
+author: Ninisha
+sha: 1511375d20935c1681176f635c6be44bd381a808
+lastModified: '2026-10-23T07:14:23.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  tags:
+  - onnx
+  - int8
+  - image-classification
+  - sentence-similarity
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: disease/config.json
+- rfilename: disease/model.onnx
+- rfilename: disease/preprocessor_config.json
+- rfilename: embed/config.json
+- rfilename: embed/model.onnx
+- rfilename: embed/special_tokens_map.json
+- rfilename: embed/tokenizer.json
+- rfilename: embed/tokenizer_config.json
+- rfilename: embed/vocab.txt
+- rfilename: species/config.json
+- rfilename: species/model.onnx
+- rfilename: species/preprocessor_config.json
+spaces: []
+createdAt: '2026-10-23T07:13:58.000Z'
+usedStorage: 115744249
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  disease/model.onnx: 6.0
+  embed/model.onnx: 22.8
+  species/model.onnx: 86.9
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-23T08:26:04.000Z'

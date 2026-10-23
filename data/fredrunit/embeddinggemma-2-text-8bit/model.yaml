@@ -1,0 +1,163 @@
+_id: 6ada4b4e0d163e293d449d7a
+id: fredrunit/embeddinggemma-2-text-8bit
+private: false
+pipeline_tag: sentence-similarity
+library_name: mlx
+tags:
+- mlx
+- safetensors
+- embedding_gemma2
+- embeddings
+- text-embeddings
+- sentence-similarity
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:apache-2.0
+- 8-bit
+- region:us
+downloads: 0
+likes: 0
+modelId: fredrunit/embeddinggemma-2-text-8bit
+author: fredrunit
+sha: 997ec044777adb0f8e26f7448a8d92df54316c35
+lastModified: '2026-10-22T17:43:53.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config:
+  architectures:
+  - EmbeddingGemma2Model
+  model_type: embedding_gemma2
+  quantization_config:
+    bits: 8
+  tokenizer_config:
+    bos_token: <bos>
+    eos_token: <eos>
+    mask_token: <mask>
+    pad_token: <pad>
+    unk_token: <unk>
+cardData:
+  license: apache-2.0
+  base_model: google/embeddinggemma-2
+  library_name: mlx
+  pipeline_tag: sentence-similarity
+  tags:
+  - mlx
+  - embeddings
+  - text-embeddings
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Normalize/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: model.safetensors.index.json
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-22T17:43:42.000Z'
+safetensors:
+  parameters:
+    U32: 270925824
+    BF16: 76824
+  total: 271002648
+usedStorage: 320286379
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - EmbeddingGemma2Model
+  dtype: bfloat16
+  initializer_range: 0.02
+  model_type: embedding_gemma2
+  quantization:
+    bits: 8
+    group_size: 64
+    mode: affine
+  quantization_config:
+    bits: 8
+    group_size: 64
+    mode: affine
+  text_config:
+    attention_bias: false
+    attention_dropout: 0.0
+    bos_token_id: 2
+    dtype: bfloat16
+    embedding_dim: 768
+    eos_token_id: 1
+    head_dim: 256
+    hidden_activation: gelu_pytorch_tanh
+    hidden_size: 512
+    hidden_size_per_layer_input: 512
+    initializer_range: 0.02
+    intermediate_size: 2048
+    layer_types:
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    max_position_embeddings: 262144
+    model_type: embedding_gemma2_text
+    num_attention_heads: 4
+    num_hidden_layers: 24
+    num_key_value_heads: 2
+    pad_token_id: 0
+    per_layer_config:
+      '05':
+        head_dim: 512
+        num_key_value_heads: 1
+      '11':
+        head_dim: 512
+        num_key_value_heads: 1
+      '17':
+        head_dim: 512
+        num_key_value_heads: 1
+      '23':
+        head_dim: 512
+        num_key_value_heads: 1
+    rms_norm_eps: 1.0e-06
+    rope_parameters:
+      full_attention:
+        rope_theta: 1000000.0
+        rope_type: default
+      sliding_attention:
+        rope_theta: 10000.0
+        rope_type: default
+    sliding_window: 512
+    vocab_size: 262144
+  transformers_version: 5.18.0.dev0
+onnxFiles: {}
+safetensorsSizeMb: 288.1
+approxSizeMb: 1083.9
+fetchedAt: '2026-10-23T08:26:04.000Z'

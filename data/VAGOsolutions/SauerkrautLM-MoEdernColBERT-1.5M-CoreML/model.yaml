@@ -1,0 +1,115 @@
+_id: 6ad66668c50355ceb659f0ef
+id: VAGOsolutions/SauerkrautLM-MoEdernColBERT-1.5M-CoreML
+private: false
+pipeline_tag: sentence-similarity
+tags:
+- coreml
+- mlpackage
+- apple-silicon
+- neural-engine
+- ColBERT
+- late-interaction
+- multi-vector
+- mixture-of-experts
+- moedernbert
+- retrieval
+- german
+- multilingual
+- sentence-similarity
+- de
+- en
+- es
+- nl
+- fr
+- it
+- pt
+- base_model:VAGOsolutions/SauerkrautLM-MoEdernColBERT-1.5M
+- base_model:quantized:VAGOsolutions/SauerkrautLM-MoEdernColBERT-1.5M
+- license:apache-2.0
+- region:us
+downloads: 3
+likes: 0
+modelId: VAGOsolutions/SauerkrautLM-MoEdernColBERT-1.5M-CoreML
+author: VAGOsolutions
+sha: 98cd0111d3d66fc30988812be96cb8f4a0a0dac5
+lastModified: '2026-10-23T15:25:15.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: Das ist eine glückliche Person
+  sentences:
+  - Das ist ein glücklicher Hund
+  - Das ist eine sehr glückliche Person
+  - Heute ist ein sonniger Tag
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  language:
+  - de
+  - en
+  - es
+  - nl
+  - fr
+  - it
+  - pt
+  base_model: VAGOsolutions/SauerkrautLM-MoEdernColBERT-1.5M
+  base_model_relation: quantized
+  pipeline_tag: sentence-similarity
+  tags:
+  - coreml
+  - mlpackage
+  - apple-silicon
+  - neural-engine
+  - ColBERT
+  - late-interaction
+  - multi-vector
+  - mixture-of-experts
+  - moedernbert
+  - retrieval
+  - german
+  - multilingual
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-fp16-doc-16x512.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-fp16-doc-16x512.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-fp16-doc-16x512.mlpackage/Manifest.json
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-fp16-doc-1x256.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-fp16-doc-1x256.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-fp16-doc-1x256.mlpackage/Manifest.json
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-fp16-query-1x32.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-fp16-query-1x32.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-fp16-query-1x32.mlpackage/Manifest.json
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-int8-doc-16x512.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-int8-doc-16x512.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-int8-doc-16x512.mlpackage/Manifest.json
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-int8-doc-1x256.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-int8-doc-1x256.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-int8-doc-1x256.mlpackage/Manifest.json
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-int8-query-1x32.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-int8-query-1x32.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-int8-query-1x32.mlpackage/Manifest.json
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-pal4-doc-16x512.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-pal4-doc-16x512.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-pal4-doc-16x512.mlpackage/Manifest.json
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-pal4-doc-1x256.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-pal4-doc-1x256.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-pal4-doc-1x256.mlpackage/Manifest.json
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-pal4-query-1x32.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-pal4-query-1x32.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: SauerkrautLM-MoEdernColBERT-1.5M-pal4-query-1x32.mlpackage/Manifest.json
+- rfilename: example.py
+- rfilename: moedern_coreml.py
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-10-19T18:50:16.000Z'
+usedStorage: 16877581
+downloadsAllTime: 3
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-24T08:01:29.000Z'

@@ -1,0 +1,112 @@
+_id: 6adb2165be2997203f84de21
+id: xjc1022/MELP-repro
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- melp
+- feature-extraction
+- ecg
+- electrocardiogram
+- zero-shot
+- multimodal
+- custom_code
+- arxiv:2506.21803
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: xjc1022/MELP-repro
+author: xjc1022
+sha: c1ad3dd6d008414441555ec292203d7a2ea7170c
+lastModified: '2026-10-23T08:57:34.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  architectures:
+  - MELPModel
+  auto_map:
+    AutoConfig: configuration_melp.MELPConfig
+    AutoModel: modeling_melp.MELPModel
+  model_type: melp
+  tokenizer_config:
+    bos_token: '[BOS]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  library_name: transformers
+  license: apache-2.0
+  tags:
+  - ecg
+  - electrocardiogram
+  - melp
+  - zero-shot
+  - multimodal
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_melp.MELPModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: added_tokens.json
+- rfilename: config.json
+- rfilename: configuration_melp.py
+- rfilename: model.safetensors
+- rfilename: modeling_melp.py
+- rfilename: prompts/CKEPE_prompt.json
+- rfilename: prompts/dataset_class_names.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: vocab.txt
+spaces: []
+createdAt: '2026-10-23T08:57:09.000Z'
+safetensors:
+  parameters:
+    F32: 174749952
+  total: 174749952
+usedStorage: 699047832
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - MELPModel
+  attn_pooler_heads: 8
+  auto_map:
+    AutoConfig: configuration_melp.MELPConfig
+    AutoModel: modeling_melp.MELPModel
+  drop: 0.0
+  embed_dim_caption: 768
+  max_seq_len: 128
+  model_size: small
+  model_type: melp
+  n_queries_caption: 128
+  n_queries_contrast: 12
+  num_leads: 12
+  proj: linear
+  proj_bias: false
+  shared_emb_dim: 256
+  text_cls_token_id: 2
+  text_config:
+    _attn_implementation_autoset: true
+    is_decoder: true
+    model_type: bert
+    torch_dtype: float32
+    vocab_size: 30523
+  text_proj_hidden: 256
+  torch_dtype: float32
+  transformers_version: 4.47.0
+  use_attentional_pool_caption: true
+  use_attentional_pool_contrast: true
+onnxFiles: {}
+safetensorsSizeMb: 699.0
+approxSizeMb: 699.0
+fetchedAt: '2026-10-24T08:01:29.000Z'

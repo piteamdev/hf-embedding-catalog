@@ -1,0 +1,249 @@
+_id: 6aca0d28e431a8f2d5651def
+id: zoebchhatriwala/Zesyde-2B-Multimodal-Router
+private: false
+pipeline_tag: feature-extraction
+tags:
+- pytorch
+- safetensors
+- gemma4
+- multimodal
+- decision-router
+- agent-routing
+- onnx
+- gemma
+- multilingual
+- feature-extraction
+- en
+- fr
+- de
+- es
+- zh
+- ar
+- hi
+- ja
+- ru
+- pt
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 9
+modelId: zoebchhatriwala/Zesyde-2B-Multimodal-Router
+author: zoebchhatriwala
+sha: 2378d3d691fb0772f3b698f26cf8b7ebd511104c
+lastModified: '2026-10-23T16:06:26.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - Gemma4ForConditionalGeneration
+  model_type: gemma4
+  tokenizer_config:
+    bos_token: <bos>
+    eos_token: <eos>
+    mask_token: <mask>
+    pad_token: <pad>
+    unk_token: <unk>
+cardData:
+  license: apache-2.0
+  tags:
+  - multimodal
+  - decision-router
+  - agent-routing
+  - onnx
+  - gemma
+  - multilingual
+  pipeline_tag: feature-extraction
+  language:
+  - en
+  - fr
+  - de
+  - es
+  - zh
+  - ar
+  - hi
+  - ja
+  - ru
+  - pt
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: calibration.json
+- rfilename: config.json
+- rfilename: model.pt
+- rfilename: model.safetensors
+- rfilename: pytorch_model.bin
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-10T10:02:16.000Z'
+safetensors:
+  parameters:
+    F32: 5186818
+    BF16: 5104297539
+  total: 5109484357
+usedStorage: 98259764966
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - Gemma4ForConditionalGeneration
+  audio_config:
+    attention_chunk_size: 12
+    attention_context_left: 13
+    attention_context_right: 0
+    attention_invalid_logits_value: -1000000000.0
+    attention_logit_cap: 50.0
+    conv_kernel_size: 5
+    dtype: bfloat16
+    gradient_clipping: 10000000000.0
+    hidden_act: silu
+    hidden_size: 1024
+    initializer_range: 0.02
+    model_type: gemma4_audio
+    num_attention_heads: 8
+    num_hidden_layers: 12
+    output_proj_dims: 1536
+    residual_weight: 0.5
+    rms_norm_eps: 1.0e-06
+    subsampling_conv_channels:
+    - 128
+    - 32
+    use_clipped_linears: true
+  audio_token_id: 258881
+  boa_token_id: 256000
+  boi_token_id: 255999
+  dtype: bfloat16
+  eoa_token_id: 258883
+  eoa_token_index: 258883
+  eoi_token_id: 258882
+  image_token_id: 258880
+  initializer_range: 0.02
+  model_type: gemma4
+  text_config:
+    attention_bias: false
+    attention_dropout: 0.0
+    attention_k_eq_v: false
+    bos_token_id: 2
+    dtype: bfloat16
+    enable_moe_block: false
+    eos_token_id: 1
+    expert_intermediate_size: null
+    final_logit_softcapping: 30.0
+    head_dim: 256
+    hidden_activation: gelu_pytorch_tanh
+    hidden_size: 1536
+    hidden_size_per_layer_input: 256
+    initializer_range: 0.02
+    intermediate_size: 6144
+    layer_types:
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    max_position_embeddings: 131072
+    model_type: gemma4_text
+    moe_intermediate_size: null
+    num_attention_heads: 8
+    num_experts: null
+    num_hidden_layers: 35
+    num_key_value_heads: 1
+    num_kv_shared_layers: 20
+    pad_token_id: 0
+    per_layer_config:
+      '04':
+        head_dim: 512
+      09:
+        head_dim: 512
+      '14':
+        head_dim: 512
+      '19':
+        head_dim: 512
+      '24':
+        head_dim: 512
+      '29':
+        head_dim: 512
+      '34':
+        head_dim: 512
+    rms_norm_eps: 1.0e-06
+    rope_parameters:
+      full_attention:
+        partial_rotary_factor: 0.25
+        rope_theta: 1000000.0
+        rope_type: proportional
+      sliding_attention:
+        rope_theta: 10000.0
+        rope_type: default
+    sliding_window: 512
+    tie_word_embeddings: true
+    top_k_experts: null
+    use_bidirectional_attention: null
+    use_cache: false
+    use_double_wide_mlp: true
+    vocab_size: 262144
+    vocab_size_per_layer_input: 262144
+  tie_word_embeddings: true
+  transformers_version: 5.20.2
+  video_token_id: 258884
+  vision_config:
+    attention_bias: false
+    attention_dropout: 0.0
+    default_output_length: 280
+    dtype: bfloat16
+    global_head_dim: 64
+    head_dim: 64
+    hidden_activation: gelu_pytorch_tanh
+    hidden_size: 768
+    initializer_range: 0.02
+    intermediate_size: 3072
+    max_position_embeddings: 131072
+    model_type: gemma4_vision
+    num_attention_heads: 12
+    num_hidden_layers: 16
+    num_key_value_heads: 12
+    patch_size: 16
+    pooling_kernel_size: 3
+    position_embedding_size: 10240
+    rms_norm_eps: 1.0e-06
+    rope_parameters:
+      rope_theta: 100.0
+      rope_type: axial
+    standardize: false
+    use_clipped_linears: true
+  vision_soft_tokens_per_image: 280
+onnxFiles: {}
+safetensorsSizeMb: 10229.6
+approxSizeMb: 10229.3
+fetchedAt: '2026-10-24T08:01:29.000Z'

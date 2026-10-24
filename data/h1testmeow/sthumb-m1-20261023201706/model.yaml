@@ -1,0 +1,55 @@
+_id: 6adbf901fe62bfd2fcd61c1f
+id: h1testmeow/sthumb-m1-20261023201706
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- feature-extraction
+- canary-tag
+- <b>tag</b>&amp;
+- license:mit
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: h1testmeow/sthumb-m1-20261023201706
+author: h1testmeow
+sha: 1df2080aa37c37fb305b20fca3c94c12cef47dd2
+lastModified: '2026-10-24T00:17:06.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - CanaryModel
+cardData:
+  title: MT1<b>B</b>&amp;<i>I</i><img src=x onerror="document.body.style.background='#ff00ff'">
+  pretty_name: MP1<b>P</b>&amp;<i>J</i>
+  emoji: <b>ME</b>
+  colorFrom: red
+  colorTo: blue
+  tags:
+  - canary-tag
+  - <b>tag</b>&amp;
+  license: mit
+  library_name: transformers
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+spaces: []
+createdAt: '2026-10-24T00:17:05.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - CanaryModel
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-24T08:01:29.000Z'

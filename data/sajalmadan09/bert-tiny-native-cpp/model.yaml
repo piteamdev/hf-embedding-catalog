@@ -17,7 +17,7 @@ tags:
 - base_model:finetune:prajjwal1/bert-tiny
 - license:mit
 - region:us
-downloads: 89
+downloads: 88
 likes: 2
 modelId: sajalmadan09/bert-tiny-native-cpp
 author: sajalmadan09
@@ -121,4 +121,4 @@ onnxFiles:
   model.onnx: 0.0
 safetensorsSizeMb: 17.5
 approxSizeMb: 17.5
-fetchedAt: '2026-10-23T08:26:04.000Z'
+fetchedAt: '2026-10-24T08:01:29.000Z'

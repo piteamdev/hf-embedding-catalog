@@ -176,4 +176,4 @@ onnxFiles:
   onnx/model_quint8_avx2.onnx: 0.0
 safetensorsSizeMb: 0.0
 approxSizeMb: 0.0
-fetchedAt: '2026-10-23T08:26:04.000Z'
+fetchedAt: '2026-10-24T08:01:29.000Z'

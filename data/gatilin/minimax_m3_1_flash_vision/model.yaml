@@ -1,0 +1,121 @@
+_id: 6adb84f08d92a1d8cb3d8ee9
+id: gatilin/minimax_m3_1_flash_vision
+private: false
+pipeline_tag: feature-extraction
+library_name: pytorch
+tags:
+- pytorch
+- safetensors
+- minimax_m3_1_flash_vision_bundle
+- vision
+- vision-encoder
+- vit
+- minimax
+- feature-extraction
+- base_model:MiniMaxAI/MiniMax-M3.1-Flash
+- base_model:finetune:MiniMaxAI/MiniMax-M3.1-Flash
+- license:other
+- region:us
+downloads: 0
+likes: 0
+modelId: gatilin/minimax_m3_1_flash_vision
+author: gatilin
+sha: 7fc9562e7cfb4780c0ef93627855dee9cb471b95
+lastModified: '2026-10-23T16:21:28.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: minimax_m3_1_flash_vision_bundle
+  architectures:
+  - VisionBundle
+cardData:
+  license: other
+  license_name: minimax-community-license-m3-1-flash
+  license_link: https://huggingface.co/gatilin/minimax_m3_1_flash_vision/blob/main/LICENSE
+  library_name: pytorch
+  tags:
+  - vision
+  - vision-encoder
+  - vit
+  - minimax
+  - feature-extraction
+  base_model: MiniMaxAI/MiniMax-M3.1-Flash
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: LICENSE_NVIDIA_APACHE_2_0
+- rfilename: LICENSE_SGLANG_APACHE_2_0
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: SOURCE_MODEL_CARD.md
+- rfilename: component.py
+- rfilename: config.json
+- rfilename: extract_vit.py
+- rfilename: extraction.json
+- rfilename: extraction_source/README.md
+- rfilename: extraction_source/api_blobs.json
+- rfilename: extraction_source/header_audit.json
+- rfilename: extraction_source/source/model.safetensors.index.json
+- rfilename: image_processor.py
+- rfilename: native/vision_encoder.py
+- rfilename: preprocessor_config.json
+- rfilename: projector.safetensors
+- rfilename: reference/minimax_vl_common.py
+- rfilename: release_manifest.json
+- rfilename: requirements.txt
+- rfilename: source_config.json
+- rfilename: source_provenance.json
+- rfilename: tensor_mapping.json
+- rfilename: tensor_sha256.json
+- rfilename: validation.json
+- rfilename: verify_release.py
+- rfilename: vision_config.json
+- rfilename: vit.safetensors
+spaces: []
+createdAt: '2026-10-23T16:01:52.000Z'
+usedStorage: 1734216488
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  model_type: minimax_m3_1_flash_vision_bundle
+  architectures:
+  - VisionBundle
+  source_repo: MiniMaxAI/MiniMax-M3.1-Flash
+  source_revision: 54e4e69dfc452b1e94a426c24a4fdeeaa8e3ad5e
+  vision_config:
+    hidden_size: 1280
+    num_attention_heads: 16
+    num_hidden_layers: 32
+    intermediate_size: 5120
+    patch_size: 14
+    image_size: 672
+    projection_dim: 6144
+    position_embedding_type: rope
+    rope_mode: 3d
+    rope_theta: 10000.0
+    attention_dropout: 0.0
+    hidden_act: gelu
+    initializer_factor: 1.0
+    initializer_range: 0.02
+    layer_norm_eps: 1.0e-05
+    model_type: clip_vision_model
+    num_channels: 3
+    vocab_size: 32000
+    img_token_compression_config:
+      image_token_compression_method: patch_merge
+      spatial_merge_size: 2
+      temporal_patch_size: 2
+    vision_segment_max_frames: 4
+  projector_hidden_size: 6144
+  output_embedding_dim: 6144
+  loader: component.load_model
+  vit_only_loader: component.load_vit
+  language_model_included: false
+  stored_dtype:
+  - BF16
+  - F32
+onnxFiles: {}
+safetensorsSizeMb: 1734.2
+approxSizeMb: 0.0
+fetchedAt: '2026-10-24T08:01:29.000Z'

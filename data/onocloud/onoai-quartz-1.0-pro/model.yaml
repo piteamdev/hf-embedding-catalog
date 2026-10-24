@@ -1,0 +1,91 @@
+_id: 6ac00943f4f1ce50a9787ab6
+id: onocloud/onoai-quartz-1.0-pro
+private: false
+pipeline_tag: feature-extraction
+tags:
+- pytorch
+- xlm-roberta
+- onoai
+- feature-extraction
+- embeddings
+- rag
+- vector-search
+- semantic-search
+- accounting
+- erp
+- ar
+- en
+- license:other
+- region:us
+downloads: 0
+likes: 0
+modelId: onocloud/onoai-quartz-1.0-pro
+author: onocloud
+sha: 27da9012863376c01b01e5479eb573a02deb2468
+lastModified: '2026-10-24T01:55:54.000Z'
+gated: manual
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - XLMRobertaModel
+  model_type: xlm-roberta
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token:
+      __type: AddedToken
+      content: <mask>
+      lstrip: true
+      normalized: true
+      rstrip: false
+      single_word: false
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: <unk>
+cardData:
+  license: other
+  license_name: onocloud-sovereign-license
+  license_link: LICENSE
+  tags:
+  - onoai
+  - feature-extraction
+  - embeddings
+  - rag
+  - vector-search
+  - semantic-search
+  - accounting
+  - erp
+  language:
+  - ar
+  - en
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: colbert_linear.pt
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: long.jpg
+- rfilename: modules.json
+- rfilename: pytorch_model.bin
+- rfilename: sentence_bert_config.json
+- rfilename: sentencepiece.bpe.model
+- rfilename: sparse_linear.pt
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-02T19:42:59.000Z'
+usedStorage: 2295544073
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-24T08:01:29.000Z'

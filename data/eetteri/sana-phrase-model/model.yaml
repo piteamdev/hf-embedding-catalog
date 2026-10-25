@@ -1,0 +1,59 @@
+_id: 6adc97148a9fcd3cba8079a8
+id: eetteri/sana-phrase-model
+private: false
+pipeline_tag: sentence-similarity
+library_name: coreml
+tags:
+- coreml
+- sentence-embeddings
+- macos
+- sentence-similarity
+- multilingual
+- en
+- fi
+- base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- base_model:quantized:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: eetteri/sana-phrase-model
+author: eetteri
+sha: 693c3d7ffaadc71a8278bdefdd206ffae2714afc
+lastModified: '2026-10-24T11:31:43.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  library_name: coreml
+  pipeline_tag: sentence-similarity
+  language:
+  - multilingual
+  - en
+  - fi
+  tags:
+  - coreml
+  - sentence-embeddings
+  - macos
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: SanaPhraseEmbedder.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: SanaPhraseEmbedder.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: SanaPhraseEmbedder.mlpackage/Manifest.json
+- rfilename: tokenizer/special_tokens_map.json
+- rfilename: tokenizer/tokenizer.json
+- rfilename: tokenizer/tokenizer_config.json
+spaces: []
+createdAt: '2026-10-24T11:31:32.000Z'
+usedStorage: 135225459
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-25T08:18:06.000Z'

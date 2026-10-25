@@ -1,0 +1,105 @@
+_id: 6add19b152d20fe5eabc7234
+id: Walkowicz/kairos-pi-large-1.0
+private: false
+pipeline_tag: feature-extraction
+tags:
+- safetensors
+- kairos_pi_large
+- decision-model
+- non-autoregressive
+- system-1
+- modernbert
+- scada
+- adas
+- industrial-iot
+- robotics
+- risk-vector
+- active-abstention
+- feature-extraction
+- custom_code
+- en
+- base_model:answerdotai/ModernBERT-large
+- base_model:finetune:answerdotai/ModernBERT-large
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: Walkowicz/kairos-pi-large-1.0
+author: Walkowicz
+sha: 6b93066770b0a3eae4199f73d212110bb96dc300
+lastModified: '2026-10-24T21:09:16.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  architectures:
+  - KairosPILargeForDecision
+  auto_map:
+    AutoConfig: config.KairosPILargeConfig
+    AutoModel: modeling_kairos_pi_large.KairosPILargeForDecision
+  model_type: kairos_pi_large
+  tokenizer_config:
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  language:
+  - en
+  license: apache-2.0
+  base_model: answerdotai/ModernBERT-large
+  pretty_name: Kairos PI Large 1.0
+  tags:
+  - decision-model
+  - non-autoregressive
+  - system-1
+  - modernbert
+  - scada
+  - adas
+  - industrial-iot
+  - robotics
+  - risk-vector
+  - active-abstention
+  - safetensors
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: BENCHMARK.md
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: kairos-logo.png
+- rfilename: model.safetensors
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-24T20:48:49.000Z'
+safetensors:
+  parameters:
+    F32: 399511302
+  total: 399511302
+usedStorage: 1598389180
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - KairosPILargeForDecision
+  auto_map:
+    AutoConfig: config.KairosPILargeConfig
+    AutoModel: modeling_kairos_pi_large.KairosPILargeForDecision
+  model_type: kairos_pi_large
+  base_model: answerdotai/ModernBERT-large
+  hidden_size: 1024
+  intermediate_size: 2688
+  num_attention_heads: 16
+  num_hidden_layers: 28
+  max_position_embeddings: 8192
+  confidence_threshold: 0.4
+  entropy_threshold: 0.75
+  brier_loss_weight: 0.5
+  temperature: 1.0
+onnxFiles: {}
+safetensorsSizeMb: 1598.1
+approxSizeMb: 1598.0
+fetchedAt: '2026-10-25T08:18:06.000Z'

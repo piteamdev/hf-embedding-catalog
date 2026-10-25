@@ -1,0 +1,228 @@
+_id: 6adb9c354b2f05c785fabc15
+id: nynefold/pplx-embed-v1-0.6b-ONNX
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- onnxruntime
+- quantized
+- int4
+- int8
+- embeddings
+- multilingual
+- feature-extraction
+- dataset:nynefold/FreshRet-Small
+- dataset:mteb/MIRACLReranking
+- base_model:perplexity-ai/pplx-embed-v1-0.6b
+- base_model:quantized:perplexity-ai/pplx-embed-v1-0.6b
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: nynefold/pplx-embed-v1-0.6b-ONNX
+author: nynefold
+sha: f7168eb69ca89b7539803c79cc7a47c0fe9cdae3
+lastModified: '2026-10-24T14:23:54.000Z'
+gated: false
+disabled: false
+mask_token: â½Ĺ
+model-index: null
+config:
+  tokenizer_config:
+    bos_token: null
+    eos_token: <|endoftext|>
+    mask_token: â½Ĺ
+    pad_token: <|endoftext|>
+    sep_token: <|endoftext|>
+    unk_token: null
+cardData:
+  license: mit
+  base_model: perplexity-ai/pplx-embed-v1-0.6b
+  base_model_relation: quantized
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  tags:
+  - onnx
+  - onnxruntime
+  - quantized
+  - int4
+  - int8
+  - embeddings
+  - multilingual
+  datasets:
+  - nynefold/FreshRet-Small
+  - mteb/MIRACLReranking
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: added_tokens.json
+- rfilename: config.json
+- rfilename: e32-w8-rtn-a4/model.onnx
+- rfilename: e32-w8-rtn-a4/model.onnx.data
+- rfilename: e32-w8-rtn-a4/recipe.json
+- rfilename: e4-w4-rtn-a4/model.onnx
+- rfilename: e4-w4-rtn-a4/model.onnx.data
+- rfilename: e4-w4-rtn-a4/recipe.json
+- rfilename: e8-w4-gptq-a4/model.onnx
+- rfilename: e8-w4-gptq-a4/model.onnx.data
+- rfilename: e8-w4-gptq-a4/recipe.json
+- rfilename: e8-w4-gptq-sq50-a4/model.onnx
+- rfilename: e8-w4-gptq-sq50-a4/model.onnx.data
+- rfilename: e8-w4-gptq-sq50-a4/recipe.json
+- rfilename: e8-w4-hqq-a0/model.onnx
+- rfilename: e8-w4-hqq-a0/model.onnx.data
+- rfilename: e8-w4-hqq-a0/recipe.json
+- rfilename: e8-w4-mse-a4/model.onnx
+- rfilename: e8-w4-mse-a4/model.onnx.data
+- rfilename: e8-w4-mse-a4/recipe.json
+- rfilename: e8-w4-rtn-a4/model.onnx
+- rfilename: e8-w4-rtn-a4/model.onnx.data
+- rfilename: e8-w4-rtn-a4/recipe.json
+- rfilename: e8-w4-rtn-b128-a4/model.onnx
+- rfilename: e8-w4-rtn-b128-a4/model.onnx.data
+- rfilename: e8-w4-rtn-b128-a4/recipe.json
+- rfilename: e8-w4-rtn-sym-a4/model.onnx
+- rfilename: e8-w4-rtn-sym-a4/model.onnx.data
+- rfilename: e8-w4-rtn-sym-a4/recipe.json
+- rfilename: e8-w8-rtn-a0/model.onnx
+- rfilename: e8-w8-rtn-a0/model.onnx.data
+- rfilename: e8-w8-rtn-a0/recipe.json
+- rfilename: e8-w8-rtn-a4/model.onnx
+- rfilename: e8-w8-rtn-a4/model.onnx.data
+- rfilename: e8-w8-rtn-a4/recipe.json
+- rfilename: fig/quality.png
+- rfilename: inference.py
+- rfilename: merges.txt
+- rfilename: mix02-gptq-a4-pc/model.onnx
+- rfilename: mix02-gptq-a4-pc/model.onnx.data
+- rfilename: mix02-gptq-a4-pc/recipe.json
+- rfilename: mix02-gptq-a4-pc/tokenizer.json
+- rfilename: mix02-gptq-a4/model.onnx
+- rfilename: mix02-gptq-a4/model.onnx.data
+- rfilename: mix02-gptq-a4/recipe.json
+- rfilename: mix02-gptq-sq50-a4/model.onnx
+- rfilename: mix02-gptq-sq50-a4/model.onnx.data
+- rfilename: mix02-gptq-sq50-a4/recipe.json
+- rfilename: mix02-mse-a4/model.onnx
+- rfilename: mix02-mse-a4/model.onnx.data
+- rfilename: mix02-mse-a4/recipe.json
+- rfilename: mix02-msew-a4/model.onnx
+- rfilename: mix02-msew-a4/model.onnx.data
+- rfilename: mix02-msew-a4/recipe.json
+- rfilename: mix02-rtn-a4/model.onnx
+- rfilename: mix02-rtn-a4/model.onnx.data
+- rfilename: mix02-rtn-a4/recipe.json
+- rfilename: mix10-gptq-a4/model.onnx
+- rfilename: mix10-gptq-a4/model.onnx.data
+- rfilename: mix10-gptq-a4/recipe.json
+- rfilename: mix10-mse-a4/model.onnx
+- rfilename: mix10-mse-a4/model.onnx.data
+- rfilename: mix10-mse-a4/recipe.json
+- rfilename: mix10-msew-a4/model.onnx
+- rfilename: mix10-msew-a4/model.onnx.data
+- rfilename: mix10-msew-a4/recipe.json
+- rfilename: mix10-rtn-a4/model.onnx
+- rfilename: mix10-rtn-a4/model.onnx.data
+- rfilename: mix10-rtn-a4/recipe.json
+- rfilename: mix30-gptq-a4/model.onnx
+- rfilename: mix30-gptq-a4/model.onnx.data
+- rfilename: mix30-gptq-a4/recipe.json
+- rfilename: mix30-mse-a4/model.onnx
+- rfilename: mix30-mse-a4/model.onnx.data
+- rfilename: mix30-mse-a4/recipe.json
+- rfilename: mix30-msew-a4/model.onnx
+- rfilename: mix30-msew-a4/model.onnx.data
+- rfilename: mix30-msew-a4/recipe.json
+- rfilename: mix30-rtn-a4/model.onnx
+- rfilename: mix30-rtn-a4/model.onnx.data
+- rfilename: mix30-rtn-a4/recipe.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: variants.json
+- rfilename: vocab.json
+spaces: []
+createdAt: '2026-10-23T17:41:09.000Z'
+usedStorage: 12246617328
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  base_model: perplexity-ai/pplx-embed-v1-0.6b
+  recommended_variant: mix02-gptq-a4-pc
+  kind: embed
+  max_length: 512
+  pad_token: <|endoftext|>
+  add_special_tokens: true
+  query_prefix: ''
+  document_prefix: ''
+  pooling: mean
+  output: int8_tanh
+  similarity: cosine
+  outputs:
+    embedding: float32 [batch, 1024], mean-pooled; apply round(127 * tanh(x)) for the base model's native int8 embedding,
+      then compare by cosine
+  onnxruntime:
+    min_version: '1.31'
+    providers:
+    - CPUExecutionProvider
+    graph_optimization_level: ORT_ENABLE_ALL
+    inputs:
+      input_ids: int64 [batch, seq], right-padded
+      attention_mask: int64 [batch, seq], 1 = token
+  variants:
+  - e32-w8-rtn-a4
+  - e4-w4-rtn-a4
+  - e8-w4-gptq-a4
+  - e8-w4-gptq-sq50-a4
+  - e8-w4-hqq-a0
+  - e8-w4-mse-a4
+  - e8-w4-rtn-a4
+  - e8-w4-rtn-b128-a4
+  - e8-w4-rtn-sym-a4
+  - e8-w8-rtn-a0
+  - e8-w8-rtn-a4
+  - mix02-gptq-a4
+  - mix02-gptq-a4-pc
+  - mix02-gptq-sq50-a4
+  - mix02-mse-a4
+  - mix02-msew-a4
+  - mix02-rtn-a4
+  - mix10-gptq-a4
+  - mix10-mse-a4
+  - mix10-msew-a4
+  - mix10-rtn-a4
+  - mix30-gptq-a4
+  - mix30-mse-a4
+  - mix30-msew-a4
+  - mix30-rtn-a4
+onnxFiles:
+  e32-w8-rtn-a4/model.onnx: 0.4
+  e4-w4-rtn-a4/model.onnx: 0.4
+  e8-w4-gptq-a4/model.onnx: 0.4
+  e8-w4-gptq-sq50-a4/model.onnx: 0.4
+  e8-w4-hqq-a0/model.onnx: 0.4
+  e8-w4-mse-a4/model.onnx: 0.4
+  e8-w4-rtn-a4/model.onnx: 0.4
+  e8-w4-rtn-b128-a4/model.onnx: 0.4
+  e8-w4-rtn-sym-a4/model.onnx: 0.4
+  e8-w8-rtn-a0/model.onnx: 0.4
+  e8-w8-rtn-a4/model.onnx: 0.4
+  mix02-gptq-a4-pc/model.onnx: 0.4
+  mix02-gptq-a4/model.onnx: 0.4
+  mix02-gptq-sq50-a4/model.onnx: 0.4
+  mix02-mse-a4/model.onnx: 0.4
+  mix02-msew-a4/model.onnx: 0.4
+  mix02-rtn-a4/model.onnx: 0.4
+  mix10-gptq-a4/model.onnx: 0.4
+  mix10-mse-a4/model.onnx: 0.4
+  mix10-msew-a4/model.onnx: 0.4
+  mix10-rtn-a4/model.onnx: 0.4
+  mix30-gptq-a4/model.onnx: 0.4
+  mix30-mse-a4/model.onnx: 0.4
+  mix30-msew-a4/model.onnx: 0.4
+  mix30-rtn-a4/model.onnx: 0.4
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-25T08:18:06.000Z'

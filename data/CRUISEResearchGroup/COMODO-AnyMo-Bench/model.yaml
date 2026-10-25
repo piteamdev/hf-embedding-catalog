@@ -1,0 +1,138 @@
+_id: 6adccee50ef1b8f8734c46d4
+id: CRUISEResearchGroup/COMODO-AnyMo-Bench
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- joblib
+- safetensors
+- comodo
+- feature-extraction
+- imu
+- wearable-sensing
+- human-activity-recognition
+- time-series
+- cross-modal-distillation
+- svm
+- custom_code
+- en
+- dataset:CRUISEResearchGroup/AnyMo-Bench
+- arxiv:2605.22715
+- base_model:paris-noah/MantisV2
+- base_model:finetune:paris-noah/MantisV2
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: CRUISEResearchGroup/COMODO-AnyMo-Bench
+author: CRUISEResearchGroup
+sha: d948590d1eef4e9212cd97d07abae1e904ce42ea
+lastModified: '2026-10-24T16:56:00.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: comodo
+  architectures:
+  - ComodoBundle
+  auto_map:
+    AutoConfig: configuration_comodo.ComodoConfig
+    AutoModel: modeling_comodo.ComodoBundle
+    AutoProcessor: processing_comodo.ComodoProcessor
+cardData:
+  license: apache-2.0
+  language:
+  - en
+  library_name: transformers
+  pipeline_tag: feature-extraction
+  base_model:
+  - paris-noah/MantisV2
+  datasets:
+  - CRUISEResearchGroup/AnyMo-Bench
+  tags:
+  - imu
+  - wearable-sensing
+  - human-activity-recognition
+  - time-series
+  - cross-modal-distillation
+  - comodo
+  - svm
+  - custom_code
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_comodo.ComodoBundle
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: DATASET_TERMS.md
+- rfilename: LICENSE
+- rfilename: LICENSE-CODE
+- rfilename: LICENSE-COMODO
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: artifact_manifest.json
+- rfilename: config.json
+- rfilename: configuration_comodo.py
+- rfilename: core50/README.md
+- rfilename: core50/classifier/config.json
+- rfilename: core50/classifier/scaler.joblib
+- rfilename: core50/classifier/svm.joblib
+- rfilename: core50/config.json
+- rfilename: core50/configuration_comodo.py
+- rfilename: core50/evaluation_results.json
+- rfilename: core50/labels.json
+- rfilename: core50/model.safetensors
+- rfilename: core50/modeling_comodo.py
+- rfilename: core50/normalization_stats.json
+- rfilename: core50/pipeline_comodo.py
+- rfilename: core50/processing_comodo.py
+- rfilename: core50/processor_config.json
+- rfilename: core50/provenance.json
+- rfilename: core50/training_config.json
+- rfilename: fine150/README.md
+- rfilename: fine150/classifier/config.json
+- rfilename: fine150/classifier/scaler.joblib
+- rfilename: fine150/classifier/svm.joblib
+- rfilename: fine150/config.json
+- rfilename: fine150/configuration_comodo.py
+- rfilename: fine150/evaluation_results.json
+- rfilename: fine150/labels.json
+- rfilename: fine150/model.safetensors
+- rfilename: fine150/modeling_comodo.py
+- rfilename: fine150/normalization_stats.json
+- rfilename: fine150/pipeline_comodo.py
+- rfilename: fine150/processing_comodo.py
+- rfilename: fine150/processor_config.json
+- rfilename: fine150/provenance.json
+- rfilename: fine150/training_config.json
+- rfilename: modeling_comodo.py
+- rfilename: pipeline_comodo.py
+- rfilename: processing_comodo.py
+- rfilename: requirements.txt
+- rfilename: variants.json
+spaces: []
+createdAt: '2026-10-24T15:29:41.000Z'
+usedStorage: 496024121
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  model_type: comodo
+  architectures:
+  - ComodoBundle
+  variant: core50
+  is_variant_bundle: true
+  auto_map:
+    AutoConfig: configuration_comodo.ComodoConfig
+    AutoModel: modeling_comodo.ComodoBundle
+    AutoProcessor: processing_comodo.ComodoProcessor
+  custom_pipelines:
+    comodo:
+      impl: pipeline_comodo.ComodoPipeline
+      pt:
+      - AutoModel
+      tf: []
+onnxFiles: {}
+safetensorsSizeMb: 111.2
+approxSizeMb: 0.0
+fetchedAt: '2026-10-25T08:18:06.000Z'

@@ -1,0 +1,115 @@
+_id: 6adc6596130a725e85a1eae4
+id: sidekickd/qwen3-embedding-0.6b-coreml
+private: false
+pipeline_tag: feature-extraction
+library_name: coreml
+tags:
+- coreml
+- sidekick
+- apple-silicon
+- neural-engine
+- embeddings
+- sentence-embeddings
+- licence-tier-2a
+- feature-extraction
+- dataset:microsoft/ms_marco
+- dataset:google-research-datasets/natural_questions
+- arxiv:2506.05176
+- base_model:Qwen/Qwen3-Embedding-0.6B
+- base_model:quantized:Qwen/Qwen3-Embedding-0.6B
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: sidekickd/qwen3-embedding-0.6b-coreml
+author: sidekickd
+sha: ef4a1aeeacc0f9be830d22cf9b36e29f7dad948e
+lastModified: '2026-10-24T08:11:40.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: Qwen/Qwen3-Embedding-0.6B
+  base_model_relation: quantized
+  library_name: coreml
+  pipeline_tag: feature-extraction
+  tags:
+  - sidekick
+  - coreml
+  - apple-silicon
+  - neural-engine
+  - embeddings
+  - sentence-embeddings
+  - licence-tier-2a
+  datasets:
+  - microsoft/ms_marco
+  - google-research-datasets/natural_questions
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: fp16.sha256
+- rfilename: fp16/manifest.toml
+- rfilename: fp16/model_1024.0.mlmodelc/analytics/coremldata.bin
+- rfilename: fp16/model_1024.0.mlmodelc/coremldata.bin
+- rfilename: fp16/model_1024.0.mlmodelc/metadata.json
+- rfilename: fp16/model_1024.0.mlmodelc/model.mil
+- rfilename: fp16/model_1024.0.mlmodelc/weights/weight.bin
+- rfilename: fp16/model_1024.1.mlmodelc/analytics/coremldata.bin
+- rfilename: fp16/model_1024.1.mlmodelc/coremldata.bin
+- rfilename: fp16/model_1024.1.mlmodelc/metadata.json
+- rfilename: fp16/model_1024.1.mlmodelc/model.mil
+- rfilename: fp16/model_1024.1.mlmodelc/weights/weight.bin
+- rfilename: fp16/model_128.0.mlmodelc/analytics/coremldata.bin
+- rfilename: fp16/model_128.0.mlmodelc/coremldata.bin
+- rfilename: fp16/model_128.0.mlmodelc/metadata.json
+- rfilename: fp16/model_128.0.mlmodelc/model.mil
+- rfilename: fp16/model_128.0.mlmodelc/weights/weight.bin
+- rfilename: fp16/model_128.1.mlmodelc/analytics/coremldata.bin
+- rfilename: fp16/model_128.1.mlmodelc/coremldata.bin
+- rfilename: fp16/model_128.1.mlmodelc/metadata.json
+- rfilename: fp16/model_128.1.mlmodelc/model.mil
+- rfilename: fp16/model_128.1.mlmodelc/weights/weight.bin
+- rfilename: fp16/model_2048.0.mlmodelc/analytics/coremldata.bin
+- rfilename: fp16/model_2048.0.mlmodelc/coremldata.bin
+- rfilename: fp16/model_2048.0.mlmodelc/metadata.json
+- rfilename: fp16/model_2048.0.mlmodelc/model.mil
+- rfilename: fp16/model_2048.0.mlmodelc/weights/weight.bin
+- rfilename: fp16/model_2048.1.mlmodelc/analytics/coremldata.bin
+- rfilename: fp16/model_2048.1.mlmodelc/coremldata.bin
+- rfilename: fp16/model_2048.1.mlmodelc/metadata.json
+- rfilename: fp16/model_2048.1.mlmodelc/model.mil
+- rfilename: fp16/model_2048.1.mlmodelc/weights/weight.bin
+- rfilename: fp16/model_256.0.mlmodelc/analytics/coremldata.bin
+- rfilename: fp16/model_256.0.mlmodelc/coremldata.bin
+- rfilename: fp16/model_256.0.mlmodelc/metadata.json
+- rfilename: fp16/model_256.0.mlmodelc/model.mil
+- rfilename: fp16/model_256.0.mlmodelc/weights/weight.bin
+- rfilename: fp16/model_256.1.mlmodelc/analytics/coremldata.bin
+- rfilename: fp16/model_256.1.mlmodelc/coremldata.bin
+- rfilename: fp16/model_256.1.mlmodelc/metadata.json
+- rfilename: fp16/model_256.1.mlmodelc/model.mil
+- rfilename: fp16/model_256.1.mlmodelc/weights/weight.bin
+- rfilename: fp16/model_512.0.mlmodelc/analytics/coremldata.bin
+- rfilename: fp16/model_512.0.mlmodelc/coremldata.bin
+- rfilename: fp16/model_512.0.mlmodelc/metadata.json
+- rfilename: fp16/model_512.0.mlmodelc/model.mil
+- rfilename: fp16/model_512.0.mlmodelc/weights/weight.bin
+- rfilename: fp16/model_512.1.mlmodelc/analytics/coremldata.bin
+- rfilename: fp16/model_512.1.mlmodelc/coremldata.bin
+- rfilename: fp16/model_512.1.mlmodelc/metadata.json
+- rfilename: fp16/model_512.1.mlmodelc/model.mil
+- rfilename: fp16/model_512.1.mlmodelc/weights/weight.bin
+- rfilename: fp16/tokenizer.json
+spaces: []
+createdAt: '2026-10-24T08:00:22.000Z'
+usedStorage: 1229441130
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-25T08:18:06.000Z'

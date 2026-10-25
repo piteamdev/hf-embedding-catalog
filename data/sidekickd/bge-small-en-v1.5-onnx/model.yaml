@@ -1,0 +1,61 @@
+_id: 6adc0fdd9b4c6707d29028cc
+id: sidekickd/bge-small-en-v1.5-onnx
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- sidekick
+- cpu
+- embeddings
+- sentence-embeddings
+- licence-tier-2a
+- feature-extraction
+- arxiv:2309.07597
+- base_model:BAAI/bge-small-en-v1.5
+- base_model:quantized:BAAI/bge-small-en-v1.5
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: sidekickd/bge-small-en-v1.5-onnx
+author: sidekickd
+sha: a94adfe28bdbac1909b54a2f42262eb5617b4292
+lastModified: '2026-10-24T08:18:12.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  base_model: BAAI/bge-small-en-v1.5
+  base_model_relation: quantized
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  tags:
+  - sidekick
+  - onnx
+  - cpu
+  - embeddings
+  - sentence-embeddings
+  - licence-tier-2a
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: fp32.sha256
+- rfilename: fp32/manifest.toml
+- rfilename: fp32/model.onnx
+- rfilename: fp32/onnx_gates.json
+- rfilename: fp32/tokenizer.json
+spaces: []
+createdAt: '2026-10-24T01:54:37.000Z'
+usedStorage: 133067771
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  fp32/model.onnx: 133.1
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-25T08:18:06.000Z'

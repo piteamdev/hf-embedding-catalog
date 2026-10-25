@@ -1,0 +1,105 @@
+_id: 6add199f26d7d158c772bc04
+id: Walkowicz/kairos-pi-low-1.0
+private: false
+pipeline_tag: feature-extraction
+tags:
+- safetensors
+- kairos_pi_low
+- decision-model
+- non-autoregressive
+- system-1
+- modernbert
+- automotive
+- can-bus
+- iot
+- edge-ai
+- active-abstention
+- cyberphysical
+- feature-extraction
+- custom_code
+- en
+- base_model:answerdotai/ModernBERT-base
+- base_model:finetune:answerdotai/ModernBERT-base
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: Walkowicz/kairos-pi-low-1.0
+author: Walkowicz
+sha: 5358bad0c9a8e336d29e859b00b31f694c055fc0
+lastModified: '2026-10-24T21:09:41.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  architectures:
+  - KairosPILowForDecision
+  auto_map:
+    AutoConfig: config.KairosPILowConfig
+    AutoModel: modeling_kairos_pi_low.KairosPILowForDecision
+  model_type: kairos_pi_low
+  tokenizer_config:
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  language:
+  - en
+  license: apache-2.0
+  base_model: answerdotai/ModernBERT-base
+  pretty_name: Kairos PI Low 1.0
+  tags:
+  - decision-model
+  - non-autoregressive
+  - system-1
+  - modernbert
+  - automotive
+  - can-bus
+  - iot
+  - edge-ai
+  - active-abstention
+  - cyberphysical
+  - safetensors
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: BENCHMARK.md
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: kairos-logo.png
+- rfilename: model.safetensors
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-24T20:48:31.000Z'
+safetensors:
+  parameters:
+    F32: 149606404
+  total: 149606404
+usedStorage: 598764540
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - KairosPILowForDecision
+  auto_map:
+    AutoConfig: config.KairosPILowConfig
+    AutoModel: modeling_kairos_pi_low.KairosPILowForDecision
+  model_type: kairos_pi_low
+  base_model: answerdotai/ModernBERT-base
+  hidden_size: 768
+  intermediate_size: 1152
+  num_attention_heads: 12
+  num_hidden_layers: 22
+  max_position_embeddings: 8192
+  confidence_threshold: 0.65
+  entropy_threshold: 0.75
+  brier_loss_weight: 0.5
+  temperature: 1.0
+onnxFiles: {}
+safetensorsSizeMb: 598.4
+approxSizeMb: 598.4
+fetchedAt: '2026-10-25T08:18:06.000Z'

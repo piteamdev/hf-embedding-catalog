@@ -1,0 +1,61 @@
+_id: 6adcda7552c4f6180ef9dcc2
+id: mattboll/mdenseon-onnx
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- feature-extraction
+- sentence-similarity
+- mDenseOn
+- crible
+- legal
+- fr
+- base_model:lightonai/mDenseOn
+- base_model:quantized:lightonai/mDenseOn
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: mattboll/mdenseon-onnx
+author: mattboll
+sha: 491bbcd6cb1b0a7a97995a5d767ab8f5270a7b84
+lastModified: '2026-10-24T16:48:36.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: lightonai/mDenseOn
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  language:
+  - fr
+  tags:
+  - onnx
+  - feature-extraction
+  - sentence-similarity
+  - mDenseOn
+  - crible
+  - legal
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: model.int8.onnx
+- rfilename: model.json
+- rfilename: model.onnx
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-10-24T16:19:01.000Z'
+usedStorage: 1569621301
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  model.int8.onnx: 307.3
+  model.onnx: 1228.0
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-25T08:18:06.000Z'

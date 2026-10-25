@@ -1,0 +1,73 @@
+_id: 6adc659797a1aa0ee1b4ff6a
+id: sidekickd/qwen3-embedding-0.6b-onnx
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- sidekick
+- cpu
+- embeddings
+- sentence-embeddings
+- licence-tier-2a
+- feature-extraction
+- dataset:microsoft/ms_marco
+- dataset:google-research-datasets/natural_questions
+- arxiv:2506.05176
+- base_model:Qwen/Qwen3-Embedding-0.6B
+- base_model:quantized:Qwen/Qwen3-Embedding-0.6B
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: sidekickd/qwen3-embedding-0.6b-onnx
+author: sidekickd
+sha: 5a1cebe1c312dd69976c41f58be7ae07f157c212
+lastModified: '2026-10-24T08:16:33.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: Qwen/Qwen3-Embedding-0.6B
+  base_model_relation: quantized
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  tags:
+  - sidekick
+  - onnx
+  - cpu
+  - embeddings
+  - sentence-embeddings
+  - licence-tier-2a
+  datasets:
+  - microsoft/ms_marco
+  - google-research-datasets/natural_questions
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: fp16-weights.sha256
+- rfilename: fp16-weights/manifest.toml
+- rfilename: fp16-weights/model_fp16w.onnx
+- rfilename: fp16-weights/model_fp16w.onnx_data
+- rfilename: fp16-weights/tokenizer.json
+- rfilename: fp32.sha256
+- rfilename: fp32/manifest.toml
+- rfilename: fp32/model.onnx
+- rfilename: fp32/model.onnx_data
+- rfilename: fp32/onnx_gates.json
+- rfilename: fp32/tokenizer.json
+spaces: []
+createdAt: '2026-10-24T08:00:23.000Z'
+usedStorage: 3588421416
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  fp16-weights/model_fp16w.onnx: 1.1
+  fp32/model.onnx: 1.1
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-25T08:18:06.000Z'

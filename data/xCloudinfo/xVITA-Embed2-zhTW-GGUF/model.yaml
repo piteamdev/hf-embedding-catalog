@@ -1,0 +1,101 @@
+_id: 6adde524acc7c9c710d42b09
+id: xCloudinfo/xVITA-Embed2-zhTW-GGUF
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- gguf
+- llama.cpp
+- embedding
+- multimodal-embedding
+- retrieval
+- rag
+- traditional-chinese
+- zh-tw
+- taiwan
+- sentence-similarity
+- matryoshka
+- zh
+- en
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+- feature-extraction
+downloads: 0
+likes: 0
+modelId: xCloudinfo/xVITA-Embed2-zhTW-GGUF
+author: xCloudinfo
+sha: 199a9f69d893ae46ebe762a6bbc31bd13d78ddbd
+lastModified: '2026-10-26T05:08:16.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: 那是 個快樂的人
+  sentences:
+  - 那是 條快樂的狗
+  - 那是 個非常幸福的人
+  - 今天是晴天
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  language:
+  - zh
+  - en
+  base_model: google/embeddinggemma-2
+  tags:
+  - gguf
+  - llama.cpp
+  - embedding
+  - multimodal-embedding
+  - retrieval
+  - rag
+  - traditional-chinese
+  - zh-tw
+  - taiwan
+  - sentence-similarity
+  - matryoshka
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+gguf:
+  total: 271002648
+  architecture: gemma-embedding2
+  context_length: 262144
+  causal: false
+  chat_template: '{%- for msg in messages if msg.get(''role'') == ''system'' -%}{%- if msg.get(''content'') is string -%}{{
+    msg[''content''] }}{%- else -%}{%- for item in msg[''content''] if item.get(''type'') == ''text'' -%}{{ item[''text'']
+    }}{%- endfor -%}{%- endif -%}{%- endfor -%}{%- for msg in messages if msg.get(''role'') != ''system'' -%}{%- if msg.get(''content'')
+    is string -%}{{ msg[''content''] }}{%- else -%}{%- set existing_text = msg[''content''] | selectattr(''type'', ''equalto'',
+    ''text'') | map(attribute=''text'') | join -%}{%- set has_manual_placeholders = (''<|image|>'' in existing_text) or (''<|video|>''
+    in existing_text) or (''<|audio|>'' in existing_text) -%}{%- for item in msg[''content''] -%}{%- if item.get(''type'')
+    == ''text'' -%}{{ item[''text''] }}{%- elif not has_manual_placeholders and item.get(''type'') == ''image'' -%}<|image|>{%-
+    elif not has_manual_placeholders and item.get(''type'') == ''video'' -%}<|video|>{%- elif not has_manual_placeholders
+    and item.get(''type'') == ''audio'' -%}<|audio|>{%- endif -%}{%- endfor -%}{%- endif -%}{%- endfor -%}'
+  bos_token: <bos>
+  eos_token: <eos>
+  pooling_type: 1
+  totalFileSize: 557950336
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: xVITA-Embed2-zhTW-BF16.gguf
+- rfilename: xVITA-Embed2-zhTW-IQ2_M.gguf
+- rfilename: xVITA-Embed2-zhTW-IQ4_XS.gguf
+- rfilename: xVITA-Embed2-zhTW-Q4_K_M.gguf
+- rfilename: xVITA-Embed2-zhTW-Q5_K_M.gguf
+- rfilename: xVITA-Embed2-zhTW-Q6_K.gguf
+- rfilename: xVITA-Embed2-zhTW-Q8_0.gguf
+- rfilename: xVITA-Embed2-zhTW-mmproj-BF16.gguf
+spaces: []
+createdAt: '2026-10-25T11:16:52.000Z'
+usedStorage: 2790392416
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-26T08:45:28.000Z'

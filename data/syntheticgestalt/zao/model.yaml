@@ -1,0 +1,68 @@
+_id: 6ac49894a027308efc0366ce
+id: syntheticgestalt/zao
+private: false
+pipeline_tag: feature-extraction
+library_name: zao
+tags:
+- zao
+- safetensors
+- chemistry
+- molecules
+- molecular-representation
+- drug-discovery
+- conformers
+- feature-extraction
+- license:other
+- region:us
+downloads: 0
+likes: 0
+modelId: syntheticgestalt/zao
+author: syntheticgestalt
+sha: b613d1d92ee7047deb88f5152ce0ecea9111fbce
+lastModified: '2026-10-26T08:38:09.000Z'
+gated: auto
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: other
+  license_name: sg-tvar-1.0
+  license_link: LICENSE.md
+  library_name: zao
+  pipeline_tag: feature-extraction
+  tags:
+  - chemistry
+  - molecules
+  - molecular-representation
+  - drug-discovery
+  - conformers
+  extra_gated_heading: Accept the SyntheticGestalt Technical Verification and Academic Research License
+  extra_gated_description: These weights are released under the SyntheticGestalt Technical Verification and Academic Research
+    License (SG-TVAR-1.0), whose full text is in LICENSE.md in this repository. It permits evaluating the model, on your own
+    proprietary structures and data as well as on public ones, and deciding from the results whether to take a commercial
+    licence. It covers the embeddings and predictions the model produces, and anything built from them, as well as the model
+    itself. Any other use, and any supply or redistribution to others, needs a commercial licence from info@syntheticgestalt.com.
+  extra_gated_fields:
+    Full name: text
+    Organisation: text
+    I have read the SyntheticGestalt Technical Verification and Academic Research License and agree to it: checkbox
+  extra_gated_button_content: Accept the licence and access the weights
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE.md
+- rfilename: README.md
+- rfilename: model.safetensors
+spaces: []
+createdAt: '2026-10-06T06:43:32.000Z'
+safetensors:
+  parameters:
+    F32: 222692501
+  total: 222692501
+usedStorage: 890793416
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 890.8
+approxSizeMb: 890.8
+fetchedAt: '2026-10-26T08:45:28.000Z'

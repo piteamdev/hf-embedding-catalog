@@ -1,0 +1,129 @@
+_id: 6ada8690e10fd580112bad59
+id: adambuttrick/ror-set-point-set-model-bge-reranker-v2-m3
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- xlm-roberta
+- feature-extraction
+- ror
+- affiliations
+- entity-linking
+- cross-encoder
+- dataset:adambuttrick/ror-set-point-matching-train-validation-test
+- base_model:BAAI/bge-reranker-v2-m3
+- base_model:finetune:BAAI/bge-reranker-v2-m3
+- license:apache-2.0
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: adambuttrick/ror-set-point-set-model-bge-reranker-v2-m3
+author: adambuttrick
+sha: f178fdf17d0d5618478b43aad94265e39f6309d2
+lastModified: '2026-10-25T15:34:13.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - XLMRobertaModel
+  model_type: xlm-roberta
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: <unk>
+cardData:
+  license: apache-2.0
+  base_model: BAAI/bge-reranker-v2-m3
+  library_name: transformers
+  datasets:
+  - adambuttrick/ror-set-point-matching-train-validation-test
+  tags:
+  - ror
+  - affiliations
+  - entity-linking
+  - cross-encoder
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: conversion_check.json
+- rfilename: evaluation/calibration.json
+- rfilename: evaluation/oof.jsonl.gz
+- rfilename: evaluation/predictions/affiliations_test.jsonl
+- rfilename: evaluation/predictions/affiliations_validation.jsonl
+- rfilename: evaluation/predictions/datacite_test.jsonl
+- rfilename: evaluation/predictions/openalex_sample_test.jsonl
+- rfilename: evaluation/predictions/unseen_test.jsonl
+- rfilename: evaluation/predictions/unseen_validation.jsonl
+- rfilename: evaluation/probabilities.jsonl.gz
+- rfilename: head.safetensors
+- rfilename: logs/training_log.txt
+- rfilename: logs/training_summary.json
+- rfilename: model.safetensors
+- rfilename: sentencepiece.bpe.model
+- rfilename: set_model.py
+- rfilename: set_model_config.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: training_data/eval.jsonl.gz
+- rfilename: training_data/manifest.json
+- rfilename: training_data/records.jsonl.gz
+- rfilename: training_data/stage1.jsonl.gz
+- rfilename: training_data/stage2.jsonl.gz
+spaces: []
+createdAt: '2026-10-22T21:56:32.000Z'
+safetensors:
+  parameters:
+    BF16: 567754752
+  total: 567754752
+usedStorage: 1354665332
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - XLMRobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: bfloat16
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 1024
+  id2label:
+    '0': LABEL_0
+  initializer_range: 0.02
+  intermediate_size: 4096
+  label2id:
+    LABEL_0: 0
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 8194
+  model_type: xlm-roberta
+  num_attention_heads: 16
+  num_hidden_layers: 24
+  output_past: true
+  pad_token_id: 1
+  position_embedding_type: absolute
+  transformers_version: 4.57.6
+  type_vocab_size: 1
+  use_cache: true
+  vocab_size: 250002
+onnxFiles: {}
+safetensorsSizeMb: 1135.6
+approxSizeMb: 1135.5
+fetchedAt: '2026-10-26T08:45:28.000Z'

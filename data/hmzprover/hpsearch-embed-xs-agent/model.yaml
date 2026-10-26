@@ -1,0 +1,57 @@
+_id: 6adee4f008aabc312a738ebc
+id: hmzprover/hpsearch-embed-xs-agent
+private: false
+pipeline_tag: sentence-similarity
+library_name: onnx
+tags:
+- onnx
+- lean4
+- mathlib
+- retrieval
+- sentence-similarity
+- base_model:hmzprover/hpsearch-embed-xs
+- base_model:quantized:hmzprover/hpsearch-embed-xs
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: hmzprover/hpsearch-embed-xs-agent
+author: hmzprover
+sha: f49cecff3ae10ef4b6ea572cf90f6ac7aef1785c
+lastModified: '2026-10-26T06:19:33.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: hmzprover/hpsearch-embed-xs
+  library_name: onnx
+  pipeline_tag: sentence-similarity
+  tags:
+  - lean4
+  - mathlib
+  - retrieval
+  - onnx
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: model.onnx
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-10-26T05:28:16.000Z'
+usedStorage: 113243657
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  model.onnx: 90.4
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-26T08:45:28.000Z'

@@ -1,0 +1,72 @@
+_id: 6addd8d7bd2a6c8a7f5f8cdd
+id: kprzyb/PolDense-150M-GGUF
+private: false
+pipeline_tag: sentence-similarity
+library_name: gguf
+tags:
+- gguf
+- llama.cpp
+- embeddings
+- sentence-similarity
+- feature-extraction
+- polish
+- modernbert
+- pl
+- base_model:OPI-PIB/PolDense-150M
+- base_model:quantized:OPI-PIB/PolDense-150M
+- license:gemma
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: kprzyb/PolDense-150M-GGUF
+author: kprzyb
+sha: 4831346594b77805fb1405ce0752056aaba2bc7e
+lastModified: '2026-10-25T10:25:28.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: gemma
+  license_link: https://ai.google.dev/gemma/terms
+  base_model: OPI-PIB/PolDense-150M
+  base_model_relation: quantized
+  language:
+  - pl
+  pipeline_tag: sentence-similarity
+  library_name: gguf
+  tags:
+  - gguf
+  - llama.cpp
+  - embeddings
+  - sentence-similarity
+  - feature-extraction
+  - polish
+  - modernbert
+gguf:
+  total: 149014272
+  architecture: modern-bert
+  context_length: 7999
+  causal: false
+  bos_token: '[CLS]'
+  eos_token: '[SEP]'
+  pooling_type: 2
+  totalFileSize: 299876832
+siblings:
+- rfilename: .gitattributes
+- rfilename: GEMMA_TERMS.txt
+- rfilename: NOTICE
+- rfilename: PolDense-150M-F16.gguf
+- rfilename: PolDense-150M-Q8_0.gguf
+- rfilename: README.md
+spaces: []
+createdAt: '2026-10-25T10:24:23.000Z'
+usedStorage: 460085184
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-26T08:45:28.000Z'

@@ -11,14 +11,15 @@ tags:
 - smoke-test
 - cpu
 - feature-extraction
+- en
 - license:apache-2.0
 - region:us
 downloads: 0
 likes: 0
 modelId: edithatogo/lfm2.5-1.2b-intel-lora
 author: edithatogo
-sha: 91f6077b131deb59b05845d4db689d60329ec774
-lastModified: '2026-05-31T12:01:28.000Z'
+sha: 61345b0d152fb736dbf039a62ed4cbe70a89fc7c
+lastModified: '2026-10-26T22:23:06.000Z'
 gated: false
 disabled: false
 model-index: null
@@ -34,6 +35,8 @@ cardData:
   - cpu
   library_name: openvino
   pipeline_tag: feature-extraction
+  language:
+  - en
 siblings:
 - rfilename: .gitattributes
 - rfilename: MODEL_CARD.md
@@ -60,4 +63,4 @@ onnxFiles:
   model.onnx: 0.0
 safetensorsSizeMb: 0.0
 approxSizeMb: 0.0
-fetchedAt: '2026-10-26T08:45:28.000Z'
+fetchedAt: '2026-10-27T08:51:16.000Z'

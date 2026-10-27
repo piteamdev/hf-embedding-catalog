@@ -1,0 +1,59 @@
+_id: 6adf51f4d050b74cb45f555b
+id: thuerey-group/GMP
+private: false
+pipeline_tag: feature-extraction
+tags:
+- physics-ai
+- pde
+- neural-pde-solvers
+- surrogate-modeling
+- 3d-geometry
+- scientific-machine-learning
+- neurips-2026
+- feature-extraction
+- arxiv:2610.03363
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: thuerey-group/GMP
+author: thuerey-group
+sha: 8ed8ff8735609002f8346eee0157fc425312e13d
+lastModified: '2026-10-26T13:32:52.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  tags:
+  - physics-ai
+  - pde
+  - neural-pde-solvers
+  - surrogate-modeling
+  - 3d-geometry
+  - scientific-machine-learning
+  - neurips-2026
+  arxiv: 2610.03363
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: abupt/epoch-200.pth
+- rfilename: figures/drivaerml_error_comparison.png
+- rfilename: figures/shiftwing_error_comparison.png
+- rfilename: gmpnet/epoch-200.pth
+- rfilename: gmpnet_physics/epoch-199-EMA.ckpt
+- rfilename: transolver_pp_surface/epoch-200.pth
+- rfilename: transolver_pp_volume/epoch-200.pth
+spaces: []
+createdAt: '2026-10-26T13:13:24.000Z'
+usedStorage: 920274697
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-27T08:51:16.000Z'

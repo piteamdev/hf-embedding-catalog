@@ -1,0 +1,103 @@
+_id: 6ae045384ac9e6eabea63401
+id: 0neisall/tiny-embedding-test
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- feature-extraction
+- test
+- sentence-similarity
+- en
+- zh
+- license:apache-2.0
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: 0neisall/tiny-embedding-test
+author: 0neisall
+sha: a225491cd4f83de81db95ec7ac28d8ab7e2d9217
+lastModified: '2026-10-27T06:31:26.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  language:
+  - en
+  - zh
+  license: apache-2.0
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  tags:
+  - sentence-transformers
+  - feature-extraction
+  - test
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: vocab.txt
+spaces: []
+createdAt: '2026-10-27T06:31:20.000Z'
+safetensors:
+  parameters:
+    F32: 5648
+  total: 5648
+usedStorage: 24904
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  classifier_dropout: null
+  dtype: float32
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 16
+  initializer_range: 0.02
+  intermediate_size: 32
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 128
+  model_type: bert
+  num_attention_heads: 2
+  num_hidden_layers: 1
+  pad_token_id: 0
+  position_embedding_type: absolute
+  transformers_version: 4.57.6
+  type_vocab_size: 2
+  use_cache: true
+  vocab_size: 65
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-27T08:51:16.000Z'

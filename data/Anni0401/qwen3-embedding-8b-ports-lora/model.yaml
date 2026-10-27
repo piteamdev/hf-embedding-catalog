@@ -1,0 +1,60 @@
+_id: 6adf1a24d49bbdd8dd9fde62
+id: Anni0401/qwen3-embedding-8b-ports-lora
+private: false
+pipeline_tag: feature-extraction
+library_name: peft
+tags:
+- peft
+- safetensors
+- lora
+- embeddings
+- retrieval
+- tool-retrieval
+- tool-selection
+- ports
+- feature-extraction
+- base_model:Qwen/Qwen3-Embedding-8B
+- base_model:adapter:Qwen/Qwen3-Embedding-8B
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: Anni0401/qwen3-embedding-8b-ports-lora
+author: Anni0401
+sha: b2c88191e3771164c89b6732c7cc931660b8417f
+lastModified: '2026-10-26T09:15:23.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  peft:
+    base_model_name_or_path: Qwen/Qwen3-Embedding-8B
+    task_type: FEATURE_EXTRACTION
+cardData:
+  base_model: Qwen/Qwen3-Embedding-8B
+  library_name: peft
+  license: apache-2.0
+  pipeline_tag: feature-extraction
+  tags:
+  - lora
+  - peft
+  - embeddings
+  - retrieval
+  - tool-retrieval
+  - tool-selection
+  - ports
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: adapter_config.json
+- rfilename: adapter_model.safetensors
+spaces: []
+createdAt: '2026-10-26T09:15:16.000Z'
+usedStorage: 87358568
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 87.4
+approxSizeMb: 0.0
+fetchedAt: '2026-10-27T08:51:16.000Z'

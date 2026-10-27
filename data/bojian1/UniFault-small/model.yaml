@@ -1,0 +1,99 @@
+_id: 6ae059b692e0177bc16f4263
+id: bojian1/UniFault-small
+private: false
+pipeline_tag: feature-extraction
+library_name: pytorch
+tags:
+- pytorch
+- safetensors
+- phmfd-unifault
+- vibration
+- fault-diagnosis
+- phmfd
+- feature-extraction
+- region:us
+downloads: 0
+likes: 0
+modelId: bojian1/UniFault-small
+author: bojian1
+sha: f685d961ef86fcf730ddd9b5586680082cacaa02
+lastModified: '2026-10-27T07:58:54.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - UniFaultBackbone
+  model_type: phmfd-unifault
+cardData:
+  library_name: pytorch
+  pipeline_tag: feature-extraction
+  tags:
+  - vibration
+  - fault-diagnosis
+  - phmfd
+  - safetensors
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: provenance.json
+spaces: []
+createdAt: '2026-10-27T07:58:46.000Z'
+safetensors:
+  parameters:
+    F32: 6343424
+  total: 6343424
+usedStorage: 76170192
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - UniFaultBackbone
+  depth: 8
+  dropout: 0.1
+  embed_dim: 256
+  freq_data_normalize: none
+  freq_fft_source_normalize: none
+  freq_max_bins: 600
+  freq_patch_include_log_position: true
+  freq_patch_projection: conv
+  freq_patch_size: 16
+  freq_pope_harmonics: 2,3,4,5
+  freq_pope_sigma: 0.08
+  freq_position_encoding: harmonic_pope
+  freq_rope_base: 1000.0
+  freq_tail_stats: true
+  freq_tokenizer: global_fft
+  freq_transformer_layers: 4
+  heads: 8
+  input_length_mode: resample
+  input_target_len: 1024
+  model_arch: unifault
+  model_type: phmfd-unifault
+  num_channels: 1
+  num_classes: 0
+  patch_fft_num_queries: 1
+  patch_fft_window: rect
+  seq_len: 1024
+  tf_profm_d_ffn: 512
+  tf_profm_d_model: 256
+  tf_profm_feature_dim: 4096
+  tf_profm_head_hidden: 256
+  tf_profm_heads: 4
+  tf_profm_input_len: 1024
+  tf_profm_layers: 6
+  tf_profm_num_patches: 16
+  tf_profm_patch_len: 256
+  time_data_normalize: sample_minmax
+  time_patch_attention: mha
+  time_patch_seconds: 0.00625
+  time_transformer_layers: 4
+  timefreq_fusion: concat
+  unifault_patch_size: 64
+  window_seconds: 0.1
+onnxFiles: {}
+safetensorsSizeMb: 25.4
+approxSizeMb: 25.4
+fetchedAt: '2026-10-27T08:51:16.000Z'

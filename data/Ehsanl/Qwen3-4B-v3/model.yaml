@@ -1,0 +1,605 @@
+_id: 6adde11ee2430c03d46bf64a
+id: Ehsanl/Qwen3-4B-v3
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- tensorboard
+- safetensors
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:1043663
+- loss:WeightedMultiPositiveCachedLoss
+- loss:MultipleNegativesRankingLoss
+- arxiv:1908.10084
+- arxiv:2101.06983
+- arxiv:1807.03748
+- base_model:Qwen/Qwen3-Embedding-4B
+- base_model:finetune:Qwen/Qwen3-Embedding-4B
+- model-index
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: Ehsanl/Qwen3-4B-v3
+author: Ehsanl
+sha: 00d5c7d238ecf8d63dac24de9222ced80025d274
+lastModified: '2026-10-26T17:18:07.000Z'
+gated: manual
+disabled: false
+widgetData:
+- source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query
+
+    Query:invloed van de bestuurlijke centralisatie op de zorgwetgeving'
+  sentences:
+  - '[Wijzigt het Wetboek van Strafrecht, het Wetboek van Strafvordering, de Wet overdracht tenuitvoerlegging strafvonnissen,
+    de Overleveringswet, de Uitleveringswet, de Wet op de jeugdzorg, de Vreemdelingenwet 2000, de Advocatenwet, de Wet bijzondere
+    opnemingen in psychiatrische ziekenhuizen.]'
+  - '[Wijzigt het Wetboek van Strafrecht.]'
+  - '1. De kosten van vervolging zijn ten laste van degene die in gebreke is gebleven het verschuldigde tijdig te betalen.
+
+    2. Bij algemene maatregel van bestuur kunnen de kosten van vervolging worden bepaald.'
+  - '[Wijzigt de Gemeentewet.]'
+  - '[Wijzigt de Wet inkomstenbelasting 2001.]'
+  - '1. Het voor het tijdstip van inwerkingtreding van deze wet geldende recht blijft van toepassing op procedures met betrekking
+    tot adoptie of herroeping daarvan waarin het inleidende verzoekschrift is ingediend voorafgaande aan het tijdstip van
+    inwerkingtreding van deze wet.
+
+    2. [Wijzigt deze wet.]
+
+    3. [Wijzigt deze wet.]'
+  - '[Wijzigt de Wet inkomstenbelasting 2001.]'
+  - '[Wijzigt de Gemeentewet.]'
+  - De uitvaardigende officier van justitie is met het oog op de behandeling en uitvoering van het door hem afgegeven Europees
+    aanhoudingsbevel bevoegd de uitvoerende justitiële autoriteit op verzoek of eigener beweging aanvullende informatie te
+    verstrekken en, in voorkomend geval, schriftelijk de voorwaarden overeen te komen in het geval de opgeëiste persoon voorlopig
+    ter beschikking wordt gesteld.
+- source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query
+
+    Query:Deelgeschil. Val na struikelen over afstapje tegen gastvrouw aan, die hierdoor haar heup brak. Verweerder had ten
+    tijde van het ongeval een lichamelijke tekortkoming (een achillespeesblessure). Aansprakelijkheid op grond van BW. Verweren,
+    inhoudende dat sprake was van gevaarzetting aan de zijde van verzoekster en een ongelukkige samenloop van omstandigheden,
+    slagen niet.'
+  sentences:
+  - Een gedraging van een kind dat de leeftijd van veertien jaren nog niet heeft bereikt, kan aan hem niet als een onrechtmatige
+    daad worden toegerekend.
+  - Tegen de beschikking op het verzoek staat geen voorziening open, onverminderdartikel 1019cc, derde lid.
+  - '1. De omstandigheid dat een als een doen te beschouwen gedraging van een persoon van veertien jaren of ouder verricht
+    is onder invloed van een geestelijke of lichamelijke tekortkoming, is geen beletsel haar als een onrechtmatige daad aan
+    de dader toe te rekenen.
+
+    2. Is jegens de benadeelde tevens een derde wegens onvoldoende toezicht aansprakelijk, dan is deze derde jegens de dader
+    verplicht tot bijdragen in de schadevergoeding voor het gehele bedrag van zijn aansprakelijkheid jegens de benadeelde.'
+  - Dit besluit treedt in werking met ingang van de dag na datum van uitgifte van het Staatsblad waarin het wordt geplaatst.
+  - '1. Indien de overeenkomst een beding inhoudt dat de verzekerde persoonlijk voor een deel in de vergoeding van de schade
+    zal bijdragen, blijft de verzekeraar niettemin jegens de benadeelde gehouden tot betaling van de schadeloosstelling die
+    krachtens de overeenkomst ten laste van de verzekerde blijft.
+
+    2. De verzekeraar kan echter tegenover een benadeelde beroep doen op een beding, inhoudende dat hij slechts aansprakelijk
+    is voor het bedrag waarmede de schade een bij algemene maatregel van bestuur vast te stellen bedrag te boven gaat.'
+  - 'Een werkgever kan in de loonaangifte een verzoek doen voor de volgende tegemoetkomingen: a. loonkostenvoordeel oudere
+    werknemer; b. loonkostenvoordeel arbeidsgehandicapte werknemer; c. loonkostenvoordeel doelgroep banenafspraak en scholingsbelemmerden;
+    d. loonkostenvoordeel herplaatsen arbeidsgehandicapte werknemer; waarbij een uiterlijk op de inartikel 4.1, tweede of
+    zevende lid, bedoelde datum van het kalenderjaar volgend op het kalenderjaar waarop de tegemoetkoming betrekking heeft
+    ingediend correctiebericht wordt opgevat als een in de loonaangifte gedaan verzoek.'
+  - De aansprakelijkheid van een hulpverlener of, in het geval bedoeld inartikel 462, van het ziekenhuis, kan niet worden
+    beperkt of uitgesloten.
+  - Een aansprakelijke persoon is niet gerechtigd zijn aansprakelijkheid te beperken, indien bewezen wordt dat de schade het
+    gevolg is van zijn persoonlijk handelen of nalaten, geschied hetzij met het opzet zodanige schade te veroorzaken, hetzij
+    roekeloos en met de wetenschap dat zodanige schade er waarschijnlijk uit zou voortvloeien.
+  - Wie een goed houdt, wordt vermoed dit voor zichzelf te houden.
+- source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query
+
+    Query:verbod gebruik handelsnaam social media na beëindiging overeenkomst'
+  sentences:
+  - '1. Als individuele merken worden beschouwd de benamingen, tekeningen, afdrukken, stempels, letters, cijfers, vormen van
+    waren of van verpakking en alle andere voor grafische voorstelling vatbare tekens, die dienen om de waren of diensten
+    van een onderneming te onderscheiden.
+
+    2. Evenwel kunnen niet als merken worden beschouwd tekens die uitsluitend bestaan uit een vorm die door de aard van de
+    waar wordt bepaald, die een wezenlijke waarde aan de waar geeft of die noodzakelijk is om een technische uitkomst te verkrijgen.
+
+    3. Onverminderd de bepalingen van het gemene recht, kan een geslachtsnaam als merk dienen.'
+  - '1. Indien het wenselijk blijkt over de in artikel 105 bedoelde aangelegenheden voorbereidende besprekingen te voeren
+    of in het overleg genomen besluiten uit te werken, geschiedt deze voorbereiding of uitwerking door werkgroepen bestaande
+    uit vertegenwoordigers van de Sectorcommissie en door Onze Minister van Binnenlandse Zaken daartoe aangewezen functionarissen.
+
+    2. Het bepaalde in het vierde en vijfde lid van artikel 107 is daarbij van overeenkomstige toepassing.'
+  - Het is verboden een handelsnaam te voeren, die het merk bevat, waarop een ander ter onderscheiding van zijn fabrieks-
+    of handelswaren recht heeft, dan wel een aanduiding, die van zodanig merk slechts in geringe mate afwijkt, voor zover
+    dientengevolge bij het publiek verwarring omtrent de herkomst van de waren te duchten is.
+  - Behoudens bepaling van het tegendeel zijn collectieve merken aan dezelfde regelen onderworpen als individuele merken.
+  - '1. Het is verboden verlichting of zoeklichten, alsmede vlaggen, borden, wimpels of andere voorwerpen, op zodanige wijze
+    te gebruiken, dat zij verward kunnen worden met de in dit reglement vermelde tekens dan wel de waarneembaarheid of de
+    herkenning daarvan kunnen bemoeilijken.
+
+    2. Het is verboden verlichting of zoeklichten op zodanige wijze te gebruiken, dat zij, door verblinding, gevaar of hinder
+    voor de scheepvaart of voor het verkeer te land kunnen veroorzaken.'
+  - Het is verboden een handelsnaam te voeren, die, vóórdat de onderneming onder die naam werd gedreven, reeds door een ander
+    rechtmatig gevoerd werd, of die van diens handelsnaam slechts in geringe mate afwijkt, een en ander voor zover dientengevolge,
+    in verband met de aard der beide ondernemingen en de plaats, waar zij gevestigd zijn, bij het publiek verwarring tussen
+    die ondernemingen te duchten is.
+  - Behoudens bepaling van het tegendeel zijn collectieve merken aan dezelfde regelen onderworpen als individuele merken.
+  - Indien de arbeid, in dienst van een ander verricht, bestaat in het vervaardigen van bepaalde werken van letterkunde, wetenschap
+    of kunst, dan wordt, tenzij tusschen partijen anders is overeengekomen, als de maker van die werken aangemerkt degene,
+    in wiens dienst de werken zijn vervaardigd.
+  - '1. Het is verboden verlichting of zoeklichten, alsmede vlaggen, borden, wimpels of andere voorwerpen, op zodanige wijze
+    te gebruiken, dat zij verward kunnen worden met de in dit reglement vermelde tekens dan wel de waarneembaarheid of de
+    herkenning daarvan kunnen bemoeilijken.
+
+    2. Het is verboden verlichting of zoeklichten op zodanige wijze te gebruiken, dat zij, door verblinding, gevaar of hinder
+    voor de scheepvaart of voor het verkeer te land kunnen veroorzaken.'
+- source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query
+
+    Query:Wat is het juridische gevolg voor de ontvankelijkheid van de beroepen indien de rechtbank vaststelt dat tienmaal
+    griffierecht verschuldigd is en dit niet tijdig wordt aangevuld?'
+  sentences:
+  - '[Wijzigt de Algemene wet bestuursrecht.]'
+  - '[Wijzigt de Belastingwet BES.]'
+  - '[Bevat wijzigingen in andere regelgeving.]'
+  - Indien de advocaat jegens wie het voornemen bestaat een procedure inzake de onbehoorlijke praktijkuitoefening aan te vangen,
+    zich krachtens het nationale recht van een andere lidstaat van de Europese Unie of een andere staat die partij is bij
+    de Overeenkomst betreffende de Europese Economische Ruimte dat uitvoering geeft aan artikel 3 van richtlijn 98/5/EG van
+    het Europees Parlement en de Raad van de Europese Unie van 16 februari 1998 ter vergemakkelijking van de permanente uitoefening
+    van het beroep van advocaat, heeft laten inschrijven, stelt de raad van toezicht voor de aanvang van de procedure de bevoegde
+    autoriteit in die lidstaat of lidstaten van dit voornemen op de hoogte en verstrekt hij aan die autoriteit of autoriteiten
+    alle dienstige inlichtingen.
+  - 'Subsidie op grond vanartikel 6wordt slechts verstrekt voor zover: a. de student gedurende het desbetreffende studiejaar
+    een opleiding in het hoger beroepsonderwijs heeft gevolgd waarvoor op grond van artikel 5a.9 van de WHW accreditatie is
+    verleend en de opleiding is opgenomen in het Centraal register opleidingen hoger onderwijs, bedoeld in artikel 6.13 van
+    die wet, en de code van de opleiding is opgenomen in de onderdelen 1°. techniek, 2°. gezondheidszorg, gedrag en maatschappij,
+    of 3°. landbouw en natuurlijke omgeving; b. de verzorging van het onderricht in de praktijk van het beroep voor de student
+    door de werkgever plaats heeft gevonden op grond van en overeenkomstig een praktijkleerovereenkomst; c. de werkgever beschikt
+    over een aanwezigheidsregistratie van de student bij de beroepsuitoefening; en d. de werkgever beschikt over een administratie
+    waaruit de begeleiding van de student blijkt en de wijze waarop de student het deel van de kwaliteiten met betrekking
+    tot de beroepsuitoefening heeft gerealiseerd.'
+  - '[Red: Dit artikel is nog niet in werking getreden.] [Wijzigt het Transactiebesluit 1994.]'
+  - '1. Van partijen die bij dezelfde advocaat of gemachtigde verschijnen en gelijkluidende conclusies nemen, wordt slechts
+    eenmaal een gezamenlijk griffierecht geheven.
+
+    2. Indien tot de partijen die bij dezelfde advocaat of gemachtigde verschijnen en gelijkluidende conclusies nemen, zowel
+    natuurlijke personen als rechtspersonen behoren, wordt het griffierecht geheven, dat rechtspersonen verschuldigd zijn.'
+  - '1. De centrale commissie of Onze Minister, ingeval hetvijfde lid van artikel 13ivan toepassing is, maakt slechts gemotiveerd
+    bezwaar indien in de Europese databank reeds bijwerkingen van het geneesmiddel voor onderzoek zijn opgenomen, die leiden
+    tot onaanvaardbare risico’s voor de proefpersoon.
+
+    2. De Inspectie voor de Gezondheidszorg controleert op verzoek van de centrale commissie of van Onze Minister, ingeval
+    hetvijfde lid van artikel 13ivan toepassing is, of het wetenschappelijk onderzoek met geneesmiddelen naar verwachting
+    kan plaats vinden overeenkomstig deze wet. Het bepaalde in artikel 5:12, 5:13 en 5:15 tot en met 5:20 van de Algemene
+    wet bestuursrecht is van overeenkomstige toepassing.'
+  - 'In deze wet en de daarop berustende bepalingen wordt verstaan onder: a. Onze Minister: Onze Minister van Justitie; b.
+    Hoge Raad: de Hoge Raad der Nederlanden; c. zaken die bij dagvaarding worden ingeleid: zaken als bedoeld in artikel 78
+    van het Wetboek van Burgerlijke Rechtsvordering; d. zaken die met een verzoekschrift worden ingeleid: zaken als bedoeld
+    in artikel 261 van het Wetboek van Burgerlijke Rechtsvordering.'
+- source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query
+
+    Query:Dient een belastingaanslag voor de toepassing van van de Invorderingswet 1990 nog steeds te worden aangemerkt als
+    een aanslag die in meer dan één termijn invorderbaar is, indien de belastingplichtige deze aanslag feitelijk in één keer
+    heeft betaald om een betalingskorting te verkrijgen?'
+  sentences:
+  - Met betrekking tot een belastingaanslag inkomstenbelasting over het kalenderjaar 2014 waarvan het aanslagbiljet een dagtekening
+    heeft die ligt in de periode die aanvangt op 1 mei 2015 en eindigt op 30 juni 2016 wordt geen invorderingsrente in rekening
+    gebracht voor zover de betaling plaatsvindt uiterlijk 4 maanden na het verstrijken van de voor deze belastingaanslag geldende
+    betalingstermijn.
+  - '1. Bij ministeriële regeling kunnen regels worden gesteld omtrent het indienen van aanvragen voor vergunningen, ontheffingen
+    en erkenningen, die krachtens deze wet kunnen worden verleend, en het indienen van kennisgevingen, die ingevolge bij of
+    krachtens deze wet gestelde regels moeten worden geregistreerd.
+
+    2. Bij de regeling kan worden bepaald: a. dat een aanvraag eerst in behandeling wordt genomen of dat een kennisgeving
+    eerst wordt geregistreerd nadat een daarvoor vastgesteld bedrag is voldaan; b. de kosten van het onderzoek voortvloeiende
+    uit de aanvraag geheel of gedeeltelijk ten laste van de aanvrager wordt gebracht.'
+  - '1. De burgemeester heeft het opperbevel bij brand alsmede bij ongevallen anders dan bij brand voor zover de brandweer
+    daarbij een taak heeft.
+
+    2. De burgemeester is bevoegd bij brand en ongevallen bedoeld in het eerste lid, de bevelen te geven die met het oog op
+    het voorkomen, beperken en bestrijden van gevaar nodig zijn.'
+  - Indien een voorlopige aanslag inkomstenbelasting is of zal worden vastgesteld en een relevante wijziging optreedt in de
+    omstandigheden die van belang zijn voor de opgelegde of op te leggen voorlopige aanslag, doet de belastingplichtige daarvan
+    zo spoedig mogelijk op de door de inspecteur aangewezen wijze mededeling aan de inspecteur. Deze mededeling wordt geacht
+    een verzoek om herziening als bedoeld in artikel 9.5, eerste lid, van de Wet inkomstenbelasting 2001 te zijn.
+  - De belasting voor een motorrijtuig waarvoor een kenteken is opgegeven kan in één keer worden betaald over vier aaneensluitende
+    tijdvakken.
+  - De verzending en de betekening van de stukken betreffende de invordering van de schenk- en erfbelasting kan plaatsvinden
+    aan de ingevolge artikel 43 van de Successiewet 1956 gekozen woonplaats dan wel aan de werkelijke woonplaats of plaats
+    van vestiging.
+  - Uiterlijk de veertiende dag na de laatste dag, waarop de inartikel 213bedoelde lijst der geldelijke regelingen ter inzage
+    heeft gelegen, kan iedere belanghebbende schriftelijk zijn bezwaren tegen de lijst der geldelijke regelingen bij de landinrichtingscommissie
+    indienen.
+  - 'Onder last onder dwangsom wordt verstaan: de herstelsanctie, inhoudende: a. een last tot geheel of gedeeltelijk herstel
+    van de overtreding, en b. de verplichting tot betaling van een geldsom indien de last niet of niet tijdig wordt uitgevoerd.'
+  - 'Artikel 27a. Betalingskorting In aansluiting op artikel 27a van de wet beschrijft dit artikel het beleid over de verlening
+    van betalingskorting bij vermindering van de belastingaanslag. 27a.1. Verlenen betalingskorting en vermindering van de
+    belastingaanslag Bij een vermindering van de belastingaanslag kan uitsluitend betalingskorting worden verleend als: –
+    de vermindering plaats vindt vóór de eerste vervaldag; en – tenminste het nieuwe bedrag van de (inmiddels verminderde)
+    belastingaanslag minus het bedrag van de oorspronkelijk berekende betalingskorting vóór of op de eerste vervaldag is betaald.
+    In dit geval herberekent de ontvanger de betalingskorting op basis van het nieuwe bedrag van de belastingaanslag en stelt
+    hij dit vast bij voor bezwaar vatbare beschikking.'
+model-index:
+- name: SentenceTransformer based on Qwen/Qwen3-Embedding-4B
+  results:
+  - task:
+      type: rank-zero-ir
+      name: Rank Zero IR
+    dataset:
+      name: legal val
+      type: legal-val
+    metrics:
+    - type: cosine_accuracy@1
+      value: 0.462
+      name: Cosine Accuracy@1
+      verified: false
+    - type: cosine_accuracy@5
+      value: 0.716
+      name: Cosine Accuracy@5
+      verified: false
+    - type: cosine_accuracy@10
+      value: 0.768
+      name: Cosine Accuracy@10
+      verified: false
+    - type: cosine_precision@1
+      value: 0.462
+      name: Cosine Precision@1
+      verified: false
+    - type: cosine_precision@10
+      value: 0.1408
+      name: Cosine Precision@10
+      verified: false
+    - type: cosine_recall@1
+      value: 0.24578803398747084
+      name: Cosine Recall@1
+      verified: false
+    - type: cosine_recall@10
+      value: 0.5705198866628273
+      name: Cosine Recall@10
+      verified: false
+    - type: cosine_ndcg@10
+      value: 0.4866592483040795
+      name: Cosine Ndcg@10
+      verified: false
+    - type: cosine_mrr@10
+      value: 0.5707936507936506
+      name: Cosine Mrr@10
+      verified: false
+    - type: cosine_map@100
+      value: 0.4133981147347662
+      name: Cosine Map@100
+      verified: false
+config:
+  tokenizer_config:
+    bos_token: null
+    eos_token: <|im_end|>
+    pad_token: <|endoftext|>
+    unk_token: null
+  chat_template_jinja: "{%- if tools %}\n    {{- '<|im_start|>system\\n' }}\n    {%- if messages[0]['role'] == 'system' %}\n\
+    \        {{- messages[0]['content'] }}\n    {%- else %}\n        {{- 'You are a helpful assistant.' }}\n    {%- endif\
+    \ %}\n    {{- \"\\n\\n# Tools\\n\\nYou may call one or more functions to assist with the user query.\\n\\nYou are provided\
+    \ with function signatures within <tools></tools> XML tags:\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{-\
+    \ \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\\n\\nFor each function call, return\
+    \ a json object with function name and arguments within <tool_call></tool_call> XML tags:\\n<tool_call>\\n{\\\"name\\\"\
+    : <function-name>, \\\"arguments\\\": <args-json-object>}\\n</tool_call><|im_end|>\\n\" }}\n{%- else %}\n    {%- if messages[0]['role']\
+    \ == 'system' %}\n        {{- '<|im_start|>system\\n' + messages[0]['content'] + '<|im_end|>\\n' }}\n    {%- else %}\n\
+    \        {{- '<|im_start|>system\\nYou are a helpful assistant.<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%-\
+    \ for message in messages %}\n    {%- if (message.role == \"user\") or (message.role == \"system\" and not loop.first)\
+    \ or (message.role == \"assistant\" and not message.tool_calls) %}\n        {{- '<|im_start|>' + message.role + '\\n'\
+    \ + message.content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {{- '<|im_start|>'\
+    \ + message.role }}\n        {%- if message.content %}\n            {{- '\\n' + message.content }}\n        {%- endif\
+    \ %}\n        {%- for tool_call in message.tool_calls %}\n            {%- if tool_call.function is defined %}\n      \
+    \          {%- set tool_call = tool_call.function %}\n            {%- endif %}\n            {{- '\\n<tool_call>\\n{\"\
+    name\": \"' }}\n            {{- tool_call.name }}\n            {{- '\", \"arguments\": ' }}\n            {{- tool_call.arguments\
+    \ | tojson }}\n            {{- '}\\n</tool_call>' }}\n        {%- endfor %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif\
+    \ message.role == \"tool\" %}\n        {%- if (loop.index0 == 0) or (messages[loop.index0 - 1].role != \"tool\") %}\n\
+    \            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {{- message.content\
+    \ }}\n        {{- '\\n</tool_response>' }}\n        {%- if loop.last or (messages[loop.index0 + 1].role != \"tool\") %}\n\
+    \            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt\
+    \ %}\n    {{- '<|im_start|>assistant\\n' }}\n{%- endif %}\n"
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:1043663
+  - loss:WeightedMultiPositiveCachedLoss
+  - loss:MultipleNegativesRankingLoss
+  base_model: Qwen/Qwen3-Embedding-4B
+  widget:
+  - source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query
+
+      Query:invloed van de bestuurlijke centralisatie op de zorgwetgeving'
+    sentences:
+    - '[Wijzigt het Wetboek van Strafrecht, het Wetboek van Strafvordering, de Wet overdracht tenuitvoerlegging strafvonnissen,
+      de Overleveringswet, de Uitleveringswet, de Wet op de jeugdzorg, de Vreemdelingenwet 2000, de Advocatenwet, de Wet bijzondere
+      opnemingen in psychiatrische ziekenhuizen.]'
+    - '[Wijzigt het Wetboek van Strafrecht.]'
+    - '1. De kosten van vervolging zijn ten laste van degene die in gebreke is gebleven het verschuldigde tijdig te betalen.
+
+      2. Bij algemene maatregel van bestuur kunnen de kosten van vervolging worden bepaald.'
+    - '[Wijzigt de Gemeentewet.]'
+    - '[Wijzigt de Wet inkomstenbelasting 2001.]'
+    - '1. Het voor het tijdstip van inwerkingtreding van deze wet geldende recht blijft van toepassing op procedures met betrekking
+      tot adoptie of herroeping daarvan waarin het inleidende verzoekschrift is ingediend voorafgaande aan het tijdstip van
+      inwerkingtreding van deze wet.
+
+      2. [Wijzigt deze wet.]
+
+      3. [Wijzigt deze wet.]'
+    - '[Wijzigt de Wet inkomstenbelasting 2001.]'
+    - '[Wijzigt de Gemeentewet.]'
+    - De uitvaardigende officier van justitie is met het oog op de behandeling en uitvoering van het door hem afgegeven Europees
+      aanhoudingsbevel bevoegd de uitvoerende justitiële autoriteit op verzoek of eigener beweging aanvullende informatie
+      te verstrekken en, in voorkomend geval, schriftelijk de voorwaarden overeen te komen in het geval de opgeëiste persoon
+      voorlopig ter beschikking wordt gesteld.
+  - source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query
+
+      Query:Deelgeschil. Val na struikelen over afstapje tegen gastvrouw aan, die hierdoor haar heup brak. Verweerder had
+      ten tijde van het ongeval een lichamelijke tekortkoming (een achillespeesblessure). Aansprakelijkheid op grond van BW.
+      Verweren, inhoudende dat sprake was van gevaarzetting aan de zijde van verzoekster en een ongelukkige samenloop van
+      omstandigheden, slagen niet.'
+    sentences:
+    - Een gedraging van een kind dat de leeftijd van veertien jaren nog niet heeft bereikt, kan aan hem niet als een onrechtmatige
+      daad worden toegerekend.
+    - Tegen de beschikking op het verzoek staat geen voorziening open, onverminderdartikel 1019cc, derde lid.
+    - '1. De omstandigheid dat een als een doen te beschouwen gedraging van een persoon van veertien jaren of ouder verricht
+      is onder invloed van een geestelijke of lichamelijke tekortkoming, is geen beletsel haar als een onrechtmatige daad
+      aan de dader toe te rekenen.
+
+      2. Is jegens de benadeelde tevens een derde wegens onvoldoende toezicht aansprakelijk, dan is deze derde jegens de dader
+      verplicht tot bijdragen in de schadevergoeding voor het gehele bedrag van zijn aansprakelijkheid jegens de benadeelde.'
+    - Dit besluit treedt in werking met ingang van de dag na datum van uitgifte van het Staatsblad waarin het wordt geplaatst.
+    - '1. Indien de overeenkomst een beding inhoudt dat de verzekerde persoonlijk voor een deel in de vergoeding van de schade
+      zal bijdragen, blijft de verzekeraar niettemin jegens de benadeelde gehouden tot betaling van de schadeloosstelling
+      die krachtens de overeenkomst ten laste van de verzekerde blijft.
+
+      2. De verzekeraar kan echter tegenover een benadeelde beroep doen op een beding, inhoudende dat hij slechts aansprakelijk
+      is voor het bedrag waarmede de schade een bij algemene maatregel van bestuur vast te stellen bedrag te boven gaat.'
+    - 'Een werkgever kan in de loonaangifte een verzoek doen voor de volgende tegemoetkomingen: a. loonkostenvoordeel oudere
+      werknemer; b. loonkostenvoordeel arbeidsgehandicapte werknemer; c. loonkostenvoordeel doelgroep banenafspraak en scholingsbelemmerden;
+      d. loonkostenvoordeel herplaatsen arbeidsgehandicapte werknemer; waarbij een uiterlijk op de inartikel 4.1, tweede of
+      zevende lid, bedoelde datum van het kalenderjaar volgend op het kalenderjaar waarop de tegemoetkoming betrekking heeft
+      ingediend correctiebericht wordt opgevat als een in de loonaangifte gedaan verzoek.'
+    - De aansprakelijkheid van een hulpverlener of, in het geval bedoeld inartikel 462, van het ziekenhuis, kan niet worden
+      beperkt of uitgesloten.
+    - Een aansprakelijke persoon is niet gerechtigd zijn aansprakelijkheid te beperken, indien bewezen wordt dat de schade
+      het gevolg is van zijn persoonlijk handelen of nalaten, geschied hetzij met het opzet zodanige schade te veroorzaken,
+      hetzij roekeloos en met de wetenschap dat zodanige schade er waarschijnlijk uit zou voortvloeien.
+    - Wie een goed houdt, wordt vermoed dit voor zichzelf te houden.
+  - source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query
+
+      Query:verbod gebruik handelsnaam social media na beëindiging overeenkomst'
+    sentences:
+    - '1. Als individuele merken worden beschouwd de benamingen, tekeningen, afdrukken, stempels, letters, cijfers, vormen
+      van waren of van verpakking en alle andere voor grafische voorstelling vatbare tekens, die dienen om de waren of diensten
+      van een onderneming te onderscheiden.
+
+      2. Evenwel kunnen niet als merken worden beschouwd tekens die uitsluitend bestaan uit een vorm die door de aard van
+      de waar wordt bepaald, die een wezenlijke waarde aan de waar geeft of die noodzakelijk is om een technische uitkomst
+      te verkrijgen.
+
+      3. Onverminderd de bepalingen van het gemene recht, kan een geslachtsnaam als merk dienen.'
+    - '1. Indien het wenselijk blijkt over de in artikel 105 bedoelde aangelegenheden voorbereidende besprekingen te voeren
+      of in het overleg genomen besluiten uit te werken, geschiedt deze voorbereiding of uitwerking door werkgroepen bestaande
+      uit vertegenwoordigers van de Sectorcommissie en door Onze Minister van Binnenlandse Zaken daartoe aangewezen functionarissen.
+
+      2. Het bepaalde in het vierde en vijfde lid van artikel 107 is daarbij van overeenkomstige toepassing.'
+    - Het is verboden een handelsnaam te voeren, die het merk bevat, waarop een ander ter onderscheiding van zijn fabrieks-
+      of handelswaren recht heeft, dan wel een aanduiding, die van zodanig merk slechts in geringe mate afwijkt, voor zover
+      dientengevolge bij het publiek verwarring omtrent de herkomst van de waren te duchten is.
+    - Behoudens bepaling van het tegendeel zijn collectieve merken aan dezelfde regelen onderworpen als individuele merken.
+    - '1. Het is verboden verlichting of zoeklichten, alsmede vlaggen, borden, wimpels of andere voorwerpen, op zodanige wijze
+      te gebruiken, dat zij verward kunnen worden met de in dit reglement vermelde tekens dan wel de waarneembaarheid of de
+      herkenning daarvan kunnen bemoeilijken.
+
+      2. Het is verboden verlichting of zoeklichten op zodanige wijze te gebruiken, dat zij, door verblinding, gevaar of hinder
+      voor de scheepvaart of voor het verkeer te land kunnen veroorzaken.'
+    - Het is verboden een handelsnaam te voeren, die, vóórdat de onderneming onder die naam werd gedreven, reeds door een
+      ander rechtmatig gevoerd werd, of die van diens handelsnaam slechts in geringe mate afwijkt, een en ander voor zover
+      dientengevolge, in verband met de aard der beide ondernemingen en de plaats, waar zij gevestigd zijn, bij het publiek
+      verwarring tussen die ondernemingen te duchten is.
+    - Behoudens bepaling van het tegendeel zijn collectieve merken aan dezelfde regelen onderworpen als individuele merken.
+    - Indien de arbeid, in dienst van een ander verricht, bestaat in het vervaardigen van bepaalde werken van letterkunde,
+      wetenschap of kunst, dan wordt, tenzij tusschen partijen anders is overeengekomen, als de maker van die werken aangemerkt
+      degene, in wiens dienst de werken zijn vervaardigd.
+    - '1. Het is verboden verlichting of zoeklichten, alsmede vlaggen, borden, wimpels of andere voorwerpen, op zodanige wijze
+      te gebruiken, dat zij verward kunnen worden met de in dit reglement vermelde tekens dan wel de waarneembaarheid of de
+      herkenning daarvan kunnen bemoeilijken.
+
+      2. Het is verboden verlichting of zoeklichten op zodanige wijze te gebruiken, dat zij, door verblinding, gevaar of hinder
+      voor de scheepvaart of voor het verkeer te land kunnen veroorzaken.'
+  - source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query
+
+      Query:Wat is het juridische gevolg voor de ontvankelijkheid van de beroepen indien de rechtbank vaststelt dat tienmaal
+      griffierecht verschuldigd is en dit niet tijdig wordt aangevuld?'
+    sentences:
+    - '[Wijzigt de Algemene wet bestuursrecht.]'
+    - '[Wijzigt de Belastingwet BES.]'
+    - '[Bevat wijzigingen in andere regelgeving.]'
+    - Indien de advocaat jegens wie het voornemen bestaat een procedure inzake de onbehoorlijke praktijkuitoefening aan te
+      vangen, zich krachtens het nationale recht van een andere lidstaat van de Europese Unie of een andere staat die partij
+      is bij de Overeenkomst betreffende de Europese Economische Ruimte dat uitvoering geeft aan artikel 3 van richtlijn 98/5/EG
+      van het Europees Parlement en de Raad van de Europese Unie van 16 februari 1998 ter vergemakkelijking van de permanente
+      uitoefening van het beroep van advocaat, heeft laten inschrijven, stelt de raad van toezicht voor de aanvang van de
+      procedure de bevoegde autoriteit in die lidstaat of lidstaten van dit voornemen op de hoogte en verstrekt hij aan die
+      autoriteit of autoriteiten alle dienstige inlichtingen.
+    - 'Subsidie op grond vanartikel 6wordt slechts verstrekt voor zover: a. de student gedurende het desbetreffende studiejaar
+      een opleiding in het hoger beroepsonderwijs heeft gevolgd waarvoor op grond van artikel 5a.9 van de WHW accreditatie
+      is verleend en de opleiding is opgenomen in het Centraal register opleidingen hoger onderwijs, bedoeld in artikel 6.13
+      van die wet, en de code van de opleiding is opgenomen in de onderdelen 1°. techniek, 2°. gezondheidszorg, gedrag en
+      maatschappij, of 3°. landbouw en natuurlijke omgeving; b. de verzorging van het onderricht in de praktijk van het beroep
+      voor de student door de werkgever plaats heeft gevonden op grond van en overeenkomstig een praktijkleerovereenkomst;
+      c. de werkgever beschikt over een aanwezigheidsregistratie van de student bij de beroepsuitoefening; en d. de werkgever
+      beschikt over een administratie waaruit de begeleiding van de student blijkt en de wijze waarop de student het deel
+      van de kwaliteiten met betrekking tot de beroepsuitoefening heeft gerealiseerd.'
+    - '[Red: Dit artikel is nog niet in werking getreden.] [Wijzigt het Transactiebesluit 1994.]'
+    - '1. Van partijen die bij dezelfde advocaat of gemachtigde verschijnen en gelijkluidende conclusies nemen, wordt slechts
+      eenmaal een gezamenlijk griffierecht geheven.
+
+      2. Indien tot de partijen die bij dezelfde advocaat of gemachtigde verschijnen en gelijkluidende conclusies nemen, zowel
+      natuurlijke personen als rechtspersonen behoren, wordt het griffierecht geheven, dat rechtspersonen verschuldigd zijn.'
+    - '1. De centrale commissie of Onze Minister, ingeval hetvijfde lid van artikel 13ivan toepassing is, maakt slechts gemotiveerd
+      bezwaar indien in de Europese databank reeds bijwerkingen van het geneesmiddel voor onderzoek zijn opgenomen, die leiden
+      tot onaanvaardbare risico’s voor de proefpersoon.
+
+      2. De Inspectie voor de Gezondheidszorg controleert op verzoek van de centrale commissie of van Onze Minister, ingeval
+      hetvijfde lid van artikel 13ivan toepassing is, of het wetenschappelijk onderzoek met geneesmiddelen naar verwachting
+      kan plaats vinden overeenkomstig deze wet. Het bepaalde in artikel 5:12, 5:13 en 5:15 tot en met 5:20 van de Algemene
+      wet bestuursrecht is van overeenkomstige toepassing.'
+    - 'In deze wet en de daarop berustende bepalingen wordt verstaan onder: a. Onze Minister: Onze Minister van Justitie;
+      b. Hoge Raad: de Hoge Raad der Nederlanden; c. zaken die bij dagvaarding worden ingeleid: zaken als bedoeld in artikel
+      78 van het Wetboek van Burgerlijke Rechtsvordering; d. zaken die met een verzoekschrift worden ingeleid: zaken als bedoeld
+      in artikel 261 van het Wetboek van Burgerlijke Rechtsvordering.'
+  - source_sentence: 'Instruct: Given a Dutch legal query, retrieve relevant articles that help answer the query
+
+      Query:Dient een belastingaanslag voor de toepassing van van de Invorderingswet 1990 nog steeds te worden aangemerkt
+      als een aanslag die in meer dan één termijn invorderbaar is, indien de belastingplichtige deze aanslag feitelijk in
+      één keer heeft betaald om een betalingskorting te verkrijgen?'
+    sentences:
+    - Met betrekking tot een belastingaanslag inkomstenbelasting over het kalenderjaar 2014 waarvan het aanslagbiljet een
+      dagtekening heeft die ligt in de periode die aanvangt op 1 mei 2015 en eindigt op 30 juni 2016 wordt geen invorderingsrente
+      in rekening gebracht voor zover de betaling plaatsvindt uiterlijk 4 maanden na het verstrijken van de voor deze belastingaanslag
+      geldende betalingstermijn.
+    - '1. Bij ministeriële regeling kunnen regels worden gesteld omtrent het indienen van aanvragen voor vergunningen, ontheffingen
+      en erkenningen, die krachtens deze wet kunnen worden verleend, en het indienen van kennisgevingen, die ingevolge bij
+      of krachtens deze wet gestelde regels moeten worden geregistreerd.
+
+      2. Bij de regeling kan worden bepaald: a. dat een aanvraag eerst in behandeling wordt genomen of dat een kennisgeving
+      eerst wordt geregistreerd nadat een daarvoor vastgesteld bedrag is voldaan; b. de kosten van het onderzoek voortvloeiende
+      uit de aanvraag geheel of gedeeltelijk ten laste van de aanvrager wordt gebracht.'
+    - '1. De burgemeester heeft het opperbevel bij brand alsmede bij ongevallen anders dan bij brand voor zover de brandweer
+      daarbij een taak heeft.
+
+      2. De burgemeester is bevoegd bij brand en ongevallen bedoeld in het eerste lid, de bevelen te geven die met het oog
+      op het voorkomen, beperken en bestrijden van gevaar nodig zijn.'
+    - Indien een voorlopige aanslag inkomstenbelasting is of zal worden vastgesteld en een relevante wijziging optreedt in
+      de omstandigheden die van belang zijn voor de opgelegde of op te leggen voorlopige aanslag, doet de belastingplichtige
+      daarvan zo spoedig mogelijk op de door de inspecteur aangewezen wijze mededeling aan de inspecteur. Deze mededeling
+      wordt geacht een verzoek om herziening als bedoeld in artikel 9.5, eerste lid, van de Wet inkomstenbelasting 2001 te
+      zijn.
+    - De belasting voor een motorrijtuig waarvoor een kenteken is opgegeven kan in één keer worden betaald over vier aaneensluitende
+      tijdvakken.
+    - De verzending en de betekening van de stukken betreffende de invordering van de schenk- en erfbelasting kan plaatsvinden
+      aan de ingevolge artikel 43 van de Successiewet 1956 gekozen woonplaats dan wel aan de werkelijke woonplaats of plaats
+      van vestiging.
+    - Uiterlijk de veertiende dag na de laatste dag, waarop de inartikel 213bedoelde lijst der geldelijke regelingen ter inzage
+      heeft gelegen, kan iedere belanghebbende schriftelijk zijn bezwaren tegen de lijst der geldelijke regelingen bij de
+      landinrichtingscommissie indienen.
+    - 'Onder last onder dwangsom wordt verstaan: de herstelsanctie, inhoudende: a. een last tot geheel of gedeeltelijk herstel
+      van de overtreding, en b. de verplichting tot betaling van een geldsom indien de last niet of niet tijdig wordt uitgevoerd.'
+    - 'Artikel 27a. Betalingskorting In aansluiting op artikel 27a van de wet beschrijft dit artikel het beleid over de verlening
+      van betalingskorting bij vermindering van de belastingaanslag. 27a.1. Verlenen betalingskorting en vermindering van
+      de belastingaanslag Bij een vermindering van de belastingaanslag kan uitsluitend betalingskorting worden verleend als:
+      – de vermindering plaats vindt vóór de eerste vervaldag; en – tenminste het nieuwe bedrag van de (inmiddels verminderde)
+      belastingaanslag minus het bedrag van de oorspronkelijk berekende betalingskorting vóór of op de eerste vervaldag is
+      betaald. In dit geval herberekent de ontvanger de betalingskorting op basis van het nieuwe bedrag van de belastingaanslag
+      en stelt hij dit vast bij voor bezwaar vatbare beschikking.'
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - cosine_accuracy@1
+  - cosine_accuracy@5
+  - cosine_accuracy@10
+  - cosine_precision@1
+  - cosine_precision@10
+  - cosine_recall@1
+  - cosine_recall@10
+  - cosine_ndcg@10
+  - cosine_mrr@10
+  - cosine_map@100
+  model-index:
+  - name: SentenceTransformer based on Qwen/Qwen3-Embedding-4B
+    results:
+    - task:
+        type: rank-zero-ir
+        name: Rank Zero IR
+      dataset:
+        name: legal val
+        type: legal-val
+      metrics:
+      - type: cosine_accuracy@1
+        value: 0.462
+        name: Cosine Accuracy@1
+        verified: false
+      - type: cosine_accuracy@5
+        value: 0.716
+        name: Cosine Accuracy@5
+        verified: false
+      - type: cosine_accuracy@10
+        value: 0.768
+        name: Cosine Accuracy@10
+        verified: false
+      - type: cosine_precision@1
+        value: 0.462
+        name: Cosine Precision@1
+        verified: false
+      - type: cosine_precision@10
+        value: 0.1408
+        name: Cosine Precision@10
+        verified: false
+      - type: cosine_recall@1
+        value: 0.24578803398747084
+        name: Cosine Recall@1
+        verified: false
+      - type: cosine_recall@10
+        value: 0.5705198866628273
+        name: Cosine Recall@10
+        verified: false
+      - type: cosine_ndcg@10
+        value: 0.4866592483040795
+        name: Cosine Ndcg@10
+        verified: false
+      - type: cosine_mrr@10
+        value: 0.5707936507936506
+        name: Cosine Mrr@10
+        verified: false
+      - type: cosine_map@100
+        value: 0.4133981147347662
+        name: Cosine Map@100
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Normalize/config.json
+- rfilename: README.md
+- rfilename: adapter_config.json
+- rfilename: adapter_model.safetensors
+- rfilename: chat_template.jinja
+- rfilename: config_sentence_transformers.json
+- rfilename: last-checkpoint/1_Pooling/config.json
+- rfilename: last-checkpoint/2_Normalize/config.json
+- rfilename: last-checkpoint/README.md
+- rfilename: last-checkpoint/adapter_config.json
+- rfilename: last-checkpoint/adapter_model.safetensors
+- rfilename: last-checkpoint/chat_template.jinja
+- rfilename: last-checkpoint/config_sentence_transformers.json
+- rfilename: last-checkpoint/modules.json
+- rfilename: last-checkpoint/optimizer.pt
+- rfilename: last-checkpoint/rng_state_0.pth
+- rfilename: last-checkpoint/rng_state_1.pth
+- rfilename: last-checkpoint/scheduler.pt
+- rfilename: last-checkpoint/sentence_bert_config.json
+- rfilename: last-checkpoint/tokenizer.json
+- rfilename: last-checkpoint/tokenizer_config.json
+- rfilename: last-checkpoint/trainer_state.json
+- rfilename: last-checkpoint/training_args.bin
+- rfilename: modules.json
+- rfilename: runs/events.out.tfevents.1792925984.elotfi.475567.0
+- rfilename: runs/events.out.tfevents.1792926666.elotfi.482388.0
+- rfilename: runs/events.out.tfevents.1792927323.elotfi.485597.0
+- rfilename: runs/events.out.tfevents.1792927876.elotfi.488448.0
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: training_args.bin
+spaces: []
+createdAt: '2026-10-25T10:59:42.000Z'
+usedStorage: 408347049
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 264.4
+approxSizeMb: 0.0
+fetchedAt: '2026-10-27T08:51:16.000Z'

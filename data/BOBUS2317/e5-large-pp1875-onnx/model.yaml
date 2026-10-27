@@ -1,0 +1,107 @@
+_id: 6adf5cdbef3599ba9c02bbcd
+id: BOBUS2317/e5-large-pp1875-onnx
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- onnx
+- xlm-roberta
+- int8
+- okpd2
+- procurement
+- sentence-similarity
+- ru
+- base_model:intfloat/multilingual-e5-large
+- base_model:quantized:intfloat/multilingual-e5-large
+- license:mit
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: BOBUS2317/e5-large-pp1875-onnx
+author: BOBUS2317
+sha: 52035394892a6214fea9185aac4da9c101f5a2a3
+lastModified: '2026-10-26T14:59:30.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: Это счастливый человек
+  sentences:
+  - Это счастливая собака
+  - Это очень счастливый человек
+  - Сегодня солнечный день
+model-index: null
+config:
+  architectures:
+  - XLMRobertaModel
+  model_type: xlm-roberta
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: <unk>
+cardData:
+  license: mit
+  base_model: intfloat/multilingual-e5-large
+  language:
+  - ru
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  tags:
+  - onnx
+  - int8
+  - okpd2
+  - procurement
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: modules.json
+- rfilename: onnx/model_quint8_avx2.onnx
+- rfilename: sentence_bert_config.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-26T13:59:55.000Z'
+usedStorage: 578860129
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - XLMRobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 1024
+  initializer_range: 0.02
+  intermediate_size: 4096
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 514
+  model_type: xlm-roberta
+  num_attention_heads: 16
+  num_hidden_layers: 24
+  output_past: true
+  pad_token_id: 1
+  position_embedding_type: absolute
+  transformers_version: 4.57.6
+  type_vocab_size: 1
+  use_cache: true
+  vocab_size: 250002
+onnxFiles:
+  onnx/model_quint8_avx2.onnx: 561.8
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-27T08:51:16.000Z'

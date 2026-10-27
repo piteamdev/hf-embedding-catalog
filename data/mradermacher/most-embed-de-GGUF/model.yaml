@@ -1,0 +1,94 @@
+_id: 6ae05c57bcba7e73e30a3efd
+id: mradermacher/most-embed-de-GGUF
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- gguf
+- sentence-transformers
+- feature-extraction
+- retrieval
+- german
+- mteb
+- text
+- text-embeddings
+- semantic-search
+- rag
+- vllm
+- de
+- en
+- base_model:malteos/most-embed-de
+- base_model:quantized:malteos/most-embed-de
+- license:cc-by-nc-4.0
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: mradermacher/most-embed-de-GGUF
+author: mradermacher
+sha: 8a257a080f90521fd84b7291bf64bd7ac31ffe5e
+lastModified: '2026-10-27T08:16:05.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  base_model: malteos/most-embed-de
+  language:
+  - de
+  - en
+  library_name: transformers
+  license: cc-by-nc-4.0
+  mradermacher:
+    readme_rev: 1
+  quantized_by: mradermacher
+  tags:
+  - sentence-transformers
+  - feature-extraction
+  - retrieval
+  - german
+  - mteb
+  - text
+  - text-embeddings
+  - retrieval
+  - semantic-search
+  - transformers
+  - rag
+  - vllm
+transformersInfo:
+  auto_model: AutoModel
+gguf:
+  total: 1140918272
+  architecture: mistral3
+  context_length: 262144
+  causal: false
+  bos_token: <s>
+  eos_token: </s>
+  pooling_type: 1
+  totalFileSize: 2289841312
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: most-embed-de.IQ4_XS.gguf
+- rfilename: most-embed-de.Q2_K.gguf
+- rfilename: most-embed-de.Q3_K_L.gguf
+- rfilename: most-embed-de.Q3_K_M.gguf
+- rfilename: most-embed-de.Q3_K_S.gguf
+- rfilename: most-embed-de.Q4_K_M.gguf
+- rfilename: most-embed-de.Q4_K_S.gguf
+- rfilename: most-embed-de.Q5_K_M.gguf
+- rfilename: most-embed-de.Q5_K_S.gguf
+- rfilename: most-embed-de.Q6_K.gguf
+- rfilename: most-embed-de.Q8_0.gguf
+- rfilename: most-embed-de.f16.gguf
+spaces: []
+createdAt: '2026-10-27T08:09:59.000Z'
+usedStorage: 10785814400
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-27T08:51:16.000Z'

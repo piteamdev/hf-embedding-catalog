@@ -1,0 +1,98 @@
+_id: 6aba7683a03bba13484710fd
+id: TwoheartsTechnologies/GoiBERT-S
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- roberta
+- feature-extraction
+- vi
+- arxiv:2610.30067
+- license:other
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 24
+likes: 3
+modelId: TwoheartsTechnologies/GoiBERT-S
+author: TwoheartsTechnologies
+sha: b7e4546dc684b8e0445983ee1d8a1f4b3b93c750
+lastModified: '2026-10-27T06:56:02.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - RobertaModel
+  model_type: roberta
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: <unk>
+cardData:
+  library_name: transformers
+  license: other
+  license_name: goibert-community-model-license-1.0
+  license_link: https://huggingface.co/TwoheartsTechnologies/GoiBERT-S/blob/main/LICENSE
+  language:
+  - vi
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: licenses/BSD-3-Clause-Clear.txt
+- rfilename: licenses/Qualcomm-RAIL.txt
+- rfilename: model.safetensors
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-09-28T14:15:31.000Z'
+safetensors:
+  parameters:
+    F32: 26397696
+  total: 26397696
+usedStorage: 105609040
+downloadsAllTime: 24
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - RobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  initializer_range: 0.02
+  intermediate_size: 1536
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 2050
+  model_type: roberta
+  num_attention_heads: 6
+  num_hidden_layers: 10
+  pad_token_id: 1
+  position_embedding_type: absolute
+  torch_dtype: float32
+  transformers_version: 4.49.0
+  type_vocab_size: 1
+  use_cache: false
+  vocab_size: 20481
+onnxFiles: {}
+safetensorsSizeMb: 105.6
+approxSizeMb: 105.6
+fetchedAt: '2026-10-27T08:51:16.000Z'

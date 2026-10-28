@@ -1,0 +1,116 @@
+_id: 6ab87cc80ee90a881d37acb4
+id: melmass/Llama-3-8B-LLM2Vec-Kimodo-MLX-4bit
+private: false
+pipeline_tag: feature-extraction
+library_name: mlx
+tags:
+- mlx
+- safetensors
+- llama
+- llm2vec
+- kimodo
+- text-to-motion
+- 4-bit
+- feature-extraction
+- base_model:meta-llama/Meta-Llama-3-8B-Instruct
+- base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct
+- license:llama3
+- region:us
+downloads: 1
+likes: 0
+modelId: melmass/Llama-3-8B-LLM2Vec-Kimodo-MLX-4bit
+author: melmass
+sha: b13dac6b8772e31e63bcd92a74d975b126c5e7a7
+lastModified: '2026-09-27T02:26:43.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - LlamaBiModel
+  model_type: llama
+  tokenizer_config:
+    bos_token: <|begin_of_text|>
+    eos_token: <|end_of_text|>
+    pad_token: <|end_of_text|>
+  chat_template_jinja: '{% set loop_messages = messages %}{% for message in loop_messages %}{% set content = ''<|start_header_id|>''
+    + message[''role''] + ''<|end_header_id|>
+
+
+    ''+ message[''content''] | trim + ''<|eot_id|>'' %}{% if loop.index0 == 0 %}{% set content = bos_token + content %}{%
+    endif %}{{ content }}{% endfor %}{% if add_generation_prompt %}{{ ''<|start_header_id|>assistant<|end_header_id|>
+
+
+    '' }}{% endif %}'
+cardData:
+  license: llama3
+  base_model: meta-llama/Meta-Llama-3-8B-Instruct
+  library_name: mlx
+  pipeline_tag: feature-extraction
+  tags:
+  - llm2vec
+  - kimodo
+  - text-to-motion
+  - mlx
+  - 4-bit
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: USE_POLICY.md
+- rfilename: chat_template.jinja
+- rfilename: config.json
+- rfilename: kimodo_mlx.json
+- rfilename: llm2vec_config.json
+- rfilename: model.safetensors
+- rfilename: parity/two_prompts_root2d.json
+- rfilename: parity/two_prompts_root2d.npz
+- rfilename: parity/walk_sit.json
+- rfilename: parity/walk_sit.npz
+- rfilename: reference/ref.npy
+- rfilename: reference/texts.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-09-27T02:17:44.000Z'
+safetensors:
+  parameters:
+    BF16: 469307392
+    U32: 938082304
+  total: 1407389696
+usedStorage: 5085669617
+downloadsAllTime: 3
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - LlamaBiModel
+  attention_bias: false
+  attention_dropout: 0.0
+  bos_token_id: 128000
+  dtype: bfloat16
+  eos_token_id: 128009
+  head_dim: 128
+  hidden_act: silu
+  hidden_size: 4096
+  initializer_range: 0.02
+  intermediate_size: 14336
+  max_position_embeddings: 8192
+  mlp_bias: false
+  model_type: llama
+  num_attention_heads: 32
+  num_hidden_layers: 32
+  num_key_value_heads: 8
+  pad_token_id: null
+  pretraining_tp: 1
+  rms_norm_eps: 1.0e-05
+  rope_parameters:
+    rope_theta: 500000.0
+    rope_type: default
+  tie_word_embeddings: false
+  transformers_version: 5.1.0
+  use_cache: true
+  vocab_size: 128256
+onnxFiles: {}
+safetensorsSizeMb: 4691.0
+approxSizeMb: 4690.9
+fetchedAt: '2026-10-28T09:31:45.000Z'

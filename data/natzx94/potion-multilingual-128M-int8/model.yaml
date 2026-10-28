@@ -1,0 +1,78 @@
+_id: 6ae111dc0422c5429d4a3532
+id: natzx94/potion-multilingual-128M-int8
+private: false
+pipeline_tag: sentence-similarity
+library_name: model2vec
+tags:
+- model2vec
+- safetensors
+- static-embeddings
+- embeddings
+- sentence-similarity
+- int8
+- quantized
+- multilingual
+- base_model:minishlab/potion-multilingual-128M
+- base_model:quantized:minishlab/potion-multilingual-128M
+- license:mit
+- 8-bit
+- region:us
+downloads: 0
+likes: 0
+modelId: natzx94/potion-multilingual-128M-int8
+author: natzx94
+sha: aad5bc103f55245ba729ed177265fd6e2cfa0b44
+lastModified: '2026-10-27T21:52:06.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: model2vec
+  architectures:
+  - StaticModel
+cardData:
+  license: mit
+  library_name: model2vec
+  base_model: minishlab/potion-multilingual-128M
+  base_model_relation: quantized
+  language:
+  - multilingual
+  tags:
+  - model2vec
+  - static-embeddings
+  - embeddings
+  - sentence-similarity
+  - int8
+  - quantized
+  pipeline_tag: sentence-similarity
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-10-27T21:04:28.000Z'
+safetensors:
+  parameters:
+    F32: 500353
+    I8: 128090368
+  total: 128590721
+usedStorage: 148708079
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  model_type: model2vec
+  architectures:
+  - StaticModel
+  tokenizer_name: BAAI/bge-m3
+  apply_pca: null
+  apply_zipf: null
+  sif_coefficient: null
+  hidden_dim: 256
+  seq_length: 1000000
+  normalize: true
+onnxFiles: {}
+safetensorsSizeMb: 130.1
+approxSizeMb: 130.1
+fetchedAt: '2026-10-28T09:31:45.000Z'

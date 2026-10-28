@@ -1,0 +1,53 @@
+_id: 6ae0cd0c96ff4c0e91656b78
+id: EIDORA/VGG16_IN1k
+private: false
+pipeline_tag: feature-extraction
+tags:
+- onnx
+- eidora
+- eidora-model-zoo
+- onnxruntime
+- embeddings
+- image
+- modality:image
+- vgg16
+- feature-extraction
+- arxiv:1409.1556
+- region:us
+downloads: 0
+likes: 0
+modelId: EIDORA/VGG16_IN1k
+author: EIDORA
+sha: d7844f82917271e67383e8d45bbaf5657b99938a
+lastModified: '2026-10-27T18:25:30.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  pipeline_tag: feature-extraction
+  tags:
+  - eidora
+  - eidora-model-zoo
+  - onnx
+  - onnxruntime
+  - embeddings
+  - image
+  - modality:image
+  - vgg16
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.yaml
+- rfilename: model.onnx
+spaces: []
+createdAt: '2026-10-27T16:10:52.000Z'
+usedStorage: 538573961
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  model.onnx: 537.1
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-28T09:31:45.000Z'

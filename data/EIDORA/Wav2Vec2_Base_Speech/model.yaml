@@ -1,0 +1,59 @@
+_id: 6ae085922d2af89164c343c6
+id: EIDORA/Wav2Vec2_Base_Speech
+private: false
+pipeline_tag: feature-extraction
+tags:
+- onnx
+- eidora
+- eidora-model-zoo
+- onnxruntime
+- embeddings
+- audio
+- modality:audio
+- wav2vec2
+- feature-extraction
+- arxiv:2006.11477
+- base_model:facebook/wav2vec2-base
+- base_model:quantized:facebook/wav2vec2-base
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: EIDORA/Wav2Vec2_Base_Speech
+author: EIDORA
+sha: b1b802b0bab88afff2e22d8a2fb5bed867694519
+lastModified: '2026-10-27T18:25:36.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  pipeline_tag: feature-extraction
+  tags:
+  - eidora
+  - eidora-model-zoo
+  - onnx
+  - onnxruntime
+  - embeddings
+  - audio
+  - modality:audio
+  - wav2vec2
+  license: apache-2.0
+  base_model: facebook/wav2vec2-base
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.yaml
+- rfilename: model.onnx
+spaces: []
+createdAt: '2026-10-27T11:05:54.000Z'
+usedStorage: 377699537
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  model.onnx: 377.7
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-28T09:31:45.000Z'

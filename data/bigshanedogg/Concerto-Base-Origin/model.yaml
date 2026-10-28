@@ -1,0 +1,138 @@
+_id: 6ae0bd9129c50b448ad92502
+id: bigshanedogg/Concerto-Base-Origin
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- concerto
+- feature-extraction
+- point-cloud
+- point-transformer-v3
+- custom_code
+- base_model:Pointcept/Concerto
+- base_model:finetune:Pointcept/Concerto
+- license:cc-by-nc-4.0
+- region:us
+downloads: 0
+likes: 0
+modelId: bigshanedogg/Concerto-Base-Origin
+author: bigshanedogg
+sha: 72627e16003fba7909ca317984963c51066cb88f
+lastModified: '2026-10-27T15:05:14.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - ConcertoModel
+  auto_map:
+    AutoConfig: configuration_concerto.ConcertoConfig
+    AutoModel: modeling_concerto.ConcertoModel
+  model_type: concerto
+cardData:
+  license: cc-by-nc-4.0
+  library_name: transformers
+  base_model: Pointcept/Concerto
+  tags:
+  - concerto
+  - point-cloud
+  - point-transformer-v3
+  pipeline_tag: feature-extraction
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_concerto.ConcertoModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: LICENSE.code
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: concerto_hilbert.py
+- rfilename: concerto_model.py
+- rfilename: concerto_transform.py
+- rfilename: concerto_z_order.py
+- rfilename: config.json
+- rfilename: configuration_concerto.py
+- rfilename: feature_extraction_concerto.py
+- rfilename: model.safetensors
+- rfilename: modeling_concerto.py
+- rfilename: processing_concerto.py
+- rfilename: processor_config.json
+spaces: []
+createdAt: '2026-10-27T15:04:49.000Z'
+safetensors:
+  parameters:
+    F32: 108461376
+  total: 108461376
+usedStorage: 433892952
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - ConcertoModel
+  auto_map:
+    AutoConfig: configuration_concerto.ConcertoConfig
+    AutoModel: modeling_concerto.ConcertoModel
+  dtype: float32
+  enable_flash: null
+  enc_patch_size: null
+  model_type: concerto
+  ptv3_config:
+    attn_drop: 0.0
+    drop_path: 0.3
+    enable_flash: true
+    enable_rpe: false
+    enc_channels:
+    - 48
+    - 96
+    - 192
+    - 384
+    - 512
+    enc_depths:
+    - 3
+    - 3
+    - 3
+    - 12
+    - 3
+    enc_mode: true
+    enc_num_head:
+    - 3
+    - 6
+    - 12
+    - 24
+    - 32
+    enc_patch_size:
+    - 1024
+    - 1024
+    - 1024
+    - 1024
+    - 1024
+    in_channels: 9
+    mask_token: true
+    mlp_ratio: 4
+    order:
+    - z
+    - z-trans
+    - hilbert
+    - hilbert-trans
+    pre_norm: true
+    proj_drop: 0.0
+    qk_scale: null
+    qkv_bias: true
+    shuffle_orders: true
+    stride:
+    - 2
+    - 2
+    - 2
+    - 2
+    traceable: true
+    upcast_attention: false
+    upcast_softmax: false
+  transformers_version: 5.20.2
+onnxFiles: {}
+safetensorsSizeMb: 433.9
+approxSizeMb: 433.8
+fetchedAt: '2026-10-28T09:31:45.000Z'

@@ -1,0 +1,63 @@
+_id: 6ae0b6268166c778924ccbba
+id: bakhil-aissa/embeddinggemma-2-int8-mnn
+private: false
+pipeline_tag: feature-extraction
+library_name: mnn
+tags:
+- mnn
+- embedding
+- sentence-embedding
+- embeddinggemma
+- on-device
+- edge-ai
+- int8
+- feature-extraction
+- multilingual
+- base_model:google/embeddinggemma-2
+- base_model:finetune:google/embeddinggemma-2
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: bakhil-aissa/embeddinggemma-2-int8-mnn
+author: bakhil-aissa
+sha: 01cbbe7d1849350d4338e9a9fa7e8276668f9c77
+lastModified: '2026-10-27T14:56:48.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: google/embeddinggemma-2
+  pipeline_tag: feature-extraction
+  library_name: mnn
+  language:
+  - multilingual
+  tags:
+  - mnn
+  - embedding
+  - sentence-embedding
+  - embeddinggemma
+  - on-device
+  - edge-ai
+  - int8
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: audio_encoder.mnn
+- rfilename: audio_encoder.mnn.weight
+- rfilename: text.mnn
+- rfilename: text.mnn.weight
+- rfilename: vesion_encoder.mnn
+- rfilename: vesion_encoder.mnn.weight
+spaces: []
+createdAt: '2026-10-27T14:33:10.000Z'
+usedStorage: 2084662422
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-28T09:31:45.000Z'

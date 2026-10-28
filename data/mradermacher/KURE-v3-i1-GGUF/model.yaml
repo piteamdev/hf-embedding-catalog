@@ -1,0 +1,97 @@
+_id: 6ae0eb4990ada2fe17e07ad1
+id: mradermacher/KURE-v3-i1-GGUF
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- gguf
+- sentence-transformers
+- sentence-similarity
+- feature-extraction
+- dense
+- matryoshka
+- ko
+- en
+- base_model:nlpai-lab/KURE-v3
+- base_model:quantized:nlpai-lab/KURE-v3
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+- imatrix
+downloads: 0
+likes: 0
+modelId: mradermacher/KURE-v3-i1-GGUF
+author: mradermacher
+sha: 69c6ba8dfa49c8e2c714e849fbb5ea83bc85dafd
+lastModified: '2026-10-27T19:07:33.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  base_model: nlpai-lab/KURE-v3
+  language:
+  - ko
+  - en
+  library_name: transformers
+  license: apache-2.0
+  mradermacher:
+    readme_rev: 1
+  quantized_by: mradermacher
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - matryoshka
+transformersInfo:
+  auto_model: AutoModel
+gguf:
+  total: 1140918272
+  architecture: mistral3
+  context_length: 262144
+  quantize_imatrix_file: KURE-v3-i1-GGUF/KURE-v3.imatrix.gguf
+  causal: false
+  bos_token: <s>
+  eos_token: </s>
+  pooling_type: 1
+  totalFileSize: 393885024
+siblings:
+- rfilename: .gitattributes
+- rfilename: KURE-v3.i1-IQ1_M.gguf
+- rfilename: KURE-v3.i1-IQ1_S.gguf
+- rfilename: KURE-v3.i1-IQ2_M.gguf
+- rfilename: KURE-v3.i1-IQ2_S.gguf
+- rfilename: KURE-v3.i1-IQ2_XS.gguf
+- rfilename: KURE-v3.i1-IQ2_XXS.gguf
+- rfilename: KURE-v3.i1-IQ3_M.gguf
+- rfilename: KURE-v3.i1-IQ3_S.gguf
+- rfilename: KURE-v3.i1-IQ3_XS.gguf
+- rfilename: KURE-v3.i1-IQ3_XXS.gguf
+- rfilename: KURE-v3.i1-IQ4_NL.gguf
+- rfilename: KURE-v3.i1-IQ4_XS.gguf
+- rfilename: KURE-v3.i1-Q2_K.gguf
+- rfilename: KURE-v3.i1-Q2_K_S.gguf
+- rfilename: KURE-v3.i1-Q3_K_L.gguf
+- rfilename: KURE-v3.i1-Q3_K_M.gguf
+- rfilename: KURE-v3.i1-Q3_K_S.gguf
+- rfilename: KURE-v3.i1-Q4_0.gguf
+- rfilename: KURE-v3.i1-Q4_1.gguf
+- rfilename: KURE-v3.i1-Q4_K_M.gguf
+- rfilename: KURE-v3.i1-Q4_K_S.gguf
+- rfilename: KURE-v3.i1-Q5_K_M.gguf
+- rfilename: KURE-v3.i1-Q5_K_S.gguf
+- rfilename: KURE-v3.i1-Q6_K.gguf
+- rfilename: KURE-v3.imatrix.gguf
+- rfilename: README.md
+spaces: []
+createdAt: '2026-10-27T18:19:53.000Z'
+usedStorage: 14938248480
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-28T09:31:45.000Z'

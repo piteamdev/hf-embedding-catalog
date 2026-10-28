@@ -1,0 +1,80 @@
+_id: 6ae1aa4690ada2fe170b8c1a
+id: SetMD/geoformer
+private: false
+pipeline_tag: feature-extraction
+library_name: pytorch
+tags:
+- pytorch
+- neuromorphic
+- propagation-geometry
+- ternary-quantization
+- bitnet-b158
+- graph-neural-network
+- geodesic-highway-attention
+- arc-agi
+- multi-hop-reasoning
+- clinical-ai
+- medical
+- differential-diagnosis
+- analog-computing
+- memristor
+- formal-verification
+- z3-smt
+- feature-extraction
+- en
+- dataset:cora
+- dataset:wordnet
+- license:mit
+- region:us
+downloads: 0
+likes: 1
+modelId: SetMD/geoformer
+author: SetMD
+sha: b80fe8347081d7217435f8db5edea2297945f1b1
+lastModified: '2026-10-28T09:21:44.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  language:
+  - en
+  license: mit
+  library_name: pytorch
+  tags:
+  - neuromorphic
+  - propagation-geometry
+  - ternary-quantization
+  - bitnet-b158
+  - graph-neural-network
+  - geodesic-highway-attention
+  - arc-agi
+  - multi-hop-reasoning
+  - clinical-ai
+  - medical
+  - differential-diagnosis
+  - analog-computing
+  - memristor
+  - formal-verification
+  - z3-smt
+  datasets:
+  - cora
+  - wordnet
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: geoformer_cora_trained.pt
+- rfilename: geoformer_foundation_model.pt
+- rfilename: geoformer_sparse_rml_100k.pt
+- rfilename: geoformer_wordnet_transitive.pt
+spaces: []
+createdAt: '2026-10-28T07:54:46.000Z'
+usedStorage: 1772738
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-28T09:31:45.000Z'

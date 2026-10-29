@@ -1,0 +1,73 @@
+_id: 6ae22b91d73cdf9ea82028bc
+id: tientuevu/tool_retrieval
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- feature-extraction
+- sentence-similarity
+- arxiv:2402.03216
+- arxiv:2004.04906
+- arxiv:2106.14807
+- arxiv:2107.05720
+- arxiv:2004.12832
+- license:mit
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: tientuevu/tool_retrieval
+author: tientuevu
+sha: 399a1a1b1dc74bc8a32e9f167ec3c67112462c10
+lastModified: '2026-10-28T17:06:29.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config:
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: <unk>
+cardData:
+  pipeline_tag: sentence-similarity
+  tags:
+  - sentence-transformers
+  - feature-extraction
+  - sentence-similarity
+  license: mit
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: adapter_config.json
+- rfilename: adapter_model.safetensors
+- rfilename: config_sentence_transformers.json
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: sentencepiece.bpe.model
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-28T17:06:25.000Z'
+usedStorage: 25310912
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 3.2
+approxSizeMb: 0.0
+fetchedAt: '2026-10-29T09:45:25.000Z'

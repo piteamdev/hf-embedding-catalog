@@ -1,0 +1,101 @@
+_id: 6ad8dcfb2813ee771cb822c2
+id: MahmoodLab/MEDIATOR
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- pytorch
+- ehr
+- umls
+- medical-concepts
+- ontology
+- vector-quantization
+- discrete-tokens
+- feature-extraction
+- en
+- arxiv:2610.27047
+- base_model:Qwen/Qwen3-Embedding-8B
+- base_model:finetune:Qwen/Qwen3-Embedding-8B
+- license:cc-by-nc-nd-4.0
+- endpoints_compatible
+- region:us
+downloads: 5
+likes: 0
+modelId: MahmoodLab/MEDIATOR
+author: MahmoodLab
+sha: 9dc0a1d01c9184b5f18d6f029bd8c040a236f8b6
+lastModified: '2026-10-28T16:49:24.000Z'
+gated: manual
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: cc-by-nc-nd-4.0
+  language:
+  - en
+  library_name: transformers
+  pipeline_tag: feature-extraction
+  base_model: Qwen/Qwen3-Embedding-8B
+  tags:
+  - ehr
+  - umls
+  - medical-concepts
+  - ontology
+  - vector-quantization
+  - discrete-tokens
+  - pytorch
+  extra_gated_prompt: This model and associated code are released under the CC-BY-NC-ND 4.0 license and may only be used for
+    non-commercial, academic research purposes with proper attribution. Any commercial use, sale, or other monetization of
+    the MEDIATOR model and its derivatives, which include models trained on outputs from the MEDIATOR model or datasets created
+    from the MEDIATOR model, is prohibited and requires prior approval. Please note that the primary email used to sign up
+    for your Hugging Face account must match your institutional email to receive approval. By downloading the model, you attest
+    that all information (affiliation, research use) is correct and up-to-date. Downloading the model requires prior registration
+    on Hugging Face and agreeing to the terms of use. By downloading this model, you agree not to distribute, publish or reproduce
+    a copy of the model. If another user within your organization wishes to use the MEDIATOR model, they must register as
+    an individual user and agree to comply with the terms of use. Users may not attempt to re-identify any patient data used
+    to develop the underlying model. If you are a commercial entity, please contact the corresponding author.
+  extra_gated_fields:
+    Full name (first and last): text
+    Current affiliation (no abbreviations): text
+    Type of Affiliation:
+      type: select
+      options:
+      - Academia
+      - Industry
+      - label: Other
+        value: other
+    ? Current and official institutional email (**this must match your primary email in your Hugging Face account, @gmail/@hotmail/@qq
+      email domains will be denied**)
+    : text
+    Please explain your intended research use: text
+    I agree to all terms outlined above: checkbox
+    I agree to use this model for non-commercial, academic purposes only: checkbox
+    ? I agree not to distribute the model, if another user within your organization wishes to use the MEDIATOR model, they
+      must register as an individual user
+    : checkbox
+transformersInfo:
+  auto_model: AutoModel
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: assets/mediator_architecture.gif
+- rfilename: assets/mediator_banner.png
+- rfilename: config.json
+- rfilename: example_usage.py
+- rfilename: mediator/__init__.py
+- rfilename: mediator/embeddings.py
+- rfilename: mediator/modeling.py
+- rfilename: prepare_vocab.py
+- rfilename: pytorch_model.bin
+- rfilename: training_config.yaml
+spaces: []
+createdAt: '2026-10-21T15:40:43.000Z'
+usedStorage: 508361792
+downloadsAllTime: 5
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-29T09:45:25.000Z'

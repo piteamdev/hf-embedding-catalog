@@ -1,0 +1,85 @@
+_id: 6a8dc6aa3f59861e792380eb
+id: mediainbox/redimnet2-b6-onnx
+private: false
+pipeline_tag: feature-extraction
+library_name: onnxruntime
+tags:
+- onnxruntime
+- onnx
+- audio
+- speaker-embedding
+- speaker-recognition
+- tensorrt
+- feature-extraction
+- region:us
+downloads: 0
+likes: 0
+modelId: mediainbox/redimnet2-b6-onnx
+author: mediainbox
+sha: ec0d994b7b1b71ca51e7064971e65b9b16446afe
+lastModified: '2026-09-04T14:26:43.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: onnxruntime
+  pipeline_tag: feature-extraction
+  tags:
+  - audio
+  - speaker-embedding
+  - speaker-recognition
+  - onnx
+  - tensorrt
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: redimnet2-b6.onnx
+spaces: []
+createdAt: '2026-08-25T16:45:30.000Z'
+usedStorage: 52215362
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  model: PalabraAI/ReDimNet2 B6 lm vb2+vox2_v0
+  sample_rate: 16000
+  mel_bins: 72
+  input_name: features
+  input_dtype: float32
+  input_shape:
+  - 1
+  - 1
+  - 72
+  - T
+  batch_size: 1
+  output_name: embedding
+  output_dimension: 192
+  output_dtype: float32
+  output_normalized: true
+  profile_seconds:
+    min: 1
+    opt: 10
+    max: 30
+  profile_shapes:
+    min:
+    - 1
+    - 1
+    - 72
+    - 96
+    opt:
+    - 1
+    - 1
+    - 72
+    - 996
+    max:
+    - 1
+    - 1
+    - 72
+    - 2996
+  time_alignment_multiple: 4
+onnxFiles:
+  redimnet2-b6.onnx: 52.2
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-29T09:45:25.000Z'

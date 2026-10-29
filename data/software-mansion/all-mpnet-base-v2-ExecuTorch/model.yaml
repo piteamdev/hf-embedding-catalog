@@ -1,0 +1,63 @@
+_id: 681b7d58a0109f0e554e061a
+id: software-mansion/all-mpnet-base-v2-ExecuTorch
+private: false
+pipeline_tag: sentence-similarity
+library_name: executorch
+tags:
+- executorch
+- sentence-similarity
+- license:apache-2.0
+- region:us
+downloads: 532
+likes: 0
+modelId: software-mansion/all-mpnet-base-v2-ExecuTorch
+author: software-mansion
+sha: 75c4d0580d0eca0308fdda4b0a3e7abfbc9d8253
+lastModified: '2026-10-15T11:26:00.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config:
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    sep_token: </s>
+    cls_token: <s>
+    unk_token: '[UNK]'
+    pad_token: <pad>
+    mask_token: <mask>
+cardData:
+  license: apache-2.0
+  pipeline_tag: sentence-similarity
+  library_name: executorch
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: vulkan/all_mpnet_base_v2_vulkan_fp16.pte
+- rfilename: vulkan/all_mpnet_base_v2_vulkan_int8.pte
+- rfilename: vulkan/config.json
+- rfilename: xnnpack/all_mpnet_base_v2_xnnpack_8da4w.pte
+- rfilename: xnnpack/all_mpnet_base_v2_xnnpack_fp32.pte
+- rfilename: xnnpack/all_mpnet_base_v2_xnnpack_int8.pte
+- rfilename: xnnpack/config.json
+spaces: []
+createdAt: '2025-05-07T15:33:44.000Z'
+usedStorage: 2937641734
+downloadsAllTime: 3096
+inferenceProviderMapping: {}
+configJson:
+  modelName: all-mpnet-base-v2
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-29T09:45:25.000Z'

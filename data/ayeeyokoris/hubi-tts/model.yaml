@@ -1,0 +1,93 @@
+_id: 6ae1bf821b5a32ac5c31aef6
+id: ayeeyokoris/hubi-tts
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- hubi-tts
+- feature-extraction
+- custom_code
+- arxiv:1910.09700
+- region:us
+downloads: 0
+likes: 0
+modelId: ayeeyokoris/hubi-tts
+author: ayeeyokoris
+sha: dd06cba96e82c8030a7b3640d866740e3de9e744
+lastModified: '2026-10-29T07:25:54.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - HubiTTSModel
+  auto_map:
+    AutoConfig: modeling_hubi_tts.HubiTTSConfig
+    AutoModel: modeling_hubi_tts.HubiTTSModel
+    AutoProcessor: processing_hubi_tts.HubiTTSProcessor
+  model_type: hubi-tts
+  tokenizer_config:
+    bos_token: <bos>
+    eos_token: <eos>
+    pad_token: <pad>
+    unk_token: <unk>
+cardData:
+  library_name: transformers
+  tags: []
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_hubi_tts.HubiTTSModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: modeling_hubi_tts.py
+- rfilename: processing_hubi_tts.py
+- rfilename: processor_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces:
+- ayeeyokoris/big
+createdAt: '2026-10-28T09:25:22.000Z'
+safetensors:
+  parameters:
+    F32: 82032400
+  total: 82032400
+usedStorage: 5578470168
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - HubiTTSModel
+  audio_codebook_size: 1024
+  audio_eos_token_id: 1024
+  audio_tokenizer_id: maanka2/MOSS-Audio-Tokenizer-Nano
+  audio_vocab_size: 1025
+  auto_map:
+    AutoConfig: modeling_hubi_tts.HubiTTSConfig
+    AutoModel: modeling_hubi_tts.HubiTTSModel
+    AutoProcessor: processing_hubi_tts.HubiTTSProcessor
+  d_model: 768
+  dropout: 0.05
+  dtype: float32
+  ffn_mult: 3
+  fine_loss_min_weight: 0.5
+  local_n_layers: 2
+  model_type: hubi-tts
+  n_heads: 12
+  n_kv_heads: 2
+  n_layers: 12
+  norm_eps: 1.0e-06
+  num_codebooks: 8
+  rotary_base: 10000.0
+  text_tokenizer_id: null
+  text_vocab_size: 8192
+  transformers_version: 5.20.2
+onnxFiles: {}
+safetensorsSizeMb: 328.1
+approxSizeMb: 328.1
+fetchedAt: '2026-10-29T09:45:25.000Z'

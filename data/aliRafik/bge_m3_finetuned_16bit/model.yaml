@@ -1,0 +1,167 @@
+_id: 6ae1d5aae3aad0246020b41c
+id: aliRafik/bge_m3_finetuned_16bit
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- xlm-roberta
+- unsloth
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:106628
+- loss:MultipleNegativesRankingLoss
+- en
+- dataset:electroglyph/technical
+- arxiv:1908.10084
+- arxiv:1807.03748
+- base_model:unsloth/bge-m3
+- base_model:finetune:unsloth/bge-m3
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: aliRafik/bge_m3_finetuned_16bit
+author: aliRafik
+sha: 19a3e101d174d2888aee675318407b68d872781f
+lastModified: '2026-10-28T11:00:20.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: ace-v
+  sentences:
+  - The floor plan was drafted at 1/4 inch scale where each quarter inch equals one foot.
+  - Fingerprint examiners follow the ACE-V methodology for identification.
+  - Most modern streaming services offer content in 1080p full HD quality.
+- source_sentence: adult learner
+  sentences:
+  - The adult learner brings valuable life experience to the classroom.
+  - Accounts payable represents money owed to suppliers and vendors.
+  - The inspection confirmed all above grade work met code requirements.
+- source_sentence: 1/4 inch scale
+  sentences:
+  - Precise adjustments require accurate action gauge readings.
+  - The quality inspector identified adhesion failure in the sample.
+  - The architect created drawings at 1/4 inch scale for the client presentation.
+- source_sentence: acrylic paint
+  sentences:
+  - Artists prefer acrylic paint for its fast drying time.
+  - The company reported strong adjusted EBITDA growth this quarter.
+  - The clinic specializes in adolescent health services.
+- source_sentence: adult learning
+  sentences:
+  - Solar developers calculate AEP, or annual energy production.
+  - The course was designed using adult learning best practices.
+  - The wizard cast Abi-Dalzim's horrid wilting, draining moisture from enemies.
+model-index: null
+config:
+  architectures:
+  - XLMRobertaModel
+  model_type: xlm-roberta
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token: <mask>
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: <unk>
+cardData:
+  language:
+  - en
+  tags:
+  - unsloth
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:106628
+  - loss:MultipleNegativesRankingLoss
+  base_model: unsloth/bge-m3
+  widget:
+  - source_sentence: ace-v
+    sentences:
+    - The floor plan was drafted at 1/4 inch scale where each quarter inch equals one foot.
+    - Fingerprint examiners follow the ACE-V methodology for identification.
+    - Most modern streaming services offer content in 1080p full HD quality.
+  - source_sentence: adult learner
+    sentences:
+    - The adult learner brings valuable life experience to the classroom.
+    - Accounts payable represents money owed to suppliers and vendors.
+    - The inspection confirmed all above grade work met code requirements.
+  - source_sentence: 1/4 inch scale
+    sentences:
+    - Precise adjustments require accurate action gauge readings.
+    - The quality inspector identified adhesion failure in the sample.
+    - The architect created drawings at 1/4 inch scale for the client presentation.
+  - source_sentence: acrylic paint
+    sentences:
+    - Artists prefer acrylic paint for its fast drying time.
+    - The company reported strong adjusted EBITDA growth this quarter.
+    - The clinic specializes in adolescent health services.
+  - source_sentence: adult learning
+    sentences:
+    - Solar developers calculate AEP, or annual energy production.
+    - The course was designed using adult learning best practices.
+    - The wizard cast Abi-Dalzim's horrid wilting, draining moisture from enemies.
+  datasets:
+  - electroglyph/technical
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: sentencepiece.bpe.model
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-28T10:59:54.000Z'
+safetensors:
+  parameters:
+    BF16: 567754752
+  total: 567754752
+usedStorage: 1157706840
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - XLMRobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: bfloat16
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 1024
+  initializer_range: 0.02
+  intermediate_size: 4096
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 8194
+  model_type: xlm-roberta
+  num_attention_heads: 16
+  num_hidden_layers: 24
+  output_past: true
+  pad_token_id: 1
+  position_embedding_type: absolute
+  transformers_version: 4.57.6
+  type_vocab_size: 1
+  use_cache: true
+  vocab_size: 250002
+onnxFiles: {}
+safetensorsSizeMb: 1135.6
+approxSizeMb: 1135.5
+fetchedAt: '2026-10-29T09:45:25.000Z'

@@ -1,0 +1,80 @@
+_id: 6ae2dfe487b4c97b752b1a1a
+id: mykor/kanana-2-3b-embedding-GGUF
+private: false
+pipeline_tag: sentence-similarity
+library_name: gguf
+tags:
+- gguf
+- feature-extraction
+- mteb
+- matryoshka
+- custom_code
+- sentence-similarity
+- ko
+- en
+- base_model:kakaocorp/kanana-2-3b-embedding
+- base_model:quantized:kakaocorp/kanana-2-3b-embedding
+- license:other
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: mykor/kanana-2-3b-embedding-GGUF
+author: mykor
+sha: 8f33dd3a54c308dca5dff244972f5765e7a32db4
+lastModified: '2026-10-29T06:14:23.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: gguf
+  pipeline_tag: sentence-similarity
+  license: other
+  license_name: kanana-open-license
+  license_link: https://huggingface.co/kakaocorp/kanana-2-3b-embedding/blob/main/LICENSE
+  tags:
+  - feature-extraction
+  - mteb
+  - matryoshka
+  - custom_code
+  language:
+  - ko
+  - en
+  base_model: kakaocorp/kanana-2-3b-embedding
+gguf:
+  total: 3180636672
+  architecture: qwen3
+  context_length: 4096
+  causal: false
+  chat_template: '{{bos_token}}{% for message in messages %}{% if (message[''role''] == ''user'') != (loop.index0 % 2 == 0)
+    %}{{ raise_exception(''Conversation roles must alternate user/assistant/user/assistant/...'') }}{% endif %}{% if message[''role'']
+    == ''user'' %}{{ ''<|start_header_id|>user<|end_header_id|>\n\n'' + message[''content''] + ''<|eot_id|>'' }}{% elif message[''role'']
+    == ''assistant'' %}{{ ''<|start_header_id|>assistant<|end_header_id|>\n\n'' + message[''content''] + ''<|eot_id|>'' }}{%
+    elif message[''role''] == ''system'' %}{{ ''<|start_header_id|>system<|end_header_id|>\n\n'' + message[''content''] +
+    ''<|eot_id|>'' }}{% endif %}{% endfor %}{% if add_generation_prompt %}{{ ''<|start_header_id|>assistant<|end_header_id|>\n\n''
+    }}{% endif %}'
+  bos_token: <|begin_of_text|>
+  eos_token: <|end_of_text|>
+  pooling_type: 1
+  totalFileSize: 6367039008
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: kanana-2-3B-embedding-BF16.gguf
+- rfilename: kanana-2-3B-embedding-IQ3_M.gguf
+- rfilename: kanana-2-3B-embedding-IQ4_XS.gguf
+- rfilename: kanana-2-3B-embedding-Q4_K_M.gguf
+- rfilename: kanana-2-3B-embedding-Q5_K_M.gguf
+- rfilename: kanana-2-3B-embedding-Q6_K.gguf
+- rfilename: kanana-2-3B-embedding-Q8_0.gguf
+spaces: []
+createdAt: '2026-10-29T05:55:48.000Z'
+usedStorage: 20015683296
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-29T09:45:25.000Z'

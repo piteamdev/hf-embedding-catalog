@@ -1,0 +1,111 @@
+_id: 6ad66966e966eff9c11980a8
+id: InstaDeepAI/NTv3_tracks
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- ntv3_tracks
+- feature-extraction
+- genomics
+- dna
+- biology
+- ntv3
+- long-range
+- functional-genomics
+- custom_code
+- license:other
+- region:us
+downloads: 147
+likes: 0
+modelId: InstaDeepAI/NTv3_tracks
+author: InstaDeepAI
+sha: 93fc897970624461dd4682a13cad3bfad49f3026
+lastModified: '2026-10-28T11:57:37.000Z'
+gated: manual
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - NTv3Tracks
+  model_type: ntv3_tracks
+  auto_map:
+    AutoConfig: InstaDeepAI/NTv3_pretrained--configuration_ntv3.NTv3TracksConfig
+    AutoModel: InstaDeepAI/NTv3_pretrained--modeling_ntv3.NTv3Tracks
+  tokenizer_config:
+    unk_token: <unk>
+    pad_token: <pad>
+    mask_token: <mask>
+    cls_token: <cls>
+    eos_token: <eos>
+    bos_token: <bos>
+cardData:
+  library_name: transformers
+  tags:
+  - genomics
+  - dna
+  - biology
+  - ntv3
+  - long-range
+  - functional-genomics
+  license: other
+  license_name: instadeep-open-model-licence
+  license_link: https://huggingface.co/InstaDeepAI/NTv3_tracks/blob/main/MODEL-LICENSE.md
+  extra_gated_heading: Request access to the NTv3 models
+  extra_gated_description: One approval grants access to every gated NTv3 model. Requests are reviewed manually.
+  extra_gated_prompt: The NTv3 weights are released under the [InstaDeep Open Model Licence](https://huggingface.co/InstaDeepAI/NTv3_tracks/blob/main/MODEL-LICENSE.md)
+    for non-commercial use only, and its terms also cover the models' outputs. For commercial use, contact legal@instadeep.com.
+  extra_gated_fields:
+    Full name: text
+    Affiliation: text
+    Institutional email: text
+    Organisation type:
+      type: select
+      options:
+      - University
+      - Public research institute
+      - Non-profit
+      - Hospital
+      - Company
+      - Other
+    Country: country
+    Intended use: text
+    I will use NTv3 and its outputs for non-commercial purposes only, under the InstaDeep Open Model Licence: checkbox
+  extra_gated_button_content: Request access
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: InstaDeepAI/NTv3_pretrained--modeling_ntv3.NTv3Tracks
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: MODEL-LICENSE.md
+- rfilename: README.md
+- rfilename: assets/context_length.png
+- rfilename: config.json
+- rfilename: jax_model/conditions_tokenizers.json
+- rfilename: jax_model/flax_model.msgpack
+- rfilename: jax_model/hyperparameters.json
+- rfilename: jax_model/roundtrip_fixture.npz
+- rfilename: jax_model/tokenizer_config.json
+- rfilename: model.safetensors
+- rfilename: ntv3_tracks_pipeline.py
+- rfilename: tokenizer_config.json
+- rfilename: track_metadata.json
+- rfilename: vocab.json
+spaces:
+- InstaDeepAI/ntv3
+createdAt: '2026-10-19T19:03:02.000Z'
+safetensors:
+  parameters:
+    F32: 711309399
+  total: 711309399
+usedStorage: 5731485905
+downloadsAllTime: 345
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 2845.3
+approxSizeMb: 2845.2
+fetchedAt: '2026-10-29T09:45:25.000Z'

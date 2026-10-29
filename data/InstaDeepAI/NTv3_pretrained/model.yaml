@@ -1,0 +1,108 @@
+_id: 6ab3d64e1b72952109da72be
+id: InstaDeepAI/NTv3_pretrained
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- ntv3
+- feature-extraction
+- genomics
+- dna
+- biology
+- long-range
+- custom_code
+- license:other
+- region:us
+downloads: 48
+likes: 0
+modelId: InstaDeepAI/NTv3_pretrained
+author: InstaDeepAI
+sha: 6966543e5a342b7d6739397447234bc96e99fe3d
+lastModified: '2026-10-28T11:57:36.000Z'
+gated: manual
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - NTv3
+  model_type: ntv3
+  auto_map:
+    AutoConfig: configuration_ntv3.NTv3Config
+    AutoModel: modeling_ntv3.NTv3
+    AutoModelForMaskedLM: modeling_ntv3.NTv3
+  tokenizer_config:
+    unk_token: <unk>
+    pad_token: <pad>
+    mask_token: <mask>
+    cls_token: <cls>
+    eos_token: <eos>
+    bos_token: <bos>
+cardData:
+  library_name: transformers
+  tags:
+  - genomics
+  - dna
+  - biology
+  - ntv3
+  - long-range
+  license: other
+  license_name: instadeep-open-model-licence
+  license_link: https://huggingface.co/InstaDeepAI/NTv3_pretrained/blob/main/MODEL-LICENSE.md
+  extra_gated_heading: Request access to the NTv3 models
+  extra_gated_description: One approval grants access to every gated NTv3 model. Requests are reviewed manually.
+  extra_gated_prompt: The NTv3 weights are released under the [InstaDeep Open Model Licence](https://huggingface.co/InstaDeepAI/NTv3_pretrained/blob/main/MODEL-LICENSE.md)
+    for non-commercial use only, and its terms also cover the models' outputs. For commercial use, contact legal@instadeep.com.
+  extra_gated_fields:
+    Full name: text
+    Affiliation: text
+    Institutional email: text
+    Organisation type:
+      type: select
+      options:
+      - University
+      - Public research institute
+      - Non-profit
+      - Hospital
+      - Company
+      - Other
+    Country: country
+    Intended use: text
+    I will use NTv3 and its outputs for non-commercial purposes only, under the InstaDeep Open Model Licence: checkbox
+  extra_gated_button_content: Request access
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_ntv3.NTv3
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: MODEL-LICENSE.md
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: configuration_ntv3.py
+- rfilename: jax_model/flax_model.msgpack
+- rfilename: jax_model/hyperparameters.json
+- rfilename: jax_model/roundtrip_fixture.npz
+- rfilename: jax_model/tokenizer_config.json
+- rfilename: model.safetensors
+- rfilename: modeling_ntv3.py
+- rfilename: tokenization_ntv3.py
+- rfilename: tokenizer_config.json
+- rfilename: vocab.json
+spaces:
+- InstaDeepAI/ntv3
+createdAt: '2026-09-23T13:38:22.000Z'
+safetensors:
+  parameters:
+    F32: 703401865
+  total: 703401865
+usedStorage: 5627451680
+downloadsAllTime: 190
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 2813.7
+approxSizeMb: 2813.6
+fetchedAt: '2026-10-29T09:45:25.000Z'

@@ -1,0 +1,380 @@
+_id: 6ae2aa19d9b29a6954601bdf
+id: iLOVE2D/fourmodal-pathology-bind
+private: false
+pipeline_tag: feature-extraction
+library_name: pytorch
+tags:
+- pytorch
+- pathology
+- multimodal
+- imagebind
+- spatial-transcriptomics
+- multiplex-immunofluorescence
+- contrastive-learning
+- feature-extraction
+- license:other
+- region:us
+downloads: 0
+likes: 0
+modelId: iLOVE2D/fourmodal-pathology-bind
+author: iLOVE2D
+sha: 4898345c66d27cf1b8aca3e1593af440486b5cb7
+lastModified: '2026-10-29T02:25:01.000Z'
+gated: manual
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: other
+  license_name: non-commercial-research
+  license_link: LICENSE.md
+  library_name: pytorch
+  pipeline_tag: feature-extraction
+  tags:
+  - pathology
+  - multimodal
+  - imagebind
+  - spatial-transcriptomics
+  - multiplex-immunofluorescence
+  - contrastive-learning
+siblings:
+- rfilename: .gitattributes
+- rfilename: 14_extract_if_fm.py
+- rfilename: 43_rnafm_aidocell.py
+- rfilename: 43_rnafm_se600m.py
+- rfilename: 43_rnafm_tahoex1.py
+- rfilename: 45_text_feats.py
+- rfilename: 45b_text_feats_pathvlm.py
+- rfilename: 50_medvtok_feats.py
+- rfilename: 52_final_model.py
+- rfilename: 53_embed_check.py
+- rfilename: 54_make_examples.py
+- rfilename: LICENSE.md
+- rfilename: README.md
+- rfilename: RESULTS.md
+- rfilename: biomedclip_text.py
+- rfilename: cache/external/dlpfc_genes_full.csv
+- rfilename: common.py
+- rfilename: compare_reproduction.py
+- rfilename: embed.py
+- rfilename: evaluate_saved.py
+- rfilename: example_check.py
+- rfilename: examples/hest_counts.npz
+- rfilename: examples/hest_genes.csv
+- rfilename: examples/hest_he.npy
+- rfilename: examples/items.csv
+- rfilename: examples/orion_he/00094.png
+- rfilename: examples/orion_he/00096.png
+- rfilename: examples/orion_he/00098.png
+- rfilename: examples/orion_he/00103.png
+- rfilename: examples/orion_he/00107.png
+- rfilename: examples/orion_he/00111.png
+- rfilename: examples/orion_he/00115.png
+- rfilename: examples/orion_he/00118.png
+- rfilename: examples/orion_he/00140.png
+- rfilename: examples/orion_he/00146.png
+- rfilename: examples/orion_he/00152.png
+- rfilename: examples/orion_he/00176.png
+- rfilename: examples/orion_he/00204.png
+- rfilename: examples/orion_he/00208.png
+- rfilename: examples/orion_he/00263.png
+- rfilename: examples/orion_he/00267.png
+- rfilename: examples/orion_he/00272.png
+- rfilename: examples/orion_he/00287.png
+- rfilename: examples/orion_he/00292.png
+- rfilename: examples/orion_he/00596.png
+- rfilename: examples/orion_he/00598.png
+- rfilename: examples/orion_he/00599.png
+- rfilename: examples/orion_he/00608.png
+- rfilename: examples/orion_he/00621.png
+- rfilename: examples/orion_he/00652.png
+- rfilename: examples/orion_he/00659.png
+- rfilename: examples/orion_he/00661.png
+- rfilename: examples/orion_he/01602.png
+- rfilename: examples/orion_he/01605.png
+- rfilename: examples/orion_he/01610.png
+- rfilename: examples/orion_he/01613.png
+- rfilename: examples/orion_he/01614.png
+- rfilename: examples/orion_he/01640.png
+- rfilename: examples/orion_he/01652.png
+- rfilename: examples/orion_he/01658.png
+- rfilename: examples/orion_he/01665.png
+- rfilename: examples/orion_he/01668.png
+- rfilename: examples/orion_he/01687.png
+- rfilename: examples/orion_he/01688.png
+- rfilename: examples/orion_he/01698.png
+- rfilename: examples/orion_he/01703.png
+- rfilename: examples/orion_he/01720.png
+- rfilename: examples/orion_he/01721.png
+- rfilename: examples/orion_he/01726.png
+- rfilename: examples/orion_he/01731.png
+- rfilename: examples/orion_he/01737.png
+- rfilename: examples/orion_he/01753.png
+- rfilename: examples/orion_he/01901.png
+- rfilename: examples/orion_he/01913.png
+- rfilename: examples/orion_he/01918.png
+- rfilename: examples/orion_he/01932.png
+- rfilename: examples/orion_he/01940.png
+- rfilename: examples/orion_he/01943.png
+- rfilename: examples/orion_he/01954.png
+- rfilename: examples/orion_he/01961.png
+- rfilename: examples/orion_he/01967.png
+- rfilename: examples/orion_he/01988.png
+- rfilename: examples/orion_he/02426.png
+- rfilename: examples/orion_he/02442.png
+- rfilename: examples/orion_he/02454.png
+- rfilename: examples/orion_he/02472.png
+- rfilename: examples/orion_he/02480.png
+- rfilename: examples/orion_he/02482.png
+- rfilename: examples/orion_he/02493.png
+- rfilename: examples/orion_mif.npz
+- rfilename: examples/ref_feats.npz
+- rfilename: examples/tcga_captions.csv
+- rfilename: examples/tcga_he/00039.png
+- rfilename: examples/tcga_he/00113.png
+- rfilename: examples/tcga_he/00141.png
+- rfilename: examples/tcga_he/00188.png
+- rfilename: examples/tcga_he/00191.png
+- rfilename: examples/tcga_he/00268.png
+- rfilename: examples/tcga_he/00360.png
+- rfilename: examples/tcga_he/00369.png
+- rfilename: examples/tcga_he/00556.png
+- rfilename: examples/tcga_he/00601.png
+- rfilename: examples/tcga_he/00654.png
+- rfilename: examples/tcga_he/00686.png
+- rfilename: examples/tcga_he/00689.png
+- rfilename: examples/tcga_he/00712.png
+- rfilename: examples/tcga_he/00796.png
+- rfilename: examples/tcga_he/01160.png
+- rfilename: examples/tcga_he/01210.png
+- rfilename: examples/tcga_he/01265.png
+- rfilename: examples/tcga_he/01421.png
+- rfilename: examples/tcga_he/01533.png
+- rfilename: examples/tcga_he/01554.png
+- rfilename: examples/tcga_he/01565.png
+- rfilename: examples/tcga_he/02094.png
+- rfilename: examples/tcga_he/02110.png
+- rfilename: examples/tcga_he/02287.png
+- rfilename: examples/tcga_he/02379.png
+- rfilename: examples/tcga_he/02513.png
+- rfilename: examples/tcga_he/02526.png
+- rfilename: examples/tcga_he/02725.png
+- rfilename: examples/tcga_he/03015.png
+- rfilename: examples/tcga_he/03104.png
+- rfilename: examples/tcga_he/03161.png
+- rfilename: examples/tcga_he/03167.png
+- rfilename: examples/tcga_he/03292.png
+- rfilename: examples/tcga_he/03413.png
+- rfilename: examples/tcga_he/03441.png
+- rfilename: examples/tcga_he/03584.png
+- rfilename: examples/tcga_he/03656.png
+- rfilename: examples/tcga_he/03726.png
+- rfilename: examples/tcga_he/03845.png
+- rfilename: examples/tcga_he/04124.png
+- rfilename: examples/tcga_he/04207.png
+- rfilename: examples/tcga_he/04370.png
+- rfilename: examples/tcga_he/04425.png
+- rfilename: examples/tcga_he/04609.png
+- rfilename: examples/tcga_he/04689.png
+- rfilename: examples/tcga_he/04699.png
+- rfilename: examples/tcga_he/04783.png
+- rfilename: examples/tcga_he/04807.png
+- rfilename: examples/tcga_he/04869.png
+- rfilename: examples/tcga_he/04902.png
+- rfilename: examples/tcga_he/04935.png
+- rfilename: examples/tcga_he/04982.png
+- rfilename: examples/tcga_he/05005.png
+- rfilename: examples/tcga_he/05028.png
+- rfilename: examples/tcga_he/05162.png
+- rfilename: examples/tcga_he/05256.png
+- rfilename: examples/tcga_he/05403.png
+- rfilename: examples/tcga_he/05631.png
+- rfilename: examples/tcga_he/05632.png
+- rfilename: examples/tcga_he/05660.png
+- rfilename: examples/tcga_he/05757.png
+- rfilename: examples/tcga_he/05776.png
+- rfilename: examples/tcga_he/06007.png
+- rfilename: experiments/01_analyze_data.py
+- rfilename: experiments/02_make_splits.py
+- rfilename: experiments/03_cache_data.py
+- rfilename: experiments/04_extract_anchor.py
+- rfilename: experiments/04b_extract_anchor_fm.py
+- rfilename: experiments/05_train_eval.py
+- rfilename: experiments/06_summarize.py
+- rfilename: experiments/07_make_text.py
+- rfilename: experiments/08_extract_text.py
+- rfilename: experiments/09_bench.py
+- rfilename: experiments/10_bench_summary.py
+- rfilename: experiments/11_pathgen_prep.py
+- rfilename: experiments/12_train_text_pathgen.py
+- rfilename: experiments/13_eval_text_emergent.py
+- rfilename: experiments/15_extract_marker_fm.py
+- rfilename: experiments/16_extract_pathgenclip.py
+- rfilename: experiments/17_bench_fm.py
+- rfilename: experiments/18_eval_fm.py
+- rfilename: experiments/19_pairsets_prep.py
+- rfilename: experiments/20_pairing.py
+- rfilename: experiments/21_hest_prep.py
+- rfilename: experiments/22_extract_gene_fm.py
+- rfilename: experiments/23_bind_gene.py
+- rfilename: experiments/24_eval_gene_emergent.py
+- rfilename: experiments/25_gigatime_infer.py
+- rfilename: experiments/26_stpath_infer.py
+- rfilename: experiments/27_azure_caption.py
+- rfilename: experiments/28_eval_anchor.py
+- rfilename: experiments/29_virtual_completion.py
+- rfilename: experiments/30_virtues_shared.py
+- rfilename: experiments/31_virtual_validation.py
+- rfilename: experiments/32_gentext_prep.py
+- rfilename: experiments/33_final_eval.py
+- rfilename: experiments/34_gigatime_diag.py
+- rfilename: experiments/35_miphei_infer.py
+- rfilename: experiments/36_external_prep.py
+- rfilename: experiments/37_miphei_diag.py
+- rfilename: experiments/38_external_eval.py
+- rfilename: experiments/39_external_check.py
+- rfilename: experiments/40_clean_text.py
+- rfilename: experiments/41_text_enc_clean.py
+- rfilename: experiments/42_train_regimes.py
+- rfilename: experiments/43_rnafm_base.py
+- rfilename: experiments/43_rnafm_c2s.py
+- rfilename: experiments/43_rnafm_nicheformer.py
+- rfilename: experiments/44_rnafm_eval.py
+- rfilename: experiments/46_text_enc_eval.py
+- rfilename: experiments/47_final_ens.py
+- rfilename: experiments/48_joint_ens.py
+- rfilename: experiments/49_hest_patches.py
+- rfilename: experiments/51_medvtok_eval.py
+- rfilename: experiments/README_v1_orion.md
+- rfilename: experiments/prompts.json
+- rfilename: experiments/run_all.sh
+- rfilename: experiments/run_bench.sh
+- rfilename: experiments/run_fm.sh
+- rfilename: experiments/run_fm_queue.sh
+- rfilename: experiments/run_pairs.sh
+- rfilename: experiments/run_v10.sh
+- rfilename: experiments/run_v2.sh
+- rfilename: experiments/run_v3.sh
+- rfilename: experiments/run_v4.sh
+- rfilename: experiments/run_v4b.sh
+- rfilename: experiments/run_v5.sh
+- rfilename: experiments/run_v7.sh
+- rfilename: experiments/run_v8.sh
+- rfilename: experiments/run_v9.sh
+- rfilename: ext/marker_embeddings/esm2_t30_150M_UR50D/P01730.pt
+- rfilename: ext/marker_embeddings/esm2_t30_150M_UR50D/P01732.pt
+- rfilename: ext/marker_embeddings/esm2_t30_150M_UR50D/P02533.pt
+- rfilename: ext/marker_embeddings/esm2_t30_150M_UR50D/P07766.pt
+- rfilename: ext/marker_embeddings/esm2_t30_150M_UR50D/P08575-4.pt
+- rfilename: ext/marker_embeddings/esm2_t30_150M_UR50D/P08575.pt
+- rfilename: ext/marker_embeddings/esm2_t30_150M_UR50D/P11836.pt
+- rfilename: ext/marker_embeddings/esm2_t30_150M_UR50D/P12830.pt
+- rfilename: ext/marker_embeddings/esm2_t30_150M_UR50D/P16284.pt
+- rfilename: ext/marker_embeddings/esm2_t30_150M_UR50D/P34810.pt
+- rfilename: ext/marker_embeddings/esm2_t30_150M_UR50D/P46013.pt
+- rfilename: ext/marker_embeddings/esm2_t30_150M_UR50D/P62736.pt
+- rfilename: ext/marker_embeddings/esm2_t30_150M_UR50D/P68431.pt
+- rfilename: ext/marker_embeddings/esm2_t30_150M_UR50D/Q15116.pt
+- rfilename: ext/marker_embeddings/esm2_t30_150M_UR50D/Q86VB7.pt
+- rfilename: ext/marker_embeddings/esm2_t30_150M_UR50D/Q9BZS1.pt
+- rfilename: ext/marker_embeddings/esm2_t30_150M_UR50D/Q9NZQ7.pt
+- rfilename: ext/marker_embeddings/fasta/P01730.fasta
+- rfilename: ext/marker_embeddings/fasta/P01732.fasta
+- rfilename: ext/marker_embeddings/fasta/P02533.fasta
+- rfilename: ext/marker_embeddings/fasta/P07766.fasta
+- rfilename: ext/marker_embeddings/fasta/P08575-4.fasta
+- rfilename: ext/marker_embeddings/fasta/P08575.fasta
+- rfilename: ext/marker_embeddings/fasta/P11836.fasta
+- rfilename: ext/marker_embeddings/fasta/P12830.fasta
+- rfilename: ext/marker_embeddings/fasta/P16284.fasta
+- rfilename: ext/marker_embeddings/fasta/P34810.fasta
+- rfilename: ext/marker_embeddings/fasta/P46013.fasta
+- rfilename: ext/marker_embeddings/fasta/P62736.fasta
+- rfilename: ext/marker_embeddings/fasta/P68431.fasta
+- rfilename: ext/marker_embeddings/fasta/Q15116.fasta
+- rfilename: ext/marker_embeddings/fasta/Q86VB7.fasta
+- rfilename: ext/marker_embeddings/fasta/Q9BZS1.fasta
+- rfilename: ext/marker_embeddings/fasta/Q9NZQ7.fasta
+- rfilename: models/ej_ad_mv/meta.json
+- rfilename: models/ej_ad_mv/model.pt
+- rfilename: models/ej_ad_mv/val_curve.csv
+- rfilename: models/ej_ad_mv_fold0/meta.json
+- rfilename: models/ej_ad_mv_fold0/model.pt
+- rfilename: models/ej_ad_mv_fold0/test.csv
+- rfilename: models/ej_ad_mv_fold0/test_items.npz
+- rfilename: models/ej_ad_mv_fold0/val_curve.csv
+- rfilename: report/fourmodal_report.html
+- rfilename: reproduce.sh
+- rfilename: requirements.txt
+- rfilename: results/anchor_ifret.csv
+- rfilename: results/anchor_text_probes.csv
+- rfilename: results/before_text_clean/external_check.csv
+- rfilename: results/before_text_clean/external_long.csv
+- rfilename: results/before_text_clean/external_summary.csv
+- rfilename: results/before_text_clean/final_long.csv
+- rfilename: results/before_text_clean/final_splits.csv
+- rfilename: results/before_text_clean/final_summary.csv
+- rfilename: results/data_overview.png
+- rfilename: results/data_summary.json
+- rfilename: results/embed_check.csv
+- rfilename: results/example_quadruplets.png
+- rfilename: results/external_check.csv
+- rfilename: results/external_long.csv
+- rfilename: results/external_summary.csv
+- rfilename: results/final_cv_curves.csv
+- rfilename: results/final_cv_long.csv
+- rfilename: results/final_cv_summary.csv
+- rfilename: results/final_cv_tests.csv
+- rfilename: results/final_ens_long.csv
+- rfilename: results/final_ens_summary.csv
+- rfilename: results/final_ens_tests.csv
+- rfilename: results/final_long.csv
+- rfilename: results/final_splits.csv
+- rfilename: results/final_summary.csv
+- rfilename: results/fm_retrieval.csv
+- rfilename: results/fm_text_probes.csv
+- rfilename: results/gene_emergent_protein.csv
+- rfilename: results/gene_emergent_text.csv
+- rfilename: results/gene_retrieval.csv
+- rfilename: results/gene_retrieval_fm.csv
+- rfilename: results/gene_retrieval_mlp.csv
+- rfilename: results/gigatime_diag.csv
+- rfilename: results/gigatime_diag_pixels.csv
+- rfilename: results/gigatime_diag_retrieval.csv
+- rfilename: results/joint_ens_long.csv
+- rfilename: results/joint_ens_summary.csv
+- rfilename: results/joint_ens_tests.csv
+- rfilename: results/medvtok_long.csv
+- rfilename: results/medvtok_summary.csv
+- rfilename: results/medvtok_tests.csv
+- rfilename: results/miphei_diag.csv
+- rfilename: results/miphei_diag_retrieval.csv
+- rfilename: results/pairing_long.csv
+- rfilename: results/pairing_long_anchor.csv
+- rfilename: results/pairing_summary.csv
+- rfilename: results/pairing_summary_anchor.csv
+- rfilename: results/regimes_long.csv
+- rfilename: results/regimes_summary.csv
+- rfilename: results/rnafm_long.csv
+- rfilename: results/rnafm_summary.csv
+- rfilename: results/text_emergent_probes.csv
+- rfilename: results/text_emergent_retrieval.csv
+- rfilename: results/text_enc_clean_long.csv
+- rfilename: results/text_enc_clean_summary.csv
+- rfilename: results/textenc_long.csv
+- rfilename: results/textenc_summary.csv
+- rfilename: results/tile_stats.csv
+- rfilename: results/virtual_completion.csv
+- rfilename: results/virtual_validation.csv
+- rfilename: rna_sets.py
+- rfilename: setup_encoders.sh
+spaces: []
+createdAt: '2026-10-29T02:06:17.000Z'
+usedStorage: 246279223
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-29T09:45:25.000Z'

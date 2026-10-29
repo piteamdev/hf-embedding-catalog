@@ -1,0 +1,159 @@
+_id: 6a171845ae7c070c3a80c00f
+id: kakaocorp/kanana-2-1.3b-embedding
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- qwen3_bidirec
+- feature-extraction
+- mteb
+- matryoshka
+- custom_code
+- sentence-similarity
+- ko
+- en
+- license:other
+- endpoints_compatible
+- region:us
+downloads: 3
+likes: 3
+modelId: kakaocorp/kanana-2-1.3b-embedding
+author: kakaocorp
+sha: 107b09b19ea3628acbd42615ee9ad59b82f604a3
+lastModified: '2026-10-22T04:34:31.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - Qwen3BidirectionalModel
+  auto_map:
+    AutoConfig: qwen3_bidirectional_model.Qwen3BidirectionalConfig
+    AutoModel: qwen3_bidirectional_model.Qwen3BidirectionalModel
+  model_type: qwen3_bidirec
+  tokenizer_config:
+    bos_token: <|begin_of_text|>
+    eos_token: <|end_of_text|>
+    pad_token: <|end_of_text|>
+  chat_template_jinja: '{{bos_token}}{% for message in messages %}{% if (message[''role''] == ''user'') != (loop.index0 %
+    2 == 0) %}{{ raise_exception(''Conversation roles must alternate user/assistant/user/assistant/...'') }}{% endif %}{%
+    if message[''role''] == ''user'' %}{{ ''<|start_header_id|>user<|end_header_id|>\n\n'' + message[''content''] + ''<|eot_id|>''
+    }}{% elif message[''role''] == ''assistant'' %}{{ ''<|start_header_id|>assistant<|end_header_id|>\n\n'' + message[''content'']
+    + ''<|eot_id|>'' }}{% elif message[''role''] == ''system'' %}{{ ''<|start_header_id|>system<|end_header_id|>\n\n'' + message[''content'']
+    + ''<|eot_id|>'' }}{% endif %}{% endfor %}{% if add_generation_prompt %}{{ ''<|start_header_id|>assistant<|end_header_id|>\n\n''
+    }}{% endif %}'
+cardData:
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  license: other
+  license_name: kanana-open-license
+  license_link: https://huggingface.co/kakaocorp/kanana-2-1.3b-embedding/blob/main/LICENSE
+  tags:
+  - sentence-transformers
+  - feature-extraction
+  - mteb
+  - matryoshka
+  - custom_code
+  language:
+  - ko
+  - en
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Normalize/config.json
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: assets/logo/kanana.png
+- rfilename: chat_template.jinja
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: qwen3_bidirectional_model.py
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-05-27T16:13:57.000Z'
+safetensors:
+  parameters:
+    BF16: 1291478272
+  total: 1291478272
+usedStorage: 2583104673
+downloadsAllTime: 13
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - Qwen3BidirectionalModel
+  attention_bias: false
+  attention_dropout: 0.0
+  auto_map:
+    AutoConfig: qwen3_bidirectional_model.Qwen3BidirectionalConfig
+    AutoModel: qwen3_bidirectional_model.Qwen3BidirectionalModel
+  bos_token_id: null
+  dtype: bfloat16
+  eos_token_id: null
+  head_dim: 128
+  hidden_act: silu
+  hidden_size: 1280
+  initializer_range: 0.02
+  intermediate_size: 5760
+  is_causal: false
+  layer_types:
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  max_position_embeddings: 4096
+  max_window_layers: 28
+  model_type: qwen3_bidirec
+  num_attention_heads: 32
+  num_hidden_layers: 32
+  num_key_value_heads: 8
+  pad_token_id: null
+  pooling: avg
+  rms_norm_eps: 1.0e-06
+  rope_parameters:
+    rope_theta: 10000
+    rope_type: default
+  sliding_window: null
+  temperature: 1.0
+  tie_word_embeddings: true
+  transformers_version: 5.5.4
+  use_cache: true
+  use_sliding_window: false
+  vocab_size: 128256
+onnxFiles: {}
+safetensorsSizeMb: 2583.0
+approxSizeMb: 2583.0
+fetchedAt: '2026-10-29T09:45:25.000Z'

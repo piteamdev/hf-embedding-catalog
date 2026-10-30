@@ -1,0 +1,68 @@
+_id: 6ae463f8a06f283f00dd4252
+id: UR-xiaoyang/mnemosyne-mns-rank-hybrid-01
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- joblib
+- safetensors
+- memory
+- retrieval
+- reranking
+- multilingual
+- chinese
+- agent-memory
+- feature-extraction
+- license:mit
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: UR-xiaoyang/mnemosyne-mns-rank-hybrid-01
+author: UR-xiaoyang
+sha: ad36af5ea2ace2c92573772c9cc1f922f4916c84
+lastModified: '2026-10-30T09:32:26.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  library_name: transformers
+  tags:
+  - memory
+  - retrieval
+  - reranking
+  - multilingual
+  - chinese
+  - agent-memory
+  pipeline_tag: feature-extraction
+transformersInfo:
+  auto_model: AutoModel
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: e5_model/config.json
+- rfilename: e5_model/model.safetensors
+- rfilename: e5_model/modules.json
+- rfilename: e5_model/sentence_bert_config.json
+- rfilename: e5_model/sentencepiece.bpe.model
+- rfilename: e5_model/special_tokens_map.json
+- rfilename: e5_model/tokenizer.json
+- rfilename: e5_model/tokenizer_config.json
+- rfilename: manifest.json
+- rfilename: model_bundle/hybrid_ranker.joblib
+- rfilename: model_bundle/metadata.json
+- rfilename: model_bundle/ranker.json
+- rfilename: model_bundle/scaler.json
+spaces: []
+createdAt: '2026-10-30T09:31:36.000Z'
+usedStorage: 493826055
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 470.6
+approxSizeMb: 0.0
+fetchedAt: '2026-10-30T09:51:15.000Z'

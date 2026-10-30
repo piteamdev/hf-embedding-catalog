@@ -1,0 +1,1407 @@
+_id: 6ae32e8b16e421a6d093038c
+id: epfl-neuroai/encoder-things-meg
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- encoder_things_meg
+- feature-extraction
+- brain-encoding
+- neuroscience
+- meg
+- vision
+- things-meg
+- things
+- image-to-meg
+- custom_code
+- arxiv:2411.05712
+- arxiv:2511.21631
+- base_model:Qwen/Qwen3-VL-2B-Instruct
+- base_model:finetune:Qwen/Qwen3-VL-2B-Instruct
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: epfl-neuroai/encoder-things-meg
+author: epfl-neuroai
+sha: c11ccea296e90a2aedb492465b4308acda787859
+lastModified: '2026-10-29T11:32:18.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - EncoderThingsMEGModel
+  auto_map:
+    AutoConfig: configuration_encoder_things_meg.EncoderThingsMEGConfig
+    AutoModel: modeling_encoder_things_meg.EncoderThingsMEGModel
+  model_type: encoder_things_meg
+cardData:
+  license: apache-2.0
+  library_name: transformers
+  base_model:
+  - timm/vit_small_patch16_224.augreg_in21k_ft_in1k
+  - timm/vit_base_patch14_dinov2.lvd142m
+  - Qwen/Qwen3-VL-2B-Instruct
+  tags:
+  - brain-encoding
+  - neuroscience
+  - meg
+  - vision
+  - things-meg
+  - things
+  - image-to-meg
+  - custom_code
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_encoder_things_meg.EncoderThingsMEGModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: configuration_encoder_things_meg.py
+- rfilename: model.accurate.safetensors
+- rfilename: model.cnn.safetensors
+- rfilename: model.safetensors
+- rfilename: model.tiny.safetensors
+- rfilename: modeling.py
+- rfilename: modeling_encoder_things_meg.py
+spaces: []
+createdAt: '2026-10-29T11:31:23.000Z'
+safetensors:
+  parameters:
+    F32: 240717240
+  total: 240717240
+usedStorage: 7393668768
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - EncoderThingsMEGModel
+  auto_map:
+    AutoConfig: configuration_encoder_things_meg.EncoderThingsMEGConfig
+    AutoModel: modeling_encoder_things_meg.EncoderThingsMEGModel
+  model_type: encoder_things_meg
+  schema_version: 1
+  default_variant: efficient
+  subjects:
+  - P1
+  - P2
+  - P3
+  - P4
+  sensors:
+  - MLC11
+  - MLC12
+  - MLC13
+  - MLC14
+  - MLC15
+  - MLC16
+  - MLC17
+  - MLC21
+  - MLC22
+  - MLC23
+  - MLC24
+  - MLC25
+  - MLC31
+  - MLC32
+  - MLC41
+  - MLC42
+  - MLC51
+  - MLC52
+  - MLC53
+  - MLC54
+  - MLC55
+  - MLC61
+  - MLC62
+  - MLC63
+  - MLF11
+  - MLF12
+  - MLF13
+  - MLF14
+  - MLF21
+  - MLF22
+  - MLF23
+  - MLF24
+  - MLF31
+  - MLF32
+  - MLF33
+  - MLF34
+  - MLF35
+  - MLF41
+  - MLF42
+  - MLF43
+  - MLF44
+  - MLF45
+  - MLF46
+  - MLF51
+  - MLF52
+  - MLF53
+  - MLF54
+  - MLF55
+  - MLF56
+  - MLF61
+  - MLF62
+  - MLF63
+  - MLF64
+  - MLF65
+  - MLF66
+  - MLF67
+  - MLO11
+  - MLO12
+  - MLO13
+  - MLO14
+  - MLO21
+  - MLO22
+  - MLO23
+  - MLO24
+  - MLO31
+  - MLO32
+  - MLO33
+  - MLO34
+  - MLO41
+  - MLO42
+  - MLO43
+  - MLO44
+  - MLO51
+  - MLO52
+  - MLO53
+  - MLP11
+  - MLP12
+  - MLP21
+  - MLP22
+  - MLP23
+  - MLP31
+  - MLP32
+  - MLP33
+  - MLP34
+  - MLP35
+  - MLP41
+  - MLP42
+  - MLP43
+  - MLP44
+  - MLP45
+  - MLP51
+  - MLP52
+  - MLP53
+  - MLP54
+  - MLP55
+  - MLP56
+  - MLP57
+  - MLT11
+  - MLT12
+  - MLT13
+  - MLT14
+  - MLT15
+  - MLT16
+  - MLT21
+  - MLT22
+  - MLT23
+  - MLT24
+  - MLT25
+  - MLT26
+  - MLT27
+  - MLT31
+  - MLT32
+  - MLT33
+  - MLT34
+  - MLT35
+  - MLT36
+  - MLT37
+  - MLT41
+  - MLT42
+  - MLT43
+  - MLT44
+  - MLT45
+  - MLT46
+  - MLT47
+  - MLT51
+  - MLT52
+  - MLT53
+  - MLT54
+  - MLT55
+  - MLT56
+  - MLT57
+  - MRC11
+  - MRC12
+  - MRC13
+  - MRC14
+  - MRC15
+  - MRC16
+  - MRC17
+  - MRC21
+  - MRC22
+  - MRC23
+  - MRC24
+  - MRC25
+  - MRC31
+  - MRC32
+  - MRC41
+  - MRC42
+  - MRC51
+  - MRC52
+  - MRC53
+  - MRC54
+  - MRC55
+  - MRC61
+  - MRC62
+  - MRC63
+  - MRF11
+  - MRF12
+  - MRF13
+  - MRF14
+  - MRF21
+  - MRF22
+  - MRF23
+  - MRF24
+  - MRF25
+  - MRF31
+  - MRF32
+  - MRF33
+  - MRF34
+  - MRF35
+  - MRF41
+  - MRF42
+  - MRF44
+  - MRF45
+  - MRF46
+  - MRF51
+  - MRF52
+  - MRF53
+  - MRF54
+  - MRF55
+  - MRF56
+  - MRF61
+  - MRF62
+  - MRF63
+  - MRF64
+  - MRF65
+  - MRF66
+  - MRF67
+  - MRO12
+  - MRO14
+  - MRO21
+  - MRO22
+  - MRO23
+  - MRO24
+  - MRO31
+  - MRO32
+  - MRO33
+  - MRO34
+  - MRO41
+  - MRO42
+  - MRO43
+  - MRO44
+  - MRO51
+  - MRO52
+  - MRO53
+  - MRP11
+  - MRP12
+  - MRP21
+  - MRP22
+  - MRP23
+  - MRP31
+  - MRP32
+  - MRP33
+  - MRP34
+  - MRP35
+  - MRP41
+  - MRP42
+  - MRP43
+  - MRP44
+  - MRP45
+  - MRP51
+  - MRP52
+  - MRP53
+  - MRP54
+  - MRP55
+  - MRP56
+  - MRP57
+  - MRT11
+  - MRT12
+  - MRT13
+  - MRT14
+  - MRT15
+  - MRT16
+  - MRT21
+  - MRT22
+  - MRT23
+  - MRT24
+  - MRT25
+  - MRT26
+  - MRT27
+  - MRT31
+  - MRT32
+  - MRT33
+  - MRT34
+  - MRT35
+  - MRT36
+  - MRT37
+  - MRT41
+  - MRT42
+  - MRT43
+  - MRT44
+  - MRT45
+  - MRT46
+  - MRT47
+  - MRT51
+  - MRT52
+  - MRT53
+  - MRT54
+  - MRT55
+  - MRT56
+  - MRT57
+  - MZC01
+  - MZC02
+  - MZC03
+  - MZC04
+  - MZF01
+  - MZF02
+  - MZF03
+  - MZO01
+  - MZO02
+  - MZO03
+  - MZP01
+  time_points:
+  - 0.0
+  - 0.01
+  - 0.02
+  - 0.03
+  - 0.04
+  - 0.05
+  - 0.06
+  - 0.07
+  - 0.08
+  - 0.09
+  - 0.1
+  - 0.11
+  - 0.12
+  - 0.13
+  - 0.14
+  - 0.15
+  - 0.16
+  - 0.17
+  - 0.18
+  - 0.19
+  - 0.2
+  - 0.21
+  - 0.22
+  - 0.23
+  - 0.24
+  - 0.25
+  - 0.26
+  - 0.27
+  - 0.28
+  - 0.29
+  - 0.3
+  - 0.31
+  - 0.32
+  - 0.33
+  - 0.34
+  - 0.35
+  - 0.36
+  - 0.37
+  - 0.38
+  - 0.39
+  - 0.4
+  - 0.41
+  - 0.42
+  - 0.43
+  - 0.44
+  - 0.45
+  - 0.46
+  - 0.47
+  - 0.48
+  - 0.49
+  - 0.5
+  - 0.51
+  - 0.52
+  - 0.53
+  - 0.54
+  - 0.55
+  - 0.56
+  - 0.57
+  - 0.58
+  - 0.59
+  - 0.6
+  - 0.61
+  - 0.62
+  - 0.63
+  - 0.64
+  - 0.65
+  - 0.66
+  - 0.67
+  - 0.68
+  - 0.69
+  - 0.7
+  - 0.71
+  - 0.72
+  - 0.73
+  - 0.74
+  - 0.75
+  - 0.76
+  - 0.77
+  - 0.78
+  - 0.79
+  - 0.8
+  - 0.81
+  - 0.82
+  - 0.83
+  - 0.84
+  - 0.85
+  - 0.86
+  - 0.87
+  - 0.88
+  - 0.89
+  - 0.9
+  - 0.91
+  - 0.92
+  - 0.93
+  - 0.94
+  - 0.95
+  - 0.96
+  - 0.97
+  - 0.98
+  - 0.99
+  - 1.0
+  - 1.01
+  - 1.02
+  - 1.03
+  - 1.04
+  - 1.05
+  - 1.06
+  - 1.07
+  - 1.08
+  - 1.09
+  - 1.1
+  - 1.11
+  - 1.12
+  - 1.13
+  - 1.14
+  - 1.15
+  - 1.16
+  - 1.17
+  - 1.18
+  - 1.19
+  - 1.2
+  - 1.21
+  - 1.22
+  - 1.23
+  - 1.24
+  - 1.25
+  - 1.26
+  - 1.27
+  - 1.28
+  - 1.29
+  units: z
+  variants:
+    efficient:
+      members:
+      - name: r50_lora_s0
+        feature: sets
+        kind: resnet
+        arch: resnet50
+        stage: layer3
+        last_block: 5
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: 128
+        dims: 128
+      - name: r50_lora_s1
+        feature: sets
+        kind: resnet
+        arch: resnet50
+        stage: layer3
+        last_block: 5
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: 128
+        dims: 128
+      - name: r50_lora_s2
+        feature: sets
+        kind: resnet
+        arch: resnet50
+        stage: layer3
+        last_block: 5
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: 128
+        dims: 128
+      - name: vits_lora_s0
+        feature: sets
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 7
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 75264
+          pool1: 384
+          pool2: 1536
+          pool4: 6144
+          pool8: 24576
+        pca_components: 128
+        dims: 128
+      - name: vits_lora_s1
+        feature: sets
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 7
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 75264
+          pool1: 384
+          pool2: 1536
+          pool4: 6144
+          pool8: 24576
+        pca_components: 128
+        dims: 128
+      - name: vits_lora_s2
+        feature: sets
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 7
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 75264
+          pool1: 384
+          pool2: 1536
+          pool4: 6144
+          pool8: 24576
+        pca_components: 128
+        dims: 128
+      scores: {}
+      combine: sum
+      shared_rank: 128
+    tiny:
+      members:
+      - name: r18_lora_s0
+        feature: sets
+        kind: resnet
+        arch: resnet18
+        stage: layer4
+        last_block: 0
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        feature_dims:
+          full: 25088
+          pool1: 512
+          pool2: 2048
+          pool4: 8192
+        pca_components: 128
+        dims: 128
+      - name: r18_lora_s1
+        feature: sets
+        kind: resnet
+        arch: resnet18
+        stage: layer4
+        last_block: 0
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        feature_dims:
+          full: 25088
+          pool1: 512
+          pool2: 2048
+          pool4: 8192
+        pca_components: 128
+        dims: 128
+      - name: r18_lora_s2
+        feature: sets
+        kind: resnet
+        arch: resnet18
+        stage: layer4
+        last_block: 0
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        feature_dims:
+          full: 25088
+          pool1: 512
+          pool2: 2048
+          pool4: 8192
+        pca_components: 128
+        dims: 128
+      - name: vits_lora_s0
+        feature: sets
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 7
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 75264
+          pool1: 384
+          pool2: 1536
+          pool4: 6144
+          pool8: 24576
+        pca_components: 128
+        dims: 128
+      - name: vits_lora_s1
+        feature: sets
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 7
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 75264
+          pool1: 384
+          pool2: 1536
+          pool4: 6144
+          pool8: 24576
+        pca_components: 128
+        dims: 128
+      - name: vits_lora_s2
+        feature: sets
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 7
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 75264
+          pool1: 384
+          pool2: 1536
+          pool4: 6144
+          pool8: 24576
+        pca_components: 128
+        dims: 128
+      scores: {}
+      combine: sum
+      shared_rank: 128
+    cnn:
+      members:
+      - name: r152_lora_s0
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 27
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: 128
+        dims: 128
+      - name: r152_lora_s1
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 27
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: 128
+        dims: 128
+      - name: r152_lora_s2
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 27
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: 128
+        dims: 128
+      - name: r152_lora_s3
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 27
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: 128
+        dims: 128
+      - name: r152_lora_s4
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 27
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: 128
+        dims: 128
+      scores: {}
+      combine: sum
+      shared_rank: 128
+    accurate:
+      members:
+      - name: vl_lora_s0
+        feature: sets
+        kind: qwen_vision
+        qwen:
+          repo: Qwen/Qwen3-VL-2B-Instruct
+          revision: 89644892e4d85e24eaac8bacfd4f463576704203
+          prefix: model.visual.
+          hidden_size: 1024
+          num_heads: 16
+          intermediate_size: 4096
+          patch_size: 16
+          temporal_patch_size: 2
+          merge_size: 2
+          num_position_embeddings: 2304
+          grid:
+          - 1
+          - 32
+          - 32
+          depth: 15
+        first_block: 10
+        last_block: 13
+        post_norm: true
+        lora_rank: 4
+        preprocessing:
+          square: 500
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - pool1
+        - pool14
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          pool1: 1024
+          pool14: 200704
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: 256
+        dims: 256
+      - name: vl_lora_s1
+        feature: sets
+        kind: qwen_vision
+        qwen:
+          repo: Qwen/Qwen3-VL-2B-Instruct
+          revision: 89644892e4d85e24eaac8bacfd4f463576704203
+          prefix: model.visual.
+          hidden_size: 1024
+          num_heads: 16
+          intermediate_size: 4096
+          patch_size: 16
+          temporal_patch_size: 2
+          merge_size: 2
+          num_position_embeddings: 2304
+          grid:
+          - 1
+          - 32
+          - 32
+          depth: 15
+        first_block: 10
+        last_block: 13
+        post_norm: true
+        lora_rank: 4
+        preprocessing:
+          square: 500
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - pool1
+        - pool14
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          pool1: 1024
+          pool14: 200704
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: 256
+        dims: 256
+      - name: vl_lora_s2
+        feature: sets
+        kind: qwen_vision
+        qwen:
+          repo: Qwen/Qwen3-VL-2B-Instruct
+          revision: 89644892e4d85e24eaac8bacfd4f463576704203
+          prefix: model.visual.
+          hidden_size: 1024
+          num_heads: 16
+          intermediate_size: 4096
+          patch_size: 16
+          temporal_patch_size: 2
+          merge_size: 2
+          num_position_embeddings: 2304
+          grid:
+          - 1
+          - 32
+          - 32
+          depth: 15
+        first_block: 10
+        last_block: 13
+        post_norm: true
+        lora_rank: 4
+        preprocessing:
+          square: 500
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - pool1
+        - pool14
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          pool1: 1024
+          pool14: 200704
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: 256
+        dims: 256
+      - name: d2b_lora_s0
+        feature: sets
+        kind: vit
+        embed_dim: 768
+        num_heads: 12
+        patch_size: 14
+        norm_eps: 1.0e-06
+        layer_scale: true
+        last_block: 8
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool14
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 196608
+          pool1: 768
+          pool14: 150528
+          pool2: 3072
+          pool4: 12288
+          pool8: 49152
+        pca_components: 256
+        dims: 256
+      - name: d2b_lora_s1
+        feature: sets
+        kind: vit
+        embed_dim: 768
+        num_heads: 12
+        patch_size: 14
+        norm_eps: 1.0e-06
+        layer_scale: true
+        last_block: 8
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool14
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 196608
+          pool1: 768
+          pool14: 150528
+          pool2: 3072
+          pool4: 12288
+          pool8: 49152
+        pca_components: 256
+        dims: 256
+      - name: d2b_lora_s2
+        feature: sets
+        kind: vit
+        embed_dim: 768
+        num_heads: 12
+        patch_size: 14
+        norm_eps: 1.0e-06
+        layer_scale: true
+        last_block: 8
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool14
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 196608
+          pool1: 768
+          pool14: 150528
+          pool2: 3072
+          pool4: 12288
+          pool8: 49152
+        pca_components: 256
+        dims: 256
+      - name: r152_lora_s0
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 27
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: 256
+        dims: 256
+      - name: r152_lora_s1
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 27
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: 256
+        dims: 256
+      - name: r152_lora_s2
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 27
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: 256
+        dims: 256
+      scores: {}
+      combine: sum
+      shared_rank: 256
+  provenance:
+    export: public_encoder_models 0.1.0.dev0
+    date: '2026-10-29'
+onnxFiles: {}
+safetensorsSizeMb: 7393.7
+approxSizeMb: 962.9
+fetchedAt: '2026-10-30T09:51:15.000Z'

@@ -1,0 +1,101 @@
+_id: 6ae3c66db986102111fec944
+id: BenjaminChan12/onet-match
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- onet
+- occupation-classification
+- job-title-normalization
+- soc-codes
+- career-exploration
+- resume-parsing
+- reranker
+- riasec
+- sentence-similarity
+- en
+- base_model:BAAI/bge-base-en-v1.5
+- base_model:finetune:BAAI/bge-base-en-v1.5
+- license:mit
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: BenjaminChan12/onet-match
+author: BenjaminChan12
+sha: de95e32d311e256cca7f7502705b5c7161da9153
+lastModified: '2026-10-29T22:43:10.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config: {}
+cardData:
+  license: mit
+  language:
+  - en
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  base_model:
+  - BAAI/bge-base-en-v1.5
+  - cross-encoder/ms-marco-MiniLM-L6-v2
+  tags:
+  - onet
+  - occupation-classification
+  - job-title-normalization
+  - soc-codes
+  - career-exploration
+  - resume-parsing
+  - reranker
+  - riasec
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: biencoder/1_Pooling/config.json
+- rfilename: biencoder/2_Normalize/config.json
+- rfilename: biencoder/README.md
+- rfilename: biencoder/config.json
+- rfilename: biencoder/config_sentence_transformers.json
+- rfilename: biencoder/model.safetensors
+- rfilename: biencoder/modules.json
+- rfilename: biencoder/sentence_bert_config.json
+- rfilename: biencoder/tokenizer.json
+- rfilename: biencoder/tokenizer_config.json
+- rfilename: biencoder/training.json
+- rfilename: bundle.json
+- rfilename: catalog/abilities.parquet
+- rfilename: catalog/catalog.json
+- rfilename: catalog/dwas.parquet
+- rfilename: catalog/interests.parquet
+- rfilename: catalog/knowledge.parquet
+- rfilename: catalog/occupations.parquet
+- rfilename: catalog/skills.parquet
+- rfilename: catalog/tasks.parquet
+- rfilename: doc_embeddings.npy
+- rfilename: reranker/README.md
+- rfilename: reranker/config.json
+- rfilename: reranker/config_sentence_transformers.json
+- rfilename: reranker/model.safetensors
+- rfilename: reranker/modules.json
+- rfilename: reranker/sentence_bert_config.json
+- rfilename: reranker/tokenizer.json
+- rfilename: reranker/tokenizer_config.json
+- rfilename: reranker/training.json
+spaces:
+- BenjaminChan12/onet-match
+createdAt: '2026-10-29T22:19:25.000Z'
+usedStorage: 533239523
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 528.8
+approxSizeMb: 0.0
+fetchedAt: '2026-10-30T09:51:15.000Z'

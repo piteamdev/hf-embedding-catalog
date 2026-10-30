@@ -1,0 +1,67 @@
+_id: 6ae3dbe9b986102111054cbc
+id: bdrgon/clap-htsat-unfused-audio-embedder-onnx-INT4
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- audio
+- audio-embeddings
+- clap
+- int4
+- experimental
+- feature-extraction
+- dataset:yojul/one-shot-hip-hop-drums
+- dataset:jg583/NSynth
+- base_model:laion/clap-htsat-unfused
+- base_model:quantized:laion/clap-htsat-unfused
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: bdrgon/clap-htsat-unfused-audio-embedder-onnx-INT4
+author: bdrgon
+sha: 17fcfded2c8dc579b7779cb8e8a5cca62fdc3f2d
+lastModified: '2026-10-29T23:52:13.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: laion/clap-htsat-unfused
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  tags:
+  - audio
+  - audio-embeddings
+  - clap
+  - onnx
+  - int4
+  - experimental
+  datasets:
+  - yojul/one-shot-hip-hop-drums
+  - jg583/NSynth
+siblings:
+- rfilename: .gitattributes
+- rfilename: .gitignore
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: audio_model_int4.onnx
+- rfilename: audio_model_int4_trained_v1.onnx
+- rfilename: quantize.py
+- rfilename: requirements.txt
+- rfilename: training.py
+spaces: []
+createdAt: '2026-10-29T23:51:05.000Z'
+usedStorage: 74930078
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  audio_model_int4.onnx: 21.4
+  audio_model_int4_trained_v1.onnx: 21.4
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-30T09:51:15.000Z'

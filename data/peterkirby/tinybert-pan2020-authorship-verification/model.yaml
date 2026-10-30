@@ -1,0 +1,227 @@
+_id: 6ae42449ab351c6976b7369a
+id: peterkirby/tinybert-pan2020-authorship-verification
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- bert
+- feature-extraction
+- tinybert
+- authorship-verification
+- contrastive-learning
+- cosine-similarity
+- pan2020
+- pan2021
+- en
+- dataset:peterkirby/pan2020_dict_author_fandom_doc
+- arxiv:2609.28471
+- arxiv:1909.10351
+- base_model:huawei-noah/TinyBERT_General_4L_312D
+- base_model:finetune:huawei-noah/TinyBERT_General_4L_312D
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 1
+modelId: peterkirby/tinybert-pan2020-authorship-verification
+author: peterkirby
+sha: eea2a77fdf65d99fdd26c0c5194c5bcba4cd0b69
+lastModified: '2026-10-30T05:00:11.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index:
+- name: TinyBERT PAN Authorship Verification
+  results:
+  - task:
+      type: text-classification
+      name: Binary authorship verification
+    dataset:
+      type: peterkirby/pan2020_dict_author_fandom_doc
+      name: PAN21 test
+      config: pan21
+      split: test
+    metrics:
+    - type: accuracy
+      name: Accuracy (%)
+      value: 86.58432960510254
+      verified: false
+    - type: f1
+      name: Binary F1
+      value: 0.8613365292549133
+      verified: false
+  - task:
+      type: text-classification
+      name: Binary authorship verification
+    dataset:
+      type: peterkirby/pan2020_dict_author_fandom_doc
+      name: PAN20 test
+      config: pan20
+      split: test
+    metrics:
+    - type: accuracy
+      name: Accuracy (%)
+      value: 86.16448640823364
+      verified: false
+    - type: f1
+      name: Binary F1
+      value: 0.8653610944747925
+      verified: false
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+    pad_token: '[PAD]'
+    sep_token: '[SEP]'
+    unk_token: '[UNK]'
+cardData:
+  language:
+  - en
+  library_name: transformers
+  pipeline_tag: feature-extraction
+  base_model: huawei-noah/TinyBERT_General_4L_312D
+  base_model_relation: finetune
+  datasets:
+  - peterkirby/pan2020_dict_author_fandom_doc
+  tags:
+  - bert
+  - tinybert
+  - authorship-verification
+  - contrastive-learning
+  - cosine-similarity
+  - pan2020
+  - pan2021
+  model-index:
+  - name: TinyBERT PAN Authorship Verification
+    results:
+    - task:
+        type: text-classification
+        name: Binary authorship verification
+      dataset:
+        type: peterkirby/pan2020_dict_author_fandom_doc
+        name: PAN21 test
+        config: pan21
+        split: test
+      metrics:
+      - type: accuracy
+        name: Accuracy (%)
+        value: 86.58432960510254
+        verified: false
+      - type: f1
+        name: Binary F1
+        value: 0.8613365292549133
+        verified: false
+    - task:
+        type: text-classification
+        name: Binary authorship verification
+      dataset:
+        type: peterkirby/pan2020_dict_author_fandom_doc
+        name: PAN20 test
+        config: pan20
+        split: test
+      metrics:
+      - type: accuracy
+        name: Accuracy (%)
+        value: 86.16448640823364
+        verified: false
+      - type: f1
+        name: Binary F1
+        value: 0.8653610944747925
+        verified: false
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: BASE_MODEL_README.md
+- rfilename: README.md
+- rfilename: SHA256SUMS
+- rfilename: authorship_verification.py
+- rfilename: authorship_verification_config.json
+- rfilename: checkpoint/model.ckpt
+- rfilename: config.json
+- rfilename: evaluation_results.json
+- rfilename: export_verification.json
+- rfilename: model.safetensors
+- rfilename: provenance.json
+- rfilename: requirements.txt
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: training_config.yaml
+- rfilename: training_history.parquet
+- rfilename: training_hyperparameters.json
+- rfilename: training_requirements.txt
+spaces: []
+createdAt: '2026-10-30T04:59:53.000Z'
+safetensors:
+  parameters:
+    F32: 14350248
+  total: 14350248
+usedStorage: 144175983
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  authorship_verification:
+    add_special_tokens: true
+    checkpoint_dtype: float32
+    comparison: '>='
+    evaluation_random_span: false
+    labels:
+      '0': different_authors
+      '1': same_author
+    max_length: 512
+    normalize: true
+    padding: max_length
+    padding_side: right
+    pooling: attention_mask_weighted_mean_in_float32_including_special_tokens
+    reported_evaluation_attention: flash_attention_2
+    reported_evaluation_batch_size: 256
+    reported_evaluation_precision: bf16-mixed
+    score: cosine_similarity
+    task: binary_authorship_verification
+    text_prefix: ''
+    threshold: 0.7344273328781128
+    threshold_selection: maximum binary F1 on pan21/validation; frozen for test
+    threshold_source: state_dict.eval_threshold in the best validation-F1 checkpoint
+    truncation: right
+  bos_token_id: null
+  cell: {}
+  classifier_dropout: null
+  dtype: float32
+  emb_size: 312
+  eos_token_id: null
+  finetuning_task: authorship-verification
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 312
+  initializer_range: 0.02
+  intermediate_size: 1200
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 4
+  pad_token_id: 0
+  pre_trained: ''
+  structure: []
+  tie_word_embeddings: true
+  transformers_version: 5.3.0
+  type_vocab_size: 2
+  use_cache: true
+  vocab_size: 30522
+onnxFiles: {}
+safetensorsSizeMb: 57.4
+approxSizeMb: 57.4
+fetchedAt: '2026-10-30T09:51:15.000Z'

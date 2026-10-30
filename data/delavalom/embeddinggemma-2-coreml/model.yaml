@@ -1,0 +1,75 @@
+_id: 6ae39d44dd92c50c979584ce
+id: delavalom/embeddinggemma-2-coreml
+private: false
+pipeline_tag: feature-extraction
+library_name: coreml
+tags:
+- coreml
+- embeddings
+- multimodal-embedding
+- image-text
+- sentence-similarity
+- ios
+- macos
+- neural-engine
+- feature-extraction
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 2
+modelId: delavalom/embeddinggemma-2-coreml
+author: delavalom
+sha: 8036f0bbba34dad5093108601ac6d060c63bbe76
+lastModified: '2026-10-29T19:24:57.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: google/embeddinggemma-2
+  base_model_relation: quantized
+  library_name: coreml
+  pipeline_tag: feature-extraction
+  tags:
+  - coreml
+  - embeddings
+  - multimodal-embedding
+  - image-text
+  - sentence-similarity
+  - ios
+  - macos
+  - neural-engine
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: b280/EmbeddingGemma2.aar
+- rfilename: b280/EmbeddingGemma2.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: b280/EmbeddingGemma2.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: b280/EmbeddingGemma2.mlpackage/Manifest.json
+- rfilename: b280/files.json
+- rfilename: b280/manifest.json
+- rfilename: b280/tokenizer/tokenizer.json
+- rfilename: b280/tokenizer/tokenizer_config.json
+- rfilename: b70/EmbeddingGemma2.aar
+- rfilename: b70/EmbeddingGemma2.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: b70/EmbeddingGemma2.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: b70/EmbeddingGemma2.mlpackage/Manifest.json
+- rfilename: b70/files.json
+- rfilename: b70/manifest.json
+- rfilename: b70/tokenizer/tokenizer.json
+- rfilename: b70/tokenizer/tokenizer_config.json
+spaces: []
+createdAt: '2026-10-29T19:23:48.000Z'
+usedStorage: 1553848936
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-30T09:51:15.000Z'

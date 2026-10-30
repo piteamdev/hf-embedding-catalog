@@ -1,0 +1,72 @@
+_id: 6ae440913dcf9034d171fd6d
+id: unfold-labs/unfold-search-embedder
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- embedder
+- notes-search
+- feature-extraction
+- fr
+- en
+- arxiv:2402.05672
+- base_model:intfloat/multilingual-e5-small
+- base_model:quantized:intfloat/multilingual-e5-small
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: unfold-labs/unfold-search-embedder
+author: unfold-labs
+sha: dee80d19704a45ec48fcf32c6b23d2ce39f35424
+lastModified: '2026-10-30T07:00:47.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  tokenizer_config:
+    bos_token: <s>
+    cls_token: <s>
+    eos_token: </s>
+    mask_token:
+      __type: AddedToken
+      content: <mask>
+      lstrip: true
+      normalized: true
+      rstrip: false
+      single_word: false
+    pad_token: <pad>
+    sep_token: </s>
+    unk_token: <unk>
+cardData:
+  license: mit
+  language:
+  - fr
+  - en
+  base_model: intfloat/multilingual-e5-small
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  tags:
+  - onnx
+  - embedder
+  - notes-search
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: embedder-model.json
+- rfilename: model.int8.onnx
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-30T07:00:33.000Z'
+usedStorage: 88438861
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  model.int8.onnx: 88.4
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-30T09:51:15.000Z'

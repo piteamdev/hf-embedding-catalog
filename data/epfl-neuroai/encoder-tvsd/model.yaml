@@ -1,0 +1,5369 @@
+_id: 6ae32eb27b150ba6d5a1121c
+id: epfl-neuroai/encoder-tvsd
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- encoder_tvsd
+- feature-extraction
+- brain-encoding
+- neuroscience
+- macaque
+- electrophysiology
+- vision
+- tvsd
+- things
+- custom_code
+- arxiv:2411.05712
+- arxiv:2511.21631
+- arxiv:2406.16935
+- base_model:Qwen/Qwen3-VL-2B-Instruct
+- base_model:finetune:Qwen/Qwen3-VL-2B-Instruct
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: epfl-neuroai/encoder-tvsd
+author: epfl-neuroai
+sha: 2db6c2063bdabbdce6be0646852d44a480932072
+lastModified: '2026-10-29T11:33:32.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - EncoderTVSDModel
+  auto_map:
+    AutoConfig: configuration_encoder_tvsd.EncoderTVSDConfig
+    AutoModel: modeling_encoder_tvsd.EncoderTVSDModel
+  model_type: encoder_tvsd
+cardData:
+  license: apache-2.0
+  library_name: transformers
+  base_model:
+  - timm/vit_small_patch16_224.augreg_in21k_ft_in1k
+  - timm/vit_base_patch14_dinov2.lvd142m
+  - Qwen/Qwen3-VL-2B-Instruct
+  tags:
+  - brain-encoding
+  - neuroscience
+  - macaque
+  - electrophysiology
+  - vision
+  - tvsd
+  - things
+  - custom_code
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_encoder_tvsd.EncoderTVSDModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: configuration_encoder_tvsd.py
+- rfilename: model-00001-of-00002.safetensors
+- rfilename: model-00002-of-00002.safetensors
+- rfilename: model.accurate-00001-of-00004.safetensors
+- rfilename: model.accurate-00002-of-00004.safetensors
+- rfilename: model.accurate-00003-of-00004.safetensors
+- rfilename: model.accurate-00004-of-00004.safetensors
+- rfilename: model.cnn-00001-of-00003.safetensors
+- rfilename: model.cnn-00002-of-00003.safetensors
+- rfilename: model.cnn-00003-of-00003.safetensors
+- rfilename: model.safetensors.index.accurate.json
+- rfilename: model.safetensors.index.cnn.json
+- rfilename: model.safetensors.index.json
+- rfilename: model.safetensors.index.tiny.json
+- rfilename: model.tiny-00001-of-00002.safetensors
+- rfilename: model.tiny-00002-of-00002.safetensors
+- rfilename: modeling.py
+- rfilename: modeling_encoder_tvsd.py
+spaces: []
+createdAt: '2026-10-29T11:32:02.000Z'
+safetensors:
+  parameters:
+    F32: 1682342952
+  total: 1682342952
+usedStorage: 33665212020
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - EncoderTVSDModel
+  auto_map:
+    AutoConfig: configuration_encoder_tvsd.EncoderTVSDConfig
+    AutoModel: modeling_encoder_tvsd.EncoderTVSDModel
+  model_type: encoder_tvsd
+  schema_version: 1
+  default_variant: efficient
+  monkeys:
+  - monkeyN
+  - monkeyF
+  electrode_index:
+    monkeyN:
+      V1:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      - 22
+      - 23
+      - 24
+      - 25
+      - 26
+      - 27
+      - 28
+      - 29
+      - 30
+      - 31
+      - 32
+      - 33
+      - 34
+      - 35
+      - 36
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+      - 44
+      - 45
+      - 46
+      - 47
+      - 48
+      - 49
+      - 50
+      - 51
+      - 52
+      - 53
+      - 54
+      - 55
+      - 56
+      - 57
+      - 58
+      - 59
+      - 60
+      - 61
+      - 62
+      - 63
+      - 64
+      - 65
+      - 66
+      - 67
+      - 68
+      - 69
+      - 70
+      - 71
+      - 72
+      - 73
+      - 74
+      - 75
+      - 76
+      - 77
+      - 78
+      - 79
+      - 80
+      - 81
+      - 82
+      - 83
+      - 84
+      - 85
+      - 86
+      - 87
+      - 88
+      - 89
+      - 90
+      - 91
+      - 92
+      - 93
+      - 94
+      - 95
+      - 96
+      - 97
+      - 98
+      - 99
+      - 100
+      - 101
+      - 102
+      - 103
+      - 104
+      - 105
+      - 106
+      - 107
+      - 108
+      - 109
+      - 110
+      - 111
+      - 112
+      - 113
+      - 114
+      - 115
+      - 116
+      - 117
+      - 118
+      - 119
+      - 120
+      - 121
+      - 122
+      - 123
+      - 124
+      - 125
+      - 126
+      - 127
+      - 128
+      - 129
+      - 130
+      - 131
+      - 132
+      - 133
+      - 134
+      - 135
+      - 136
+      - 137
+      - 138
+      - 139
+      - 140
+      - 141
+      - 142
+      - 143
+      - 144
+      - 145
+      - 146
+      - 147
+      - 148
+      - 149
+      - 150
+      - 151
+      - 152
+      - 153
+      - 154
+      - 155
+      - 156
+      - 157
+      - 158
+      - 159
+      - 160
+      - 161
+      - 162
+      - 163
+      - 164
+      - 165
+      - 166
+      - 167
+      - 168
+      - 169
+      - 170
+      - 171
+      - 172
+      - 173
+      - 174
+      - 175
+      - 176
+      - 177
+      - 178
+      - 179
+      - 180
+      - 181
+      - 182
+      - 183
+      - 184
+      - 185
+      - 186
+      - 187
+      - 188
+      - 189
+      - 190
+      - 191
+      - 192
+      - 193
+      - 194
+      - 195
+      - 196
+      - 197
+      - 198
+      - 199
+      - 200
+      - 201
+      - 202
+      - 203
+      - 204
+      - 205
+      - 206
+      - 207
+      - 208
+      - 209
+      - 210
+      - 211
+      - 212
+      - 213
+      - 214
+      - 215
+      - 216
+      - 217
+      - 218
+      - 219
+      - 220
+      - 221
+      - 222
+      - 223
+      - 224
+      - 225
+      - 226
+      - 227
+      - 228
+      - 229
+      - 230
+      - 231
+      - 232
+      - 233
+      - 234
+      - 235
+      - 236
+      - 237
+      - 238
+      - 239
+      - 240
+      - 241
+      - 242
+      - 243
+      - 244
+      - 245
+      - 246
+      - 248
+      - 249
+      - 250
+      - 251
+      - 252
+      - 253
+      - 254
+      - 255
+      - 256
+      - 257
+      - 258
+      - 259
+      - 260
+      - 261
+      - 262
+      - 263
+      - 264
+      - 265
+      - 266
+      - 267
+      - 268
+      - 269
+      - 270
+      - 271
+      - 272
+      - 273
+      - 274
+      - 276
+      - 277
+      - 278
+      - 279
+      - 280
+      - 281
+      - 282
+      - 283
+      - 284
+      - 285
+      - 286
+      - 287
+      - 288
+      - 289
+      - 290
+      - 291
+      - 292
+      - 293
+      - 294
+      - 295
+      - 296
+      - 298
+      - 299
+      - 301
+      - 302
+      - 303
+      - 304
+      - 305
+      - 306
+      - 307
+      - 308
+      - 310
+      - 311
+      - 312
+      - 313
+      - 314
+      - 315
+      - 316
+      - 317
+      - 318
+      - 319
+      - 384
+      - 385
+      - 386
+      - 387
+      - 388
+      - 389
+      - 390
+      - 391
+      - 392
+      - 393
+      - 394
+      - 395
+      - 396
+      - 397
+      - 398
+      - 399
+      - 400
+      - 401
+      - 402
+      - 403
+      - 404
+      - 405
+      - 406
+      - 407
+      - 408
+      - 409
+      - 411
+      - 412
+      - 414
+      - 415
+      - 416
+      - 417
+      - 418
+      - 419
+      - 420
+      - 421
+      - 422
+      - 423
+      - 424
+      - 425
+      - 426
+      - 427
+      - 428
+      - 429
+      - 430
+      - 431
+      - 432
+      - 433
+      - 434
+      - 435
+      - 436
+      - 437
+      - 438
+      - 439
+      - 440
+      - 441
+      - 442
+      - 443
+      - 444
+      - 445
+      - 446
+      - 447
+      - 448
+      - 449
+      - 450
+      - 451
+      - 452
+      - 453
+      - 454
+      - 455
+      - 456
+      - 457
+      - 458
+      - 459
+      - 460
+      - 461
+      - 462
+      - 463
+      - 464
+      - 465
+      - 466
+      - 467
+      - 468
+      - 469
+      - 470
+      - 471
+      - 472
+      - 473
+      - 474
+      - 475
+      - 476
+      - 477
+      - 479
+      - 480
+      - 481
+      - 482
+      - 483
+      - 484
+      - 485
+      - 486
+      - 487
+      - 488
+      - 489
+      - 490
+      - 491
+      - 492
+      - 493
+      - 494
+      - 495
+      - 496
+      - 497
+      - 499
+      - 500
+      - 501
+      - 502
+      - 503
+      - 504
+      - 505
+      - 507
+      - 508
+      - 510
+      - 511
+      V4:
+      - 512
+      - 513
+      - 514
+      - 515
+      - 516
+      - 517
+      - 518
+      - 519
+      - 520
+      - 521
+      - 522
+      - 523
+      - 524
+      - 525
+      - 526
+      - 527
+      - 528
+      - 529
+      - 530
+      - 531
+      - 532
+      - 533
+      - 534
+      - 535
+      - 537
+      - 538
+      - 539
+      - 540
+      - 541
+      - 542
+      - 543
+      - 544
+      - 545
+      - 546
+      - 547
+      - 548
+      - 549
+      - 550
+      - 551
+      - 552
+      - 553
+      - 554
+      - 555
+      - 556
+      - 557
+      - 558
+      - 559
+      - 560
+      - 561
+      - 562
+      - 563
+      - 564
+      - 565
+      - 566
+      - 567
+      - 568
+      - 570
+      - 571
+      - 572
+      - 573
+      - 574
+      - 575
+      - 576
+      - 577
+      - 578
+      - 579
+      - 580
+      - 581
+      - 582
+      - 584
+      - 586
+      - 587
+      - 588
+      - 589
+      - 590
+      - 591
+      - 592
+      - 593
+      - 594
+      - 595
+      - 596
+      - 597
+      - 598
+      - 599
+      - 600
+      - 601
+      - 602
+      - 603
+      - 604
+      - 605
+      - 606
+      - 607
+      - 608
+      - 609
+      - 610
+      - 611
+      - 612
+      - 613
+      - 614
+      - 615
+      - 616
+      - 617
+      - 618
+      - 619
+      - 620
+      - 621
+      - 622
+      - 623
+      - 624
+      - 625
+      - 626
+      - 627
+      - 628
+      - 629
+      - 630
+      - 631
+      - 632
+      - 633
+      - 634
+      - 635
+      - 639
+      - 641
+      - 642
+      - 643
+      - 644
+      - 646
+      - 647
+      - 648
+      - 649
+      - 650
+      - 651
+      - 652
+      - 653
+      - 654
+      - 655
+      - 656
+      - 657
+      - 658
+      - 659
+      - 660
+      - 661
+      - 662
+      - 663
+      - 664
+      - 665
+      - 666
+      - 667
+      - 668
+      - 669
+      - 670
+      - 671
+      - 672
+      - 673
+      - 674
+      - 675
+      - 676
+      - 677
+      - 678
+      - 679
+      - 680
+      - 681
+      - 682
+      - 683
+      - 684
+      - 685
+      - 686
+      - 687
+      - 688
+      - 689
+      - 690
+      - 691
+      - 692
+      - 693
+      - 694
+      - 695
+      - 696
+      - 697
+      - 698
+      - 699
+      - 700
+      - 701
+      - 702
+      - 703
+      - 704
+      - 705
+      - 706
+      - 707
+      - 708
+      - 709
+      - 710
+      - 711
+      - 712
+      - 713
+      - 714
+      - 715
+      - 716
+      - 717
+      - 718
+      - 719
+      - 720
+      - 721
+      - 722
+      - 723
+      - 724
+      - 725
+      - 726
+      - 727
+      - 728
+      - 729
+      - 730
+      - 731
+      - 732
+      - 733
+      - 734
+      - 735
+      - 736
+      - 737
+      - 738
+      - 739
+      - 740
+      - 741
+      - 742
+      - 743
+      - 744
+      - 745
+      - 746
+      - 747
+      - 748
+      - 749
+      - 750
+      - 751
+      - 752
+      - 753
+      - 754
+      - 755
+      - 756
+      - 757
+      - 758
+      - 759
+      - 760
+      - 761
+      - 762
+      - 763
+      - 764
+      - 765
+      - 766
+      - 767
+      IT:
+      - 768
+      - 769
+      - 770
+      - 771
+      - 772
+      - 773
+      - 774
+      - 775
+      - 776
+      - 777
+      - 778
+      - 779
+      - 780
+      - 781
+      - 782
+      - 783
+      - 784
+      - 785
+      - 786
+      - 787
+      - 788
+      - 789
+      - 791
+      - 793
+      - 794
+      - 795
+      - 796
+      - 797
+      - 798
+      - 799
+      - 801
+      - 803
+      - 804
+      - 805
+      - 806
+      - 807
+      - 811
+      - 812
+      - 813
+      - 814
+      - 819
+      - 820
+      - 821
+      - 823
+      - 834
+      - 835
+      - 836
+      - 840
+      - 841
+      - 842
+      - 843
+      - 844
+      - 845
+      - 848
+      - 849
+      - 850
+      - 851
+      - 852
+      - 853
+      - 856
+      - 857
+      - 858
+      - 859
+      - 860
+      - 861
+      - 864
+      - 865
+      - 866
+      - 867
+      - 868
+      - 872
+      - 873
+      - 874
+      - 881
+      - 882
+      - 883
+      - 889
+      - 890
+      - 896
+      - 898
+      - 899
+      - 900
+      - 901
+      - 902
+      - 903
+      - 904
+      - 905
+      - 906
+      - 907
+      - 908
+      - 909
+      - 910
+      - 911
+      - 912
+      - 913
+      - 914
+      - 915
+      - 916
+      - 917
+      - 918
+      - 919
+      - 920
+      - 921
+      - 922
+      - 923
+      - 924
+      - 926
+      - 927
+      - 928
+      - 929
+      - 930
+      - 931
+      - 932
+      - 933
+      - 934
+      - 935
+      - 936
+      - 937
+      - 938
+      - 939
+      - 940
+      - 941
+      - 942
+      - 943
+      - 944
+      - 945
+      - 946
+      - 947
+      - 948
+      - 950
+      - 951
+      - 952
+      - 954
+      - 955
+      - 956
+      - 957
+      - 958
+      - 959
+      - 961
+      - 962
+      - 963
+      - 964
+      - 966
+      - 967
+      - 969
+      - 970
+      - 971
+      - 972
+      - 973
+      - 974
+      - 975
+      - 978
+      - 979
+      - 980
+      - 981
+      - 982
+      - 983
+      - 986
+      - 987
+      - 988
+      - 989
+      - 990
+      - 991
+      - 996
+      - 997
+      - 998
+      - 999
+      - 1005
+      - 1006
+      - 1007
+      - 1011
+      - 1012
+      - 1013
+      - 1014
+      - 1015
+      - 1020
+      - 1021
+      - 1022
+    monkeyF:
+      V1:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      - 22
+      - 23
+      - 24
+      - 25
+      - 26
+      - 27
+      - 28
+      - 29
+      - 30
+      - 31
+      - 32
+      - 33
+      - 34
+      - 35
+      - 36
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+      - 44
+      - 45
+      - 46
+      - 47
+      - 48
+      - 49
+      - 50
+      - 51
+      - 52
+      - 53
+      - 54
+      - 55
+      - 56
+      - 57
+      - 58
+      - 59
+      - 60
+      - 61
+      - 62
+      - 63
+      - 64
+      - 66
+      - 67
+      - 68
+      - 69
+      - 70
+      - 71
+      - 72
+      - 73
+      - 74
+      - 75
+      - 76
+      - 77
+      - 78
+      - 79
+      - 80
+      - 81
+      - 82
+      - 83
+      - 84
+      - 85
+      - 86
+      - 87
+      - 88
+      - 89
+      - 90
+      - 91
+      - 92
+      - 93
+      - 94
+      - 95
+      - 96
+      - 97
+      - 98
+      - 99
+      - 100
+      - 101
+      - 102
+      - 104
+      - 105
+      - 106
+      - 107
+      - 108
+      - 109
+      - 112
+      - 113
+      - 114
+      - 115
+      - 120
+      - 121
+      - 122
+      - 128
+      - 129
+      - 130
+      - 131
+      - 132
+      - 133
+      - 136
+      - 137
+      - 138
+      - 139
+      - 140
+      - 141
+      - 144
+      - 145
+      - 146
+      - 147
+      - 148
+      - 150
+      - 152
+      - 153
+      - 154
+      - 156
+      - 157
+      - 159
+      - 160
+      - 161
+      - 162
+      - 163
+      - 164
+      - 165
+      - 167
+      - 170
+      - 172
+      - 174
+      - 175
+      - 176
+      - 177
+      - 178
+      - 179
+      - 180
+      - 181
+      - 182
+      - 183
+      - 184
+      - 185
+      - 186
+      - 187
+      - 189
+      - 190
+      - 191
+      - 192
+      - 193
+      - 194
+      - 195
+      - 196
+      - 197
+      - 198
+      - 199
+      - 200
+      - 201
+      - 202
+      - 203
+      - 204
+      - 205
+      - 206
+      - 207
+      - 208
+      - 209
+      - 210
+      - 211
+      - 212
+      - 213
+      - 214
+      - 215
+      - 216
+      - 217
+      - 218
+      - 219
+      - 220
+      - 221
+      - 222
+      - 223
+      - 224
+      - 225
+      - 226
+      - 227
+      - 228
+      - 229
+      - 230
+      - 231
+      - 232
+      - 233
+      - 234
+      - 235
+      - 236
+      - 237
+      - 238
+      - 239
+      - 240
+      - 241
+      - 242
+      - 243
+      - 244
+      - 245
+      - 246
+      - 247
+      - 248
+      - 249
+      - 250
+      - 251
+      - 252
+      - 253
+      - 254
+      - 255
+      - 256
+      - 265
+      - 267
+      - 268
+      - 271
+      - 272
+      - 273
+      - 274
+      - 275
+      - 276
+      - 277
+      - 278
+      - 279
+      - 281
+      - 282
+      - 283
+      - 284
+      - 285
+      - 286
+      - 287
+      - 288
+      - 289
+      - 290
+      - 291
+      - 292
+      - 293
+      - 294
+      - 295
+      - 296
+      - 297
+      - 298
+      - 299
+      - 300
+      - 301
+      - 302
+      - 303
+      - 304
+      - 305
+      - 306
+      - 307
+      - 308
+      - 309
+      - 310
+      - 311
+      - 312
+      - 313
+      - 314
+      - 315
+      - 316
+      - 317
+      - 318
+      - 319
+      - 320
+      - 321
+      - 322
+      - 323
+      - 324
+      - 325
+      - 326
+      - 328
+      - 329
+      - 330
+      - 331
+      - 332
+      - 333
+      - 334
+      - 335
+      - 336
+      - 337
+      - 338
+      - 339
+      - 340
+      - 341
+      - 342
+      - 343
+      - 344
+      - 345
+      - 346
+      - 347
+      - 348
+      - 349
+      - 350
+      - 351
+      - 352
+      - 353
+      - 354
+      - 355
+      - 356
+      - 357
+      - 358
+      - 359
+      - 360
+      - 361
+      - 362
+      - 363
+      - 364
+      - 365
+      - 366
+      - 367
+      - 368
+      - 369
+      - 370
+      - 371
+      - 372
+      - 374
+      - 375
+      - 376
+      - 377
+      - 378
+      - 379
+      - 380
+      - 381
+      - 382
+      - 383
+      - 384
+      - 385
+      - 386
+      - 387
+      - 388
+      - 389
+      - 390
+      - 392
+      - 393
+      - 394
+      - 395
+      - 396
+      - 397
+      - 398
+      - 399
+      - 400
+      - 401
+      - 402
+      - 403
+      - 404
+      - 405
+      - 406
+      - 407
+      - 408
+      - 409
+      - 410
+      - 411
+      - 412
+      - 413
+      - 414
+      - 415
+      - 417
+      - 418
+      - 419
+      - 420
+      - 421
+      - 422
+      - 423
+      - 425
+      - 426
+      - 427
+      - 428
+      - 429
+      - 430
+      - 431
+      - 432
+      - 433
+      - 434
+      - 435
+      - 436
+      - 437
+      - 438
+      - 439
+      - 440
+      - 441
+      - 442
+      - 443
+      - 444
+      - 445
+      - 446
+      - 447
+      - 448
+      - 449
+      - 450
+      - 451
+      - 452
+      - 453
+      - 456
+      - 457
+      - 458
+      - 459
+      - 460
+      - 461
+      - 463
+      - 464
+      - 465
+      - 466
+      - 467
+      - 468
+      - 469
+      - 470
+      - 471
+      - 472
+      - 473
+      - 474
+      - 475
+      - 476
+      - 478
+      - 479
+      - 480
+      - 481
+      - 482
+      - 483
+      - 484
+      - 485
+      - 486
+      - 487
+      - 488
+      - 489
+      - 490
+      - 491
+      - 492
+      - 493
+      - 494
+      - 495
+      - 496
+      - 497
+      - 498
+      - 499
+      - 500
+      - 501
+      - 502
+      - 504
+      - 505
+      - 506
+      - 507
+      - 508
+      - 509
+      - 511
+      V4:
+      - 858
+      - 860
+      - 862
+      - 865
+      - 866
+      - 868
+      - 873
+      - 874
+      - 875
+      - 876
+      - 877
+      - 878
+      - 881
+      - 882
+      - 883
+      - 884
+      - 885
+      - 886
+      - 887
+      - 889
+      - 890
+      - 891
+      - 892
+      - 893
+      - 894
+      - 895
+      - 896
+      - 897
+      - 898
+      - 899
+      - 900
+      - 901
+      - 902
+      - 903
+      - 904
+      - 905
+      - 906
+      - 907
+      - 908
+      - 909
+      - 910
+      - 911
+      - 912
+      - 913
+      - 914
+      - 915
+      - 916
+      - 917
+      - 918
+      - 919
+      - 920
+      - 921
+      - 922
+      - 923
+      - 924
+      - 925
+      - 926
+      - 927
+      - 928
+      - 930
+      - 931
+      - 932
+      - 933
+      - 934
+      - 935
+      - 936
+      - 937
+      - 938
+      - 939
+      - 940
+      - 941
+      - 943
+      - 944
+      - 945
+      - 946
+      - 947
+      - 948
+      - 949
+      - 950
+      - 951
+      - 952
+      - 953
+      - 954
+      - 955
+      - 956
+      - 957
+      - 958
+      - 959
+      - 964
+      - 967
+      - 970
+      - 971
+      - 972
+      - 973
+      - 974
+      - 975
+      - 977
+      - 978
+      - 979
+      - 980
+      - 981
+      - 982
+      - 983
+      - 985
+      - 986
+      - 987
+      - 988
+      - 989
+      - 990
+      - 991
+      - 992
+      - 993
+      - 994
+      - 995
+      - 996
+      - 997
+      - 998
+      - 999
+      - 1001
+      - 1002
+      - 1003
+      - 1004
+      - 1005
+      - 1006
+      - 1007
+      - 1009
+      - 1010
+      - 1011
+      - 1012
+      - 1013
+      - 1014
+      - 1015
+      - 1017
+      - 1018
+      - 1019
+      - 1020
+      - 1021
+      - 1022
+      - 1023
+      IT:
+      - 512
+      - 513
+      - 514
+      - 515
+      - 516
+      - 517
+      - 518
+      - 519
+      - 520
+      - 521
+      - 522
+      - 523
+      - 524
+      - 525
+      - 526
+      - 527
+      - 528
+      - 529
+      - 530
+      - 531
+      - 532
+      - 533
+      - 534
+      - 535
+      - 536
+      - 537
+      - 538
+      - 539
+      - 540
+      - 541
+      - 543
+      - 544
+      - 545
+      - 546
+      - 547
+      - 548
+      - 549
+      - 551
+      - 552
+      - 553
+      - 554
+      - 555
+      - 558
+      - 559
+      - 560
+      - 561
+      - 563
+      - 564
+      - 565
+      - 566
+      - 567
+      - 568
+      - 569
+      - 571
+      - 572
+      - 573
+      - 574
+      - 575
+      - 576
+      - 577
+      - 578
+      - 579
+      - 580
+      - 581
+      - 582
+      - 583
+      - 584
+      - 585
+      - 586
+      - 587
+      - 588
+      - 589
+      - 590
+      - 591
+      - 592
+      - 593
+      - 595
+      - 597
+      - 598
+      - 599
+      - 600
+      - 601
+      - 605
+      - 607
+      - 630
+      - 631
+      - 638
+      - 644
+      - 645
+      - 646
+      - 651
+      - 652
+      - 653
+      - 654
+      - 656
+      - 659
+      - 660
+      - 661
+      - 662
+      - 663
+      - 665
+      - 666
+      - 667
+      - 668
+      - 670
+      - 671
+      - 672
+      - 673
+      - 674
+      - 675
+      - 678
+      - 679
+      - 680
+      - 681
+      - 682
+      - 686
+      - 687
+      - 688
+      - 689
+      - 690
+      - 691
+      - 693
+      - 694
+      - 695
+      - 696
+      - 697
+      - 698
+      - 699
+      - 700
+      - 701
+      - 702
+      - 703
+      - 704
+      - 705
+      - 706
+      - 707
+      - 708
+      - 711
+      - 712
+      - 713
+      - 714
+      - 715
+      - 716
+      - 717
+      - 718
+      - 719
+      - 720
+      - 721
+      - 722
+      - 723
+      - 724
+      - 725
+      - 726
+      - 727
+      - 728
+      - 729
+      - 730
+      - 732
+      - 733
+      - 734
+      - 735
+      - 736
+      - 737
+      - 738
+      - 739
+      - 742
+      - 743
+      - 744
+      - 745
+      - 746
+      - 747
+      - 750
+      - 751
+      - 752
+      - 753
+      - 754
+      - 755
+      - 756
+      - 758
+      - 759
+      - 763
+      - 764
+      - 768
+      - 769
+      - 770
+      - 771
+      - 772
+      - 773
+      - 774
+      - 775
+      - 776
+      - 777
+      - 778
+      - 779
+      - 781
+      - 782
+      - 783
+      - 784
+      - 785
+      - 786
+      - 787
+      - 788
+      - 790
+      - 791
+      - 792
+      - 793
+      - 794
+      - 795
+      - 796
+      - 797
+      - 798
+      - 799
+      - 800
+      - 801
+      - 802
+      - 804
+      - 805
+      - 806
+      - 807
+      - 808
+      - 809
+      - 810
+      - 811
+      - 812
+      - 813
+      - 814
+      - 815
+      - 817
+      - 819
+      - 820
+      - 821
+      - 822
+      - 823
+      - 824
+      - 825
+      - 826
+      - 827
+      - 828
+      - 829
+      - 830
+      - 831
+  variants:
+    efficient:
+      members:
+      - name: r50_probe_V1_s0
+        feature: probe
+        kind: resnet
+        arch: resnet50
+        stage: layer1
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 256
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r50_probe_V1_s1
+        feature: probe
+        kind: resnet
+        arch: resnet50
+        stage: layer1
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 256
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r50_probe_V1_s2
+        feature: probe
+        kind: resnet
+        arch: resnet50
+        stage: layer1
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 256
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vits_lora_V1_s0
+        feature: sets
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 75264
+          pool1: 384
+          pool2: 1536
+          pool4: 6144
+          pool8: 24576
+        pca_components: null
+        dims: 107904
+      - name: vits_lora_V1_s1
+        feature: sets
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 75264
+          pool1: 384
+          pool2: 1536
+          pool4: 6144
+          pool8: 24576
+        pca_components: null
+        dims: 107904
+      - name: vits_lora_V1_s2
+        feature: sets
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 75264
+          pool1: 384
+          pool2: 1536
+          pool4: 6144
+          pool8: 24576
+        pca_components: null
+        dims: 107904
+      - name: vits_probe_V1_s0
+        feature: probe
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 384
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vits_probe_V1_s1
+        feature: probe
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 384
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vits_probe_V1_s2
+        feature: probe
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 384
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r50_probe_V4_s0
+        feature: probe
+        kind: resnet
+        arch: resnet50
+        stage: layer3
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r50_probe_V4_s1
+        feature: probe
+        kind: resnet
+        arch: resnet50
+        stage: layer3
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r50_probe_V4_s2
+        feature: probe
+        kind: resnet
+        arch: resnet50
+        stage: layer3
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vits_lora_V4_s0
+        feature: sets
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 4
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 75264
+          pool1: 384
+          pool2: 1536
+          pool4: 6144
+          pool8: 24576
+        pca_components: null
+        dims: 107904
+      - name: vits_lora_V4_s1
+        feature: sets
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 4
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 75264
+          pool1: 384
+          pool2: 1536
+          pool4: 6144
+          pool8: 24576
+        pca_components: null
+        dims: 107904
+      - name: vits_lora_V4_s2
+        feature: sets
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 4
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 75264
+          pool1: 384
+          pool2: 1536
+          pool4: 6144
+          pool8: 24576
+        pca_components: null
+        dims: 107904
+      - name: vits_probe_V4_s0
+        feature: probe
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 4
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 384
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vits_probe_V4_s1
+        feature: probe
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 4
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 384
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vits_probe_V4_s2
+        feature: probe
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 4
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 384
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r50_lora_IT_s0
+        feature: sets
+        kind: resnet
+        arch: resnet50
+        stage: layer3
+        last_block: 4
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: null
+        dims: 287744
+      - name: r50_lora_IT_s1
+        feature: sets
+        kind: resnet
+        arch: resnet50
+        stage: layer3
+        last_block: 4
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: null
+        dims: 287744
+      - name: r50_lora_IT_s2
+        feature: sets
+        kind: resnet
+        arch: resnet50
+        stage: layer3
+        last_block: 4
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: null
+        dims: 287744
+      - name: r50_probe_IT_s0
+        feature: probe
+        kind: resnet
+        arch: resnet50
+        stage: layer3
+        last_block: 4
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r50_probe_IT_s1
+        feature: probe
+        kind: resnet
+        arch: resnet50
+        stage: layer3
+        last_block: 4
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r50_probe_IT_s2
+        feature: probe
+        kind: resnet
+        arch: resnet50
+        stage: layer3
+        last_block: 4
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vits_lora_IT_s0
+        feature: sets
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 6
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 75264
+          pool1: 384
+          pool2: 1536
+          pool4: 6144
+          pool8: 24576
+        pca_components: null
+        dims: 107904
+      - name: vits_lora_IT_s1
+        feature: sets
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 6
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 75264
+          pool1: 384
+          pool2: 1536
+          pool4: 6144
+          pool8: 24576
+        pca_components: null
+        dims: 107904
+      - name: vits_lora_IT_s2
+        feature: sets
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 6
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 75264
+          pool1: 384
+          pool2: 1536
+          pool4: 6144
+          pool8: 24576
+        pca_components: null
+        dims: 107904
+      - name: vits_probe_IT_s0
+        feature: probe
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 6
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 384
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vits_probe_IT_s1
+        feature: probe
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 6
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 384
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vits_probe_IT_s2
+        feature: probe
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 6
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 384
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      areas:
+        V1:
+          members:
+          - r50_probe_V1_s0
+          - r50_probe_V1_s1
+          - r50_probe_V1_s2
+          - vits_lora_V1_s0
+          - vits_lora_V1_s1
+          - vits_lora_V1_s2
+          - vits_probe_V1_s0
+          - vits_probe_V1_s1
+          - vits_probe_V1_s2
+          electrodes:
+            monkeyN: 437
+            monkeyF: 462
+        V4:
+          members:
+          - r50_probe_V4_s0
+          - r50_probe_V4_s1
+          - r50_probe_V4_s2
+          - vits_lora_V4_s0
+          - vits_lora_V4_s1
+          - vits_lora_V4_s2
+          - vits_probe_V4_s0
+          - vits_probe_V4_s1
+          - vits_probe_V4_s2
+          electrodes:
+            monkeyN: 247
+            monkeyF: 139
+        IT:
+          members:
+          - r50_lora_IT_s0
+          - r50_lora_IT_s1
+          - r50_lora_IT_s2
+          - r50_probe_IT_s0
+          - r50_probe_IT_s1
+          - r50_probe_IT_s2
+          - vits_lora_IT_s0
+          - vits_lora_IT_s1
+          - vits_lora_IT_s2
+          - vits_probe_IT_s0
+          - vits_probe_IT_s1
+          - vits_probe_IT_s2
+          electrodes:
+            monkeyN: 178
+            monkeyF: 241
+      scores: {}
+    tiny:
+      members:
+      - name: r18_probe_V1_s0
+        feature: probe
+        kind: resnet
+        arch: resnet18
+        stage: layer1
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 64
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r18_probe_V1_s1
+        feature: probe
+        kind: resnet
+        arch: resnet18
+        stage: layer1
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 64
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r18_probe_V1_s2
+        feature: probe
+        kind: resnet
+        arch: resnet18
+        stage: layer1
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 64
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vits_lora_V1_s0
+        feature: sets
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 75264
+          pool1: 384
+          pool2: 1536
+          pool4: 6144
+          pool8: 24576
+        pca_components: null
+        dims: 107904
+      - name: vits_lora_V1_s1
+        feature: sets
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 75264
+          pool1: 384
+          pool2: 1536
+          pool4: 6144
+          pool8: 24576
+        pca_components: null
+        dims: 107904
+      - name: vits_lora_V1_s2
+        feature: sets
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 75264
+          pool1: 384
+          pool2: 1536
+          pool4: 6144
+          pool8: 24576
+        pca_components: null
+        dims: 107904
+      - name: vits_probe_V1_s0
+        feature: probe
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 384
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vits_probe_V1_s1
+        feature: probe
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 384
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vits_probe_V1_s2
+        feature: probe
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 384
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r18_probe_V4_s0
+        feature: probe
+        kind: resnet
+        arch: resnet18
+        stage: layer3
+        last_block: 0
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 256
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r18_probe_V4_s1
+        feature: probe
+        kind: resnet
+        arch: resnet18
+        stage: layer3
+        last_block: 0
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 256
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r18_probe_V4_s2
+        feature: probe
+        kind: resnet
+        arch: resnet18
+        stage: layer3
+        last_block: 0
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 256
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vits_lora_V4_s0
+        feature: sets
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 4
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 75264
+          pool1: 384
+          pool2: 1536
+          pool4: 6144
+          pool8: 24576
+        pca_components: null
+        dims: 107904
+      - name: vits_lora_V4_s1
+        feature: sets
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 4
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 75264
+          pool1: 384
+          pool2: 1536
+          pool4: 6144
+          pool8: 24576
+        pca_components: null
+        dims: 107904
+      - name: vits_lora_V4_s2
+        feature: sets
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 4
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 75264
+          pool1: 384
+          pool2: 1536
+          pool4: 6144
+          pool8: 24576
+        pca_components: null
+        dims: 107904
+      - name: vits_probe_V4_s0
+        feature: probe
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 4
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 384
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vits_probe_V4_s1
+        feature: probe
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 4
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 384
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vits_probe_V4_s2
+        feature: probe
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 4
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 384
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r18_probe_IT_s0
+        feature: probe
+        kind: resnet
+        arch: resnet18
+        stage: layer3
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 256
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r18_probe_IT_s1
+        feature: probe
+        kind: resnet
+        arch: resnet18
+        stage: layer3
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 256
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r18_probe_IT_s2
+        feature: probe
+        kind: resnet
+        arch: resnet18
+        stage: layer3
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 256
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vits_lora_IT_s0
+        feature: sets
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 6
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 75264
+          pool1: 384
+          pool2: 1536
+          pool4: 6144
+          pool8: 24576
+        pca_components: null
+        dims: 107904
+      - name: vits_lora_IT_s1
+        feature: sets
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 6
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 75264
+          pool1: 384
+          pool2: 1536
+          pool4: 6144
+          pool8: 24576
+        pca_components: null
+        dims: 107904
+      - name: vits_lora_IT_s2
+        feature: sets
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 6
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 75264
+          pool1: 384
+          pool2: 1536
+          pool4: 6144
+          pool8: 24576
+        pca_components: null
+        dims: 107904
+      - name: vits_probe_IT_s0
+        feature: probe
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 6
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 384
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vits_probe_IT_s1
+        feature: probe
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 6
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 384
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vits_probe_IT_s2
+        feature: probe
+        kind: vit
+        embed_dim: 384
+        num_heads: 6
+        patch_size: 16
+        norm_eps: 1.0e-06
+        layer_scale: false
+        last_block: 6
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 384
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      areas:
+        V1:
+          members:
+          - r18_probe_V1_s0
+          - r18_probe_V1_s1
+          - r18_probe_V1_s2
+          - vits_lora_V1_s0
+          - vits_lora_V1_s1
+          - vits_lora_V1_s2
+          - vits_probe_V1_s0
+          - vits_probe_V1_s1
+          - vits_probe_V1_s2
+          electrodes:
+            monkeyN: 437
+            monkeyF: 462
+        V4:
+          members:
+          - r18_probe_V4_s0
+          - r18_probe_V4_s1
+          - r18_probe_V4_s2
+          - vits_lora_V4_s0
+          - vits_lora_V4_s1
+          - vits_lora_V4_s2
+          - vits_probe_V4_s0
+          - vits_probe_V4_s1
+          - vits_probe_V4_s2
+          electrodes:
+            monkeyN: 247
+            monkeyF: 139
+        IT:
+          members:
+          - r18_probe_IT_s0
+          - r18_probe_IT_s1
+          - r18_probe_IT_s2
+          - vits_lora_IT_s0
+          - vits_lora_IT_s1
+          - vits_lora_IT_s2
+          - vits_probe_IT_s0
+          - vits_probe_IT_s1
+          - vits_probe_IT_s2
+          electrodes:
+            monkeyN: 178
+            monkeyF: 241
+      scores: {}
+    cnn:
+      members:
+      - name: r152_lora_V1_s0
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer1
+        last_block: 2
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - pool1
+        - pool14
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          pool1: 256
+          pool14: 50176
+          pool2: 1024
+          pool4: 4096
+          pool8: 16384
+        pca_components: null
+        dims: 71936
+      - name: r152_lora_V1_s1
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer1
+        last_block: 2
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - pool1
+        - pool14
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          pool1: 256
+          pool14: 50176
+          pool2: 1024
+          pool4: 4096
+          pool8: 16384
+        pca_components: null
+        dims: 71936
+      - name: r152_lora_V1_s2
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer1
+        last_block: 2
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - pool1
+        - pool14
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          pool1: 256
+          pool14: 50176
+          pool2: 1024
+          pool4: 4096
+          pool8: 16384
+        pca_components: null
+        dims: 71936
+      - name: r152_lora_V1_s3
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer1
+        last_block: 2
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - pool1
+        - pool14
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          pool1: 256
+          pool14: 50176
+          pool2: 1024
+          pool4: 4096
+          pool8: 16384
+        pca_components: null
+        dims: 71936
+      - name: r152_lora_V1_s4
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer1
+        last_block: 2
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - pool1
+        - pool14
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          pool1: 256
+          pool14: 50176
+          pool2: 1024
+          pool4: 4096
+          pool8: 16384
+        pca_components: null
+        dims: 71936
+      - name: r152_probe_V1_s0
+        feature: probe
+        kind: resnet
+        arch: resnet152
+        stage: layer1
+        last_block: 2
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 256
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r152_probe_V1_s1
+        feature: probe
+        kind: resnet
+        arch: resnet152
+        stage: layer1
+        last_block: 2
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 256
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r152_probe_V1_s2
+        feature: probe
+        kind: resnet
+        arch: resnet152
+        stage: layer1
+        last_block: 2
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 256
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r152_probe_V1_s3
+        feature: probe
+        kind: resnet
+        arch: resnet152
+        stage: layer1
+        last_block: 2
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 256
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r152_probe_V1_s4
+        feature: probe
+        kind: resnet
+        arch: resnet152
+        stage: layer1
+        last_block: 2
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 256
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r152_lora_V4_s0
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: null
+        dims: 287744
+      - name: r152_lora_V4_s1
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: null
+        dims: 287744
+      - name: r152_lora_V4_s2
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: null
+        dims: 287744
+      - name: r152_lora_V4_s3
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: null
+        dims: 287744
+      - name: r152_lora_V4_s4
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: null
+        dims: 287744
+      - name: r152_probe_V4_s0
+        feature: probe
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r152_probe_V4_s1
+        feature: probe
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r152_probe_V4_s2
+        feature: probe
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r152_probe_V4_s3
+        feature: probe
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r152_probe_V4_s4
+        feature: probe
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r152_lora_IT_s0
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 24
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: null
+        dims: 287744
+      - name: r152_lora_IT_s1
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 24
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: null
+        dims: 287744
+      - name: r152_lora_IT_s2
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 24
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: null
+        dims: 287744
+      - name: r152_lora_IT_s3
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 24
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: null
+        dims: 287744
+      - name: r152_lora_IT_s4
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 24
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: null
+        dims: 287744
+      - name: r152_probe_IT_s0
+        feature: probe
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 24
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r152_probe_IT_s1
+        feature: probe
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 24
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r152_probe_IT_s2
+        feature: probe
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 24
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r152_probe_IT_s3
+        feature: probe
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 24
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r152_probe_IT_s4
+        feature: probe
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 24
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      areas:
+        V1:
+          members:
+          - r152_lora_V1_s0
+          - r152_lora_V1_s1
+          - r152_lora_V1_s2
+          - r152_lora_V1_s3
+          - r152_lora_V1_s4
+          - r152_probe_V1_s0
+          - r152_probe_V1_s1
+          - r152_probe_V1_s2
+          - r152_probe_V1_s3
+          - r152_probe_V1_s4
+          electrodes:
+            monkeyN: 437
+            monkeyF: 462
+        V4:
+          members:
+          - r152_lora_V4_s0
+          - r152_lora_V4_s1
+          - r152_lora_V4_s2
+          - r152_lora_V4_s3
+          - r152_lora_V4_s4
+          - r152_probe_V4_s0
+          - r152_probe_V4_s1
+          - r152_probe_V4_s2
+          - r152_probe_V4_s3
+          - r152_probe_V4_s4
+          electrodes:
+            monkeyN: 247
+            monkeyF: 139
+        IT:
+          members:
+          - r152_lora_IT_s0
+          - r152_lora_IT_s1
+          - r152_lora_IT_s2
+          - r152_lora_IT_s3
+          - r152_lora_IT_s4
+          - r152_probe_IT_s0
+          - r152_probe_IT_s1
+          - r152_probe_IT_s2
+          - r152_probe_IT_s3
+          - r152_probe_IT_s4
+          electrodes:
+            monkeyN: 178
+            monkeyF: 241
+      scores: {}
+    accurate:
+      members:
+      - name: d2b_lora_V1_s0
+        feature: sets
+        kind: vit
+        embed_dim: 768
+        num_heads: 12
+        patch_size: 14
+        norm_eps: 1.0e-06
+        layer_scale: true
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool14
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 196608
+          pool1: 768
+          pool14: 150528
+          pool2: 3072
+          pool4: 12288
+          pool8: 49152
+        pca_components: null
+        dims: 412416
+      - name: d2b_lora_V1_s1
+        feature: sets
+        kind: vit
+        embed_dim: 768
+        num_heads: 12
+        patch_size: 14
+        norm_eps: 1.0e-06
+        layer_scale: true
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool14
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 196608
+          pool1: 768
+          pool14: 150528
+          pool2: 3072
+          pool4: 12288
+          pool8: 49152
+        pca_components: null
+        dims: 412416
+      - name: d2b_lora_V1_s2
+        feature: sets
+        kind: vit
+        embed_dim: 768
+        num_heads: 12
+        patch_size: 14
+        norm_eps: 1.0e-06
+        layer_scale: true
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool14
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 196608
+          pool1: 768
+          pool14: 150528
+          pool2: 3072
+          pool4: 12288
+          pool8: 49152
+        pca_components: null
+        dims: 412416
+      - name: d2b_probe_V1_s0
+        feature: probe
+        kind: vit
+        embed_dim: 768
+        num_heads: 12
+        patch_size: 14
+        norm_eps: 1.0e-06
+        layer_scale: true
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 768
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: d2b_probe_V1_s1
+        feature: probe
+        kind: vit
+        embed_dim: 768
+        num_heads: 12
+        patch_size: 14
+        norm_eps: 1.0e-06
+        layer_scale: true
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 768
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: d2b_probe_V1_s2
+        feature: probe
+        kind: vit
+        embed_dim: 768
+        num_heads: 12
+        patch_size: 14
+        norm_eps: 1.0e-06
+        layer_scale: true
+        last_block: 1
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 768
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r152_probe_V1_s0
+        feature: probe
+        kind: resnet
+        arch: resnet152
+        stage: layer1
+        last_block: 2
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 256
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r152_probe_V1_s1
+        feature: probe
+        kind: resnet
+        arch: resnet152
+        stage: layer1
+        last_block: 2
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 256
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r152_probe_V1_s2
+        feature: probe
+        kind: resnet
+        arch: resnet152
+        stage: layer1
+        last_block: 2
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 256
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vl_probe_V1_s0
+        feature: probe
+        kind: qwen_vision
+        qwen:
+          repo: Qwen/Qwen3-VL-2B-Instruct
+          revision: 89644892e4d85e24eaac8bacfd4f463576704203
+          prefix: model.visual.
+          hidden_size: 1024
+          num_heads: 16
+          intermediate_size: 4096
+          patch_size: 16
+          temporal_patch_size: 2
+          merge_size: 2
+          num_position_embeddings: 2304
+          grid:
+          - 1
+          - 32
+          - 32
+          depth: 3
+        first_block: 0
+        last_block: 2
+        post_norm: false
+        lora_rank: 4
+        preprocessing:
+          square: 500
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vl_probe_V1_s1
+        feature: probe
+        kind: qwen_vision
+        qwen:
+          repo: Qwen/Qwen3-VL-2B-Instruct
+          revision: 89644892e4d85e24eaac8bacfd4f463576704203
+          prefix: model.visual.
+          hidden_size: 1024
+          num_heads: 16
+          intermediate_size: 4096
+          patch_size: 16
+          temporal_patch_size: 2
+          merge_size: 2
+          num_position_embeddings: 2304
+          grid:
+          - 1
+          - 32
+          - 32
+          depth: 3
+        first_block: 0
+        last_block: 2
+        post_norm: false
+        lora_rank: 4
+        preprocessing:
+          square: 500
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vl_probe_V1_s2
+        feature: probe
+        kind: qwen_vision
+        qwen:
+          repo: Qwen/Qwen3-VL-2B-Instruct
+          revision: 89644892e4d85e24eaac8bacfd4f463576704203
+          prefix: model.visual.
+          hidden_size: 1024
+          num_heads: 16
+          intermediate_size: 4096
+          patch_size: 16
+          temporal_patch_size: 2
+          merge_size: 2
+          num_position_embeddings: 2304
+          grid:
+          - 1
+          - 32
+          - 32
+          depth: 3
+        first_block: 0
+        last_block: 2
+        post_norm: false
+        lora_rank: 4
+        preprocessing:
+          square: 500
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: d2b_lora_V4_s0
+        feature: sets
+        kind: vit
+        embed_dim: 768
+        num_heads: 12
+        patch_size: 14
+        norm_eps: 1.0e-06
+        layer_scale: true
+        last_block: 4
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool14
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 196608
+          pool1: 768
+          pool14: 150528
+          pool2: 3072
+          pool4: 12288
+          pool8: 49152
+        pca_components: null
+        dims: 412416
+      - name: d2b_lora_V4_s1
+        feature: sets
+        kind: vit
+        embed_dim: 768
+        num_heads: 12
+        patch_size: 14
+        norm_eps: 1.0e-06
+        layer_scale: true
+        last_block: 4
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool14
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 196608
+          pool1: 768
+          pool14: 150528
+          pool2: 3072
+          pool4: 12288
+          pool8: 49152
+        pca_components: null
+        dims: 412416
+      - name: d2b_lora_V4_s2
+        feature: sets
+        kind: vit
+        embed_dim: 768
+        num_heads: 12
+        patch_size: 14
+        norm_eps: 1.0e-06
+        layer_scale: true
+        last_block: 4
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool14
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 196608
+          pool1: 768
+          pool14: 150528
+          pool2: 3072
+          pool4: 12288
+          pool8: 49152
+        pca_components: null
+        dims: 412416
+      - name: d2b_probe_V4_s0
+        feature: probe
+        kind: vit
+        embed_dim: 768
+        num_heads: 12
+        patch_size: 14
+        norm_eps: 1.0e-06
+        layer_scale: true
+        last_block: 4
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 768
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: d2b_probe_V4_s1
+        feature: probe
+        kind: vit
+        embed_dim: 768
+        num_heads: 12
+        patch_size: 14
+        norm_eps: 1.0e-06
+        layer_scale: true
+        last_block: 4
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 768
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: d2b_probe_V4_s2
+        feature: probe
+        kind: vit
+        embed_dim: 768
+        num_heads: 12
+        patch_size: 14
+        norm_eps: 1.0e-06
+        layer_scale: true
+        last_block: 4
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 768
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vl_probe_V4_s0
+        feature: probe
+        kind: qwen_vision
+        qwen:
+          repo: Qwen/Qwen3-VL-2B-Instruct
+          revision: 89644892e4d85e24eaac8bacfd4f463576704203
+          prefix: model.visual.
+          hidden_size: 1024
+          num_heads: 16
+          intermediate_size: 4096
+          patch_size: 16
+          temporal_patch_size: 2
+          merge_size: 2
+          num_position_embeddings: 2304
+          grid:
+          - 1
+          - 32
+          - 32
+          depth: 8
+        first_block: 5
+        last_block: 7
+        post_norm: false
+        lora_rank: 4
+        preprocessing:
+          square: 500
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vl_probe_V4_s1
+        feature: probe
+        kind: qwen_vision
+        qwen:
+          repo: Qwen/Qwen3-VL-2B-Instruct
+          revision: 89644892e4d85e24eaac8bacfd4f463576704203
+          prefix: model.visual.
+          hidden_size: 1024
+          num_heads: 16
+          intermediate_size: 4096
+          patch_size: 16
+          temporal_patch_size: 2
+          merge_size: 2
+          num_position_embeddings: 2304
+          grid:
+          - 1
+          - 32
+          - 32
+          depth: 8
+        first_block: 5
+        last_block: 7
+        post_norm: false
+        lora_rank: 4
+        preprocessing:
+          square: 500
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vl_probe_V4_s2
+        feature: probe
+        kind: qwen_vision
+        qwen:
+          repo: Qwen/Qwen3-VL-2B-Instruct
+          revision: 89644892e4d85e24eaac8bacfd4f463576704203
+          prefix: model.visual.
+          hidden_size: 1024
+          num_heads: 16
+          intermediate_size: 4096
+          patch_size: 16
+          temporal_patch_size: 2
+          merge_size: 2
+          num_position_embeddings: 2304
+          grid:
+          - 1
+          - 32
+          - 32
+          depth: 8
+        first_block: 5
+        last_block: 7
+        post_norm: false
+        lora_rank: 4
+        preprocessing:
+          square: 500
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r152_lora_IT_s0
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 24
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: null
+        dims: 287744
+      - name: r152_lora_IT_s1
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 24
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: null
+        dims: 287744
+      - name: r152_lora_IT_s2
+        feature: sets
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 24
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        sets:
+        - full
+        - pool1
+        - pool2
+        - pool4
+        - pool8
+        feature_dims:
+          full: 200704
+          pool1: 1024
+          pool2: 4096
+          pool4: 16384
+          pool8: 65536
+        pca_components: null
+        dims: 287744
+      - name: r152_probe_IT_s0
+        feature: probe
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 24
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r152_probe_IT_s1
+        feature: probe
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 24
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: r152_probe_IT_s2
+        feature: probe
+        kind: resnet
+        arch: resnet152
+        stage: layer3
+        last_block: 24
+        preprocessing:
+          resize: 256
+          crop: 224
+          mean:
+          - 0.485
+          - 0.456
+          - 0.406
+          std:
+          - 0.229
+          - 0.224
+          - 0.225
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vl_probe_IT_s0
+        feature: probe
+        kind: qwen_vision
+        qwen:
+          repo: Qwen/Qwen3-VL-2B-Instruct
+          revision: 89644892e4d85e24eaac8bacfd4f463576704203
+          prefix: model.visual.
+          hidden_size: 1024
+          num_heads: 16
+          intermediate_size: 4096
+          patch_size: 16
+          temporal_patch_size: 2
+          merge_size: 2
+          num_position_embeddings: 2304
+          grid:
+          - 1
+          - 32
+          - 32
+          depth: 13
+        first_block: 8
+        last_block: 11
+        post_norm: true
+        lora_rank: 4
+        preprocessing:
+          square: 500
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vl_probe_IT_s1
+        feature: probe
+        kind: qwen_vision
+        qwen:
+          repo: Qwen/Qwen3-VL-2B-Instruct
+          revision: 89644892e4d85e24eaac8bacfd4f463576704203
+          prefix: model.visual.
+          hidden_size: 1024
+          num_heads: 16
+          intermediate_size: 4096
+          patch_size: 16
+          temporal_patch_size: 2
+          merge_size: 2
+          num_position_embeddings: 2304
+          grid:
+          - 1
+          - 32
+          - 32
+          depth: 13
+        first_block: 8
+        last_block: 11
+        post_norm: true
+        lora_rank: 4
+        preprocessing:
+          square: 500
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      - name: vl_probe_IT_s2
+        feature: probe
+        kind: qwen_vision
+        qwen:
+          repo: Qwen/Qwen3-VL-2B-Instruct
+          revision: 89644892e4d85e24eaac8bacfd4f463576704203
+          prefix: model.visual.
+          hidden_size: 1024
+          num_heads: 16
+          intermediate_size: 4096
+          patch_size: 16
+          temporal_patch_size: 2
+          merge_size: 2
+          num_position_embeddings: 2304
+          grid:
+          - 1
+          - 32
+          - 32
+          depth: 13
+        first_block: 8
+        last_block: 11
+        post_norm: true
+        lora_rank: 4
+        preprocessing:
+          square: 500
+          mean:
+          - 0.5
+          - 0.5
+          - 0.5
+          std:
+          - 0.5
+          - 0.5
+          - 0.5
+        channels: 1024
+        dims: 49152
+        probe:
+          width: 768
+          heads: 16
+          latents: 64
+      areas:
+        V1:
+          members:
+          - d2b_lora_V1_s0
+          - d2b_lora_V1_s1
+          - d2b_lora_V1_s2
+          - d2b_probe_V1_s0
+          - d2b_probe_V1_s1
+          - d2b_probe_V1_s2
+          - r152_probe_V1_s0
+          - r152_probe_V1_s1
+          - r152_probe_V1_s2
+          - vl_probe_V1_s0
+          - vl_probe_V1_s1
+          - vl_probe_V1_s2
+          electrodes:
+            monkeyN: 437
+            monkeyF: 462
+        V4:
+          members:
+          - d2b_lora_V4_s0
+          - d2b_lora_V4_s1
+          - d2b_lora_V4_s2
+          - d2b_probe_V4_s0
+          - d2b_probe_V4_s1
+          - d2b_probe_V4_s2
+          - vl_probe_V4_s0
+          - vl_probe_V4_s1
+          - vl_probe_V4_s2
+          electrodes:
+            monkeyN: 247
+            monkeyF: 139
+        IT:
+          members:
+          - r152_lora_IT_s0
+          - r152_lora_IT_s1
+          - r152_lora_IT_s2
+          - r152_probe_IT_s0
+          - r152_probe_IT_s1
+          - r152_probe_IT_s2
+          - vl_probe_IT_s0
+          - vl_probe_IT_s1
+          - vl_probe_IT_s2
+          electrodes:
+            monkeyN: 178
+            monkeyF: 241
+      scores: {}
+  provenance:
+    export: public_encoder_models 0.1.0.dev0
+    date: '2026-10-29'
+onnxFiles: {}
+safetensorsSizeMb: 33665.2
+approxSizeMb: 6729.4
+fetchedAt: '2026-10-30T09:51:15.000Z'

@@ -1,0 +1,220 @@
+_id: 6ae468ddb8ec1a312d528e5e
+id: netprojects/Nemotron-3.5-Embed-8B-mlx-8bit
+private: false
+pipeline_tag: feature-extraction
+library_name: mlx
+tags:
+- mlx
+- safetensors
+- mistral3
+- apple-silicon
+- embeddings
+- sentence-similarity
+- matryoshka
+- multimodal
+- retrieval
+- nemotron
+- feature-extraction
+- en
+- base_model:nvidia/Nemotron-3.5-Embed-8B-BF16
+- base_model:quantized:nvidia/Nemotron-3.5-Embed-8B-BF16
+- license:other
+- region:us
+downloads: 27
+likes: 0
+modelId: netprojects/Nemotron-3.5-Embed-8B-mlx-8bit
+author: netprojects
+sha: 1abadcaf714cdc73f74f26b8800e73d956a1c0b7
+lastModified: '2026-10-30T09:57:57.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - Mistral3Model
+  model_type: mistral3
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    pad_token: <pad>
+    unk_token: <unk>
+  chat_template_jinja: "{# nemo-mistral-retrieval-v1\n   Derived from the Mistral Ministral-3 instruct chat template render_content\n\
+    \   macro and its image-before-text canonicalization. Retrieval adaptation:\n   system content is the retrieval prefix;\
+    \ generation wrappers and BOS/EOS are\n   deliberately omitted so message inference matches training token for token.\n\
+    #}\n{%- macro mark_user_text(text) -%}\n{{- text | replace(\"[\", \"[‌\") | replace(\"<\", \"<‌\") -}}\n{%- endmacro -%}\n\
+    {%- macro render_text_content(content, context_name) -%}\n{%- if content is string -%}\n    {{- content -}}\n{%- elif\
+    \ content is sequence -%}\n    {%- set ns = namespace(has_output=false) -%}\n    {%- for block in content -%}\n      \
+    \  {%- if block[\"type\"] == \"text\" -%}\n            {%- if ns.has_output %}{{ \"\\n\\n\" }}{% endif -%}\n         \
+    \   {{- block[\"text\"] -}}\n            {%- set ns.has_output = true -%}\n        {%- else -%}\n            {{- raise_exception(context_name\
+    \ + \" may contain only text blocks\") -}}\n        {%- endif -%}\n    {%- endfor -%}\n{%- else -%}\n    {{- raise_exception(context_name\
+    \ + \" must be a string or a list of text blocks\") -}}\n{%- endif -%}\n{%- endmacro -%}\n{%- macro render_user_content(content)\
+    \ -%}\n{%- if content is string -%}\n    {{- mark_user_text(content) -}}\n{%- elif content is sequence -%}\n    {%- set\
+    \ ns = namespace(has_output=false) -%}\n    {%- for block in content -%}\n        {%- if block[\"type\"] in [\"image\"\
+    , \"image_url\"] -%}\n            {%- if ns.has_output %}{{ \" \" }}{% endif -%}\n            {{- \"[IMG]\" -}}\n    \
+    \        {%- set ns.has_output = true -%}\n        {%- endif -%}\n    {%- endfor -%}\n    {%- for block in content -%}\n\
+    \        {%- if block[\"type\"] == \"text\" -%}\n            {%- if ns.has_output %}{{ \" \" }}{% endif -%}\n        \
+    \    {{- mark_user_text(block[\"text\"]) -}}\n            {%- set ns.has_output = true -%}\n        {%- elif block[\"\
+    type\"] not in [\"image\", \"image_url\"] -%}\n            {{- raise_exception(\"User content supports only text and image\
+    \ blocks\") -}}\n        {%- endif -%}\n    {%- endfor -%}\n{%- else -%}\n    {{- raise_exception(\"User content must\
+    \ be a string or a list of text and image blocks\") -}}\n{%- endif -%}\n{%- endmacro -%}\n{%- if not ((messages | length\
+    \ == 1 and messages[0][\"role\"] == \"user\")\n    or (messages | length == 2\n        and messages[0][\"role\"] == \"\
+    system\"\n        and messages[1][\"role\"] == \"user\")) -%}\n    {{- raise_exception(\"Retrieval inputs require one\
+    \ user message with an optional leading system prefix\") -}}\n{%- endif -%}\n{# Iterate messages so vLLM can trace message.content\
+    \ into the rendering macros. #}\n{%- for message in messages -%}\n    {%- if message[\"role\"] == \"system\" -%}\n   \
+    \     {%- set prefix = render_text_content(message[\"content\"], \"System content\") -%}\n        {{- prefix.rstrip(\"\
+    \ \") ~ \" \" -}}\n    {%- else -%}\n        {{- render_user_content(message[\"content\"]) -}}\n    {%- endif -%}\n{%-\
+    \ endfor -%}"
+cardData:
+  license: other
+  license_name: openmdw-1.1
+  license_link: LICENSE
+  base_model: nvidia/Nemotron-3.5-Embed-8B-BF16
+  base_model_relation: quantized
+  library_name: mlx
+  pipeline_tag: feature-extraction
+  tags:
+  - mlx
+  - apple-silicon
+  - embeddings
+  - sentence-similarity
+  - matryoshka
+  - multimodal
+  - retrieval
+  - nemotron
+  language:
+  - en
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: chat_template.jinja
+- rfilename: config.json
+- rfilename: model-00001-of-00002.safetensors
+- rfilename: model-00002-of-00002.safetensors
+- rfilename: model.safetensors.index.json
+- rfilename: processor_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-30T09:52:29.000Z'
+safetensors:
+  parameters:
+    U32: 7952400384
+    BF16: 428754944
+  total: 8381155328
+usedStorage: 9328578387
+downloadsAllTime: 27
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - Mistral3Model
+  chunk_size_feed_forward: 0
+  dtype: bfloat16
+  image_token_index: 10
+  is_encoder_decoder: false
+  model_type: mistral3
+  multimodal_projector_bias: false
+  output_attentions: false
+  output_embedding_quantization: null
+  output_hidden_states: false
+  is_causal: false
+  pooling: avg
+  problem_type: null
+  projector_hidden_act: gelu
+  return_dict: true
+  rope_theta: 1000000.0
+  spatial_merge_size: 2
+  text_config:
+    _name_or_path: nvidia/Nemotron-3-Embed-8B-BF16
+    architectures:
+    - Ministral3Model
+    attention_dropout: 0.0
+    bos_token_id: 1
+    chunk_size_feed_forward: 0
+    dtype: bfloat16
+    eos_token_id: 2
+    head_dim: 128
+    hidden_act: silu
+    hidden_size: 4096
+    initializer_range: 0.02
+    intermediate_size: 14336
+    is_causal: false
+    is_encoder_decoder: false
+    llama_4_scaling:
+      beta: 0.1
+      original_max_position_embeddings: 16384
+    max_position_embeddings: 262144
+    model_type: ministral3
+    nemo_version: 0.3.0rc0
+    num_attention_heads: 32
+    num_hidden_layers: 34
+    num_key_value_heads: 8
+    output_attentions: false
+    output_hidden_states: false
+    pad_token_id: 11
+    pooling: avg
+    problem_type: null
+    return_dict: true
+    rms_norm_eps: 1.0e-05
+    rope_parameters:
+      apply_yarn_scaling: false
+      beta_fast: 32.0
+      beta_slow: 1.0
+      factor: 16.0
+      llama_4_scaling_beta: 0.1
+      mscale: 1.0
+      mscale_all_dim: 1.0
+      original_max_position_embeddings: 16384
+      rope_theta: 1000000.0
+      rope_type: yarn
+      type: yarn
+    sliding_window: null
+    tie_word_embeddings: false
+    use_cache: false
+    vocab_size: 131072
+  tie_word_embeddings: false
+  transformers_version: 5.12.1
+  vision_config:
+    _name_or_path: ''
+    architectures: null
+    attention_dropout: 0.0
+    chunk_size_feed_forward: 0
+    dtype: bfloat16
+    head_dim: 64
+    hidden_act: silu
+    hidden_size: 1024
+    image_size: 1540
+    initializer_range: 0.02
+    intermediate_size: 4096
+    is_encoder_decoder: false
+    model_type: pixtral
+    num_attention_heads: 16
+    num_channels: 3
+    num_hidden_layers: 24
+    output_attentions: false
+    output_hidden_states: false
+    patch_size: 14
+    problem_type: null
+    return_dict: true
+    rope_parameters:
+      rope_theta: 10000.0
+      rope_type: default
+  vision_feature_layer: -1
+  nemotron_mlx:
+    kind: embed
+    source: Nemotron-3.5-Embed-8B-BF16
+    revision: 781e779ee4ca9c2d2a4f38321993556baeab49a1
+    bits: 8
+    text_only: false
+    kept_full_precision:
+    - norms
+    - vision encoder and projector (bf16)
+  quantization:
+    group_size: 64
+    bits: 8
+    mode: affine
+onnxFiles: {}
+safetensorsSizeMb: 9307.1
+approxSizeMb: 32667.1
+fetchedAt: '2026-10-31T09:29:41.000Z'

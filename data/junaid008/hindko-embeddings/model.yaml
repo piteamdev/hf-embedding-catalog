@@ -1,0 +1,305 @@
+_id: 6abed19bce6196fc0be64baf
+id: junaid008/hindko-embeddings
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- xlm-roberta
+- feature-extraction
+- sentence-similarity
+- hindko
+- embeddings
+- low-resource
+- urdu-script
+- perso-arabic
+- hno
+- hnd
+- arxiv:2402.05672
+- base_model:intfloat/multilingual-e5-large
+- base_model:finetune:intfloat/multilingual-e5-large
+- license:cc-by-nc-4.0
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 1
+modelId: junaid008/hindko-embeddings
+author: junaid008
+sha: 432690c2f36c31dfa9da8b58bfe763272f7614cb
+lastModified: '2026-10-31T08:04:08.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index:
+- name: hindko-embeddings
+  results:
+  - task:
+      type: Retrieval
+    dataset:
+      name: HindkoEmbedBench v1.0 HeadlineRetrieval
+      type: HindkoEmbedBench-HeadlineRetrieval
+      split: test
+    metrics:
+    - type: ndcg_at_10
+      name: nDCG@10
+      value: 0.6372
+      verified: false
+    - type: recall_at_1
+      name: Recall@1
+      value: 0.5625
+      verified: false
+    - type: recall_at_10
+      name: Recall@10
+      value: 0.7125
+      verified: false
+  - task:
+      type: Retrieval
+    dataset:
+      name: HindkoEmbedBench v1.0 BookTitleRetrieval
+      type: HindkoEmbedBench-BookTitleRetrieval
+      split: test
+    metrics:
+    - type: ndcg_at_10
+      name: nDCG@10
+      value: 0.346
+      verified: false
+    - type: recall_at_1
+      name: Recall@1
+      value: 0.1548
+      verified: false
+    - type: recall_at_10
+      name: Recall@10
+      value: 0.4494
+      verified: false
+    - type: mrr_at_10
+      name: MRR@10
+      value: 0.3608
+      verified: false
+  - task:
+      type: Retrieval
+    dataset:
+      name: HindkoEmbedBench v1.0 PassageContinuation
+      type: HindkoEmbedBench-PassageContinuation
+      split: test
+    metrics:
+    - type: ndcg_at_10
+      name: nDCG@10
+      value: 0.8756
+      verified: false
+  - task:
+      type: Classification
+    dataset:
+      name: HindkoEmbedBench v1.0 VerseProseClassification
+      type: HindkoEmbedBench-VerseProseClassification
+      split: test
+    metrics:
+    - type: f1
+      name: macro-F1
+      value: 0.9801
+      verified: false
+  - task:
+      type: Clustering
+    dataset:
+      name: HindkoEmbedBench v1.0 BookClustering
+      type: HindkoEmbedBench-BookClustering
+      split: test
+    metrics:
+    - type: v_measure
+      name: V-measure
+      value: 0.8566
+      verified: false
+config:
+  architectures:
+  - XLMRobertaModel
+  model_type: xlm-roberta
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  language:
+  - hno
+  - hnd
+  license: cc-by-nc-4.0
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  base_model: intfloat/multilingual-e5-large
+  tags:
+  - sentence-transformers
+  - feature-extraction
+  - sentence-similarity
+  - hindko
+  - embeddings
+  - low-resource
+  - urdu-script
+  - perso-arabic
+  model-index:
+  - name: hindko-embeddings
+    results:
+    - task:
+        type: Retrieval
+      dataset:
+        name: HindkoEmbedBench v1.0 HeadlineRetrieval
+        type: HindkoEmbedBench-HeadlineRetrieval
+        split: test
+      metrics:
+      - type: ndcg_at_10
+        name: nDCG@10
+        value: 0.6372
+        verified: false
+      - type: recall_at_1
+        name: Recall@1
+        value: 0.5625
+        verified: false
+      - type: recall_at_10
+        name: Recall@10
+        value: 0.7125
+        verified: false
+    - task:
+        type: Retrieval
+      dataset:
+        name: HindkoEmbedBench v1.0 BookTitleRetrieval
+        type: HindkoEmbedBench-BookTitleRetrieval
+        split: test
+      metrics:
+      - type: ndcg_at_10
+        name: nDCG@10
+        value: 0.346
+        verified: false
+      - type: recall_at_1
+        name: Recall@1
+        value: 0.1548
+        verified: false
+      - type: recall_at_10
+        name: Recall@10
+        value: 0.4494
+        verified: false
+      - type: mrr_at_10
+        name: MRR@10
+        value: 0.3608
+        verified: false
+    - task:
+        type: Retrieval
+      dataset:
+        name: HindkoEmbedBench v1.0 PassageContinuation
+        type: HindkoEmbedBench-PassageContinuation
+        split: test
+      metrics:
+      - type: ndcg_at_10
+        name: nDCG@10
+        value: 0.8756
+        verified: false
+    - task:
+        type: Classification
+      dataset:
+        name: HindkoEmbedBench v1.0 VerseProseClassification
+        type: HindkoEmbedBench-VerseProseClassification
+        split: test
+      metrics:
+      - type: f1
+        name: macro-F1
+        value: 0.9801
+        verified: false
+    - task:
+        type: Clustering
+      dataset:
+        name: HindkoEmbedBench v1.0 BookClustering
+        type: HindkoEmbedBench-BookClustering
+        split: test
+      metrics:
+      - type: v_measure
+        name: V-measure
+        value: 0.8566
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Normalize/config.json
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: benchmarks/00_scorecard.png
+- rfilename: benchmarks/01_test_overall_all_models.png
+- rfilename: benchmarks/02_test_per_task.png
+- rfilename: benchmarks/03_dev_candidates.png
+- rfilename: benchmarks/04_round1_vs_round2.png
+- rfilename: benchmarks/05_size_vs_score.png
+- rfilename: benchmarks/06_booktitle_detail.png
+- rfilename: benchmarks/07_task_heatmap_test.png
+- rfilename: benchmarks/08_task_heatmap_dev.png
+- rfilename: benchmarks/09_task_profile.png
+- rfilename: benchmarks/10_dev_vs_test.png
+- rfilename: benchmarks/11_context_256_vs_512.png
+- rfilename: benchmarks/12_headline_by_source.png
+- rfilename: benchmarks/13_continuation_by_source.png
+- rfilename: benchmarks/14_retrieval_depth.png
+- rfilename: benchmarks/15_secondary_metrics.png
+- rfilename: benchmarks/16_hard_negative_ablation.png
+- rfilename: benchmarks/17_training_loss.png
+- rfilename: benchmarks/18_loss_by_task_type.png
+- rfilename: benchmarks/19_training_data_mix.png
+- rfilename: benchmarks/20_benchmark_sizes.png
+- rfilename: benchmarks/21_training_cost.png
+- rfilename: benchmarks/22_improvement_path.png
+- rfilename: benchmarks/23_truncation.png
+- rfilename: benchmarks/24_rank_summary.png
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: eval/full_metrics.json
+- rfilename: eval/results.csv
+- rfilename: eval/selection.json
+- rfilename: eval/training.json
+- rfilename: eval/training_loss.csv
+- rfilename: make_charts.py
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-01T21:33:15.000Z'
+safetensors:
+  parameters:
+    F16: 559890432
+  total: 559890432
+usedStorage: 1145225153
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - XLMRobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float16
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 1024
+  initializer_range: 0.02
+  intermediate_size: 4096
+  is_decoder: false
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 514
+  model_type: xlm-roberta
+  num_attention_heads: 16
+  num_hidden_layers: 24
+  output_past: true
+  pad_token_id: 1
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.3.0
+  type_vocab_size: 1
+  use_cache: false
+  vocab_size: 250002
+onnxFiles: {}
+safetensorsSizeMb: 1119.8
+approxSizeMb: 1119.8
+fetchedAt: '2026-10-31T09:29:41.000Z'

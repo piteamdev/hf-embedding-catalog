@@ -1,0 +1,92 @@
+_id: 6ae48d59ee7957d11cd157d6
+id: Tohirju/Saidzoda-Tajik-E5-Large
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- xlm-roberta
+- retrieval
+- tajik
+- sentence-similarity
+- tg
+- ru
+- en
+- base_model:intfloat/multilingual-e5-large-instruct
+- base_model:finetune:intfloat/multilingual-e5-large-instruct
+- license:other
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: Tohirju/Saidzoda-Tajik-E5-Large
+author: Tohirju
+sha: 91ae229c424536948eadc141030fa782b48276d3
+lastModified: '2026-10-31T03:17:56.000Z'
+gated: manual
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - XLMRobertaModel
+  model_type: xlm-roberta
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  license: other
+  license_name: saidzoda-model-licence
+  license_link: LICENSE
+  language:
+  - tg
+  - ru
+  - en
+  base_model: intfloat/multilingual-e5-large-instruct
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  tags:
+  - sentence-transformers
+  - retrieval
+  - tajik
+  extra_gated_prompt: To get access, please fill in the short form at https://ai.saidzoda.com/access. We approve requests
+    after we receive the form.
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: results/multilingual-e5-large-instruct.json
+- rfilename: results/saidzoda-tajik-e5-large.json
+- rfilename: sentence_bert_config.json
+- rfilename: sentencepiece.bpe.model
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: train/loss.csv
+- rfilename: train/train_summary.json
+spaces: []
+createdAt: '2026-10-30T12:28:09.000Z'
+safetensors:
+  parameters:
+    F32: 559890432
+  total: 559890432
+usedStorage: 2261759214
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 2239.6
+approxSizeMb: 2239.6
+fetchedAt: '2026-10-31T09:29:41.000Z'

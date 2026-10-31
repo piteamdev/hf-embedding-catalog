@@ -1,0 +1,159 @@
+_id: 6ae4b4ef46603b646dc77cc5
+id: multi-vector-encoder/ModernBERT-base-en-v1
+private: false
+pipeline_tag: feature-extraction
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- modernbert
+- multi-vector
+- colbert
+- late-interaction
+- feature-extraction
+- en
+- base_model:chungimungi/GLInt
+- base_model:merge:chungimungi/GLInt
+- base_model:lightonai/LateOn-regularized
+- base_model:merge:lightonai/LateOn-regularized
+- license:apache-2.0
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 27
+likes: 1
+modelId: multi-vector-encoder/ModernBERT-base-en-v1
+author: multi-vector-encoder
+sha: e1dc66a08f476f3bad04fa2e41e8cda4b23378b4
+lastModified: '2026-10-30T16:58:10.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  architectures:
+  - ModernBertModel
+  model_type: modernbert
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[MASK]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  tags:
+  - sentence-transformers
+  - multi-vector
+  - colbert
+  - late-interaction
+  pipeline_tag: feature-extraction
+  library_name: sentence-transformers
+  language: en
+  license: apache-2.0
+  base_model:
+  - chungimungi/GLInt
+  - lightonai/LateOn-regularized
+  base_model_relation: merge
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Dense/config.json
+- rfilename: 1_Dense/model.safetensors
+- rfilename: 2_Dense/config.json
+- rfilename: 2_Dense/model.safetensors
+- rfilename: 3_Dense/config.json
+- rfilename: 3_Dense/model.safetensors
+- rfilename: 4_MultiVectorMask/config.json
+- rfilename: 5_Normalize/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-30T15:17:03.000Z'
+safetensors:
+  parameters:
+    F32: 149015808
+  total: 149015808
+usedStorage: 615344304
+downloadsAllTime: 27
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - ModernBertModel
+  attention_bias: false
+  attention_dropout: 0.0
+  bos_token_id: 50281
+  classifier_activation: gelu
+  classifier_bias: false
+  classifier_dropout: 0.0
+  classifier_pooling: mean
+  cls_token_id: 50281
+  decoder_bias: true
+  deterministic_flash_attn: false
+  dtype: float32
+  embedding_dropout: 0.0
+  eos_token_id: 50282
+  global_attn_every_n_layers: 3
+  gradient_checkpointing: false
+  hidden_activation: gelu
+  hidden_size: 768
+  initializer_cutoff_factor: 2.0
+  initializer_range: 0.02
+  intermediate_size: 1152
+  layer_norm_eps: 1.0e-05
+  layer_types:
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  local_attention: 128
+  max_position_embeddings: 8192
+  mlp_bias: false
+  mlp_dropout: 0.0
+  model_type: modernbert
+  norm_bias: false
+  norm_eps: 1.0e-05
+  num_attention_heads: 12
+  num_hidden_layers: 22
+  pad_token_id: 50283
+  position_embedding_type: absolute
+  repad_logits_with_grad: false
+  rope_parameters:
+    full_attention:
+      rope_theta: 160000.0
+      rope_type: default
+    sliding_attention:
+      rope_theta: 10000.0
+      rope_type: default
+  sep_token_id: 50282
+  sparse_pred_ignore_index: -100
+  sparse_prediction: false
+  tie_word_embeddings: true
+  transformers_version: 5.21.0.dev0
+  vocab_size: 50370
+onnxFiles: {}
+safetensorsSizeMb: 615.3
+approxSizeMb: 596.1
+fetchedAt: '2026-10-31T09:29:41.000Z'

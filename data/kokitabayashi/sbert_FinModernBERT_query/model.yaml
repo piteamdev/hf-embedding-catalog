@@ -1,0 +1,385 @@
+_id: 6ae5a53c2e624a487c1c0b30
+id: kokitabayashi/sbert_FinModernBERT_query
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:44709
+- loss:MultipleNegativesRankingLoss
+- en
+- arxiv:1908.10084
+- arxiv:1807.03748
+- base_model:sentence-transformers/bert-base-nli-mean-tokens
+- base_model:finetune:sentence-transformers/bert-base-nli-mean-tokens
+- license:apache-2.0
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: kokitabayashi/sbert_FinModernBERT_query
+author: kokitabayashi
+sha: ca837352510ecc43a461e10f5060052d8752bf53
+lastModified: '2026-10-31T08:22:33.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: What is the breakdown of Akamai's global workforce by functional role as of the end of 2020?
+  sentences:
+  - We had approximately 15,000 customers for electronic measurement products in fiscal 2011 and no single customer represented
+    greater than 4 percent of net revenue of the electronic measurement business.
+  - if any principal of or interest on any Loan or any fee or other amount payable by any Borrower hereunder is not paid when
+    due, whether at stated maturity, upon acceleration or otherwise, such overdue amount shall bear interest, after as well
+    as before judgment, at a rate per annum equal to (i) in the case of overdue principal of any Loan, 2% plus the rate otherwise
+    applicable to such Loan as provided in the preceding paragraphs of this Section
+  - 'Our employees are grouped across the following roles, with the approximate percentage of the overall population noted:
+    engineering and research and development (29%), services and support (28%), sales and marketing (23%) and administrative
+    functions (20%).'
+- source_sentence: How could U.S. government budget policies or shutdowns specifically impact the company's results of operations?
+  sentences:
+  - BNO’s primary contractual obligations are with USCF. In return for its services, USCF is entitled to a management fee
+    calculated daily and paid monthly as a fixed percentage of BNO’s NAV, currently 0.75% of NAV on its average daily total
+    net assets.
+  - Non-compliance with the NCRE requirements will result in fines. AES Andes currently fulfills the NCRE requirements by
+    utilizing AES Andes' solar, wind, and biomass power plants.
+  - Additionally, the inability of the U.S. Congress to enact a budget for a fiscal year or the occurrence of partial or complete
+    U.S. federal government shutdowns may result in temporary closures of agencies such as the Food and Drug Administration
+    (the “FDA”) or NIH, which could adversely affect business operations of our tenants who are dependent on government approvals
+    and appropriations. Any shift away from funding of research and development or delays surrounding the approval of government
+    budget 20 proposals may adversely impact our tenants’ operations, which in turn may impact their demand for office/laboratory
+    and tech office space and their ability to make lease payments to us and thus adversely impact our results of operations.
+- source_sentence: How did the Allstate Financial segment rank in terms of ordinary life insurance in force and statutory
+    admitted assets as of December 31, 2001?
+  sentences:
+  - The increasing cost and complexity for semiconductor manufacturers to move more technically advanced capability and smaller
+    geometries to volume manufacturing, and the resulting impact on the rates of technology transition and investment in capital
+    equipment.
+  - 4.19 Officers’ Certificate of American Water Capital Corp., dated May 14, 2021, establishing the terms and authorizing
+    the issuance of the 2.300% Senior Notes due 2031... 4.20 Officers’ Certificate of American Water Capital Corp., dated
+    May 14, 2021, establishing the terms and authorizing the issuance of the 3.250% Senior Notes due 2051.
+  - As of December 31, 2001, the Allstate Financial segment ranked tenth based on ordinary life insurance in force and 19th
+    based on statutory admitted assets.
+- source_sentence: Who is the current Executive Vice President and Chief Financial Officer of the Company, and what other
+    roles has he held?
+  sentences:
+  - MICHAEL F. MEE - From 1994 to 2000, Chief Financial Officer and Senior Vice President, Corporate Staff of the Company.
+    Mr. Mee has been Executive Vice President and Chief Financial Officer, Corporate Staff of the Company and a member of
+    the Office of the Chairman and Corporate Operating Committee since 2000.
+  - When actual development of these data elements is different than the historical development pattern used in a prior period
+    reserve estimate, a new reserve is determined. The difference between indicated reserves based on new reserve estimates
+    and recorded reserves (the previous estimate) is the amount of reserve reestimate and is recognized as an increase
+  - Total expense under these agreements was approximately $252.6 million, $159.2 million, and $175.4 million in fiscal 2012,
+    2011, and 2010, respectively...
+- source_sentence: What were the primary drivers for the increase in net income for the year ended December 31, 2021?
+  sentences:
+  - In March 2006, AIG borrowed a total of $1.3 billion on an unsecured basis pursuant to loan agreements with third-party
+    banks, of which $700 million remained outstanding on Decem- 70 AIG 2006 Form 10-K American International Group, Inc. and
+    Subsidiaries ber 31, 2006; $500 million was repaid in February 2007, and the balance matures in March 2007.
+  - The increase in net income was primarily due to (i) an increase in our operating profit and (ii) a decrease in other expenses,
+    primarily due to foreign currency gains in the current period as compared to foreign currency losses in the prior-year
+    period, partially offset by (a) an increase in depreciation, amortization and accretion expense, (b) an increase in other
+    operating expense, primarily attributable to acquisition related costs associated with the Telxius Acquisition and the
+    CoreSite Acquisition, and (c) an increase in the income tax provision.
+  - Total modifications $ 1,017 $ 649 $ 2,655 $ 775 $ 5,120 $ 592
+model-index:
+- name: SBERT base trained on BatuhanECB/FinModernBERT-pairs-sec-synthetic-v1
+  results:
+  - task:
+      type: information-retrieval
+      name: Information Retrieval
+    dataset:
+      name: finance eval
+      type: finance-eval
+    metrics:
+    - type: cosine_accuracy@1
+      value: 0.755741127348643
+      name: Cosine Accuracy@1
+      verified: false
+    - type: cosine_accuracy@3
+      value: 0.9042797494780793
+      name: Cosine Accuracy@3
+      verified: false
+    - type: cosine_accuracy@5
+      value: 0.9369519832985386
+      name: Cosine Accuracy@5
+      verified: false
+    - type: cosine_accuracy@10
+      value: 0.9618997912317327
+      name: Cosine Accuracy@10
+      verified: false
+    - type: cosine_precision@1
+      value: 0.755741127348643
+      name: Cosine Precision@1
+      verified: false
+    - type: cosine_precision@3
+      value: 0.3014265831593598
+      name: Cosine Precision@3
+      verified: false
+    - type: cosine_precision@5
+      value: 0.18739039665970775
+      name: Cosine Precision@5
+      verified: false
+    - type: cosine_precision@10
+      value: 0.0961899791231733
+      name: Cosine Precision@10
+      verified: false
+    - type: cosine_recall@1
+      value: 0.755741127348643
+      name: Cosine Recall@1
+      verified: false
+    - type: cosine_recall@3
+      value: 0.9042797494780793
+      name: Cosine Recall@3
+      verified: false
+    - type: cosine_recall@5
+      value: 0.9369519832985386
+      name: Cosine Recall@5
+      verified: false
+    - type: cosine_recall@10
+      value: 0.9618997912317327
+      name: Cosine Recall@10
+      verified: false
+    - type: cosine_ndcg@10
+      value: 0.8659815477103893
+      name: Cosine Ndcg@10
+      verified: false
+    - type: cosine_mrr@10
+      value: 0.8344031464360225
+      name: Cosine Mrr@10
+      verified: false
+    - type: cosine_map@100
+      value: 0.8361667009883983
+      name: Cosine Map@100
+      verified: false
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  language:
+  - en
+  license: apache-2.0
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:44709
+  - loss:MultipleNegativesRankingLoss
+  base_model: sentence-transformers/bert-base-nli-mean-tokens
+  widget:
+  - source_sentence: What is the breakdown of Akamai's global workforce by functional role as of the end of 2020?
+    sentences:
+    - We had approximately 15,000 customers for electronic measurement products in fiscal 2011 and no single customer represented
+      greater than 4 percent of net revenue of the electronic measurement business.
+    - if any principal of or interest on any Loan or any fee or other amount payable by any Borrower hereunder is not paid
+      when due, whether at stated maturity, upon acceleration or otherwise, such overdue amount shall bear interest, after
+      as well as before judgment, at a rate per annum equal to (i) in the case of overdue principal of any Loan, 2% plus the
+      rate otherwise applicable to such Loan as provided in the preceding paragraphs of this Section
+    - 'Our employees are grouped across the following roles, with the approximate percentage of the overall population noted:
+      engineering and research and development (29%), services and support (28%), sales and marketing (23%) and administrative
+      functions (20%).'
+  - source_sentence: How could U.S. government budget policies or shutdowns specifically impact the company's results of operations?
+    sentences:
+    - BNO’s primary contractual obligations are with USCF. In return for its services, USCF is entitled to a management fee
+      calculated daily and paid monthly as a fixed percentage of BNO’s NAV, currently 0.75% of NAV on its average daily total
+      net assets.
+    - Non-compliance with the NCRE requirements will result in fines. AES Andes currently fulfills the NCRE requirements by
+      utilizing AES Andes' solar, wind, and biomass power plants.
+    - Additionally, the inability of the U.S. Congress to enact a budget for a fiscal year or the occurrence of partial or
+      complete U.S. federal government shutdowns may result in temporary closures of agencies such as the Food and Drug Administration
+      (the “FDA”) or NIH, which could adversely affect business operations of our tenants who are dependent on government
+      approvals and appropriations. Any shift away from funding of research and development or delays surrounding the approval
+      of government budget 20 proposals may adversely impact our tenants’ operations, which in turn may impact their demand
+      for office/laboratory and tech office space and their ability to make lease payments to us and thus adversely impact
+      our results of operations.
+  - source_sentence: How did the Allstate Financial segment rank in terms of ordinary life insurance in force and statutory
+      admitted assets as of December 31, 2001?
+    sentences:
+    - The increasing cost and complexity for semiconductor manufacturers to move more technically advanced capability and
+      smaller geometries to volume manufacturing, and the resulting impact on the rates of technology transition and investment
+      in capital equipment.
+    - 4.19 Officers’ Certificate of American Water Capital Corp., dated May 14, 2021, establishing the terms and authorizing
+      the issuance of the 2.300% Senior Notes due 2031... 4.20 Officers’ Certificate of American Water Capital Corp., dated
+      May 14, 2021, establishing the terms and authorizing the issuance of the 3.250% Senior Notes due 2051.
+    - As of December 31, 2001, the Allstate Financial segment ranked tenth based on ordinary life insurance in force and 19th
+      based on statutory admitted assets.
+  - source_sentence: Who is the current Executive Vice President and Chief Financial Officer of the Company, and what other
+      roles has he held?
+    sentences:
+    - MICHAEL F. MEE - From 1994 to 2000, Chief Financial Officer and Senior Vice President, Corporate Staff of the Company.
+      Mr. Mee has been Executive Vice President and Chief Financial Officer, Corporate Staff of the Company and a member of
+      the Office of the Chairman and Corporate Operating Committee since 2000.
+    - When actual development of these data elements is different than the historical development pattern used in a prior
+      period reserve estimate, a new reserve is determined. The difference between indicated reserves based on new reserve
+      estimates and recorded reserves (the previous estimate) is the amount of reserve reestimate and is recognized as an
+      increase
+    - Total expense under these agreements was approximately $252.6 million, $159.2 million, and $175.4 million in fiscal
+      2012, 2011, and 2010, respectively...
+  - source_sentence: What were the primary drivers for the increase in net income for the year ended December 31, 2021?
+    sentences:
+    - In March 2006, AIG borrowed a total of $1.3 billion on an unsecured basis pursuant to loan agreements with third-party
+      banks, of which $700 million remained outstanding on Decem- 70 AIG 2006 Form 10-K American International Group, Inc.
+      and Subsidiaries ber 31, 2006; $500 million was repaid in February 2007, and the balance matures in March 2007.
+    - The increase in net income was primarily due to (i) an increase in our operating profit and (ii) a decrease in other
+      expenses, primarily due to foreign currency gains in the current period as compared to foreign currency losses in the
+      prior-year period, partially offset by (a) an increase in depreciation, amortization and accretion expense, (b) an increase
+      in other operating expense, primarily attributable to acquisition related costs associated with the Telxius Acquisition
+      and the CoreSite Acquisition, and (c) an increase in the income tax provision.
+    - Total modifications $ 1,017 $ 649 $ 2,655 $ 775 $ 5,120 $ 592
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - cosine_accuracy@1
+  - cosine_accuracy@3
+  - cosine_accuracy@5
+  - cosine_accuracy@10
+  - cosine_precision@1
+  - cosine_precision@3
+  - cosine_precision@5
+  - cosine_precision@10
+  - cosine_recall@1
+  - cosine_recall@3
+  - cosine_recall@5
+  - cosine_recall@10
+  - cosine_ndcg@10
+  - cosine_mrr@10
+  - cosine_map@100
+  model-index:
+  - name: SBERT base trained on BatuhanECB/FinModernBERT-pairs-sec-synthetic-v1
+    results:
+    - task:
+        type: information-retrieval
+        name: Information Retrieval
+      dataset:
+        name: finance eval
+        type: finance-eval
+      metrics:
+      - type: cosine_accuracy@1
+        value: 0.755741127348643
+        name: Cosine Accuracy@1
+        verified: false
+      - type: cosine_accuracy@3
+        value: 0.9042797494780793
+        name: Cosine Accuracy@3
+        verified: false
+      - type: cosine_accuracy@5
+        value: 0.9369519832985386
+        name: Cosine Accuracy@5
+        verified: false
+      - type: cosine_accuracy@10
+        value: 0.9618997912317327
+        name: Cosine Accuracy@10
+        verified: false
+      - type: cosine_precision@1
+        value: 0.755741127348643
+        name: Cosine Precision@1
+        verified: false
+      - type: cosine_precision@3
+        value: 0.3014265831593598
+        name: Cosine Precision@3
+        verified: false
+      - type: cosine_precision@5
+        value: 0.18739039665970775
+        name: Cosine Precision@5
+        verified: false
+      - type: cosine_precision@10
+        value: 0.0961899791231733
+        name: Cosine Precision@10
+        verified: false
+      - type: cosine_recall@1
+        value: 0.755741127348643
+        name: Cosine Recall@1
+        verified: false
+      - type: cosine_recall@3
+        value: 0.9042797494780793
+        name: Cosine Recall@3
+        verified: false
+      - type: cosine_recall@5
+        value: 0.9369519832985386
+        name: Cosine Recall@5
+        verified: false
+      - type: cosine_recall@10
+        value: 0.9618997912317327
+        name: Cosine Recall@10
+        verified: false
+      - type: cosine_ndcg@10
+        value: 0.8659815477103893
+        name: Cosine Ndcg@10
+        verified: false
+      - type: cosine_mrr@10
+        value: 0.8344031464360225
+        name: Cosine Mrr@10
+        verified: false
+      - type: cosine_map@100
+        value: 0.8361667009883983
+        name: Cosine Map@100
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-31T08:22:20.000Z'
+safetensors:
+  parameters:
+    F32: 109482240
+  total: 109482240
+usedStorage: 437951328
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.21.0
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 30522
+onnxFiles: {}
+safetensorsSizeMb: 438.0
+approxSizeMb: 437.9
+fetchedAt: '2026-10-31T09:29:41.000Z'

@@ -1,0 +1,222 @@
+_id: 6ae4cf9d0ec4c2d48d093169
+id: Kodikalaiyarasan/all-MiniLM-L6-v2-tech-code-search-v2
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:540
+- loss:MultipleNegativesRankingLoss
+- arxiv:1908.10084
+- arxiv:1807.03748
+- base_model:Kodikalaiyarasan/all-MiniLM-L6-v2-tech-code-search
+- base_model:finetune:Kodikalaiyarasan/all-MiniLM-L6-v2-tech-code-search
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 19
+likes: 0
+modelId: Kodikalaiyarasan/all-MiniLM-L6-v2-tech-code-search-v2
+author: Kodikalaiyarasan
+sha: fdb5126761efd91d5d6eafdaf95daea33b2ad8bf
+lastModified: '2026-10-30T17:10:59.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: Python code to make class instance callable like a function using __call__
+  sentences:
+  - "def singleton(cls):\n    instances = {}\n    def get_instance(*args, **kwargs):\n        if cls not in instances:\n \
+    \           instances[cls] = cls(*args, **kwargs)\n        return instances[cls]\n    return get_instance"
+  - 'import bisect
+
+
+    sorted_list = [10, 20, 30, 40]
+
+    idx = bisect.bisect_left(sorted_list, 25)  # 2
+
+    bisect.insort(sorted_list, 25)  # [10, 20, 25, 30, 40]'
+  - "class Adder:\n    def __init__(self, value):\n        self.value = value\n    def __call__(self, x):\n        return\
+    \ self.value + x\n\nadd_five = Adder(5)\nresult = add_five(10)  # 15"
+- source_sentence: Explain and show code to run multiple coroutines concurrently using asyncio.gather
+  sentences:
+  - "import asyncio\n\nasync def producer(q):\n    for i in range(5):\n        await q.put(i)\n    await q.put(None)\n\nasync\
+    \ def consumer(q):\n    while True:\n        item = await q.get()\n        if item is None:\n            break\n     \
+    \   print(f\"Consumed {item}\")\n        q.task_done()"
+  - "from functools import partial\n\ndef send_email(to, subject, body, sender='noreply@example.com'):\n    print(f\"From:\
+    \ {sender} To: {to} Subject: {subject}\")\n\nsend_alert = partial(send_email, subject=\"SYSTEM ALERT\")"
+  - "import asyncio\n\nasync def fetch_data(id, delay):\n    await asyncio.sleep(delay)\n    return f\"Data {id}\"\n\nasync\
+    \ def main():\n    results = await asyncio.gather(fetch_data(1, 0.2), fetch_data(2, 0.4))\n    return results"
+- source_sentence: Example of how to implement comparison operators __lt__ __gt__ __le__ __ge__ using functools.total_ordering
+    in Python
+  sentences:
+  - "import time\nfrom functools import wraps\n\ndef rate_limit(max_calls, period):\n    calls = []\n    def decorator(func):\n\
+    \        @wraps(func)\n        def wrapper(*args, **kwargs):\n            now = time.time()\n            nonlocal calls\n\
+    \            calls = [c for c in calls if now - c < period]\n            if len(calls) >= max_calls:\n               \
+    \ raise RuntimeError(\"Rate limit exceeded\")\n            calls.append(now)\n            return func(*args, **kwargs)\n\
+    \        return wrapper\n    return decorator"
+  - 'scores = {''math'': 88, ''physics'': 95, ''chemistry'': 91}
+
+    top_subject = max(scores, key=scores.get)'
+  - "from functools import total_ordering\n\n@total_ordering\nclass Student:\n    def __init__(self, name, grade):\n     \
+    \   self.name = name\n        self.grade = grade\n    def __eq__(self, other):\n        return self.grade == other.grade\n\
+    \    def __lt__(self, other):\n        return self.grade < other.grade"
+- source_sentence: Python code to define generic class with TypeVar in typing
+  sentences:
+  - 'dict1 = {''a'': 1, ''b'': 2}
+
+    dict2 = {''b'': 99, ''c'': 3}
+
+    merged = dict1 | dict2  # {''a'': 1, ''b'': 99, ''c'': 3}'
+  - "def sub_gen():\n    yield 1\n    yield 2\n\ndef main_gen():\n    \"\"\"Delegate iteration to sub_gen using yield from.\"\
+    \"\"\n    yield from sub_gen()\n    yield 3"
+  - "from typing import TypeVar, Generic\n\nT = TypeVar('T')\n\nclass Box(Generic[T]):\n    def __init__(self, item: T):\n\
+    \        self.item = item\n    def get(self) -> T:\n        return self.item"
+- source_sentence: Best practice to customize object boolean evaluation using __bool__ with Python
+  sentences:
+  - "class Timer:\n    import time\n    def __enter__(self):\n        self.start = self.time.perf_counter()\n        return\
+    \ self\n    def __exit__(self, exc_type, exc_val, exc_tb):\n        self.elapsed = self.time.perf_counter() - self.start\n\
+    \        print(f\"Elapsed time: {self.elapsed:.4f}s\")\n        return False"
+  - "class Account:\n    def __init__(self, balance):\n        self.balance = balance\n    def __bool__(self):\n        return\
+    \ self.balance > 0"
+  - "from functools import lru_cache\n\n@lru_cache(maxsize=128)\ndef slow_fibonacci(n):\n    if n < 2:\n        return n\n\
+    \    return slow_fibonacci(n - 1) + slow_fibonacci(n - 2)"
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:540
+  - loss:MultipleNegativesRankingLoss
+  base_model: Kodikalaiyarasan/all-MiniLM-L6-v2-tech-code-search
+  widget:
+  - source_sentence: Python code to make class instance callable like a function using __call__
+    sentences:
+    - "def singleton(cls):\n    instances = {}\n    def get_instance(*args, **kwargs):\n        if cls not in instances:\n\
+      \            instances[cls] = cls(*args, **kwargs)\n        return instances[cls]\n    return get_instance"
+    - 'import bisect
+
+
+      sorted_list = [10, 20, 30, 40]
+
+      idx = bisect.bisect_left(sorted_list, 25)  # 2
+
+      bisect.insort(sorted_list, 25)  # [10, 20, 25, 30, 40]'
+    - "class Adder:\n    def __init__(self, value):\n        self.value = value\n    def __call__(self, x):\n        return\
+      \ self.value + x\n\nadd_five = Adder(5)\nresult = add_five(10)  # 15"
+  - source_sentence: Explain and show code to run multiple coroutines concurrently using asyncio.gather
+    sentences:
+    - "import asyncio\n\nasync def producer(q):\n    for i in range(5):\n        await q.put(i)\n    await q.put(None)\n\n\
+      async def consumer(q):\n    while True:\n        item = await q.get()\n        if item is None:\n            break\n\
+      \        print(f\"Consumed {item}\")\n        q.task_done()"
+    - "from functools import partial\n\ndef send_email(to, subject, body, sender='noreply@example.com'):\n    print(f\"From:\
+      \ {sender} To: {to} Subject: {subject}\")\n\nsend_alert = partial(send_email, subject=\"SYSTEM ALERT\")"
+    - "import asyncio\n\nasync def fetch_data(id, delay):\n    await asyncio.sleep(delay)\n    return f\"Data {id}\"\n\nasync\
+      \ def main():\n    results = await asyncio.gather(fetch_data(1, 0.2), fetch_data(2, 0.4))\n    return results"
+  - source_sentence: Example of how to implement comparison operators __lt__ __gt__ __le__ __ge__ using functools.total_ordering
+      in Python
+    sentences:
+    - "import time\nfrom functools import wraps\n\ndef rate_limit(max_calls, period):\n    calls = []\n    def decorator(func):\n\
+      \        @wraps(func)\n        def wrapper(*args, **kwargs):\n            now = time.time()\n            nonlocal calls\n\
+      \            calls = [c for c in calls if now - c < period]\n            if len(calls) >= max_calls:\n             \
+      \   raise RuntimeError(\"Rate limit exceeded\")\n            calls.append(now)\n            return func(*args, **kwargs)\n\
+      \        return wrapper\n    return decorator"
+    - 'scores = {''math'': 88, ''physics'': 95, ''chemistry'': 91}
+
+      top_subject = max(scores, key=scores.get)'
+    - "from functools import total_ordering\n\n@total_ordering\nclass Student:\n    def __init__(self, name, grade):\n   \
+      \     self.name = name\n        self.grade = grade\n    def __eq__(self, other):\n        return self.grade == other.grade\n\
+      \    def __lt__(self, other):\n        return self.grade < other.grade"
+  - source_sentence: Python code to define generic class with TypeVar in typing
+    sentences:
+    - 'dict1 = {''a'': 1, ''b'': 2}
+
+      dict2 = {''b'': 99, ''c'': 3}
+
+      merged = dict1 | dict2  # {''a'': 1, ''b'': 99, ''c'': 3}'
+    - "def sub_gen():\n    yield 1\n    yield 2\n\ndef main_gen():\n    \"\"\"Delegate iteration to sub_gen using yield from.\"\
+      \"\"\n    yield from sub_gen()\n    yield 3"
+    - "from typing import TypeVar, Generic\n\nT = TypeVar('T')\n\nclass Box(Generic[T]):\n    def __init__(self, item: T):\n\
+      \        self.item = item\n    def get(self) -> T:\n        return self.item"
+  - source_sentence: Best practice to customize object boolean evaluation using __bool__ with Python
+    sentences:
+    - "class Timer:\n    import time\n    def __enter__(self):\n        self.start = self.time.perf_counter()\n        return\
+      \ self\n    def __exit__(self, exc_type, exc_val, exc_tb):\n        self.elapsed = self.time.perf_counter() - self.start\n\
+      \        print(f\"Elapsed time: {self.elapsed:.4f}s\")\n        return False"
+    - "class Account:\n    def __init__(self, balance):\n        self.balance = balance\n    def __bool__(self):\n       \
+      \ return self.balance > 0"
+    - "from functools import lru_cache\n\n@lru_cache(maxsize=128)\ndef slow_fibonacci(n):\n    if n < 2:\n        return n\n\
+      \    return slow_fibonacci(n - 1) + slow_fibonacci(n - 2)"
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-30T17:10:53.000Z'
+safetensors:
+  parameters:
+    F32: 22713216
+  total: 22713216
+usedStorage: 90864192
+downloadsAllTime: 19
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  initializer_range: 0.02
+  intermediate_size: 1536
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 6
+  pad_token_id: 0
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.20.2
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 30522
+onnxFiles: {}
+safetensorsSizeMb: 90.9
+approxSizeMb: 90.9
+fetchedAt: '2026-10-31T09:29:41.000Z'

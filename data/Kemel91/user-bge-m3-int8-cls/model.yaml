@@ -1,0 +1,89 @@
+_id: 6ae4a396cfd269dd87791ed9
+id: Kemel91/user-bge-m3-int8-cls
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- xlm-roberta
+- sentence-embeddings
+- int8
+- manticoresearch
+- feature-extraction
+- ru
+- en
+- base_model:deepvk/USER-bge-m3
+- base_model:quantized:deepvk/USER-bge-m3
+- license:apache-2.0
+- region:us
+downloads: 16
+likes: 0
+modelId: Kemel91/user-bge-m3-int8-cls
+author: Kemel91
+sha: 98829093785b1a6553ddc959034727064df93fa9
+lastModified: '2026-10-30T14:09:19.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - XLMRobertaModel
+  model_type: xlm-roberta
+cardData:
+  license: apache-2.0
+  language:
+  - ru
+  - en
+  base_model: deepvk/USER-bge-m3
+  pipeline_tag: feature-extraction
+  library_name: onnx
+  tags:
+  - sentence-embeddings
+  - onnx
+  - int8
+  - manticoresearch
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: onnx/model.onnx
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-10-30T14:03:02.000Z'
+usedStorage: 360032809
+downloadsAllTime: 16
+inferenceProviderMapping: {}
+configJson:
+  _attn_implementation_autoset: true
+  _name_or_path: deepvk/USER-bge-m3
+  architectures:
+  - XLMRobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  eos_token_id: 2
+  export_model_type: transformer
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 1024
+  initializer_range: 0.02
+  intermediate_size: 4096
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 8194
+  model_type: xlm-roberta
+  num_attention_heads: 16
+  num_hidden_layers: 24
+  output_past: true
+  pad_token_id: 1
+  position_embedding_type: absolute
+  torch_dtype: float32
+  transformers_version: 4.47.1
+  type_vocab_size: 1
+  use_cache: true
+  vocab_size: 46166
+onnxFiles:
+  onnx/model.onnx: 360.0
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-10-31T09:29:41.000Z'

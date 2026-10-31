@@ -1,0 +1,542 @@
+_id: 6ae4e4c91cef0d52d1f2eac8
+id: glossia/Rambley-V2.1-350M-Embed-Preview
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- rambley_v2
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- loss:CachedMultipleNegativesRankingLoss
+- loss:MultipleNegativesRankingLoss
+- custom_code
+- arxiv:1908.10084
+- arxiv:2101.06983
+- arxiv:1807.03748
+- base_model:glossia/Rambley-V2.1-350M-Embed-Pretrain-Preview
+- base_model:finetune:glossia/Rambley-V2.1-350M-Embed-Pretrain-Preview
+- endpoints_compatible
+- region:us
+downloads: 4
+likes: 0
+modelId: glossia/Rambley-V2.1-350M-Embed-Preview
+author: glossia
+sha: e02f764ec2e2ce12e068e0a616d2503703ba9cf3
+lastModified: '2026-10-30T18:41:22.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config:
+  architectures:
+  - RambleyV2Model
+  auto_map:
+    AutoConfig: config_rambley_v2.RambleyV2Config
+    AutoModel: modeling_rambley_v2.RambleyV2Model
+    AutoModelForCausalLM: modeling_rambley_v2.RambleyV2ForCausalLM
+  model_type: rambley_v2
+  tokenizer_config:
+    bos_token: null
+    eos_token: <|eos|>
+    pad_token: <|pad|>
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - loss:CachedMultipleNegativesRankingLoss
+  - loss:MultipleNegativesRankingLoss
+  base_model: glossia/Rambley-V2.1-350M-Embed-Pretrain-Preview
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Normalize/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_rambley_v2.py
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modeling_rambley_v2.py
+- rfilename: modules.json
+- rfilename: optimizer.pt
+- rfilename: rng_state.pth
+- rfilename: scheduler.pt
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: trainer_state.json
+- rfilename: training_args.bin
+spaces: []
+createdAt: '2026-10-30T18:41:13.000Z'
+safetensors:
+  parameters:
+    BF16: 348583480
+  total: 348583480
+usedStorage: 2091747050
+downloadsAllTime: 4
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - RambleyV2Model
+  attention_residual_eps: null
+  auto_map:
+    AutoConfig: config_rambley_v2.RambleyV2Config
+    AutoModel: modeling_rambley_v2.RambleyV2Model
+    AutoModelForCausalLM: modeling_rambley_v2.RambleyV2ForCausalLM
+  block_configs:
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 6144
+    hope_length: 2048
+    n_heads: 28
+    n_kv_heads: 7
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: 127
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 6144
+    hope_length: 2048
+    n_heads: 28
+    n_kv_heads: 7
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: 127
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 6144
+    hope_length: 2048
+    n_heads: 28
+    n_kv_heads: 7
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: -1
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 6144
+    hope_length: 2048
+    n_heads: 28
+    n_kv_heads: 7
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: 127
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 6144
+    hope_length: 2048
+    n_heads: 28
+    n_kv_heads: 7
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: 127
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 6144
+    hope_length: 2048
+    n_heads: 28
+    n_kv_heads: 7
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: -1
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 6144
+    hope_length: 2048
+    n_heads: 28
+    n_kv_heads: 7
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: 127
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 6144
+    hope_length: 2048
+    n_heads: 28
+    n_kv_heads: 7
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: 127
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 6144
+    hope_length: 2048
+    n_heads: 28
+    n_kv_heads: 7
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: -1
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 6144
+    hope_length: 2048
+    n_heads: 28
+    n_kv_heads: 7
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: 127
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 6144
+    hope_length: 2048
+    n_heads: 28
+    n_kv_heads: 7
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: 127
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 6144
+    hope_length: 2048
+    n_heads: 28
+    n_kv_heads: 7
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: -1
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 6144
+    hope_length: 2048
+    n_heads: 28
+    n_kv_heads: 7
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: 127
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 6144
+    hope_length: 2048
+    n_heads: 28
+    n_kv_heads: 7
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: 127
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 6144
+    hope_length: 2048
+    n_heads: 28
+    n_kv_heads: 7
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: -1
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 6144
+    hope_length: 2048
+    n_heads: 28
+    n_kv_heads: 7
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: 127
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 6144
+    hope_length: 2048
+    n_heads: 28
+    n_kv_heads: 7
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: 127
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 6144
+    hope_length: 2048
+    n_heads: 28
+    n_kv_heads: 7
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: -1
+  bos_token_id: null
+  dtype: bfloat16
+  embed_scale: null
+  eos_token_id: 16001
+  head_dim: 32
+  hidden_size: 896
+  hope_training_sequence_length: 2048
+  initializer_range: 0.02
+  intermediate_size: 6144
+  max_position_embeddings: 1000000000000000019884624838656
+  model_type: rambley_v2
+  mtp_configs: []
+  num_attention_heads: 28
+  num_hidden_layers: 18
+  num_key_value_heads: 7
+  pad_token_id: 16002
+  rms_norm_eps: 1.0e-06
+  rope_parameters:
+    rope_theta: 10000
+    rope_type: default
+  rope_theta: 10000
+  tie_word_embeddings: true
+  transformers_version: 5.22.1
+  use_cache: false
+  vocab_size: 16384
+onnxFiles: {}
+safetensorsSizeMb: 697.2
+approxSizeMb: 697.2
+fetchedAt: '2026-10-31T09:29:41.000Z'

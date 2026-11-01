@@ -1,0 +1,95 @@
+_id: 6ae628662e624a487c3befd3
+id: redmingwei/HeteroMoEProjSpace-v2
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- hetero_moe_projspace
+- feature-extraction
+- mixture-of-experts
+- heterogeneous
+- dimension-projection-space
+- custom_code
+- license:apache-2.0
+- region:us
+downloads: 101
+likes: 0
+modelId: redmingwei/HeteroMoEProjSpace-v2
+author: redmingwei
+sha: 808d15725b330c56b001f416b7063daac183ea72
+lastModified: '2026-11-01T08:59:00.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - HeteroMoEProjSpaceModel
+  auto_map:
+    AutoConfig: modeling_hetero_moe_projspace.HeteroMoEProjSpaceConfig
+    AutoModel: modeling_hetero_moe_projspace.HeteroMoEProjSpaceModel
+  model_type: hetero_moe_projspace
+cardData:
+  license: apache-2.0
+  tags:
+  - mixture-of-experts
+  - heterogeneous
+  - dimension-projection-space
+  library_name: transformers
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_hetero_moe_projspace.HeteroMoEProjSpaceModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: checkpoints/v62/README.md
+- rfilename: checkpoints/v62/heteromoe_projspace_v2.pt
+- rfilename: checkpoints/v62/report.json
+- rfilename: config.json
+- rfilename: example_inputs.npz
+- rfilename: expected_alpha.npy
+- rfilename: expected_y.npy
+- rfilename: model.safetensors
+- rfilename: modeling_hetero_moe_projspace.py
+- rfilename: processor_vit/preprocessor_config.json
+- rfilename: tokenizer_bert/tokenizer.json
+- rfilename: tokenizer_bert/tokenizer_config.json
+- rfilename: tokenizer_qwen/chat_template.jinja
+- rfilename: tokenizer_qwen/tokenizer.json
+- rfilename: tokenizer_qwen/tokenizer_config.json
+- rfilename: training_report.json
+spaces: []
+createdAt: '2026-10-31T17:41:58.000Z'
+safetensors:
+  parameters:
+    F32: 645190802
+  total: 645190802
+usedStorage: 31413103362
+downloadsAllTime: 101
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - HeteroMoEProjSpaceModel
+  auto_map:
+    AutoConfig: modeling_hetero_moe_projspace.HeteroMoEProjSpaceConfig
+    AutoModel: modeling_hetero_moe_projspace.HeteroMoEProjSpaceModel
+  bert_id: google/bert_uncased_L-4_H-256_A-4
+  d_shared: 256
+  d_space: 1024
+  dtype: float32
+  modal_dims:
+  - 896
+  - 256
+  - 768
+  model_type: hetero_moe_projspace
+  moe_top_k: 2
+  n_experts: 4
+  qwen_id: Qwen/Qwen2.5-0.5B-Instruct
+  transformers_version: 5.21.0
+  vit_id: google/vit-base-patch16-224-in21k
+onnxFiles: {}
+safetensorsSizeMb: 2580.8
+approxSizeMb: 2580.8
+fetchedAt: '2026-11-01T10:19:07.000Z'

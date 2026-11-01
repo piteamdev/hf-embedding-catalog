@@ -1,0 +1,107 @@
+_id: 6acb97030628f31e09f5bb5c
+id: mahir2021/mental-roberta-bilstm-depEMO
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- pytorch
+- safetensors
+- roberta
+- feature-extraction
+- mental-health
+- multi-label
+- mental-roberta-base
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 32
+likes: 0
+modelId: mahir2021/mental-roberta-bilstm-depEMO
+author: mahir2021
+sha: 24ceb8bf535fb2775512aaa9e5a4331c851d9d4f
+lastModified: '2026-10-31T17:09:34.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - RobertaModel
+  model_type: roberta
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  library_name: transformers
+  tags:
+  - mental-health
+  - multi-label
+  - mental-roberta-base
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: custom_config.json
+- rfilename: custom_head.bin
+- rfilename: emotion_mapping.json
+- rfilename: hyperparameters.json
+- rfilename: model.safetensors
+- rfilename: per_label_report.csv
+- rfilename: pytorch_model.bin
+- rfilename: split_indices.json
+- rfilename: test_predictions.npy
+- rfilename: test_results.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: training_log.json
+spaces: []
+createdAt: '2026-10-11T14:02:43.000Z'
+safetensors:
+  parameters:
+    F32: 124645632
+  total: 124645632
+usedStorage: 1522374597
+downloadsAllTime: 32
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - RobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 514
+  model_type: roberta
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 1
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.16.1
+  type_vocab_size: 1
+  use_cache: true
+  vocab_size: 50265
+onnxFiles: {}
+safetensorsSizeMb: 498.6
+approxSizeMb: 498.6
+fetchedAt: '2026-11-01T10:19:07.000Z'

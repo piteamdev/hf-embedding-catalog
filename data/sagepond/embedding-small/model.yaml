@@ -1,0 +1,156 @@
+_id: 6ae4f4c4542d17852c3feda1
+id: sagepond/embedding-small
+private: false
+pipeline_tag: sentence-similarity
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- sagepond_un_model
+- feature-extraction
+- luganda
+- embeddings
+- sentence-embeddings
+- semantic-search
+- research
+- sentence-similarity
+- custom_code
+- lug
+- dataset:sagepond/luganda
+- dataset:sagepond/sts
+- license:apache-2.0
+- model-index
+- region:us
+downloads: 53
+likes: 1
+modelId: sagepond/embedding-small
+author: sagepond
+sha: 66ccb14be85b6fb0e44a7894d188714042662499
+lastModified: '2026-10-31T18:57:41.000Z'
+gated: false
+disabled: false
+model-index:
+- name: SAGE POND Luganda Sentence Embedding Model
+  results:
+  - task:
+      type: sentence-similarity
+    dataset:
+      name: SAGE POND STS
+      type: sagepond/sts
+    metrics:
+    - name: Pearson correlation
+      type: pearson_correlation
+      value: 34.05598714230456
+      verified: false
+    - name: Spearman correlation
+      type: spearman_correlation
+      value: 47.91287610143128
+      verified: false
+    - name: STS score
+      type: sts_score
+      value: 40.98443162186792
+      verified: false
+config:
+  architectures:
+  - UnModel
+  auto_map:
+    AutoConfig: ganda_config.UnModelConfig
+    AutoModel: ganda_model.UnModel
+  model_type: sagepond_un_model
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    pad_token: <pad>
+cardData:
+  language:
+  - lug
+  library_name: transformers
+  pipeline_tag: sentence-similarity
+  tags:
+  - luganda
+  - embeddings
+  - sentence-embeddings
+  - semantic-search
+  - research
+  model-index:
+  - name: SAGE POND Luganda Sentence Embedding Model
+    results:
+    - task:
+        type: sentence-similarity
+      dataset:
+        name: SAGE POND STS
+        type: sagepond/sts
+      metrics:
+      - name: Pearson correlation
+        type: pearson_correlation
+        value: 34.05598714230456
+        verified: false
+      - name: Spearman correlation
+        type: spearman_correlation
+        value: 47.91287610143128
+        verified: false
+      - name: STS score
+        type: sts_score
+        value: 40.98443162186792
+        verified: false
+  license: apache-2.0
+  datasets:
+  - sagepond/luganda
+  - sagepond/sts
+  metrics:
+  - spearmanr
+  - pearsonr
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: ganda_model.UnModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: .ipynb_checkpoints/tokenizer_config-checkpoint.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: ganda_config.py
+- rfilename: ganda_model.py
+- rfilename: ganda_tokenizer.py
+- rfilename: model.safetensors
+- rfilename: new_bpe.model
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-30T19:49:24.000Z'
+safetensors:
+  parameters:
+    F32: 125686272
+  total: 125686272
+usedStorage: 503680576
+downloadsAllTime: 53
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - UnModel
+  auto_map:
+    AutoConfig: ganda_config.UnModelConfig
+    AutoModel: ganda_model.UnModel
+    AutoTokenizer:
+    - tokenization_un_model.UnModelTokenizer
+    - null
+  bos_token_id: 2
+  dropout: 0.1
+  dtype: float32
+  embedding_dim: 3072
+  eos_token_id: 3
+  hidden_act: relu
+  hidden_size: 768
+  intermediate_size: 3072
+  max_position_embeddings: 600
+  model_type: sagepond_un_model
+  num_attention_heads: 16
+  num_hidden_layers: 12
+  pad_token_id: 0
+  transformers_version: 5.20.2
+  unk_token_id: 1
+  vocab_size: 40000
+onnxFiles: {}
+safetensorsSizeMb: 502.8
+approxSizeMb: 502.7
+fetchedAt: '2026-11-01T10:19:07.000Z'

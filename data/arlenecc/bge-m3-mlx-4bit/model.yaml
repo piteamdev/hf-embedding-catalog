@@ -1,0 +1,136 @@
+_id: 6ae6c3249b60e7b1223c7311
+id: arlenecc/bge-m3-mlx-4bit
+private: false
+pipeline_tag: feature-extraction
+library_name: mlx
+tags:
+- mlx
+- safetensors
+- xlm-roberta
+- embedding
+- text-embeddings-inference
+- retrieval
+- sentence-transformers
+- 4bit
+- quantized
+- feature-extraction
+- multilingual
+- en
+- zh
+- de
+- es
+- fr
+- it
+- ja
+- ko
+- pt
+- ru
+- arxiv:2402.03216
+- base_model:BAAI/bge-m3
+- base_model:finetune:BAAI/bge-m3
+- license:mit
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: arlenecc/bge-m3-mlx-4bit
+author: arlenecc
+sha: c01ce565940269080f870e23547b3e00879f4753
+lastModified: '2026-11-01T07:00:15.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - XLMRobertaModel
+  model_type: xlm-roberta
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  license: mit
+  language:
+  - multilingual
+  - en
+  - zh
+  - de
+  - es
+  - fr
+  - it
+  - ja
+  - ko
+  - pt
+  - ru
+  pipeline_tag: feature-extraction
+  tags:
+  - mlx
+  - embedding
+  - text-embeddings-inference
+  - retrieval
+  - sentence-transformers
+  - 4bit
+  - quantized
+  library_name: mlx
+  base_model: BAAI/bge-m3
+siblings:
+- rfilename: .DS_Store
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: model.safetensors.index.json
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-01T04:42:12.000Z'
+safetensors:
+  parameters:
+    F16: 322560
+    U32: 567432192
+  total: 567754752
+usedStorage: 337001753
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - XLMRobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 1024
+  initializer_range: 0.02
+  intermediate_size: 4096
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 8194
+  model_type: xlm-roberta
+  num_attention_heads: 16
+  num_hidden_layers: 24
+  output_past: true
+  pad_token_id: 1
+  position_embedding_type: absolute
+  quantization:
+    bits: 4
+    group_size: 64
+    mode: affine
+  torch_dtype: float32
+  transformers_version: 4.33.0
+  type_vocab_size: 1
+  use_cache: true
+  vocab_size: 250002
+onnxFiles: {}
+safetensorsSizeMb: 319.9
+approxSizeMb: 2270.4
+fetchedAt: '2026-11-01T10:19:07.000Z'

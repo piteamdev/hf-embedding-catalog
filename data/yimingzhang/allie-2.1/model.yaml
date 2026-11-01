@@ -1,0 +1,103 @@
+_id: 6ae63b9d1cef0d52d143a5b5
+id: yimingzhang/allie-2.1
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- allie
+- feature-extraction
+- chess
+- human-behavior
+- mixture-of-experts
+- custom_code
+- arxiv:2410.03893
+- arxiv:2605.19091
+- license:mit
+- region:us
+downloads: 19
+likes: 0
+modelId: yimingzhang/allie-2.1
+author: yimingzhang
+sha: 788986b35ebd98900d5ae1df095b72720275e0c0
+lastModified: '2026-10-31T19:13:59.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - AllieModel
+  auto_map:
+    AutoConfig: configuration_allie.AllieConfig
+    AutoModel: modeling_allie.AllieModel
+  model_type: allie
+cardData:
+  license: mit
+  library_name: transformers
+  tags:
+  - chess
+  - human-behavior
+  - mixture-of-experts
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_allie.AllieModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: api.py
+- rfilename: config.json
+- rfilename: configuration_allie.py
+- rfilename: fast.py
+- rfilename: fastrs.py
+- rfilename: model.py
+- rfilename: model.safetensors
+- rfilename: modeling_allie.py
+- rfilename: tokens.py
+spaces: []
+createdAt: '2026-10-31T19:03:57.000Z'
+safetensors:
+  parameters:
+    F32: 11059328
+    BF16: 9175605280
+  total: 9186664608
+usedStorage: 18395469944
+downloadsAllTime: 19
+inferenceProviderMapping: {}
+configJson:
+  layers: 24
+  width: 2048
+  heads: 32
+  head_dim: 64
+  vocab: 2432
+  value_embeds: 5
+  experts: 256
+  topk: 16
+  expert_hidden: 256
+  shared_hidden: 1360
+  gate_floor: 0.0
+  attn_scale: 0.1
+  log_gates: true
+  name: allie-2.1
+  step: 213623
+  checkpoint_sha256: 1a172a2d4fed499794c630d2db28d7267461d9aeef6a346ab7304044f7efd410
+  readout:
+    final_step: 213623
+    final_sha256: 49e2f61ee8c56ea3590e0cb97c780177d883af1f860ace718131b156a1115ed5
+    tail: tail-ema-0.08.pt
+    tail_sha256: 1b6ddee326bc5fe54d4169f6929d87de706ffd6853ecb6d018cdb82a61fa65ba
+    horizon: 0.08
+    every: 64
+    ema_from: 162354
+    gamma: 0.5
+  model_type: allie
+  architectures:
+  - AllieModel
+  auto_map:
+    AutoConfig: configuration_allie.AllieConfig
+    AutoModel: modeling_allie.AllieModel
+onnxFiles: {}
+safetensorsSizeMb: 18395.5
+approxSizeMb: 18395.4
+fetchedAt: '2026-11-01T10:19:07.000Z'

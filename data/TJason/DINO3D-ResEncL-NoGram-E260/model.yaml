@@ -1,0 +1,94 @@
+_id: 6ae61e257b5be2d991dd99cc
+id: TJason/DINO3D-ResEncL-NoGram-E260
+private: false
+pipeline_tag: feature-extraction
+tags:
+- native_3d_dino_resencl_encoder
+- medical
+- 3d
+- self-supervised-learning
+- dino
+- feature-extraction
+- arxiv:2610.17573
+- license:cc-by-4.0
+- region:us
+downloads: 25
+likes: 0
+modelId: TJason/DINO3D-ResEncL-NoGram-E260
+author: TJason
+sha: 4af37e7c8f35c06dca86efa38cbf14a2acb66cc2
+lastModified: '2026-10-31T18:15:40.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: native_3d_dino_resencl_encoder
+cardData:
+  license: cc-by-4.0
+  pipeline_tag: feature-extraction
+  tags:
+  - medical
+  - 3d
+  - self-supervised-learning
+  - dino
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE.md
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: dino_cnn_encoder.py
+- rfilename: encoder.safetensors
+- rfilename: load_encoder.py
+- rfilename: requirements.txt
+- rfilename: validation.json
+spaces: []
+createdAt: '2026-10-31T16:58:13.000Z'
+usedStorage: 361615340
+downloadsAllTime: 25
+inferenceProviderMapping: {}
+configJson:
+  model_type: native_3d_dino_resencl_encoder
+  model_id: 772
+  epoch: 260
+  source_state: network_weights
+  encoder_role: student
+  input_channels: 1
+  features:
+  - 32
+  - 64
+  - 128
+  - 256
+  - 320
+  - 320
+  blocks_per_stage:
+  - 1
+  - 3
+  - 4
+  - 6
+  - 6
+  - 6
+  strides:
+  - 1
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  output_stride: 32
+  recommended_patch_size:
+  - 160
+  - 160
+  - 160
+  pretraining_local_crop_size:
+  - 96
+  - 96
+  - 96
+  pretraining_seed: 12345
+  pretraining_initial_checkpoint: null
+  architecture_note: Custom native-3D CNN, not standard nnssl ResEncL or an official Meta DINOv3 ViT checkpoint.
+  preprocessing_note: 'Recorded training data view: nnsslPlans_onemmiso; benchmark uses 1 mm isotropic Z-score input. External
+    preprocessing required.'
+onnxFiles: {}
+safetensorsSizeMb: 361.6
+approxSizeMb: 0.0
+fetchedAt: '2026-11-01T10:19:07.000Z'

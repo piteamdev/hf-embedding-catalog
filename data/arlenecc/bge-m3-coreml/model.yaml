@@ -1,0 +1,64 @@
+_id: 6ae619c2aceb3bbab4556160
+id: arlenecc/bge-m3-coreml
+private: false
+pipeline_tag: feature-extraction
+tags:
+- coreml
+- embeddings
+- multilingual
+- sentence-similarity
+- ohia
+- feature-extraction
+- base_model:BAAI/bge-m3
+- base_model:quantized:BAAI/bge-m3
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: arlenecc/bge-m3-coreml
+author: arlenecc
+sha: d880bd5b1a07cc99a16332c99862293c48146bb4
+lastModified: '2026-11-01T05:09:56.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  license: mit
+  base_model:
+  - BAAI/bge-m3
+  pipeline_tag: feature-extraction
+  tags:
+  - coreml
+  - embeddings
+  - multilingual
+  - sentence-similarity
+  - ohia
+siblings:
+- rfilename: .DS_Store
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: bge-m3.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: bge-m3.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: bge-m3.mlpackage/Manifest.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-31T16:39:30.000Z'
+usedStorage: 2286278469
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-01T10:19:07.000Z'

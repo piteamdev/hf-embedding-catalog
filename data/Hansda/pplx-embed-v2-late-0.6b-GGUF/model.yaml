@@ -1,0 +1,119 @@
+_id: 6ae628b496912ec68889fd94
+id: Hansda/pplx-embed-v2-late-0.6b-GGUF
+private: false
+pipeline_tag: feature-extraction
+tags:
+- gguf
+- late-interaction
+- colbert
+- embeddings
+- llama.cpp
+- feature-extraction
+- base_model:perplexity-ai/pplx-embed-v2-late-0.6b
+- base_model:quantized:perplexity-ai/pplx-embed-v2-late-0.6b
+- license:mit
+- endpoints_compatible
+- region:us
+- conversational
+downloads: 78
+likes: 0
+modelId: Hansda/pplx-embed-v2-late-0.6b-GGUF
+author: Hansda
+sha: 3225945c8aacc61162fc146bcdc109950e452c34
+lastModified: '2026-10-31T17:45:23.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  chat_template_jinja: '{%- for message in messages if message[''role''] == ''system'' -%}
+
+    {%- for content in message[''content''] -%}{{ content[''text''] }}{%- endfor -%}
+
+    {%- endfor -%}
+
+    {%- for message in messages if message[''role''] != ''system'' -%}
+
+    {%- for content in message[''content''] if content[''type''] == ''image'' -%}
+
+    {{ ''<|vision_start|><|image_pad|><|vision_end|>'' }}
+
+    {%- endfor -%}
+
+    {%- for content in message[''content''] if content[''type''] == ''text'' -%}
+
+    {{ content[''text''] }}
+
+    {%- endfor -%}
+
+    {%- endfor -%}'
+cardData:
+  license: mit
+  base_model: perplexity-ai/pplx-embed-v2-late-0.6b
+  base_model_relation: quantized
+  pipeline_tag: feature-extraction
+  tags:
+  - gguf
+  - late-interaction
+  - colbert
+  - embeddings
+  - llama.cpp
+gguf:
+  total: 493859776
+  architecture: qwen35
+  context_length: 262144
+  causal: false
+  chat_template: '{%- for message in messages if message[''role''] == ''system'' -%}
+
+    {%- for content in message[''content''] -%}{{ content[''text''] }}{%- endfor -%}
+
+    {%- endfor -%}
+
+    {%- for message in messages if message[''role''] != ''system'' -%}
+
+    {%- for content in message[''content''] if content[''type''] == ''image'' -%}
+
+    {{ ''<|vision_start|><|image_pad|><|vision_end|>'' }}
+
+    {%- endfor -%}
+
+    {%- for content in message[''content''] if content[''type''] == ''text'' -%}
+
+    {{ content[''text''] }}
+
+    {%- endfor -%}
+
+    {%- endfor -%}'
+  eos_token: <|im_end|>
+  pooling_type: 0
+  totalFileSize: 999280864
+siblings:
+- rfilename: .gitattributes
+- rfilename: ATTRIBUTION.md
+- rfilename: CHANGES.md
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: REPRODUCE.md
+- rfilename: chat_template.jinja
+- rfilename: conversion-metadata.json
+- rfilename: convert_pplx.py
+- rfilename: late-interaction-config.json
+- rfilename: late_interaction.py
+- rfilename: licenses/Qwen3.5-0.8B-Base-LICENSE
+- rfilename: licenses/Qwen3.5-0.8B-LICENSE
+- rfilename: licenses/llama.cpp-LICENSE
+- rfilename: manifest.json
+- rfilename: model-manifest.json
+- rfilename: pplx-embed-v2-late-0.6b-F16.gguf
+- rfilename: pplx-embed-v2-late-0.6b-Q4_K_M.gguf
+- rfilename: pplx-embed-v2-late-0.6b-Q6_K.gguf
+- rfilename: runtime-info.json
+spaces: []
+createdAt: '2026-10-31T17:43:16.000Z'
+usedStorage: 1782630560
+downloadsAllTime: 78
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-01T10:19:07.000Z'

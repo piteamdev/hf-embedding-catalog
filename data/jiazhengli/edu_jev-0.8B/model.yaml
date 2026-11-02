@@ -1,0 +1,227 @@
+_id: 6ae3a0e0be696553bf50d5ac
+id: jiazhengli/edu_jev-0.8B
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- edujev
+- feature-extraction
+- education
+- assessment
+- scoring
+- decision
+- custom_code
+- arxiv:2610.41079
+- base_model:Qwen/Qwen3.5-0.8B-Base
+- base_model:finetune:Qwen/Qwen3.5-0.8B-Base
+- license:cc-by-nc-4.0
+- region:us
+downloads: 0
+likes: 0
+modelId: jiazhengli/edu_jev-0.8B
+author: jiazhengli
+sha: a7d36df4f622db5e5b7d3ab7ee5d24e04b66629f
+lastModified: '2026-11-02T10:21:35.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - EduJevForDecision
+  auto_map:
+    AutoConfig: configuration_edujev.EduJevConfig
+    AutoModel: modeling_edujev.EduJevForDecision
+  model_type: edujev
+  tokenizer_config:
+    bos_token: null
+    eos_token: <|endoftext|>
+    unk_token: null
+    pad_token: <|endoftext|>
+  chat_template_jinja: "{#-\n  EDU-Jev input format. Renders ONE decision question (with its optional state) into the model\
+    \ input.\n\n  messages = [\n    {\"role\": \"state\",    \"content\": {<state fields>}},    # optional, at most one\n\
+    \    {\"role\": \"question\", \"content\": {\"type\": \"choice\" | \"score\" | \"noul\",\n                           \
+    \          \"instructions\": \"<what to decide>\",\n                                     \"options\": [\"<option 1>\"\
+    , \"<option 2>\", ...],   # K >= 2; str or {\"text\": ...}\n                                     \"lang\": \"en\" | \"\
+    zh\",          # optional, default \"en\" (field labels)\n                                     \"label_scheme\": \"none\"\
+    }},     # optional; keep \"none\" for this model\n  ]\n  State fields (all optional, rendered in this order; empty values\
+    \ skipped):\n    passage, context, question, reference_answer, rubric, key_points, solution_steps, text, dialogue,\n \
+    \   student_answer, candidate_response.   (\"subject\" / \"grade\" are accepted and ignored.)\n    str values are used\
+    \ as they are; lists become \"- item\" lines; dicts become \"- key: value\" lines;\n    solution_steps -> \"[Step i] ...\"\
+    \ lines; dialogue = [{\"role\": ..., \"text\": ...}, ...].\n  type: choice = pick one option; score = options are score\
+    \ levels, listed low -> high; noul = two options (yes / no).\n\n  Output layout:\n    <|state|>\\n Field: value\\n ...\
+    \ <|question|> [type]\\n instructions\\n <|options|>\\n opt_1<opt>\\n opt_2<opt> ... \\n<|decide|>\n  The model returns\
+    \ one logit per <opt>, in the order the options are listed. Special-token strings inside user text\n  are escaped (a zero-width\
+    \ space is inserted), so they can never act as markers.\n  Equivalent kwargs form: apply_chat_template([{\"role\": \"\
+    user\", \"content\": \"\"}], state={...}, question={...}).\n-#}\n{%- set SPECIALS = [\"<tts_text_bos_single>\", \"<|object_ref_start|>\"\
+    , \"<|object_ref_end|>\", \"</tool_response>\", \"<|vision_start|>\", \"<tool_response>\", \"<|audio_start|>\", \"<tts_text_bos>\"\
+    , \"<tts_text_eod>\", \"<|fim_middle|>\", \"<|fim_prefix|>\", \"<|fim_suffix|>\", \"<|quad_start|>\", \"<|vision_end|>\"\
+    , \"<|vision_pad|>\", \"<|audio_end|>\", \"<|audio_pad|>\", \"<|box_start|>\", \"<|endoftext|>\", \"<|image_pad|>\", \"\
+    <|repo_name|>\", \"<|video_pad|>\", \"</tool_call>\", \"<|file_sep|>\", \"<|im_start|>\", \"<|quad_end|>\", \"<|question|>\"\
+    , \"<tool_call>\", \"<|box_end|>\", \"<|fim_pad|>\", \"<|options|>\", \"<|decide|>\", \"<|im_end|>\", \"<tts_pad>\", \"\
+    <|field|>\", \"<|state|>\", \"</think>\", \"<think>\", \"<opt>\"] -%}\n{%- set FIELDS = [\"passage\", \"context\", \"\
+    question\", \"reference_answer\", \"rubric\", \"key_points\", \"solution_steps\", \"text\", \"dialogue\", \"student_answer\"\
+    , \"candidate_response\"] -%}\n{%- set KNOWN = [\"subject\", \"grade\", \"passage\", \"context\", \"question\", \"reference_answer\"\
+    , \"rubric\", \"key_points\", \"solution_steps\", \"text\", \"dialogue\", \"student_answer\", \"candidate_response\"]\
+    \ -%}\n{%- set LABELS_EN = {\"subject\": \"Subject\", \"grade\": \"Grade\", \"passage\": \"Passage\", \"context\": \"\
+    Context\", \"question\": \"Question\", \"reference_answer\": \"Reference answer\", \"rubric\": \"Rubric\", \"key_points\"\
+    : \"Key points\", \"solution_steps\": \"Solution steps\", \"text\": \"Text\", \"dialogue\": \"Dialogue\", \"student_answer\"\
+    : \"Student answer\", \"candidate_response\": \"Response to evaluate\", \"step\": \"Step\"} -%}\n{%- set LABELS_ZH = {\"\
+    subject\": \"学科\", \"grade\": \"年级\", \"passage\": \"阅读材料\", \"context\": \"上下文\", \"question\": \"题目\", \"reference_answer\"\
+    : \"参考答案\", \"rubric\": \"评分标准\", \"key_points\": \"要点\", \"solution_steps\": \"解题步骤\", \"text\": \"文本\", \"dialogue\"\
+    : \"对话\", \"student_answer\": \"学生作答\", \"candidate_response\": \"待评估回复\", \"step\": \"步骤\"} -%}\n{%- set TAGS = {\"choice\"\
+    : \"[choice]\", \"score\": \"[score]\", \"noul\": \"[yes/no]\"} -%}\n{%- set LETTERS = [\"A\", \"B\", \"C\", \"D\", \"\
+    E\", \"F\", \"G\", \"H\", \"I\", \"J\", \"K\", \"L\", \"M\", \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"\
+    V\", \"W\", \"X\", \"Y\", \"Z\"] -%}\n{%- macro esc(t) -%}{%- if \"<\" not in t -%}{{- t -}}{%- else -%}{%- set ns = namespace(s=t)\
+    \ -%}{%- for sp in SPECIALS -%}{%- if sp in ns.s -%}{%- set ns.s = ns.s.replace(sp, sp[0] ~ \"​\" ~ sp[1:]) -%}{%- endif\
+    \ -%}{%- endfor -%}{{- ns.s -}}{%- endif -%}{%- endmacro -%}\n{%- macro item(x) -%}{%- if x is string -%}{{- x -}}{%-\
+    \ else -%}{{- x | tojson -}}{%- endif -%}{%- endmacro -%}\n{%- macro fmt(name, v, L) -%}{%- if v is string -%}{{- v -}}{%-\
+    \ elif name == \"solution_steps\" -%}{%- for s in v -%}{{- \"\\n[\" ~ L[\"step\"] ~ \" \" ~ loop.index0 ~ \"] \" ~ s -}}{%-\
+    \ endfor -%}{%- elif name == \"dialogue\" -%}{%- for t in v -%}{{- \"\\n\" ~ t[\"role\"] ~ \": \" ~ t[\"text\"] -}}{%-\
+    \ endfor -%}{%- elif v is mapping -%}{%- for k, x in v.items() -%}{{- \"\\n- \" ~ k ~ \": \" ~ item(x) -}}{%- endfor -%}{%-\
+    \ elif v is iterable -%}{%- for x in v -%}{{- \"\\n- \" ~ item(x) -}}{%- endfor -%}{%- else -%}{{- v | string -}}{%- endif\
+    \ -%}{%- endmacro -%}\n{%- macro empty(v) -%}{%- if v is none or (v is string and v == \"\") or (v is not string and v\
+    \ is iterable and v | length == 0) -%}1{%- endif -%}{%- endmacro -%}\n{%- set st = namespace(state=none, question=none)\
+    \ -%}\n{%- if question is defined -%}{%- set st.question = question -%}{%- if state is defined -%}{%- set st.state = state\
+    \ -%}{%- endif -%}\n{%- else -%}{%- for m in messages -%}\n{%- if m[\"role\"] == \"state\" -%}{%- if st.state is not none\
+    \ -%}{{- raise_exception(\"edujev: more than one state message\") -}}{%- endif -%}{%- set st.state = m[\"content\"] -%}\n\
+    {%- elif m[\"role\"] == \"question\" -%}{%- if st.question is not none -%}{{- raise_exception(\"edujev: exactly one question\
+    \ message per sequence\") -}}{%- endif -%}{%- set st.question = m[\"content\"] -%}\n{%- else -%}{{- raise_exception(\"\
+    edujev: unknown role \" ~ m[\"role\"] ~ \" (use state / question)\") -}}{%- endif -%}\n{%- endfor -%}{%- endif -%}\n{%-\
+    \ if st.question is none -%}{{- raise_exception(\"edujev: no question given\") -}}{%- endif -%}\n{%- set S = st.state\
+    \ if st.state is not none else {} -%}{%- set Q = st.question -%}\n{%- if S is string or S is not mapping -%}{{- raise_exception(\"\
+    edujev: state content must be a mapping of fields\") -}}{%- endif -%}\n{%- if Q is string or Q is not mapping -%}{{- raise_exception(\"\
+    edujev: question content must be a mapping\") -}}{%- endif -%}\n{%- for k in S -%}{%- if k not in KNOWN -%}{{- raise_exception(\"\
+    edujev: unknown state field \" ~ k) -}}{%- endif -%}{%- endfor -%}\n{%- if lang is defined and lang is not none -%}{%-\
+    \ set LG = lang -%}{%- else -%}{%- set LG = Q.get(\"lang\") or \"en\" -%}{%- endif -%}\n{%- if label_scheme is defined\
+    \ and label_scheme is not none -%}{%- set LS = label_scheme -%}{%- else -%}{%- set LS = Q.get(\"label_scheme\") or \"\
+    none\" -%}{%- endif -%}\n{%- if LG[:2] == \"zh\" -%}{%- set L = LABELS_ZH -%}{%- set SEP = \"：\" -%}{%- set SPC = \"\"\
+    \ -%}{%- else -%}{%- set L = LABELS_EN -%}{%- set SEP = \":\" -%}{%- set SPC = \" \" -%}{%- endif -%}\n{{- \"<|state|>\"\
+    \ -}}{{- \"\\n\" -}}\n{%- for name in FIELDS -%}{%- set v = S.get(name) -%}{%- if not empty(v) -%}{{- esc(L.get(name,\
+    \ name) ~ SEP ~ SPC ~ fmt(name, v, L) ~ \"\\n\") -}}{%- endif -%}{%- endfor -%}\n{%- if Q.get(\"type\") not in TAGS -%}{{-\
+    \ raise_exception(\"edujev: question type must be choice / score / noul\") -}}{%- endif -%}\n{{- \"<|question|>\" -}}{{-\
+    \ esc(\" \" ~ TAGS[Q[\"type\"]] ~ \"\\n\" ~ (Q.get(\"instructions\") or \"\") ~ \"\\n\") -}}{{- \"<|options|>\" -}}\n\
+    {%- set OPTS = Q.get(\"options\") or [] -%}{%- set K = OPTS | length -%}\n{%- if K < 2 -%}{{- raise_exception(\"edujev:\
+    \ a question needs >= 2 options\") -}}{%- endif -%}\n{%- if LS not in [\"none\", \"letter\", \"number\"] -%}{{- raise_exception(\"\
+    edujev: label_scheme must be none / letter / number\") -}}{%- endif -%}\n{%- if LS == \"letter\" and K > LETTERS | length\
+    \ -%}{{- raise_exception(\"edujev: letter scheme supports K <= \" ~ (LETTERS | length)) -}}{%- endif -%}\n{%- for o in\
+    \ OPTS -%}{%- set tx = o if o is string else o[\"text\"] -%}{%- if tx | trim == \"\" -%}{{- raise_exception(\"edujev:\
+    \ empty option text\") -}}{%- endif -%}{%- if LS == \"letter\" -%}{%- set pre = LETTERS[loop.index0] ~ \". \" -%}{%- elif\
+    \ LS == \"number\" -%}{%- set pre = loop.index ~ \". \" -%}{%- else -%}{%- set pre = \"\" -%}{%- endif -%}{{- esc(\"\\\
+    n\" ~ pre ~ tx) -}}{{- \"<opt>\" -}}{%- endfor -%}\n{{- \"\\n\" -}}{{- \"<|decide|>\" -}}"
+cardData:
+  license: cc-by-nc-4.0
+  library_name: transformers
+  base_model: Qwen/Qwen3.5-0.8B-Base
+  tags:
+  - education
+  - assessment
+  - scoring
+  - decision
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_edujev.EduJevForDecision
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: chat_template.jinja
+- rfilename: config.json
+- rfilename: configuration_edujev.py
+- rfilename: model.safetensors
+- rfilename: modeling_edujev.py
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-29T19:39:12.000Z'
+safetensors:
+  parameters:
+    F32: 755540801
+  total: 755540801
+usedStorage: 3042190767
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - EduJevForDecision
+  attention_bias: false
+  attention_dropout: 0.0
+  attn_output_gate: true
+  auto_map:
+    AutoConfig: configuration_edujev.EduJevConfig
+    AutoModel: modeling_edujev.EduJevForDecision
+  bos_token_id: null
+  dtype: float32
+  eos_token_id: 248044
+  full_attention_interval: 4
+  head_dim: 256
+  head_hidden: 1024
+  hidden_act: silu
+  hidden_size: 1024
+  initializer_range: 0.02
+  intermediate_size: 3584
+  layer_types:
+  - linear_attention
+  - linear_attention
+  - linear_attention
+  - full_attention
+  - linear_attention
+  - linear_attention
+  - linear_attention
+  - full_attention
+  - linear_attention
+  - linear_attention
+  - linear_attention
+  - full_attention
+  - linear_attention
+  - linear_attention
+  - linear_attention
+  - full_attention
+  - linear_attention
+  - linear_attention
+  - linear_attention
+  - full_attention
+  - linear_attention
+  - linear_attention
+  - linear_attention
+  - full_attention
+  linear_conv_kernel_dim: 4
+  linear_key_head_dim: 128
+  linear_num_key_heads: 16
+  linear_num_value_heads: 16
+  linear_value_head_dim: 128
+  mamba_ssm_dtype: float32
+  max_position_embeddings: 262144
+  mlp_only_layers: []
+  model_type: edujev
+  num_attention_heads: 8
+  num_hidden_layers: 24
+  num_key_value_heads: 2
+  pad_token_id: 248044
+  partial_rotary_factor: 0.25
+  rms_norm_eps: 1.0e-06
+  rope_parameters:
+    mrope_interleaved: true
+    mrope_section:
+    - 11
+    - 11
+    - 10
+    partial_rotary_factor: 0.25
+    rope_theta: 10000000
+    rope_type: default
+  special_token_ids:
+    decide: 248081
+    field: 248082
+    opt: 248080
+    options: 248079
+    question: 248078
+    state: 248077
+  tie_word_embeddings: true
+  transformers_version: 5.17.0
+  use_cache: false
+  vocab_size: 248320
+onnxFiles: {}
+safetensorsSizeMb: 3022.2
+approxSizeMb: 3022.2
+fetchedAt: '2026-11-02T10:51:46.000Z'

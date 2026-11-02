@@ -1,0 +1,47 @@
+_id: 6ae7edbe1c312ffa6af44a15
+id: imagent/siglip2-base-384-onnx
+private: false
+pipeline_tag: feature-extraction
+tags:
+- onnx
+- imagent
+- feature-extraction
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: imagent/siglip2-base-384-onnx
+author: imagent
+sha: f3a517a5d0bbb2dd2cad09ddca2f980ea000da2c
+lastModified: '2026-11-02T01:56:37.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  tags:
+  - imagent
+  - onnx
+  - feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: export_siglip.py
+- rfilename: parity.json
+- rfilename: text.onnx
+- rfilename: vision.onnx
+- rfilename: vocab.json
+spaces: []
+createdAt: '2026-11-02T01:56:14.000Z'
+usedStorage: 751372197
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  text.onnx: 564.8
+  vision.onnx: 186.6
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-02T10:51:46.000Z'

@@ -1,0 +1,78 @@
+_id: 6ae7b9a12e624a487c817c89
+id: fse/fasttext-crawl-subwords-300-sif10-int8
+private: false
+pipeline_tag: feature-extraction
+library_name: fse
+tags:
+- fse
+- safetensors
+- static-embeddings
+- sentence-embeddings
+- gensim
+- fasttext
+- word-embeddings
+- feature-extraction
+- en
+- dataset:HuggingFaceFW/fineweb-edu-llama3-annotations
+- base_model:fse/fasttext-crawl-subwords-300
+- base_model:quantized:fse/fasttext-crawl-subwords-300
+- license:cc-by-sa-3.0
+- 8-bit
+- region:us
+downloads: 20
+likes: 0
+modelId: fse/fasttext-crawl-subwords-300-sif10-int8
+author: fse
+sha: fa25d72cc7d13442b675d41bd596426c0018dee5
+lastModified: '2026-11-02T06:33:57.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: fse
+cardData:
+  library_name: fse
+  license: cc-by-sa-3.0
+  base_model: fse/fasttext-crawl-subwords-300
+  base_model_relation: quantized
+  language:
+  - en
+  pipeline_tag: feature-extraction
+  tags:
+  - fse
+  - static-embeddings
+  - sentence-embeddings
+  - gensim
+  - fasttext
+  - word-embeddings
+  datasets:
+  - HuggingFaceFW/fineweb-edu-llama3-annotations
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: preparation.json
+spaces: []
+createdAt: '2026-11-01T22:13:53.000Z'
+safetensors:
+  parameters:
+    F32: 4000000
+    I8: 1200000000
+    U8: 15845062
+    I64: 2000001
+  total: 1221845063
+usedStorage: 1247846930
+downloadsAllTime: 20
+inferenceProviderMapping: {}
+configJson:
+  fingerprint: xxh3-128:075213b2d66190094fb9dc35b84e2f35
+  fse_config_version: 1
+  fse_format_version: 1
+  fse_kind: encoder
+  model: model.safetensors
+  model_type: fse
+onnxFiles: {}
+safetensorsSizeMb: 1247.8
+approxSizeMb: 1239.8
+fetchedAt: '2026-11-02T10:51:46.000Z'

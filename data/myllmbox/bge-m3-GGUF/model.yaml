@@ -1,0 +1,59 @@
+_id: 6ae71a957b5be2d9911003e8
+id: myllmbox/bge-m3-GGUF
+private: false
+pipeline_tag: feature-extraction
+library_name: gguf
+tags:
+- gguf
+- embeddings
+- llama.cpp
+- bge-m3
+- feature-extraction
+- base_model:BAAI/bge-m3
+- base_model:quantized:BAAI/bge-m3
+- license:mit
+- endpoints_compatible
+- region:us
+downloads: 22
+likes: 0
+modelId: myllmbox/bge-m3-GGUF
+author: myllmbox
+sha: a9ced0a5287a7be00eedbc943cb505ee41bf20f4
+lastModified: '2026-11-01T11:18:16.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  base_model: BAAI/bge-m3
+  library_name: gguf
+  pipeline_tag: feature-extraction
+  tags:
+  - gguf
+  - embeddings
+  - llama.cpp
+  - bge-m3
+gguf:
+  total: 566703104
+  architecture: bert
+  context_length: 8192
+  causal: false
+  bos_token: <s>
+  eos_token: </s>
+  pooling_type: 2
+  totalFileSize: 1157671200
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: bge-m3-f16.gguf
+spaces: []
+createdAt: '2026-11-01T10:55:17.000Z'
+usedStorage: 1157671200
+downloadsAllTime: 22
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-02T10:51:46.000Z'

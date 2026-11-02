@@ -1,0 +1,121 @@
+_id: 6ae810a87f09a25ba1db80e1
+id: okayuji/embeddinggemma-2-coreml-ane
+private: false
+pipeline_tag: feature-extraction
+library_name: coreml
+tags:
+- coreml
+- apple-neural-engine
+- embeddings
+- multimodal
+- image-feature-extraction
+- audio-feature-extraction
+- sentence-similarity
+- feature-extraction
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:apache-2.0
+- region:us
+downloads: 5
+likes: 0
+modelId: okayuji/embeddinggemma-2-coreml-ane
+author: okayuji
+sha: 597fa03a9f064e05e4cef0ce909b4549458b0c22
+lastModified: '2026-11-02T04:50:31.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: coreml
+  license: apache-2.0
+  base_model: google/embeddinggemma-2
+  pipeline_tag: feature-extraction
+  tags:
+  - coreml
+  - apple-neural-engine
+  - embeddings
+  - multimodal
+  - image-feature-extraction
+  - audio-feature-extraction
+  - sentence-similarity
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: examples/query-fp16-run.json
+- rfilename: examples/query-fp16.json
+- rfilename: fp16/LICENSE
+- rfilename: fp16/NOTICE
+- rfilename: fp16/SOURCE_MODEL_CARD.md
+- rfilename: fp16/USAGE.txt
+- rfilename: fp16/audio.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: fp16/audio.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: fp16/audio.mlpackage/Manifest.json
+- rfilename: fp16/bundle.json
+- rfilename: fp16/embed.py
+- rfilename: fp16/manifest.json
+- rfilename: fp16/processor/chat_template.jinja
+- rfilename: fp16/processor/config.json
+- rfilename: fp16/processor/config_sentence_transformers.json
+- rfilename: fp16/processor/modules.json
+- rfilename: fp16/processor/preprocessor_config.json
+- rfilename: fp16/processor/processor_config.json
+- rfilename: fp16/processor/sentence_bert_config.json
+- rfilename: fp16/processor/tokenizer.json
+- rfilename: fp16/processor/tokenizer_config.json
+- rfilename: fp16/ranking-comparison.json
+- rfilename: fp16/requirements.txt
+- rfilename: fp16/runtime-fp16-ane.xml
+- rfilename: fp16/stress-reference.json
+- rfilename: fp16/text.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: fp16/text.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: fp16/text.mlpackage/Manifest.json
+- rfilename: fp16/token_embeddings.bf16
+- rfilename: fp16/verification.json
+- rfilename: fp16/vision.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: fp16/vision.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: fp16/vision.mlpackage/Manifest.json
+- rfilename: int8/LICENSE
+- rfilename: int8/NOTICE
+- rfilename: int8/SOURCE_MODEL_CARD.md
+- rfilename: int8/USAGE.txt
+- rfilename: int8/audio.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: int8/audio.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: int8/audio.mlpackage/Manifest.json
+- rfilename: int8/bundle.json
+- rfilename: int8/embed.py
+- rfilename: int8/manifest.json
+- rfilename: int8/processor/chat_template.jinja
+- rfilename: int8/processor/config.json
+- rfilename: int8/processor/config_sentence_transformers.json
+- rfilename: int8/processor/modules.json
+- rfilename: int8/processor/preprocessor_config.json
+- rfilename: int8/processor/processor_config.json
+- rfilename: int8/processor/sentence_bert_config.json
+- rfilename: int8/processor/tokenizer.json
+- rfilename: int8/processor/tokenizer_config.json
+- rfilename: int8/quantization.json
+- rfilename: int8/ranking-comparison.json
+- rfilename: int8/requirements.txt
+- rfilename: int8/runtime-int8-ane.xml
+- rfilename: int8/stress-reference.json
+- rfilename: int8/text.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: int8/text.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: int8/text.mlpackage/Manifest.json
+- rfilename: int8/token_embeddings.int8
+- rfilename: int8/token_embeddings.scales.f16
+- rfilename: int8/verification.json
+- rfilename: int8/vision.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: int8/vision.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: int8/vision.mlpackage/Manifest.json
+spaces: []
+createdAt: '2026-11-02T04:25:12.000Z'
+usedStorage: 2277912190
+downloadsAllTime: 5
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-02T10:51:46.000Z'

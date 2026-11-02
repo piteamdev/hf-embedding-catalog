@@ -1,0 +1,73 @@
+_id: 6ae7c7093f83b52cf0a4f57c
+id: fse/word2vec-google-news-300-raw
+private: false
+pipeline_tag: feature-extraction
+library_name: fse
+tags:
+- fse
+- safetensors
+- static-embeddings
+- sentence-embeddings
+- gensim
+- word2vec
+- word-embeddings
+- feature-extraction
+- en
+- base_model:fse/word2vec-google-news-300
+- base_model:finetune:fse/word2vec-google-news-300
+- license:other
+- region:us
+downloads: 25
+likes: 0
+modelId: fse/word2vec-google-news-300-raw
+author: fse
+sha: ebddaf1d161a6b95c1e1c3e0e7d1d00c4563242f
+lastModified: '2026-11-02T06:33:27.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: fse
+cardData:
+  library_name: fse
+  license: other
+  base_model: fse/word2vec-google-news-300
+  language:
+  - en
+  pipeline_tag: feature-extraction
+  tags:
+  - fse
+  - static-embeddings
+  - sentence-embeddings
+  - gensim
+  - word2vec
+  - word-embeddings
+  license_name: word2vec-google-news-research-only
+  license_link: https://code.google.com/archive/p/word2vec/
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+spaces: []
+createdAt: '2026-11-01T23:11:05.000Z'
+safetensors:
+  parameters:
+    F32: 900000000
+    U8: 41258510
+    I64: 3000001
+  total: 944258511
+usedStorage: 3665259542
+downloadsAllTime: 25
+inferenceProviderMapping: {}
+configJson:
+  fingerprint: xxh3-128:64e4ef70aca1f497f7173a33764825dd
+  fse_config_version: 1
+  fse_format_version: 1
+  fse_kind: encoder
+  model: model.safetensors
+  model_type: fse
+onnxFiles: {}
+safetensorsSizeMb: 3665.3
+approxSizeMb: 3653.3
+fetchedAt: '2026-11-02T10:51:46.000Z'

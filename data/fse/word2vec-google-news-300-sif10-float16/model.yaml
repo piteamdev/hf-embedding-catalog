@@ -1,0 +1,77 @@
+_id: 6ae7bd347eb1859e3243314e
+id: fse/word2vec-google-news-300-sif10-float16
+private: false
+pipeline_tag: feature-extraction
+library_name: fse
+tags:
+- fse
+- safetensors
+- static-embeddings
+- sentence-embeddings
+- gensim
+- word2vec
+- word-embeddings
+- feature-extraction
+- en
+- dataset:HuggingFaceFW/fineweb-edu-llama3-annotations
+- base_model:fse/word2vec-google-news-300
+- base_model:finetune:fse/word2vec-google-news-300
+- license:other
+- region:us
+downloads: 21
+likes: 0
+modelId: fse/word2vec-google-news-300-sif10-float16
+author: fse
+sha: 9b993296ca2e951683688984ff5b994019889528
+lastModified: '2026-11-02T06:33:37.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: fse
+cardData:
+  library_name: fse
+  license: other
+  base_model: fse/word2vec-google-news-300
+  language:
+  - en
+  pipeline_tag: feature-extraction
+  tags:
+  - fse
+  - static-embeddings
+  - sentence-embeddings
+  - gensim
+  - word2vec
+  - word-embeddings
+  datasets:
+  - HuggingFaceFW/fineweb-edu-llama3-annotations
+  license_name: word2vec-google-news-research-only
+  license_link: https://code.google.com/archive/p/word2vec/
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: preparation.json
+spaces: []
+createdAt: '2026-11-01T22:29:08.000Z'
+safetensors:
+  parameters:
+    F16: 900000000
+    U8: 41258510
+    I64: 3000001
+  total: 944258511
+usedStorage: 1865259670
+downloadsAllTime: 21
+inferenceProviderMapping: {}
+configJson:
+  fingerprint: xxh3-128:499b36600b36b4a6672d3ccab989b585
+  fse_config_version: 1
+  fse_format_version: 1
+  fse_kind: encoder
+  model: model.safetensors
+  model_type: fse
+onnxFiles: {}
+safetensorsSizeMb: 1865.3
+approxSizeMb: 1853.3
+fetchedAt: '2026-11-02T10:51:46.000Z'

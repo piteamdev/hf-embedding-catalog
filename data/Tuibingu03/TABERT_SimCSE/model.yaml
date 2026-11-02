@@ -1,0 +1,68 @@
+_id: 6ae771f69b60e7b12256308b
+id: Tuibingu03/TABERT_SimCSE
+private: false
+pipeline_tag: sentence-similarity
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- vietnamese
+- sentence-embeddings
+- simcse
+- text-embedding
+- semantic-similarity
+- semantic-search
+- clustering
+- sentence-similarity
+- vi
+- license:agpl-3.0
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 1
+modelId: Tuibingu03/TABERT_SimCSE
+author: Tuibingu03
+sha: 7116632505b5e787655147acc567ed447979d5d5
+lastModified: '2026-11-01T17:19:33.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: agpl-3.0
+  language:
+  - vi
+  library_name: transformers
+  tags:
+  - vietnamese
+  - sentence-embeddings
+  - simcse
+  - text-embedding
+  - semantic-similarity
+  - semantic-search
+  - clustering
+  pipeline_tag: sentence-similarity
+transformersInfo:
+  auto_model: AutoModel
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: model/added_tokens.json
+- rfilename: model/bpe.codes
+- rfilename: model/config.json
+- rfilename: model/model.safetensors
+- rfilename: model/tokenizer_config.json
+- rfilename: model/vocab.txt
+- rfilename: training/training_checkpoint.pt
+- rfilename: training/training_config.json
+- rfilename: training/training_history.json
+spaces: []
+createdAt: '2026-11-01T17:08:06.000Z'
+usedStorage: 2157893327
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 537.7
+approxSizeMb: 0.0
+fetchedAt: '2026-11-02T10:51:46.000Z'

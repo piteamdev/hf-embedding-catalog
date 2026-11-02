@@ -1,0 +1,1310 @@
+_id: 6ae85b19697ff982bd5234b1
+id: Jbbok/my-embeddinggemma-2-sec
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- embedding_gemma2
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:3867
+- loss:CachedMultipleNegativesRankingLoss
+- loss:MultipleNegativesRankingLoss
+- arxiv:1908.10084
+- arxiv:2101.06983
+- arxiv:1807.03748
+- base_model:google/embeddinggemma-2
+- base_model:finetune:google/embeddinggemma-2
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: Jbbok/my-embeddinggemma-2-sec
+author: Jbbok
+sha: 623c829fe3050b70059807dec9180ffcd5053a5c
+lastModified: '2026-11-02T09:43:08.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: What was Honeywell International's other (income) expense in 2025?
+  sentences:
+  - 'company: HONEYWELL INTERNATIONAL INC | ticker: HON | type: 10-K | report_date: 2025-12-31
+
+    **Other (Income) Expense**
+
+
+    ### Other (income) expense
+
+
+    - 2025: $(1,247)
+
+    - 2024: $(843)
+
+    - 2023: $(830)'
+  - 'company: HONEYWELL INTERNATIONAL INC | ticker: HON | type: 10-K | report_date: 2025-12-31
+
+    **INCOME BEFORE TAXES**
+
+
+    ### U.S.
+
+    (us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesDomestic)
+
+
+    - 2025: $373 million [=373,000,000 USD]
+
+    - 2024: $1,442 million [=1,442,000,000 USD]
+
+    - 2023: $1,652 million [=1,652,000,000 USD]
+
+
+    ### Non-U.S.
+
+    (us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesForeign)
+
+
+    - 2025: 5,103 million [=5,103,000,000 USD]
+
+    - 2024: 4,802 million [=4,802,000,000 USD]
+
+    - 2023: 4,539 million [=4,539,000,000 USD]
+
+
+    ### Total Income before taxes
+
+    (us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest)
+
+
+    - 2025: $5,476 million [=5,476,000,000 USD]
+
+    - 2024: $6,244 million [=6,244,000,000 USD]
+
+    - 2023: $6,191 million [=6,191,000,000 USD]'
+  - 'company: Mastercard Inc | ticker: MA | type: 10-K | report_date: 2025-12-31
+
+    The table below shows a summary of the cash flows from operating, investing and financing activities:
+
+
+    *(unit: (in millions))*
+
+
+    ### Net cash provided by operating activities (For the Years Ended December 31,)
+
+
+    - 2025: $17,648
+
+    - 2024: $14,780
+
+    - 2023: $11,980
+
+
+    ### Net cash used in investing activities (For the Years Ended December 31,)
+
+
+    - 2025: (1,362)
+
+    - 2024: (3,402)
+
+    - 2023: (1,351)
+
+
+    ### Net cash used in financing activities (For the Years Ended December 31,)
+
+
+    - 2025: (14,179)
+
+    - 2024: (10,836)
+
+    - 2023: (9,488)'
+- source_sentence: What was General Motors' automotive and other selling, general, and administrative expense for the fiscal
+    year ended December 31, 2025?
+  sentences:
+  - 'company: General Motors Co | ticker: GM | type: 10-K | report_date: 2025-12-31
+
+    In the year ended December 31, 2025, Automotive and other selling, general, and administrative expense decreased primarily
+    due to: (1) the absence of charges related to strategic activities to transition certain Buick dealerships of $1.0 billion;
+    and (2) decreased advertising, selling, and administrative costs of $0.9 billion.
+
+    ***Interest Income and Other Non-operating Income, net***'
+  - 'company: General Motors Co | ticker: GM | type: 10-K | report_date: 2025-12-31
+
+    ***Automotive and Other Selling, General, and Administrative Expense***
+
+
+    ### Automotive and other selling, general, and administrative expense
+
+
+    - Years Ended December 31, > 2025: $8,687
+
+    - Years Ended December 31, > 2024: $10,621
+
+    - Years Ended December 31, > 2023: $9,840
+
+    - Year Ended 2025 vs. 2024 Change > Favorable/ (Unfavorable)%: $1,934
+
+    - Year Ended 2025 vs. 2024 Change: 18.2%'
+  - 'company: MCDONALDS CORP | ticker: MCD | type: 10-K | report_date: 2025-12-31
+
+    The net increase in 2025 was primarily due to the impact of changes in exchange rates on foreign currency denominated
+    debt.
+
+    *Debt highlights**(1)*
+
+
+    ### Fixed-rate debt as a percent of total debt (2,3)
+
+
+    - 2025 > %: 97%
+
+    - 2024: 96%
+
+    - 2023: 96%
+
+
+    ### Weighted-average annual interest rate of total debt (3)
+
+
+    - 2025 > %: 4.0
+
+    - 2024: 4.0
+
+    - 2023: 3.7
+
+
+    ### Foreign currency-denominated debt as a percent of total debt (2)
+
+
+    - 2025 > %: 39
+
+    - 2024: 34
+
+    - 2023: 38
+
+
+    ### Total debt as a percent of total capitalization (total debt and total Shareholders'' equity) (2)
+
+
+    - 2025 > %: 105
+
+    - 2024: 111
+
+    - 2023: 114
+
+
+    ### Cash provided by operations as a percent of total debt (2)
+
+
+    - 2025 > %: 26
+
+    - 2024: 24
+
+    - 2023: 24'
+- source_sentence: What was McDonald’s total nonoperating (income) expense, net in 2025?
+  sentences:
+  - 'company: MCDONALDS CORP | ticker: MCD | type: 10-K | report_date: 2025-12-31
+
+    **OTHER OPERATING (INCOME) EXPENSE, NET**
+
+    *Other operating (income) expense, net*
+
+
+    ## In millions
+
+
+    ### Gains on sales of restaurant businesses
+
+
+    - 2025: $(133)
+
+    - 2024: $(94)
+
+    - 2023: $(103)
+
+
+    ### Equity in earnings of unconsolidated affiliates
+
+
+    - 2025: (190)
+
+    - 2024: (157)
+
+    - 2023: (153)
+
+
+    ### Asset dispositions and other (income) expense, net
+
+
+    - 2025: 97
+
+    - 2024: 100
+
+    - 2023: (7)
+
+
+    ### Impairment and other charges (gains), net
+
+
+    - 2025: 229
+
+    - 2024: 291
+
+    - 2023: 362
+
+
+    ### Total
+
+
+    - 2025: $2
+
+    - 2024: $139
+
+    - 2023: $99'
+  - 'company: MCDONALDS CORP | ticker: MCD | type: 10-K | report_date: 2025-12-31
+
+    **NONOPERATING (INCOME) EXPENSE, NET**
+
+    *Nonoperating (income) expense, net*
+
+
+    ## In millions
+
+
+    ### Interest income
+
+
+    - 2025: $(82)
+
+    - 2024: $(103)
+
+    - 2023: $(187)
+
+
+    ### Foreign currency and hedging activity
+
+
+    - 2025: 40
+
+    - 2024: 6
+
+    - 2023: (19)
+
+
+    ### Other (income) expense
+
+
+    - 2025: (45)
+
+    - 2024: (42)
+
+    - 2023: (31)
+
+
+    ### Total
+
+
+    - 2025: $(87)
+
+    - 2024: $(139)
+
+    - 2023: $(236)'
+  - 'company: Salesforce, Inc. | ticker: CRM | type: 10-K | report_date: 2026-01-31
+
+    In September 2025, the Board authorized an additional $20.0 billion in repurchases under the Share Repurchase Program,
+    for an aggregate total authorized of $50.0 billion. The Share Repurchase Program does not have a fixed expiration date
+    and does not obligate us to acquire any specific number of shares.
+
+
+    ### Fiscal year ended January 31,
+
+
+    - 2026 > Shares: 50
+
+    - 2026 > Average price per share: $254.21
+
+    - 2026 > Amount: $12,677
+
+    - 2025 > Shares: 30
+
+    - 2025 > Average price per share: $260.12
+
+    - 2025 > Amount: $7,757
+
+    - 2024 > Shares: 36
+
+    - 2024 > Average price per share: $210.30
+
+    - 2024 > Amount: $7,674'
+- source_sentence: What was Honeywell's reported net sales percent change from 2024 to 2025?
+  sentences:
+  - 'company: MCDONALDS CORP | ticker: MCD | type: 10-K | exhibit: 99.1 | report_date: 2025-12-31
+
+    Exhibit 99.1 Computation of Ratios
+
+
+    *(columns: Fixed-Rate Debt as a Percent of Total Debt (1)(2))*
+
+
+    ## Dollars in millions
+
+
+    ### Total debt obligations
+
+
+    - Years ended December 31, 2025: $39,973
+
+    - 2024: $38,424
+
+    - 2023: $39,345
+
+
+    ### Fair value adjustments
+
+
+    - Years ended December 31, 2025: 15
+
+    - 2024: 40
+
+    - 2023: 62
+
+
+    ### Deferred debt costs
+
+
+    - Years ended December 31, 2025: 157
+
+    - 2024: 152
+
+    - 2023: 160
+
+
+    ### Debt obligations before fair value adjustments and deferred debt costs
+
+
+    - Years ended December 31, 2025: $40,145
+
+    - 2024: $38,616
+
+    - 2023: $39,567
+
+
+    ### Fixed-rate debt
+
+
+    - Years ended December 31, 2025: $38,847
+
+    - 2024: $37,013
+
+    - 2023: $37,816
+
+
+    ### Fixed-rate debt as a percent of total debt
+
+
+    - Years ended December 31, 2025: 97%
+
+    - 2024: 96%
+
+    - 2023: 96%'
+  - 'company: HONEYWELL INTERNATIONAL INC | ticker: HON | type: 10-K | report_date: 2025-12-31
+
+    TABLE OF CONTENTS: REVIEW OF BUSINESS SEGMENTS
+
+
+    ### Net sales
+
+
+    - 2025: $9,401
+
+    - 2024: $10,051
+
+    - Change 2025 vs. 2024: (6)%
+
+    - 2023: $10,756
+
+    - Change 2024 vs. 2023: (7)%
+
+
+    ### Cost of products and services sold
+
+
+    - 2025: 5,492
+
+    - 2024: 5,880
+
+    - 2023: 6,379
+
+
+    ### Selling, general and administrative and other expenses
+
+
+    - 2025: 2,166
+
+    - 2024: 2,209
+
+    - 2023: 2,168
+
+
+    ### Segment profit
+
+
+    - 2025: $1,743
+
+    - 2024: $1,962
+
+    - Change 2025 vs. 2024: (11)%
+
+    - 2023: $2,209
+
+    - Change 2024 vs. 2023: (11)%'
+  - 'company: HONEYWELL INTERNATIONAL INC | ticker: HON | type: 10-K | report_date: 2025-12-31
+
+    ### Net sales
+
+
+    - 2025: $17,510
+
+    - 2024: $15,458
+
+    - Change 2025 vs. 2024: 13%
+
+    - 2023: $13,624
+
+    - Change 2024 vs. 2023: 13%
+
+
+    ### Cost of products and services sold
+
+
+    - 2025: 11,282
+
+    - 2024: 9,781
+
+    - 2023: 8,362
+
+
+    ### Selling, general and administrative and other expenses
+
+
+    - 2025: 1,944
+
+    - 2024: 1,689
+
+    - 2023: 1,502
+
+
+    ### Segment profit
+
+
+    - 2025: $4,284
+
+    - 2024: $3,988
+
+    - Change 2025 vs. 2024: 7%
+
+    - 2023: $3,760
+
+    - Change 2024 vs. 2023: 6%'
+- source_sentence: What was General Motors' net income attributable to stockholders for the year ended December 31, 2025?
+  sentences:
+  - 'company: General Motors Co | ticker: GM | type: 10-K | report_date: 2025-12-31
+
+    Management uses average equity to provide comparable amounts in the calculation of ROE. The following table summarizes
+    the calculation of ROE (dollars in billions):
+
+
+    ### Net income attributable to stockholders (Years Ended December 31,)
+
+
+    - 2025: $2.7
+
+    - 2024: $6.0
+
+    - 2023: $10.1
+
+
+    ### Average equity(a) (Years Ended December 31,)
+
+
+    - 2025: $64.6
+
+    - 2024: $68.9
+
+    - 2023: $72.0
+
+
+    ### ROE (Years Ended December 31,)
+
+
+    - 2025: 4.2%
+
+    - 2024: 8.7%
+
+    - 2023: 14.1%'
+  - 'company: HONEYWELL INTERNATIONAL INC | ticker: HON | type: 10-K | report_date: 2025-12-31
+
+    As we look forward, we intend to continue deploying capital to high-return opportunities. We have a $37.5 billion backlog
+    as of December 31, 2025, that provides a strong foundation for future growth and sustained capital deployment to accelerate
+    growth.
+
+
+    YEAR IN REVIEW YEAR IN REVIEW YEAR IN REVIEW
+
+    Sales up 8% Robust backlog of Operating cash flows from continuing operations of
+
+    $37.4 BILLION $37.5 BILLION $6.1 BILLION
+
+    as we remain focused on leveraging and evolving our Honeywell Accelerator operating model to deliver growth as of year-end,
+    demonstrating continued strong demand in our end markets and positioning us well to convert for future growth as we remain
+    focused on increasing operating cash flows through revenue growth, margin expansion, and improved working capital turnover'
+  - 'company: General Motors Co | ticker: GM | type: 10-K | report_date: 2025-12-31
+
+    **Income Taxes Paid**
+
+
+    ### U.S. federal (Year Ended December 31, 2025)
+
+    (us-gaap:IncomeTaxPaidFederalAfterRefundReceived)
+
+
+    - 2025-12-31: $277 million [=277,000,000 USD]
+
+
+    ### U.S. state (Year Ended December 31, 2025)
+
+    (us-gaap:IncomeTaxPaidStateAndLocalAfterRefundReceived)
+
+
+    - 2025-12-31: 314 million [=314,000,000 USD]
+
+
+    ### Non-U.S. (Year Ended December 31, 2025)
+
+    (us-gaap:IncomeTaxPaidForeignAfterRefundReceived)
+
+
+    - 2025-12-31: 957 million [=957,000,000 USD]
+
+
+    ### Total income taxes paid, net (Year Ended December 31, 2025)
+
+    (us-gaap:IncomeTaxesPaidNet)
+
+
+    - 2025-12-31: $1,548 million [=1,548,000,000 USD]'
+model-index: null
+config:
+  architectures:
+  - EmbeddingGemma2Model
+  model_type: embedding_gemma2
+  tokenizer_config:
+    bos_token: <bos>
+    eos_token: <eos>
+    unk_token: <unk>
+    pad_token: <pad>
+    mask_token: <mask>
+  chat_template_jinja: '{%- for msg in messages if msg.get(''role'') == ''system'' -%}{%- if msg.get(''content'') is string
+    -%}{{ msg[''content''] }}{%- else -%}{%- for item in msg[''content''] if item.get(''type'') == ''text'' -%}{{ item[''text'']
+    }}{%- endfor -%}{%- endif -%}{%- endfor -%}{%- for msg in messages if msg.get(''role'') != ''system'' -%}{%- if msg.get(''content'')
+    is string -%}{{ msg[''content''] }}{%- else -%}{%- set existing_text = msg[''content''] | selectattr(''type'', ''equalto'',
+    ''text'') | map(attribute=''text'') | join -%}{%- set has_manual_placeholders = (''<|image|>'' in existing_text) or (''<|video|>''
+    in existing_text) or (''<|audio|>'' in existing_text) -%}{%- for item in msg[''content''] -%}{%- if item.get(''type'')
+    == ''text'' -%}{{ item[''text''] }}{%- elif not has_manual_placeholders and item.get(''type'') == ''image'' -%}<|image|>{%-
+    elif not has_manual_placeholders and item.get(''type'') == ''video'' -%}<|video|>{%- elif not has_manual_placeholders
+    and item.get(''type'') == ''audio'' -%}<|audio|>{%- endif -%}{%- endfor -%}{%- endif -%}{%- endfor -%}'
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:3867
+  - loss:CachedMultipleNegativesRankingLoss
+  - loss:MultipleNegativesRankingLoss
+  base_model: google/embeddinggemma-2
+  widget:
+  - source_sentence: What was Honeywell International's other (income) expense in 2025?
+    sentences:
+    - 'company: HONEYWELL INTERNATIONAL INC | ticker: HON | type: 10-K | report_date: 2025-12-31
+
+      **Other (Income) Expense**
+
+
+      ### Other (income) expense
+
+
+      - 2025: $(1,247)
+
+      - 2024: $(843)
+
+      - 2023: $(830)'
+    - 'company: HONEYWELL INTERNATIONAL INC | ticker: HON | type: 10-K | report_date: 2025-12-31
+
+      **INCOME BEFORE TAXES**
+
+
+      ### U.S.
+
+      (us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesDomestic)
+
+
+      - 2025: $373 million [=373,000,000 USD]
+
+      - 2024: $1,442 million [=1,442,000,000 USD]
+
+      - 2023: $1,652 million [=1,652,000,000 USD]
+
+
+      ### Non-U.S.
+
+      (us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesForeign)
+
+
+      - 2025: 5,103 million [=5,103,000,000 USD]
+
+      - 2024: 4,802 million [=4,802,000,000 USD]
+
+      - 2023: 4,539 million [=4,539,000,000 USD]
+
+
+      ### Total Income before taxes
+
+      (us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest)
+
+
+      - 2025: $5,476 million [=5,476,000,000 USD]
+
+      - 2024: $6,244 million [=6,244,000,000 USD]
+
+      - 2023: $6,191 million [=6,191,000,000 USD]'
+    - 'company: Mastercard Inc | ticker: MA | type: 10-K | report_date: 2025-12-31
+
+      The table below shows a summary of the cash flows from operating, investing and financing activities:
+
+
+      *(unit: (in millions))*
+
+
+      ### Net cash provided by operating activities (For the Years Ended December 31,)
+
+
+      - 2025: $17,648
+
+      - 2024: $14,780
+
+      - 2023: $11,980
+
+
+      ### Net cash used in investing activities (For the Years Ended December 31,)
+
+
+      - 2025: (1,362)
+
+      - 2024: (3,402)
+
+      - 2023: (1,351)
+
+
+      ### Net cash used in financing activities (For the Years Ended December 31,)
+
+
+      - 2025: (14,179)
+
+      - 2024: (10,836)
+
+      - 2023: (9,488)'
+  - source_sentence: What was General Motors' automotive and other selling, general, and administrative expense for the fiscal
+      year ended December 31, 2025?
+    sentences:
+    - 'company: General Motors Co | ticker: GM | type: 10-K | report_date: 2025-12-31
+
+      In the year ended December 31, 2025, Automotive and other selling, general, and administrative expense decreased primarily
+      due to: (1) the absence of charges related to strategic activities to transition certain Buick dealerships of $1.0 billion;
+      and (2) decreased advertising, selling, and administrative costs of $0.9 billion.
+
+      ***Interest Income and Other Non-operating Income, net***'
+    - 'company: General Motors Co | ticker: GM | type: 10-K | report_date: 2025-12-31
+
+      ***Automotive and Other Selling, General, and Administrative Expense***
+
+
+      ### Automotive and other selling, general, and administrative expense
+
+
+      - Years Ended December 31, > 2025: $8,687
+
+      - Years Ended December 31, > 2024: $10,621
+
+      - Years Ended December 31, > 2023: $9,840
+
+      - Year Ended 2025 vs. 2024 Change > Favorable/ (Unfavorable)%: $1,934
+
+      - Year Ended 2025 vs. 2024 Change: 18.2%'
+    - 'company: MCDONALDS CORP | ticker: MCD | type: 10-K | report_date: 2025-12-31
+
+      The net increase in 2025 was primarily due to the impact of changes in exchange rates on foreign currency denominated
+      debt.
+
+      *Debt highlights**(1)*
+
+
+      ### Fixed-rate debt as a percent of total debt (2,3)
+
+
+      - 2025 > %: 97%
+
+      - 2024: 96%
+
+      - 2023: 96%
+
+
+      ### Weighted-average annual interest rate of total debt (3)
+
+
+      - 2025 > %: 4.0
+
+      - 2024: 4.0
+
+      - 2023: 3.7
+
+
+      ### Foreign currency-denominated debt as a percent of total debt (2)
+
+
+      - 2025 > %: 39
+
+      - 2024: 34
+
+      - 2023: 38
+
+
+      ### Total debt as a percent of total capitalization (total debt and total Shareholders'' equity) (2)
+
+
+      - 2025 > %: 105
+
+      - 2024: 111
+
+      - 2023: 114
+
+
+      ### Cash provided by operations as a percent of total debt (2)
+
+
+      - 2025 > %: 26
+
+      - 2024: 24
+
+      - 2023: 24'
+  - source_sentence: What was McDonald’s total nonoperating (income) expense, net in 2025?
+    sentences:
+    - 'company: MCDONALDS CORP | ticker: MCD | type: 10-K | report_date: 2025-12-31
+
+      **OTHER OPERATING (INCOME) EXPENSE, NET**
+
+      *Other operating (income) expense, net*
+
+
+      ## In millions
+
+
+      ### Gains on sales of restaurant businesses
+
+
+      - 2025: $(133)
+
+      - 2024: $(94)
+
+      - 2023: $(103)
+
+
+      ### Equity in earnings of unconsolidated affiliates
+
+
+      - 2025: (190)
+
+      - 2024: (157)
+
+      - 2023: (153)
+
+
+      ### Asset dispositions and other (income) expense, net
+
+
+      - 2025: 97
+
+      - 2024: 100
+
+      - 2023: (7)
+
+
+      ### Impairment and other charges (gains), net
+
+
+      - 2025: 229
+
+      - 2024: 291
+
+      - 2023: 362
+
+
+      ### Total
+
+
+      - 2025: $2
+
+      - 2024: $139
+
+      - 2023: $99'
+    - 'company: MCDONALDS CORP | ticker: MCD | type: 10-K | report_date: 2025-12-31
+
+      **NONOPERATING (INCOME) EXPENSE, NET**
+
+      *Nonoperating (income) expense, net*
+
+
+      ## In millions
+
+
+      ### Interest income
+
+
+      - 2025: $(82)
+
+      - 2024: $(103)
+
+      - 2023: $(187)
+
+
+      ### Foreign currency and hedging activity
+
+
+      - 2025: 40
+
+      - 2024: 6
+
+      - 2023: (19)
+
+
+      ### Other (income) expense
+
+
+      - 2025: (45)
+
+      - 2024: (42)
+
+      - 2023: (31)
+
+
+      ### Total
+
+
+      - 2025: $(87)
+
+      - 2024: $(139)
+
+      - 2023: $(236)'
+    - 'company: Salesforce, Inc. | ticker: CRM | type: 10-K | report_date: 2026-01-31
+
+      In September 2025, the Board authorized an additional $20.0 billion in repurchases under the Share Repurchase Program,
+      for an aggregate total authorized of $50.0 billion. The Share Repurchase Program does not have a fixed expiration date
+      and does not obligate us to acquire any specific number of shares.
+
+
+      ### Fiscal year ended January 31,
+
+
+      - 2026 > Shares: 50
+
+      - 2026 > Average price per share: $254.21
+
+      - 2026 > Amount: $12,677
+
+      - 2025 > Shares: 30
+
+      - 2025 > Average price per share: $260.12
+
+      - 2025 > Amount: $7,757
+
+      - 2024 > Shares: 36
+
+      - 2024 > Average price per share: $210.30
+
+      - 2024 > Amount: $7,674'
+  - source_sentence: What was Honeywell's reported net sales percent change from 2024 to 2025?
+    sentences:
+    - 'company: MCDONALDS CORP | ticker: MCD | type: 10-K | exhibit: 99.1 | report_date: 2025-12-31
+
+      Exhibit 99.1 Computation of Ratios
+
+
+      *(columns: Fixed-Rate Debt as a Percent of Total Debt (1)(2))*
+
+
+      ## Dollars in millions
+
+
+      ### Total debt obligations
+
+
+      - Years ended December 31, 2025: $39,973
+
+      - 2024: $38,424
+
+      - 2023: $39,345
+
+
+      ### Fair value adjustments
+
+
+      - Years ended December 31, 2025: 15
+
+      - 2024: 40
+
+      - 2023: 62
+
+
+      ### Deferred debt costs
+
+
+      - Years ended December 31, 2025: 157
+
+      - 2024: 152
+
+      - 2023: 160
+
+
+      ### Debt obligations before fair value adjustments and deferred debt costs
+
+
+      - Years ended December 31, 2025: $40,145
+
+      - 2024: $38,616
+
+      - 2023: $39,567
+
+
+      ### Fixed-rate debt
+
+
+      - Years ended December 31, 2025: $38,847
+
+      - 2024: $37,013
+
+      - 2023: $37,816
+
+
+      ### Fixed-rate debt as a percent of total debt
+
+
+      - Years ended December 31, 2025: 97%
+
+      - 2024: 96%
+
+      - 2023: 96%'
+    - 'company: HONEYWELL INTERNATIONAL INC | ticker: HON | type: 10-K | report_date: 2025-12-31
+
+      TABLE OF CONTENTS: REVIEW OF BUSINESS SEGMENTS
+
+
+      ### Net sales
+
+
+      - 2025: $9,401
+
+      - 2024: $10,051
+
+      - Change 2025 vs. 2024: (6)%
+
+      - 2023: $10,756
+
+      - Change 2024 vs. 2023: (7)%
+
+
+      ### Cost of products and services sold
+
+
+      - 2025: 5,492
+
+      - 2024: 5,880
+
+      - 2023: 6,379
+
+
+      ### Selling, general and administrative and other expenses
+
+
+      - 2025: 2,166
+
+      - 2024: 2,209
+
+      - 2023: 2,168
+
+
+      ### Segment profit
+
+
+      - 2025: $1,743
+
+      - 2024: $1,962
+
+      - Change 2025 vs. 2024: (11)%
+
+      - 2023: $2,209
+
+      - Change 2024 vs. 2023: (11)%'
+    - 'company: HONEYWELL INTERNATIONAL INC | ticker: HON | type: 10-K | report_date: 2025-12-31
+
+      ### Net sales
+
+
+      - 2025: $17,510
+
+      - 2024: $15,458
+
+      - Change 2025 vs. 2024: 13%
+
+      - 2023: $13,624
+
+      - Change 2024 vs. 2023: 13%
+
+
+      ### Cost of products and services sold
+
+
+      - 2025: 11,282
+
+      - 2024: 9,781
+
+      - 2023: 8,362
+
+
+      ### Selling, general and administrative and other expenses
+
+
+      - 2025: 1,944
+
+      - 2024: 1,689
+
+      - 2023: 1,502
+
+
+      ### Segment profit
+
+
+      - 2025: $4,284
+
+      - 2024: $3,988
+
+      - Change 2025 vs. 2024: 7%
+
+      - 2023: $3,760
+
+      - Change 2024 vs. 2023: 6%'
+  - source_sentence: What was General Motors' net income attributable to stockholders for the year ended December 31, 2025?
+    sentences:
+    - 'company: General Motors Co | ticker: GM | type: 10-K | report_date: 2025-12-31
+
+      Management uses average equity to provide comparable amounts in the calculation of ROE. The following table summarizes
+      the calculation of ROE (dollars in billions):
+
+
+      ### Net income attributable to stockholders (Years Ended December 31,)
+
+
+      - 2025: $2.7
+
+      - 2024: $6.0
+
+      - 2023: $10.1
+
+
+      ### Average equity(a) (Years Ended December 31,)
+
+
+      - 2025: $64.6
+
+      - 2024: $68.9
+
+      - 2023: $72.0
+
+
+      ### ROE (Years Ended December 31,)
+
+
+      - 2025: 4.2%
+
+      - 2024: 8.7%
+
+      - 2023: 14.1%'
+    - 'company: HONEYWELL INTERNATIONAL INC | ticker: HON | type: 10-K | report_date: 2025-12-31
+
+      As we look forward, we intend to continue deploying capital to high-return opportunities. We have a $37.5 billion backlog
+      as of December 31, 2025, that provides a strong foundation for future growth and sustained capital deployment to accelerate
+      growth.
+
+
+      YEAR IN REVIEW YEAR IN REVIEW YEAR IN REVIEW
+
+      Sales up 8% Robust backlog of Operating cash flows from continuing operations of
+
+      $37.4 BILLION $37.5 BILLION $6.1 BILLION
+
+      as we remain focused on leveraging and evolving our Honeywell Accelerator operating model to deliver growth as of year-end,
+      demonstrating continued strong demand in our end markets and positioning us well to convert for future growth as we
+      remain focused on increasing operating cash flows through revenue growth, margin expansion, and improved working capital
+      turnover'
+    - 'company: General Motors Co | ticker: GM | type: 10-K | report_date: 2025-12-31
+
+      **Income Taxes Paid**
+
+
+      ### U.S. federal (Year Ended December 31, 2025)
+
+      (us-gaap:IncomeTaxPaidFederalAfterRefundReceived)
+
+
+      - 2025-12-31: $277 million [=277,000,000 USD]
+
+
+      ### U.S. state (Year Ended December 31, 2025)
+
+      (us-gaap:IncomeTaxPaidStateAndLocalAfterRefundReceived)
+
+
+      - 2025-12-31: 314 million [=314,000,000 USD]
+
+
+      ### Non-U.S. (Year Ended December 31, 2025)
+
+      (us-gaap:IncomeTaxPaidForeignAfterRefundReceived)
+
+
+      - 2025-12-31: 957 million [=957,000,000 USD]
+
+
+      ### Total income taxes paid, net (Year Ended December 31, 2025)
+
+      (us-gaap:IncomeTaxesPaidNet)
+
+
+      - 2025-12-31: $1,548 million [=1,548,000,000 USD]'
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Normalize/config.json
+- rfilename: README.md
+- rfilename: chat_template.jinja
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: processor_config.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-02T09:42:49.000Z'
+safetensors:
+  parameters:
+    F32: 271002648
+  total: 271002648
+usedStorage: 1116232204
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - EmbeddingGemma2Model
+  audio_config: null
+  audio_token_id: 258881
+  boa_token_id: 256000
+  boi_token_id: 255999
+  dtype: float32
+  eoa_token_index: 258883
+  eoi_token_id: 258882
+  image_token_id: 258880
+  initializer_range: 0.02
+  model_type: embedding_gemma2
+  text_config:
+    attention_bias: false
+    attention_dropout: 0.0
+    bos_token_id: 2
+    dtype: float32
+    embedding_dim: 768
+    eos_token_id: 1
+    head_dim: 256
+    hidden_activation: gelu_pytorch_tanh
+    hidden_size: 512
+    hidden_size_per_layer_input: 512
+    initializer_range: 0.02
+    intermediate_size: 2048
+    layer_types:
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    max_position_embeddings: 262144
+    model_type: embedding_gemma2_text
+    num_attention_heads: 4
+    num_hidden_layers: 24
+    num_key_value_heads: 2
+    pad_token_id: 0
+    per_layer_config:
+      '05':
+        head_dim: 512
+        num_key_value_heads: 1
+      '11':
+        head_dim: 512
+        num_key_value_heads: 1
+      '17':
+        head_dim: 512
+        num_key_value_heads: 1
+      '23':
+        head_dim: 512
+        num_key_value_heads: 1
+    rms_norm_eps: 1.0e-06
+    rope_parameters:
+      full_attention:
+        rope_theta: 1000000.0
+        rope_type: default
+      sliding_attention:
+        rope_theta: 10000.0
+        rope_type: default
+    sliding_window: 512
+    vocab_size: 262144
+  transformers_version: 5.22.1
+  use_cache: false
+  video_token_id: 258884
+  vision_config: null
+  vision_soft_tokens_per_image: 280
+onnxFiles: {}
+safetensorsSizeMb: 1084.1
+approxSizeMb: 1084.0
+fetchedAt: '2026-11-02T10:51:46.000Z'

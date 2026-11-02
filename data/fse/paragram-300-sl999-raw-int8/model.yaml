@@ -1,0 +1,74 @@
+_id: 6ae7b2f02fad7e92d94de70d
+id: fse/paragram-300-sl999-raw-int8
+private: false
+pipeline_tag: feature-extraction
+library_name: fse
+tags:
+- fse
+- safetensors
+- static-embeddings
+- sentence-embeddings
+- gensim
+- paragram
+- word-embeddings
+- feature-extraction
+- en
+- base_model:fse/paragram-300-sl999
+- base_model:quantized:fse/paragram-300-sl999
+- license:unknown
+- 8-bit
+- region:us
+downloads: 21
+likes: 0
+modelId: fse/paragram-300-sl999-raw-int8
+author: fse
+sha: ec79e59048e0fc156651949de71da472205ea153
+lastModified: '2026-11-02T06:32:46.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: fse
+cardData:
+  library_name: fse
+  license: unknown
+  base_model: fse/paragram-300-sl999
+  base_model_relation: quantized
+  language:
+  - en
+  pipeline_tag: feature-extraction
+  tags:
+  - fse
+  - static-embeddings
+  - sentence-embeddings
+  - gensim
+  - paragram
+  - word-embeddings
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+spaces: []
+createdAt: '2026-11-01T21:45:20.000Z'
+safetensors:
+  parameters:
+    F32: 1703756
+    I8: 511126800
+    U8: 14017479
+    I64: 1703757
+  total: 528551792
+usedStorage: 545590639
+downloadsAllTime: 21
+inferenceProviderMapping: {}
+configJson:
+  fingerprint: xxh3-128:811484bfb3fb71ed12bcaeb4744d991b
+  fse_config_version: 1
+  fse_format_version: 1
+  fse_kind: encoder
+  model: model.safetensors
+  model_type: fse
+onnxFiles: {}
+safetensorsSizeMb: 545.6
+approxSizeMb: 538.8
+fetchedAt: '2026-11-02T10:51:46.000Z'

@@ -1,0 +1,171 @@
+_id: 6ae2349cba5ad074cabc6736
+id: hindsight-ai/hs-embed-1
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- onnx
+- safetensors
+- modernbert
+- feature-extraction
+- embeddings
+- matryoshka
+- multilingual
+- text-embeddings-inference
+- hindsight
+- sentence-similarity
+- en
+- es
+- fr
+- de
+- pt
+- ja
+- ko
+- zh
+- base_model:hotchpotch/bekko-embedding-v1-a25m
+- base_model:finetune:hotchpotch/bekko-embedding-v1-a25m
+- license:mit
+- endpoints_compatible
+- region:us
+downloads: 34
+likes: 1
+modelId: hindsight-ai/hs-embed-1
+author: hindsight-ai
+sha: 3164caa4db95a03faac8a327f914f7c8f42d2f98
+lastModified: '2026-11-02T23:29:33.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config:
+  architectures:
+  - ModernBertModel
+  model_type: modernbert
+  tokenizer_config:
+    bos_token: <bos>
+    eos_token: <eos>
+    unk_token: <unk>
+    sep_token: <eos>
+    pad_token: <pad>
+    cls_token: <bos>
+    mask_token: <mask>
+cardData:
+  license: mit
+  base_model: hotchpotch/bekko-embedding-v1-a25m
+  base_model_relation: finetune
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  language:
+  - en
+  - es
+  - fr
+  - de
+  - pt
+  - ja
+  - ko
+  - zh
+  tags:
+  - sentence-transformers
+  - feature-extraction
+  - embeddings
+  - matryoshka
+  - multilingual
+  - onnx
+  - text-embeddings-inference
+  - hindsight
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: assets/banner.png
+- rfilename: assets/benchmarks.png
+- rfilename: assets/serving-cpu.png
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: onnx/model.onnx
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-28T17:45:00.000Z'
+safetensors:
+  parameters:
+    F16: 111728256
+  total: 111728256
+usedStorage: 857882618
+downloadsAllTime: 34
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - ModernBertModel
+  attention_bias: false
+  attention_dropout: 0.0
+  bos_token_id: 2
+  classifier_activation: gelu
+  classifier_bias: false
+  classifier_dropout: 0.0
+  classifier_pooling: mean
+  cls_token_id: 1
+  decoder_bias: true
+  deterministic_flash_attn: false
+  dtype: float32
+  embedding_dropout: 0.0
+  eos_token_id: 1
+  global_attn_every_n_layers: 3
+  gradient_checkpointing: false
+  hidden_activation: gelu
+  hidden_size: 384
+  initializer_cutoff_factor: 2.0
+  initializer_range: 0.02
+  intermediate_size: 1152
+  layer_norm_eps: 1.0e-05
+  layer_types:
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  local_attention: 128
+  mask_token_id: 4
+  max_position_embeddings: 8192
+  mlp_bias: false
+  mlp_dropout: 0.0
+  model_type: modernbert
+  norm_bias: false
+  norm_eps: 1.0e-05
+  num_attention_heads: 6
+  num_hidden_layers: 7
+  pad_token_id: 0
+  position_embedding_type: sans_pos
+  repad_logits_with_grad: false
+  rope_parameters:
+    full_attention:
+      rope_theta: 160000
+      rope_type: default
+    sliding_attention:
+      rope_theta: 160000
+      rope_type: default
+  sep_token_id: 1
+  sparse_pred_ignore_index: -100
+  sparse_prediction: false
+  tie_word_embeddings: true
+  transformers_version: 5.16.1
+  vocab_size: 256000
+  global_rope_theta: 160000.0
+  local_rope_theta: 160000.0
+onnxFiles:
+  onnx/model.onnx: 152.2
+safetensorsSizeMb: 223.5
+approxSizeMb: 223.5
+fetchedAt: '2026-11-03T10:42:05.000Z'

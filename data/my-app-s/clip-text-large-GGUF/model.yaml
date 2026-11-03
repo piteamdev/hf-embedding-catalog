@@ -1,0 +1,59 @@
+_id: 6ae8aeda3d4c55fbffa09a57
+id: my-app-s/clip-text-large-GGUF
+private: false
+pipeline_tag: feature-extraction
+library_name: ggml
+tags:
+- ggml
+- gguf
+- clip
+- text
+- crispembed
+- text-embedding
+- feature-extraction
+- license:mit
+- region:us
+downloads: 88
+likes: 0
+modelId: my-app-s/clip-text-large-GGUF
+author: my-app-s
+sha: 51efa4a5f6901710dce03595ba89e3734df1c40f
+lastModified: '2026-11-02T15:40:11.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  tags:
+  - clip
+  - text
+  - gguf
+  - crispembed
+  - text-embedding
+  pipeline_tag: feature-extraction
+  library_name: ggml
+gguf:
+  total: 123650304
+  architecture: clip_text
+  totalFileSize: 88199680
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: clip-text-large-imatrix-ab.txt
+- rfilename: clip-text-large-iq4_xs.gguf
+- rfilename: clip-text-large-q4_k-imatrix.gguf
+- rfilename: clip-text-large-q4_k.gguf
+- rfilename: clip-text-large-q8_0.gguf
+- rfilename: clip-text-large.gguf
+- rfilename: clip-text-large.imatrix
+spaces: []
+createdAt: '2026-11-02T15:40:10.000Z'
+usedStorage: 900421696
+downloadsAllTime: 88
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-03T10:42:05.000Z'

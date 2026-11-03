@@ -1,0 +1,113 @@
+_id: 6ae98bad360b8ba7c2b29424
+id: anuragpradhan/M3D-CLIP-CrossModal-MRI-CT
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- m3d_clip
+- feature-extraction
+- medical-imaging
+- 3d
+- mri
+- ct
+- cross-modal
+- clip
+- vision-transformer
+- contrastive-learning
+- synthrad2025
+- diffusion
+- custom_code
+- arxiv:2404.00578
+- base_model:GoodBaiBai88/M3D-CLIP
+- base_model:finetune:GoodBaiBai88/M3D-CLIP
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 1
+modelId: anuragpradhan/M3D-CLIP-CrossModal-MRI-CT
+author: anuragpradhan
+sha: 09c989868c3f2b5463d4031931565caf72fae165
+lastModified: '2026-11-03T08:12:57.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - M3DCLIP
+  auto_map:
+    AutoConfig: configuration_m3d_clip.M3DCLIPConfig
+    AutoModel: modeling_m3d_clip.M3DCLIP
+  model_type: m3d_clip
+cardData:
+  license: apache-2.0
+  tags:
+  - medical-imaging
+  - 3d
+  - mri
+  - ct
+  - cross-modal
+  - clip
+  - vision-transformer
+  - contrastive-learning
+  - synthrad2025
+  - diffusion
+  - feature-extraction
+  base_model: GoodBaiBai88/M3D-CLIP
+  pipeline_tag: feature-extraction
+  library_name: transformers
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_m3d_clip.M3DCLIP
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: configuration_m3d_clip.py
+- rfilename: model.safetensors
+- rfilename: modeling_m3d_clip.py
+spaces: []
+createdAt: '2026-11-03T07:22:21.000Z'
+safetensors:
+  parameters:
+    F32: 198052608
+  total: 198052608
+usedStorage: 792251956
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - M3DCLIP
+  auto_map:
+    AutoConfig: configuration_m3d_clip.M3DCLIPConfig
+    AutoModel: modeling_m3d_clip.M3DCLIP
+  dropout_rate: 0
+  dtype: float32
+  gather_loss: true
+  hidden_size: 768
+  img_size:
+  - 32
+  - 256
+  - 256
+  in_channels: 1
+  language_model_name_or_path: bert-base-uncased
+  local_loss: false
+  max_text_len: 128
+  mlp_dim: 3072
+  model_type: m3d_clip
+  num_heads: 12
+  num_layers: 12
+  patch_size:
+  - 4
+  - 16
+  - 16
+  pos_embed: perceptron
+  spatial_dims: 3
+  transformers_version: 5.12.1
+  vocab_size: 30522
+onnxFiles: {}
+safetensorsSizeMb: 792.3
+approxSizeMb: 792.2
+fetchedAt: '2026-11-03T10:42:05.000Z'

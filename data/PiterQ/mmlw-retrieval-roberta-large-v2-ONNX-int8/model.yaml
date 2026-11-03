@@ -1,0 +1,108 @@
+_id: 6ae8a147cd034434d3b80dab
+id: PiterQ/mmlw-retrieval-roberta-large-v2-ONNX-int8
+private: false
+pipeline_tag: sentence-similarity
+library_name: onnx
+tags:
+- onnx
+- roberta
+- onnxruntime
+- sentence-embeddings
+- information-retrieval
+- android
+- int8
+- sentence-similarity
+- pl
+- en
+- base_model:sdadas/mmlw-retrieval-roberta-large-v2
+- base_model:quantized:sdadas/mmlw-retrieval-roberta-large-v2
+- license:gemma
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 16
+likes: 0
+modelId: PiterQ/mmlw-retrieval-roberta-large-v2-ONNX-int8
+author: PiterQ
+sha: dba97bc006f2cbee607461e32719a6086475ec5d
+lastModified: '2026-11-02T14:43:39.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - RobertaModel
+  model_type: roberta
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  license: gemma
+  license_link: https://ai.google.dev/gemma/terms
+  base_model: sdadas/mmlw-retrieval-roberta-large-v2
+  base_model_relation: quantized
+  language:
+  - pl
+  - en
+  library_name: onnx
+  pipeline_tag: sentence-similarity
+  tags:
+  - onnx
+  - onnxruntime
+  - sentence-embeddings
+  - information-retrieval
+  - android
+  - int8
+siblings:
+- rfilename: .gitattributes
+- rfilename: GEMMA_PROHIBITED_USE_POLICY.md
+- rfilename: GEMMA_TERMS_OF_USE.md
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: meta.json
+- rfilename: model.onnx
+- rfilename: model.w8.onnx.data
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-02T14:42:15.000Z'
+usedStorage: 605648268
+downloadsAllTime: 16
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - RobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 1024
+  initializer_range: 0.02
+  intermediate_size: 4096
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 514
+  model_type: roberta
+  num_attention_heads: 16
+  num_hidden_layers: 24
+  pad_token_id: 1
+  position_embedding_type: absolute
+  torch_dtype: float32
+  transformers_version: 4.44.0
+  type_vocab_size: 1
+  use_cache: true
+  vocab_size: 128001
+onnxFiles:
+  model.onnx: 0.4
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-03T10:42:05.000Z'

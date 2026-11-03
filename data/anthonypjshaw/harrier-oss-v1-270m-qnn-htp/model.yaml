@@ -68,4 +68,4 @@ onnxFiles:
   model.onnx: 0.0
 safetensorsSizeMb: 0.0
 approxSizeMb: 0.0
-fetchedAt: '2026-11-02T10:51:46.000Z'
+fetchedAt: '2026-11-03T10:42:05.000Z'

@@ -1,0 +1,122 @@
+_id: 6ae9fe29595287df5ddd6b7e
+id: franciscomira/fedlex-e5-small
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- onnx
+- safetensors
+- bert
+- feature-extraction
+- sentence-embeddings
+- retrieval
+- legal
+- swiss-law
+- cross-lingual
+- multilingual-e5
+- de
+- fr
+- it
+- en
+- base_model:intfloat/multilingual-e5-small
+- base_model:quantized:intfloat/multilingual-e5-small
+- license:mit
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 32
+likes: 1
+modelId: franciscomira/fedlex-e5-small
+author: franciscomira
+sha: 5b13d52f77406cabf2ff12933a7e644630c6bd92
+lastModified: '2026-11-03T17:47:05.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  language:
+  - de
+  - fr
+  - it
+  - en
+  license: mit
+  base_model: intfloat/multilingual-e5-small
+  tags:
+  - sentence-embeddings
+  - retrieval
+  - legal
+  - swiss-law
+  - cross-lingual
+  - multilingual-e5
+  library_name: transformers
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: onnx/model_int8.onnx
+- rfilename: onnx/tokenizer.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: training_config.json
+- rfilename: training_log.jsonl
+spaces: []
+createdAt: '2026-11-03T15:30:49.000Z'
+safetensors:
+  parameters:
+    F32: 117653760
+  total: 117653760
+usedStorage: 605804865
+downloadsAllTime: 32
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  initializer_range: 0.02
+  intermediate_size: 1536
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  tokenizer_class: XLMRobertaTokenizer
+  transformers_version: 5.16.1
+  type_vocab_size: 2
+  use_cache: true
+  vocab_size: 250037
+onnxFiles:
+  onnx/model_int8.onnx: 118.1
+safetensorsSizeMb: 470.6
+approxSizeMb: 470.6
+fetchedAt: '2026-11-05T10:40:43.000Z'

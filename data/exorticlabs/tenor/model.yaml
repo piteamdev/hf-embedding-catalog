@@ -1,0 +1,78 @@
+_id: 6aeb577d4de3459982c35b32
+id: exorticlabs/tenor
+private: false
+pipeline_tag: feature-extraction
+library_name: tenor-engine
+tags:
+- tenor-engine
+- memory
+- autonomous-agents
+- knowledge-graph
+- spatio-temporal
+- neuro-symbolic
+- hebbian-plasticity
+- continuous-cognition
+- feature-extraction
+- en
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: exorticlabs/tenor
+author: exorticlabs
+sha: 5d387befc17f6f58d9cb8a782017322a75497954
+lastModified: '2026-11-04T16:04:56.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  language:
+  - en
+  license: mit
+  tags:
+  - memory
+  - autonomous-agents
+  - knowledge-graph
+  - spatio-temporal
+  - neuro-symbolic
+  - hebbian-plasticity
+  - continuous-cognition
+  pipeline_tag: feature-extraction
+  library_name: tenor-engine
+siblings:
+- rfilename: .gitattributes
+- rfilename: .gitignore
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: docs/RESEARCH_PAPER.md
+- rfilename: docs/figures/fig1_system_topology.png
+- rfilename: docs/figures/fig2_retrieval_pipeline.png
+- rfilename: docs/figures/fig3_hebbian_saturation.png
+- rfilename: docs/figures/fig4_temporal_decay.png
+- rfilename: docs/figures/fig5_spectral_entropy.png
+- rfilename: docs/figures/fig6_memory_scaling.png
+- rfilename: docs/research_paper_4d_eekg_memory_architecture.docx
+- rfilename: pyproject.toml
+- rfilename: tenor/__init__.py
+- rfilename: tenor/embedder.py
+- rfilename: tenor/llm_client.py
+- rfilename: tenor/llm_manager.py
+- rfilename: tenor/nlp_extractor.py
+- rfilename: tenor/node_models.py
+- rfilename: tenor/orchestrator.py
+- rfilename: tenor/taxonomy.py
+- rfilename: tenor/tensor_engine.py
+- rfilename: tenor/turn_extractor.py
+- rfilename: tenor/working_memory.py
+- rfilename: tenor/workspace_resolver.py
+spaces: []
+createdAt: '2026-11-04T16:04:13.000Z'
+usedStorage: 3618384
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-05T10:40:43.000Z'

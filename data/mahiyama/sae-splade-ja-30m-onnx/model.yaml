@@ -1,0 +1,75 @@
+_id: 6aeaa31c6cae8de3207154eb
+id: mahiyama/sae-splade-ja-30m-onnx
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- sparse
+- splade
+- information-retrieval
+- learned-sparse-retrieval
+- sparse-autoencoder
+- japanese
+- modernbert
+- feature-extraction
+- ja
+- base_model:mahiyama/sae-splade-ja-30m
+- base_model:quantized:mahiyama/sae-splade-ja-30m
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: mahiyama/sae-splade-ja-30m-onnx
+author: mahiyama
+sha: f8df63e77c7b465446b22a8e60e3ef4b8ce25c22
+lastModified: '2026-11-04T03:14:58.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  tokenizer_config:
+    use_default_system_prompt: false
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: <sep>
+    pad_token: <pad>
+    cls_token: <cls>
+    mask_token: <mask>
+cardData:
+  language:
+  - ja
+  license: mit
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  tags:
+  - onnx
+  - sparse
+  - splade
+  - information-retrieval
+  - learned-sparse-retrieval
+  - sparse-autoencoder
+  - japanese
+  - modernbert
+  base_model: mahiyama/sae-splade-ja-30m
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: model.onnx
+- rfilename: model_int8.onnx
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-04T03:14:36.000Z'
+usedStorage: 399276993
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  model.onnx: 215.4
+  model_int8.onnx: 183.9
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-05T10:40:43.000Z'

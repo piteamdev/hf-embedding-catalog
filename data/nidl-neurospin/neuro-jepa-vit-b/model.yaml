@@ -1,0 +1,122 @@
+_id: 6aea14f4ba4493d1e8903dca
+id: nidl-neurospin/neuro-jepa-vit-b
+private: false
+pipeline_tag: feature-extraction
+library_name: nidl
+tags:
+- nidl
+- neuroimaging
+- MRI
+- 3D
+- self-supervised
+- foundation-model
+- vit
+- jepa
+- mixture-of-experts
+- feature-extraction
+- arxiv:2606.14957
+- license:other
+- region:us
+downloads: 25
+likes: 0
+modelId: nidl-neurospin/neuro-jepa-vit-b
+author: nidl-neurospin
+sha: 9daaf53b0cbbbfba9cb9769006cf08fc70a2397f
+lastModified: '2026-11-03T17:08:05.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: nidl
+  license: other
+  license_name: cecill-b
+  pipeline_tag: feature-extraction
+  tags:
+  - neuroimaging
+  - MRI
+  - 3D
+  - self-supervised
+  - foundation-model
+  - vit
+  - jepa
+  - mixture-of-experts
+  arxiv: 2606.14957
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+spaces: []
+createdAt: '2026-11-03T17:08:04.000Z'
+usedStorage: 0
+downloadsAllTime: 25
+inferenceProviderMapping: {}
+configJson:
+  nidl_version: 0.0.3.dev0
+  estimator: NeuroJEPA
+  estimator_kwargs:
+    use_moe: true
+    predictor_embed_dim: 384
+    predictor_depth: 12
+    predictor_num_heads: 12
+    foreground_aware: true
+    moe_bias_clip: 0.3
+    moe_bias_update_rate: 0.0001
+  encoder:
+    name: VisionTransformer3DMoE
+    kwargs:
+      img_size:
+      - 96
+      - 108
+      - 96
+      patch_size:
+      - 12
+      - 12
+      - 12
+      in_chans: 1
+      embed_dim: 768
+      depth: 12
+      num_heads: 12
+      use_moe: true
+      moe_params:
+        dim: 768
+        n_shared_experts: 2
+        n_routed_experts: 16
+        n_activated_experts: 6
+        moe_inter_dim: 384
+        score_func: softmax
+        route_scale: 4.0
+        bias_clip: 0.3
+        bias_update_rate: 0.0001
+        moe_layer_indices:
+        - 1
+        - 3
+        - 5
+        - 7
+        - 9
+        - 11
+      attn_gate: true
+      norm_eps: 1.0e-06
+  input:
+    shape:
+    - 1
+    - 96
+    - 108
+    - 96
+    range:
+    - 0.0
+    - 1.0
+  preprocessing:
+    transform: NeuroJEPAPreprocessing
+    kwargs: {}
+  weights:
+    repo_id: NYUMedML/Neuro-JEPA
+    revision: f55b154091aa7ac5ca23632918e216cd92d9f2cb
+    filename: model.safetensors
+    converter: NeuroJEPAWeights
+    missing_ok:
+    - predictor.
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-05T10:40:43.000Z'

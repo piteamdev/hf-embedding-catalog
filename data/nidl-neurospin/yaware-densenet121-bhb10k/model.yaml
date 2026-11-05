@@ -1,0 +1,93 @@
+_id: 6ae8b63111b278c45dfb00b7
+id: nidl-neurospin/yaware-densenet121-bhb10k
+private: false
+pipeline_tag: feature-extraction
+library_name: nidl
+tags:
+- nidl
+- safetensors
+- neuroimaging
+- MRI
+- 3D
+- self-supervised
+- foundation-model
+- densenet
+- contrastive-learning
+- vbm
+- feature-extraction
+- arxiv:2106.08808
+- license:other
+- region:us
+downloads: 40
+likes: 0
+modelId: nidl-neurospin/yaware-densenet121-bhb10k
+author: nidl-neurospin
+sha: 869584ecd4e2fd09babe8728dda8f5323fc26073
+lastModified: '2026-11-03T17:07:46.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: nidl
+  license: other
+  pipeline_tag: feature-extraction
+  tags:
+  - neuroimaging
+  - MRI
+  - 3D
+  - self-supervised
+  - foundation-model
+  - densenet
+  - contrastive-learning
+  - vbm
+  arxiv: 2106.08808
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+spaces: []
+createdAt: '2026-11-02T16:11:29.000Z'
+safetensors:
+  parameters:
+    F32: 11912640
+  total: 11912640
+usedStorage: 95480912
+downloadsAllTime: 40
+inferenceProviderMapping: {}
+configJson:
+  nidl_version: 0.0.3.dev0
+  estimator: YAwareContrastiveLearning
+  estimator_kwargs:
+    proj_input_dim: 1024
+    proj_hidden_dim: 512
+    proj_output_dim: 128
+    temperature: 0.1
+    kernel: gaussian
+    bandwidth: 25.0
+    optimizer: adamW
+    learning_rate: 0.0001
+    weight_decay: 5.0e-05
+    exclude_bias_and_norm_wd: true
+    optimizer_kwargs: null
+    lr_scheduler: warmup_cosine
+    lr_scheduler_kwargs: null
+  encoder:
+    name: densenet121
+    kwargs:
+      n_embedding: null
+  input:
+    shape:
+    - 1
+    - 121
+    - 145
+    - 121
+    range: null
+  preprocessing:
+    transform: ZNormalization
+    kwargs: {}
+onnxFiles: {}
+safetensorsSizeMb: 47.7
+approxSizeMb: 47.7
+fetchedAt: '2026-11-05T10:40:43.000Z'

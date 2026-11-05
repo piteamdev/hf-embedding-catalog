@@ -1,0 +1,47 @@
+_id: 6aebbb4309c9fc26c49fda04
+id: DOEJGI/metabat3-models
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- metagenomics
+- contig-embedding
+- feature-extraction
+- region:us
+downloads: 0
+likes: 0
+modelId: DOEJGI/metabat3-models
+author: DOEJGI
+sha: 5598e9462514e6091ee8b157161b2e303e2c3b8a
+lastModified: '2026-11-05T00:51:33.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  tags:
+  - metagenomics
+  - contig-embedding
+  - onnx
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: v4/student_v4_104k_int8.onnx
+- rfilename: v5/model.onnx
+- rfilename: v5/model_int8.onnx
+spaces: []
+createdAt: '2026-11-04T23:09:55.000Z'
+usedStorage: 56268821
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  v4/student_v4_104k_int8.onnx: 9.5
+  v5/model.onnx: 37.2
+  v5/model_int8.onnx: 9.5
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-05T10:40:43.000Z'

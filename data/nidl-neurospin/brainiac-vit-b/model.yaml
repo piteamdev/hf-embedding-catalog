@@ -1,0 +1,98 @@
+_id: 6ae8b60ed9b2c7c1a3bd7984
+id: nidl-neurospin/brainiac-vit-b
+private: false
+pipeline_tag: feature-extraction
+library_name: nidl
+tags:
+- nidl
+- safetensors
+- neuroimaging
+- MRI
+- 3D
+- self-supervised
+- foundation-model
+- vit
+- simclr
+- feature-extraction
+- license:other
+- region:us
+downloads: 40
+likes: 0
+modelId: nidl-neurospin/brainiac-vit-b
+author: nidl-neurospin
+sha: a3a10af2e2e30eef808fca2d3ec582644cbdc6c6
+lastModified: '2026-11-03T17:08:00.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: nidl
+  license: other
+  license_name: brainiac-research-only
+  license_link: LICENSE
+  pipeline_tag: feature-extraction
+  tags:
+  - neuroimaging
+  - MRI
+  - 3D
+  - self-supervised
+  - foundation-model
+  - vit
+  - simclr
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+spaces: []
+createdAt: '2026-11-02T16:10:54.000Z'
+safetensors:
+  parameters:
+    F32: 90514688
+  total: 90514688
+usedStorage: 724148216
+downloadsAllTime: 40
+inferenceProviderMapping: {}
+configJson:
+  nidl_version: 0.0.3.dev0
+  estimator: SimCLR
+  estimator_kwargs:
+    proj_input_dim: 768
+    proj_hidden_dim: 768
+    proj_output_dim: 2048
+    temperature: 0.1
+    proj_bias: true
+    proj_batch_norm: true
+    optimizer: adamW
+    learning_rate: 0.0003
+    weight_decay: 0.0005
+    exclude_bias_and_norm_wd: true
+    optimizer_kwargs: null
+    lr_scheduler: warmup_cosine
+    lr_scheduler_kwargs: null
+  encoder:
+    name: VisionTransformer3D
+    kwargs:
+      img_size: 96
+      patch_size: 16
+      class_token: false
+      global_pool: avg
+      fc_norm: false
+      no_embed_class: true
+      qkv_bias: false
+  input:
+    shape:
+    - 1
+    - 96
+    - 96
+    - 96
+    range: null
+  preprocessing:
+    transform: BrainIACPreprocessing
+    kwargs: {}
+onnxFiles: {}
+safetensorsSizeMb: 362.1
+approxSizeMb: 362.1
+fetchedAt: '2026-11-05T10:40:43.000Z'

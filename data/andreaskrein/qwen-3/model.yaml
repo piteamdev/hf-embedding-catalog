@@ -1,0 +1,50 @@
+_id: 6acfdb38c1c99e2a23e8fa34
+id: andreaskrein/qwen-3
+private: false
+pipeline_tag: feature-extraction
+tags:
+- Nuke
+- Cattery
+- TorchScript
+- feature-extraction
+- base_model:Qwen/Qwen3-4B
+- base_model:adapter:Qwen/Qwen3-4B
+- license:apache-2.0
+- region:us
+downloads: 28
+likes: 0
+modelId: andreaskrein/qwen-3
+author: andreaskrein
+sha: cac34a8e7667583d8abff038d3ad2693925611a4
+lastModified: '2026-11-03T11:31:37.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model:
+  - Qwen/Qwen3-4B
+  base_model_relation: adapter
+  tags:
+  - Nuke
+  - Cattery
+  - TorchScript
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: qwen-3.cat
+spaces: []
+createdAt: '2026-10-14T19:42:48.000Z'
+usedStorage: 6229826509
+downloadsAllTime: 28
+inferenceProviderMapping: {}
+configJson:
+  format: cat
+  description: Qwen 3
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-05T10:40:43.000Z'

@@ -1,0 +1,62 @@
+_id: 6aeaaedb68dc3d2248ffae1b
+id: DakeraAI/answerai-colbert-small-v1
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- dakera
+- ai-agent-memory
+- agent-memory
+- long-term-memory
+- rag
+- self-hosted
+- mcp
+- mirror
+- feature-extraction
+- base_model:answerdotai/answerai-colbert-small-v1
+- base_model:quantized:answerdotai/answerai-colbert-small-v1
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: DakeraAI/answerai-colbert-small-v1
+author: DakeraAI
+sha: a9382ec413d2fa88885c7d0b48fcc5108a8057e8
+lastModified: '2026-11-04T04:24:22.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: answerdotai/answerai-colbert-small-v1
+  pipeline_tag: feature-extraction
+  library_name: onnx
+  tags:
+  - dakera
+  - ai-agent-memory
+  - agent-memory
+  - long-term-memory
+  - rag
+  - self-hosted
+  - mcp
+  - onnx
+  - mirror
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: model_int8.onnx
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-11-04T04:04:43.000Z'
+usedStorage: 33948650
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  model_int8.onnx: 33.9
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-05T10:40:43.000Z'

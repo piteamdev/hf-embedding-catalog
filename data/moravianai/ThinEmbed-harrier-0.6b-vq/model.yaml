@@ -1,0 +1,112 @@
+_id: 6aa25c15918888a0f2b1964f
+id: moravianai/ThinEmbed-harrier-0.6b-vq
+private: false
+pipeline_tag: feature-extraction
+library_name: vqweb
+tags:
+- vqweb
+- vqw
+- embeddings
+- retrieval
+- quantization
+- vector-quantization
+- webgpu
+- query-encoder
+- asymmetric-retrieval
+- feature-extraction
+- en
+- base_model:microsoft/harrier-oss-v1-0.6b
+- base_model:finetune:microsoft/harrier-oss-v1-0.6b
+- license:mit
+- region:us
+downloads: 143
+likes: 0
+modelId: moravianai/ThinEmbed-harrier-0.6b-vq
+author: moravianai
+sha: eea552b972f1ea115effc5d7a16251d3527036fa
+lastModified: '2026-11-03T16:19:13.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: vqw
+  tokenizer_config:
+    bos_token: null
+    eos_token: <|im_end|>
+    unk_token: null
+    pad_token: <|endoftext|>
+cardData:
+  library_name: vqweb
+  license: mit
+  base_model: microsoft/harrier-oss-v1-0.6b
+  language:
+  - en
+  pipeline_tag: feature-extraction
+  tags:
+  - embeddings
+  - retrieval
+  - quantization
+  - vector-quantization
+  - webgpu
+  - query-encoder
+  - asymmetric-retrieval
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: harrier-0.6b-vq1.75-scidocs.vqw
+- rfilename: harrier-0.6b-vq1.75-scifact.vqw
+- rfilename: harrier-0.6b-vq1.75p-scidocs.vqw
+- rfilename: harrier-0.6b-vq1.75p-scifact.vqw
+- rfilename: harrier-0.6b-vq2.0-scidocs.vqw
+- rfilename: harrier-0.6b-vq2.0-scifact.vqw
+- rfilename: harrier-0.6b-vq2.0p-scidocs.vqw
+- rfilename: harrier-0.6b-vq2.0p-scifact.vqw
+- rfilename: thinembed_header.png
+- rfilename: tokenizer-harrier-0.6b.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config-harrier-0.6b.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-09-10T07:28:21.000Z'
+usedStorage: 997978098
+downloadsAllTime: 249
+inferenceProviderMapping: {}
+configJson:
+  model_type: vqw
+  library_name: vqweb
+  format: vqw
+  container_version: 1
+  base_model: microsoft/harrier-oss-v1-0.6b
+  architecture: qwen3
+  hidden_size: 1024
+  num_hidden_layers: 28
+  pooling: last
+  embedding_dim: 1024
+  max_length: 512
+  quantization:
+    method: gptvq-lite
+    codebook_dim: 4
+    bits_per_weight:
+    - 2.1
+    - 1.83
+    token_table: Q2_K
+    input_rotation: sign/fwht/permutation, 2 rounds
+  files:
+  - harrier-0.6b-vq2.0-scidocs.vqw
+  - harrier-0.6b-vq1.75-scidocs.vqw
+  - harrier-0.6b-vq2.0-scifact.vqw
+  - harrier-0.6b-vq1.75-scifact.vqw
+  - harrier-0.6b-vq2.0p-scidocs.vqw
+  - harrier-0.6b-vq1.75p-scidocs.vqw
+  - harrier-0.6b-vq2.0p-scifact.vqw
+  - harrier-0.6b-vq1.75p-scifact.vqw
+  tokenizer: tokenizer.json
+  runtime: '@thinletterio/vqweb (npm) — loadVqwClient(url).embed(text); WebGPU with shader-f16'
+  note: 'This is not a transformers checkpoint: the .vqw container is read by the vqweb runtime. config.json exists so that
+    the Hub can count downloads (https://huggingface.co/docs/hub/models-download-stats) and to describe the containers.'
+  source: https://github.com/rosecky/embedding-quantization-public
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-05T10:40:43.000Z'

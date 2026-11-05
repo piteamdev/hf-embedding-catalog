@@ -1,0 +1,129 @@
+_id: 6ae9e8b9ba3ba7b5b422a101
+id: MatterWaveAI/grt-30m-embedding
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- grt
+- geometric-rotation-transformer
+- feature-extraction
+- sentence-similarity
+- circular-pooling
+- rotational
+- qwen3
+- en
+- dataset:sentence-transformers/all-nli
+- dataset:sentence-transformers/stsb
+- base_model:MatterWaveAI/grt-30m
+- base_model:finetune:MatterWaveAI/grt-30m
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 136
+likes: 0
+modelId: MatterWaveAI/grt-30m-embedding
+author: MatterWaveAI
+sha: 70c10a4e66ad08bd74a378ee605b39eb8231ffaa
+lastModified: '2026-11-04T23:32:57.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config:
+  architectures:
+  - GRTModel
+  model_type: grt
+  tokenizer_config:
+    bos_token: null
+    eos_token: <|endoftext|>
+    unk_token: null
+    pad_token: <|endoftext|>
+cardData:
+  license: apache-2.0
+  tags:
+  - grt
+  - geometric-rotation-transformer
+  - sentence-transformers
+  - feature-extraction
+  - sentence-similarity
+  - circular-pooling
+  - rotational
+  - qwen3
+  datasets:
+  - sentence-transformers/all-nli
+  - sentence-transformers/stsb
+  language:
+  - en
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  base_model: MatterWaveAI/grt-30m
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Normalize/.gitkeep
+- rfilename: GRT_Whitepaper.pdf
+- rfilename: README.md
+- rfilename: SHA256SUMS
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: eval_results.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-03T13:59:21.000Z'
+safetensors:
+  parameters:
+    I64: 539136
+    F32: 29305461
+  total: 29844597
+usedStorage: 260395676
+downloadsAllTime: 136
+inferenceProviderMapping: {}
+configJson:
+  angle_init_scale: 0.1
+  architectures:
+  - GRTModel
+  attention_dropout: 0.0
+  bos_token_id: 151643
+  coupling_init_mode: diagonal
+  coupling_init_scale: 0.01
+  dtype: float32
+  eos_token_id: 151643
+  ffn_n_rotations: 21
+  hidden_size: 256
+  initializer_range: 0.02
+  intermediate_size: 1024
+  learnable_residual_gates: true
+  learnable_rope: true
+  log_magnitude_init: 0.0
+  max_position_embeddings: 2048
+  model_type: grt
+  n_mixer_rotations: 1
+  n_qkv_rotations: 11
+  num_attention_heads: 4
+  num_hidden_layers: 12
+  output_scale_init: 30.0
+  pad_token_id: 151643
+  peri_ln: false
+  phase_init_scale: 0.1
+  pos_freq_base: 10000.0
+  residual_gate_mode: bounded_depth
+  residual_norm_mode: none
+  tie_word_embeddings: false
+  transformers_version: 5.21.0.dev0
+  use_cache: false
+  vocab_size: 151669
+onnxFiles: {}
+safetensorsSizeMb: 121.6
+approxSizeMb: 119.4
+fetchedAt: '2026-11-05T10:40:43.000Z'

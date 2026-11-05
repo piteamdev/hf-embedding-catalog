@@ -1,0 +1,106 @@
+_id: 6ae72e471cef0d52d166190e
+id: Cyronius/trit-embed-3l
+private: false
+pipeline_tag: sentence-similarity
+tags:
+- safetensors
+- sentence-embeddings
+- feature-extraction
+- ternary
+- bitnet
+- npu
+- sentence-similarity
+- en
+- license:mit
+- 8-bit
+- region:us
+downloads: 41
+likes: 1
+modelId: Cyronius/trit-embed-3l
+author: Cyronius
+sha: f417412349975804490c208d79b0e5e706b59a81
+lastModified: '2026-11-04T20:43:00.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config:
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  language: en
+  license: mit
+  pipeline_tag: sentence-similarity
+  tags:
+  - sentence-embeddings
+  - feature-extraction
+  - ternary
+  - bitnet
+  - npu
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: npu/build.json
+- rfilename: npu/final.xclbin
+- rfilename: npu/insts.bin
+- rfilename: npu/libtd_npu2.so
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: trit_embed.py
+- rfilename: trit_npu.py
+- rfilename: vocab.txt
+spaces: []
+createdAt: '2026-11-01T12:19:19.000Z'
+safetensors:
+  parameters:
+    F32: 194618
+    BF16: 10368
+    I8: 11769600
+    U8: 1327104
+  total: 13301690
+usedStorage: 14620077
+downloadsAllTime: 41
+inferenceProviderMapping: {}
+configJson:
+  architecture: TritEmbed
+  name: trit-embed-3l
+  format: trit-packed-v1
+  dims:
+    vocab: 30522
+    emb: 384
+    d: 384
+    heads: 12
+    ffn: 1536
+    layers: 3
+    max_pos: 128
+    eps: 1.0e-12
+    out_dim: 384
+    loops: 1
+    pool: mean
+    gelu: tanh
+  weights: 'encoder linears: 2-bit ternary codes {-1,0,1} (code+1, four per byte) and one bf16 scale per output row; word/position
+    embeddings: int8 with one fp32 scale per row; LayerNorms, biases, token-type embedding and output projection: fp32'
+  activations: int8, power-of-two scale per token per 256 channels (per token for 384)
+  max_tokens: 128
+  pooling: mean
+  normalized: true
+  source_checkpoint_sha256: ad94bc05dbb4bc233cf2768491183a7e0847ca6cf42c0de34cf7e736aa3440b0
+  training_step: 512
+onnxFiles: {}
+safetensorsSizeMb: 13.9
+approxSizeMb: 13.9
+fetchedAt: '2026-11-05T10:40:43.000Z'

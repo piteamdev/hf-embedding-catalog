@@ -1,0 +1,45 @@
+_id: 6acfd9cfe7b3fb500770941c
+id: andreaskrein/open-clip-vit-h
+private: false
+pipeline_tag: feature-extraction
+tags:
+- Nuke
+- Cattery
+- TorchScript
+- feature-extraction
+- license:mit
+- region:us
+downloads: 131
+likes: 0
+modelId: andreaskrein/open-clip-vit-h
+author: andreaskrein
+sha: 649ec2221f0599a58df979c5dd9fb4cfe301d8d2
+lastModified: '2026-11-03T11:30:40.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  pipeline_tag: feature-extraction
+  tags:
+  - Nuke
+  - Cattery
+  - TorchScript
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: open-clip-vit-h.cat
+spaces: []
+createdAt: '2026-10-14T19:36:47.000Z'
+usedStorage: 1361696950
+downloadsAllTime: 131
+inferenceProviderMapping: {}
+configJson:
+  format: cat
+  description: OpenCLIP ViT huge
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-05T10:40:43.000Z'

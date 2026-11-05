@@ -1,0 +1,88 @@
+_id: 6aea0885429bc4504d47c6bf
+id: brain-bzh/reve-small
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- reve
+- feature-extraction
+- eeg
+- neuroscience
+- foundation-model
+- pytorch
+- custom_code
+- arxiv:2510.21585
+- license:other
+- region:us
+downloads: 20
+likes: 0
+modelId: brain-bzh/reve-small
+author: brain-bzh
+sha: 3565bdcba3e6d3021f5da0f846b4ad1a227ff06f
+lastModified: '2026-11-03T21:11:13.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - Reve
+  auto_map:
+    AutoConfig: configuration_reve.ReveConfig
+    AutoModel: modeling_reve.Reve
+  model_type: reve
+cardData:
+  library_name: transformers
+  tags:
+  - eeg
+  - neuroscience
+  - foundation-model
+  - pytorch
+  license: other
+  license_name: reve-responsible-use-license-v1.0
+  license_link: LICENSE
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_reve.Reve
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: configuration_reve.py
+- rfilename: model.safetensors
+- rfilename: modeling_reve.py
+spaces: []
+createdAt: '2026-11-03T16:15:01.000Z'
+safetensors:
+  parameters:
+    F32: 12667904
+  total: 12667904
+usedStorage: 50674816
+downloadsAllTime: 20
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - Reve
+  auto_map:
+    AutoConfig: configuration_reve.ReveConfig
+    AutoModel: modeling_reve.Reve
+  depth: 4
+  dtype: float32
+  embed_dim: 512
+  freqs: 4
+  head_dim: 64
+  heads: 8
+  mlp_dim_ratio: 2.66
+  model_type: reve
+  noise_ratio: 0.0025
+  patch_overlap: 20
+  patch_size: 200
+  transformers_version: 4.56.2
+  use_geglu: true
+onnxFiles: {}
+safetensorsSizeMb: 50.7
+approxSizeMb: 50.7
+fetchedAt: '2026-11-05T10:40:43.000Z'

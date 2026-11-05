@@ -1,0 +1,56 @@
+_id: 6aea55bb0c8cae5e023b7b70
+id: tolgaerdonmez/jina-embeddings-v5-omni-nano-coreml
+private: false
+pipeline_tag: feature-extraction
+library_name: coreml
+tags:
+- coreml
+- apple-neural-engine
+- embeddings
+- retrieval
+- haiku.rag
+- feature-extraction
+- base_model:jinaai/jina-embeddings-v5-omni-nano-retrieval
+- base_model:quantized:jinaai/jina-embeddings-v5-omni-nano-retrieval
+- license:cc-by-nc-4.0
+- region:us
+downloads: 12
+likes: 0
+modelId: tolgaerdonmez/jina-embeddings-v5-omni-nano-coreml
+author: tolgaerdonmez
+sha: af03604c21d8ce428985a244f4a5ad075e752641
+lastModified: '2026-11-03T21:45:58.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: cc-by-nc-4.0
+  base_model: jinaai/jina-embeddings-v5-omni-nano-retrieval
+  library_name: coreml
+  pipeline_tag: feature-extraction
+  tags:
+  - coreml
+  - apple-neural-engine
+  - embeddings
+  - retrieval
+  - haiku.rag
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: SHA256SUMS
+- rfilename: convert_jina_nano.py
+- rfilename: model.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: model.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: model.mlpackage/Manifest.json
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-11-03T21:44:27.000Z'
+usedStorage: 442886850
+downloadsAllTime: 12
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-05T10:40:43.000Z'

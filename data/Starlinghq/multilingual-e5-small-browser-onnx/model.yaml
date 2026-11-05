@@ -1,0 +1,57 @@
+_id: 6aebaae55223a590f0a642f1
+id: Starlinghq/multilingual-e5-small-browser-onnx
+private: false
+pipeline_tag: sentence-similarity
+library_name: onnx
+tags:
+- onnx
+- sentence-similarity
+- webassembly
+- webgpu
+- starling
+- base_model:intfloat/multilingual-e5-small
+- base_model:quantized:intfloat/multilingual-e5-small
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: Starlinghq/multilingual-e5-small-browser-onnx
+author: Starlinghq
+sha: 51c02127009ddca6e3c7c187b2e406d1715f69a7
+lastModified: '2026-11-04T22:00:17.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config: {}
+cardData:
+  license: mit
+  base_model: intfloat/multilingual-e5-small
+  library_name: onnx
+  tags:
+  - sentence-similarity
+  - onnx
+  - webassembly
+  - webgpu
+  - starling
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: model-int8-embed.onnx
+- rfilename: variants.json
+spaces: []
+createdAt: '2026-11-04T22:00:05.000Z'
+usedStorage: 181715582
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  model-int8-embed.onnx: 181.7
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-05T10:40:43.000Z'

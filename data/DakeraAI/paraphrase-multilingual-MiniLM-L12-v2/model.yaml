@@ -1,0 +1,62 @@
+_id: 6aeaaef9b4be9fb8e1a4074a
+id: DakeraAI/paraphrase-multilingual-MiniLM-L12-v2
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- dakera
+- ai-agent-memory
+- agent-memory
+- long-term-memory
+- rag
+- self-hosted
+- mcp
+- mirror
+- feature-extraction
+- base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- base_model:quantized:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: DakeraAI/paraphrase-multilingual-MiniLM-L12-v2
+author: DakeraAI
+sha: 4931fd9c1eb52ec2e019c0a4e5304a2298e1274f
+lastModified: '2026-11-04T04:24:23.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  pipeline_tag: feature-extraction
+  library_name: onnx
+  tags:
+  - dakera
+  - ai-agent-memory
+  - agent-memory
+  - long-term-memory
+  - rag
+  - self-hosted
+  - mcp
+  - onnx
+  - mirror
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: onnx/model_int8.onnx
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-11-04T04:05:13.000Z'
+usedStorage: 118054609
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  onnx/model_int8.onnx: 118.1
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-05T10:40:43.000Z'

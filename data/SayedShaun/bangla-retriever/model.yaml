@@ -1,0 +1,120 @@
+_id: 6abbab9ded6191f7c97550f5
+id: SayedShaun/bangla-retriever
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- electra
+- retriever
+- bangla
+- bengali
+- retrieval
+- bert
+- sentence-similarity
+- bn
+- dataset:SayedShaun/bangla-retrieval-collection
+- base_model:csebuetnlp/banglabert
+- base_model:finetune:csebuetnlp/banglabert
+- license:other
+- endpoints_compatible
+- region:us
+downloads: 1
+likes: 0
+modelId: SayedShaun/bangla-retriever
+author: SayedShaun
+sha: 66679b60274807f55b779fd0bfa8e16789c103e7
+lastModified: '2026-09-30T04:17:19.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: সে একজন সুখী ব্যক্তি
+  sentences:
+  - সে হ্যাপি কুকুর
+  - সে খুব সুখী মানুষ
+  - আজ একটি রৌদ্রোজ্জ্বল দিন
+model-index: null
+config:
+  architectures:
+  - ElectraModel
+  model_type: electra
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  license: other
+  language:
+  - bn
+  tags:
+  - retriever
+  - sentence-transformers
+  - bangla
+  - bengali
+  - retrieval
+  - bert
+  base_model: csebuetnlp/banglabert
+  datasets:
+  - SayedShaun/bangla-retrieval-collection
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.py
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-09-29T12:14:21.000Z'
+safetensors:
+  parameters:
+    F32: 110028288
+  total: 110028288
+usedStorage: 440135344
+downloadsAllTime: 6
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - ElectraModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  embedding_size: 768
+  eos_token_id: null
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: electra
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  summary_activation: gelu
+  summary_last_dropout: 0.1
+  summary_type: first
+  summary_use_proj: true
+  tie_word_embeddings: true
+  transformers_version: 5.17.0
+  type_vocab_size: 2
+  use_cache: true
+  vocab_size: 32002
+onnxFiles: {}
+safetensorsSizeMb: 440.1
+approxSizeMb: 440.1
+fetchedAt: '2026-11-05T10:40:43.000Z'

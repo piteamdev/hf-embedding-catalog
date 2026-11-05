@@ -1,0 +1,61 @@
+_id: 6aeb8c88efdc351f63ce4063
+id: ZihengZ/SAE-virchow-v2
+private: false
+pipeline_tag: feature-extraction
+library_name: diffusers
+tags:
+- diffusers
+- safetensors
+- pathology
+- histopathology
+- sparse-autoencoder
+- interpretability
+- virchow2
+- diffusion
+- feature-extraction
+- base_model:paige-ai/Virchow2
+- base_model:finetune:paige-ai/Virchow2
+- license:other
+- region:us
+downloads: 0
+likes: 0
+modelId: ZihengZ/SAE-virchow-v2
+author: ZihengZ
+sha: e463d3e6eeb52e1e98ea391dca4b7922a58d95fa
+lastModified: '2026-11-04T20:03:20.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: other
+  license_name: non-commercial-research
+  license_link: https://huggingface.co/paige-ai/Virchow2
+  base_model: paige-ai/Virchow2
+  pipeline_tag: feature-extraction
+  tags:
+  - pathology
+  - histopathology
+  - sparse-autoencoder
+  - interpretability
+  - virchow2
+  - diffusion
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: emb2img/cond.safetensors
+- rfilename: emb2img/unet/config.json
+- rfilename: emb2img/unet/diffusion_pytorch_model.safetensors
+- rfilename: sae/config.json
+- rfilename: sae/sae.safetensors
+- rfilename: sae/test_metrics.json
+spaces: []
+createdAt: '2026-11-04T19:50:32.000Z'
+usedStorage: 3861716136
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 3861.7
+approxSizeMb: 0.0
+fetchedAt: '2026-11-05T10:40:43.000Z'

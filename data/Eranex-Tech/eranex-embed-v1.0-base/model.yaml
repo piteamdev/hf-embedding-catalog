@@ -1,0 +1,122 @@
+_id: 6aec521778a51a6c7d8fe49b
+id: Eranex-Tech/eranex-embed-v1.0-base
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- eranex_embed
+- feature-extraction
+- sentence-embeddings
+- mamba
+- state-space-model
+- multilingual
+- custom_code
+- tr
+- en
+- es
+- de
+- dataset:allenai/c4
+- dataset:Helsinki-NLP/opus-100
+- dataset:sentence-transformers/stsb
+- dataset:emrecan/stsb-mt-turkish
+- dataset:mteb/stsb_multi_mt
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: Eranex-Tech/eranex-embed-v1.0-base
+author: Eranex-Tech
+sha: 0a775fc49001d712eef97264e9374393c4cb6b86
+lastModified: '2026-11-05T09:54:42.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  architectures:
+  - EranexEmbedModel
+  auto_map:
+    AutoConfig: model.EranexEmbedConfig
+    AutoModel: model.EranexEmbedModel
+  model_type: eranex_embed
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  datasets:
+  - allenai/c4
+  - Helsinki-NLP/opus-100
+  - sentence-transformers/stsb
+  - emrecan/stsb-mt-turkish
+  - mteb/stsb_multi_mt
+  language:
+  - tr
+  - en
+  - es
+  - de
+  library_name: transformers
+  license: apache-2.0
+  pipeline_tag: feature-extraction
+  tags:
+  - sentence-embeddings
+  - mamba
+  - state-space-model
+  - multilingual
+  - feature-extraction
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: model.EranexEmbedModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.py
+- rfilename: model.safetensors
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-05T09:53:27.000Z'
+safetensors:
+  parameters:
+    F32: 14534017
+  total: 14534017
+usedStorage: 58150340
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - EranexEmbedModel
+  auto_map:
+    AutoConfig: model.EranexEmbedConfig
+    AutoModel: model.EranexEmbedModel
+  dropout_rate: 0.1
+  dtype: float32
+  embedding_dim: 256
+  gradient_checkpointing: false
+  mamba_d_conv: 4
+  mamba_d_state: 64
+  mamba_expand: 2
+  mlm_mask_prob: 0.15
+  mlm_mask_token_id: 4
+  mlm_num_special_tokens: 5
+  mlm_random_token_pct: 0.1
+  mlm_replace_mask_pct: 0.85
+  model_name: eranex-embed
+  model_type: eranex_embed
+  model_variation: base
+  model_version: '1.0'
+  num_layers: 6
+  output_dim: 128
+  tie_word_embeddings: true
+  transformers_version: 5.12.1
+  vocab_size: 32000
+onnxFiles: {}
+safetensorsSizeMb: 58.2
+approxSizeMb: 58.1
+fetchedAt: '2026-11-05T10:40:43.000Z'

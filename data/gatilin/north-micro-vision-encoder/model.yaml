@@ -1,0 +1,208 @@
+_id: 6aec343c994e3b036c6f179b
+id: gatilin/north-micro-vision-encoder
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- cohere_compass
+- image-text-to-text
+- vision
+- vision-encoder
+- feature-extraction
+- base_model:CohereLabs/North-Micro-Vision-Instruct
+- base_model:finetune:CohereLabs/North-Micro-Vision-Instruct
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: gatilin/north-micro-vision-encoder
+author: gatilin
+sha: 98208846fd1d6049227473c5c6d5e2c689023e7e
+lastModified: '2026-11-05T08:29:03.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - CohereCompassForConditionalGeneration
+  model_type: cohere_compass
+cardData:
+  license: apache-2.0
+  license_link: LICENSE
+  library_name: transformers
+  tags:
+  - vision
+  - vision-encoder
+  - feature-extraction
+  base_model: CohereLabs/North-Micro-Vision-Instruct
+transformersInfo:
+  auto_model: AutoModelForMultimodalLM
+  pipeline_tag: image-text-to-text
+  processor: AutoProcessor
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: component.py
+- rfilename: config.json
+- rfilename: extraction.json
+- rfilename: model.safetensors
+- rfilename: preprocessor_config.json
+- rfilename: tensor_mapping.json
+- rfilename: validation.json
+spaces: []
+createdAt: '2026-11-05T07:46:04.000Z'
+safetensors:
+  parameters:
+    BF16: 538631408
+  total: 538631408
+usedStorage: 1077302232
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  transformers_version: 5.15.0.dev0
+  architectures:
+  - CohereCompassForConditionalGeneration
+  output_hidden_states: false
+  return_dict: true
+  dtype: bfloat16
+  chunk_size_feed_forward: 0
+  is_encoder_decoder: false
+  id2label:
+    '0': LABEL_0
+    '1': LABEL_1
+  label2id:
+    LABEL_0: 0
+    LABEL_1: 1
+  problem_type: null
+  text_config:
+    architectures: null
+    output_hidden_states: false
+    return_dict: true
+    dtype: bfloat16
+    chunk_size_feed_forward: 0
+    is_encoder_decoder: false
+    id2label:
+      '0': LABEL_0
+      '1': LABEL_1
+    label2id:
+      LABEL_0: 0
+      LABEL_1: 1
+    problem_type: null
+    vocab_size: 262144
+    hidden_size: 2048
+    intermediate_size: 6144
+    logit_scale: 0.25
+    num_hidden_layers: 28
+    num_attention_heads: 16
+    num_key_value_heads: 8
+    hidden_act: silu
+    max_position_embeddings: 500000
+    initializer_range: 0.02
+    layer_norm_eps: 1.0e-05
+    use_cache: true
+    pad_token_id: 0
+    bos_token_id: 2
+    eos_token_id: 255001
+    tie_word_embeddings: true
+    rope_parameters:
+      sliding_attention:
+        mrope_interleaved: true
+        mrope_section:
+        - 24
+        - 20
+        - 20
+        rope_type: default
+        rope_theta: 50000
+      full_attention: null
+    attention_bias: false
+    attention_dropout: 0.0
+    sliding_window: 4096
+    layer_types:
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    score_shift_a: null
+    score_shift_b: null
+    pooling: null
+    head_dim: 128
+    _name_or_path: ''
+    model_type: cohere_compass_text
+    output_attentions: false
+  vision_config:
+    architectures: null
+    output_hidden_states: false
+    return_dict: true
+    dtype: bfloat16
+    chunk_size_feed_forward: 0
+    is_encoder_decoder: false
+    id2label:
+      '0': LABEL_0
+      '1': LABEL_1
+    label2id:
+      LABEL_0: 0
+      LABEL_1: 1
+    problem_type: null
+    depth: 27
+    hidden_size: 1152
+    hidden_act: gelu_pytorch_tanh
+    intermediate_size: 4304
+    num_heads: 16
+    in_channels: 3
+    patch_size: 16
+    spatial_merge_size: 2
+    temporal_patch_size: 2
+    out_hidden_size: 2048
+    num_position_embeddings: 2304
+    deepstack_visual_indexes:
+    - 8
+    - 16
+    - 24
+    initializer_range: 0.02
+    _name_or_path: ''
+    model_type: cohere_compass_vision
+    output_attentions: false
+  fusion_config:
+    patch_embeddings: true
+  image_token_id: 255031
+  video_token_id: 255032
+  vision_start_token_id: 255028
+  vision_end_token_id: 255029
+  tie_word_embeddings: true
+  _name_or_path: ''
+  eos_token_id: 255001
+  pad_token_id: 0
+  model_type: cohere_compass
+  output_attentions: false
+onnxFiles: {}
+safetensorsSizeMb: 1077.3
+approxSizeMb: 1077.3
+fetchedAt: '2026-11-05T10:40:43.000Z'

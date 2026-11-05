@@ -1,0 +1,157 @@
+_id: 672a014e26cec81fa26d5cb6
+id: PerRing/e5_ko
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- xlm-roberta
+- sentence-similarity
+- feature-extraction
+- generated_from_trainer
+- dataset_size:49962
+- loss:MultipleNegativesRankingLoss
+- arxiv:1908.10084
+- arxiv:1705.00652
+- base_model:intfloat/multilingual-e5-large
+- base_model:finetune:intfloat/multilingual-e5-large
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 4
+likes: 0
+modelId: PerRing/e5_ko
+author: PerRing
+sha: 3db5861f3b18f4cc0107f9f712809e229a136763
+lastModified: '2024-11-05T11:29:40.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: 'query: 잡지는 인종차별적이고 성차별적인 유머를 제공했다.'
+  sentences:
+  - 'passage: 잡지는 인종과 성별에 대해 편견적인 농담을 실었다.'
+  - 'passage: 잡지는 모든 사람을 존중하는 유머를 제공했다.'
+  - 'passage: 그들은 중요하지만 활용도가 낮은 데이터를 보유하고 있었다.'
+- source_sentence: 'query: 칠천 명의 남자들이 도시를 봉쇄했다.'
+  sentences:
+  - 'passage: 이것으로 인해 몇몇 사람들이 반대했습니다.'
+  - 'passage: 칠천 명의 남자들이 도시의 봉쇄를 풀었다.'
+  - 'passage: 칠천 명의 사람들이 도시를 포위했다.'
+- source_sentence: 'query: 그들은 얕은 사람들이다.'
+  sentences:
+  - 'passage: 그들은 깊이 있는 사람들이다.'
+  - 'passage: 당신은 사실들을 쉽게 확인할 수 있습니다.'
+  - 'passage: 그들은 깊이가 없는 사람들이다.'
+- source_sentence: 'query: CFO 법 보고서에는 24개의 부서와 기관이 명시되어 있습니다.'
+  sentences:
+  - 'passage: CFO 법 보고서에는 명시된 부서와 기관이 없습니다.'
+  - 'passage: CFO 법 보고서에는 명시된 부서와 기관이 24개 있습니다.'
+  - 'passage: 준비해야 할 게 너무 많아요.'
+- source_sentence: 'query: 그의 사망 약 30년 후에 극장들은 파괴되었다.'
+  sentences:
+  - 'passage: 그가 사망한 지 약 30년 후에 극장들이 무너졌다.'
+  - 'passage: 그 리조트와 호텔은 소란스럽다는 평가를 받았습니다.'
+  - 'passage: 그의 사망 약 30년 후에 극장들은 번창했다.'
+model-index: null
+config:
+  architectures:
+  - XLMRobertaModel
+  model_type: xlm-roberta
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - generated_from_trainer
+  - dataset_size:49962
+  - loss:MultipleNegativesRankingLoss
+  base_model: intfloat/multilingual-e5-large
+  widget:
+  - source_sentence: 'query: 잡지는 인종차별적이고 성차별적인 유머를 제공했다.'
+    sentences:
+    - 'passage: 잡지는 인종과 성별에 대해 편견적인 농담을 실었다.'
+    - 'passage: 잡지는 모든 사람을 존중하는 유머를 제공했다.'
+    - 'passage: 그들은 중요하지만 활용도가 낮은 데이터를 보유하고 있었다.'
+  - source_sentence: 'query: 칠천 명의 남자들이 도시를 봉쇄했다.'
+    sentences:
+    - 'passage: 이것으로 인해 몇몇 사람들이 반대했습니다.'
+    - 'passage: 칠천 명의 남자들이 도시의 봉쇄를 풀었다.'
+    - 'passage: 칠천 명의 사람들이 도시를 포위했다.'
+  - source_sentence: 'query: 그들은 얕은 사람들이다.'
+    sentences:
+    - 'passage: 그들은 깊이 있는 사람들이다.'
+    - 'passage: 당신은 사실들을 쉽게 확인할 수 있습니다.'
+    - 'passage: 그들은 깊이가 없는 사람들이다.'
+  - source_sentence: 'query: CFO 법 보고서에는 24개의 부서와 기관이 명시되어 있습니다.'
+    sentences:
+    - 'passage: CFO 법 보고서에는 명시된 부서와 기관이 없습니다.'
+    - 'passage: CFO 법 보고서에는 명시된 부서와 기관이 24개 있습니다.'
+    - 'passage: 준비해야 할 게 너무 많아요.'
+  - source_sentence: 'query: 그의 사망 약 30년 후에 극장들은 파괴되었다.'
+    sentences:
+    - 'passage: 그가 사망한 지 약 30년 후에 극장들이 무너졌다.'
+    - 'passage: 그 리조트와 호텔은 소란스럽다는 평가를 받았습니다.'
+    - 'passage: 그의 사망 약 30년 후에 극장들은 번창했다.'
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2024-11-05T11:28:14.000Z'
+safetensors:
+  parameters:
+    F32: 559890432
+  total: 559890432
+usedStorage: 2256690163
+downloadsAllTime: 4
+inferenceProviderMapping: {}
+configJson:
+  _name_or_path: /backup/hgyoo/embedding/model/e5_ko/checkpoint-50
+  architectures:
+  - XLMRobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 1024
+  initializer_range: 0.02
+  intermediate_size: 4096
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 514
+  model_type: xlm-roberta
+  num_attention_heads: 16
+  num_hidden_layers: 24
+  output_past: true
+  pad_token_id: 1
+  position_embedding_type: absolute
+  torch_dtype: float32
+  transformers_version: 4.45.2
+  type_vocab_size: 1
+  use_cache: true
+  vocab_size: 250002
+onnxFiles: {}
+safetensorsSizeMb: 2239.6
+approxSizeMb: 2239.6
+fetchedAt: '2026-11-05T10:40:43.000Z'

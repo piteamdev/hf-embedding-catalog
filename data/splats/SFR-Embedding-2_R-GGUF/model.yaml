@@ -1,0 +1,61 @@
+_id: 6aec16debdcd3bc17421652f
+id: splats/SFR-Embedding-2_R-GGUF
+private: false
+pipeline_tag: feature-extraction
+library_name: gguf
+tags:
+- gguf
+- sentence-transformers
+- text-embeddings
+- mistral
+- llama.cpp
+- unsloth
+- feature-extraction
+- base_model:Salesforce/SFR-Embedding-2_R
+- base_model:quantized:Salesforce/SFR-Embedding-2_R
+- license:cc-by-nc-4.0
+- endpoints_compatible
+- region:us
+downloads: 5
+likes: 0
+modelId: splats/SFR-Embedding-2_R-GGUF
+author: splats
+sha: 59b440a00dd0b65a598f32c3382fe0940c5877f1
+lastModified: '2026-11-05T05:42:48.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: cc-by-nc-4.0
+  base_model: Salesforce/SFR-Embedding-2_R
+  tags:
+  - sentence-transformers
+  - text-embeddings
+  - gguf
+  - mistral
+  - llama.cpp
+  - unsloth
+  pipeline_tag: feature-extraction
+  library_name: gguf
+gguf:
+  total: 7110660096
+  architecture: llama
+  context_length: 32768
+  bos_token: <s>
+  eos_token: </s>
+  totalFileSize: 7556593920
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: SFR-Embedding-2_R-Q8_0.gguf
+spaces: []
+createdAt: '2026-11-05T05:40:46.000Z'
+usedStorage: 7556593920
+downloadsAllTime: 5
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-05T10:40:43.000Z'

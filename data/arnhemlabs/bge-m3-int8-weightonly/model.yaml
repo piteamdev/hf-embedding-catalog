@@ -1,0 +1,53 @@
+_id: 6aec045b5b464408119e27f0
+id: arnhemlabs/bge-m3-int8-weightonly
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- int8
+- weight-only-quantization
+- sentence-embeddings
+- feature-extraction
+- base_model:BAAI/bge-m3
+- base_model:quantized:BAAI/bge-m3
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: arnhemlabs/bge-m3-int8-weightonly
+author: arnhemlabs
+sha: d176c8f499aad8d491b841dd9ed8b5e6b8064ee6
+lastModified: '2026-11-05T04:51:46.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  base_model: BAAI/bge-m3
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  tags:
+  - onnx
+  - int8
+  - weight-only-quantization
+  - sentence-embeddings
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: model.onnx
+- rfilename: model.onnx.data
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-11-05T04:21:47.000Z'
+usedStorage: 1388142485
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  model.onnx: 0.7
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-05T10:40:43.000Z'

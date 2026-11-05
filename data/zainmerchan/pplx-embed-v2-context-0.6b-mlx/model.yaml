@@ -1,0 +1,50 @@
+_id: 6aeb4b4f438b8efca8c0ed60
+id: zainmerchan/pplx-embed-v2-context-0.6b-mlx
+private: false
+pipeline_tag: feature-extraction
+library_name: mlx
+tags:
+- mlx
+- apple-silicon
+- embeddings
+- contextual-embeddings
+- retrieval
+- feature-extraction
+- base_model:perplexity-ai/pplx-embed-v2-context-0.6b
+- base_model:finetune:perplexity-ai/pplx-embed-v2-context-0.6b
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: zainmerchan/pplx-embed-v2-context-0.6b-mlx
+author: zainmerchan
+sha: 00062323c298fc0ba124df37f3199a2de5f906cc
+lastModified: '2026-11-04T21:32:59.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: mlx
+  pipeline_tag: feature-extraction
+  base_model: perplexity-ai/pplx-embed-v2-context-0.6b
+  license: mit
+  tags:
+  - mlx
+  - apple-silicon
+  - embeddings
+  - contextual-embeddings
+  - retrieval
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+spaces: []
+createdAt: '2026-11-04T15:12:15.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-05T10:40:43.000Z'

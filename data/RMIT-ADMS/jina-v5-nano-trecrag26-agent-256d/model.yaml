@@ -1,0 +1,122 @@
+_id: 6a6b1ee4728901b0fa5fc97e
+id: RMIT-ADMS/jina-v5-nano-trecrag26-agent-256d
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- eurobert
+- sentence-similarity
+- feature-extraction
+- dense-retrieval
+- matryoshka
+- base_model:jinaai/jina-embeddings-v5-text-nano
+- base_model:finetune:jinaai/jina-embeddings-v5-text-nano
+- license:cc-by-nc-4.0
+- endpoints_compatible
+- region:us
+downloads: 7
+likes: 0
+modelId: RMIT-ADMS/jina-v5-nano-trecrag26-agent-256d
+author: RMIT-ADMS
+sha: f990deb3ee162bade37c19f63712b1a8ac0d0205
+lastModified: '2026-07-30T10:25:46.000Z'
+gated: false
+disabled: false
+mask_token: <|mask|>
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config:
+  architectures:
+  - EuroBertModel
+  model_type: eurobert
+  tokenizer_config:
+    bos_token: <|begin_of_text|>
+    eos_token: <|end_of_text|>
+    pad_token: <|pad|>
+    mask_token: <|mask|>
+cardData:
+  license: cc-by-nc-4.0
+  base_model: jinaai/jina-embeddings-v5-text-nano
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense-retrieval
+  - matryoshka
+  - eurobert
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-07-30T09:52:36.000Z'
+safetensors:
+  parameters:
+    F32: 211766016
+  total: 211766016
+usedStorage: 864285966
+downloadsAllTime: 150
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - EuroBertModel
+  attention_bias: false
+  attention_dropout: 0.0
+  bos_token: <|begin_of_text|>
+  bos_token_id: 128000
+  classifier_pooling: late
+  dtype: float32
+  eos_token: <|end_of_text|>
+  eos_token_id: 128001
+  head_dim: 64
+  hidden_act: silu
+  hidden_dropout: 0.0
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  mask_token: <|mask|>
+  mask_token_id: 128002
+  max_position_embeddings: 8192
+  mlp_bias: false
+  model_type: eurobert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  num_key_value_heads: 12
+  pad_token: <|end_of_text|>
+  pad_token_id: 128001
+  pretraining_tp: 1
+  rms_norm_eps: 1.0e-05
+  rope_parameters:
+    factor: 1.0
+    rope_theta: 1000000
+    rope_type: default
+  task_names:
+  - retrieval
+  - text-matching
+  - clustering
+  - classification
+  tie_word_embeddings: false
+  transformers_version: 5.14.1
+  use_cache: true
+  vocab_size: 128256
+onnxFiles: {}
+safetensorsSizeMb: 847.1
+approxSizeMb: 847.1
+fetchedAt: '2026-11-05T10:40:43.000Z'

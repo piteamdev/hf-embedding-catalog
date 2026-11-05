@@ -1,0 +1,98 @@
+_id: 6aeaaf742f84a4407ded8407
+id: DakeraAI/all-MiniLM-L6-v2
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- safetensors
+- bert
+- dakera
+- ai-agent-memory
+- agent-memory
+- long-term-memory
+- rag
+- self-hosted
+- mcp
+- mirror
+- feature-extraction
+- base_model:sentence-transformers/all-MiniLM-L6-v2
+- base_model:quantized:sentence-transformers/all-MiniLM-L6-v2
+- license:apache-2.0
+- region:us
+downloads: 34
+likes: 0
+modelId: DakeraAI/all-MiniLM-L6-v2
+author: DakeraAI
+sha: d2136d2f4c3e0e0794ac1f3eca024cfadd8785a9
+lastModified: '2026-11-04T04:24:25.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+cardData:
+  license: apache-2.0
+  base_model: sentence-transformers/all-MiniLM-L6-v2
+  pipeline_tag: feature-extraction
+  library_name: onnx
+  tags:
+  - dakera
+  - ai-agent-memory
+  - agent-memory
+  - long-term-memory
+  - rag
+  - self-hosted
+  - mcp
+  - onnx
+  - mirror
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: onnx/model.onnx
+- rfilename: onnx/model_quantized.onnx
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-11-04T04:07:16.000Z'
+safetensors:
+  parameters:
+    I64: 512
+    F32: 22713216
+  total: 22713728
+usedStorage: 204228352
+downloadsAllTime: 34
+inferenceProviderMapping: {}
+configJson:
+  _name_or_path: nreimers/MiniLM-L6-H384-uncased
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  initializer_range: 0.02
+  intermediate_size: 1536
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 6
+  pad_token_id: 0
+  position_embedding_type: absolute
+  transformers_version: 4.8.2
+  type_vocab_size: 2
+  use_cache: true
+  vocab_size: 30522
+onnxFiles:
+  onnx/model.onnx: 90.4
+  onnx/model_quantized.onnx: 23.0
+safetensorsSizeMb: 90.9
+approxSizeMb: 90.9
+fetchedAt: '2026-11-05T10:40:43.000Z'

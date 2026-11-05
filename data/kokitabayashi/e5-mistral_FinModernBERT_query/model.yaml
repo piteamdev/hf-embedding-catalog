@@ -1,0 +1,393 @@
+_id: 6aea362de2b66aeda46b3282
+id: kokitabayashi/e5-mistral_FinModernBERT_query
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- mistral
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:44709
+- loss:MultipleNegativesRankingLoss
+- en
+- arxiv:1908.10084
+- arxiv:1807.03748
+- base_model:intfloat/e5-mistral-7b-instruct
+- base_model:finetune:intfloat/e5-mistral-7b-instruct
+- license:apache-2.0
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 40
+likes: 0
+modelId: kokitabayashi/e5-mistral_FinModernBERT_query
+author: kokitabayashi
+sha: c8b82fcfc38975afd60d9b15b4291cffc58cc7df
+lastModified: '2026-11-03T19:32:38.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: What were the primary drivers for the increase in Employer Services' revenues as reported in fiscal 2016?
+  sentences:
+  - As a Class 4 insurer, Arch Re Bermuda is required to submit an opinion of its approved loss reserve specialist with its
+    statutory financial return in respect of its loss and loss expense provisions. The loss reserve specialist, who will normally
+    be a qualified casualty actuary, must be approved by the BMA.
+  - Despite the challenges of the current operating environment, in 2007 we grew our sales from market share gains by approximately
+    6% and reduced our selling, general and administrative expenses by 14.6% compared to our sales volume decline of 24.6%,
+    when compared to last year.
+  - Employer Services' revenues, as reported, increase d 5% in fiscal 2016 , as compared to fiscal 2015 , despite a negative
+    impact of one percentage point from foreign currency translation. Revenues increase d due to new business started from
+    new business bookings, the impact of price increases, and an increase in the number of employees on our clients’ payrolls
+    as our U.S. pays per control increased 2.5% in fiscal 2016 as compared to fiscal 2015 .
+- source_sentence: What were the primary drivers for the increase in investment management fee revenues during fiscal year
+    2011?
+  sentences:
+  - Ameren Illinois' financing activities provided net cash of $45 million in 2013, compared with 2012 when Ameren Illinois’
+    financing activities used net cash of $103 million.
+  - The improvement in growth rates for our BMVD segment in 2002 in comparison with 2001 reflects increased unit sales resulting
+    from our continuing efforts to reduce prices for customers, including increases in customer discounts on books and the
+    introduction of everyday free shipping at www.amazon.com for certain orders. The improvement in growth rates for our ETK
+    segment in 2002 in comparison with 2001 reflects increased unit sales resulting from our continuing efforts to reduce
+    prices for customers, including increases in customer discounts through price changes and rebate programs and the introduction
+    of everyday free shipping at www.amazon.com for certain orders.
+  - Operating income increased $701.1 million and net income attributable to Franklin Resources, Inc. increased $477.9 million
+    in fiscal year 2011 primarily due to a 27% increase in investment management fee revenues, which was driven by a 22% increase
+    in average AUM and a higher effective management fee rate.
+- source_sentence: What was the impact on Aptiv's operating expenses following the formation of the Motional joint venture
+    with Hyundai Motor Group?
+  sentences:
+  - In addition, several states are considering legislation requiring certain data security standards that could result in
+    higher technology costs for the Company.
+  - During 2003 and 2002, we recognized revenues from our agreement with Seikagaku of $0.6 million and $1.6 million, respectively,
+    which are included in corporate partner revenues.
+  - As a result, subsequent to the closing of the transaction, the joint venture is expected to fund all of its future operating
+    expenses and investments in autonomous driving technologies for the foreseeable future. Consequently, Aptiv is no longer
+    required to fund these investments and expenses, which approximated $180 million for the year ended December 31, 2019
+    prior to the joint venture formation.
+- source_sentence: How does the Corporation manage strategic risk in relation to its capital levels and business execution?
+  sentences:
+  - An aspect of strategic risk is the risk that the Corporation’s capital levels are not adequate to meet minimum regulatory
+    requirements and support execution of business activities or absorb losses from risks during normal or adverse economic
+    and market conditions. As such, capital risk is managed in parallel to strategic risk.
+  - Illustrator is available on desktop and iPad to Creative Cloud subscribers, and customers can also subscribe to use it
+    as an individual subscription product.
+  - These ground leases may impose limitations on our use of the properties, restrict our ability to finance, sell or otherwise
+    transfer our interests in the properties or restrict the leasing of the properties. These restrictions may limit our ability
+    to timely sell or exchange the properties, impair the properties’ value or negatively impact our ability to operate the
+    properties.
+- source_sentence: What were the total capital expenditures for capacity expansion projects and the amount of cash returned
+    to shareholders in fiscal 2015?
+  sentences:
+  - BNO will be subject to credit risk with respect to counterparties to OTC contracts entered into by BNO or held by special
+    purpose or structured vehicles. Unlike in futures contracts, the counterparty to these contracts is generally a single
+    bank or other financial institution, rather than a clearing organization backed by a group of financial institutions.
+    As a result, there will be greater counterparty credit risk in these transactions.
+  - In fiscal 2015, our return on average invested capital improved modestly, despite near record levels of capital spending
+    of $120 million in our capacity expansion projects... Also during fiscal 2015, we returned $718 million in cash to our
+    shareholders through dividend payments of $256 million and share repurchases of $462 million, while maintaining investment-grade
+    credit ratings.
+  - "The decrease in core unit volume in 2005 reflects the following factors: \x95 Loss of market share in our North American\
+    \ roll materials business following our implementation of selling price increases to offset higher raw material costs\
+    \ \x95 The impact of an extra week in the 2004 fiscal year \x95 Accelerated purchases by Office and Consumer Products\
+    \ customers in advance of our 2005 selling price increases, which contributed to higher growth in 2004"
+model-index:
+- name: e5-mistral-7b-instruct base trained on BatuhanECB/FinModernBERT-pairs-sec-synthetic-v1
+  results:
+  - task:
+      type: information-retrieval
+      name: Information Retrieval
+    dataset:
+      name: finance eval
+      type: finance-eval
+    metrics:
+    - type: cosine_accuracy@1
+      value: 0.00020876826722338206
+      name: Cosine Accuracy@1
+      verified: false
+    - type: cosine_accuracy@3
+      value: 0.00020876826722338206
+      name: Cosine Accuracy@3
+      verified: false
+    - type: cosine_accuracy@5
+      value: 0.0004175365344467641
+      name: Cosine Accuracy@5
+      verified: false
+    - type: cosine_accuracy@10
+      value: 0.0006263048016701461
+      name: Cosine Accuracy@10
+      verified: false
+    - type: cosine_precision@1
+      value: 0.00020876826722338206
+      name: Cosine Precision@1
+      verified: false
+    - type: cosine_precision@3
+      value: 6.9589422407794e-05
+      name: Cosine Precision@3
+      verified: false
+    - type: cosine_precision@5
+      value: 8.350730688935282e-05
+      name: Cosine Precision@5
+      verified: false
+    - type: cosine_precision@10
+      value: 6.263048016701462e-05
+      name: Cosine Precision@10
+      verified: false
+    - type: cosine_recall@1
+      value: 0.00020876826722338206
+      name: Cosine Recall@1
+      verified: false
+    - type: cosine_recall@3
+      value: 0.00020876826722338206
+      name: Cosine Recall@3
+      verified: false
+    - type: cosine_recall@5
+      value: 0.0004175365344467641
+      name: Cosine Recall@5
+      verified: false
+    - type: cosine_recall@10
+      value: 0.0006263048016701461
+      name: Cosine Recall@10
+      verified: false
+    - type: cosine_ndcg@10
+      value: 0.00036421726818389204
+      name: Cosine Ndcg@10
+      verified: false
+    - type: cosine_mrr@10
+      value: 0.0002861864996520529
+      name: Cosine Mrr@10
+      verified: false
+    - type: cosine_map@100
+      value: 0.0006647619752637618
+      name: Cosine Map@100
+      verified: false
+config:
+  architectures:
+  - MistralModel
+  model_type: mistral
+  tokenizer_config:
+    use_default_system_prompt: false
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    pad_token: </s>
+cardData:
+  language:
+  - en
+  license: apache-2.0
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:44709
+  - loss:MultipleNegativesRankingLoss
+  base_model: intfloat/e5-mistral-7b-instruct
+  widget:
+  - source_sentence: What were the primary drivers for the increase in Employer Services' revenues as reported in fiscal 2016?
+    sentences:
+    - As a Class 4 insurer, Arch Re Bermuda is required to submit an opinion of its approved loss reserve specialist with
+      its statutory financial return in respect of its loss and loss expense provisions. The loss reserve specialist, who
+      will normally be a qualified casualty actuary, must be approved by the BMA.
+    - Despite the challenges of the current operating environment, in 2007 we grew our sales from market share gains by approximately
+      6% and reduced our selling, general and administrative expenses by 14.6% compared to our sales volume decline of 24.6%,
+      when compared to last year.
+    - Employer Services' revenues, as reported, increase d 5% in fiscal 2016 , as compared to fiscal 2015 , despite a negative
+      impact of one percentage point from foreign currency translation. Revenues increase d due to new business started from
+      new business bookings, the impact of price increases, and an increase in the number of employees on our clients’ payrolls
+      as our U.S. pays per control increased 2.5% in fiscal 2016 as compared to fiscal 2015 .
+  - source_sentence: What were the primary drivers for the increase in investment management fee revenues during fiscal year
+      2011?
+    sentences:
+    - Ameren Illinois' financing activities provided net cash of $45 million in 2013, compared with 2012 when Ameren Illinois’
+      financing activities used net cash of $103 million.
+    - The improvement in growth rates for our BMVD segment in 2002 in comparison with 2001 reflects increased unit sales resulting
+      from our continuing efforts to reduce prices for customers, including increases in customer discounts on books and the
+      introduction of everyday free shipping at www.amazon.com for certain orders. The improvement in growth rates for our
+      ETK segment in 2002 in comparison with 2001 reflects increased unit sales resulting from our continuing efforts to reduce
+      prices for customers, including increases in customer discounts through price changes and rebate programs and the introduction
+      of everyday free shipping at www.amazon.com for certain orders.
+    - Operating income increased $701.1 million and net income attributable to Franklin Resources, Inc. increased $477.9 million
+      in fiscal year 2011 primarily due to a 27% increase in investment management fee revenues, which was driven by a 22%
+      increase in average AUM and a higher effective management fee rate.
+  - source_sentence: What was the impact on Aptiv's operating expenses following the formation of the Motional joint venture
+      with Hyundai Motor Group?
+    sentences:
+    - In addition, several states are considering legislation requiring certain data security standards that could result
+      in higher technology costs for the Company.
+    - During 2003 and 2002, we recognized revenues from our agreement with Seikagaku of $0.6 million and $1.6 million, respectively,
+      which are included in corporate partner revenues.
+    - As a result, subsequent to the closing of the transaction, the joint venture is expected to fund all of its future operating
+      expenses and investments in autonomous driving technologies for the foreseeable future. Consequently, Aptiv is no longer
+      required to fund these investments and expenses, which approximated $180 million for the year ended December 31, 2019
+      prior to the joint venture formation.
+  - source_sentence: How does the Corporation manage strategic risk in relation to its capital levels and business execution?
+    sentences:
+    - An aspect of strategic risk is the risk that the Corporation’s capital levels are not adequate to meet minimum regulatory
+      requirements and support execution of business activities or absorb losses from risks during normal or adverse economic
+      and market conditions. As such, capital risk is managed in parallel to strategic risk.
+    - Illustrator is available on desktop and iPad to Creative Cloud subscribers, and customers can also subscribe to use
+      it as an individual subscription product.
+    - These ground leases may impose limitations on our use of the properties, restrict our ability to finance, sell or otherwise
+      transfer our interests in the properties or restrict the leasing of the properties. These restrictions may limit our
+      ability to timely sell or exchange the properties, impair the properties’ value or negatively impact our ability to
+      operate the properties.
+  - source_sentence: What were the total capital expenditures for capacity expansion projects and the amount of cash returned
+      to shareholders in fiscal 2015?
+    sentences:
+    - BNO will be subject to credit risk with respect to counterparties to OTC contracts entered into by BNO or held by special
+      purpose or structured vehicles. Unlike in futures contracts, the counterparty to these contracts is generally a single
+      bank or other financial institution, rather than a clearing organization backed by a group of financial institutions.
+      As a result, there will be greater counterparty credit risk in these transactions.
+    - In fiscal 2015, our return on average invested capital improved modestly, despite near record levels of capital spending
+      of $120 million in our capacity expansion projects... Also during fiscal 2015, we returned $718 million in cash to our
+      shareholders through dividend payments of $256 million and share repurchases of $462 million, while maintaining investment-grade
+      credit ratings.
+    - "The decrease in core unit volume in 2005 reflects the following factors: \x95 Loss of market share in our North American\
+      \ roll materials business following our implementation of selling price increases to offset higher raw material costs\
+      \ \x95 The impact of an extra week in the 2004 fiscal year \x95 Accelerated purchases by Office and Consumer Products\
+      \ customers in advance of our 2005 selling price increases, which contributed to higher growth in 2004"
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - cosine_accuracy@1
+  - cosine_accuracy@3
+  - cosine_accuracy@5
+  - cosine_accuracy@10
+  - cosine_precision@1
+  - cosine_precision@3
+  - cosine_precision@5
+  - cosine_precision@10
+  - cosine_recall@1
+  - cosine_recall@3
+  - cosine_recall@5
+  - cosine_recall@10
+  - cosine_ndcg@10
+  - cosine_mrr@10
+  - cosine_map@100
+  model-index:
+  - name: e5-mistral-7b-instruct base trained on BatuhanECB/FinModernBERT-pairs-sec-synthetic-v1
+    results:
+    - task:
+        type: information-retrieval
+        name: Information Retrieval
+      dataset:
+        name: finance eval
+        type: finance-eval
+      metrics:
+      - type: cosine_accuracy@1
+        value: 0.00020876826722338206
+        name: Cosine Accuracy@1
+        verified: false
+      - type: cosine_accuracy@3
+        value: 0.00020876826722338206
+        name: Cosine Accuracy@3
+        verified: false
+      - type: cosine_accuracy@5
+        value: 0.0004175365344467641
+        name: Cosine Accuracy@5
+        verified: false
+      - type: cosine_accuracy@10
+        value: 0.0006263048016701461
+        name: Cosine Accuracy@10
+        verified: false
+      - type: cosine_precision@1
+        value: 0.00020876826722338206
+        name: Cosine Precision@1
+        verified: false
+      - type: cosine_precision@3
+        value: 6.9589422407794e-05
+        name: Cosine Precision@3
+        verified: false
+      - type: cosine_precision@5
+        value: 8.350730688935282e-05
+        name: Cosine Precision@5
+        verified: false
+      - type: cosine_precision@10
+        value: 6.263048016701462e-05
+        name: Cosine Precision@10
+        verified: false
+      - type: cosine_recall@1
+        value: 0.00020876826722338206
+        name: Cosine Recall@1
+        verified: false
+      - type: cosine_recall@3
+        value: 0.00020876826722338206
+        name: Cosine Recall@3
+        verified: false
+      - type: cosine_recall@5
+        value: 0.0004175365344467641
+        name: Cosine Recall@5
+        verified: false
+      - type: cosine_recall@10
+        value: 0.0006263048016701461
+        name: Cosine Recall@10
+        verified: false
+      - type: cosine_ndcg@10
+        value: 0.00036421726818389204
+        name: Cosine Ndcg@10
+        verified: false
+      - type: cosine_mrr@10
+        value: 0.0002861864996520529
+        name: Cosine Mrr@10
+        verified: false
+      - type: cosine_map@100
+        value: 0.0006647619752637618
+        name: Cosine Map@100
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-03T19:29:49.000Z'
+safetensors:
+  parameters:
+    F16: 7110660096
+  total: 7110660096
+usedStorage: 14221352088
+downloadsAllTime: 40
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - MistralModel
+  attention_dropout: 0.0
+  bos_token_id: 1
+  dtype: float16
+  eos_token_id: 2
+  head_dim: 128
+  hidden_act: silu
+  hidden_size: 4096
+  initializer_range: 0.02
+  intermediate_size: 14336
+  max_position_embeddings: 32768
+  model_type: mistral
+  num_attention_heads: 32
+  num_hidden_layers: 32
+  num_key_value_heads: 8
+  pad_token_id: 2
+  rms_norm_eps: 1.0e-05
+  rope_parameters:
+    rope_theta: 10000.0
+    rope_type: default
+  sliding_window: 4096
+  tie_word_embeddings: false
+  transformers_version: 5.22.0
+  use_cache: false
+  vocab_size: 32000
+onnxFiles: {}
+safetensorsSizeMb: 14221.4
+approxSizeMb: 14221.3
+fetchedAt: '2026-11-05T10:40:43.000Z'

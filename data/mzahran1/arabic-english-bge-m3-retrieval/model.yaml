@@ -1,0 +1,125 @@
+_id: 6aec652d5f10237b972f4b64
+id: mzahran1/arabic-english-bge-m3-retrieval
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- xlm-roberta
+- retrieval
+- cross-lingual
+- arabic
+- rag
+- hard-negatives
+- sentence-similarity
+- ar
+- en
+- dataset:google-research-datasets/tydiqa
+- dataset:hsseinmz/arcd
+- dataset:rajpurkar/squad
+- base_model:BAAI/bge-m3
+- base_model:finetune:BAAI/bge-m3
+- license:mit
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 5
+likes: 0
+modelId: mzahran1/arabic-english-bge-m3-retrieval
+author: mzahran1
+sha: 467a29ba02658dbf772a7b87535cba06eb6525a3
+lastModified: '2026-11-05T11:18:04.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: هذا شخص سعيد
+  sentences:
+  - هذا كلب سعيد
+  - هذا شخص سعيد جدا
+  - اليوم هو يوم مشمس
+model-index: null
+config:
+  architectures:
+  - XLMRobertaModel
+  model_type: xlm-roberta
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  license: mit
+  language:
+  - ar
+  - en
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  base_model: BAAI/bge-m3
+  tags:
+  - sentence-transformers
+  - retrieval
+  - cross-lingual
+  - arabic
+  - rag
+  - hard-negatives
+  datasets:
+  - google-research-datasets/tydiqa
+  - hsseinmz/arcd
+  - rajpurkar/squad
+  metrics:
+  - mrr
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-05T11:14:53.000Z'
+safetensors:
+  parameters:
+    F32: 567754752
+  total: 567754752
+usedStorage: 2288147443
+downloadsAllTime: 5
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - XLMRobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 1024
+  initializer_range: 0.02
+  intermediate_size: 4096
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 8194
+  model_type: xlm-roberta
+  num_attention_heads: 16
+  num_hidden_layers: 24
+  output_past: true
+  pad_token_id: 1
+  position_embedding_type: absolute
+  transformers_version: 4.57.6
+  type_vocab_size: 1
+  use_cache: false
+  vocab_size: 250002
+onnxFiles: {}
+safetensorsSizeMb: 2271.1
+approxSizeMb: 2271.0
+fetchedAt: '2026-11-06T10:40:49.000Z'

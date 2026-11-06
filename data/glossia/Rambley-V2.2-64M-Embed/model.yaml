@@ -1,0 +1,591 @@
+_id: 6aec9a11402045ad04692277
+id: glossia/Rambley-V2.2-64M-Embed
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- rambley_v2
+- sentence-similarity
+- feature-extraction
+- custom_code
+- dataset:nomic-ai/nomic-embed-unsupervised-data
+- dataset:nomic-ai/nomic-embed-supervised-data
+- base_model:glossia/Rambley-V2.2-64M
+- base_model:finetune:glossia/Rambley-V2.2-64M
+- endpoints_compatible
+- region:us
+downloads: 19
+likes: 0
+modelId: glossia/Rambley-V2.2-64M-Embed
+author: glossia
+sha: d3d0d969a59aaf654a5efc34aaa7ee2d52b61ba0
+lastModified: '2026-11-05T15:57:45.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config:
+  architectures:
+  - RambleyV2Model
+  auto_map:
+    AutoConfig: config_rambley_v2.RambleyV2Config
+    AutoModel: modeling_rambley_v2.RambleyV2Model
+    AutoModelForCausalLM: modeling_rambley_v2.RambleyV2ForCausalLM
+  model_type: rambley_v2
+  tokenizer_config:
+    bos_token: null
+    eos_token: <|eos|>
+    pad_token: <|pad|>
+  chat_template_jinja: "{%- macro value(v) -%}\n    {%- if v is mapping -%}\n        {%- for k, item in v.items() -%}{{ argument(k,\
+    \ item) }}{%- endfor -%}\n    {%- elif v is sequence and v is not string -%}\n        {%- for item in v -%}{{ argument(loop.index0\
+    \ | string, item) }}{%- endfor -%}\n    {%- elif v is none -%}null\n    {%- elif v is sameas true -%}true\n    {%- elif\
+    \ v is sameas false -%}false\n    {%- else -%}{{ v }}\n    {%- endif -%}\n{%- endmacro -%}\n{%- macro argument(name, v)\
+    \ -%}\n    {{- '<|tool_argument|><|tool_argument_name|>' ~ name ~ '<|tool_argument_name_end|><|tool_argument_value|>'\
+    \ -}}\n    {{- value(v) -}}\n    {{- '<|tool_argument_value_end|><|tool_argument_end|>' -}}\n{%- endmacro -%}\n{%- macro\
+    \ metadata(label, obj, excluded) -%}\n    {%- set ns = namespace(started=false) -%}\n    {%- for k, v in obj.items() if\
+    \ k not in excluded -%}\n        {%- if not ns.started -%}{{ '\\n' ~ label ~ ':\\n' }}{%- set ns.started = true -%}{%-\
+    \ endif -%}\n        {{- argument(k, v) -}}\n    {%- endfor -%}\n{%- endmacro -%}\n{%- macro definitions(items) -%}\n\
+    \    {%- if items is string or items is mapping -%}\n        {{- raise_exception('Tool definitions must be a list of objects;\
+    \ decode JSON before applying the template.') -}}\n    {%- endif -%}\n    {%- for definition in items -%}\n        {%-\
+    \ set f = definition.get('function', definition) -%}\n        {{- '<|tool_name|>' ~ f['name'] ~ '<|tool_name_end|>' -}}\n\
+    \        {%- if 'description' in f -%}{{ '\\nDescription:\\n' }}{{ value(f['description']) }}{%- endif -%}\n        {%-\
+    \ set params = f.get('parameters', {}) -%}\n        {{- '<|tool_arguments|>' -}}\n        {%- for name, schema in params.get('properties',\
+    \ {}).items() -%}\n            {{- '<|tool_argument|><|tool_argument_name|>' ~ name ~ '<|tool_argument_name_end|>' -}}\n\
+    \            {%- if schema is mapping -%}\n                {%- if 'type' in schema -%}{{ '<|tool_argument_type|>' }}{{\
+    \ value(schema['type']) }}{{ '<|tool_argument_type_end|>' }}{%- endif -%}\n                {%- if 'description' in schema\
+    \ -%}{{ '\\nDescription:\\n' }}{{ value(schema['description']) }}{%- endif -%}\n                {%- for key in ['example',\
+    \ 'examples'] if key in schema -%}\n                    {{- key ~ ':<|tool_argument_example|>' -}}{{ value(schema[key])\
+    \ }}{{ '<|tool_argument_example_end|>' }}\n                {%- endfor -%}\n                {{- metadata('Constraints',\
+    \ schema, ['type', 'description', 'example', 'examples']) -}}\n            {%- else -%}{{ '\\nConstraints:\\n' }}{{ value(schema)\
+    \ }}\n            {%- endif -%}\n            {{- '<|tool_argument_end|>' -}}\n        {%- endfor -%}\n        {{- metadata('Parameter\
+    \ constraints', params, ['properties']) -}}\n        {{- metadata('Function metadata', f, ['name', 'description', 'parameters'])\
+    \ -}}\n        {%- if 'function' in definition -%}{{ metadata('Tool metadata', definition, ['function']) }}{%- endif -%}\n\
+    \    {%- endfor -%}\n{%- endmacro -%}\n{%- set roles = {'system': '<|im_system|>', 'user': '<|im_human|>', 'assistant':\
+    \ '<|im_model|>', 'tool': '<|im_tool_response|>', 'environment': '<|im_tool_response|>'} -%}\n{%- set supplied_tools =\
+    \ tools | default([], true) -%}\n{%- if supplied_tools and (not messages or messages[0]['role'] != 'system') -%}\n   \
+    \ {{- '<|im_system|>' -}}{{ definitions(supplied_tools) }}{{ '<|im_end|>' }}\n{%- endif -%}\n{%- for message in messages\
+    \ -%}\n    {%- set role = message['role'] -%}\n    {%- if role not in roles -%}{{ raise_exception('Unsupported message\
+    \ role: ' ~ role) }}{%- endif -%}\n    {%- set calls = message.get('tool_calls') or message.get('function_calls') or []\
+    \ -%}\n    {%- if calls is string or calls is mapping -%}\n        {{- raise_exception('Tool calls must be structured\
+    \ objects with dictionary arguments; parse raw Dolci function_calls first.') -}}\n    {%- endif -%}\n    {%- if calls\
+    \ and role != 'assistant' -%}{{ raise_exception('Only assistant messages may contain tool calls.') }}{%- endif -%}\n \
+    \   {%- set defs = message.get('functions') or [] -%}\n    {%- if supplied_tools and loop.first and role == 'system' -%}\n\
+    \        {%- if defs -%}{{ raise_exception('Supply tools globally or on the first system message, not both.') }}{%- endif\
+    \ -%}\n        {%- set defs = supplied_tools -%}\n    {%- endif -%}\n    {%- if defs and role != 'system' -%}{{ raise_exception('Tool\
+    \ definitions require a system message.') }}{%- endif -%}\n    {%- set content = message.get('content') -%}\n    {%- if\
+    \ content is none and (calls or defs or message.get('reasoning_content') is not none) -%}{%- set content = '' -%}{%- endif\
+    \ -%}\n    {%- if content is not string -%}{{ raise_exception('Message content must be a string.') }}{%- endif -%}\n \
+    \   {%- if defs -%}\n        {%- set content = content.replace('within <functions></functions> XML tags', 'in the tool\
+    \ definitions below').replace('within <functions></functions>', 'in the tool definitions below') -%}\n        {%- set\
+    \ call_hint = '<|tool_call|><|tool_name|>NAME<|tool_name_end|><|tool_arguments|>ARGUMENTS<|tool_call_end|> delimiters'\
+    \ -%}\n        {%- set content = content.replace('<function_calls></function_calls> XML tags', call_hint).replace('<function_calls></function_calls>',\
+    \ call_hint) -%}\n    {%- endif -%}\n    {{- roles[role] -}}\n    {%- if role == 'assistant' and message.get('reasoning_content')\
+    \ is not none -%}\n        {%- if message['reasoning_content'] is not string -%}{{ raise_exception('reasoning_content\
+    \ must be a string.') }}{%- endif -%}\n        {{- '<|think|>' ~ message['reasoning_content'].strip('\\r\\n') ~ '<|think_end|>'\
+    \ ~ content.lstrip('\\r\\n') -}}\n    {%- elif role == 'assistant' and parse_reasoning_tags | default(false) and (content\
+    \ or not calls) -%}\n        {%- set body = content.lstrip() -%}\n        {%- if not body.startswith('<think>') or body.count('<think>')\
+    \ != 1 or body.count('</think>') != 1 -%}\n            {{- raise_exception('Expected one leading <think>...</think> block.')\
+    \ -}}\n        {%- endif -%}\n        {%- set prefix = content[:(content | length) - (body | length)] -%}\n        {%-\
+    \ set chunks = body[7:].split('</think>') -%}\n        {{- prefix.replace('\\r', '').replace('\\n', '') ~ '<|think|>'\
+    \ ~ chunks[0].strip('\\r\\n') ~ '<|think_end|>' ~ chunks[1].lstrip('\\r\\n') -}}\n    {%- else -%}{{ content }}\n    {%-\
+    \ endif -%}\n    {%- if defs -%}{{ definitions(defs) }}{%- endif -%}\n    {%- for call in calls -%}\n        {%- set f\
+    \ = call.get('function', call) -%}\n        {%- set args = f.get('arguments', {}) -%}\n        {%- if args is not mapping\
+    \ -%}{{ raise_exception('Tool arguments must be a dictionary, not JSON text.') }}{%- endif -%}\n        {{- '<|tool_call|><|tool_name|>'\
+    \ ~ f['name'] ~ '<|tool_name_end|><|tool_arguments|>' -}}\n        {{- value(args) -}}{{ '<|tool_call_end|>' }}\n    {%-\
+    \ endfor -%}\n    {{- '<|im_end|>' -}}\n{%- endfor -%}\n{%- if add_generation_prompt -%}\n    {{- '<|im_model|>' -}}\n\
+    \    {%- if enable_thinking | default(false) -%}{{ '<|think|>' }}{%- endif -%}\n{%- endif -%}\n"
+cardData:
+  thumbnail: https://cdn-uploads.huggingface.co/production/uploads/634262af8d8089ebaefd410e/sx_S44Ct1Mf0pJPSY668v.png
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  base_model: glossia/Rambley-V2.2-64M
+  datasets:
+  - nomic-ai/nomic-embed-unsupervised-data
+  - nomic-ai/nomic-embed-supervised-data
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Normalize/config.json
+- rfilename: README.md
+- rfilename: chat_template.jinja
+- rfilename: config.json
+- rfilename: config_rambley_v2.py
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modeling_rambley_v2.py
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-05T15:00:33.000Z'
+safetensors:
+  parameters:
+    BF16: 63874704
+  total: 63874704
+usedStorage: 127773896
+downloadsAllTime: 19
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - RambleyV2Model
+  attention_residual_eps: null
+  auto_map:
+    AutoConfig: config_rambley_v2.RambleyV2Config
+    AutoModel: modeling_rambley_v2.RambleyV2Model
+    AutoModelForCausalLM: modeling_rambley_v2.RambleyV2ForCausalLM
+  block_configs:
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 2560
+    hope_length: 2048
+    n_heads: 8
+    n_kv_heads: 2
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: 127
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 2560
+    hope_length: 2048
+    n_heads: 8
+    n_kv_heads: 2
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: 127
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 2560
+    hope_length: 2048
+    n_heads: 8
+    n_kv_heads: 2
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: -1
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 2560
+    hope_length: 2048
+    n_heads: 8
+    n_kv_heads: 2
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: 127
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 2560
+    hope_length: 2048
+    n_heads: 8
+    n_kv_heads: 2
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: 127
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 2560
+    hope_length: 2048
+    n_heads: 8
+    n_kv_heads: 2
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: -1
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 2560
+    hope_length: 2048
+    n_heads: 8
+    n_kv_heads: 2
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: 127
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 2560
+    hope_length: 2048
+    n_heads: 8
+    n_kv_heads: 2
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: 127
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 2560
+    hope_length: 2048
+    n_heads: 8
+    n_kv_heads: 2
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: -1
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 2560
+    hope_length: 2048
+    n_heads: 8
+    n_kv_heads: 2
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: 127
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 2560
+    hope_length: 2048
+    n_heads: 8
+    n_kv_heads: 2
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: 127
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 2560
+    hope_length: 2048
+    n_heads: 8
+    n_kv_heads: 2
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: -1
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 2560
+    hope_length: 2048
+    n_heads: 8
+    n_kv_heads: 2
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: 127
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 2560
+    hope_length: 2048
+    n_heads: 8
+    n_kv_heads: 2
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: 127
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 2560
+    hope_length: 2048
+    n_heads: 8
+    n_kv_heads: 2
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: -1
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 2560
+    hope_length: 2048
+    n_heads: 8
+    n_kv_heads: 2
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: 127
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 2560
+    hope_length: 2048
+    n_heads: 8
+    n_kv_heads: 2
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: 127
+  - alphas:
+    - 1.0
+    - 1.0
+    clip_qkv: null
+    eps: 1.0e-06
+    gate: headwise
+    gate_full_precision: true
+    head_dim: 32
+    hidden_size: 2560
+    hope_length: 2048
+    n_heads: 8
+    n_kv_heads: 2
+    qk_norm: true
+    rope_scaling: null
+    rope_theta: 10000
+    softmax_scale: null
+    starts_block:
+    - false
+    - false
+    swiglu_limit: null
+    use_attention_sink: true
+    use_head_qk_norm: false
+    window: -1
+  bos_token_id: null
+  dtype: bfloat16
+  embed_scale: null
+  eos_token_id: 16001
+  head_dim: 32
+  hidden_size: 384
+  hope_training_sequence_length: 2048
+  initializer_range: 0.02
+  intermediate_size: 2560
+  max_position_embeddings: 512
+  model_type: rambley_v2
+  mtp_configs: []
+  num_attention_heads: 8
+  num_hidden_layers: 18
+  num_key_value_heads: 2
+  pad_token_id: 16002
+  rms_norm_eps: 1.0e-06
+  rope_parameters:
+    rope_theta: 10000
+    rope_type: default
+  rope_theta: 10000
+  tie_word_embeddings: true
+  transformers_version: 5.21.0
+  use_cache: false
+  vocab_size: 16384
+onnxFiles: {}
+safetensorsSizeMb: 127.8
+approxSizeMb: 127.7
+fetchedAt: '2026-11-06T10:40:49.000Z'

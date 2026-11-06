@@ -1,0 +1,67 @@
+_id: 6aa11e7ef5fd885136991d02
+id: nguyenminh04/omni-adapters
+private: false
+pipeline_tag: feature-extraction
+library_name: peft
+tags:
+- peft
+- safetensors
+- lora
+- audio-video-text
+- multimodal-retrieval
+- feature-extraction
+- arxiv:2605.26641
+- base_model:nguyenminh04/omni-model
+- base_model:adapter:nguyenminh04/omni-model
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: nguyenminh04/omni-adapters
+author: nguyenminh04
+sha: 2ce0dec280f4ce5122580f2a64814a6200292488
+lastModified: '2026-11-06T02:38:41.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: peft
+  license: apache-2.0
+  pipeline_tag: feature-extraction
+  base_model: nguyenminh04/omni-model
+  tags:
+  - lora
+  - peft
+  - audio-video-text
+  - multimodal-retrieval
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: checkpoint/README.md
+- rfilename: checkpoint/adapter_config.json
+- rfilename: checkpoint/lora_only.safetensors
+- rfilename: omniretriever-7b/.gitattributes
+- rfilename: omniretriever-7b/README.md
+- rfilename: omniretriever-7b/SHA256SUMS
+- rfilename: omniretriever-7b/adapter_config.json
+- rfilename: omniretriever-7b/adapter_model.safetensors
+- rfilename: omniretriever-7b/added_tokens.json
+- rfilename: omniretriever-7b/assets/bench_samples.jpg
+- rfilename: omniretriever-7b/assets/method_overview.png
+- rfilename: omniretriever-7b/assets/teaser.png
+- rfilename: omniretriever-7b/merges.txt
+- rfilename: omniretriever-7b/special_tokens_map.json
+- rfilename: omniretriever-7b/tokenizer.json
+- rfilename: omniretriever-7b/tokenizer_config.json
+- rfilename: omniretriever-7b/vocab.json
+spaces: []
+createdAt: '2026-09-09T08:53:18.000Z'
+usedStorage: 829915724
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 817.6
+approxSizeMb: 0.0
+fetchedAt: '2026-11-06T10:40:49.000Z'

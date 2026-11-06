@@ -1,0 +1,124 @@
+_id: 6adf1cf4dac56cb8b68b8523
+id: laion/clap2-large-audioxl-s1B
+private: false
+pipeline_tag: feature-extraction
+library_name: open_clip
+tags:
+- open_clip
+- safetensors
+- clap2
+- audio
+- clap
+- contrastive
+- audio-text-retrieval
+- zero-shot-audio-classification
+- feature-extraction
+- en
+- license:apache-2.0
+- region:us
+downloads: 57
+likes: 2
+modelId: laion/clap2-large-audioxl-s1B
+author: laion
+sha: 0d2a158c6bb7638d99919e336ba675f3891bacb9
+lastModified: '2026-11-06T01:22:36.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - Clap2Model
+  model_type: clap2
+  tokenizer_config:
+    bos_token: <|bos|>
+    eos_token: <|eos|>
+    unk_token: <|endoftext|>
+    pad_token: <|pad|>
+cardData:
+  library_name: open_clip
+  pipeline_tag: feature-extraction
+  tags:
+  - audio
+  - clap
+  - contrastive
+  - audio-text-retrieval
+  - zero-shot-audio-classification
+  language: en
+  license: apache-2.0
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: open_clip_config.json
+- rfilename: open_clip_model.safetensors
+- rfilename: open_clip_tiktoken/r50k_base.json
+- rfilename: open_clip_tiktoken/r50k_base.tiktoken
+- rfilename: processor_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-26T09:27:16.000Z'
+safetensors:
+  parameters:
+    F32: 340073856
+  total: 340073856
+usedStorage: 2720650672
+downloadsAllTime: 57
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - Clap2Model
+  audio_config:
+    attention_bias: true
+    attention_dropout: 0.0
+    hidden_act: silu
+    hidden_size: 1024
+    initializer_range: 0.02
+    intermediate_size: 2816
+    layerscale_value: 1.0e-05
+    mlp_bias: true
+    model_type: clap2_audio_model
+    num_attention_heads: 16
+    num_hidden_layers: 12
+    num_mel_bins: 128
+    num_register_tokens: 1
+    patch_size: 16
+    pooler_hidden_act: gelu
+    rms_norm_eps: 1.0e-06
+    rope_parameters:
+      rope_theta: 10000.0
+      rope_type: axial
+    use_qk_norm: false
+  dtype: float32
+  logit_scale_init_value: 2.6592
+  model_type: clap2
+  projection_dim: 960
+  projection_hidden_act: gelu
+  text_config:
+    attention_bias: false
+    attention_dropout: 0.0
+    bos_token_id: 50259
+    eos_token_id: 50257
+    hidden_act: silu
+    hidden_size: 960
+    initializer_range: 0.02
+    intermediate_size: 2560
+    layerscale_value: null
+    max_position_embeddings: 256
+    mlp_bias: false
+    model_type: clap2_text_model
+    num_attention_heads: 15
+    num_hidden_layers: 11
+    pad_token_id: 50258
+    rms_norm_eps: 1.0e-06
+    rope_parameters:
+      rope_theta: 10000.0
+      rope_type: default
+    use_qk_norm: true
+    vocab_size: 50260
+  transformers_version: 5.23.0.dev0
+onnxFiles: {}
+safetensorsSizeMb: 2720.7
+approxSizeMb: 1360.3
+fetchedAt: '2026-11-06T10:40:49.000Z'

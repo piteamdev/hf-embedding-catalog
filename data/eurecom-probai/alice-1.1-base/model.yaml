@@ -1,0 +1,90 @@
+_id: 6aed9d5a3f26d8c881e92661
+id: eurecom-probai/alice-1.1-base
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- induced_group_icl_denoiser
+- feature-extraction
+- custom_code
+- pytorch
+- mutual-information
+- in-context-learning
+- license:other
+- region:eu
+downloads: 0
+likes: 0
+modelId: eurecom-probai/alice-1.1-base
+author: eurecom-probai
+sha: b3985f46b0ab11dcd120b60129335b87e2f22da3
+lastModified: '2026-11-06T09:29:51.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - InducedGroupICLDenoiserModel
+  auto_map:
+    AutoConfig: induced_group_denoiser.InducedGroupICLDenoiserConfig
+    AutoModel: induced_group_denoiser.InducedGroupICLDenoiserModel
+  model_type: induced_group_icl_denoiser
+cardData:
+  library_name: transformers
+  license: other
+  license_name: polyform-noncommercial-1.0.0
+  license_link: LICENSE
+  tags:
+  - custom_code
+  - pytorch
+  - mutual-information
+  - in-context-learning
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: induced_group_denoiser.InducedGroupICLDenoiserModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: assets/banner.png
+- rfilename: config.json
+- rfilename: induced_group_denoiser.py
+- rfilename: model.safetensors
+- rfilename: relation_graph.py
+- rfilename: time_features.py
+spaces: []
+createdAt: '2026-11-06T09:26:50.000Z'
+safetensors:
+  parameters:
+    F32: 85200633
+  total: 85200633
+usedStorage: 341607130
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - InducedGroupICLDenoiserModel
+  auto_map:
+    AutoConfig: induced_group_denoiser.InducedGroupICLDenoiserConfig
+    AutoModel: induced_group_denoiser.InducedGroupICLDenoiserModel
+  d_model: 768
+  dim_feedforward: 3072
+  dropout: 0.1
+  dtype: float32
+  gradient_checkpointing: false
+  initializer_range: 0.02
+  model_type: induced_group_icl_denoiser
+  n_heads: 12
+  n_layers: 6
+  num_freqs: 16
+  num_inducing_latents: 128
+  relation_features: 16
+  transformers_version: 5.11.0
+  use_mask_channel: true
+  variable_dim: true
+onnxFiles: {}
+safetensorsSizeMb: 340.8
+approxSizeMb: 340.8
+fetchedAt: '2026-11-06T10:40:49.000Z'

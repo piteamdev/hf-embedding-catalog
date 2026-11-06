@@ -1,0 +1,130 @@
+_id: 6aebc00d812ed14d9f5416b5
+id: VectaBass/vectabass-232m-11.5bt-mdlm-cooled
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- vectabass
+- feature-extraction
+- scaling-laws
+- uk-sovereign-ai
+- diffusion
+- masked-diffusion
+- mdlm
+- custom_code
+- en
+- cy
+- gd
+- ga
+- gv
+- kw
+- sco
+- dataset:HuggingFaceFW/fineweb-edu
+- dataset:HuggingFaceFW/fineweb-2
+- dataset:HuggingFaceTB/finemath
+- license:apache-2.0
+- region:us
+downloads: 9
+likes: 0
+modelId: VectaBass/vectabass-232m-11.5bt-mdlm-cooled
+author: VectaBass
+sha: 7101275fa86db787c41cf1d101ba7db18a806f9b
+lastModified: '2026-11-05T09:22:39.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - VectaBassForMaskedDiffusion
+  auto_map:
+    AutoConfig: configuration_vectabass.VectaBassConfig
+    AutoModel: modeling_vectabass.VectaBassForMaskedDiffusion
+  model_type: vectabass
+  tokenizer_config:
+    bos_token: <|endoftext|>
+    eos_token: <|endoftext|>
+    unk_token: <|endoftext|>
+    pad_token: null
+cardData:
+  license: apache-2.0
+  language:
+  - en
+  - cy
+  - gd
+  - ga
+  - gv
+  - kw
+  - sco
+  datasets:
+  - HuggingFaceFW/fineweb-edu
+  - HuggingFaceFW/fineweb-2
+  - HuggingFaceTB/finemath
+  library_name: transformers
+  tags:
+  - vectabass
+  - scaling-laws
+  - uk-sovereign-ai
+  - diffusion
+  - masked-diffusion
+  - mdlm
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_vectabass.VectaBassForMaskedDiffusion
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: DATA.md
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: configuration_vectabass.py
+- rfilename: generation_config.json
+- rfilename: model.safetensors
+- rfilename: modeling_vectabass.py
+- rfilename: provenance.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: verify.json
+spaces: []
+createdAt: '2026-11-04T23:30:21.000Z'
+safetensors:
+  parameters:
+    BF16: 231829632
+  total: 231829632
+usedStorage: 463671736
+downloadsAllTime: 9
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - VectaBassForMaskedDiffusion
+  model_type: vectabass
+  auto_map:
+    AutoConfig: configuration_vectabass.VectaBassConfig
+    AutoModel: modeling_vectabass.VectaBassForMaskedDiffusion
+  bidirectional: true
+  mask_token_id: 50283
+  vocab_size: 50304
+  hidden_size: 1152
+  intermediate_size: 3040
+  num_hidden_layers: 12
+  num_attention_heads: 18
+  num_key_value_heads: 9
+  head_dim: 64
+  max_position_embeddings: 2048
+  rope_theta: 10000.0
+  rms_norm_eps: 1.0e-06
+  xsa: true
+  xsa_eps: 1.0e-06
+  initializer_range: 0.02
+  use_cache: true
+  tie_word_embeddings: true
+  bos_token_id: null
+  eos_token_id: 50256
+  pad_token_id: null
+  torch_dtype: bfloat16
+  dtype: bfloat16
+onnxFiles: {}
+safetensorsSizeMb: 463.7
+approxSizeMb: 463.7
+fetchedAt: '2026-11-06T10:40:49.000Z'

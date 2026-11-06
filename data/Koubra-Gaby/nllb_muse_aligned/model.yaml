@@ -1,0 +1,107 @@
+_id: 6ae4ed53bf2ebaf7a56588d3
+id: Koubra-Gaby/nllb_muse_aligned
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- m2m_100
+- feature-extraction
+- generated_from_trainer
+- base_model:Koubra-Gaby/nllb_muse_aligned
+- base_model:finetune:Koubra-Gaby/nllb_muse_aligned
+- endpoints_compatible
+- region:us
+downloads: 74
+likes: 0
+modelId: Koubra-Gaby/nllb_muse_aligned
+author: Koubra-Gaby
+sha: 52c007a9f970e8baf836ffc4640e117893b42a8e
+lastModified: '2026-11-05T19:13:12.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index:
+- name: nllb_muse_aligned
+  results: []
+config:
+  architectures:
+  - M2M100Model
+  model_type: m2m_100
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  library_name: transformers
+  base_model: Koubra-Gaby/nllb_muse_aligned
+  tags:
+  - generated_from_trainer
+  metrics:
+  - bleu
+  - rouge
+  model-index:
+  - name: nllb_muse_aligned
+    results: []
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: generation_config.json
+- rfilename: model.safetensors
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: training_args.bin
+spaces: []
+createdAt: '2026-10-30T19:17:39.000Z'
+safetensors:
+  parameters:
+    F32: 651665408
+  total: 651665408
+usedStorage: 7649869387
+downloadsAllTime: 74
+inferenceProviderMapping: {}
+configJson:
+  activation_dropout: 0.0
+  activation_function: relu
+  architectures:
+  - M2M100Model
+  attention_dropout: 0.1
+  bos_token_id: 0
+  d_model: 1024
+  decoder_attention_heads: 16
+  decoder_ffn_dim: 4096
+  decoder_layerdrop: 0
+  decoder_layers: 12
+  decoder_start_token_id: 2
+  dropout: 0.1
+  dtype: float32
+  encoder_attention_heads: 16
+  encoder_ffn_dim: 4096
+  encoder_layerdrop: 0
+  encoder_layers: 12
+  eos_token_id: 2
+  init_std: 0.02
+  is_encoder_decoder: true
+  max_position_embeddings: 1024
+  model_type: m2m_100
+  pad_token_id: 1
+  scale_embedding: true
+  tie_word_embeddings: true
+  tokenizer_class: NllbTokenizer
+  transformers_version: 5.22.0
+  use_cache: true
+  vocab_size: 291940
+onnxFiles: {}
+safetensorsSizeMb: 2606.7
+approxSizeMb: 2606.7
+fetchedAt: '2026-11-06T10:40:49.000Z'

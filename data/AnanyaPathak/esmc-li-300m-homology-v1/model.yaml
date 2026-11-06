@@ -1,0 +1,68 @@
+_id: 6aea02774e5fda9875407101
+id: AnanyaPathak/esmc-li-300m-homology-v1
+private: false
+pipeline_tag: feature-extraction
+library_name: gguf
+tags:
+- gguf
+- protein-language-model
+- esmc
+- protein-retrieval
+- homology
+- maxsim
+- esmc.cpp
+- esmc-li
+- feature-extraction
+- base_model:biohub/esmc-300m-2024-12
+- base_model:quantized:biohub/esmc-300m-2024-12
+- license:other
+- endpoints_compatible
+- region:us
+downloads: 26
+likes: 0
+modelId: AnanyaPathak/esmc-li-300m-homology-v1
+author: AnanyaPathak
+sha: ce850aa75f13dcef4d8efcf21e568fdccb35d371
+lastModified: '2026-11-05T11:32:15.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: other
+  license_name: cambrian-open-license-agreement
+  license_link: https://www.evolutionaryscale.ai/policies/cambrian-open-license-agreement
+  library_name: gguf
+  pipeline_tag: feature-extraction
+  base_model: EvolutionaryScale/esmc-300m-2024-12
+  tags:
+  - protein-language-model
+  - esmc
+  - protein-retrieval
+  - homology
+  - maxsim
+  - gguf
+  - esmc.cpp
+  - esmc-li
+gguf:
+  total: 332013120
+  architecture: esmc
+  context_length: 2048
+  bos_token: <cls>
+  eos_token: <eos>
+  totalFileSize: 664397696
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: esmc-300m-homology-maxsim-v1-f16.gguf
+- rfilename: esmc-300m-homology-maxsim-v1-head.npy
+spaces: []
+createdAt: '2026-11-03T15:49:11.000Z'
+usedStorage: 664889344
+downloadsAllTime: 26
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-06T10:40:49.000Z'

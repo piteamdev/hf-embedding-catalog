@@ -1,0 +1,88 @@
+_id: 6aeb4df05b4644081184ef37
+id: opensearch-project/opensearch-neural-sparse-encoding-asym-v1
+private: false
+pipeline_tag: feature-extraction
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- sparse-encoder
+- learned-sparse
+- opensearch
+- retrieval
+- passage-retrieval
+- document-expansion
+- bag-of-words
+- sparse
+- splade
+- asymmetric
+- custom_code
+- feature-extraction
+- en
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: opensearch-project/opensearch-neural-sparse-encoding-asym-v1
+author: opensearch-project
+sha: ec21bfc8b59da4c8296e7cb6dfac5e3ca78c226b
+lastModified: '2026-11-06T05:06:19.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  language: en
+  license: apache-2.0
+  pipeline_tag: feature-extraction
+  library_name: sentence-transformers
+  tags:
+  - sentence-transformers
+  - sparse-encoder
+  - learned-sparse
+  - opensearch
+  - retrieval
+  - passage-retrieval
+  - document-expansion
+  - bag-of-words
+  - sparse
+  - splade
+  - asymmetric
+  - custom_code
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config_sentence_transformers.json
+- rfilename: configuration.py
+- rfilename: document_0_MLMTransformer/config.json
+- rfilename: document_0_MLMTransformer/configuration.py
+- rfilename: document_0_MLMTransformer/model.safetensors
+- rfilename: document_0_MLMTransformer/modeling.py
+- rfilename: document_0_MLMTransformer/sentence_bert_config.json
+- rfilename: document_0_MLMTransformer/special_tokens_map.json
+- rfilename: document_0_MLMTransformer/tokenizer.json
+- rfilename: document_0_MLMTransformer/tokenizer_config.json
+- rfilename: document_0_MLMTransformer/vocab.txt
+- rfilename: document_1_SpladePooling/config.json
+- rfilename: modeling.py
+- rfilename: modules.json
+- rfilename: query_0_MLMTransformer/config.json
+- rfilename: query_0_MLMTransformer/model.safetensors
+- rfilename: query_0_MLMTransformer/sentence_bert_config.json
+- rfilename: query_0_MLMTransformer/special_tokens_map.json
+- rfilename: query_0_MLMTransformer/tokenizer.json
+- rfilename: query_0_MLMTransformer/tokenizer_config.json
+- rfilename: query_0_MLMTransformer/vocab.txt
+- rfilename: query_1_SpladePooling/config.json
+- rfilename: router_config.json
+spaces: []
+createdAt: '2026-11-04T15:23:28.000Z'
+usedStorage: 715227248
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 715.2
+approxSizeMb: 0.0
+fetchedAt: '2026-11-06T10:40:49.000Z'

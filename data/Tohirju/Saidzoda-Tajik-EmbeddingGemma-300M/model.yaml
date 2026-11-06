@@ -1,0 +1,98 @@
+_id: 6aec794bd4567b9382658f62
+id: Tohirju/Saidzoda-Tajik-EmbeddingGemma-300M
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- gemma3_text
+- retrieval
+- tajik
+- sentence-similarity
+- tg
+- ru
+- en
+- base_model:google/embeddinggemma-300m
+- base_model:finetune:google/embeddinggemma-300m
+- license:other
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: Tohirju/Saidzoda-Tajik-EmbeddingGemma-300M
+author: Tohirju
+sha: 5df1b95bd174dcc7a0fc50a55153aafb295ee98d
+lastModified: '2026-11-05T12:40:57.000Z'
+gated: manual
+disabled: false
+model-index: null
+config:
+  architectures:
+  - Gemma3TextModel
+  model_type: gemma3_text
+  tokenizer_config:
+    use_default_system_prompt: false
+    bos_token: <bos>
+    eos_token: <eos>
+    unk_token: <unk>
+    pad_token: <pad>
+cardData:
+  license: other
+  license_name: saidzoda-model-licence
+  license_link: LICENSE
+  language:
+  - tg
+  - ru
+  - en
+  base_model: google/embeddinggemma-300m
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  tags:
+  - sentence-transformers
+  - retrieval
+  - tajik
+  extra_gated_prompt: To get access, please fill in the short form at https://ai.saidzoda.com/access. We approve requests
+    after we receive the form. By requesting access you accept the Gemma Terms of Use (https://ai.google.dev/gemma/terms)
+    and the Gemma Prohibited Use Policy (https://ai.google.dev/gemma/prohibited_use_policy), under which this fine-tuned model
+    is a Model Derivative.
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Dense/config.json
+- rfilename: 2_Dense/model.safetensors
+- rfilename: 3_Dense/config.json
+- rfilename: 3_Dense/model.safetensors
+- rfilename: GEMMA_PROHIBITED_USE_POLICY.txt
+- rfilename: GEMMA_TERMS_OF_USE.txt
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: added_tokens.json
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: results/embeddinggemma-300m.json
+- rfilename: results/saidzoda-tajik-embeddinggemma-300m.json
+- rfilename: sentence_bert_config.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer.model
+- rfilename: tokenizer_config.json
+- rfilename: train/loss.csv
+- rfilename: train/train_summary.json
+spaces: []
+createdAt: '2026-11-05T12:40:43.000Z'
+safetensors:
+  parameters:
+    F32: 302863104
+  total: 302863104
+usedStorage: 1268434951
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 1230.4
+approxSizeMb: 1211.5
+fetchedAt: '2026-11-06T10:40:49.000Z'

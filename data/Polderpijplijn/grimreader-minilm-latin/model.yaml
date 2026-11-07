@@ -1,0 +1,58 @@
+_id: 6aeec26794d7104f3cc18e3a
+id: Polderpijplijn/grimreader-minilm-latin
+private: false
+pipeline_tag: sentence-similarity
+library_name: coreml
+tags:
+- coreml
+- sentence-similarity
+- multilingual
+- base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- base_model:quantized:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 1
+modelId: Polderpijplijn/grimreader-minilm-latin
+author: Polderpijplijn
+sha: ff01562fb7b79450ea3b6a125ee6bf5ab8cf988c
+lastModified: '2026-11-07T06:24:43.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: coreml
+  tags:
+  - sentence-similarity
+  - coreml
+  - multilingual
+  base_model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: MiniLM-latin-int8.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: MiniLM-latin-int8.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: MiniLM-latin-int8.mlpackage/Manifest.json
+- rfilename: README.md
+- rfilename: manifest.json
+- rfilename: tokenizer/charsmap.bin
+- rfilename: tokenizer/scores.bin
+- rfilename: tokenizer/stukjes.txt
+spaces: []
+createdAt: '2026-11-07T06:17:11.000Z'
+usedStorage: 67195540
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-07T09:53:05.000Z'

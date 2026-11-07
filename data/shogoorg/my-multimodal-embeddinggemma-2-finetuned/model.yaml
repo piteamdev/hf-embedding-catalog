@@ -1,0 +1,207 @@
+_id: 6aee81b90876ef3b5a040629
+id: shogoorg/my-multimodal-embeddinggemma-2-finetuned
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- embedding_gemma2
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:3
+- loss:MultipleNegativesRankingLoss
+- arxiv:1908.10084
+- arxiv:1807.03748
+- base_model:google/embeddinggemma-2
+- base_model:finetune:google/embeddinggemma-2
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: shogoorg/my-multimodal-embeddinggemma-2-finetuned
+author: shogoorg
+sha: 2acd02c891c2af0ce2a438cea19d5e7c3526059d
+lastModified: '2026-11-07T01:42:11.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config:
+  architectures:
+  - EmbeddingGemma2Model
+  model_type: embedding_gemma2
+  tokenizer_config:
+    bos_token: <bos>
+    eos_token: <eos>
+    unk_token: <unk>
+    pad_token: <pad>
+    mask_token: <mask>
+  chat_template_jinja: '{%- for msg in messages if msg.get(''role'') == ''system'' -%}{%- if msg.get(''content'') is string
+    -%}{{ msg[''content''] }}{%- else -%}{%- for item in msg[''content''] if item.get(''type'') == ''text'' -%}{{ item[''text'']
+    }}{%- endfor -%}{%- endif -%}{%- endfor -%}{%- for msg in messages if msg.get(''role'') != ''system'' -%}{%- if msg.get(''content'')
+    is string -%}{{ msg[''content''] }}{%- else -%}{%- set existing_text = msg[''content''] | selectattr(''type'', ''equalto'',
+    ''text'') | map(attribute=''text'') | join -%}{%- set has_manual_placeholders = (''<|image|>'' in existing_text) or (''<|video|>''
+    in existing_text) or (''<|audio|>'' in existing_text) -%}{%- for item in msg[''content''] -%}{%- if item.get(''type'')
+    == ''text'' -%}{{ item[''text''] }}{%- elif not has_manual_placeholders and item.get(''type'') == ''image'' -%}<|image|>{%-
+    elif not has_manual_placeholders and item.get(''type'') == ''video'' -%}<|video|>{%- elif not has_manual_placeholders
+    and item.get(''type'') == ''audio'' -%}<|audio|>{%- endif -%}{%- endfor -%}{%- endif -%}{%- endfor -%}'
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:3
+  - loss:MultipleNegativesRankingLoss
+  base_model: google/embeddinggemma-2
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Normalize/config.json
+- rfilename: README.md
+- rfilename: assets/image_0.jpg
+- rfilename: assets/image_1.jpg
+- rfilename: assets/image_2.jpg
+- rfilename: chat_template.jinja
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: processor_config.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-07T01:41:13.000Z'
+safetensors:
+  parameters:
+    BF16: 438760472
+  total: 438760472
+usedStorage: 909770481
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - EmbeddingGemma2Model
+  audio_config: null
+  audio_token_id: 258881
+  boa_token_id: 256000
+  boi_token_id: 255999
+  dtype: bfloat16
+  eoa_token_index: 258883
+  eoi_token_id: 258882
+  image_token_id: 258880
+  initializer_range: 0.02
+  model_type: embedding_gemma2
+  text_config:
+    attention_bias: false
+    attention_dropout: 0.0
+    bos_token_id: 2
+    dtype: bfloat16
+    embedding_dim: 768
+    eos_token_id: 1
+    head_dim: 256
+    hidden_activation: gelu_pytorch_tanh
+    hidden_size: 512
+    hidden_size_per_layer_input: 512
+    initializer_range: 0.02
+    intermediate_size: 2048
+    layer_types:
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - sliding_attention
+    - full_attention
+    max_position_embeddings: 262144
+    model_type: embedding_gemma2_text
+    num_attention_heads: 4
+    num_hidden_layers: 24
+    num_key_value_heads: 2
+    pad_token_id: 0
+    per_layer_config:
+      '05':
+        head_dim: 512
+        num_key_value_heads: 1
+      '11':
+        head_dim: 512
+        num_key_value_heads: 1
+      '17':
+        head_dim: 512
+        num_key_value_heads: 1
+      '23':
+        head_dim: 512
+        num_key_value_heads: 1
+    rms_norm_eps: 1.0e-06
+    rope_parameters:
+      full_attention:
+        rope_theta: 1000000.0
+        rope_type: default
+      sliding_attention:
+        rope_theta: 10000.0
+        rope_type: default
+    sliding_window: 512
+    vocab_size: 262144
+  transformers_version: 5.22.2
+  use_cache: false
+  video_token_id: 258884
+  vision_config:
+    attention_bias: false
+    attention_dropout: 0.0
+    default_output_length: 280
+    dtype: bfloat16
+    global_head_dim: 64
+    head_dim: 64
+    hidden_activation: gelu_pytorch_tanh
+    hidden_size: 768
+    initializer_range: 0.02
+    intermediate_size: 3072
+    max_position_embeddings: 131072
+    model_type: gemma4_vision
+    num_attention_heads: 12
+    num_hidden_layers: 16
+    num_key_value_heads: 12
+    patch_size: 16
+    pooling_kernel_size: 3
+    position_embedding_size: 10240
+    rms_norm_eps: 1.0e-06
+    rope_parameters:
+      rope_theta: 100.0
+      rope_type: axial
+    standardize: false
+    use_clipped_linears: false
+  vision_soft_tokens_per_image: 280
+onnxFiles: {}
+safetensorsSizeMb: 877.6
+approxSizeMb: 877.5
+fetchedAt: '2026-11-07T09:53:05.000Z'

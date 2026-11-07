@@ -1,0 +1,118 @@
+_id: 6aedf4c89c49c906a81ec892
+id: ianblenke/qwen3.8-27b-ultravox-0.6
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- gguf
+- ultravox
+- feature-extraction
+- audio
+- speech
+- adapter
+- custom_code
+- en
+- dataset:openslr/librispeech_asr
+- dataset:mozilla-foundation/common_voice_17_0
+- base_model:Qwen/Qwen3.8-27B
+- base_model:quantized:Qwen/Qwen3.8-27B
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: ianblenke/qwen3.8-27b-ultravox-0.6
+author: ianblenke
+sha: 27be21dd55d79ed1e4b192695e5c65ad718ead33
+lastModified: '2026-11-06T15:56:51.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - UltravoxModel
+  auto_map:
+    AutoConfig: ultravox_config.UltravoxConfig
+    AutoModel: ultravox_model.UltravoxModel
+  model_type: ultravox
+cardData:
+  license: apache-2.0
+  base_model: Qwen/Qwen3.8-27B
+  language: en
+  library_name: transformers
+  tags:
+  - audio
+  - speech
+  - ultravox
+  - adapter
+  - gguf
+  datasets:
+  - openslr/librispeech_asr
+  - mozilla-foundation/common_voice_17_0
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: ultravox_model.UltravoxModel
+  pipeline_tag: feature-extraction
+gguf:
+  total: 689410048
+  architecture: clip
+  totalFileSize: 1383706016
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: SHA256SUMS
+- rfilename: config.json
+- rfilename: loss.csv
+- rfilename: mmproj-ultravox-whisper-large-v3-turbo-f16.gguf
+- rfilename: projector.safetensors
+- rfilename: wer.md
+spaces: []
+createdAt: '2026-11-06T15:39:52.000Z'
+usedStorage: 1488588672
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - UltravoxModel
+  audio_latency_block_size: null
+  audio_model_id: openai/whisper-large-v3-turbo
+  audio_model_lora_config:
+    lora_alpha: 8
+    r: 0
+    target_modules:
+    - k_proj
+    - q_proj
+    - linear_k
+    - linear_q
+  audio_token_index: 248077
+  auto_map:
+    AutoConfig: ultravox_config.UltravoxConfig
+    AutoModel: ultravox_model.UltravoxModel
+  dtype: bfloat16
+  eos_token_id: 248046
+  hidden_size: 4096
+  ignore_index: -100
+  initializer_range: 0.02
+  llm_only_training: false
+  model_type: ultravox
+  norm_init: 0.4
+  pad_token_id: 248046
+  projector_act: swiglu
+  projector_ln_mid: true
+  stack_factor: 8
+  text_model_id: Qwen/Qwen3.8-27B
+  text_model_lora_config:
+    lora_alpha: 8
+    r: 0
+    target_modules:
+    - k_proj
+    - q_proj
+    - linear_k
+    - linear_q
+  transformers_version: 5.8.1
+  use_cache: false
+  vocab_size: 248320
+onnxFiles: {}
+safetensorsSizeMb: 104.9
+approxSizeMb: 0.0
+fetchedAt: '2026-11-07T09:53:05.000Z'

@@ -1,0 +1,99 @@
+_id: 6aecb376e5ef28b3ba37f790
+id: flowercomputers/bekko-static-v1-slim-32k
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- static-embedding
+- sentence-similarity
+- feature-extraction
+- vocabulary-pruning
+- multilingual
+- en
+- ar
+- de
+- es
+- fr
+- it
+- ja
+- ko
+- 'no'
+- pt
+- sr
+- sv
+- th
+- vi
+- base_model:hotchpotch/bekko-static-embedding-v1
+- base_model:finetune:hotchpotch/bekko-static-embedding-v1
+- license:mit
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 2
+modelId: flowercomputers/bekko-static-v1-slim-32k
+author: flowercomputers
+sha: 59f436413cb1524b13a7256643b93a63ce037406
+lastModified: '2026-11-06T16:23:27.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config: {}
+cardData:
+  language:
+  - en
+  - ar
+  - de
+  - es
+  - fr
+  - it
+  - ja
+  - ko
+  - 'no'
+  - pt
+  - sr
+  - sv
+  - th
+  - vi
+  license: mit
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  base_model: hotchpotch/bekko-static-embedding-v1
+  base_model_relation: finetune
+  tags:
+  - static-embedding
+  - sentence-similarity
+  - feature-extraction
+  - vocabulary-pruning
+  - multilingual
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: mrl-dims.png
+- rfilename: quality-vs-vocab.png
+- rfilename: score-matrix.png
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-11-05T16:48:54.000Z'
+safetensors:
+  parameters:
+    F16: 32768000
+  total: 32768000
+usedStorage: 68814577
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 65.5
+approxSizeMb: 65.5
+fetchedAt: '2026-11-08T10:06:13.000Z'

@@ -1,0 +1,161 @@
+_id: 6aefd2c70876ef3b5a5f91fb
+id: moothz/ravena-bgem3
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- xlm-roberta
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:2505
+- loss:MultipleNegativesRankingLoss
+- arxiv:1908.10084
+- arxiv:1807.03748
+- base_model:BAAI/bge-m3
+- base_model:finetune:BAAI/bge-m3
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 19
+likes: 0
+modelId: moothz/ravena-bgem3
+author: moothz
+sha: b688056a92b2a648f72578941f0a281f48e19d48
+lastModified: '2026-11-08T01:40:08.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: ld 1
+  sentences:
+  - 'ld: Deleta uma lista existente'
+  - 'conversa: Conversa casual, perguntas normais, bate-papo, dúvidas gerais sem intenção de executar comando do bot'
+  - 'slots: Gira a máquina de caça-níqueis'
+- source_sentence: '!ld 1'
+  sentences:
+  - 'ld: Deleta uma lista existente'
+  - 'conversa: Conversa casual, perguntas normais, bate-papo, dúvidas gerais sem intenção de executar comando do bot'
+  - 'ld: Deleta uma lista existente'
+- source_sentence: roda o lc
+  sentences:
+  - 'conversa: Conversa casual, perguntas normais, bate-papo, dúvidas gerais sem intenção de executar comando do bot'
+  - 'lc: Cria uma nova lista simples'
+  - 'lct: Cria uma lista de tarefas interativa'
+- source_sentence: slots
+  sentences:
+  - 'le: Exibe os itens detalhados de uma lista'
+  - 'conversa: Conversa casual, perguntas normais, bate-papo, dúvidas gerais sem intenção de executar comando do bot'
+  - 'slots: Gira a máquina de caça-níqueis'
+- source_sentence: '!psn'
+  sentences:
+  - 'conversa: Conversa casual, perguntas normais, bate-papo, dúvidas gerais sem intenção de executar comando do bot'
+  - 'qr-pix: Gera um QR Code de cobrança Pix'
+  - 'psn: Consulta platinas de uma conta PSN'
+model-index: null
+config:
+  architectures:
+  - XLMRobertaModel
+  model_type: xlm-roberta
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:2505
+  - loss:MultipleNegativesRankingLoss
+  base_model: BAAI/bge-m3
+  widget:
+  - source_sentence: ld 1
+    sentences:
+    - 'ld: Deleta uma lista existente'
+    - 'conversa: Conversa casual, perguntas normais, bate-papo, dúvidas gerais sem intenção de executar comando do bot'
+    - 'slots: Gira a máquina de caça-níqueis'
+  - source_sentence: '!ld 1'
+    sentences:
+    - 'ld: Deleta uma lista existente'
+    - 'conversa: Conversa casual, perguntas normais, bate-papo, dúvidas gerais sem intenção de executar comando do bot'
+    - 'ld: Deleta uma lista existente'
+  - source_sentence: roda o lc
+    sentences:
+    - 'conversa: Conversa casual, perguntas normais, bate-papo, dúvidas gerais sem intenção de executar comando do bot'
+    - 'lc: Cria uma nova lista simples'
+    - 'lct: Cria uma lista de tarefas interativa'
+  - source_sentence: slots
+    sentences:
+    - 'le: Exibe os itens detalhados de uma lista'
+    - 'conversa: Conversa casual, perguntas normais, bate-papo, dúvidas gerais sem intenção de executar comando do bot'
+    - 'slots: Gira a máquina de caça-níqueis'
+  - source_sentence: '!psn'
+    sentences:
+    - 'conversa: Conversa casual, perguntas normais, bate-papo, dúvidas gerais sem intenção de executar comando do bot'
+    - 'qr-pix: Gera um QR Code de cobrança Pix'
+    - 'psn: Consulta platinas de uma conta PSN'
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Normalize/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-08T01:39:19.000Z'
+safetensors:
+  parameters:
+    F32: 567754752
+  total: 567754752
+usedStorage: 2288162795
+downloadsAllTime: 19
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - XLMRobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 1024
+  initializer_range: 0.02
+  intermediate_size: 4096
+  is_decoder: false
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 8194
+  model_type: xlm-roberta
+  num_attention_heads: 16
+  num_hidden_layers: 24
+  output_past: true
+  pad_token_id: 1
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.17.0
+  type_vocab_size: 1
+  use_cache: false
+  vocab_size: 250002
+onnxFiles: {}
+safetensorsSizeMb: 2271.1
+approxSizeMb: 2271.0
+fetchedAt: '2026-11-08T10:06:13.000Z'

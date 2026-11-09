@@ -1,0 +1,111 @@
+_id: 6af0ab2243c4b34a0aab8470
+id: braindecode/corteg-small-pretrained
+private: false
+pipeline_tag: feature-extraction
+library_name: braindecode
+tags:
+- braindecode
+- pytorch
+- safetensors
+- CORTEG
+- ieeg
+- ecog
+- foundation-model
+- pytorch_model_hub_mixin
+- feature-extraction
+- dataset:nm000245
+- dataset:nm000172
+- dataset:nm000139
+- dataset:nm000135
+- dataset:Kaya2018
+- dataset:Won2022
+- dataset:nm000129
+- dataset:nm000339
+- dataset:SparrKULee
+- dataset:SEED-V
+- arxiv:2605.10337
+- base_model:braindecode/STEEGFormer-small
+- base_model:finetune:braindecode/STEEGFormer-small
+- license:mit
+- region:us
+downloads: 32
+likes: 0
+modelId: braindecode/corteg-small-pretrained
+author: braindecode
+sha: c6db66da009108f9b81319d75bcec1822970f8a1
+lastModified: '2026-11-09T10:30:49.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: braindecode
+  license: mit
+  pipeline_tag: feature-extraction
+  base_model: braindecode/STEEGFormer-small
+  tags:
+  - braindecode
+  - CORTEG
+  - ieeg
+  - ecog
+  - foundation-model
+  - pytorch_model_hub_mixin
+  datasets:
+  - nm000245
+  - nm000172
+  - nm000139
+  - nm000135
+  - Kaya2018
+  - Won2022
+  - nm000129
+  - nm000339
+  - SparrKULee
+  - SEED-V
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: convert_corteg_checkpoint.py
+- rfilename: model.safetensors
+- rfilename: pytorch_model.bin
+- rfilename: report.json
+spaces: []
+createdAt: '2026-11-08T17:02:26.000Z'
+safetensors:
+  parameters:
+    F32: 25316864
+  total: 25316864
+usedStorage: 202598707
+downloadsAllTime: 32
+inferenceProviderMapping: {}
+configJson:
+  n_outputs: 2
+  n_chans: 8
+  chs_info: null
+  n_times: 128
+  input_window_seconds: null
+  sfreq: 128.0
+  patch_size: 16
+  hi_patch_size: 25
+  embed_dim: 512
+  depth: 8
+  num_heads: 8
+  mlp_ratio: 4
+  drop_prob: 0.0
+  drop_path: 0.1
+  activation: torch.nn.modules.activation.GELU
+  n_chans_pos: 145
+  merge_strategy: average
+  n_merge_blocks: 4
+  knn_k: 8
+  adapter_hidden: 128
+  n_fourier_freqs: 32
+  fourier_max_freq: 50.0
+  gate_bottleneck: 16
+  on_non_divisible: pad
+  braindecode_version: 2.1.0dev0
+onnxFiles: {}
+safetensorsSizeMb: 101.3
+approxSizeMb: 101.3
+fetchedAt: '2026-11-09T11:15:54.000Z'

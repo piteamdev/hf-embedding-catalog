@@ -1,0 +1,65 @@
+_id: 6aa0e4308420fdff6da29e38
+id: ForeverBlue/EEG
+private: false
+pipeline_tag: feature-extraction
+library_name: pytorch
+tags:
+- pytorch
+- physiowave
+- physiowave-t
+- foundation-model
+- eeg
+- biosignal
+- self-supervised
+- masked-autoencoder
+- pretrained
+- feature-extraction
+- arxiv:2611.08969
+- arxiv:2506.10351
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 1
+modelId: ForeverBlue/EEG
+author: ForeverBlue
+sha: 3d9b2e7bccaa8e5a4057f1daa7f0545c386d7f7e
+lastModified: '2026-11-09T10:36:49.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  pipeline_tag: feature-extraction
+  tags:
+  - physiowave
+  - physiowave-t
+  - foundation-model
+  - eeg
+  - biosignal
+  - self-supervised
+  - masked-autoencoder
+  - pretrained
+  library_name: pytorch
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config_resolved.yaml
+- rfilename: eeg_c1_encoder.pth
+- rfilename: metrics_epoch.jsonl
+- rfilename: pretrain_eeg_c1_moe_best.pth
+- rfilename: pretrain_eeg_c1_moe_best_raw.pth
+- rfilename: pretrain_eeg_c1_moe_best_spec.pth
+- rfilename: pretrain_eeg_c1_moe_final.pth
+- rfilename: route_convergence.png
+- rfilename: training_curves.png
+spaces: []
+createdAt: '2026-09-09T04:44:32.000Z'
+usedStorage: 614910650
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-09T11:15:54.000Z'

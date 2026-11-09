@@ -1,0 +1,130 @@
+_id: 6aec28904ac23810bead7832
+id: ByteDance-Seed/Cross-Layer-TopK-CLT
+private: false
+pipeline_tag: feature-extraction
+tags:
+- interpretability
+- mechanistic-interpretability
+- transcoder
+- cross-layer-transcoder
+- feature-extraction
+- arxiv:2611.09233
+- base_model:Qwen/Qwen3-8B-Base
+- base_model:finetune:Qwen/Qwen3-8B-Base
+- license:apache-2.0
+- region:us
+downloads: 338
+likes: 5
+modelId: ByteDance-Seed/Cross-Layer-TopK-CLT
+author: ByteDance-Seed
+sha: 0b2f254a3f44c7e97984ca3d2d826d3f6df5879e
+lastModified: '2026-11-09T09:47:56.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  base_model: Qwen/Qwen3-8B-Base
+  license: apache-2.0
+  pipeline_tag: feature-extraction
+  tags:
+  - interpretability
+  - mechanistic-interpretability
+  - transcoder
+  - cross-layer-transcoder
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: W_dec_0.safetensors
+- rfilename: W_dec_1.safetensors
+- rfilename: W_dec_10.safetensors
+- rfilename: W_dec_11.safetensors
+- rfilename: W_dec_12.safetensors
+- rfilename: W_dec_13.safetensors
+- rfilename: W_dec_14.safetensors
+- rfilename: W_dec_15.safetensors
+- rfilename: W_dec_16.safetensors
+- rfilename: W_dec_17.safetensors
+- rfilename: W_dec_18.safetensors
+- rfilename: W_dec_19.safetensors
+- rfilename: W_dec_2.safetensors
+- rfilename: W_dec_20.safetensors
+- rfilename: W_dec_21.safetensors
+- rfilename: W_dec_22.safetensors
+- rfilename: W_dec_23.safetensors
+- rfilename: W_dec_24.safetensors
+- rfilename: W_dec_25.safetensors
+- rfilename: W_dec_26.safetensors
+- rfilename: W_dec_27.safetensors
+- rfilename: W_dec_28.safetensors
+- rfilename: W_dec_29.safetensors
+- rfilename: W_dec_3.safetensors
+- rfilename: W_dec_30.safetensors
+- rfilename: W_dec_31.safetensors
+- rfilename: W_dec_32.safetensors
+- rfilename: W_dec_33.safetensors
+- rfilename: W_dec_34.safetensors
+- rfilename: W_dec_35.safetensors
+- rfilename: W_dec_4.safetensors
+- rfilename: W_dec_5.safetensors
+- rfilename: W_dec_6.safetensors
+- rfilename: W_dec_7.safetensors
+- rfilename: W_dec_8.safetensors
+- rfilename: W_dec_9.safetensors
+- rfilename: W_dec_norm.safetensors
+- rfilename: W_enc_0.safetensors
+- rfilename: W_enc_1.safetensors
+- rfilename: W_enc_10.safetensors
+- rfilename: W_enc_11.safetensors
+- rfilename: W_enc_12.safetensors
+- rfilename: W_enc_13.safetensors
+- rfilename: W_enc_14.safetensors
+- rfilename: W_enc_15.safetensors
+- rfilename: W_enc_16.safetensors
+- rfilename: W_enc_17.safetensors
+- rfilename: W_enc_18.safetensors
+- rfilename: W_enc_19.safetensors
+- rfilename: W_enc_2.safetensors
+- rfilename: W_enc_20.safetensors
+- rfilename: W_enc_21.safetensors
+- rfilename: W_enc_22.safetensors
+- rfilename: W_enc_23.safetensors
+- rfilename: W_enc_24.safetensors
+- rfilename: W_enc_25.safetensors
+- rfilename: W_enc_26.safetensors
+- rfilename: W_enc_27.safetensors
+- rfilename: W_enc_28.safetensors
+- rfilename: W_enc_29.safetensors
+- rfilename: W_enc_3.safetensors
+- rfilename: W_enc_30.safetensors
+- rfilename: W_enc_31.safetensors
+- rfilename: W_enc_32.safetensors
+- rfilename: W_enc_33.safetensors
+- rfilename: W_enc_34.safetensors
+- rfilename: W_enc_35.safetensors
+- rfilename: W_enc_4.safetensors
+- rfilename: W_enc_5.safetensors
+- rfilename: W_enc_6.safetensors
+- rfilename: W_enc_7.safetensors
+- rfilename: W_enc_8.safetensors
+- rfilename: W_enc_9.safetensors
+- rfilename: config.json
+- rfilename: factors.safetensors
+spaces: []
+createdAt: '2026-11-05T06:56:16.000Z'
+usedStorage: 376892828072
+downloadsAllTime: 338
+inferenceProviderMapping: {}
+configJson:
+  architecture: cross_layer_transcoder
+  base_model: Qwen/Qwen3-8B-Base
+  n_layers: 36
+  d_model: 4096
+  d_feature: 32768
+  activation: cross_layer_topk
+  k: 10
+onnxFiles: {}
+safetensorsSizeMb: 376892.8
+approxSizeMb: 0.0
+fetchedAt: '2026-11-09T11:15:54.000Z'

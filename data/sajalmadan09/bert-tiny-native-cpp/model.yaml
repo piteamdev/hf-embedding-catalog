@@ -97,7 +97,7 @@ safetensors:
     F32: 4385920
   total: 4385920
 usedStorage: 52708004
-downloadsAllTime: 217
+downloadsAllTime: 219
 inferenceProviderMapping: {}
 configJson:
   base_model: prajjwal1/bert-tiny
@@ -121,4 +121,4 @@ onnxFiles:
   model.onnx: 0.0
 safetensorsSizeMb: 17.5
 approxSizeMb: 17.5
-fetchedAt: '2026-11-08T10:06:13.000Z'
+fetchedAt: '2026-11-09T11:15:54.000Z'

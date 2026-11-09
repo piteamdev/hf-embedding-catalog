@@ -1,0 +1,65 @@
+_id: 6af08be0a80d7c3ba0d87bb4
+id: gorse-io/clap2-large-audioxl-s1B-GGUF
+private: false
+pipeline_tag: feature-extraction
+tags:
+- gguf
+- clap2
+- audio
+- audio-text
+- embeddings
+- feature-extraction
+- base_model:laion/clap2-large-audioxl-s1B
+- base_model:quantized:laion/clap2-large-audioxl-s1B
+- license:apache-2.0
+- region:us
+downloads: 100
+likes: 0
+modelId: gorse-io/clap2-large-audioxl-s1B-GGUF
+author: gorse-io
+sha: 8d39b3e50620b13db71087cc616a88f22c10c177
+lastModified: '2026-11-08T14:54:27.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: laion/clap2-large-audioxl-s1B
+  pipeline_tag: feature-extraction
+  tags:
+  - gguf
+  - clap2
+  - audio
+  - audio-text
+  - embeddings
+gguf:
+  total: 340073857
+  architecture: clap2
+  totalFileSize: 682163360
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: SHA256SUMS
+- rfilename: UPSTREAM_README.md
+- rfilename: audit-f16.json
+- rfilename: audit-f32.json
+- rfilename: clap2-large-audioxl-s1B-f16.gguf
+- rfilename: clap2-large-audioxl-s1B-f32.gguf
+- rfilename: provenance.json
+- rfilename: validation.json
+- rfilename: validation/fixture-audio-f16.json
+- rfilename: validation/fixture-audio-f32.json
+- rfilename: validation/fixture-text-f16.json
+- rfilename: validation/fixture-text-f32.json
+spaces: []
+createdAt: '2026-11-08T14:49:04.000Z'
+usedStorage: 2044038976
+downloadsAllTime: 100
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-09T11:15:54.000Z'

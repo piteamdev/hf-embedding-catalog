@@ -1,0 +1,169 @@
+_id: 6af0dfcbb5a404455001af42
+id: Simonlee711/HiMAE
+private: false
+pipeline_tag: feature-extraction
+library_name: pytorch
+tags:
+- pytorch
+- photoplethysmography
+- ppg
+- wearables
+- smartwatch
+- biosignals
+- time-series
+- self-supervised-learning
+- masked-autoencoder
+- foundation-model
+- on-device
+- health
+- medical
+- arrhythmia
+- hypertension
+- feature-extraction
+- arxiv:2510.25785
+- license:mit
+- model-index
+- region:us
+downloads: 0
+likes: 1
+modelId: Simonlee711/HiMAE
+author: Simonlee711
+sha: 43676a37fd45b2a860b8d47ca424fc50962d8fd9
+lastModified: '2026-11-08T20:48:11.000Z'
+gated: false
+disabled: false
+model-index:
+- name: HiMAE (1.2M)
+  results:
+  - task:
+      type: binary-classification
+      name: PVC detection (frozen encoder, linear probe)
+    dataset:
+      name: PVC detection cohort (private; 139 participants)
+      type: private
+      split: test
+    metrics:
+    - type: roc_auc
+      value: 0.8023
+      name: AUROC
+      verified: false
+  - task:
+      type: binary-classification
+      name: PVC detection (fine-tuned)
+    dataset:
+      name: PVC detection cohort (private; 139 participants)
+      type: private
+      split: test
+    metrics:
+    - type: roc_auc
+      value: 0.9165
+      name: AUROC
+      verified: false
+  - task:
+      type: binary-classification
+      name: Stage I hypertension (frozen encoder, linear probe)
+    dataset:
+      name: My Heart Lab Study hypertension cohort (private; 135 participants)
+      type: private
+      split: test
+    metrics:
+    - type: roc_auc
+      value: 0.6624
+      name: AUROC
+      verified: false
+  - task:
+      type: binary-classification
+      name: Stage I hypertension (fine-tuned)
+    dataset:
+      name: My Heart Lab Study hypertension cohort (private; 135 participants)
+      type: private
+      split: test
+    metrics:
+    - type: roc_auc
+      value: 0.8969
+      name: AUROC
+      verified: false
+config: {}
+cardData:
+  license: mit
+  library_name: pytorch
+  pipeline_tag: feature-extraction
+  tags:
+  - photoplethysmography
+  - ppg
+  - wearables
+  - smartwatch
+  - biosignals
+  - time-series
+  - self-supervised-learning
+  - masked-autoencoder
+  - foundation-model
+  - on-device
+  - health
+  - medical
+  - arrhythmia
+  - hypertension
+  model-index:
+  - name: HiMAE (1.2M)
+    results:
+    - task:
+        type: binary-classification
+        name: PVC detection (frozen encoder, linear probe)
+      dataset:
+        name: PVC detection cohort (private; 139 participants)
+        type: private
+        split: test
+      metrics:
+      - type: roc_auc
+        value: 0.8023
+        name: AUROC
+        verified: false
+    - task:
+        type: binary-classification
+        name: PVC detection (fine-tuned)
+      dataset:
+        name: PVC detection cohort (private; 139 participants)
+        type: private
+        split: test
+      metrics:
+      - type: roc_auc
+        value: 0.9165
+        name: AUROC
+        verified: false
+    - task:
+        type: binary-classification
+        name: Stage I hypertension (frozen encoder, linear probe)
+      dataset:
+        name: My Heart Lab Study hypertension cohort (private; 135 participants)
+        type: private
+        split: test
+      metrics:
+      - type: roc_auc
+        value: 0.6624
+        name: AUROC
+        verified: false
+    - task:
+        type: binary-classification
+        name: Stage I hypertension (fine-tuned)
+      dataset:
+        name: My Heart Lab Study hypertension cohort (private; 135 participants)
+        type: private
+        split: test
+      metrics:
+      - type: roc_auc
+        value: 0.8969
+        name: AUROC
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+spaces: []
+createdAt: '2026-11-08T20:47:07.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-09T11:15:54.000Z'

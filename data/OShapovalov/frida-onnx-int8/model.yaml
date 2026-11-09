@@ -1,0 +1,84 @@
+_id: 6a81e6e6a85f87cc78bc5949
+id: OShapovalov/frida-onnx-int8
+private: false
+pipeline_tag: feature-extraction
+library_name: onnxruntime
+tags:
+- onnxruntime
+- onnx
+- int8
+- embeddings
+- t5
+- masked-mean-pooling
+- offline
+- feature-extraction
+- ru
+- en
+- arxiv:2309.10931
+- arxiv:2408.12503
+- base_model:ai-forever/FRIDA
+- base_model:quantized:ai-forever/FRIDA
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: OShapovalov/frida-onnx-int8
+author: OShapovalov
+sha: 8c1ba6091bb395acff08e0921cd88fe9ad8a472b
+lastModified: '2026-11-08T18:47:07.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  language:
+  - ru
+  - en
+  base_model: ai-forever/FRIDA
+  pipeline_tag: feature-extraction
+  library_name: onnxruntime
+  tags:
+  - onnx
+  - int8
+  - embeddings
+  - t5
+  - masked-mean-pooling
+  - offline
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: PUBLICATION.md
+- rfilename: README.md
+- rfilename: SHA256SUMS
+- rfilename: embed.py
+- rfilename: evidence/final-service-check.json
+- rfilename: evidence/graph.json
+- rfilename: evidence/historical-provenance.json
+- rfilename: evidence/runtime/synthetic-vectors.npz
+- rfilename: evidence/runtime/validation.json
+- rfilename: evidence/synthetic-vectors.npz
+- rfilename: evidence/validation.json
+- rfilename: frida-encoder-int8.onnx
+- rfilename: frida-encoder-int8.onnx.data
+- rfilename: manifest.json
+- rfilename: provenance.json
+- rfilename: requirements.txt
+- rfilename: source-revision.txt
+- rfilename: tokenizer.json
+- rfilename: upstream/README.md
+- rfilename: upstream/model-info.json
+- rfilename: upstream/tree.json
+- rfilename: validate.py
+- rfilename: verify_checksums.py
+spaces: []
+createdAt: '2026-08-16T16:35:50.000Z'
+usedStorage: 1258196163
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  frida-encoder-int8.onnx: 2.9
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-09T11:15:54.000Z'

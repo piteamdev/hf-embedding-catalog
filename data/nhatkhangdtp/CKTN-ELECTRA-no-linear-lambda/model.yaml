@@ -1,0 +1,124 @@
+_id: 6af0ab9959d0a8c37f0994b7
+id: nhatkhangdtp/CKTN-ELECTRA-no-linear-lambda
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- rembert
+- feature-extraction
+- electra
+- low-resource
+- cham
+- khmer
+- tay-nung
+- vietnam
+- ablation
+- cjm
+- km
+- tyz
+- nut
+- arxiv:2607.08362
+- base_model:ducanhdinh/CKTN-ELECTRA
+- base_model:finetune:ducanhdinh/CKTN-ELECTRA
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 20
+likes: 0
+modelId: nhatkhangdtp/CKTN-ELECTRA-no-linear-lambda
+author: nhatkhangdtp
+sha: e1a461cc4e9445157ed83cea2905b4d3c8fd08f1
+lastModified: '2026-11-08T17:06:31.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  architectures:
+  - RemBertModel
+  model_type: rembert
+  tokenizer_config:
+    bos_token: '[CLS]'
+    eos_token: '[SEP]'
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  language:
+  - cjm
+  - km
+  - tyz
+  - nut
+  license: apache-2.0
+  library_name: transformers
+  pipeline_tag: feature-extraction
+  base_model: ducanhdinh/CKTN-ELECTRA
+  tags:
+  - rembert
+  - electra
+  - low-resource
+  - cham
+  - khmer
+  - tay-nung
+  - vietnam
+  - ablation
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: pretraining_metrics.json
+- rfilename: sentencepiece.model
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-08T17:04:25.000Z'
+safetensors:
+  parameters:
+    F32: 576998912
+  total: 576998912
+usedStorage: 2329632456
+downloadsAllTime: 20
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - RemBertModel
+  attention_probs_dropout_prob: 0
+  bos_token_id: 312
+  classifier_dropout_prob: 0.1
+  dtype: float32
+  embedding_dropout_prob: 0
+  embedding_size: 256
+  eos_token_id: 313
+  hidden_act: gelu
+  hidden_dropout_prob: 0
+  hidden_size: 1152
+  initializer_range: 0.02
+  input_embedding_size: 256
+  intermediate_size: 4608
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: rembert
+  num_attention_heads: 18
+  num_hidden_layers: 32
+  output_embedding_size: 1664
+  pad_token_id: 0
+  tie_word_embeddings: false
+  transformers_version: 5.13.0
+  type_vocab_size: 2
+  use_cache: true
+  vocab_size: 254513
+onnxFiles: {}
+safetensorsSizeMb: 2308.1
+approxSizeMb: 2308.0
+fetchedAt: '2026-11-09T11:15:54.000Z'

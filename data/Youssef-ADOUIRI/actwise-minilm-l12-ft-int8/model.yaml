@@ -1,0 +1,74 @@
+_id: 6af217a90876ef3b5a0e166a
+id: Youssef-ADOUIRI/actwise-minilm-l12-ft-int8
+private: false
+pipeline_tag: sentence-similarity
+tags:
+- onnx
+- int8
+- retrieval
+- legal
+- eu-ai-act
+- gdpr
+- sentence-similarity
+- en
+- fr
+- base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- base_model:quantized:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: Youssef-ADOUIRI/actwise-minilm-l12-ft-int8
+author: Youssef-ADOUIRI
+sha: 8f2058b361a58d21ab169ba90848410f28d91609
+lastModified: '2026-11-09T19:01:13.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config:
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  license: apache-2.0
+  language:
+  - en
+  - fr
+  base_model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  pipeline_tag: sentence-similarity
+  tags:
+  - onnx
+  - int8
+  - retrieval
+  - legal
+  - eu-ai-act
+  - gdpr
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: model.onnx
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-09T18:57:45.000Z'
+usedStorage: 135998358
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  model.onnx: 118.9
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-10T10:57:26.000Z'

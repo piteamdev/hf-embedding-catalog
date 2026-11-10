@@ -1,0 +1,365 @@
+_id: 6af1cb4c9ba5237bdaedebb8
+id: sachinyerrawar/test
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:206460
+- loss:MultipleNegativesRankingLoss
+- dataset:FinLang/investopedia-embedding-dataset
+- arxiv:1908.10084
+- arxiv:1807.03748
+- base_model:sentence-transformers/all-MiniLM-L6-v2
+- base_model:finetune:sentence-transformers/all-MiniLM-L6-v2
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 28
+likes: 0
+modelId: sachinyerrawar/test
+author: sachinyerrawar
+sha: 1a0ab860f193d71101e674ed7f4f0c2361171f80
+lastModified: '2026-11-09T13:44:47.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: " What factor significantly influences the rate of technology adoption and provides an example of a technology\
+    \ that experienced a boost in adoption due to its improved usability? \n"
+  sentences:
+  - ' The potential benefits include having coverage to pay off the mortgage in case of an unfortunate event and getting the
+    benefit of returned premiums if the policy is never used. The costs mentioned in the passage are between $16 and $35 a
+    month for a healthy woman in her early 30s seeking $300,000 to $500,000 in term coverage for 30 years.'
+  - ' Network effects strongly influence the rate of adoption, and the rapid growth of the Internet, facilitated by the development
+    of web browsers, is an example of a technology that experienced a boost in adoption due to its improved usability.'
+  - ' Yes, your Social Security benefits may be subject to income tax depending on your overall income, as mentioned in the
+    passage. Up to 85% of your Social Security benefits could be taxable.'
+- source_sentence: " What type of company is described as owning or controlling multiple commercial banks while being subject\
+    \ to more regulations and oversight? \n"
+  sentences:
+  - ' The purpose of full trading authorization for clients is to empower an agent to conduct all activities that the client
+    themselves could perform. This is often used by investors with limited knowledge, lacking confidence, busy schedules,
+    or those who find the process of researching and monitoring trading activities too stressful or time-consuming. Trust
+    in the agent or broker is crucial for investors granting full trading authorization.'
+  - ' The document is "Securities and Exchange Commission, 17 CFR Parts 200 and 240: Final Rule, Amendments to the Tender
+    Offer Best-Price Rules," and relevant information can be found on pages 10 and 11, 13, and 58, as well as pages 4 and
+    5.'
+  - ' A multibank holding company'
+- source_sentence: " Why does the wage rate fall in the given text passage about labor supply and new workers? \n"
+  sentences:
+  - ' You''re eligible to receive full retirement benefits at age 66 if you were born between 1943 and 1954. For those born
+    in 1955 or later, your full retirement age is determined by how long after 1954 you were born. If you claim benefits before
+    reaching your full retirement age, your annual benefits will be less.'
+  - ' Understanding an industry''s churn rate versus that of a business helps determine if a churn rate is acceptable or poor.'
+  - ' The wage rate falls in the given text passage because of the increase in the availability of new workers, which creates
+    downward pressure on the wage rate.'
+- source_sentence: " What event led to the potential increase in labor costs for studios? \n"
+  sentences:
+  - ' Landlords should stay on top of maintenance when renting out their property because upkeep and repairs that might be
+    overlooked when only the owner is living there can become liabilities when a renter is present.'
+  - ' Brett received his bachelor''s degree in exercise science from Illinois State University.'
+  - ' The tentative agreement between the union and SAG-AFTRA contributed to the potential increase in labor costs for studios
+    as the strike comes to a close.'
+- source_sentence: " What are the main differences between term life insurance and whole life insurance in terms of coverage\
+    \ duration, premiums, and guaranteed payout? \n"
+  sentences:
+  - ' Term life insurance has predetermined coverage that lasts for a specific period, with options like 10-, 15-, 20-, and
+    30-year terms. Premiums remain level during the term. On the other hand, whole life insurance is a permanent coverage
+    that guarantees a payout to beneficiaries regardless of when the insured person dies, as long as premiums are paid.'
+  - ' A wedding budget can be affected by locking in costs with a deposit and signed contract, specific wording in the contract,
+    reading the fine print, providing a savings buffer for potential shortfalls, the advice to add 20% for incidentals, and
+    the time of year chosen for the wedding.'
+  - ' To contribute to a spousal IRA, the working/contributing spouse''s income must be equal to or exceed the amount contributed
+    for both individuals, and both spouses must file their tax returns jointly.'
+model-index:
+- name: SentenceTransformer based on sentence-transformers/all-MiniLM-L6-v2
+  results:
+  - task:
+      type: information-retrieval
+      name: Information Retrieval
+    dataset:
+      name: val
+      type: val
+    metrics:
+    - type: cosine_accuracy@1
+      value: 0.7972972972972973
+      name: Cosine Accuracy@1
+      verified: false
+    - type: cosine_accuracy@3
+      value: 0.8783347863993025
+      name: Cosine Accuracy@3
+      verified: false
+    - type: cosine_accuracy@5
+      value: 0.9038360941586748
+      name: Cosine Accuracy@5
+      verified: false
+    - type: cosine_accuracy@10
+      value: 0.9326503923278117
+      name: Cosine Accuracy@10
+      verified: false
+    - type: cosine_precision@1
+      value: 0.7972972972972973
+      name: Cosine Precision@1
+      verified: false
+    - type: cosine_precision@3
+      value: 0.2927782621331009
+      name: Cosine Precision@3
+      verified: false
+    - type: cosine_precision@5
+      value: 0.18076721883173494
+      name: Cosine Precision@5
+      verified: false
+    - type: cosine_precision@10
+      value: 0.09326503923278116
+      name: Cosine Precision@10
+      verified: false
+    - type: cosine_recall@1
+      value: 0.7972972972972973
+      name: Cosine Recall@1
+      verified: false
+    - type: cosine_recall@3
+      value: 0.8783347863993025
+      name: Cosine Recall@3
+      verified: false
+    - type: cosine_recall@5
+      value: 0.9038360941586748
+      name: Cosine Recall@5
+      verified: false
+    - type: cosine_recall@10
+      value: 0.9326503923278117
+      name: Cosine Recall@10
+      verified: false
+    - type: cosine_ndcg@10
+      value: 0.8651726981708079
+      name: Cosine Ndcg@10
+      verified: false
+    - type: cosine_mrr@10
+      value: 0.8435601154149589
+      name: Cosine Mrr@10
+      verified: false
+    - type: cosine_map@100
+      value: 0.8460407348927453
+      name: Cosine Map@100
+      verified: false
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:206460
+  - loss:MultipleNegativesRankingLoss
+  base_model: sentence-transformers/all-MiniLM-L6-v2
+  widget:
+  - source_sentence: " What factor significantly influences the rate of technology adoption and provides an example of a technology\
+      \ that experienced a boost in adoption due to its improved usability? \n"
+    sentences:
+    - ' The potential benefits include having coverage to pay off the mortgage in case of an unfortunate event and getting
+      the benefit of returned premiums if the policy is never used. The costs mentioned in the passage are between $16 and
+      $35 a month for a healthy woman in her early 30s seeking $300,000 to $500,000 in term coverage for 30 years.'
+    - ' Network effects strongly influence the rate of adoption, and the rapid growth of the Internet, facilitated by the
+      development of web browsers, is an example of a technology that experienced a boost in adoption due to its improved
+      usability.'
+    - ' Yes, your Social Security benefits may be subject to income tax depending on your overall income, as mentioned in
+      the passage. Up to 85% of your Social Security benefits could be taxable.'
+  - source_sentence: " What type of company is described as owning or controlling multiple commercial banks while being subject\
+      \ to more regulations and oversight? \n"
+    sentences:
+    - ' The purpose of full trading authorization for clients is to empower an agent to conduct all activities that the client
+      themselves could perform. This is often used by investors with limited knowledge, lacking confidence, busy schedules,
+      or those who find the process of researching and monitoring trading activities too stressful or time-consuming. Trust
+      in the agent or broker is crucial for investors granting full trading authorization.'
+    - ' The document is "Securities and Exchange Commission, 17 CFR Parts 200 and 240: Final Rule, Amendments to the Tender
+      Offer Best-Price Rules," and relevant information can be found on pages 10 and 11, 13, and 58, as well as pages 4 and
+      5.'
+    - ' A multibank holding company'
+  - source_sentence: " Why does the wage rate fall in the given text passage about labor supply and new workers? \n"
+    sentences:
+    - ' You''re eligible to receive full retirement benefits at age 66 if you were born between 1943 and 1954. For those born
+      in 1955 or later, your full retirement age is determined by how long after 1954 you were born. If you claim benefits
+      before reaching your full retirement age, your annual benefits will be less.'
+    - ' Understanding an industry''s churn rate versus that of a business helps determine if a churn rate is acceptable or
+      poor.'
+    - ' The wage rate falls in the given text passage because of the increase in the availability of new workers, which creates
+      downward pressure on the wage rate.'
+  - source_sentence: " What event led to the potential increase in labor costs for studios? \n"
+    sentences:
+    - ' Landlords should stay on top of maintenance when renting out their property because upkeep and repairs that might
+      be overlooked when only the owner is living there can become liabilities when a renter is present.'
+    - ' Brett received his bachelor''s degree in exercise science from Illinois State University.'
+    - ' The tentative agreement between the union and SAG-AFTRA contributed to the potential increase in labor costs for studios
+      as the strike comes to a close.'
+  - source_sentence: " What are the main differences between term life insurance and whole life insurance in terms of coverage\
+      \ duration, premiums, and guaranteed payout? \n"
+    sentences:
+    - ' Term life insurance has predetermined coverage that lasts for a specific period, with options like 10-, 15-, 20-,
+      and 30-year terms. Premiums remain level during the term. On the other hand, whole life insurance is a permanent coverage
+      that guarantees a payout to beneficiaries regardless of when the insured person dies, as long as premiums are paid.'
+    - ' A wedding budget can be affected by locking in costs with a deposit and signed contract, specific wording in the contract,
+      reading the fine print, providing a savings buffer for potential shortfalls, the advice to add 20% for incidentals,
+      and the time of year chosen for the wedding.'
+    - ' To contribute to a spousal IRA, the working/contributing spouse''s income must be equal to or exceed the amount contributed
+      for both individuals, and both spouses must file their tax returns jointly.'
+  datasets:
+  - FinLang/investopedia-embedding-dataset
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - cosine_accuracy@1
+  - cosine_accuracy@3
+  - cosine_accuracy@5
+  - cosine_accuracy@10
+  - cosine_precision@1
+  - cosine_precision@3
+  - cosine_precision@5
+  - cosine_precision@10
+  - cosine_recall@1
+  - cosine_recall@3
+  - cosine_recall@5
+  - cosine_recall@10
+  - cosine_ndcg@10
+  - cosine_mrr@10
+  - cosine_map@100
+  model-index:
+  - name: SentenceTransformer based on sentence-transformers/all-MiniLM-L6-v2
+    results:
+    - task:
+        type: information-retrieval
+        name: Information Retrieval
+      dataset:
+        name: val
+        type: val
+      metrics:
+      - type: cosine_accuracy@1
+        value: 0.7972972972972973
+        name: Cosine Accuracy@1
+        verified: false
+      - type: cosine_accuracy@3
+        value: 0.8783347863993025
+        name: Cosine Accuracy@3
+        verified: false
+      - type: cosine_accuracy@5
+        value: 0.9038360941586748
+        name: Cosine Accuracy@5
+        verified: false
+      - type: cosine_accuracy@10
+        value: 0.9326503923278117
+        name: Cosine Accuracy@10
+        verified: false
+      - type: cosine_precision@1
+        value: 0.7972972972972973
+        name: Cosine Precision@1
+        verified: false
+      - type: cosine_precision@3
+        value: 0.2927782621331009
+        name: Cosine Precision@3
+        verified: false
+      - type: cosine_precision@5
+        value: 0.18076721883173494
+        name: Cosine Precision@5
+        verified: false
+      - type: cosine_precision@10
+        value: 0.09326503923278116
+        name: Cosine Precision@10
+        verified: false
+      - type: cosine_recall@1
+        value: 0.7972972972972973
+        name: Cosine Recall@1
+        verified: false
+      - type: cosine_recall@3
+        value: 0.8783347863993025
+        name: Cosine Recall@3
+        verified: false
+      - type: cosine_recall@5
+        value: 0.9038360941586748
+        name: Cosine Recall@5
+        verified: false
+      - type: cosine_recall@10
+        value: 0.9326503923278117
+        name: Cosine Recall@10
+        verified: false
+      - type: cosine_ndcg@10
+        value: 0.8651726981708079
+        name: Cosine Ndcg@10
+        verified: false
+      - type: cosine_mrr@10
+        value: 0.8435601154149589
+        name: Cosine Mrr@10
+        verified: false
+      - type: cosine_map@100
+        value: 0.8460407348927453
+        name: Cosine Map@100
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: eval/Information-Retrieval_evaluation_val_results.csv
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: training_args.bin
+spaces: []
+createdAt: '2026-11-09T13:31:56.000Z'
+safetensors:
+  parameters:
+    F32: 22713216
+  total: 22713216
+usedStorage: 181739554
+downloadsAllTime: 28
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  initializer_range: 0.02
+  intermediate_size: 1536
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 6
+  pad_token_id: 0
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.22.1
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 30522
+onnxFiles: {}
+safetensorsSizeMb: 90.9
+approxSizeMb: 90.9
+fetchedAt: '2026-11-10T10:57:26.000Z'

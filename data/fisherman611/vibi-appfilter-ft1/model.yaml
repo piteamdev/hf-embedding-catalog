@@ -1,0 +1,125 @@
+_id: 6af2c6b4dc26997eb520f73c
+id: fisherman611/vibi-appfilter-ft1
+private: false
+pipeline_tag: sentence-similarity
+library_name: generic
+tags:
+- generic
+- safetensors
+- roberta
+- feature-extraction
+- sentence-transformers
+- sentence-similarity
+- transformers
+- vi
+- arxiv:2403.01616
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: fisherman611/vibi-appfilter-ft1
+author: fisherman611
+sha: bff862926e19e7a6adcda0c588f992bdae5ca0f8
+lastModified: '2026-11-10T07:25:22.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: Làm thế nào Đại học Bách khoa Hà Nội thu hút sinh viên quốc tế?
+  sentences:
+  - Đại học Bách khoa Hà Nội đã phát triển các chương trình đào tạo bằng tiếng Anh để làm cho việc học tại đây dễ dàng hơn
+    cho sinh viên quốc tế.
+  - Môi trường học tập đa dạng và sự hỗ trợ đầy đủ cho sinh viên quốc tế tại Đại học Bách khoa Hà Nội giúp họ thích nghi nhanh
+    chóng.
+  - Hà Nội có khí hậu mát mẻ vào mùa thu.
+  - Các món ăn ở Hà Nội rất ngon và đa dạng.
+model-index: null
+config:
+  architectures:
+  - RobertaModel
+  model_type: roberta
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  pipeline_tag: sentence-similarity
+  tags:
+  - sentence-transformers
+  - feature-extraction
+  - sentence-similarity
+  - transformers
+  library_name: generic
+  language:
+  - vi
+  widget:
+  - source_sentence: Làm thế nào Đại học Bách khoa Hà Nội thu hút sinh viên quốc tế?
+    sentences:
+    - Đại học Bách khoa Hà Nội đã phát triển các chương trình đào tạo bằng tiếng Anh để làm cho việc học tại đây dễ dàng hơn
+      cho sinh viên quốc tế.
+    - Môi trường học tập đa dạng và sự hỗ trợ đầy đủ cho sinh viên quốc tế tại Đại học Bách khoa Hà Nội giúp họ thích nghi
+      nhanh chóng.
+    - Hà Nội có khí hậu mát mẻ vào mùa thu.
+    - Các món ăn ở Hà Nội rất ngon và đa dạng.
+  license: apache-2.0
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: added_tokens.json
+- rfilename: bpe.codes
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: finetune.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer_config.json
+- rfilename: vocab.txt
+spaces: []
+createdAt: '2026-11-10T07:24:36.000Z'
+safetensors:
+  parameters:
+    F32: 134998272
+  total: 134998272
+usedStorage: 540015464
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - RobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 258
+  model_type: roberta
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 1
+  position_embedding_type: absolute
+  tokenizer_class: PhobertTokenizer
+  transformers_version: 4.57.6
+  type_vocab_size: 1
+  use_cache: true
+  vocab_size: 64001
+onnxFiles: {}
+safetensorsSizeMb: 540.0
+approxSizeMb: 540.0
+fetchedAt: '2026-11-10T10:57:26.000Z'

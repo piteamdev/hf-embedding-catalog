@@ -1,0 +1,40 @@
+_id: 6aedda4caf3cf6f0ec001039
+id: arshandalili/sasa-mistral-7b-layer8
+private: false
+pipeline_tag: feature-extraction
+library_name: saelens
+tags:
+- saelens
+- feature-extraction
+- arxiv:2606.06333
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: arshandalili/sasa-mistral-7b-layer8
+author: arshandalili
+sha: a16c662f81cbabd8949726fa299717bb7776a9c3
+lastModified: '2026-11-09T16:27:32.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: saelens
+  license: mit
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: sasa_r8_k10/cfg.json
+- rfilename: sasa_r8_k10/sae_weights.safetensors
+spaces: []
+createdAt: '2026-11-06T13:46:52.000Z'
+usedStorage: 1073889608
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 1073.9
+approxSizeMb: 0.0
+fetchedAt: '2026-11-10T10:57:26.000Z'

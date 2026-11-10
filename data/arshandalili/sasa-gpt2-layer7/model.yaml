@@ -1,0 +1,142 @@
+_id: 6aedd81c8efa39ed04631c8b
+id: arshandalili/sasa-gpt2-layer7
+private: false
+pipeline_tag: feature-extraction
+library_name: saelens
+tags:
+- saelens
+- feature-extraction
+- arxiv:2606.06333
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: arshandalili/sasa-gpt2-layer7
+author: arshandalili
+sha: a67db54202e953cebfb96ca6724b41ac31efa5b1
+lastModified: '2026-11-09T16:24:48.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: saelens
+  license: mit
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: batchtopk_l0120_w12288/cfg.json
+- rfilename: batchtopk_l0120_w12288/sae_weights.safetensors
+- rfilename: batchtopk_l0120_w24576/cfg.json
+- rfilename: batchtopk_l0120_w24576/sae_weights.safetensors
+- rfilename: batchtopk_l0120_w49152/cfg.json
+- rfilename: batchtopk_l0120_w49152/sae_weights.safetensors
+- rfilename: batchtopk_l0240_w12288/cfg.json
+- rfilename: batchtopk_l0240_w12288/sae_weights.safetensors
+- rfilename: batchtopk_l0240_w24576/cfg.json
+- rfilename: batchtopk_l0240_w24576/sae_weights.safetensors
+- rfilename: batchtopk_l0240_w49152/cfg.json
+- rfilename: batchtopk_l0240_w49152/sae_weights.safetensors
+- rfilename: batchtopk_l030_w12288/cfg.json
+- rfilename: batchtopk_l030_w12288/sae_weights.safetensors
+- rfilename: batchtopk_l060_w12288/cfg.json
+- rfilename: batchtopk_l060_w12288/sae_weights.safetensors
+- rfilename: batchtopk_l060_w24576/cfg.json
+- rfilename: batchtopk_l060_w24576/sae_weights.safetensors
+- rfilename: batchtopk_l060_w49152/cfg.json
+- rfilename: batchtopk_l060_w49152/sae_weights.safetensors
+- rfilename: matryoshka_l0120_w12288/cfg.json
+- rfilename: matryoshka_l0120_w12288/sae_weights.safetensors
+- rfilename: matryoshka_l0120_w24576/cfg.json
+- rfilename: matryoshka_l0120_w24576/sae_weights.safetensors
+- rfilename: matryoshka_l0120_w49152/cfg.json
+- rfilename: matryoshka_l0120_w49152/sae_weights.safetensors
+- rfilename: matryoshka_l0240_w12288/cfg.json
+- rfilename: matryoshka_l0240_w12288/sae_weights.safetensors
+- rfilename: matryoshka_l0240_w24576/cfg.json
+- rfilename: matryoshka_l0240_w24576/sae_weights.safetensors
+- rfilename: matryoshka_l0240_w49152/cfg.json
+- rfilename: matryoshka_l0240_w49152/sae_weights.safetensors
+- rfilename: matryoshka_l030_w12288/cfg.json
+- rfilename: matryoshka_l030_w12288/sae_weights.safetensors
+- rfilename: matryoshka_l060_w12288/cfg.json
+- rfilename: matryoshka_l060_w12288/sae_weights.safetensors
+- rfilename: matryoshka_l060_w24576/cfg.json
+- rfilename: matryoshka_l060_w24576/sae_weights.safetensors
+- rfilename: matryoshka_l060_w49152/cfg.json
+- rfilename: matryoshka_l060_w49152/sae_weights.safetensors
+- rfilename: sasa_r2_l0120_w12288/cfg.json
+- rfilename: sasa_r2_l0120_w12288/sae_weights.safetensors
+- rfilename: sasa_r2_l0120_w24576/cfg.json
+- rfilename: sasa_r2_l0120_w24576/sae_weights.safetensors
+- rfilename: sasa_r2_l0120_w49152/cfg.json
+- rfilename: sasa_r2_l0120_w49152/sae_weights.safetensors
+- rfilename: sasa_r2_l0240_w12288/cfg.json
+- rfilename: sasa_r2_l0240_w12288/sae_weights.safetensors
+- rfilename: sasa_r2_l030_w12288/cfg.json
+- rfilename: sasa_r2_l030_w12288/sae_weights.safetensors
+- rfilename: sasa_r2_l060_w12288/cfg.json
+- rfilename: sasa_r2_l060_w12288/sae_weights.safetensors
+- rfilename: sasa_r4_l0120_w12288/cfg.json
+- rfilename: sasa_r4_l0120_w12288/sae_weights.safetensors
+- rfilename: sasa_r4_l0240_w12288/cfg.json
+- rfilename: sasa_r4_l0240_w12288/sae_weights.safetensors
+- rfilename: sasa_r4_l060_w12288/cfg.json
+- rfilename: sasa_r4_l060_w12288/sae_weights.safetensors
+- rfilename: sasa_r6_l0120_w12288/cfg.json
+- rfilename: sasa_r6_l0120_w12288/sae_weights.safetensors
+- rfilename: sasa_r6_l0120_w24576/cfg.json
+- rfilename: sasa_r6_l0120_w24576/sae_weights.safetensors
+- rfilename: sasa_r6_l0120_w49152/cfg.json
+- rfilename: sasa_r6_l0120_w49152/sae_weights.safetensors
+- rfilename: sasa_r6_l0240_w12288/cfg.json
+- rfilename: sasa_r6_l0240_w12288/sae_weights.safetensors
+- rfilename: sasa_r6_l0240_w24576/cfg.json
+- rfilename: sasa_r6_l0240_w24576/sae_weights.safetensors
+- rfilename: sasa_r6_l0240_w49152/cfg.json
+- rfilename: sasa_r6_l0240_w49152/sae_weights.safetensors
+- rfilename: sasa_r6_l030_w12288/cfg.json
+- rfilename: sasa_r6_l030_w12288/sae_weights.safetensors
+- rfilename: sasa_r6_l060_w12288/cfg.json
+- rfilename: sasa_r6_l060_w12288/sae_weights.safetensors
+- rfilename: sasa_r6_l060_w24576/cfg.json
+- rfilename: sasa_r6_l060_w24576/sae_weights.safetensors
+- rfilename: sasa_r6_l060_w49152/cfg.json
+- rfilename: sasa_r6_l060_w49152/sae_weights.safetensors
+- rfilename: sasa_r8_l0120_w12288/cfg.json
+- rfilename: sasa_r8_l0120_w12288/sae_weights.safetensors
+- rfilename: sasa_r8_l0240_w12288/cfg.json
+- rfilename: sasa_r8_l0240_w12288/sae_weights.safetensors
+- rfilename: sasa_topk_r6_l060_w12288/cfg.json
+- rfilename: sasa_topk_r6_l060_w12288/sae_weights.safetensors
+- rfilename: topk_l0120_w12288/cfg.json
+- rfilename: topk_l0120_w12288/sae_weights.safetensors
+- rfilename: topk_l0120_w24576/cfg.json
+- rfilename: topk_l0120_w24576/sae_weights.safetensors
+- rfilename: topk_l0120_w49152/cfg.json
+- rfilename: topk_l0120_w49152/sae_weights.safetensors
+- rfilename: topk_l0240_w12288/cfg.json
+- rfilename: topk_l0240_w12288/sae_weights.safetensors
+- rfilename: topk_l0240_w24576/cfg.json
+- rfilename: topk_l0240_w24576/sae_weights.safetensors
+- rfilename: topk_l0240_w49152/cfg.json
+- rfilename: topk_l0240_w49152/sae_weights.safetensors
+- rfilename: topk_l030_w12288/cfg.json
+- rfilename: topk_l030_w12288/sae_weights.safetensors
+- rfilename: topk_l060_w12288/cfg.json
+- rfilename: topk_l060_w12288/sae_weights.safetensors
+- rfilename: topk_l060_w24576/cfg.json
+- rfilename: topk_l060_w24576/sae_weights.safetensors
+- rfilename: topk_l060_w49152/cfg.json
+- rfilename: topk_l060_w49152/sae_weights.safetensors
+spaces: []
+createdAt: '2026-11-06T13:37:32.000Z'
+usedStorage: 7859189360
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 7859.2
+approxSizeMb: 0.0
+fetchedAt: '2026-11-10T10:57:26.000Z'

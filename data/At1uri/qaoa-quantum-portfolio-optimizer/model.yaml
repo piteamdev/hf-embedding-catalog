@@ -1,0 +1,60 @@
+_id: 6af291909048846d4d0bd0ab
+id: At1uri/qaoa-quantum-portfolio-optimizer
+private: false
+pipeline_tag: feature-extraction
+tags:
+- quantum-computing
+- qaoa
+- vqe
+- ising-hamiltonian
+- qubo
+- portfolio-optimization
+- combinatorial-optimization
+- quantitative-finance
+- feature-extraction
+- en
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: At1uri/qaoa-quantum-portfolio-optimizer
+author: At1uri
+sha: 8630502634b0ec061d257edc6c6611bad1a203fb
+lastModified: '2026-11-10T03:37:53.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  language:
+  - en
+  license: apache-2.0
+  tags:
+  - quantum-computing
+  - qaoa
+  - vqe
+  - ising-hamiltonian
+  - qubo
+  - portfolio-optimization
+  - combinatorial-optimization
+  - quantitative-finance
+  metrics:
+  - accuracy
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: __pycache__/quantum_eigensolver.cpython-311.pyc
+- rfilename: benchmarks.json
+- rfilename: qaoa_circuit_weights.json
+- rfilename: quantum_eigensolver.py
+spaces: []
+createdAt: '2026-11-10T03:37:52.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-10T10:57:26.000Z'

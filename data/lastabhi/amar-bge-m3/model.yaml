@@ -1,0 +1,63 @@
+_id: 6af1ac0d883019056144000b
+id: lastabhi/amar-bge-m3
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- embeddings
+- quantized
+- on-device
+- android
+- feature-extraction
+- en
+- hi
+- base_model:BAAI/bge-m3
+- base_model:quantized:BAAI/bge-m3
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: lastabhi/amar-bge-m3
+author: lastabhi
+sha: 12c40cb016338bfe0c53d9b34357aecdde742692
+lastModified: '2026-11-09T11:25:48.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  base_model: BAAI/bge-m3
+  language:
+  - en
+  - hi
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  tags:
+  - onnx
+  - embeddings
+  - quantized
+  - on-device
+  - android
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: bge-m3-ocr-int4/bge-m3-ocr-int4.onnx
+- rfilename: bge-m3-ocr-int4/config.json
+- rfilename: bge-m3-ocr-int4/files.json
+- rfilename: bge-m3-ocr-int4/model_metadata.json
+- rfilename: bge-m3-ocr-int4/special_tokens_map.json
+- rfilename: bge-m3-ocr-int4/tokenizer.json
+- rfilename: bge-m3-ocr-int4/tokenizer_config.json
+spaces: []
+createdAt: '2026-11-09T11:18:37.000Z'
+usedStorage: 585359353
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  bge-m3-ocr-int4/bge-m3-ocr-int4.onnx: 568.3
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-10T10:57:26.000Z'

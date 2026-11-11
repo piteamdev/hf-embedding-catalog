@@ -1,0 +1,48 @@
+_id: 6af2f6e4874546cf30cb2ad0
+id: biantsh/embeddinggemma-2-GGUF-zstd
+private: false
+pipeline_tag: feature-extraction
+tags:
+- gguf
+- embedding
+- zstd
+- feature-extraction
+- base_model:ggml-org/embeddinggemma-2-GGUF
+- base_model:finetune:ggml-org/embeddinggemma-2-GGUF
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: biantsh/embeddinggemma-2-GGUF-zstd
+author: biantsh
+sha: ccb0ae1208fc908d9fa29a1cf0eadacd3a96ac15
+lastModified: '2026-11-10T11:01:44.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  pipeline_tag: feature-extraction
+  tags:
+  - gguf
+  - embedding
+  - zstd
+  base_model:
+  - google/embeddinggemma-2
+  - ggml-org/embeddinggemma-2-GGUF
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: embeddinggemma-2-Q8_0.gguf.zst
+- rfilename: mmproj-embeddinggemma-2-Q8_0.gguf.zst
+spaces: []
+createdAt: '2026-11-10T10:50:12.000Z'
+usedStorage: 576768972
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-11T10:39:28.000Z'

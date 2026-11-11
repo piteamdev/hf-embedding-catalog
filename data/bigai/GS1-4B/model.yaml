@@ -1,0 +1,265 @@
+_id: 6aed61b231c2d52dd4ef4555
+id: bigai/GS1-4B
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- gs1
+- feature-extraction
+- decision-model
+- custom_code
+- system-one
+- base_model:Qwen/Qwen3.5-4B
+- base_model:finetune:Qwen/Qwen3.5-4B
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 2
+modelId: bigai/GS1-4B
+author: bigai
+sha: ece1141cb66f875cf481510359f913c87723a4b5
+lastModified: '2026-11-11T08:12:26.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - GS1Model
+  auto_map:
+    AutoConfig: modular_gs1.GS1Config
+    AutoModel: modular_gs1.GS1Model
+  model_type: gs1
+  tokenizer_config:
+    bos_token: null
+    eos_token: <|im_end|>
+    unk_token: null
+    pad_token: <|endoftext|>
+  chat_template_jinja: "{# GS1 typed decision prompt. question/options are normalized by Compiler. #}\n{%- macro xml_text(value)\
+    \ -%}\n    {%- set text = value if value is string else value | tojson(ensure_ascii=false, separators=(',', ':'), sort_keys=true)\
+    \ -%}\n    {{- text | replace('&', '&amp;') | replace('<', '&lt;') | replace('>', '&gt;') -}}\n{%- endmacro -%}\n{%- if\
+    \ messages | length != 1 or messages[0]['role'] != 'user' -%}\n    {{- raise_exception('GS1 requires exactly one user\
+    \ message containing the state.') -}}\n{%- endif -%}\n{%- if question is undefined or options is undefined -%}\n    {{-\
+    \ raise_exception('GS1 requires question and options; use model.decide for typed decisions.') -}}\n{%- endif -%}\n{%-\
+    \ if options is string or options is mapping or options is not sequence or not options -%}\n    {{- raise_exception('GS1\
+    \ options must be a nonempty sequence of candidate descriptions.') -}}\n{%- endif -%}\n{%- if tools or enable_thinking\
+    \ -%}\n    {{- raise_exception('GS1 uses native decisions with the no-thinking prefix.') -}}\n{%- endif -%}\n{%- set state\
+    \ = messages[0]['content'] -%}\n{%- set visual = namespace(enabled=false) -%}\n{%- if state is sequence and state is not\
+    \ string and state is not mapping -%}\n    {%- for item in state -%}\n        {%- if item is mapping and item['type']\
+    \ == 'image' -%}\n            {%- set visual.enabled = true -%}\n        {%- endif -%}\n    {%- endfor -%}\n{%- endif\
+    \ -%}\n{{- '<|im_start|>user\\n<state>\\n' -}}\n{%- if visual.enabled -%}\n    {%- for item in state -%}\n        {%-\
+    \ if item is mapping and item['type'] == 'text' and item['text'] is string -%}\n            {{- xml_text(item['text'])\
+    \ -}}\n        {%- elif item is mapping and item | length == 2 and item['type'] == 'image' and item['image'] is string\
+    \ and item['image'].startswith('data:image/') and ';base64,' in item['image'] -%}\n            {{- '<|vision_start|><|image_pad|><|vision_end|>'\
+    \ -}}\n        {%- else -%}\n            {{- raise_exception('Vision state requires text and inline base64 images.') -}}\n\
+    \        {%- endif -%}\n    {%- endfor -%}\n{%- else -%}\n    {{- xml_text(state) -}}\n{%- endif -%}\n{{- '\\n</state>\\\
+    n<question>\\n' -}}\n{{- xml_text(question) -}}\n{{- '\\n</question>' -}}\n{%- for option in options -%}\n    {{- '\\\
+    n<option>\\n' -}}\n    {{- xml_text(option) -}}\n    {{- '\\n</option>' -}}\n{%- endfor -%}\n{{- '<|im_end|>\\n' -}}\n\
+    {%- if add_generation_prompt -%}\n    {{- '<|im_start|>assistant\\n<think>\\n\\n</think>\\n\\n<|decide|>' -}}\n{%- endif\
+    \ -%}\n"
+cardData:
+  license: apache-2.0
+  library_name: transformers
+  tags:
+  - gs1
+  - decision-model
+  - custom_code
+  - system-one
+  - safetensors
+  base_model:
+  - Qwen/Qwen3.5-4B
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modular_gs1.GS1Model
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: assets/architecture.svg
+- rfilename: assets/banner.svg
+- rfilename: assets/gs1_pareto_frontier.svg
+- rfilename: assets/inference-latency.svg
+- rfilename: chat_template.jinja
+- rfilename: compiler.py
+- rfilename: config.json
+- rfilename: model-00001-of-00005.safetensors
+- rfilename: model-00002-of-00005.safetensors
+- rfilename: model-00003-of-00005.safetensors
+- rfilename: model-00004-of-00005.safetensors
+- rfilename: model-00005-of-00005.safetensors
+- rfilename: model.safetensors.index.json
+- rfilename: modular_gs1.py
+- rfilename: preprocessor_config.json
+- rfilename: requirements.txt
+- rfilename: schema.py
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: video_preprocessor_config.json
+spaces: []
+createdAt: '2026-11-06T05:12:18.000Z'
+safetensors:
+  parameters:
+    F32: 4371005952
+    BF16: 333514240
+  total: 4704520192
+usedStorage: 18171134197
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - GS1Model
+  calibration:
+    log_temperature_bound: 2.995732273553991
+    mode: identity
+  decision:
+    attnres: true
+    attnres_eps: 1.0e-06
+    attnres_layers:
+    - 3
+    - 7
+    - 11
+    - 15
+    - 19
+    - 23
+    - 27
+    - 31
+    bidirectional: true
+    bidirectional_layers:
+    - 3
+    - 7
+    - 11
+    - 15
+    - 19
+    - 23
+    - 27
+    - 31
+    cross_attention_heads: 10
+    cross_attention_layers: 2
+    norm_eps: 1.0e-05
+    projection_size: 256
+  dtype: float32
+  head_compute_dtype: bfloat16
+  image_token_id: 248056
+  initialization_seed: 41
+  model_type: gs1
+  structural_token_ids:
+    </option>: 248082
+    </question>: 248080
+    </state>: 248078
+    <option>: 248081
+    <question>: 248079
+    <state>: 248077
+    <|decide|>: 248083
+  text_config:
+    attention_bias: false
+    attention_dropout: 0.0
+    attn_output_gate: true
+    bos_token_id: null
+    dtype: float32
+    eos_token_id: 248044
+    full_attention_interval: 4
+    head_dim: 256
+    hidden_act: silu
+    hidden_size: 2560
+    initializer_range: 0.02
+    intermediate_size: 9216
+    layer_types:
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    linear_conv_kernel_dim: 4
+    linear_key_head_dim: 128
+    linear_num_key_heads: 16
+    linear_num_value_heads: 32
+    linear_value_head_dim: 128
+    mamba_ssm_dtype: float32
+    max_position_embeddings: 262144
+    mlp_only_layers: []
+    model_type: qwen3_5_text
+    mtp_num_hidden_layers: 1
+    mtp_use_dedicated_embeddings: false
+    num_attention_heads: 16
+    num_hidden_layers: 32
+    num_key_value_heads: 4
+    pad_token_id: null
+    partial_rotary_factor: 0.25
+    rms_norm_eps: 1.0e-06
+    rope_parameters:
+      mrope_interleaved: true
+      mrope_section:
+      - 11
+      - 11
+      - 10
+      partial_rotary_factor: 0.25
+      rope_theta: 10000000
+      rope_type: default
+    tie_word_embeddings: true
+    use_cache: false
+    vocab_size: 248320
+  tie_word_embeddings: false
+  transformers_version: 5.3.0
+  video_token_id: 248057
+  vision_config:
+    deepstack_visual_indexes: []
+    depth: 24
+    hidden_act: gelu_pytorch_tanh
+    hidden_size: 1024
+    in_channels: 3
+    initializer_range: 0.02
+    intermediate_size: 4096
+    model_type: qwen3_5
+    num_heads: 16
+    num_position_embeddings: 2304
+    out_hidden_size: 2560
+    patch_size: 16
+    spatial_merge_size: 2
+    temporal_patch_size: 2
+  vision_end_token_id: 248054
+  vision_start_token_id: 248053
+  auto_map:
+    AutoConfig: modular_gs1.GS1Config
+    AutoModel: modular_gs1.GS1Model
+  inference_limits:
+    max_context: 65536
+    max_questions: 512
+    max_request_tokens: 131072
+    max_branches: 5120
+    batch_tokens: 32768
+    max_attention_bytes: 549755813888
+    max_logit_elements: 16777216
+  release_date: '2026-11-07'
+onnxFiles: {}
+safetensorsSizeMb: 18151.1
+approxSizeMb: 18151.1
+fetchedAt: '2026-11-11T10:39:28.000Z'

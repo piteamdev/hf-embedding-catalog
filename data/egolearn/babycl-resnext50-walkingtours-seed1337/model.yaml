@@ -1,0 +1,52 @@
+_id: 6af35ab1d6d019021b25cea1
+id: egolearn/babycl-resnext50-walkingtours-seed1337
+private: false
+pipeline_tag: feature-extraction
+library_name: egolearn
+tags:
+- egolearn
+- safetensors
+- self-supervised-learning
+- walkingtours
+- streaming
+- feature-extraction
+- region:us
+downloads: 0
+likes: 0
+modelId: egolearn/babycl-resnext50-walkingtours-seed1337
+author: egolearn
+sha: 76fb068bd6d67880dfc5151c50e0447481ccd9d7
+lastModified: '2026-11-10T17:56:04.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: egolearn
+  pipeline_tag: feature-extraction
+  tags:
+  - egolearn
+  - self-supervised-learning
+  - walkingtours
+  - streaming
+  - safetensors
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: checksums.sha256
+- rfilename: model.json
+- rfilename: model.safetensors
+spaces: []
+createdAt: '2026-11-10T17:56:01.000Z'
+safetensors:
+  parameters:
+    F32: 35801104
+  total: 35801104
+usedStorage: 143240384
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 143.2
+approxSizeMb: 143.2
+fetchedAt: '2026-11-11T10:39:28.000Z'

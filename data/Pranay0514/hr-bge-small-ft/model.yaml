@@ -1,0 +1,447 @@
+_id: 6af3637866b6790fb31a605c
+id: Pranay0514/hr-bge-small-ft
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:397
+- loss:MultipleNegativesRankingLoss
+- arxiv:1908.10084
+- arxiv:1807.03748
+- base_model:BAAI/bge-small-en-v1.5
+- base_model:finetune:BAAI/bge-small-en-v1.5
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: Pranay0514/hr-bge-small-ft
+author: Pranay0514
+sha: 31efc80053560d69e15b4863403f1a38a733ca7b
+lastModified: '2026-11-11T06:07:44.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: 'Represent this sentence for searching relevant passages: What is the 30‑day deadline for filing a grievance
+    for full‑time staff, and does it apply to interns?'
+  sentences:
+  - 'Eligibility: Gratuity is payable to any employee who has completed a minimum of five (5) years of continuous service
+    with the PSU. Employees who are terminated for any reason other than voluntary resignation, retirement, or death are also
+    eligible. Employees on probation or contractual tenure of less than five years are not eligible unless the Board decides
+    otherwise. Calculation: The gratuity is calculated as (15/26) × Last drawn basic salary × Years of service, rounded to
+    the nearest rupee. For example, an employee with a last drawn basic of Rs. 80,000 and 12 years of service receives ₹ 15/26
+    × 80,000 × 12 = ₹ 44,200. The maximum payable amount is capped at Rs. 20 lakh as per the latest Central Government directive.
+    Exception: Employees in hazardous or critical roles may'
+  - "Grievances may be submitted by any full‑time employee (excluding interns and contractors) within 30 calendar days from\
+    \ the incident.  The employee must lodge a written complaint with the HR HelpDesk, which will acknowledge receipt within\
+    \ 48 hours and assign a unique reference number.  The first level of review (HR Manager) must be completed within 10 business\
+    \ days, with a written decision returned to the complainant.  If the grievance remains unresolved, it is escalated to\
+    \ the Senior HR Director within 15 business days of the initial review, and a final decision is rendered within 7 days\
+    \ of escalation.  \n\nAll complaints are treated confidentially; the complainant and respondent are notified of the outcome\
+    \ but names are disclosed only if the complainant consents or if required by law.  Compensation claims under this policy\
+    \ are capped at 20% of the employee’s monthly salary, with a maximum of ₹2,00,000 per incident.  \n\nExceptions: Grievances\
+    \ involving personal disputes outside the workplace, or those arising from disciplinary actions, are excluded from the\
+    \ formal grievance procedure and are handled per the Code of Conduct.  Contractors may file grievances only through the\
+    \ designated Contractor Liaison Officer and are subject to a 60‑day filing window."
+  - 'Employees are expected to report to their assigned store at least 30 minutes before the official shift start time. An
+    employee is considered late if they arrive after the scheduled start time minus the 30‑minute grace period. For full‑time
+    staff, a single late arrival is recorded as a 5% attendance penalty. If an employee accumulates more than three late arrivals
+    in any 30‑day window, an attendance flag is raised and a formal warning will be issued. A total of six late arrivals within
+    a calendar year will lead to a deduction of one day of paid leave from the employee’s annual leave balance. Employees
+    with less than 6 months of continuous service are exempt from the penalty until they complete their probationary period;
+    thereafter the same rules apply. Part‑time and shift employees are assessed on a pro‑rated basis, with a maximum of 2
+    late arrivals per month allowed before a warning is issued. Exceptions: medical emergencies, documented travel disruptions,
+    or store‑wide operational disruptions (e.g., power outage) are excused if the employee submits a written notice within
+    24 hours or a medical'
+- source_sentence: 'Represent this sentence for searching relevant passages: How many days of notice must a contractual staff
+    member give before resigning?'
+  sentences:
+  - 'Any employee intending to resign must submit a written notice of 30 days. For positions with critical patient‑care responsibilities,
+    a 60‑day notice is required. Employees with less than six months tenure are exempt from notice. Senior management (above
+    level 8) must provide 90 days’ notice. In case of resignation due to health issues, the notice period may be waived. Notice
+    pay is 100% of the last basic salary for every completed month of service. Unpaid notice period will be treated as forfeiture
+    of leave. Early resignation within two weeks of joining will result in forfeiture of all accrued leaves. In emergencies
+    (natural disaster, war) the notice period may be reduced to 15 days with managerial approval. The company reserves the
+    right to accept resignation without notice if the employee violates policies.
+
+
+    The notice period must be communicated via email to HR and the immediate supervisor. Failure to submit notice may result
+    in a deduction of salary equivalent to the notice period. Contractual staff must provide 15 days’ notice; part‑time staff
+    14 days. Employees on maternity or extended medical leave may resign without notice; however, notice is still required
+    if the leave is ongoing. If resignation occurs within the first three months, any earned bonus will be forfeited.'
+  - "Salary and Payslip  \n\n1. Salary will be credited to the employee’s bank account on the 30th day of each calendar month.\
+    \  \n2. An electronic payslip will be generated and available on the PSU intranet portal no later than the 5th day of\
+    \ the following month.  \n3. Deductions:  \n   – Professional Tax: 5% of basic salary, capped at ₹2,500 per month.  \n\
+    \   – Provident Fund (Employee Contribution): 12% of basic salary, capped at ₹25,200 per annum (₹2,100 per month).  \n\
+    \   – Income Tax: As per applicable slab, calculated using standard deduction and any additional exemptions.  \n4. Eligibility:\
+    \  \n   – Regular employees with a continuous service period of at least 6 months are eligible for the full salary package.\
+    \  \n   – Probationary staff (first 3 months) receive 70% of the basic salary, with all statutory deductions applied.\
+    \  \n5. Exceptions:  \n   – Contract staff and interns are paid on a weekly basis, with a minimum pay of ₹15,000 per month.\
+    \  \n   – Remote workers receive salary on the 15th of the month, with a 2% surcharge to cover connectivity costs, subject\
+    \ to managerial approval.  \n6. Any salary adjustment, bonus, or incentive will be communicated in a separate memorandum\
+    \ and reflected in the subsequent month’s payslip."
+  - 'All salaries will be credited to employees’ designated bank accounts on or before the 5th working day of each month,
+    following the statutory payroll cycle of 30 calendar days from the date of salary approval. Employees will receive a detailed
+    payslip by 8:00 AM on the 5th day, which includes gross salary, basic, HRA, special allowances, and statutory deductions
+    such as PF (12% of basic), EPF (8% of basic), and professional tax as per state norms. Net salary will be calculated after
+    deducting taxes, loan EMIs, and any other authorized deductions, with a maximum voluntary deduction capped at 25% of the
+    gross salary per month.
+
+
+    Salary revisions are approved annually on the employee’s anniversary of joining and may be adjusted mid‑year for performance
+    or cost‑of‑living adjustments, but the increase cannot exceed 10% of the current base salary in any single year. Employees
+    on a fixed‑term contract or temporary status are exempt from annual salary reviews unless their contract is extended.
+    Interns, part‑time staff, and employees on leave of absence do not receive a payslip or salary unless a written agreement
+    states otherwise. Any deviation from the stated limits or dates requires written approval from the HR head and the finance
+    director.'
+- source_sentence: 'Represent this sentence for searching relevant passages: Can a senior manager be confirmed if they have
+    99 % attendance but meet 90 % of objectives?'
+  sentences:
+  - "All employees earning a gross monthly wage of ₹21,000 or less are covered under the Employee State Insurance (ESI) Scheme,\
+    \ effective from the first day of their employment. The Employer contributes 4.75% and the Employee contributes 0.75%\
+    \ of the total wages (capped at ₹21,000) to the ESI fund. Coverage is applicable only to those who work a minimum of 30\
+    \ days in a calendar year and are on a full‑time roster. Casual, contract, and freelance workers, as well as employees\
+    \ earning above ₹21,000, are exempt from ESI.  \n\nThe benefits under ESI are:  \n• **Sickness benefit** – 100 % wage\
+    \ replacement for up to 180 consecutive days, with a maximum monthly benefit of ₹14,400.  \n• **Maternity benefit** –\
+    \ 90 days for the first child and 90 days for subsequent children, with a maximum monthly benefit of ₹14,400.  \n• **Medical\
+    \ benefit** – free treatment for the employee and dependents up to ₹5,000 per month.  \n\nIf an employee’s wage exceeds\
+    \ ₹21,000 after 12 consecutive months, they will automatically be deregistered from ESI, and no contributions will be\
+    \ made thereafter. Employees may apply for re‑registration if their wage falls back below the threshold."
+  - "Probation period for all new full‑time hires is 90 calendar days, with a mid‑term review on day 45. Employees must achieve\
+    \ at least 70 % of the performance objectives set by their manager and maintain a minimum attendance of 95 % during probation.\
+    \ Failure to meet these criteria results in probation extension, not exceeding an additional 30 days (maximum 120 days).\
+    \ Upon successful completion of probation, confirmation is granted and the employee becomes a regular staff member, eligible\
+    \ for the standard 5 % salary increment and the full benefits package.  \n\nEligibility for confirmation excludes part‑time,\
+    \ contractual, and seasonal staff unless they have completed the full 90‑day period and meet the criteria above. Employees\
+    \ transferring into a new role within the company are exempt from re‑probation unless the role is substantially different\
+    \ (e.g., moving from sales to management). Senior managers and executives are subject to a separate confirmation process,\
+    \ requiring 90 % of objectives and a 100 % attendance record. All probationary employees must submit a performance summary\
+    \ and manager’s recommendation before confirmation is finalized."
+  - 'Employees receive their gross salary every month on the 5th of the month, calculated as Basic (20% of CTC) + DA (8% of
+    Basic), HRA (40% of Basic), and other allowances. The net salary is computed after statutory deductions: Provident Fund
+    12% of Basic, Professional Tax up to ₹200 per month, and applicable income tax per slab. The payslip is emailed electronically
+    and also available in hard copy at the HR office within 48 hours of salary credit. Eligibility for salary payment requires
+    a signed Employment Agreement and completion of probation (first 3 months). Part‑time staff are paid pro‑rated on days
+    worked, capped at 20 days per month. Interns receive stipend of ₹15,000/month, exempt from PF but subject to TDS. Employees
+    on extended maternity leave (up to 6 weeks) receive 80% of basic salary; on medical leave exceeding 14 days, 70% of basic
+    is paid. Salary adjustments are processed only during the annual review cycle and after performance appraisal.'
+- source_sentence: 'Represent this sentence for searching relevant passages: What is the maximum percentage of the total workforce
+    that can be remote at any one time, according to the policy?'
+  sentences:
+  - Work from home (WFH) is allowed for eligible employees in non‑front‑line roles. Eligibility requires a minimum of 6 months
+    continuous service, no outstanding performance or disciplinary actions, and a role that can be performed remotely. Employees
+    may work from home up to two (2) days per week, with a maximum of 40 % of their total working hours (i.e., 32 hours in
+    an 8‑hour day). The total number of WFH days in a calendar year is capped at 12. Managers must approve each WFH request
+    in advance and ensure that the employee has a suitable workspace and reliable internet. WFH cannot exceed 3 consecutive
+    days and at any given time no more than 10 % of the workforce can be remote to maintain store operations. Sales and customer‑support
+    staff may apply for WFH on a case‑by‑case basis if it does not interfere with client visits. All remote work must comply
+    with the company’s data‑security guidelines and employees must submit a weekly activity log for audit.
+  - Employees who complete a minimum of five (5) years of continuous service with the company are eligible for gratuity under
+    the Payment of Gratuity Act, 1972. For each completed year of service, the gratuity amount will be calculated as fifteen
+    (15) days of the employee’s basic salary plus dearness allowance (DA) at the rate of 15 days of wages per year. The calculation
+    shall be based on the last drawn basic salary plus DA at the time of termination. The maximum gratuity payable by the
+    company shall not exceed Rs.20,00,000 (Twenty Lakhs) irrespective of the number of years of service. Employees who leave
+    the company before completing five (5) years shall receive a pro‑rated gratuity calculated on the number of complete months
+    of service (1/12th of the monthly gratuity). Employees who retire, resign, or are terminated for reasons other than misconduct
+    are eligible for gratuity; employees terminated for gross misconduct, fraud, or willful disobedience of company policy
+    are not eligible. In the event of death or permanent disablement, the employee’s nominee is entitled to receive the gratuity
+    as per the Act. The company reserves the right to amend or suspend this policy in line with statutory changes.
+  - 'Employees are eligible for Privilege (Earned) Leave after completing a continuous minimum of 12 months of service. Accrual
+    is calculated on a pro‑rated basis at 1.25 days per month, equivalent to 15 days per calendar year. Accrued leave may
+    be taken after the 12th month and can be applied for in 5‑day increments. The maximum leave that can be accrued and carried
+    forward into the next calendar year is capped at 5 days. Unused leave beyond this limit will be forfeited at year‑end.
+    Leave can be utilized for personal, family, or health reasons, subject to prior approval from the employee’s immediate
+    supervisor and HR. Exceptions to accrual rules include: (i) Medical emergency leave as per the company’s Medical Leave
+    Policy; (ii) Maternity leave of 12 weeks and paternity leave of 5 days; (iii) Bereavement leave of up to 3 days; and (iv)
+    Unpaid leave in cases of disciplinary action or resignation. Employees on contractual or probationary status are not eligible
+    for earned leave until the completion of the probation period.'
+- source_sentence: 'Represent this sentence for searching relevant passages: If I’m a part‑time employee, how many late arrivals
+    per month can I have before I get a warning?'
+  sentences:
+  - "All full‑time retail employees earning a monthly wage of ₹21,000 or less are covered under the Employees’ State Insurance\
+    \ (ESI) Scheme. Coverage begins after 30 consecutive days of employment and requires a minimum of 20 working hours per\
+    \ week. The employer contributes 4.75 % of the employee’s wages (up to ₹21,000), while the employee contributes 1.75 %\
+    \ toward the scheme.  \n\nESI benefits include:  \n• **Sickness benefits** – up to ₹15,000 for 91 days of sickness per\
+    \ year, payable after 15 days of medical certification.  \n• **Maternity benefits** – ₹15,000 for 26 weeks, available\
+    \ to female employees after 90 days of employment.  \n• **Disabled and dependent benefits** – up to ₹15,000 for permanent\
+    \ disability and ₹5,000 for dependent children per annum.  \n\nEmployees on temporary, seasonal, or contractual arrangements,\
+    \ and those earning above ₹21,000 per month, are exempt from ESI coverage. All benefits are subject to the national ESI\
+    \ Act limits and can be accessed through the company’s designated ESI portal. The company will provide ESI insurance certificates\
+    \ upon completion of the 30‑day probation period."
+  - 'Employees are expected to report to their assigned store at least 30 minutes before the official shift start time. An
+    employee is considered late if they arrive after the scheduled start time minus the 30‑minute grace period. For full‑time
+    staff, a single late arrival is recorded as a 5% attendance penalty. If an employee accumulates more than three late arrivals
+    in any 30‑day window, an attendance flag is raised and a formal warning will be issued. A total of six late arrivals within
+    a calendar year will lead to a deduction of one day of paid leave from the employee’s annual leave balance. Employees
+    with less than 6 months of continuous service are exempt from the penalty until they complete their probationary period;
+    thereafter the same rules apply. Part‑time and shift employees are assessed on a pro‑rated basis, with a maximum of 2
+    late arrivals per month allowed before a warning is issued. Exceptions: medical emergencies, documented travel disruptions,
+    or store‑wide operational disruptions (e.g., power outage) are excused if the employee submits a written notice within
+    24 hours or a medical'
+  - 'Employees eligible for work‑from‑home (WFH) are those in permanent, full‑time roles with a minimum of 6 months tenure,
+    holding a regular or higher grade as per the company’s grading system. Each eligible employee may work from home up to
+    2 days per week, not exceeding 8 hours per day, and the total WFH hours must not surpass 70 % of the monthly work hours
+    (≈ 120 hours for a 40‑hour work week). WFH is allowed only on days when the employee’s functional responsibilities can
+    be fulfilled remotely and no client‑specific on‑site requirement is in place. Managers must obtain prior approval for
+    WFH days via the internal portal; approvals are granted by the employee’s immediate supervisor and the HR Business Partner.
+    Exceptions include: (i) employees in client‑facing roles with active on‑site contracts, (ii) roles requiring physical
+    equipment or presence, (iii) periods of public health or natural disaster where office access is impossible, and (iv)
+    emergency situations requiring immediate on‑site presence. The company reserves the right to revoke WFH privileges if
+    performance or compliance with security protocols deteriorates. All WFH arrangements are governed by the company’s Information
+    Security and Data Privacy guidelines.'
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:397
+  - loss:MultipleNegativesRankingLoss
+  base_model: BAAI/bge-small-en-v1.5
+  widget:
+  - source_sentence: 'Represent this sentence for searching relevant passages: What is the 30‑day deadline for filing a grievance
+      for full‑time staff, and does it apply to interns?'
+    sentences:
+    - 'Eligibility: Gratuity is payable to any employee who has completed a minimum of five (5) years of continuous service
+      with the PSU. Employees who are terminated for any reason other than voluntary resignation, retirement, or death are
+      also eligible. Employees on probation or contractual tenure of less than five years are not eligible unless the Board
+      decides otherwise. Calculation: The gratuity is calculated as (15/26) × Last drawn basic salary × Years of service,
+      rounded to the nearest rupee. For example, an employee with a last drawn basic of Rs. 80,000 and 12 years of service
+      receives ₹ 15/26 × 80,000 × 12 = ₹ 44,200. The maximum payable amount is capped at Rs. 20 lakh as per the latest Central
+      Government directive. Exception: Employees in hazardous or critical roles may'
+    - "Grievances may be submitted by any full‑time employee (excluding interns and contractors) within 30 calendar days from\
+      \ the incident.  The employee must lodge a written complaint with the HR HelpDesk, which will acknowledge receipt within\
+      \ 48 hours and assign a unique reference number.  The first level of review (HR Manager) must be completed within 10\
+      \ business days, with a written decision returned to the complainant.  If the grievance remains unresolved, it is escalated\
+      \ to the Senior HR Director within 15 business days of the initial review, and a final decision is rendered within 7\
+      \ days of escalation.  \n\nAll complaints are treated confidentially; the complainant and respondent are notified of\
+      \ the outcome but names are disclosed only if the complainant consents or if required by law.  Compensation claims under\
+      \ this policy are capped at 20% of the employee’s monthly salary, with a maximum of ₹2,00,000 per incident.  \n\nExceptions:\
+      \ Grievances involving personal disputes outside the workplace, or those arising from disciplinary actions, are excluded\
+      \ from the formal grievance procedure and are handled per the Code of Conduct.  Contractors may file grievances only\
+      \ through the designated Contractor Liaison Officer and are subject to a 60‑day filing window."
+    - 'Employees are expected to report to their assigned store at least 30 minutes before the official shift start time.
+      An employee is considered late if they arrive after the scheduled start time minus the 30‑minute grace period. For full‑time
+      staff, a single late arrival is recorded as a 5% attendance penalty. If an employee accumulates more than three late
+      arrivals in any 30‑day window, an attendance flag is raised and a formal warning will be issued. A total of six late
+      arrivals within a calendar year will lead to a deduction of one day of paid leave from the employee’s annual leave balance.
+      Employees with less than 6 months of continuous service are exempt from the penalty until they complete their probationary
+      period; thereafter the same rules apply. Part‑time and shift employees are assessed on a pro‑rated basis, with a maximum
+      of 2 late arrivals per month allowed before a warning is issued. Exceptions: medical emergencies, documented travel
+      disruptions, or store‑wide operational disruptions (e.g., power outage) are excused if the employee submits a written
+      notice within 24 hours or a medical'
+  - source_sentence: 'Represent this sentence for searching relevant passages: How many days of notice must a contractual
+      staff member give before resigning?'
+    sentences:
+    - 'Any employee intending to resign must submit a written notice of 30 days. For positions with critical patient‑care
+      responsibilities, a 60‑day notice is required. Employees with less than six months tenure are exempt from notice. Senior
+      management (above level 8) must provide 90 days’ notice. In case of resignation due to health issues, the notice period
+      may be waived. Notice pay is 100% of the last basic salary for every completed month of service. Unpaid notice period
+      will be treated as forfeiture of leave. Early resignation within two weeks of joining will result in forfeiture of all
+      accrued leaves. In emergencies (natural disaster, war) the notice period may be reduced to 15 days with managerial approval.
+      The company reserves the right to accept resignation without notice if the employee violates policies.
+
+
+      The notice period must be communicated via email to HR and the immediate supervisor. Failure to submit notice may result
+      in a deduction of salary equivalent to the notice period. Contractual staff must provide 15 days’ notice; part‑time
+      staff 14 days. Employees on maternity or extended medical leave may resign without notice; however, notice is still
+      required if the leave is ongoing. If resignation occurs within the first three months, any earned bonus will be forfeited.'
+    - "Salary and Payslip  \n\n1. Salary will be credited to the employee’s bank account on the 30th day of each calendar\
+      \ month.  \n2. An electronic payslip will be generated and available on the PSU intranet portal no later than the 5th\
+      \ day of the following month.  \n3. Deductions:  \n   – Professional Tax: 5% of basic salary, capped at ₹2,500 per month.\
+      \  \n   – Provident Fund (Employee Contribution): 12% of basic salary, capped at ₹25,200 per annum (₹2,100 per month).\
+      \  \n   – Income Tax: As per applicable slab, calculated using standard deduction and any additional exemptions.  \n\
+      4. Eligibility:  \n   – Regular employees with a continuous service period of at least 6 months are eligible for the\
+      \ full salary package.  \n   – Probationary staff (first 3 months) receive 70% of the basic salary, with all statutory\
+      \ deductions applied.  \n5. Exceptions:  \n   – Contract staff and interns are paid on a weekly basis, with a minimum\
+      \ pay of ₹15,000 per month.  \n   – Remote workers receive salary on the 15th of the month, with a 2% surcharge to cover\
+      \ connectivity costs, subject to managerial approval.  \n6. Any salary adjustment, bonus, or incentive will be communicated\
+      \ in a separate memorandum and reflected in the subsequent month’s payslip."
+    - 'All salaries will be credited to employees’ designated bank accounts on or before the 5th working day of each month,
+      following the statutory payroll cycle of 30 calendar days from the date of salary approval. Employees will receive a
+      detailed payslip by 8:00 AM on the 5th day, which includes gross salary, basic, HRA, special allowances, and statutory
+      deductions such as PF (12% of basic), EPF (8% of basic), and professional tax as per state norms. Net salary will be
+      calculated after deducting taxes, loan EMIs, and any other authorized deductions, with a maximum voluntary deduction
+      capped at 25% of the gross salary per month.
+
+
+      Salary revisions are approved annually on the employee’s anniversary of joining and may be adjusted mid‑year for performance
+      or cost‑of‑living adjustments, but the increase cannot exceed 10% of the current base salary in any single year. Employees
+      on a fixed‑term contract or temporary status are exempt from annual salary reviews unless their contract is extended.
+      Interns, part‑time staff, and employees on leave of absence do not receive a payslip or salary unless a written agreement
+      states otherwise. Any deviation from the stated limits or dates requires written approval from the HR head and the finance
+      director.'
+  - source_sentence: 'Represent this sentence for searching relevant passages: Can a senior manager be confirmed if they have
+      99 % attendance but meet 90 % of objectives?'
+    sentences:
+    - "All employees earning a gross monthly wage of ₹21,000 or less are covered under the Employee State Insurance (ESI)\
+      \ Scheme, effective from the first day of their employment. The Employer contributes 4.75% and the Employee contributes\
+      \ 0.75% of the total wages (capped at ₹21,000) to the ESI fund. Coverage is applicable only to those who work a minimum\
+      \ of 30 days in a calendar year and are on a full‑time roster. Casual, contract, and freelance workers, as well as employees\
+      \ earning above ₹21,000, are exempt from ESI.  \n\nThe benefits under ESI are:  \n• **Sickness benefit** – 100 % wage\
+      \ replacement for up to 180 consecutive days, with a maximum monthly benefit of ₹14,400.  \n• **Maternity benefit**\
+      \ – 90 days for the first child and 90 days for subsequent children, with a maximum monthly benefit of ₹14,400.  \n\
+      • **Medical benefit** – free treatment for the employee and dependents up to ₹5,000 per month.  \n\nIf an employee’s\
+      \ wage exceeds ₹21,000 after 12 consecutive months, they will automatically be deregistered from ESI, and no contributions\
+      \ will be made thereafter. Employees may apply for re‑registration if their wage falls back below the threshold."
+    - "Probation period for all new full‑time hires is 90 calendar days, with a mid‑term review on day 45. Employees must\
+      \ achieve at least 70 % of the performance objectives set by their manager and maintain a minimum attendance of 95 %\
+      \ during probation. Failure to meet these criteria results in probation extension, not exceeding an additional 30 days\
+      \ (maximum 120 days). Upon successful completion of probation, confirmation is granted and the employee becomes a regular\
+      \ staff member, eligible for the standard 5 % salary increment and the full benefits package.  \n\nEligibility for confirmation\
+      \ excludes part‑time, contractual, and seasonal staff unless they have completed the full 90‑day period and meet the\
+      \ criteria above. Employees transferring into a new role within the company are exempt from re‑probation unless the\
+      \ role is substantially different (e.g., moving from sales to management). Senior managers and executives are subject\
+      \ to a separate confirmation process, requiring 90 % of objectives and a 100 % attendance record. All probationary employees\
+      \ must submit a performance summary and manager’s recommendation before confirmation is finalized."
+    - 'Employees receive their gross salary every month on the 5th of the month, calculated as Basic (20% of CTC) + DA (8%
+      of Basic), HRA (40% of Basic), and other allowances. The net salary is computed after statutory deductions: Provident
+      Fund 12% of Basic, Professional Tax up to ₹200 per month, and applicable income tax per slab. The payslip is emailed
+      electronically and also available in hard copy at the HR office within 48 hours of salary credit. Eligibility for salary
+      payment requires a signed Employment Agreement and completion of probation (first 3 months). Part‑time staff are paid
+      pro‑rated on days worked, capped at 20 days per month. Interns receive stipend of ₹15,000/month, exempt from PF but
+      subject to TDS. Employees on extended maternity leave (up to 6 weeks) receive 80% of basic salary; on medical leave
+      exceeding 14 days, 70% of basic is paid. Salary adjustments are processed only during the annual review cycle and after
+      performance appraisal.'
+  - source_sentence: 'Represent this sentence for searching relevant passages: What is the maximum percentage of the total
+      workforce that can be remote at any one time, according to the policy?'
+    sentences:
+    - Work from home (WFH) is allowed for eligible employees in non‑front‑line roles. Eligibility requires a minimum of 6 months
+      continuous service, no outstanding performance or disciplinary actions, and a role that can be performed remotely. Employees
+      may work from home up to two (2) days per week, with a maximum of 40 % of their total working hours (i.e., 32 hours
+      in an 8‑hour day). The total number of WFH days in a calendar year is capped at 12. Managers must approve each WFH request
+      in advance and ensure that the employee has a suitable workspace and reliable internet. WFH cannot exceed 3 consecutive
+      days and at any given time no more than 10 % of the workforce can be remote to maintain store operations. Sales and
+      customer‑support staff may apply for WFH on a case‑by‑case basis if it does not interfere with client visits. All remote
+      work must comply with the company’s data‑security guidelines and employees must submit a weekly activity log for audit.
+    - Employees who complete a minimum of five (5) years of continuous service with the company are eligible for gratuity
+      under the Payment of Gratuity Act, 1972. For each completed year of service, the gratuity amount will be calculated
+      as fifteen (15) days of the employee’s basic salary plus dearness allowance (DA) at the rate of 15 days of wages per
+      year. The calculation shall be based on the last drawn basic salary plus DA at the time of termination. The maximum
+      gratuity payable by the company shall not exceed Rs.20,00,000 (Twenty Lakhs) irrespective of the number of years of
+      service. Employees who leave the company before completing five (5) years shall receive a pro‑rated gratuity calculated
+      on the number of complete months of service (1/12th of the monthly gratuity). Employees who retire, resign, or are terminated
+      for reasons other than misconduct are eligible for gratuity; employees terminated for gross misconduct, fraud, or willful
+      disobedience of company policy are not eligible. In the event of death or permanent disablement, the employee’s nominee
+      is entitled to receive the gratuity as per the Act. The company reserves the right to amend or suspend this policy in
+      line with statutory changes.
+    - 'Employees are eligible for Privilege (Earned) Leave after completing a continuous minimum of 12 months of service.
+      Accrual is calculated on a pro‑rated basis at 1.25 days per month, equivalent to 15 days per calendar year. Accrued
+      leave may be taken after the 12th month and can be applied for in 5‑day increments. The maximum leave that can be accrued
+      and carried forward into the next calendar year is capped at 5 days. Unused leave beyond this limit will be forfeited
+      at year‑end. Leave can be utilized for personal, family, or health reasons, subject to prior approval from the employee’s
+      immediate supervisor and HR. Exceptions to accrual rules include: (i) Medical emergency leave as per the company’s Medical
+      Leave Policy; (ii) Maternity leave of 12 weeks and paternity leave of 5 days; (iii) Bereavement leave of up to 3 days;
+      and (iv) Unpaid leave in cases of disciplinary action or resignation. Employees on contractual or probationary status
+      are not eligible for earned leave until the completion of the probation period.'
+  - source_sentence: 'Represent this sentence for searching relevant passages: If I’m a part‑time employee, how many late
+      arrivals per month can I have before I get a warning?'
+    sentences:
+    - "All full‑time retail employees earning a monthly wage of ₹21,000 or less are covered under the Employees’ State Insurance\
+      \ (ESI) Scheme. Coverage begins after 30 consecutive days of employment and requires a minimum of 20 working hours per\
+      \ week. The employer contributes 4.75 % of the employee’s wages (up to ₹21,000), while the employee contributes 1.75 %\
+      \ toward the scheme.  \n\nESI benefits include:  \n• **Sickness benefits** – up to ₹15,000 for 91 days of sickness per\
+      \ year, payable after 15 days of medical certification.  \n• **Maternity benefits** – ₹15,000 for 26 weeks, available\
+      \ to female employees after 90 days of employment.  \n• **Disabled and dependent benefits** – up to ₹15,000 for permanent\
+      \ disability and ₹5,000 for dependent children per annum.  \n\nEmployees on temporary, seasonal, or contractual arrangements,\
+      \ and those earning above ₹21,000 per month, are exempt from ESI coverage. All benefits are subject to the national\
+      \ ESI Act limits and can be accessed through the company’s designated ESI portal. The company will provide ESI insurance\
+      \ certificates upon completion of the 30‑day probation period."
+    - 'Employees are expected to report to their assigned store at least 30 minutes before the official shift start time.
+      An employee is considered late if they arrive after the scheduled start time minus the 30‑minute grace period. For full‑time
+      staff, a single late arrival is recorded as a 5% attendance penalty. If an employee accumulates more than three late
+      arrivals in any 30‑day window, an attendance flag is raised and a formal warning will be issued. A total of six late
+      arrivals within a calendar year will lead to a deduction of one day of paid leave from the employee’s annual leave balance.
+      Employees with less than 6 months of continuous service are exempt from the penalty until they complete their probationary
+      period; thereafter the same rules apply. Part‑time and shift employees are assessed on a pro‑rated basis, with a maximum
+      of 2 late arrivals per month allowed before a warning is issued. Exceptions: medical emergencies, documented travel
+      disruptions, or store‑wide operational disruptions (e.g., power outage) are excused if the employee submits a written
+      notice within 24 hours or a medical'
+    - 'Employees eligible for work‑from‑home (WFH) are those in permanent, full‑time roles with a minimum of 6 months tenure,
+      holding a regular or higher grade as per the company’s grading system. Each eligible employee may work from home up
+      to 2 days per week, not exceeding 8 hours per day, and the total WFH hours must not surpass 70 % of the monthly work
+      hours (≈ 120 hours for a 40‑hour work week). WFH is allowed only on days when the employee’s functional responsibilities
+      can be fulfilled remotely and no client‑specific on‑site requirement is in place. Managers must obtain prior approval
+      for WFH days via the internal portal; approvals are granted by the employee’s immediate supervisor and the HR Business
+      Partner. Exceptions include: (i) employees in client‑facing roles with active on‑site contracts, (ii) roles requiring
+      physical equipment or presence, (iii) periods of public health or natural disaster where office access is impossible,
+      and (iv) emergency situations requiring immediate on‑site presence. The company reserves the right to revoke WFH privileges
+      if performance or compliance with security protocols deteriorates. All WFH arrangements are governed by the company’s
+      Information Security and Data Privacy guidelines.'
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-10T18:33:28.000Z'
+safetensors:
+  parameters:
+    F32: 33360000
+  total: 33360000
+usedStorage: 133462128
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  id2label:
+    '0': LABEL_0
+  initializer_range: 0.02
+  intermediate_size: 1536
+  is_decoder: false
+  label2id:
+    LABEL_0: 0
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.22.1
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 30522
+onnxFiles: {}
+safetensorsSizeMb: 133.5
+approxSizeMb: 133.4
+fetchedAt: '2026-11-11T10:39:28.000Z'

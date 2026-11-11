@@ -1,0 +1,52 @@
+_id: 6af3158f9ece3366c4fb3fc2
+id: ASD21213123EDSA/MyAwesomeModel-best-step_1000
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- pytorch
+- bert
+- feature-extraction
+- license:mit
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: ASD21213123EDSA/MyAwesomeModel-best-step_1000
+author: ASD21213123EDSA
+sha: ce44ba162b49effe72f95a5cdac8c151c1da81a0
+lastModified: '2026-11-10T13:09:21.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+cardData:
+  license: mit
+  library_name: transformers
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: pytorch_model.bin
+spaces: []
+createdAt: '2026-11-10T13:01:03.000Z'
+usedStorage: 23
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  model_type: bert
+  architectures:
+  - BertModel
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-11T10:39:28.000Z'

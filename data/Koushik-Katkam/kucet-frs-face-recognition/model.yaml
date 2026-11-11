@@ -1,0 +1,69 @@
+_id: 6af3520cabd9b1da26828de5
+id: Koushik-Katkam/kucet-frs-face-recognition
+private: false
+pipeline_tag: feature-extraction
+tags:
+- onnx
+- face-recognition
+- biometric-attendance
+- arcface
+- sface
+- edgeface
+- ghostfacenet
+- minifasnet
+- kucet
+- feature-extraction
+- en
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: Koushik-Katkam/kucet-frs-face-recognition
+author: Koushik-Katkam
+sha: 3bf09bf40d9aba8ee10eb71f1e4376c5118a459e
+lastModified: '2026-11-11T08:03:22.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  language:
+  - en
+  license: mit
+  tags:
+  - face-recognition
+  - biometric-attendance
+  - arcface
+  - sface
+  - edgeface
+  - ghostfacenet
+  - minifasnet
+  - onnx
+  - kucet
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: kucet_frs_edgeface_finetuned.onnx
+- rfilename: kucet_frs_edgeface_weights.pt
+- rfilename: kucet_frs_ghostfacenet_finetuned.onnx
+- rfilename: kucet_frs_ghostfacenet_weights.pt
+- rfilename: kucet_frs_minifasnet_finetuned.onnx
+- rfilename: kucet_frs_minifasnet_weights.pt
+- rfilename: kucet_frs_sface_finetuned.onnx
+- rfilename: kucet_frs_sface_weights.pt
+- rfilename: model_manifest.json
+spaces: []
+createdAt: '2026-11-10T17:19:08.000Z'
+usedStorage: 42714151
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  kucet_frs_edgeface_finetuned.onnx: 1.5
+  kucet_frs_ghostfacenet_finetuned.onnx: 0.7
+  kucet_frs_minifasnet_finetuned.onnx: 0.1
+  kucet_frs_sface_finetuned.onnx: 9.5
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-11T10:39:28.000Z'

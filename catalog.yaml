@@ -78598,30 +78598,6 @@
   created_at: '2024-02-05T15:58:42.000Z'
   last_modified: '2024-02-07T02:29:15.000Z'
   fetched_at: '2026-06-08T16:42:43.000Z'
-- id: praneethsahini/all-mpnet-base-v2
-  pipeline_tag: sentence-similarity
-  library_name: sentence-transformers
-  author: praneethsahini
-  model_type: mpnet
-  architectures: MPNetForMaskedLM
-  hidden_size: 768
-  max_position_embeddings: 514
-  num_hidden_layers: 12
-  torch_dtype: ''
-  param_count: 0
-  model_size_mb: 0.0
-  onnx_size_mb: 0
-  downloads: 83
-  likes: 0
-  trending_score: 0.0
-  has_onnx: true
-  has_safetensors: true
-  lang: en
-  multilingual: false
-  gated: false
-  created_at: '2025-01-10T08:20:40.000Z'
-  last_modified: '2025-01-10T08:26:00.000Z'
-  fetched_at: '2026-11-10T10:57:26.000Z'
 - id: Japan-AI-Consulting/AKT-caption-v0.1-lfm2-350m-gguf
   pipeline_tag: feature-extraction
   library_name: ''
@@ -79054,6 +79030,30 @@
   created_at: '2026-06-19T14:51:55.000Z'
   last_modified: '2026-06-19T16:35:56.000Z'
   fetched_at: '2026-07-04T06:26:13.000Z'
+- id: praneethsahini/all-mpnet-base-v2
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  author: praneethsahini
+  model_type: mpnet
+  architectures: MPNetForMaskedLM
+  hidden_size: 768
+  max_position_embeddings: 514
+  num_hidden_layers: 12
+  torch_dtype: ''
+  param_count: 0
+  model_size_mb: 0.0
+  onnx_size_mb: 0
+  downloads: 82
+  likes: 0
+  trending_score: 0.0
+  has_onnx: true
+  has_safetensors: true
+  lang: en
+  multilingual: false
+  gated: false
+  created_at: '2025-01-10T08:20:40.000Z'
+  last_modified: '2025-01-10T08:26:00.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: Casually/uie-base
   pipeline_tag: feature-extraction
   library_name: transformers
@@ -86374,6 +86374,30 @@
   created_at: '2022-03-02T23:29:05.000Z'
   last_modified: '2021-05-05T21:17:44.000Z'
   fetched_at: '2026-06-09T22:07:05.000Z'
+- id: ddrisco11/stingray-dense-LoRA
+  pipeline_tag: feature-extraction
+  library_name: sentence-transformers
+  author: ddrisco11
+  model_type: qwen3
+  architectures: Qwen3Model
+  hidden_size: 2560
+  max_position_embeddings: 40960
+  num_hidden_layers: 36
+  torch_dtype: bfloat16
+  param_count: 4021774336
+  model_size_mb: 8043.6
+  onnx_size_mb: 0
+  downloads: 63
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-06-15T19:47:16.000Z'
+  last_modified: '2026-06-15T19:59:15.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: adventists-ai-research/Qwen3-ASR-0.6B-Encoder
   pipeline_tag: feature-extraction
   library_name: transformers
@@ -88365,7 +88389,7 @@
   gated: false
   created_at: '2026-09-15T21:48:04.000Z'
   last_modified: '2026-09-15T22:12:08.000Z'
-  fetched_at: '2026-11-10T10:57:26.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: iyttor/VidVec-7B
   pipeline_tag: feature-extraction
   library_name: transformers
@@ -88438,6 +88462,30 @@
   created_at: '2023-08-15T10:48:37.000Z'
   last_modified: '2023-08-15T14:02:10.000Z'
   fetched_at: '2026-06-09T22:07:05.000Z'
+- id: shubham-bgi/UAE-Large
+  pipeline_tag: feature-extraction
+  library_name: sentence-transformers
+  author: shubham-bgi
+  model_type: bert
+  architectures: BertModel
+  hidden_size: 1024
+  max_position_embeddings: 512
+  num_hidden_layers: 24
+  torch_dtype: float32
+  param_count: 0
+  model_size_mb: 0.0
+  onnx_size_mb: 0
+  downloads: 60
+  likes: 0
+  trending_score: 0.0
+  has_onnx: true
+  has_safetensors: true
+  lang: en
+  multilingual: false
+  gated: false
+  created_at: '2024-01-30T20:13:36.000Z'
+  last_modified: '2024-01-30T20:15:58.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: McGill-NLP/LLM2Vec-Meta-Llama-31-8B-Instruct-mntp-unsup-simcse
   pipeline_tag: sentence-similarity
   library_name: peft
@@ -89494,30 +89542,6 @@
   created_at: '2026-10-11T13:08:29.000Z'
   last_modified: '2026-10-12T01:17:28.000Z'
   fetched_at: '2026-10-12T10:35:09.000Z'
-- id: shubham-bgi/UAE-Large
-  pipeline_tag: feature-extraction
-  library_name: sentence-transformers
-  author: shubham-bgi
-  model_type: bert
-  architectures: BertModel
-  hidden_size: 1024
-  max_position_embeddings: 512
-  num_hidden_layers: 24
-  torch_dtype: float32
-  param_count: 0
-  model_size_mb: 0.0
-  onnx_size_mb: 0
-  downloads: 58
-  likes: 0
-  trending_score: 0.0
-  has_onnx: true
-  has_safetensors: true
-  lang: en
-  multilingual: false
-  gated: false
-  created_at: '2024-01-30T20:13:36.000Z'
-  last_modified: '2024-01-30T20:15:58.000Z'
-  fetched_at: '2026-11-10T10:57:26.000Z'
 - id: majentik/harrier-oss-v1-27b-MLX-8bit
   pipeline_tag: feature-extraction
   library_name: mlx-embeddings
@@ -90070,6 +90094,30 @@
   created_at: '2026-07-29T16:34:14.000Z'
   last_modified: '2026-07-30T23:26:51.000Z'
   fetched_at: '2026-07-31T06:19:38.000Z'
+- id: Severian/embed
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: Severian
+  model_type: bert
+  architectures: JinaBertForMaskedLM
+  hidden_size: 768
+  max_position_embeddings: 8192
+  num_hidden_layers: 12
+  torch_dtype: float32
+  param_count: 0
+  model_size_mb: 0.0
+  onnx_size_mb: 0
+  downloads: 57
+  likes: 0
+  trending_score: 0.0
+  has_onnx: true
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2023-11-22T13:53:31.000Z'
+  last_modified: '2024-02-08T11:10:07.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: smart-tribune/sentence-transformers-multilingual-e5-large
   pipeline_tag: sentence-similarity
   library_name: sentence-transformers
@@ -90694,30 +90742,6 @@
   created_at: '2025-08-19T00:29:42.000Z'
   last_modified: '2025-09-19T00:40:39.000Z'
   fetched_at: '2026-06-09T22:07:05.000Z'
-- id: Severian/embed
-  pipeline_tag: feature-extraction
-  library_name: transformers
-  author: Severian
-  model_type: bert
-  architectures: JinaBertForMaskedLM
-  hidden_size: 768
-  max_position_embeddings: 8192
-  num_hidden_layers: 12
-  torch_dtype: float32
-  param_count: 0
-  model_size_mb: 0.0
-  onnx_size_mb: 0
-  downloads: 56
-  likes: 0
-  trending_score: 0.0
-  has_onnx: true
-  has_safetensors: true
-  lang: ''
-  multilingual: false
-  gated: false
-  created_at: '2023-11-22T13:53:31.000Z'
-  last_modified: '2024-02-08T11:10:07.000Z'
-  fetched_at: '2026-11-10T10:57:26.000Z'
 - id: ZhishanQ/qwen3-embedding-redundancy-detector-0.6B
   pipeline_tag: sentence-similarity
   library_name: sentence-transformers
@@ -161614,6 +161638,30 @@
   created_at: '2026-09-30T12:57:10.000Z'
   last_modified: '2026-09-30T17:27:57.000Z'
   fetched_at: '2026-10-01T10:00:06.000Z'
+- id: VAGOsolutions/SauerkrautLM-MoEdernColBERT-27M-Legal-DE
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  author: VAGOsolutions
+  model_type: modernbert_hash_moe_hybrid
+  architectures: ModernBertHashMoEHybridModel
+  hidden_size: 640
+  max_position_embeddings: 512
+  num_hidden_layers: 2
+  torch_dtype: ''
+  param_count: 27042080
+  model_size_mb: 108.5
+  onnx_size_mb: 0
+  downloads: 16
+  likes: 1
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: de
+  multilingual: false
+  gated: false
+  created_at: '2026-10-21T19:44:17.000Z'
+  last_modified: '2026-11-11T01:52:31.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: jwieting/paraphrastic_test
   pipeline_tag: sentence-similarity
   library_name: sentence-transformers
@@ -248830,6 +248878,30 @@
   created_at: '2024-01-03T08:54:01.000Z'
   last_modified: '2024-08-02T06:54:56.000Z'
   fetched_at: '2026-07-04T06:26:13.000Z'
+- id: VAGOsolutions/SauerkrautLM-MoEdernColBERT-1.5M-Legal-DE
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  author: VAGOsolutions
+  model_type: modernbert_hash_moe_hybrid
+  architectures: ModernBertHashMoEHybridModel
+  hidden_size: 128
+  max_position_embeddings: 512
+  num_hidden_layers: 2
+  torch_dtype: ''
+  param_count: 1468064
+  model_size_mb: 5.9
+  onnx_size_mb: 0
+  downloads: 10
+  likes: 1
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: de
+  multilingual: false
+  gated: false
+  created_at: '2026-10-21T19:44:22.000Z'
+  last_modified: '2026-11-11T01:52:27.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: avemio/German-RAG-BGE-M3-TRIPLES-MERGED-HESSIAN-AI
   pipeline_tag: sentence-similarity
   library_name: sentence-transformers
@@ -261118,6 +261190,30 @@
   created_at: '2026-05-16T09:39:23.000Z'
   last_modified: '2026-05-16T09:41:37.000Z'
   fetched_at: '2026-06-10T07:15:01.000Z'
+- id: VAGOsolutions/SauerkrautLM-MoEdernColBERT-115M-Legal-DE
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  author: VAGOsolutions
+  model_type: modernbert_hash_moe_hybrid
+  architectures: ModernBertHashMoEHybridModel
+  hidden_size: 1024
+  max_position_embeddings: 512
+  num_hidden_layers: 10
+  torch_dtype: ''
+  param_count: 114565504
+  model_size_mb: 458.8
+  onnx_size_mb: 0
+  downloads: 9
+  likes: 1
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: de
+  multilingual: false
+  gated: false
+  created_at: '2026-10-21T19:44:12.000Z'
+  last_modified: '2026-11-11T01:52:35.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: VAGOsolutions/SauerkrautLM-EuroColBERT
   pipeline_tag: sentence-similarity
   library_name: PyLate
@@ -295054,6 +295150,30 @@
   created_at: '2026-10-10T04:04:51.000Z'
   last_modified: '2026-10-10T08:51:44.000Z'
   fetched_at: '2026-10-10T09:41:39.000Z'
+- id: HJ-AILAB/FinTree
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: HJ-AILAB
+  model_type: deberta-v2
+  architectures: DebertaV2Model
+  hidden_size: 1024
+  max_position_embeddings: 512
+  num_hidden_layers: 24
+  torch_dtype: float32
+  param_count: 0
+  model_size_mb: 0.0
+  onnx_size_mb: 0
+  downloads: 7
+  likes: 1
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: false
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2023-07-10T09:58:53.000Z'
+  last_modified: '2023-07-10T10:12:36.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: rsvalerio/bge-base-en-v1.5-coreml
   pipeline_tag: feature-extraction
   library_name: coremltools
@@ -875134,6 +875254,30 @@
   created_at: '2024-12-17T04:37:14.000Z'
   last_modified: '2024-12-17T05:52:29.000Z'
   fetched_at: '2026-06-10T07:15:01.000Z'
+- id: Pranay0514/hr-bge-small-ft
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  author: Pranay0514
+  model_type: bert
+  architectures: BertModel
+  hidden_size: 384
+  max_position_embeddings: 512
+  num_hidden_layers: 12
+  torch_dtype: ''
+  param_count: 33360000
+  model_size_mb: 133.5
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-10T18:33:28.000Z'
+  last_modified: '2026-11-11T06:07:44.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: dvdndrsn/umls-sapbert-faiss
   pipeline_tag: sentence-similarity
   library_name: ''
@@ -880726,6 +880870,54 @@
   created_at: '2026-08-05T09:39:32.000Z'
   last_modified: '2026-08-05T09:39:54.000Z'
   fetched_at: '2026-08-06T05:56:10.000Z'
+- id: ASD21213123EDSA/MyAwesomeModel-best-step_1000
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: ASD21213123EDSA
+  model_type: bert
+  architectures: BertModel
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 0
+  model_size_mb: 0.0
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: false
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-10T13:01:03.000Z'
+  last_modified: '2026-11-10T13:09:21.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: ASD21213123EDSA/MyAwesomeModel-TestRepository
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: ASD21213123EDSA
+  model_type: bert
+  architectures: BertModel
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 0
+  model_size_mb: 0.0
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: false
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-10T13:10:24.000Z'
+  last_modified: '2026-11-10T13:11:54.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: ASD21213123EDSA/MyAwesomeModel-TestRepo
   pipeline_tag: feature-extraction
   library_name: transformers
@@ -881805,7 +881997,7 @@
   gated: false
   created_at: '2026-11-08T18:31:57.000Z'
   last_modified: '2026-11-08T18:35:28.000Z'
-  fetched_at: '2026-11-10T10:57:26.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: PiterQ/mmlw-retrieval-roberta-large-v2-CoreML
   pipeline_tag: sentence-similarity
   library_name: coreml
@@ -889965,7 +890157,7 @@
   gated: false
   created_at: '2026-05-31T11:59:45.000Z'
   last_modified: '2026-10-26T22:23:06.000Z'
-  fetched_at: '2026-11-10T10:57:26.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: edithatogo/ollama-colbert-local-artifacts
   pipeline_tag: feature-extraction
   library_name: ollama
@@ -890998,6 +891190,30 @@
   created_at: '2024-04-18T01:29:02.000Z'
   last_modified: '2024-04-18T01:31:30.000Z'
   fetched_at: '2026-06-10T07:15:01.000Z'
+- id: malkolm777/zils-mini-decision-v5
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: malkolm777
+  model_type: qwen3_5
+  architectures: Qwen3_5Model
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 4539265536
+  model_size_mb: 9081.2
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-10T13:23:23.000Z'
+  last_modified: '2026-11-10T13:24:38.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: malkolm777/zils-flash-decision-v3
   pipeline_tag: feature-extraction
   library_name: transformers
@@ -891022,6 +891238,126 @@
   created_at: '2026-11-09T06:44:09.000Z'
   last_modified: '2026-11-09T06:45:17.000Z'
   fetched_at: '2026-11-09T11:15:54.000Z'
+- id: malkolm777/zils-flash-decision-v5
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: malkolm777
+  model_type: qwen3_5
+  architectures: Qwen3_5Model
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 8392695024
+  model_size_mb: 16789.7
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-10T22:30:53.000Z'
+  last_modified: '2026-11-10T22:32:16.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: malkolm777/zils-flash-decision-v4
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: malkolm777
+  model_type: qwen3_5
+  architectures: Qwen3_5Model
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 8392695024
+  model_size_mb: 16789.7
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-10T17:13:10.000Z'
+  last_modified: '2026-11-10T17:14:42.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: malkolm777/zils-lite-decision-v9
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: malkolm777
+  model_type: qwen3_5
+  architectures: Qwen3_5Model
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 852985920
+  model_size_mb: 1707.1
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-11T00:22:49.000Z'
+  last_modified: '2026-11-11T02:12:56.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: malkolm777/zils-mini-decision-v6
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: malkolm777
+  model_type: qwen3_5
+  architectures: Qwen3_5Model
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 4539265536
+  model_size_mb: 9081.2
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-11T00:13:49.000Z'
+  last_modified: '2026-11-11T02:12:30.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: malkolm777/zils-lite-decision-v8
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: malkolm777
+  model_type: qwen3_5
+  architectures: Qwen3_5Model
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 852985920
+  model_size_mb: 1707.1
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-10T16:22:46.000Z'
+  last_modified: '2026-11-10T16:23:19.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: malkolm777/zils-lite-decision-v2
   pipeline_tag: feature-extraction
   library_name: transformers
@@ -897214,6 +897550,294 @@
   created_at: '2023-06-22T10:23:04.000Z'
   last_modified: '2023-06-22T10:34:17.000Z'
   fetched_at: '2026-06-10T07:15:01.000Z'
+- id: egolearn/vjepa2-vits16-babyview-iid-seed0
+  pipeline_tag: feature-extraction
+  library_name: egolearn
+  author: egolearn
+  model_type: ''
+  architectures: ''
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 46587072
+  model_size_mb: 186.4
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: true
+  created_at: '2026-11-10T17:56:16.000Z'
+  last_modified: '2026-11-10T20:05:43.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: egolearn/vjepa2-vits16-saycam-streaming-seed0
+  pipeline_tag: feature-extraction
+  library_name: egolearn
+  author: egolearn
+  model_type: ''
+  architectures: ''
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 46587072
+  model_size_mb: 186.4
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: true
+  created_at: '2026-11-10T17:56:11.000Z'
+  last_modified: '2026-11-10T20:05:42.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: egolearn/babycl-resnext50-krishnacam-seed0
+  pipeline_tag: feature-extraction
+  library_name: egolearn
+  author: egolearn
+  model_type: ''
+  architectures: ''
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 35801104
+  model_size_mb: 143.2
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-10T17:55:47.000Z'
+  last_modified: '2026-11-10T17:55:50.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: egolearn/babycl-resnext50-saycam-fullstream-seed1337
+  pipeline_tag: feature-extraction
+  library_name: egolearn
+  author: egolearn
+  model_type: ''
+  architectures: ''
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 38053392
+  model_size_mb: 152.3
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: true
+  created_at: '2026-11-10T17:55:13.000Z'
+  last_modified: '2026-11-10T20:05:34.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: egolearn/babycl-resnext50-krishnacam-seed2
+  pipeline_tag: feature-extraction
+  library_name: egolearn
+  author: egolearn
+  model_type: ''
+  architectures: ''
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 35801104
+  model_size_mb: 143.2
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-10T17:55:57.000Z'
+  last_modified: '2026-11-10T17:56:00.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: egolearn/babycl-resnext50-saycam-fullstream-seed1339
+  pipeline_tag: feature-extraction
+  library_name: egolearn
+  author: egolearn
+  model_type: ''
+  architectures: ''
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 38053392
+  model_size_mb: 152.3
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: true
+  created_at: '2026-11-10T17:55:21.000Z'
+  last_modified: '2026-11-10T20:05:37.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: egolearn/vjepa2-vits16-saycam-iid-seed0
+  pipeline_tag: feature-extraction
+  library_name: egolearn
+  author: egolearn
+  model_type: ''
+  architectures: ''
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 46587072
+  model_size_mb: 186.4
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: true
+  created_at: '2026-11-10T17:56:06.000Z'
+  last_modified: '2026-11-10T20:05:40.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: egolearn/babycl-resnext50-krishnacam-seed1
+  pipeline_tag: feature-extraction
+  library_name: egolearn
+  author: egolearn
+  model_type: ''
+  architectures: ''
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 35801104
+  model_size_mb: 143.2
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-10T17:55:52.000Z'
+  last_modified: '2026-11-10T17:55:55.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: egolearn/vjepa2-vits16-babyview-streaming-seed0
+  pipeline_tag: feature-extraction
+  library_name: egolearn
+  author: egolearn
+  model_type: ''
+  architectures: ''
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 46587072
+  model_size_mb: 186.4
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: true
+  created_at: '2026-11-10T17:56:20.000Z'
+  last_modified: '2026-11-10T20:05:45.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: egolearn/babycl-resnext50-walkingtours-seed1337
+  pipeline_tag: feature-extraction
+  library_name: egolearn
+  author: egolearn
+  model_type: ''
+  architectures: ''
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 35801104
+  model_size_mb: 143.2
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-10T17:56:01.000Z'
+  last_modified: '2026-11-10T17:56:04.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: egolearn/babycl-resnext50-babyview-visual-seed1337
+  pipeline_tag: feature-extraction
+  library_name: egolearn
+  author: egolearn
+  model_type: ''
+  architectures: ''
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 38053392
+  model_size_mb: 152.3
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: true
+  created_at: '2026-11-10T17:55:26.000Z'
+  last_modified: '2026-11-10T20:05:39.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: egolearn/babycl-resnext50-saycam-fullstream-seed1338
+  pipeline_tag: feature-extraction
+  library_name: egolearn
+  author: egolearn
+  model_type: ''
+  architectures: ''
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 38053392
+  model_size_mb: 152.3
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: true
+  created_at: '2026-11-10T17:55:17.000Z'
+  last_modified: '2026-11-10T20:05:36.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: chandc/my-embedding-gemma
   pipeline_tag: sentence-similarity
   library_name: sentence-transformers
@@ -904246,6 +904870,30 @@
   created_at: '2026-05-18T22:10:04.000Z'
   last_modified: '2026-05-18T22:10:14.000Z'
   fetched_at: '2026-06-12T07:58:51.000Z'
+- id: Trinityk/modernbert-embed-base_finetune_512
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  author: Trinityk
+  model_type: ''
+  architectures: ''
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 149014272
+  model_size_mb: 596.1
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: en
+  multilingual: false
+  gated: true
+  created_at: '2026-11-10T14:41:59.000Z'
+  last_modified: '2026-11-10T14:42:00.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: praphul555/ohai_gte_qwen_1.5b_instruct
   pipeline_tag: sentence-similarity
   library_name: sentence-transformers
@@ -915357,7 +916005,7 @@
   gated: false
   created_at: '2026-03-27T01:16:22.000Z'
   last_modified: '2026-10-02T22:10:57.000Z'
-  fetched_at: '2026-11-10T10:57:26.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: NurseCitizenDeveloper/NurseEmbed-300M
   pipeline_tag: sentence-similarity
   library_name: sentence-transformers
@@ -922485,7 +923133,7 @@
   gated: false
   created_at: '2026-05-18T20:15:29.000Z'
   last_modified: '2026-05-18T21:08:20.000Z'
-  fetched_at: '2026-11-10T10:57:26.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: anthonypjshaw/harrier-oss-v1-270m-qnn-htp-b1-s128-perf
   pipeline_tag: feature-extraction
   library_name: onnxruntime
@@ -922509,7 +923157,7 @@
   gated: false
   created_at: '2026-05-19T00:52:10.000Z'
   last_modified: '2026-05-19T01:38:48.000Z'
-  fetched_at: '2026-11-10T10:57:26.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: anthonypjshaw/harrier-oss-v1-0.6b-qnn-htp-b1-s128-perf
   pipeline_tag: feature-extraction
   library_name: onnxruntime
@@ -922533,7 +923181,7 @@
   gated: false
   created_at: '2026-05-19T02:49:21.000Z'
   last_modified: '2026-05-19T02:50:03.000Z'
-  fetched_at: '2026-11-10T10:57:26.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: anthonypjshaw/harrier-oss-v1-270m-onnx-cuda
   pipeline_tag: feature-extraction
   library_name: ''
@@ -922581,7 +923229,7 @@
   gated: false
   created_at: '2026-05-18T19:46:44.000Z'
   last_modified: '2026-05-18T19:49:47.000Z'
-  fetched_at: '2026-11-10T10:57:26.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: anthonypjshaw/harrier-oss-v1-0.6b-qnn-htp-b8-s512-perf
   pipeline_tag: feature-extraction
   library_name: onnxruntime
@@ -922605,7 +923253,7 @@
   gated: false
   created_at: '2026-05-19T01:28:05.000Z'
   last_modified: '2026-05-19T01:28:54.000Z'
-  fetched_at: '2026-11-10T10:57:26.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: nazbijari/nammu
   pipeline_tag: feature-extraction
   library_name: transformers
@@ -943366,6 +944014,30 @@
   created_at: '2026-11-07T08:19:16.000Z'
   last_modified: '2026-11-07T08:19:39.000Z'
   fetched_at: '2026-11-07T09:53:05.000Z'
+- id: 20eddibae/CLEST-TCRdist-finetuned
+  pipeline_tag: feature-extraction
+  library_name: sceptr
+  author: 20eddibae
+  model_type: ''
+  architectures: ''
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 0
+  model_size_mb: 0.0
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: false
+  lang: ''
+  multilingual: false
+  gated: true
+  created_at: '2026-06-25T20:31:00.000Z'
+  last_modified: '2026-11-11T02:32:44.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: 20eddibae/sceptr-ac-finetuned
   pipeline_tag: feature-extraction
   library_name: sceptr
@@ -968230,6 +968902,102 @@
   created_at: '2026-09-08T02:03:14.000Z'
   last_modified: '2026-09-08T14:29:21.000Z'
   fetched_at: '2026-09-09T08:02:40.000Z'
+- id: bigai/GS1-9B
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: bigai
+  model_type: gs1
+  architectures: GS1Model
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 8829078768
+  model_size_mb: 34404.4
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 2
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-09T02:45:03.000Z'
+  last_modified: '2026-11-11T08:14:22.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: bigai/GS1-0.8B
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: bigai
+  model_type: gs1
+  architectures: GS1Model
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 879765056
+  model_size_mb: 3317.9
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 2
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-09T02:45:25.000Z'
+  last_modified: '2026-11-11T08:09:44.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: bigai/GS1-4B
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: bigai
+  model_type: gs1
+  architectures: GS1Model
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 4704520192
+  model_size_mb: 18151.1
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 2
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-06T05:12:18.000Z'
+  last_modified: '2026-11-11T08:12:26.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: bigai/GS1-2B
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: bigai
+  model_type: gs1
+  architectures: GS1Model
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 2319227200
+  model_size_mb: 8614.2
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 2
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-10T11:57:08.000Z'
+  last_modified: '2026-11-11T08:11:33.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: Vagabond404/khmer-tokenizer-sota
   pipeline_tag: feature-extraction
   library_name: ''
@@ -975766,6 +976534,30 @@
   created_at: '2026-07-23T14:04:39.000Z'
   last_modified: '2026-07-23T14:04:39.000Z'
   fetched_at: '2026-07-24T05:55:25.000Z'
+- id: NewTokenEra/newTokenEra-decision-ct-Qwen3.8-27B
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: NewTokenEra
+  model_type: n97_decision
+  architectures: N97ForDecisions
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 26085463280
+  model_size_mb: 52171.1
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 1
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: en,zh
+  multilingual: false
+  gated: false
+  created_at: '2026-11-11T02:22:12.000Z'
+  last_modified: '2026-11-11T02:58:03.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: Arunavalarmathi/autotrain-avm-medi-jan25
   pipeline_tag: sentence-similarity
   library_name: sentence-transformers
@@ -978502,6 +979294,126 @@
   created_at: '2026-07-25T12:25:21.000Z'
   last_modified: '2026-07-25T12:25:38.000Z'
   fetched_at: '2026-07-26T06:11:44.000Z'
+- id: cine-labs/cine-embed-bge-v1
+  pipeline_tag: feature-extraction
+  library_name: sentence-transformers
+  author: cine-labs
+  model_type: bert
+  architectures: BertModel
+  hidden_size: 768
+  max_position_embeddings: 512
+  num_hidden_layers: 12
+  torch_dtype: ''
+  param_count: 109482240
+  model_size_mb: 438.0
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 1
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-10T14:04:39.000Z'
+  last_modified: '2026-11-10T15:21:40.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: cine-labs/cine-embed-mpnet-enrich-v1
+  pipeline_tag: feature-extraction
+  library_name: sentence-transformers
+  author: cine-labs
+  model_type: xlm-roberta
+  architectures: XLMRobertaModel
+  hidden_size: 768
+  max_position_embeddings: 514
+  num_hidden_layers: 12
+  torch_dtype: ''
+  param_count: 278043648
+  model_size_mb: 556.1
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 1
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-10T15:22:45.000Z'
+  last_modified: '2026-11-10T15:23:47.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: cine-labs/cine-embed-minilm-v1
+  pipeline_tag: feature-extraction
+  library_name: sentence-transformers
+  author: cine-labs
+  model_type: bert
+  architectures: BertModel
+  hidden_size: 384
+  max_position_embeddings: 512
+  num_hidden_layers: 6
+  torch_dtype: float32
+  param_count: 22713216
+  model_size_mb: 90.9
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 1
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-10T15:25:07.000Z'
+  last_modified: '2026-11-10T15:25:19.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: cine-labs/cine-embed-e5-enrich-v1
+  pipeline_tag: feature-extraction
+  library_name: sentence-transformers
+  author: cine-labs
+  model_type: xlm-roberta
+  architectures: XLMRobertaModel
+  hidden_size: 768
+  max_position_embeddings: 514
+  num_hidden_layers: 12
+  torch_dtype: ''
+  param_count: 278043648
+  model_size_mb: 556.1
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 1
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-10T15:23:48.000Z'
+  last_modified: '2026-11-10T15:25:06.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: cine-labs/cine-embed-mpnet-v1
+  pipeline_tag: feature-extraction
+  library_name: sentence-transformers
+  author: cine-labs
+  model_type: xlm-roberta
+  architectures: XLMRobertaModel
+  hidden_size: 768
+  max_position_embeddings: 514
+  num_hidden_layers: 12
+  torch_dtype: ''
+  param_count: 278043648
+  model_size_mb: 556.1
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 1
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-10T15:21:42.000Z'
+  last_modified: '2026-11-10T15:22:44.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: anhtuansh/halong-embedding-Financial-Matryoshka-5e-11k
   pipeline_tag: sentence-similarity
   library_name: sentence-transformers
@@ -988846,6 +989758,54 @@
   created_at: '2026-11-06T15:51:12.000Z'
   last_modified: '2026-11-06T15:51:50.000Z'
   fetched_at: '2026-11-07T09:53:05.000Z'
+- id: qhoenix/zils-lite-decision-l13_abc
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: qhoenix
+  model_type: qwen3_5
+  architectures: Qwen3_5Model
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 852985920
+  model_size_mb: 1707.1
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-10T14:32:34.000Z'
+  last_modified: '2026-11-10T14:33:03.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: qhoenix/zils-mini-decision-l13_avg678
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: qhoenix
+  model_type: qwen3_5
+  architectures: Qwen3_5Model
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 4539265536
+  model_size_mb: 9081.2
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-10T17:43:55.000Z'
+  last_modified: '2026-11-10T17:44:56.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: AtesiT/bge-m3-int8-dynamic-quantized
   pipeline_tag: feature-extraction
   library_name: sentence-transformers
@@ -990598,6 +991558,126 @@
   created_at: '2026-10-15T10:40:11.000Z'
   last_modified: '2026-10-15T10:40:11.000Z'
   fetched_at: '2026-10-16T08:03:31.000Z'
+- id: nchapman/d3-edge-W4A16-HGPTQ
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: nchapman
+  model_type: qwen3_5
+  architectures: Qwen3_5Model
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 594321600
+  model_size_mb: 695.4
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-11T07:44:39.000Z'
+  last_modified: '2026-11-11T07:44:47.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: nchapman/d3-mini-W4A16-HGPTQ
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: nchapman
+  model_type: qwen3_5
+  architectures: Qwen3_5Model
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 4539265536
+  model_size_mb: 3361.4
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-11T09:02:52.000Z'
+  last_modified: '2026-11-11T09:03:17.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: nchapman/d3-flash-W4A16-HGPTQ
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: nchapman
+  model_type: qwen3_5
+  architectures: Qwen3_5Model
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 8392695024
+  model_size_mb: 5970.6
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-11T09:32:48.000Z'
+  last_modified: '2026-11-11T09:33:24.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: nchapman/d3-lite-W4A16-HGPTQ
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: nchapman
+  model_type: qwen3_5
+  architectures: Qwen3_5Model
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 852985920
+  model_size_mb: 833.9
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-11T07:31:41.000Z'
+  last_modified: '2026-11-11T07:32:04.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: nchapman/d3-nano-W4A16-HGPTQ
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: nchapman
+  model_type: qwen3_5
+  architectures: Qwen3_5Model
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 2213241664
+  model_size_mb: 1933.8
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-11T08:42:35.000Z'
+  last_modified: '2026-11-11T08:43:29.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: Quazim0t0/Byrne-Embed
   pipeline_tag: feature-extraction
   library_name: transformers
@@ -991966,6 +993046,30 @@
   created_at: '2026-09-26T05:06:56.000Z'
   last_modified: '2026-09-26T05:07:01.000Z'
   fetched_at: '2026-09-26T08:30:04.000Z'
+- id: ereinhardt/universal-sentence-encoder-multilingual-dialogue
+  pipeline_tag: sentence-similarity
+  library_name: tensorflow
+  author: ereinhardt
+  model_type: ''
+  architectures: ''
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 0
+  model_size_mb: 0.0
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: true
+  has_safetensors: false
+  lang: ar,de,en,es,fr,it,ja,ko,nl,pl,pt,ru,th,tr,zh
+  multilingual: true
+  gated: false
+  created_at: '2026-10-11T22:04:45.000Z'
+  last_modified: '2026-11-11T00:27:11.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: DASCBVNYREWRQ/MyAwesomeModel-TestRepo
   pipeline_tag: feature-extraction
   library_name: transformers
@@ -997054,6 +998158,78 @@
   created_at: '2026-08-07T05:44:03.000Z'
   last_modified: '2026-08-07T05:44:08.000Z'
   fetched_at: '2026-08-08T04:16:04.000Z'
+- id: OpenVINO/bge-m3-int8-ov
+  pipeline_tag: sentence-similarity
+  library_name: optimum
+  author: OpenVINO
+  model_type: xlm-roberta
+  architectures: XLMRobertaModel
+  hidden_size: 1024
+  max_position_embeddings: 8194
+  num_hidden_layers: 24
+  torch_dtype: ''
+  param_count: 0
+  model_size_mb: 0.0
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: false
+  lang: ''
+  multilingual: true
+  gated: false
+  created_at: '2026-11-01T15:03:04.000Z'
+  last_modified: '2026-11-01T15:03:25.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: OpenVINO/bge-m3-fp16-ov
+  pipeline_tag: sentence-similarity
+  library_name: optimum
+  author: OpenVINO
+  model_type: xlm-roberta
+  architectures: XLMRobertaModel
+  hidden_size: 1024
+  max_position_embeddings: 8194
+  num_hidden_layers: 24
+  torch_dtype: ''
+  param_count: 0
+  model_size_mb: 0.0
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: false
+  lang: ''
+  multilingual: true
+  gated: false
+  created_at: '2026-11-01T14:52:17.000Z'
+  last_modified: '2026-11-01T14:52:55.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: OpenVINO/bge-m3-int4-ov
+  pipeline_tag: sentence-similarity
+  library_name: optimum
+  author: OpenVINO
+  model_type: xlm-roberta
+  architectures: XLMRobertaModel
+  hidden_size: 1024
+  max_position_embeddings: 8194
+  num_hidden_layers: 24
+  torch_dtype: ''
+  param_count: 0
+  model_size_mb: 0.0
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: false
+  lang: ''
+  multilingual: true
+  gated: false
+  created_at: '2026-11-01T15:07:56.000Z'
+  last_modified: '2026-11-01T15:08:13.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: algerian-nlp/DZAIR
   pipeline_tag: feature-extraction
   library_name: transformers
@@ -1001590,6 +1002766,30 @@
   created_at: '2026-07-13T16:17:51.000Z'
   last_modified: '2026-07-13T16:18:29.000Z'
   fetched_at: '2026-07-14T05:37:53.000Z'
+- id: thepytales/multilingual-e5-small-lora-edition
+  pipeline_tag: sentence-similarity
+  library_name: ''
+  author: thepytales
+  model_type: ''
+  architectures: ''
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 0
+  model_size_mb: 0.0
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: true
+  has_safetensors: false
+  lang: de
+  multilingual: true
+  gated: false
+  created_at: '2026-11-11T06:36:52.000Z'
+  last_modified: '2026-11-11T06:37:05.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: ASNJGGDFSA/MyAwesomeModel-TestRepo
   pipeline_tag: feature-extraction
   library_name: transformers
@@ -1014022,6 +1015222,30 @@
   created_at: '2026-07-13T18:20:57.000Z'
   last_modified: '2026-07-13T18:21:07.000Z'
   fetched_at: '2026-07-14T05:37:53.000Z'
+- id: Koushik-Katkam/kucet-frs-face-recognition
+  pipeline_tag: feature-extraction
+  library_name: ''
+  author: Koushik-Katkam
+  model_type: ''
+  architectures: ''
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 0
+  model_size_mb: 0.0
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: true
+  has_safetensors: false
+  lang: en
+  multilingual: false
+  gated: false
+  created_at: '2026-11-10T17:19:08.000Z'
+  last_modified: '2026-11-11T08:03:22.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: delavalom/embeddinggemma-2-coreml
   pipeline_tag: feature-extraction
   library_name: coreml
@@ -1032598,6 +1033822,30 @@
   created_at: '2026-08-30T13:43:17.000Z'
   last_modified: '2026-08-31T09:09:18.000Z'
   fetched_at: '2026-08-31T09:36:27.000Z'
+- id: nlpai-lab/KURE-Sparse-nano-inference-free
+  pipeline_tag: feature-extraction
+  library_name: sentence-transformers
+  author: nlpai-lab
+  model_type: ''
+  architectures: ''
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 0
+  model_size_mb: 597.7
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 1
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: en,ko
+  multilingual: false
+  gated: false
+  created_at: '2026-11-09T05:46:16.000Z'
+  last_modified: '2026-11-11T07:34:31.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: NataliaFrancine/MyAwesomeModel-TestRepo
   pipeline_tag: feature-extraction
   library_name: transformers
@@ -1043806,6 +1045054,30 @@
   created_at: '2026-09-02T14:09:59.000Z'
   last_modified: '2026-09-02T14:12:37.000Z'
   fetched_at: '2026-09-12T07:50:37.000Z'
+- id: wraithklu/codesentinel-clone-detector
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  author: wraithklu
+  model_type: roberta
+  architectures: RobertaModel
+  hidden_size: 768
+  max_position_embeddings: 514
+  num_hidden_layers: 12
+  torch_dtype: ''
+  param_count: 124645632
+  model_size_mb: 498.6
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: true
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-11T08:52:15.000Z'
+  last_modified: '2026-11-11T08:52:48.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: FaisaI/tadabur-embedding
   pipeline_tag: feature-extraction
   library_name: transformers
@@ -1044214,6 +1045486,30 @@
   created_at: '2026-07-06T09:37:06.000Z'
   last_modified: '2026-07-06T09:39:22.000Z'
   fetched_at: '2026-08-04T05:55:09.000Z'
+- id: biantsh/embeddinggemma-2-GGUF-zstd
+  pipeline_tag: feature-extraction
+  library_name: ''
+  author: biantsh
+  model_type: ''
+  architectures: ''
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 0
+  model_size_mb: 0.0
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: false
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-10T10:50:12.000Z'
+  last_modified: '2026-11-10T11:01:44.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: sokol1979/Jazz
   pipeline_tag: feature-extraction
   library_name: adapter-transformers
@@ -1061974,6 +1063270,30 @@
   created_at: '2026-07-08T17:38:19.000Z'
   last_modified: '2026-07-08T21:36:16.000Z'
   fetched_at: '2026-07-09T06:57:11.000Z'
+- id: gagni/bekko-embedding-v1-a25m-onnx-q8
+  pipeline_tag: feature-extraction
+  library_name: ''
+  author: gagni
+  model_type: modernbert
+  architectures: ModernBertModel
+  hidden_size: 384
+  max_position_embeddings: 8192
+  num_hidden_layers: 13
+  torch_dtype: ''
+  param_count: 0
+  model_size_mb: 0.0
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: true
+  has_safetensors: false
+  lang: ''
+  multilingual: true
+  gated: false
+  created_at: '2026-11-10T11:08:12.000Z'
+  last_modified: '2026-11-10T11:08:14.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: MeaMa/MyAwesomeModel-TestRepo
   pipeline_tag: feature-extraction
   library_name: transformers
@@ -1064182,6 +1065502,102 @@
   created_at: '2026-11-10T09:49:09.000Z'
   last_modified: '2026-11-10T09:49:10.000Z'
   fetched_at: '2026-11-10T10:57:26.000Z'
+- id: csassac/MyAwesomeModel_TestRepo__cb2315c58b1b39f9
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: csassac
+  model_type: bert
+  architectures: BertModel
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 0
+  model_size_mb: 0.0
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: false
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-11T10:36:43.000Z'
+  last_modified: '2026-11-11T10:36:46.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: csassac/MyAwesomeModel_TestRepo__31d8a1ea6a2ac154
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: csassac
+  model_type: bert
+  architectures: BertModel
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 0
+  model_size_mb: 0.0
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: false
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-11T09:17:44.000Z'
+  last_modified: '2026-11-11T09:17:45.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: csassac/MyAwesomeModel_TestRepo__83b971b8d36fb8cc
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: csassac
+  model_type: bert
+  architectures: BertModel
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 0
+  model_size_mb: 0.0
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: false
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-10T11:56:35.000Z'
+  last_modified: '2026-11-10T11:56:36.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
+- id: csassac/MyAwesomeModel_TestRepo__106e61d6bc161618
+  pipeline_tag: feature-extraction
+  library_name: transformers
+  author: csassac
+  model_type: bert
+  architectures: BertModel
+  hidden_size: 0
+  max_position_embeddings: 0
+  num_hidden_layers: 0
+  torch_dtype: ''
+  param_count: 0
+  model_size_mb: 0.0
+  onnx_size_mb: 0
+  downloads: 0
+  likes: 0
+  trending_score: 0.0
+  has_onnx: false
+  has_safetensors: false
+  lang: ''
+  multilingual: false
+  gated: false
+  created_at: '2026-11-10T12:09:48.000Z'
+  last_modified: '2026-11-10T12:09:49.000Z'
+  fetched_at: '2026-11-11T10:39:28.000Z'
 - id: oulianov/YuE2-Vae
   pipeline_tag: feature-extraction
   library_name: transformers

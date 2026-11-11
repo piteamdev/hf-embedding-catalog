@@ -1,0 +1,544 @@
+_id: 6af42cbf0011fec9f48574c8
+id: wraithklu/codesentinel-clone-detector
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- roberta
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:10000
+- loss:CosineSimilarityLoss
+- arxiv:1908.10084
+- base_model:microsoft/codebert-base
+- base_model:finetune:microsoft/codebert-base
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: wraithklu/codesentinel-clone-detector
+author: wraithklu
+sha: 70609612c4bd97641c1739774e0704b946497b3b
+lastModified: '2026-11-11T08:52:48.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: "private void createTree(DefaultMutableTreeNode top) throws MalformedURLException, ParserConfigurationException,\
+    \ SAXException, IOException {\n        InputStream stream;\n        URL url = new URL(SHIPS_URL + view.getBaseurl());\n\
+    \        try {\n            stream = url.openStream();\n        } catch (Exception e) {\n            stream = getClass().getResourceAsStream(\"\
+    ships.xml\");\n        }\n        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();\n        DocumentBuilder\
+    \ parser = factory.newDocumentBuilder();\n        Document doc = parser.parse(stream);\n        NodeList races = doc.getElementsByTagName(\"\
+    race\");\n        for (int i = 0; i < races.getLength(); i++) {\n            Element race = (Element) races.item(i);\n\
+    \            top.add(buildRaceTree(race));\n        }\n        top.setUserObject(\"Ships\");\n        view.getShipTree().repaint();\n\
+    \        view.getShipTree().expandRow(0);\n    }"
+  sentences:
+  - "private GenomicSequence fetch(Chromosome k, int start, int end) throws IOException {\n        try {\n            String\
+    \ chr = k.toString();\n            if (chr.toLowerCase().startsWith(\"chr\")) chr = chr.substring(3);\n            SAXParserFactory\
+    \ f = SAXParserFactory.newInstance();\n            f.setNamespaceAware(false);\n            f.setValidating(false);\n\
+    \            SAXParser parser = f.newSAXParser();\n            URL url = new URL(\"http://genome.ucsc.edu/cgi-bin/das/\"\
+    \ + genomeVersion + \"/dna?segment=\" + URLEncoder.encode(chr, \"UTF-8\") + \":\" + (start + 1) + \",\" + (end));\n  \
+    \          DASHandler handler = new DASHandler();\n            InputStream in = url.openStream();\n            parser.parse(in,\
+    \ handler);\n            in.close();\n            GenomicSequence seq = new GenomicSequence();\n            seq.sequence\
+    \ = handler.bytes.toByteArray();\n            seq.start = start;\n            seq.end = end;\n            if (seq.sequence.length\
+    \ != seq.length()) throw new IOException(\"bad bound \" + seq + \" \" + seq.sequence.length + \" \" + seq.length());\n\
+    \            return seq;\n        } catch (IOException err) {\n            throw err;\n        } catch (Exception e) {\n\
+    \            throw new IOException(e);\n        }\n    }"
+  - "public static void main(String[] args) throws Exception {\n        FileChannel fc = new FileOutputStream(\"data.txt\"\
+    ).getChannel();\n        fc.write(ByteBuffer.wrap(\"some text \".getBytes()));\n        fc.close();\n        fc = new\
+    \ RandomAccessFile(\"data.txt\", \"rw\").getChannel();\n        fc.position(fc.size());\n        fc.write(ByteBuffer.wrap(\"\
+    some more\".getBytes()));\n        fc.close();\n        fc = new FileInputStream(\"data.txt\").getChannel();\n       \
+    \ ByteBuffer buff = ByteBuffer.allocate(BSIZE);\n        fc.read(buff);\n        buff.flip();\n        while (buff.hasRemaining())\
+    \ {\n            PrintUtil.prt((char) buff.get());\n        }\n    }"
+  - "private FileLog(LOG_LEVEL displayLogLevel, LOG_LEVEL logLevel, String logPath) {\n        this.logLevel = logLevel;\n\
+    \        this.displayLogLevel = displayLogLevel;\n        if (null != logPath) {\n            logFile = new File(logPath,\
+    \ \"current.log\");\n            log(LOG_LEVEL.DEBUG, \"FileLog\", \"Initialising logfile \" + logFile.getAbsolutePath()\
+    \ + \" .\");\n            try {\n                if (logFile.exists()) {\n                    if (!logFile.renameTo(new\
+    \ File(logPath, System.currentTimeMillis() + \".log\"))) {\n                        File newFile = new File(logPath, System.currentTimeMillis()\
+    \ + \".log\");\n                        if (newFile.exists()) {\n                            log(LOG_LEVEL.WARN, \"FileLog\"\
+    , \"The file (\" + newFile.getAbsolutePath() + newFile.getName() + \") already exists, will overwrite it.\");\n      \
+    \                      newFile.delete();\n                        }\n                        newFile.createNewFile();\n\
+    \                        FileInputStream inStream = new FileInputStream(logFile);\n                        FileOutputStream\
+    \ outStream = new FileOutputStream(newFile);\n                        byte buffer[] = null;\n                        int\
+    \ offSet = 0;\n                        while (inStream.read(buffer, offSet, 2048) != -1) {\n                         \
+    \   outStream.write(buffer);\n                            offSet += 2048;\n                        }\n               \
+    \         inStream.close();\n                        outStream.close();\n                        logFile.delete();\n \
+    \                       logFile = new File(logPath, \"current.log\");\n                    }\n                }\n    \
+    \            logFile.createNewFile();\n            } catch (IOException e) {\n                logFile = null;\n      \
+    \      }\n        } else {\n            logFile = null;\n        }\n    }"
+- source_sentence: "private ByteBuffer readProgram(URL url) throws IOException {\n        StringBuilder program = new StringBuilder();\n\
+    \        BufferedReader in = null;\n        try {\n            in = new BufferedReader(new InputStreamReader(url.openStream()));\n\
+    \            String line;\n            while ((line = in.readLine()) != null) {\n                program.append(line).append(\"\
+    \\n\");\n            }\n        } finally {\n            if (in != null) in.close();\n        }\n        ByteBuffer buffer\
+    \ = BufferUtils.createByteBuffer(program.length());\n        for (int i = 0; i < program.length(); i++) {\n          \
+    \  buffer.put((byte) (program.charAt(i) & 0xFF));\n        }\n        buffer.flip();\n        return buffer;\n    }"
+  sentences:
+  - "public int delete(BusinessObject o) throws DAOException {\n        int delete = 0;\n        Currency curr = (Currency)\
+    \ o;\n        try {\n            PreparedStatement pst = connection.prepareStatement(XMLGetQuery.getQuery(\"DELETE_CURRENCY\"\
+    ));\n            pst.setInt(1, curr.getId());\n            delete = pst.executeUpdate();\n            if (delete <= 0)\
+    \ {\n                connection.rollback();\n                throw new DAOException(\"Number of rows <= 0\");\n      \
+    \      } else if (delete > 1) {\n                connection.rollback();\n                throw new DAOException(\"Number\
+    \ of rows > 1\");\n            }\n            connection.commit();\n        } catch (SQLException e) {\n            Log.write(e.getMessage());\n\
+    \            throw new DAOException(\"A SQLException has occured\");\n        } catch (NullPointerException npe) {\n \
+    \           Log.write(npe.getMessage());\n            throw new DAOException(\"Connection null\");\n        }\n      \
+    \  return delete;\n    }"
+  - "public static String encrypt(String plaintext) throws EncryptionException {\n        if (plaintext == null) {\n     \
+    \       throw new EncryptionException();\n        }\n        try {\n            final MessageDigest md = MessageDigest.getInstance(\"\
+    SHA\");\n            md.update(plaintext.getBytes(\"UTF-8\"));\n            return Base64.encodeBytes(md.digest());\n\
+    \        } catch (NoSuchAlgorithmException e) {\n            throw new EncryptionException(e);\n        } catch (UnsupportedEncodingException\
+    \ e) {\n            throw new EncryptionException(e);\n        }\n    }"
+  - "public static void copyFile(File in, File out) throws IOException {\n        FileChannel sourceChannel = new FileInputStream(in).getChannel();\n\
+    \        FileChannel destinationChannel = new FileOutputStream(out).getChannel();\n        destinationChannel.transferFrom(sourceChannel,\
+    \ 0, sourceChannel.size());\n        sourceChannel.close();\n        destinationChannel.close();\n    }"
+- source_sentence: "private void sortWhats(String[] labels, int[] whats, String simplifyString) {\n        int n = whats.length;\n\
+    \        boolean swapped;\n        do {\n            swapped = false;\n            for (int i = 0; i < n - 1; i++) {\n\
+    \                int i0_pos = simplifyString.indexOf(labels[whats[i]]);\n                int i1_pos = simplifyString.indexOf(labels[whats[i\
+    \ + 1]]);\n                if (i0_pos > i1_pos) {\n                    int temp = whats[i];\n                    whats[i]\
+    \ = whats[i + 1];\n                    whats[i + 1] = temp;\n                    swapped = true;\n                }\n\
+    \            }\n        } while (swapped);\n    }"
+  sentences:
+  - "public String GetMemberName(String id) {\n        String name = null;\n        try {\n            String line;\n    \
+    \        URL url = new URL(intvasmemberDeatails + \"?CID=\" + id);\n            URLConnection connection = url.openConnection();\n\
+    \            BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));\n       \
+    \     while ((line = reader.readLine()) != null) {\n                name = line;\n            }\n        } catch (MalformedURLException\
+    \ e) {\n            e.printStackTrace();\n        } catch (IOException e) {\n            e.printStackTrace();\n      \
+    \  }\n        String[] parts = name.split(\" \");\n        rating = parts[2];\n        return parts[0] + \" \" + parts[1];\n\
+    \    }"
+  - "private static void readAndRewrite(File inFile, File outFile) throws IOException {\n        ImageInputStream iis = ImageIO.createImageInputStream(new\
+    \ BufferedInputStream(new FileInputStream(inFile)));\n        DcmParser dcmParser = DcmParserFactory.getInstance().newDcmParser(iis);\n\
+    \        Dataset ds = DcmObjectFactory.getInstance().newDataset();\n        dcmParser.setDcmHandler(ds.getDcmHandler());\n\
+    \        dcmParser.parseDcmFile(null, Tags.PixelData);\n        PixelDataReader pdReader = pdFact.newReader(ds, iis, dcmParser.getDcmDecodeParam().byteOrder,\
+    \ dcmParser.getReadVR());\n        System.out.println(\"reading \" + inFile + \"...\");\n        pdReader.readPixelData(false);\n\
+    \        ImageOutputStream out = ImageIO.createImageOutputStream(new BufferedOutputStream(new FileOutputStream(outFile)));\n\
+    \        DcmEncodeParam dcmEncParam = DcmEncodeParam.IVR_LE;\n        ds.writeDataset(out, dcmEncParam);\n        ds.writeHeader(out,\
+    \ dcmEncParam, Tags.PixelData, dcmParser.getReadVR(), dcmParser.getReadLength());\n        System.out.println(\"writing\
+    \ \" + outFile + \"...\");\n        PixelDataWriter pdWriter = pdFact.newWriter(pdReader.getPixelDataArray(), false, ds,\
+    \ out, dcmParser.getDcmDecodeParam().byteOrder, dcmParser.getReadVR());\n        pdWriter.writePixelData();\n        out.flush();\n\
+    \        out.close();\n        System.out.println(\"done!\");\n    }"
+  - "public void insertComponent() throws SQLException {\n        Connection connection = null;\n        PreparedStatement\
+    \ ps = null;\n        try {\n            Class.forName(\"com.mysql.jdbc.Driver\");\n            connection = (Connection)\
+    \ DriverManager.getConnection(this.jdbcURL);\n            connection.setAutoCommit(false);\n            String query =\
+    \ \"INSERT INTO components(name,rate,quantity, description) VALUES(?,?,?,?)\";\n            ps = (PreparedStatement) connection.prepareStatement(query);\n\
+    \            ps.setString(1, this.name);\n            ps.setDouble(2, this.rate);\n            ps.setInt(3, this.quantity);\n\
+    \            ps.setString(4, this.description);\n            ps.executeUpdate();\n            connection.commit();\n \
+    \       } catch (Exception ex) {\n            connection.rollback();\n        } finally {\n            try {\n       \
+    \         connection.close();\n            } catch (Exception ex) {\n            }\n            try {\n              \
+    \  ps.close();\n            } catch (Exception ex) {\n            }\n        }\n    }"
+- source_sentence: "public static String toMD5(String seed) {\n        MessageDigest md5 = null;\n        StringBuffer temp_sb\
+    \ = null;\n        try {\n            md5 = MessageDigest.getInstance(\"MD5\");\n            md5.update(seed.getBytes());\n\
+    \            byte[] array = md5.digest();\n            temp_sb = new StringBuffer();\n            for (int i = 0; i <\
+    \ array.length; i++) {\n                int b = array[i] & 0xFF;\n                if (b < 0x10) temp_sb.append('0');\n\
+    \                temp_sb.append(Integer.toHexString(b));\n            }\n        } catch (NoSuchAlgorithmException err)\
+    \ {\n            err.printStackTrace();\n        }\n        return temp_sb.toString();\n    }"
+  sentences:
+  - "public static boolean checkEncryptedPassword(String md5key, String passwordAccount, String encryptedPassword, int passwdenc)\
+    \ throws NoSuchAlgorithmException, UnsupportedEncodingException {\n        MessageDigest md = MessageDigest.getInstance(Constants.ALGORITHM);\n\
+    \        switch(passwdenc) {\n            case 1:\n                md.update((md5key + encryptedPassword).getBytes(\"\
+    8859_1\"));\n                return md.digest().equals(passwordAccount.getBytes(\"8859_1\"));\n            case 2:\n \
+    \               md.update((encryptedPassword + md5key).getBytes(\"8859_1\"));\n                return md.digest().equals(passwordAccount.getBytes(\"\
+    8859_1\"));\n            default:\n                return false;\n        }\n    }"
+  - "@Test\n    public void shouldDownloadFileUsingPublicLink() throws Exception {\n        String bucketName = \"test-\"\
+    \ + UUID.randomUUID();\n        Service service = new WebClientService(credentials);\n        service.createBucket(bucketName);\n\
+    \        File file = folder.newFile(\"foo.txt\");\n        FileUtils.writeStringToFile(file, UUID.randomUUID().toString());\n\
+    \        service.createObject(bucketName, file.getName(), file, new NullProgressListener());\n        String publicUrl\
+    \ = service.getPublicUrl(bucketName, file.getName(), new DateTime().plusDays(5));\n        File saved = folder.newFile(\"\
+    saved.txt\");\n        InputStream input = new URL(publicUrl).openConnection().getInputStream();\n        FileOutputStream\
+    \ output = new FileOutputStream(saved);\n        IOUtils.copy(input, output);\n        output.close();\n        assertThat(\"\
+    Corrupted download\", Files.computeMD5(saved), equalTo(Files.computeMD5(file)));\n        service.deleteObject(bucketName,\
+    \ file.getName());\n        service.deleteBucket(bucketName);\n    }"
+  - "public static void main(String[] args) {\n        try {\n            boolean readExp = Utils.getFlag('l', args);\n  \
+    \          final boolean writeExp = Utils.getFlag('s', args);\n            final String expFile = Utils.getOption('f',\
+    \ args);\n            if ((readExp || writeExp) && (expFile.length() == 0)) {\n                throw new Exception(\"\
+    A filename must be given with the -f option\");\n            }\n            Experiment exp = null;\n            if (readExp)\
+    \ {\n                FileInputStream fi = new FileInputStream(expFile);\n                ObjectInputStream oi = new ObjectInputStream(new\
+    \ BufferedInputStream(fi));\n                exp = (Experiment) oi.readObject();\n                oi.close();\n      \
+    \      } else {\n                exp = new Experiment();\n            }\n            System.err.println(\"Initial Experiment:\\\
+    n\" + exp.toString());\n            final JFrame jf = new JFrame(\"Weka Experiment Setup\");\n            jf.getContentPane().setLayout(new\
+    \ BorderLayout());\n            final SetupPanel sp = new SetupPanel();\n            jf.getContentPane().add(sp, BorderLayout.CENTER);\n\
+    \            jf.addWindowListener(new WindowAdapter() {\n\n                public void windowClosing(WindowEvent e) {\n\
+    \                    System.err.println(\"\\nFinal Experiment:\\n\" + sp.m_Exp.toString());\n                    if (writeExp)\
+    \ {\n                        try {\n                            FileOutputStream fo = new FileOutputStream(expFile);\n\
+    \                            ObjectOutputStream oo = new ObjectOutputStream(new BufferedOutputStream(fo));\n         \
+    \                   oo.writeObject(sp.m_Exp);\n                            oo.close();\n                        } catch\
+    \ (Exception ex) {\n                            ex.printStackTrace();\n                            System.err.println(\"\
+    Couldn't write experiment to: \" + expFile + '\\n' + ex.getMessage());\n                        }\n                  \
+    \  }\n                    jf.dispose();\n                    System.exit(0);\n                }\n            });\n   \
+    \         jf.pack();\n            jf.setVisible(true);\n            System.err.println(\"Short nap\");\n            Thread.currentThread().sleep(3000);\n\
+    \            System.err.println(\"Done\");\n            sp.setExperiment(exp);\n        } catch (Exception ex) {\n   \
+    \         ex.printStackTrace();\n            System.err.println(ex.getMessage());\n        }\n    }"
+- source_sentence: "protected void serveStaticContent(HttpServletRequest request, HttpServletResponse response, String pathInfo)\
+    \ throws ServletException {\n        InputStream is = servletConfig.getServletContext().getResourceAsStream(pathInfo);\n\
+    \        if (is == null) {\n            throw new ServletException(\"Static resource \" + pathInfo + \" is not available\"\
+    );\n        }\n        try {\n            int ind = pathInfo.lastIndexOf(\".\");\n            if (ind != -1 && ind < pathInfo.length())\
+    \ {\n                String type = STATIC_CONTENT_TYPES.get(pathInfo.substring(ind + 1));\n                if (type !=\
+    \ null) {\n                    response.setContentType(type);\n                }\n            }\n            ServletOutputStream\
+    \ os = response.getOutputStream();\n            IOUtils.copy(is, os);\n            os.flush();\n        } catch (IOException\
+    \ ex) {\n            throw new ServletException(\"Static resource \" + pathInfo + \" can not be written to the output\
+    \ stream\");\n        }\n    }"
+  sentences:
+  - "private static String makeLoginRequest(String authenticationUrl, String accountEmail, String accountPassword) throws\
+    \ IOException {\n        URL url = new URL(authenticationUrl);\n        HttpURLConnection urlConnection = (HttpURLConnection)\
+    \ url.openConnection();\n        urlConnection.setRequestMethod(\"POST\");\n        urlConnection.setDoInput(true);\n\
+    \        urlConnection.setDoOutput(true);\n        urlConnection.setUseCaches(false);\n        urlConnection.setRequestProperty(\"\
+    Content-Type\", \"application/x-www-form-urlencoded\");\n        StringBuffer content = new StringBuffer();\n        content.append(\"\
+    Email=\").append(URLEncoder.encode(accountEmail, \"UTF-8\"));\n        content.append(\"&Passwd=\").append(URLEncoder.encode(accountPassword,\
+    \ \"UTF-8\"));\n        content.append(\"&source=\").append(URLEncoder.encode(\"Google Base data API for OFBiz\", \"UTF-8\"\
+    ));\n        content.append(\"&service=\").append(URLEncoder.encode(\"gbase\", \"UTF-8\"));\n        OutputStream outputStream\
+    \ = urlConnection.getOutputStream();\n        outputStream.write(content.toString().getBytes(\"UTF-8\"));\n        outputStream.close();\n\
+    \        int responseCode = urlConnection.getResponseCode();\n        InputStream inputStream;\n        if (responseCode\
+    \ == HttpURLConnection.HTTP_OK) {\n            inputStream = urlConnection.getInputStream();\n        } else {\n     \
+    \       inputStream = urlConnection.getErrorStream();\n        }\n        return toString(inputStream);\n    }"
+  - "public void constructFundamentalView() {\n        String className;\n        String methodName;\n        String field;\n\
+    \        boolean foundRead = false;\n        boolean foundWrite = false;\n        boolean classWritten = false;\n    \
+    \    try {\n            FundView = new BufferedWriter(new FileWriter(\"InfoFiles/FundamentalView.txt\"));\n          \
+    \  FileInputStream fstreamPC = new FileInputStream(\"InfoFiles/PrincipleClassGroup.txt\");\n            DataInputStream\
+    \ inPC = new DataInputStream(fstreamPC);\n            BufferedReader PC = new BufferedReader(new InputStreamReader(inPC));\n\
+    \            while ((field = PC.readLine()) != null) {\n                className = field;\n                FundView.write(className);\n\
+    \                FundView.newLine();\n                classWritten = true;\n                while ((methodName = PC.readLine())\
+    \ != null) {\n                    if (methodName.contentEquals(\"EndOfClass\")) break;\n                    FundView.write(\"\
+    StartOfMethod\");\n                    FundView.newLine();\n                    FundView.write(methodName);\n        \
+    \            FundView.newLine();\n                    for (int i = 0; i < readFileCount && foundRead == false; i++) {\n\
+    \                        if (methodName.compareTo(readArray[i]) == 0) {\n                            foundRead = true;\n\
+    \                            for (int j = 1; readArray[i + j].compareTo(\"EndOfMethod\") != 0; j++) {\n              \
+    \                  if (readArray[i + j].indexOf(\".\") > 0) {\n                                    field = readArray[i\
+    \ + j].substring(0, readArray[i + j].indexOf(\".\"));\n                                    if (field.compareTo(className)\
+    \ == 0) {\n                                        FundView.write(readArray[i + j]);\n                               \
+    \         FundView.newLine();\n                                    }\n                                }\n            \
+    \                }\n                        }\n                    }\n                    for (int i = 0; i < writeFileCount\
+    \ && foundWrite == false; i++) {\n                        if (methodName.compareTo(writeArray[i]) == 0) {\n          \
+    \                  foundWrite = true;\n                            for (int j = 1; writeArray[i + j].compareTo(\"EndOfMethod\"\
+    ) != 0; j++) {\n                                if (writeArray[i + j].indexOf(\".\") > 0) {\n                        \
+    \            field = writeArray[i + j].substring(0, writeArray[i + j].indexOf(\".\"));\n                             \
+    \       if (field.compareTo(className) == 0) {\n                                        FundView.write(writeArray[i +\
+    \ j]);\n                                        FundView.newLine();\n                                    }\n         \
+    \                       }\n                            }\n                        }\n                    }\n         \
+    \           FundView.write(\"EndOfMethod\");\n                    FundView.newLine();\n                    foundRead =\
+    \ false;\n                    foundWrite = false;\n                }\n                if (classWritten == true) {\n  \
+    \                  FundView.write(\"EndOfClass\");\n                    FundView.newLine();\n                    classWritten\
+    \ = false;\n                }\n            }\n            PC.close();\n            FundView.close();\n        } catch\
+    \ (IOException e) {\n            e.printStackTrace();\n        }\n    }"
+  - "public static void main(String[] args) throws Exception {\n        if (args.length != 2) {\n            System.out.println(\"\
+    arguments: sourcefile destfile\");\n            System.exit(1);\n        }\n        FileChannel in = new FileInputStream(args[0]).getChannel(),\
+    \ out = new FileOutputStream(args[1]).getChannel();\n        in.transferTo(0, in.size(), out);\n    }"
+model-index:
+- name: SentenceTransformer based on microsoft/codebert-base
+  results:
+  - task:
+      type: semantic-similarity
+      name: Semantic Similarity
+    dataset:
+      name: bigclonebench validation
+      type: bigclonebench-validation
+    metrics:
+    - type: pearson_cosine
+      value: 0.9050117464281175
+      name: Pearson Cosine
+      verified: false
+    - type: spearman_cosine
+      value: 0.8342891483192489
+      name: Spearman Cosine
+      verified: false
+config:
+  architectures:
+  - RobertaModel
+  model_type: roberta
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:10000
+  - loss:CosineSimilarityLoss
+  base_model: microsoft/codebert-base
+  widget:
+  - source_sentence: "private void createTree(DefaultMutableTreeNode top) throws MalformedURLException, ParserConfigurationException,\
+      \ SAXException, IOException {\n        InputStream stream;\n        URL url = new URL(SHIPS_URL + view.getBaseurl());\n\
+      \        try {\n            stream = url.openStream();\n        } catch (Exception e) {\n            stream = getClass().getResourceAsStream(\"\
+      ships.xml\");\n        }\n        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();\n        DocumentBuilder\
+      \ parser = factory.newDocumentBuilder();\n        Document doc = parser.parse(stream);\n        NodeList races = doc.getElementsByTagName(\"\
+      race\");\n        for (int i = 0; i < races.getLength(); i++) {\n            Element race = (Element) races.item(i);\n\
+      \            top.add(buildRaceTree(race));\n        }\n        top.setUserObject(\"Ships\");\n        view.getShipTree().repaint();\n\
+      \        view.getShipTree().expandRow(0);\n    }"
+    sentences:
+    - "private GenomicSequence fetch(Chromosome k, int start, int end) throws IOException {\n        try {\n            String\
+      \ chr = k.toString();\n            if (chr.toLowerCase().startsWith(\"chr\")) chr = chr.substring(3);\n            SAXParserFactory\
+      \ f = SAXParserFactory.newInstance();\n            f.setNamespaceAware(false);\n            f.setValidating(false);\n\
+      \            SAXParser parser = f.newSAXParser();\n            URL url = new URL(\"http://genome.ucsc.edu/cgi-bin/das/\"\
+      \ + genomeVersion + \"/dna?segment=\" + URLEncoder.encode(chr, \"UTF-8\") + \":\" + (start + 1) + \",\" + (end));\n\
+      \            DASHandler handler = new DASHandler();\n            InputStream in = url.openStream();\n            parser.parse(in,\
+      \ handler);\n            in.close();\n            GenomicSequence seq = new GenomicSequence();\n            seq.sequence\
+      \ = handler.bytes.toByteArray();\n            seq.start = start;\n            seq.end = end;\n            if (seq.sequence.length\
+      \ != seq.length()) throw new IOException(\"bad bound \" + seq + \" \" + seq.sequence.length + \" \" + seq.length());\n\
+      \            return seq;\n        } catch (IOException err) {\n            throw err;\n        } catch (Exception e)\
+      \ {\n            throw new IOException(e);\n        }\n    }"
+    - "public static void main(String[] args) throws Exception {\n        FileChannel fc = new FileOutputStream(\"data.txt\"\
+      ).getChannel();\n        fc.write(ByteBuffer.wrap(\"some text \".getBytes()));\n        fc.close();\n        fc = new\
+      \ RandomAccessFile(\"data.txt\", \"rw\").getChannel();\n        fc.position(fc.size());\n        fc.write(ByteBuffer.wrap(\"\
+      some more\".getBytes()));\n        fc.close();\n        fc = new FileInputStream(\"data.txt\").getChannel();\n     \
+      \   ByteBuffer buff = ByteBuffer.allocate(BSIZE);\n        fc.read(buff);\n        buff.flip();\n        while (buff.hasRemaining())\
+      \ {\n            PrintUtil.prt((char) buff.get());\n        }\n    }"
+    - "private FileLog(LOG_LEVEL displayLogLevel, LOG_LEVEL logLevel, String logPath) {\n        this.logLevel = logLevel;\n\
+      \        this.displayLogLevel = displayLogLevel;\n        if (null != logPath) {\n            logFile = new File(logPath,\
+      \ \"current.log\");\n            log(LOG_LEVEL.DEBUG, \"FileLog\", \"Initialising logfile \" + logFile.getAbsolutePath()\
+      \ + \" .\");\n            try {\n                if (logFile.exists()) {\n                    if (!logFile.renameTo(new\
+      \ File(logPath, System.currentTimeMillis() + \".log\"))) {\n                        File newFile = new File(logPath,\
+      \ System.currentTimeMillis() + \".log\");\n                        if (newFile.exists()) {\n                       \
+      \     log(LOG_LEVEL.WARN, \"FileLog\", \"The file (\" + newFile.getAbsolutePath() + newFile.getName() + \") already\
+      \ exists, will overwrite it.\");\n                            newFile.delete();\n                        }\n       \
+      \                 newFile.createNewFile();\n                        FileInputStream inStream = new FileInputStream(logFile);\n\
+      \                        FileOutputStream outStream = new FileOutputStream(newFile);\n                        byte buffer[]\
+      \ = null;\n                        int offSet = 0;\n                        while (inStream.read(buffer, offSet, 2048)\
+      \ != -1) {\n                            outStream.write(buffer);\n                            offSet += 2048;\n    \
+      \                    }\n                        inStream.close();\n                        outStream.close();\n    \
+      \                    logFile.delete();\n                        logFile = new File(logPath, \"current.log\");\n    \
+      \                }\n                }\n                logFile.createNewFile();\n            } catch (IOException e)\
+      \ {\n                logFile = null;\n            }\n        } else {\n            logFile = null;\n        }\n    }"
+  - source_sentence: "private ByteBuffer readProgram(URL url) throws IOException {\n        StringBuilder program = new StringBuilder();\n\
+      \        BufferedReader in = null;\n        try {\n            in = new BufferedReader(new InputStreamReader(url.openStream()));\n\
+      \            String line;\n            while ((line = in.readLine()) != null) {\n                program.append(line).append(\"\
+      \\n\");\n            }\n        } finally {\n            if (in != null) in.close();\n        }\n        ByteBuffer\
+      \ buffer = BufferUtils.createByteBuffer(program.length());\n        for (int i = 0; i < program.length(); i++) {\n \
+      \           buffer.put((byte) (program.charAt(i) & 0xFF));\n        }\n        buffer.flip();\n        return buffer;\n\
+      \    }"
+    sentences:
+    - "public int delete(BusinessObject o) throws DAOException {\n        int delete = 0;\n        Currency curr = (Currency)\
+      \ o;\n        try {\n            PreparedStatement pst = connection.prepareStatement(XMLGetQuery.getQuery(\"DELETE_CURRENCY\"\
+      ));\n            pst.setInt(1, curr.getId());\n            delete = pst.executeUpdate();\n            if (delete <=\
+      \ 0) {\n                connection.rollback();\n                throw new DAOException(\"Number of rows <= 0\");\n \
+      \           } else if (delete > 1) {\n                connection.rollback();\n                throw new DAOException(\"\
+      Number of rows > 1\");\n            }\n            connection.commit();\n        } catch (SQLException e) {\n      \
+      \      Log.write(e.getMessage());\n            throw new DAOException(\"A SQLException has occured\");\n        } catch\
+      \ (NullPointerException npe) {\n            Log.write(npe.getMessage());\n            throw new DAOException(\"Connection\
+      \ null\");\n        }\n        return delete;\n    }"
+    - "public static String encrypt(String plaintext) throws EncryptionException {\n        if (plaintext == null) {\n   \
+      \         throw new EncryptionException();\n        }\n        try {\n            final MessageDigest md = MessageDigest.getInstance(\"\
+      SHA\");\n            md.update(plaintext.getBytes(\"UTF-8\"));\n            return Base64.encodeBytes(md.digest());\n\
+      \        } catch (NoSuchAlgorithmException e) {\n            throw new EncryptionException(e);\n        } catch (UnsupportedEncodingException\
+      \ e) {\n            throw new EncryptionException(e);\n        }\n    }"
+    - "public static void copyFile(File in, File out) throws IOException {\n        FileChannel sourceChannel = new FileInputStream(in).getChannel();\n\
+      \        FileChannel destinationChannel = new FileOutputStream(out).getChannel();\n        destinationChannel.transferFrom(sourceChannel,\
+      \ 0, sourceChannel.size());\n        sourceChannel.close();\n        destinationChannel.close();\n    }"
+  - source_sentence: "private void sortWhats(String[] labels, int[] whats, String simplifyString) {\n        int n = whats.length;\n\
+      \        boolean swapped;\n        do {\n            swapped = false;\n            for (int i = 0; i < n - 1; i++) {\n\
+      \                int i0_pos = simplifyString.indexOf(labels[whats[i]]);\n                int i1_pos = simplifyString.indexOf(labels[whats[i\
+      \ + 1]]);\n                if (i0_pos > i1_pos) {\n                    int temp = whats[i];\n                    whats[i]\
+      \ = whats[i + 1];\n                    whats[i + 1] = temp;\n                    swapped = true;\n                }\n\
+      \            }\n        } while (swapped);\n    }"
+    sentences:
+    - "public String GetMemberName(String id) {\n        String name = null;\n        try {\n            String line;\n  \
+      \          URL url = new URL(intvasmemberDeatails + \"?CID=\" + id);\n            URLConnection connection = url.openConnection();\n\
+      \            BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));\n     \
+      \       while ((line = reader.readLine()) != null) {\n                name = line;\n            }\n        } catch (MalformedURLException\
+      \ e) {\n            e.printStackTrace();\n        } catch (IOException e) {\n            e.printStackTrace();\n    \
+      \    }\n        String[] parts = name.split(\" \");\n        rating = parts[2];\n        return parts[0] + \" \" + parts[1];\n\
+      \    }"
+    - "private static void readAndRewrite(File inFile, File outFile) throws IOException {\n        ImageInputStream iis =\
+      \ ImageIO.createImageInputStream(new BufferedInputStream(new FileInputStream(inFile)));\n        DcmParser dcmParser\
+      \ = DcmParserFactory.getInstance().newDcmParser(iis);\n        Dataset ds = DcmObjectFactory.getInstance().newDataset();\n\
+      \        dcmParser.setDcmHandler(ds.getDcmHandler());\n        dcmParser.parseDcmFile(null, Tags.PixelData);\n     \
+      \   PixelDataReader pdReader = pdFact.newReader(ds, iis, dcmParser.getDcmDecodeParam().byteOrder, dcmParser.getReadVR());\n\
+      \        System.out.println(\"reading \" + inFile + \"...\");\n        pdReader.readPixelData(false);\n        ImageOutputStream\
+      \ out = ImageIO.createImageOutputStream(new BufferedOutputStream(new FileOutputStream(outFile)));\n        DcmEncodeParam\
+      \ dcmEncParam = DcmEncodeParam.IVR_LE;\n        ds.writeDataset(out, dcmEncParam);\n        ds.writeHeader(out, dcmEncParam,\
+      \ Tags.PixelData, dcmParser.getReadVR(), dcmParser.getReadLength());\n        System.out.println(\"writing \" + outFile\
+      \ + \"...\");\n        PixelDataWriter pdWriter = pdFact.newWriter(pdReader.getPixelDataArray(), false, ds, out, dcmParser.getDcmDecodeParam().byteOrder,\
+      \ dcmParser.getReadVR());\n        pdWriter.writePixelData();\n        out.flush();\n        out.close();\n        System.out.println(\"\
+      done!\");\n    }"
+    - "public void insertComponent() throws SQLException {\n        Connection connection = null;\n        PreparedStatement\
+      \ ps = null;\n        try {\n            Class.forName(\"com.mysql.jdbc.Driver\");\n            connection = (Connection)\
+      \ DriverManager.getConnection(this.jdbcURL);\n            connection.setAutoCommit(false);\n            String query\
+      \ = \"INSERT INTO components(name,rate,quantity, description) VALUES(?,?,?,?)\";\n            ps = (PreparedStatement)\
+      \ connection.prepareStatement(query);\n            ps.setString(1, this.name);\n            ps.setDouble(2, this.rate);\n\
+      \            ps.setInt(3, this.quantity);\n            ps.setString(4, this.description);\n            ps.executeUpdate();\n\
+      \            connection.commit();\n        } catch (Exception ex) {\n            connection.rollback();\n        } finally\
+      \ {\n            try {\n                connection.close();\n            } catch (Exception ex) {\n            }\n \
+      \           try {\n                ps.close();\n            } catch (Exception ex) {\n            }\n        }\n   \
+      \ }"
+  - source_sentence: "public static String toMD5(String seed) {\n        MessageDigest md5 = null;\n        StringBuffer temp_sb\
+      \ = null;\n        try {\n            md5 = MessageDigest.getInstance(\"MD5\");\n            md5.update(seed.getBytes());\n\
+      \            byte[] array = md5.digest();\n            temp_sb = new StringBuffer();\n            for (int i = 0; i\
+      \ < array.length; i++) {\n                int b = array[i] & 0xFF;\n                if (b < 0x10) temp_sb.append('0');\n\
+      \                temp_sb.append(Integer.toHexString(b));\n            }\n        } catch (NoSuchAlgorithmException err)\
+      \ {\n            err.printStackTrace();\n        }\n        return temp_sb.toString();\n    }"
+    sentences:
+    - "public static boolean checkEncryptedPassword(String md5key, String passwordAccount, String encryptedPassword, int passwdenc)\
+      \ throws NoSuchAlgorithmException, UnsupportedEncodingException {\n        MessageDigest md = MessageDigest.getInstance(Constants.ALGORITHM);\n\
+      \        switch(passwdenc) {\n            case 1:\n                md.update((md5key + encryptedPassword).getBytes(\"\
+      8859_1\"));\n                return md.digest().equals(passwordAccount.getBytes(\"8859_1\"));\n            case 2:\n\
+      \                md.update((encryptedPassword + md5key).getBytes(\"8859_1\"));\n                return md.digest().equals(passwordAccount.getBytes(\"\
+      8859_1\"));\n            default:\n                return false;\n        }\n    }"
+    - "@Test\n    public void shouldDownloadFileUsingPublicLink() throws Exception {\n        String bucketName = \"test-\"\
+      \ + UUID.randomUUID();\n        Service service = new WebClientService(credentials);\n        service.createBucket(bucketName);\n\
+      \        File file = folder.newFile(\"foo.txt\");\n        FileUtils.writeStringToFile(file, UUID.randomUUID().toString());\n\
+      \        service.createObject(bucketName, file.getName(), file, new NullProgressListener());\n        String publicUrl\
+      \ = service.getPublicUrl(bucketName, file.getName(), new DateTime().plusDays(5));\n        File saved = folder.newFile(\"\
+      saved.txt\");\n        InputStream input = new URL(publicUrl).openConnection().getInputStream();\n        FileOutputStream\
+      \ output = new FileOutputStream(saved);\n        IOUtils.copy(input, output);\n        output.close();\n        assertThat(\"\
+      Corrupted download\", Files.computeMD5(saved), equalTo(Files.computeMD5(file)));\n        service.deleteObject(bucketName,\
+      \ file.getName());\n        service.deleteBucket(bucketName);\n    }"
+    - "public static void main(String[] args) {\n        try {\n            boolean readExp = Utils.getFlag('l', args);\n\
+      \            final boolean writeExp = Utils.getFlag('s', args);\n            final String expFile = Utils.getOption('f',\
+      \ args);\n            if ((readExp || writeExp) && (expFile.length() == 0)) {\n                throw new Exception(\"\
+      A filename must be given with the -f option\");\n            }\n            Experiment exp = null;\n            if (readExp)\
+      \ {\n                FileInputStream fi = new FileInputStream(expFile);\n                ObjectInputStream oi = new\
+      \ ObjectInputStream(new BufferedInputStream(fi));\n                exp = (Experiment) oi.readObject();\n           \
+      \     oi.close();\n            } else {\n                exp = new Experiment();\n            }\n            System.err.println(\"\
+      Initial Experiment:\\n\" + exp.toString());\n            final JFrame jf = new JFrame(\"Weka Experiment Setup\");\n\
+      \            jf.getContentPane().setLayout(new BorderLayout());\n            final SetupPanel sp = new SetupPanel();\n\
+      \            jf.getContentPane().add(sp, BorderLayout.CENTER);\n            jf.addWindowListener(new WindowAdapter()\
+      \ {\n\n                public void windowClosing(WindowEvent e) {\n                    System.err.println(\"\\nFinal\
+      \ Experiment:\\n\" + sp.m_Exp.toString());\n                    if (writeExp) {\n                        try {\n   \
+      \                         FileOutputStream fo = new FileOutputStream(expFile);\n                            ObjectOutputStream\
+      \ oo = new ObjectOutputStream(new BufferedOutputStream(fo));\n                            oo.writeObject(sp.m_Exp);\n\
+      \                            oo.close();\n                        } catch (Exception ex) {\n                       \
+      \     ex.printStackTrace();\n                            System.err.println(\"Couldn't write experiment to: \" + expFile\
+      \ + '\\n' + ex.getMessage());\n                        }\n                    }\n                    jf.dispose();\n\
+      \                    System.exit(0);\n                }\n            });\n            jf.pack();\n            jf.setVisible(true);\n\
+      \            System.err.println(\"Short nap\");\n            Thread.currentThread().sleep(3000);\n            System.err.println(\"\
+      Done\");\n            sp.setExperiment(exp);\n        } catch (Exception ex) {\n            ex.printStackTrace();\n\
+      \            System.err.println(ex.getMessage());\n        }\n    }"
+  - source_sentence: "protected void serveStaticContent(HttpServletRequest request, HttpServletResponse response, String pathInfo)\
+      \ throws ServletException {\n        InputStream is = servletConfig.getServletContext().getResourceAsStream(pathInfo);\n\
+      \        if (is == null) {\n            throw new ServletException(\"Static resource \" + pathInfo + \" is not available\"\
+      );\n        }\n        try {\n            int ind = pathInfo.lastIndexOf(\".\");\n            if (ind != -1 && ind <\
+      \ pathInfo.length()) {\n                String type = STATIC_CONTENT_TYPES.get(pathInfo.substring(ind + 1));\n     \
+      \           if (type != null) {\n                    response.setContentType(type);\n                }\n           \
+      \ }\n            ServletOutputStream os = response.getOutputStream();\n            IOUtils.copy(is, os);\n         \
+      \   os.flush();\n        } catch (IOException ex) {\n            throw new ServletException(\"Static resource \" + pathInfo\
+      \ + \" can not be written to the output stream\");\n        }\n    }"
+    sentences:
+    - "private static String makeLoginRequest(String authenticationUrl, String accountEmail, String accountPassword) throws\
+      \ IOException {\n        URL url = new URL(authenticationUrl);\n        HttpURLConnection urlConnection = (HttpURLConnection)\
+      \ url.openConnection();\n        urlConnection.setRequestMethod(\"POST\");\n        urlConnection.setDoInput(true);\n\
+      \        urlConnection.setDoOutput(true);\n        urlConnection.setUseCaches(false);\n        urlConnection.setRequestProperty(\"\
+      Content-Type\", \"application/x-www-form-urlencoded\");\n        StringBuffer content = new StringBuffer();\n      \
+      \  content.append(\"Email=\").append(URLEncoder.encode(accountEmail, \"UTF-8\"));\n        content.append(\"&Passwd=\"\
+      ).append(URLEncoder.encode(accountPassword, \"UTF-8\"));\n        content.append(\"&source=\").append(URLEncoder.encode(\"\
+      Google Base data API for OFBiz\", \"UTF-8\"));\n        content.append(\"&service=\").append(URLEncoder.encode(\"gbase\"\
+      , \"UTF-8\"));\n        OutputStream outputStream = urlConnection.getOutputStream();\n        outputStream.write(content.toString().getBytes(\"\
+      UTF-8\"));\n        outputStream.close();\n        int responseCode = urlConnection.getResponseCode();\n        InputStream\
+      \ inputStream;\n        if (responseCode == HttpURLConnection.HTTP_OK) {\n            inputStream = urlConnection.getInputStream();\n\
+      \        } else {\n            inputStream = urlConnection.getErrorStream();\n        }\n        return toString(inputStream);\n\
+      \    }"
+    - "public void constructFundamentalView() {\n        String className;\n        String methodName;\n        String field;\n\
+      \        boolean foundRead = false;\n        boolean foundWrite = false;\n        boolean classWritten = false;\n  \
+      \      try {\n            FundView = new BufferedWriter(new FileWriter(\"InfoFiles/FundamentalView.txt\"));\n      \
+      \      FileInputStream fstreamPC = new FileInputStream(\"InfoFiles/PrincipleClassGroup.txt\");\n            DataInputStream\
+      \ inPC = new DataInputStream(fstreamPC);\n            BufferedReader PC = new BufferedReader(new InputStreamReader(inPC));\n\
+      \            while ((field = PC.readLine()) != null) {\n                className = field;\n                FundView.write(className);\n\
+      \                FundView.newLine();\n                classWritten = true;\n                while ((methodName = PC.readLine())\
+      \ != null) {\n                    if (methodName.contentEquals(\"EndOfClass\")) break;\n                    FundView.write(\"\
+      StartOfMethod\");\n                    FundView.newLine();\n                    FundView.write(methodName);\n      \
+      \              FundView.newLine();\n                    for (int i = 0; i < readFileCount && foundRead == false; i++)\
+      \ {\n                        if (methodName.compareTo(readArray[i]) == 0) {\n                            foundRead =\
+      \ true;\n                            for (int j = 1; readArray[i + j].compareTo(\"EndOfMethod\") != 0; j++) {\n    \
+      \                            if (readArray[i + j].indexOf(\".\") > 0) {\n                                    field =\
+      \ readArray[i + j].substring(0, readArray[i + j].indexOf(\".\"));\n                                    if (field.compareTo(className)\
+      \ == 0) {\n                                        FundView.write(readArray[i + j]);\n                             \
+      \           FundView.newLine();\n                                    }\n                                }\n        \
+      \                    }\n                        }\n                    }\n                    for (int i = 0; i < writeFileCount\
+      \ && foundWrite == false; i++) {\n                        if (methodName.compareTo(writeArray[i]) == 0) {\n        \
+      \                    foundWrite = true;\n                            for (int j = 1; writeArray[i + j].compareTo(\"\
+      EndOfMethod\") != 0; j++) {\n                                if (writeArray[i + j].indexOf(\".\") > 0) {\n         \
+      \                           field = writeArray[i + j].substring(0, writeArray[i + j].indexOf(\".\"));\n            \
+      \                        if (field.compareTo(className) == 0) {\n                                        FundView.write(writeArray[i\
+      \ + j]);\n                                        FundView.newLine();\n                                    }\n     \
+      \                           }\n                            }\n                        }\n                    }\n   \
+      \                 FundView.write(\"EndOfMethod\");\n                    FundView.newLine();\n                    foundRead\
+      \ = false;\n                    foundWrite = false;\n                }\n                if (classWritten == true) {\n\
+      \                    FundView.write(\"EndOfClass\");\n                    FundView.newLine();\n                    classWritten\
+      \ = false;\n                }\n            }\n            PC.close();\n            FundView.close();\n        } catch\
+      \ (IOException e) {\n            e.printStackTrace();\n        }\n    }"
+    - "public static void main(String[] args) throws Exception {\n        if (args.length != 2) {\n            System.out.println(\"\
+      arguments: sourcefile destfile\");\n            System.exit(1);\n        }\n        FileChannel in = new FileInputStream(args[0]).getChannel(),\
+      \ out = new FileOutputStream(args[1]).getChannel();\n        in.transferTo(0, in.size(), out);\n    }"
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - pearson_cosine
+  - spearman_cosine
+  model-index:
+  - name: SentenceTransformer based on microsoft/codebert-base
+    results:
+    - task:
+        type: semantic-similarity
+        name: Semantic Similarity
+      dataset:
+        name: bigclonebench validation
+        type: bigclonebench-validation
+      metrics:
+      - type: pearson_cosine
+        value: 0.9050117464281175
+        name: Pearson Cosine
+        verified: false
+      - type: spearman_cosine
+        value: 0.8342891483192489
+        name: Spearman Cosine
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-11T08:52:15.000Z'
+safetensors:
+  parameters:
+    F32: 124645632
+  total: 124645632
+usedStorage: 498604904
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - RobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 514
+  model_type: roberta
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  output_past: true
+  pad_token_id: 1
+  tie_word_embeddings: true
+  transformers_version: 5.22.1
+  type_vocab_size: 1
+  use_cache: false
+  vocab_size: 50265
+onnxFiles: {}
+safetensorsSizeMb: 498.6
+approxSizeMb: 498.6
+fetchedAt: '2026-11-11T10:39:28.000Z'

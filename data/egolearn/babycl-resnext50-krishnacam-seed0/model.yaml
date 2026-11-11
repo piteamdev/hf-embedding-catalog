@@ -1,0 +1,52 @@
+_id: 6af35aa3756c4d246f99f802
+id: egolearn/babycl-resnext50-krishnacam-seed0
+private: false
+pipeline_tag: feature-extraction
+library_name: egolearn
+tags:
+- egolearn
+- safetensors
+- self-supervised-learning
+- krishnacam
+- streaming
+- feature-extraction
+- region:us
+downloads: 0
+likes: 0
+modelId: egolearn/babycl-resnext50-krishnacam-seed0
+author: egolearn
+sha: 311ec535c5a6bcefded0e01f449ad56eaa1b9dc1
+lastModified: '2026-11-10T17:55:50.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: egolearn
+  pipeline_tag: feature-extraction
+  tags:
+  - egolearn
+  - self-supervised-learning
+  - krishnacam
+  - streaming
+  - safetensors
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: checksums.sha256
+- rfilename: model.json
+- rfilename: model.safetensors
+spaces: []
+createdAt: '2026-11-10T17:55:47.000Z'
+safetensors:
+  parameters:
+    F32: 35801104
+  total: 35801104
+usedStorage: 143240384
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 143.2
+approxSizeMb: 143.2
+fetchedAt: '2026-11-11T10:39:28.000Z'

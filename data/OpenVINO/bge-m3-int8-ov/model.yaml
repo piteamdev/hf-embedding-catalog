@@ -1,0 +1,104 @@
+_id: 6ae754a89b60e7b12250d3eb
+id: OpenVINO/bge-m3-int8-ov
+private: false
+pipeline_tag: sentence-similarity
+library_name: optimum
+tags:
+- optimum
+- openvino
+- xlm-roberta
+- feature-extraction
+- dense-retrieval
+- sentence-similarity
+- multilingual
+- base_model:BAAI/bge-m3
+- base_model:finetune:BAAI/bge-m3
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: OpenVINO/bge-m3-int8-ov
+author: OpenVINO
+sha: 138ab1770a737dc929654b2c5e35bf9d316ab80c
+lastModified: '2026-11-01T15:03:25.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - XLMRobertaModel
+  model_type: xlm-roberta
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  license: mit
+  license_link: https://opensource.org/license/mit
+  language:
+  - multilingual
+  base_model:
+  - BAAI/bge-m3
+  library_name: optimum
+  pipeline_tag: sentence-similarity
+  tags:
+  - openvino
+  - xlm-roberta
+  - feature-extraction
+  - dense-retrieval
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: SHA256SUMS
+- rfilename: config.json
+- rfilename: conversion.json
+- rfilename: openvino_config.json
+- rfilename: openvino_detokenizer.bin
+- rfilename: openvino_detokenizer.xml
+- rfilename: openvino_model.bin
+- rfilename: openvino_model.xml
+- rfilename: openvino_tokenizer.bin
+- rfilename: openvino_tokenizer.xml
+- rfilename: sentencepiece.bpe.model
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-01T15:03:04.000Z'
+usedStorage: 600916657
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - XLMRobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 1024
+  initializer_range: 0.02
+  intermediate_size: 4096
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 8194
+  model_type: xlm-roberta
+  num_attention_heads: 16
+  num_hidden_layers: 24
+  output_past: true
+  pad_token_id: 1
+  position_embedding_type: absolute
+  transformers_version: 4.57.6
+  type_vocab_size: 1
+  use_cache: true
+  vocab_size: 250002
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-11T10:39:28.000Z'

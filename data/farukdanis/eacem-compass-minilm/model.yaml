@@ -1,0 +1,107 @@
+_id: 6af46cc3616366c0b44ddcc6
+id: farukdanis/eacem-compass-minilm
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers.js
+tags:
+- transformers.js
+- onnx
+- bert
+- feature-extraction
+- base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- base_model:quantized:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- license:apache-2.0
+- region:us
+downloads: 22
+likes: 0
+modelId: farukdanis/eacem-compass-minilm
+author: farukdanis
+sha: 3f1aae42e46ec4abc16829c0906d413eb4ee394c
+lastModified: '2026-11-11T14:18:07.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token:
+      __type: AddedToken
+      content: <mask>
+      lstrip: true
+      normalized: true
+      rstrip: false
+      single_word: false
+cardData:
+  base_model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  license: apache-2.0
+  library_name: transformers.js
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: onnx/model.onnx
+- rfilename: onnx/model_bnb4.onnx
+- rfilename: onnx/model_fp16.onnx
+- rfilename: onnx/model_int8.onnx
+- rfilename: onnx/model_q4.onnx
+- rfilename: onnx/model_q4f16.onnx
+- rfilename: onnx/model_quantized.onnx
+- rfilename: onnx/model_uint8.onnx
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: unigram.json
+spaces: []
+createdAt: '2026-11-11T13:25:23.000Z'
+usedStorage: 2092618264
+downloadsAllTime: 22
+inferenceProviderMapping: {}
+configJson:
+  _name_or_path: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  classifier_dropout: null
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  initializer_range: 0.02
+  intermediate_size: 1536
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  position_embedding_type: absolute
+  transformers_version: 4.29.2
+  type_vocab_size: 2
+  use_cache: true
+  vocab_size: 250037
+onnxFiles:
+  onnx/model.onnx: 470.3
+  onnx/model_bnb4.onnx: 397.3
+  onnx/model_fp16.onnx: 235.3
+  onnx/model_int8.onnx: 118.1
+  onnx/model_q4.onnx: 398.6
+  onnx/model_q4f16.onnx: 204.8
+  onnx/model_quantized.onnx: 118.3
+  onnx/model_uint8.onnx: 118.1
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-12T10:51:52.000Z'

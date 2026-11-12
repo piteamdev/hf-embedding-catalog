@@ -1,0 +1,76 @@
+_id: 6af0affc8cf0fc10c104934c
+id: minishlab/blink-8M
+private: false
+pipeline_tag: feature-extraction
+library_name: model2vec
+tags:
+- model2vec
+- safetensors
+- embeddings
+- static-embeddings
+- sentence-transformers
+- sentence-similarity
+- feature-extraction
+- en
+- dataset:minishlab/tokenlearn-c4-en-bge-base-en-v1.5
+- dataset:lightonai/embeddings-pre-training-curated
+- dataset:lightonai/embeddings-fine-tuning-filtered-en
+- license:mit
+- region:us
+downloads: 17
+likes: 4
+modelId: minishlab/blink-8M
+author: minishlab
+sha: 593ed556e9a417e80b3b251a28ba8f412bed026e
+lastModified: '2026-11-11T19:55:06.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - StaticModel
+  model_type: model2vec
+cardData:
+  library_name: model2vec
+  license: mit
+  tags:
+  - embeddings
+  - static-embeddings
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  language: en
+  datasets:
+  - minishlab/tokenlearn-c4-en-bge-base-en-v1.5
+  - lightonai/embeddings-pre-training-curated
+  - lightonai/embeddings-fine-tuning-filtered-en
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: figures/mteb_vs_beir.png
+- rfilename: figures/sparkle_2_blink.svg
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-11-08T17:23:08.000Z'
+safetensors:
+  parameters:
+    F32: 7680000
+  total: 7680000
+usedStorage: 46443352
+downloadsAllTime: 17
+inferenceProviderMapping: {}
+configJson:
+  model_type: model2vec
+  architectures:
+  - StaticModel
+  hidden_dim: 256
+  normalize: true
+  max_length: null
+  embedding_dtype: float32
+onnxFiles: {}
+safetensorsSizeMb: 30.7
+approxSizeMb: 30.7
+fetchedAt: '2026-11-12T10:51:52.000Z'

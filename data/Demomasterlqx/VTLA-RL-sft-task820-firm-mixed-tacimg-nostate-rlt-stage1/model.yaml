@@ -1,0 +1,55 @@
+_id: 6af44c7d00cee35adb1b9fc9
+id: Demomasterlqx/VTLA-RL-sft-task820-firm-mixed-tacimg-nostate-rlt-stage1
+private: false
+pipeline_tag: feature-extraction
+library_name: pytorch
+tags:
+- pytorch
+- robotics
+- tactile
+- rlt
+- feature-extraction
+- base_model:Demomasterlqx/task820_firm_mixed_pi05_tacimg_nostate_force005_sft_2a800_30k_20261017-221823
+- base_model:finetune:Demomasterlqx/task820_firm_mixed_pi05_tacimg_nostate_force005_sft_2a800_30k_20261017-221823
+- region:us
+downloads: 0
+likes: 0
+modelId: Demomasterlqx/VTLA-RL-sft-task820-firm-mixed-tacimg-nostate-rlt-stage1
+author: Demomasterlqx
+sha: d8e990c80f4a975e5cadfc4c276d9b23721f7faf
+lastModified: '2026-11-11T11:41:31.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: pytorch
+  tags:
+  - robotics
+  - tactile
+  - rlt
+  - feature-extraction
+  base_model: Demomasterlqx/task820_firm_mixed_pi05_tacimg_nostate_force005_sft_2a800_30k_20261017-221823
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: assets/pi05_horizon50_tacimg_task820_firm_mixed/norm_stats.json
+- rfilename: manifest.json
+- rfilename: rlt_encoder.safetensors
+- rfilename: run_contract.json
+- rfilename: trainable_weights.pt
+- rfilename: training_config.yaml
+- rfilename: validation/final_checkpoint_audit.json
+- rfilename: validation/formal_telemetry_audit.json
+- rfilename: validation/rlinf_feature_validation.json
+- rfilename: validation/t2vla_feature_validation.json
+spaces: []
+createdAt: '2026-11-11T11:07:41.000Z'
+usedStorage: 4463837985
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 1485.1
+approxSizeMb: 0.0
+fetchedAt: '2026-11-12T10:51:52.000Z'

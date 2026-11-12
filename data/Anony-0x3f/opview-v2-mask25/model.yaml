@@ -1,0 +1,250 @@
+_id: 6af4f10a7ee4a0a0e81a94fc
+id: Anony-0x3f/opview-v2-mask25
+private: false
+pipeline_tag: feature-extraction
+library_name: pytorch
+tags:
+- pytorch
+- safetensors
+- eeg
+- brain
+- foundation-model
+- self-supervised
+- neuroscience
+- feature-extraction
+- license:mit
+- region:us
+downloads: 39
+likes: 0
+modelId: Anony-0x3f/opview-v2-mask25
+author: Anony-0x3f
+sha: 0268658cf9f21e9df135ed3e7910bc0fbd4d5081
+lastModified: '2026-11-11T22:56:50.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  library_name: pytorch
+  pipeline_tag: feature-extraction
+  tags:
+  - eeg
+  - brain
+  - foundation-model
+  - self-supervised
+  - neuroscience
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: frequency/calibration.npz
+- rfilename: frequency/config.json
+- rfilename: frequency/model.safetensors
+- rfilename: projective/calibration.npz
+- rfilename: projective/config.json
+- rfilename: projective/model.safetensors
+- rfilename: relation/calibration.npz
+- rfilename: relation/config.json
+- rfilename: relation/model.safetensors
+spaces: []
+createdAt: '2026-11-11T22:49:46.000Z'
+usedStorage: 52427573
+downloadsAllTime: 39
+inferenceProviderMapping: {}
+configJson:
+  name: OpView V2
+  checkpoint_set: mask25_30k
+  views:
+  - frequency
+  - relation
+  - projective
+  format: safetensors
+  code_commit: ab6b2610539c3f70cf99d3d4f6d3f907ce22fd2b
+  code_tree_clean: true
+  input:
+    unit: microvolt
+    sample_rate_hz: 256
+    layout: '[B, C, T]'
+    electrode_positions: standard_1005 direction of each channel name x 0.085 m
+  readout:
+    k:
+      waveform: 32768
+      dynamics: 32768
+      frequency: 8192
+      relation: 24576
+      projective: 8192
+    seed: 20260916
+    standardize:
+      encoder:
+        waveform: none
+        dynamics: none
+        frequency: none
+        relation: none
+        projective: none
+      operator:
+        waveform: none
+        dynamics: none
+        frequency: none
+        relation: none
+        projective: none
+    relation:
+      encoder_supports: all
+      operator_supports: all
+      operator_states: local
+    widths:
+      encoder:
+        waveform:
+          macro: 16384
+          micro: 16384
+        dynamics:
+          dense: 32768
+        frequency:
+          dense: 8192
+        relation:
+          anchor: 4096
+          summary: 2048
+          scale: 2048
+        projective:
+          dense: 8192
+      operator:
+        waveform:
+          moments: 32768
+        dynamics:
+          moments: 32768
+        frequency:
+          power: 4096
+          coherence: 4096
+        relation:
+          local:
+            shape: 6144
+            scale: 2048
+          pooled:
+            shape_mean: 2048
+            shape_std: 2048
+            scale_mean: 2048
+            scale_std: 2048
+        projective:
+          moments: 8192
+  per_view:
+    frequency:
+      objective: masked channel_1hz, fraction 0.25
+      global_step: 30000
+      trained_config: configs/pretrain/v2/mae30k/frequency.json
+      trained_code: code_7a7986e
+      feature_width: 8192
+      files:
+        weights: frequency/model.safetensors
+        config: frequency/config.json
+        calibration: frequency/calibration.npz
+      source:
+        path: weights/v2/mask25_30k/frequency.pt
+        sha256: 26213ea754cfc1a88c2a5223a6198ceb05196011a7b603f8df1d449d66e615f0
+        bytes: 15053851
+      calibration_source:
+        path: weights/v2/calibration/mask25_30k/frequency.npz
+        sha256: 8a51546ca9aaeaeff3df90f3d91ff8674c7f37cfbfdb6c7459888a1296069e67
+        bytes: 33256
+      parameters: 3739789
+    relation:
+      objective: masked chart_unit, fraction 0.25
+      global_step: 30000
+      trained_config: configs/pretrain/v2/mae30k/relation.json
+      trained_code: code_7a7986e
+      feature_width: 24576
+      files:
+        weights: relation/model.safetensors
+        config: relation/config.json
+        calibration: relation/calibration.npz
+      source:
+        path: weights/v2/mask25_30k/relation.pt
+        sha256: 39b3762f0ab2e3df94c37d2b2a815706799ca308f7110b2073f29327910e2930
+        bytes: 20169877
+      calibration_source:
+        path: weights/v2/calibration/mask25_30k/relation.npz
+        sha256: ee767d6d1c716b647c9f030b58a72fd92d5e8f01b131dc1ff9f2446d04f71c24
+        bytes: 98608
+      tables:
+      - - 1
+        - 2
+      - - 1
+        - 3
+      - - 2
+        - 2
+      - - 2
+        - 4
+      - - 2
+        - 7
+      - - 2
+        - 9
+      - - 4
+        - 2
+      - - 4
+        - 4
+      - - 4
+        - 7
+      - - 4
+        - 11
+      - - 4
+        - 13
+      - - 4
+        - 14
+      parameters: 5015494
+    projective:
+      objective: masked point_span2, fraction 0.25
+      global_step: 30000
+      trained_config: configs/pretrain/v2/mae30k/projective.json
+      trained_code: code_7a7986e
+      feature_width: 8192
+      files:
+        weights: projective/model.safetensors
+        config: projective/config.json
+        calibration: projective/calibration.npz
+      source:
+        path: weights/v2/mask25_30k/projective.pt
+        sha256: 4a4ff428a1dc65bbf80baebcbdf1c5d5b6e89af4db899d14f3bb6575f3dc9f1c
+        bytes: 17200011
+      calibration_source:
+        path: weights/v2/calibration/mask25_30k/projective.npz
+        sha256: 69c5afbbb2c01973f70dcf3640811079db23a0e41a9b155a8c7926fc6b585867
+        bytes: 19882
+      parameters: 4287126
+  files:
+    LICENSE:
+      sha256: 9b6cc9d2a2edb8e278907ad5cb9edfb208feda3dc793b1a247adab43c2bc7019
+      bytes: 1075
+    README.md:
+      sha256: 8fc4e7612c3b949e802e362991c71aa6c337c6483f46d8ec7dabe7812d19ff90
+      bytes: 10975
+    frequency/calibration.npz:
+      sha256: c99a03c164315d29cf72489a135a4841138cdd622dd903b6df163023eb99e3bc
+      bytes: 33064
+    frequency/config.json:
+      sha256: dd77862546da9a9e5c4a8dd2f7144260c56db77a1a99e96b8fec4e6522a17d62
+      bytes: 1619
+    frequency/model.safetensors:
+      sha256: d41a8fd6eef18fda33449f2e77b433d5b53a0f644a31bf9df48cd5b80e7a5441
+      bytes: 15006663
+    projective/calibration.npz:
+      sha256: 2e8535bc4c0ee2fcd6b4d6418edd3835922da5a193e8acc685b16471ece2367d
+      bytes: 19686
+    projective/config.json:
+      sha256: 728e33455b98e9a311962a2357ee1cf1e2bebabff4097900ef9615d9c567cc5b
+      bytes: 1194
+    projective/model.safetensors:
+      sha256: c92781e50e7246b5af1e90183ec4acd3adc0cb4bfaa94ff6c02c57688f955bea
+      bytes: 17163180
+    relation/calibration.npz:
+      sha256: b13455f05aa7b74f71e65c4a1b58769a85b2db2e1e9d1dbf2820e84c42e6c938
+      bytes: 98308
+    relation/config.json:
+      sha256: e06d5bd0e56a06528e811a24f77e27d85cfbe117115ecb942ea20b093aa5ffd6
+      bytes: 15689
+    relation/model.safetensors:
+      sha256: 3de44ca487888c6a1f6f1e3c90004e8addc82105ad1f903c1de8f22db0881fe3
+      bytes: 20106672
+onnxFiles: {}
+safetensorsSizeMb: 52.3
+approxSizeMb: 0.0
+fetchedAt: '2026-11-12T10:51:52.000Z'

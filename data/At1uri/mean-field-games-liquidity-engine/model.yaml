@@ -1,0 +1,57 @@
+_id: 6af7014e140fc5f5390a519c
+id: At1uri/mean-field-games-liquidity-engine
+private: false
+pipeline_tag: feature-extraction
+tags:
+- mean-field-games
+- mckean-vlasov
+- hjb-equation
+- fokker-planck
+- liquidity-spiral
+- quantitative-finance
+- optimal-execution
+- feature-extraction
+- en
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: At1uri/mean-field-games-liquidity-engine
+author: At1uri
+sha: 68e8f368906a61601bb52a98a16dde9b8580c2d6
+lastModified: '2026-11-13T12:23:43.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  language:
+  - en
+  license: apache-2.0
+  tags:
+  - mean-field-games
+  - mckean-vlasov
+  - hjb-equation
+  - fokker-planck
+  - liquidity-spiral
+  - quantitative-finance
+  - optimal-execution
+  metrics:
+  - accuracy
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: benchmarks.json
+- rfilename: mfg_equilibrium_weights.json
+- rfilename: mfg_solver.py
+spaces: []
+createdAt: '2026-11-13T12:23:42.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-14T10:02:42.000Z'

@@ -1,0 +1,384 @@
+_id: 6ad5b546f2f313725ae46dbd
+id: IntezraInc/harrier-oss-v1-27b-W4A16-g64-FP8mix
+private: false
+pipeline_tag: feature-extraction
+library_name: vllm
+tags:
+- vllm
+- safetensors
+- gemma3_text
+- embeddings
+- text-embeddings
+- quantized
+- gptq
+- w4a16
+- fp8
+- compressed-tensors
+- llm-compressor
+- mteb
+- gemma3
+- feature-extraction
+- multilingual
+- dataset:allenai/gooaq
+- dataset:CohereLabs/aya_dataset
+- dataset:HuggingFaceFW/fineweb-2
+- dataset:HuggingFaceFW/fineweb-edu
+- dataset:codeparrot/github-code-clean
+- base_model:microsoft/harrier-oss-v1-27b
+- base_model:quantized:microsoft/harrier-oss-v1-27b
+- license:mit
+- region:us
+downloads: 7
+likes: 0
+modelId: IntezraInc/harrier-oss-v1-27b-W4A16-g64-FP8mix
+author: IntezraInc
+sha: 7a32c6223e10acb4a918eda9a82f57caaf191f68
+lastModified: '2026-11-13T00:43:06.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - Gemma3TextModel
+  model_type: gemma3_text
+  quantization_config:
+    quant_method: compressed-tensors
+    format: mixed-precision
+    config_groups:
+      group_0:
+        format: float-quantized
+        targets:
+        - re:.*layers\.(50|51|52|53|54|55|56|57|58|59|60|61)\.(self_attn\.(q|k|v|o|qkv)_proj|mlp\.(gate|up|down|gate_up)_proj)$
+        - re:.*layers\.\d+\.(self_attn\.(q|k|v|o|qkv)_proj)$
+        weights:
+          num_bits: 8
+      group_1:
+        format: pack-quantized
+        targets:
+        - re:.*layers\.(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31|32|33|34|35|36|37|38|39|40|41|42|43|44|45|46|47|48|49)\.(mlp\.(gate|up|down|gate_up)_proj)$
+        weights:
+          num_bits: 4
+    ignore: []
+  tokenizer_config:
+    use_default_system_prompt: false
+    bos_token: <bos>
+    eos_token: <eos>
+    unk_token: <unk>
+    pad_token: <pad>
+    mask_token: <mask>
+cardData:
+  base_model: microsoft/harrier-oss-v1-27b
+  base_model_relation: quantized
+  license: mit
+  pipeline_tag: feature-extraction
+  library_name: vllm
+  tags:
+  - embeddings
+  - text-embeddings
+  - quantized
+  - gptq
+  - w4a16
+  - fp8
+  - compressed-tensors
+  - llm-compressor
+  - vllm
+  - mteb
+  - gemma3
+  language:
+  - multilingual
+  datasets:
+  - allenai/gooaq
+  - CohereLabs/aya_dataset
+  - HuggingFaceFW/fineweb-2
+  - HuggingFaceFW/fineweb-edu
+  - codeparrot/github-code-clean
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: build/COMMANDS.md
+- rfilename: build/README.md
+- rfilename: build/calib/SOURCES.md
+- rfilename: build/calib/build_calib.py
+- rfilename: build/calib/calib_stats.json
+- rfilename: build/env/bf16_sha256.txt
+- rfilename: build/env/upstream_tree.json
+- rfilename: build/env/venv-quant_freeze.txt
+- rfilename: build/env/venv-serve_freeze.txt
+- rfilename: build/logs/build_calib.log
+- rfilename: build/logs/chain_gpu0_a.log
+- rfilename: build/logs/chain_gpu0_builds.log
+- rfilename: build/logs/code_gpu0.log
+- rfilename: build/logs/code_gpu1.log
+- rfilename: build/logs/code_gpu2.log
+- rfilename: build/logs/code_suite_h100.log
+- rfilename: build/logs/cos_cmp_nvfp4a16.log
+- rfilename: build/logs/cos_cmp_w4a16-gptq.log
+- rfilename: build/logs/cos_embed_bf16-st.log
+- rfilename: build/logs/cos_embed_bf16-vllm.log
+- rfilename: build/logs/cos_embed_nvfp4.log
+- rfilename: build/logs/cos_embed_nvfp4a16.log
+- rfilename: build/logs/cos_embed_w4a16-gptq-late12-attn-down.log
+- rfilename: build/logs/cos_embed_w4a16-gptq-late12-attn-g64.log
+- rfilename: build/logs/cos_embed_w4a16-gptq-late12-attn.log
+- rfilename: build/logs/cos_embed_w4a16-gptq.log
+- rfilename: build/logs/cosine_build.log
+- rfilename: build/logs/diag_long_default.log
+- rfilename: build/logs/diag_long_nochunk.log
+- rfilename: build/logs/diag_long_noprefix.log
+- rfilename: build/logs/diag_long_trunc8191.log
+- rfilename: build/logs/download_bf16.log
+- rfilename: build/logs/mteb_bf16-st.log
+- rfilename: build/logs/mteb_bf16-st_scifact.log
+- rfilename: build/logs/mteb_bf16-vllm.log
+- rfilename: build/logs/mteb_bf16-vllm_scifact.log
+- rfilename: build/logs/mteb_bf16_chain.log
+- rfilename: build/logs/mteb_code-vllm-bf16.log
+- rfilename: build/logs/mteb_code-vllm-w4a16-gptq-late12-attn-g64.log
+- rfilename: build/logs/mteb_code-vllm-w4a16-gptq.log
+- rfilename: build/logs/mteb_vllm-bf16.log
+- rfilename: build/logs/mteb_vllm-nvfp4a16.log
+- rfilename: build/logs/mteb_vllm-w4a16-gptq-late12-attn-down.log
+- rfilename: build/logs/mteb_vllm-w4a16-gptq-late12-attn-g64.log
+- rfilename: build/logs/mteb_vllm-w4a16-gptq.log
+- rfilename: build/logs/orchestrate.log
+- rfilename: build/logs/orchestrate_gpu0.log
+- rfilename: build/logs/orchestrate_gpu1.log
+- rfilename: build/logs/orchestrate_gpu2.log
+- rfilename: build/logs/orchestrate_gpu3.log
+- rfilename: build/logs/orchestrate_variants.log
+- rfilename: build/logs/orchestrate_variants_gpu0.log
+- rfilename: build/logs/orchestrate_variants_gpu3.log
+- rfilename: build/logs/quant_nvfp4.log
+- rfilename: build/logs/quant_nvfp4a16.log
+- rfilename: build/logs/quant_w4a16-gptq-late12-attn-down.log
+- rfilename: build/logs/quant_w4a16-gptq-late12-attn-g64.log
+- rfilename: build/logs/quant_w4a16-gptq-late12-attn.log
+- rfilename: build/logs/quant_w4a16-gptq.attempt1.log
+- rfilename: build/logs/quant_w4a16-gptq.log
+- rfilename: build/logs/round2.log
+- rfilename: build/logs/round2_gpu0.log
+- rfilename: build/logs/round2_gpu2.log
+- rfilename: build/logs/round3.log
+- rfilename: build/logs/round3_gpu0.log
+- rfilename: build/logs/round3_gpu2.log
+- rfilename: build/logs/rsync_blackwell.log
+- rfilename: build/logs/sensitivity.log
+- rfilename: build/logs/sensitivity_combos.log
+- rfilename: build/logs/serve_test_w4a16-gptq_16k.out
+- rfilename: build/logs/serve_w4a16-gptq_16384.log
+- rfilename: build/logs/smoke_bf16.log
+- rfilename: build/logs/smoke_nvfp4.log
+- rfilename: build/logs/smoke_nvfp4a16.log
+- rfilename: build/logs/smoke_w4a16-gptq.log
+- rfilename: build/logs/venv_install.log
+- rfilename: build/scripts/chain_gpu0_a.sh
+- rfilename: build/scripts/chain_gpu0_builds.sh
+- rfilename: build/scripts/code_suite_h100.sh
+- rfilename: build/scripts/context_probe.py
+- rfilename: build/scripts/cosine_eval.py
+- rfilename: build/scripts/diag_long_hang.py
+- rfilename: build/scripts/hard_exit.py
+- rfilename: build/scripts/make_cards.py
+- rfilename: build/scripts/make_results.py
+- rfilename: build/scripts/orchestrate_eval.sh
+- rfilename: build/scripts/orchestrate_variants.sh
+- rfilename: build/scripts/patch_vllm_targets.py
+- rfilename: build/scripts/quantize.py
+- rfilename: build/scripts/round2.sh
+- rfilename: build/scripts/round3.sh
+- rfilename: build/scripts/run_mteb.py
+- rfilename: build/scripts/sensitivity.py
+- rfilename: build/scripts/serve_test.sh
+- rfilename: build/scripts/smoke_vllm_vs_st.py
+- rfilename: build/scripts/st_compat.py
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model-00001-of-00002.safetensors
+- rfilename: model-00002-of-00002.safetensors
+- rfilename: model.safetensors.index.json
+- rfilename: modules.json
+- rfilename: mteb_v2_eval_prompts.json
+- rfilename: quantization_meta.json
+- rfilename: recipe.yaml
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-19T06:14:30.000Z'
+safetensors:
+  parameters:
+    I32: 2167603200
+    BF16: 1410984704
+    F8_E4M3: 8257536000
+  total: 11836123904
+usedStorage: 20328206666
+downloadsAllTime: 7
+inferenceProviderMapping: {}
+configJson:
+  _sliding_window_pattern: 6
+  architectures:
+  - Gemma3TextModel
+  attention_bias: false
+  attention_dropout: 0.0
+  attn_logit_softcapping: null
+  bos_token_id: 2
+  dtype: bfloat16
+  eos_token_id: 1
+  final_logit_softcapping: null
+  head_dim: 128
+  hidden_activation: gelu_pytorch_tanh
+  hidden_size: 5376
+  initializer_range: 0.02
+  intermediate_size: 21504
+  layer_types:
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  max_position_embeddings: 131072
+  model_type: gemma3_text
+  num_attention_heads: 32
+  num_hidden_layers: 62
+  num_key_value_heads: 16
+  pad_token_id: 0
+  quantization_config:
+    config_groups:
+      group_0:
+        format: float-quantized
+        input_activations:
+          actorder: null
+          block_structure: null
+          dynamic: true
+          group_size: null
+          num_bits: 8
+          observer: null
+          observer_kwargs: {}
+          scale_dtype: null
+          strategy: token
+          symmetric: true
+          type: float
+          zp_dtype: null
+        output_activations: null
+        targets:
+        - re:.*layers\.(50|51|52|53|54|55|56|57|58|59|60|61)\.(self_attn\.(q|k|v|o|qkv)_proj|mlp\.(gate|up|down|gate_up)_proj)$
+        - re:.*layers\.\d+\.(self_attn\.(q|k|v|o|qkv)_proj)$
+        weights:
+          actorder: static
+          block_structure: null
+          dynamic: false
+          group_size: null
+          num_bits: 8
+          observer: memoryless_minmax
+          observer_kwargs: {}
+          scale_dtype: null
+          strategy: channel
+          symmetric: true
+          type: float
+          zp_dtype: null
+      group_1:
+        format: pack-quantized
+        input_activations: null
+        output_activations: null
+        targets:
+        - re:.*layers\.(0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31|32|33|34|35|36|37|38|39|40|41|42|43|44|45|46|47|48|49)\.(mlp\.(gate|up|down|gate_up)_proj)$
+        weights:
+          actorder: static
+          block_structure: null
+          dynamic: false
+          group_size: 64
+          num_bits: 4
+          observer: memoryless_minmax
+          observer_kwargs: {}
+          scale_dtype: null
+          strategy: group
+          symmetric: true
+          type: int
+          zp_dtype: null
+    format: mixed-precision
+    global_compression_ratio: null
+    ignore: []
+    kv_cache_scheme: null
+    quant_method: compressed-tensors
+    quantization_status: compressed
+    sparsity_config: {}
+    transform_config: {}
+    version: 0.19.0
+  query_pre_attn_scalar: 168
+  rms_norm_eps: 1.0e-06
+  rope_parameters:
+    full_attention:
+      factor: 8.0
+      rope_theta: 1000000.0
+      rope_type: linear
+    sliding_attention:
+      rope_theta: 10000.0
+      rope_type: default
+  sliding_window: 1024
+  tie_word_embeddings: true
+  transformers_version: 5.17.0
+  use_bidirectional_attention: false
+  use_cache: false
+  vocab_size: 262208
+onnxFiles: {}
+safetensorsSizeMb: 20294.8
+approxSizeMb: 44522.5
+fetchedAt: '2026-11-14T10:02:42.000Z'

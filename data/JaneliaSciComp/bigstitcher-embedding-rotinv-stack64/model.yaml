@@ -1,0 +1,51 @@
+_id: 6af77b043c6471f14c24d9e1
+id: JaneliaSciComp/bigstitcher-embedding-rotinv-stack64
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- bigstitcher
+- interest-point-embedding
+- light-sheet-microscopy
+- rotation-invariant
+- mirror-invariant
+- feature-extraction
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: JaneliaSciComp/bigstitcher-embedding-rotinv-stack64
+author: JaneliaSciComp
+sha: 9d66ce1687ed3741a0792842d68ff5d9d4a17073
+lastModified: '2026-11-13T21:09:38.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  tags:
+  - bigstitcher
+  - interest-point-embedding
+  - light-sheet-microscopy
+  - rotation-invariant
+  - mirror-invariant
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: rotinv-stack_sigma5-30_mask_floor_ds1345678_p2000_s0_local_neg3r500_mirror_ft-allmv.onnx
+- rfilename: rotinv-stack_sigma5-30_mask_floor_ds1345678_p2000_s0_local_neg3r500_mirror_ft-allmv.onnx.json
+spaces: []
+createdAt: '2026-11-13T21:03:00.000Z'
+usedStorage: 463421
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  rotinv-stack_sigma5-30_mask_floor_ds1345678_p2000_s0_local_neg3r500_mirror_ft-allmv.onnx: 0.5
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-14T10:02:42.000Z'

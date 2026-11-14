@@ -1,0 +1,81 @@
+_id: 6af6a5d73ef821d878ad1107
+id: WhoIsAbishag/ebertin-iwm-micronet-v0.2
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- ebertin_iwm_v2
+- feature-extraction
+- ebertin-iwm
+- triadic-attention
+- mixture-of-experts
+- tight-frame
+- edge-ai
+- isomorphic-maths
+- custom_code
+- license:cc-by-nc-4.0
+- region:us
+downloads: 5
+likes: 0
+modelId: WhoIsAbishag/ebertin-iwm-micronet-v0.2
+author: WhoIsAbishag
+sha: dea46d0de72ff8649e5525b5ed163a1321e14c6c
+lastModified: '2026-11-13T05:57:39.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - EbertinIWMV2ForSequenceAndRouting
+  auto_map:
+    AutoConfig: configuration_ebertin_iwm.EbertinIWMV2Config
+    AutoModel: modeling_ebertin_iwm.EbertinIWMV2ForSequenceAndRouting
+  model_type: ebertin_iwm_v2
+  num_experts: 12
+cardData:
+  license: cc-by-nc-4.0
+  library_name: transformers
+  tags:
+  - ebertin-iwm
+  - triadic-attention
+  - mixture-of-experts
+  - tight-frame
+  - edge-ai
+  - isomorphic-maths
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_ebertin_iwm.EbertinIWMV2ForSequenceAndRouting
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: configuration_ebertin_iwm.py
+- rfilename: infer_edge_v0_2.py
+- rfilename: modeling_ebertin_iwm.py
+- rfilename: vocab.json
+- rfilename: weights.json
+spaces: []
+createdAt: '2026-11-13T05:53:27.000Z'
+usedStorage: 0
+downloadsAllTime: 5
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - EbertinIWMV2ForSequenceAndRouting
+  auto_map:
+    AutoConfig: configuration_ebertin_iwm.EbertinIWMV2Config
+    AutoModel: modeling_ebertin_iwm.EbertinIWMV2ForSequenceAndRouting
+  model_type: ebertin_iwm_v2
+  vocab_size: 368
+  hidden_dim: 24
+  num_experts: 12
+  num_harmonics: 3
+  max_pos: 24
+  top_k: 2
+  sharpness: 2.6
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-14T10:02:42.000Z'

@@ -1,0 +1,57 @@
+_id: 6af5a3652783c0086d592d5e
+id: At1uri/wasserstein-barycenter-risk-engine
+private: false
+pipeline_tag: feature-extraction
+tags:
+- optimal-transport
+- wasserstein-distance
+- sinkhorn-algorithm
+- wasserstein-barycenter
+- distributionally-robust
+- quantitative-finance
+- risk-management
+- feature-extraction
+- en
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: At1uri/wasserstein-barycenter-risk-engine
+author: At1uri
+sha: 9a3faab53dee1dfd4abdbe96ee527ed252148941
+lastModified: '2026-11-12T11:30:47.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  language:
+  - en
+  license: apache-2.0
+  tags:
+  - optimal-transport
+  - wasserstein-distance
+  - sinkhorn-algorithm
+  - wasserstein-barycenter
+  - distributionally-robust
+  - quantitative-finance
+  - risk-management
+  metrics:
+  - accuracy
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: benchmarks.json
+- rfilename: sinkhorn_couplings.json
+- rfilename: wasserstein_engine.py
+spaces: []
+createdAt: '2026-11-12T11:30:45.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-14T10:02:42.000Z'

@@ -1,0 +1,59 @@
+_id: 6af6108f1ceddc280cae6866
+id: spock-oss/sel-qwen-4b
+private: false
+pipeline_tag: feature-extraction
+tags:
+- safetensors
+- lora
+- selection
+- multimodal
+- text-selection
+- image-selection
+- feature-extraction
+- dataset:spock-oss/sel-27b-training
+- base_model:Qwen/Qwen3.5-4B
+- base_model:adapter:Qwen/Qwen3.5-4B
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: spock-oss/sel-qwen-4b
+author: spock-oss
+sha: 1c6615f5e853a01f1dba5308c1a93aa870010ce7
+lastModified: '2026-11-12T19:21:19.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  base_model: Qwen/Qwen3.5-4B
+  base_model_relation: adapter
+  datasets:
+  - spock-oss/sel-27b-training
+  pipeline_tag: feature-extraction
+  tags:
+  - lora
+  - selection
+  - multimodal
+  - text-selection
+  - image-selection
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: adapter_config.json
+- rfilename: adapter_model.safetensors
+- rfilename: run_selection.py
+- rfilename: sel_config.json
+- rfilename: selection_head.safetensors
+spaces: []
+createdAt: '2026-11-12T19:16:31.000Z'
+usedStorage: 137323284
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 137.3
+approxSizeMb: 0.0
+fetchedAt: '2026-11-14T10:02:42.000Z'

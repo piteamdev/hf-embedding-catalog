@@ -1,0 +1,52 @@
+_id: 6af5d4874c915310e5d49b9e
+id: artideinnova/siglip2-base-patch16-256-text-coreml
+private: false
+pipeline_tag: feature-extraction
+library_name: coreml
+tags:
+- coreml
+- siglip2
+- text-embedding
+- macos
+- feature-extraction
+- base_model:google/siglip2-base-patch16-256
+- base_model:finetune:google/siglip2-base-patch16-256
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: artideinnova/siglip2-base-patch16-256-text-coreml
+author: artideinnova
+sha: 90d41162d15a9f0ccf8ca340bf0cb55bd5d0fb28
+lastModified: '2026-11-12T15:03:49.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: google/siglip2-base-patch16-256
+  library_name: coreml
+  pipeline_tag: feature-extraction
+  tags:
+  - siglip2
+  - coreml
+  - text-embedding
+  - macos
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: SigLIP2Text.mlmodelc.zip
+- rfilename: convert-text.py
+- rfilename: tokenizer.model
+spaces: []
+createdAt: '2026-11-12T15:00:23.000Z'
+usedStorage: 534744970
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-14T10:02:42.000Z'

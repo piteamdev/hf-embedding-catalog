@@ -1,0 +1,81 @@
+_id: 6692977c5d1525fdfac98101
+id: sherif1311/twitter-sentiment-latest
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- roberta
+- feature-extraction
+- en
+- dataset:tweet_eval
+- arxiv:2202.03829
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: sherif1311/twitter-sentiment-latest
+author: sherif1311
+sha: dea2e1ffc4c2ceb8380b7b69c751074014a4772e
+lastModified: '2024-07-13T15:04:42.000Z'
+gated: auto
+disabled: false
+mask_token: <mask>
+widgetData:
+- text: Covid cases are increasing fast!
+model-index:
+- name: sherif1311/twitter-sentiment-latest
+  results: []
+  model-name: sherif1311/twitter-sentiment-latest
+config:
+  architectures:
+  - RobertaModel
+  model_type: roberta
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  datasets:
+  - tweet_eval
+  language: en
+  widget:
+  - text: Covid cases are increasing fast!
+  model-index:
+  - name: sherif1311/twitter-sentiment-latest
+    results: []
+    model-name: sherif1311/twitter-sentiment-latest
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: merges.txt
+- rfilename: model.safetensors
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: vocab.json
+spaces: []
+createdAt: '2024-07-13T15:04:28.000Z'
+safetensors:
+  parameters:
+    F32: 124645632
+  total: 124645632
+usedStorage: 498604904
+downloadsAllTime: 2
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 498.6
+approxSizeMb: 498.6
+fetchedAt: '2026-11-14T10:02:42.000Z'

@@ -1,0 +1,70 @@
+_id: 6af65d203b325a1767a4aa75
+id: IntezraInc/harrier-oss-v1-27b-GGUF
+private: false
+pipeline_tag: feature-extraction
+library_name: gguf
+tags:
+- gguf
+- embeddings
+- text-embeddings
+- llama.cpp
+- gemma3
+- mteb
+- feature-extraction
+- multilingual
+- base_model:microsoft/harrier-oss-v1-27b
+- base_model:quantized:microsoft/harrier-oss-v1-27b
+- license:mit
+- endpoints_compatible
+- region:us
+downloads: 83
+likes: 0
+modelId: IntezraInc/harrier-oss-v1-27b-GGUF
+author: IntezraInc
+sha: 848ea1b5d15ec95c1dd8dd1c4368b5cd940f0030
+lastModified: '2026-11-13T00:44:37.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  base_model: microsoft/harrier-oss-v1-27b
+  base_model_relation: quantized
+  license: mit
+  library_name: gguf
+  pipeline_tag: feature-extraction
+  tags:
+  - embeddings
+  - text-embeddings
+  - gguf
+  - llama.cpp
+  - gemma3
+  - mteb
+  language:
+  - multilingual
+gguf:
+  total: 27009346304
+  architecture: gemma3
+  context_length: 131072
+  bos_token: <bos>
+  eos_token: <eos>
+  pooling_type: 3
+  totalFileSize: 16546687936
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: fix_arch.py
+- rfilename: fix_tokenizer.py
+- rfilename: harrier-27b-Q4_K_M.gguf
+- rfilename: harrier-27b-Q5_K_M.gguf
+- rfilename: harrier-27b-Q6_K.gguf
+spaces: []
+createdAt: '2026-11-13T00:43:12.000Z'
+usedStorage: 57985336128
+downloadsAllTime: 83
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-14T10:02:42.000Z'

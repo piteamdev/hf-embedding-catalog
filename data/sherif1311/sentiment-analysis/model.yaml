@@ -1,0 +1,67 @@
+_id: 669261df4f911aa1af9d20ac
+id: sherif1311/sentiment-analysis
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- roberta
+- feature-extraction
+- arxiv:1910.09700
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: sherif1311/sentiment-analysis
+author: sherif1311
+sha: 2de4ac5ea9ed2e54c99dd6ecc3d3d85d9afbb268
+lastModified: '2024-07-13T11:16:16.000Z'
+gated: auto
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - RobertaModel
+  model_type: roberta
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  library_name: transformers
+  tags: []
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: merges.txt
+- rfilename: model.safetensors
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: vocab.json
+spaces: []
+createdAt: '2024-07-13T11:15:43.000Z'
+safetensors:
+  parameters:
+    F32: 124645632
+  total: 124645632
+usedStorage: 498604904
+downloadsAllTime: 1
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 498.6
+approxSizeMb: 498.6
+fetchedAt: '2026-11-14T10:02:42.000Z'

@@ -1,0 +1,171 @@
+_id: 6af6d474621bc191d1416286
+id: jonathanjordan21/sarcasm-indonesian-sentence-transformer
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:7407
+- loss:CosineSimilarityLoss
+- arxiv:1908.10084
+- base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- base_model:finetune:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: jonathanjordan21/sarcasm-indonesian-sentence-transformer
+author: jonathanjordan21
+sha: 47e0ba7e22510160b37ed7a844881cc0eec6ccbe
+lastModified: '2026-11-13T09:12:46.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: nah bagus semua kan?
+  sentences:
+  - Beban hidup lg banyak, di rumah isinya gampang tensi, ya udah keluar rumah dulu buat bungkus makanan orang2 padahal pengen
+    nyari tempat sebat aja sambil Istighfar nunggu makanan nya selesai dimasak
+  - Selama proses pengadilan, kita investigate background mrk jg dan mrk mmg ternyata sering gitu (iseng test nyerobot pura2
+    bego). Dan tanahnya byk di daerah2.
+  - Tenang, lulusan akademi militer kan bisa segalanya tuh sampe jadi menteri, pejabat dan bisnismen kaya. Kalau jadi nakes
+    gampang lah ya kan lulusan sana serba bisa.
+- source_sentence: Jangan meremehkan kekuatan susu
+  sentences:
+  - Tapi maspion bagus kok
+  - Kira2 antara Ganjar dan Wowo siapa yg bakal ngelanjutkan kebijakan Jokowi?
+  - Yeah. Mobil keluarga idaman mertua. Hkhkhk
+- source_sentence: Well rata2 argument yg dipakai adalah "kita takut tidak bisa bertemu orang tua kita lagi"
+  sentences:
+  - Lha itu ada Puan
+  - kalo gasalah yg buat PPT designnya juga bikin design lain yg temanya keren2 juga, kaya alice in borderland, AESPA juga
+    dia buat. aku follow ignya.
+  - rekomen kado buat cowok dong, bingung dah. pengen yang fungsional dan beneran kepake.
+- source_sentence: Minta tolong temen :( dulu pernah ditawarin soalnya wkwk
+  sentences:
+  - M-banking app yang rilisan baru banyak kok yang bagus tampilannya, contoh jenius/digibank/dll
+  - Ini lumayan oke sih, gua pakai buat harian. Botol minum muat, baju ganti, ada slot buat tab sendiri di paling belakang
+    deket tali selempangnya
+  - Ga ada yang namanya mental disorder, yang ada cuma kurang berdoa.
+- source_sentence: bukannya SPS? (stroke per second)
+  sentences:
+  - Selama proses pengadilan, kita investigate background mrk jg dan mrk mmg ternyata sering gitu (iseng test nyerobot pura2
+    bego). Dan tanahnya byk di daerah2.
+  - padahal Uzumaki-nya Naruto cuma 20 ribuan
+  - Israel mana?
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:7407
+  - loss:CosineSimilarityLoss
+  base_model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  widget:
+  - source_sentence: nah bagus semua kan?
+    sentences:
+    - Beban hidup lg banyak, di rumah isinya gampang tensi, ya udah keluar rumah dulu buat bungkus makanan orang2 padahal
+      pengen nyari tempat sebat aja sambil Istighfar nunggu makanan nya selesai dimasak
+    - Selama proses pengadilan, kita investigate background mrk jg dan mrk mmg ternyata sering gitu (iseng test nyerobot pura2
+      bego). Dan tanahnya byk di daerah2.
+    - Tenang, lulusan akademi militer kan bisa segalanya tuh sampe jadi menteri, pejabat dan bisnismen kaya. Kalau jadi nakes
+      gampang lah ya kan lulusan sana serba bisa.
+  - source_sentence: Jangan meremehkan kekuatan susu
+    sentences:
+    - Tapi maspion bagus kok
+    - Kira2 antara Ganjar dan Wowo siapa yg bakal ngelanjutkan kebijakan Jokowi?
+    - Yeah. Mobil keluarga idaman mertua. Hkhkhk
+  - source_sentence: Well rata2 argument yg dipakai adalah "kita takut tidak bisa bertemu orang tua kita lagi"
+    sentences:
+    - Lha itu ada Puan
+    - kalo gasalah yg buat PPT designnya juga bikin design lain yg temanya keren2 juga, kaya alice in borderland, AESPA juga
+      dia buat. aku follow ignya.
+    - rekomen kado buat cowok dong, bingung dah. pengen yang fungsional dan beneran kepake.
+  - source_sentence: Minta tolong temen :( dulu pernah ditawarin soalnya wkwk
+    sentences:
+    - M-banking app yang rilisan baru banyak kok yang bagus tampilannya, contoh jenius/digibank/dll
+    - Ini lumayan oke sih, gua pakai buat harian. Botol minum muat, baju ganti, ada slot buat tab sendiri di paling belakang
+      deket tali selempangnya
+    - Ga ada yang namanya mental disorder, yang ada cuma kurang berdoa.
+  - source_sentence: bukannya SPS? (stroke per second)
+    sentences:
+    - Selama proses pengadilan, kita investigate background mrk jg dan mrk mmg ternyata sering gitu (iseng test nyerobot pura2
+      bego). Dan tanahnya byk di daerah2.
+    - padahal Uzumaki-nya Naruto cuma 20 ribuan
+    - Israel mana?
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-13T09:12:20.000Z'
+safetensors:
+  parameters:
+    F32: 117653760
+  total: 117653760
+usedStorage: 487720403
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  initializer_range: 0.02
+  intermediate_size: 1536
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 1
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.22.1
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 250037
+onnxFiles: {}
+safetensorsSizeMb: 470.6
+approxSizeMb: 470.6
+fetchedAt: '2026-11-14T10:02:42.000Z'

@@ -1,0 +1,129 @@
+_id: 6af80cdd57606dd7e5aa6272
+id: 360ZhiNao/360Zhinao3-7B-O1.5
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- zhinao
+- feature-extraction
+- qihoo360
+- 奇虎360
+- 360Zhinao
+- pretrain
+- custom_code
+- zh
+- en
+- arxiv:2405.13386
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: 360ZhiNao/360Zhinao3-7B-O1.5
+author: 360ZhiNao
+sha: a145a342d0f2bf0a3458bc7f1ba7edf841c88b1a
+lastModified: '2026-11-14T07:25:17.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - ZhinaoForCausalLM
+  auto_map:
+    AutoConfig: configuration_zhinao.ZhinaoConfig
+    AutoModel: modeling_zhinao.ZhinaoForCausalLM
+    AutoModelForCausalLM: modeling_zhinao.ZhinaoForCausalLM
+  model_type: zhinao
+  tokenizer_config:
+    eos_token: <|im_end|>
+    pad_token: <pad>
+    chat_template: '{% for message in messages %}{% if loop.first and messages[0][''role''] != ''system'' %}{{ ''<|im_start|>system
+
+      You are a helpful assistant.<|im_end|>
+
+      '' }}{% endif %}{{''<|im_start|>'' + message[''role''] + ''
+
+      '' + message[''content''] + ''<|im_end|>'' + ''
+
+      ''}}{% endfor %}{% if add_generation_prompt %}{{ ''<|im_start|>assistant
+
+      '' }}{% endif %}'
+cardData:
+  license: apache-2.0
+  language:
+  - zh
+  - en
+  library_name: transformers
+  tags:
+  - qihoo360
+  - 奇虎360
+  - zhinao
+  - 360Zhinao
+  - pretrain
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_zhinao.ZhinaoForCausalLM
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: configuration_zhinao.py
+- rfilename: generation_config.json
+- rfilename: model-00001-of-00004.safetensors
+- rfilename: model-00002-of-00004.safetensors
+- rfilename: model-00003-of-00004.safetensors
+- rfilename: model-00004-of-00004.safetensors
+- rfilename: model.safetensors.index.json
+- rfilename: modeling_zhinao.py
+- rfilename: special_tokens_map.json
+- rfilename: tokenization_zhinao.py
+- rfilename: tokenizer_config.json
+- rfilename: vocab/360.tiktoken
+spaces: []
+createdAt: '2026-11-14T07:25:17.000Z'
+safetensors:
+  parameters:
+    BF16: 7774605312
+  total: 7774605312
+usedStorage: 15549240640
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - ZhinaoForCausalLM
+  attention_dropout: 0.1
+  attn_dropout_prob: 0.1
+  auto_map:
+    AutoConfig: configuration_zhinao.ZhinaoConfig
+    AutoModel: modeling_zhinao.ZhinaoForCausalLM
+    AutoModelForCausalLM: modeling_zhinao.ZhinaoForCausalLM
+  emb_dropout_prob: 0.1
+  flah-attn_version: 2.5.5
+  hidden_act: silu
+  hidden_size: 4096
+  initializer_range: 0.01
+  intermediate_size: 13056
+  max_position_embeddings: 32768
+  max_window_layers: 28
+  model_type: zhinao
+  num_attention_heads: 32
+  num_hidden_layers: 32
+  num_key_value_heads: 8
+  rms_norm_eps: 1.0e-05
+  rope_scaling: null
+  rope_theta: 1000000
+  sliding_window: null
+  switch: 0
+  tie_word_embeddings: false
+  torch_dtype: bfloat16
+  transformers_version: 4.46.1
+  use_cache: false
+  use_focal: false
+  use_sliding_window: false
+  vocab_size: 158464
+onnxFiles: {}
+safetensorsSizeMb: 15549.2
+approxSizeMb: 15549.2
+fetchedAt: '2026-11-14T10:02:42.000Z'

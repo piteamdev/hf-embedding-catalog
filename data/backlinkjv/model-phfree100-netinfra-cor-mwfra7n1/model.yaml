@@ -1,0 +1,46 @@
+_id: 6af7c018ced10d8fb2e5885c
+id: backlinkjv/model-phfree100-netinfra-cor-mwfra7n1
+private: false
+pipeline_tag: feature-extraction
+tags:
+- network-infrastructure
+- anycast
+- seo-authority
+- high-performance
+- feature-extraction
+- en
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: backlinkjv/model-phfree100-netinfra-cor-mwfra7n1
+author: backlinkjv
+sha: 63229e012ddd610301ec7c6c05a2530fa9b455c8
+lastModified: '2026-11-14T01:57:45.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  language:
+  - en
+  license: mit
+  tags:
+  - network-infrastructure
+  - anycast
+  - seo-authority
+  - high-performance
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+spaces: []
+createdAt: '2026-11-14T01:57:44.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-14T10:02:42.000Z'

@@ -1,0 +1,61 @@
+_id: 6af905366a5b1af4d9894b5f
+id: Kovach-Enterprises/speedrun-d768-a100-verifiable-embedding
+private: false
+pipeline_tag: feature-extraction
+tags:
+- zkml
+- r1cs
+- circom
+- jax
+- a100
+- thermodynamic-ai
+- landauer
+- base-l2
+- feature-extraction
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: Kovach-Enterprises/speedrun-d768-a100-verifiable-embedding
+author: Kovach-Enterprises
+sha: 20428f195ad7352dd08dcd2d4526bb5b22717060
+lastModified: '2026-11-15T08:04:33.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  tags:
+  - zkml
+  - r1cs
+  - circom
+  - jax
+  - a100
+  - thermodynamic-ai
+  - landauer
+  - base-l2
+  - feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: CODEOWNERS
+- rfilename: README.md
+- rfilename: jax_kernels/deterministic_l2_r1cs_d768.py
+- rfilename: speedrunpapi-deterministic-embeddings/CODEOWNERS
+- rfilename: speedrunpapi-deterministic-embeddings/SPEC.md
+- rfilename: speedrunpapi-deterministic-embeddings/VERIFICATION-v2.md
+- rfilename: speedrunpapi-deterministic-embeddings/circuits/deterministic_cosine_infonce.circom
+- rfilename: speedrunpapi-deterministic-embeddings/circuits/deterministic_l2_embedding.circom
+- rfilename: speedrunpapi-deterministic-embeddings/circuits/deterministic_mhsa_rope.circom
+- rfilename: speedrunpapi-deterministic-embeddings/jax/deterministic_mhsa_rope_jax.py
+- rfilename: speedrunpapi-deterministic-embeddings/proofs/DeterministicEmbedding.lean
+spaces: []
+createdAt: '2026-11-15T01:04:54.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-15T10:38:38.000Z'

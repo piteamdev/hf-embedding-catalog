@@ -1,0 +1,160 @@
+_id: 6af897837256661d477b7173
+id: AdrianTheLegend/mnli-bert-cased
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- bert
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:50000
+- loss:MultipleNegativesRankingLoss
+- dataset:SetFit/mnli
+- arxiv:1908.10084
+- arxiv:1807.03748
+- base_model:google-bert/bert-base-cased
+- base_model:finetune:google-bert/bert-base-cased
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 17
+likes: 0
+modelId: AdrianTheLegend/mnli-bert-cased
+author: AdrianTheLegend
+sha: 3aa228ecbb3356d2455492f995f6d4bd9faa5a59
+lastModified: '2026-11-14T17:33:50.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: Sometimes the people who represent themselves don't even know the significant facts of their case.
+  sentences:
+  - The law is very easy to understand, so representing yourself in court is the best way to win a case.
+  - Sewage poured into upstairs windows from the streets while people whispered to each other.
+  - His faith may be lacking.
+- source_sentence: When he married in 1901, he and his wife (Olga Knipper of the Moscow Art Theater) went directly from the
+    ceremony to a honeymoon in a sanitarium.
+  sentences:
+  - if a person wants to eat you understand that
+  - 'His wife has never went to a sanitarium. '
+  - The new system appears far more complex, but ultimately easier and more thorough.
+- source_sentence: it really is i heard something that their supposed to be starting a huge campaign in New York about um
+    child abuse and stopping child abuse and it's supposed to be like it's starting there supposed to be like a big nationwide
+    campaign and you know so hopefully that will take off and really do something i don't know there's just
+  sentences:
+  - The Washington Post was the first company to report on attempts of private companies growing embryos.
+  - Me too?
+  - It's unfortunate that nobody is organizing a child abuse campaign.
+- source_sentence: On the mainland, an invasion of even greater significance followed in 1580, when Philip II of Spain proclaimed
+    himself king of Portugal and marched his armies across the border.
+  sentences:
+  - Some of the modern buildings that were erected in their place are not admired today.
+  - Jon wanted to save them from the angry mob.
+  - Philip II of Spain invaded Portugal.
+- source_sentence: The river plays a central role in all visits to Paris.
+  sentences:
+  - He said Dave Hanson.
+  - The river is central to all vacations to Paris.
+  - Trauma is the leading cause of alcohol abuse.
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:50000
+  - loss:MultipleNegativesRankingLoss
+  base_model: google-bert/bert-base-cased
+  widget:
+  - source_sentence: Sometimes the people who represent themselves don't even know the significant facts of their case.
+    sentences:
+    - The law is very easy to understand, so representing yourself in court is the best way to win a case.
+    - Sewage poured into upstairs windows from the streets while people whispered to each other.
+    - His faith may be lacking.
+  - source_sentence: When he married in 1901, he and his wife (Olga Knipper of the Moscow Art Theater) went directly from
+      the ceremony to a honeymoon in a sanitarium.
+    sentences:
+    - if a person wants to eat you understand that
+    - 'His wife has never went to a sanitarium. '
+    - The new system appears far more complex, but ultimately easier and more thorough.
+  - source_sentence: it really is i heard something that their supposed to be starting a huge campaign in New York about um
+      child abuse and stopping child abuse and it's supposed to be like it's starting there supposed to be like a big nationwide
+      campaign and you know so hopefully that will take off and really do something i don't know there's just
+    sentences:
+    - The Washington Post was the first company to report on attempts of private companies growing embryos.
+    - Me too?
+    - It's unfortunate that nobody is organizing a child abuse campaign.
+  - source_sentence: On the mainland, an invasion of even greater significance followed in 1580, when Philip II of Spain proclaimed
+      himself king of Portugal and marched his armies across the border.
+    sentences:
+    - Some of the modern buildings that were erected in their place are not admired today.
+    - Jon wanted to save them from the angry mob.
+    - Philip II of Spain invaded Portugal.
+  - source_sentence: The river plays a central role in all visits to Paris.
+    sentences:
+    - He said Dave Hanson.
+    - The river is central to all vacations to Paris.
+    - Trauma is the leading cause of alcohol abuse.
+  datasets:
+  - SetFit/mnli
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model (1).safetensors
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-14T17:16:51.000Z'
+usedStorage: 433263424
+downloadsAllTime: 17
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.22.1
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 28996
+onnxFiles: {}
+safetensorsSizeMb: 433.3
+approxSizeMb: 0.0
+fetchedAt: '2026-11-15T10:38:38.000Z'

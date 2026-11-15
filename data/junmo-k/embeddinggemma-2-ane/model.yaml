@@ -1,0 +1,71 @@
+_id: 6af87065110e592e16d16a3a
+id: junmo-k/embeddinggemma-2-ane
+private: false
+pipeline_tag: feature-extraction
+library_name: coreml
+tags:
+- coreml
+- apple-neural-engine
+- on-device
+- embeddings
+- sentence-similarity
+- multimodal-embedding
+- gemma
+- feature-extraction
+- multilingual
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:apache-2.0
+- region:us
+downloads: 27
+likes: 0
+modelId: junmo-k/embeddinggemma-2-ane
+author: junmo-k
+sha: f21079a26cd857807917d17fb4a8c30913cf2def
+lastModified: '2026-11-14T20:10:55.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: google/embeddinggemma-2
+  library_name: coreml
+  pipeline_tag: feature-extraction
+  language:
+  - multilingual
+  tags:
+  - coreml
+  - apple-neural-engine
+  - on-device
+  - embeddings
+  - sentence-similarity
+  - multimodal-embedding
+  - gemma
+siblings:
+- rfilename: .gitattributes
+- rfilename: EmbeddingGemma2Text.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: EmbeddingGemma2Text.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: EmbeddingGemma2Text.mlpackage/Manifest.json
+- rfilename: EmbeddingGemma2Vision.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: EmbeddingGemma2Vision.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: EmbeddingGemma2Vision.mlpackage/Manifest.json
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: embeddings.bf16
+- rfilename: manifest.json
+- rfilename: position_embeddings.f16
+- rfilename: selftest.bin
+- rfilename: selftest.json
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-11-14T14:29:57.000Z'
+usedStorage: 1311722543
+downloadsAllTime: 27
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-15T10:38:38.000Z'

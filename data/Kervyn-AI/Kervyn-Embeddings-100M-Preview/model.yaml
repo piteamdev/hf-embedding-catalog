@@ -1,0 +1,199 @@
+_id: 6af98141982acc9f5a853b33
+id: Kervyn-AI/Kervyn-Embeddings-100M-Preview
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- modernbert
+- feature-extraction
+- sentence-similarity
+- retrieval
+- spanish
+- cross-lingual
+- kervyn
+- preview
+- es
+- en
+- dataset:HuggingFaceFW/fineweb-2
+- dataset:HuggingFaceFW/fineweb-edu
+- dataset:wikimedia/wikipedia
+- dataset:codeparrot/github-code-clean
+- dataset:Helsinki-NLP/un_pc
+- dataset:stanford-oval/ccnews
+- dataset:coastalcph/multi_eurlex
+- dataset:PlanTL-GOB-ES/SQAC
+- dataset:dariolopez/ms-marco-es-500k
+- dataset:sentence-transformers/msmarco-bm25
+- dataset:sentence-transformers/natural-questions
+- dataset:sentence-transformers/gooaq
+- dataset:sentence-transformers/squad
+- dataset:sentence-transformers/eli5
+- dataset:sentence-transformers/all-nli
+- dataset:sentence-transformers/s2orc
+- dataset:sentence-transformers/stackexchange-duplicates
+- dataset:sentence-transformers/parallel-sentences-europarl
+- dataset:sentence-transformers/parallel-sentences-tatoeba
+- dataset:sentence-transformers/parallel-sentences-talks
+- dataset:sentence-transformers/parallel-sentences-global-voices
+- dataset:sentence-transformers/codesearchnet
+- dataset:code-search-net/code_search_net
+- dataset:flax-sentence-embeddings/stackexchange_title_body_jsonl
+- dataset:flax-sentence-embeddings/stackexchange_titlebody_best_voted_answer_jsonl
+- license:apache-2.0
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: Kervyn-AI/Kervyn-Embeddings-100M-Preview
+author: Kervyn-AI
+sha: e82d709d1d86cbab3635a0ac04713f0ec0332957
+lastModified: '2026-11-15T10:07:03.000Z'
+gated: false
+disabled: false
+mask_token: <|mask|>
+widgetData:
+- source_sentence: Esa es una persona feliz
+  sentences:
+  - Ese es un perro feliz
+  - Esa es una persona muy feliz
+  - Hoy es un día soleado
+model-index: null
+config:
+  architectures:
+  - ModernBertModel
+  model_type: modernbert
+  tokenizer_config:
+    bos_token: <|bos|>
+    eos_token: <|eos|>
+    sep_token: <|eos|>
+    pad_token: <|pad|>
+    cls_token: <|bos|>
+    mask_token: <|mask|>
+cardData:
+  language:
+  - es
+  - en
+  license: apache-2.0
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  tags:
+  - sentence-transformers
+  - feature-extraction
+  - sentence-similarity
+  - retrieval
+  - spanish
+  - cross-lingual
+  - kervyn
+  - preview
+  datasets:
+  - HuggingFaceFW/fineweb-2
+  - HuggingFaceFW/fineweb-edu
+  - wikimedia/wikipedia
+  - codeparrot/github-code-clean
+  - Helsinki-NLP/un_pc
+  - stanford-oval/ccnews
+  - coastalcph/multi_eurlex
+  - PlanTL-GOB-ES/SQAC
+  - dariolopez/ms-marco-es-500k
+  - sentence-transformers/msmarco-bm25
+  - sentence-transformers/natural-questions
+  - sentence-transformers/gooaq
+  - sentence-transformers/squad
+  - sentence-transformers/eli5
+  - sentence-transformers/all-nli
+  - sentence-transformers/s2orc
+  - sentence-transformers/stackexchange-duplicates
+  - sentence-transformers/parallel-sentences-europarl
+  - sentence-transformers/parallel-sentences-tatoeba
+  - sentence-transformers/parallel-sentences-talks
+  - sentence-transformers/parallel-sentences-global-voices
+  - sentence-transformers/codesearchnet
+  - code-search-net/code_search_net
+  - flax-sentence-embeddings/stackexchange_title_body_jsonl
+  - flax-sentence-embeddings/stackexchange_titlebody_best_voted_answer_jsonl
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: assets/flag-es.svg
+- rfilename: assets/flag-gb.svg
+- rfilename: config.json
+- rfilename: kervyn_embed.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-15T09:54:09.000Z'
+safetensors:
+  parameters:
+    F32: 103877376
+  total: 103877376
+usedStorage: 415516680
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - ModernBertModel
+  attention_bias: false
+  attention_dropout: 0.0
+  bos_token_id: 1
+  classifier_activation: gelu
+  classifier_bias: false
+  classifier_dropout: 0.0
+  classifier_pooling: mean
+  cls_token_id: 1
+  decoder_bias: true
+  deterministic_flash_attn: false
+  dtype: float32
+  embedding_dropout: 0.0
+  eos_token_id: 2
+  hidden_activation: gelu
+  hidden_size: 768
+  initializer_cutoff_factor: 2.0
+  initializer_range: 0.02
+  intermediate_size: 2048
+  layer_types:
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  local_attention: 128
+  max_position_embeddings: 1024
+  mlp_bias: false
+  mlp_dropout: 0.0
+  model_type: modernbert
+  norm_bias: false
+  norm_eps: 1.0e-05
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  rope_parameters:
+    full_attention:
+      rope_theta: 160000.0
+      rope_type: default
+    sliding_attention:
+      rope_theta: 10000.0
+      rope_type: default
+  sep_token_id: 2
+  sparse_pred_ignore_index: -100
+  sparse_prediction: false
+  tie_word_embeddings: true
+  transformers_version: 5.22.2
+  vocab_size: 24640
+onnxFiles: {}
+safetensorsSizeMb: 415.5
+approxSizeMb: 415.5
+fetchedAt: '2026-11-15T10:38:38.000Z'

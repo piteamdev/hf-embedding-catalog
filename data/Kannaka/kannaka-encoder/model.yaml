@@ -1,0 +1,65 @@
+_id: 6af8a2499df4b4831aa57fb8
+id: Kannaka/kannaka-encoder
+private: false
+pipeline_tag: sentence-similarity
+library_name: safetensors
+tags:
+- safetensors
+- kannaka
+- embeddings
+- sentence-similarity
+- memory
+- en
+- base_model:sentence-transformers/all-MiniLM-L6-v2
+- base_model:finetune:sentence-transformers/all-MiniLM-L6-v2
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: Kannaka/kannaka-encoder
+author: Kannaka
+sha: 0a90520df1ff19da33b1484bf4f9ea72d692e732
+lastModified: '2026-11-14T22:23:48.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: safetensors
+  pipeline_tag: sentence-similarity
+  base_model: sentence-transformers/all-MiniLM-L6-v2
+  tags:
+  - kannaka
+  - embeddings
+  - sentence-similarity
+  - memory
+  language:
+  - en
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: SHA256SUMS
+- rfilename: model.safetensors
+- rfilename: tokenizer.json
+- rfilename: vocab.txt
+spaces: []
+createdAt: '2026-11-14T18:02:49.000Z'
+safetensors:
+  parameters:
+    F16: 22565376
+  total: 22565376
+usedStorage: 45141872
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 45.1
+approxSizeMb: 45.1
+fetchedAt: '2026-11-15T10:38:38.000Z'

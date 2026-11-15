@@ -1,0 +1,331 @@
+_id: 6ae880050b3ffb006ce5798b
+id: daniel-gomm/sciseek-nano
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- onnx
+- safetensors
+- modernbert
+- feature-extraction
+- sentence-similarity
+- text-retrieval
+- scientific-papers
+- literature-search
+- arxiv
+- transformers.js
+- en
+- dataset:daniel-gomm/sciseek-train
+- dataset:daniel-gomm/SciSeek
+- base_model:ibm-granite/granite-embedding-small-english-r2
+- base_model:quantized:ibm-granite/granite-embedding-small-english-r2
+- license:apache-2.0
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: daniel-gomm/sciseek-nano
+author: daniel-gomm
+sha: 5f39a90a8b434a5d99e5e09771130fda7635a801
+lastModified: '2026-11-15T09:06:40.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index:
+- name: sciseek-nano
+  results:
+  - task:
+      type: retrieval
+      name: Retrieval
+    dataset:
+      type: daniel-gomm/SciSeek
+      name: SciSeek (test)
+      split: test
+    metrics:
+    - type: ndcg_at_10
+      value: 0.6461
+      verified: false
+    - type: recall_at_10
+      value: 0.5418
+      verified: false
+  - task:
+      type: retrieval
+      name: Retrieval
+    dataset:
+      type: princeton-nlp/LitSearch
+      name: LitSearch
+    metrics:
+    - type: ndcg_at_10
+      value: 0.5119
+      verified: false
+  - task:
+      type: retrieval
+      name: Retrieval
+    dataset:
+      type: doris-mae
+      name: DORIS-MAE
+    metrics:
+    - type: ndcg_at_10
+      value: 0.6506
+      verified: false
+  - task:
+      type: retrieval
+      name: Retrieval
+    dataset:
+      type: BeIR/trec-covid
+      name: BEIR TREC-COVID
+    metrics:
+    - type: ndcg_at_10
+      value: 0.6304
+      verified: false
+  - task:
+      type: retrieval
+      name: Retrieval
+    dataset:
+      type: BeIR/scifact
+      name: BEIR SciFact
+    metrics:
+    - type: ndcg_at_10
+      value: 0.7413
+      verified: false
+  - task:
+      type: retrieval
+      name: Retrieval
+    dataset:
+      type: BeIR/nfcorpus
+      name: BEIR NFCorpus
+    metrics:
+    - type: ndcg_at_10
+      value: 0.3657
+      verified: false
+  - task:
+      type: retrieval
+      name: Retrieval
+    dataset:
+      type: BeIR/scidocs
+      name: BEIR SciDocs
+    metrics:
+    - type: ndcg_at_10
+      value: 0.2287
+      verified: false
+config:
+  architectures:
+  - ModernBertModel
+  model_type: modernbert
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  language:
+  - en
+  license: apache-2.0
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  base_model: ibm-granite/granite-embedding-small-english-r2
+  datasets:
+  - daniel-gomm/sciseek-train
+  - daniel-gomm/SciSeek
+  tags:
+  - sentence-transformers
+  - feature-extraction
+  - sentence-similarity
+  - text-retrieval
+  - scientific-papers
+  - literature-search
+  - arxiv
+  - onnx
+  - transformers.js
+  model-index:
+  - name: sciseek-nano
+    results:
+    - task:
+        type: retrieval
+        name: Retrieval
+      dataset:
+        type: daniel-gomm/SciSeek
+        name: SciSeek (test)
+        split: test
+      metrics:
+      - type: ndcg_at_10
+        value: 0.6461
+        verified: false
+      - type: recall_at_10
+        value: 0.5418
+        verified: false
+    - task:
+        type: retrieval
+        name: Retrieval
+      dataset:
+        type: princeton-nlp/LitSearch
+        name: LitSearch
+      metrics:
+      - type: ndcg_at_10
+        value: 0.5119
+        verified: false
+    - task:
+        type: retrieval
+        name: Retrieval
+      dataset:
+        type: doris-mae
+        name: DORIS-MAE
+      metrics:
+      - type: ndcg_at_10
+        value: 0.6506
+        verified: false
+    - task:
+        type: retrieval
+        name: Retrieval
+      dataset:
+        type: BeIR/trec-covid
+        name: BEIR TREC-COVID
+      metrics:
+      - type: ndcg_at_10
+        value: 0.6304
+        verified: false
+    - task:
+        type: retrieval
+        name: Retrieval
+      dataset:
+        type: BeIR/scifact
+        name: BEIR SciFact
+      metrics:
+      - type: ndcg_at_10
+        value: 0.7413
+        verified: false
+    - task:
+        type: retrieval
+        name: Retrieval
+      dataset:
+        type: BeIR/nfcorpus
+        name: BEIR NFCorpus
+      metrics:
+      - type: ndcg_at_10
+        value: 0.3657
+        verified: false
+    - task:
+        type: retrieval
+        name: Retrieval
+      dataset:
+        type: BeIR/scidocs
+        name: BEIR SciDocs
+      metrics:
+      - type: ndcg_at_10
+        value: 0.2287
+        verified: false
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: assets/overview.png
+- rfilename: assets/query_types.png
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: deploy/compose.tei.yml
+- rfilename: deploy/compose.vllm.yml
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: onnx/export_report.json
+- rfilename: onnx/model.onnx
+- rfilename: onnx/model_fp16.onnx
+- rfilename: onnx/model_quantized.onnx
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-02T12:20:21.000Z'
+safetensors:
+  parameters:
+    BF16: 47662464
+  total: 47662464
+usedStorage: 435075405
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - ModernBertModel
+  attention_bias: false
+  attention_dropout: 0.0
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 50281
+  classifier_activation: silu
+  classifier_bias: false
+  classifier_dropout: 0.0
+  classifier_pooling: mean
+  cls_token_id: 50281
+  decoder_bias: true
+  deterministic_flash_attn: false
+  dtype: bfloat16
+  embedding_dropout: 0.0
+  eos_token_id: 50282
+  global_attn_every_n_layers: 3
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_activation: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  initializer_cutoff_factor: 2.0
+  initializer_range: 0.02
+  intermediate_size: 1536
+  layer_norm_eps: 1.0e-05
+  layer_types:
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  local_attention: 128
+  max_position_embeddings: 8192
+  mlp_bias: false
+  mlp_dropout: 0.0
+  model_type: modernbert
+  norm_bias: false
+  norm_eps: 1.0e-05
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 50283
+  position_embedding_type: relative_key_query
+  repad_logits_with_grad: false
+  rope_parameters:
+    full_attention:
+      rope_theta: 80000
+      rope_type: default
+    sliding_attention:
+      rope_theta: 10000.0
+      rope_type: default
+  sep_token_id: 50282
+  sparse_pred_ignore_index: -100
+  sparse_prediction: false
+  tie_word_embeddings: true
+  transformers_version: 5.13.0
+  vocab_size: 50368
+onnxFiles:
+  onnx/model.onnx: 190.9
+  onnx/model_fp16.onnx: 95.6
+  onnx/model_quantized.onnx: 52.8
+safetensorsSizeMb: 95.3
+approxSizeMb: 95.3
+fetchedAt: '2026-11-15T10:38:38.000Z'

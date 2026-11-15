@@ -1,0 +1,157 @@
+_id: 6af88666c0f1dc548b7b2567
+id: OncoEvoAI/OncoEvoFM
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- oncoevofm
+- biology
+- genomics
+- feature-extraction
+- license:cc-by-4.0
+- endpoints_compatible
+- region:us
+downloads: 18
+likes: 0
+modelId: OncoEvoAI/OncoEvoFM
+author: OncoEvoAI
+sha: f349713b427cb7535dbf728f803d7ed8f2227cd6
+lastModified: '2026-11-14T16:08:52.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - OncoEvoModel
+  model_type: oncoevofm
+  tokenizer_config: {}
+cardData:
+  license: cc-by-4.0
+  library_name: transformers
+  tags:
+  - biology
+  - genomics
+  - feature-extraction
+transformersInfo:
+  auto_model: AutoModel
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: hotspots.json
+- rfilename: model.safetensors
+- rfilename: package_validation.json
+- rfilename: processor_config.json
+- rfilename: release_manifest.json
+- rfilename: requirements.txt
+- rfilename: tokenizer_config.json
+- rfilename: verification.json
+- rfilename: vocab.json
+spaces: []
+createdAt: '2026-11-14T16:03:50.000Z'
+safetensors:
+  parameters:
+    F32: 48546605
+  total: 48546605
+usedStorage: 194213828
+downloadsAllTime: 18
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - OncoEvoModel
+  attention_probs_dropout_prob: 0.1
+  categorical_feature_names:
+  - gene
+  - alt_type
+  - protein_effect
+  - func_class
+  - hotspot
+  - pathway
+  - modality
+  - assay_cov
+  - chrom
+  categorical_fields:
+    alt_type: 20
+    assay_cov: 5
+    chrom: 26
+    func_class: 8
+    gene: 19078
+    hotspot: 3
+    modality: 6
+    pathway: 11
+    protein_effect: 148
+  clonal_latent_dim: 64
+  cont_bins: 64
+  continuous_feature_names:
+  - vaf
+  - depth
+  - cn
+  - pos
+  continuous_fields:
+    cn:
+    - -3.0
+    - 3.0
+    depth:
+    - 0.0
+    - 1.0
+    pos:
+    - 0.0
+    - 1.0
+    vaf:
+    - 0.0
+    - 1.0
+  contrastive_dim: 128
+  contrastive_temp: 0.1
+  dtype: float32
+  gated_attention: false
+  hidden_dropout_prob: 0.1
+  hidden_size: 512
+  intermediate_size: 2048
+  kl_warmup_epochs: 3
+  layer_norm_eps: 1.0e-12
+  learning_rate: 0.0002
+  loss_weights:
+    assay_adv: 0.1
+    assay_pred: 0.5
+    cancer_type: 0.5
+    clonality: 2.0
+    clone_assign: 1.0
+    clone_level: 1.0
+    cna_recon: 1.0
+    contrastive: 0.1
+    kl: 0.01
+    masked_vaf: 1.0
+    mut_process: 0.5
+  max_clones: 8
+  mdn_components: 5
+  model_type: oncoevofm
+  mvp_value_field: vaf
+  n_cancer_types: 113
+  n_clonality_classes: 4
+  n_mut_process: 6
+  n_panels: 168
+  n_pathway_tokens: 16
+  norm_first: true
+  num_attention_heads: 8
+  num_hidden_layers: 12
+  optimizer: torch.optim.AdamW
+  pad_token_id: 0
+  processor_class: OncoEvoProcessor
+  release_version: hf-v1
+  source_model_version: OncoEvoFM_hub_v2
+  summary_tokens:
+  - CLS
+  - Z_CLONAL
+  - Z_PROCESS
+  - Z_LINEAGE
+  - Z_ASSAY
+  transformers_version: 5.5.3
+  use_vae_bottleneck: true
+  weight_decay: 0.001
+  oncoevofm_version: 0.1.1
+onnxFiles: {}
+safetensorsSizeMb: 194.2
+approxSizeMb: 194.2
+fetchedAt: '2026-11-15T10:38:38.000Z'

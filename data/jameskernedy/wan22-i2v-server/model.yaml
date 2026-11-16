@@ -1,0 +1,54 @@
+_id: 6af99ae539fca752614c70ec
+id: jameskernedy/wan22-i2v-server
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- custom-server
+- wan2.2
+- image-to-video
+- i2v
+- feature-extraction
+- en
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: jameskernedy/wan22-i2v-server
+author: jameskernedy
+sha: b53dd723ba73a6a00dc1965d8e223f3f44d8879d
+lastModified: '2026-11-15T11:51:54.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  language:
+  - en
+  library_name: transformers
+  pipeline_tag: feature-extraction
+  tags:
+  - custom-server
+  - wan2.2
+  - image-to-video
+  - i2v
+transformersInfo:
+  auto_model: AutoModel
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: run.sh
+- rfilename: server.py
+spaces: []
+createdAt: '2026-11-15T11:43:33.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-16T10:55:38.000Z'

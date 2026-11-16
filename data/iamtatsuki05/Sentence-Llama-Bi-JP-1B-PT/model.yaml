@@ -1,0 +1,136 @@
+_id: 6aa21a36d13cae320185f4c9
+id: iamtatsuki05/Sentence-Llama-Bi-JP-1B-PT
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- llama
+- feature-extraction
+- mirei
+- transformers
+- llm2vec
+- text-embedding
+- embeddings
+- retrieval
+- sentence-similarity
+- custom_code
+- ja
+- dataset:cl-nagoya/ruri-dataset-v2-pt
+- base_model:iamtatsuki05/Llama-Bi-JP-1B-PT-stage2
+- base_model:finetune:iamtatsuki05/Llama-Bi-JP-1B-PT-stage2
+- license:mit
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 14
+likes: 0
+modelId: iamtatsuki05/Sentence-Llama-Bi-JP-1B-PT
+author: iamtatsuki05
+sha: 97cadb617c6fb52fab8236aae54700a29bf51485
+lastModified: '2026-11-15T11:42:52.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - LlamaBiModel
+  auto_map:
+    AutoModel: iamtatsuki05/Llama-Bi-JP-1B-PT-stage2--modeling_bidirectional_llama.LlamaBiModel
+    AutoModelForCausalLM: iamtatsuki05/Llama-Bi-JP-1B-PT-stage2--modeling_bidirectional_llama.LlamaBiForMNTP
+    AutoModelForSequenceClassification: iamtatsuki05/Llama-Bi-JP-1B-PT-stage2--modeling_bidirectional_llama.LlamaBiForSequenceClassification
+  model_type: llama
+  tokenizer_config:
+    use_default_system_prompt: false
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: <sep>
+    pad_token: <pad>
+    cls_token: <cls>
+    mask_token: <mask>
+cardData:
+  language:
+  - ja
+  license: mit
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  tags:
+  - mirei
+  - llama
+  - transformers
+  - llm2vec
+  - text-embedding
+  - embeddings
+  - feature-extraction
+  - retrieval
+  base_model: iamtatsuki05/Llama-Bi-JP-1B-PT-stage2
+  datasets:
+  - cl-nagoya/ruri-dataset-v2-pt
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: iamtatsuki05/Llama-Bi-JP-1B-PT-stage2--modeling_bidirectional_llama.LlamaBiModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: README_JA.md
+- rfilename: assets/concept.jpg
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer.model
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-09-10T02:47:18.000Z'
+safetensors:
+  parameters:
+    F32: 1224038144
+  total: 1224038144
+usedStorage: 4898335805
+downloadsAllTime: 16
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - LlamaBiModel
+  attention_bias: false
+  attention_dropout: 0.0
+  auto_map:
+    AutoModel: iamtatsuki05/Llama-Bi-JP-1B-PT-stage2--modeling_bidirectional_llama.LlamaBiModel
+    AutoModelForCausalLM: iamtatsuki05/Llama-Bi-JP-1B-PT-stage2--modeling_bidirectional_llama.LlamaBiForMNTP
+    AutoModelForSequenceClassification: iamtatsuki05/Llama-Bi-JP-1B-PT-stage2--modeling_bidirectional_llama.LlamaBiForSequenceClassification
+  bos_token_id: 1
+  dtype: float32
+  eos_token_id: 2
+  head_dim: 112
+  hidden_act: silu
+  hidden_size: 1792
+  initializer_range: 0.02
+  intermediate_size: 6272
+  max_position_embeddings: 8192
+  mlp_bias: false
+  model_type: llama
+  num_attention_heads: 16
+  num_hidden_layers: 24
+  num_key_value_heads: 8
+  pad_token_id: 3
+  pretraining_tp: 1
+  rms_norm_eps: 1.0e-05
+  rope_scaling: null
+  rope_theta: 500000
+  tie_word_embeddings: false
+  transformers_version: 4.56.1
+  use_cache: true
+  vocab_size: 102400
+onnxFiles: {}
+safetensorsSizeMb: 4896.2
+approxSizeMb: 4896.2
+fetchedAt: '2026-11-16T10:55:38.000Z'

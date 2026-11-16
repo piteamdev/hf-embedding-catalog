@@ -1,0 +1,97 @@
+_id: 6afaa5ed95c64cce9710b4ed
+id: Iris-fla/ruri-base-npu-hf
+private: false
+pipeline_tag: feature-extraction
+library_name: openvino
+tags:
+- openvino
+- bert
+- sentence-embedding
+- japanese
+- int8
+- feature-extraction
+- ja
+- base_model:cl-nagoya/ruri-base
+- base_model:quantized:cl-nagoya/ruri-base
+- license:apache-2.0
+- region:us
+downloads: 13
+likes: 0
+modelId: Iris-fla/ruri-base-npu-hf
+author: Iris-fla
+sha: 48adff49b3b3299bfff739eb06df0ff4c9f7839e
+lastModified: '2026-11-16T06:45:28.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  license: apache-2.0
+  language:
+  - ja
+  base_model: cl-nagoya/ruri-base
+  base_model_relation: quantized
+  library_name: openvino
+  pipeline_tag: feature-extraction
+  tags:
+  - openvino
+  - sentence-embedding
+  - japanese
+  - int8
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: openvino_config.json
+- rfilename: openvino_model.bin
+- rfilename: openvino_model.xml
+- rfilename: tokenizer_config.json
+- rfilename: vocab.txt
+spaces: []
+createdAt: '2026-11-16T06:42:53.000Z'
+usedStorage: 111167623
+downloadsAllTime: 13
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: bfloat16
+  eos_token_id: null
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.5.4
+  type_vocab_size: 2
+  use_cache: true
+  vocab_size: 32768
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-16T10:55:38.000Z'

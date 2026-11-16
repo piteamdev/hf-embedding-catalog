@@ -1,0 +1,48 @@
+_id: 6afabdef9994d1dfbbd7425f
+id: nirdesho6o/turndrift-d2-vectors
+private: false
+pipeline_tag: feature-extraction
+library_name: safetune
+tags:
+- safetune
+- safety
+- prompt-injection
+- activation-steering
+- direction-vectors
+- feature-extraction
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: nirdesho6o/turndrift-d2-vectors
+author: nirdesho6o
+sha: 5e8a052529788930c1e73e2c3cfd76143b54c86d
+lastModified: '2026-11-16T08:25:20.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  tags:
+  - safety
+  - prompt-injection
+  - activation-steering
+  - direction-vectors
+  library_name: safetune
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: a1_summary.json
+- rfilename: a4_summary.json
+spaces: []
+createdAt: '2026-11-16T08:25:19.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-16T10:55:38.000Z'

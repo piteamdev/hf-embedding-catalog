@@ -1,0 +1,164 @@
+_id: 6a5cc33f790a516fd70ab643
+id: iamtatsuki05/Sentence-Qwen2.5-Scratch-Bi-EN-0.5B
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- qwen2
+- feature-extraction
+- mirei
+- transformers
+- llm2vec
+- text-embedding
+- embeddings
+- retrieval
+- sentence-similarity
+- custom_code
+- en
+- dataset:sentence-transformers/embedding-training-data
+- base_model:iamtatsuki05/Sentence-Qwen2.5-Scratch-Bi-EN-0.5B-PT
+- base_model:finetune:iamtatsuki05/Sentence-Qwen2.5-Scratch-Bi-EN-0.5B-PT
+- license:mit
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 14
+likes: 0
+modelId: iamtatsuki05/Sentence-Qwen2.5-Scratch-Bi-EN-0.5B
+author: iamtatsuki05
+sha: 7b437a22b6f052803ce979fff3edb849a54d051c
+lastModified: '2026-11-15T11:43:23.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config:
+  architectures:
+  - Qwen2BiModel
+  auto_map:
+    AutoModel: modeling_bidirectional_qwen2.Qwen2BiModel
+    AutoModelForCausalLM: modeling_bidirectional_qwen2.Qwen2BiForMNTP
+    AutoModelForSequenceClassification: modeling_bidirectional_qwen2.Qwen2BiForSequenceClassification
+  model_type: qwen2
+  tokenizer_config:
+    bos_token: null
+    eos_token: <|endoftext|>
+    unk_token: null
+    pad_token: <|endoftext|>
+cardData:
+  language:
+  - en
+  license: mit
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  tags:
+  - mirei
+  - qwen2
+  - transformers
+  - llm2vec
+  - text-embedding
+  - embeddings
+  - feature-extraction
+  - retrieval
+  base_model: iamtatsuki05/Sentence-Qwen2.5-Scratch-Bi-EN-0.5B-PT
+  datasets:
+  - sentence-transformers/embedding-training-data
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_bidirectional_qwen2.Qwen2BiModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: README_JA.md
+- rfilename: added_tokens.json
+- rfilename: assets/concept.jpg
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: merges.txt
+- rfilename: model.safetensors
+- rfilename: modeling_bidirectional_qwen2.py
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: vocab.json
+spaces: []
+createdAt: '2026-07-19T12:29:51.000Z'
+safetensors:
+  parameters:
+    F32: 494032768
+  total: 494032768
+usedStorage: 1987911552
+downloadsAllTime: 54
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - Qwen2BiModel
+  attention_dropout: 0.0
+  auto_map:
+    AutoModel: modeling_bidirectional_qwen2.Qwen2BiModel
+    AutoModelForCausalLM: modeling_bidirectional_qwen2.Qwen2BiForMNTP
+    AutoModelForSequenceClassification: modeling_bidirectional_qwen2.Qwen2BiForSequenceClassification
+  dtype: float32
+  eos_token_id: 151643
+  hidden_act: silu
+  hidden_size: 896
+  initializer_range: 0.02
+  intermediate_size: 4864
+  layer_types:
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  max_position_embeddings: 32768
+  max_window_layers: 24
+  model_type: qwen2
+  num_attention_heads: 14
+  num_hidden_layers: 24
+  num_key_value_heads: 2
+  pad_token_id: 151643
+  rms_norm_eps: 1.0e-06
+  rope_scaling: null
+  rope_theta: 1000000.0
+  sliding_window: null
+  tie_word_embeddings: true
+  transformers_version: 4.56.1
+  use_cache: true
+  use_mrope: false
+  use_sliding_window: false
+  vocab_size: 151936
+onnxFiles: {}
+safetensorsSizeMb: 1976.2
+approxSizeMb: 1976.1
+fetchedAt: '2026-11-16T10:55:38.000Z'

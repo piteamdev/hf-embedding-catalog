@@ -1,0 +1,291 @@
+_id: 6af9beb60386ac5f128be955
+id: dotproductx/breadbowl-embed-v1.3
+private: false
+pipeline_tag: sentence-similarity
+library_name: breadbowl-embed
+tags:
+- breadbowl-embed
+- safetensors
+- multi-vector
+- late-interaction
+- retrieval
+- reranking
+- research
+- sentence-similarity
+- en
+- dataset:lightonai/embeddings-pre-training-curated
+- dataset:lightonai/embeddings-fine-tuning
+- dataset:sentence-transformers/embedding-training-data
+- dataset:allenai/scirepeval
+- dataset:qiaojin/PubMedQA
+- base_model:Qwen/Qwen3.5-0.8B-Base
+- base_model:finetune:Qwen/Qwen3.5-0.8B-Base
+- license:apache-2.0
+- model-index
+- region:us
+downloads: 0
+likes: 0
+modelId: dotproductx/breadbowl-embed-v1.3
+author: dotproductx
+sha: c5be1a3c0c70398cd7cc8c90fc1d4f8046c6b5ab
+lastModified: '2026-11-15T19:16:28.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index:
+- name: breadbowl-embed-v1.3
+  results:
+  - task:
+      type: text-retrieval
+      name: Passage retrieval and reranking
+    dataset:
+      type: BeIR/msmarco
+      name: MS MARCO passage dev (BEIR, 6,980 queries, full 8,841,823-passage corpus)
+      split: dev
+    metrics:
+    - type: ndcg_at_10
+      name: nDCG@10, QKV (0.75 routing + 0.25 value), slot-hit width 128
+      value: 41.71
+      verified: false
+    - type: ndcg_at_10
+      name: nDCG@10, QK (routing only), slot-hit width 128
+      value: 39.3
+      verified: false
+    - type: recall_at_100
+      name: Recall@100, slot-hit width 128, relevance >= 1
+      value: 84.46
+      verified: false
+  - task:
+      type: text-retrieval
+      name: Passage retrieval and reranking
+    dataset:
+      type: trec-dl-2019-passage
+      name: TREC DL 2019 passage (43 judged queries, same 8,841,823-passage corpus)
+      split: test
+    metrics:
+    - type: ndcg_at_10
+      name: nDCG@10, QKV (0.75 routing + 0.25 value), slot-hit width 128
+      value: 74.63
+      verified: false
+    - type: ndcg_at_10
+      name: nDCG@10, QK (routing only), slot-hit width 128
+      value: 71.56
+      verified: false
+    - type: recall_at_100
+      name: Recall@100, slot-hit width 128, relevance >= 2
+      value: 57.01
+      verified: false
+  - task:
+      type: text-retrieval
+      name: Passage retrieval and reranking
+    dataset:
+      type: trec-dl-2020-passage
+      name: TREC DL 2020 passage (54 judged queries, same 8,841,823-passage corpus)
+      split: test
+    metrics:
+    - type: ndcg_at_10
+      name: nDCG@10, QKV (0.75 routing + 0.25 value), slot-hit width 128
+      value: 73.14
+      verified: false
+    - type: ndcg_at_10
+      name: nDCG@10, QK (routing only), slot-hit width 128
+      value: 68.73
+      verified: false
+    - type: recall_at_100
+      name: Recall@100, slot-hit width 128, relevance >= 2
+      value: 63.71
+      verified: false
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: breadbowl-embed
+  pipeline_tag: sentence-similarity
+  base_model: Qwen/Qwen3.5-0.8B-Base
+  base_model_relation: finetune
+  language:
+  - en
+  tags:
+  - multi-vector
+  - late-interaction
+  - retrieval
+  - reranking
+  - research
+  datasets:
+  - lightonai/embeddings-pre-training-curated
+  - lightonai/embeddings-fine-tuning
+  - sentence-transformers/embedding-training-data
+  - allenai/scirepeval
+  - qiaojin/PubMedQA
+  model-index:
+  - name: breadbowl-embed-v1.3
+    results:
+    - task:
+        type: text-retrieval
+        name: Passage retrieval and reranking
+      dataset:
+        type: BeIR/msmarco
+        name: MS MARCO passage dev (BEIR, 6,980 queries, full 8,841,823-passage corpus)
+        split: dev
+      metrics:
+      - type: ndcg_at_10
+        name: nDCG@10, QKV (0.75 routing + 0.25 value), slot-hit width 128
+        value: 41.71
+        verified: false
+      - type: ndcg_at_10
+        name: nDCG@10, QK (routing only), slot-hit width 128
+        value: 39.3
+        verified: false
+      - type: recall_at_100
+        name: Recall@100, slot-hit width 128, relevance >= 1
+        value: 84.46
+        verified: false
+    - task:
+        type: text-retrieval
+        name: Passage retrieval and reranking
+      dataset:
+        type: trec-dl-2019-passage
+        name: TREC DL 2019 passage (43 judged queries, same 8,841,823-passage corpus)
+        split: test
+      metrics:
+      - type: ndcg_at_10
+        name: nDCG@10, QKV (0.75 routing + 0.25 value), slot-hit width 128
+        value: 74.63
+        verified: false
+      - type: ndcg_at_10
+        name: nDCG@10, QK (routing only), slot-hit width 128
+        value: 71.56
+        verified: false
+      - type: recall_at_100
+        name: Recall@100, slot-hit width 128, relevance >= 2
+        value: 57.01
+        verified: false
+    - task:
+        type: text-retrieval
+        name: Passage retrieval and reranking
+      dataset:
+        type: trec-dl-2020-passage
+        name: TREC DL 2020 passage (54 judged queries, same 8,841,823-passage corpus)
+        split: test
+      metrics:
+      - type: ndcg_at_10
+        name: nDCG@10, QKV (0.75 routing + 0.25 value), slot-hit width 128
+        value: 73.14
+        verified: false
+      - type: ndcg_at_10
+        name: nDCG@10, QK (routing only), slot-hit width 128
+        value: 68.73
+        verified: false
+      - type: recall_at_100
+        name: Recall@100, slot-hit width 128, relevance >= 2
+        value: 63.71
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: assets/architecture.png
+- rfilename: assets/attention.png
+- rfilename: assets/benchmarks.png
+- rfilename: backbone/config.json
+- rfilename: config.json
+- rfilename: manifest.json
+- rfilename: model.safetensors
+- rfilename: scripts/attention_figure.py
+- rfilename: scripts/figstyle.py
+- rfilename: scripts/make_figures.py
+- rfilename: tokenizer/chat_template.jinja
+- rfilename: tokenizer/tokenizer.json
+- rfilename: tokenizer/tokenizer_config.json
+spaces: []
+createdAt: '2026-11-15T14:16:22.000Z'
+safetensors:
+  parameters:
+    F32: 755443264
+  total: 755443264
+usedStorage: 3041801933
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architecture:
+    backbone:
+      attn_implementation: sdpa
+      gradient_checkpointing: false
+      local_files_only: true
+      pretrained: backbone
+      revision: a9a407bcae463285164cc9133995c515379cebe5
+      source_repo: Qwen/Qwen3.5-0.8B-Base
+      torch_dtype: float32
+      trust_remote_code: false
+    heads:
+      d_k: 256
+      d_v: 256
+      independent_value_extractor: false
+      value_adapter_dropout: 0.1
+      value_adapter_hidden_dim: 512
+    slot_extractor:
+      d_attn: 512
+      dropout: 0.1
+      num_heads: 4
+      num_slots: 16
+      slot_query_init_mode: orthogonal
+      slot_query_init_std: 0.5
+      use_layer_norm: true
+  format: breadbowl_embed_v1
+  inference_setup:
+    stage: inference
+    use_lora: false
+  preprocessing:
+    default_instruction: Retrieve relevant documents.
+    document_format: '{text}'
+    max_document_length: 384
+    max_query_length: 128
+    query_format: '{instruction}
+
+      Query: {query}'
+  provenance:
+    backbone_class: Qwen3_5TextModel
+    base_model:
+      repo: Qwen/Qwen3.5-0.8B-Base
+      revision: a9a407bcae463285164cc9133995c515379cebe5
+    checkpoint_sha256: c416e3b264f0c756ea96fff7a6a0eec93859747c23d6677ecca0afd02cf9084c
+    exported_with:
+      breadbowl_embed: 0.2.0a1
+      torch: 2.14.1
+      transformers: 5.17.0
+    parameter_dtypes:
+    - float32
+    removed:
+      jepa_sentinel:
+        embedding_rows: 1
+        learned_offset: true
+        token: <jepa_mask>
+        token_id: 248077
+      non_text_backbone:
+        modules:
+        - visual
+        parameters: 100592896
+    step: 5152
+  release:
+    architecture: qkv-slot-encoder
+    huggingface:
+      repository: dotproductx/breadbowl-embed-v1.3
+      revision: v1.3.0
+    license: Apache-2.0
+    weights_sha256: 72b9fec297e26559a65c6fed2feb6cf4be8be5ee1d74bafc542188a3857bc4aa
+  routing_normalized: true
+  schema_version: 2
+  scoring:
+    qk_mode: logmeanexp
+    tau_k: 0.02
+    tau_v: 0.1
+    value_mix: 0.25
+  value_normalized: false
+onnxFiles: {}
+safetensorsSizeMb: 3021.8
+approxSizeMb: 3021.8
+fetchedAt: '2026-11-16T10:55:38.000Z'

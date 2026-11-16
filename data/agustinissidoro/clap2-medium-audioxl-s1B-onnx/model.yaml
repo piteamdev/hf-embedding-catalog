@@ -1,0 +1,124 @@
+_id: 6af9b0c4c1860f5bc2e46bdc
+id: agustinissidoro/clap2-medium-audioxl-s1B-onnx
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- clap2
+- audio
+- clap
+- zero-shot-audio-classification
+- feature-extraction
+- en
+- arxiv:2611.11592
+- base_model:laion/clap2-medium-audioxl-s1B
+- base_model:quantized:laion/clap2-medium-audioxl-s1B
+- license:apache-2.0
+- region:us
+downloads: 18
+likes: 0
+modelId: agustinissidoro/clap2-medium-audioxl-s1B-onnx
+author: agustinissidoro
+sha: 2dc752dd847fa638765c1b842ab47194eea6df3c
+lastModified: '2026-11-15T13:29:59.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - Clap2Model
+  model_type: clap2
+  tokenizer_config:
+    bos_token: <|bos|>
+    eos_token: <|eos|>
+    unk_token: <|endoftext|>
+    pad_token: <|pad|>
+cardData:
+  license: apache-2.0
+  base_model: laion/clap2-medium-audioxl-s1B
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  tags:
+  - audio
+  - clap
+  - onnx
+  - zero-shot-audio-classification
+  language: en
+siblings:
+- rfilename: .DS_Store
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: bachmcp.json
+- rfilename: config.json
+- rfilename: onnx/audio_model.onnx
+- rfilename: onnx/text_model.onnx
+- rfilename: processor_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-15T13:16:52.000Z'
+usedStorage: 619754990
+downloadsAllTime: 18
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - Clap2Model
+  audio_config:
+    attention_bias: true
+    attention_dropout: 0.0
+    hidden_activation: silu
+    hidden_size: 640
+    initializer_range: 0.02
+    intermediate_size: 1728
+    layerscale_value: 1.0e-05
+    mlp_bias: true
+    mlp_dropout: 0.0
+    model_type: clap2_audio_model
+    num_attention_heads: 10
+    num_hidden_layers: 12
+    num_mel_bins: 128
+    num_register_tokens: 1
+    patch_size: 16
+    pooler_hidden_act: gelu
+    rms_norm_eps: 1.0e-06
+    rope_parameters:
+      rope_theta: 10000.0
+      rope_type: axial
+    use_qk_norm: false
+  dtype: float32
+  logit_scale_init_value: 2.6592
+  model_type: clap2
+  projection_dim: 640
+  projection_hidden_act: gelu
+  text_config:
+    attention_bias: false
+    attention_dropout: 0.0
+    bos_token_id: 50259
+    eos_token_id: 50257
+    hidden_activation: silu
+    hidden_size: 640
+    initializer_range: 0.02
+    intermediate_size: 1728
+    layerscale_value: null
+    max_position_embeddings: 256
+    mlp_bias: false
+    mlp_dropout: 0.0
+    model_type: clap2_text_model
+    num_attention_heads: 10
+    num_hidden_layers: 11
+    pad_token_id: 50258
+    rms_norm_eps: 1.0e-06
+    rope_parameters:
+      rope_theta: 10000.0
+      rope_type: default
+    use_qk_norm: true
+    vocab_size: 50260
+  transformers_version: 5.23.0.dev0
+onnxFiles:
+  onnx/audio_model.onnx: 264.7
+  onnx/text_model.onnx: 355.0
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-16T10:55:38.000Z'

@@ -1,0 +1,52 @@
+_id: 6afc22afb306cfa0173754c2
+id: aio-toolathlon-rsi/MyAwesomeModel-TestRepo
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- pytorch
+- bert
+- feature-extraction
+- license:mit
+- endpoints_compatible
+- region:us
+downloads: 59
+likes: 0
+modelId: aio-toolathlon-rsi/MyAwesomeModel-TestRepo
+author: aio-toolathlon-rsi
+sha: 9cb071af67bed475ccbc1094b3c86c6d6b1c8fe7
+lastModified: '2026-11-17T09:48:38.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+cardData:
+  license: mit
+  library_name: transformers
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: pytorch_model.bin
+spaces: []
+createdAt: '2026-11-17T09:47:27.000Z'
+usedStorage: 23
+downloadsAllTime: 59
+inferenceProviderMapping: {}
+configJson:
+  model_type: bert
+  architectures:
+  - BertModel
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-17T11:40:07.000Z'

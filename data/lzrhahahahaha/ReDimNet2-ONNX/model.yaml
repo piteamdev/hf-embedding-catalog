@@ -1,0 +1,133 @@
+_id: 6afb1c3019711f6e42477298
+id: lzrhahahahaha/ReDimNet2-ONNX
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- speaker-verification
+- speaker-recognition
+- speaker-embedding
+- redimnet
+- audio
+- speech
+- feature-extraction
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: lzrhahahahaha/ReDimNet2-ONNX
+author: lzrhahahahaha
+sha: 04f41495369d7798eb856999095c2b5f16c7ccc7
+lastModified: '2026-11-16T18:22:52.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: onnx
+  license: mit
+  pipeline_tag: feature-extraction
+  tags:
+  - speaker-verification
+  - speaker-recognition
+  - speaker-embedding
+  - redimnet
+  - audio
+  - speech
+  - onnx
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: example.py
+- rfilename: fp16/b0-vox2-lm.onnx
+- rfilename: fp16/b0-vox2-ptn.onnx
+- rfilename: fp16/b1-vox2-lm.onnx
+- rfilename: fp16/b1-vox2-ptn.onnx
+- rfilename: fp16/b2-vox2-lm.onnx
+- rfilename: fp16/b2-vox2-ptn.onnx
+- rfilename: fp16/b3-vb2+vox2+cnc2_v0-lm.onnx
+- rfilename: fp16/b3-vb2+vox2+cnc2_v0-ptn.onnx
+- rfilename: fp16/b3-vox2-lm.onnx
+- rfilename: fp16/b3-vox2-ptn.onnx
+- rfilename: fp16/b4-vox2-lm.onnx
+- rfilename: fp16/b4-vox2-ptn.onnx
+- rfilename: fp16/b5-vox2-lm.onnx
+- rfilename: fp16/b5-vox2-ptn.onnx
+- rfilename: fp16/b6-vb2+vox2+cnc2_v0-lm.onnx
+- rfilename: fp16/b6-vb2+vox2+cnc2_v0-ptn.onnx
+- rfilename: fp16/b6-vb2+vox2_v0-lm.onnx
+- rfilename: fp16/b6-vb2+vox2_v0-ptn.onnx
+- rfilename: fp16/b6-vox2-lm.onnx
+- rfilename: fp16/b6-vox2-ptn.onnx
+- rfilename: fp32/b0-vox2-lm.onnx
+- rfilename: fp32/b0-vox2-ptn.onnx
+- rfilename: fp32/b1-vox2-lm.onnx
+- rfilename: fp32/b1-vox2-ptn.onnx
+- rfilename: fp32/b2-vox2-lm.onnx
+- rfilename: fp32/b2-vox2-ptn.onnx
+- rfilename: fp32/b3-vb2+vox2+cnc2_v0-lm.onnx
+- rfilename: fp32/b3-vb2+vox2+cnc2_v0-ptn.onnx
+- rfilename: fp32/b3-vox2-lm.onnx
+- rfilename: fp32/b3-vox2-ptn.onnx
+- rfilename: fp32/b4-vox2-lm.onnx
+- rfilename: fp32/b4-vox2-ptn.onnx
+- rfilename: fp32/b5-vox2-lm.onnx
+- rfilename: fp32/b5-vox2-ptn.onnx
+- rfilename: fp32/b6-vb2+vox2+cnc2_v0-lm.onnx
+- rfilename: fp32/b6-vb2+vox2+cnc2_v0-ptn.onnx
+- rfilename: fp32/b6-vb2+vox2_v0-lm.onnx
+- rfilename: fp32/b6-vb2+vox2_v0-ptn.onnx
+- rfilename: fp32/b6-vox2-lm.onnx
+- rfilename: fp32/b6-vox2-ptn.onnx
+spaces: []
+createdAt: '2026-11-16T15:07:28.000Z'
+usedStorage: 937532756
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  fp16/b0-vox2-lm.onnx: 4.5
+  fp16/b0-vox2-ptn.onnx: 4.5
+  fp16/b1-vox2-lm.onnx: 7.7
+  fp16/b1-vox2-ptn.onnx: 7.7
+  fp16/b2-vox2-lm.onnx: 11.2
+  fp16/b2-vox2-ptn.onnx: 11.2
+  fp16/b3-vb2+vox2+cnc2_v0-lm.onnx: 13.9
+  fp16/b3-vb2+vox2+cnc2_v0-ptn.onnx: 13.9
+  fp16/b3-vox2-lm.onnx: 12.8
+  fp16/b3-vox2-ptn.onnx: 12.8
+  fp16/b4-vox2-lm.onnx: 18.8
+  fp16/b4-vox2-ptn.onnx: 18.8
+  fp16/b5-vox2-lm.onnx: 23.4
+  fp16/b5-vox2-ptn.onnx: 23.4
+  fp16/b6-vb2+vox2+cnc2_v0-lm.onnx: 29.9
+  fp16/b6-vb2+vox2+cnc2_v0-ptn.onnx: 29.9
+  fp16/b6-vb2+vox2_v0-lm.onnx: 29.9
+  fp16/b6-vb2+vox2_v0-ptn.onnx: 29.9
+  fp16/b6-vox2-lm.onnx: 29.7
+  fp16/b6-vox2-ptn.onnx: 29.7
+  fp32/b0-vox2-lm.onnx: 5.7
+  fp32/b0-vox2-ptn.onnx: 5.7
+  fp32/b1-vox2-lm.onnx: 9.9
+  fp32/b1-vox2-ptn.onnx: 9.9
+  fp32/b2-vox2-lm.onnx: 16.0
+  fp32/b2-vox2-ptn.onnx: 16.0
+  fp32/b3-vb2+vox2+cnc2_v0-lm.onnx: 19.3
+  fp32/b3-vb2+vox2+cnc2_v0-ptn.onnx: 19.3
+  fp32/b3-vox2-lm.onnx: 18.0
+  fp32/b3-vox2-ptn.onnx: 18.0
+  fp32/b4-vox2-lm.onnx: 27.9
+  fp32/b4-vox2-ptn.onnx: 27.9
+  fp32/b5-vox2-lm.onnx: 37.1
+  fp32/b5-vox2-ptn.onnx: 37.1
+  fp32/b6-vb2+vox2+cnc2_v0-lm.onnx: 51.1
+  fp32/b6-vb2+vox2+cnc2_v0-ptn.onnx: 51.1
+  fp32/b6-vb2+vox2_v0-lm.onnx: 51.1
+  fp32/b6-vb2+vox2_v0-ptn.onnx: 51.1
+  fp32/b6-vox2-lm.onnx: 50.9
+  fp32/b6-vox2-ptn.onnx: 50.9
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-17T11:40:07.000Z'

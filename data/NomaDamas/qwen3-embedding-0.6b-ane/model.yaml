@@ -1,0 +1,59 @@
+_id: 6afae7a0489651ad41db0a60
+id: NomaDamas/qwen3-embedding-0.6b-ane
+private: false
+pipeline_tag: feature-extraction
+library_name: coreml
+tags:
+- coreml
+- apple-neural-engine
+- embeddings
+- sentence-similarity
+- qwen3
+- feature-extraction
+- base_model:Qwen/Qwen3-Embedding-0.6B
+- base_model:quantized:Qwen/Qwen3-Embedding-0.6B
+- license:apache-2.0
+- region:us
+downloads: 8
+likes: 0
+modelId: NomaDamas/qwen3-embedding-0.6b-ane
+author: NomaDamas
+sha: 7011f9648c165a57e0c305346e469461e985d8c1
+lastModified: '2026-11-16T11:30:21.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: Qwen/Qwen3-Embedding-0.6B
+  library_name: coreml
+  pipeline_tag: feature-extraction
+  tags:
+  - coreml
+  - apple-neural-engine
+  - embeddings
+  - sentence-similarity
+  - qwen3
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: Qwen3EmbeddingText.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: Qwen3EmbeddingText.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: Qwen3EmbeddingText.mlpackage/Manifest.json
+- rfilename: README.md
+- rfilename: embeddings.bf16
+- rfilename: manifest.json
+- rfilename: selftest.bin
+- rfilename: selftest.json
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-11-16T11:23:12.000Z'
+usedStorage: 1212066798
+downloadsAllTime: 8
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-17T11:40:07.000Z'

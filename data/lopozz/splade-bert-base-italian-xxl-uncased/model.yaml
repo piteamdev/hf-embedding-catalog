@@ -1,0 +1,232 @@
+_id: 6afb6239bfdcb6bf0504acdf
+id: lopozz/splade-bert-base-italian-xxl-uncased
+private: false
+pipeline_tag: feature-extraction
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- sparse-encoder
+- sparse
+- asymmetric
+- inference-free
+- splade
+- generated_from_trainer
+- dataset_size:532751
+- loss:SpladeLoss
+- loss:SparseMultipleNegativesRankingLoss
+- loss:FlopsLoss
+- feature-extraction
+- it
+- arxiv:1908.10084
+- arxiv:2205.04733
+- arxiv:1807.03748
+- arxiv:2004.05665
+- base_model:dbmdz/bert-base-italian-xxl-uncased
+- base_model:finetune:dbmdz/bert-base-italian-xxl-uncased
+- license:apache-2.0
+- model-index
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: lopozz/splade-bert-base-italian-xxl-uncased
+author: lopozz
+sha: 70e118df09f3457a1a04abf2f35c154a9bc3500e
+lastModified: '2026-11-17T07:20:48.000Z'
+gated: false
+disabled: false
+widgetData:
+- text: Che cosa significano le lettere tnt?
+- text: L'osmosi inversa rimuove le clorammine?
+- text: Una parentesi è un segno di punteggiatura alto tipicamente usato nelle coppie abbinate all'interno del testo, per
+    impostare o intercettare altro testo. La coppia abbinata è meglio descritta come apertura e chiusura. Meno formalmente,
+    in un contesto da sinistra a destra, può essere descritto come sinistro e destro, e in un contesto da destra a sinistra,
+    come destro e sinistro. Forme di mrad includono tondo (chiamato anche parentesi), quadrato, riccio (chiamato anche parentesi),
+    e parentesi angolari (chiamato anche chevron); e varie altre coppie di simboli. In aggiunta a fare riferimento
+- text: 'Per altri usi, vedere Bona fide (disambigua). La buona fede (latino: bona fides), nelle interazioni umane, è un''intenzione
+    sincera di essere giusta, aperta e onesta, indipendentemente dall''esito dell''interazione.'
+- text: Un rapporto debito/reddito è una misura di finanza personale che confronta l'importo del debito che avete al vostro
+    reddito lordo. I prestatori utilizzano il rapporto debito-reddito come un modo per misurare la vostra capacità di gestire
+    i pagamenti che fate ogni mese e rimborsare il denaro che avete preso in prestito. Si calcola dividendo il totale del
+    debito mensile ricorrente per il reddito mensile lordo.
+model-index:
+- name: Inference-free SPLADE Italian BERT trained on QA tuples
+  results:
+  - task:
+      type: sparse-information-retrieval
+      name: Sparse Information Retrieval
+    dataset:
+      name: mmarco
+      type: mmarco
+    metrics:
+    - type: dot_accuracy@10
+      value: 0.8327407886231416
+      name: Dot Accuracy@10
+      verified: false
+    - type: dot_precision@10
+      value: 0.08783128636069812
+      name: Dot Precision@10
+      verified: false
+    - type: dot_recall@10
+      value: 0.8269634776987718
+      name: Dot Recall@10
+      verified: false
+    - type: dot_ndcg@10
+      value: 0.7106550108506705
+      name: Dot Ndcg@10
+      verified: false
+    - type: dot_mrr@10
+      value: 0.6770612090990261
+      name: Dot Mrr@10
+      verified: false
+    - type: dot_map@10
+      value: 0.6708950246765373
+      name: Dot Map@10
+      verified: false
+    - type: query_active_dims
+      value: 9.721073150634766
+      name: Query Active Dims
+      verified: false
+    - type: query_sparsity_ratio
+      value: 0.999687445400597
+      name: Query Sparsity Ratio
+      verified: false
+    - type: corpus_active_dims
+      value: 213.88504887650515
+      name: Corpus Active Dims
+      verified: false
+    - type: corpus_sparsity_ratio
+      value: 0.9931231094824609
+      name: Corpus Sparsity Ratio
+      verified: false
+    - type: avg_flops
+      value: 1.0572028160095215
+      name: Avg Flops
+      verified: false
+config: {}
+cardData:
+  language:
+  - it
+  license: apache-2.0
+  tags:
+  - sentence-transformers
+  - sparse-encoder
+  - sparse
+  - asymmetric
+  - inference-free
+  - splade
+  - generated_from_trainer
+  - dataset_size:532751
+  - loss:SpladeLoss
+  - loss:SparseMultipleNegativesRankingLoss
+  - loss:FlopsLoss
+  base_model: dbmdz/bert-base-italian-xxl-uncased
+  widget:
+  - text: Che cosa significano le lettere tnt?
+  - text: L'osmosi inversa rimuove le clorammine?
+  - text: Una parentesi è un segno di punteggiatura alto tipicamente usato nelle coppie abbinate all'interno del testo, per
+      impostare o intercettare altro testo. La coppia abbinata è meglio descritta come apertura e chiusura. Meno formalmente,
+      in un contesto da sinistra a destra, può essere descritto come sinistro e destro, e in un contesto da destra a sinistra,
+      come destro e sinistro. Forme di mrad includono tondo (chiamato anche parentesi), quadrato, riccio (chiamato anche parentesi),
+      e parentesi angolari (chiamato anche chevron); e varie altre coppie di simboli. In aggiunta a fare riferimento
+  - text: 'Per altri usi, vedere Bona fide (disambigua). La buona fede (latino: bona fides), nelle interazioni umane, è un''intenzione
+      sincera di essere giusta, aperta e onesta, indipendentemente dall''esito dell''interazione.'
+  - text: Un rapporto debito/reddito è una misura di finanza personale che confronta l'importo del debito che avete al vostro
+      reddito lordo. I prestatori utilizzano il rapporto debito-reddito come un modo per misurare la vostra capacità di gestire
+      i pagamenti che fate ogni mese e rimborsare il denaro che avete preso in prestito. Si calcola dividendo il totale del
+      debito mensile ricorrente per il reddito mensile lordo.
+  pipeline_tag: feature-extraction
+  library_name: sentence-transformers
+  metrics:
+  - dot_accuracy@10
+  - dot_precision@10
+  - dot_recall@10
+  - dot_ndcg@10
+  - dot_mrr@10
+  - dot_map@10
+  - query_active_dims
+  - query_sparsity_ratio
+  - corpus_active_dims
+  - corpus_sparsity_ratio
+  - avg_flops
+  model-index:
+  - name: Inference-free SPLADE Italian BERT trained on QA tuples
+    results:
+    - task:
+        type: sparse-information-retrieval
+        name: Sparse Information Retrieval
+      dataset:
+        name: mmarco
+        type: mmarco
+      metrics:
+      - type: dot_accuracy@10
+        value: 0.8327407886231416
+        name: Dot Accuracy@10
+        verified: false
+      - type: dot_precision@10
+        value: 0.08783128636069812
+        name: Dot Precision@10
+        verified: false
+      - type: dot_recall@10
+        value: 0.8269634776987718
+        name: Dot Recall@10
+        verified: false
+      - type: dot_ndcg@10
+        value: 0.7106550108506705
+        name: Dot Ndcg@10
+        verified: false
+      - type: dot_mrr@10
+        value: 0.6770612090990261
+        name: Dot Mrr@10
+        verified: false
+      - type: dot_map@10
+        value: 0.6708950246765373
+        name: Dot Map@10
+        verified: false
+      - type: query_active_dims
+        value: 9.721073150634766
+        name: Query Active Dims
+        verified: false
+      - type: query_sparsity_ratio
+        value: 0.999687445400597
+        name: Query Sparsity Ratio
+        verified: false
+      - type: corpus_active_dims
+        value: 213.88504887650515
+        name: Corpus Active Dims
+        verified: false
+      - type: corpus_sparsity_ratio
+        value: 0.9931231094824609
+        name: Corpus Sparsity Ratio
+        verified: false
+      - type: avg_flops
+        value: 1.0572028160095215
+        name: Avg Flops
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config_sentence_transformers.json
+- rfilename: document_0_Transformer/config.json
+- rfilename: document_0_Transformer/model.safetensors
+- rfilename: document_0_Transformer/sentence_bert_config.json
+- rfilename: document_0_Transformer/tokenizer.json
+- rfilename: document_0_Transformer/tokenizer_config.json
+- rfilename: document_1_SpladePooling/config.json
+- rfilename: modules.json
+- rfilename: query_0_SparseStaticEmbedding/config.json
+- rfilename: query_0_SparseStaticEmbedding/model.safetensors
+- rfilename: query_0_SparseStaticEmbedding/tokenizer.json
+- rfilename: query_0_SparseStaticEmbedding/tokenizer_config.json
+- rfilename: router_config.json
+spaces: []
+createdAt: '2026-11-16T20:06:17.000Z'
+usedStorage: 439989464
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 440.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-17T11:40:07.000Z'

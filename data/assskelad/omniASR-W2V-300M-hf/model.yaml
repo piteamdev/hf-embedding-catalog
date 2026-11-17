@@ -1,0 +1,58 @@
+_id: 69a4738aae63980df58642d2
+id: assskelad/omniASR-W2V-300M-hf
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- omni_asr
+- feature-extraction
+- arxiv:1910.09700
+- endpoints_compatible
+- region:us
+downloads: 6
+likes: 0
+modelId: assskelad/omniASR-W2V-300M-hf
+author: assskelad
+sha: db648c0eb0b7844bb7c3c4fa5656a37c669c4e10
+lastModified: '2026-03-01T17:15:30.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - OmniASRModel
+  model_type: omni_asr
+cardData:
+  library_name: transformers
+  tags: []
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: omniASR-W2V-300M.pt
+spaces: []
+createdAt: '2026-03-01T17:12:42.000Z'
+safetensors:
+  parameters:
+    F32: 317390592
+  total: 317390592
+usedStorage: 2539331210
+downloadsAllTime: 58
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - OmniASRModel
+  checkpoint_path: omniASR-W2V-300M.pt
+  dtype: float32
+  model_type: omni_asr
+  transformers_version: 5.2.0
+onnxFiles: {}
+safetensorsSizeMb: 1269.6
+approxSizeMb: 1269.6
+fetchedAt: '2026-11-17T11:40:07.000Z'

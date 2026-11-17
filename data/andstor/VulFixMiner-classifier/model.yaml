@@ -1,0 +1,74 @@
+_id: 6afa16d39994d1dfbbc25250
+id: andstor/VulFixMiner-classifier
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- pytorch
+- vulfixminer_classifier
+- feature-extraction
+- code
+- security
+- vulnerability-fix-detection
+- commit-classification
+- custom_code
+- dataset:andstor/cvevc_commits
+- region:us
+downloads: 27
+likes: 0
+modelId: andstor/VulFixMiner-classifier
+author: andstor
+sha: 387d9b95925fb5d113a8ad982ed15a4f77970f17
+lastModified: '2026-11-15T20:38:53.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - VulFixMinerClassifierModel
+  auto_map:
+    AutoConfig: modeling_vulfixminer_classifier.VulFixMinerClassifierConfig
+    AutoModel: modeling_vulfixminer_classifier.VulFixMinerClassifierModel
+  model_type: vulfixminer_classifier
+cardData:
+  library_name: transformers
+  datasets:
+  - andstor/cvevc_commits
+  tags:
+  - code
+  - security
+  - vulnerability-fix-detection
+  - commit-classification
+  - custom_code
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_vulfixminer_classifier.VulFixMinerClassifierModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: __init__.py
+- rfilename: config.json
+- rfilename: modeling_vulfixminer_classifier.py
+- rfilename: pytorch_model.bin
+- rfilename: requirements.txt
+spaces: []
+createdAt: '2026-11-15T20:32:19.000Z'
+usedStorage: 2371161
+downloadsAllTime: 27
+inferenceProviderMapping: {}
+configJson:
+  model_type: vulfixminer_classifier
+  architectures:
+  - VulFixMinerClassifierModel
+  auto_map:
+    AutoConfig: modeling_vulfixminer_classifier.VulFixMinerClassifierConfig
+    AutoModel: modeling_vulfixminer_classifier.VulFixMinerClassifierModel
+  hidden_size: 768
+  hidden_dropout_prob: 0.1
+  num_labels: 2
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-17T11:40:07.000Z'

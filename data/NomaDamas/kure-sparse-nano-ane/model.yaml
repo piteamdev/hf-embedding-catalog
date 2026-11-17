@@ -1,0 +1,63 @@
+_id: 6afb3e7050cd379e070e3545
+id: NomaDamas/kure-sparse-nano-ane
+private: false
+pipeline_tag: feature-extraction
+library_name: coreml
+tags:
+- coreml
+- apple-neural-engine
+- sparse
+- splade
+- modernbert
+- feature-extraction
+- ko
+- base_model:nlpai-lab/KURE-Sparse-nano
+- base_model:quantized:nlpai-lab/KURE-Sparse-nano
+- license:apache-2.0
+- region:us
+downloads: 9
+likes: 0
+modelId: NomaDamas/kure-sparse-nano-ane
+author: NomaDamas
+sha: 909661c27dcc84835068185d9aca3e5e7d13d52b
+lastModified: '2026-11-16T17:34:01.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: nlpai-lab/KURE-Sparse-nano
+  library_name: coreml
+  pipeline_tag: feature-extraction
+  language:
+  - ko
+  tags:
+  - coreml
+  - apple-neural-engine
+  - sparse
+  - splade
+  - modernbert
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: ModernBertSpladeText.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: ModernBertSpladeText.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: ModernBertSpladeText.mlpackage/Manifest.json
+- rfilename: README.md
+- rfilename: embeddings.bf16
+- rfilename: manifest.json
+- rfilename: selftest.bin
+- rfilename: selftest.json
+- rfilename: splade_pooling.json
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-11-16T17:33:36.000Z'
+usedStorage: 385959053
+downloadsAllTime: 9
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-17T11:40:07.000Z'

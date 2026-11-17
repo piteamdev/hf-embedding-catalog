@@ -1,0 +1,62 @@
+_id: 6afb854c1e0686d7ea8b9d36
+id: doctolib-lab/doctosae-medembed-large-v0.1
+private: false
+pipeline_tag: feature-extraction
+library_name: pytorch
+tags:
+- pytorch
+- sparse-autoencoder
+- interpretability
+- medical
+- information-retrieval
+- safetensors
+- feature-extraction
+- en
+- dataset:clinia/CUREv1
+- arxiv:2611.18179
+- base_model:abhinand/MedEmbed-large-v0.1
+- base_model:finetune:abhinand/MedEmbed-large-v0.1
+- license:cc-by-nc-4.0
+- region:us
+downloads: 0
+likes: 1
+modelId: doctolib-lab/doctosae-medembed-large-v0.1
+author: doctolib-lab
+sha: 4e1c5361035d36b2844827570a0daa7064dc7518
+lastModified: '2026-11-17T10:40:15.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: cc-by-nc-4.0
+  language:
+  - en
+  base_model: abhinand/MedEmbed-large-v0.1
+  datasets:
+  - clinia/CUREv1
+  library_name: pytorch
+  pipeline_tag: feature-extraction
+  tags:
+  - sparse-autoencoder
+  - interpretability
+  - medical
+  - information-retrieval
+  - safetensors
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: k256_m3072/cfg.json
+- rfilename: k256_m3072/sae.safetensors
+- rfilename: k64_m3072/cfg.json
+- rfilename: k64_m3072/sae.safetensors
+spaces: []
+createdAt: '2026-11-16T22:35:56.000Z'
+usedStorage: 50365136
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 50.4
+approxSizeMb: 0.0
+fetchedAt: '2026-11-17T11:40:07.000Z'

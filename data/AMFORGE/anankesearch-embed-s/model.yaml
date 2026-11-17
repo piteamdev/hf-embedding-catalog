@@ -1,0 +1,61 @@
+_id: 6af9ef7c120d5e7caefe9b54
+id: AMFORGE/anankesearch-embed-s
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- embeddings
+- retrieval
+- semantic-search
+- matryoshka
+- tokenizer-free
+- byte-level
+- anankesearch
+- feature-extraction
+- en
+- fr
+- region:us
+downloads: 0
+likes: 0
+modelId: AMFORGE/anankesearch-embed-s
+author: AMFORGE
+sha: 4efe1d7b5974d4596122b47eea084e2940a4794d
+lastModified: '2026-11-15T18:43:05.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  language:
+  - en
+  - fr
+  pipeline_tag: feature-extraction
+  library_name: onnx
+  tags:
+  - embeddings
+  - retrieval
+  - semantic-search
+  - matryoshka
+  - tokenizer-free
+  - byte-level
+  - onnx
+  - anankesearch
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: ananke-embed.json
+- rfilename: ananke-embed.onnx
+- rfilename: best.pt
+- rfilename: resultats.json
+spaces: []
+createdAt: '2026-11-15T17:44:28.000Z'
+usedStorage: 92679812
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  ananke-embed.onnx: 46.4
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-17T11:40:07.000Z'

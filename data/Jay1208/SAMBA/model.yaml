@@ -1,0 +1,52 @@
+_id: 6afbbd974cdcd2efdd1f8b04
+id: Jay1208/SAMBA
+private: false
+pipeline_tag: feature-extraction
+library_name: samba-eeg
+tags:
+- samba-eeg
+- safetensors
+- eeg
+- brain-computer-interface
+- self-supervised-learning
+- mamba
+- pytorch
+- feature-extraction
+- arxiv:2511.18571
+- region:us
+downloads: 0
+likes: 1
+modelId: Jay1208/SAMBA
+author: Jay1208
+sha: 4588488f6081a3b9daf58b279d8aa1d881fde456
+lastModified: '2026-11-17T06:55:37.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: samba-eeg
+  pipeline_tag: feature-extraction
+  tags:
+  - eeg
+  - brain-computer-interface
+  - self-supervised-learning
+  - mamba
+  - pytorch
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: SAMBA-100s/config.json
+- rfilename: SAMBA-100s/model.safetensors
+- rfilename: SAMBA-2s/config.json
+- rfilename: SAMBA-2s/model.safetensors
+spaces: []
+createdAt: '2026-11-17T02:36:07.000Z'
+usedStorage: 8537604
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 8.5
+approxSizeMb: 0.0
+fetchedAt: '2026-11-17T11:40:07.000Z'

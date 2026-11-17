@@ -1,0 +1,115 @@
+_id: 6afb40d74cdcd2efdd101db7
+id: anylab/embeddinggemma-2-coreml
+private: false
+pipeline_tag: feature-extraction
+tags:
+- coreml
+- apple-neural-engine
+- embeddings
+- sentence-similarity
+- text-only
+- feature-extraction
+- multilingual
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:apache-2.0
+- region:us
+downloads: 17
+likes: 0
+modelId: anylab/embeddinggemma-2-coreml
+author: anylab
+sha: acbb72b3bd268fdd2778883343dd4bf4248997a8
+lastModified: '2026-11-16T23:17:44.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  tokenizer_config:
+    bos_token: <bos>
+    eos_token: <eos>
+    unk_token: <unk>
+    pad_token: <pad>
+    mask_token: <mask>
+cardData:
+  license: apache-2.0
+  base_model: google/embeddinggemma-2
+  pipeline_tag: feature-extraction
+  language:
+  - multilingual
+  tags:
+  - coreml
+  - apple-neural-engine
+  - embeddings
+  - sentence-similarity
+  - text-only
+siblings:
+- rfilename: .gitattributes
+- rfilename: EmbeddingGemma2Owned.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: EmbeddingGemma2Owned.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: EmbeddingGemma2Owned.mlpackage/Manifest.json
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: SHA256SUMS
+- rfilename: conversion/NOTICE
+- rfilename: conversion/README.md
+- rfilename: conversion/buckets.py
+- rfilename: conversion/convert.py
+- rfilename: conversion/eg2.py
+- rfilename: conversion/fetch_stock.py
+- rfilename: conversion/fixtures/SHA256SUMS
+- rfilename: conversion/fixtures/tokens.json.gz
+- rfilename: conversion/parity.py
+- rfilename: conversion/provenance.py
+- rfilename: conversion/requirements.lock
+- rfilename: conversion/source-manifest.json
+- rfilename: conversion/source-snapshot.json
+- rfilename: conversion/upstream/modeling_embedding_gemma2.py
+- rfilename: conversion/upstream/qvac/LICENSE
+- rfilename: conversion/upstream/qvac/README.md
+- rfilename: conversion/upstream/qvac/export_coreml.py
+- rfilename: conversion/upstream/qvac/requirements.txt
+- rfilename: conversion/upstream/transformers-LICENSE
+- rfilename: conversion/validate.swift
+- rfilename: docs/technical-notes.md
+- rfilename: docs/usage.md
+- rfilename: licenses/QVAC-MIT.txt
+- rfilename: release-manifest.json
+- rfilename: source-config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: validation/2026-11-12-four-bucket/REPORT.txt
+- rfilename: validation/2026-11-12-four-bucket/asset-manifest.json
+- rfilename: validation/2026-11-12-four-bucket/corpus-parity.json
+- rfilename: validation/2026-11-12-four-bucket/publication-manifest.json
+- rfilename: validation/2026-11-12-four-bucket/rebuild-reproducibility.json
+- rfilename: validation/2026-11-12-four-bucket/summary.json
+- rfilename: validation/2026-11-12-four-bucket/tokenizer-parity.json
+- rfilename: validation/2026-11-12-four-bucket/torch-parity.json
+- rfilename: validation/2026-11-16-five-bucket/REPORT.txt
+- rfilename: validation/2026-11-16-five-bucket/asset-manifest.json
+- rfilename: validation/2026-11-16-five-bucket/benchmark-assets.json
+- rfilename: validation/2026-11-16-five-bucket/build-environment.json
+- rfilename: validation/2026-11-16-five-bucket/cold.json
+- rfilename: validation/2026-11-16-five-bucket/corpus-parity.json
+- rfilename: validation/2026-11-16-five-bucket/hf-reference.json
+- rfilename: validation/2026-11-16-five-bucket/matched-latency.json
+- rfilename: validation/2026-11-16-five-bucket/memory-alone.json
+- rfilename: validation/2026-11-16-five-bucket/memory-pair.json
+- rfilename: validation/2026-11-16-five-bucket/rebuild-reproducibility.json
+- rfilename: validation/2026-11-16-five-bucket/release-validation.json
+- rfilename: validation/2026-11-16-five-bucket/size-comparison.json
+- rfilename: validation/2026-11-16-five-bucket/summary.json
+- rfilename: validation/2026-11-16-five-bucket/torch-parity.json
+- rfilename: validation/2026-11-16-five-bucket/warm.json
+spaces: []
+createdAt: '2026-11-16T17:43:51.000Z'
+usedStorage: 607700522
+downloadsAllTime: 17
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-17T11:40:07.000Z'

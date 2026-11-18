@@ -1,0 +1,78 @@
+_id: 6afd14f6c797ec2a26aba421
+id: SallySims/pyramidformer-base
+private: false
+pipeline_tag: feature-extraction
+library_name: pytorch
+tags:
+- pytorch
+- safetensors
+- demography
+- population-pyramid
+- transformer
+- global-health
+- feature-extraction
+- dataset:SallySims/wpp2024-single-age-pyramids
+- license:mit
+- region:us
+downloads: 16
+likes: 0
+modelId: SallySims/pyramidformer-base
+author: SallySims
+sha: d3f193c4f135ec8fdac1d09e27e0a20e68c46592
+lastModified: '2026-11-18T03:01:18.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  library_name: pytorch
+  pipeline_tag: feature-extraction
+  tags:
+  - demography
+  - population-pyramid
+  - transformer
+  - global-health
+  datasets:
+  - SallySims/wpp2024-single-age-pyramids
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: metrics.json
+- rfilename: model.safetensors
+- rfilename: pyramidformer.py
+spaces: []
+createdAt: '2026-11-18T03:01:10.000Z'
+safetensors:
+  parameters:
+    F32: 823810
+  total: 823810
+usedStorage: 3300760
+downloadsAllTime: 16
+inferenceProviderMapping: {}
+configJson:
+  arch:
+    task: base
+    d: 128
+    depth: 4
+    heads: 4
+    ff: 512
+    dropout: 0.1
+    max_h: 25
+    proj_dim: 64
+  n_ages: 101
+  norm:
+    mu: -1.042009639992984
+    sigma: 2.4617757517625414
+    eps: 1.0e-05
+  extra:
+    metrics:
+      steps: 2000
+      val_masked_mse_z: 0.009843744863801717
+    data: UN WPP 2024 estimates, single-age by sex, countries/areas, 1950-2023; split by country 80/10/10
+    mode: quick
+onnxFiles: {}
+safetensorsSizeMb: 3.3
+approxSizeMb: 3.3
+fetchedAt: '2026-11-18T11:27:28.000Z'

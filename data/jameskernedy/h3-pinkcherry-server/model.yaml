@@ -1,0 +1,61 @@
+_id: 6afe9c7b378c170314d49863
+id: jameskernedy/h3-pinkcherry-server
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- custom-server
+- minimax-h3
+- nsfw
+- image-to-video
+- reference-to-video
+- video-with-audio
+- comfyui
+- feature-extraction
+- en
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+- not-for-all-audiences
+downloads: 0
+likes: 0
+modelId: jameskernedy/h3-pinkcherry-server
+author: jameskernedy
+sha: 552c90ef944f6d36a2789b0e46b725ef9752fdc8
+lastModified: '2026-11-19T10:41:27.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  language:
+  - en
+  library_name: transformers
+  pipeline_tag: feature-extraction
+  tags:
+  - custom-server
+  - minimax-h3
+  - nsfw
+  - image-to-video
+  - reference-to-video
+  - video-with-audio
+  - comfyui
+transformersInfo:
+  auto_model: AutoModel
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: run.sh
+- rfilename: server.py
+spaces: []
+createdAt: '2026-11-19T06:51:39.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-19T11:25:23.000Z'

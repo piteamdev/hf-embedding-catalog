@@ -1,0 +1,84 @@
+_id: 6afe9e0e6e70faaa65b0e361
+id: cnmoro/blink-latin-26M
+private: false
+pipeline_tag: feature-extraction
+library_name: model2vec
+tags:
+- model2vec
+- safetensors
+- embeddings
+- static-embeddings
+- sentence-similarity
+- multilingual
+- wordpiece
+- pruned
+- feature-extraction
+- en
+- pt
+- es
+- fr
+- de
+- it
+- base_model:minishlab/blink-multilingual-64M
+- base_model:finetune:minishlab/blink-multilingual-64M
+- license:mit
+- region:us
+downloads: 0
+likes: 1
+modelId: cnmoro/blink-latin-26M
+author: cnmoro
+sha: 0c5880d3e2d25cdbe6372bcb202c7216113d9c2e
+lastModified: '2026-11-19T06:59:53.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  language:
+  - en
+  - pt
+  - es
+  - fr
+  - de
+  - it
+  license: mit
+  base_model: minishlab/blink-multilingual-64M
+  library_name: model2vec
+  pipeline_tag: feature-extraction
+  tags:
+  - embeddings
+  - static-embeddings
+  - sentence-similarity
+  - multilingual
+  - wordpiece
+  - pruned
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: benchmark.py
+- rfilename: benchmark_results.json
+- rfilename: blink_latin.py
+- rfilename: blink_pool.c
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-11-19T06:58:22.000Z'
+safetensors:
+  parameters:
+    F32: 26508288
+  total: 26508288
+usedStorage: 106033240
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  max_length: null
+  normalize: true
+  embedding_dtype: float32
+  source_median_token_length: 4
+onnxFiles: {}
+safetensorsSizeMb: 106.0
+approxSizeMb: 106.0
+fetchedAt: '2026-11-19T11:25:23.000Z'

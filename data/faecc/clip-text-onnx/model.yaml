@@ -1,0 +1,52 @@
+_id: 6afe62c61b97bf79ee0dbdf7
+id: faecc/clip-text-onnx
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- clip
+- feature-extraction
+- region:us
+downloads: 0
+likes: 0
+modelId: faecc/clip-text-onnx
+author: faecc
+sha: 64003313ac82efb4ad08d17f231fde536aa9ca7e
+lastModified: '2026-11-19T03:06:51.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  tags:
+  - onnx
+  - clip
+  - feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: clip-text-manifest.json
+- rfilename: clip-text-states-fp16.onnx
+- rfilename: clip-text-weights-01.bin
+- rfilename: clip-text-weights-02.bin
+- rfilename: clip-text-weights-03.bin
+- rfilename: clip-text-weights-04.bin
+- rfilename: clip-text-weights-05.bin
+- rfilename: clip-text-weights-06.bin
+- rfilename: clip-text-weights-07.bin
+- rfilename: clip-text-weights-08.bin
+- rfilename: clip-text-weights-09.bin
+spaces: []
+createdAt: '2026-11-19T02:45:26.000Z'
+usedStorage: 126432338
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  clip-text-states-fp16.onnx: 0.2
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-19T11:25:23.000Z'

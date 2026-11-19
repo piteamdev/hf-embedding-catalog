@@ -1,0 +1,315 @@
+_id: 6afe69708f320fd18388d0be
+id: junmo-k/pplx-embed-v1-0.6b-ane
+private: false
+pipeline_tag: feature-extraction
+tags:
+- coreml
+- bidirectional_pplx_qwen3
+- apple-silicon
+- embeddings
+- feature-extraction
+- custom_code
+- base_model:perplexity-ai/pplx-embed-v1-0.6b
+- base_model:quantized:perplexity-ai/pplx-embed-v1-0.6b
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: junmo-k/pplx-embed-v1-0.6b-ane
+author: junmo-k
+sha: d75c3a42d4dd467911553eea8bd06437f7ddb3ac
+lastModified: '2026-11-19T03:56:52.000Z'
+gated: false
+disabled: false
+mask_token: â½Ĺ
+model-index: null
+config:
+  architectures:
+  - PPLXQwen3Model
+  auto_map:
+    AutoConfig: configuration.PPLXQwen3Config
+    AutoModel: modeling.PPLXQwen3Model
+  model_type: bidirectional_pplx_qwen3
+  tokenizer_config:
+    bos_token: null
+    eos_token: <|endoftext|>
+    unk_token: null
+    sep_token: <|endoftext|>
+    pad_token: <|endoftext|>
+    mask_token: â½Ĺ
+cardData:
+  license: mit
+  base_model: perplexity-ai/pplx-embed-v1-0.6b
+  pipeline_tag: feature-extraction
+  tags:
+  - coreml
+  - apple-silicon
+  - embeddings
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: PPLXText.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: PPLXText.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: PPLXText.mlpackage/Manifest.json
+- rfilename: README.md
+- rfilename: attn_S16384_Q2048.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: attn_S16384_Q2048.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: attn_S16384_Q2048.mlpackage/Manifest.json
+- rfilename: attn_S32768_Q2048.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: attn_S32768_Q2048.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: attn_S32768_Q2048.mlpackage/Manifest.json
+- rfilename: config.json
+- rfilename: embeddings.f32
+- rfilename: final_norm.f32
+- rfilename: manifest.json
+- rfilename: post0.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post0.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post0.mlpackage/Manifest.json
+- rfilename: post1.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post1.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post1.mlpackage/Manifest.json
+- rfilename: post10.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post10.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post10.mlpackage/Manifest.json
+- rfilename: post11.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post11.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post11.mlpackage/Manifest.json
+- rfilename: post12.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post12.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post12.mlpackage/Manifest.json
+- rfilename: post13.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post13.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post13.mlpackage/Manifest.json
+- rfilename: post14.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post14.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post14.mlpackage/Manifest.json
+- rfilename: post15.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post15.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post15.mlpackage/Manifest.json
+- rfilename: post16.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post16.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post16.mlpackage/Manifest.json
+- rfilename: post17.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post17.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post17.mlpackage/Manifest.json
+- rfilename: post18.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post18.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post18.mlpackage/Manifest.json
+- rfilename: post19.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post19.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post19.mlpackage/Manifest.json
+- rfilename: post2.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post2.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post2.mlpackage/Manifest.json
+- rfilename: post20.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post20.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post20.mlpackage/Manifest.json
+- rfilename: post21.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post21.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post21.mlpackage/Manifest.json
+- rfilename: post22.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post22.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post22.mlpackage/Manifest.json
+- rfilename: post23.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post23.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post23.mlpackage/Manifest.json
+- rfilename: post24.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post24.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post24.mlpackage/Manifest.json
+- rfilename: post25.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post25.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post25.mlpackage/Manifest.json
+- rfilename: post26.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post26.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post26.mlpackage/Manifest.json
+- rfilename: post27.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post27.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post27.mlpackage/Manifest.json
+- rfilename: post3.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post3.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post3.mlpackage/Manifest.json
+- rfilename: post4.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post4.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post4.mlpackage/Manifest.json
+- rfilename: post5.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post5.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post5.mlpackage/Manifest.json
+- rfilename: post6.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post6.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post6.mlpackage/Manifest.json
+- rfilename: post7.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post7.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post7.mlpackage/Manifest.json
+- rfilename: post8.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post8.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post8.mlpackage/Manifest.json
+- rfilename: post9.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post9.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post9.mlpackage/Manifest.json
+- rfilename: pre0.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre0.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre0.mlpackage/Manifest.json
+- rfilename: pre1.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre1.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre1.mlpackage/Manifest.json
+- rfilename: pre10.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre10.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre10.mlpackage/Manifest.json
+- rfilename: pre11.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre11.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre11.mlpackage/Manifest.json
+- rfilename: pre12.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre12.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre12.mlpackage/Manifest.json
+- rfilename: pre13.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre13.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre13.mlpackage/Manifest.json
+- rfilename: pre14.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre14.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre14.mlpackage/Manifest.json
+- rfilename: pre15.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre15.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre15.mlpackage/Manifest.json
+- rfilename: pre16.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre16.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre16.mlpackage/Manifest.json
+- rfilename: pre17.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre17.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre17.mlpackage/Manifest.json
+- rfilename: pre18.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre18.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre18.mlpackage/Manifest.json
+- rfilename: pre19.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre19.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre19.mlpackage/Manifest.json
+- rfilename: pre2.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre2.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre2.mlpackage/Manifest.json
+- rfilename: pre20.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre20.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre20.mlpackage/Manifest.json
+- rfilename: pre21.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre21.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre21.mlpackage/Manifest.json
+- rfilename: pre22.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre22.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre22.mlpackage/Manifest.json
+- rfilename: pre23.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre23.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre23.mlpackage/Manifest.json
+- rfilename: pre24.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre24.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre24.mlpackage/Manifest.json
+- rfilename: pre25.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre25.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre25.mlpackage/Manifest.json
+- rfilename: pre26.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre26.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre26.mlpackage/Manifest.json
+- rfilename: pre27.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre27.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre27.mlpackage/Manifest.json
+- rfilename: pre3.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre3.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre3.mlpackage/Manifest.json
+- rfilename: pre4.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre4.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre4.mlpackage/Manifest.json
+- rfilename: pre5.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre5.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre5.mlpackage/Manifest.json
+- rfilename: pre6.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre6.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre6.mlpackage/Manifest.json
+- rfilename: pre7.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre7.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre7.mlpackage/Manifest.json
+- rfilename: pre8.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre8.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre8.mlpackage/Manifest.json
+- rfilename: pre9.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre9.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre9.mlpackage/Manifest.json
+- rfilename: selftest.bin
+- rfilename: selftest.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-19T03:13:52.000Z'
+usedStorage: 2414416100
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - PPLXQwen3Model
+  attention_bias: false
+  attention_dropout: 0.0
+  auto_map:
+    AutoConfig: configuration.PPLXQwen3Config
+    AutoModel: modeling.PPLXQwen3Model
+  bos_token_id: 151643
+  dtype: float32
+  eos_token_id: 151643
+  head_dim: 128
+  hidden_act: silu
+  hidden_size: 1024
+  initializer_range: 0.02
+  intermediate_size: 3072
+  layer_types:
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  max_position_embeddings: 32768
+  max_window_layers: 28
+  model_type: bidirectional_pplx_qwen3
+  num_attention_heads: 16
+  num_hidden_layers: 28
+  num_key_value_heads: 8
+  rms_norm_eps: 1.0e-06
+  rope_parameters:
+    rope_theta: 1000000
+    rope_type: default
+  rope_theta: 1000000
+  sliding_window: null
+  tie_word_embeddings: true
+  transformers_version: 5.0.0.dev0
+  transformers.js_config:
+    use_external_data_format:
+      model.onnx: 2
+      model_quantized.onnx: 1
+      model_q4.onnx: 1
+  use_cache: false
+  use_sliding_window: false
+  vocab_size: 151936
+  attn_implementation: sdpa
+  use_bidirectional_attention: true
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-19T11:25:23.000Z'

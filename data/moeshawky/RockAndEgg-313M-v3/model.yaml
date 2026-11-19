@@ -1,0 +1,167 @@
+_id: 6afb492beaed980ca9112457
+id: moeshawky/RockAndEgg-313M-v3
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- rockandegg_v3_systemone
+- feature-extraction
+- qwen3
+- typed-decisions
+- shared-state
+- bfloat16
+- custom_code
+- dataset:LocalLLaMA/typed-decisions
+- license:apache-2.0
+- region:us
+downloads: 85
+likes: 0
+modelId: moeshawky/RockAndEgg-313M-v3
+author: moeshawky
+sha: c8d6f8c1e3cc32456ddb80640a7339789ca7dff8
+lastModified: '2026-11-19T01:46:28.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - RockAndEggV3SystemOneModel
+  auto_map:
+    AutoConfig: configuration_rockandegg_v3.RockAndEggV3Config
+    AutoModel: modeling_rockandegg_v3.RockAndEggV3SystemOneModel
+  model_type: rockandegg_v3_systemone
+  tokenizer_config:
+    bos_token: null
+    eos_token: <|endoftext|>
+    unk_token: null
+    pad_token: <|endoftext|>
+cardData:
+  license: apache-2.0
+  library_name: transformers
+  tags:
+  - qwen3
+  - typed-decisions
+  - shared-state
+  - bfloat16
+  datasets:
+  - LocalLLaMA/typed-decisions
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_rockandegg_v3.RockAndEggV3SystemOneModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: .gitignore
+- rfilename: ATTRIBUTION.md
+- rfilename: BENCHMARK.md
+- rfilename: CALIBRATION_LIMITATIONS.md
+- rfilename: EVALUATION_REPORT.md
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: RELEASE_MANIFEST.json
+- rfilename: TRAINING_PROVENANCE.md
+- rfilename: assets/rockandegg.png
+- rfilename: bf16_conversion_report.json
+- rfilename: config.json
+- rfilename: configuration_rockandegg_v3.py
+- rfilename: merges.txt
+- rfilename: model.safetensors
+- rfilename: modeling_rockandegg_v3.py
+- rfilename: requirements-server.txt
+- rfilename: requirements.txt
+- rfilename: systemone_inference.py
+- rfilename: systemone_server.py
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: vocab.json
+spaces: []
+createdAt: '2026-11-16T18:19:23.000Z'
+safetensors:
+  parameters:
+    BF16: 313161732
+  total: 313161732
+usedStorage: 2506455980
+downloadsAllTime: 85
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - RockAndEggV3SystemOneModel
+  attention_bias: false
+  attention_dropout: 0.0
+  auto_map:
+    AutoConfig: configuration_rockandegg_v3.RockAndEggV3Config
+    AutoModel: modeling_rockandegg_v3.RockAndEggV3SystemOneModel
+  bos_token_id: 151643
+  dtype: bfloat16
+  eos_token_id: 151643
+  head_dim: 128
+  hidden_act: silu
+  hidden_size: 1024
+  initializer_range: 0.02
+  intermediate_size: 3072
+  layer_types:
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  - full_attention
+  max_position_embeddings: 32768
+  max_window_layers: 28
+  model_type: rockandegg_v3_systemone
+  num_attention_heads: 16
+  num_hidden_layers: 10
+  num_key_value_heads: 8
+  pad_token_id: null
+  rms_norm_eps: 1.0e-06
+  rope_parameters:
+    rope_theta: 1000000
+    rope_type: default
+  sliding_window: null
+  systemone_head:
+    backbone_architectures:
+    - Qwen3Model
+    backbone_frozen: true
+    backbone_layers: 10
+    cross_attn_heads: 16
+    generation: false
+    lm_head: false
+    marker_id: 151645
+    marker_token: <|im_end|>
+    max_option_len: 64
+    max_state_len: 256
+    mixer_dropout: 0.1
+    mixer_ffn: 2048
+    mixer_layers: 2
+    qtype_embedding: 3
+    qtype_names:
+    - choice
+    - score
+    - noul
+    scorer: 1024->256->1
+    scorer_hidden: 256
+    trained: true
+    training_dataset: LocalLLaMA/typed-decisions (config all, full-backbone fine-tune)
+    training_dataset_license: Apache-2.0
+    type: native_typed_decision_head
+    use_cosine_prior: false
+    use_cross_attn: false
+    use_option_mixer: false
+    training_dataset_revision: e6aa632c4db73b59c7713bb21066ad1a8e1bfce6
+    training_split: train (1020 dossiers, split_seed=0; DEV/RESERVED held out)
+    full_backbone_trained: true
+    release_status: research-preview (production ECE gate NOT met)
+  tie_word_embeddings: true
+  transformers_version: 5.23.0
+  use_sliding_window: false
+  vocab_size: 151936
+onnxFiles: {}
+safetensorsSizeMb: 626.3
+approxSizeMb: 626.3
+fetchedAt: '2026-11-19T11:25:23.000Z'

@@ -1,0 +1,136 @@
+_id: 6afeb01f30008dc9e5e6d918
+id: chloehlee/delight-fm-stromal-age
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- geneformer_mamba
+- feature-extraction
+- single-cell
+- gene-expression
+- mamba
+- biology
+- delight-fm
+- age-regression
+- custom_code
+- base_model:chloehlee/delight-fm-stromal
+- base_model:finetune:chloehlee/delight-fm-stromal
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: chloehlee/delight-fm-stromal-age
+author: chloehlee
+sha: b22bd092733245b571ad9db09474a114bb36bf51
+lastModified: '2026-11-19T10:45:08.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - GeneformerMambaForSequenceClassification
+  auto_map:
+    AutoConfig: geneformer_mamba_model.GeneformerMambaConfig
+    AutoModel: geneformer_mamba_model.GeneformerMambaForSequenceClassification
+    AutoModelForSequenceClassification: geneformer_mamba_model.GeneformerMambaForSequenceClassification
+  model_type: geneformer_mamba
+cardData:
+  library_name: transformers
+  license: apache-2.0
+  tags:
+  - single-cell
+  - gene-expression
+  - mamba
+  - biology
+  - delight-fm
+  - age-regression
+  base_model: chloehlee/delight-fm-stromal
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: geneformer_mamba_model.GeneformerMambaForSequenceClassification
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: SHA256SUMS
+- rfilename: config.json
+- rfilename: docs/THIRD_PARTY_NOTICES.md
+- rfilename: geneformer_mamba_model.py
+- rfilename: metadata/export_provenance.json
+- rfilename: metadata/publication.json
+- rfilename: metadata/selection.json
+- rfilename: model.safetensors
+- rfilename: notebook_workflows.py
+- rfilename: notebooks/01_predict_age.ipynb
+- rfilename: notebooks/02_gene_scenic_age_perturbations.ipynb
+- rfilename: release_utils.py
+- rfilename: requirements.txt
+- rfilename: resources/gene_statistics.csv
+- rfilename: resources/gene_symbol_to_ensembl.tsv
+- rfilename: resources/label_maps.json
+- rfilename: resources/preprocessor_config.json
+- rfilename: resources/regulons.tsv
+- rfilename: resources/token_dictionary.json
+- rfilename: resources/token_dictionary.pkl
+- rfilename: resources/var.csv
+- rfilename: signed_tf_targets.py
+spaces: []
+createdAt: '2026-11-19T08:15:27.000Z'
+safetensors:
+  parameters:
+    F32: 20852225
+  total: 20852225
+usedStorage: 84202644
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - GeneformerMambaForSequenceClassification
+  auto_map:
+    AutoConfig: geneformer_mamba_model.GeneformerMambaConfig
+    AutoModel: geneformer_mamba_model.GeneformerMambaForSequenceClassification
+    AutoModelForSequenceClassification: geneformer_mamba_model.GeneformerMambaForSequenceClassification
+  cluster_auxiliary_loss_weight: 0.05
+  conv_kernel: 4
+  expand: 2
+  hidden_dropout_prob: 0.02
+  hidden_size: 512
+  id2label:
+    '0': log2_PCW
+  label2id:
+    log2_PCW: 0
+  lineage_auxiliary_loss_weight: 0.02
+  max_position_embeddings: 2048
+  model_type: geneformer_mamba
+  multiome_adversarial_loss_weight: 0.02
+  num_cluster_labels: 24
+  num_hidden_layers: 4
+  num_labels: 1
+  num_lineage_labels: 11
+  num_multiome_labels: 2
+  num_orig_ident_labels: 63
+  num_study_labels: 16
+  orig_ident_adversarial_loss_weight: 0.02
+  pad_token_id: 0
+  pcw_auxiliary_loss_weight: 0.1
+  pcw_huber_beta: 0.5
+  pcw_log2_max: 12.156083076288681
+  pcw_log2_min: 2.584962500721156
+  pcw_plateau_log2_init: 4.169925001442312
+  pcw_plateau_slope_init: 1.0
+  pcw_rank_loss_weight: 0.02
+  problem_type: regression
+  state_size: 16
+  study_adversarial_loss_weight: 0.02
+  torch_dtype: float32
+  transformers_version: 4.36.2
+  use_expression_values: true
+  vocab_size: 25426
+onnxFiles: {}
+safetensorsSizeMb: 83.4
+approxSizeMb: 83.4
+fetchedAt: '2026-11-19T11:25:23.000Z'

@@ -1,0 +1,107 @@
+_id: 6afdb3211fefb78485bb1991
+id: dynasty-ai/tiny-embed-61m
+private: false
+pipeline_tag: feature-extraction
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- pytorch
+- tiny_custom_embed
+- feature-extraction
+- sentence-similarity
+- text-embeddings-inference
+- mteb
+- chinese
+- tiny
+- zh
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 1
+modelId: dynasty-ai/tiny-embed-61m
+author: dynasty-ai
+sha: 1209a7bac8d676b6291d84ee7bec32193ae72d06
+lastModified: '2026-11-18T14:16:26.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  model_type: tiny_custom_embed
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  license: apache-2.0
+  language:
+  - zh
+  library_name: sentence-transformers
+  pipeline_tag: feature-extraction
+  tags:
+  - sentence-transformers
+  - feature-extraction
+  - sentence-similarity
+  - text-embeddings-inference
+  - mteb
+  - chinese
+  - tiny
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Normalize/config.json
+- rfilename: 3_Dense/config.json
+- rfilename: 3_Dense/pytorch_model.bin
+- rfilename: 4_Normalize/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: modules.json
+- rfilename: pytorch_model.bin
+- rfilename: special_tokens_map.json
+- rfilename: tiny_st_module.py
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: vocab.txt
+spaces: []
+createdAt: '2026-11-18T14:16:01.000Z'
+usedStorage: 247328416
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  variant: B
+  vocab_size: 21128
+  hidden_size: 512
+  num_unique_layers: 12
+  num_repeats: 1
+  intermediate_size: 2048
+  num_attention_heads: 8
+  sliding_window: 512
+  use_qk_norm: true
+  use_bias: false
+  activation: geglu
+  pooling: mean
+  latent_queries: 4
+  layer_scale: false
+  depth_attention: false
+  normalize: true
+  rope_theta: 10000.0
+  positional_encoding: abs
+  loop_index_embedding: false
+  pos_adapter_rank: 0
+  pos_adapter_ffn: false
+  max_position_embeddings: 512
+  attention_dropout: 0.0
+  hidden_dropout: 0.0
+  attn_impl: flash
+  pad_token_id: 0
+  gradient_checkpointing: false
+  head_dim: 64
+  effective_num_layers: 12
+  model_type: tiny_custom_embed
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-19T11:25:23.000Z'

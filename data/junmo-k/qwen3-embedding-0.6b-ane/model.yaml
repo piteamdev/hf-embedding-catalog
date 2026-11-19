@@ -1,0 +1,306 @@
+_id: 6afe69778f320fd18388d1a8
+id: junmo-k/qwen3-embedding-0.6b-ane
+private: false
+pipeline_tag: feature-extraction
+tags:
+- coreml
+- qwen3
+- apple-silicon
+- embeddings
+- feature-extraction
+- base_model:Qwen/Qwen3-Embedding-0.6B
+- base_model:quantized:Qwen/Qwen3-Embedding-0.6B
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: junmo-k/qwen3-embedding-0.6b-ane
+author: junmo-k
+sha: 7555033ca84ed6bdcf3a0bf968a1e9c7d7e56b3f
+lastModified: '2026-11-19T03:56:54.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - Qwen3ForCausalLM
+  model_type: qwen3
+  tokenizer_config:
+    bos_token: null
+    eos_token: <|im_end|>
+    unk_token: null
+    pad_token: <|endoftext|>
+    chat_template: "{%- if tools %}\n    {{- '<|im_start|>system\\n' }}\n    {%- if messages[0].role == 'system' %}\n    \
+      \    {{- messages[0].content + '\\n\\n' }}\n    {%- endif %}\n    {{- \"# Tools\\n\\nYou may call one or more functions\
+      \ to assist with the user query.\\n\\nYou are provided with function signatures within <tools></tools> XML tags:\\n<tools>\"\
+      \ }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{-\
+      \ \"\\n</tools>\\n\\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call>\
+      \ XML tags:\\n<tool_call>\\n{\\\"name\\\": <function-name>, \\\"arguments\\\": <args-json-object>}\\n</tool_call><|im_end|>\\\
+      n\" }}\n{%- else %}\n    {%- if messages[0].role == 'system' %}\n        {{- '<|im_start|>system\\n' + messages[0].content\
+      \ + '<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- set ns = namespace(multi_step_tool=true, last_query_index=messages|length\
+      \ - 1) %}\n{%- for message in messages[::-1] %}\n    {%- set index = (messages|length - 1) - loop.index0 %}\n    {%-\
+      \ if ns.multi_step_tool and message.role == \"user\" and not(message.content.startswith('<tool_response>') and message.content.endswith('</tool_response>'))\
+      \ %}\n        {%- set ns.multi_step_tool = false %}\n        {%- set ns.last_query_index = index %}\n    {%- endif %}\n\
+      {%- endfor %}\n{%- for message in messages %}\n    {%- if (message.role == \"user\") or (message.role == \"system\"\
+      \ and not loop.first) %}\n        {{- '<|im_start|>' + message.role + '\\n' + message.content + '<|im_end|>' + '\\n'\
+      \ }}\n    {%- elif message.role == \"assistant\" %}\n        {%- set content = message.content %}\n        {%- set reasoning_content\
+      \ = '' %}\n        {%- if message.reasoning_content is defined and message.reasoning_content is not none %}\n      \
+      \      {%- set reasoning_content = message.reasoning_content %}\n        {%- else %}\n            {%- if '</think>'\
+      \ in message.content %}\n                {%- set content = message.content.split('</think>')[-1].lstrip('\\n') %}\n\
+      \                {%- set reasoning_content = message.content.split('</think>')[0].rstrip('\\n').split('<think>')[-1].lstrip('\\\
+      n') %}\n            {%- endif %}\n        {%- endif %}\n        {%- if loop.index0 > ns.last_query_index %}\n      \
+      \      {%- if loop.last or (not loop.last and reasoning_content) %}\n                {{- '<|im_start|>' + message.role\
+      \ + '\\n<think>\\n' + reasoning_content.strip('\\n') + '\\n</think>\\n\\n' + content.lstrip('\\n') }}\n            {%-\
+      \ else %}\n                {{- '<|im_start|>' + message.role + '\\n' + content }}\n            {%- endif %}\n      \
+      \  {%- else %}\n            {{- '<|im_start|>' + message.role + '\\n' + content }}\n        {%- endif %}\n        {%-\
+      \ if message.tool_calls %}\n            {%- for tool_call in message.tool_calls %}\n                {%- if (loop.first\
+      \ and content) or (not loop.first) %}\n                    {{- '\\n' }}\n                {%- endif %}\n            \
+      \    {%- if tool_call.function %}\n                    {%- set tool_call = tool_call.function %}\n                {%-\
+      \ endif %}\n                {{- '<tool_call>\\n{\"name\": \"' }}\n                {{- tool_call.name }}\n          \
+      \      {{- '\", \"arguments\": ' }}\n                {%- if tool_call.arguments is string %}\n                    {{-\
+      \ tool_call.arguments }}\n                {%- else %}\n                    {{- tool_call.arguments | tojson }}\n   \
+      \             {%- endif %}\n                {{- '}\\n</tool_call>' }}\n            {%- endfor %}\n        {%- endif\
+      \ %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if loop.first or (messages[loop.index0\
+      \ - 1].role != \"tool\") %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\\
+      n' }}\n        {{- message.content }}\n        {{- '\\n</tool_response>' }}\n        {%- if loop.last or (messages[loop.index0\
+      \ + 1].role != \"tool\") %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- endif %}\n{%- endfor\
+      \ %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n    {%- if enable_thinking is defined\
+      \ and enable_thinking is false %}\n        {{- '<think>\\n\\n</think>\\n\\n' }}\n    {%- endif %}\n{%- endif %}"
+cardData:
+  license: apache-2.0
+  base_model: Qwen/Qwen3-Embedding-0.6B
+  pipeline_tag: feature-extraction
+  tags:
+  - coreml
+  - apple-silicon
+  - embeddings
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: attn_S2048_Q2048.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: attn_S2048_Q2048.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: attn_S2048_Q2048.mlpackage/Manifest.json
+- rfilename: attn_S32768_Q2048.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: attn_S32768_Q2048.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: attn_S32768_Q2048.mlpackage/Manifest.json
+- rfilename: attn_S8192_Q2048.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: attn_S8192_Q2048.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: attn_S8192_Q2048.mlpackage/Manifest.json
+- rfilename: config.json
+- rfilename: embed_64.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: embed_64.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: embed_64.mlpackage/Manifest.json
+- rfilename: embeddings.f32
+- rfilename: final_norm.f32
+- rfilename: manifest.json
+- rfilename: post0.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post0.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post0.mlpackage/Manifest.json
+- rfilename: post1.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post1.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post1.mlpackage/Manifest.json
+- rfilename: post10.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post10.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post10.mlpackage/Manifest.json
+- rfilename: post11.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post11.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post11.mlpackage/Manifest.json
+- rfilename: post12.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post12.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post12.mlpackage/Manifest.json
+- rfilename: post13.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post13.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post13.mlpackage/Manifest.json
+- rfilename: post14.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post14.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post14.mlpackage/Manifest.json
+- rfilename: post15.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post15.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post15.mlpackage/Manifest.json
+- rfilename: post16.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post16.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post16.mlpackage/Manifest.json
+- rfilename: post17.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post17.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post17.mlpackage/Manifest.json
+- rfilename: post18.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post18.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post18.mlpackage/Manifest.json
+- rfilename: post19.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post19.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post19.mlpackage/Manifest.json
+- rfilename: post2.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post2.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post2.mlpackage/Manifest.json
+- rfilename: post20.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post20.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post20.mlpackage/Manifest.json
+- rfilename: post21.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post21.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post21.mlpackage/Manifest.json
+- rfilename: post22.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post22.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post22.mlpackage/Manifest.json
+- rfilename: post23.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post23.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post23.mlpackage/Manifest.json
+- rfilename: post24.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post24.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post24.mlpackage/Manifest.json
+- rfilename: post25.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post25.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post25.mlpackage/Manifest.json
+- rfilename: post26.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post26.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post26.mlpackage/Manifest.json
+- rfilename: post27.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post27.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post27.mlpackage/Manifest.json
+- rfilename: post3.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post3.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post3.mlpackage/Manifest.json
+- rfilename: post4.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post4.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post4.mlpackage/Manifest.json
+- rfilename: post5.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post5.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post5.mlpackage/Manifest.json
+- rfilename: post6.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post6.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post6.mlpackage/Manifest.json
+- rfilename: post7.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post7.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post7.mlpackage/Manifest.json
+- rfilename: post8.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post8.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post8.mlpackage/Manifest.json
+- rfilename: post9.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: post9.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: post9.mlpackage/Manifest.json
+- rfilename: pre0.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre0.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre0.mlpackage/Manifest.json
+- rfilename: pre1.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre1.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre1.mlpackage/Manifest.json
+- rfilename: pre10.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre10.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre10.mlpackage/Manifest.json
+- rfilename: pre11.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre11.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre11.mlpackage/Manifest.json
+- rfilename: pre12.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre12.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre12.mlpackage/Manifest.json
+- rfilename: pre13.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre13.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre13.mlpackage/Manifest.json
+- rfilename: pre14.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre14.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre14.mlpackage/Manifest.json
+- rfilename: pre15.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre15.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre15.mlpackage/Manifest.json
+- rfilename: pre16.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre16.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre16.mlpackage/Manifest.json
+- rfilename: pre17.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre17.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre17.mlpackage/Manifest.json
+- rfilename: pre18.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre18.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre18.mlpackage/Manifest.json
+- rfilename: pre19.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre19.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre19.mlpackage/Manifest.json
+- rfilename: pre2.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre2.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre2.mlpackage/Manifest.json
+- rfilename: pre20.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre20.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre20.mlpackage/Manifest.json
+- rfilename: pre21.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre21.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre21.mlpackage/Manifest.json
+- rfilename: pre22.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre22.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre22.mlpackage/Manifest.json
+- rfilename: pre23.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre23.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre23.mlpackage/Manifest.json
+- rfilename: pre24.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre24.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre24.mlpackage/Manifest.json
+- rfilename: pre25.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre25.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre25.mlpackage/Manifest.json
+- rfilename: pre26.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre26.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre26.mlpackage/Manifest.json
+- rfilename: pre27.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre27.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre27.mlpackage/Manifest.json
+- rfilename: pre3.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre3.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre3.mlpackage/Manifest.json
+- rfilename: pre4.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre4.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre4.mlpackage/Manifest.json
+- rfilename: pre5.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre5.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre5.mlpackage/Manifest.json
+- rfilename: pre6.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre6.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre6.mlpackage/Manifest.json
+- rfilename: pre7.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre7.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre7.mlpackage/Manifest.json
+- rfilename: pre8.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre8.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre8.mlpackage/Manifest.json
+- rfilename: pre9.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: pre9.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: pre9.mlpackage/Manifest.json
+- rfilename: selftest.bin
+- rfilename: selftest.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-19T03:13:59.000Z'
+usedStorage: 2396806682
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - Qwen3ForCausalLM
+  attention_bias: false
+  attention_dropout: 0.0
+  bos_token_id: 151643
+  eos_token_id: 151643
+  head_dim: 128
+  hidden_act: silu
+  hidden_size: 1024
+  initializer_range: 0.02
+  intermediate_size: 3072
+  max_position_embeddings: 32768
+  max_window_layers: 28
+  model_type: qwen3
+  num_attention_heads: 16
+  num_hidden_layers: 28
+  num_key_value_heads: 8
+  rms_norm_eps: 1.0e-06
+  rope_scaling: null
+  rope_theta: 1000000
+  sliding_window: null
+  tie_word_embeddings: true
+  torch_dtype: bfloat16
+  transformers_version: 4.51.3
+  use_cache: true
+  use_sliding_window: false
+  vocab_size: 151669
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-19T11:25:23.000Z'

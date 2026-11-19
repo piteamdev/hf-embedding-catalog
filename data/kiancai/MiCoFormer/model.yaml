@@ -1,0 +1,46 @@
+_id: 6afdf81e9a0b8819fb2e4a44
+id: kiancai/MiCoFormer
+private: false
+pipeline_tag: feature-extraction
+library_name: micoformer
+tags:
+- micoformer
+- microbiome
+- metagenomics
+- feature-extraction
+- pytorch
+- license:cc-by-nc-4.0
+- region:us
+downloads: 0
+likes: 0
+modelId: kiancai/MiCoFormer
+author: kiancai
+sha: bcd29d62094aec9f6fb34c796f40a42563380c61
+lastModified: '2026-11-18T19:24:27.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: cc-by-nc-4.0
+  library_name: micoformer
+  tags:
+  - microbiome
+  - metagenomics
+  - feature-extraction
+  - pytorch
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: SHA256SUMS
+- rfilename: micoformer_epoch096.pt
+spaces: []
+createdAt: '2026-11-18T19:10:22.000Z'
+usedStorage: 295739360
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-19T11:25:23.000Z'

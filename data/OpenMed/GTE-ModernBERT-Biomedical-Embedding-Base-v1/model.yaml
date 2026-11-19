@@ -1,0 +1,218 @@
+_id: 6aedf3da89a70556297ed5aa
+id: OpenMed/GTE-ModernBERT-Biomedical-Embedding-Base-v1
+private: false
+pipeline_tag: sentence-similarity
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- modernbert
+- feature-extraction
+- sentence-similarity
+- text-embeddings
+- retrieval
+- semantic-search
+- medical
+- biomedical
+- scientific-literature
+- pubmed
+- bioasq
+- gte
+- openmed
+- en
+- arxiv:2508.01630
+- base_model:Alibaba-NLP/gte-modernbert-base
+- base_model:finetune:Alibaba-NLP/gte-modernbert-base
+- license:apache-2.0
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 4
+likes: 0
+modelId: OpenMed/GTE-ModernBERT-Biomedical-Embedding-Base-v1
+author: OpenMed
+sha: a68bdf9c359a989d4c3f2ee0876fe3786d4b60e2
+lastModified: '2026-11-18T13:58:08.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index:
+- name: GTE-ModernBERT-Biomedical-Embedding-Base-v1
+  results:
+  - task:
+      type: retrieval
+      name: Biomedical literature passage retrieval
+    dataset:
+      name: BioASQ (200 held-out development questions, 16,970 snippets)
+      type: bioasq
+      split: held-out development
+    metrics:
+    - type: ndcg_at_10
+      value: 86.81
+      name: NDCG@10 (known-positive)
+      verified: false
+    - type: recall_at_10
+      value: 73.28
+      name: Recall@10 (known-positive)
+      verified: false
+    - type: mrr_at_10
+      value: 92.26
+      name: MRR@10 (known-positive)
+      verified: false
+config:
+  architectures:
+  - ModernBertModel
+  model_type: modernbert
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  license: apache-2.0
+  language:
+  - en
+  library_name: transformers
+  pipeline_tag: sentence-similarity
+  base_model: Alibaba-NLP/gte-modernbert-base
+  tags:
+  - sentence-similarity
+  - feature-extraction
+  - text-embeddings
+  - retrieval
+  - semantic-search
+  - medical
+  - biomedical
+  - scientific-literature
+  - pubmed
+  - bioasq
+  - modernbert
+  - gte
+  - openmed
+  model-index:
+  - name: GTE-ModernBERT-Biomedical-Embedding-Base-v1
+    results:
+    - task:
+        type: retrieval
+        name: Biomedical literature passage retrieval
+      dataset:
+        name: BioASQ (200 held-out development questions, 16,970 snippets)
+        type: bioasq
+        split: held-out development
+      metrics:
+      - type: ndcg_at_10
+        value: 86.81
+        name: NDCG@10 (known-positive)
+        verified: false
+      - type: recall_at_10
+        value: 73.28
+        name: Recall@10 (known-positive)
+        verified: false
+      - type: mrr_at_10
+        value: 92.26
+        name: MRR@10 (known-positive)
+        verified: false
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-06T15:35:54.000Z'
+safetensors:
+  parameters:
+    F32: 149014272
+  total: 149014272
+usedStorage: 596070136
+downloadsAllTime: 4
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - ModernBertModel
+  attention_bias: false
+  attention_dropout: 0.0
+  bos_token_id: 50281
+  classifier_activation: gelu
+  classifier_bias: false
+  classifier_dropout: 0.0
+  classifier_pooling: mean
+  cls_token_id: 50281
+  decoder_bias: true
+  deterministic_flash_attn: false
+  dtype: float32
+  embedding_dropout: 0.0
+  eos_token_id: 50282
+  global_attn_every_n_layers: 3
+  gradient_checkpointing: false
+  hidden_activation: gelu
+  hidden_size: 768
+  initializer_cutoff_factor: 2.0
+  initializer_range: 0.02
+  intermediate_size: 1152
+  layer_norm_eps: 1.0e-05
+  layer_types:
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  local_attention: 128
+  max_position_embeddings: 8192
+  mlp_bias: false
+  mlp_dropout: 0.0
+  model_type: modernbert
+  norm_bias: false
+  norm_eps: 1.0e-05
+  num_attention_heads: 12
+  num_hidden_layers: 22
+  pad_token_id: 50283
+  position_embedding_type: absolute
+  rope_parameters:
+    full_attention:
+      rope_theta: 160000.0
+      rope_type: default
+    sliding_attention:
+      rope_theta: 10000.0
+      rope_type: default
+  sep_token_id: 50282
+  sparse_pred_ignore_index: -100
+  sparse_prediction: false
+  tie_word_embeddings: true
+  transformers_version: 5.20.2
+  vocab_size: 50368
+onnxFiles: {}
+safetensorsSizeMb: 596.1
+approxSizeMb: 596.1
+fetchedAt: '2026-11-19T11:25:23.000Z'

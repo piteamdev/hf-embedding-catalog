@@ -1,0 +1,133 @@
+_id: 6afe42b25a433c947e08dffd
+id: EVOKA/BanhTrangPhoi-L20
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- onnx
+- safetensors
+- embeddings
+- bge-m3
+- distillation
+- multilingual
+- dense
+- sparse
+- colbert
+- pruned-vocab
+- int8
+- feature-extraction
+- vi
+- ja
+- en
+- zh
+- ko
+- ar
+- es
+- fr
+- hi
+- id
+- ru
+- th
+- arxiv:2402.03216
+- base_model:BAAI/bge-m3
+- base_model:quantized:BAAI/bge-m3
+- license:mit
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 1
+modelId: EVOKA/BanhTrangPhoi-L20
+author: EVOKA
+sha: 843a43a317e841c8db7f3de061d48fa47b6faa3d
+lastModified: '2026-11-19T00:29:27.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  base_model: BAAI/bge-m3
+  library_name: transformers
+  pipeline_tag: feature-extraction
+  language:
+  - vi
+  - ja
+  - en
+  - zh
+  - ko
+  - ar
+  - es
+  - fr
+  - hi
+  - id
+  - ru
+  - th
+  - multilingual
+  tags:
+  - embeddings
+  - bge-m3
+  - distillation
+  - multilingual
+  - dense
+  - sparse
+  - colbert
+  - pruned-vocab
+  - onnx
+  - int8
+transformersInfo:
+  auto_model: AutoModel
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: cpu-fp32/PRUNE_INFO.json
+- rfilename: cpu-fp32/SURGERY.json
+- rfilename: cpu-fp32/colbert_linear.pt
+- rfilename: cpu-fp32/id_map_new2old.json
+- rfilename: cpu-fp32/id_map_old2new.json
+- rfilename: cpu-fp32/model.onnx
+- rfilename: cpu-fp32/sentencepiece.bpe.model
+- rfilename: cpu-fp32/sparse_linear.pt
+- rfilename: cpu-fp32/special_tokens_map.json
+- rfilename: cpu-fp32/tokenizer.json
+- rfilename: cpu-fp32/tokenizer_config.json
+- rfilename: cpu-int8-hlf/PRUNE_INFO.json
+- rfilename: cpu-int8-hlf/SURGERY.json
+- rfilename: cpu-int8-hlf/colbert_linear.pt
+- rfilename: cpu-int8-hlf/id_map_new2old.json
+- rfilename: cpu-int8-hlf/id_map_old2new.json
+- rfilename: cpu-int8-hlf/model.onnx
+- rfilename: cpu-int8-hlf/sentencepiece.bpe.model
+- rfilename: cpu-int8-hlf/sparse_linear.pt
+- rfilename: cpu-int8-hlf/special_tokens_map.json
+- rfilename: cpu-int8-hlf/tokenizer.json
+- rfilename: cpu-int8-hlf/tokenizer_config.json
+- rfilename: gate/GATE_L20_gpu-fp16.md
+- rfilename: gate/GATE_cpu-fp32.md
+- rfilename: gate/GATE_cpu-int8-hlf.md
+- rfilename: gpu-fp16/PRUNE_INFO.json
+- rfilename: gpu-fp16/SURGERY.json
+- rfilename: gpu-fp16/colbert_linear.pt
+- rfilename: gpu-fp16/config.json
+- rfilename: gpu-fp16/id_map_new2old.json
+- rfilename: gpu-fp16/id_map_old2new.json
+- rfilename: gpu-fp16/model.safetensors
+- rfilename: gpu-fp16/sentencepiece.bpe.model
+- rfilename: gpu-fp16/sparse_linear.pt
+- rfilename: gpu-fp16/special_tokens_map.json
+- rfilename: gpu-fp16/tokenizer.json
+- rfilename: gpu-fp16/tokenizer_config.json
+- rfilename: reference/m3.py
+spaces: []
+createdAt: '2026-11-19T00:28:34.000Z'
+usedStorage: 3294012910
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  cpu-fp32/model.onnx: 1557.9
+  cpu-int8-hlf/model.onnx: 954.9
+safetensorsSizeMb: 776.7
+approxSizeMb: 0.0
+fetchedAt: '2026-11-19T11:25:23.000Z'

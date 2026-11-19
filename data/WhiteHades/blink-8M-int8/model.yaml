@@ -1,0 +1,55 @@
+_id: 6afd9c4d5a8b4027a1dca204
+id: WhiteHades/blink-8M-int8
+private: false
+pipeline_tag: feature-extraction
+library_name: metldr
+tags:
+- metldr
+- static-embeddings
+- model2vec
+- retrieval
+- int8
+- quantized
+- feature-extraction
+- en
+- base_model:minishlab/blink-8M
+- base_model:finetune:minishlab/blink-8M
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: WhiteHades/blink-8M-int8
+author: WhiteHades
+sha: 2358eb5a8035a4e87f66e32024824f7481dbca88
+lastModified: '2026-11-18T12:38:43.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  base_model: minishlab/blink-8M
+  library_name: metldr
+  pipeline_tag: feature-extraction
+  tags:
+  - static-embeddings
+  - model2vec
+  - retrieval
+  - int8
+  - quantized
+  language:
+  - en
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: blink-8M-int8.metldr
+spaces: []
+createdAt: '2026-11-18T12:38:37.000Z'
+usedStorage: 8018733
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-19T11:25:23.000Z'

@@ -1,0 +1,57 @@
+_id: 6b000747d169a6d6236cb17c
+id: inclusionAI/LingSante-Pulse-1.0
+private: false
+pipeline_tag: feature-extraction
+tags:
+- safetensors
+- physiological-signals
+- time-series
+- pytorch
+- feature-extraction
+- license:mit
+- region:us
+downloads: 0
+likes: 1
+modelId: inclusionAI/LingSante-Pulse-1.0
+author: inclusionAI
+sha: 51582cc8487ab0e0f48d866bfc0124afbaf6562a
+lastModified: '2026-11-20T09:12:54.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  pipeline_tag: feature-extraction
+  tags:
+  - physiological-signals
+  - time-series
+  - pytorch
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: channels.json
+- rfilename: channels.npz
+- rfilename: config.json
+- rfilename: model.safetensors
+spaces: []
+createdAt: '2026-11-20T08:39:35.000Z'
+safetensors:
+  parameters:
+    F32: 16708352
+  total: 16708352
+usedStorage: 66934162
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  model: LingSante-Pulse
+  format_version: 1
+  files:
+    model.safetensors: 7daa43c9b271fa1d842457c9100824c859b06b9800023dc8b97eb76eb37012a3
+    channels.npz: b9860422c4e9b6a701b4822975e1815ca71eda798ab77feee0c2b252cb5c81c5
+    channels.json: 3c5bc7e29a4f1fcd1faa01143b405cb6d8ccd44d541462d760ed3772396986e7
+onnxFiles: {}
+safetensorsSizeMb: 66.9
+approxSizeMb: 66.8
+fetchedAt: '2026-11-20T11:15:32.000Z'

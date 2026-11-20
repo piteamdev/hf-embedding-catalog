@@ -1,0 +1,69 @@
+_id: 6afee213bab2eb6639d7adaa
+id: much1na/Nemotron-3-Embed-1B-BF16-GGUF
+private: false
+pipeline_tag: sentence-similarity
+library_name: llama.cpp
+tags:
+- llama.cpp
+- gguf
+- embedding
+- nemotron
+- llama-cpp
+- sentence-similarity
+- multilingual
+- base_model:nvidia/Nemotron-3-Embed-1B-BF16
+- base_model:quantized:nvidia/Nemotron-3-Embed-1B-BF16
+- license:other
+- region:us
+- feature-extraction
+downloads: 213
+likes: 0
+modelId: much1na/Nemotron-3-Embed-1B-BF16-GGUF
+author: much1na
+sha: f471d8ca8de90c15378f03b570c412af7e0a4fa4
+lastModified: '2026-11-19T11:48:55.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  pipeline_tag: sentence-similarity
+  tags:
+  - gguf
+  - embedding
+  - nemotron
+  - llama-cpp
+  language:
+  - multilingual
+  base_model: nvidia/Nemotron-3-Embed-1B-BF16
+  base_model_relation: quantized
+  inference: false
+  license: other
+  license_name: nvidia-open-model-license
+  license_link: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
+  library_name: llama.cpp
+gguf:
+  total: 1140918272
+  architecture: mistral3
+  context_length: 262144
+  causal: false
+  bos_token: <s>
+  eos_token: </s>
+  pooling_type: 1
+  totalFileSize: 2289841344
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: nemotron-3-embed-1b-BF16.gguf
+- rfilename: nemotron-3-embed-1b-Q6_K.gguf
+- rfilename: nemotron-3-embed-1b-Q8_0.gguf
+spaces: []
+createdAt: '2026-11-19T11:48:35.000Z'
+usedStorage: 4454129216
+downloadsAllTime: 213
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-20T11:15:32.000Z'

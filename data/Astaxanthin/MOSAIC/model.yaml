@@ -1,0 +1,126 @@
+_id: 6aff1e9cffe859af704245d5
+id: Astaxanthin/MOSAIC
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- mosaic
+- feature-extraction
+- computational-pathology
+- multimodal
+- survival-analysis
+- custom_code
+- en
+- region:us
+downloads: 4
+likes: 1
+modelId: Astaxanthin/MOSAIC
+author: Astaxanthin
+sha: 75e56269593fabb1e5b90f101abdc6a4bb5c2330
+lastModified: '2026-11-20T06:16:07.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  architectures:
+  - MOSAICModel
+  auto_map:
+    AutoConfig: configuration_mosaic.MOSAICConfig
+    AutoModel: modeling_mosaic.MOSAICModel
+  model_type: mosaic
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  library_name: transformers
+  language:
+  - en
+  tags:
+  - computational-pathology
+  - multimodal
+  - survival-analysis
+  - feature-extraction
+  - custom_code
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_mosaic.MOSAICModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: configuration_mosaic.py
+- rfilename: example.py
+- rfilename: language.py
+- rfilename: model.py
+- rfilename: model.safetensors
+- rfilename: modeling_mosaic.py
+- rfilename: predictor.py
+- rfilename: requirements.txt
+- rfilename: spatial.py
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer_config.json
+- rfilename: vision.py
+- rfilename: vocab.txt
+spaces: []
+createdAt: '2026-11-19T16:06:52.000Z'
+safetensors:
+  parameters:
+    F32: 185802299
+  total: 185802299
+usedStorage: 743249932
+downloadsAllTime: 4
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - MOSAICModel
+  assume_ordered_square: true
+  auto_map:
+    AutoConfig: configuration_mosaic.MOSAICConfig
+    AutoModel: modeling_mosaic.MOSAICModel
+  dtype: float32
+  eval_crop_size: 80
+  eval_crop_size_range:
+  - 64
+  - 100
+  eval_risk_pool: risk
+  eval_view_pool: max
+  feats_dim: 768
+  language_hidden_dim: 64
+  language_max_lengths:
+  - 128
+  - 256
+  - 256
+  model_type: mosaic
+  num_prototypes_os: 8
+  num_prototypes_pfs: 8
+  patch_size_lv0: null
+  task_count: 3
+  text_config:
+    attention_probs_dropout_prob: 0.1
+    hidden_act: gelu
+    hidden_dropout_prob: 0.1
+    hidden_size: 768
+    initializer_range: 0.02
+    intermediate_size: 3072
+    layer_norm_eps: 1.0e-12
+    max_position_embeddings: 512
+    model_type: bert
+    num_attention_heads: 12
+    num_hidden_layers: 12
+    type_vocab_size: 2
+    vocab_size: 30522
+  trans_num: 3
+  transformers_version: 4.57.1
+  vision_adapter_bottleneck: 192
+  vision_adapter_queries: 4
+onnxFiles: {}
+safetensorsSizeMb: 743.2
+approxSizeMb: 743.2
+fetchedAt: '2026-11-20T11:15:32.000Z'

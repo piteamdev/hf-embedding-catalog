@@ -1,0 +1,116 @@
+_id: 6afdd4a6a204e7937ef0d6d4
+id: henriquegalvao/lumi-4b-embedding
+private: false
+pipeline_tag: feature-extraction
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- feature-extraction
+- embeddings
+- retrieval
+- mamba
+- mamba2
+- hybrid
+- nemotron_h
+- portuguese
+- mteb
+- pt
+- en
+- dataset:wikimedia/wikipedia
+- dataset:unicamp-dl/mmarco
+- dataset:HuggingFaceFW/fineweb-2
+- dataset:HuggingFaceFW/fineweb-edu
+- dataset:sentence-transformers/gooaq
+- dataset:sentence-transformers/all-nli
+- dataset:sentence-transformers/parallel-sentences-talks
+- dataset:sentence-transformers/parallel-sentences-tatoeba
+- arxiv:2607.04581
+- arxiv:2607.04071
+- arxiv:2504.03624
+- arxiv:2408.08066
+- arxiv:2506.05176
+- arxiv:2511.07025
+- arxiv:2407.15831
+- arxiv:2404.05961
+- arxiv:2604.02045
+- base_model:ceia-research/lumi-4b
+- base_model:finetune:ceia-research/lumi-4b
+- license:other
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: henriquegalvao/lumi-4b-embedding
+author: henriquegalvao
+sha: 5f99dac4c6be161f747eebb189708a7d8a3c8d9f
+lastModified: '2026-11-18T17:43:15.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  language:
+  - pt
+  - en
+  license: other
+  license_name: pendente
+  license_link: https://github.com/henriquegalva0/lumi-to-emb/blob/main/docs/embed/DATA_CARD.md
+  base_model: ceia-research/lumi-4b
+  base_model_relation: finetune
+  pipeline_tag: feature-extraction
+  library_name: sentence-transformers
+  tags:
+  - sentence-transformers
+  - feature-extraction
+  - embeddings
+  - retrieval
+  - mamba
+  - mamba2
+  - hybrid
+  - nemotron_h
+  - portuguese
+  - mteb
+  datasets:
+  - wikimedia/wikipedia
+  - unicamp-dl/mmarco
+  - HuggingFaceFW/fineweb-2
+  - HuggingFaceFW/fineweb-edu
+  - sentence-transformers/gooaq
+  - sentence-transformers/all-nli
+  - sentence-transformers/parallel-sentences-talks
+  - sentence-transformers/parallel-sentences-tatoeba
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: docs/DATA_CARD.md
+- rfilename: docs/DECISIONS.md
+- rfilename: docs/PIPELINE.md
+- rfilename: docs/RESULTS.md
+- rfilename: docs/plano_experimento.pdf
+- rfilename: docs/stage1/DESVIOS.md
+- rfilename: docs/stage1/README.md
+- rfilename: docs/stage1/REPORT.md
+- rfilename: docs/stage1/acc_vs_len.png
+- rfilename: docs/stage1/acc_vs_len_panels.png
+- rfilename: docs/stage1/by_depth_S.csv
+- rfilename: docs/stage1/env.json
+- rfilename: docs/stage1/failure_modes.csv
+- rfilename: docs/stage1/gates.json
+- rfilename: docs/stage1/heatmap_S_lumi.png
+- rfilename: docs/stage1/heatmap_S_nemotron.png
+- rfilename: docs/stage1/lstar.json
+- rfilename: docs/stage1/paired_tests.csv
+- rfilename: docs/stage1/perf.csv
+- rfilename: docs/stage1/perf.png
+- rfilename: docs/stage1/run_info.json
+- rfilename: docs/stage1/summary.csv
+spaces: []
+createdAt: '2026-11-18T16:39:02.000Z'
+usedStorage: 889319
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-20T11:15:32.000Z'

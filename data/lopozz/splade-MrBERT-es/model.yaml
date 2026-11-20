@@ -1,0 +1,236 @@
+_id: 6aff0b26e389974a477245df
+id: lopozz/splade-MrBERT-es
+private: false
+pipeline_tag: feature-extraction
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- sparse-encoder
+- sparse
+- asymmetric
+- inference-free
+- splade
+- generated_from_trainer
+- dataset_size:528161
+- loss:SpladeLoss
+- loss:SparseMultipleNegativesRankingLoss
+- loss:FlopsLoss
+- feature-extraction
+- it
+- dataset:unicamp-dl/mmarco
+- arxiv:2108.13897
+- arxiv:1908.10084
+- arxiv:2205.04733
+- arxiv:1807.03748
+- arxiv:2004.05665
+- base_model:BSC-LT/MrBERT-es
+- base_model:finetune:BSC-LT/MrBERT-es
+- license:apache-2.0
+- model-index
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: lopozz/splade-MrBERT-es
+author: lopozz
+sha: 1c9394bdef1e42c86be9d1675bbaa200da95bd7c
+lastModified: '2026-11-20T09:21:23.000Z'
+gated: false
+disabled: false
+widgetData:
+- text: 'P: nutriente del que las vitaminas A, D, E y K dependen para su absorción por las células. R: Las vitaminas A, D,
+    E y K dependen de las grasas para su absorción por las células. Inicie sesión para ver más información.'
+- text: 'Nueva York, NY - Pronóstico del tiempo de Theweather.com. Condiciones meteorológicas con actualizaciones de temperatura,
+    humedad, velocidad del viento, nieve, presión, etc. para Nueva York, Nueva York Hoy: Cielos nublados con lluvias ligeras,
+    con una temperatura máxima de 72 ° y una temperatura mínima de 52 ° šÃ‚Â °.'
+- text: que come el pueblo turco
+- text: Aquí se presenta un pequeño trasfondo sobre el ejercicio del privilegio ejecutivo y lo que este movimiento significa
+    potencialmente para la investigación continua. En el gobierno de los Estados Unidos, el privilegio ejecutivo es un poder
+    reclamado por el presidente y otros miembros del poder ejecutivo para resistir ciertas citaciones e intervenciones de
+    los poderes legislativo y judicial.
+- text: La toxina botulínica (BTX) es una proteína neurotóxica producida por la bacteria Clostridium botulinum y especies
+    relacionadas. [1] Evita la liberación del neurotransmisor acetilcolina de las terminaciones axónicas en la unión neuromuscular
+    y, por lo tanto, causa parálisis flácida. La infección con la bacteria causa el botulismo.
+model-index:
+- name: Inference-free SPLADE Italian BERT trained on QA tuples
+  results:
+  - task:
+      type: sparse-information-retrieval
+      name: Sparse Information Retrieval
+    dataset:
+      name: mmarco
+      type: mmarco
+    metrics:
+    - type: dot_accuracy@10
+      value: 0.9214899713467049
+      name: Dot Accuracy@10
+      verified: false
+    - type: dot_precision@10
+      value: 0.09749283667621776
+      name: Dot Precision@10
+      verified: false
+    - type: dot_recall@10
+      value: 0.9168099331423113
+      name: Dot Recall@10
+      verified: false
+    - type: dot_ndcg@10
+      value: 0.819907710763905
+      name: Dot Ndcg@10
+      verified: false
+    - type: dot_mrr@10
+      value: 0.7921018101605483
+      name: Dot Mrr@10
+      verified: false
+    - type: dot_map@10
+      value: 0.7860547046739741
+      name: Dot Map@10
+      verified: false
+    - type: query_active_dims
+      value: 8.561318397521973
+      name: Query Active Dims
+      verified: false
+    - type: query_sparsity_ratio
+      value: 0.9998327867500484
+      name: Query Sparsity Ratio
+      verified: false
+    - type: corpus_active_dims
+      value: 218.2212291545701
+      name: Corpus Active Dims
+      verified: false
+    - type: corpus_sparsity_ratio
+      value: 0.9957378666180747
+      name: Corpus Sparsity Ratio
+      verified: false
+    - type: avg_flops
+      value: 1.056733250617981
+      name: Avg Flops
+      verified: false
+config: {}
+cardData:
+  language:
+  - it
+  license: apache-2.0
+  tags:
+  - sentence-transformers
+  - sparse-encoder
+  - sparse
+  - asymmetric
+  - inference-free
+  - splade
+  - generated_from_trainer
+  - dataset_size:528161
+  - loss:SpladeLoss
+  - loss:SparseMultipleNegativesRankingLoss
+  - loss:FlopsLoss
+  base_model: BSC-LT/MrBERT-es
+  widget:
+  - text: 'P: nutriente del que las vitaminas A, D, E y K dependen para su absorción por las células. R: Las vitaminas A,
+      D, E y K dependen de las grasas para su absorción por las células. Inicie sesión para ver más información.'
+  - text: 'Nueva York, NY - Pronóstico del tiempo de Theweather.com. Condiciones meteorológicas con actualizaciones de temperatura,
+      humedad, velocidad del viento, nieve, presión, etc. para Nueva York, Nueva York Hoy: Cielos nublados con lluvias ligeras,
+      con una temperatura máxima de 72 ° y una temperatura mínima de 52 ° šÃ‚Â °.'
+  - text: que come el pueblo turco
+  - text: Aquí se presenta un pequeño trasfondo sobre el ejercicio del privilegio ejecutivo y lo que este movimiento significa
+      potencialmente para la investigación continua. En el gobierno de los Estados Unidos, el privilegio ejecutivo es un poder
+      reclamado por el presidente y otros miembros del poder ejecutivo para resistir ciertas citaciones e intervenciones de
+      los poderes legislativo y judicial.
+  - text: La toxina botulínica (BTX) es una proteína neurotóxica producida por la bacteria Clostridium botulinum y especies
+      relacionadas. [1] Evita la liberación del neurotransmisor acetilcolina de las terminaciones axónicas en la unión neuromuscular
+      y, por lo tanto, causa parálisis flácida. La infección con la bacteria causa el botulismo.
+  pipeline_tag: feature-extraction
+  library_name: sentence-transformers
+  metrics:
+  - dot_accuracy@10
+  - dot_precision@10
+  - dot_recall@10
+  - dot_ndcg@10
+  - dot_mrr@10
+  - dot_map@10
+  - query_active_dims
+  - query_sparsity_ratio
+  - corpus_active_dims
+  - corpus_sparsity_ratio
+  - avg_flops
+  model-index:
+  - name: Inference-free SPLADE Italian BERT trained on QA tuples
+    results:
+    - task:
+        type: sparse-information-retrieval
+        name: Sparse Information Retrieval
+      dataset:
+        name: mmarco
+        type: mmarco
+      metrics:
+      - type: dot_accuracy@10
+        value: 0.9214899713467049
+        name: Dot Accuracy@10
+        verified: false
+      - type: dot_precision@10
+        value: 0.09749283667621776
+        name: Dot Precision@10
+        verified: false
+      - type: dot_recall@10
+        value: 0.9168099331423113
+        name: Dot Recall@10
+        verified: false
+      - type: dot_ndcg@10
+        value: 0.819907710763905
+        name: Dot Ndcg@10
+        verified: false
+      - type: dot_mrr@10
+        value: 0.7921018101605483
+        name: Dot Mrr@10
+        verified: false
+      - type: dot_map@10
+        value: 0.7860547046739741
+        name: Dot Map@10
+        verified: false
+      - type: query_active_dims
+        value: 8.561318397521973
+        name: Query Active Dims
+        verified: false
+      - type: query_sparsity_ratio
+        value: 0.9998327867500484
+        name: Query Sparsity Ratio
+        verified: false
+      - type: corpus_active_dims
+        value: 218.2212291545701
+        name: Corpus Active Dims
+        verified: false
+      - type: corpus_sparsity_ratio
+        value: 0.9957378666180747
+        name: Corpus Sparsity Ratio
+        verified: false
+      - type: avg_flops
+        value: 1.056733250617981
+        name: Avg Flops
+        verified: false
+  datasets:
+  - unicamp-dl/mmarco
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config_sentence_transformers.json
+- rfilename: document_0_Transformer/config.json
+- rfilename: document_0_Transformer/model.safetensors
+- rfilename: document_0_Transformer/sentence_bert_config.json
+- rfilename: document_0_Transformer/tokenizer.json
+- rfilename: document_0_Transformer/tokenizer_config.json
+- rfilename: document_1_SpladePooling/config.json
+- rfilename: modules.json
+- rfilename: query_0_SparseStaticEmbedding/config.json
+- rfilename: query_0_SparseStaticEmbedding/model.safetensors
+- rfilename: query_0_SparseStaticEmbedding/tokenizer.json
+- rfilename: query_0_SparseStaticEmbedding/tokenizer_config.json
+- rfilename: router_config.json
+spaces: []
+createdAt: '2026-11-19T14:43:50.000Z'
+usedStorage: 601399144
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 601.4
+approxSizeMb: 0.0
+fetchedAt: '2026-11-20T11:15:32.000Z'

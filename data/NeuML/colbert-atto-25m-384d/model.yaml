@@ -1,0 +1,114 @@
+_id: 6aff3d6378cae954885270a9
+id: NeuML/colbert-atto-25m-384d
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- atto
+- feature-extraction
+- sentence-similarity
+- transformers
+- ColBERT
+- PyLate
+- custom_code
+- en
+- base_model:NeuML/atto-25m-384d
+- base_model:finetune:NeuML/atto-25m-384d
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 32
+likes: 1
+modelId: NeuML/colbert-atto-25m-384d
+author: NeuML
+sha: 112c18fbcbf3b0e3ada27e349c5bc174bf6867de
+lastModified: '2026-11-19T18:26:48.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config:
+  architectures:
+  - AttoModel
+  auto_map:
+    AutoConfig: configuration_atto.AttoConfig
+    AutoModel: modeling_atto.AttoModel
+    AutoModelForMaskedLM: modeling_atto.AttoForMaskedLM
+    AutoModelForSequenceClassification: modeling_atto.AttoForSequenceClassification
+  model_type: atto
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[MASK]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  pipeline_tag: sentence-similarity
+  tags:
+  - sentence-transformers
+  - feature-extraction
+  - sentence-similarity
+  - transformers
+  - ColBERT
+  - PyLate
+  base_model: NeuML/atto-25m-384d
+  language: en
+  license: apache-2.0
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_atto.AttoModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Dense/config.json
+- rfilename: 1_Dense/model.safetensors
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: configuration_atto.py
+- rfilename: model.safetensors
+- rfilename: modeling_atto.py
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-19T18:18:11.000Z'
+safetensors:
+  parameters:
+    F32: 25444096
+  total: 25444096
+usedStorage: 101986992
+downloadsAllTime: 32
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - AttoModel
+  auto_map:
+    AutoConfig: configuration_atto.AttoConfig
+    AutoModel: modeling_atto.AttoModel
+    AutoModelForMaskedLM: modeling_atto.AttoForMaskedLM
+    AutoModelForSequenceClassification: modeling_atto.AttoForSequenceClassification
+  dtype: float32
+  embedding_size: 384
+  hidden_size: 384
+  intermediate_size: 768
+  model_type: atto
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  projections: 128
+  transformers_version: 5.3.0
+  vocab_size: 30524
+onnxFiles: {}
+safetensorsSizeMb: 102.0
+approxSizeMb: 101.8
+fetchedAt: '2026-11-20T11:15:32.000Z'

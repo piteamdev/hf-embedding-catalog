@@ -1,0 +1,705 @@
+_id: 6b0001528b578b8bb8a41a29
+id: finvector/Test_mistral_raw_finmodern_tri_merged
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- mistral
+- sentence-similarity
+- feature-extraction
+- generated_from_trainer
+- dataset_size:70
+- loss:CachedMultipleNegativesRankingLoss
+- en
+- arxiv:1908.10084
+- arxiv:2101.06983
+- base_model:intfloat/e5-mistral-7b-instruct
+- base_model:finetune:intfloat/e5-mistral-7b-instruct
+- license:apache-2.0
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: finvector/Test_mistral_raw_finmodern_tri_merged
+author: finvector
+sha: 812f53d01b126cd8809083e58d98660c2add5f76
+lastModified: '2026-11-20T08:16:03.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: The Company reported a goodwill balance of $3.50 billion as of December 31, 2022, and 2021, and utilizes
+    various valuation techniques, including discounted cash flow and market-to-book multiples, to estimate the fair value
+    of its goodwill reporting units. The passage also details the acquisition of National General Holdings Corp. on January
+    4, 2021, and the accounting treatments for credit loss allowances, intangible assets, and insurance claim reserves.
+  sentences:
+  - s, and profitability. While we seek to take advantage of the efficiencies and opportunities that large retail customers
+    can offer, they often seek lower pricing and purchase volume flexibility, offer competing own-label products, and represent
+    a large number of other competing products. If the buying power of these large retail customers continues to increase,
+    it could negatively affect our financial results. We might not succeed in our strategies for acquisitions and dispositions.
+    From time to time, we acquire or invest in additional brands or businesses. We expect to continue to seek acquisition
+    and investment opportunities that we believe will increase long-term shareholder value, but we may not be able to find
+    and purchase brands or businesses at acceptable prices and terms. Acquisitions involve risks and uncertainties, including
+    potential difficulties integrating acquired brands and personnel; the possible loss of key customers or employees most
+    knowledgeable about the acquired business; implementing and maintaining consistent U.S. public company standards, controls,
+    procedures, policies, and information systems; exposure to unknown liabilities; business disruption; and management distraction.
+    Acquisitions, investments, or joint ventures could also lead us to incur additional debt and related interest expenses,
+    issue additional shares, become exposed to contingent liabilities, and lead to dilution in our earnings per share and
+    reduction in our return on average invested capital. We could incur future restructuring charges or record impairment
+    losses on the value of goodwill or other intangible assets resulting from previous acquisitions, which may also negatively
+    affect our financial results. We also evaluate from time to time the potential disposition of assets or businesses that
+    may no longer meet our growth, return, or strategic objectives. In selling assets or businesses, we may not get prices
+    or terms as favorable as we anticipated. We could also encounter
+  - "erence to Applied\x92s Form 10-K for fiscal year 1993 (file no. 000-06920) filed December 21, 1993. 10 .8* Applied Materials,\
+    \ Inc. Executive Deferred Compensation Plan, as amended and restated on April 1, 1995, incorporated by reference to Applied\x92\
+    s Form 10-Q for the quarter ended April 30, 1995 (file no. 000-06920) filed June 7, 1995. 10 .9 Applied Materials, Inc.\
+    \ Medium-Term Notes, Series A Distribution Agreement, dated August 24, 1995, incorporated by reference to Applied\x92\
+    s Form 10-K for fiscal year 1995 (file no. 000-06920) filed January 12, 1996. 10 .10* Amendment No. 1 to the Applied Materials,\
+    \ Inc. Executive Deferred Compensation Plan, incorporated by reference to Applied\x92s Form 10-Q for the quarter ended\
+    \ July 26, 1998 (file no. 000-06920) filed September 9, 1998. 70 Table of Contents Exhibit No. Description 10 .11* Amendment\
+    \ No. 2 to the Applied Materials, Inc. Executive Deferred Compensation Plan, incorporated by reference to Applied\x92\
+    s Form 10-Q for the quarter ended July 26, 1998 (file no. 000-06920) filed September 9, 1998. 10 .12 Receivables Purchase\
+    \ Agreement dated October 22, 1998, between Applied Materials, Inc. and Deutsche Financial Services Corporation, incorporated\
+    \ by reference to Applied\x92s Form 10-K for fiscal year 1998 (file no. 000-06920) filed January 20, 1999. 10 .13* Applied\
+    \ Materials, Inc. amended and restated Employees\x92 Stock Purchase Plan, incorporated by reference to Applied\x92s Form\
+    \ 10-K for fiscal year 2002 (file no. 000-06920) filed January 23, 2003. 10 .14 Amendment dated January 26, 1999 to Receivables\
+    \ Purchase Agreement dated October 22, 1998, between Applied Materials, Inc. and Deutsche Financial Services Corporation,\
+    \ incorporated by reference to Applied\x92s Form 10-Q for the quarter ended January 31, 1999 (file no. 000-06920) filed\
+    \ March 9, 1999. 10 .15 Receivables Purchase Agreement dated January 26, 1999, between Applied Materials, Inc. and Deutsche\
+    \ Financial Services (UK) Limited, incorporated by reference to Applied\x92s Form 10-Q for "
+  - des, but is not limited to, as applicable, the remaining payment terms of the security, prepayment speeds, the financial
+    condition and future earnings potential of the issue or issuer, expected defaults, expected recoveries, the value of underlying
+    collateral, origination vintage year, geographic concentration of underlying collateral, available reserves or escrows,
+    current subordination levels, third-party guarantees and other credit enhancements. Other information, such as industry
+    analyst reports and forecasts, sector credit ratings, financial condition of the bond insurer for insured fixed income
+    securities, and other market data relevant to the realizability of contractual cash flows, may also be considered. The
+    estimated fair value of collateral will be used to estimate recovery value if we determine that the security is dependent
+    on the liquidation of collateral for ultimate settlement. If we do not expect to receive cash flows sufficient to recover
+    the entire amortized cost basis of the fixed income security, a credit loss allowance is recorded in earnings for the
+    shortfall in expected cash flows; however, the amortized cost, net of the credit loss allowance, may not be lower than
+    the fair value of the security. The portion of the unrealized loss related to factors other than credit remains classified
+    in AOCI. If we determine that the fixed income security does not have sufficient cash flow or other information to estimate
+    a recovery value for the security, we may conclude that the entire decline in fair value is deemed to be credit related
+    and the loss is recorded in earnings. When a security is sold or otherwise disposed or the security is deemed uncollectible
+    and written off, we remove amounts previously recognized in the credit loss allowance. Recoveries after write-offs are
+    recognized when received. For additional detail on investment impairments, see Note 5 of the consolidated financial statements.
+    Business combinations and purchase price allocations W
+- source_sentence: AIG reported a $2.8 billion loss reserve charge in 2002, which significantly impacted its operating income
+    contribution (8.2% in 2002 vs. 36.5% in 2003) and was compounded by catastrophe losses of $2.15 billion in 2001 and $245
+    million in 2002. As of December 31, 2003, AIG held $26.76 billion in general reinsurance assets, including $140 million
+    in allowances for unrecoverable reinsurance, and managed credit risk through collateralization and rigorous reinsurer
+    assessments.
+  sentences:
+  - 'y CROs do not successfully carry out these clinical activities, our clinical trials or the potential regulatory approval
+    of a product candidate may be delayed or denied. We have opened clinical trial sites and are enrolling patients in a number
+    of countries where our experience is limited. In most cases, we use the services of third-parties to carry out our clinical
+    trial related activities and rely on such parties to accurately report their results. Our reliance on third-parties for
+    these activities may impact our ability to control the timing, conduct, expense and quality of our clinical trials. One
+    CRO has responsibility for a substantial portion of our activities and reporting related to our clinical trials, adversely
+    affect our expense associated with such trials and if such CRO does not adequately perform, many of our trials may be
+    affected. We may need to replace our CROs, which may result in the delay of the affected trials or otherwise adversely
+    affect our efforts to obtain regulatory approvals and commercialize our product candidates. Adverse safety events or restrictions
+    on use and safety warnings for our products can negatively affect our business, product sales and stock price. Adverse
+    safety events involving our marketed products, generic or biosimilar versions of our marketed products or products from
+    the same class as one of our products may have a negative impact on our business. Discovery of safety issues with our
+    products could create product liability and could cause additional regulatory scrutiny and requirements for additional
+    labeling or safety monitoring, withdrawal of products from the market and/or the imposition of fines or criminal penalties.
+    Adverse safety events may also damage physician, patient and/or investor confidence in our products and our reputation.
+    Any of these could result in adverse impacts on our results of operations. Regulatory authorities are making greater amounts
+    of stand-alone safety information directly available to '
+  - "ccident years 1997 through 2001. Such charge was the result of AIG\x92s annual year-end review of General Insurance loss\
+    \ reserves. (See also the discussion under \x932002 Loss Reserve Charge\x94 herein.) In addition, these results reflect\
+    \ the net impact of catastrophe losses approximating $57 million in 2002, and $867 million in 2001 (which include $769\
+    \ million in WTC losses and $50 million with respect to the Northridge earthquake, following the unprecedented decision\
+    \ by the State of California to require all insurers to reopen claims nearly eight years after the occurrence). On a gross\
+    \ basis, incurred losses included $3.5 billion attributable to the loss reserve charge and approximately $245 million\
+    \ from catastrophes in 2002, and catastrophe losses of $2.15 billion in 2001 (which include $2.0 billion in WTC losses).\
+    \ The effects of catastrophes incurred in 2003 were insignificant. The impact of losses caused by catastrophes can fluctuate\
+    \ widely from year to year, making comparisons of recurring type business more difficult. With respect to catastrophe\
+    \ losses, AIG believes that it has taken appropriate steps, such as careful exposure selection and obtaining reinsurance\
+    \ coverage, to reduce the impact of the magnitude of possible future losses. The occurrence of one or more catastrophic\
+    \ events of unanticipated frequency or severity, such as a terrorist attack, earthquake or hurricane, that causes insured\
+    \ losses, however, could have a material adverse effect on AIG\x92s results of operations, liquidity or financial condition.\
+    \ General Insurance net investment income grew in 2003 when compared to 2002. The invested cash flow resulting from the\
+    \ growth in net premiums written in this and prior periods had a positive impact on net investment income. In 2002, net\
+    \ investment income decreased when compared to 2001. The decrease in net investment income in 2002 was primarily a result\
+    \ of lower earnings with respect to the general insurance private equity portfolio. Also, interest income ear"
+  - of December 31, 2024, BNO held 1,535 Futures Contracts for Brent crude oil traded on the ICE Futures Europe and did not
+    hold any Futures Contracts for Brent crude oil traded on the NYMEX. For a list of BNO’s current holdings, please see BNO’s
+    website at www.uscfinvestments.com. The end of day portfolio disclosed on BNO’s website would reflect any investments
+    in Futures Contracts beyond the Benchmark Futures Contract, and/or Other Crude Oil-Related Investments, including any
+    made in light of market conditions, regulatory requirements, risk mitigation measures (including those that may be taken
+    by BNO, BNO’s FCMs, counterparties or other market participants), liquidity requirements, or other factors. Independent
+    of the BNO website, BNO may make available portfolio holdings information to Authorized Participants that reflects BNO’s
+    anticipated holdings. Item 7A. Quantitative and Qualitative Disclosures About Market Risk. Commodity Price Risk. BNO is
+    exposed to commodity price risk. In particular, BNO is exposed to Brent crude oil price risk through its holdings of Futures
+    Contracts together with any other derivatives in which it may invest, which are discussed below. As a result, fluctuations
+    in the value of the Futures Contracts that BNO holds in its portfolio, as described in “Contractual Obligations” under
+    “Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations” above, are expected to
+    directly affect the value of BNO’s shares. OTC Contract Risk BNO may purchase OTC contracts, such as forward contracts
+    or swap or spot contracts. Unlike most exchange-traded futures contracts or exchange-traded options on such futures, each
+    party to an OTC swap bears the credit risk that the other party may not be able to perform its obligations under its contract.
+    BNO may enter into certain transactions where an OTC component is exchanged for a corresponding futures contract (“Exchange
+    for Related Position” or “EFRP” transactions). In the most co
+- source_sentence: As of December 31, 2015, the Company reported total other assets of $10,069 million, which included $2,749
+    million in goodwill (down from $3,024 million in 2014) and $155 million in restricted cash held by the Charge and Lending
+    Trusts. Customer deposits grew to $54,997 million in 2015 from $44,171 million in 2014, with U.S. retail savings accounts
+    accounting for $29,023 million of that total.
+  sentences:
+  - 'pproximate fair value because they are short term in duration, have no defined maturity or have a market-based interest
+    rate. Financial Liabilities Carried At Other Than Fair Value Certificates of Deposit Certificates of deposit (CDs) are
+    recorded at their historical issuance cost on the Consolidated Balance Sheets. Fair value is estimated using a discounted
+    cash flow methodology based on the future cash flows and the discount rate that reflects the current market rates for
+    similar types of CDs within similar markets. Long-term Debt Long-term debt is recorded at historical issuance cost on
+    the Consolidated Balance Sheets adjusted for (i) unamortized discount and unamortized fees, (ii) the impact of movements
+    in exchange rates on foreign currency denominated debt and (iii) the impact of fair value hedge accounting on certain
+    fixed-rate notes that have been swapped to floating rate through the use of interest rate swaps. The fair value of our
+    long-term debt is measured using quoted offer prices when quoted market prices are available. If quoted market prices
+    are not available, the fair value is determined by discounting the future cash flows of each instrument at rates currently
+    observed in publicly-traded debt markets for debt of similar terms and credit risk. For long-term debt, where there are
+    no rates currently observable in publicly traded debt markets of similar terms and comparable credit risk, we use market
+    interest rates and adjust those rates for necessary risks, including our own credit risk. In determining an appropriate
+    spread to reflect our credit standing, we consider credit default swap spreads, bond yields of other long-term debt offered
+    by us, and interest rates currently offered to us for similar debt instruments of comparable maturities. NONRECURRING
+    FAIR VALUE MEASUREMENTS We have certain assets that are subject to measurement at fair value on a nonrecurring basis.
+    For these assets, measurement at fair value in periods subsequent to their initial '
+  - "ies issued by the Lending Trust as of December 31, 2015. These subordinated securities have the obligation to absorb\
+    \ losses of the Lending Trust and provide the right to receive benefits from the Lending Trust, both of which are significant\
+    \ to the VIE. TRS\x92 role as servicer for the Charge Trust does not provide it with a significant obligation to absorb\
+    \ losses or a significant right to receive benefits. However, TRS\x92 position as the parent company of the entities that\
+    \ transferred the receivables to the Charge Trust makes it the party most closely related to the Charge Trust. Based on\
+    \ these considerations, TRS is the primary beneficiary of both Trusts. The debt securities issued by the Trusts are non-recourse\
+    \ to the Company. The securitized Card Member receivables and loans held by the Charge Trust and the Lending Trust, respectively,\
+    \ are available only for payment of the debt securities or other obligations issued or arising in the securitization transactions\
+    \ (refer to Note 3). The long-term debt of each Trust is payable only out of collections on their respective underlying\
+    \ securitized assets (refer to Note 9). The following table presents the restricted cash held by the Charge Trust and\
+    \ the Lending Trust as of December 31, 2015 and 2014, included in Other Assets on the Company\x92s Consolidated Balance\
+    \ Sheets: (Millions) 2015 2014 Charge Trust $ 2 $ 2 Lending Trust 153 62 Total $ 155 $ 64 These amounts relate to collections\
+    \ of Card Member receivables and loans to be used by the Trusts to fund future expenses and obligations, including credit\
+    \ losses, interest paid on the debt securities and upcoming debt maturities. Under the respective terms of the Charge\
+    \ Trust and the Lending Trust agreements, the occurrence of certain triggering events associated with the performance\
+    \ of the assets of each Trust could result in payment of trust expenses, establishment of reserve funds, or, in a worst-case\
+    \ scenario, early amortization of investor debt securities. During the year ende"
+  - sue enforcement actions against private fund managers. This increased enforcement activity may cause us to reevaluate
+    certain practices and adjust our compliance control function as necessary and appropriate. While the SEC’s recent list
+    of examination priorities includes such items as cybersecurity compliance and controls and conducting risk-based examinations
+    of never-before-examined investment advisory firms, it is generally expected that the SEC’s oversight of alternative asset
+    managers will continue to focus substantially on concerns related to transparency and investor disclosure practices. Although
+    the SEC has cited improvements in disclosures and industry practices in this area, it has also indicated that there is
+    room for improvement in particular areas, including fees and expenses (and the allocation of such fees and expenses) and
+    co-investment practices. To this end, many firms have received inquiries during examinations or directly from the SEC’s
+    Division of Enforcement regarding various transparency-related topics, including the acceleration of monitoring fees,
+    the allocation of broken-deal expenses, the disclosure of operating partner or operating executive compensation, outside
+    business activities of firm principals and employees, group purchasing arrangements and general conflicts of interest
+    disclosures. In addition, our Private Equity Group funds have engaged in the past and may engage from time to time advisors
+    who often work with our investment teams during due diligence, provide board-level governance and support and advise portfolio
+    company leadership. Advisors generally are third parties and typically retained by us pursuant to consulting agreements.
+    In some cases, an operating executive may be retained by a portfolio company directly and in such instances the portfolio
+    company may compensate the operating executive directly (meaning that investors in our Private Equity Group funds may
+    indirectly bear the operating executive’s compensation). Wh
+- source_sentence: As of December 31, 2018, the company reported a total backlog of $812.7 million, a significant increase
+    from $582.7 million in 2017, driven primarily by the Software and Sensors segment's $758.1 million backlog. Total gross
+    margin rose to $258.6 million (61.6% of net sales) in 2018 compared to $207.1 million (60.2% of net sales) in 2017, with
+    the Software and Sensors segment seeing a 92.3% increase in gross margin.
+  sentences:
+  - of clip sizes and facilitation of procedure assessment in real time to offer doctors further options when treating mitral
+    valve disease. In 2018, growth in Structural Heart was driven by several product areas including MitraClip and the AMPLATZER
+    ® PFO occluder, a device designed to close a hole-like opening in the heart. In September 2018, Abbott announced positive
+    clinical results from its COAPT study, which demonstrated that MitraClip improved survival and clinical outcomes for select
+    patients with functional MR. In September 2019, Abbott announced additional data from its COAPT trial that shows that
+    MitraClip is projected to increase life expectancy and quality of life compared to guideline-directed medical therapy
+    alone in heart failure patients with secondary MR. In 2019, the growth in Electrophysiology revenue reflects higher sales
+    of cardiac diagnostic and ablation catheters in both the U.S. and internationally. In January 2019, Abbott announced U.S.
+    FDA approval of its TactiCath ® contact force ablation catheter, Sensor Enabled™, which is designed to help physicians
+    treat atrial fibrillation, a form of irregular heartbeat. In 2018, the growth in Electrophysiology was led by higher sales
+    in cardiac mapping and ablation catheters. In May 2018, Abbott announced U.S. FDA clearance of the Advisor HD Grid Mapping
+    Catheter, Sensor Enabled, which creates detailed maps of the heart and expands Abbott's electrophysiology product portfolio.
+    28 In 2019, the growth in Heart Failure revenue was driven by rapid market adoption in the U.S. of Abbott's HeartMate
+    3 ® Left Ventricular Assist Device (LVAD) following FDA approval in October 2018 as a destination (long-term use) therapy
+    for people living with advanced heart failure as well as higher sales of Abbott’s CardioMEMS ® heart failure monitoring
+    system. In March 2019, Abbott announced new data from its MOMENTUM 3 clinical study, the largest randomized controlled
+    trial to assess outcomes in patients receiving a heart pum
+  - 'overnment funding rules, in some cases certain of the future period amounts included in bookings are subject to budget
+    appropriation or other contract cancellation clauses. Although we have entered into contracts for the delivery of products
+    and services in the future and anticipate the contracts will be fulfilled, if agencies do not exercise contractual options,
+    do not appropriate funds in future year budgets, or do enact a cancellation clause, revenue associated with these bookings
+    may not ultimately be recognized, resulting in a future reduction to bookings. Bookings related to our Software and Sensors
+    segment, net of cancellations, were $389.1 million during 2018 , compared to $291.2 million in 2017 , an increase of 33.6%
+    . 28 Table of Contents The chart below illustrates our quarterly Software and Sensors bookings for each of the previous
+    six fiscal quarters (in thousands): Backlog - As of December 31, 2018 compared to December 31, 2017 Our backlog for products
+    and services includes all orders that have been received and are believed to be firm. In the TASER segment, we define
+    backlog as equal to deferred revenue. Deferred revenue represents amounts invoiced to customers for goods and services
+    to be delivered in subsequent periods. We process orders within the TASER segment quickly, and our best estimate of firm
+    orders outstanding as of period end represents those that have been paid for but remain undelivered. The TASER segment
+    backlog balance was $54.6 million as of December 31, 2018 . We expect to realize $22.2 million of this deferred revenue
+    balance as revenue during the next 12 months. This represents cash received and accounts receivable from customers on
+    or prior to December 31, 2018 for products and services expected to be delivered in the next 12 months. In the Software
+    and Sensors segment, we define backlog as cumulative bookings, net of cancellations, less product and service revenue
+    recognized to date. Bookings are generally realized as revenue ove'
+  - 'sions relating to: Ÿ eligibility, enrollment and disenrollment processes; Ÿ health education and wellness and prevention
+    programs; Ÿ covered services; Ÿ timeliness of claims payment; Ÿ eligible providers; Ÿ financial standards; Ÿ subcontractors;
+    Ÿ safeguarding of member information; Ÿ record-keeping and record retention; Ÿ fraud and abuse detection and reporting;
+    Ÿ periodic financial and informational reporting; Ÿ grievance procedures; and Ÿ quality assurance; Ÿ organization and
+    administrative systems. A health plan or individual health insurance providers’ compliance with these requirements is
+    subject to monitoring by state regulators and by CMS. A health plan is also subject to periodic comprehensive quality
+    assurance evaluations by a third-party reviewing organization and generally by the insurance department of the jurisdiction
+    that licenses the health plan. A health plan or individual health insurance provider must also submit reports to various
+    regulatory agencies, including quarterly and annual statutory financial statements and utilization reports. 9 Table of
+    Contents The table below sets forth the term of our state contracts and provides details regarding related renewal or
+    extension and termination provisions as of December 31, 2009. State Contract Expiration Date Renewal or Extension by the
+    State Termination by the State Arizona – Acute Care September 30, 2011 May be extended for up to two additional one-year
+    terms. May be terminated for convenience or an event of default. Arizona – Behavioral Health June 30, 2010 Renewable through
+    the state’s reprocurement process. 1 May be terminated for convenience or an event of default. Arizona – Long-term Care
+    September 30, 2010 May be extended for up to one additional year. May be terminated for convenience, an event of default
+    or lack of funding. Arizona – Special Needs Plan (Medicare) December 31, 2010 Renewable annually for successive 12-month
+    periods. May be terminated by an event of default. Florida – Medicaid'
+- source_sentence: Adobe reports that approximately 42% of its total revenue is generated from outside the Americas, exposing
+    the company to international risks including currency fluctuations, trade barriers, and complex global data privacy regulations
+    like GDPR and PIPL. Additionally, with 49% of its employees located outside the U.S., the company faces significant operational
+    costs and legal risks related to varying international labor laws and evolving data security requirements.
+  sentences:
+  - tized premium or discount and valuation allowances. Valuation allowances are established for impaired loans when it is
+    probable that contractual principal and interest will not be collected. Valuation allowances for impaired loans reduce
+    the carrying value to the fair value of the collateral or the present value of the loan's expected future repayment cash
+    flows discounted at the loan's original effective interest rate. Short-term investments are carried at cost or amortized
+    cost that approximates fair value, and include the reinvestment of collateral received in connection with certain securities
+    included in repurchase, resale and lending activities and collateral posted by counterparties in derivative transactions.
+    For these transactions, the Company records an offsetting liability in other liabilities and accrued expenses for the
+    Company's obligation to repay the collateral. Other investments, which consist primarily of policy loans, are carried
+    at the unpaid principal balances. Investment income consists primarily of interest and dividends, net investment income
+    from partnership interests and income from certain derivative transactions. Interest is recognized on an accrual basis
+    and dividends are recorded at the ex-dividend date. Interest income on mortgage-backed and asset-backed securities is
+    determined using the effective yield method, based on estimated principal repayments. Interest income on certain beneficial
+    interests in securitized financial assets is determined using the prospective yield method, based upon projections of
+    expected future cash flows. Income from investments in partnership interests, accounted for on the cost basis, is recognized
+    upon receipt of amounts distributed by the partnerships as income. Accrual of income is suspended for fixed income securities
+    and mortgage loans that are in default or when the receipt of interest payments is in doubt. Realized capital gains and
+    losses include gains and losses on investment dispositions, write-d
+  - 't generate a corresponding significant increase in revenue and we are unable to achieve the efficiencies we anticipate.
+    In addition, the loss of key sales employees could impact our customer relationships and future ability to sell to certain
+    accounts covered by such employees. We face various risks associated with our operating as a multinational corporation.
+    As a global business that generates approximately 42% of our total revenue from sales to customers outside of the Americas,
+    we are subject to a number of risks, including: • inflation and actions taken by central banks to counter inflation; •
+    foreign currency fluctuations and controls; • international and regional economic, political and labor conditions, including
+    any instability or security concerns abroad, such as uncertainty caused by economic sanctions, trade disputes, armed conflicts
+    and wars; • tax laws (including U.S. taxes on foreign subsidiaries); • increased financial accounting and reporting burdens
+    and complexities; • changes in, or impositions of, legislative or regulatory requirements; • changes in laws governing
+    the free flow of data across international borders; • failure of laws to protect our intellectual property rights adequately;
+    • inadequate local infrastructure and difficulties in managing and staffing international operations; • delays resulting
+    from difficulty in obtaining export licenses for certain technology, tariffs, quotas and other trade barriers; • the imposition
+    of governmental economic sanctions on countries in which we do business or where we plan to expand our business; • costs
+    and delays associated with developing products in multiple languages; • operating in locations with a higher incidence
+    of corruption and fraudulent business practices; and • other factors beyond our control, such as terrorism, war, natural
+    disasters, climate change and pandemics, including the COVID-19 pandemic and resulting restrictions on business activity,
+    which may vary significantly by region. S'
+  - y reference as part of Exhibit 4.1 of the Company’s Form 8-K filed on March 11, 2021 (SEC File No. 001-12291). 4.(k) Form
+    of Treasury Unit, incorporated herein by reference as part of Exhibit 4.1 of the Company’s Form 8-K filed on March 11,
+    2021 (SEC File No. 001-12291). 4.(l) Form of Cash Settled Unit, incorporated herein by reference as part of Exhibit 4.1
+    of the Company’s Form 8-K filed on March 11, 2021 (SEC File No. 001-12291). 4.(m) Form of Series A Cumulative Perpetual
+    Convertible Preferred Stock Certificate, incorporated herein by reference to Exhibit 4.5 of the Company’s Form 8-K filed
+    on March 11, 2021 (SEC File No. 001-12291). 4.(n) Form of Series B Cumulative Perpetual Preferred Stock Certificate, incorporated
+    herein by reference to Exhibit 4.6 of the Company’s Form 8-K filed on March 11, 2021 (SEC File No. 001-12291). 205 | 2022
+    Annual Report 10.1 The AES Corporation Profit Sharing and Stock Ownership Plan are incorporated herein by reference to
+    Exhibit 4(c)(1) of the Registration Statement on Form S-8 (Registration No. 33-49262) filed on July 2, 1992. (P) 10.2
+    The AES Corporation Incentive Stock Option Plan of 1991, as amended, is incorporated herein by reference to Exhibit 10.30
+    of the Company's Form 10-K for the year ended December 31, 1995 (SEC File No. 00019281). (P) 10.3 Applied Energy Services,
+    Inc. Incentive Stock Option Plan of 1982 is incorporated herein by reference to Exhibit 10.31 of the Registration Statement
+    on Form S-1 (Registration No. 33-40483). (P) 10.4 Deferred Compensation Plan for Executive Officers, as amended, is incorporated
+    herein by reference to Exhibit 10.32 of Amendment No. 1 to the Registration Statement on Form S-1 (Registration No. 33-40483).
+    (P) 10.5 Deferred Compensation Plan for Directors, as amended and restated, on February 17, 2012 is incorporated herein
+    by reference to Exhibit 10.5 of the Company's Form 10-K for the year ended December 31, 2012. 10.6 The AES Corporation
+    Stock Option Plan for Outside Directors, as a
+model-index:
+- name: mistral
+  results:
+  - task:
+      type: triplet
+      name: Triplet
+    dataset:
+      name: triplet eval
+      type: triplet-eval
+    metrics:
+    - type: cosine_accuracy
+      value: 1
+      name: Cosine Accuracy
+      verified: false
+config:
+  architectures:
+  - MistralModel
+  model_type: mistral
+  tokenizer_config:
+    use_default_system_prompt: false
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    pad_token: </s>
+cardData:
+  language:
+  - en
+  license: apache-2.0
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - generated_from_trainer
+  - dataset_size:70
+  - loss:CachedMultipleNegativesRankingLoss
+  base_model: intfloat/e5-mistral-7b-instruct
+  widget:
+  - source_sentence: The Company reported a goodwill balance of $3.50 billion as of December 31, 2022, and 2021, and utilizes
+      various valuation techniques, including discounted cash flow and market-to-book multiples, to estimate the fair value
+      of its goodwill reporting units. The passage also details the acquisition of National General Holdings Corp. on January
+      4, 2021, and the accounting treatments for credit loss allowances, intangible assets, and insurance claim reserves.
+    sentences:
+    - s, and profitability. While we seek to take advantage of the efficiencies and opportunities that large retail customers
+      can offer, they often seek lower pricing and purchase volume flexibility, offer competing own-label products, and represent
+      a large number of other competing products. If the buying power of these large retail customers continues to increase,
+      it could negatively affect our financial results. We might not succeed in our strategies for acquisitions and dispositions.
+      From time to time, we acquire or invest in additional brands or businesses. We expect to continue to seek acquisition
+      and investment opportunities that we believe will increase long-term shareholder value, but we may not be able to find
+      and purchase brands or businesses at acceptable prices and terms. Acquisitions involve risks and uncertainties, including
+      potential difficulties integrating acquired brands and personnel; the possible loss of key customers or employees most
+      knowledgeable about the acquired business; implementing and maintaining consistent U.S. public company standards, controls,
+      procedures, policies, and information systems; exposure to unknown liabilities; business disruption; and management
+      distraction. Acquisitions, investments, or joint ventures could also lead us to incur additional debt and related interest
+      expenses, issue additional shares, become exposed to contingent liabilities, and lead to dilution in our earnings per
+      share and reduction in our return on average invested capital. We could incur future restructuring charges or record
+      impairment losses on the value of goodwill or other intangible assets resulting from previous acquisitions, which may
+      also negatively affect our financial results. We also evaluate from time to time the potential disposition of assets
+      or businesses that may no longer meet our growth, return, or strategic objectives. In selling assets or businesses,
+      we may not get prices or terms as favorable as we anticipated. We could also encounter
+    - "erence to Applied\x92s Form 10-K for fiscal year 1993 (file no. 000-06920) filed December 21, 1993. 10 .8* Applied\
+      \ Materials, Inc. Executive Deferred Compensation Plan, as amended and restated on April 1, 1995, incorporated by reference\
+      \ to Applied\x92s Form 10-Q for the quarter ended April 30, 1995 (file no. 000-06920) filed June 7, 1995. 10 .9 Applied\
+      \ Materials, Inc. Medium-Term Notes, Series A Distribution Agreement, dated August 24, 1995, incorporated by reference\
+      \ to Applied\x92s Form 10-K for fiscal year 1995 (file no. 000-06920) filed January 12, 1996. 10 .10* Amendment No.\
+      \ 1 to the Applied Materials, Inc. Executive Deferred Compensation Plan, incorporated by reference to Applied\x92s Form\
+      \ 10-Q for the quarter ended July 26, 1998 (file no. 000-06920) filed September 9, 1998. 70 Table of Contents Exhibit\
+      \ No. Description 10 .11* Amendment No. 2 to the Applied Materials, Inc. Executive Deferred Compensation Plan, incorporated\
+      \ by reference to Applied\x92s Form 10-Q for the quarter ended July 26, 1998 (file no. 000-06920) filed September 9,\
+      \ 1998. 10 .12 Receivables Purchase Agreement dated October 22, 1998, between Applied Materials, Inc. and Deutsche Financial\
+      \ Services Corporation, incorporated by reference to Applied\x92s Form 10-K for fiscal year 1998 (file no. 000-06920)\
+      \ filed January 20, 1999. 10 .13* Applied Materials, Inc. amended and restated Employees\x92 Stock Purchase Plan, incorporated\
+      \ by reference to Applied\x92s Form 10-K for fiscal year 2002 (file no. 000-06920) filed January 23, 2003. 10 .14 Amendment\
+      \ dated January 26, 1999 to Receivables Purchase Agreement dated October 22, 1998, between Applied Materials, Inc. and\
+      \ Deutsche Financial Services Corporation, incorporated by reference to Applied\x92s Form 10-Q for the quarter ended\
+      \ January 31, 1999 (file no. 000-06920) filed March 9, 1999. 10 .15 Receivables Purchase Agreement dated January 26,\
+      \ 1999, between Applied Materials, Inc. and Deutsche Financial Services (UK) Limited, incorporated by reference to Applied\x92\
+      s Form 10-Q for "
+    - des, but is not limited to, as applicable, the remaining payment terms of the security, prepayment speeds, the financial
+      condition and future earnings potential of the issue or issuer, expected defaults, expected recoveries, the value of
+      underlying collateral, origination vintage year, geographic concentration of underlying collateral, available reserves
+      or escrows, current subordination levels, third-party guarantees and other credit enhancements. Other information, such
+      as industry analyst reports and forecasts, sector credit ratings, financial condition of the bond insurer for insured
+      fixed income securities, and other market data relevant to the realizability of contractual cash flows, may also be
+      considered. The estimated fair value of collateral will be used to estimate recovery value if we determine that the
+      security is dependent on the liquidation of collateral for ultimate settlement. If we do not expect to receive cash
+      flows sufficient to recover the entire amortized cost basis of the fixed income security, a credit loss allowance is
+      recorded in earnings for the shortfall in expected cash flows; however, the amortized cost, net of the credit loss allowance,
+      may not be lower than the fair value of the security. The portion of the unrealized loss related to factors other than
+      credit remains classified in AOCI. If we determine that the fixed income security does not have sufficient cash flow
+      or other information to estimate a recovery value for the security, we may conclude that the entire decline in fair
+      value is deemed to be credit related and the loss is recorded in earnings. When a security is sold or otherwise disposed
+      or the security is deemed uncollectible and written off, we remove amounts previously recognized in the credit loss
+      allowance. Recoveries after write-offs are recognized when received. For additional detail on investment impairments,
+      see Note 5 of the consolidated financial statements. Business combinations and purchase price allocations W
+  - source_sentence: AIG reported a $2.8 billion loss reserve charge in 2002, which significantly impacted its operating income
+      contribution (8.2% in 2002 vs. 36.5% in 2003) and was compounded by catastrophe losses of $2.15 billion in 2001 and
+      $245 million in 2002. As of December 31, 2003, AIG held $26.76 billion in general reinsurance assets, including $140
+      million in allowances for unrecoverable reinsurance, and managed credit risk through collateralization and rigorous
+      reinsurer assessments.
+    sentences:
+    - 'y CROs do not successfully carry out these clinical activities, our clinical trials or the potential regulatory approval
+      of a product candidate may be delayed or denied. We have opened clinical trial sites and are enrolling patients in a
+      number of countries where our experience is limited. In most cases, we use the services of third-parties to carry out
+      our clinical trial related activities and rely on such parties to accurately report their results. Our reliance on third-parties
+      for these activities may impact our ability to control the timing, conduct, expense and quality of our clinical trials.
+      One CRO has responsibility for a substantial portion of our activities and reporting related to our clinical trials,
+      adversely affect our expense associated with such trials and if such CRO does not adequately perform, many of our trials
+      may be affected. We may need to replace our CROs, which may result in the delay of the affected trials or otherwise
+      adversely affect our efforts to obtain regulatory approvals and commercialize our product candidates. Adverse safety
+      events or restrictions on use and safety warnings for our products can negatively affect our business, product sales
+      and stock price. Adverse safety events involving our marketed products, generic or biosimilar versions of our marketed
+      products or products from the same class as one of our products may have a negative impact on our business. Discovery
+      of safety issues with our products could create product liability and could cause additional regulatory scrutiny and
+      requirements for additional labeling or safety monitoring, withdrawal of products from the market and/or the imposition
+      of fines or criminal penalties. Adverse safety events may also damage physician, patient and/or investor confidence
+      in our products and our reputation. Any of these could result in adverse impacts on our results of operations. Regulatory
+      authorities are making greater amounts of stand-alone safety information directly available to '
+    - "ccident years 1997 through 2001. Such charge was the result of AIG\x92s annual year-end review of General Insurance\
+      \ loss reserves. (See also the discussion under \x932002 Loss Reserve Charge\x94 herein.) In addition, these results\
+      \ reflect the net impact of catastrophe losses approximating $57 million in 2002, and $867 million in 2001 (which include\
+      \ $769 million in WTC losses and $50 million with respect to the Northridge earthquake, following the unprecedented\
+      \ decision by the State of California to require all insurers to reopen claims nearly eight years after the occurrence).\
+      \ On a gross basis, incurred losses included $3.5 billion attributable to the loss reserve charge and approximately\
+      \ $245 million from catastrophes in 2002, and catastrophe losses of $2.15 billion in 2001 (which include $2.0 billion\
+      \ in WTC losses). The effects of catastrophes incurred in 2003 were insignificant. The impact of losses caused by catastrophes\
+      \ can fluctuate widely from year to year, making comparisons of recurring type business more difficult. With respect\
+      \ to catastrophe losses, AIG believes that it has taken appropriate steps, such as careful exposure selection and obtaining\
+      \ reinsurance coverage, to reduce the impact of the magnitude of possible future losses. The occurrence of one or more\
+      \ catastrophic events of unanticipated frequency or severity, such as a terrorist attack, earthquake or hurricane, that\
+      \ causes insured losses, however, could have a material adverse effect on AIG\x92s results of operations, liquidity\
+      \ or financial condition. General Insurance net investment income grew in 2003 when compared to 2002. The invested cash\
+      \ flow resulting from the growth in net premiums written in this and prior periods had a positive impact on net investment\
+      \ income. In 2002, net investment income decreased when compared to 2001. The decrease in net investment income in 2002\
+      \ was primarily a result of lower earnings with respect to the general insurance private equity portfolio. Also, interest\
+      \ income ear"
+    - of December 31, 2024, BNO held 1,535 Futures Contracts for Brent crude oil traded on the ICE Futures Europe and did
+      not hold any Futures Contracts for Brent crude oil traded on the NYMEX. For a list of BNO’s current holdings, please
+      see BNO’s website at www.uscfinvestments.com. The end of day portfolio disclosed on BNO’s website would reflect any
+      investments in Futures Contracts beyond the Benchmark Futures Contract, and/or Other Crude Oil-Related Investments,
+      including any made in light of market conditions, regulatory requirements, risk mitigation measures (including those
+      that may be taken by BNO, BNO’s FCMs, counterparties or other market participants), liquidity requirements, or other
+      factors. Independent of the BNO website, BNO may make available portfolio holdings information to Authorized Participants
+      that reflects BNO’s anticipated holdings. Item 7A. Quantitative and Qualitative Disclosures About Market Risk. Commodity
+      Price Risk. BNO is exposed to commodity price risk. In particular, BNO is exposed to Brent crude oil price risk through
+      its holdings of Futures Contracts together with any other derivatives in which it may invest, which are discussed below.
+      As a result, fluctuations in the value of the Futures Contracts that BNO holds in its portfolio, as described in “Contractual
+      Obligations” under “Item 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations” above,
+      are expected to directly affect the value of BNO’s shares. OTC Contract Risk BNO may purchase OTC contracts, such as
+      forward contracts or swap or spot contracts. Unlike most exchange-traded futures contracts or exchange-traded options
+      on such futures, each party to an OTC swap bears the credit risk that the other party may not be able to perform its
+      obligations under its contract. BNO may enter into certain transactions where an OTC component is exchanged for a corresponding
+      futures contract (“Exchange for Related Position” or “EFRP” transactions). In the most co
+  - source_sentence: As of December 31, 2015, the Company reported total other assets of $10,069 million, which included $2,749
+      million in goodwill (down from $3,024 million in 2014) and $155 million in restricted cash held by the Charge and Lending
+      Trusts. Customer deposits grew to $54,997 million in 2015 from $44,171 million in 2014, with U.S. retail savings accounts
+      accounting for $29,023 million of that total.
+    sentences:
+    - 'pproximate fair value because they are short term in duration, have no defined maturity or have a market-based interest
+      rate. Financial Liabilities Carried At Other Than Fair Value Certificates of Deposit Certificates of deposit (CDs) are
+      recorded at their historical issuance cost on the Consolidated Balance Sheets. Fair value is estimated using a discounted
+      cash flow methodology based on the future cash flows and the discount rate that reflects the current market rates for
+      similar types of CDs within similar markets. Long-term Debt Long-term debt is recorded at historical issuance cost on
+      the Consolidated Balance Sheets adjusted for (i) unamortized discount and unamortized fees, (ii) the impact of movements
+      in exchange rates on foreign currency denominated debt and (iii) the impact of fair value hedge accounting on certain
+      fixed-rate notes that have been swapped to floating rate through the use of interest rate swaps. The fair value of our
+      long-term debt is measured using quoted offer prices when quoted market prices are available. If quoted market prices
+      are not available, the fair value is determined by discounting the future cash flows of each instrument at rates currently
+      observed in publicly-traded debt markets for debt of similar terms and credit risk. For long-term debt, where there
+      are no rates currently observable in publicly traded debt markets of similar terms and comparable credit risk, we use
+      market interest rates and adjust those rates for necessary risks, including our own credit risk. In determining an appropriate
+      spread to reflect our credit standing, we consider credit default swap spreads, bond yields of other long-term debt
+      offered by us, and interest rates currently offered to us for similar debt instruments of comparable maturities. NONRECURRING
+      FAIR VALUE MEASUREMENTS We have certain assets that are subject to measurement at fair value on a nonrecurring basis.
+      For these assets, measurement at fair value in periods subsequent to their initial '
+    - "ies issued by the Lending Trust as of December 31, 2015. These subordinated securities have the obligation to absorb\
+      \ losses of the Lending Trust and provide the right to receive benefits from the Lending Trust, both of which are significant\
+      \ to the VIE. TRS\x92 role as servicer for the Charge Trust does not provide it with a significant obligation to absorb\
+      \ losses or a significant right to receive benefits. However, TRS\x92 position as the parent company of the entities\
+      \ that transferred the receivables to the Charge Trust makes it the party most closely related to the Charge Trust.\
+      \ Based on these considerations, TRS is the primary beneficiary of both Trusts. The debt securities issued by the Trusts\
+      \ are non-recourse to the Company. The securitized Card Member receivables and loans held by the Charge Trust and the\
+      \ Lending Trust, respectively, are available only for payment of the debt securities or other obligations issued or\
+      \ arising in the securitization transactions (refer to Note 3). The long-term debt of each Trust is payable only out\
+      \ of collections on their respective underlying securitized assets (refer to Note 9). The following table presents the\
+      \ restricted cash held by the Charge Trust and the Lending Trust as of December 31, 2015 and 2014, included in Other\
+      \ Assets on the Company\x92s Consolidated Balance Sheets: (Millions) 2015 2014 Charge Trust $ 2 $ 2 Lending Trust 153\
+      \ 62 Total $ 155 $ 64 These amounts relate to collections of Card Member receivables and loans to be used by the Trusts\
+      \ to fund future expenses and obligations, including credit losses, interest paid on the debt securities and upcoming\
+      \ debt maturities. Under the respective terms of the Charge Trust and the Lending Trust agreements, the occurrence of\
+      \ certain triggering events associated with the performance of the assets of each Trust could result in payment of trust\
+      \ expenses, establishment of reserve funds, or, in a worst-case scenario, early amortization of investor debt securities.\
+      \ During the year ende"
+    - sue enforcement actions against private fund managers. This increased enforcement activity may cause us to reevaluate
+      certain practices and adjust our compliance control function as necessary and appropriate. While the SEC’s recent list
+      of examination priorities includes such items as cybersecurity compliance and controls and conducting risk-based examinations
+      of never-before-examined investment advisory firms, it is generally expected that the SEC’s oversight of alternative
+      asset managers will continue to focus substantially on concerns related to transparency and investor disclosure practices.
+      Although the SEC has cited improvements in disclosures and industry practices in this area, it has also indicated that
+      there is room for improvement in particular areas, including fees and expenses (and the allocation of such fees and
+      expenses) and co-investment practices. To this end, many firms have received inquiries during examinations or directly
+      from the SEC’s Division of Enforcement regarding various transparency-related topics, including the acceleration of
+      monitoring fees, the allocation of broken-deal expenses, the disclosure of operating partner or operating executive
+      compensation, outside business activities of firm principals and employees, group purchasing arrangements and general
+      conflicts of interest disclosures. In addition, our Private Equity Group funds have engaged in the past and may engage
+      from time to time advisors who often work with our investment teams during due diligence, provide board-level governance
+      and support and advise portfolio company leadership. Advisors generally are third parties and typically retained by
+      us pursuant to consulting agreements. In some cases, an operating executive may be retained by a portfolio company directly
+      and in such instances the portfolio company may compensate the operating executive directly (meaning that investors
+      in our Private Equity Group funds may indirectly bear the operating executive’s compensation). Wh
+  - source_sentence: As of December 31, 2018, the company reported a total backlog of $812.7 million, a significant increase
+      from $582.7 million in 2017, driven primarily by the Software and Sensors segment's $758.1 million backlog. Total gross
+      margin rose to $258.6 million (61.6% of net sales) in 2018 compared to $207.1 million (60.2% of net sales) in 2017,
+      with the Software and Sensors segment seeing a 92.3% increase in gross margin.
+    sentences:
+    - of clip sizes and facilitation of procedure assessment in real time to offer doctors further options when treating mitral
+      valve disease. In 2018, growth in Structural Heart was driven by several product areas including MitraClip and the AMPLATZER
+      ® PFO occluder, a device designed to close a hole-like opening in the heart. In September 2018, Abbott announced positive
+      clinical results from its COAPT study, which demonstrated that MitraClip improved survival and clinical outcomes for
+      select patients with functional MR. In September 2019, Abbott announced additional data from its COAPT trial that shows
+      that MitraClip is projected to increase life expectancy and quality of life compared to guideline-directed medical therapy
+      alone in heart failure patients with secondary MR. In 2019, the growth in Electrophysiology revenue reflects higher
+      sales of cardiac diagnostic and ablation catheters in both the U.S. and internationally. In January 2019, Abbott announced
+      U.S. FDA approval of its TactiCath ® contact force ablation catheter, Sensor Enabled™, which is designed to help physicians
+      treat atrial fibrillation, a form of irregular heartbeat. In 2018, the growth in Electrophysiology was led by higher
+      sales in cardiac mapping and ablation catheters. In May 2018, Abbott announced U.S. FDA clearance of the Advisor HD
+      Grid Mapping Catheter, Sensor Enabled, which creates detailed maps of the heart and expands Abbott's electrophysiology
+      product portfolio. 28 In 2019, the growth in Heart Failure revenue was driven by rapid market adoption in the U.S. of
+      Abbott's HeartMate 3 ® Left Ventricular Assist Device (LVAD) following FDA approval in October 2018 as a destination
+      (long-term use) therapy for people living with advanced heart failure as well as higher sales of Abbott’s CardioMEMS
+      ® heart failure monitoring system. In March 2019, Abbott announced new data from its MOMENTUM 3 clinical study, the
+      largest randomized controlled trial to assess outcomes in patients receiving a heart pum
+    - 'overnment funding rules, in some cases certain of the future period amounts included in bookings are subject to budget
+      appropriation or other contract cancellation clauses. Although we have entered into contracts for the delivery of products
+      and services in the future and anticipate the contracts will be fulfilled, if agencies do not exercise contractual options,
+      do not appropriate funds in future year budgets, or do enact a cancellation clause, revenue associated with these bookings
+      may not ultimately be recognized, resulting in a future reduction to bookings. Bookings related to our Software and
+      Sensors segment, net of cancellations, were $389.1 million during 2018 , compared to $291.2 million in 2017 , an increase
+      of 33.6% . 28 Table of Contents The chart below illustrates our quarterly Software and Sensors bookings for each of
+      the previous six fiscal quarters (in thousands): Backlog - As of December 31, 2018 compared to December 31, 2017 Our
+      backlog for products and services includes all orders that have been received and are believed to be firm. In the TASER
+      segment, we define backlog as equal to deferred revenue. Deferred revenue represents amounts invoiced to customers for
+      goods and services to be delivered in subsequent periods. We process orders within the TASER segment quickly, and our
+      best estimate of firm orders outstanding as of period end represents those that have been paid for but remain undelivered.
+      The TASER segment backlog balance was $54.6 million as of December 31, 2018 . We expect to realize $22.2 million of
+      this deferred revenue balance as revenue during the next 12 months. This represents cash received and accounts receivable
+      from customers on or prior to December 31, 2018 for products and services expected to be delivered in the next 12 months.
+      In the Software and Sensors segment, we define backlog as cumulative bookings, net of cancellations, less product and
+      service revenue recognized to date. Bookings are generally realized as revenue ove'
+    - 'sions relating to: Ÿ eligibility, enrollment and disenrollment processes; Ÿ health education and wellness and prevention
+      programs; Ÿ covered services; Ÿ timeliness of claims payment; Ÿ eligible providers; Ÿ financial standards; Ÿ subcontractors;
+      Ÿ safeguarding of member information; Ÿ record-keeping and record retention; Ÿ fraud and abuse detection and reporting;
+      Ÿ periodic financial and informational reporting; Ÿ grievance procedures; and Ÿ quality assurance; Ÿ organization and
+      administrative systems. A health plan or individual health insurance providers’ compliance with these requirements is
+      subject to monitoring by state regulators and by CMS. A health plan is also subject to periodic comprehensive quality
+      assurance evaluations by a third-party reviewing organization and generally by the insurance department of the jurisdiction
+      that licenses the health plan. A health plan or individual health insurance provider must also submit reports to various
+      regulatory agencies, including quarterly and annual statutory financial statements and utilization reports. 9 Table
+      of Contents The table below sets forth the term of our state contracts and provides details regarding related renewal
+      or extension and termination provisions as of December 31, 2009. State Contract Expiration Date Renewal or Extension
+      by the State Termination by the State Arizona – Acute Care September 30, 2011 May be extended for up to two additional
+      one-year terms. May be terminated for convenience or an event of default. Arizona – Behavioral Health June 30, 2010
+      Renewable through the state’s reprocurement process. 1 May be terminated for convenience or an event of default. Arizona
+      – Long-term Care September 30, 2010 May be extended for up to one additional year. May be terminated for convenience,
+      an event of default or lack of funding. Arizona – Special Needs Plan (Medicare) December 31, 2010 Renewable annually
+      for successive 12-month periods. May be terminated by an event of default. Florida – Medicaid'
+  - source_sentence: Adobe reports that approximately 42% of its total revenue is generated from outside the Americas, exposing
+      the company to international risks including currency fluctuations, trade barriers, and complex global data privacy
+      regulations like GDPR and PIPL. Additionally, with 49% of its employees located outside the U.S., the company faces
+      significant operational costs and legal risks related to varying international labor laws and evolving data security
+      requirements.
+    sentences:
+    - tized premium or discount and valuation allowances. Valuation allowances are established for impaired loans when it
+      is probable that contractual principal and interest will not be collected. Valuation allowances for impaired loans reduce
+      the carrying value to the fair value of the collateral or the present value of the loan's expected future repayment
+      cash flows discounted at the loan's original effective interest rate. Short-term investments are carried at cost or
+      amortized cost that approximates fair value, and include the reinvestment of collateral received in connection with
+      certain securities included in repurchase, resale and lending activities and collateral posted by counterparties in
+      derivative transactions. For these transactions, the Company records an offsetting liability in other liabilities and
+      accrued expenses for the Company's obligation to repay the collateral. Other investments, which consist primarily of
+      policy loans, are carried at the unpaid principal balances. Investment income consists primarily of interest and dividends,
+      net investment income from partnership interests and income from certain derivative transactions. Interest is recognized
+      on an accrual basis and dividends are recorded at the ex-dividend date. Interest income on mortgage-backed and asset-backed
+      securities is determined using the effective yield method, based on estimated principal repayments. Interest income
+      on certain beneficial interests in securitized financial assets is determined using the prospective yield method, based
+      upon projections of expected future cash flows. Income from investments in partnership interests, accounted for on the
+      cost basis, is recognized upon receipt of amounts distributed by the partnerships as income. Accrual of income is suspended
+      for fixed income securities and mortgage loans that are in default or when the receipt of interest payments is in doubt.
+      Realized capital gains and losses include gains and losses on investment dispositions, write-d
+    - 't generate a corresponding significant increase in revenue and we are unable to achieve the efficiencies we anticipate.
+      In addition, the loss of key sales employees could impact our customer relationships and future ability to sell to certain
+      accounts covered by such employees. We face various risks associated with our operating as a multinational corporation.
+      As a global business that generates approximately 42% of our total revenue from sales to customers outside of the Americas,
+      we are subject to a number of risks, including: • inflation and actions taken by central banks to counter inflation;
+      • foreign currency fluctuations and controls; • international and regional economic, political and labor conditions,
+      including any instability or security concerns abroad, such as uncertainty caused by economic sanctions, trade disputes,
+      armed conflicts and wars; • tax laws (including U.S. taxes on foreign subsidiaries); • increased financial accounting
+      and reporting burdens and complexities; • changes in, or impositions of, legislative or regulatory requirements; • changes
+      in laws governing the free flow of data across international borders; • failure of laws to protect our intellectual
+      property rights adequately; • inadequate local infrastructure and difficulties in managing and staffing international
+      operations; • delays resulting from difficulty in obtaining export licenses for certain technology, tariffs, quotas
+      and other trade barriers; • the imposition of governmental economic sanctions on countries in which we do business or
+      where we plan to expand our business; • costs and delays associated with developing products in multiple languages;
+      • operating in locations with a higher incidence of corruption and fraudulent business practices; and • other factors
+      beyond our control, such as terrorism, war, natural disasters, climate change and pandemics, including the COVID-19
+      pandemic and resulting restrictions on business activity, which may vary significantly by region. S'
+    - y reference as part of Exhibit 4.1 of the Company’s Form 8-K filed on March 11, 2021 (SEC File No. 001-12291). 4.(k)
+      Form of Treasury Unit, incorporated herein by reference as part of Exhibit 4.1 of the Company’s Form 8-K filed on March
+      11, 2021 (SEC File No. 001-12291). 4.(l) Form of Cash Settled Unit, incorporated herein by reference as part of Exhibit
+      4.1 of the Company’s Form 8-K filed on March 11, 2021 (SEC File No. 001-12291). 4.(m) Form of Series A Cumulative Perpetual
+      Convertible Preferred Stock Certificate, incorporated herein by reference to Exhibit 4.5 of the Company’s Form 8-K filed
+      on March 11, 2021 (SEC File No. 001-12291). 4.(n) Form of Series B Cumulative Perpetual Preferred Stock Certificate,
+      incorporated herein by reference to Exhibit 4.6 of the Company’s Form 8-K filed on March 11, 2021 (SEC File No. 001-12291).
+      205 | 2022 Annual Report 10.1 The AES Corporation Profit Sharing and Stock Ownership Plan are incorporated herein by
+      reference to Exhibit 4(c)(1) of the Registration Statement on Form S-8 (Registration No. 33-49262) filed on July 2,
+      1992. (P) 10.2 The AES Corporation Incentive Stock Option Plan of 1991, as amended, is incorporated herein by reference
+      to Exhibit 10.30 of the Company's Form 10-K for the year ended December 31, 1995 (SEC File No. 00019281). (P) 10.3 Applied
+      Energy Services, Inc. Incentive Stock Option Plan of 1982 is incorporated herein by reference to Exhibit 10.31 of the
+      Registration Statement on Form S-1 (Registration No. 33-40483). (P) 10.4 Deferred Compensation Plan for Executive Officers,
+      as amended, is incorporated herein by reference to Exhibit 10.32 of Amendment No. 1 to the Registration Statement on
+      Form S-1 (Registration No. 33-40483). (P) 10.5 Deferred Compensation Plan for Directors, as amended and restated, on
+      February 17, 2012 is incorporated herein by reference to Exhibit 10.5 of the Company's Form 10-K for the year ended
+      December 31, 2012. 10.6 The AES Corporation Stock Option Plan for Outside Directors, as a
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - cosine_accuracy
+  model-index:
+  - name: mistral
+    results:
+    - task:
+        type: triplet
+        name: Triplet
+      dataset:
+        name: triplet eval
+        type: triplet-eval
+      metrics:
+      - type: cosine_accuracy
+        value: 1
+        name: Cosine Accuracy
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-20T08:14:10.000Z'
+safetensors:
+  parameters:
+    BF16: 7110660096
+  total: 7110660096
+usedStorage: 14221352376
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - MistralModel
+  attention_dropout: 0.0
+  bos_token_id: 1
+  dtype: bfloat16
+  eos_token_id: 2
+  head_dim: 128
+  hidden_act: silu
+  hidden_size: 4096
+  initializer_range: 0.02
+  intermediate_size: 14336
+  max_position_embeddings: 32768
+  model_type: mistral
+  num_attention_heads: 32
+  num_hidden_layers: 32
+  num_key_value_heads: 8
+  pad_token_id: 2
+  rms_norm_eps: 1.0e-05
+  rope_parameters:
+    rope_theta: 10000.0
+    rope_type: default
+  sliding_window: 4096
+  tie_word_embeddings: false
+  transformers_version: 5.22.1
+  use_cache: false
+  vocab_size: 32000
+onnxFiles: {}
+safetensorsSizeMb: 14221.4
+approxSizeMb: 14221.3
+fetchedAt: '2026-11-20T11:15:32.000Z'

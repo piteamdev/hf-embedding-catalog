@@ -1,0 +1,133 @@
+_id: 6af323bd9870b8e83e67d36b
+id: eustlb/Liquid-Codec
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- liquid_codec
+- feature-extraction
+- liquid
+- lfm3
+- audio
+- audio-codec
+- speech
+- streaming
+- edge
+- multilingual
+- custom_code
+- en
+- zh
+- de
+- fr
+- ja
+- ko
+- license:other
+- region:us
+downloads: 112
+likes: 0
+modelId: eustlb/Liquid-Codec
+author: eustlb
+sha: 8ce71a5194e5e1a9c664bd26b59791e8f05f7ea8
+lastModified: '2026-11-19T18:58:37.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - LiquidCodecModel
+  auto_map:
+    AutoConfig: configuration_liquid_codec.LiquidCodecConfig
+    AutoModel: modeling_liquid_codec.LiquidCodecModel
+  model_type: liquid_codec
+cardData:
+  library_name: transformers
+  license: other
+  license_name: lfm1.0
+  license_link: LICENSE
+  pipeline_tag: feature-extraction
+  tags:
+  - liquid
+  - lfm3
+  - audio
+  - audio-codec
+  - speech
+  - streaming
+  - edge
+  - multilingual
+  - custom_code
+  language:
+  - en
+  - zh
+  - de
+  - fr
+  - ja
+  - ko
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_liquid_codec.LiquidCodecModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: configuration_lfm3.py
+- rfilename: configuration_liquid_codec.py
+- rfilename: model.safetensors
+- rfilename: modeling_lfm3.py
+- rfilename: modeling_liquid_codec.py
+spaces: []
+createdAt: '2026-11-10T14:01:33.000Z'
+safetensors:
+  parameters:
+    F32: 1280
+    BF16: 73557810
+  total: 73559090
+usedStorage: 294287120
+downloadsAllTime: 112
+inferenceProviderMapping: {}
+configJson:
+  transformers_version: 5.19.0.dev0
+  architectures:
+  - LiquidCodecModel
+  output_hidden_states: false
+  return_dict: true
+  dtype: bfloat16
+  chunk_size_feed_forward: 0
+  is_encoder_decoder: false
+  id2label:
+    '0': LABEL_0
+    '1': LABEL_1
+  label2id:
+    LABEL_0: 0
+    LABEL_1: 1
+  problem_type: null
+  encoder_dim: 512
+  encoder_conv_dim: 256
+  stft_n_fft: 1280
+  stft_hop_length: 320
+  stft_win_length: 1280
+  stft_frame_stack: 6
+  quantizer_dim: 256
+  fsq_levels:
+  - 8
+  - 7
+  - 6
+  - 6
+  n_q: 12
+  decoder_window: 30
+  sampling_rate: 24000
+  initializer_range: 0.02
+  model_type: liquid_codec
+  output_attentions: false
+  sample_rate: 24000
+  frame_samples: 1920
+  auto_map:
+    AutoConfig: configuration_liquid_codec.LiquidCodecConfig
+    AutoModel: modeling_liquid_codec.LiquidCodecModel
+onnxFiles: {}
+safetensorsSizeMb: 147.1
+approxSizeMb: 147.1
+fetchedAt: '2026-11-20T11:15:32.000Z'

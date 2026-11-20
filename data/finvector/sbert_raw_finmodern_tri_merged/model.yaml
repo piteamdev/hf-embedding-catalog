@@ -1,0 +1,708 @@
+_id: 6aff1cc578cae954884d1c8d
+id: finvector/sbert_raw_finmodern_tri_merged
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- sentence-similarity
+- feature-extraction
+- generated_from_trainer
+- dataset_size:11687
+- loss:CachedMultipleNegativesRankingLoss
+- en
+- arxiv:1908.10084
+- arxiv:2101.06983
+- base_model:sentence-transformers/bert-base-nli-mean-tokens
+- base_model:finetune:sentence-transformers/bert-base-nli-mean-tokens
+- license:apache-2.0
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 15
+likes: 0
+modelId: finvector/sbert_raw_finmodern_tri_merged
+author: finvector
+sha: 3ae3857a14863db48935d3647e29129fd6d8b885
+lastModified: '2026-11-19T15:59:18.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: In 2004, the company reported net sales of $5.34 billion and net income of $279.7 million, driven by core
+    unit volume growth and favorable foreign currency translation of approximately $207 million. For 2005, the company anticipates
+    core unit volume growth of 4% to 7%, expects interest expense between $50 million and $60 million, and projects an after-tax
+    stock option expense of $8 million to $10 million for the second half of the year.
+  sentences:
+  - tter were $8.8 million and $16.1 million in 2017 and 2016, respectively. Home office lease termination/move - During 2017,
+    we relocated our corporate office headquarters to a nearby suburb of Chicago. Move related after-tax charges were $7.9
+    million in 2017. These charges are presented in the corporate segment. Impact of U.S. tax reform - Consists of the tax
+    expense from (a) adjusting December 31, 2017 initial estimates from the U.S. tax legislation passed in the fourth quarter
+    of 2017 and (b) the on-going impact of such legislation - principally the partial taxation of foreign earnings, nondeductible
+    executive compensation and entertainment expenses. Under the SEC Staff Accounting Bulletin No. 118 guidance, in our December
+    31, 2017 consolidated financial statements, we recognized provisional amounts for deferred income taxes and repatriation
+    tax based on reasonable estimates and interpretations of the new tax legislation. The ultimate impact of the new tax legislation
+    did differ from our estimated amounts as of December 31, 2017 amounts, due to, among other things, changes in interpretations
+    and assumptions we made, or additional regulatory or accounting guidance that was issued with respect to the new tax legislation.
+    In fourth quarter 2018, the IRS issued clarifying guidance related to the new tax legislation which resulted in us recognizing
+    a tax benefit of $8.9 million in the quarter. Any additional taxes associated with the ongoing impact of the tax legislation
+    had a de minimis impact on our cash taxes paid due to tax credits generated from our clean energy investments. Corporate
+    legal entity restructuring - Consists of the tax benefit related to the release of valuation allowances that resulted
+    from moving a legal entity within our subsidiary structure. Clean energy investments - We have investments in limited
+    liability companies that own 29 clean coal production plants developed by us and five clean coal production plants we
+    purchased from a third party on S
+  - "e a fine on us when its investigation is completed. We are unable to predict the effect of these matters at this time,\
+    \ although the effect could well be adverse and material. These matters are reported in Note 8 \x93Contingencies,\x94\
+    \ to the Consolidated Financial Statements on page 63 in our 2004 Annual Report to Shareholders. Outlook In 2005, we anticipate\
+    \ core unit volume growth in the range of 4 percent to 7 percent, driven in part by strong growth in the emerging markets\
+    \ of Asia, Latin America and Eastern Europe, subject to changes in global economic and market conditions. We expect a\
+    \ positive impact from price and mix, as well as a benefit from foreign currency translation. We anticipate that our selling\
+    \ price increases and ongoing productivity initiatives will offset rising raw material costs during the year. We expect\
+    \ to continue improving profitability as a result of our pricing actions, the successful consolidation of our roll materials\
+    \ business in Europe during 2004, and anticipated cost savings from our ongoing productivity initiatives, including Six\
+    \ Sigma. Offsetting these improvements to profitability during 2005, we expect to incur higher costs associated with our\
+    \ growth initiatives, including RFID. We expect increases in annual pension and medical costs to be in the range of $17\
+    \ million to $18 million before taxes for 2005, due in part to an estimated increase of $13 million for pension expense.\
+    \ The projected increase in pension expense reflects the adjustment of our actuarial assumptions for both the U.S. and\
+    \ international plans. For example, our long-term rate of return on plan assets and discount rate were lowered by 25 basis\
+    \ points for the U.S. pension plans to 8.75 percent and 6.0 percent, respectively. Our estimate of pension expense will\
+    \ be impacted by changes in foreign currency translation. We estimate that interest expense will be between $50 million\
+    \ to $60 million for 2005, assuming expected interest rate increases, offset by projected reduction"
+  - "ansportation to producers, brokers and other gas companies that own the natural gas transported, but are not the ultimate\
+    \ consumers. MichCon\x92s revenues and net income are impacted by weather and are concentrated in the first and fourth\
+    \ quarters of the year due to heating-related demand. MichCon\x92s operations are not dependent upon a limited number\
+    \ of customers, and the loss of any one or a few customers is not reasonably likely to have a material adverse effect\
+    \ on MichCon. We obtain our natural gas supply from various sources in different geographic areas under agreements that\
+    \ vary in both pricing and terms. 2004 Gas Distribution Contracted Supply Fixed Price Purchases 33 % Market Price Purchases\
+    \ 67 % 100 % Supply under contract represents approximately 75% of the expected 180 Bcf of supply requirements in 2004.\
+    \ We expect to meet the balance of gas supply requirements through open market purchases. As a result of varying demand\
+    \ primarily due to weather, MichCon may use existing gas in inventory to meet unanticipated customer obligations. Given\
+    \ the geographic diversity of supply, coupled with its 124 Bcf of storage capacity, MichCon believes it can meet the supply\
+    \ requirements for customers. MichCon has long-term firm transportation agreements expiring on various dates through 2011\
+    \ for delivery of purchased natural gas to our distribution system. Regulation MichCon is subject to the regulatory jurisdiction\
+    \ of the MPSC, which issues orders pertaining to rates, recovery of certain costs, including the costs of regulatory assets,\
+    \ conditions of service, accounting and operating-related matters. MichCon is subject to the requirements of other regulatory\
+    \ agencies with respect to safety, the environment and health. In the late 1990s, the MPSC began an initiative designed\
+    \ to give all of Michigan\x92s natural gas customers added choices and the opportunity to benefit from lower gas costs\
+    \ resulting from competition. In 1999, the MPSC approved a comprehensive experimental three-yea"
+- source_sentence: The Administrator calculates the Funds' NAV once daily after 4:00 p.m. E.T. using market values of assets
+    minus liabilities, while an indicative fund value (IFV) is disseminated every 15 seconds during NYSE Arca core trading
+    hours. Authorized Participants may create or redeem shares in baskets for cash based on the 4:00 p.m. E.T. NAV, subject
+    to a $300 transaction fee per order.
+  sentences:
+  - 'e in its Consolidated Balance Sheets an asset for a plan''s net overfunded status or a liability for a plan''s net underfunded
+    status, (b) measure a plan''s assets and its obligations that determine its funded status as of the end of the employer''s
+    fiscal year, and (c) recognize changes in the funded status of a defined benefit plan in the year in which the changes
+    occur in accumulated other comprehensive income (loss). 58 The Company''s pension plans'' funded status as of June 30,
+    2013 and 2012 is as follows: June 30, 2013 2012 Change in plan assets: Fair value of plan assets at beginning of year
+    $ 1,469.5 $ 1,313.3 Actual return on plan assets 121.0 106.6 Employer contributions 135.3 91.6 Currency translation adjustments
+    (1.5 ) (4.6 ) Benefits paid (48.2 ) (37.4 ) Fair value of plan assets at end of year $ 1,676.1 $ 1,469.5 Change in benefit
+    obligation: Benefit obligation at beginning of year $ 1,412.1 $ 1,178.8 Service cost 67.2 57.2 Interest cost 55.1 62.1
+    Actuarial (gains)/losses (58.6 ) 159.4 Currency translation adjustments 0.2 (10.8 ) Benefits paid (48.2 ) (37.4 ) Acquisitions
+    — 2.8 Projected benefit obligation at end of year $ 1,427.8 $ 1,412.1 Funded status - plan assets less benefit obligations
+    $ 248.3 $ 57.4 The amounts recognized on the Consolidated Balance Sheets as of June 30, 2013 and 2012 consisted of: June
+    30, 2013 2012 Noncurrent assets $ 362.6 $ 170.3 Current liabilities (4.7 ) (4.3 ) Noncurrent liabilities (109.6 ) (108.6
+    ) Net amount recognized $ 248.3 $ 57.4 The accumulated benefit obligation for all defined benefit pension plans was $1,412.8
+    million and $1,399.9 million at June 30, 2013 and 2012 , respectively. The Company''s pension plans with accumulated benefit
+    obligations in excess of plan assets as of June 30, 2013 and 2012 had the following projected benefit obligation, accumulated
+    benefit obligation and fair value of plan assets: June 30, 2013 2012 Projected benefit obligation $ 127.7 $ 171.5 Accumulated
+    benefit obligation $ 115.3 $ 161.8 Fa'
+  - 'cipants through electronic book-entry changes in accounts of DTC Participants. - 12 - Calculating NAV Each Fund’s NAV
+    is calculated by: ● Taking the current market value of its total assets; ● Subtracting any liabilities; and ● Dividing
+    that total by the total number of outstanding shares. The Administrator calculates the NAV of the Funds once each NYSE
+    Arca trading day. The NAV for a particular trading day is released after 4:00 p.m. E.T. Regular trading on the NYSE Arca
+    typically closes at 4:00 p.m. E.T. The Administrator uses the Baltic Exchange settlement price for the Freight Futures
+    and option contracts. The Administrator calculates or determines the value of all other BDRY and BWET investments using
+    market quotations, if available, or other information customarily used to determine the fair value of such investments
+    as of the close of the NYSE Arca (normally 4:00 p.m. E.T.), in accordance with the current Administrative Agency Agreement
+    among U.S. Bancorp Fund Services, the Fund and the Sponsor. The information may include costs of funding, to the extent
+    costs of funding are not and would not be a component of the other information being utilized. Third parties supplying
+    quotations or market data may include, without limitation, dealers in the relevant markets, end-users of the relevant
+    product, information vendors, brokers and other sources of market information. In addition, in order to provide updated
+    information relating to the Funds for use by investors and market professionals, an updated indicative fund value (“IFV”)
+    is made available through on-line information services throughout the core trading hours of 9:30 a.m. E.T. to 4:00 p.m.
+    E.T. on each trading day. The IFV is calculated by using the prior day’s closing NAV per share of each Fund as a base
+    and updating that value throughout the trading day to reflect changes in the most recently reported trade price for the
+    futures and/or options held by each Fund. Certain Freight Futures brokers provide rea'
+  - 'ovides an extension to cease receipt of CCR no later than October 15, 2023 for most units, and October 15, 2024 for a
+    narrow subset of units; however, the Federal EPA’s grant of such an extension will be based upon a satisfactory demonstration
+    of the need for additional time to develop alternative ash disposal capacity and will be limited to the soonest timeframe
+    technically feasible to cease receipt of CCR. Additionally, each request must undergo formal review, including public
+    comments, and be approved by the Federal EPA. AEP filed applications for additional time to develop alternative disposal
+    capacity at the following plants: Company Plant Name Generating Capacity Net Book Value (a) Projected Retirement Date
+    (in MWs) (in millions) AEGCo Rockport Plant, Unit 1 655 $ 232.5 2028 APCo Amos 2,930 2,103.9 2040 APCo Mountaineer 1,320
+    968.5 2040 I&M Rockport Plant, Unit 1 655 510.4 (b) 2028 KPCo Mitchell Plant 780 586.1 2040 SWEPCo Flint Creek Plant 258
+    265.6 2038 WPCo Mitchell Plant 780 588.3 2040 (a) Net book value before cost of removal including CWIP and inventory.
+    (b) Amount includes a $171 million regulatory asset related to the retired Tanners Creek Plant. The IURC and MPSC authorized
+    recovery of the Tanners Creek Plant regulatory asset over the useful life of Rockport Plant, Unit 1 in 2015 and 2014,
+    respectively. In addition, AGR owns Cardinal Plant, Unit 1 a competitive generation unit. A nonaffiliated electric cooperative
+    owns Cardinal Plant, Unit 2 and Unit 3 and operates all three units at the Cardinal Plant. The nonaffiliate filed an application
+    for additional time to develop alternative disposal capacity for the Cardinal Plant. As of December 31, 2021, the net
+    book value of Cardinal Plant, Unit 1, including materials and supplies and CWIP, before cost of removal, was approximately
+    $46 million. In January 2022, the Federal EPA began responding to applications for extension requests and has proposed
+    to deny several extension requests based on allegations th'
+- source_sentence: The Company reported quarterly revenues ranging from $223.0 million to $364.8 million in 2001, resulting
+    in a net loss applicable to common stockholders of $13.8 million in the first quarter. Financial highlights include $2.3
+    million in operating lease expenses for 2001 and the forgiveness of various executive loans, including a $3.3 million
+    repayment from Rick Braddock.
+  sentences:
+  - 'o this Annual Report on Form 10-K, please remember they are included to provide you with information regarding their
+    terms and are not intended to provide any other factual or disclosure information about the Company or the other parties
+    to the agreements. Some agreements contain representations and warranties by each of the parties to the applicable agreement.
+    These representations and warranties have been made solely for the benefit of the other parties to the applicable agreement
+    and: 64 • should not be treated as categorical statements of fact, but rather as a way of allocating the risk to one of
+    the parties if those statements prove to be inaccurate; • may have been qualified by disclosures that were made to the
+    other party in connection with the negotiation of the applicable agreement, which disclosures are not necessarily reflected
+    in the agreement; • may apply standards of materiality in a way that is different from what may be viewed as material
+    to you or other investors; and • were made only as of the date of the applicable agreement or such other date or dates
+    as may be specified in the agreement and are subject to more recent developments. Accordingly, these representations and
+    warranties may not describe the actual state of affairs as of the date they were made or at any other time. Additional
+    information about the Company may be found elsewhere in this Annual Report on Form 10‑K and the Company''s other public
+    filings, which are available without charge through the SEC''s website at http://www.sec.gov. Exhibit Number Description
+    3.1 (a) Restated Certificate of Incorporation of the Registrant. 3.2 (a) Amended and Restated By-Laws of the Registrant.
+    4.1 Reference is hereby made to Exhibits 3.1 and 3.2. 4.2 (b) Specimen Certificate for Registrant''s Common Stock. 4.3
+    (c) Indenture, dated as of June 4, 2013, between the Registrant and American Stock Transfer & Trust Company, LLC as Trustee.
+    4.4 (d) Indenture, dated as of August 20, 2014, between the Registran'
+  - ' the right to put their shares of priceline.com Europe Holdings, N.V. to priceline.com Incorporated, at fair market value,
+    in the event of a change in control, as defined, of priceline.com Incorporated. These investors own 45,539,999 shares
+    of priceline.com Europe Holdings, N.V. Operating Leases - The Company leases certain facilities and equipment through
+    operating leases. Rental expense for operating leases was approximately $2.3 million, $2.5 million and $1.4 million for
+    the years ended December 31, 2001, 2000 and 1999, respectively. The Company''s executive, administrative, operating offices
+    and network operations center are located in approximately 92,000 square feet of leased office space located in Norwalk,
+    Connecticut. In addition, the Company leases approximately 47,000 square feet in another location in Wilton, Connecticut
+    that is unoccupied and that it currently intends to sublease. The Company also has a lease for approximately 2,500 square
+    feet of office space in New York City. Priceline.com europe Ltd. leases 1,900 square feet of office space in London, England.
+    The Company does not own any real estate as of March 15, 2002. Minimum payments for operating leases having initial or
+    remaining non-cancelable terms in excess of one year are as follows (in thousands): Years ended December 31, After 2002
+    2003 2004 2005 2006 2006 Total -----------------------------------------------------------------------------------------
+    $3,513 $3,428 $2,385 $2,373 $2,373 $10,711 $24,783 16. BENEFIT PLAN Priceline.com adopted a defined contribution 401(k)
+    savings plan (the Plan) during 1998 covering all employees who are at least 21 years old and have completed 6 months of
+    service. The Plan allows eligible employees to contribute up to 20% of their eligible earnings, subject to a statutorily
+    prescribed annual limit. The Company may make matching contributions on a discretionary basis to the Plan. All participants
+    are fully vested in their contributions and investment earnings'
+  - occurring, but the development and maintenance of these systems is costly and requires ongoing monitoring and updating
+    as technologies change and efforts to overcome security measures become more sophisticated. Moreover, despite our efforts,
+    the possibility of intrusion, tampering and theft cannot be eliminated entirely. Our information technology and infrastructure
+    may be vulnerable to attacks by hackers or breached due to employee error, malfeasance or other disruptions. Additionally,
+    we provide confidential, proprietary and personal information to third parties when it is necessary to pursue business
+    objectives. While we obtain assurances that these third parties will protect this information and, where appropriate,
+    assess the protections employed by these third parties, there is a risk the confidentiality of data held by third parties
+    may be compromised. Any such breach or attack could compromise our network, the network of a third party to whom we have
+    disclosed confidential, proprietary or personal information, a data center where we have stored such information or a
+    third-party cloud service provider, and the information stored there could be accessed, publicly disclosed, lost or stolen.
+    Any such access, disclosure or other loss of information could result in legal claims or proceedings, disrupt our operations,
+    damage our reputation, impair our ability to conduct business, or result in the loss or diminished value of profitable
+    opportunities and the loss of revenue as a result of unlicensed use of our intellectual property. Contractual provisions
+    with third parties, including cloud service providers, may limit our ability to recover these losses. If personal information
+    of our customers or employees were misappropriated, our reputation with our customers and employees could be injured,
+    resulting in loss of business or morale, and we could incur costs to compensate our customers or employees or pay damages
+    or fines as a result of litigation or regulatory actio
+- source_sentence: In 2009, the company reported revenues of $29,407 million across its manufacturing, service, and retailing
+    segments, with pre-tax earnings of $1,536 million, reflecting declines across most divisions due to the global economic
+    recession. Specifically, other manufacturing revenues fell 16% to $11,926 million, other service revenues fell 22% to
+    $6,585 million, and retailing revenues fell 8% to $2,869 million.
+  sentences:
+  - 'ber 31, 2024. 49 Item 7. Management''s Discussion and Analysis of Financial Condition and Results of Operations The following
+    table presents a summary of operating ratios for Aflac U.S. for the years ended December 31 followed by a discussion of
+    the significant drivers of changes in operating ratios compared to the previous year. Ratios to total adjusted revenues:
+    2025 2024 Total benefits and claims 41.1 % 40.5 % Adjusted expenses: Amortization of deferred policy acquisition costs
+    8.0 7.9 Insurance commissions 8.2 8.4 Insurance and other expenses 22.2 22.3 Total adjusted expenses 38.3 38.5 Pretax
+    adjusted earnings 20.6 21.1 Ratios to total premiums: Total benefits and claims 47.3 % 46.8 % Adjusted expenses: Amortization
+    of deferred policy acquisition costs 9.2 9.1 • In 2025, the total benefits and claims to total premiums ratio increased
+    primarily due to higher incurred claims. • The total adjusted expense ratio decreased slightly in 2025 primarily due to
+    a year-over-year increase in total adjusted revenues. • In total, the pretax adjusted profit margin decreased in 2025
+    primarily due to the higher benefit ratio. The following table presents premium persistency for Aflac U.S. on a 12-month
+    rolling basis as of December 31. 2025 2024 Premium persistency 79.2 % 79.3 % Aflac U.S. Sales The following table presents
+    Aflac''s U.S. new annualized premium sales for the years ended December 31. (In millions) 2025 2024 New annualized premium
+    sales $ 1,589 $ 1,543 Increase (decrease) over prior period 3.0 % (1.0) % The increase in new annualized premium sales
+    for Aflac U.S. in 2025 was primarily driven by sales of group products. The following table details the contributions
+    to Aflac''s U.S. new annualized premium sales by major insurance product category for the years ended December 31. 2025
+    2024 Accident 18.9 % 19.6 % Disability 26.4 26.3 Critical care (1) 19.8 20.9 Hospital indemnity 13.2 13.7 Dental/vision
+    6.2 5.3 Life 15.5 14.2 Total 100.0 % 100.0 % (1) Includes cancer, criti'
+  - "proceeds received by us in the offering were $120.9 million, determined as follows (in millions): Aggregate offering\
+    \ proceeds to the Company $ 133.3 Underwriting discounts and commissions 9.3 Finders fee \x97 Other fees and expenses\
+    \ 3.1 Total expenses 12.4 Net proceeds to the Company $ 120.9 19 Table of Contents None of the underwriting discounts\
+    \ and commissions or offering expenses were paid, directly or indirectly, to our directors or officers or their associates\
+    \ or to persons owning 10 percent or more of our common stock or to any affiliates of ours. We are using, or expect to\
+    \ use, the net proceeds of the offering to provide additional long-term capital to support the growth of our business\
+    \ (primarily through opening new restaurants), for maintenance of our existing restaurants and for general corporate purposes.\
+    \ ITEM 6. SELECTED CONSOLIDATED FINANCIAL DATA Our selected consolidated financial data shown below should be read together\
+    \ with our Item 7. \x93Management\x92s Discussion and Analysis of Financial Condition and Results of Operations\x94 and\
+    \ our consolidated financial statements and respective notes included in Item 8. \x93Financial Statements and Supplementary\
+    \ Data\x94. The selected consolidated statements of income data for the years ended December 31, 2006, 2005 and 2004 and\
+    \ the consolidated balance sheet data as of December 31, 2006 and 2005 have been derived from our audited consolidated\
+    \ financial statements included in Item 8. \x93Financial Statements and Supplementary Data\x94. Our consolidated financial\
+    \ statements for the years ended December 31, 2006, 2005 and 2004 have been audited and reported upon by Ernst & Young\
+    \ LLP, an independent registered public accounting firm. The selected consolidated statements of income data for the year\
+    \ ended December 31, 2003 and 2002 and the consolidated balance sheet data as of December 31, 2004, 2003 and 2002 have\
+    \ been derived from audited financial statements not included in this report. The data shown below are not necessarily\
+    \ indica"
+  - "n 2008, pre-tax earnings declined $231 million (53%) to $205 million. The decline was attributable to both lower sales\
+    \ volume and higher product costs. Increases in petrochemical based raw material costs along with reduced manufacturing\
+    \ efficiencies caused the product cost increase. Pre-tax earnings in 2008 also included the aforementioned $59 million\
+    \ of charges related to plant closures. Other manufacturing Our other manufacturing businesses include a wide array of\
+    \ businesses. Included in this group are several manufacturers of building products (Acme Building Brands, Benjamin Moore,\
+    \ Johns Manville and MiTek) and apparel (led by Fruit of the Loom which includes the Russell athletic apparel and sporting\
+    \ goods business and the Vanity Fair Brands women\x92s intimate apparel business). Also included in this group are Forest\
+    \ River, a leading manufacturer of leisure vehicles, CTB International (\x93CTB\x94), a manufacturer of equipment for\
+    \ the livestock and agricultural industries and ISCAR Metalworking Companies (\x93IMC\x94), an industry leader in the\
+    \ metal cutting tools business with operations worldwide. 41 Table of Contents Management\x92s Discussion (Continued)\
+    \ Manufacturing, Service and Retailing (Continued) Other manufacturing (Continued) Nearly all of the businesses in our\
+    \ manufacturing group experienced the adverse effects of the global economic recession in 2009 as consumers and customers\
+    \ cut purchases. Revenues in 2009 were $11,926 million, a decrease of $2,201 million (16%) from 2008. Revenues were lower\
+    \ for apparel (11%), building products (20%) and other businesses (16%) as compared to 2008. Pre-tax earnings of our other\
+    \ manufacturing businesses were $814 million in 2009, a decrease of $861 million (51%) versus 2008. The declines in earnings\
+    \ reflected the lower revenues as well as relatively higher costs resulting from lower manufacturing efficiencies. Revenues\
+    \ of $14,127 million in 2008 declined $332 million (2%) versus 2007. Pre-tax earnings were $1,675 million in 2008, a"
+- source_sentence: As of December 31, 2009, Allstate Financial's total investments increased to $99.83 billion from $96.00
+    billion in 2008, driven by higher valuations in fixed income and equity securities despite a $5.83 billion net reduction
+    in contractholder obligations. The company reduced municipal bond exposure by $1.88 billion and decreased portfolio duration
+    by approximately 5% while maintaining a fixed income portfolio that was 93.7% investment grade.
+  sentences:
+  - nsecured short-term borrowings up to an aggregate of $200 million. As of December 31, 2001, commercial paper with a face
+    amount of $100 million F-11 AMGEN INC. NOTES TO CONSOLIDATED FINANCIAL STATEMENTS--(Continued) was outstanding. These
+    borrowings had maturities of less than one month and had effective interest rates averaging 1.9%. Commercial paper with
+    a face amount of $100 million and with effective interest rates averaging 6.7% was outstanding at December 31, 2000. The
+    Company has established a $500 million debt shelf registration statement. In December 1997, pursuant to this registration
+    statement, the Company issued $100 million of debt securities that bear interest at a fixed rate of 6.5% and mature in
+    2007 (the "Notes") and established a $400 million medium-term note program. The Company may offer and issue medium-term
+    notes from time to time with terms to be determined by market conditions. The Company had $100 million of debt securities
+    outstanding at December 31, 2001 and 2000 that bear interest at a fixed rate of 8.1% and mature in 2097 (the "Century
+    Notes"). These securities may be redeemed in whole or in part at the Company's option at any time for a redemption price
+    equal to the greater of the principal amount to be redeemed or the sum of the present values of the principal and remaining
+    interest payments discounted at a determined rate plus, in each case, accrued interest. In addition to the Notes and the
+    Century Notes, debt securities outstanding at December 31, 2001 and 2000 include $23 million of debt securities that bear
+    interest at a fixed rate of 6.2% and mature in 2003. The terms of the debt securities require the Company to meet certain
+    debt to tangible net asset ratios and place limitations on liens and sale/leaseback transactions and, except with respect
+    to the Notes and the Century Notes, place limitations on subsidiary indebtedness. The Company has an unsecured committed
+    credit facility (the "credit facility") with five participating ba
+  - erest at a London Interbank Offered Rate (LIBOR) rate that is determined by the duration of such tranche plus an interest
+    rate margin. The LIBOR variable component of the interest rate for each tranche is reset as such tranche matures and a
+    new tranche is established. At December 31, 2016, the overall weighted average interest rate for Term Loan A was determined
+    based upon the LIBOR interest rates in effect for all of the individual tranches plus the interest rate margin of 1.75%.
+    At December 31, 2016, Term Loan B bears interest at LIBOR (floor of 0.75%) plus a margin of 2.75%. The Company is subject
+    to LIBOR-based interest rate volatility on Term Loan B as the LIBOR-based component of the interest rate exceeded the
+    floor of 0.75% as of December 31, 2016. The overall weighted average interest rate for Term Loan B was determined based
+    upon the LIBOR interest rates in effect for all individual tranches plus the interest rate margin. The Company has several
+    interest rate cap agreements that have the economic effect of capping the LIBOR variable component of the Company’s interest
+    rate at a maximum of 3.50% on $3,500,000 of outstanding principal debt. The remaining $775,000 outstanding principal balance
+    of Term Loan A would still be subject to LIBOR-based interest rate volatility. In addition, the Company maintains several
+    forward interest rate cap agreements with notional amounts totaling $3,500,000, which will be effective June 29, 2018.
+    The cap agreements will have the economic effect of capping the LIBOR variable component of the Company’s interest rate
+    at a maximum of 3.50% on an equivalent amount of the Company’s debt. See below for further details. The Company is restricted
+    from paying dividends under the terms of its senior secured credit facilities. During the year ended December 31, 2016,
+    the Company made mandatory principal payments under its then existing senior secured credit facilities totaling $62,500
+    on Term Loan A and $35,000 on Term Loan B. Revolving l
+  - " grade assets primarily corporate fixed income securities and bank loans, as a result of improved market conditions.\
+    \ \x95 Reduced our municipal bond exposure by 8.0% or $1.88 billion of amortized cost primarily through targeted dispositions,\
+    \ refunding and scheduled maturities. \x95 Managed our exposure to interest rate risk through macro hedging of tail risk\
+    \ and reductions in duration. Duration of the investment portfolio, including the effects of derivatives, declined by\
+    \ approximately 5% (.21 years) over the twelve month period. The decline in duration was the result of proceeds from asset\
+    \ 80 dispositions being reinvested in shorter duration assets and through the use of interest rate derivatives. Our investment\
+    \ portfolio duration is managed in relation to the liabilities of our business segments. \x95 Maintained risk mitigation\
+    \ programs that protected our portfolios through macro hedges against interest rate and equity market risk. The appreciation\
+    \ in fair values for fixed income and equity securities significantly exceeded the realized losses of $201 million from\
+    \ derivatives used for macro hedging programs. Investments outlook For 2010, the economies of the U.S. and other developed\
+    \ countries continue to face significant resistance with expectations for limited domestic growth, but with better prospects\
+    \ for growth in developing or emerging economies and markets. Financial markets are anticipated to see moderate returns\
+    \ for fixed income and equities with periods of higher volatility throughout the year, and moderate widening of credit\
+    \ spreads. We also expect continued weakness in commercial real estate fundamentals. In 2010, our return optimization\
+    \ and risk mitigation efforts will focus on the following areas: \x95 Optimizing our allocation of assets to reflect changes\
+    \ in Allstate Financial's liabilities. \x95 Continuing to explore global investments in areas of emerging opportunity\
+    \ with higher prospects for growth. \x95 Balancing our ongoing efforts to mitigate interest rate and eq"
+model-index:
+- name: sbert
+  results:
+  - task:
+      type: triplet
+      name: Triplet
+    dataset:
+      name: triplet eval
+      type: triplet-eval
+    metrics:
+    - type: cosine_accuracy
+      value: 0.9904191493988037
+      name: Cosine Accuracy
+      verified: false
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  language:
+  - en
+  license: apache-2.0
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - generated_from_trainer
+  - dataset_size:11687
+  - loss:CachedMultipleNegativesRankingLoss
+  base_model: sentence-transformers/bert-base-nli-mean-tokens
+  widget:
+  - source_sentence: In 2004, the company reported net sales of $5.34 billion and net income of $279.7 million, driven by
+      core unit volume growth and favorable foreign currency translation of approximately $207 million. For 2005, the company
+      anticipates core unit volume growth of 4% to 7%, expects interest expense between $50 million and $60 million, and projects
+      an after-tax stock option expense of $8 million to $10 million for the second half of the year.
+    sentences:
+    - tter were $8.8 million and $16.1 million in 2017 and 2016, respectively. Home office lease termination/move - During
+      2017, we relocated our corporate office headquarters to a nearby suburb of Chicago. Move related after-tax charges were
+      $7.9 million in 2017. These charges are presented in the corporate segment. Impact of U.S. tax reform - Consists of
+      the tax expense from (a) adjusting December 31, 2017 initial estimates from the U.S. tax legislation passed in the fourth
+      quarter of 2017 and (b) the on-going impact of such legislation - principally the partial taxation of foreign earnings,
+      nondeductible executive compensation and entertainment expenses. Under the SEC Staff Accounting Bulletin No. 118 guidance,
+      in our December 31, 2017 consolidated financial statements, we recognized provisional amounts for deferred income taxes
+      and repatriation tax based on reasonable estimates and interpretations of the new tax legislation. The ultimate impact
+      of the new tax legislation did differ from our estimated amounts as of December 31, 2017 amounts, due to, among other
+      things, changes in interpretations and assumptions we made, or additional regulatory or accounting guidance that was
+      issued with respect to the new tax legislation. In fourth quarter 2018, the IRS issued clarifying guidance related to
+      the new tax legislation which resulted in us recognizing a tax benefit of $8.9 million in the quarter. Any additional
+      taxes associated with the ongoing impact of the tax legislation had a de minimis impact on our cash taxes paid due to
+      tax credits generated from our clean energy investments. Corporate legal entity restructuring - Consists of the tax
+      benefit related to the release of valuation allowances that resulted from moving a legal entity within our subsidiary
+      structure. Clean energy investments - We have investments in limited liability companies that own 29 clean coal production
+      plants developed by us and five clean coal production plants we purchased from a third party on S
+    - "e a fine on us when its investigation is completed. We are unable to predict the effect of these matters at this time,\
+      \ although the effect could well be adverse and material. These matters are reported in Note 8 \x93Contingencies,\x94\
+      \ to the Consolidated Financial Statements on page 63 in our 2004 Annual Report to Shareholders. Outlook In 2005, we\
+      \ anticipate core unit volume growth in the range of 4 percent to 7 percent, driven in part by strong growth in the\
+      \ emerging markets of Asia, Latin America and Eastern Europe, subject to changes in global economic and market conditions.\
+      \ We expect a positive impact from price and mix, as well as a benefit from foreign currency translation. We anticipate\
+      \ that our selling price increases and ongoing productivity initiatives will offset rising raw material costs during\
+      \ the year. We expect to continue improving profitability as a result of our pricing actions, the successful consolidation\
+      \ of our roll materials business in Europe during 2004, and anticipated cost savings from our ongoing productivity initiatives,\
+      \ including Six Sigma. Offsetting these improvements to profitability during 2005, we expect to incur higher costs associated\
+      \ with our growth initiatives, including RFID. We expect increases in annual pension and medical costs to be in the\
+      \ range of $17 million to $18 million before taxes for 2005, due in part to an estimated increase of $13 million for\
+      \ pension expense. The projected increase in pension expense reflects the adjustment of our actuarial assumptions for\
+      \ both the U.S. and international plans. For example, our long-term rate of return on plan assets and discount rate\
+      \ were lowered by 25 basis points for the U.S. pension plans to 8.75 percent and 6.0 percent, respectively. Our estimate\
+      \ of pension expense will be impacted by changes in foreign currency translation. We estimate that interest expense\
+      \ will be between $50 million to $60 million for 2005, assuming expected interest rate increases, offset by projected\
+      \ reduction"
+    - "ansportation to producers, brokers and other gas companies that own the natural gas transported, but are not the ultimate\
+      \ consumers. MichCon\x92s revenues and net income are impacted by weather and are concentrated in the first and fourth\
+      \ quarters of the year due to heating-related demand. MichCon\x92s operations are not dependent upon a limited number\
+      \ of customers, and the loss of any one or a few customers is not reasonably likely to have a material adverse effect\
+      \ on MichCon. We obtain our natural gas supply from various sources in different geographic areas under agreements that\
+      \ vary in both pricing and terms. 2004 Gas Distribution Contracted Supply Fixed Price Purchases 33 % Market Price Purchases\
+      \ 67 % 100 % Supply under contract represents approximately 75% of the expected 180 Bcf of supply requirements in 2004.\
+      \ We expect to meet the balance of gas supply requirements through open market purchases. As a result of varying demand\
+      \ primarily due to weather, MichCon may use existing gas in inventory to meet unanticipated customer obligations. Given\
+      \ the geographic diversity of supply, coupled with its 124 Bcf of storage capacity, MichCon believes it can meet the\
+      \ supply requirements for customers. MichCon has long-term firm transportation agreements expiring on various dates\
+      \ through 2011 for delivery of purchased natural gas to our distribution system. Regulation MichCon is subject to the\
+      \ regulatory jurisdiction of the MPSC, which issues orders pertaining to rates, recovery of certain costs, including\
+      \ the costs of regulatory assets, conditions of service, accounting and operating-related matters. MichCon is subject\
+      \ to the requirements of other regulatory agencies with respect to safety, the environment and health. In the late 1990s,\
+      \ the MPSC began an initiative designed to give all of Michigan\x92s natural gas customers added choices and the opportunity\
+      \ to benefit from lower gas costs resulting from competition. In 1999, the MPSC approved a comprehensive experimental\
+      \ three-yea"
+  - source_sentence: The Administrator calculates the Funds' NAV once daily after 4:00 p.m. E.T. using market values of assets
+      minus liabilities, while an indicative fund value (IFV) is disseminated every 15 seconds during NYSE Arca core trading
+      hours. Authorized Participants may create or redeem shares in baskets for cash based on the 4:00 p.m. E.T. NAV, subject
+      to a $300 transaction fee per order.
+    sentences:
+    - 'e in its Consolidated Balance Sheets an asset for a plan''s net overfunded status or a liability for a plan''s net
+      underfunded status, (b) measure a plan''s assets and its obligations that determine its funded status as of the end
+      of the employer''s fiscal year, and (c) recognize changes in the funded status of a defined benefit plan in the year
+      in which the changes occur in accumulated other comprehensive income (loss). 58 The Company''s pension plans'' funded
+      status as of June 30, 2013 and 2012 is as follows: June 30, 2013 2012 Change in plan assets: Fair value of plan assets
+      at beginning of year $ 1,469.5 $ 1,313.3 Actual return on plan assets 121.0 106.6 Employer contributions 135.3 91.6
+      Currency translation adjustments (1.5 ) (4.6 ) Benefits paid (48.2 ) (37.4 ) Fair value of plan assets at end of year
+      $ 1,676.1 $ 1,469.5 Change in benefit obligation: Benefit obligation at beginning of year $ 1,412.1 $ 1,178.8 Service
+      cost 67.2 57.2 Interest cost 55.1 62.1 Actuarial (gains)/losses (58.6 ) 159.4 Currency translation adjustments 0.2 (10.8
+      ) Benefits paid (48.2 ) (37.4 ) Acquisitions — 2.8 Projected benefit obligation at end of year $ 1,427.8 $ 1,412.1 Funded
+      status - plan assets less benefit obligations $ 248.3 $ 57.4 The amounts recognized on the Consolidated Balance Sheets
+      as of June 30, 2013 and 2012 consisted of: June 30, 2013 2012 Noncurrent assets $ 362.6 $ 170.3 Current liabilities
+      (4.7 ) (4.3 ) Noncurrent liabilities (109.6 ) (108.6 ) Net amount recognized $ 248.3 $ 57.4 The accumulated benefit
+      obligation for all defined benefit pension plans was $1,412.8 million and $1,399.9 million at June 30, 2013 and 2012
+      , respectively. The Company''s pension plans with accumulated benefit obligations in excess of plan assets as of June
+      30, 2013 and 2012 had the following projected benefit obligation, accumulated benefit obligation and fair value of plan
+      assets: June 30, 2013 2012 Projected benefit obligation $ 127.7 $ 171.5 Accumulated benefit obligation $ 115.3 $ 161.8
+      Fa'
+    - 'cipants through electronic book-entry changes in accounts of DTC Participants. - 12 - Calculating NAV Each Fund’s NAV
+      is calculated by: ● Taking the current market value of its total assets; ● Subtracting any liabilities; and ● Dividing
+      that total by the total number of outstanding shares. The Administrator calculates the NAV of the Funds once each NYSE
+      Arca trading day. The NAV for a particular trading day is released after 4:00 p.m. E.T. Regular trading on the NYSE
+      Arca typically closes at 4:00 p.m. E.T. The Administrator uses the Baltic Exchange settlement price for the Freight
+      Futures and option contracts. The Administrator calculates or determines the value of all other BDRY and BWET investments
+      using market quotations, if available, or other information customarily used to determine the fair value of such investments
+      as of the close of the NYSE Arca (normally 4:00 p.m. E.T.), in accordance with the current Administrative Agency Agreement
+      among U.S. Bancorp Fund Services, the Fund and the Sponsor. The information may include costs of funding, to the extent
+      costs of funding are not and would not be a component of the other information being utilized. Third parties supplying
+      quotations or market data may include, without limitation, dealers in the relevant markets, end-users of the relevant
+      product, information vendors, brokers and other sources of market information. In addition, in order to provide updated
+      information relating to the Funds for use by investors and market professionals, an updated indicative fund value (“IFV”)
+      is made available through on-line information services throughout the core trading hours of 9:30 a.m. E.T. to 4:00 p.m.
+      E.T. on each trading day. The IFV is calculated by using the prior day’s closing NAV per share of each Fund as a base
+      and updating that value throughout the trading day to reflect changes in the most recently reported trade price for
+      the futures and/or options held by each Fund. Certain Freight Futures brokers provide rea'
+    - 'ovides an extension to cease receipt of CCR no later than October 15, 2023 for most units, and October 15, 2024 for
+      a narrow subset of units; however, the Federal EPA’s grant of such an extension will be based upon a satisfactory demonstration
+      of the need for additional time to develop alternative ash disposal capacity and will be limited to the soonest timeframe
+      technically feasible to cease receipt of CCR. Additionally, each request must undergo formal review, including public
+      comments, and be approved by the Federal EPA. AEP filed applications for additional time to develop alternative disposal
+      capacity at the following plants: Company Plant Name Generating Capacity Net Book Value (a) Projected Retirement Date
+      (in MWs) (in millions) AEGCo Rockport Plant, Unit 1 655 $ 232.5 2028 APCo Amos 2,930 2,103.9 2040 APCo Mountaineer 1,320
+      968.5 2040 I&M Rockport Plant, Unit 1 655 510.4 (b) 2028 KPCo Mitchell Plant 780 586.1 2040 SWEPCo Flint Creek Plant
+      258 265.6 2038 WPCo Mitchell Plant 780 588.3 2040 (a) Net book value before cost of removal including CWIP and inventory.
+      (b) Amount includes a $171 million regulatory asset related to the retired Tanners Creek Plant. The IURC and MPSC authorized
+      recovery of the Tanners Creek Plant regulatory asset over the useful life of Rockport Plant, Unit 1 in 2015 and 2014,
+      respectively. In addition, AGR owns Cardinal Plant, Unit 1 a competitive generation unit. A nonaffiliated electric cooperative
+      owns Cardinal Plant, Unit 2 and Unit 3 and operates all three units at the Cardinal Plant. The nonaffiliate filed an
+      application for additional time to develop alternative disposal capacity for the Cardinal Plant. As of December 31,
+      2021, the net book value of Cardinal Plant, Unit 1, including materials and supplies and CWIP, before cost of removal,
+      was approximately $46 million. In January 2022, the Federal EPA began responding to applications for extension requests
+      and has proposed to deny several extension requests based on allegations th'
+  - source_sentence: The Company reported quarterly revenues ranging from $223.0 million to $364.8 million in 2001, resulting
+      in a net loss applicable to common stockholders of $13.8 million in the first quarter. Financial highlights include
+      $2.3 million in operating lease expenses for 2001 and the forgiveness of various executive loans, including a $3.3 million
+      repayment from Rick Braddock.
+    sentences:
+    - 'o this Annual Report on Form 10-K, please remember they are included to provide you with information regarding their
+      terms and are not intended to provide any other factual or disclosure information about the Company or the other parties
+      to the agreements. Some agreements contain representations and warranties by each of the parties to the applicable agreement.
+      These representations and warranties have been made solely for the benefit of the other parties to the applicable agreement
+      and: 64 • should not be treated as categorical statements of fact, but rather as a way of allocating the risk to one
+      of the parties if those statements prove to be inaccurate; • may have been qualified by disclosures that were made to
+      the other party in connection with the negotiation of the applicable agreement, which disclosures are not necessarily
+      reflected in the agreement; • may apply standards of materiality in a way that is different from what may be viewed
+      as material to you or other investors; and • were made only as of the date of the applicable agreement or such other
+      date or dates as may be specified in the agreement and are subject to more recent developments. Accordingly, these representations
+      and warranties may not describe the actual state of affairs as of the date they were made or at any other time. Additional
+      information about the Company may be found elsewhere in this Annual Report on Form 10‑K and the Company''s other public
+      filings, which are available without charge through the SEC''s website at http://www.sec.gov. Exhibit Number Description
+      3.1 (a) Restated Certificate of Incorporation of the Registrant. 3.2 (a) Amended and Restated By-Laws of the Registrant.
+      4.1 Reference is hereby made to Exhibits 3.1 and 3.2. 4.2 (b) Specimen Certificate for Registrant''s Common Stock. 4.3
+      (c) Indenture, dated as of June 4, 2013, between the Registrant and American Stock Transfer & Trust Company, LLC as
+      Trustee. 4.4 (d) Indenture, dated as of August 20, 2014, between the Registran'
+    - ' the right to put their shares of priceline.com Europe Holdings, N.V. to priceline.com Incorporated, at fair market
+      value, in the event of a change in control, as defined, of priceline.com Incorporated. These investors own 45,539,999
+      shares of priceline.com Europe Holdings, N.V. Operating Leases - The Company leases certain facilities and equipment
+      through operating leases. Rental expense for operating leases was approximately $2.3 million, $2.5 million and $1.4
+      million for the years ended December 31, 2001, 2000 and 1999, respectively. The Company''s executive, administrative,
+      operating offices and network operations center are located in approximately 92,000 square feet of leased office space
+      located in Norwalk, Connecticut. In addition, the Company leases approximately 47,000 square feet in another location
+      in Wilton, Connecticut that is unoccupied and that it currently intends to sublease. The Company also has a lease for
+      approximately 2,500 square feet of office space in New York City. Priceline.com europe Ltd. leases 1,900 square feet
+      of office space in London, England. The Company does not own any real estate as of March 15, 2002. Minimum payments
+      for operating leases having initial or remaining non-cancelable terms in excess of one year are as follows (in thousands):
+      Years ended December 31, After 2002 2003 2004 2005 2006 2006 Total -----------------------------------------------------------------------------------------
+      $3,513 $3,428 $2,385 $2,373 $2,373 $10,711 $24,783 16. BENEFIT PLAN Priceline.com adopted a defined contribution 401(k)
+      savings plan (the Plan) during 1998 covering all employees who are at least 21 years old and have completed 6 months
+      of service. The Plan allows eligible employees to contribute up to 20% of their eligible earnings, subject to a statutorily
+      prescribed annual limit. The Company may make matching contributions on a discretionary basis to the Plan. All participants
+      are fully vested in their contributions and investment earnings'
+    - occurring, but the development and maintenance of these systems is costly and requires ongoing monitoring and updating
+      as technologies change and efforts to overcome security measures become more sophisticated. Moreover, despite our efforts,
+      the possibility of intrusion, tampering and theft cannot be eliminated entirely. Our information technology and infrastructure
+      may be vulnerable to attacks by hackers or breached due to employee error, malfeasance or other disruptions. Additionally,
+      we provide confidential, proprietary and personal information to third parties when it is necessary to pursue business
+      objectives. While we obtain assurances that these third parties will protect this information and, where appropriate,
+      assess the protections employed by these third parties, there is a risk the confidentiality of data held by third parties
+      may be compromised. Any such breach or attack could compromise our network, the network of a third party to whom we
+      have disclosed confidential, proprietary or personal information, a data center where we have stored such information
+      or a third-party cloud service provider, and the information stored there could be accessed, publicly disclosed, lost
+      or stolen. Any such access, disclosure or other loss of information could result in legal claims or proceedings, disrupt
+      our operations, damage our reputation, impair our ability to conduct business, or result in the loss or diminished value
+      of profitable opportunities and the loss of revenue as a result of unlicensed use of our intellectual property. Contractual
+      provisions with third parties, including cloud service providers, may limit our ability to recover these losses. If
+      personal information of our customers or employees were misappropriated, our reputation with our customers and employees
+      could be injured, resulting in loss of business or morale, and we could incur costs to compensate our customers or employees
+      or pay damages or fines as a result of litigation or regulatory actio
+  - source_sentence: In 2009, the company reported revenues of $29,407 million across its manufacturing, service, and retailing
+      segments, with pre-tax earnings of $1,536 million, reflecting declines across most divisions due to the global economic
+      recession. Specifically, other manufacturing revenues fell 16% to $11,926 million, other service revenues fell 22% to
+      $6,585 million, and retailing revenues fell 8% to $2,869 million.
+    sentences:
+    - 'ber 31, 2024. 49 Item 7. Management''s Discussion and Analysis of Financial Condition and Results of Operations The
+      following table presents a summary of operating ratios for Aflac U.S. for the years ended December 31 followed by a
+      discussion of the significant drivers of changes in operating ratios compared to the previous year. Ratios to total
+      adjusted revenues: 2025 2024 Total benefits and claims 41.1 % 40.5 % Adjusted expenses: Amortization of deferred policy
+      acquisition costs 8.0 7.9 Insurance commissions 8.2 8.4 Insurance and other expenses 22.2 22.3 Total adjusted expenses
+      38.3 38.5 Pretax adjusted earnings 20.6 21.1 Ratios to total premiums: Total benefits and claims 47.3 % 46.8 % Adjusted
+      expenses: Amortization of deferred policy acquisition costs 9.2 9.1 • In 2025, the total benefits and claims to total
+      premiums ratio increased primarily due to higher incurred claims. • The total adjusted expense ratio decreased slightly
+      in 2025 primarily due to a year-over-year increase in total adjusted revenues. • In total, the pretax adjusted profit
+      margin decreased in 2025 primarily due to the higher benefit ratio. The following table presents premium persistency
+      for Aflac U.S. on a 12-month rolling basis as of December 31. 2025 2024 Premium persistency 79.2 % 79.3 % Aflac U.S.
+      Sales The following table presents Aflac''s U.S. new annualized premium sales for the years ended December 31. (In millions)
+      2025 2024 New annualized premium sales $ 1,589 $ 1,543 Increase (decrease) over prior period 3.0 % (1.0) % The increase
+      in new annualized premium sales for Aflac U.S. in 2025 was primarily driven by sales of group products. The following
+      table details the contributions to Aflac''s U.S. new annualized premium sales by major insurance product category for
+      the years ended December 31. 2025 2024 Accident 18.9 % 19.6 % Disability 26.4 26.3 Critical care (1) 19.8 20.9 Hospital
+      indemnity 13.2 13.7 Dental/vision 6.2 5.3 Life 15.5 14.2 Total 100.0 % 100.0 % (1) Includes cancer, criti'
+    - "proceeds received by us in the offering were $120.9 million, determined as follows (in millions): Aggregate offering\
+      \ proceeds to the Company $ 133.3 Underwriting discounts and commissions 9.3 Finders fee \x97 Other fees and expenses\
+      \ 3.1 Total expenses 12.4 Net proceeds to the Company $ 120.9 19 Table of Contents None of the underwriting discounts\
+      \ and commissions or offering expenses were paid, directly or indirectly, to our directors or officers or their associates\
+      \ or to persons owning 10 percent or more of our common stock or to any affiliates of ours. We are using, or expect\
+      \ to use, the net proceeds of the offering to provide additional long-term capital to support the growth of our business\
+      \ (primarily through opening new restaurants), for maintenance of our existing restaurants and for general corporate\
+      \ purposes. ITEM 6. SELECTED CONSOLIDATED FINANCIAL DATA Our selected consolidated financial data shown below should\
+      \ be read together with our Item 7. \x93Management\x92s Discussion and Analysis of Financial Condition and Results of\
+      \ Operations\x94 and our consolidated financial statements and respective notes included in Item 8. \x93Financial Statements\
+      \ and Supplementary Data\x94. The selected consolidated statements of income data for the years ended December 31, 2006,\
+      \ 2005 and 2004 and the consolidated balance sheet data as of December 31, 2006 and 2005 have been derived from our\
+      \ audited consolidated financial statements included in Item 8. \x93Financial Statements and Supplementary Data\x94\
+      . Our consolidated financial statements for the years ended December 31, 2006, 2005 and 2004 have been audited and reported\
+      \ upon by Ernst & Young LLP, an independent registered public accounting firm. The selected consolidated statements\
+      \ of income data for the year ended December 31, 2003 and 2002 and the consolidated balance sheet data as of December\
+      \ 31, 2004, 2003 and 2002 have been derived from audited financial statements not included in this report. The data\
+      \ shown below are not necessarily indica"
+    - "n 2008, pre-tax earnings declined $231 million (53%) to $205 million. The decline was attributable to both lower sales\
+      \ volume and higher product costs. Increases in petrochemical based raw material costs along with reduced manufacturing\
+      \ efficiencies caused the product cost increase. Pre-tax earnings in 2008 also included the aforementioned $59 million\
+      \ of charges related to plant closures. Other manufacturing Our other manufacturing businesses include a wide array\
+      \ of businesses. Included in this group are several manufacturers of building products (Acme Building Brands, Benjamin\
+      \ Moore, Johns Manville and MiTek) and apparel (led by Fruit of the Loom which includes the Russell athletic apparel\
+      \ and sporting goods business and the Vanity Fair Brands women\x92s intimate apparel business). Also included in this\
+      \ group are Forest River, a leading manufacturer of leisure vehicles, CTB International (\x93CTB\x94), a manufacturer\
+      \ of equipment for the livestock and agricultural industries and ISCAR Metalworking Companies (\x93IMC\x94), an industry\
+      \ leader in the metal cutting tools business with operations worldwide. 41 Table of Contents Management\x92s Discussion\
+      \ (Continued) Manufacturing, Service and Retailing (Continued) Other manufacturing (Continued) Nearly all of the businesses\
+      \ in our manufacturing group experienced the adverse effects of the global economic recession in 2009 as consumers and\
+      \ customers cut purchases. Revenues in 2009 were $11,926 million, a decrease of $2,201 million (16%) from 2008. Revenues\
+      \ were lower for apparel (11%), building products (20%) and other businesses (16%) as compared to 2008. Pre-tax earnings\
+      \ of our other manufacturing businesses were $814 million in 2009, a decrease of $861 million (51%) versus 2008. The\
+      \ declines in earnings reflected the lower revenues as well as relatively higher costs resulting from lower manufacturing\
+      \ efficiencies. Revenues of $14,127 million in 2008 declined $332 million (2%) versus 2007. Pre-tax earnings were $1,675\
+      \ million in 2008, a"
+  - source_sentence: As of December 31, 2009, Allstate Financial's total investments increased to $99.83 billion from $96.00
+      billion in 2008, driven by higher valuations in fixed income and equity securities despite a $5.83 billion net reduction
+      in contractholder obligations. The company reduced municipal bond exposure by $1.88 billion and decreased portfolio
+      duration by approximately 5% while maintaining a fixed income portfolio that was 93.7% investment grade.
+    sentences:
+    - nsecured short-term borrowings up to an aggregate of $200 million. As of December 31, 2001, commercial paper with a
+      face amount of $100 million F-11 AMGEN INC. NOTES TO CONSOLIDATED FINANCIAL STATEMENTS--(Continued) was outstanding.
+      These borrowings had maturities of less than one month and had effective interest rates averaging 1.9%. Commercial paper
+      with a face amount of $100 million and with effective interest rates averaging 6.7% was outstanding at December 31,
+      2000. The Company has established a $500 million debt shelf registration statement. In December 1997, pursuant to this
+      registration statement, the Company issued $100 million of debt securities that bear interest at a fixed rate of 6.5%
+      and mature in 2007 (the "Notes") and established a $400 million medium-term note program. The Company may offer and
+      issue medium-term notes from time to time with terms to be determined by market conditions. The Company had $100 million
+      of debt securities outstanding at December 31, 2001 and 2000 that bear interest at a fixed rate of 8.1% and mature in
+      2097 (the "Century Notes"). These securities may be redeemed in whole or in part at the Company's option at any time
+      for a redemption price equal to the greater of the principal amount to be redeemed or the sum of the present values
+      of the principal and remaining interest payments discounted at a determined rate plus, in each case, accrued interest.
+      In addition to the Notes and the Century Notes, debt securities outstanding at December 31, 2001 and 2000 include $23
+      million of debt securities that bear interest at a fixed rate of 6.2% and mature in 2003. The terms of the debt securities
+      require the Company to meet certain debt to tangible net asset ratios and place limitations on liens and sale/leaseback
+      transactions and, except with respect to the Notes and the Century Notes, place limitations on subsidiary indebtedness.
+      The Company has an unsecured committed credit facility (the "credit facility") with five participating ba
+    - erest at a London Interbank Offered Rate (LIBOR) rate that is determined by the duration of such tranche plus an interest
+      rate margin. The LIBOR variable component of the interest rate for each tranche is reset as such tranche matures and
+      a new tranche is established. At December 31, 2016, the overall weighted average interest rate for Term Loan A was determined
+      based upon the LIBOR interest rates in effect for all of the individual tranches plus the interest rate margin of 1.75%.
+      At December 31, 2016, Term Loan B bears interest at LIBOR (floor of 0.75%) plus a margin of 2.75%. The Company is subject
+      to LIBOR-based interest rate volatility on Term Loan B as the LIBOR-based component of the interest rate exceeded the
+      floor of 0.75% as of December 31, 2016. The overall weighted average interest rate for Term Loan B was determined based
+      upon the LIBOR interest rates in effect for all individual tranches plus the interest rate margin. The Company has several
+      interest rate cap agreements that have the economic effect of capping the LIBOR variable component of the Company’s
+      interest rate at a maximum of 3.50% on $3,500,000 of outstanding principal debt. The remaining $775,000 outstanding
+      principal balance of Term Loan A would still be subject to LIBOR-based interest rate volatility. In addition, the Company
+      maintains several forward interest rate cap agreements with notional amounts totaling $3,500,000, which will be effective
+      June 29, 2018. The cap agreements will have the economic effect of capping the LIBOR variable component of the Company’s
+      interest rate at a maximum of 3.50% on an equivalent amount of the Company’s debt. See below for further details. The
+      Company is restricted from paying dividends under the terms of its senior secured credit facilities. During the year
+      ended December 31, 2016, the Company made mandatory principal payments under its then existing senior secured credit
+      facilities totaling $62,500 on Term Loan A and $35,000 on Term Loan B. Revolving l
+    - " grade assets primarily corporate fixed income securities and bank loans, as a result of improved market conditions.\
+      \ \x95 Reduced our municipal bond exposure by 8.0% or $1.88 billion of amortized cost primarily through targeted dispositions,\
+      \ refunding and scheduled maturities. \x95 Managed our exposure to interest rate risk through macro hedging of tail\
+      \ risk and reductions in duration. Duration of the investment portfolio, including the effects of derivatives, declined\
+      \ by approximately 5% (.21 years) over the twelve month period. The decline in duration was the result of proceeds from\
+      \ asset 80 dispositions being reinvested in shorter duration assets and through the use of interest rate derivatives.\
+      \ Our investment portfolio duration is managed in relation to the liabilities of our business segments. \x95 Maintained\
+      \ risk mitigation programs that protected our portfolios through macro hedges against interest rate and equity market\
+      \ risk. The appreciation in fair values for fixed income and equity securities significantly exceeded the realized losses\
+      \ of $201 million from derivatives used for macro hedging programs. Investments outlook For 2010, the economies of the\
+      \ U.S. and other developed countries continue to face significant resistance with expectations for limited domestic\
+      \ growth, but with better prospects for growth in developing or emerging economies and markets. Financial markets are\
+      \ anticipated to see moderate returns for fixed income and equities with periods of higher volatility throughout the\
+      \ year, and moderate widening of credit spreads. We also expect continued weakness in commercial real estate fundamentals.\
+      \ In 2010, our return optimization and risk mitigation efforts will focus on the following areas: \x95 Optimizing our\
+      \ allocation of assets to reflect changes in Allstate Financial's liabilities. \x95 Continuing to explore global investments\
+      \ in areas of emerging opportunity with higher prospects for growth. \x95 Balancing our ongoing efforts to mitigate\
+      \ interest rate and eq"
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - cosine_accuracy
+  model-index:
+  - name: sbert
+    results:
+    - task:
+        type: triplet
+        name: Triplet
+      dataset:
+        name: triplet eval
+        type: triplet-eval
+      metrics:
+      - type: cosine_accuracy
+        value: 0.9904191493988037
+        name: Cosine Accuracy
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-19T15:59:01.000Z'
+safetensors:
+  parameters:
+    BF16: 109482240
+  total: 109482240
+usedStorage: 218986928
+downloadsAllTime: 15
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: bfloat16
+  eos_token_id: null
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.22.1
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 30522
+onnxFiles: {}
+safetensorsSizeMb: 219.0
+approxSizeMb: 219.0
+fetchedAt: '2026-11-20T11:15:32.000Z'

@@ -1,0 +1,45 @@
+_id: 6aff0414a20ff6e9d3f8ec53
+id: hearken-models/bge-small-en-v1.5-onnx
+private: false
+pipeline_tag: feature-extraction
+tags:
+- onnx
+- hearken
+- feature-extraction
+- sentence-similarity
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: hearken-models/bge-small-en-v1.5-onnx
+author: hearken-models
+sha: 9410f917f25240fbd2d17c50e754d268a38a3c59
+lastModified: '2026-11-19T14:13:43.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: mit
+  tags:
+  - hearken
+  - onnx
+  - feature-extraction
+  - sentence-similarity
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: model.onnx
+- rfilename: vocab.txt
+spaces: []
+createdAt: '2026-11-19T14:13:40.000Z'
+usedStorage: 133093490
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  model.onnx: 133.1
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-20T11:15:32.000Z'

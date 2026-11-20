@@ -1,0 +1,106 @@
+_id: 6aff1d9331fe7249d7f64307
+id: NeuML/atto-50k-768d-embeddings
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- atto
+- feature-extraction
+- sentence-similarity
+- transformers
+- custom_code
+- en
+- base_model:NeuML/atto-50k-768d
+- base_model:finetune:NeuML/atto-50k-768d
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 23
+likes: 1
+modelId: NeuML/atto-50k-768d-embeddings
+author: NeuML
+sha: fe523487fdea115489406aba81237f8701b2c587
+lastModified: '2026-11-19T16:06:18.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config:
+  architectures:
+  - AttoModel
+  auto_map:
+    AutoConfig: configuration_atto.AttoConfig
+    AutoModel: modeling_atto.AttoModel
+    AutoModelForMaskedLM: modeling_atto.AttoForMaskedLM
+    AutoModelForSequenceClassification: modeling_atto.AttoForSequenceClassification
+  model_type: atto
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  pipeline_tag: sentence-similarity
+  tags:
+  - sentence-transformers
+  - feature-extraction
+  - sentence-similarity
+  - transformers
+  base_model: NeuML/atto-50k-768d
+  language: en
+  license: apache-2.0
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_atto.AttoModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: configuration_atto.py
+- rfilename: model.safetensors
+- rfilename: modeling_atto.py
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-19T16:02:27.000Z'
+usedStorage: 196384
+downloadsAllTime: 23
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - AttoModel
+  auto_map:
+    AutoConfig: configuration_atto.AttoConfig
+    AutoModel: modeling_atto.AttoModel
+    AutoModelForMaskedLM: modeling_atto.AttoForMaskedLM
+    AutoModelForSequenceClassification: modeling_atto.AttoForSequenceClassification
+  dtype: float32
+  embedding_size: 768
+  hidden_size: 32
+  intermediate_size: 64
+  model_type: atto
+  num_attention_heads: 1
+  num_hidden_layers: 1
+  pad_token_id: 0
+  projections: 10
+  transformers_version: 5.18.0
+  use_cache: false
+  vocab_size: 1000
+onnxFiles: {}
+safetensorsSizeMb: 0.2
+approxSizeMb: 0.0
+fetchedAt: '2026-11-20T11:15:32.000Z'

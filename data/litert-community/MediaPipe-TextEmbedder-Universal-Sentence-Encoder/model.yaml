@@ -1,0 +1,76 @@
+_id: 6afe2fc709d237956c2ee48f
+id: litert-community/MediaPipe-TextEmbedder-Universal-Sentence-Encoder
+private: false
+pipeline_tag: sentence-similarity
+library_name: litert
+tags:
+- litert
+- tflite
+- mediapipe
+- sentence-similarity
+- on-device
+- android
+- ios
+- web
+- python
+- flutter
+- nlp
+- sentence-embeddings
+- universal-sentence-encoder
+- dual-encoder
+- fp32
+- en
+- license:apache-2.0
+- region:us
+downloads: 57
+likes: 0
+modelId: litert-community/MediaPipe-TextEmbedder-Universal-Sentence-Encoder
+author: litert-community
+sha: 832fd94a3ddabfb9ed79abee611e95040c3c756a
+lastModified: '2026-11-19T20:34:14.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: litert
+  pipeline_tag: sentence-similarity
+  language:
+  - en
+  tags:
+  - mediapipe
+  - litert
+  - tflite
+  - sentence-similarity
+  - on-device
+  - android
+  - ios
+  - web
+  - python
+  - flutter
+  - nlp
+  - sentence-embeddings
+  - universal-sentence-encoder
+  - dual-encoder
+  - fp32
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: universal_sentence_encoder.tflite
+spaces: []
+createdAt: '2026-11-18T23:07:51.000Z'
+usedStorage: 6120274
+downloadsAllTime: 57
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-20T11:15:32.000Z'

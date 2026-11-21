@@ -1,0 +1,149 @@
+_id: 6b00597e189e4853be2fdac2
+id: lorelaiassistant/embeddinggemma-2-coreml-int8
+private: false
+pipeline_tag: feature-extraction
+library_name: coreml
+tags:
+- coreml
+- embeddings
+- multimodal
+- int8
+- apple-neural-engine
+- feature-extraction
+- base_model:FluidInference/embeddinggemma-2-coreml
+- base_model:quantized:FluidInference/embeddinggemma-2-coreml
+- license:apache-2.0
+- region:us
+downloads: 28
+likes: 0
+modelId: lorelaiassistant/embeddinggemma-2-coreml-int8
+author: lorelaiassistant
+sha: 45446c9c1bac44874191b6311dd4c26e0af313aa
+lastModified: '2026-11-20T14:31:40.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model:
+  - google/embeddinggemma-2
+  - FluidInference/embeddinggemma-2-coreml
+  library_name: coreml
+  pipeline_tag: feature-extraction
+  tags:
+  - coreml
+  - embeddings
+  - multimodal
+  - int8
+  - apple-neural-engine
+siblings:
+- rfilename: .gitattributes
+- rfilename: EmbeddingGemma2Text.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: EmbeddingGemma2Text.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: EmbeddingGemma2Text.mlpackage/Manifest.json
+- rfilename: EmbeddingGemma2Vision.mlpackage/Data/com.apple.CoreML/model.mlmodel
+- rfilename: EmbeddingGemma2Vision.mlpackage/Data/com.apple.CoreML/weights/weight.bin
+- rfilename: EmbeddingGemma2Vision.mlpackage/Manifest.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: embeddings.i8
+- rfilename: embeddings_scale.f16
+- rfilename: position_embeddings.f16
+- rfilename: scripts/quantize.py
+- rfilename: scripts/table_int8.py
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-11-20T14:30:22.000Z'
+usedStorage: 471087162
+downloadsAllTime: 28
+inferenceProviderMapping: {}
+configJson:
+  base_model: google/embeddinggemma-2
+  format: coreml
+  modality:
+  - text
+  - image
+  precision: int8 weights (linear symmetric, per output channel), fp16 activations
+  hidden_size: 512
+  embedding_dim: 768
+  matryoshka_dims:
+  - 768
+  - 512
+  - 256
+  - 128
+  embed_scale: 22.627417
+  token_table:
+    file: embeddings.i8
+    dtype: int8
+    shape:
+    - 262144
+    - 512
+    scale:
+      file: embeddings_scale.f16
+      dtype: float16
+      shape:
+      - 262144
+      use: row r = int8[r] * scale[r] (symmetric, per row)
+  functions:
+    embed_32:
+      tokens: 32
+    embed_48:
+      tokens: 48
+    embed_64:
+      tokens: 64
+    embed_128:
+      tokens: 128
+    embed_256:
+      tokens: 256
+    embed_512:
+      tokens: 512
+    pack_256:
+      tokens: 256
+      slots: 8
+  bos_token_id: 2
+  eos_token_id: 1
+  pad_token_id: 0
+  prompts:
+    document: 'title: none | text: '
+    search_query: 'task: search result | query: '
+    question_answering: 'task: question answering | query: '
+    fact_checking: 'task: fact checking | query: '
+    code_retrieval: 'task: code retrieval | query: '
+    classification: 'task: classification | query: '
+    clustering: 'task: clustering | query: '
+    sentence_similarity: 'task: sentence similarity | query: '
+  vision:
+    package: EmbeddingGemma2Vision.mlpackage
+    compute_units: cpuAndGPU
+    precision: int8 weights, fp16 activations
+    functions:
+      vision_70:
+        tokens: 70
+        patches: 630
+      vision_140:
+        tokens: 140
+        patches: 1260
+      vision_280:
+        tokens: 280
+        patches: 2520
+    patch_size: 16
+    pooling_kernel: 3
+    resize: aspect-preserving, bicubic + antialias, sides multiple of 48 px, at most 9 x tokens patches
+    pixel_scale: RGB / 255 (the model applies 2x - 1)
+    patch_layout: row-major patches, each [16 rows][16 cols][RGB]
+    position_table:
+      file: position_embeddings.f16
+      dtype: float16
+      shape:
+      - 2
+      - 1024
+      - 768
+      use: table[0][x] + table[1][y] per patch, zero for padding
+    boi_token_id: 255999
+    eoi_token_id: 258882
+    text_sequence: <bos> <|image> [image tokens] <image|> <eos> -> smallest embed_S that fits
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-21T10:52:01.000Z'

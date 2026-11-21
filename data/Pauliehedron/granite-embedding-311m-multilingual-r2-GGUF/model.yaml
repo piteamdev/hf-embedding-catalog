@@ -1,0 +1,99 @@
+_id: 6ae0bf284246e0585b2098f7
+id: Pauliehedron/granite-embedding-311m-multilingual-r2-GGUF
+private: false
+pipeline_tag: feature-extraction
+library_name: gguf
+tags:
+- gguf
+- quantized
+- llama.cpp
+- imatrix
+- embedder
+- granite
+- modern-bert
+- multilingual
+- feature-extraction
+- ar
+- de
+- en
+- es
+- fr
+- hi
+- ja
+- pt
+- ru
+- zh
+- base_model:ibm-granite/granite-embedding-311m-multilingual-r2
+- base_model:quantized:ibm-granite/granite-embedding-311m-multilingual-r2
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 106
+likes: 0
+modelId: Pauliehedron/granite-embedding-311m-multilingual-r2-GGUF
+author: Pauliehedron
+sha: 4566440f9b7a9fc7dca2564c8df96e47ba1e09e8
+lastModified: '2026-11-19T06:40:38.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: ibm-granite/granite-embedding-311m-multilingual-r2
+  library_name: gguf
+  pipeline_tag: feature-extraction
+  tags:
+  - gguf
+  - quantized
+  - llama.cpp
+  - imatrix
+  - embedder
+  - granite
+  - modern-bert
+  - multilingual
+  language:
+  - ar
+  - de
+  - en
+  - es
+  - fr
+  - hi
+  - ja
+  - pt
+  - ru
+  - zh
+gguf:
+  total: 311664384
+  architecture: modern-bert
+  context_length: 32768
+  causal: false
+  bos_token: <bos>
+  eos_token: <eos>
+  pooling_type: 2
+  totalFileSize: 638121568
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: granite-embedding-311m-multilingual-r2-BF16.gguf
+- rfilename: granite-embedding-311m-multilingual-r2-IQ4_NL-uniform-imx.gguf
+- rfilename: granite-embedding-311m-multilingual-r2-IQ4_NL.gguf
+- rfilename: granite-embedding-311m-multilingual-r2-IQ4_XS-uniform-imx.gguf
+- rfilename: granite-embedding-311m-multilingual-r2-IQ4_XS.gguf
+- rfilename: granite-embedding-311m-multilingual-r2-Q4_K_M-uniform-imx.gguf
+- rfilename: granite-embedding-311m-multilingual-r2-Q4_K_M.gguf
+- rfilename: granite-embedding-311m-multilingual-r2-Q6_K-uniform-imx.gguf
+- rfilename: granite-embedding-311m-multilingual-r2-Q6_K.gguf
+- rfilename: granite-embedding-311m-multilingual-r2-Q8_0-uniform-imx.gguf
+- rfilename: imatrix-granite-embedding-311m-multilingual-r2-calib.gguf
+spaces: []
+createdAt: '2026-10-27T15:11:36.000Z'
+usedStorage: 3003120928
+downloadsAllTime: 106
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-21T10:52:01.000Z'

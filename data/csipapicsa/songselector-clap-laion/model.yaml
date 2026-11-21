@@ -1,0 +1,58 @@
+_id: 6b00672c434e2bea8698984d
+id: csipapicsa/songselector-clap-laion
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- audio
+- music
+- clap
+- text-to-audio-retrieval
+- songselector
+- feature-extraction
+- base_model:laion/clap-htsat-unfused
+- base_model:quantized:laion/clap-htsat-unfused
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: csipapicsa/songselector-clap-laion
+author: csipapicsa
+sha: 14bcb104eba2d7c376e2c2e6ae83d21ccb042022
+lastModified: '2026-11-20T15:34:30.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  base_model: laion/clap-htsat-unfused
+  tags:
+  - onnx
+  - audio
+  - music
+  - clap
+  - text-to-audio-retrieval
+  - songselector
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: clap-laion-audio.onnx
+- rfilename: clap-laion-text.onnx
+- rfilename: clap-laion-tokenizer.json
+spaces: []
+createdAt: '2026-11-20T15:28:44.000Z'
+usedStorage: 623062328
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  clap-laion-audio.onnx: 121.6
+  clap-laion-text.onnx: 501.4
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-21T10:52:01.000Z'

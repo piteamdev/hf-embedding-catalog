@@ -1,0 +1,138 @@
+_id: 6b004f3c3972ea7bf6bb224f
+id: tripathyShaswata/LedgerFM
+private: false
+pipeline_tag: feature-extraction
+library_name: pytorch
+tags:
+- pytorch
+- safetensors
+- fraud-detection
+- anti-money-laundering
+- aml
+- transactions
+- foundation-model
+- tabular
+- time-series
+- finance
+- feature-extraction
+- dataset:ealtman2019/ibm-transactions-for-anti-money-laundering-aml
+- license:apache-2.0
+- region:us
+downloads: 44
+likes: 0
+modelId: tripathyShaswata/LedgerFM
+author: tripathyShaswata
+sha: f9801c83662315a722997fc9498e9826c27514ca
+lastModified: '2026-11-20T15:13:05.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: pytorch
+  tags:
+  - fraud-detection
+  - anti-money-laundering
+  - aml
+  - transactions
+  - foundation-model
+  - tabular
+  - time-series
+  - finance
+  datasets:
+  - ealtman2019/ibm-transactions-for-anti-money-laundering-aml
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: PYPI.md
+- rfilename: README.md
+- rfilename: build/convert.py
+- rfilename: build/convert_hi_large.py
+- rfilename: build/download.py
+- rfilename: build/features.py
+- rfilename: build/q_blend.sh
+- rfilename: build/q_cpu.sh
+- rfilename: build/q_cpu_small.sh
+- rfilename: build/q_fresh.sh
+- rfilename: build/q_gpu.sh
+- rfilename: build/q_loo.sh
+- rfilename: build/q_seeds.sh
+- rfilename: build/run_baselines.sh
+- rfilename: build/run_baselines_rest.sh
+- rfilename: build/run_ieee.sh
+- rfilename: build/run_phase3.sh
+- rfilename: build/tokenize_all.py
+- rfilename: build/tokenize_inview.py
+- rfilename: config.json
+- rfilename: demo/README.md
+- rfilename: demo/app.js
+- rfilename: demo/export_onnx.py
+- rfilename: demo/index.html
+- rfilename: demo/tokenizer.js
+- rfilename: docs/data_licences.md
+- rfilename: examples/quickstart.py
+- rfilename: ledgerfm/__init__.py
+- rfilename: ledgerfm/blend.py
+- rfilename: ledgerfm/cli.py
+- rfilename: ledgerfm/data.py
+- rfilename: ledgerfm/hub.py
+- rfilename: ledgerfm/infer.py
+- rfilename: ledgerfm/metrics.py
+- rfilename: ledgerfm/model.py
+- rfilename: ledgerfm/tokens.py
+- rfilename: model.safetensors
+- rfilename: models/baseline_xgb.py
+- rfilename: models/blend.py
+- rfilename: models/embed_xgb.py
+- rfilename: models/final_test.py
+- rfilename: models/finetune.py
+- rfilename: models/pretrain.py
+- rfilename: models/twoside_xgb.py
+- rfilename: notebooks/LedgerFM_quickstart.ipynb
+- rfilename: notebooks/build_notebook.py
+- rfilename: push_to_hub.py
+- rfilename: pyproject.toml
+- rfilename: requirements.txt
+- rfilename: results/baselines.jsonl
+- rfilename: results/blend.jsonl
+- rfilename: results/final_test.jsonl
+- rfilename: results/final_test_notes.md
+- rfilename: results/finetune.jsonl
+spaces:
+- tripathyShaswata/LedgerFM-demo
+createdAt: '2026-11-20T13:46:36.000Z'
+safetensors:
+  parameters:
+    F32: 26576121
+  total: 26576121
+usedStorage: 106314644
+downloadsAllTime: 44
+inferenceProviderMapping: {}
+configJson:
+  cfg:
+    d: 256
+    layers: 6
+    heads: 8
+    ff: 4
+    max_len: 128
+    dropout: 0.1
+  step: 25000
+  pretrain:
+    sets:
+    - aml_hi_small
+    - aml_li_small
+    - aml_hi_medium
+    - aml_li_medium
+    - ibm_card
+    - sparkov
+    steps: 25000
+    bs: 128
+    lr: 0.0006
+    periods: train+val (60/20/20 temporal split, test period never used)
+  n_params: 26576121
+onnxFiles: {}
+safetensorsSizeMb: 106.3
+approxSizeMb: 106.3
+fetchedAt: '2026-11-21T10:52:01.000Z'

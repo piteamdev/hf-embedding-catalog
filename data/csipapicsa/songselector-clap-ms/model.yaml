@@ -1,0 +1,59 @@
+_id: 6b00672d07272a848863cd06
+id: csipapicsa/songselector-clap-ms
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- audio
+- music
+- clap
+- text-to-audio-retrieval
+- songselector
+- feature-extraction
+- arxiv:2309.05767
+- base_model:microsoft/msclap
+- base_model:quantized:microsoft/msclap
+- license:ms-pl
+- region:us
+downloads: 0
+likes: 0
+modelId: csipapicsa/songselector-clap-ms
+author: csipapicsa
+sha: 73b59b5999bac9db8a2c15c786759f2005ecf657
+lastModified: '2026-11-20T15:35:47.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: ms-pl
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  base_model: microsoft/msclap
+  tags:
+  - onnx
+  - audio
+  - music
+  - clap
+  - text-to-audio-retrieval
+  - songselector
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: clap-ms-audio.onnx
+- rfilename: clap-ms-text.onnx
+- rfilename: clap-ms-tokenizer.json
+spaces: []
+createdAt: '2026-11-20T15:28:45.000Z'
+usedStorage: 632012140
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  clap-ms-audio.onnx: 126.6
+  clap-ms-text.onnx: 505.5
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-21T10:52:01.000Z'

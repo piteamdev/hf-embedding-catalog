@@ -1,0 +1,54 @@
+_id: 6b008403466b83b284e2cfd7
+id: mkieffer/eegfm-encoder-100m
+private: false
+pipeline_tag: feature-extraction
+library_name: eegfm
+tags:
+- eegfm
+- eeg
+- neuroscience
+- self-supervised
+- jepa
+- foundation-model
+- feature-extraction
+- license:other
+- region:us
+downloads: 0
+likes: 0
+modelId: mkieffer/eegfm-encoder-100m
+author: mkieffer
+sha: 1309a1b232f78705b5144c0e2f6143dadd16e03f
+lastModified: '2026-11-20T17:31:56.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: other
+  license_name: eegfm-responsible-use
+  license_link: LICENSE
+  tags:
+  - eeg
+  - neuroscience
+  - self-supervised
+  - jepa
+  - foundation-model
+  library_name: eegfm
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: dp8s_100m_20k_f16.npz
+- rfilename: dp8s_100m_20k_i8.npz
+spaces:
+- mkieffer/eeg-encoder-demo
+createdAt: '2026-11-20T17:31:47.000Z'
+usedStorage: 257694472
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-21T10:52:01.000Z'

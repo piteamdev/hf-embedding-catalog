@@ -1,0 +1,550 @@
+_id: 6afdae2d40c5717155c087d4
+id: chrystian-yunus/multilingual-e5-base-jkn-id
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- xlm-roberta
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:687
+- loss:MultipleNegativesRankingLoss
+- arxiv:1908.10084
+- arxiv:1807.03748
+- base_model:intfloat/multilingual-e5-base
+- base_model:finetune:intfloat/multilingual-e5-base
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 28
+likes: 0
+modelId: chrystian-yunus/multilingual-e5-base-jkn-id
+author: chrystian-yunus
+sha: ebc78930fa2a8b49eb6fa4e9f9c425763402a79b
+lastModified: '2026-11-21T10:25:02.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: 'query: definisi pemerintah daerah kepala daerah'
+  sentences:
+  - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+    VIII PEMBINAAN DAN PENGAWASAN
+
+    Permenkes No. 16 Tahun 2024, Pasal 28 ayat (2)
+
+
+    2 Pengenaan sanksi administratif oleh Menteri dilaksanakan melalui Direktur Jenderal.'
+  - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+    VIII PEMBINAAN DAN PENGAWASAN
+
+    Permenkes No. 16 Tahun 2024, Pasal 28 ayat (3)
+
+
+    3 Sanksi administratif berupa:
+
+    a. teguran tertulis; dan/atau
+
+    b. penurunan dan/atau pencabutan status akreditasi.'
+  - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+    I KETENTUAN UMUM
+
+    Permenkes No. 16 Tahun 2024, Pasal 1 angka 8
+
+
+    8. Pemerintah Daerah adalah kepala daerah sebagai unsur penyelenggara pemerintahan daerah yang memimpin pelaksanaan urusan
+    pemerintahan yang menjadi kewenangan daerah otonom.'
+- source_sentence: 'query: patokan pasien perlu dirujuk atau dikembalikan itu dari mana'
+  sentences:
+  - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+    II PENYELENGGARAAN SISTEM RUJUKAN PELAYANAN KESEHATAN PERSEORANGAN
+
+    Permenkes No. 16 Tahun 2024, Pasal 3 ayat (1)
+
+
+    1 Kebutuhan medis Pasien sebagaimana dimaksud dalam Pasal 2 ayat (2) ditentukan berdasarkan kriteria rujukan dan kriteria
+    rujuk balik.'
+  - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+    III TATA CARA RUJUKAN PELAYANAN KESEHATAN PERSEORANGAN
+
+    Permenkes No. 16 Tahun 2024, Pasal 14 ayat (7)
+
+
+    7 Ketentuan sebagaimana dimaksud pada ayat (6) dikecualikan dalam hal DPJP di Fasilitas Pelayanan Kesehatan Penerima Rujukan
+    menentukan kebutuhan pemeriksaan ulang terhadap pemeriksaan penunjang tertentu untuk penegakan diagnosis dan tata laksana
+    sesuai dengan kebutuhan medis Pasien.'
+  - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+    I KETENTUAN UMUM
+
+    Permenkes No. 16 Tahun 2024, Pasal 1 angka 10
+
+
+    10. Direktur Jenderal adalah pejabat pimpinan tinggi madya di lingkungan Kementerian Kesehatan yang melaksanakan tugas
+    di bidang pelayanan kesehatan sesuai dengan ketentuan peraturan perundang-undangan.'
+- source_sentence: 'query: asal pasien gawat darurat tim SAR'
+  sentences:
+  - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+    III TATA CARA RUJUKAN PELAYANAN KESEHATAN PERSEORANGAN
+
+    Permenkes No. 16 Tahun 2024, Pasal 14 ayat (2)
+
+
+    2 Rujukan untuk pelayanan rawat jalan sebagaimana dimaksud pada ayat (1) huruf a dilakukan terhadap:
+
+    a. Pasien dengan kondisi yang tidak memerlukan penanganan segera; dan/atau
+
+    b. Pasien yang rutin mendapatkan pelayanan, tindakan atau pengobatan selama jangka waktu tertentu dengan mengikuti prosedur
+    tindakan.'
+  - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+    II PENYELENGGARAAN SISTEM RUJUKAN PELAYANAN KESEHATAN PERSEORANGAN
+
+    Permenkes No. 16 Tahun 2024, Pasal 6 ayat (2)
+
+
+    2 Pasien sebagaimana dimaksud pada ayat (1) dapat berasal dari Fasilitas Pelayanan Kesehatan, masyarakat, tim pencarian
+    dan pertolongan (Search and Rescue), atau institusi lain.'
+  - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+    III TATA CARA RUJUKAN PELAYANAN KESEHATAN PERSEORANGAN
+
+    Permenkes No. 16 Tahun 2024, Pasal 18 ayat (3)
+
+
+    3 Ketentuan sebagaimana dimaksud pada ayat (1) huruf a dikecualikan bagi Pasien rujukan rawat jalan.'
+- source_sentence: 'query: rujukan tanpa ambulans'
+  sentences:
+  - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+    III TATA CARA RUJUKAN PELAYANAN KESEHATAN PERSEORANGAN
+
+    Permenkes No. 16 Tahun 2024, Pasal 19 ayat (3)
+
+
+    3 Dalam hal tidak terdapat ambulans sebagaimana dimaksud pada ayat (2), rujukan pelayanan kesehatan dapat dilakukan dengan
+    menggunakan alat transportasi lain dengan tetap melakukan asuhan medis untuk menjaga kestabilan kondisi Pasien sesuai
+    dengan ketentuan peraturan perundang-undangan.'
+  - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+    III TATA CARA RUJUKAN PELAYANAN KESEHATAN PERSEORANGAN
+
+    Permenkes No. 16 Tahun 2024, Pasal 13 ayat (2)
+
+
+    2 Dalam hal tidak dapat dilakukan rujukan, Fasilitas Pelayanan Kesehatan Perujuk dapat melakukan perawatan sesuai dengan
+    kompetensi Fasilitas Pelayanan Kesehatan.'
+  - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+    II PENYELENGGARAAN SISTEM RUJUKAN PELAYANAN KESEHATAN PERSEORANGAN
+
+    Permenkes No. 16 Tahun 2024, Pasal 11 ayat (1)
+
+
+    1 Rujuk balik sebagaimana dimaksud dalam Pasal 7 ayat (1) huruf c merupakan rujukan terhadap Pasien yang telah selesai
+    ditangani pada Fasilitas Pelayanan Kesehatan Penerima Rujukan dan masih dibutuhkan perawatan pelayanan kesehatan lanjutan
+    pada Fasilitas Pelayanan Kesehatan yang lebih rendah kompetensinya.'
+- source_sentence: 'query: pasien tidak sadar dan keluarganya yang memberi izin untuk dirujuk, apakah persetujuan itu sah'
+  sentences:
+  - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+    III TATA CARA RUJUKAN PELAYANAN KESEHATAN PERSEORANGAN
+
+    Permenkes No. 16 Tahun 2024, Pasal 12 ayat (2)
+
+
+    2 Rujukan pelayanan kesehatan perseorangan sebagaimana dimaksud pada ayat (1) harus mendapatkan persetujuan secara lisan
+    dan/atau tertulis dari Pasien dan/atau yang mewakili.'
+  - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+    VIII PEMBINAAN DAN PENGAWASAN
+
+    Permenkes No. 16 Tahun 2024, Pasal 28 ayat (3)
+
+
+    3 Sanksi administratif berupa:
+
+    a. teguran tertulis; dan/atau
+
+    b. penurunan dan/atau pencabutan status akreditasi.'
+  - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+    III TATA CARA RUJUKAN PELAYANAN KESEHATAN PERSEORANGAN
+
+    Permenkes No. 16 Tahun 2024, Pasal 14 ayat (6)
+
+
+    6 Dalam pelaksanaan rujukan sebagaimana dimaksud pada ayat (1) sampai dengan ayat (5), Fasilitas Pelayanan Kesehatan Penerima
+    Rujukan tidak melakukan pemeriksaan penunjang ulang terhadap Pasien yang dirujuk kecuali pemeriksaan penunjang yang masih
+    dibutuhkan.'
+model-index:
+- name: SentenceTransformer based on intfloat/multilingual-e5-base
+  results:
+  - task:
+      type: information-retrieval
+      name: Information Retrieval
+    dataset:
+      name: Unknown
+      type: unknown
+    metrics:
+    - type: cosine_accuracy@1
+      value: 0.620253164556962
+      name: Cosine Accuracy@1
+      verified: false
+    - type: cosine_accuracy@3
+      value: 0.8734177215189873
+      name: Cosine Accuracy@3
+      verified: false
+    - type: cosine_accuracy@5
+      value: 0.9493670886075949
+      name: Cosine Accuracy@5
+      verified: false
+    - type: cosine_accuracy@10
+      value: 1
+      name: Cosine Accuracy@10
+      verified: false
+    - type: cosine_precision@1
+      value: 0.620253164556962
+      name: Cosine Precision@1
+      verified: false
+    - type: cosine_precision@3
+      value: 0.291139240506329
+      name: Cosine Precision@3
+      verified: false
+    - type: cosine_precision@5
+      value: 0.1898734177215189
+      name: Cosine Precision@5
+      verified: false
+    - type: cosine_precision@10
+      value: 0.09999999999999996
+      name: Cosine Precision@10
+      verified: false
+    - type: cosine_recall@1
+      value: 0.620253164556962
+      name: Cosine Recall@1
+      verified: false
+    - type: cosine_recall@3
+      value: 0.8734177215189873
+      name: Cosine Recall@3
+      verified: false
+    - type: cosine_recall@5
+      value: 0.9493670886075949
+      name: Cosine Recall@5
+      verified: false
+    - type: cosine_recall@10
+      value: 1
+      name: Cosine Recall@10
+      verified: false
+    - type: cosine_ndcg@10
+      value: 0.8186861531642585
+      name: Cosine Ndcg@10
+      verified: false
+    - type: cosine_mrr@10
+      value: 0.7593329314848302
+      name: Cosine Mrr@10
+      verified: false
+    - type: cosine_map@100
+      value: 0.7593329314848302
+      name: Cosine Map@100
+      verified: false
+config:
+  architectures:
+  - XLMRobertaModel
+  model_type: xlm-roberta
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:687
+  - loss:MultipleNegativesRankingLoss
+  base_model: intfloat/multilingual-e5-base
+  widget:
+  - source_sentence: 'query: definisi pemerintah daerah kepala daerah'
+    sentences:
+    - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+      VIII PEMBINAAN DAN PENGAWASAN
+
+      Permenkes No. 16 Tahun 2024, Pasal 28 ayat (2)
+
+
+      2 Pengenaan sanksi administratif oleh Menteri dilaksanakan melalui Direktur Jenderal.'
+    - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+      VIII PEMBINAAN DAN PENGAWASAN
+
+      Permenkes No. 16 Tahun 2024, Pasal 28 ayat (3)
+
+
+      3 Sanksi administratif berupa:
+
+      a. teguran tertulis; dan/atau
+
+      b. penurunan dan/atau pencabutan status akreditasi.'
+    - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+      I KETENTUAN UMUM
+
+      Permenkes No. 16 Tahun 2024, Pasal 1 angka 8
+
+
+      8. Pemerintah Daerah adalah kepala daerah sebagai unsur penyelenggara pemerintahan daerah yang memimpin pelaksanaan
+      urusan pemerintahan yang menjadi kewenangan daerah otonom.'
+  - source_sentence: 'query: patokan pasien perlu dirujuk atau dikembalikan itu dari mana'
+    sentences:
+    - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+      II PENYELENGGARAAN SISTEM RUJUKAN PELAYANAN KESEHATAN PERSEORANGAN
+
+      Permenkes No. 16 Tahun 2024, Pasal 3 ayat (1)
+
+
+      1 Kebutuhan medis Pasien sebagaimana dimaksud dalam Pasal 2 ayat (2) ditentukan berdasarkan kriteria rujukan dan kriteria
+      rujuk balik.'
+    - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+      III TATA CARA RUJUKAN PELAYANAN KESEHATAN PERSEORANGAN
+
+      Permenkes No. 16 Tahun 2024, Pasal 14 ayat (7)
+
+
+      7 Ketentuan sebagaimana dimaksud pada ayat (6) dikecualikan dalam hal DPJP di Fasilitas Pelayanan Kesehatan Penerima
+      Rujukan menentukan kebutuhan pemeriksaan ulang terhadap pemeriksaan penunjang tertentu untuk penegakan diagnosis dan
+      tata laksana sesuai dengan kebutuhan medis Pasien.'
+    - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+      I KETENTUAN UMUM
+
+      Permenkes No. 16 Tahun 2024, Pasal 1 angka 10
+
+
+      10. Direktur Jenderal adalah pejabat pimpinan tinggi madya di lingkungan Kementerian Kesehatan yang melaksanakan tugas
+      di bidang pelayanan kesehatan sesuai dengan ketentuan peraturan perundang-undangan.'
+  - source_sentence: 'query: asal pasien gawat darurat tim SAR'
+    sentences:
+    - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+      III TATA CARA RUJUKAN PELAYANAN KESEHATAN PERSEORANGAN
+
+      Permenkes No. 16 Tahun 2024, Pasal 14 ayat (2)
+
+
+      2 Rujukan untuk pelayanan rawat jalan sebagaimana dimaksud pada ayat (1) huruf a dilakukan terhadap:
+
+      a. Pasien dengan kondisi yang tidak memerlukan penanganan segera; dan/atau
+
+      b. Pasien yang rutin mendapatkan pelayanan, tindakan atau pengobatan selama jangka waktu tertentu dengan mengikuti prosedur
+      tindakan.'
+    - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+      II PENYELENGGARAAN SISTEM RUJUKAN PELAYANAN KESEHATAN PERSEORANGAN
+
+      Permenkes No. 16 Tahun 2024, Pasal 6 ayat (2)
+
+
+      2 Pasien sebagaimana dimaksud pada ayat (1) dapat berasal dari Fasilitas Pelayanan Kesehatan, masyarakat, tim pencarian
+      dan pertolongan (Search and Rescue), atau institusi lain.'
+    - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+      III TATA CARA RUJUKAN PELAYANAN KESEHATAN PERSEORANGAN
+
+      Permenkes No. 16 Tahun 2024, Pasal 18 ayat (3)
+
+
+      3 Ketentuan sebagaimana dimaksud pada ayat (1) huruf a dikecualikan bagi Pasien rujukan rawat jalan.'
+  - source_sentence: 'query: rujukan tanpa ambulans'
+    sentences:
+    - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+      III TATA CARA RUJUKAN PELAYANAN KESEHATAN PERSEORANGAN
+
+      Permenkes No. 16 Tahun 2024, Pasal 19 ayat (3)
+
+
+      3 Dalam hal tidak terdapat ambulans sebagaimana dimaksud pada ayat (2), rujukan pelayanan kesehatan dapat dilakukan
+      dengan menggunakan alat transportasi lain dengan tetap melakukan asuhan medis untuk menjaga kestabilan kondisi Pasien
+      sesuai dengan ketentuan peraturan perundang-undangan.'
+    - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+      III TATA CARA RUJUKAN PELAYANAN KESEHATAN PERSEORANGAN
+
+      Permenkes No. 16 Tahun 2024, Pasal 13 ayat (2)
+
+
+      2 Dalam hal tidak dapat dilakukan rujukan, Fasilitas Pelayanan Kesehatan Perujuk dapat melakukan perawatan sesuai dengan
+      kompetensi Fasilitas Pelayanan Kesehatan.'
+    - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+      II PENYELENGGARAAN SISTEM RUJUKAN PELAYANAN KESEHATAN PERSEORANGAN
+
+      Permenkes No. 16 Tahun 2024, Pasal 11 ayat (1)
+
+
+      1 Rujuk balik sebagaimana dimaksud dalam Pasal 7 ayat (1) huruf c merupakan rujukan terhadap Pasien yang telah selesai
+      ditangani pada Fasilitas Pelayanan Kesehatan Penerima Rujukan dan masih dibutuhkan perawatan pelayanan kesehatan lanjutan
+      pada Fasilitas Pelayanan Kesehatan yang lebih rendah kompetensinya.'
+  - source_sentence: 'query: pasien tidak sadar dan keluarganya yang memberi izin untuk dirujuk, apakah persetujuan itu sah'
+    sentences:
+    - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+      III TATA CARA RUJUKAN PELAYANAN KESEHATAN PERSEORANGAN
+
+      Permenkes No. 16 Tahun 2024, Pasal 12 ayat (2)
+
+
+      2 Rujukan pelayanan kesehatan perseorangan sebagaimana dimaksud pada ayat (1) harus mendapatkan persetujuan secara lisan
+      dan/atau tertulis dari Pasien dan/atau yang mewakili.'
+    - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+      VIII PEMBINAAN DAN PENGAWASAN
+
+      Permenkes No. 16 Tahun 2024, Pasal 28 ayat (3)
+
+
+      3 Sanksi administratif berupa:
+
+      a. teguran tertulis; dan/atau
+
+      b. penurunan dan/atau pencabutan status akreditasi.'
+    - 'passage: Peraturan Menteri Kesehatan No. 16 Tahun 2024 tentang Sistem Rujukan Pelayanan Kesehatan Perseorangan > BAB
+      III TATA CARA RUJUKAN PELAYANAN KESEHATAN PERSEORANGAN
+
+      Permenkes No. 16 Tahun 2024, Pasal 14 ayat (6)
+
+
+      6 Dalam pelaksanaan rujukan sebagaimana dimaksud pada ayat (1) sampai dengan ayat (5), Fasilitas Pelayanan Kesehatan
+      Penerima Rujukan tidak melakukan pemeriksaan penunjang ulang terhadap Pasien yang dirujuk kecuali pemeriksaan penunjang
+      yang masih dibutuhkan.'
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - cosine_accuracy@1
+  - cosine_accuracy@3
+  - cosine_accuracy@5
+  - cosine_accuracy@10
+  - cosine_precision@1
+  - cosine_precision@3
+  - cosine_precision@5
+  - cosine_precision@10
+  - cosine_recall@1
+  - cosine_recall@3
+  - cosine_recall@5
+  - cosine_recall@10
+  - cosine_ndcg@10
+  - cosine_mrr@10
+  - cosine_map@100
+  model-index:
+  - name: SentenceTransformer based on intfloat/multilingual-e5-base
+    results:
+    - task:
+        type: information-retrieval
+        name: Information Retrieval
+      dataset:
+        name: Unknown
+        type: unknown
+      metrics:
+      - type: cosine_accuracy@1
+        value: 0.620253164556962
+        name: Cosine Accuracy@1
+        verified: false
+      - type: cosine_accuracy@3
+        value: 0.8734177215189873
+        name: Cosine Accuracy@3
+        verified: false
+      - type: cosine_accuracy@5
+        value: 0.9493670886075949
+        name: Cosine Accuracy@5
+        verified: false
+      - type: cosine_accuracy@10
+        value: 1
+        name: Cosine Accuracy@10
+        verified: false
+      - type: cosine_precision@1
+        value: 0.620253164556962
+        name: Cosine Precision@1
+        verified: false
+      - type: cosine_precision@3
+        value: 0.291139240506329
+        name: Cosine Precision@3
+        verified: false
+      - type: cosine_precision@5
+        value: 0.1898734177215189
+        name: Cosine Precision@5
+        verified: false
+      - type: cosine_precision@10
+        value: 0.09999999999999996
+        name: Cosine Precision@10
+        verified: false
+      - type: cosine_recall@1
+        value: 0.620253164556962
+        name: Cosine Recall@1
+        verified: false
+      - type: cosine_recall@3
+        value: 0.8734177215189873
+        name: Cosine Recall@3
+        verified: false
+      - type: cosine_recall@5
+        value: 0.9493670886075949
+        name: Cosine Recall@5
+        verified: false
+      - type: cosine_recall@10
+        value: 1
+        name: Cosine Recall@10
+        verified: false
+      - type: cosine_ndcg@10
+        value: 0.8186861531642585
+        name: Cosine Ndcg@10
+        verified: false
+      - type: cosine_mrr@10
+        value: 0.7593329314848302
+        name: Cosine Mrr@10
+        verified: false
+      - type: cosine_map@100
+        value: 0.7593329314848302
+        name: Cosine Map@100
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-18T13:54:53.000Z'
+safetensors:
+  parameters:
+    F32: 278043648
+  total: 278043648
+usedStorage: 1129280083
+downloadsAllTime: 28
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - XLMRobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 514
+  model_type: xlm-roberta
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  output_past: true
+  pad_token_id: 1
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.22.1
+  type_vocab_size: 1
+  use_cache: false
+  vocab_size: 250002
+onnxFiles: {}
+safetensorsSizeMb: 1112.2
+approxSizeMb: 1112.2
+fetchedAt: '2026-11-21T10:52:01.000Z'

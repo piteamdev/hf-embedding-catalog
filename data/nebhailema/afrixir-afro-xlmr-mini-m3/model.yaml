@@ -1,0 +1,121 @@
+_id: 6af9752a663438f590c1a63e
+id: nebhailema/afrixir-afro-xlmr-mini-m3
+private: false
+pipeline_tag: sentence-similarity
+tags:
+- safetensors
+- xlm-roberta
+- sentence-similarity
+- feature-extraction
+- information-retrieval
+- african-languages
+- multilingual
+- bge-m3
+- am
+- ha
+- om
+- sn
+- so
+- sw
+- ti
+- yo
+- dataset:nebhailema/AfriXIR
+- arxiv:2402.03216
+- base_model:Davlan/afro-xlmr-mini
+- base_model:finetune:Davlan/afro-xlmr-mini
+- license:apache-2.0
+- region:us
+downloads: 3
+likes: 0
+modelId: nebhailema/afrixir-afro-xlmr-mini-m3
+author: nebhailema
+sha: d073f0dc915591c7b64f28ace5d2c668625748a8
+lastModified: '2026-11-22T05:35:53.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - XLMRobertaModel
+  model_type: xlm-roberta
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  language:
+  - am
+  - ha
+  - om
+  - sn
+  - so
+  - sw
+  - ti
+  - yo
+  license: apache-2.0
+  tags:
+  - sentence-similarity
+  - feature-extraction
+  - information-retrieval
+  - african-languages
+  - multilingual
+  - bge-m3
+  datasets:
+  - nebhailema/AfriXIR
+  base_model: Davlan/afro-xlmr-mini
+  pipeline_tag: sentence-similarity
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: colbert_linear.pt
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: sparse_linear.pt
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: training_args.bin
+spaces: []
+createdAt: '2026-11-15T09:02:34.000Z'
+safetensors:
+  parameters:
+    F32: 117640704
+  total: 117640704
+usedStorage: 488270395
+downloadsAllTime: 3
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - XLMRobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  initializer_range: 0.02
+  intermediate_size: 1536
+  is_decoder: false
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 514
+  model_type: xlm-roberta
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 1
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.17.0
+  type_vocab_size: 1
+  use_cache: false
+  vocab_size: 250002
+onnxFiles: {}
+safetensorsSizeMb: 470.6
+approxSizeMb: 470.6
+fetchedAt: '2026-11-22T11:00:18.000Z'

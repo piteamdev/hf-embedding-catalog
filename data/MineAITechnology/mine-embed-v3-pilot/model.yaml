@@ -1,0 +1,157 @@
+_id: 6afc1078d36338a8679562f7
+id: MineAITechnology/mine-embed-v3-pilot
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- text-embeddings
+- multilingual
+- code
+- math
+- mteb
+- mine-embed
+- sentence-similarity
+- ar
+- bg
+- bn
+- ca
+- cs
+- da
+- de
+- el
+- en
+- es
+- et
+- fa
+- fi
+- fr
+- gl
+- he
+- hi
+- hr
+- hu
+- id
+- it
+- ja
+- ka
+- ko
+- lt
+- mk
+- nl
+- pl
+- pt
+- ro
+- ru
+- sk
+- sl
+- sr
+- sv
+- sw
+- th
+- tr
+- uk
+- ur
+- vi
+- zh
+- base_model:intfloat/multilingual-e5-small
+- base_model:finetune:intfloat/multilingual-e5-small
+- license:mit
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 5
+modelId: MineAITechnology/mine-embed-v3-pilot
+author: MineAITechnology
+sha: 91207351705e54cd7b7ef59b4e0f9512086b468f
+lastModified: '2026-11-22T10:20:00.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: هذا شخص سعيد
+  sentences:
+  - هذا كلب سعيد
+  - هذا شخص سعيد جدا
+  - اليوم هو يوم مشمس
+model-index: null
+config: {}
+cardData:
+  language:
+  - ar
+  - bg
+  - bn
+  - ca
+  - cs
+  - da
+  - de
+  - el
+  - en
+  - es
+  - et
+  - fa
+  - fi
+  - fr
+  - gl
+  - he
+  - hi
+  - hr
+  - hu
+  - id
+  - it
+  - ja
+  - ka
+  - ko
+  - lt
+  - mk
+  - nl
+  - pl
+  - pt
+  - ro
+  - ru
+  - sk
+  - sl
+  - sr
+  - sv
+  - sw
+  - th
+  - tr
+  - uk
+  - ur
+  - vi
+  - zh
+  license: mit
+  pipeline_tag: sentence-similarity
+  base_model: intfloat/multilingual-e5-small
+  tags:
+  - text-embeddings
+  - multilingual
+  - code
+  - math
+  - sentence-transformers
+  - mteb
+  - mine-embed
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: code_overall_bar.png
+- rfilename: delta_by_language.png
+- rfilename: delta_vs_base.png
+- rfilename: delta_vs_prev.png
+- rfilename: english_overall_bar.png
+- rfilename: heatmap_code.png
+- rfilename: heatmap_languages.png
+- rfilename: heatmap_tasks.png
+- rfilename: overall_bar.png
+- rfilename: per_category.png
+- rfilename: per_language.png
+- rfilename: radar_categories.png
+spaces: []
+createdAt: '2026-11-17T08:29:44.000Z'
+usedStorage: 1887018
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-22T11:00:18.000Z'

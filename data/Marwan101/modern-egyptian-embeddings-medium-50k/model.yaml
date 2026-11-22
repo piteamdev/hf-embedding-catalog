@@ -1,0 +1,259 @@
+_id: 6b01e89cd2acd95487ab3706
+id: Marwan101/modern-egyptian-embeddings-medium-50k
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:40000
+- loss:MultipleNegativesRankingLoss
+- arxiv:1908.10084
+- arxiv:1807.03748
+- base_model:CAMeL-Lab/bert-base-arabic-camelbert-da
+- base_model:finetune:CAMeL-Lab/bert-base-arabic-camelbert-da
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 18
+likes: 0
+modelId: Marwan101/modern-egyptian-embeddings-medium-50k
+author: Marwan101
+sha: e4169d098aebaa6228f730dd760a714cab75fd87
+lastModified: '2026-11-21T18:53:36.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: الخط الساخن 137 طوارئ ورعايات وحضانات وزارة الصحة بيشتغل إزاي؟ وجزاكم الله خيراً
+  sentences:
+  - healthcare_medical
+  - في حالات الطوارئ الحرجة التي تتطلب سرير رعاية مركزة (ICU) أو حضانة أطفال مبتسرين، اتصل فوراً بالخط الساخن لوزارة الصحة
+    137 (غرفة طوارئ الرعايات والحضانات المركزية). جهز التقرير الطبي المفصل للحالة والتشخيص والغازات بالدم وما إذا كان المريض
+    يحتاج جهاز تنفس صناعي (Ventilator). تقوم الغرفة بالربط مع جميع المستشفيات الحكومية والجامعية والتابعة لأمانة المراكز المتخصصة
+    لتسكين الحالة في أقرب سرير متاح مجاناً، ونقل المريض بواسطة سيارة إسعاف مجهزة بالاتصال برقم 123.
+  - icu_neonatal_incubator_emergency_137
+  - حجز موعد للكشف لدى الاستشاريين بالمراكز الطبية المتخصصة يتم هاتفياً أو عبر تطبيقات الحجز الإلكتروني لتفادي فترات الانتظار
+    الطويلة بالعيادات الخارجية.
+- source_sentence: لو سمحت حسبة غرامة الاسترداد المبكر لشهادات الادخار في البنك التجاري الدولي CIB ولكم جزيل الشكر
+  sentences:
+  - لربط شهادة ادخار جديدة بعائد شهري ثابت أو متغير، بتدخل على حسابك في تطبيق الموبايل البنكي وتختار 'إصدار شهادات وودائع'،
+    وتحدد نوع الشهادة والمبلغ المطلوب خصمه من حسابك الجاري أو التوفير.
+  - fintech_banking
+  - طبقاً لتعليمات البنك المركزي المصري، لا يجوز استرداد أو كسر الشهادات البنكية الادخارية إلا بعد مرور 6 أشهر كاملة من تاريخ
+    إصدارها. في حالة الكسر بعد مرور المدة القانونية، بيتم خصم نسبة من العوائد والأرباح اللي تم صرفها شهرياً طبقاً لجدول الاسترداد
+    الخاص بالبنك (غرامة استرداد مبكر)، ويمكن معرفة القيمة الاستردادية الدقيقة عبر تطبيق الموبايل البنكي من خيار 'استرداد الشهادة'
+    قبل التأكيد، أو بمراجعة خدمة العملاء بالفرع.
+  - break_certificate_of_deposit
+- source_sentence: يا جماعة هل ينفع افتح كرتونة الشحن واقيس اللبس قبل ما ادفع للمندوب في مايلرز؟ ضروري جداً
+  sentences:
+  - ecommerce_retail
+  - خدمة الشحن المجاني تطبق تلقائياً على الطلبات المؤهلة التي تتجاوز قيمتها الحد الأدنى للشراء المحدد من المتجر دون الحاجة
+    لإدخال كود خصم في صفحة الدفع.
+  - لتتبع شحنتك مع شركات الشحن السريع المحلية (مثل بوسطة Bosta أو مايلرز Mylerz أو أرامكس)، ادخل على موقع الشركة الرسمي واكتب
+    رقم البوليصة (Tracking Number) المكون من أرقام والموجود في رسالة ال SMS لتحديد مكان الطرد بدقة. في حالة تسجيل المندوب
+    'تعذر الاتصال' أو محاولة توصيل غير صحيحة، اتصل فوراً بخدمة عملاء الشركة أو بلغ المتجر البائع لإعادة جدولة التوصيل وفتح
+    تحقيق مع المندوب؛ والمندوب ملزم بعدم طلب أي مبالغ إضافية عن القيمة المسجلة بالبوليصة الرسمية.
+  - bosta_mylerz_shipping_tracking
+- source_sentence: إيه الأوراق المطلوبة ورسوم تجديد رخصة القيادة الخاصة في المرور؟ عشان الدنيا واقفة معايا
+  sentences:
+  - لاستخراج رخصة قيادة خاصة لأول مرة، يشترط ألا يقل السن عن 18 سنة، واجتياز الدورة التدريبية واختبارات الإشارات والقيادة
+    العملية في مدرسة المرور المعتمدة وسداد رسوم التدريب.
+  - 'لتجديد رخصة القيادة الخاصة، توجه لوحدة المرور التابع لها محل إقامتك المدون بالبطاقة ومعك: أصل بطاقة الرقم القومي والرخصة
+    المنتهية وصورتين شخصيتين، شهادة براءة الذمة (شهادة المخالفات) من نيابة المرور أو البريد، والخضوع للكشف الطبي المميكن (باطنة
+    ورمد وفصيلة دم) داخل المرور. اشترِ نموذج 256 مرور وسدد ضريبة الرخصة ورسم التأمين الإجباري والملصق لمدة 10 سنوات؛ وفترة
+    السماح بعد الانتهاء هي شهر واحد فقط بدون غرامة قيادة برخصة منتهية.'
+  - private_driver_license_renewal
+  - government_services
+- source_sentence: هو غرامة كسر الشهادة في البنك الأهلي أو بنك مصر بتتحسب إزاي؟ ولكم جزيل الشكر
+  sentences:
+  - break_certificate_of_deposit
+  - طبقاً لتعليمات البنك المركزي المصري، لا يجوز استرداد أو كسر الشهادات البنكية الادخارية إلا بعد مرور 6 أشهر كاملة من تاريخ
+    إصدارها. في حالة الكسر بعد مرور المدة القانونية، بيتم خصم نسبة من العوائد والأرباح اللي تم صرفها شهرياً طبقاً لجدول الاسترداد
+    الخاص بالبنك (غرامة استرداد مبكر)، ويمكن معرفة القيمة الاستردادية الدقيقة عبر تطبيق الموبايل البنكي من خيار 'استرداد الشهادة'
+    قبل التأكيد، أو بمراجعة خدمة العملاء بالفرع.
+  - fintech_banking
+  - الحد الأدنى لفتح حساب التوفير في البنوك المصرية الحكومية يبدأ من 300 جنيه مصري، ويتم احتساب العائد على أقل رصيد متبقي
+    في الحساب خلال الشهر وصرفه شهرياً أو ربع سنوياً.
+model-index:
+- name: SentenceTransformer based on CAMeL-Lab/bert-base-arabic-camelbert-da
+  results:
+  - task:
+      type: triplet
+      name: Triplet
+    dataset:
+      name: egyptian val evaluator
+      type: egyptian_val_evaluator
+    metrics:
+    - type: cosine_accuracy
+      value: 1
+      name: Cosine Accuracy
+      verified: false
+  - task:
+      type: triplet
+      name: Triplet
+    dataset:
+      name: egyptian test evaluator
+      type: egyptian_test_evaluator
+    metrics:
+    - type: cosine_accuracy
+      value: 1
+      name: Cosine Accuracy
+      verified: false
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:40000
+  - loss:MultipleNegativesRankingLoss
+  base_model: CAMeL-Lab/bert-base-arabic-camelbert-da
+  widget:
+  - source_sentence: الخط الساخن 137 طوارئ ورعايات وحضانات وزارة الصحة بيشتغل إزاي؟ وجزاكم الله خيراً
+    sentences:
+    - healthcare_medical
+    - في حالات الطوارئ الحرجة التي تتطلب سرير رعاية مركزة (ICU) أو حضانة أطفال مبتسرين، اتصل فوراً بالخط الساخن لوزارة الصحة
+      137 (غرفة طوارئ الرعايات والحضانات المركزية). جهز التقرير الطبي المفصل للحالة والتشخيص والغازات بالدم وما إذا كان المريض
+      يحتاج جهاز تنفس صناعي (Ventilator). تقوم الغرفة بالربط مع جميع المستشفيات الحكومية والجامعية والتابعة لأمانة المراكز
+      المتخصصة لتسكين الحالة في أقرب سرير متاح مجاناً، ونقل المريض بواسطة سيارة إسعاف مجهزة بالاتصال برقم 123.
+    - icu_neonatal_incubator_emergency_137
+    - حجز موعد للكشف لدى الاستشاريين بالمراكز الطبية المتخصصة يتم هاتفياً أو عبر تطبيقات الحجز الإلكتروني لتفادي فترات الانتظار
+      الطويلة بالعيادات الخارجية.
+  - source_sentence: لو سمحت حسبة غرامة الاسترداد المبكر لشهادات الادخار في البنك التجاري الدولي CIB ولكم جزيل الشكر
+    sentences:
+    - لربط شهادة ادخار جديدة بعائد شهري ثابت أو متغير، بتدخل على حسابك في تطبيق الموبايل البنكي وتختار 'إصدار شهادات وودائع'،
+      وتحدد نوع الشهادة والمبلغ المطلوب خصمه من حسابك الجاري أو التوفير.
+    - fintech_banking
+    - طبقاً لتعليمات البنك المركزي المصري، لا يجوز استرداد أو كسر الشهادات البنكية الادخارية إلا بعد مرور 6 أشهر كاملة من
+      تاريخ إصدارها. في حالة الكسر بعد مرور المدة القانونية، بيتم خصم نسبة من العوائد والأرباح اللي تم صرفها شهرياً طبقاً
+      لجدول الاسترداد الخاص بالبنك (غرامة استرداد مبكر)، ويمكن معرفة القيمة الاستردادية الدقيقة عبر تطبيق الموبايل البنكي
+      من خيار 'استرداد الشهادة' قبل التأكيد، أو بمراجعة خدمة العملاء بالفرع.
+    - break_certificate_of_deposit
+  - source_sentence: يا جماعة هل ينفع افتح كرتونة الشحن واقيس اللبس قبل ما ادفع للمندوب في مايلرز؟ ضروري جداً
+    sentences:
+    - ecommerce_retail
+    - خدمة الشحن المجاني تطبق تلقائياً على الطلبات المؤهلة التي تتجاوز قيمتها الحد الأدنى للشراء المحدد من المتجر دون الحاجة
+      لإدخال كود خصم في صفحة الدفع.
+    - لتتبع شحنتك مع شركات الشحن السريع المحلية (مثل بوسطة Bosta أو مايلرز Mylerz أو أرامكس)، ادخل على موقع الشركة الرسمي
+      واكتب رقم البوليصة (Tracking Number) المكون من أرقام والموجود في رسالة ال SMS لتحديد مكان الطرد بدقة. في حالة تسجيل
+      المندوب 'تعذر الاتصال' أو محاولة توصيل غير صحيحة، اتصل فوراً بخدمة عملاء الشركة أو بلغ المتجر البائع لإعادة جدولة التوصيل
+      وفتح تحقيق مع المندوب؛ والمندوب ملزم بعدم طلب أي مبالغ إضافية عن القيمة المسجلة بالبوليصة الرسمية.
+    - bosta_mylerz_shipping_tracking
+  - source_sentence: إيه الأوراق المطلوبة ورسوم تجديد رخصة القيادة الخاصة في المرور؟ عشان الدنيا واقفة معايا
+    sentences:
+    - لاستخراج رخصة قيادة خاصة لأول مرة، يشترط ألا يقل السن عن 18 سنة، واجتياز الدورة التدريبية واختبارات الإشارات والقيادة
+      العملية في مدرسة المرور المعتمدة وسداد رسوم التدريب.
+    - 'لتجديد رخصة القيادة الخاصة، توجه لوحدة المرور التابع لها محل إقامتك المدون بالبطاقة ومعك: أصل بطاقة الرقم القومي والرخصة
+      المنتهية وصورتين شخصيتين، شهادة براءة الذمة (شهادة المخالفات) من نيابة المرور أو البريد، والخضوع للكشف الطبي المميكن
+      (باطنة ورمد وفصيلة دم) داخل المرور. اشترِ نموذج 256 مرور وسدد ضريبة الرخصة ورسم التأمين الإجباري والملصق لمدة 10 سنوات؛
+      وفترة السماح بعد الانتهاء هي شهر واحد فقط بدون غرامة قيادة برخصة منتهية.'
+    - private_driver_license_renewal
+    - government_services
+  - source_sentence: هو غرامة كسر الشهادة في البنك الأهلي أو بنك مصر بتتحسب إزاي؟ ولكم جزيل الشكر
+    sentences:
+    - break_certificate_of_deposit
+    - طبقاً لتعليمات البنك المركزي المصري، لا يجوز استرداد أو كسر الشهادات البنكية الادخارية إلا بعد مرور 6 أشهر كاملة من
+      تاريخ إصدارها. في حالة الكسر بعد مرور المدة القانونية، بيتم خصم نسبة من العوائد والأرباح اللي تم صرفها شهرياً طبقاً
+      لجدول الاسترداد الخاص بالبنك (غرامة استرداد مبكر)، ويمكن معرفة القيمة الاستردادية الدقيقة عبر تطبيق الموبايل البنكي
+      من خيار 'استرداد الشهادة' قبل التأكيد، أو بمراجعة خدمة العملاء بالفرع.
+    - fintech_banking
+    - الحد الأدنى لفتح حساب التوفير في البنوك المصرية الحكومية يبدأ من 300 جنيه مصري، ويتم احتساب العائد على أقل رصيد متبقي
+      في الحساب خلال الشهر وصرفه شهرياً أو ربع سنوياً.
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - cosine_accuracy
+  model-index:
+  - name: SentenceTransformer based on CAMeL-Lab/bert-base-arabic-camelbert-da
+    results:
+    - task:
+        type: triplet
+        name: Triplet
+      dataset:
+        name: egyptian val evaluator
+        type: egyptian_val_evaluator
+      metrics:
+      - type: cosine_accuracy
+        value: 1
+        name: Cosine Accuracy
+        verified: false
+    - task:
+        type: triplet
+        name: Triplet
+      dataset:
+        name: egyptian test evaluator
+        type: egyptian_test_evaluator
+      metrics:
+      - type: cosine_accuracy
+        value: 1
+        name: Cosine Accuracy
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-21T18:53:16.000Z'
+safetensors:
+  parameters:
+    F32: 109081344
+  total: 109081344
+usedStorage: 436347736
+downloadsAllTime: 18
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  tie_word_embeddings: true
+  transformers_version: 5.22.1
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 30000
+onnxFiles: {}
+safetensorsSizeMb: 436.3
+approxSizeMb: 436.3
+fetchedAt: '2026-11-22T11:00:18.000Z'

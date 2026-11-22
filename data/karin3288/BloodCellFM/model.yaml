@@ -1,0 +1,111 @@
+_id: 6af49bae0eeb954f4985553e
+id: karin3288/BloodCellFM
+private: false
+pipeline_tag: feature-extraction
+tags:
+- bloodcellfm_native_dinov3_vitb16
+- hematology
+- blood-cell
+- microscopy
+- self-supervised-learning
+- feature-extraction
+- vision-transformer
+- dinov3
+- arxiv:2508.10104
+- license:other
+- region:us
+downloads: 1
+likes: 0
+modelId: karin3288/BloodCellFM
+author: karin3288
+sha: 32bf1f5fcd462cfec5361feb55625c6d06295e59
+lastModified: '2026-11-11T18:19:57.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  model_type: bloodcellfm_native_dinov3_vitb16
+cardData:
+  license: other
+  license_name: dinov3-license
+  license_link: LICENSE.md
+  tags:
+  - hematology
+  - blood-cell
+  - microscopy
+  - self-supervised-learning
+  - feature-extraction
+  - vision-transformer
+  - dinov3
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE.md
+- rfilename: README.md
+- rfilename: bloodcellfm_vitb16_teacher_50k.pth
+- rfilename: config.json
+- rfilename: load_bloodcellfm.py
+- rfilename: requirements.txt
+spaces: []
+createdAt: '2026-11-11T16:45:34.000Z'
+usedStorage: 342849594
+downloadsAllTime: 1
+inferenceProviderMapping: {}
+configJson:
+  model_name: BloodCellFM
+  model_type: bloodcellfm_native_dinov3_vitb16
+  format: native_pytorch_state_dict
+  weights_file: bloodcellfm_vitb16_teacher_50k.pth
+  source_architecture: Meta DINOv3 ViT-B/16
+  selected_checkpoint_iteration: 50000
+  checkpoint_directory: training_49999
+  backbone:
+    arch: vit_base
+    patch_size: 16
+    img_size: 224
+    in_chans: 3
+    embed_dim: 768
+    num_layers: 12
+    num_attention_heads: 12
+    n_storage_tokens: 4
+    ffn_layer: mlp
+    ffn_ratio: 4
+    layerscale_init: 1.0e-05
+    norm_layer: layernormbf16
+    pos_embed_type: rope
+    pos_embed_rope_base: 100
+    pos_embed_rope_normalize_coords: separate
+    pos_embed_rope_rescale_coords: 2
+    pos_embed_rope_dtype: fp32
+    qkv_bias: true
+    mask_k_bias: true
+    proj_bias: true
+    ffn_bias: true
+    untie_cls_and_patch_norms: false
+    untie_global_and_local_cls_norm: false
+  input:
+    channels: 3
+    example_size:
+    - 224
+    - 224
+    normalization_mean:
+    - 0.485
+    - 0.456
+    - 0.406
+    normalization_std:
+    - 0.229
+    - 0.224
+    - 0.225
+    note: Use the original downstream pipeline's resize/interpolation settings for exact numerical reproduction.
+  features:
+    cls_dim: 768
+    gap_dim: 768
+    embedding_dim: 1536
+    recipe: L2_normalize(concat(x_norm_clstoken, mean(x_norm_patchtokens, dim=1)))
+  compatibility:
+    native_dinov3_pytorch: true
+    transformers_auto_model_direct_loading: false
+    note: This config.json is descriptive metadata, not an HF AutoConfig implementation.
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-22T11:00:18.000Z'

@@ -1,0 +1,759 @@
+_id: 6b01f9aa69bc86a3fd5048e7
+id: sachinyerrawar/sbert_raw_investo-finmodern_pair_merged
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- sentence-similarity
+- feature-extraction
+- generated_from_trainer
+- dataset_size:144521
+- loss:CachedMultipleNegativesRankingLoss
+- dataset_size:44709
+- en
+- dataset:FinLang/investopedia-embedding-dataset
+- arxiv:1908.10084
+- arxiv:2101.06983
+- base_model:sentence-transformers/bert-base-nli-mean-tokens
+- base_model:finetune:sentence-transformers/bert-base-nli-mean-tokens
+- license:apache-2.0
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 16
+likes: 0
+modelId: sachinyerrawar/sbert_raw_investo-finmodern_pair_merged
+author: sachinyerrawar
+sha: ac3c451fc04ed420e74050012144474a0bfc3178
+lastModified: '2026-11-21T20:06:08.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: " What are some factors to consider when choosing a market maker for forex trading? \n"
+  sentences:
+  - ' The concerns include potentially longer wait times due to an expanded menu and the need for careful crafting of loyalty
+    plans to ensure they encourage additional customer spending.'
+  - ' When choosing a market maker for forex trading, some factors to consider include the size of the market maker, spread
+    tightness, additional features offered, and meeting strict financial standards such as capital adequacy requirements and
+    monthly financial reports submission to regulators (in the case of registered futures commission merchants in the United
+    States).'
+  - ' Market makers are important because they provide liquidity, allowing investors to unwind their positions by buying securities
+    from those who want to sell and providing stocks to those who want to buy, thus keeping the market functioning smoothly.'
+- source_sentence: " What does the green-framed box in the chart imply for the potential closing range of Honeywell shares\
+    \ by the end of the week if prices go higher? \n"
+  sentences:
+  - ' The green-framed box implies a 34% chance that Honeywell shares will close inside this range by the end of the week
+    if prices go higher.'
+  - ' A stockbroker can serve as a custodian for shares belonging to clients in a nominee account.'
+  - ' Because younger people are less likely to die than older people, and women tend to live longer than men.'
+- source_sentence: " What measures does the CBC suggest to bring retiree health costs in line with other state and local governments\
+    \ in New York City? \n"
+  sentences:
+  - ' The baby boomer generation (ages 58-76) holds the least percentage of investors in cryptocurrencies, with 6% of baby
+    boomers investing in cryptocurrencies.'
+  - ' The CBC suggests "bringing retiree health costs in line with those of other state and local governments" by asking retirees
+    to share the cost of health premiums, reforming union welfare funds by consolidating supplementary health care benefits
+    under the city''s health plan, and eliminating Medicare Part B premium reimbursements.'
+  - ' Net outflows for the fourth quarter were $9.2 billion, and for 2023, they totaled $26.98 billion.'
+- source_sentence: " Who is the founder and principal of Sona Financial, LLC with a background in financial planning? \n"
+  sentences:
+  - ' David bought March wheat and sold September wheat because front months typically outperform deferred months. He made
+    a profit of 3’0 as the spread narrowed from -11’0 to -8’0 by March.'
+  - ' The diffusion index is calculated by assigning values to indicators based on their trends: 1 for rising indicators,
+    0.5 for unchanged indicators, and 0 for falling indicators. This helps to determine if the majority of indicators point
+    towards an improving or deteriorating economy. In the given example, out of 10 indicators, a score of 7 was obtained.'
+  - ' Mark Struthers'
+- source_sentence: " What are the main areas of specialization for Courtney in her writing? \n"
+  sentences:
+  - ' Parents can help their kids build financial literacy by allowing them to earn an allowance through household chores
+    or part-time jobs, opening a savings account, a kid-friendly debit card, or a custodian brokerage account. This introduces
+    children to the value of saving and familiarizes them with the banking system.'
+  - ' She specializes in real estate, personal finance, and small business topics.'
+  - ' The calculation of General Liability Insurance Premiums can be found in the passage from Insureon, while the calculation
+    of Workers'' Compensation Premiums is explained in the passage from The Hartford.'
+model-index:
+- name: sbert
+  results:
+  - task:
+      type: information-retrieval
+      name: Information Retrieval
+    dataset:
+      name: investo val
+      type: investo_val
+    metrics:
+    - type: cosine_accuracy@1
+      value: 0.869
+      name: Cosine Accuracy@1
+      verified: false
+    - type: cosine_accuracy@3
+      value: 0.924
+      name: Cosine Accuracy@3
+      verified: false
+    - type: cosine_accuracy@5
+      value: 0.939
+      name: Cosine Accuracy@5
+      verified: false
+    - type: cosine_accuracy@10
+      value: 0.9605
+      name: Cosine Accuracy@10
+      verified: false
+    - type: cosine_precision@1
+      value: 0.869
+      name: Cosine Precision@1
+      verified: false
+    - type: cosine_precision@3
+      value: 0.308
+      name: Cosine Precision@3
+      verified: false
+    - type: cosine_precision@5
+      value: 0.18780000000000002
+      name: Cosine Precision@5
+      verified: false
+    - type: cosine_precision@10
+      value: 0.09605000000000001
+      name: Cosine Precision@10
+      verified: false
+    - type: cosine_recall@1
+      value: 0.869
+      name: Cosine Recall@1
+      verified: false
+    - type: cosine_recall@3
+      value: 0.924
+      name: Cosine Recall@3
+      verified: false
+    - type: cosine_recall@5
+      value: 0.939
+      name: Cosine Recall@5
+      verified: false
+    - type: cosine_recall@10
+      value: 0.9605
+      name: Cosine Recall@10
+      verified: false
+    - type: cosine_ndcg@10
+      value: 0.9151799081052057
+      name: Cosine Ndcg@10
+      verified: false
+    - type: cosine_mrr@10
+      value: 0.9006480158730156
+      name: Cosine Mrr@10
+      verified: false
+    - type: cosine_map@100
+      value: 0.9023909003071297
+      name: Cosine Map@100
+      verified: false
+  - task:
+      type: information-retrieval
+      name: Information Retrieval
+    dataset:
+      name: finmodern val
+      type: finmodern_val
+    metrics:
+    - type: cosine_accuracy@1
+      value: 0.9065
+      name: Cosine Accuracy@1
+      verified: false
+    - type: cosine_accuracy@3
+      value: 0.9755
+      name: Cosine Accuracy@3
+      verified: false
+    - type: cosine_accuracy@5
+      value: 0.985
+      name: Cosine Accuracy@5
+      verified: false
+    - type: cosine_accuracy@10
+      value: 0.9955
+      name: Cosine Accuracy@10
+      verified: false
+    - type: cosine_precision@1
+      value: 0.9065
+      name: Cosine Precision@1
+      verified: false
+    - type: cosine_precision@3
+      value: 0.3251666666666666
+      name: Cosine Precision@3
+      verified: false
+    - type: cosine_precision@5
+      value: 0.19700000000000006
+      name: Cosine Precision@5
+      verified: false
+    - type: cosine_precision@10
+      value: 0.09955000000000001
+      name: Cosine Precision@10
+      verified: false
+    - type: cosine_recall@1
+      value: 0.9065
+      name: Cosine Recall@1
+      verified: false
+    - type: cosine_recall@3
+      value: 0.9755
+      name: Cosine Recall@3
+      verified: false
+    - type: cosine_recall@5
+      value: 0.985
+      name: Cosine Recall@5
+      verified: false
+    - type: cosine_recall@10
+      value: 0.9955
+      name: Cosine Recall@10
+      verified: false
+    - type: cosine_ndcg@10
+      value: 0.9557368476263948
+      name: Cosine Ndcg@10
+      verified: false
+    - type: cosine_mrr@10
+      value: 0.9425013888888885
+      name: Cosine Mrr@10
+      verified: false
+    - type: cosine_map@100
+      value: 0.9428308427683428
+      name: Cosine Map@100
+      verified: false
+  - task:
+      type: information-retrieval
+      name: Information Retrieval
+    dataset:
+      name: investo test
+      type: investo_test
+    metrics:
+    - type: cosine_accuracy@1
+      value: 0.862
+      name: Cosine Accuracy@1
+      verified: false
+    - type: cosine_accuracy@3
+      value: 0.9225
+      name: Cosine Accuracy@3
+      verified: false
+    - type: cosine_accuracy@5
+      value: 0.94
+      name: Cosine Accuracy@5
+      verified: false
+    - type: cosine_accuracy@10
+      value: 0.9655
+      name: Cosine Accuracy@10
+      verified: false
+    - type: cosine_precision@1
+      value: 0.862
+      name: Cosine Precision@1
+      verified: false
+    - type: cosine_precision@3
+      value: 0.30749999999999994
+      name: Cosine Precision@3
+      verified: false
+    - type: cosine_precision@5
+      value: 0.18800000000000003
+      name: Cosine Precision@5
+      verified: false
+    - type: cosine_precision@10
+      value: 0.09655000000000001
+      name: Cosine Precision@10
+      verified: false
+    - type: cosine_recall@1
+      value: 0.862
+      name: Cosine Recall@1
+      verified: false
+    - type: cosine_recall@3
+      value: 0.9225
+      name: Cosine Recall@3
+      verified: false
+    - type: cosine_recall@5
+      value: 0.94
+      name: Cosine Recall@5
+      verified: false
+    - type: cosine_recall@10
+      value: 0.9655
+      name: Cosine Recall@10
+      verified: false
+    - type: cosine_ndcg@10
+      value: 0.9131521489398232
+      name: Cosine Ndcg@10
+      verified: false
+    - type: cosine_mrr@10
+      value: 0.8964827380952377
+      name: Cosine Mrr@10
+      verified: false
+    - type: cosine_map@100
+      value: 0.8980055168329302
+      name: Cosine Map@100
+      verified: false
+  - task:
+      type: information-retrieval
+      name: Information Retrieval
+    dataset:
+      name: finmodern test
+      type: finmodern_test
+    metrics:
+    - type: cosine_accuracy@1
+      value: 0.9105
+      name: Cosine Accuracy@1
+      verified: false
+    - type: cosine_accuracy@3
+      value: 0.976
+      name: Cosine Accuracy@3
+      verified: false
+    - type: cosine_accuracy@5
+      value: 0.988
+      name: Cosine Accuracy@5
+      verified: false
+    - type: cosine_accuracy@10
+      value: 0.993
+      name: Cosine Accuracy@10
+      verified: false
+    - type: cosine_precision@1
+      value: 0.9105
+      name: Cosine Precision@1
+      verified: false
+    - type: cosine_precision@3
+      value: 0.32533333333333325
+      name: Cosine Precision@3
+      verified: false
+    - type: cosine_precision@5
+      value: 0.19760000000000005
+      name: Cosine Precision@5
+      verified: false
+    - type: cosine_precision@10
+      value: 0.09930000000000001
+      name: Cosine Precision@10
+      verified: false
+    - type: cosine_recall@1
+      value: 0.9105
+      name: Cosine Recall@1
+      verified: false
+    - type: cosine_recall@3
+      value: 0.976
+      name: Cosine Recall@3
+      verified: false
+    - type: cosine_recall@5
+      value: 0.988
+      name: Cosine Recall@5
+      verified: false
+    - type: cosine_recall@10
+      value: 0.993
+      name: Cosine Recall@10
+      verified: false
+    - type: cosine_ndcg@10
+      value: 0.9566131074312737
+      name: Cosine Ndcg@10
+      verified: false
+    - type: cosine_mrr@10
+      value: 0.9443831349206344
+      name: Cosine Mrr@10
+      verified: false
+    - type: cosine_map@100
+      value: 0.9448456466143491
+      name: Cosine Map@100
+      verified: false
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  language:
+  - en
+  license: apache-2.0
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - generated_from_trainer
+  - dataset_size:144521
+  - loss:CachedMultipleNegativesRankingLoss
+  - dataset_size:44709
+  base_model: sentence-transformers/bert-base-nli-mean-tokens
+  widget:
+  - source_sentence: " What are some factors to consider when choosing a market maker for forex trading? \n"
+    sentences:
+    - ' The concerns include potentially longer wait times due to an expanded menu and the need for careful crafting of loyalty
+      plans to ensure they encourage additional customer spending.'
+    - ' When choosing a market maker for forex trading, some factors to consider include the size of the market maker, spread
+      tightness, additional features offered, and meeting strict financial standards such as capital adequacy requirements
+      and monthly financial reports submission to regulators (in the case of registered futures commission merchants in the
+      United States).'
+    - ' Market makers are important because they provide liquidity, allowing investors to unwind their positions by buying
+      securities from those who want to sell and providing stocks to those who want to buy, thus keeping the market functioning
+      smoothly.'
+  - source_sentence: " What does the green-framed box in the chart imply for the potential closing range of Honeywell shares\
+      \ by the end of the week if prices go higher? \n"
+    sentences:
+    - ' The green-framed box implies a 34% chance that Honeywell shares will close inside this range by the end of the week
+      if prices go higher.'
+    - ' A stockbroker can serve as a custodian for shares belonging to clients in a nominee account.'
+    - ' Because younger people are less likely to die than older people, and women tend to live longer than men.'
+  - source_sentence: " What measures does the CBC suggest to bring retiree health costs in line with other state and local\
+      \ governments in New York City? \n"
+    sentences:
+    - ' The baby boomer generation (ages 58-76) holds the least percentage of investors in cryptocurrencies, with 6% of baby
+      boomers investing in cryptocurrencies.'
+    - ' The CBC suggests "bringing retiree health costs in line with those of other state and local governments" by asking
+      retirees to share the cost of health premiums, reforming union welfare funds by consolidating supplementary health care
+      benefits under the city''s health plan, and eliminating Medicare Part B premium reimbursements.'
+    - ' Net outflows for the fourth quarter were $9.2 billion, and for 2023, they totaled $26.98 billion.'
+  - source_sentence: " Who is the founder and principal of Sona Financial, LLC with a background in financial planning? \n"
+    sentences:
+    - ' David bought March wheat and sold September wheat because front months typically outperform deferred months. He made
+      a profit of 3’0 as the spread narrowed from -11’0 to -8’0 by March.'
+    - ' The diffusion index is calculated by assigning values to indicators based on their trends: 1 for rising indicators,
+      0.5 for unchanged indicators, and 0 for falling indicators. This helps to determine if the majority of indicators point
+      towards an improving or deteriorating economy. In the given example, out of 10 indicators, a score of 7 was obtained.'
+    - ' Mark Struthers'
+  - source_sentence: " What are the main areas of specialization for Courtney in her writing? \n"
+    sentences:
+    - ' Parents can help their kids build financial literacy by allowing them to earn an allowance through household chores
+      or part-time jobs, opening a savings account, a kid-friendly debit card, or a custodian brokerage account. This introduces
+      children to the value of saving and familiarizes them with the banking system.'
+    - ' She specializes in real estate, personal finance, and small business topics.'
+    - ' The calculation of General Liability Insurance Premiums can be found in the passage from Insureon, while the calculation
+      of Workers'' Compensation Premiums is explained in the passage from The Hartford.'
+  datasets:
+  - FinLang/investopedia-embedding-dataset
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - cosine_accuracy@1
+  - cosine_accuracy@3
+  - cosine_accuracy@5
+  - cosine_accuracy@10
+  - cosine_precision@1
+  - cosine_precision@3
+  - cosine_precision@5
+  - cosine_precision@10
+  - cosine_recall@1
+  - cosine_recall@3
+  - cosine_recall@5
+  - cosine_recall@10
+  - cosine_ndcg@10
+  - cosine_mrr@10
+  - cosine_map@100
+  model-index:
+  - name: sbert
+    results:
+    - task:
+        type: information-retrieval
+        name: Information Retrieval
+      dataset:
+        name: investo val
+        type: investo_val
+      metrics:
+      - type: cosine_accuracy@1
+        value: 0.869
+        name: Cosine Accuracy@1
+        verified: false
+      - type: cosine_accuracy@3
+        value: 0.924
+        name: Cosine Accuracy@3
+        verified: false
+      - type: cosine_accuracy@5
+        value: 0.939
+        name: Cosine Accuracy@5
+        verified: false
+      - type: cosine_accuracy@10
+        value: 0.9605
+        name: Cosine Accuracy@10
+        verified: false
+      - type: cosine_precision@1
+        value: 0.869
+        name: Cosine Precision@1
+        verified: false
+      - type: cosine_precision@3
+        value: 0.308
+        name: Cosine Precision@3
+        verified: false
+      - type: cosine_precision@5
+        value: 0.18780000000000002
+        name: Cosine Precision@5
+        verified: false
+      - type: cosine_precision@10
+        value: 0.09605000000000001
+        name: Cosine Precision@10
+        verified: false
+      - type: cosine_recall@1
+        value: 0.869
+        name: Cosine Recall@1
+        verified: false
+      - type: cosine_recall@3
+        value: 0.924
+        name: Cosine Recall@3
+        verified: false
+      - type: cosine_recall@5
+        value: 0.939
+        name: Cosine Recall@5
+        verified: false
+      - type: cosine_recall@10
+        value: 0.9605
+        name: Cosine Recall@10
+        verified: false
+      - type: cosine_ndcg@10
+        value: 0.9151799081052057
+        name: Cosine Ndcg@10
+        verified: false
+      - type: cosine_mrr@10
+        value: 0.9006480158730156
+        name: Cosine Mrr@10
+        verified: false
+      - type: cosine_map@100
+        value: 0.9023909003071297
+        name: Cosine Map@100
+        verified: false
+    - task:
+        type: information-retrieval
+        name: Information Retrieval
+      dataset:
+        name: finmodern val
+        type: finmodern_val
+      metrics:
+      - type: cosine_accuracy@1
+        value: 0.9065
+        name: Cosine Accuracy@1
+        verified: false
+      - type: cosine_accuracy@3
+        value: 0.9755
+        name: Cosine Accuracy@3
+        verified: false
+      - type: cosine_accuracy@5
+        value: 0.985
+        name: Cosine Accuracy@5
+        verified: false
+      - type: cosine_accuracy@10
+        value: 0.9955
+        name: Cosine Accuracy@10
+        verified: false
+      - type: cosine_precision@1
+        value: 0.9065
+        name: Cosine Precision@1
+        verified: false
+      - type: cosine_precision@3
+        value: 0.3251666666666666
+        name: Cosine Precision@3
+        verified: false
+      - type: cosine_precision@5
+        value: 0.19700000000000006
+        name: Cosine Precision@5
+        verified: false
+      - type: cosine_precision@10
+        value: 0.09955000000000001
+        name: Cosine Precision@10
+        verified: false
+      - type: cosine_recall@1
+        value: 0.9065
+        name: Cosine Recall@1
+        verified: false
+      - type: cosine_recall@3
+        value: 0.9755
+        name: Cosine Recall@3
+        verified: false
+      - type: cosine_recall@5
+        value: 0.985
+        name: Cosine Recall@5
+        verified: false
+      - type: cosine_recall@10
+        value: 0.9955
+        name: Cosine Recall@10
+        verified: false
+      - type: cosine_ndcg@10
+        value: 0.9557368476263948
+        name: Cosine Ndcg@10
+        verified: false
+      - type: cosine_mrr@10
+        value: 0.9425013888888885
+        name: Cosine Mrr@10
+        verified: false
+      - type: cosine_map@100
+        value: 0.9428308427683428
+        name: Cosine Map@100
+        verified: false
+    - task:
+        type: information-retrieval
+        name: Information Retrieval
+      dataset:
+        name: investo test
+        type: investo_test
+      metrics:
+      - type: cosine_accuracy@1
+        value: 0.862
+        name: Cosine Accuracy@1
+        verified: false
+      - type: cosine_accuracy@3
+        value: 0.9225
+        name: Cosine Accuracy@3
+        verified: false
+      - type: cosine_accuracy@5
+        value: 0.94
+        name: Cosine Accuracy@5
+        verified: false
+      - type: cosine_accuracy@10
+        value: 0.9655
+        name: Cosine Accuracy@10
+        verified: false
+      - type: cosine_precision@1
+        value: 0.862
+        name: Cosine Precision@1
+        verified: false
+      - type: cosine_precision@3
+        value: 0.30749999999999994
+        name: Cosine Precision@3
+        verified: false
+      - type: cosine_precision@5
+        value: 0.18800000000000003
+        name: Cosine Precision@5
+        verified: false
+      - type: cosine_precision@10
+        value: 0.09655000000000001
+        name: Cosine Precision@10
+        verified: false
+      - type: cosine_recall@1
+        value: 0.862
+        name: Cosine Recall@1
+        verified: false
+      - type: cosine_recall@3
+        value: 0.9225
+        name: Cosine Recall@3
+        verified: false
+      - type: cosine_recall@5
+        value: 0.94
+        name: Cosine Recall@5
+        verified: false
+      - type: cosine_recall@10
+        value: 0.9655
+        name: Cosine Recall@10
+        verified: false
+      - type: cosine_ndcg@10
+        value: 0.9131521489398232
+        name: Cosine Ndcg@10
+        verified: false
+      - type: cosine_mrr@10
+        value: 0.8964827380952377
+        name: Cosine Mrr@10
+        verified: false
+      - type: cosine_map@100
+        value: 0.8980055168329302
+        name: Cosine Map@100
+        verified: false
+    - task:
+        type: information-retrieval
+        name: Information Retrieval
+      dataset:
+        name: finmodern test
+        type: finmodern_test
+      metrics:
+      - type: cosine_accuracy@1
+        value: 0.9105
+        name: Cosine Accuracy@1
+        verified: false
+      - type: cosine_accuracy@3
+        value: 0.976
+        name: Cosine Accuracy@3
+        verified: false
+      - type: cosine_accuracy@5
+        value: 0.988
+        name: Cosine Accuracy@5
+        verified: false
+      - type: cosine_accuracy@10
+        value: 0.993
+        name: Cosine Accuracy@10
+        verified: false
+      - type: cosine_precision@1
+        value: 0.9105
+        name: Cosine Precision@1
+        verified: false
+      - type: cosine_precision@3
+        value: 0.32533333333333325
+        name: Cosine Precision@3
+        verified: false
+      - type: cosine_precision@5
+        value: 0.19760000000000005
+        name: Cosine Precision@5
+        verified: false
+      - type: cosine_precision@10
+        value: 0.09930000000000001
+        name: Cosine Precision@10
+        verified: false
+      - type: cosine_recall@1
+        value: 0.9105
+        name: Cosine Recall@1
+        verified: false
+      - type: cosine_recall@3
+        value: 0.976
+        name: Cosine Recall@3
+        verified: false
+      - type: cosine_recall@5
+        value: 0.988
+        name: Cosine Recall@5
+        verified: false
+      - type: cosine_recall@10
+        value: 0.993
+        name: Cosine Recall@10
+        verified: false
+      - type: cosine_ndcg@10
+        value: 0.9566131074312737
+        name: Cosine Ndcg@10
+        verified: false
+      - type: cosine_mrr@10
+        value: 0.9443831349206344
+        name: Cosine Mrr@10
+        verified: false
+      - type: cosine_map@100
+        value: 0.9448456466143491
+        name: Cosine Map@100
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-21T20:06:02.000Z'
+safetensors:
+  parameters:
+    F32: 109482240
+  total: 109482240
+usedStorage: 437951328
+downloadsAllTime: 16
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.22.1
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 30522
+onnxFiles: {}
+safetensorsSizeMb: 438.0
+approxSizeMb: 437.9
+fetchedAt: '2026-11-22T11:00:18.000Z'

@@ -1,0 +1,264 @@
+_id: 6b027c79022d76813aa889fa
+id: Marwan101/modern-egyptian-embeddings-large-100k
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:80000
+- loss:MultipleNegativesRankingLoss
+- arxiv:1908.10084
+- arxiv:1807.03748
+- base_model:CAMeL-Lab/bert-base-arabic-camelbert-da
+- base_model:finetune:CAMeL-Lab/bert-base-arabic-camelbert-da
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 1
+likes: 0
+modelId: Marwan101/modern-egyptian-embeddings-large-100k
+author: Marwan101
+sha: 7d90759907fb3d5592e23a3a7c0f664ef1807fe3
+lastModified: '2026-11-22T05:24:36.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: يا جماعة شروط التقديم على شقق جنة للإسكان الفاخر في الشيخ زايد والقاهرة الجديدة ومشكورين مقدماً
+  sentences:
+  - 'مشروعات الإسكان المتوسط وفوق المتوسط لهيئة المجتمعات العمرانية تشمل: ''سكن مصر'' (إسكان متوسط محاط بسياج شجري ومصاعد
+    وتشطيب كامل)، و''دار مصر'' (كمبوند متكامل الخدمات بسور خرساني وأمن وبوابات)، و''جنة'' (إسكان فاخر بحمامات سباحة ولاند
+    سكيب وتشطيبات فندقية). التقديم يتم إلكترونياً عبر موقع ''مسكن'' أو بوابة بنك التعمير والإسكان بسداد جدية حجز تتراوح بين
+    50 ألف إلى 100 ألف جنيه، ويتم استكمال 20% عند التخصيص وسداد باقي ثمن الوحدة على أقساط ربع سنوية متساوية لمدة 3 أو 5 أو
+    7 سنوات محملة بفائدة البنك المركزي.'
+  - dar_misr_janna_housing_lottery
+  - حظر بيع أو تأجير شقق الإسكان الاجتماعي يستمر لمدة 7 سنوات من تاريخ الاستلام ويعاقب المخالف بالحبس والغرامة وسحب الوحدة
+    السكنية لصالح صندوق التمويل العقاري.
+  - housing_realestate
+- source_sentence: عايز أسأل الفرق بين شقق سكن مصر ودار مصر وجنة في التشطيب والموقع والأسعار علشان مستعجل
+  sentences:
+  - housing_realestate
+  - حظر بيع أو تأجير شقق الإسكان الاجتماعي يستمر لمدة 7 سنوات من تاريخ الاستلام ويعاقب المخالف بالحبس والغرامة وسحب الوحدة
+    السكنية لصالح صندوق التمويل العقاري.
+  - dar_misr_janna_housing_lottery
+  - 'مشروعات الإسكان المتوسط وفوق المتوسط لهيئة المجتمعات العمرانية تشمل: ''سكن مصر'' (إسكان متوسط محاط بسياج شجري ومصاعد
+    وتشطيب كامل)، و''دار مصر'' (كمبوند متكامل الخدمات بسور خرساني وأمن وبوابات)، و''جنة'' (إسكان فاخر بحمامات سباحة ولاند
+    سكيب وتشطيبات فندقية). التقديم يتم إلكترونياً عبر موقع ''مسكن'' أو بوابة بنك التعمير والإسكان بسداد جدية حجز تتراوح بين
+    50 ألف إلى 100 ألف جنيه، ويتم استكمال 20% عند التخصيص وسداد باقي ثمن الوحدة على أقساط ربع سنوية متساوية لمدة 3 أو 5 أو
+    7 سنوات محملة بفائدة البنك المركزي.'
+- source_sentence: هو بجد ينفع حجز خدمة الأحوال إكسبيريس المنزلية لتصوير وتجديد بطاقة الرقم القومي بالبيت
+  sentences:
+  - للتظلم على مخالفات المرور إلكترونياً، ادخل على بوابة النيابة العامة لخدمات المرور ppo.gov.eg وحدد رخصة المركبة واضغط 'تظلم'
+    مع كتابة سبب التظلم والرد خلال 72 ساعة.
+  - يوفر قطاع الأحوال المدنية بوزارة الداخلية قوافل وسيارات متنقلة مجهزة بأحدث التقنيات لتقديم خدمات السجل المدني الذكية بمختلف
+    المحافظات والمراكز والمولات؛ وتتيح استخراج بطاقات الرقم القومي الفورية وشهادات الميلاد والوفاة والزواج والطلاق والقيد
+    العائلي المميكن في دقائق معدودة. كما يمكن طلب خدمة 'الأحوال إكسبريس' المنزلية المخصصة للحالات الإنسانية وكبار السن والمرضى
+    للانتقال لمحل إقامتهم وتصويرهم وتسليم البطاقة فورياً عبر الاتصال بالخط الساخن للأحوال المدنية 15340 أو 15341.
+  - civil_status_vip_mobile_bus
+  - government_services
+- source_sentence: يا جماعة الشركة القديمة رافضة تنقل رقمي للشبكة الجديدة بحجج واهية اعمل شكوى فين؟ علشان الدنيا واقفة معايا
+  sentences:
+  - معرفة موعد تجديد باقة فليكس أو المكالمات يتم عبر الكود السريع أو التطبيق الرسمي، وفي حالة عدم كفاية الرصيد للتجديد التلقائي
+    يتم المحاسبة بسعر الدقيقة الموحد 19 قرشاً.
+  - لنقل رقم موبايلك من شبكة لأخرى محتفظاً بنفس الرقم (MNP)، يشترط أن يكون الخط مسجلاً ببطاقتك الشخصية ومضى على تفعيله في
+    شبكتك الحالية 4 أشهر على الأقل، وسداد آخر فاتورة صادرة (إذا كنت نظام فاتورة) وتصفية محفظة الكاش وإلغاؤها قبل النقل. توجه
+    لفرع الشركة الجديدة ببطاقتك وقدم طلب النقل؛ تستلم الشريحة الجديدة وتتفعل قانوناً خلال 24 ساعة عمل بحد أقصى طبقاً لتعليمات
+    الجهاز القومي لتنظيم الاتصالات (NTRA)، والرصيد القديم لا ينتقل للشريحة الجديدة.
+  - telecom_internet
+  - mobile_number_portability_mnp
+- source_sentence: يا جماعة شهادة المخالفات لرخصة القيادة بطلعها منين وبكام وإزاي اسددها؟ علشان مستعجل
+  sentences:
+  - تجديد رخصة تسيير السيارة (رخصة العربية) بيتطلب عمل فحص فني كل 3 سنين وشراء طفاية حريق سارية ومثلث وشنطة إسعافات، وسداد
+    الضريبة السنوية ورسم الملصق الإلكتروني والتأمين الإجباري للسيارة.
+  - private_driver_license_renewal
+  - 'لتجديد رخصة القيادة الخاصة، توجه لوحدة المرور التابع لها محل إقامتك المدون بالبطاقة ومعك: أصل بطاقة الرقم القومي والرخصة
+    المنتهية وصورتين شخصيتين، شهادة براءة الذمة (شهادة المخالفات) من نيابة المرور أو البريد، والخضوع للكشف الطبي المميكن (باطنة
+    ورمد وفصيلة دم) داخل المرور. اشترِ نموذج 256 مرور وسدد ضريبة الرخصة ورسم التأمين الإجباري والملصق لمدة 10 سنوات؛ وفترة
+    السماح بعد الانتهاء هي شهر واحد فقط بدون غرامة قيادة برخصة منتهية.'
+  - government_services
+model-index:
+- name: SentenceTransformer based on CAMeL-Lab/bert-base-arabic-camelbert-da
+  results:
+  - task:
+      type: triplet
+      name: Triplet
+    dataset:
+      name: egyptian val evaluator
+      type: egyptian_val_evaluator
+    metrics:
+    - type: cosine_accuracy
+      value: 1
+      name: Cosine Accuracy
+      verified: false
+  - task:
+      type: triplet
+      name: Triplet
+    dataset:
+      name: egyptian test evaluator
+      type: egyptian_test_evaluator
+    metrics:
+    - type: cosine_accuracy
+      value: 1
+      name: Cosine Accuracy
+      verified: false
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:80000
+  - loss:MultipleNegativesRankingLoss
+  base_model: CAMeL-Lab/bert-base-arabic-camelbert-da
+  widget:
+  - source_sentence: يا جماعة شروط التقديم على شقق جنة للإسكان الفاخر في الشيخ زايد والقاهرة الجديدة ومشكورين مقدماً
+    sentences:
+    - 'مشروعات الإسكان المتوسط وفوق المتوسط لهيئة المجتمعات العمرانية تشمل: ''سكن مصر'' (إسكان متوسط محاط بسياج شجري ومصاعد
+      وتشطيب كامل)، و''دار مصر'' (كمبوند متكامل الخدمات بسور خرساني وأمن وبوابات)، و''جنة'' (إسكان فاخر بحمامات سباحة ولاند
+      سكيب وتشطيبات فندقية). التقديم يتم إلكترونياً عبر موقع ''مسكن'' أو بوابة بنك التعمير والإسكان بسداد جدية حجز تتراوح
+      بين 50 ألف إلى 100 ألف جنيه، ويتم استكمال 20% عند التخصيص وسداد باقي ثمن الوحدة على أقساط ربع سنوية متساوية لمدة 3 أو
+      5 أو 7 سنوات محملة بفائدة البنك المركزي.'
+    - dar_misr_janna_housing_lottery
+    - حظر بيع أو تأجير شقق الإسكان الاجتماعي يستمر لمدة 7 سنوات من تاريخ الاستلام ويعاقب المخالف بالحبس والغرامة وسحب الوحدة
+      السكنية لصالح صندوق التمويل العقاري.
+    - housing_realestate
+  - source_sentence: عايز أسأل الفرق بين شقق سكن مصر ودار مصر وجنة في التشطيب والموقع والأسعار علشان مستعجل
+    sentences:
+    - housing_realestate
+    - حظر بيع أو تأجير شقق الإسكان الاجتماعي يستمر لمدة 7 سنوات من تاريخ الاستلام ويعاقب المخالف بالحبس والغرامة وسحب الوحدة
+      السكنية لصالح صندوق التمويل العقاري.
+    - dar_misr_janna_housing_lottery
+    - 'مشروعات الإسكان المتوسط وفوق المتوسط لهيئة المجتمعات العمرانية تشمل: ''سكن مصر'' (إسكان متوسط محاط بسياج شجري ومصاعد
+      وتشطيب كامل)، و''دار مصر'' (كمبوند متكامل الخدمات بسور خرساني وأمن وبوابات)، و''جنة'' (إسكان فاخر بحمامات سباحة ولاند
+      سكيب وتشطيبات فندقية). التقديم يتم إلكترونياً عبر موقع ''مسكن'' أو بوابة بنك التعمير والإسكان بسداد جدية حجز تتراوح
+      بين 50 ألف إلى 100 ألف جنيه، ويتم استكمال 20% عند التخصيص وسداد باقي ثمن الوحدة على أقساط ربع سنوية متساوية لمدة 3 أو
+      5 أو 7 سنوات محملة بفائدة البنك المركزي.'
+  - source_sentence: هو بجد ينفع حجز خدمة الأحوال إكسبيريس المنزلية لتصوير وتجديد بطاقة الرقم القومي بالبيت
+    sentences:
+    - للتظلم على مخالفات المرور إلكترونياً، ادخل على بوابة النيابة العامة لخدمات المرور ppo.gov.eg وحدد رخصة المركبة واضغط
+      'تظلم' مع كتابة سبب التظلم والرد خلال 72 ساعة.
+    - يوفر قطاع الأحوال المدنية بوزارة الداخلية قوافل وسيارات متنقلة مجهزة بأحدث التقنيات لتقديم خدمات السجل المدني الذكية
+      بمختلف المحافظات والمراكز والمولات؛ وتتيح استخراج بطاقات الرقم القومي الفورية وشهادات الميلاد والوفاة والزواج والطلاق
+      والقيد العائلي المميكن في دقائق معدودة. كما يمكن طلب خدمة 'الأحوال إكسبريس' المنزلية المخصصة للحالات الإنسانية وكبار
+      السن والمرضى للانتقال لمحل إقامتهم وتصويرهم وتسليم البطاقة فورياً عبر الاتصال بالخط الساخن للأحوال المدنية 15340 أو
+      15341.
+    - civil_status_vip_mobile_bus
+    - government_services
+  - source_sentence: يا جماعة الشركة القديمة رافضة تنقل رقمي للشبكة الجديدة بحجج واهية اعمل شكوى فين؟ علشان الدنيا واقفة معايا
+    sentences:
+    - معرفة موعد تجديد باقة فليكس أو المكالمات يتم عبر الكود السريع أو التطبيق الرسمي، وفي حالة عدم كفاية الرصيد للتجديد التلقائي
+      يتم المحاسبة بسعر الدقيقة الموحد 19 قرشاً.
+    - لنقل رقم موبايلك من شبكة لأخرى محتفظاً بنفس الرقم (MNP)، يشترط أن يكون الخط مسجلاً ببطاقتك الشخصية ومضى على تفعيله في
+      شبكتك الحالية 4 أشهر على الأقل، وسداد آخر فاتورة صادرة (إذا كنت نظام فاتورة) وتصفية محفظة الكاش وإلغاؤها قبل النقل.
+      توجه لفرع الشركة الجديدة ببطاقتك وقدم طلب النقل؛ تستلم الشريحة الجديدة وتتفعل قانوناً خلال 24 ساعة عمل بحد أقصى طبقاً
+      لتعليمات الجهاز القومي لتنظيم الاتصالات (NTRA)، والرصيد القديم لا ينتقل للشريحة الجديدة.
+    - telecom_internet
+    - mobile_number_portability_mnp
+  - source_sentence: يا جماعة شهادة المخالفات لرخصة القيادة بطلعها منين وبكام وإزاي اسددها؟ علشان مستعجل
+    sentences:
+    - تجديد رخصة تسيير السيارة (رخصة العربية) بيتطلب عمل فحص فني كل 3 سنين وشراء طفاية حريق سارية ومثلث وشنطة إسعافات، وسداد
+      الضريبة السنوية ورسم الملصق الإلكتروني والتأمين الإجباري للسيارة.
+    - private_driver_license_renewal
+    - 'لتجديد رخصة القيادة الخاصة، توجه لوحدة المرور التابع لها محل إقامتك المدون بالبطاقة ومعك: أصل بطاقة الرقم القومي والرخصة
+      المنتهية وصورتين شخصيتين، شهادة براءة الذمة (شهادة المخالفات) من نيابة المرور أو البريد، والخضوع للكشف الطبي المميكن
+      (باطنة ورمد وفصيلة دم) داخل المرور. اشترِ نموذج 256 مرور وسدد ضريبة الرخصة ورسم التأمين الإجباري والملصق لمدة 10 سنوات؛
+      وفترة السماح بعد الانتهاء هي شهر واحد فقط بدون غرامة قيادة برخصة منتهية.'
+    - government_services
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - cosine_accuracy
+  model-index:
+  - name: SentenceTransformer based on CAMeL-Lab/bert-base-arabic-camelbert-da
+    results:
+    - task:
+        type: triplet
+        name: Triplet
+      dataset:
+        name: egyptian val evaluator
+        type: egyptian_val_evaluator
+      metrics:
+      - type: cosine_accuracy
+        value: 1
+        name: Cosine Accuracy
+        verified: false
+    - task:
+        type: triplet
+        name: Triplet
+      dataset:
+        name: egyptian test evaluator
+        type: egyptian_test_evaluator
+      metrics:
+      - type: cosine_accuracy
+        value: 1
+        name: Cosine Accuracy
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-22T05:24:09.000Z'
+safetensors:
+  parameters:
+    F32: 109081344
+  total: 109081344
+usedStorage: 436347736
+downloadsAllTime: 1
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  tie_word_embeddings: true
+  transformers_version: 5.22.1
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 30000
+onnxFiles: {}
+safetensorsSizeMb: 436.3
+approxSizeMb: 436.3
+fetchedAt: '2026-11-22T11:00:18.000Z'

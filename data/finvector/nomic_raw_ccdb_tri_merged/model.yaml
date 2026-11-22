@@ -1,0 +1,536 @@
+_id: 6b01a426115a157a545b27ed
+id: finvector/nomic_raw_ccdb_tri_merged
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- nomic_bert
+- sentence-similarity
+- feature-extraction
+- generated_from_trainer
+- dataset_size:124887
+- loss:CachedMultipleNegativesRankingLoss
+- custom_code
+- en
+- arxiv:1908.10084
+- arxiv:2101.06983
+- base_model:nomic-ai/nomic-embed-text-v1.5
+- base_model:finetune:nomic-ai/nomic-embed-text-v1.5
+- license:apache-2.0
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 21
+likes: 0
+modelId: finvector/nomic_raw_ccdb_tri_merged
+author: finvector
+sha: 18a47236c3082daa211e9e9cd53b4abc04999aaa
+lastModified: '2026-11-21T14:01:14.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: "I am filing this complaint to resolve unauthorized, unverified, and inaccurate items reported on my TransUnion\
+    \ credit report. \n\nXXXX. Charged Off Disputed The following accounts are incorrectly reported and I request verification\
+    \ or removal : XXXX  XXXX, Acct # : XXXX, Date Open : XX/XX/XXXX, Balance : {$570.00} XXXX  XXXX, Acct # : XXXX, Date\
+    \ Open : XX/XX/XXXX, Balance : {$2500.00} XXXX, Acct # : XXXX, Date Open : XX/XX/XXXX, Balance : {$2600.00} XXXX XXXX\
+    \  XXXX, Acct # : XXXX, Date Open : XX/XX/XXXX, Balance : {$0.00} XXXX. Inquiries Disputed There are no disputed inquiries\
+    \ on my TransUnion report at this time. \n\nXXXX. Positive Accounts There are no issues with positive accounts at this\
+    \ time. \n\nXXXX. Late Payment Disputed The following late payments need to be verified or removed : XXXX  XXXX, Acct\
+    \ # : XXXX XXXX  XXXX XXXX, Acct # : XXXX XXXX  XXXX, Acct # : XXXX XXXX XXXX XXXX, Acct # : XXXX"
+  sentences:
+  - It was not disclosed that I would not receive a refund if or when the money transfer went to the wrong person.
+  - "I am submitting this complaint to dispute inaccurate and incomplete information on my TransUnion credit report. \n\n\
+    Charged-Off Accounts I dispute the following accounts : XXXX XXXX Acct XXXX ( XX/XX/XXXX, balance {$0.00} ) XXXX  XXXX\
+    \ Acct XXXX ( XX/XX/XXXX, balance {$1200.00} ) XXXX XXXX Acct XXXX ( XX/XX/XXXX, balance {$1000.00} ) These accounts may\
+    \ be inaccurately reported or negatively affecting my credit. I request TransUnion verify balances, reporting dates, and\
+    \ account status, and remove or correct any information that can not be substantiated. \n\nLate Payments XXXX  XXXX XXXX\
+    \ Acct XXXX I dispute this late payment and request correction or removal."
+  - "Subject : DEMAND FOR IMMEDIATE REMOVAL OF INACCURATE BANKRUPTCY FCRA VIOLATIONS To Whom It May Concern, I am writing\
+    \ to formally dispute the bankruptcy reporting on my TransUnion credit report. I have never filed for bankruptcy, and\
+    \ the U.S. Bankruptcy Court in Los Angeles has confirmed this. This inaccurate reporting is a clear violation of the Fair\
+    \ Credit Reporting Act ( FCRA ) and must be removed immediately.\n\nDetails of the Disputed Bankruptcy Bankruptcy Court\
+    \ : U.S. Bankruptcy Court, Los Angeles County Filed Under : XXXX XXXX ( Incorrectly Assigned ) Case Number : XXXX Supporting\
+    \ Evidence Included A written confirmation from the U.S. Bankruptcy Court Clerk, Aarron, confirming that I have never\
+    \ filed for bankruptcy. \n\nCopies of my XXXX and XXXX credit reports, which do NOT show any bankruptcy. \n\nFCRA VIOLATIONS\
+    \ BY TRANSUNION 1. FCRA 1681e ( b ) Failure to Maintain Maximum Possible Accuracy TransUnion has a legal duty to ensure\
+    \ all reported information is accurate. Reporting a bankruptcy that does not belong to me is a direct violation.\n\n2.\
+    \ FCRA 1681i ( a ) ( 1 ) ( A ) Inclusion of False Information The U.S. Bankruptcy Court does not report to credit bureaus.\
+    \ TransUnion is reporting incorrect information obtained from a third-party source, violating federal law. \n\n3. FCRA\
+    \ 1681i ( a ) ( 5 ) Failure to Properly Reinvestigate If TransUnion previously \" verified '' this bankruptcy, it failed\
+    \ to conduct a proper reinvestigation, making the reporting unlawful.\n\n4. FCRA 1681g ( a ) ( 2 ) Failure to Disclose\
+    \ Source of Information I am demanding that TransUnion provide the exact source of this bankruptcy record. If it can not\
+    \ be verified with official court documentation, it must be deleted immediately.\n\n5. FCRA 1681c ( a ) ( 1 ) Mixed File\
+    \ Error The U.S. Bankruptcy Court confirmed that multiple individuals with the name \" XXXX XXXX '' have filed for bankruptcy.\
+    \ This is a clear mixed file violation, and the inaccurate bankruptcy must be deleted immediately. \n\nDEMAND FOR IMMEDIATE\
+    \ ACTION XXXX. I am formally demanding that TransUnion : XXXX. Immediately delete the inaccurate bankruptcy from my credit\
+    \ report. \n\nXXXX. Provide written confirmation that this bankruptcy has been permanently removed. \n\nDisclose the exact\
+    \ source of this incorrect information. \n\nFailure to comply within 30 days will result in formal complaints to the CFPB,\
+    \ FTC, and California Attorney General for willful FCRA violations. Additionally, I reserve the right to pursue legal\
+    \ action for damages under FCRA 1681n, which allows for statutory damages of up to {$1000.00} per violation, plus attorney\
+    \ fees. \n\nThis is my final notice. If TransUnion can not provide court-verified proof of this bankruptcy, it must be\
+    \ removed immediately. \n\nSincerely, XXXX XXXX XXXX"
+- source_sentence: Hello, I have been trying to contact Rubin and Rothman LLC regarding a debt that I would like to resolve,
+    I called them and they hung up on me three times, I have also been emailing asking if they could help me and have noted
+    that when I asked to speak to someone about settling/resolving my debt I was hung up on. I have not been able to get through
+    to anyone which is alarming because they are trying to sue me, I'd expect them to want to work with me to give them my
+    money.
+  sentences:
+  - The dates and information regarding amounts were incorrect.
+  - Hello, I have been trying to contact XXXXXXXX XXXX XXXX XXXXXXXX regarding a debt that I would like to resolve, I called
+    them and they hung up on me three times, I have also been emailing asking if they could help me and have noted that when
+    I asked to speak to someone about settling/resolving my debt I was hung up on. I have not been able to get through to
+    anyone which is alarming because they are trying to sue me, I'd expect them to want to work with me to give them my money.
+  - "I am filing this complaint against XXXX, XXXX, and Experian for XXXX significant violations of my consumer rights under\
+    \ the Fair Credit Reporting Act ( FCRA ) : XXXX. Failure to Conduct a Proper Investigation of Disputed Information : On\
+    \ XX/XX/year>, I filed a dispute with XXXX regarding inaccuracies in my credit report. I explicitly requested a manual\
+    \ review of the disputed information due to its complexity. I provided clear supporting evidence, including highlighted\
+    \ copies of my credit report identifying the errors. However, Experian used the XXXX system to process my dispute electronically\
+    \ rather than conducting the manual review I requested. This process fails to ensure a thorough investigation, as required\
+    \ under the FCRA. \nThe response I received was vague and did not provide sufficient detail regarding the methods, sources,\
+    \ or procedures used to verify the disputed information. My specific questions about the investigation process remain\
+    \ unanswered. \nXXXX. Failure to Address XXXX Non-Issuance by a XXXX XXXX : XXXX. Despite my dispute, Experian, XXXX,\
+    \ and XXXX continue to report this collection account without verifying its validity or requiring the collection agency\
+    \ to issue a XXXX. This raises questions about the legitimacy of the debt and violates federal regulations. \n\nAccount\
+    \ Name Account Number XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX\
+    \ XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXXXXXX XXXX Violations : XXXX. Failure to Conduct\
+    \ a Reasonable Investigation : o Experian violated 15 U.S.C. 1681i ( a ) ( 1 ) ( A ) by failing to conduct a manual review\
+    \ of my dispute as explicitly requested. \no The use of XXXX resulted in an inadequate and incomplete investigation. \n\
+    XXXX. Failure to Provide XXXX of XXXX : o Experian failed to provide the methods, sources, and documentation used in their\
+    \ investigation, as required by 15 U.S.C. 1681i ( a ) ( 4 ) and 15 U.S.C. 1681i ( a ) ( 6 ). \nXXXX. Inaccurate Reporting\
+    \ and Failure to Address XXXX Non-Issuance : o Experian, XXXX, and XXXX continue XXXX report inaccurate information, violating\
+    \ my rights under 15 U.S.C. 1681e ( b ). \no The collection agencys failure to issue a XXXX for canceled or forgiven debt\
+    \ violates IRS regulations and raises concerns about the accounts validity."
+- source_sentence: I recently review a copy of my credit report and noticed I had fraudulent accounts on my report. Please
+    remove this account from my report and that is hurting my ability to obtain credit. ( XXXX XXXX XXXX XXXX XXXX XXXX XXXX
+    XXXX
+  sentences:
+  - I woke up tried to receive money and it gave a error message I tried to send it gave a error message it said my account
+    was closed only thing they told me was I violated one of the guideline I dont know what guidelines I violated ir nothing
+    I been trying to communicate still no one got in contact
+  - I recently reviewed a copy of my credit report and noticed I had a fraudulent account. Please remove this account, it
+    is hurting my ability to obtain credit.
+  - I am filing a complaint because my bank failed to properly investigate unauthorized transactions on my XXXX XXXX Card
+    and did not follow the requirements of the Electronic Fund Transfer Act ( EFTA ) and Regulation E. Two transactionsone
+    for {$350.00} and another for XXXX XXXXwere made without my authorization. I did not make these purchases, did not give
+    anyone permission to use my card, and did not benefit from the transactions in any way. I reported the unauthorized charges
+    immediately after discovering them. At the time of the transactions, I was actively working on the XXXX Eats platform,
+    and I had my physical card in my possession. I did not lose my card, and it was never stolen. These charges were processed
+    through the XXXX XXXX XXXX system without my consent, and I notified the bank as soon as I saw them. Despite my prompt
+    report, my bank closed the dispute without conducting a reasonable investigation. They did not ask me for additional information,
+    did not provide any documentation supporting their denial, and did not explain how they determined the transactions were
+    authorized. They also did not provide provisional credit, even though Regulation E requires it when an investigation can
+    not be completed within 10 business days. I repeatedly requested evidence of their investigation, including transaction
+    logs, merchant information, and any data they relied on to claim the charges were authorized. The bank refused to provide
+    this information. Instead, they simply stated that the transactions were valid without showing how they reached that conclusion.
+    This is a violation of Regulation E, which requires financial institutions to conduct a goodfaith investigation, document
+    their findings, and share those findings with the consumer upon request. I am requesting that the CFPB require my bank
+    to reopen the dispute, conduct a full and compliant investigation, and provide all documentation they relied on when denying
+    my claim. I am also requesting reimbursement for the unauthorized charges in accordance with the Electronic Fund Transfer
+    Act and Regulation E. My banks handling of this matter has been inadequate, dismissive, and noncompliant with federal
+    law.
+- source_sentence: "To Whom It May Concern, I am writing to formally dispute and demand the immediate removal of the following\
+    \ fraudulent accounts and inquiries from my credit report due to identity theft. These accounts were opened without my\
+    \ consent, and I am invoking my rights under the Fair Credit Reporting Act ( FCRA ) to have these items promptly removed.\
+    \ \nI am also writing to formally notify you that I am a victim of identity theft and request the immediate blocking and\
+    \ deletion of all fraudulent accounts or information related to the identity theft, as authorized by 15 U.S.C. 1681c-2\
+    \ ( a ). I became aware of the breach of my personal information through the XXXX data breach, which has exposed my sensitive\
+    \ data to unauthorized individuals. \nThe following fraudulent accounts and inquiries have been identified as a result\
+    \ of this breach : TRANSUNION Account Name : XXXX XXXX XXXX Account # : XXXX Balance : {$0.00} Date Opened : XX/XX/XXXX\
+    \ Account Status : closed Account Name : XXXX XXXX XXXX XXXX Account # : XXXX Balance : {$0.00} Date Opened : XX/XX/XXXX\
+    \ Account Status : closed UNAUTHORIZED INQUIRE ( XXXX ) XXXX XXXX XX/XX/XXXXXXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX\
+    \ XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX\
+    \ XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXXXX/XX/XXXX"
+  sentences:
+  - I am writing to formally dispute several inaccurate and fraudulent items on my credit report, which I have identified
+    as the result of identity theft. As a victim of identity theft, I assert that these charges were not authorized by me
+    and are being reported in clear violation of the Fair Credit Reporting Act ( FCRA ). these following accounts XXXX XXXX
+    XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX
+    XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX
+    XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX and these inquiries XXXX XXXX XXXX XXXX XXXX XXXX
+    XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX
+    XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX
+  - VyStar Credit Union app has been down since this weekend. I have been given a verbal that no one is experiencing this
+    issue, another rep advised yes this is an issue. Advised by one person too many people trying to log in! Various statements.
+    This reminds me of the XXXX massive issue! Asked was a recent upgrade or maintenance administered over this past weekend-
+    VyStar denied.
+  - "I received a text alert about a suspected fraud charge from Citi about my Best Buy Visa card, showing a purchase from\
+    \ XXXX XXXX XXXX XXXX in XXXXXXXX XXXX  on XX/XX/XXXX in the amount of {$230.00}. I immediately called Citi to report\
+    \ that as a fraud charge as I do not shop at XXXX 's, nor do I live in XXXX. I live in XXXXXXXX XXXX. There were also\
+    \ other Fraud charges I received email alerts about, though these were blocked and never posted thankfully. Screenshots\
+    \ attached. \n\nI was told that the charge would be credited, and received a letter in my documents on the online account\
+    \ confirming this. A week or so later, around XX/XX/XXXX, I check my account and see a Sales Adjustment crediting me the\
+    \ total amount charged, {$230.00}. I assumed the matter was resolved. \n\nOn XX/XX/XXXX, I saw the charge was reinstated,\
+    \ dated for XX/XX/XXXX for XXXX XXXX XXXX XXXX in PA, for the same amount, {$230.00}. I called Citi the following Monday\
+    \ and asked why the charge was reinstated, to which they said they sided with the merchant. They said the merchant had\
+    \ provided evidence that I had purchased a \" XXXX XXXX XXXX '' for the amount charged. I said that's literally impossible\
+    \ because I do not live in PA, I do not own any XXXX XXXX items, and I live in XXXX and thus do not have any use for a\
+    \ jacket. \n\nThe Citi rep and I went back and forth, I asked for the evidence they provided, he would not provide it.\
+    \ He said that I need to provide proof that I did not purchase the jacket. I am not sure how you prove that I did not\
+    \ purchase something, but I pointed to the fact that my card was used in the days before and after that single XXXX 's\
+    \ purchase at merchants local to my home address. He said I would need to fax a copy of my ID to the fraud department,\
+    \ which I did on XX/XX/XXXX. I have not heard back from them since and all attempts to get through their phone system\
+    \ are fruitless. \n\nI tried calling the merchant myself, but when I called the XXXX XXXX XXXX XXXX, I was told that the\
+    \ XXXX XXXX XXXX XXXX XXXXXXXX XXXX is the name that would appear if it were an online purchase. This is the first I am\
+    \ learning that the purchase was online, and not in person like I had originally thought. \n\nI am not sure where to go\
+    \ from here. Citi is unwilling to return my money or work with me on this, and I am met with dead-ends or impossible hoops\
+    \ to jump through. I have no earthly way to prove I did not purchase something. I would think the burden of proof would\
+    \ be on XXXXXXXX XXXX I do not shop there, I have no XXXX XXXX jackets. If they could maybe get the shipping address for\
+    \ the order, they would see it wasn't me who placed the order, as no such item was ever delivered to my house in XXXX.\
+    \ Wherever it was delivered, is likely the individual responsible."
+- source_sentence: On XX/XX/year>. My wallet was stolen from XXXX XXXX on XXXX XXXX, CA. They spent XXXX on my my debit card
+    somehow without my pin. Now I filed a dispute 3 times and the bank ( chime ) and they are claiming there was no error
+    with the transactions. I clearly got scammed and they are basically saying there is nothing they can do and kick rocks.
+    Their specialist claimed they throughly investigated but clearly they didnt do anything because I sent my police report
+    just how they asked, and it didnt help. I needed that money and now Im left stuck
+  sentences:
+  - "On XX/XX/2026 @ XXXX & XXXX two fraudulent charges were made to my Chime bank account. \n\nThe amounts of {$270.00} and\
+    \ {$44.00} were made at a local XXXX store. \n\nMy debit card was stolen earlier that day from my driveway so I immediately\
+    \ called chime and they cancelled my card and assured me a new one. \n\nCreating a dispute to get my money back has been\
+    \ a hassle as I have been denied 3 times by Chime and keep saying no error has occurred. \n\nThey sent me their findings\
+    \ as to how they came to this conclusion. Which was essentially just transcripts of the previous phone calls I made to\
+    \ report it. No actual evidence was provided in the report. \n\nThere is also false information saying that I didnt make\
+    \ a police report when in fact I did, the same day of XX/XX/year>. \n\nToday I just got denied for the third time via\
+    \ email and am now seeking assistance from your organization. \nXX/XX/year> P.s I am willing to provide more evidence"
+  - Take time to review the materials ; the questions were submitted abruptly and might not be approved.
+  - "I am submitting this complaint regarding a medical collection account that is incorrectly appearing on my credit report,\
+    \ despite the CFPBs recent rule banning the inclusion of medical debt on credit reports used by lenders. \n\nOn XX/XX/year>\
+    \ I reviewed my credit reports and found that a medical collection account from XXXX XXXX XXXX is still being reported\
+    \ to EXPERIAN, EQUIFAX AND TRANSUNION. According to the CFPBs final rule effective in XXXX, medical debts should no longer\
+    \ appear on consumer credit reports. \n\nI've requested removal, but they have either refused or failed to take appropriate\
+    \ action. This incorrect reporting is negatively impacting my credit and financial opportunities."
+model-index:
+- name: nomic
+  results:
+  - task:
+      type: triplet
+      name: Triplet
+    dataset:
+      name: triplet eval
+      type: triplet-eval
+    metrics:
+    - type: cosine_accuracy
+      value: 1
+      name: Cosine Accuracy
+      verified: false
+config:
+  architectures:
+  - NomicBertModel
+  auto_map:
+    AutoConfig: nomic-ai/nomic-bert-2048--configuration_hf_nomic_bert.NomicBertConfig
+    AutoModel: nomic-ai/nomic-bert-2048--modeling_hf_nomic_bert.NomicBertModel
+    AutoModelForMaskedLM: nomic-ai/nomic-bert-2048--modeling_hf_nomic_bert.NomicBertForPreTraining
+    AutoModelForMultipleChoice: nomic-ai/nomic-bert-2048--modeling_hf_nomic_bert.NomicBertForMultipleChoice
+    AutoModelForQuestionAnswering: nomic-ai/nomic-bert-2048--modeling_hf_nomic_bert.NomicBertForQuestionAnswering
+    AutoModelForSequenceClassification: nomic-ai/nomic-bert-2048--modeling_hf_nomic_bert.NomicBertForSequenceClassification
+    AutoModelForTokenClassification: nomic-ai/nomic-bert-2048--modeling_hf_nomic_bert.NomicBertForTokenClassification
+  model_type: nomic_bert
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  language:
+  - en
+  license: apache-2.0
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - generated_from_trainer
+  - dataset_size:124887
+  - loss:CachedMultipleNegativesRankingLoss
+  base_model: nomic-ai/nomic-embed-text-v1.5
+  widget:
+  - source_sentence: "I am filing this complaint to resolve unauthorized, unverified, and inaccurate items reported on my\
+      \ TransUnion credit report. \n\nXXXX. Charged Off Disputed The following accounts are incorrectly reported and I request\
+      \ verification or removal : XXXX  XXXX, Acct # : XXXX, Date Open : XX/XX/XXXX, Balance : {$570.00} XXXX  XXXX, Acct\
+      \ # : XXXX, Date Open : XX/XX/XXXX, Balance : {$2500.00} XXXX, Acct # : XXXX, Date Open : XX/XX/XXXX, Balance : {$2600.00}\
+      \ XXXX XXXX  XXXX, Acct # : XXXX, Date Open : XX/XX/XXXX, Balance : {$0.00} XXXX. Inquiries Disputed There are no disputed\
+      \ inquiries on my TransUnion report at this time. \n\nXXXX. Positive Accounts There are no issues with positive accounts\
+      \ at this time. \n\nXXXX. Late Payment Disputed The following late payments need to be verified or removed : XXXX  XXXX,\
+      \ Acct # : XXXX XXXX  XXXX XXXX, Acct # : XXXX XXXX  XXXX, Acct # : XXXX XXXX XXXX XXXX, Acct # : XXXX"
+    sentences:
+    - It was not disclosed that I would not receive a refund if or when the money transfer went to the wrong person.
+    - "I am submitting this complaint to dispute inaccurate and incomplete information on my TransUnion credit report. \n\n\
+      Charged-Off Accounts I dispute the following accounts : XXXX XXXX Acct XXXX ( XX/XX/XXXX, balance {$0.00} ) XXXX  XXXX\
+      \ Acct XXXX ( XX/XX/XXXX, balance {$1200.00} ) XXXX XXXX Acct XXXX ( XX/XX/XXXX, balance {$1000.00} ) These accounts\
+      \ may be inaccurately reported or negatively affecting my credit. I request TransUnion verify balances, reporting dates,\
+      \ and account status, and remove or correct any information that can not be substantiated. \n\nLate Payments XXXX  XXXX\
+      \ XXXX Acct XXXX I dispute this late payment and request correction or removal."
+    - "Subject : DEMAND FOR IMMEDIATE REMOVAL OF INACCURATE BANKRUPTCY FCRA VIOLATIONS To Whom It May Concern, I am writing\
+      \ to formally dispute the bankruptcy reporting on my TransUnion credit report. I have never filed for bankruptcy, and\
+      \ the U.S. Bankruptcy Court in Los Angeles has confirmed this. This inaccurate reporting is a clear violation of the\
+      \ Fair Credit Reporting Act ( FCRA ) and must be removed immediately.\n\nDetails of the Disputed Bankruptcy Bankruptcy\
+      \ Court : U.S. Bankruptcy Court, Los Angeles County Filed Under : XXXX XXXX ( Incorrectly Assigned ) Case Number : XXXX\
+      \ Supporting Evidence Included A written confirmation from the U.S. Bankruptcy Court Clerk, Aarron, confirming that\
+      \ I have never filed for bankruptcy. \n\nCopies of my XXXX and XXXX credit reports, which do NOT show any bankruptcy.\
+      \ \n\nFCRA VIOLATIONS BY TRANSUNION 1. FCRA 1681e ( b ) Failure to Maintain Maximum Possible Accuracy TransUnion has\
+      \ a legal duty to ensure all reported information is accurate. Reporting a bankruptcy that does not belong to me is\
+      \ a direct violation.\n\n2. FCRA 1681i ( a ) ( 1 ) ( A ) Inclusion of False Information The U.S. Bankruptcy Court does\
+      \ not report to credit bureaus. TransUnion is reporting incorrect information obtained from a third-party source, violating\
+      \ federal law. \n\n3. FCRA 1681i ( a ) ( 5 ) Failure to Properly Reinvestigate If TransUnion previously \" verified\
+      \ '' this bankruptcy, it failed to conduct a proper reinvestigation, making the reporting unlawful.\n\n4. FCRA 1681g\
+      \ ( a ) ( 2 ) Failure to Disclose Source of Information I am demanding that TransUnion provide the exact source of this\
+      \ bankruptcy record. If it can not be verified with official court documentation, it must be deleted immediately.\n\n\
+      5. FCRA 1681c ( a ) ( 1 ) Mixed File Error The U.S. Bankruptcy Court confirmed that multiple individuals with the name\
+      \ \" XXXX XXXX '' have filed for bankruptcy. This is a clear mixed file violation, and the inaccurate bankruptcy must\
+      \ be deleted immediately. \n\nDEMAND FOR IMMEDIATE ACTION XXXX. I am formally demanding that TransUnion : XXXX. Immediately\
+      \ delete the inaccurate bankruptcy from my credit report. \n\nXXXX. Provide written confirmation that this bankruptcy\
+      \ has been permanently removed. \n\nDisclose the exact source of this incorrect information. \n\nFailure to comply within\
+      \ 30 days will result in formal complaints to the CFPB, FTC, and California Attorney General for willful FCRA violations.\
+      \ Additionally, I reserve the right to pursue legal action for damages under FCRA 1681n, which allows for statutory\
+      \ damages of up to {$1000.00} per violation, plus attorney fees. \n\nThis is my final notice. If TransUnion can not\
+      \ provide court-verified proof of this bankruptcy, it must be removed immediately. \n\nSincerely, XXXX XXXX XXXX"
+  - source_sentence: Hello, I have been trying to contact Rubin and Rothman LLC regarding a debt that I would like to resolve,
+      I called them and they hung up on me three times, I have also been emailing asking if they could help me and have noted
+      that when I asked to speak to someone about settling/resolving my debt I was hung up on. I have not been able to get
+      through to anyone which is alarming because they are trying to sue me, I'd expect them to want to work with me to give
+      them my money.
+    sentences:
+    - The dates and information regarding amounts were incorrect.
+    - Hello, I have been trying to contact XXXXXXXX XXXX XXXX XXXXXXXX regarding a debt that I would like to resolve, I called
+      them and they hung up on me three times, I have also been emailing asking if they could help me and have noted that
+      when I asked to speak to someone about settling/resolving my debt I was hung up on. I have not been able to get through
+      to anyone which is alarming because they are trying to sue me, I'd expect them to want to work with me to give them
+      my money.
+    - "I am filing this complaint against XXXX, XXXX, and Experian for XXXX significant violations of my consumer rights under\
+      \ the Fair Credit Reporting Act ( FCRA ) : XXXX. Failure to Conduct a Proper Investigation of Disputed Information :\
+      \ On XX/XX/year>, I filed a dispute with XXXX regarding inaccuracies in my credit report. I explicitly requested a manual\
+      \ review of the disputed information due to its complexity. I provided clear supporting evidence, including highlighted\
+      \ copies of my credit report identifying the errors. However, Experian used the XXXX system to process my dispute electronically\
+      \ rather than conducting the manual review I requested. This process fails to ensure a thorough investigation, as required\
+      \ under the FCRA. \nThe response I received was vague and did not provide sufficient detail regarding the methods, sources,\
+      \ or procedures used to verify the disputed information. My specific questions about the investigation process remain\
+      \ unanswered. \nXXXX. Failure to Address XXXX Non-Issuance by a XXXX XXXX : XXXX. Despite my dispute, Experian, XXXX,\
+      \ and XXXX continue to report this collection account without verifying its validity or requiring the collection agency\
+      \ to issue a XXXX. This raises questions about the legitimacy of the debt and violates federal regulations. \n\nAccount\
+      \ Name Account Number XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX\
+      \ XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXXXXXX XXXX Violations : XXXX. Failure\
+      \ to Conduct a Reasonable Investigation : o Experian violated 15 U.S.C. 1681i ( a ) ( 1 ) ( A ) by failing to conduct\
+      \ a manual review of my dispute as explicitly requested. \no The use of XXXX resulted in an inadequate and incomplete\
+      \ investigation. \nXXXX. Failure to Provide XXXX of XXXX : o Experian failed to provide the methods, sources, and documentation\
+      \ used in their investigation, as required by 15 U.S.C. 1681i ( a ) ( 4 ) and 15 U.S.C. 1681i ( a ) ( 6 ). \nXXXX. Inaccurate\
+      \ Reporting and Failure to Address XXXX Non-Issuance : o Experian, XXXX, and XXXX continue XXXX report inaccurate information,\
+      \ violating my rights under 15 U.S.C. 1681e ( b ). \no The collection agencys failure to issue a XXXX for canceled or\
+      \ forgiven debt violates IRS regulations and raises concerns about the accounts validity."
+  - source_sentence: I recently review a copy of my credit report and noticed I had fraudulent accounts on my report. Please
+      remove this account from my report and that is hurting my ability to obtain credit. ( XXXX XXXX XXXX XXXX XXXX XXXX
+      XXXX XXXX
+    sentences:
+    - I woke up tried to receive money and it gave a error message I tried to send it gave a error message it said my account
+      was closed only thing they told me was I violated one of the guideline I dont know what guidelines I violated ir nothing
+      I been trying to communicate still no one got in contact
+    - I recently reviewed a copy of my credit report and noticed I had a fraudulent account. Please remove this account, it
+      is hurting my ability to obtain credit.
+    - I am filing a complaint because my bank failed to properly investigate unauthorized transactions on my XXXX XXXX Card
+      and did not follow the requirements of the Electronic Fund Transfer Act ( EFTA ) and Regulation E. Two transactionsone
+      for {$350.00} and another for XXXX XXXXwere made without my authorization. I did not make these purchases, did not give
+      anyone permission to use my card, and did not benefit from the transactions in any way. I reported the unauthorized
+      charges immediately after discovering them. At the time of the transactions, I was actively working on the XXXX Eats
+      platform, and I had my physical card in my possession. I did not lose my card, and it was never stolen. These charges
+      were processed through the XXXX XXXX XXXX system without my consent, and I notified the bank as soon as I saw them.
+      Despite my prompt report, my bank closed the dispute without conducting a reasonable investigation. They did not ask
+      me for additional information, did not provide any documentation supporting their denial, and did not explain how they
+      determined the transactions were authorized. They also did not provide provisional credit, even though Regulation E
+      requires it when an investigation can not be completed within 10 business days. I repeatedly requested evidence of their
+      investigation, including transaction logs, merchant information, and any data they relied on to claim the charges were
+      authorized. The bank refused to provide this information. Instead, they simply stated that the transactions were valid
+      without showing how they reached that conclusion. This is a violation of Regulation E, which requires financial institutions
+      to conduct a goodfaith investigation, document their findings, and share those findings with the consumer upon request.
+      I am requesting that the CFPB require my bank to reopen the dispute, conduct a full and compliant investigation, and
+      provide all documentation they relied on when denying my claim. I am also requesting reimbursement for the unauthorized
+      charges in accordance with the Electronic Fund Transfer Act and Regulation E. My banks handling of this matter has been
+      inadequate, dismissive, and noncompliant with federal law.
+  - source_sentence: "To Whom It May Concern, I am writing to formally dispute and demand the immediate removal of the following\
+      \ fraudulent accounts and inquiries from my credit report due to identity theft. These accounts were opened without\
+      \ my consent, and I am invoking my rights under the Fair Credit Reporting Act ( FCRA ) to have these items promptly\
+      \ removed. \nI am also writing to formally notify you that I am a victim of identity theft and request the immediate\
+      \ blocking and deletion of all fraudulent accounts or information related to the identity theft, as authorized by 15\
+      \ U.S.C. 1681c-2 ( a ). I became aware of the breach of my personal information through the XXXX data breach, which\
+      \ has exposed my sensitive data to unauthorized individuals. \nThe following fraudulent accounts and inquiries have\
+      \ been identified as a result of this breach : TRANSUNION Account Name : XXXX XXXX XXXX Account # : XXXX Balance : {$0.00}\
+      \ Date Opened : XX/XX/XXXX Account Status : closed Account Name : XXXX XXXX XXXX XXXX Account # : XXXX Balance : {$0.00}\
+      \ Date Opened : XX/XX/XXXX Account Status : closed UNAUTHORIZED INQUIRE ( XXXX ) XXXX XXXX XX/XX/XXXXXXXX XXXX XXXX\
+      \ XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX\
+      \ XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX\
+      \ XXXX XXXX XXXX XXXX XXXXXX/XX/XXXX"
+    sentences:
+    - I am writing to formally dispute several inaccurate and fraudulent items on my credit report, which I have identified
+      as the result of identity theft. As a victim of identity theft, I assert that these charges were not authorized by me
+      and are being reported in clear violation of the Fair Credit Reporting Act ( FCRA ). these following accounts XXXX XXXX
+      XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX
+      XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX
+      XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX and these inquiries XXXX XXXX XXXX XXXX XXXX XXXX
+      XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX
+      XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX
+    - VyStar Credit Union app has been down since this weekend. I have been given a verbal that no one is experiencing this
+      issue, another rep advised yes this is an issue. Advised by one person too many people trying to log in! Various statements.
+      This reminds me of the XXXX massive issue! Asked was a recent upgrade or maintenance administered over this past weekend-
+      VyStar denied.
+    - "I received a text alert about a suspected fraud charge from Citi about my Best Buy Visa card, showing a purchase from\
+      \ XXXX XXXX XXXX XXXX in XXXXXXXX XXXX  on XX/XX/XXXX in the amount of {$230.00}. I immediately called Citi to report\
+      \ that as a fraud charge as I do not shop at XXXX 's, nor do I live in XXXX. I live in XXXXXXXX XXXX. There were also\
+      \ other Fraud charges I received email alerts about, though these were blocked and never posted thankfully. Screenshots\
+      \ attached. \n\nI was told that the charge would be credited, and received a letter in my documents on the online account\
+      \ confirming this. A week or so later, around XX/XX/XXXX, I check my account and see a Sales Adjustment crediting me\
+      \ the total amount charged, {$230.00}. I assumed the matter was resolved. \n\nOn XX/XX/XXXX, I saw the charge was reinstated,\
+      \ dated for XX/XX/XXXX for XXXX XXXX XXXX XXXX in PA, for the same amount, {$230.00}. I called Citi the following Monday\
+      \ and asked why the charge was reinstated, to which they said they sided with the merchant. They said the merchant had\
+      \ provided evidence that I had purchased a \" XXXX XXXX XXXX '' for the amount charged. I said that's literally impossible\
+      \ because I do not live in PA, I do not own any XXXX XXXX items, and I live in XXXX and thus do not have any use for\
+      \ a jacket. \n\nThe Citi rep and I went back and forth, I asked for the evidence they provided, he would not provide\
+      \ it. He said that I need to provide proof that I did not purchase the jacket. I am not sure how you prove that I did\
+      \ not purchase something, but I pointed to the fact that my card was used in the days before and after that single XXXX\
+      \ 's purchase at merchants local to my home address. He said I would need to fax a copy of my ID to the fraud department,\
+      \ which I did on XX/XX/XXXX. I have not heard back from them since and all attempts to get through their phone system\
+      \ are fruitless. \n\nI tried calling the merchant myself, but when I called the XXXX XXXX XXXX XXXX, I was told that\
+      \ the XXXX XXXX XXXX XXXX XXXXXXXX XXXX is the name that would appear if it were an online purchase. This is the first\
+      \ I am learning that the purchase was online, and not in person like I had originally thought. \n\nI am not sure where\
+      \ to go from here. Citi is unwilling to return my money or work with me on this, and I am met with dead-ends or impossible\
+      \ hoops to jump through. I have no earthly way to prove I did not purchase something. I would think the burden of proof\
+      \ would be on XXXXXXXX XXXX I do not shop there, I have no XXXX XXXX jackets. If they could maybe get the shipping address\
+      \ for the order, they would see it wasn't me who placed the order, as no such item was ever delivered to my house in\
+      \ XXXX. Wherever it was delivered, is likely the individual responsible."
+  - source_sentence: On XX/XX/year>. My wallet was stolen from XXXX XXXX on XXXX XXXX, CA. They spent XXXX on my my debit
+      card somehow without my pin. Now I filed a dispute 3 times and the bank ( chime ) and they are claiming there was no
+      error with the transactions. I clearly got scammed and they are basically saying there is nothing they can do and kick
+      rocks. Their specialist claimed they throughly investigated but clearly they didnt do anything because I sent my police
+      report just how they asked, and it didnt help. I needed that money and now Im left stuck
+    sentences:
+    - "On XX/XX/2026 @ XXXX & XXXX two fraudulent charges were made to my Chime bank account. \n\nThe amounts of {$270.00}\
+      \ and {$44.00} were made at a local XXXX store. \n\nMy debit card was stolen earlier that day from my driveway so I\
+      \ immediately called chime and they cancelled my card and assured me a new one. \n\nCreating a dispute to get my money\
+      \ back has been a hassle as I have been denied 3 times by Chime and keep saying no error has occurred. \n\nThey sent\
+      \ me their findings as to how they came to this conclusion. Which was essentially just transcripts of the previous phone\
+      \ calls I made to report it. No actual evidence was provided in the report. \n\nThere is also false information saying\
+      \ that I didnt make a police report when in fact I did, the same day of XX/XX/year>. \n\nToday I just got denied for\
+      \ the third time via email and am now seeking assistance from your organization. \nXX/XX/year> P.s I am willing to provide\
+      \ more evidence"
+    - Take time to review the materials ; the questions were submitted abruptly and might not be approved.
+    - "I am submitting this complaint regarding a medical collection account that is incorrectly appearing on my credit report,\
+      \ despite the CFPBs recent rule banning the inclusion of medical debt on credit reports used by lenders. \n\nOn XX/XX/year>\
+      \ I reviewed my credit reports and found that a medical collection account from XXXX XXXX XXXX is still being reported\
+      \ to EXPERIAN, EQUIFAX AND TRANSUNION. According to the CFPBs final rule effective in XXXX, medical debts should no\
+      \ longer appear on consumer credit reports. \n\nI've requested removal, but they have either refused or failed to take\
+      \ appropriate action. This incorrect reporting is negatively impacting my credit and financial opportunities."
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - cosine_accuracy
+  model-index:
+  - name: nomic
+    results:
+    - task:
+        type: triplet
+        name: Triplet
+      dataset:
+        name: triplet eval
+        type: triplet-eval
+      metrics:
+      - type: cosine_accuracy
+        value: 1
+        name: Cosine Accuracy
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-21T14:01:10.000Z'
+safetensors:
+  parameters:
+    BF16: 136731648
+  total: 136731648
+usedStorage: 273474944
+downloadsAllTime: 21
+inferenceProviderMapping: {}
+configJson:
+  activation_function: swiglu
+  architectures:
+  - NomicBertModel
+  attention_probs_dropout_prob: 0.0
+  attn_pdrop: 0.0
+  auto_map:
+    AutoConfig: nomic-ai/nomic-bert-2048--configuration_hf_nomic_bert.NomicBertConfig
+    AutoModel: nomic-ai/nomic-bert-2048--modeling_hf_nomic_bert.NomicBertModel
+    AutoModelForMaskedLM: nomic-ai/nomic-bert-2048--modeling_hf_nomic_bert.NomicBertForPreTraining
+    AutoModelForMultipleChoice: nomic-ai/nomic-bert-2048--modeling_hf_nomic_bert.NomicBertForMultipleChoice
+    AutoModelForQuestionAnswering: nomic-ai/nomic-bert-2048--modeling_hf_nomic_bert.NomicBertForQuestionAnswering
+    AutoModelForSequenceClassification: nomic-ai/nomic-bert-2048--modeling_hf_nomic_bert.NomicBertForSequenceClassification
+    AutoModelForTokenClassification: nomic-ai/nomic-bert-2048--modeling_hf_nomic_bert.NomicBertForTokenClassification
+  bos_token_id: null
+  causal: false
+  classifier_dropout: null
+  dense_seq_output: true
+  dtype: bfloat16
+  embd_pdrop: 0.0
+  eos_token_id: null
+  fused_bias_fc: true
+  fused_dropout_add_ln: true
+  head_dim: 64
+  hidden_act: silu
+  hidden_dropout_prob: 0.0
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  layer_norm_eps: 1.0e-12
+  layer_norm_epsilon: 1.0e-12
+  max_position_embeddings: 2048
+  max_trained_positions: 2048
+  mlp_fc1_bias: false
+  mlp_fc2_bias: false
+  model_type: nomic_bert
+  n_embd: 768
+  n_head: 12
+  n_inner: 3072
+  n_layer: 12
+  n_positions: 8192
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  pad_vocab_size_multiple: 64
+  parallel_block: false
+  parallel_block_tied_norm: false
+  prenorm: false
+  qkv_proj_bias: false
+  reorder_and_upcast_attn: false
+  resid_pdrop: 0.0
+  rope_parameters:
+    rope_theta: 1000.0
+    rope_type: default
+  rotary_emb_base: 1000
+  rotary_emb_fraction: 1.0
+  rotary_emb_interleaved: false
+  rotary_emb_scale_base: null
+  rotary_scaling_factor: null
+  scale_attn_by_inverse_layer_idx: false
+  scale_attn_weights: true
+  summary_activation: null
+  summary_first_dropout: 0.0
+  summary_proj_to_labels: true
+  summary_type: cls_index
+  summary_use_proj: true
+  transformers_version: 5.22.1
+  type_vocab_size: 2
+  use_cache: false
+  use_flash_attn: true
+  use_rms_norm: false
+  use_xentropy: true
+  vocab_size: 30528
+onnxFiles: {}
+safetensorsSizeMb: 273.5
+approxSizeMb: 273.5
+fetchedAt: '2026-11-22T11:00:18.000Z'

@@ -1,0 +1,597 @@
+_id: 6b019272a5e8656a100d3317
+id: chrystian-yunus/multilingual-e5-small-jkn-id
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:2397
+- loss:MultipleNegativesRankingLoss
+- arxiv:1908.10084
+- arxiv:1807.03748
+- base_model:intfloat/multilingual-e5-small
+- base_model:finetune:intfloat/multilingual-e5-small
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 31
+likes: 0
+modelId: chrystian-yunus/multilingual-e5-small-jkn-id
+author: chrystian-yunus
+sha: efcd74c20537d1136fff96300d2cb83e91f71692
+lastModified: '2026-11-21T14:16:04.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: 'query: BPJS Kesehatan sudah menaruh 50% investasi di saham dan ingin menambah, apakah melampaui batas'
+  sentences:
+  - 'passage: Peraturan Pemerintah No. 87 Tahun 2013 tentang Pengelolaan Aset Jaminan Sosial Kesehatan > BAB III PELAKSANAAN
+    PENGELOLAAN ASET JAMINAN SOSIAL KESEHATAN > Bagian Keenam Kesehatan Keuangan > Paragraf 2 Kesehatan Keuangan BPJS Kesehatan
+
+    PP No. 87 Tahun 2013, Pasal 34 ayat (1)
+
+
+    1 Kesehatan keuangan aset BPJS Kesehatan sebagaimana dimaksud dalam Pasal 33 huruf a yang mengalami Surplus pada suatu
+    tahun sebagaimana dimaksud dalam Pasal 33 huruf a digunakan untuk:
+
+    a. menambah aset bersih BPJS Kesehatan; dan/atau
+
+    b. memperkuat aset Dana Jaminan Sosial Kesehatan.'
+  - 'passage: Peraturan Presiden No. 82 Tahun 2018 tentang Jaminan Kesehatan > BAB I KETENTUAN UMUM
+
+    Perpres No. 82 Tahun 2018, Pasal 1 angka 14
+
+
+    14. Veteran adalah Veteran Republik Indonesia sebagaimana dimaksud dalam Undang-Undang yang mengatur mengenai Veteran
+    Republik Indonesia.'
+  - 'passage: Peraturan Pemerintah No. 87 Tahun 2013 tentang Pengelolaan Aset Jaminan Sosial Kesehatan > BAB III PELAKSANAAN
+    PENGELOLAAN ASET JAMINAN SOSIAL KESEHATAN > Bagian Kelima Pengembangan > Paragraf 2 Pengembangan Aset BPJS Kesehatan
+
+    PP No. 87 Tahun 2013, Pasal 25 ayat (1) huruf b
+
+
+    (1) Instrumen investasi sebagaimana dimaksud pada Pasal 23 ayat (2) dibatasi dengan ketentuan:
+
+    b. investasi berupa surat utang korporasi yang tercatat dan diperjualbelikan secara luas dalam Bursa Efek Indonesia untuk
+    setiap emiten paling tinggi 5% (lima persen) dari jumlah investasi dan seluruhnya paling tinggi 50% (lima puluh persen)
+    dari jumlah investasi;'
+- source_sentence: 'query: jaminan kesehatan itu buat siapa aja, harus bayar iuran dulu?'
+  sentences:
+  - 'passage: Peraturan Presiden No. 82 Tahun 2018 tentang Jaminan Kesehatan > BAB III I URAN > Bagian Ketiga Kelebihan dan
+    Kekurangan Iuran
+
+    Perpres No. 82 Tahun 2018, Pasal 45 ayat (4)
+
+
+    4 Kelebihan atau kekurangan pembayaran Iuran sebagaimana dimaksud pada ayat (1) diperhitungkan dengan pembayaran Iuran
+    bulan berikutnya.'
+  - 'passage: Peraturan Menteri Keuangan No. 78/PMK.02 Tahun 2020 tentang Pelaksanaan Pembayaran Kontribusi Iuran Peserta
+    Penerima Bantuan Iuran Jaminan Kesehatan, Iuran Peserta Pekerja Bukan Penerima Upah dan Peserta Bukan Pekerja dengan Manfaat
+    Pelayanan di Ruang Perawatan Kelas III dan Bantuan Iuran bagi Peserta Pekerja Bukan Penerima Upah dan Peserta Bukan Pekerja
+    dengan Manfaat Pelayanan di Ruang Perawatan Kelas III oleh Pemerintah Pusat dan/atau Pemerintah Daerah > BAB III PELAKSANAAN
+    PEMBAYARAN KONTRIBUSI IURAN PESERTA PBI, IURAN PESERTA PBPU DAN PESERTA BP DENGAN MANFAAT PELAYANAN DI RUANG PERAWATAN
+    KELAS III, DAN BANTUAN IURAN OLEH PEMERINTAH DAERAH > Bagian Keempat Tata Cara Pembayaran > Paragraf 2 Tunggakan Pembayaran
+
+    PMK No. 78/PMK.02 Tahun 2020, Pasal 29 ayat (2)
+
+
+    2 Dalam hal BPJS Kesehatan telah melakukan upaya penagihan sebagaimana dimaksud pada ayat (1) namun masih terdapat Tunggakan,
+    BPJS Kesehatan dapat menyampaikan permohonan penyelesaian Tunggakan pembayaran kepada Menteri Keuangan c.q. Direktur Jenderal
+    Perimbangan Keuangan dengan tembusan kepada Menteri Dalam Negeri c.q. Direktur Jenderal Bina Keuangan Daerah melalui pemotongan
+    DAU dan/ atau DBH.'
+  - 'passage: Peraturan Menteri Keuangan No. 78/PMK.02 Tahun 2020 tentang Pelaksanaan Pembayaran Kontribusi Iuran Peserta
+    Penerima Bantuan Iuran Jaminan Kesehatan, Iuran Peserta Pekerja Bukan Penerima Upah dan Peserta Bukan Pekerja dengan Manfaat
+    Pelayanan di Ruang Perawatan Kelas III dan Bantuan Iuran bagi Peserta Pekerja Bukan Penerima Upah dan Peserta Bukan Pekerja
+    dengan Manfaat Pelayanan di Ruang Perawatan Kelas III oleh Pemerintah Pusat dan/atau Pemerintah Daerah > BAB I KETENTUAN
+    UMUM
+
+    PMK No. 78/PMK.02 Tahun 2020, Pasal 1 angka 1
+
+
+    1. Jaminan Kesehatan adalah jaminan kesehatan berupa perlindungan kesehatan agar peserta memperoleh manfaat pemeliharaan
+    kesehatan dan perlindungan dalam memenuhi kebutuhan dasar kesehatan yang diberikan kepada setiap orang yang telah membayar
+    mran Jamman kesehatan a tau 1uran Jam1nan kesehatannya dibayar oleh pemerintah pusat atau pemerintah daerah.'
+- source_sentence: 'query: batas upah iuran BPJS'
+  sentences:
+  - 'passage: Peraturan Presiden No. 82 Tahun 2018 tentang Jaminan Kesehatan > BAB III I URAN > Bagian Kesatu Besaran Juran
+
+    Perpres No. 82 Tahun 2018, Pasal 32 ayat (1)
+
+
+    1 Batas paling tinggi Gaji atau Upah per bulan yang digunakan sebagai dasar perhitungan besaran Juran bagi Peserta PPU
+    sebagaimana dimaksud dalam Pasal 31 ayat ( 1), kepala desa dan perangkat desa, dan Pekerja/ pegawai sebagaimana dimaksud
+    dalam Pasal 4 ayat (2) huruf h yaitu sebesar Rp8.000.000,00 (delapan juta rupiah).'
+  - 'passage: Peraturan Presiden No. 82 Tahun 2018 tentang Jaminan Kesehatan > BAB III I URAN > Bagian Kesatu Besaran Juran
+
+    Perpres No. 82 Tahun 2018, Pasal 37 ayat (2)
+
+
+    2 Dalam hal Peserta menghentikan kepesertaannya sementara sebagaimana dimaksud pada ayat (1), Peserta yang bersangkutan
+    tidak mendapatkan Manfaat.'
+  - 'passage: Peraturan Menteri Keuangan No. 78/PMK.02 Tahun 2020 tentang Pelaksanaan Pembayaran Kontribusi Iuran Peserta
+    Penerima Bantuan Iuran Jaminan Kesehatan, Iuran Peserta Pekerja Bukan Penerima Upah dan Peserta Bukan Pekerja dengan Manfaat
+    Pelayanan di Ruang Perawatan Kelas III dan Bantuan Iuran bagi Peserta Pekerja Bukan Penerima Upah dan Peserta Bukan Pekerja
+    dengan Manfaat Pelayanan di Ruang Perawatan Kelas III oleh Pemerintah Pusat dan/atau Pemerintah Daerah > BAB II PELAKSANMN
+    PEMBAYARAN BANTUAN IURAN OLEH PEMERINTAH PUSAT > Bagian Keempat Pertanggungjawaban Dana
+
+    PMK No. 78/PMK.02 Tahun 2020, Pasal 19 ayat (2)
+
+
+    2 Direksi BPJS Kesehatan bertanggung jawab atas penggunaan Bantuan Iuran yang diterimanya.'
+- source_sentence: 'query: potongan gaji PNS buat BPJS berapa persen'
+  sentences:
+  - 'passage: Peraturan Menteri Keuangan No. 78/PMK.02 Tahun 2020 tentang Pelaksanaan Pembayaran Kontribusi Iuran Peserta
+    Penerima Bantuan Iuran Jaminan Kesehatan, Iuran Peserta Pekerja Bukan Penerima Upah dan Peserta Bukan Pekerja dengan Manfaat
+    Pelayanan di Ruang Perawatan Kelas III dan Bantuan Iuran bagi Peserta Pekerja Bukan Penerima Upah dan Peserta Bukan Pekerja
+    dengan Manfaat Pelayanan di Ruang Perawatan Kelas III oleh Pemerintah Pusat dan/atau Pemerintah Daerah > BAB III PELAKSANAAN
+    PEMBAYARAN KONTRIBUSI IURAN PESERTA PBI, IURAN PESERTA PBPU DAN PESERTA BP DENGAN MANFAAT PELAYANAN DI RUANG PERAWATAN
+    KELAS III, DAN BANTUAN IURAN OLEH PEMERINTAH DAERAH > Bagian Keempat Tata Cara Pembayaran > Paragraf 5 Penyetoran Dana
+    Hasil Pemotongan DAU dan/ atau DBH
+
+    PMK No. 78/PMK.02 Tahun 2020, Pasal 35 ayat (2)
+
+
+    2 Surat pernyataan tanggung jawab mutlak dan kuitansi penerimaan penyetoran dana hasil pemotongan DAU dan/atau DBH sebagaimana
+    dimaksud pada ayat (1) disampaikan oleh BPJS Kesehatan kepada Direktur Jenderal Perimbangan Keuangan paling lama 2 (dua)
+    hari kerja sejak ditetapkannya Keputusan Menteri Keuangan sebagaimana dimaksud dalam Pasal 33 ayat (4).'
+  - 'passage: Peraturan Presiden No. 82 Tahun 2018 tentang Jaminan Kesehatan > BAB III I URAN > Bagian Kesatu Besaran Juran
+
+    Perpres No. 82 Tahun 2018, Pasal 36 ayat (2)
+
+
+    2 Besaran Iuran bagi anggota keluarga yang lain sebagaimana dimaksud pada ayat (1) yaitu sebesar 1 % (satu persen) dari
+    Gaji atau Upah Peserta PPU per orang per bulan.'
+  - 'passage: Peraturan Presiden No. 82 Tahun 2018 tentang Jaminan Kesehatan > BAB III I URAN > Bagian Kesatu Besaran Juran
+
+    Perpres No. 82 Tahun 2018, Pasal 30 ayat (2)
+
+
+    2 Iuran sebagaimana dimaksud pada ayat (1) dibayar dengan ketentuan sebagai berikut:
+
+    a. 3% (tiga persen) dibayar oleh Pemberi Kerja; dan
+
+    b. 2% (dua persen) dibayar oleh Peserta.'
+- source_sentence: 'query: pembagian penjaminan antara BPJS Kesehatan, BPJS Ketenagakerjaan, dan Jasa Raharja'
+  sentences:
+  - 'passage: Peraturan Presiden No. 82 Tahun 2018 tentang Jaminan Kesehatan > BAB IV MANFAAT JAMINAN KESEHATAN > Bagian Kedua
+    Manfaat yang Tidak Dijamin
+
+    Perpres No. 82 Tahun 2018, Pasal 52 ayat (1) huruf c
+
+
+    (1) Pelayanan kesehatan yang tidak dijamin meliputi:
+
+    c. pelayanan kesehatan terhadap penyakit atau cedera akibat Kecelakaan Kerja atau hubungan kerja yang telah dijamin oleh
+    program jaminan Kecelakaan Kerja atau menjadi tanggungan Pemberi Kerja;'
+  - 'passage: Peraturan Presiden No. 82 Tahun 2018 tentang Jaminan Kesehatan > BAB IV MANFAAT JAMINAN KESEHATAN > Bagian Ketiga
+    Pelayanan dalam Keadaan
+
+    Perpres No. 82 Tahun 2018, Pasal 63 ayat (1)
+
+
+    1 Peserta yang memerlukan pelayanan gawat darurat dapat langsung memperoleh pelayanan di setiap Fasilitas Kesehatan baik
+    yang bekerja sama maupun yang tidak bekerja sama dengan BPJS Kesehatan.'
+  - 'passage: Undang-Undang No. 24 Tahun 2011 tentang Badan Penyelenggara Jaminan Sosial > BAB XVIII KETENTUAN PENUTUP
+
+    UU No. 24 Tahun 2011, Pasal 61
+
+
+    Pada saat berlakunya Undang-Undang ini, Dewan Komisaris dan Direksi PT Jamsostek (Persero) sampai dengan berubahnya PT
+    Jamsostek (Persero) menjadi BPJS Ketenagakerjaan ditugasi untuk:
+
+    a. menyiapkan pengalihan program jaminan pemeliharaan kesehatan kepada BPJS Kesehatan;
+
+    b. menyiapkan operasional BPJS Ketenagakerjaan untuk program jaminan kecelakaan kerja, jaminan hari tua, jaminan pensiun,
+    dan jaminan kematian;
+
+    c. menyiapkan pengalihan aset dan liabilitas serta hak dan kewajiban program jaminan pemeliharaan kesehatan PT Jamsostek
+    (Persero) terkait penyelenggaraan program jaminan pemeliharaan kesehatan ke BPJS Kesehatan; dan
+
+    d. menyiapkan pengalihan aset dan liabilitas, pegawai, serta hak dan kewajiban PT Jamsostek (Persero) ke BPJS Ketenagakerjaan.'
+model-index:
+- name: SentenceTransformer based on intfloat/multilingual-e5-small
+  results:
+  - task:
+      type: information-retrieval
+      name: Information Retrieval
+    dataset:
+      name: Unknown
+      type: unknown
+    metrics:
+    - type: cosine_accuracy@1
+      value: 0.7488151658767772
+      name: Cosine Accuracy@1
+      verified: false
+    - type: cosine_accuracy@3
+      value: 0.9052132701421801
+      name: Cosine Accuracy@3
+      verified: false
+    - type: cosine_accuracy@5
+      value: 0.9289099526066351
+      name: Cosine Accuracy@5
+      verified: false
+    - type: cosine_accuracy@10
+      value: 0.9478672985781991
+      name: Cosine Accuracy@10
+      verified: false
+    - type: cosine_precision@1
+      value: 0.7488151658767772
+      name: Cosine Precision@1
+      verified: false
+    - type: cosine_precision@3
+      value: 0.3759873617693523
+      name: Cosine Precision@3
+      verified: false
+    - type: cosine_precision@5
+      value: 0.24075829383886255
+      name: Cosine Precision@5
+      verified: false
+    - type: cosine_precision@10
+      value: 0.12985781990521328
+      name: Cosine Precision@10
+      verified: false
+    - type: cosine_recall@1
+      value: 0.594391785150079
+      name: Cosine Recall@1
+      verified: false
+    - type: cosine_recall@3
+      value: 0.827567140600316
+      name: Cosine Recall@3
+      verified: false
+    - type: cosine_recall@5
+      value: 0.8737756714060032
+      name: Cosine Recall@5
+      verified: false
+    - type: cosine_recall@10
+      value: 0.9233017377567141
+      name: Cosine Recall@10
+      verified: false
+    - type: cosine_ndcg@10
+      value: 0.8268544645295582
+      name: Cosine Ndcg@10
+      verified: false
+    - type: cosine_mrr@10
+      value: 0.8270988490182802
+      name: Cosine Mrr@10
+      verified: false
+    - type: cosine_map@100
+      value: 0.7818759105189259
+      name: Cosine Map@100
+      verified: false
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:2397
+  - loss:MultipleNegativesRankingLoss
+  base_model: intfloat/multilingual-e5-small
+  widget:
+  - source_sentence: 'query: BPJS Kesehatan sudah menaruh 50% investasi di saham dan ingin menambah, apakah melampaui batas'
+    sentences:
+    - 'passage: Peraturan Pemerintah No. 87 Tahun 2013 tentang Pengelolaan Aset Jaminan Sosial Kesehatan > BAB III PELAKSANAAN
+      PENGELOLAAN ASET JAMINAN SOSIAL KESEHATAN > Bagian Keenam Kesehatan Keuangan > Paragraf 2 Kesehatan Keuangan BPJS Kesehatan
+
+      PP No. 87 Tahun 2013, Pasal 34 ayat (1)
+
+
+      1 Kesehatan keuangan aset BPJS Kesehatan sebagaimana dimaksud dalam Pasal 33 huruf a yang mengalami Surplus pada suatu
+      tahun sebagaimana dimaksud dalam Pasal 33 huruf a digunakan untuk:
+
+      a. menambah aset bersih BPJS Kesehatan; dan/atau
+
+      b. memperkuat aset Dana Jaminan Sosial Kesehatan.'
+    - 'passage: Peraturan Presiden No. 82 Tahun 2018 tentang Jaminan Kesehatan > BAB I KETENTUAN UMUM
+
+      Perpres No. 82 Tahun 2018, Pasal 1 angka 14
+
+
+      14. Veteran adalah Veteran Republik Indonesia sebagaimana dimaksud dalam Undang-Undang yang mengatur mengenai Veteran
+      Republik Indonesia.'
+    - 'passage: Peraturan Pemerintah No. 87 Tahun 2013 tentang Pengelolaan Aset Jaminan Sosial Kesehatan > BAB III PELAKSANAAN
+      PENGELOLAAN ASET JAMINAN SOSIAL KESEHATAN > Bagian Kelima Pengembangan > Paragraf 2 Pengembangan Aset BPJS Kesehatan
+
+      PP No. 87 Tahun 2013, Pasal 25 ayat (1) huruf b
+
+
+      (1) Instrumen investasi sebagaimana dimaksud pada Pasal 23 ayat (2) dibatasi dengan ketentuan:
+
+      b. investasi berupa surat utang korporasi yang tercatat dan diperjualbelikan secara luas dalam Bursa Efek Indonesia
+      untuk setiap emiten paling tinggi 5% (lima persen) dari jumlah investasi dan seluruhnya paling tinggi 50% (lima puluh
+      persen) dari jumlah investasi;'
+  - source_sentence: 'query: jaminan kesehatan itu buat siapa aja, harus bayar iuran dulu?'
+    sentences:
+    - 'passage: Peraturan Presiden No. 82 Tahun 2018 tentang Jaminan Kesehatan > BAB III I URAN > Bagian Ketiga Kelebihan
+      dan Kekurangan Iuran
+
+      Perpres No. 82 Tahun 2018, Pasal 45 ayat (4)
+
+
+      4 Kelebihan atau kekurangan pembayaran Iuran sebagaimana dimaksud pada ayat (1) diperhitungkan dengan pembayaran Iuran
+      bulan berikutnya.'
+    - 'passage: Peraturan Menteri Keuangan No. 78/PMK.02 Tahun 2020 tentang Pelaksanaan Pembayaran Kontribusi Iuran Peserta
+      Penerima Bantuan Iuran Jaminan Kesehatan, Iuran Peserta Pekerja Bukan Penerima Upah dan Peserta Bukan Pekerja dengan
+      Manfaat Pelayanan di Ruang Perawatan Kelas III dan Bantuan Iuran bagi Peserta Pekerja Bukan Penerima Upah dan Peserta
+      Bukan Pekerja dengan Manfaat Pelayanan di Ruang Perawatan Kelas III oleh Pemerintah Pusat dan/atau Pemerintah Daerah
+      > BAB III PELAKSANAAN PEMBAYARAN KONTRIBUSI IURAN PESERTA PBI, IURAN PESERTA PBPU DAN PESERTA BP DENGAN MANFAAT PELAYANAN
+      DI RUANG PERAWATAN KELAS III, DAN BANTUAN IURAN OLEH PEMERINTAH DAERAH > Bagian Keempat Tata Cara Pembayaran > Paragraf
+      2 Tunggakan Pembayaran
+
+      PMK No. 78/PMK.02 Tahun 2020, Pasal 29 ayat (2)
+
+
+      2 Dalam hal BPJS Kesehatan telah melakukan upaya penagihan sebagaimana dimaksud pada ayat (1) namun masih terdapat Tunggakan,
+      BPJS Kesehatan dapat menyampaikan permohonan penyelesaian Tunggakan pembayaran kepada Menteri Keuangan c.q. Direktur
+      Jenderal Perimbangan Keuangan dengan tembusan kepada Menteri Dalam Negeri c.q. Direktur Jenderal Bina Keuangan Daerah
+      melalui pemotongan DAU dan/ atau DBH.'
+    - 'passage: Peraturan Menteri Keuangan No. 78/PMK.02 Tahun 2020 tentang Pelaksanaan Pembayaran Kontribusi Iuran Peserta
+      Penerima Bantuan Iuran Jaminan Kesehatan, Iuran Peserta Pekerja Bukan Penerima Upah dan Peserta Bukan Pekerja dengan
+      Manfaat Pelayanan di Ruang Perawatan Kelas III dan Bantuan Iuran bagi Peserta Pekerja Bukan Penerima Upah dan Peserta
+      Bukan Pekerja dengan Manfaat Pelayanan di Ruang Perawatan Kelas III oleh Pemerintah Pusat dan/atau Pemerintah Daerah
+      > BAB I KETENTUAN UMUM
+
+      PMK No. 78/PMK.02 Tahun 2020, Pasal 1 angka 1
+
+
+      1. Jaminan Kesehatan adalah jaminan kesehatan berupa perlindungan kesehatan agar peserta memperoleh manfaat pemeliharaan
+      kesehatan dan perlindungan dalam memenuhi kebutuhan dasar kesehatan yang diberikan kepada setiap orang yang telah membayar
+      mran Jamman kesehatan a tau 1uran Jam1nan kesehatannya dibayar oleh pemerintah pusat atau pemerintah daerah.'
+  - source_sentence: 'query: batas upah iuran BPJS'
+    sentences:
+    - 'passage: Peraturan Presiden No. 82 Tahun 2018 tentang Jaminan Kesehatan > BAB III I URAN > Bagian Kesatu Besaran Juran
+
+      Perpres No. 82 Tahun 2018, Pasal 32 ayat (1)
+
+
+      1 Batas paling tinggi Gaji atau Upah per bulan yang digunakan sebagai dasar perhitungan besaran Juran bagi Peserta PPU
+      sebagaimana dimaksud dalam Pasal 31 ayat ( 1), kepala desa dan perangkat desa, dan Pekerja/ pegawai sebagaimana dimaksud
+      dalam Pasal 4 ayat (2) huruf h yaitu sebesar Rp8.000.000,00 (delapan juta rupiah).'
+    - 'passage: Peraturan Presiden No. 82 Tahun 2018 tentang Jaminan Kesehatan > BAB III I URAN > Bagian Kesatu Besaran Juran
+
+      Perpres No. 82 Tahun 2018, Pasal 37 ayat (2)
+
+
+      2 Dalam hal Peserta menghentikan kepesertaannya sementara sebagaimana dimaksud pada ayat (1), Peserta yang bersangkutan
+      tidak mendapatkan Manfaat.'
+    - 'passage: Peraturan Menteri Keuangan No. 78/PMK.02 Tahun 2020 tentang Pelaksanaan Pembayaran Kontribusi Iuran Peserta
+      Penerima Bantuan Iuran Jaminan Kesehatan, Iuran Peserta Pekerja Bukan Penerima Upah dan Peserta Bukan Pekerja dengan
+      Manfaat Pelayanan di Ruang Perawatan Kelas III dan Bantuan Iuran bagi Peserta Pekerja Bukan Penerima Upah dan Peserta
+      Bukan Pekerja dengan Manfaat Pelayanan di Ruang Perawatan Kelas III oleh Pemerintah Pusat dan/atau Pemerintah Daerah
+      > BAB II PELAKSANMN PEMBAYARAN BANTUAN IURAN OLEH PEMERINTAH PUSAT > Bagian Keempat Pertanggungjawaban Dana
+
+      PMK No. 78/PMK.02 Tahun 2020, Pasal 19 ayat (2)
+
+
+      2 Direksi BPJS Kesehatan bertanggung jawab atas penggunaan Bantuan Iuran yang diterimanya.'
+  - source_sentence: 'query: potongan gaji PNS buat BPJS berapa persen'
+    sentences:
+    - 'passage: Peraturan Menteri Keuangan No. 78/PMK.02 Tahun 2020 tentang Pelaksanaan Pembayaran Kontribusi Iuran Peserta
+      Penerima Bantuan Iuran Jaminan Kesehatan, Iuran Peserta Pekerja Bukan Penerima Upah dan Peserta Bukan Pekerja dengan
+      Manfaat Pelayanan di Ruang Perawatan Kelas III dan Bantuan Iuran bagi Peserta Pekerja Bukan Penerima Upah dan Peserta
+      Bukan Pekerja dengan Manfaat Pelayanan di Ruang Perawatan Kelas III oleh Pemerintah Pusat dan/atau Pemerintah Daerah
+      > BAB III PELAKSANAAN PEMBAYARAN KONTRIBUSI IURAN PESERTA PBI, IURAN PESERTA PBPU DAN PESERTA BP DENGAN MANFAAT PELAYANAN
+      DI RUANG PERAWATAN KELAS III, DAN BANTUAN IURAN OLEH PEMERINTAH DAERAH > Bagian Keempat Tata Cara Pembayaran > Paragraf
+      5 Penyetoran Dana Hasil Pemotongan DAU dan/ atau DBH
+
+      PMK No. 78/PMK.02 Tahun 2020, Pasal 35 ayat (2)
+
+
+      2 Surat pernyataan tanggung jawab mutlak dan kuitansi penerimaan penyetoran dana hasil pemotongan DAU dan/atau DBH sebagaimana
+      dimaksud pada ayat (1) disampaikan oleh BPJS Kesehatan kepada Direktur Jenderal Perimbangan Keuangan paling lama 2 (dua)
+      hari kerja sejak ditetapkannya Keputusan Menteri Keuangan sebagaimana dimaksud dalam Pasal 33 ayat (4).'
+    - 'passage: Peraturan Presiden No. 82 Tahun 2018 tentang Jaminan Kesehatan > BAB III I URAN > Bagian Kesatu Besaran Juran
+
+      Perpres No. 82 Tahun 2018, Pasal 36 ayat (2)
+
+
+      2 Besaran Iuran bagi anggota keluarga yang lain sebagaimana dimaksud pada ayat (1) yaitu sebesar 1 % (satu persen) dari
+      Gaji atau Upah Peserta PPU per orang per bulan.'
+    - 'passage: Peraturan Presiden No. 82 Tahun 2018 tentang Jaminan Kesehatan > BAB III I URAN > Bagian Kesatu Besaran Juran
+
+      Perpres No. 82 Tahun 2018, Pasal 30 ayat (2)
+
+
+      2 Iuran sebagaimana dimaksud pada ayat (1) dibayar dengan ketentuan sebagai berikut:
+
+      a. 3% (tiga persen) dibayar oleh Pemberi Kerja; dan
+
+      b. 2% (dua persen) dibayar oleh Peserta.'
+  - source_sentence: 'query: pembagian penjaminan antara BPJS Kesehatan, BPJS Ketenagakerjaan, dan Jasa Raharja'
+    sentences:
+    - 'passage: Peraturan Presiden No. 82 Tahun 2018 tentang Jaminan Kesehatan > BAB IV MANFAAT JAMINAN KESEHATAN > Bagian
+      Kedua Manfaat yang Tidak Dijamin
+
+      Perpres No. 82 Tahun 2018, Pasal 52 ayat (1) huruf c
+
+
+      (1) Pelayanan kesehatan yang tidak dijamin meliputi:
+
+      c. pelayanan kesehatan terhadap penyakit atau cedera akibat Kecelakaan Kerja atau hubungan kerja yang telah dijamin
+      oleh program jaminan Kecelakaan Kerja atau menjadi tanggungan Pemberi Kerja;'
+    - 'passage: Peraturan Presiden No. 82 Tahun 2018 tentang Jaminan Kesehatan > BAB IV MANFAAT JAMINAN KESEHATAN > Bagian
+      Ketiga Pelayanan dalam Keadaan
+
+      Perpres No. 82 Tahun 2018, Pasal 63 ayat (1)
+
+
+      1 Peserta yang memerlukan pelayanan gawat darurat dapat langsung memperoleh pelayanan di setiap Fasilitas Kesehatan
+      baik yang bekerja sama maupun yang tidak bekerja sama dengan BPJS Kesehatan.'
+    - 'passage: Undang-Undang No. 24 Tahun 2011 tentang Badan Penyelenggara Jaminan Sosial > BAB XVIII KETENTUAN PENUTUP
+
+      UU No. 24 Tahun 2011, Pasal 61
+
+
+      Pada saat berlakunya Undang-Undang ini, Dewan Komisaris dan Direksi PT Jamsostek (Persero) sampai dengan berubahnya
+      PT Jamsostek (Persero) menjadi BPJS Ketenagakerjaan ditugasi untuk:
+
+      a. menyiapkan pengalihan program jaminan pemeliharaan kesehatan kepada BPJS Kesehatan;
+
+      b. menyiapkan operasional BPJS Ketenagakerjaan untuk program jaminan kecelakaan kerja, jaminan hari tua, jaminan pensiun,
+      dan jaminan kematian;
+
+      c. menyiapkan pengalihan aset dan liabilitas serta hak dan kewajiban program jaminan pemeliharaan kesehatan PT Jamsostek
+      (Persero) terkait penyelenggaraan program jaminan pemeliharaan kesehatan ke BPJS Kesehatan; dan
+
+      d. menyiapkan pengalihan aset dan liabilitas, pegawai, serta hak dan kewajiban PT Jamsostek (Persero) ke BPJS Ketenagakerjaan.'
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - cosine_accuracy@1
+  - cosine_accuracy@3
+  - cosine_accuracy@5
+  - cosine_accuracy@10
+  - cosine_precision@1
+  - cosine_precision@3
+  - cosine_precision@5
+  - cosine_precision@10
+  - cosine_recall@1
+  - cosine_recall@3
+  - cosine_recall@5
+  - cosine_recall@10
+  - cosine_ndcg@10
+  - cosine_mrr@10
+  - cosine_map@100
+  model-index:
+  - name: SentenceTransformer based on intfloat/multilingual-e5-small
+    results:
+    - task:
+        type: information-retrieval
+        name: Information Retrieval
+      dataset:
+        name: Unknown
+        type: unknown
+      metrics:
+      - type: cosine_accuracy@1
+        value: 0.7488151658767772
+        name: Cosine Accuracy@1
+        verified: false
+      - type: cosine_accuracy@3
+        value: 0.9052132701421801
+        name: Cosine Accuracy@3
+        verified: false
+      - type: cosine_accuracy@5
+        value: 0.9289099526066351
+        name: Cosine Accuracy@5
+        verified: false
+      - type: cosine_accuracy@10
+        value: 0.9478672985781991
+        name: Cosine Accuracy@10
+        verified: false
+      - type: cosine_precision@1
+        value: 0.7488151658767772
+        name: Cosine Precision@1
+        verified: false
+      - type: cosine_precision@3
+        value: 0.3759873617693523
+        name: Cosine Precision@3
+        verified: false
+      - type: cosine_precision@5
+        value: 0.24075829383886255
+        name: Cosine Precision@5
+        verified: false
+      - type: cosine_precision@10
+        value: 0.12985781990521328
+        name: Cosine Precision@10
+        verified: false
+      - type: cosine_recall@1
+        value: 0.594391785150079
+        name: Cosine Recall@1
+        verified: false
+      - type: cosine_recall@3
+        value: 0.827567140600316
+        name: Cosine Recall@3
+        verified: false
+      - type: cosine_recall@5
+        value: 0.8737756714060032
+        name: Cosine Recall@5
+        verified: false
+      - type: cosine_recall@10
+        value: 0.9233017377567141
+        name: Cosine Recall@10
+        verified: false
+      - type: cosine_ndcg@10
+        value: 0.8268544645295582
+        name: Cosine Ndcg@10
+        verified: false
+      - type: cosine_mrr@10
+        value: 0.8270988490182802
+        name: Cosine Mrr@10
+        verified: false
+      - type: cosine_map@100
+        value: 0.7818759105189259
+        name: Cosine Map@100
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-21T12:45:38.000Z'
+safetensors:
+  parameters:
+    F32: 117653760
+  total: 117653760
+usedStorage: 958357820
+downloadsAllTime: 31
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  initializer_range: 0.02
+  intermediate_size: 1536
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 1
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  tokenizer_class: XLMRobertaTokenizer
+  transformers_version: 5.22.1
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 250037
+onnxFiles: {}
+safetensorsSizeMb: 470.6
+approxSizeMb: 470.6
+fetchedAt: '2026-11-22T11:00:18.000Z'

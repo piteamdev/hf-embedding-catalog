@@ -1,0 +1,86 @@
+_id: 6b0346669355c8bcb0e6242b
+id: onocloud/onoai-quartz-1.0-pro-ONNX-WebGPU
+private: false
+pipeline_tag: feature-extraction
+tags:
+- onnx
+- xlm-roberta
+- onocloud
+- onoai
+- quartz
+- embeddings
+- vector-search
+- bge-m3
+- semantic-search
+- webgpu
+- transformers-js
+- in-browser
+- feature-extraction
+- en
+- ar
+- license:other
+- region:us
+downloads: 0
+likes: 0
+modelId: onocloud/onoai-quartz-1.0-pro-ONNX-WebGPU
+author: onocloud
+sha: 717319b01e77bd03bd464c8ae5ca2934bbacfd83
+lastModified: '2026-11-22T19:55:57.000Z'
+gated: manual
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - XLMRobertaModel
+  model_type: xlm-roberta
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  license: other
+  license_name: onocloud-sovereign-license
+  license_link: LICENSE
+  language:
+  - en
+  - ar
+  pipeline_tag: feature-extraction
+  tags:
+  - onocloud
+  - onoai
+  - quartz
+  - embeddings
+  - vector-search
+  - bge-m3
+  - semantic-search
+  - onnx
+  - webgpu
+  - transformers-js
+  - in-browser
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model_optimized.onnx
+- rfilename: model_optimized.onnx.data
+- rfilename: ort_config.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-22T19:45:42.000Z'
+usedStorage: 1150641384
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  model_optimized.onnx: 0.1
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-23T12:09:09.000Z'

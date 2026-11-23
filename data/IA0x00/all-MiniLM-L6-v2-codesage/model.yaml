@@ -1,0 +1,49 @@
+_id: 6b030be7b6859f3d85bd3632
+id: IA0x00/all-MiniLM-L6-v2-codesage
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- feature-extraction
+- sentence-similarity
+- base_model:sentence-transformers/all-MiniLM-L6-v2
+- base_model:quantized:sentence-transformers/all-MiniLM-L6-v2
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: IA0x00/all-MiniLM-L6-v2-codesage
+author: IA0x00
+sha: 292b973de823b96bb970cd40b233c8075427110d
+lastModified: '2026-11-22T15:36:10.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: sentence-transformers/all-MiniLM-L6-v2
+  library_name: onnx
+  tags:
+  - feature-extraction
+  - sentence-similarity
+  - onnx
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: onnx/model.onnx
+- rfilename: onnx/model_cuda_fp16.onnx
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-11-22T15:36:07.000Z'
+usedStorage: 135555316
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  onnx/model.onnx: 90.4
+  onnx/model_cuda_fp16.onnx: 45.1
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-23T12:09:09.000Z'

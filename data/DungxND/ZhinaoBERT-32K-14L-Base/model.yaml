@@ -1,0 +1,146 @@
+_id: 6b033d21a0f990ac3cf3e29e
+id: DungxND/ZhinaoBERT-32K-14L-Base
+private: false
+pipeline_tag: feature-extraction
+tags:
+- safetensors
+- modernbert
+- encoder
+- depth-pruning
+- replaceme
+- flatten-obs
+- feature-extraction
+- zh
+- base_model:qihoo360/Zhinao-ChineseModernBert
+- base_model:finetune:qihoo360/Zhinao-ChineseModernBert
+- license:cc-by-nc-4.0
+- region:us
+downloads: 30
+likes: 0
+modelId: DungxND/ZhinaoBERT-32K-14L-Base
+author: DungxND
+sha: 0867a3dd415b48ca03d8657dacf3fd0d3fbb9279
+lastModified: '2026-11-23T00:16:44.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  architectures:
+  - ModernBertForMaskedLM
+  model_type: modernbert
+  tokenizer_config:
+    bos_token: <|im_start|>
+    eos_token: <|im_end|>
+    unk_token: null
+    sep_token: '[SEP]'
+    pad_token: <|endoftext|>
+    mask_token: '[MASK]'
+cardData:
+  license: cc-by-nc-4.0
+  base_model: qihoo360/Zhinao-ChineseModernBert
+  language:
+  - zh
+  pipeline_tag: feature-extraction
+  tags:
+  - modernbert
+  - encoder
+  - depth-pruning
+  - replaceme
+  - flatten-obs
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: added_tokens.json
+- rfilename: compress_report.json
+- rfilename: config.json
+- rfilename: eval_report.json
+- rfilename: keep_old_ids.json
+- rfilename: model.safetensors
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-22T19:06:09.000Z'
+safetensors:
+  parameters:
+    F32: 95377152
+  total: 95377152
+usedStorage: 2670622296
+downloadsAllTime: 30
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - ModernBertForMaskedLM
+  attention_bias: false
+  attention_dropout: 0.1
+  bos_token_id: 2
+  classifier_activation: gelu
+  classifier_bias: false
+  classifier_dropout: 0.0
+  classifier_pooling: mean
+  cls_token_id: 2
+  decoder_bias: true
+  deterministic_flash_attn: false
+  dtype: float32
+  embedding_dropout: 0.1
+  eos_token_id: 3
+  global_attn_every_n_layers: 3
+  global_rope_theta: 160000.0
+  gradient_checkpointing: false
+  hidden_activation: gelu
+  hidden_size: 768
+  initializer_cutoff_factor: 2.0
+  initializer_range: 0.02
+  intermediate_size: 1152
+  layer_norm_eps: 1.0e-05
+  local_attention: 128
+  local_rope_theta: 10000.0
+  max_position_embeddings: 8192
+  mlp_bias: false
+  mlp_dropout: 0.1
+  model_type: modernbert
+  norm_bias: false
+  norm_eps: 1.0e-05
+  num_attention_heads: 12
+  num_hidden_layers: 22
+  pad_token_id: 0
+  position_embedding_type: absolute
+  repad_logits_with_grad: false
+  sep_token_id: 1
+  sparse_pred_ignore_index: -100
+  sparse_prediction: false
+  transformers_version: 4.56.2
+  vocab_size: 32768
+  enc_layer_indices:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 6
+  - 9
+  - 12
+  - 13
+  - 14
+  - 15
+  - 17
+  - 18
+  - 21
+  enc_only_lt_layers:
+  - 4
+  - 6
+  - 9
+  - 12
+  - 13
+  - 14
+  - 15
+  - 17
+  - 18
+  - 21
+  compressed_num_hidden_layers: 14
+onnxFiles: {}
+safetensorsSizeMb: 381.5
+approxSizeMb: 381.5
+fetchedAt: '2026-11-23T12:09:09.000Z'

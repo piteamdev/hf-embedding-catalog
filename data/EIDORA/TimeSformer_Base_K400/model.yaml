@@ -1,0 +1,62 @@
+_id: 6b0310bf97a75879f080ab5b
+id: EIDORA/TimeSformer_Base_K400
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- eidora
+- eidora-model-zoo
+- onnxruntime
+- embeddings
+- video
+- timesformer
+- kinetics-400
+- modality:video
+- feature-extraction
+- base_model:facebook/timesformer-base-finetuned-k400
+- base_model:quantized:facebook/timesformer-base-finetuned-k400
+- license:cc-by-nc-4.0
+- region:us
+downloads: 22
+likes: 0
+modelId: EIDORA/TimeSformer_Base_K400
+author: EIDORA
+sha: e30a5ffaa14f1a3dfd7f28cb61abfdf9b742251f
+lastModified: '2026-11-23T08:00:09.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  license: cc-by-nc-4.0
+  base_model: facebook/timesformer-base-finetuned-k400
+  tags:
+  - eidora
+  - eidora-model-zoo
+  - onnx
+  - onnxruntime
+  - embeddings
+  - video
+  - timesformer
+  - kinetics-400
+  - modality:video
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.yaml
+- rfilename: model.onnx
+spaces: []
+createdAt: '2026-11-22T15:56:47.000Z'
+usedStorage: 485647114
+downloadsAllTime: 22
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  model.onnx: 485.6
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-23T12:09:09.000Z'

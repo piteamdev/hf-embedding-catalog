@@ -1,0 +1,66 @@
+_id: 6b03237b71c703296d0c6e40
+id: EIDORA/Multilingual_E5_Base
+private: false
+pipeline_tag: feature-extraction
+library_name: onnx
+tags:
+- onnx
+- eidora
+- eidora-model-zoo
+- onnxruntime
+- text
+- multilingual
+- embeddings
+- e5
+- modality:text
+- feature-extraction
+- arxiv:2402.05672
+- base_model:intfloat/multilingual-e5-base
+- base_model:quantized:intfloat/multilingual-e5-base
+- license:mit
+- region:us
+downloads: 13
+likes: 0
+modelId: EIDORA/Multilingual_E5_Base
+author: EIDORA
+sha: 8220963f486003a2d512f35c53525c6f01285eb7
+lastModified: '2026-11-23T10:50:33.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: onnx
+  pipeline_tag: feature-extraction
+  license: mit
+  base_model: intfloat/multilingual-e5-base
+  tags:
+  - eidora
+  - eidora-model-zoo
+  - onnx
+  - onnxruntime
+  - text
+  - multilingual
+  - embeddings
+  - e5
+  - modality:text
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.yaml
+- rfilename: model.onnx
+- rfilename: tokenizer/special_tokens_map.json
+- rfilename: tokenizer/tokenizer.json
+- rfilename: tokenizer/tokenizer_config.json
+spaces: []
+createdAt: '2026-11-22T17:16:43.000Z'
+usedStorage: 1127156226
+downloadsAllTime: 13
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  model.onnx: 1110.1
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-23T12:09:09.000Z'

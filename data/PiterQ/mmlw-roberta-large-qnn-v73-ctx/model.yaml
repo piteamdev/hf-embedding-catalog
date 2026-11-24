@@ -55,4 +55,4 @@ onnxFiles:
   ctx512.onnx: 0.0
 safetensorsSizeMb: 0.0
 approxSizeMb: 0.0
-fetchedAt: '2026-11-23T12:09:09.000Z'
+fetchedAt: '2026-11-24T13:30:09.000Z'

@@ -1,0 +1,51 @@
+_id: 6b04cb9a8c5fae79d9ab9f02
+id: eniga/embeddinggemma-2-bf16
+private: false
+pipeline_tag: feature-extraction
+tags:
+- radiance
+- bf16
+- embeddings
+- amd
+- rocm
+- feature-extraction
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: eniga/embeddinggemma-2-bf16
+author: eniga
+sha: 94c2f5c3f4a6b97cb531da1db75bcd2d87c3d4fe
+lastModified: '2026-11-23T23:27:04.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model:
+  - google/embeddinggemma-2
+  base_model_relation: quantized
+  pipeline_tag: feature-extraction
+  tags:
+  - radiance
+  - bf16
+  - embeddings
+  - amd
+  - rocm
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: embeddinggemma2-bf16.rad
+spaces: []
+createdAt: '2026-11-23T23:26:18.000Z'
+usedStorage: 1502429184
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-24T13:30:09.000Z'

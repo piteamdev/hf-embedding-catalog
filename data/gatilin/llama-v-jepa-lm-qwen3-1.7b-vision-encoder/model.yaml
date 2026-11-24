@@ -1,0 +1,160 @@
+_id: 6b0442cfb085f398eefd6faf
+id: gatilin/llama-v-jepa-lm-qwen3-1.7b-vision-encoder
+private: false
+pipeline_tag: feature-extraction
+tags:
+- safetensors
+- jepa_llm
+- video
+- vision-encoder
+- v-jepa
+- feature-extraction
+- extracted-component
+- custom_code
+- base_model:kkt94/Llama-V-JEPA-LM-Qwen3-1.7B
+- base_model:finetune:kkt94/Llama-V-JEPA-LM-Qwen3-1.7B
+- license:other
+- region:us
+downloads: 19
+likes: 0
+modelId: gatilin/llama-v-jepa-lm-qwen3-1.7b-vision-encoder
+author: gatilin
+sha: 12757aa07677b2632cb5746f62981a5ef143dda6
+lastModified: '2026-11-23T13:48:13.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - JepaLlmModel
+  auto_map:
+    AutoConfig: configuration_jepa_llm.JepaLlmConfig
+    AutoModel: modeling_jepa_llm.JepaLlmModel
+  model_type: jepa_llm
+cardData:
+  license: other
+  license_name: mixed-vjepa-mit-bridge-apache-and-llama-notices
+  license_link: https://huggingface.co/kkt94/Llama-V-JEPA-LM-Qwen3-1.7B/blob/main/LICENSE_VJEPA2
+  base_model: kkt94/Llama-V-JEPA-LM-Qwen3-1.7B
+  tags:
+  - video
+  - vision-encoder
+  - v-jepa
+  - feature-extraction
+  - extracted-component
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE_LLAMA3_2
+- rfilename: LICENSE_QWEN3
+- rfilename: LICENSE_VJEPA2
+- rfilename: NOTICE_LLAMA3_2
+- rfilename: README.md
+- rfilename: USE_POLICY_LLAMA3_2.md
+- rfilename: component.py
+- rfilename: config.json
+- rfilename: extraction.json
+- rfilename: model.safetensors
+- rfilename: native_source/__init__.py
+- rfilename: native_source/configuration_jepa_llm.py
+- rfilename: native_source/modeling_jepa_llm.py
+- rfilename: native_source/processing_jepa_llm.py
+- rfilename: native_source/vjepa2_1_encoder.py
+- rfilename: requirements.txt
+- rfilename: tensor_mapping.json
+- rfilename: validate_driving.py
+- rfilename: validate_local_reference.py
+- rfilename: validation.json
+- rfilename: validation_driving.json
+spaces: []
+createdAt: '2026-11-23T13:42:39.000Z'
+safetensors:
+  parameters:
+    F32: 1050624
+    BF16: 311289856
+  total: 312340480
+usedStorage: 626817328
+downloadsAllTime: 19
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - JepaLlmModel
+  auto_map:
+    AutoConfig: configuration_jepa_llm.JepaLlmConfig
+    AutoModel: modeling_jepa_llm.JepaLlmModel
+  bridge_hidden: 2048
+  chat_template_name: qwen3_nothink
+  dtype: bfloat16
+  evidence_cells: 8
+  image_size: 384
+  max_tubelets: 64
+  model_type: jepa_llm
+  num_frames: 32
+  rope_inv_freq_bf16: true
+  spectral_k: 1024
+  text_config:
+    attention_bias: false
+    attention_dropout: 0.0
+    bos_token_id: 151643
+    dtype: bfloat16
+    eos_token_id: 151645
+    head_dim: 128
+    hidden_act: silu
+    hidden_size: 2048
+    initializer_range: 0.02
+    intermediate_size: 6144
+    layer_types:
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    - full_attention
+    max_position_embeddings: 40960
+    max_window_layers: 28
+    model_type: qwen3
+    num_attention_heads: 16
+    num_hidden_layers: 28
+    num_key_value_heads: 8
+    pad_token_id: null
+    rms_norm_eps: 1.0e-06
+    rope_parameters:
+      rope_theta: 1000000
+      rope_type: default
+    sliding_window: null
+    tie_word_embeddings: true
+    use_cache: true
+    use_sliding_window: false
+    vocab_size: 151936
+  tie_word_embeddings: true
+  time_dim: 64
+  transformers_version: 5.10.4
+  vision_config: {}
+  vision_level_dim: 1024
+  vision_levels: 1
+  vision_variant: vit_large_384
+onnxFiles: {}
+safetensorsSizeMb: 626.8
+approxSizeMb: 626.8
+fetchedAt: '2026-11-24T13:30:09.000Z'

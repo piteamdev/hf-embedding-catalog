@@ -1,0 +1,65 @@
+_id: 6b00cd22a0f990ac3c9ef86f
+id: egolearn/babycl-resnext50-saycam
+private: false
+pipeline_tag: feature-extraction
+library_name: egolearn
+tags:
+- egolearn
+- safetensors
+- babycl
+- supcon
+- self-supervised-learning
+- saycam
+- streaming
+- feature-extraction
+- region:us
+downloads: 0
+likes: 0
+modelId: egolearn/babycl-resnext50-saycam
+author: egolearn
+sha: b6772974ad6830b7c5183bb5135afdcd11db29dc
+lastModified: '2026-11-23T22:53:46.000Z'
+gated: manual
+disabled: false
+model-index: null
+config: {}
+cardData:
+  library_name: egolearn
+  pipeline_tag: feature-extraction
+  tags:
+  - egolearn
+  - babycl
+  - supcon
+  - self-supervised-learning
+  - saycam
+  - streaming
+  - safetensors
+  extra_gated_heading: Request access to child-video model weights
+  extra_gated_description: You must already have access to SAYCam on Databrary. In the form below, provide your intended use
+    and a link to proof of your dataset access. A screenshot of your Databrary permissions should identify you and SAYCam.
+    Make sure EgoLearn reviewers can open the link. Redact unrelated personal information and exclude dataset images or videos.
+    The EgoLearn team reviews the proof before granting access manually. No separate email is needed.
+  extra_gated_button_content: Request access
+  extra_gated_fields:
+    Link to Databrary access proof: text
+    Intended use: text
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: checksums.sha256
+- rfilename: model.json
+- rfilename: model.safetensors
+spaces: []
+createdAt: '2026-11-20T22:43:46.000Z'
+safetensors:
+  parameters:
+    F32: 34217664
+  total: 34217664
+usedStorage: 136907160
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 136.9
+approxSizeMb: 136.9
+fetchedAt: '2026-11-24T13:30:09.000Z'

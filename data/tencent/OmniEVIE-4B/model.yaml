@@ -1,0 +1,219 @@
+_id: 6b0501a9fde2dec4b660128f
+id: tencent/OmniEVIE-4B
+private: false
+pipeline_tag: feature-extraction
+tags:
+- safetensors
+- qwen3_5
+- omnievie
+- evie
+- multimodal
+- retrieval
+- late-interaction
+- multi-vector
+- colbert
+- matryoshka
+- video-retrieval
+- visual-document-retrieval
+- image-retrieval
+- text-retrieval
+- token-compression
+- feature-extraction
+- dataset:TIGER-Lab/MMEB-V2
+- dataset:vidore/vidore_benchmark_v3
+- base_model:Qwen/Qwen3.5-4B
+- base_model:finetune:Qwen/Qwen3.5-4B
+- license:apache-2.0
+- region:us
+downloads: 7
+likes: 5
+modelId: tencent/OmniEVIE-4B
+author: tencent
+sha: ecf05da45a5a68ae05597a26d537bd751dd174d7
+lastModified: '2026-11-24T13:17:25.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - OmniEVIEBackbone
+  model_type: qwen3_5
+  tokenizer_config:
+    bos_token: null
+    eos_token: <|im_end|>
+    unk_token: null
+    pad_token: <|endoftext|>
+cardData:
+  license: apache-2.0
+  pipeline_tag: feature-extraction
+  base_model: Qwen/Qwen3.5-4B
+  tags:
+  - omnievie
+  - evie
+  - qwen3_5
+  - multimodal
+  - retrieval
+  - late-interaction
+  - multi-vector
+  - colbert
+  - matryoshka
+  - video-retrieval
+  - visual-document-retrieval
+  - image-retrieval
+  - text-retrieval
+  - token-compression
+  datasets:
+  - TIGER-Lab/MMEB-V2
+  - vidore/vidore_benchmark_v3
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE.txt
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: SHA256SUMS
+- rfilename: assets/fig1_overview.png
+- rfilename: assets/fig4_sthac.png
+- rfilename: assets/fig5_three_stage.png
+- rfilename: assets/fig7_alignment.png
+- rfilename: assets/fig8_localization.png
+- rfilename: assets/fig9_video_cases.png
+- rfilename: assets/hero_banner.png
+- rfilename: assets/ima_logo.png
+- rfilename: assets/mmeb_leaderboard.png
+- rfilename: assets/quickstart_output.png
+- rfilename: assets/youtu_mark.png
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: processor_config.json
+- rfilename: query_gate.safetensors
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-24T03:16:57.000Z'
+safetensors:
+  parameters:
+    BF16: 4544510464
+  total: 4544510464
+usedStorage: 9115231301
+downloadsAllTime: 7
+inferenceProviderMapping: {}
+configJson:
+  anchor_dim: 128
+  architectures:
+  - OmniEVIEBackbone
+  dim: 2048
+  dtype: bfloat16
+  embed_dim: 128
+  head_dims:
+  - 64
+  - 128
+  - 256
+  - 512
+  - 1024
+  - 2048
+  image_token_id: 248056
+  is_causal: false
+  model_type: qwen3_5
+  mrl_prefix: true
+  text_config:
+    attention_bias: false
+    attention_dropout: 0.0
+    attn_output_gate: true
+    bos_token_id: null
+    dtype: bfloat16
+    eos_token_id: 248044
+    full_attention_interval: 4
+    head_dim: 256
+    hidden_act: silu
+    hidden_size: 2560
+    initializer_range: 0.02
+    intermediate_size: 9216
+    is_causal: false
+    layer_types:
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    linear_conv_kernel_dim: 4
+    linear_key_head_dim: 128
+    linear_num_key_heads: 16
+    linear_num_value_heads: 32
+    linear_value_head_dim: 128
+    mamba_ssm_dtype: float32
+    max_position_embeddings: 262144
+    mlp_only_layers: []
+    model_type: qwen3_5_text
+    mtp_num_hidden_layers: 1
+    mtp_use_dedicated_embeddings: false
+    num_attention_heads: 16
+    num_hidden_layers: 32
+    num_key_value_heads: 4
+    pad_token_id: null
+    partial_rotary_factor: 0.25
+    rms_norm_eps: 1.0e-06
+    rope_parameters:
+      mrope_interleaved: true
+      mrope_section:
+      - 11
+      - 11
+      - 10
+      partial_rotary_factor: 0.25
+      rope_theta: 10000000
+      rope_type: default
+    tie_word_embeddings: true
+    use_cache: true
+    vocab_size: 248320
+  tie_word_embeddings: true
+  transformers_version: 5.13.1
+  use_cache: false
+  video_token_id: 248057
+  vision_config:
+    deepstack_visual_indexes: []
+    depth: 24
+    dtype: bfloat16
+    hidden_act: gelu_pytorch_tanh
+    hidden_size: 1024
+    in_channels: 3
+    initializer_range: 0.02
+    intermediate_size: 4096
+    model_type: qwen3_5_vision
+    num_heads: 16
+    num_position_embeddings: 2304
+    out_hidden_size: 2560
+    patch_size: 16
+    spatial_merge_size: 2
+    temporal_patch_size: 2
+  vision_end_token_id: 248054
+  vision_start_token_id: 248053
+onnxFiles: {}
+safetensorsSizeMb: 9089.1
+approxSizeMb: 9089.0
+fetchedAt: '2026-11-24T13:30:09.000Z'

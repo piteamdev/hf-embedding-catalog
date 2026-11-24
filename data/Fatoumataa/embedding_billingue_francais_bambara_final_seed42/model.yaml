@@ -1,0 +1,357 @@
+_id: 6b044613d1cf736d3f1625fd
+id: Fatoumataa/embedding_billingue_francais_bambara_final_seed42
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- xlm-roberta
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:2143
+- loss:MultipleNegativesRankingLoss
+- arxiv:1908.10084
+- arxiv:1807.03748
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 17
+likes: 0
+modelId: Fatoumataa/embedding_billingue_francais_bambara_final_seed42
+author: Fatoumataa
+sha: 4c1290e12589097fcd261e9749416f42a665c03d
+lastModified: '2026-11-23T14:43:18.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: komini ye mun ye Mali la ?
+  sentences:
+  - kafoda surun bɛ feereli fɛɛrɛ dɔ jira, cɛmancɛlafanga bɛ se ka kɛ yɔrɔ min na, fɛn dilannikɛla ni feerekɛla cɛ. o bɛ sigida
+    sɛnɛfɛnw yiriwa ani ka dɔ bɔ gazi bɔlenw na.
+  - une commune est la plus petite collectivité territoriale décentralisée au mali, administrée par un conseil municipal et
+    un maire. elle gère les affaires locales de ses habitants.
+  - jeninida yɔrɔ ka kan ka nɛnɛ joona ji nɛnɛma dɔ jukɔrɔ miniti 10 ni kɔ. o bɛ dan sigi jeninida hakɛ la ani ka dimi lajɔ.
+- source_sentence: Diɲɛ kɛlɛba filanan daminɛna tuma jumɛn ani kanpaɲi kunbabaw tun ye jumɛnw ye?
+  sentences:
+  - La Seconde Guerre Mondiale a commencé le 1er septembre 1939 avec l'invasion de la Pologne par l'Allemagne nazie. Elle
+    a opposé les forces de l'Axe (Allemagne, Italie, Japon) aux Alliés (principalement Royaume-Uni, France, URSS, États-Unis).
+  - jɛɲɔgɔnya ye ɲɔgɔndɛmɛ ye sigida mɔgɔ dɔw ni ɲɔgɔn cɛ. Mali la, a b'a yɛrɛ jira ɲɔgɔndɛmɛ ni ɲɔgɔnfaamu fɛ, kɛrɛnkɛrɛnnenya
+    la waati gɛlɛnw na.
+  - Kɛlɛ min ye mɔgɔ faga ka tɛmɛ kɛlɛ tɔw bɛɛ kan tariku kɔnɔ
+- source_sentence: quel est le sens de l'état de nature chez locke ?
+  sentences:
+  - locke, état de nature, droits naturels, liberté,l'état de nature est un état de guerre permanente où chacun est l'ennemi
+    de tous. (ceci est la vision de hobbes, pas de locke, qui voit un état de paix possible).
+  - Les mosquées historiques de Tombouctou (Djinguereber, Sankoré) et Djenné (Grande Mosquée) furent des centres majeurs de
+    l'enseignement islamique et de la diffusion de l'islam en Afrique de l'Ouest, attirant savants et étudiants du monde entier.
+  - Locke ka fɔ la, sigida cogoya ye ko ye min tun bɛ kɛ ka kɔn politiki ɲɛ, mɔgɔ kelen-kelen bɛɛ hɔrɔnyalen don ani u bɛ
+    bɛn ɲɔgɔn ma, ani sigida jogo minnu bɛ ɲɛnamaya, hɔrɔnya ani nafolo la, olu bɛ mara yɔrɔ min na. o ye hɛrɛ cogoya ye min
+    bɛ se ka kɛ.
+- source_sentence: witaminiw nafa ka bon mun na an ka kɛnɛya la ?
+  sentences:
+  - olu de ye farikolo fanga sɔrɔyɔrɔba ye. (gaziw ni tulumafɛnw de ye fanga sɔrɔyɔrɔba ye, witaminiw t'a di k'a ɲɛsin a ma).
+  - les vitamines sont des substances organiques essentielles que le corps ne peut pas produire en quantité suffisante. elles
+    jouent un rôle crucial dans le métabolisme, la croissance, le développement et le fonctionnement des systèmes corporels.
+  - kunsɛmɛ, ani n'a fɔra ka ɲɛ, farikolo-ɲɛnajɛ-yɔrɔ ni kunsɛmɛ, jɔyɔrɔ ka bon kosɛbɛ ŋaniyajira ni ŋaniyabaliya lamaga-lamagaliw
+    kɔlɔsili la, farikolo-ɲɛnajɛw labɛnni, u daminɛni ani u labɛnni na.
+- source_sentence: Misaliw di maakɔrɔw bonya kan Mali kɔnɔ.
+  sentences:
+  - mɔgɔkɔrɔbaw bonya, Mali, laadala nafaw, don o don  kow
+  - Le respect des aînés se manifeste au Mali par des salutations spécifiques, l'écoute attentive de leurs conseils, l'adoption
+    d'une posture humble en leur présence et la priorité qui leur est accordée dans les décisions.
+  - Almamy Aguibou Tall tun ye Toucouleur Mansamara ɲɛmaa ye, El Hadj Oumar Tall denkɛ. A daminɛ na, a ye Faransikaw kɛlɛ,
+    o kɔfɛ, a wajibiyara ka jɛkafɔ kɛ, ka kɛ kanton ɲɛmɔgɔ ye u ka décolonisation mara kɔnɔ, o min ye Afiriki kɛlɛli nuancɛ
+    nafama ye.
+model-index:
+- name: SentenceTransformer
+  results:
+  - task:
+      type: information-retrieval
+      name: Information Retrieval
+    dataset:
+      name: bambara eval
+      type: bambara_eval
+    metrics:
+    - type: cosine_accuracy@1
+      value: 0.715
+      name: Cosine Accuracy@1
+      verified: false
+    - type: cosine_accuracy@3
+      value: 0.905
+      name: Cosine Accuracy@3
+      verified: false
+    - type: cosine_accuracy@5
+      value: 0.93
+      name: Cosine Accuracy@5
+      verified: false
+    - type: cosine_accuracy@10
+      value: 0.955
+      name: Cosine Accuracy@10
+      verified: false
+    - type: cosine_precision@3
+      value: 0.3016666666666667
+      name: Cosine Precision@3
+      verified: false
+    - type: cosine_precision@5
+      value: 0.18600000000000003
+      name: Cosine Precision@5
+      verified: false
+    - type: cosine_precision@10
+      value: 0.0955
+      name: Cosine Precision@10
+      verified: false
+    - type: cosine_recall@3
+      value: 0.905
+      name: Cosine Recall@3
+      verified: false
+    - type: cosine_recall@5
+      value: 0.93
+      name: Cosine Recall@5
+      verified: false
+    - type: cosine_recall@10
+      value: 0.955
+      name: Cosine Recall@10
+      verified: false
+    - type: cosine_ndcg@10
+      value: 0.8443914521349987
+      name: Cosine Ndcg@10
+      verified: false
+    - type: cosine_mrr@10
+      value: 0.8078392857142854
+      name: Cosine Mrr@10
+      verified: false
+    - type: cosine_map@100
+      value: 0.8088899405679066
+      name: Cosine Map@100
+      verified: false
+config:
+  architectures:
+  - XLMRobertaModel
+  model_type: xlm-roberta
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:2143
+  - loss:MultipleNegativesRankingLoss
+  widget:
+  - source_sentence: komini ye mun ye Mali la ?
+    sentences:
+    - kafoda surun bɛ feereli fɛɛrɛ dɔ jira, cɛmancɛlafanga bɛ se ka kɛ yɔrɔ min na, fɛn dilannikɛla ni feerekɛla cɛ. o bɛ
+      sigida sɛnɛfɛnw yiriwa ani ka dɔ bɔ gazi bɔlenw na.
+    - une commune est la plus petite collectivité territoriale décentralisée au mali, administrée par un conseil municipal
+      et un maire. elle gère les affaires locales de ses habitants.
+    - jeninida yɔrɔ ka kan ka nɛnɛ joona ji nɛnɛma dɔ jukɔrɔ miniti 10 ni kɔ. o bɛ dan sigi jeninida hakɛ la ani ka dimi lajɔ.
+  - source_sentence: Diɲɛ kɛlɛba filanan daminɛna tuma jumɛn ani kanpaɲi kunbabaw tun ye jumɛnw ye?
+    sentences:
+    - La Seconde Guerre Mondiale a commencé le 1er septembre 1939 avec l'invasion de la Pologne par l'Allemagne nazie. Elle
+      a opposé les forces de l'Axe (Allemagne, Italie, Japon) aux Alliés (principalement Royaume-Uni, France, URSS, États-Unis).
+    - jɛɲɔgɔnya ye ɲɔgɔndɛmɛ ye sigida mɔgɔ dɔw ni ɲɔgɔn cɛ. Mali la, a b'a yɛrɛ jira ɲɔgɔndɛmɛ ni ɲɔgɔnfaamu fɛ, kɛrɛnkɛrɛnnenya
+      la waati gɛlɛnw na.
+    - Kɛlɛ min ye mɔgɔ faga ka tɛmɛ kɛlɛ tɔw bɛɛ kan tariku kɔnɔ
+  - source_sentence: quel est le sens de l'état de nature chez locke ?
+    sentences:
+    - locke, état de nature, droits naturels, liberté,l'état de nature est un état de guerre permanente où chacun est l'ennemi
+      de tous. (ceci est la vision de hobbes, pas de locke, qui voit un état de paix possible).
+    - Les mosquées historiques de Tombouctou (Djinguereber, Sankoré) et Djenné (Grande Mosquée) furent des centres majeurs
+      de l'enseignement islamique et de la diffusion de l'islam en Afrique de l'Ouest, attirant savants et étudiants du monde
+      entier.
+    - Locke ka fɔ la, sigida cogoya ye ko ye min tun bɛ kɛ ka kɔn politiki ɲɛ, mɔgɔ kelen-kelen bɛɛ hɔrɔnyalen don ani u bɛ
+      bɛn ɲɔgɔn ma, ani sigida jogo minnu bɛ ɲɛnamaya, hɔrɔnya ani nafolo la, olu bɛ mara yɔrɔ min na. o ye hɛrɛ cogoya ye
+      min bɛ se ka kɛ.
+  - source_sentence: witaminiw nafa ka bon mun na an ka kɛnɛya la ?
+    sentences:
+    - olu de ye farikolo fanga sɔrɔyɔrɔba ye. (gaziw ni tulumafɛnw de ye fanga sɔrɔyɔrɔba ye, witaminiw t'a di k'a ɲɛsin a
+      ma).
+    - les vitamines sont des substances organiques essentielles que le corps ne peut pas produire en quantité suffisante.
+      elles jouent un rôle crucial dans le métabolisme, la croissance, le développement et le fonctionnement des systèmes
+      corporels.
+    - kunsɛmɛ, ani n'a fɔra ka ɲɛ, farikolo-ɲɛnajɛ-yɔrɔ ni kunsɛmɛ, jɔyɔrɔ ka bon kosɛbɛ ŋaniyajira ni ŋaniyabaliya lamaga-lamagaliw
+      kɔlɔsili la, farikolo-ɲɛnajɛw labɛnni, u daminɛni ani u labɛnni na.
+  - source_sentence: Misaliw di maakɔrɔw bonya kan Mali kɔnɔ.
+    sentences:
+    - mɔgɔkɔrɔbaw bonya, Mali, laadala nafaw, don o don  kow
+    - Le respect des aînés se manifeste au Mali par des salutations spécifiques, l'écoute attentive de leurs conseils, l'adoption
+      d'une posture humble en leur présence et la priorité qui leur est accordée dans les décisions.
+    - Almamy Aguibou Tall tun ye Toucouleur Mansamara ɲɛmaa ye, El Hadj Oumar Tall denkɛ. A daminɛ na, a ye Faransikaw kɛlɛ,
+      o kɔfɛ, a wajibiyara ka jɛkafɔ kɛ, ka kɛ kanton ɲɛmɔgɔ ye u ka décolonisation mara kɔnɔ, o min ye Afiriki kɛlɛli nuancɛ
+      nafama ye.
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - cosine_accuracy@1
+  - cosine_accuracy@3
+  - cosine_accuracy@5
+  - cosine_accuracy@10
+  - cosine_precision@3
+  - cosine_precision@5
+  - cosine_precision@10
+  - cosine_recall@3
+  - cosine_recall@5
+  - cosine_recall@10
+  - cosine_ndcg@10
+  - cosine_mrr@10
+  - cosine_map@100
+  model-index:
+  - name: SentenceTransformer
+    results:
+    - task:
+        type: information-retrieval
+        name: Information Retrieval
+      dataset:
+        name: bambara eval
+        type: bambara_eval
+      metrics:
+      - type: cosine_accuracy@1
+        value: 0.715
+        name: Cosine Accuracy@1
+        verified: false
+      - type: cosine_accuracy@3
+        value: 0.905
+        name: Cosine Accuracy@3
+        verified: false
+      - type: cosine_accuracy@5
+        value: 0.93
+        name: Cosine Accuracy@5
+        verified: false
+      - type: cosine_accuracy@10
+        value: 0.955
+        name: Cosine Accuracy@10
+        verified: false
+      - type: cosine_precision@3
+        value: 0.3016666666666667
+        name: Cosine Precision@3
+        verified: false
+      - type: cosine_precision@5
+        value: 0.18600000000000003
+        name: Cosine Precision@5
+        verified: false
+      - type: cosine_precision@10
+        value: 0.0955
+        name: Cosine Precision@10
+        verified: false
+      - type: cosine_recall@3
+        value: 0.905
+        name: Cosine Recall@3
+        verified: false
+      - type: cosine_recall@5
+        value: 0.93
+        name: Cosine Recall@5
+        verified: false
+      - type: cosine_recall@10
+        value: 0.955
+        name: Cosine Recall@10
+        verified: false
+      - type: cosine_ndcg@10
+        value: 0.8443914521349987
+        name: Cosine Ndcg@10
+        verified: false
+      - type: cosine_mrr@10
+        value: 0.8078392857142854
+        name: Cosine Mrr@10
+        verified: false
+      - type: cosine_map@100
+        value: 0.8088899405679066
+        name: Cosine Map@100
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: checkpoint-1000/1_Pooling/config.json
+- rfilename: checkpoint-1000/README.md
+- rfilename: checkpoint-1000/config.json
+- rfilename: checkpoint-1000/config_sentence_transformers.json
+- rfilename: checkpoint-1000/model.safetensors
+- rfilename: checkpoint-1000/modules.json
+- rfilename: checkpoint-1000/optimizer.pt
+- rfilename: checkpoint-1000/rng_state.pth
+- rfilename: checkpoint-1000/scaler.pt
+- rfilename: checkpoint-1000/scheduler.pt
+- rfilename: checkpoint-1000/sentence_bert_config.json
+- rfilename: checkpoint-1000/tokenizer.json
+- rfilename: checkpoint-1000/tokenizer_config.json
+- rfilename: checkpoint-1000/trainer_state.json
+- rfilename: checkpoint-1000/training_args.bin
+- rfilename: checkpoint-1072/1_Pooling/config.json
+- rfilename: checkpoint-1072/README.md
+- rfilename: checkpoint-1072/config.json
+- rfilename: checkpoint-1072/config_sentence_transformers.json
+- rfilename: checkpoint-1072/model.safetensors
+- rfilename: checkpoint-1072/modules.json
+- rfilename: checkpoint-1072/optimizer.pt
+- rfilename: checkpoint-1072/rng_state.pth
+- rfilename: checkpoint-1072/scaler.pt
+- rfilename: checkpoint-1072/scheduler.pt
+- rfilename: checkpoint-1072/sentence_bert_config.json
+- rfilename: checkpoint-1072/tokenizer.json
+- rfilename: checkpoint-1072/tokenizer_config.json
+- rfilename: checkpoint-1072/trainer_state.json
+- rfilename: checkpoint-1072/training_args.bin
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: eval/Information-Retrieval_evaluation_bambara_eval_results.csv
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: training_args.bin
+spaces: []
+createdAt: '2026-11-23T13:56:35.000Z'
+safetensors:
+  parameters:
+    F32: 278043648
+  total: 278043648
+usedStorage: 6681102668
+downloadsAllTime: 17
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - XLMRobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 514
+  model_type: xlm-roberta
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  output_past: true
+  pad_token_id: 1
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.22.1
+  type_vocab_size: 1
+  use_cache: false
+  vocab_size: 250002
+onnxFiles: {}
+safetensorsSizeMb: 3336.6
+approxSizeMb: 1112.2
+fetchedAt: '2026-11-24T13:30:09.000Z'

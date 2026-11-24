@@ -1,0 +1,293 @@
+_id: 6b03247e3bbd1c90a72fbdee
+id: samuli/sukkela-16M
+private: false
+pipeline_tag: feature-extraction
+library_name: model2vec
+tags:
+- model2vec
+- safetensors
+- embeddings
+- static-embeddings
+- sentence-transformers
+- feature-extraction
+- sentence-similarity
+- finnish
+- fi
+- en
+- license:mit
+- model-index
+- region:us
+downloads: 9
+likes: 0
+modelId: samuli/sukkela-16M
+author: samuli
+sha: 5757cc58e05a92e82e1abe0f2fac2fec8ff3bfcb
+lastModified: '2026-11-23T06:31:15.000Z'
+gated: false
+disabled: false
+model-index:
+- name: sukkela-16M
+  results:
+  - task:
+      type: retrieval
+    dataset:
+      name: Belebele fi (question → passage)
+      type: facebook/belebele
+      config: fin_Latn
+      split: test
+    metrics:
+    - type: ndcg_at_10
+      value: 0.869
+      name: nDCG@10
+      verified: false
+  - task:
+      type: retrieval
+    dataset:
+      name: Belebele en→fi (English question → Finnish passage)
+      type: facebook/belebele
+      config: fin_Latn
+      split: test
+    metrics:
+    - type: ndcg_at_10
+      value: 0.781
+      name: nDCG@10
+      verified: false
+  - task:
+      type: retrieval
+    dataset:
+      name: Belebele fi→en (Finnish question → English passage)
+      type: facebook/belebele
+      config: eng_Latn
+      split: test
+    metrics:
+    - type: ndcg_at_10
+      value: 0.791
+      name: nDCG@10
+      verified: false
+  - task:
+      type: retrieval
+    dataset:
+      name: WebFAQ fi
+      type: PaDaS-Lab/webfaq-retrieval
+      config: fin
+      split: test
+    metrics:
+    - type: ndcg_at_10
+      value: 0.623
+      name: nDCG@10
+      verified: false
+  - task:
+      type: retrieval
+    dataset:
+      name: MIRACL fi (reduced corpus)
+      type: miracl/miracl
+      config: fi
+      split: dev
+    metrics:
+    - type: ndcg_at_10
+      value: 0.494
+      name: nDCG@10
+      verified: false
+  - task:
+      type: retrieval
+    dataset:
+      name: FSLDR fi (dev queries, 10k distractors)
+      type: TurkuNLP/FSLDR
+      config: fin
+      split: dev
+    metrics:
+    - type: ndcg_at_10
+      value: 0.389
+      name: nDCG@10
+      verified: false
+  - task:
+      type: retrieval
+    dataset:
+      name: sukkela-questions (natural)
+      type: samuli/sukkela-questions
+      config: default
+      split: test
+    metrics:
+    - type: ndcg_at_10
+      value: 0.775
+      name: nDCG@10
+      verified: false
+  - task:
+      type: retrieval
+    dataset:
+      name: sukkela-questions (keywords)
+      type: samuli/sukkela-questions
+      config: default
+      split: test
+    metrics:
+    - type: ndcg_at_10
+      value: 0.665
+      name: nDCG@10
+      verified: false
+  - task:
+      type: retrieval
+    dataset:
+      name: finna-keywords
+      type: samuli/finna-keywords
+      config: default
+      split: test
+    metrics:
+    - type: ndcg_at_10
+      value: 0.196
+      name: nDCG@10
+      verified: false
+config: {}
+cardData:
+  library_name: model2vec
+  license: mit
+  language:
+  - fi
+  - en
+  tags:
+  - embeddings
+  - static-embeddings
+  - sentence-transformers
+  - feature-extraction
+  - sentence-similarity
+  - finnish
+  pipeline_tag: feature-extraction
+  model-index:
+  - name: sukkela-16M
+    results:
+    - task:
+        type: retrieval
+      dataset:
+        name: Belebele fi (question → passage)
+        type: facebook/belebele
+        config: fin_Latn
+        split: test
+      metrics:
+      - type: ndcg_at_10
+        value: 0.869
+        name: nDCG@10
+        verified: false
+    - task:
+        type: retrieval
+      dataset:
+        name: Belebele en→fi (English question → Finnish passage)
+        type: facebook/belebele
+        config: fin_Latn
+        split: test
+      metrics:
+      - type: ndcg_at_10
+        value: 0.781
+        name: nDCG@10
+        verified: false
+    - task:
+        type: retrieval
+      dataset:
+        name: Belebele fi→en (Finnish question → English passage)
+        type: facebook/belebele
+        config: eng_Latn
+        split: test
+      metrics:
+      - type: ndcg_at_10
+        value: 0.791
+        name: nDCG@10
+        verified: false
+    - task:
+        type: retrieval
+      dataset:
+        name: WebFAQ fi
+        type: PaDaS-Lab/webfaq-retrieval
+        config: fin
+        split: test
+      metrics:
+      - type: ndcg_at_10
+        value: 0.623
+        name: nDCG@10
+        verified: false
+    - task:
+        type: retrieval
+      dataset:
+        name: MIRACL fi (reduced corpus)
+        type: miracl/miracl
+        config: fi
+        split: dev
+      metrics:
+      - type: ndcg_at_10
+        value: 0.494
+        name: nDCG@10
+        verified: false
+    - task:
+        type: retrieval
+      dataset:
+        name: FSLDR fi (dev queries, 10k distractors)
+        type: TurkuNLP/FSLDR
+        config: fin
+        split: dev
+      metrics:
+      - type: ndcg_at_10
+        value: 0.389
+        name: nDCG@10
+        verified: false
+    - task:
+        type: retrieval
+      dataset:
+        name: sukkela-questions (natural)
+        type: samuli/sukkela-questions
+        config: default
+        split: test
+      metrics:
+      - type: ndcg_at_10
+        value: 0.775
+        name: nDCG@10
+        verified: false
+    - task:
+        type: retrieval
+      dataset:
+        name: sukkela-questions (keywords)
+        type: samuli/sukkela-questions
+        config: default
+        split: test
+      metrics:
+      - type: ndcg_at_10
+        value: 0.665
+        name: nDCG@10
+        verified: false
+    - task:
+        type: retrieval
+      dataset:
+        name: finna-keywords
+        type: samuli/finna-keywords
+        config: default
+        split: test
+      metrics:
+      - type: ndcg_at_10
+        value: 0.196
+        name: nDCG@10
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: int8/README.md
+- rfilename: int8/config.json
+- rfilename: int8/model.safetensors
+- rfilename: int8/modules.json
+- rfilename: int8/tokenizer.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-11-22T17:21:02.000Z'
+safetensors:
+  parameters:
+    F32: 16384000
+  total: 16384000
+usedStorage: 81920176
+downloadsAllTime: 9
+inferenceProviderMapping: {}
+configJson:
+  max_length: null
+  normalize: true
+  embedding_dtype: float32
+onnxFiles: {}
+safetensorsSizeMb: 81.9
+approxSizeMb: 65.5
+fetchedAt: '2026-11-24T13:30:09.000Z'

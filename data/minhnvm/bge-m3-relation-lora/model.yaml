@@ -1,0 +1,70 @@
+_id: 6b046df91105fbe5d156176a
+id: minhnvm/bge-m3-relation-lora
+private: false
+pipeline_tag: sentence-similarity
+library_name: peft
+tags:
+- peft
+- safetensors
+- lora
+- sentence-similarity
+- knowledge-graph
+- kgqa
+- base_model:BAAI/bge-m3
+- base_model:adapter:BAAI/bge-m3
+- license:mit
+- region:us
+downloads: 17
+likes: 0
+modelId: minhnvm/bge-m3-relation-lora
+author: minhnvm
+sha: 5db4f7929cc3cd3afa2e61d0705a36a9474db89b
+lastModified: '2026-11-23T16:46:56.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config:
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+  peft:
+    base_model_name_or_path: BAAI/bge-m3
+    task_type: FEATURE_EXTRACTION
+cardData:
+  base_model: BAAI/bge-m3
+  library_name: peft
+  license: mit
+  tags:
+  - lora
+  - sentence-similarity
+  - knowledge-graph
+  - kgqa
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: adapter_config.json
+- rfilename: adapter_model.safetensors
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-23T16:46:49.000Z'
+usedStorage: 21836473
+downloadsAllTime: 17
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 4.7
+approxSizeMb: 0.0
+fetchedAt: '2026-11-24T13:30:09.000Z'

@@ -1,0 +1,101 @@
+_id: 6b06aaa673d00487842c7c02
+id: wellCh4n/beat-quantizer
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- beat_quantizer
+- feature-extraction
+- music
+- rhythm-quantization
+- melody
+- symbolic-music
+- pytorch
+- custom_code
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: wellCh4n/beat-quantizer
+author: wellCh4n
+sha: f7649eb08330b58ad3b3f8e3c00812d7ba2bbe62
+lastModified: '2026-11-25T09:35:47.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - BeatQuantizerForRhythm
+  auto_map:
+    AutoConfig: configuration_beat_quantizer.BeatQuantizerHFConfig
+    AutoModel: modeling_beat_quantizer.BeatQuantizerForRhythm
+  model_type: beat_quantizer
+cardData:
+  library_name: transformers
+  tags:
+  - music
+  - rhythm-quantization
+  - melody
+  - symbolic-music
+  - pytorch
+  license: apache-2.0
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_beat_quantizer.BeatQuantizerForRhythm
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: configuration_beat_quantizer.py
+- rfilename: model.safetensors
+- rfilename: modeling_beat_quantizer.py
+spaces: []
+createdAt: '2026-11-25T09:30:14.000Z'
+safetensors:
+  parameters:
+    F32: 15012619
+  total: 15012619
+usedStorage: 60060956
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - BeatQuantizerForRhythm
+  model_type: beat_quantizer
+  auto_map:
+    AutoConfig: configuration_beat_quantizer.BeatQuantizerHFConfig
+    AutoModel: modeling_beat_quantizer.BeatQuantizerForRhythm
+  in_dim: 64
+  feature_version: 2
+  ioi_pair_dim: 8
+  d_model: 384
+  nhead: 8
+  num_layers: 8
+  enc_layers: 6
+  dec_layers: 4
+  dim_feedforward: 1536
+  dropout: 0.12
+  max_offset: 18
+  max_ioi_grid: 36
+  max_dur_grid: 48
+  max_idx_rel: 32
+  max_beat_rel_q: 64
+  decode_params:
+    lambda_ioi: 1.0
+    slot_16th_bias: 0.35
+    slot_triplet_bias: 0.45
+    mix_pen: 2.0
+    legato_thr: 0.45
+    dur_dev_pen: 4.0
+    max_end_dev_grids: 4
+    max_end_overhang_grids: 4
+    phrase_end_16th_pen: 0.45
+    lambda_pat: 0.0
+  torch_dtype: float32
+onnxFiles: {}
+safetensorsSizeMb: 60.1
+approxSizeMb: 60.1
+fetchedAt: '2026-11-25T12:31:51.000Z'

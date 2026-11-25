@@ -1,0 +1,84 @@
+_id: 6b05c00bb4e50fbb5bf88f78
+id: 1aurent/vit_large_patch16_224.cervixfm
+private: false
+pipeline_tag: feature-extraction
+library_name: timm
+tags:
+- timm
+- safetensors
+- feature-extraction
+- image-classification
+- biology
+- cytology
+- cervix
+- license:mit
+- region:us
+downloads: 18
+likes: 0
+modelId: 1aurent/vit_large_patch16_224.cervixfm
+author: 1aurent
+sha: 4539d79e9dcdd9592464ffcbe6cf9bd0da77b7b9
+lastModified: '2026-11-24T17:02:24.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  tags:
+  - timm
+  - feature-extraction
+  - image-classification
+  - biology
+  - cytology
+  - cervix
+  library_name: timm
+  license: mit
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+spaces: []
+createdAt: '2026-11-24T16:49:15.000Z'
+safetensors:
+  parameters:
+    F32: 303777024
+  total: 303777024
+usedStorage: 1215140416
+downloadsAllTime: 18
+inferenceProviderMapping: {}
+configJson:
+  architecture: vit_large_patch16_224
+  num_classes: 0
+  num_features: 1024
+  global_pool: token
+  model_args:
+    img_size: 224
+    patch_size: 16
+  pretrained_cfg:
+    tag: cervixfm
+    input_size:
+    - 3
+    - 224
+    - 224
+    fixed_input_size: true
+    interpolation: bilinear
+    crop_pct: 1.0
+    crop_mode: center
+    mean:
+    - 0.485
+    - 0.456
+    - 0.406
+    std:
+    - 0.229
+    - 0.224
+    - 0.225
+    num_classes: 0
+    first_conv: patch_embed.proj
+    classifier: head
+    license: mit
+    hf_hub_id: 1aurent/vit_large_patch16_224.cervixfm
+onnxFiles: {}
+safetensorsSizeMb: 1215.1
+approxSizeMb: 1215.1
+fetchedAt: '2026-11-25T12:31:51.000Z'

@@ -1,0 +1,459 @@
+_id: 6b05a1d1e23374fe5b1de291
+id: patzer-adi/bge-patent-mnrl
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:39291
+- loss:MultipleNegativesRankingLoss
+- arxiv:1908.10084
+- arxiv:1807.03748
+- base_model:BAAI/bge-base-en-v1.5
+- base_model:finetune:BAAI/bge-base-en-v1.5
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 22
+likes: 0
+modelId: patzer-adi/bge-patent-mnrl
+author: patzer-adi
+sha: d30e7baf2631c06b44f15a3d625e9c2ee647ed60
+lastModified: '2026-11-24T14:45:26.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: 'Title: METHOD AND APPARATUS FOR RECOMMENDING BUDDIES TO A CLIENT USER
+
+    Abstract: According to various embodiments of the present disclosure, an electronic device analyzes shared contents of
+    all members in a circle created by a client user and generates feature information of the circle. The electronic device
+    analyzes shared contents of each member in a buddy list created by the client user and generates feature information of
+    each member in the buddy list. The electronic device calculates a similarity between the feature information of each member
+    in the buddy list and the feature information of the circle, generates a similarity set, and generates a recommended buddy
+    of the circle based on the similarity set. The electronic device prompts the recommended buddy of the circle to the client
+    user.'
+  sentences:
+  - 'Title: POWER AMPLIFIER
+
+    Abstract: A power amplifier include an amplifier including at least one field effect transistor (FET) that operates in
+    an amplifying stage configured to amplify an input signal, and a body controller configured to control a bias voltage
+    of a body terminal of the FET based on a power of the input signal. The body controller performs controlling so that the
+    bias voltage of the body terminal is reduced in response to the power of the input signal being increased. Accordingly,
+    such a power amplifier exhibits improved linearity.'
+  - 'Title: OPTIMIZER MODULE IN HIGH LOAD CLIENT/SERVER SYSTEMS
+
+    Abstract: An optimizer module can function as a proxy between clients and a server that provides access to a service via
+    a REST API. As a proxy, the optimizer module can receive requests from the clients and can combine the requests into a
+    single bulk request that is then submitted to the server. By combining multiple independent requests into a single bulk
+    request, the optimizer module can reduce the total number of concurrent requests and thereby increase the total number
+    of clients that can concurrently submit requests. In some cases, the optimizer module may be configured to apply optimizing
+    rules when generating a bulk request.'
+  - 'Title: FACILITATING DATA MODEL ACCELERATION IN ASSOCIATION WITH AN EXTERNAL DATA SYSTEM
+
+    Abstract: Embodiments of the present invention are directed to facilitating data model acceleration in association with
+    an external data system. In accordance with aspects of the present disclosure, at a core engine, a search request associated
+    with a data model is received. The data model generally designates one or more fields, from among a plurality of fields,
+    that are of interest for subsequent searches. Thereafter, it is determined that an accelerated data model summary associated
+    with the data model is stored at an external data system remote from the core engine that received the search request.
+    The accelerated data model summary includes field values associated with the one or more fields designated in the data
+    model. A search for the received search request is initiated using the accelerated data model summary at the external
+    data. A set of search results relevant to the search request is obtained and provided to a user device for display to
+    a user.'
+- source_sentence: 'Title: MULTI-ELEMENT ANTENNA FOR MULTIPLE BANDS OF OPERATION AND METHOD THEREFOR
+
+    Abstract: An antenna assembly has a conductive line coupled to a feed point. An element is configured to resonate at a
+    predetermined frequency. The element is electrically coupled to the conductive line and aligned perpendicular to the conductive
+    line wherein the predetermined frequency of the element determines a distance from the feed point along the conductive
+    line.'
+  sentences:
+  - 'Title: CONTENT SUPPLY DEVICE, CONTENT SUPPLY METHOD, PROGRAM, TERMINAL DEVICE, AND CONTENT SUPPLY SYSTEM
+
+    Abstract: The present disclosure relates to a content supply device, a content supply method, a program, a terminal device,
+    and a content supply system in which the reception side that acquires a FLUTE session can be notified of the reception
+    mode. A content supply device according to the present disclosure includes: a fragment stream generating portion that
+    generates a fragment stream on the basis of source data of content; a FLUTE-stream generating portion that generates a
+    FLUTE stream from the generated fragment stream; an SDP creation portion that creates an SDP including a reception mode
+    in the ease of a reception side receiving a FLUTE session including the FLUTE stream; and a multicast delivery portion
+    that delivers the FLUTE stream over FLUTE multicast and, prior to delivery of the FLUTE stream over FLUTE multicast, delivers
+    the SDP over FLUTE multicast. The present disclosure can be applied to a system that delivers content over FLUTE multicast.'
+  - 'Title: MOBILE COMMUNICATION DEVICE
+
+    Abstract: A mobile communication device includes an assembly, an antenna module disposed on the assembly, and a metal
+    cover detachably fixed on the assembly. The antenna module has an internal segment and an external segment connected to
+    the internal segment. The internal segment is arranged in a space surrounded by the metal cover and the assembly and is
+    entirely shielded by the metal cover in a thickness direction. The external segment is disposed on a short side surface
+    of the assembly and is arranged outside the space. The external segment does not contact the metal cover. Thus, the metal
+    cover of the mobile communication device of the instant disclosure can be provided without extra design.'
+  - 'Title: SEMICONDUCTOR DEVICE MOUNTING METHOD
+
+    Abstract: A first insulating film is applied onto a joining face of a semiconductor device including a connection terminal
+    on a joining face, and the connection terminal is embedded inside the first insulating film. The second insulating film
+    is formed on a joining target face of a joining target, which includes a connection target terminal on the joining target
+    face, and the connection target terminal is embedded inside the second insulating film. The semiconductor device and the
+    joining target are joined together by applying pressure and causing the semiconductor device and the joining target to
+    make contact with each other.'
+- source_sentence: 'Title: REMAINING AMOUNT OF INK DISPLAY APPARATUS, PRINTING SYSTEM
+
+    Abstract: A remaining amount of ink display apparatus includes a printing executing section which executes printing by
+    discharging ink that is retained in a retaining section, a consumption amount acquiring section which acquires an amount
+    of ink consumption used in printing executed by the printing executing section based on a print job, a remaining amount
+    acquiring section which acquires a remaining amount of ink in the retaining section, a display section which displays
+    information, and a display control section which displays the amount of ink consumption and the remaining amount of ink
+    on the display section.'
+  sentences:
+  - 'Title: Forty-eight by Fourteen Foot Outdoor Billboard to Be Illuminated Using Only Two Lighting Assemblies
+
+    Abstract: A forty-eight foot wide outdoor billboard can be illuminated at night using only two lighting assemblies. First
+    and second areas of a display surface of the billboard are simultaneously illuminated by emitting light from a number
+    of LEDs mounted in a common plane and redirecting the light toward the display surface using a plurality of optical elements.
+    Each optical element is disposed over only one associated LED and includes a first portion, a second portion and a third
+    portion arranged to direct the light toward the first area of the display surface so that visual media content of the
+    display surface is visible without any additional light.'
+  - 'Title: COMMUNICATION METHOD AND APPARATUS
+
+    Abstract: A communication method and an apparatus are provided herein. The method includes: sending, by a mobility management
+    entity (MME), a track area update (TAU) accept message to a user equipment (UE), the TAU accept message comprising an
+    identifier constructed from at least a resource pool identifier (pool-ID) that identifies a resource pool in a public
+    land mobile network (PLMN), a mobility management entity identifier (MME-ID) that uniquely identifies the MME within the
+    resource pool, and a UE temporary identifier that uniquely identifies the UE within the MME; and receiving, by the MME,
+    a TAU complete message from the UE.'
+  - 'Title: LIQUID CONSUMPTION APPARATUS
+
+    Abstract: A liquid consumption apparatus that detects a liquid surface level of a liquid inside a liquid container (ink
+    tank), including: a circuit substrate; a substrate holder that holds the circuit substrate; and a control unit that detects
+    the liquid surface level. A pair of electrically-conductive members consisting of a first electrically-conductive member
+    and a second electrically-conductive member are provided for the liquid container. The circuit substrate is provided with
+    a pair of terminals corresponding to the pair of electrically-conductive members. The substrate holder is provided with
+    an elastic contact for connecting the pair of electrically-conductive members and the pair of terminals with each other.
+    The elastic contact is a contact that is elastic in a first direction, where the first direction is a longitudinal direction
+    of the pair of electrically-conductive members.'
+- source_sentence: 'Title: RUNNING SOFTWARE APPLICATION WITH DYNAMIC ACTION DELEGATION
+
+    Abstract: A solution for running a software application on a computing machine is provided, which includes registering
+    a capability of a delegation component to execute at least one action on the computing machine, each one defined by at
+    least one characteristic thereof, receiving a request for executing the at least one action from the software application
+    by the delegation component, the request being bound to the delegation component at run-time according to the capability
+    registration thereof, and delegating, by the delegation component, the execution of the at least one action to at least
+    one local component of the computing machine being capable of executing at least part of the at least one action and/or
+    to at least one remote component of at least one remote computing machine being capable of executing at least part of
+    the at least one action according to an availability of the at least one local component.'
+  sentences:
+  - 'Title: DISPLAY SYSTEM AND A METHOD OF DRIVING THE DISPLAY SYSTEM INCLUDING A DISPLAY APPARATUS
+
+    Abstract: A display system includes a graphic processor and a display apparatus. The graphic processor supplies a first
+    image signal and a first synchronization signal. The display apparatus is driven in a normal mode in which a first image
+    is displayed, during a first period, based on the first image signal and the first synchronization signal provided from
+    the graphic processor and in a panel self refresh (PSR) mode in which a second image is displayed based on a second image
+    signal stored in a frame buffer of the display apparatus and a second synchronization signal generated in the display
+    apparatus, and transmits the second synchronization signal of the PSR mode to the graphic processor when a driving mode
+    of the display apparatus is changed from the PSR mode to the normal mode. The graphic processor is configured to generate
+    the first synchronization signal synchronized with the second synchronization signal.'
+  - 'Title: METHOD FOR SUPPORTING SITUATION SPECIFIC INFORMATION SHARING AND ELECTRONIC DEVICE SUPPORTING THE SAME
+
+    Abstract: An electronic device and a method for supporting situation specific information sharing in order to more accurately
+    and conveniently check user information. The electronic device shares information to be output according to each situation.
+    The electronic device includes: a memory configured to store collection information; and a processor electrically connected
+    to the memory, wherein the processor controls a status of an output device that outputs the collection information, controls
+    transmission of the collection information to the output device, and display of the collection information by the output
+    device.'
+  - 'Title: DRIVE UNIT FOR A DRUG DELIVERY DEVICE
+
+    Abstract: Described is a drive unit (1) for a drug delivery device comprising a carrier (3), a plunger (4) arranged within
+    the carrier (3) and slidable in a direction of a longitudinal axis (A), a drive spring (5) arranged for biasing the plunger
+    (4) in a distal direction (D) relative the carrier (3), and a drive force adaption mechanism (22) for modifying a force
+    exerted by the drive spring (5) on the plunger (4).'
+- source_sentence: 'Title: HOT-ROLLED STEEL SHEET, COLD-ROLLED STEEL SHEET, GALVANIZED STEEL SHEET, AND METHODS OF MANUFACTURING
+    THE SAME
+
+    Abstract: A hot-rolled steel sheet has an average value of the X-ray random intensity ratio of a {100}<011> to {223}<110>
+    orientation group at least in a sheet thickness central portion that is in a sheet thickness range of ⅝ to ⅜ from a steel
+    sheet surface of 1.0 to 6.0, an X-ray random intensity ratio of a {332}<113> crystal orientation of 1.0 to 5.0, rC which
+    is an r value in a direction perpendicular to a rolling direction of 0.70 to 1.10, and r30 which is an r value in a direction
+    that forms an angle of 30° with respect to the rolling direction of 0.70 to 1.10.'
+  sentences:
+  - 'Title: METHOD FOR PRODUCING A FLAT PRODUCT FROM AN IRON-BASED SHAPE MEMORY ALLOY
+
+    Abstract: Methods for producing a flat product from an iron-based shape memory alloy may involve casting a melt comprised
+    of iron, alloying elements, and impurities into a strip having a thickness of 1-30 mm and cooling the melt as the strip
+    is formed. A twin-roll caster may be employed to help cool and form the melt into the strip. The resultant flat product
+    is highly resistant to bending and is robust under pressure and torsion.'
+  - 'Title: METHOD AND SYSTEM FOR SCORING ON-LINE PROFILES
+
+    Abstract: A system for scoring an on-line profile and/or personality traits of a first subscriber includes a subsystem
+    for receiving and reviewing content and/or ratings submitted by a second subscriber, a publishing system configured to
+    publish the content based on an election to publish by the first subscriber; and a scoring subsystem configured to calculate
+    a score for the on-line profile and/or personality traits of the first subscriber based at least in part on the election
+    made by the first subscriber. The scoring subsystem can continuously update the on-line profile and personality traits
+    scores as content is received and publishing options are elected. Feedback related to published content and ratings can
+    be received and used in the calculation of on-line profile and personality trait scores.'
+  - 'Title: AUTOMATED NETWORK CONNECTION SHARING
+
+    Abstract: Concepts and technologies are described herein for providing automated network connection sharing. Techniques
+    disclosed herein can initiate Internet connection sharing between a first computer and a second computer, wherein the
+    Internet connection sharing enables the first computer to function as a host to provide Internet access to the second
+    computer. If there is a break in the connection, a system determines if the second computer is in proximity to the first
+    computer. If it is determined that the first computer is in proximity to the second computer, the techniques disclosed
+    herein verify access rights. Once the access rights are verified, the system automatically establishes Internet connection
+    sharing between the first computer and the second computer. The techniques disclosed herein enable access to a service
+    for sharing a network connection without requiring user interaction.'
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:39291
+  - loss:MultipleNegativesRankingLoss
+  base_model: BAAI/bge-base-en-v1.5
+  widget:
+  - source_sentence: 'Title: METHOD AND APPARATUS FOR RECOMMENDING BUDDIES TO A CLIENT USER
+
+      Abstract: According to various embodiments of the present disclosure, an electronic device analyzes shared contents
+      of all members in a circle created by a client user and generates feature information of the circle. The electronic
+      device analyzes shared contents of each member in a buddy list created by the client user and generates feature information
+      of each member in the buddy list. The electronic device calculates a similarity between the feature information of each
+      member in the buddy list and the feature information of the circle, generates a similarity set, and generates a recommended
+      buddy of the circle based on the similarity set. The electronic device prompts the recommended buddy of the circle to
+      the client user.'
+    sentences:
+    - 'Title: POWER AMPLIFIER
+
+      Abstract: A power amplifier include an amplifier including at least one field effect transistor (FET) that operates
+      in an amplifying stage configured to amplify an input signal, and a body controller configured to control a bias voltage
+      of a body terminal of the FET based on a power of the input signal. The body controller performs controlling so that
+      the bias voltage of the body terminal is reduced in response to the power of the input signal being increased. Accordingly,
+      such a power amplifier exhibits improved linearity.'
+    - 'Title: OPTIMIZER MODULE IN HIGH LOAD CLIENT/SERVER SYSTEMS
+
+      Abstract: An optimizer module can function as a proxy between clients and a server that provides access to a service
+      via a REST API. As a proxy, the optimizer module can receive requests from the clients and can combine the requests
+      into a single bulk request that is then submitted to the server. By combining multiple independent requests into a single
+      bulk request, the optimizer module can reduce the total number of concurrent requests and thereby increase the total
+      number of clients that can concurrently submit requests. In some cases, the optimizer module may be configured to apply
+      optimizing rules when generating a bulk request.'
+    - 'Title: FACILITATING DATA MODEL ACCELERATION IN ASSOCIATION WITH AN EXTERNAL DATA SYSTEM
+
+      Abstract: Embodiments of the present invention are directed to facilitating data model acceleration in association with
+      an external data system. In accordance with aspects of the present disclosure, at a core engine, a search request associated
+      with a data model is received. The data model generally designates one or more fields, from among a plurality of fields,
+      that are of interest for subsequent searches. Thereafter, it is determined that an accelerated data model summary associated
+      with the data model is stored at an external data system remote from the core engine that received the search request.
+      The accelerated data model summary includes field values associated with the one or more fields designated in the data
+      model. A search for the received search request is initiated using the accelerated data model summary at the external
+      data. A set of search results relevant to the search request is obtained and provided to a user device for display to
+      a user.'
+  - source_sentence: 'Title: MULTI-ELEMENT ANTENNA FOR MULTIPLE BANDS OF OPERATION AND METHOD THEREFOR
+
+      Abstract: An antenna assembly has a conductive line coupled to a feed point. An element is configured to resonate at
+      a predetermined frequency. The element is electrically coupled to the conductive line and aligned perpendicular to the
+      conductive line wherein the predetermined frequency of the element determines a distance from the feed point along the
+      conductive line.'
+    sentences:
+    - 'Title: CONTENT SUPPLY DEVICE, CONTENT SUPPLY METHOD, PROGRAM, TERMINAL DEVICE, AND CONTENT SUPPLY SYSTEM
+
+      Abstract: The present disclosure relates to a content supply device, a content supply method, a program, a terminal
+      device, and a content supply system in which the reception side that acquires a FLUTE session can be notified of the
+      reception mode. A content supply device according to the present disclosure includes: a fragment stream generating portion
+      that generates a fragment stream on the basis of source data of content; a FLUTE-stream generating portion that generates
+      a FLUTE stream from the generated fragment stream; an SDP creation portion that creates an SDP including a reception
+      mode in the ease of a reception side receiving a FLUTE session including the FLUTE stream; and a multicast delivery
+      portion that delivers the FLUTE stream over FLUTE multicast and, prior to delivery of the FLUTE stream over FLUTE multicast,
+      delivers the SDP over FLUTE multicast. The present disclosure can be applied to a system that delivers content over
+      FLUTE multicast.'
+    - 'Title: MOBILE COMMUNICATION DEVICE
+
+      Abstract: A mobile communication device includes an assembly, an antenna module disposed on the assembly, and a metal
+      cover detachably fixed on the assembly. The antenna module has an internal segment and an external segment connected
+      to the internal segment. The internal segment is arranged in a space surrounded by the metal cover and the assembly
+      and is entirely shielded by the metal cover in a thickness direction. The external segment is disposed on a short side
+      surface of the assembly and is arranged outside the space. The external segment does not contact the metal cover. Thus,
+      the metal cover of the mobile communication device of the instant disclosure can be provided without extra design.'
+    - 'Title: SEMICONDUCTOR DEVICE MOUNTING METHOD
+
+      Abstract: A first insulating film is applied onto a joining face of a semiconductor device including a connection terminal
+      on a joining face, and the connection terminal is embedded inside the first insulating film. The second insulating film
+      is formed on a joining target face of a joining target, which includes a connection target terminal on the joining target
+      face, and the connection target terminal is embedded inside the second insulating film. The semiconductor device and
+      the joining target are joined together by applying pressure and causing the semiconductor device and the joining target
+      to make contact with each other.'
+  - source_sentence: 'Title: REMAINING AMOUNT OF INK DISPLAY APPARATUS, PRINTING SYSTEM
+
+      Abstract: A remaining amount of ink display apparatus includes a printing executing section which executes printing
+      by discharging ink that is retained in a retaining section, a consumption amount acquiring section which acquires an
+      amount of ink consumption used in printing executed by the printing executing section based on a print job, a remaining
+      amount acquiring section which acquires a remaining amount of ink in the retaining section, a display section which
+      displays information, and a display control section which displays the amount of ink consumption and the remaining amount
+      of ink on the display section.'
+    sentences:
+    - 'Title: Forty-eight by Fourteen Foot Outdoor Billboard to Be Illuminated Using Only Two Lighting Assemblies
+
+      Abstract: A forty-eight foot wide outdoor billboard can be illuminated at night using only two lighting assemblies.
+      First and second areas of a display surface of the billboard are simultaneously illuminated by emitting light from a
+      number of LEDs mounted in a common plane and redirecting the light toward the display surface using a plurality of optical
+      elements. Each optical element is disposed over only one associated LED and includes a first portion, a second portion
+      and a third portion arranged to direct the light toward the first area of the display surface so that visual media content
+      of the display surface is visible without any additional light.'
+    - 'Title: COMMUNICATION METHOD AND APPARATUS
+
+      Abstract: A communication method and an apparatus are provided herein. The method includes: sending, by a mobility management
+      entity (MME), a track area update (TAU) accept message to a user equipment (UE), the TAU accept message comprising an
+      identifier constructed from at least a resource pool identifier (pool-ID) that identifies a resource pool in a public
+      land mobile network (PLMN), a mobility management entity identifier (MME-ID) that uniquely identifies the MME within
+      the resource pool, and a UE temporary identifier that uniquely identifies the UE within the MME; and receiving, by the
+      MME, a TAU complete message from the UE.'
+    - 'Title: LIQUID CONSUMPTION APPARATUS
+
+      Abstract: A liquid consumption apparatus that detects a liquid surface level of a liquid inside a liquid container (ink
+      tank), including: a circuit substrate; a substrate holder that holds the circuit substrate; and a control unit that
+      detects the liquid surface level. A pair of electrically-conductive members consisting of a first electrically-conductive
+      member and a second electrically-conductive member are provided for the liquid container. The circuit substrate is provided
+      with a pair of terminals corresponding to the pair of electrically-conductive members. The substrate holder is provided
+      with an elastic contact for connecting the pair of electrically-conductive members and the pair of terminals with each
+      other. The elastic contact is a contact that is elastic in a first direction, where the first direction is a longitudinal
+      direction of the pair of electrically-conductive members.'
+  - source_sentence: 'Title: RUNNING SOFTWARE APPLICATION WITH DYNAMIC ACTION DELEGATION
+
+      Abstract: A solution for running a software application on a computing machine is provided, which includes registering
+      a capability of a delegation component to execute at least one action on the computing machine, each one defined by
+      at least one characteristic thereof, receiving a request for executing the at least one action from the software application
+      by the delegation component, the request being bound to the delegation component at run-time according to the capability
+      registration thereof, and delegating, by the delegation component, the execution of the at least one action to at least
+      one local component of the computing machine being capable of executing at least part of the at least one action and/or
+      to at least one remote component of at least one remote computing machine being capable of executing at least part of
+      the at least one action according to an availability of the at least one local component.'
+    sentences:
+    - 'Title: DISPLAY SYSTEM AND A METHOD OF DRIVING THE DISPLAY SYSTEM INCLUDING A DISPLAY APPARATUS
+
+      Abstract: A display system includes a graphic processor and a display apparatus. The graphic processor supplies a first
+      image signal and a first synchronization signal. The display apparatus is driven in a normal mode in which a first image
+      is displayed, during a first period, based on the first image signal and the first synchronization signal provided from
+      the graphic processor and in a panel self refresh (PSR) mode in which a second image is displayed based on a second
+      image signal stored in a frame buffer of the display apparatus and a second synchronization signal generated in the
+      display apparatus, and transmits the second synchronization signal of the PSR mode to the graphic processor when a driving
+      mode of the display apparatus is changed from the PSR mode to the normal mode. The graphic processor is configured to
+      generate the first synchronization signal synchronized with the second synchronization signal.'
+    - 'Title: METHOD FOR SUPPORTING SITUATION SPECIFIC INFORMATION SHARING AND ELECTRONIC DEVICE SUPPORTING THE SAME
+
+      Abstract: An electronic device and a method for supporting situation specific information sharing in order to more accurately
+      and conveniently check user information. The electronic device shares information to be output according to each situation.
+      The electronic device includes: a memory configured to store collection information; and a processor electrically connected
+      to the memory, wherein the processor controls a status of an output device that outputs the collection information,
+      controls transmission of the collection information to the output device, and display of the collection information
+      by the output device.'
+    - 'Title: DRIVE UNIT FOR A DRUG DELIVERY DEVICE
+
+      Abstract: Described is a drive unit (1) for a drug delivery device comprising a carrier (3), a plunger (4) arranged
+      within the carrier (3) and slidable in a direction of a longitudinal axis (A), a drive spring (5) arranged for biasing
+      the plunger (4) in a distal direction (D) relative the carrier (3), and a drive force adaption mechanism (22) for modifying
+      a force exerted by the drive spring (5) on the plunger (4).'
+  - source_sentence: 'Title: HOT-ROLLED STEEL SHEET, COLD-ROLLED STEEL SHEET, GALVANIZED STEEL SHEET, AND METHODS OF MANUFACTURING
+      THE SAME
+
+      Abstract: A hot-rolled steel sheet has an average value of the X-ray random intensity ratio of a {100}<011> to {223}<110>
+      orientation group at least in a sheet thickness central portion that is in a sheet thickness range of ⅝ to ⅜ from a
+      steel sheet surface of 1.0 to 6.0, an X-ray random intensity ratio of a {332}<113> crystal orientation of 1.0 to 5.0,
+      rC which is an r value in a direction perpendicular to a rolling direction of 0.70 to 1.10, and r30 which is an r value
+      in a direction that forms an angle of 30° with respect to the rolling direction of 0.70 to 1.10.'
+    sentences:
+    - 'Title: METHOD FOR PRODUCING A FLAT PRODUCT FROM AN IRON-BASED SHAPE MEMORY ALLOY
+
+      Abstract: Methods for producing a flat product from an iron-based shape memory alloy may involve casting a melt comprised
+      of iron, alloying elements, and impurities into a strip having a thickness of 1-30 mm and cooling the melt as the strip
+      is formed. A twin-roll caster may be employed to help cool and form the melt into the strip. The resultant flat product
+      is highly resistant to bending and is robust under pressure and torsion.'
+    - 'Title: METHOD AND SYSTEM FOR SCORING ON-LINE PROFILES
+
+      Abstract: A system for scoring an on-line profile and/or personality traits of a first subscriber includes a subsystem
+      for receiving and reviewing content and/or ratings submitted by a second subscriber, a publishing system configured
+      to publish the content based on an election to publish by the first subscriber; and a scoring subsystem configured to
+      calculate a score for the on-line profile and/or personality traits of the first subscriber based at least in part on
+      the election made by the first subscriber. The scoring subsystem can continuously update the on-line profile and personality
+      traits scores as content is received and publishing options are elected. Feedback related to published content and ratings
+      can be received and used in the calculation of on-line profile and personality trait scores.'
+    - 'Title: AUTOMATED NETWORK CONNECTION SHARING
+
+      Abstract: Concepts and technologies are described herein for providing automated network connection sharing. Techniques
+      disclosed herein can initiate Internet connection sharing between a first computer and a second computer, wherein the
+      Internet connection sharing enables the first computer to function as a host to provide Internet access to the second
+      computer. If there is a break in the connection, a system determines if the second computer is in proximity to the first
+      computer. If it is determined that the first computer is in proximity to the second computer, the techniques disclosed
+      herein verify access rights. Once the access rights are verified, the system automatically establishes Internet connection
+      sharing between the first computer and the second computer. The techniques disclosed herein enable access to a service
+      for sharing a network connection without requiring user interaction.'
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-24T14:40:17.000Z'
+safetensors:
+  parameters:
+    F32: 109482240
+  total: 109482240
+usedStorage: 437951328
+downloadsAllTime: 22
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  id2label:
+    '0': LABEL_0
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  label2id:
+    LABEL_0: 0
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.20.2
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 30522
+onnxFiles: {}
+safetensorsSizeMb: 438.0
+approxSizeMb: 437.9
+fetchedAt: '2026-11-25T12:31:51.000Z'

@@ -1,0 +1,186 @@
+_id: 6b059dfbd882419c9a65e20f
+id: GetmanY1/wav2vec2-large-ebranch-36l-fi-471k
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- wav2vec2-ebranchformer
+- feature-extraction
+- wav2vec2
+- speech
+- finnish
+- self-supervised-learning
+- e-branchformer
+- custom_code
+- fi
+- arxiv:2610.13102
+- license:apache-2.0
+- region:us
+downloads: 20
+likes: 0
+modelId: GetmanY1/wav2vec2-large-ebranch-36l-fi-471k
+author: GetmanY1
+sha: a8f41c5bd0b720ac0c9a781d480304e5b5353ebd
+lastModified: '2026-11-24T14:24:03.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - Wav2Vec2EBranchformerModel
+  auto_map:
+    AutoConfig: configuration_wav2vec2_ebranchformer.Wav2Vec2EBranchformerConfig
+    AutoModel: modeling_wav2vec2_ebranchformer.Wav2Vec2EBranchformerModel
+    AutoModelForCTC: modeling_wav2vec2_ebranchformer.Wav2Vec2EBranchformerForCTC
+  model_type: wav2vec2-ebranchformer
+cardData:
+  language: fi
+  license: apache-2.0
+  library_name: transformers
+  tags:
+  - wav2vec2
+  - speech
+  - finnish
+  - self-supervised-learning
+  - e-branchformer
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_wav2vec2_ebranchformer.Wav2Vec2EBranchformerModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: configuration_wav2vec2_ebranchformer.py
+- rfilename: fairseq/checkpoint.pt
+- rfilename: model.safetensors
+- rfilename: modeling_wav2vec2_ebranchformer.py
+- rfilename: preprocessor_config.json
+spaces: []
+createdAt: '2026-11-24T14:23:55.000Z'
+safetensors:
+  parameters:
+    F32: 316211136
+  total: 316211136
+usedStorage: 2535313880
+downloadsAllTime: 20
+inferenceProviderMapping: {}
+configJson:
+  activation_dropout: 0.1
+  adapter_kernel_size: 3
+  adapter_stride: 2
+  add_adapter: false
+  apply_spec_augment: true
+  architectures:
+  - Wav2Vec2EBranchformerModel
+  attention_dropout: 0.1
+  bos_token_id: 1
+  cgmlp_activation: gelu
+  classifier_proj_size: 256
+  codevector_dim: 576
+  conformer_conv_dropout: 0.1
+  contrastive_logits_temperature: 0.1
+  conv_bias: true
+  conv_depthwise_kernel_size: 31
+  conv_dim:
+  - 512
+  - 512
+  - 512
+  - 512
+  - 512
+  - 512
+  - 512
+  conv_kernel:
+  - 10
+  - 3
+  - 3
+  - 3
+  - 3
+  - 2
+  - 2
+  conv_stride:
+  - 5
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  - 2
+  csgu_linear_units: 2456
+  ctc_loss_reduction: sum
+  ctc_zero_infinity: false
+  depthwise_merge_conv_kernel_size: 3
+  diversity_loss_weight: 0.1
+  eos_token_id: 2
+  feat_extract_activation: gelu
+  feat_extract_norm: layer
+  feat_proj_dropout: 0.0
+  feat_quantizer_dropout: 0.0
+  ffn_activation: swish
+  final_dropout: 0.1
+  gate_activation_fn: identity
+  hidden_act: gelu
+  hidden_dropout: 0.1
+  hidden_size: 640
+  initializer_range: 0.02
+  intermediate_size: 1280
+  layer_norm_eps: 1.0e-05
+  layer_norm_first: true
+  layerdrop: 0.1
+  mask_feature_length: 10
+  mask_feature_min_masks: 0
+  mask_feature_prob: 0.0
+  mask_time_length: 10
+  mask_time_min_masks: 2
+  mask_time_prob: 0.05
+  max_source_positions: 5000
+  model_type: wav2vec2-ebranchformer
+  num_adapter_layers: 3
+  num_attention_heads: 10
+  num_codevector_groups: 2
+  num_codevectors_per_group: 320
+  num_conv_pos_embedding_groups: 16
+  num_conv_pos_embeddings: 128
+  num_feat_extract_layers: 7
+  num_hidden_layers: 36
+  num_negatives: 100
+  output_hidden_size: 640
+  pad_token_id: 0
+  position_embeddings_type: relative
+  proj_codevector_dim: 576
+  rotary_embedding_base: 10000
+  tdnn_dilation:
+  - 1
+  - 2
+  - 3
+  - 1
+  - 1
+  tdnn_dim:
+  - 512
+  - 512
+  - 512
+  - 512
+  - 1500
+  tdnn_kernel:
+  - 5
+  - 3
+  - 3
+  - 1
+  - 1
+  torch_dtype: float32
+  transformers_version: 4.50.3
+  use_linear_after_conv: false
+  use_macaron_ffn: true
+  use_weighted_layer_sum: false
+  vocab_size: null
+  xvector_output_dim: 512
+  auto_map:
+    AutoConfig: configuration_wav2vec2_ebranchformer.Wav2Vec2EBranchformerConfig
+    AutoModel: modeling_wav2vec2_ebranchformer.Wav2Vec2EBranchformerModel
+    AutoModelForCTC: modeling_wav2vec2_ebranchformer.Wav2Vec2EBranchformerForCTC
+onnxFiles: {}
+safetensorsSizeMb: 1265.0
+approxSizeMb: 1264.8
+fetchedAt: '2026-11-25T12:31:51.000Z'

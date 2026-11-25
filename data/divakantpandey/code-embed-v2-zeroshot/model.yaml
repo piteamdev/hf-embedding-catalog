@@ -1,0 +1,190 @@
+_id: 6affbcb398713afb183cc37f
+id: divakantpandey/code-embed-v2-zeroshot
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- roberta
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:1832728
+- loss:MultipleNegativesRankingLoss
+- loss:MatryoshkaLoss
+- dataset:nomic-ai/cornstack-python-v1
+- dataset:nomic-ai/cornstack-javascript-v1
+- dataset:nomic-ai/cornstack-go-v1
+- dataset:nomic-ai/cornstack-java-v1
+- dataset:nomic-ai/cornstack-ruby-v1
+- dataset:nomic-ai/cornstack-php-v1
+- arxiv:1908.10084
+- arxiv:2205.13147
+- arxiv:1807.03748
+- base_model:microsoft/unixcoder-base
+- base_model:finetune:microsoft/unixcoder-base
+- license:cc-by-nc-4.0
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: divakantpandey/code-embed-v2-zeroshot
+author: divakantpandey
+sha: 2f6f31bdd60ba6f0338348fe3e44211263076d04
+lastModified: '2026-11-25T09:08:49.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: '/ renamed from: a'
+  sentences:
+  - void mo84a();
+  - "def test_root_get(self):\n        pass"
+  - java.lang.String getField1819();
+- source_sentence: '/ renamed from: d'
+  sentences:
+  - 'def get_content(short_path):'
+  - boolean mo1496d();
+  - "public void setLog(XLog log) {\n\n\t}"
+- source_sentence: delete by id ?
+  sentences:
+  - Long count();
+  - public String algorithmName();
+  - 'function garbage(trash){
+
+
+    }'
+- source_sentence: Get the value for Label.
+  sentences:
+  - public function getLabel();
+  - public function getApplication();
+  - public function canAddToResult();
+- source_sentence: Get all records from table
+  sentences:
+  - public function queryAll();
+  - public int getTenantId() { return tenantId; }
+  - "public LinkedListStack() {\r\n\t\tfirstNode = null;\r\n\t}"
+model-index: null
+config:
+  architectures:
+  - RobertaModel
+  model_type: roberta
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  license: cc-by-nc-4.0
+  base_model: microsoft/unixcoder-base
+  datasets:
+  - nomic-ai/cornstack-python-v1
+  - nomic-ai/cornstack-javascript-v1
+  - nomic-ai/cornstack-go-v1
+  - nomic-ai/cornstack-java-v1
+  - nomic-ai/cornstack-ruby-v1
+  - nomic-ai/cornstack-php-v1
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:1832728
+  - loss:MultipleNegativesRankingLoss
+  - loss:MatryoshkaLoss
+  widget:
+  - source_sentence: '/ renamed from: a'
+    sentences:
+    - void mo84a();
+    - "def test_root_get(self):\n        pass"
+    - java.lang.String getField1819();
+  - source_sentence: '/ renamed from: d'
+    sentences:
+    - 'def get_content(short_path):'
+    - boolean mo1496d();
+    - "public void setLog(XLog log) {\n\n\t}"
+  - source_sentence: delete by id ?
+    sentences:
+    - Long count();
+    - public String algorithmName();
+    - 'function garbage(trash){
+
+
+      }'
+  - source_sentence: Get the value for Label.
+    sentences:
+    - public function getLabel();
+    - public function getApplication();
+    - public function canAddToResult();
+  - source_sentence: Get all records from table
+    sentences:
+    - public function queryAll();
+    - public int getTenantId() { return tenantId; }
+    - "public LinkedListStack() {\r\n\t\tfirstNode = null;\r\n\t}"
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Dense/config.json
+- rfilename: 2_Dense/model.safetensors
+- rfilename: 3_Dense/config.json
+- rfilename: 3_Dense/model.safetensors
+- rfilename: 4_Normalize/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-20T03:21:23.000Z'
+safetensors:
+  parameters:
+    F32: 125929728
+  total: 125929728
+usedStorage: 517909680
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - RobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 1026
+  model_type: roberta
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  output_past: true
+  pad_token_id: 1
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.21.1
+  type_vocab_size: 10
+  use_cache: false
+  vocab_size: 51416
+onnxFiles: {}
+safetensorsSizeMb: 517.9
+approxSizeMb: 503.7
+fetchedAt: '2026-11-25T12:31:51.000Z'

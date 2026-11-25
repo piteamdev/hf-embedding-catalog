@@ -1,0 +1,104 @@
+_id: 6b0664829ba87ffc01be8abf
+id: Sssale/noor-arabic-retrieval-v1-int8
+private: false
+pipeline_tag: sentence-similarity
+library_name: onnx
+tags:
+- onnx
+- bert
+- int8
+- arabic
+- sentence-embeddings
+- retrieval
+- sentence-similarity
+- ar
+- base_model:omarelshehy/Arabic-Retrieval-v1.0
+- base_model:quantized:omarelshehy/Arabic-Retrieval-v1.0
+- license:other
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 1
+likes: 0
+modelId: Sssale/noor-arabic-retrieval-v1-int8
+author: Sssale
+sha: 8fc6b136c29ba9a5e876fdf617ef52c6b74143db
+lastModified: '2026-11-25T05:45:39.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: هذا شخص سعيد
+  sentences:
+  - هذا كلب سعيد
+  - هذا شخص سعيد جدا
+  - اليوم هو يوم مشمس
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  license: other
+  license_name: arabert
+  license_link: LICENSE
+  language:
+  - ar
+  library_name: onnx
+  pipeline_tag: sentence-similarity
+  base_model: omarelshehy/Arabic-Retrieval-v1.0
+  tags:
+  - onnx
+  - int8
+  - arabic
+  - sentence-embeddings
+  - retrieval
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: LICENSE-Apache-2.0-Arabic-Retrieval
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: onnx/model_quantized.onnx
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-25T04:30:58.000Z'
+usedStorage: 135776148
+downloadsAllTime: 1
+inferenceProviderMapping: {}
+configJson:
+  _name_or_path: egyllm/pretrained-arabert
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  classifier_dropout: null
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  position_embedding_type: absolute
+  torch_dtype: float32
+  transformers_version: 4.45.2
+  type_vocab_size: 2
+  use_cache: true
+  vocab_size: 64002
+onnxFiles:
+  onnx/model_quantized.onnx: 135.8
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-25T12:31:51.000Z'

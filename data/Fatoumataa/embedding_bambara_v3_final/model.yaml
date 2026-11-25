@@ -1,0 +1,351 @@
+_id: 6b05993b2a3af7087e98578e
+id: Fatoumataa/embedding_bambara_v3_final
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- xlm-roberta
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:2893
+- loss:TripletLoss
+- arxiv:1908.10084
+- arxiv:1703.07737
+- model-index
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 20
+likes: 0
+modelId: Fatoumataa/embedding_bambara_v3_final
+author: Fatoumataa
+sha: c871db49e985684cd04d22654894c2ea5c78b45c
+lastModified: '2026-11-24T14:42:48.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: Qu'est-ce que l'expansion bantoue et quel a été son impact sur l'Afrique subsaharienne ?
+  sentences:
+  - aw ka kan ka kɔdimi kɛ kamankunw ni ɲɔgɔn cɛ, o kɔ aw bɛ kɔnɔbara digidigi (heimlich maneuver) ni sɔgɔsɔgɔninjɛ ma se,
+    ka dɛmɛ wele. laɲini ye ka ninakiliyɔrɔ labɔ.
+  - L'expansion bantoue est un mouvement migratoire et linguistique majeur qui s'est déroulé sur des milliers d'années, diffusant
+    les langues bantoues et des techniques agricoles et métallurgiques à travers une grande partie de l'Afrique subsaharienne,
+    modifiant profondément les sociétés locales.
+  - Départ de la région du Cameroun/Nigeria,L'expansion bantoue est une invasion militaire menée par un seul grand empire
+    bantou. (Simplification excessive et fausse description d'un processus complexe).
+- source_sentence: Citez les marchandises phares du commerce dans l'Empire du Mali.
+  sentences:
+  - Fɛn minnu tun bɛ jago kɛ Mali Mansamara kɔnɔ, olu tun ye sanu, kɔgɔ ani jɔnw ye, ka fara sigida fɛnw kan i n'a fɔ kola,
+    fini ani sɛnɛfɛnw.
+  - avant de cuisiner, il est impératif de se laver les mains avec du savon, de s'assurer que les ustensiles et les surfaces
+    sont propres et d'attacher ses cheveux.
+  - L'or provenait des mines du Sud (Bambouk, Bouré)
+- source_sentence: Comment les récits épiques, comme celui de Soundiata Keïta, sont-ils transmis au Mali ?
+  sentences:
+  - 48. Car 51 - 3 = 48,Les récits épiques maliens sont uniquement écrits dans des livres rares. (Ignorance de la primauté
+    de la tradition orale).
+  - Mali maanaba minnu bɛ fɔ, i n'a fɔ Soundiata Keïta ta, olu bɛ lase da la ka bɔ mɔgɔw la ka taa mɔgɔw la griotw fɛ, minnu
+    b'u dɔnkili da ani k'u fɔ, o cogo la, tariku ni nsiirinw hakili bɛ to senna.
+  - Hakilila ye hakili ka seko ye ka kunnafoni tɛmɛnenw, ko kɛlenw ani dɔnniyaw mara ani k'u hakili to a la. a nafa ka bon
+    danyɔrɔ ni kalan na.
+- source_sentence: Décris le kente et sa provenance.
+  sentences:
+  - Kente ye laadala fini ye min dilannen don ni bolo ye, a bɔra Gana, kɛrɛnkɛrɛnnenya la Ashanti mɔgɔw fɛ. A tɔgɔ bɔra a
+    ka jateminɛcogo kulɛrilenw n'a taamasyɛn kɔrɔw la, a ka c'a la, a bɛ don seli nafamaw senfɛ.
+  - sani aw ka tobili kɛ, a nafa ka bon aw ka aw tɛgɛw ko ni safinɛ ye, ka aw janto minɛnw ni yɔrɔw la ani ka aw kunsigi siri.
+  - Kente, Ghana, Tissu traditionnel, Ashanti,Le kente est un type de danse africaine moderne. (Confusion d'artisanat et de
+    danse).
+- source_sentence: 47 tilancɛ ye joli ye ?
+  sentences:
+  - tilancɛ, hakili jatebɔ,18. Misali minnu bɛ kɛ tuma caman na jatebɔ tilancɛ la.
+  - 23. Sabula 47 tilancɛ ye 23 ye.
+  - Samory Touré tun ye Almamy (sɔrɔdasi ani diinɛ ɲɛmɔgɔ) ye min ye kɛlɛ jugu labɛn France ka mara kama Tilebi Afrika, kɛrɛnkɛrɛnnenya
+    la Wassoulou mara la, bi Mali saheliyanfan fɛ.
+model-index:
+- name: SentenceTransformer
+  results:
+  - task:
+      type: information-retrieval
+      name: Information Retrieval
+    dataset:
+      name: bambara val
+      type: bambara_val
+    metrics:
+    - type: cosine_accuracy@1
+      value: 0.545
+      name: Cosine Accuracy@1
+      verified: false
+    - type: cosine_accuracy@3
+      value: 0.64
+      name: Cosine Accuracy@3
+      verified: false
+    - type: cosine_accuracy@5
+      value: 0.69
+      name: Cosine Accuracy@5
+      verified: false
+    - type: cosine_accuracy@10
+      value: 0.73
+      name: Cosine Accuracy@10
+      verified: false
+    - type: cosine_precision@3
+      value: 0.21333333333333335
+      name: Cosine Precision@3
+      verified: false
+    - type: cosine_precision@5
+      value: 0.13799999999999998
+      name: Cosine Precision@5
+      verified: false
+    - type: cosine_precision@10
+      value: 0.073
+      name: Cosine Precision@10
+      verified: false
+    - type: cosine_recall@3
+      value: 0.64
+      name: Cosine Recall@3
+      verified: false
+    - type: cosine_recall@5
+      value: 0.69
+      name: Cosine Recall@5
+      verified: false
+    - type: cosine_recall@10
+      value: 0.73
+      name: Cosine Recall@10
+      verified: false
+    - type: cosine_ndcg@10
+      value: 0.6334618942689199
+      name: Cosine Ndcg@10
+      verified: false
+    - type: cosine_mrr@10
+      value: 0.6030119047619046
+      name: Cosine Mrr@10
+      verified: false
+    - type: cosine_map@100
+      value: 0.611833250516638
+      name: Cosine Map@100
+      verified: false
+config:
+  architectures:
+  - XLMRobertaModel
+  model_type: xlm-roberta
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:2893
+  - loss:TripletLoss
+  widget:
+  - source_sentence: Qu'est-ce que l'expansion bantoue et quel a été son impact sur l'Afrique subsaharienne ?
+    sentences:
+    - aw ka kan ka kɔdimi kɛ kamankunw ni ɲɔgɔn cɛ, o kɔ aw bɛ kɔnɔbara digidigi (heimlich maneuver) ni sɔgɔsɔgɔninjɛ ma se,
+      ka dɛmɛ wele. laɲini ye ka ninakiliyɔrɔ labɔ.
+    - L'expansion bantoue est un mouvement migratoire et linguistique majeur qui s'est déroulé sur des milliers d'années,
+      diffusant les langues bantoues et des techniques agricoles et métallurgiques à travers une grande partie de l'Afrique
+      subsaharienne, modifiant profondément les sociétés locales.
+    - Départ de la région du Cameroun/Nigeria,L'expansion bantoue est une invasion militaire menée par un seul grand empire
+      bantou. (Simplification excessive et fausse description d'un processus complexe).
+  - source_sentence: Citez les marchandises phares du commerce dans l'Empire du Mali.
+    sentences:
+    - Fɛn minnu tun bɛ jago kɛ Mali Mansamara kɔnɔ, olu tun ye sanu, kɔgɔ ani jɔnw ye, ka fara sigida fɛnw kan i n'a fɔ kola,
+      fini ani sɛnɛfɛnw.
+    - avant de cuisiner, il est impératif de se laver les mains avec du savon, de s'assurer que les ustensiles et les surfaces
+      sont propres et d'attacher ses cheveux.
+    - L'or provenait des mines du Sud (Bambouk, Bouré)
+  - source_sentence: Comment les récits épiques, comme celui de Soundiata Keïta, sont-ils transmis au Mali ?
+    sentences:
+    - 48. Car 51 - 3 = 48,Les récits épiques maliens sont uniquement écrits dans des livres rares. (Ignorance de la primauté
+      de la tradition orale).
+    - Mali maanaba minnu bɛ fɔ, i n'a fɔ Soundiata Keïta ta, olu bɛ lase da la ka bɔ mɔgɔw la ka taa mɔgɔw la griotw fɛ, minnu
+      b'u dɔnkili da ani k'u fɔ, o cogo la, tariku ni nsiirinw hakili bɛ to senna.
+    - Hakilila ye hakili ka seko ye ka kunnafoni tɛmɛnenw, ko kɛlenw ani dɔnniyaw mara ani k'u hakili to a la. a nafa ka bon
+      danyɔrɔ ni kalan na.
+  - source_sentence: Décris le kente et sa provenance.
+    sentences:
+    - Kente ye laadala fini ye min dilannen don ni bolo ye, a bɔra Gana, kɛrɛnkɛrɛnnenya la Ashanti mɔgɔw fɛ. A tɔgɔ bɔra
+      a ka jateminɛcogo kulɛrilenw n'a taamasyɛn kɔrɔw la, a ka c'a la, a bɛ don seli nafamaw senfɛ.
+    - sani aw ka tobili kɛ, a nafa ka bon aw ka aw tɛgɛw ko ni safinɛ ye, ka aw janto minɛnw ni yɔrɔw la ani ka aw kunsigi
+      siri.
+    - Kente, Ghana, Tissu traditionnel, Ashanti,Le kente est un type de danse africaine moderne. (Confusion d'artisanat et
+      de danse).
+  - source_sentence: 47 tilancɛ ye joli ye ?
+    sentences:
+    - tilancɛ, hakili jatebɔ,18. Misali minnu bɛ kɛ tuma caman na jatebɔ tilancɛ la.
+    - 23. Sabula 47 tilancɛ ye 23 ye.
+    - Samory Touré tun ye Almamy (sɔrɔdasi ani diinɛ ɲɛmɔgɔ) ye min ye kɛlɛ jugu labɛn France ka mara kama Tilebi Afrika,
+      kɛrɛnkɛrɛnnenya la Wassoulou mara la, bi Mali saheliyanfan fɛ.
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  metrics:
+  - cosine_accuracy@1
+  - cosine_accuracy@3
+  - cosine_accuracy@5
+  - cosine_accuracy@10
+  - cosine_precision@3
+  - cosine_precision@5
+  - cosine_precision@10
+  - cosine_recall@3
+  - cosine_recall@5
+  - cosine_recall@10
+  - cosine_ndcg@10
+  - cosine_mrr@10
+  - cosine_map@100
+  model-index:
+  - name: SentenceTransformer
+    results:
+    - task:
+        type: information-retrieval
+        name: Information Retrieval
+      dataset:
+        name: bambara val
+        type: bambara_val
+      metrics:
+      - type: cosine_accuracy@1
+        value: 0.545
+        name: Cosine Accuracy@1
+        verified: false
+      - type: cosine_accuracy@3
+        value: 0.64
+        name: Cosine Accuracy@3
+        verified: false
+      - type: cosine_accuracy@5
+        value: 0.69
+        name: Cosine Accuracy@5
+        verified: false
+      - type: cosine_accuracy@10
+        value: 0.73
+        name: Cosine Accuracy@10
+        verified: false
+      - type: cosine_precision@3
+        value: 0.21333333333333335
+        name: Cosine Precision@3
+        verified: false
+      - type: cosine_precision@5
+        value: 0.13799999999999998
+        name: Cosine Precision@5
+        verified: false
+      - type: cosine_precision@10
+        value: 0.073
+        name: Cosine Precision@10
+        verified: false
+      - type: cosine_recall@3
+        value: 0.64
+        name: Cosine Recall@3
+        verified: false
+      - type: cosine_recall@5
+        value: 0.69
+        name: Cosine Recall@5
+        verified: false
+      - type: cosine_recall@10
+        value: 0.73
+        name: Cosine Recall@10
+        verified: false
+      - type: cosine_ndcg@10
+        value: 0.6334618942689199
+        name: Cosine Ndcg@10
+        verified: false
+      - type: cosine_mrr@10
+        value: 0.6030119047619046
+        name: Cosine Mrr@10
+        verified: false
+      - type: cosine_map@100
+        value: 0.611833250516638
+        name: Cosine Map@100
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: checkpoint-400/1_Pooling/config.json
+- rfilename: checkpoint-400/README.md
+- rfilename: checkpoint-400/config.json
+- rfilename: checkpoint-400/config_sentence_transformers.json
+- rfilename: checkpoint-400/model.safetensors
+- rfilename: checkpoint-400/modules.json
+- rfilename: checkpoint-400/optimizer.pt
+- rfilename: checkpoint-400/rng_state.pth
+- rfilename: checkpoint-400/scheduler.pt
+- rfilename: checkpoint-400/sentence_bert_config.json
+- rfilename: checkpoint-400/tokenizer.json
+- rfilename: checkpoint-400/tokenizer_config.json
+- rfilename: checkpoint-400/trainer_state.json
+- rfilename: checkpoint-400/training_args.bin
+- rfilename: checkpoint-700/1_Pooling/config.json
+- rfilename: checkpoint-700/README.md
+- rfilename: checkpoint-700/config.json
+- rfilename: checkpoint-700/config_sentence_transformers.json
+- rfilename: checkpoint-700/model.safetensors
+- rfilename: checkpoint-700/modules.json
+- rfilename: checkpoint-700/optimizer.pt
+- rfilename: checkpoint-700/rng_state.pth
+- rfilename: checkpoint-700/scheduler.pt
+- rfilename: checkpoint-700/sentence_bert_config.json
+- rfilename: checkpoint-700/tokenizer.json
+- rfilename: checkpoint-700/tokenizer_config.json
+- rfilename: checkpoint-700/trainer_state.json
+- rfilename: checkpoint-700/training_args.bin
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: eval/Information-Retrieval_evaluation_bambara_val_results.csv
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: training_args.bin
+spaces: []
+createdAt: '2026-11-24T14:03:39.000Z'
+safetensors:
+  parameters:
+    F32: 278043648
+  total: 278043648
+usedStorage: 6681099902
+downloadsAllTime: 20
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - XLMRobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  layer_norm_eps: 1.0e-05
+  max_position_embeddings: 514
+  model_type: xlm-roberta
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  output_past: true
+  pad_token_id: 1
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.22.1
+  type_vocab_size: 1
+  use_cache: false
+  vocab_size: 250002
+onnxFiles: {}
+safetensorsSizeMb: 3336.6
+approxSizeMb: 1112.2
+fetchedAt: '2026-11-25T12:31:51.000Z'

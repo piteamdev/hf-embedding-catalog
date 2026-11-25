@@ -1,0 +1,116 @@
+_id: 6ae33d6d1bd850a20c355519
+id: knowledgator/EdgeCoder-31M
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- deberta-v2
+- feature-extraction
+- electra
+- replaced-token-detection
+- encoder
+- long-context
+- flashdeberta
+- en
+- arxiv:2611.31495
+- license:apache-2.0
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 13
+likes: 0
+modelId: knowledgator/EdgeCoder-31M
+author: knowledgator
+sha: 7ca6725c36d460acb68df262e6b3aecb5dea4abe
+lastModified: '2026-11-25T11:46:26.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  architectures:
+  - DebertaV2Model
+  model_type: deberta-v2
+  tokenizer_config:
+    bos_token: '[CLS]'
+    eos_token: '[SEP]'
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  license: apache-2.0
+  language:
+  - en
+  library_name: transformers
+  pipeline_tag: feature-extraction
+  tags:
+  - deberta-v2
+  - electra
+  - replaced-token-detection
+  - encoder
+  - long-context
+  - flashdeberta
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: added_tokens.json
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: special_tokens_map.json
+- rfilename: spm.model
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-10-29T12:34:53.000Z'
+safetensors:
+  parameters:
+    BF16: 31036416
+  total: 31036416
+usedStorage: 64552680
+downloadsAllTime: 13
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - DebertaV2Model
+  attention_probs_dropout_prob: 0.1
+  embedding_size: 128
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  initializer_range: 0.02
+  intermediate_size: 1536
+  layer_norm_eps: 1.0e-07
+  legacy: true
+  max_position_embeddings: 2048
+  max_relative_positions: -1
+  model_type: deberta-v2
+  norm_rel_ebd: layer_norm
+  num_attention_heads: 6
+  num_hidden_layers: 8
+  pad_token_id: 0
+  pooler_dropout: 0
+  pooler_hidden_act: gelu
+  pooler_hidden_size: 384
+  pos_att_type:
+  - p2c
+  - c2p
+  position_biased_input: false
+  position_buckets: 512
+  relative_attention: true
+  share_att_key: true
+  torch_dtype: bfloat16
+  transformers_version: 4.52.4
+  type_vocab_size: 0
+  vocab_size: 128100
+onnxFiles: {}
+safetensorsSizeMb: 62.1
+approxSizeMb: 62.1
+fetchedAt: '2026-11-25T12:31:51.000Z'

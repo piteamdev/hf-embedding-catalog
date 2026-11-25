@@ -1,0 +1,208 @@
+_id: 6b064b62b9df4f61f7c0b222
+id: altslate/indic-embed-small
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- onnx
+- safetensors
+- modernbert
+- feature-extraction
+- sentence-similarity
+- embeddings
+- romanized
+- transliteration
+- hinglish
+- code-mixing
+- indic
+- india
+- cross-lingual
+- distillation
+- transformers.js
+- en
+- hi
+- bn
+- ta
+- te
+- mr
+- gu
+- kn
+- ml
+- pa
+- ur
+- base_model:jhu-clsp/mmBERT-small
+- base_model:quantized:jhu-clsp/mmBERT-small
+- license:apache-2.0
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 13
+likes: 1
+modelId: altslate/indic-embed-small
+author: altslate
+sha: 3486c987df8509219695946d0b1784e29316f813
+lastModified: '2026-11-25T03:13:13.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config:
+  architectures:
+  - ModernBertModel
+  model_type: modernbert
+  tokenizer_config:
+    bos_token: <bos>
+    eos_token: <eos>
+    unk_token: <unk>
+    sep_token: <eos>
+    pad_token: <pad>
+    cls_token: <bos>
+    mask_token: <mask>
+cardData:
+  license: apache-2.0
+  base_model: jhu-clsp/mmBERT-small
+  language:
+  - en
+  - hi
+  - bn
+  - ta
+  - te
+  - mr
+  - gu
+  - kn
+  - ml
+  - pa
+  - ur
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - embeddings
+  - romanized
+  - transliteration
+  - hinglish
+  - code-mixing
+  - indic
+  - india
+  - cross-lingual
+  - distillation
+  - transformers.js
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Dense/config.json
+- rfilename: 2_Dense/model.safetensors
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: onnx/model.onnx
+- rfilename: onnx/model_fp16.onnx
+- rfilename: sentence_bert_config.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces:
+- altslate/indic-romanized-search
+createdAt: '2026-11-25T02:43:46.000Z'
+safetensors:
+  parameters:
+    F32: 140493696
+  total: 140493696
+usedStorage: 1444310338
+downloadsAllTime: 13
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - ModernBertModel
+  attention_bias: false
+  attention_dropout: 0.0
+  bos_token_id: 2
+  classifier_activation: gelu
+  classifier_bias: false
+  classifier_dropout: 0.0
+  classifier_pooling: mean
+  cls_token_id: 1
+  decoder_bias: true
+  deterministic_flash_attn: false
+  dtype: float32
+  embedding_dropout: 0.0
+  eos_token_id: 1
+  global_attn_every_n_layers: 3
+  global_rope_theta: 160000
+  gradient_checkpointing: false
+  hidden_activation: gelu
+  hidden_size: 384
+  initializer_cutoff_factor: 2.0
+  initializer_range: 0.02
+  intermediate_size: 1152
+  layer_norm_eps: 1.0e-05
+  layer_types:
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  local_attention: 128
+  local_rope_theta: 160000
+  mask_token_id: 4
+  max_position_embeddings: 8192
+  mlp_bias: false
+  mlp_dropout: 0.0
+  model_type: modernbert
+  norm_bias: false
+  norm_eps: 1.0e-05
+  num_attention_heads: 6
+  num_hidden_layers: 22
+  pad_token_id: 0
+  position_embedding_type: sans_pos
+  repad_logits_with_grad: false
+  rope_parameters:
+    full_attention:
+      rope_theta: 160000
+      rope_type: default
+    sliding_attention:
+      rope_theta: 160000
+      rope_type: default
+  sep_token_id: 1
+  sparse_pred_ignore_index: -100
+  sparse_prediction: false
+  transformers_version: 4.57.6
+  vocab_size: 256000
+onnxFiles:
+  onnx/model.onnx: 564.0
+  onnx/model_fp16.onnx: 282.4
+safetensorsSizeMb: 563.6
+approxSizeMb: 562.0
+fetchedAt: '2026-11-25T12:31:51.000Z'

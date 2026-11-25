@@ -1,0 +1,447 @@
+_id: 6b05a3098170bb91b466018d
+id: patzer-adi/bge-patent-similarity-contrastive
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:36618
+- loss:ContrastiveLoss
+- arxiv:1908.10084
+- base_model:BAAI/bge-base-en-v1.5
+- base_model:finetune:BAAI/bge-base-en-v1.5
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 21
+likes: 0
+modelId: patzer-adi/bge-patent-similarity-contrastive
+author: patzer-adi
+sha: f217fb331e498dd404cb61777206229483c54b22
+lastModified: '2026-11-24T14:51:00.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: 'Title: MANEUVER PLANNING WITH HIGHER ORDER RATIONAL BEZIER CURVES
+
+    Abstract: Systems and methods are provided for generating a maneuver on a propagated route for an unmanned vehicle from
+    a series of waypoints. A planner interface is configured to receive the waypoints and at least one parameter representing
+    constraints on the propagated route of the unmanned vehicle. A curve generation component is configured to determine respective
+    positions for each of a set of N+1 control points for a rational Bezier curve of Nth order from the series of waypoints
+    and the parameter. N is an integer greater than three. A weight generation component is configured to determine scalar
+    weights for the set of N+1 control points from the parameter. A navigation interface is configured to provide the maneuver,
+    generated from the positions for the set of control points and the scalar weights, to a control system of the unmanned
+    vehicle, configured to execute the provided maneuver at the unmanned vehicle.'
+  sentences:
+  - 'Title: AIRCRAFT DOOR WITH RETRACTABLE HEADER
+
+    Abstract: The disclosed embodiments relate to an aircraft having an interior cabin door with a retractable header. Accordingly
+    to non-limiting embodiments, an interior cabin door for an aircraft includes a door panel having an opening in a top portion
+    thereof. A retractable header configured to retract into the opening in the door panel as the door panel moves toward
+    an open position. As the door panel moves toward a closed position, a lifting system is configured to raise the retractable
+    header to interface with the ceiling of the aircraft. The lifting system includes a four-bar mechanism, a cable and pulley
+    system and a biasing member configured to upwardly bias the retractable header.'
+  - 'Title: SYSTEMS AND METHODS FOR SUPPORT OF NON-VOLATILE MEMORY ON A DDR MEMORY CHANNEL
+
+    Abstract: Systems and methods are provided for supporting use of non-volatile memory (NVM) on a double data rate (DDR)
+    memory channel for an information handling system so that non-volatile memory devices (e.g., such as Phase Change Memory
+    “PCM” devices) may be employed for main memory usage. In one possible implementation, information handling system memory
+    reads may be managed directly in hardware as memory semantics via use code, while memory writes may be separately handled,
+    e.g., via an operating system (OS)/driver. In another possible implementation, both DRAM-based and NVM-based memory systems
+    may be populated for an information handling system.'
+  - 'Title: DEDICATED WIREWAYS FOR COLLAR-MOUNTED BOBBIN ANTENNAS
+
+    Abstract: A system to protect a downhole antenna from fluid penetration, in some embodiments, comprises a collar; a bobbin
+    antenna, mounted on the collar, including multiple coil slots on an outer surface of the bobbin antenna and including
+    one or more intra-bobbin wireways between at least one of the coil slots and an outlet of the bobbin antenna; and a collar
+    wireway that is dedicated to the bobbin antenna.'
+- source_sentence: 'Title: COLLAPSIBLE SEWING BASKET
+
+    Abstract: The present invention is directed to a sewing basket for storing thread, pins, needles, scissors, buttons, snaps,
+    measuring tapes, and other sewing tools and accessories. The present invention is further directed to a novel method of
+    collapsing the size of the sewing basket for shipping, storage, and other purposes. The sewing basket of this invention
+    includes a base, an upper frame and a collapsible side walls connecting the base and the upper frame. The basket may switch
+    from a collapsed position with the side walls collapsed bringing the upper frame in proximity to the base and an extended
+    position where the side walls are maintained in an extended position with a plurality of supports.'
+  sentences:
+  - 'Title: Methods and Systems for Navigation within Virtual Reality Space using Head Mounted Display
+
+    Abstract: Video data is transmitted to a head mounted display for display of a virtual reality scene within the head mounted
+    display. The virtual reality scene includes multiple objects representing display screens of computing sources or information
+    sources. Upon detecting movement of the head mounted display, an adjustment of the virtual reality scene is generated
+    in which a field of view of the user is moved within the virtual reality scene, and a focus direction of the user is determined.
+    Based on the focus direction of the user, an object of current focus of the user within the virtual reality scene is determined.
+    The virtual reality scene is adjusted to move the object of current focus of the user toward a point of view of the user
+    within the virtual reality scene. Audio content associated with the object of current focus of the user is provided to
+    the head mounted display.'
+  - 'Title: SEWING MACHINE TABLE
+
+    Abstract: An extendable sewing machine table comprising a tabletop with a top surface, a bottom surface and four side
+    surfaces. The tabletop is supported by a frame wherein said tabletop is attached to a bracket and said bracket is reversibly
+    attached to the frame using adjustable bolts. An aperture for receiving a sewing machine is defined in the top surface
+    of said tabletop. One or more tabletop extenders which have a rail which is received by a channel in the corresponding
+    tabletop side surface.'
+  - 'Title: ORGANIC THIN FILM TRANSISTOR AND A MANUFACTURING METHOD OF THE SAME
+
+    Abstract: An organic thin film transistor (OTFT) is disclosed herein. The OTFT has a substrate, a data line, a transfer
+    pad, a source electrode, a drain electrode, an active pattern, a first insulating layer, a gate electrode, a second insulating
+    layer, and a transparent electrode. The data line and the transfer pad are disposed on the substrate. The source electrode
+    and the drain electrode are disposed on the substrate, the data line, and the transfer pad. The active pattern is disposed
+    on the data line, the transfer pad, the substrate, the source electrode, and the drain electrode. With the disposition
+    of the active pattern on the source electrode and the drain electrode, the source electrode and the drain electrode are
+    free from the bombardment of the plasma.'
+- source_sentence: 'Title: MOBILE MISTING COOLING APPARATUS
+
+    Abstract: A mobile, attachable, detachable misting cooling apparatus. The apparatus conveys a cooling liquid through a
+    plurality of misting elements removably attached to a portable frame structure. The apparatus may include a reservoir
+    containing a volume of cooling liquid and a pump powered by a battery and rechargeable by power source operable to direct
+    the cooling fluid through the misting elements.'
+  sentences:
+  - 'Title: DEVICES AND STACKED MICROELECTRONIC PACKAGES WITH PACKAGE SURFACE CONDUCTORS AND METHODS OF THEIR FABRICATION
+
+    Abstract: Embodiments of methods for forming a device include performing an oxidation inhibiting treatment to exposed
+    ends of first and second device-to-edge conductors, and forming a package surface conductor to electrically couple the
+    exposed ends of the first and second device-to-edge conductors. Performing the oxidation inhibiting treatment may include
+    applying an organic solderability protectant coating to the exposed ends, or plating the exposed ends with a conductive
+    plating material. The method may further include applying a conformal protective coating over the package surface conductor.
+    An embodiment of a device formed using such a method includes a package body, the first and second device-to-edge conductors,
+    the package surface conductor on a surface of the package body and extending between the first and second device-to-edge
+    conductors, and the conformal protective coating over the package surface conductor.'
+  - 'Title: FUEL CELL STACK ASSEMBLY
+
+    Abstract: A fuel cell stack assembly (101) comprising a fuel cell stack (102) comprising one or more fuel cells and a
+    retaining member (100) comprising a first engaging region (104) that engages a first end face (110) of the fuel cell stack
+    (102), a second engaging region (106) that engages a second opposing end face (112) of the fuel cell stack (102, and a
+    joining region (108) configured to bias the first engaging region (104) towards the second engaging region (106). The
+    retaining member (106) defines a fluid chamber (118) for communicating a fluid to or from the fuel cell stack (102).'
+  - 'Title: MISTING DEVICE WITH QUICK RELEASE INTERCHANGEABLE CARTRIDGE
+
+    Abstract: A misting device with quick release interchangeable cartridge is disclosed for atomizing and discharging a composition
+    as a mist for topical application of the composition to the body or diffusing the composition into the ambient air. The
+    cartridge quickly loads and unloads into an interior chamber of the container through a quick release coupling mechanism.
+    The coupling mechanism may create a friction fit engagement. An atomizer atomizes the composition. A base maintains the
+    container in an upright position for formulation of the composition in the cavity of the cartridge.'
+- source_sentence: 'Title: SYSTEM FOR RECORDING A LIFE STORY AND SHARING THE LIFE STORY AFTER DEATH
+
+    Abstract: A system for recording a user''s life is provided. The system includes a server and a database communicatively
+    coupled to the server. The system causes the server to receive, over a computer network, content from a user; store, in
+    the database, the content and an association between the content and the user; receive, over a computer network, an appointed
+    guardian over the content; receive a notification of the death of the user; and grant the guardian administrative access
+    to the content based at least in part on the notification.'
+  sentences:
+  - 'Title: METHOD AND APPARATUS FOR ACCELERATING DATA TRANSMISSION IN A NETWORK COMMUNICATION SYSTEM
+
+    Abstract: A second network node receives a first download request from a first network node. After determining that the
+    first data object requested by the first node is not locally stored at the second network node, the second node sends
+    a second download request for the first data object to a third network node and records a mapping relationship for the
+    three network nodes. After receiving N1 data packets from the third network node and determining that a total amount of
+    data in the N1 data packets corresponding to the first data object exceeds a predefined data amount threshold, the second
+    node starts transmitting the data in the N1 data packets corresponding to the first data object to the first network node
+    according to the recorded mapping relationship.'
+  - 'Title: CONTAINER
+
+    Abstract: A container (10) to dispense a liquid such as sauce. The container (1.0) has a resilient deformable body (11)
+    that may be compressed to dispense the liquid from the interior (55) of the body (11). Mounted on the body (11) is a cap
+    (37) that is movable along a path (axis 13) between a closed position and an open position. In the open position the upper
+    opening (38) is open to allow the liquid to be dispensed. Preferably the path is linear.'
+  - 'Title: HYDRAULIC LINE CONNECTOR
+
+    Abstract: A method of fastening a male member of a hydraulic line connector to a female member of the hydraulic line connector.
+    The a female member has a cylindrical wall portion defining a bore having a frusto-conical surface, and an opposing pair
+    of slits. A spring clip is provided that has a first leg featuring a first arcuate portion, a second leg featuring a second
+    arcuate portion, and a closed end portion removably positioned between and attached to the first and second legs. The
+    male member has a shoulder, a reduced portion, and a frusto-conical surface that tapers inward from the shoulder. The
+    male member can be positioned in the bore of the female member so that the shoulder is engaged by the first and second
+    arcuate portions of the first and second legs of the spring clip.'
+- source_sentence: 'Title: DEFROST SYSTEM FOR REFRIGERATION APPARATUS, AND COOLING UNIT
+
+    Abstract: A defrost system includes: a cooling device in a freezer, and includes a casing, a heat exchanger pipe with
+    a difference in elevation in the casing, and a drain receiver unit below the heat exchanger pipe; a refrigerating device
+    to cool and liquefy CO2 refrigerant; and a refrigerant circuit for permitting the cooled and liquefied CO2 refrigerant
+    to circulate to the heat exchanger pipe. The defrost system includes a bypass pipe of the heat exchanger pipe to form
+    a CO2 circulation path; an on-off valve in the heat exchanger pipe to be closed during defrosting so that the CO2 circulation
+    path is a closed circuit; a pressure adjusting unit for adjusting pressure of the CO2 refrigerant during defrosting; and
+    a brine circuit as a first heating medium, in which the defrost system permits the CO2 refrigerant to naturally circulate
+    in the closed circuit during defrosting by a thermosiphon effect.'
+  sentences:
+  - 'Title: ILLUMINATED BADGE
+
+    Abstract: A vehicle is provided herein. The vehicle includes a body panel and a badge attached to the panel. The badge
+    includes a substrate and a housing attached thereto that define a cavity therebetween. A reflective member is disposed
+    within the cavity. A light source is disposed within the cavity and is configured to emit excitation light in a first
+    direction to illuminate a viewable portion of the badge and in a second direction towards the reflective member. The reflective
+    member redirects the light through a peripheral portion of the badge.'
+  - 'Title: COMPOSITIONS COMPRISING CHIMERIC ANTIGEN RECEPTORS, T CELLS COMPRISING THE SAME, AND METHODS OF USING THE SAME
+
+    Abstract: Provided are isolated nucleic acid molecules encoding chimeric antigen receptors (CARs) that bind to tumor antigens.
+    Also provided are isolated polypeptides and CARs encoded by the isolated nucleic acid molecules, vectors that include
+    the isolated nucleic acid molecules, cells that include the isolated nucleic acid molecules, methods of making the same,
+    and methods for using the same to generate a persisting population of genetically engineered T cells in a subject, expanding
+    a population of genetically engineered T cells in a subject, modulating the amount of cytokine secreted by a T cell, reducing
+    the amount of activation-induced calcium influx into a T cell, providing an anti-tumor immunity to a subject, treating
+    a mammal having a MUC1-associated disease or disorder, stimulating a T cell-mediated immune response to a target cell
+    population or tissue in a subject, and imaging a MUC1-associated tumor.'
+  - 'Title: RADIOGRAPHIC IMAGE ANALYSIS DEVICE AND METHOD, AND RECORDING MEDIUM HAVING PROGRAM RECORDED THEREIN
+
+    Abstract: A subject image is acquired. Model information, in which a model image captured by irradiating each of a plurality
+    of models different from the subject with radiation is associated with a body thickness distribution of the model in the
+    model image is acquired for each of the plurality of models. Characteristic information indicating characteristics of
+    the subject image is acquired. Characteristic information indicating the characteristics of each of the plurality of model
+    images is acquired, on the basis of the plurality of model information items. The model image having characteristic information
+    similar to the characteristic information of the subject image is specified. The body thickness distribution associated
+    with the specified model image is determined as the body thickness distribution of the subject image.'
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:36618
+  - loss:ContrastiveLoss
+  base_model: BAAI/bge-base-en-v1.5
+  widget:
+  - source_sentence: 'Title: MANEUVER PLANNING WITH HIGHER ORDER RATIONAL BEZIER CURVES
+
+      Abstract: Systems and methods are provided for generating a maneuver on a propagated route for an unmanned vehicle from
+      a series of waypoints. A planner interface is configured to receive the waypoints and at least one parameter representing
+      constraints on the propagated route of the unmanned vehicle. A curve generation component is configured to determine
+      respective positions for each of a set of N+1 control points for a rational Bezier curve of Nth order from the series
+      of waypoints and the parameter. N is an integer greater than three. A weight generation component is configured to determine
+      scalar weights for the set of N+1 control points from the parameter. A navigation interface is configured to provide
+      the maneuver, generated from the positions for the set of control points and the scalar weights, to a control system
+      of the unmanned vehicle, configured to execute the provided maneuver at the unmanned vehicle.'
+    sentences:
+    - 'Title: AIRCRAFT DOOR WITH RETRACTABLE HEADER
+
+      Abstract: The disclosed embodiments relate to an aircraft having an interior cabin door with a retractable header. Accordingly
+      to non-limiting embodiments, an interior cabin door for an aircraft includes a door panel having an opening in a top
+      portion thereof. A retractable header configured to retract into the opening in the door panel as the door panel moves
+      toward an open position. As the door panel moves toward a closed position, a lifting system is configured to raise the
+      retractable header to interface with the ceiling of the aircraft. The lifting system includes a four-bar mechanism,
+      a cable and pulley system and a biasing member configured to upwardly bias the retractable header.'
+    - 'Title: SYSTEMS AND METHODS FOR SUPPORT OF NON-VOLATILE MEMORY ON A DDR MEMORY CHANNEL
+
+      Abstract: Systems and methods are provided for supporting use of non-volatile memory (NVM) on a double data rate (DDR)
+      memory channel for an information handling system so that non-volatile memory devices (e.g., such as Phase Change Memory
+      “PCM” devices) may be employed for main memory usage. In one possible implementation, information handling system memory
+      reads may be managed directly in hardware as memory semantics via use code, while memory writes may be separately handled,
+      e.g., via an operating system (OS)/driver. In another possible implementation, both DRAM-based and NVM-based memory
+      systems may be populated for an information handling system.'
+    - 'Title: DEDICATED WIREWAYS FOR COLLAR-MOUNTED BOBBIN ANTENNAS
+
+      Abstract: A system to protect a downhole antenna from fluid penetration, in some embodiments, comprises a collar; a
+      bobbin antenna, mounted on the collar, including multiple coil slots on an outer surface of the bobbin antenna and including
+      one or more intra-bobbin wireways between at least one of the coil slots and an outlet of the bobbin antenna; and a
+      collar wireway that is dedicated to the bobbin antenna.'
+  - source_sentence: 'Title: COLLAPSIBLE SEWING BASKET
+
+      Abstract: The present invention is directed to a sewing basket for storing thread, pins, needles, scissors, buttons,
+      snaps, measuring tapes, and other sewing tools and accessories. The present invention is further directed to a novel
+      method of collapsing the size of the sewing basket for shipping, storage, and other purposes. The sewing basket of this
+      invention includes a base, an upper frame and a collapsible side walls connecting the base and the upper frame. The
+      basket may switch from a collapsed position with the side walls collapsed bringing the upper frame in proximity to the
+      base and an extended position where the side walls are maintained in an extended position with a plurality of supports.'
+    sentences:
+    - 'Title: Methods and Systems for Navigation within Virtual Reality Space using Head Mounted Display
+
+      Abstract: Video data is transmitted to a head mounted display for display of a virtual reality scene within the head
+      mounted display. The virtual reality scene includes multiple objects representing display screens of computing sources
+      or information sources. Upon detecting movement of the head mounted display, an adjustment of the virtual reality scene
+      is generated in which a field of view of the user is moved within the virtual reality scene, and a focus direction of
+      the user is determined. Based on the focus direction of the user, an object of current focus of the user within the
+      virtual reality scene is determined. The virtual reality scene is adjusted to move the object of current focus of the
+      user toward a point of view of the user within the virtual reality scene. Audio content associated with the object of
+      current focus of the user is provided to the head mounted display.'
+    - 'Title: SEWING MACHINE TABLE
+
+      Abstract: An extendable sewing machine table comprising a tabletop with a top surface, a bottom surface and four side
+      surfaces. The tabletop is supported by a frame wherein said tabletop is attached to a bracket and said bracket is reversibly
+      attached to the frame using adjustable bolts. An aperture for receiving a sewing machine is defined in the top surface
+      of said tabletop. One or more tabletop extenders which have a rail which is received by a channel in the corresponding
+      tabletop side surface.'
+    - 'Title: ORGANIC THIN FILM TRANSISTOR AND A MANUFACTURING METHOD OF THE SAME
+
+      Abstract: An organic thin film transistor (OTFT) is disclosed herein. The OTFT has a substrate, a data line, a transfer
+      pad, a source electrode, a drain electrode, an active pattern, a first insulating layer, a gate electrode, a second
+      insulating layer, and a transparent electrode. The data line and the transfer pad are disposed on the substrate. The
+      source electrode and the drain electrode are disposed on the substrate, the data line, and the transfer pad. The active
+      pattern is disposed on the data line, the transfer pad, the substrate, the source electrode, and the drain electrode.
+      With the disposition of the active pattern on the source electrode and the drain electrode, the source electrode and
+      the drain electrode are free from the bombardment of the plasma.'
+  - source_sentence: 'Title: MOBILE MISTING COOLING APPARATUS
+
+      Abstract: A mobile, attachable, detachable misting cooling apparatus. The apparatus conveys a cooling liquid through
+      a plurality of misting elements removably attached to a portable frame structure. The apparatus may include a reservoir
+      containing a volume of cooling liquid and a pump powered by a battery and rechargeable by power source operable to direct
+      the cooling fluid through the misting elements.'
+    sentences:
+    - 'Title: DEVICES AND STACKED MICROELECTRONIC PACKAGES WITH PACKAGE SURFACE CONDUCTORS AND METHODS OF THEIR FABRICATION
+
+      Abstract: Embodiments of methods for forming a device include performing an oxidation inhibiting treatment to exposed
+      ends of first and second device-to-edge conductors, and forming a package surface conductor to electrically couple the
+      exposed ends of the first and second device-to-edge conductors. Performing the oxidation inhibiting treatment may include
+      applying an organic solderability protectant coating to the exposed ends, or plating the exposed ends with a conductive
+      plating material. The method may further include applying a conformal protective coating over the package surface conductor.
+      An embodiment of a device formed using such a method includes a package body, the first and second device-to-edge conductors,
+      the package surface conductor on a surface of the package body and extending between the first and second device-to-edge
+      conductors, and the conformal protective coating over the package surface conductor.'
+    - 'Title: FUEL CELL STACK ASSEMBLY
+
+      Abstract: A fuel cell stack assembly (101) comprising a fuel cell stack (102) comprising one or more fuel cells and
+      a retaining member (100) comprising a first engaging region (104) that engages a first end face (110) of the fuel cell
+      stack (102), a second engaging region (106) that engages a second opposing end face (112) of the fuel cell stack (102,
+      and a joining region (108) configured to bias the first engaging region (104) towards the second engaging region (106).
+      The retaining member (106) defines a fluid chamber (118) for communicating a fluid to or from the fuel cell stack (102).'
+    - 'Title: MISTING DEVICE WITH QUICK RELEASE INTERCHANGEABLE CARTRIDGE
+
+      Abstract: A misting device with quick release interchangeable cartridge is disclosed for atomizing and discharging a
+      composition as a mist for topical application of the composition to the body or diffusing the composition into the ambient
+      air. The cartridge quickly loads and unloads into an interior chamber of the container through a quick release coupling
+      mechanism. The coupling mechanism may create a friction fit engagement. An atomizer atomizes the composition. A base
+      maintains the container in an upright position for formulation of the composition in the cavity of the cartridge.'
+  - source_sentence: 'Title: SYSTEM FOR RECORDING A LIFE STORY AND SHARING THE LIFE STORY AFTER DEATH
+
+      Abstract: A system for recording a user''s life is provided. The system includes a server and a database communicatively
+      coupled to the server. The system causes the server to receive, over a computer network, content from a user; store,
+      in the database, the content and an association between the content and the user; receive, over a computer network,
+      an appointed guardian over the content; receive a notification of the death of the user; and grant the guardian administrative
+      access to the content based at least in part on the notification.'
+    sentences:
+    - 'Title: METHOD AND APPARATUS FOR ACCELERATING DATA TRANSMISSION IN A NETWORK COMMUNICATION SYSTEM
+
+      Abstract: A second network node receives a first download request from a first network node. After determining that
+      the first data object requested by the first node is not locally stored at the second network node, the second node
+      sends a second download request for the first data object to a third network node and records a mapping relationship
+      for the three network nodes. After receiving N1 data packets from the third network node and determining that a total
+      amount of data in the N1 data packets corresponding to the first data object exceeds a predefined data amount threshold,
+      the second node starts transmitting the data in the N1 data packets corresponding to the first data object to the first
+      network node according to the recorded mapping relationship.'
+    - 'Title: CONTAINER
+
+      Abstract: A container (10) to dispense a liquid such as sauce. The container (1.0) has a resilient deformable body (11)
+      that may be compressed to dispense the liquid from the interior (55) of the body (11). Mounted on the body (11) is a
+      cap (37) that is movable along a path (axis 13) between a closed position and an open position. In the open position
+      the upper opening (38) is open to allow the liquid to be dispensed. Preferably the path is linear.'
+    - 'Title: HYDRAULIC LINE CONNECTOR
+
+      Abstract: A method of fastening a male member of a hydraulic line connector to a female member of the hydraulic line
+      connector. The a female member has a cylindrical wall portion defining a bore having a frusto-conical surface, and an
+      opposing pair of slits. A spring clip is provided that has a first leg featuring a first arcuate portion, a second leg
+      featuring a second arcuate portion, and a closed end portion removably positioned between and attached to the first
+      and second legs. The male member has a shoulder, a reduced portion, and a frusto-conical surface that tapers inward
+      from the shoulder. The male member can be positioned in the bore of the female member so that the shoulder is engaged
+      by the first and second arcuate portions of the first and second legs of the spring clip.'
+  - source_sentence: 'Title: DEFROST SYSTEM FOR REFRIGERATION APPARATUS, AND COOLING UNIT
+
+      Abstract: A defrost system includes: a cooling device in a freezer, and includes a casing, a heat exchanger pipe with
+      a difference in elevation in the casing, and a drain receiver unit below the heat exchanger pipe; a refrigerating device
+      to cool and liquefy CO2 refrigerant; and a refrigerant circuit for permitting the cooled and liquefied CO2 refrigerant
+      to circulate to the heat exchanger pipe. The defrost system includes a bypass pipe of the heat exchanger pipe to form
+      a CO2 circulation path; an on-off valve in the heat exchanger pipe to be closed during defrosting so that the CO2 circulation
+      path is a closed circuit; a pressure adjusting unit for adjusting pressure of the CO2 refrigerant during defrosting;
+      and a brine circuit as a first heating medium, in which the defrost system permits the CO2 refrigerant to naturally
+      circulate in the closed circuit during defrosting by a thermosiphon effect.'
+    sentences:
+    - 'Title: ILLUMINATED BADGE
+
+      Abstract: A vehicle is provided herein. The vehicle includes a body panel and a badge attached to the panel. The badge
+      includes a substrate and a housing attached thereto that define a cavity therebetween. A reflective member is disposed
+      within the cavity. A light source is disposed within the cavity and is configured to emit excitation light in a first
+      direction to illuminate a viewable portion of the badge and in a second direction towards the reflective member. The
+      reflective member redirects the light through a peripheral portion of the badge.'
+    - 'Title: COMPOSITIONS COMPRISING CHIMERIC ANTIGEN RECEPTORS, T CELLS COMPRISING THE SAME, AND METHODS OF USING THE SAME
+
+      Abstract: Provided are isolated nucleic acid molecules encoding chimeric antigen receptors (CARs) that bind to tumor
+      antigens. Also provided are isolated polypeptides and CARs encoded by the isolated nucleic acid molecules, vectors that
+      include the isolated nucleic acid molecules, cells that include the isolated nucleic acid molecules, methods of making
+      the same, and methods for using the same to generate a persisting population of genetically engineered T cells in a
+      subject, expanding a population of genetically engineered T cells in a subject, modulating the amount of cytokine secreted
+      by a T cell, reducing the amount of activation-induced calcium influx into a T cell, providing an anti-tumor immunity
+      to a subject, treating a mammal having a MUC1-associated disease or disorder, stimulating a T cell-mediated immune response
+      to a target cell population or tissue in a subject, and imaging a MUC1-associated tumor.'
+    - 'Title: RADIOGRAPHIC IMAGE ANALYSIS DEVICE AND METHOD, AND RECORDING MEDIUM HAVING PROGRAM RECORDED THEREIN
+
+      Abstract: A subject image is acquired. Model information, in which a model image captured by irradiating each of a plurality
+      of models different from the subject with radiation is associated with a body thickness distribution of the model in
+      the model image is acquired for each of the plurality of models. Characteristic information indicating characteristics
+      of the subject image is acquired. Characteristic information indicating the characteristics of each of the plurality
+      of model images is acquired, on the basis of the plurality of model information items. The model image having characteristic
+      information similar to the characteristic information of the subject image is specified. The body thickness distribution
+      associated with the specified model image is determined as the body thickness distribution of the subject image.'
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-24T14:45:29.000Z'
+safetensors:
+  parameters:
+    F32: 109482240
+  total: 109482240
+usedStorage: 437951328
+downloadsAllTime: 21
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  id2label:
+    '0': LABEL_0
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  label2id:
+    LABEL_0: 0
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.20.2
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 30522
+onnxFiles: {}
+safetensorsSizeMb: 438.0
+approxSizeMb: 437.9
+fetchedAt: '2026-11-25T12:31:51.000Z'

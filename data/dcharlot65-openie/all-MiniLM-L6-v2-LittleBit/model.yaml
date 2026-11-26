@@ -1,0 +1,89 @@
+_id: 6b04a86e986f366962260502
+id: dcharlot65-openie/all-MiniLM-L6-v2-LittleBit
+private: false
+pipeline_tag: feature-extraction
+library_name: jouledb
+tags:
+- jouledb
+- jsyn
+- sentence-similarity
+- embeddings
+- sub-1-bit
+- feature-extraction
+- base_model:sentence-transformers/all-MiniLM-L6-v2
+- base_model:finetune:sentence-transformers/all-MiniLM-L6-v2
+- license:apache-2.0
+- model-index
+- region:us
+downloads: 0
+likes: 0
+modelId: dcharlot65-openie/all-MiniLM-L6-v2-LittleBit
+author: dcharlot65-openie
+sha: cf7dcf210fcf3240ee2d48277b90e088b93844f1
+lastModified: '2026-11-26T11:46:32.000Z'
+gated: false
+disabled: false
+model-index:
+- name: all-MiniLM-L6-v2-LittleBit
+  results:
+  - task:
+      type: feature-extraction
+      name: Sentence Embedding Fidelity vs Upstream FP32
+    dataset:
+      name: Held-out Sentence-Pair Cosine & Top-1 Retrieval Probe
+      type: custom
+    metrics:
+    - type: cosine_similarity
+      name: Mean Embedding Cosine vs Upstream FP32
+      value: 0.9441
+      verified: false
+    - type: compression_ratio
+      name: Size Reduction vs FP16 (43.32 MB -> 1.95 MB)
+      value: 22.23
+      verified: false
+config: {}
+cardData:
+  library_name: jouledb
+  license: apache-2.0
+  base_model: sentence-transformers/all-MiniLM-L6-v2
+  pipeline_tag: feature-extraction
+  tags:
+  - jouledb
+  - jsyn
+  - sentence-similarity
+  - embeddings
+  - sub-1-bit
+  model-index:
+  - name: all-MiniLM-L6-v2-LittleBit
+    results:
+    - task:
+        type: feature-extraction
+        name: Sentence Embedding Fidelity vs Upstream FP32
+      dataset:
+        name: Held-out Sentence-Pair Cosine & Top-1 Retrieval Probe
+        type: custom
+      metrics:
+      - type: cosine_similarity
+        name: Mean Embedding Cosine vs Upstream FP32
+        value: 0.9441
+        verified: false
+      - type: compression_ratio
+        name: Size Reduction vs FP16 (43.32 MB -> 1.95 MB)
+        value: 22.23
+        verified: false
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: jouledb_manifest.json
+- rfilename: model.jsyn
+spaces:
+- dcharlot65-openie/JouleDB-JSYN-Explorer
+createdAt: '2026-11-23T20:56:14.000Z'
+usedStorage: 2043182
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-26T12:10:23.000Z'

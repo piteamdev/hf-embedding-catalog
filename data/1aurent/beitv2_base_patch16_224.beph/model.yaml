@@ -1,0 +1,87 @@
+_id: 6b07019245756c228645427f
+id: 1aurent/beitv2_base_patch16_224.beph
+private: false
+pipeline_tag: feature-extraction
+library_name: timm
+tags:
+- timm
+- safetensors
+- feature-extraction
+- self-supervised
+- histology
+- foundation-model
+- license:gpl-3.0
+- region:us
+downloads: 0
+likes: 0
+modelId: 1aurent/beitv2_base_patch16_224.beph
+author: 1aurent
+sha: dd3ddb623ee5e05e94d2104b0b7f1fdd4f8d0cfd
+lastModified: '2026-11-26T02:32:00.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  tags:
+  - timm
+  - feature-extraction
+  - self-supervised
+  - histology
+  - foundation-model
+  library_name: timm
+  license: gpl-3.0
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+spaces: []
+createdAt: '2026-11-25T15:41:06.000Z'
+safetensors:
+  parameters:
+    F32: 85761984
+  total: 85761984
+usedStorage: 1028798440
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architecture: beitv2_base_patch16_224
+  num_classes: 0
+  num_features: 768
+  global_pool: avg
+  model_args:
+    img_size: 224
+    patch_size: 16
+    use_abs_pos_emb: false
+    use_rel_pos_bias: true
+    use_shared_rel_pos_bias: false
+    init_values: 0.1
+  pretrained_cfg:
+    tag: beph
+    input_size:
+    - 3
+    - 224
+    - 224
+    fixed_input_size: true
+    interpolation: bilinear
+    crop_pct: 1.0
+    crop_mode: center
+    mean:
+    - 0.485
+    - 0.456
+    - 0.406
+    std:
+    - 0.229
+    - 0.224
+    - 0.225
+    num_classes: 0
+    first_conv: patch_embed.proj
+    classifier: head
+    license: gpl-3.0
+    hf_hub_id: 1aurent/beitv2_base_patch16_224.beph
+onnxFiles: {}
+safetensorsSizeMb: 343.1
+approxSizeMb: 343.0
+fetchedAt: '2026-11-26T12:10:23.000Z'

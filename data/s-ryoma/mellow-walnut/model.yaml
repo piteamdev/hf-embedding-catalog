@@ -1,0 +1,77 @@
+_id: 69d9b33eded591751f036423
+id: s-ryoma/mellow-walnut
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- llada
+- feature-extraction
+- custom_code
+- region:us
+downloads: 0
+likes: 0
+modelId: s-ryoma/mellow-walnut
+author: s-ryoma
+sha: 7ba76ffc3e2c199f5fed03e33d39f0abc6e9278b
+lastModified: '2026-11-25T23:45:59.000Z'
+gated: manual
+disabled: false
+model-index: null
+config:
+  architectures:
+  - LLaDAModelLM
+  auto_map:
+    AutoConfig: GSAI-ML/LLaDA-8B-Instruct--configuration_llada.LLaDAConfig
+    AutoModel: GSAI-ML/LLaDA-8B-Instruct--modeling_llada.LLaDAModelLM
+    AutoModelForCausalLM: GSAI-ML/LLaDA-8B-Instruct--modeling_llada.LLaDAModelLM
+  model_type: llada
+  tokenizer_config:
+    bos_token: <|startoftext|>
+    eos_token: <|endoftext|>
+    pad_token: <|endoftext|>
+    cls_token: '[CLS]'
+    chat_template: '{% set loop_messages = messages %}{% for message in loop_messages %}{% set content = ''<|start_header_id|>''
+      + message[''role''] + ''<|end_header_id|>
+
+
+      ''+ message[''content''] | trim + ''<|eot_id|>'' %}{% if loop.index0 == 0 %}{% set content = bos_token + content %}{%
+      endif %}{{ content }}{% endfor %}{{ ''<|start_header_id|>assistant<|end_header_id|>
+
+
+      '' }}'
+cardData:
+  library_name: transformers
+  tags: []
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: GSAI-ML/LLaDA-8B-Instruct--modeling_llada.LLaDAModelLM
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: generation_config.json
+- rfilename: model-00001-of-00004.safetensors
+- rfilename: model-00002-of-00004.safetensors
+- rfilename: model-00003-of-00004.safetensors
+- rfilename: model-00004-of-00004.safetensors
+- rfilename: model.safetensors.index.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-04-11T02:34:38.000Z'
+safetensors:
+  parameters:
+    F16: 8015581184
+  total: 8015581184
+usedStorage: 16031196888
+downloadsAllTime: 89
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 16031.2
+approxSizeMb: 16031.2
+fetchedAt: '2026-11-26T12:10:23.000Z'

@@ -1,0 +1,152 @@
+_id: 6b0728f5b2f9869a6a0b0c2c
+id: funkandlove/scooby-embed-v1
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- feature-extraction
+- sentence-similarity
+- embeddings
+- mteb
+- chinese
+- zh
+- dataset:THUIR/T2Ranking
+- dataset:zyznull/dureader-retrieval-corpus
+- dataset:unicamp-dl/mmarco
+- dataset:wikimedia/wikipedia
+- dataset:clue/clue
+- dataset:C-MTEB/TNews-classification
+- dataset:C-MTEB/IFlyTek-classification
+- dataset:C-MTEB/waimai-classification
+- dataset:C-MTEB/OnlineShopping-classification
+- dataset:C-MTEB/JDReview-classification
+- dataset:C-MTEB/MultilingualSentiment-classification
+- dataset:C-MTEB/LCQMC
+- dataset:C-MTEB/AFQMC
+- dataset:C-MTEB/BQ
+- dataset:C-MTEB/ATEC
+- dataset:C-MTEB/PAWSX
+- dataset:C-MTEB/STSB
+- arxiv:2308.03281
+- base_model:thenlper/gte-small-zh
+- base_model:finetune:thenlper/gte-small-zh
+- license:cc-by-nc-4.0
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 2
+modelId: funkandlove/scooby-embed-v1
+author: funkandlove
+sha: b92b85d0df2fe764ccaa45bf654fbfc0a431ed75
+lastModified: '2026-11-25T20:05:16.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: 那是 個快樂的人
+  sentences:
+  - 那是 條快樂的狗
+  - 那是 個非常幸福的人
+  - 今天是晴天
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  license: cc-by-nc-4.0
+  language:
+  - zh
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  base_model: thenlper/gte-small-zh
+  tags:
+  - sentence-transformers
+  - feature-extraction
+  - sentence-similarity
+  - embeddings
+  - mteb
+  - chinese
+  datasets:
+  - THUIR/T2Ranking
+  - zyznull/dureader-retrieval-corpus
+  - unicamp-dl/mmarco
+  - wikimedia/wikipedia
+  - clue/clue
+  - C-MTEB/TNews-classification
+  - C-MTEB/IFlyTek-classification
+  - C-MTEB/waimai-classification
+  - C-MTEB/OnlineShopping-classification
+  - C-MTEB/JDReview-classification
+  - C-MTEB/MultilingualSentiment-classification
+  - C-MTEB/LCQMC
+  - C-MTEB/AFQMC
+  - C-MTEB/BQ
+  - C-MTEB/ATEC
+  - C-MTEB/PAWSX
+  - C-MTEB/STSB
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: THIRD_PARTY_NOTICES.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+- rfilename: vocab.txt
+spaces: []
+createdAt: '2026-11-25T18:29:09.000Z'
+safetensors:
+  parameters:
+    F32: 26998272
+  total: 26998272
+usedStorage: 108004432
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  classifier_dropout: null
+  directionality: bidi
+  dtype: float32
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 512
+  initializer_range: 0.02
+  intermediate_size: 2048
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 8
+  num_hidden_layers: 6
+  pad_token_id: 0
+  pooler_fc_size: 768
+  pooler_num_attention_heads: 12
+  pooler_num_fc_layers: 3
+  pooler_size_per_head: 128
+  pooler_type: first_token_transform
+  position_embedding_type: absolute
+  transformers_version: 4.57.6
+  type_vocab_size: 2
+  use_cache: true
+  vocab_size: 14760
+onnxFiles: {}
+safetensorsSizeMb: 108.0
+approxSizeMb: 108.0
+fetchedAt: '2026-11-26T12:10:23.000Z'

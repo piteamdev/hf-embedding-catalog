@@ -1,0 +1,86 @@
+_id: 6b070cbe17fbb8878df25809
+id: 1aurent/vit_base_patch16_224.pathoduet_he
+private: false
+pipeline_tag: feature-extraction
+library_name: timm
+tags:
+- timm
+- safetensors
+- feature-extraction
+- self-supervised
+- histology
+- foundation-model
+- arxiv:2312.09894
+- license:cc-by-nc-4.0
+- region:us
+downloads: 0
+likes: 0
+modelId: 1aurent/vit_base_patch16_224.pathoduet_he
+author: 1aurent
+sha: 219f5fba670005b38c797d21b3aa2d59912a4c47
+lastModified: '2026-11-26T02:32:10.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  tags:
+  - timm
+  - feature-extraction
+  - self-supervised
+  - histology
+  - foundation-model
+  library_name: timm
+  license: cc-by-nc-4.0
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+spaces: []
+createdAt: '2026-11-25T16:28:46.000Z'
+safetensors:
+  parameters:
+    F32: 85800192
+  total: 85800192
+usedStorage: 343214816
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architecture: vit_base_patch16_224
+  num_classes: 0
+  num_features: 768
+  global_pool: avg
+  model_args:
+    img_size: 224
+    patch_size: 16
+    reg_tokens: 1
+    global_pool: avg
+  pretrained_cfg:
+    tag: pathoduet_he
+    input_size:
+    - 3
+    - 224
+    - 224
+    fixed_input_size: true
+    interpolation: bilinear
+    crop_pct: 0.875
+    crop_mode: center
+    mean:
+    - 0.0
+    - 0.0
+    - 0.0
+    std:
+    - 1.0
+    - 1.0
+    - 1.0
+    num_classes: 0
+    first_conv: patch_embed.proj
+    classifier: head
+    license: cc-by-nc-4.0
+    hf_hub_id: 1aurent/vit_base_patch16_224.pathoduet_he
+onnxFiles: {}
+safetensorsSizeMb: 343.2
+approxSizeMb: 343.2
+fetchedAt: '2026-11-26T12:10:23.000Z'

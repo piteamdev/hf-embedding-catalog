@@ -1,0 +1,68 @@
+_id: 6b074e6ad897d93e52576f9b
+id: infil00p/all-MiniLM-L6-v2-GGUF
+private: false
+pipeline_tag: feature-extraction
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- gguf
+- llama-cpp
+- sentence-similarity
+- embeddings
+- bert
+- feature-extraction
+- en
+- base_model:sentence-transformers/all-MiniLM-L6-v2
+- base_model:quantized:sentence-transformers/all-MiniLM-L6-v2
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: infil00p/all-MiniLM-L6-v2-GGUF
+author: infil00p
+sha: cf8ea1a4f34137cbf7ab4f50e16af8139dfbe8e9
+lastModified: '2026-11-25T21:09:05.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  base_model: sentence-transformers/all-MiniLM-L6-v2
+  base_model_relation: quantized
+  quantized_by: infil00p
+  language:
+  - en
+  pipeline_tag: feature-extraction
+  tags:
+  - gguf
+  - llama-cpp
+  - sentence-transformers
+  - sentence-similarity
+  - embeddings
+  - bert
+gguf:
+  total: 22565376
+  architecture: bert
+  context_length: 512
+  causal: false
+  bos_token: '[CLS]'
+  eos_token: '[SEP]'
+  pooling_type: 1
+  totalFileSize: 46223712
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: all-MiniLM-L6-v2-F16.gguf
+- rfilename: all-MiniLM-L6-v2-Q8_0.gguf
+spaces: []
+createdAt: '2026-11-25T21:08:58.000Z'
+usedStorage: 71506240
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-26T12:10:23.000Z'

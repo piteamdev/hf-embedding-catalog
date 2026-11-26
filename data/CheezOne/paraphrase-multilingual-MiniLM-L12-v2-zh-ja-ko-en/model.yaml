@@ -1,0 +1,147 @@
+_id: 6b07a567f6da389b18bf5156
+id: CheezOne/paraphrase-multilingual-MiniLM-L12-v2-zh-ja-ko-en
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- onnx
+- safetensors
+- bert
+- feature-extraction
+- sentence-similarity
+- transformers.js
+- multilingual
+- chinese
+- japanese
+- korean
+- browser
+- vocabulary-pruning
+- en
+- zh
+- ja
+- ko
+- base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- base_model:quantized:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+- license:apache-2.0
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: CheezOne/paraphrase-multilingual-MiniLM-L12-v2-zh-ja-ko-en
+author: CheezOne
+sha: 81fe0f7ab47f4019139b2c61c37c95c9ddad6b63
+lastModified: '2026-11-26T11:14:11.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: That is a happy person
+  sentences:
+  - That is a happy dog
+  - That is a very happy person
+  - Today is a sunny day
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token:
+      __type: AddedToken
+      content: <mask>
+      lstrip: true
+      normalized: true
+      rstrip: false
+      single_word: false
+cardData:
+  license: apache-2.0
+  language:
+  - en
+  - zh
+  - ja
+  - ko
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  base_model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  tags:
+  - sentence-transformers
+  - feature-extraction
+  - sentence-similarity
+  - transformers.js
+  - onnx
+  - multilingual
+  - chinese
+  - japanese
+  - korean
+  - browser
+  - vocabulary-pruning
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: kept_ids.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: onnx/model_quantized.onnx
+- rfilename: scripts/trim_encoder.py
+- rfilename: sentence_bert_config.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces:
+- CheezOne/pixel-art-sprite-generator-demo
+createdAt: '2026-11-26T03:20:07.000Z'
+safetensors:
+  parameters:
+    F32: 46373376
+  total: 46373376
+usedStorage: 232350367
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  initializer_range: 0.02
+  intermediate_size: 1536
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 1
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.24.0
+  type_vocab_size: 2
+  use_cache: true
+  vocab_size: 64411
+onnxFiles:
+  onnx/model_quantized.onnx: 46.8
+safetensorsSizeMb: 185.5
+approxSizeMb: 185.5
+fetchedAt: '2026-11-26T12:10:23.000Z'

@@ -1,0 +1,591 @@
+_id: 6b074749400775c2814c87f4
+id: UMCU/MedRoBERTa.nl_MeSH_biencoder_cosine
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- roberta
+- sentence-similarity
+- feature-extraction
+- dense
+- generated_from_trainer
+- dataset_size:900000
+- loss:CosineSimilarityLoss
+- arxiv:2604.25374
+- arxiv:1908.10084
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: UMCU/MedRoBERTa.nl_MeSH_biencoder_cosine
+author: UMCU
+sha: db8066529ec3ec0f28e785df90dfdab02d337185
+lastModified: '2026-11-25T20:44:29.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+widgetData:
+- source_sentence: 'Antibioticaresistentie is een grote bedreiging voor de wereldwijde volksgezondheid. β-lactamasen, die
+    de afbraak van β-lactam-antibiotica katalyseren, zijn een belangrijke oorzaak. Metallo β-lactamases (MBL ''s) vormen een
+    bijzondere uitdaging omdat ze bijna alle β-lactams hydrolyseren en tot op heden is er geen MBL-remmer goedgekeurd voor
+    klinisch gebruik. Moleculaire simulaties kunnen helpen bij het ontdekken van geneesmiddelen, bijvoorbeeld het voorspellen
+    van remmercomplexen, maar empirische moleculaire mechanica (MM) -methoden presteren vaak slecht voor metalloproteïnen.
+    Hier presenteren we een multischaal benadering van model thiol remmer binding aan IMP-1, een klinisch belangrijke MBL
+    met twee katalytische zinkionen, en voorspellen de bindende modus van een 2-mercaptomethyl thiazolidine (MMTZ) remmer.
+    Remmers werden voor het eerst in de IMP-1 actieve site gedokt, waarbij verschillende dockingprogramma'' s en scoringsfuncties
+    op meerdere kristalstructuren werden getest. Complexen werden vervolgens onderworpen aan moleculaire dynamica (MD) simulaties
+    en vervolgens verfijnd door middel van QM/MM optimalisatie met een dichtheid functionele theorie (DFT) methode, B3LYP/6-31G(d),
+    het verhogen van de nauwkeurigheid van de methode met opeenvolgende stappen. Deze workflow werd getest op twee IMP-1:
+    MMTZ-complexen, waarvoor het gereproduceerd kristallografisch waargenomen binding, en toegepast om de binding modus van
+    een derde MMTZ-remmer waarvoor een complexe structuur was kristallografisch hardnekkig voorspellen. We hebben ook een
+    12-6-4 niet-gebonden interactiemodel getest in MD-simulaties en -optimalisatie met een SCC-DFTB QM/MM-aanpak. De resultaten
+    tonen de beperkingen van empirische modellen voor de behandeling van deze systemen en wijzen op de behoefte aan berekeningen
+    op een hoger niveau, bijvoorbeeld DFT/MM, voor betrouwbare structurele voorspellingen. Deze studie toont een betrouwbare
+    computationele pijplijn aan die kan worden toegepast op het ontwerp van remmers voor MBL ''s en andere zink-metalloenzymsystemen.'
+  sentences:
+  - Levende organismen zijn bestand tegen een grote verscheidenheid aan genetische veranderingen. Genregulatienetwerken en
+    metabole routes zelforganiseren en opnieuw accommoderen om het organisme met stabiliteit en betrouwbaarheid te laten presteren
+    onder vele puntmutaties, genduplicaties en gendeleties. Tegelijkertijd zijn levende organismen evolueerbaar, wat betekent
+    dat dit soort genetische verstoringen het organisme uiteindelijk nieuwe functies kunnen laten verwerven en zich kunnen
+    aanpassen aan nieuwe omgevingen. Het is nog steeds een open probleem om te bepalen hoe robuustheid en evolueerbaarheid
+    op genetisch niveau samenvloeien om stabiele organismen te produceren die nog kunnen veranderen en evolueren. Hier pakken
+    we dit probleem aan door de robuustheid en evolueerbaarheid van het attractorlandschap van genetische regulerende netwerkmodellen
+    te bestuderen in het proces van genduplicatie, gevolgd door divergentie. We laten zien dat een intrinsieke eigenschap
+    van dit soort netwerken is dat, na de divergentie van de ouder- en duplicaatgenen, met een grote waarschijnlijkheid de
+    vorige fenotypen, gecodeerd in het attractorlandschap van het netwerk, worden bewaard en nieuwe kunnen verschijnen. Het
+    bovenstaande is waar in een verscheidenheid van netwerktopologieën en zelfs voor het geval van extreme divergentie waarin
+    het duplicaatgen bijna geen relatie met zijn ouder heeft. Onze resultaten geven aan dat netwerken die dicht bij het zogenaamde
+    "kritieke regime" opereren, tegelijkertijd de maximale robuustheid en evolueerbaarheid vertonen.
+  - We voerden een case-control studie uit in Athene, Griekenland, tussen januari 1990 en april 1991 om het verband tussen
+    voeding en coronaire hartziekten te onderzoeken. De casusreeks omvatte 329 patiënten met elektrocardiografisch bevestigd
+    eerste coronair infarct of een eerste positief coronair arteriogram, of beide, die gedurende een periode van 16 maanden
+    in een groot academisch ziekenhuis werden opgenomen. Controles waren 570 patiënten die in hetzelfde ziekenhuis werden
+    opgenomen voor minder belangrijke aandoeningen waarvan werd aangenomen dat ze geen verband hielden met voeding. De totale
+    energie-inname werd omgekeerd geassocieerd met het risico op coronaire hartziekten, een kwintielenenergieverhoging die
+    overeenkomt met een relatief risico van 0,96. Na controle voor de totale energie-inname, werd vet in de voeding positief
+    gerelateerd aan coronaire hartziekten, en de totale koolhydraten waren negatief gerelateerd aan coronaire hartziekten,
+    de nutriënt-specifieke relatieve risico 's voor een kwintiel toename 1,19 (95% betrouwbaarheidsinterval = 0,96-1,48) en
+    0,81 (95% betrouwbaarheidsinterval = 0,67-0,97), respectievelijk. Belangrijke vetcomponenten (verzadigd, enkelvoudig onverzadigd
+    en meervoudig onverzadigd vet) leken geen differentiële risicoimplicaties te hebben voor coronaire hartziekten; koken
+    met margarine was echter geassocieerd met een verhoogd relatief risico (1,87; 95% betrouwbaarheidsinterval = 0,82-4,28).
+    Dieetproteïnen, cholesterol en vitamine C werden niet geassocieerd met coronaire hartziekten.
+  - Een DNA double strand break (DSB) is een van de meest cytotoxische DNA-laesies, maar het kan worden gerepareerd door niet-homologe
+    eindverbindingen (NHEJ) of door homologe recombinatie. De keuze tussen deze twee reparatieroutes hangt af van de fase
+    van de celcyclus. Hoewel NHEJ een eenvoudige religatiereactie vormt, zijn de regulerende mechanismen die de activiteit
+    controleren niet volledig gekarakteriseerd. Lif1 is een regulerende subeenheid van de NHEJ-specifieke DNA-ligase IV en
+    interageert met Xrs2 van het MRX-complex, wat een sleutelfactor is bij DSB-herstel. Specifiek, het C-terminale gebied
+    van Lif1, dat een CK2-specifiek fosforylatiemotief bevat, interageert met het FHA-domein van Xrs2 tijdens canonieke NHEJ
+    (C-NHEJ). Hierin laten we zien dat Lif1 en Cka2, een katalytische subeenheid van gist CK2, op elkaar inwerken en dat het
+    consensusmotief voor C-terminale fosforylering in Lif1 gefosforyleerd is door recombinant CK2. Deze observaties suggereren
+    dat fosforylering van Lif1 door CK2 op een DSB-site de Lif1-Xrs2-interactie bevordert en C-NHEJ vergemakkelijkt.
+- source_sentence: Er is bezorgdheid over de lage gevoeligheid van de op guaiac gebaseerde Haemoccult-test bij faecale occulte
+    bloed (fob) screening van de massapopulatie voor de vroege detectie van colorectaal carcinoom. Hemeselect, een immunologische
+    fob-test, is gevoeliger gebleken voor symptomatische colorectale kanker en kan een betrouwbaardere screeningsmethode blijken
+    te zijn. In Brighton en Guildford kregen 4018 asymptomatische proefpersonen in de leeftijd van 50-75 jaar screening aangeboden
+    met Haemoccult en Hemeselect. Een totaal van 1489 (37,7%) voltooide beide tests, waarvan 17 (1,1%) positief waren voor
+    Haemoccult en 145 (9,7%) positief voor Hemeselect (in totaal 148 proefpersonen hadden positieve tests). Zeven proefpersonen
+    (4,7 procent) weigerden te worden onderzocht. Colonisch onderzoek in de rest onthulde negen kankers en 49 patiënten met
+    67 adenomen (32 tumoren van 1 cm of meer). Alle kankers (hertogen A, zes; B, één; C, twee) werden gedetecteerd door Hemeselect
+    (positieve voorspellende waarde 6,2 procent), maar slechts één patiënt was Haemoccult-positief (positieve voorspellende
+    waarde 5,9 procent). Hemeselect detecteerde 65 adenomen (31 van 1 cm of meer) bij 48 patiënten (positieve voorspellende
+    waarde 33,1%) vergeleken met 11 adenomen (zeven van 1 cm of meer) bij acht patiënten die positief waren voor Haemoccult
+    (positieve voorspellende waarde 47,1%). De testspecificiteit voor neoplasie was respectievelijk 94,9 en 99,6 procent.
+    Het positieve percentage van Hemeselect is hoog, maar de substantiële positieve voorspellende waarde voor kanker rechtvaardigt
+    voortdurende evaluatie.
+  sentences:
+  - De unieke eigenschappen van nanowires bieden uitstekende vooruitzichten voor het ontwerpen van een nieuwe generatie apparaten
+    en systemen die nieuwe functies tentoonstellen. Dit Overzicht bespreekt recente wetenschappelijke verwezenlijkingen in
+    de voorbereiding van nanowire-biomaterial hybriden en hun potentiële toepassingen als nanosensors, nanoactuators, en nanocarriers.
+    Nanodraden kunnen gemakkelijk worden gefunctionaliseerd met verschillende biochemicaliën via verschillende koppelingschemicaliën.
+    Een dergelijke integratie van nanodraden en biomoleculen leidt tot nieuwe hybride systemen die de herkenning of katalytische
+    eigenschappen van biomaterialen koppelen aan de aantrekkelijke elektronische en structurele kenmerken van nanodraden.
+    Receptor-gefunctionaliseerde nanodraden zijn bijzonder aantrekkelijk voor directe real-time labelvrije elektrische detectie
+    van biomoleculaire interacties. De unieke controle over de microstructuur van nanodraden, en in het bijzonder het ontwerp
+    van multisegment nanodraden, biedt ruimtelijk gedefinieerde gebieden voor de gedefinieerde organisatie van verschillende
+    biomoleculen. Dit staat de resulterende nanowires toe om verscheidene taken gelijktijdig uit te voeren, en opent de deur
+    aan een verscheidenheid van belangrijke toepassingen op het gebied van nanobioelectronics en nanomedicine. Bijvoorbeeld,
+    kunnen de multisegment nanowires die voor nanomedicinetoepassingen worden ontworpen de selectieve het richten, therapie,
+    en weergavefuncties koppelen. Dergelijke ruimtelijk bepaalde verankering van verschillende biorecognitionplaatsen verstrekt
+    ook duidelijke kansen voor de zelfassemblage van nanowires in vooraf bepaalde ontwerpen. De kansen en de uitdagingen betrokken
+    bij het ontwerpen van dergelijke nanowire-biomaterial hybride systemen en apparaten worden besproken in de volgende secties.
+  - 'Pyrethroïde insecticiden zijn zeer insecticide verbindingen die op grote schaal worden gebruikt tegen de Duitse kakkerlak,
+    een belangrijke huishoudelijke insectenplaag. Bij verschillende insectensoorten is er een puntmutatie in het para-type
+    natriumkanaalgen geassocieerd met knockdown-resistentie (kdr). In de huidige studie werd genomisch DNA geanalyseerd in
+    de regio waar de mutaties kdr en super-kdr (een verbeterde vorm van pyrethroïdresistentie) zich bevinden in Blatella germanica
+    (L., 1767) (Blattodea: Blattellidae) verzameld uit Iran. Studies naar het geëxtraheerde DNA van met de hand gevangen Duitse
+    kakkerlakmonsters werden uitgevoerd door polymerasekettingreactie en sequentiebepaling om gerelateerde mutaties te detecteren.
+    De KDR-mutatie, vervanging van G voor C (L1014F), die resulteert in aminozuurvervanging (leucine met fenylalanine), werd
+    gedetecteerd in alle 18 sequentiemonsters van drie verschillende locaties. De super-kdr-mutatie (M918T), die wordt gedetecteerd
+    in super-kdr huisvliegen, werd echter niet gevonden in de sequenties van de huidige studie. De hoge verhouding van de
+    kdr-mutatie in een veldpopulatie van B. germanica in Urmia bevestigt dat de individuen homozygoot zijn. Deze gegevens
+    moeten nuttig zijn bij het ontwerpen en implementeren van een controleprogramma en weerstandsbeheer.'
+  - Mijnwerkers worden beschouwd als een populatie met een risico op HIV als gevolg van risicogedrag in verband met migrerende
+    werkpatronen. Dit was de eerste studie in Mozambique om de prevalentie van HIV en bijbehorend demografisch en risicogedrag
+    te bepalen en het gebruik en de toegang tot preventie en gezondheidszorg te beoordelen onder Mozambikanen die in Zuid-Afrikaanse
+    mijnen werken. Mannen die in de afgelopen 12 maanden in een Zuid-Afrikaanse mijn hadden gewerkt, werden tussen februari
+    en mei 2012 gerekruteerd met behulp van time location sampling (TLS) aan de grens van Ressano Garcia tussen Mozambique
+    en Zuid-Afrika. Demografische en gedragsmatige gegevens werden verzameld door middel van een gestandaardiseerde vragenlijst,
+    en HIV prevalentie werd geschat door het testen van gedroogde bloedvlekken (DBS) met twee enzym immunoassays. In totaal
+    werden 432 in aanmerking komende mijnwerkers aangeworven. De gemiddelde leeftijd was 43 jaar. De meesten waren getrouwd
+    of samenwonend; onder hen had 12,6% twee of meer vrouwen/echtgenoten in Mozambique. In de 12 maanden voorafgaand aan de
+    enquête had 24,7% af en toe een seksuele partner en 6,6% had ten minste één partner die een vrouwelijke sekswerker was.
+    Slechts één op de vijf (18,5%) gebruikte een condoom tijdens de laatste seks. De prevalentie van hiv onder mijnwerkers
+    was 22,3% en 74,6% van degenen die positief testten als onderdeel van de enquête wist niet wat hun status was. De prevalentie
+    van hiv was significant hoger (p = 0,018) bij degenen die onbesneden waren (31,2%) dan bij degenen die besneden waren
+    (18,5%). Meerdere partners (meerdere echtgenoten, grensoverschrijdende relaties en meerdere occasionele partnerschappen),
+    inconsistent condoomgebruik en een groot deel van de geïnfecteerde mijnwerkers die hun HIV-status niet kennen, verhoogt
+    het risico op HIV-overdracht in deze populatie. Combinatiestrategieën met het bevorderen van condoomgebruik, hiv-tests
+    en mannelijke besnijdenis moeten worden versterkt bij mijnwerkers.
+- source_sentence: Clostridium botulinum type B veroorzaakt naar schatting meer dan 85% van de gevallen van paardenbotulisme
+    in de Verenigde Staten, evenals veel uitbraken bij runderen. In deze studie werd een kwantitatieve real-time polymerasekettingreactie
+    voor detectie van het neurotoxine-gen van C. botulinum type B vergeleken met de bioassay van de muis met behulp van 45
+    positieve en 43 negatieve monsters van paarden, runderen of geassocieerde milieuoorsprong. De gevoeligheid van de qPCR-test
+    was 96%, terwijl de gevoeligheid van de bioassay van de muis 84% was. De specificiteit van de qPCR-assay was 95% en de
+    specificiteit van de bioassay van de muis was 100%.
+  sentences:
+  - In dit artikel wordt het effect van thermische bloei van een luchtstraal die zich door de atmosfeer verspreidt, onderzocht
+    en wordt het effect van atmosferische turbulentie niet in aanmerking genomen. De veranderingen van de intensiteitsverdeling,
+    de centroïde positie en de gemiddelde kwadraatbundelbreedte van een luchtstraal die zich door de atmosfeer voortplant,
+    worden bestudeerd met behulp van de vierdimensionale (4D) computercode van de tijdsafhankelijke voortplanting van luchtstralen
+    door de atmosfeer. Er wordt aangetoond dat een luchtstraal zijn vorm en de structuur niet kan behouden wanneer de luchtstraal
+    zich door de atmosfeer voortplant als gevolg van thermische bloei, behalve de korte voortplantingsafstand, of de korte
+    tijd, of het laaglichtvermogen. De thermische bloei resulteert in een centrale dip van de middenkwab en zorgt ervoor dat
+    de middenkwab zich verspreidt en afneemt. In tegenstelling tot de middenkwab, worden de zijkwabben minder beïnvloed door
+    thermische bloei, zodat de maximale intensiteit van de zijkwab groter kan zijn dan die van de middenkwab. De zijwind kan
+    echter het effect van thermische bloei verminderen. Wanneer er de dwarswindsnelheid vx in x-richting bestaat, is de afhankelijkheid
+    van de centroïde positie in x-richting op vx niet monotoon en bestaat er een minimum, maar de centroïde positie in y-richting
+    is bijna onafhankelijk van vx.
+  - Botulisme moet worden overwogen in gevallen waarin zwakte, verlamming of intolerantie voor lichaamsbeweging bij het paard
+    kan worden gezien. Dysfagie kan ook aanwezig zijn, hoewel het geen consistente bevinding is. Potentiële bronnen zijn onder
+    meer aas in hooi, beschimmelde of anderszins verrotte vegetatie of voedergewassen, vogels die materiaal dragen van begraven
+    dieren of andere soortgelijke locaties, en besmette karkassen ter plaatse. Paarden, vooral veulens, kunnen ook last hebben
+    van toxico-infectieus botulisme, een aandoening waarbij het C. botulinum kan koloniseren en toxine in het maagdarmkanaal
+    kan produceren. Wonden kunnen ook het organisme herbergen en anderszins botulisme bevorderen. Diagnose van botulisme is
+    vaak een klinische diagnose die wordt ondersteund door eliminatie van andere mogelijke infectieuze, schadelijke of toxische
+    oorzaken van zwakte van het paard. Definitieve diagnose en type-identificatie in het laboratorium zijn moeilijk en vereisen
+    meestal een geschikt monster van het bronmateriaal. Behandeling is vaak niet lonend, tenzij een geval vroegtijdig wordt
+    geïdentificeerd en de juiste antitoxine direct beschikbaar is. Preventie omvat gezond verstand benaderingen van voeding
+    en verzorging van het paard en, waar mogelijk, verstandig gebruik van vaccinatie in endemische gebieden.
+  - 'Een methode voor kwantificering van in vivo 31P-metabolietconcentraties in menselijke hersenen met 31P magnetische resonantie
+    spectroscopische beeldvorming (MRSI) wordt beschreven. De methode is gebaseerd op vergelijking van de hersenen en kalibratie
+    fantoom metingen, met correcties voor spoel laden en metaboliet magnetische ontspanning. Geschatte metabolietconcentraties
+    voor het centrum semiovale bij 11 normale volwassenen (gemiddelde +/- SD) waren: fosfomonoesters = 3,0 +/- 0,7 mM, anorganisch
+    fosfaat = 0,7 +/- 0,2 mM, fosfodiesters = 10,9 +/- 1,8 mM, fosfocreatine = 2,7 +/- 0,5 mM en adenosinetrifosfaat = 2,9
+    +/- 0,3 mM. Deze waarden zijn vergelijkbaar met eerdere resultaten verkregen uit single-volume gelokaliseerde spectroscopie.'
+- source_sentence: We gebruikten positronemissietomografie (PET) om de relatie te beoordelen tussen gecombineerde beeldvorming
+    van de cerebrale bloedstroom en zuurstofverbruik 5-18 uur na de eerste middelste cerebrale slagader (MCA) beroerte en
+    neurologische uitkomst na 2 maanden. Alle 18 patiënten konden worden ingedeeld in drie visueel gedefinieerde PET-patronen
+    van perfusie en veranderingen in zuurstofverbruik. Patroon I (7 patiënten) suggereerde uitgebreide onomkeerbare schade
+    en werd consequent geassocieerd met een slechte uitkomst. Patroon II (5) suggereerde voortdurende ischemie en werd geassocieerd
+    met variabele uitkomst. Patroon III (6), met hyperperfusie en weinig of geen metabole verandering, werd geassocieerd met
+    een uitstekend herstel, wat suggereert dat vroege reperfusie gunstig is. Deze relatie tussen PET en uitkomst was zeer
+    significant (p &lt; 0,0005). De resultaten suggereren dat PET binnen 5-18 uur na het begin van de beroerte een goede voorspeller
+    is van de uitkomst in patronen I en III, waarvoor de therapie beperkt lijkt. De afwezigheid van voorspellende waarde voor
+    patroon II suggereert dat het te wijten is aan een omkeerbare ischemische toestand die mogelijk vatbaar is voor therapie.
+    Deze bevindingen kunnen belangrijke implicaties hebben voor het beheer van acute MCA-beroerte en voor de selectie van
+    patiënten voor therapeutische onderzoeken.
+  sentences:
+  - 'Overleving na het begin van dementie is gemeld te variëren van 3 tot meer dan 9 jaar. We onderzochten de mortaliteit
+    bij 3602 deelnemers aan de Cardiovascular Health (CHS) Cognition Study in vier Amerikaanse gemeenschappen die tussen 1992
+    en 1999 werden geëvalueerd op de incidentie van dementie en gedurende 6,5 jaar werden gevolgd. In juni 2000 waren 33 van
+    de 62 (53,2%) deelnemers die vasculaire dementie (VaD) ontwikkelden overleden, vergeleken met 79 van de 245 (32,2%) met
+    de ziekte van Alzheimer (AD), 66 van de 151 (43,7%) met zowel AD als VaD, en 429 van de 2318 (18,5%) met normale cognitie.
+    Met behulp van Cox proportionele gevaren regressie met een tijdsafhankelijke covariate voor dementiestatus aangepast aan
+    leeftijd, geslacht en ras, hadden personen met VaD meer dan vier keer zoveel kans om te sterven tijdens de follow-up dan
+    die met normale cognitie (HR: 4.4, 95% CI: 3.1-6.3). De hazard ratio ''s waren 2,1 (95% BI: 1,6-2,7) voor AD en 2,5 (95%
+    BI: 1,9-3,3) voor beide typen. Aangepaste versnelde levensmodellen schatten de mediane overleving van het begin van dementie
+    tot de dood op 3,9 jaar voor mensen met VaD, 7,1 jaar voor AD, 5,4 jaar voor gemengde dementie en 11,0 jaar voor gematchte
+    controles met normale cognitie. Terwijl mensen met VaD voornamelijk stierven aan cerebrovasculaire aandoeningen, stierven
+    mensen met AD/gemengde dementie vaker aan dementie/falen om te gedijen.'
+  - Een canonieke RAS-ERK-signaleringstraject specificeert het lot van de uitscheidingskanaalcel tijdens Caenorhabditis elegans
+    embryogenese. De paralogs ksr-1 en ksr-2 coderen steigerproteïnen die signalering via deze route vergemakkelijken en die
+    redundant handelen om het lot van de uitscheidingskanaal te bevorderen. In een genoombreed RNAi-scherm voor genen die,
+    zoals ksr-2, nodig zijn in combinatie met ksr-1 voor het lot van de uitscheidingskanaalcel, identificeerden we 16 "ekl"
+    (versterker van ksr-1 letaliteit) genen die grotendeels maternaal vereist zijn en die moleculaire identiteiten hebben
+    die rollen suggereren in transcriptionele of post-transcriptionele genregulatie. Deze omvatten het Argonaute-gen csr-1
+    en een specifieke subset van andere genen die betrokken zijn bij endogene kleine RNA-processen, orthologs van meerdere
+    componenten van de NuA4/Tip60 histonacetyltransferase en CCR4/NIET deadenylase-complexen, en geconserveerde enzymen die
+    betrokken zijn bij ubiquitinatie en deubiquitinatie. De identificatie van vier kleine RNA-regulatoren (csr-1, drh-3, ego-1
+    en ekl-1) die het Ekl-fenotype delen, suggereert dat deze genen een functionele route definiëren die nodig is voor de
+    productie en/of functie van bepaalde kiembaan kleine RNA('s). Deze kleine RNA' s en de andere ekl-genen controleren waarschijnlijk
+    de expressie van een of meer regulatoren van RAS-ERK-signalering die functioneren op of nabij het niveau van kinase-onderdrukker
+    van ras (KSR).
+  - 'Baarmoeder ballon tamponade (UBT) wordt veel gebruikt voor de behandeling van postpartum bloedingen (PPH). Gerandomiseerde
+    studies van UBT zijn schaars: die van geïmproviseerde condooms UBT in omgevingen met weinig middelen vonden meer kwaad
+    dan goed. Baarmoederzuigtamponade (UST) is meer afgestemd op het fysiologische mechanisme van baarmoederhemostase (samentrekking),
+    maar speciaal ontworpen apparaten kunnen onbetaalbaar of niet beschikbaar zijn wanneer dat nodig is. We beschrijven een
+    techniek van UST met behulp van een goedkope Levin zuigkatheter. Het gebruik van de beschreven techniek als laatste redmiddel
+    in drie gevallen van levensbedreigende PPH resulteerde in een snelle stopzetting van de bloeding. We benadrukken de noodzaak
+    van gerandomiseerde onderzoeken om de effectiviteit te bevestigen.'
+- source_sentence: Aangeboren Myasthenic Syndromen (CMS) zijn zeldzame aandoeningen die optreden als gevolg van defecten in
+    de structuur en in de functie van neuromusculaire knooppunten. Moleculaire genetische diagnose is belangrijk om de meest
+    geschikte therapeutische optie en behandeling te selecteren. Acht patiënten met aangeboren myasthenische syndromen die
+    zich tussen juni 2015 en mei 2018 presenteerden aan de Çukurova University Pediatric Neurology Department Outpatient Clinic
+    werden beoordeeld. Mutaties in de acetylcholine receptor (subunits in epsilon) (CHRNE) in drie en mutaties in de collageen
+    staart van endplate acetylcholinesterase (COLQ) gen in vijf patiënten werden geïdentificeerd; p.W148 mutatie werd gedetecteerd
+    homozygoot te zijn in vier, c.1169A &gt; G nieuwe mutatie in COLQ gen homozygoot in één, c452_454delAGG mutatie homozygoot
+    in de andere patiënt, IVS7 + 2T &gt; C(c.802 + 2T &gt; C) mutatie was homozygoot in een patiënt en heterozygoot samenstelling
+    van c.865 (T.C.LeuP9) en c.872 (GC.Ar161) was homozygoot in een patiënt en heterozygoot van c. De ouders van alle geëvalueerde
+    patiënten waren bloedverwant. Ptosis, oftalmoplegie, gegeneraliseerde hypotonie, bulbaire zwakte en ademhalingscrisis
+    waren de belangrijkste bevindingen op het moment van presentatie. Pyridostigmine is de eerstelijns medicamenteuze therapie
+    bij primaire AChR-deficiëntie. Bèta-adrenerge agonisten, efedrine en albuterol zijn de andere behandelingsopties voor
+    CMS-subtypes veroorzaakt door mutaties in COLQ. Deze studie wijst op de genetische en fenotypische kenmerken van CMS-patiënten
+    in de Turkse bevolking en rapporteert ook eerder niet-gerapporteerde mutaties in de literatuur. CHRNE- en COLQ-genmutaties
+    komen vaak voor bij de Turkse bevolking. Patiënten kunnen ernstige voordelen krijgen en herstellen na de behandeling.
+    De behandeling moet worden gepland op basis van genetische tests en klinische bevindingen.
+  sentences:
+  - Er is toenemend bewijs dat innervatie, mogelijk gemedieerd via neuropeptiden, wondgenezing bevordert. Deze studie presenteert
+    gegevens over de vroege cellulaire gebeurtenissen tijdens genezing in gedenergeerd weefsel. Vrije schuine liesflappen
+    werden grootgebracht op 25 volwassen Sprague-Dawley-ratten. Excisie wonden werden geplaatst in de flap en op twee controleplaatsen,
+    de contralaterale liesstreek en de thorax. De afwezigheid van innervatie in de wonden van de vrije flap werd 10 dagen
+    na de operatie bevestigd door indirecte immunofluorescentie met een pan-neuronale marker. Het cellulaire infiltraat van
+    de wonden werd immunohistochemisch geanalyseerd met een panel van antilichamen tegen rattenmacrofagen en monocyten (ED1),
+    rat-B-lymfocyten (CD45R) en T-lymfocyten (CD2). Het immuungeïnfecteerde cellulaire infiltraat werd gekwantificeerd op
+    2, 4, 7 en 10 dagen postoperatief. Onze resultaten tonen aan dat gedenerveerde wonden een significant lagere macrofaag
+    en T-lymfocytentelling hebben op dag 4 van wondgenezing (P &lt; 0,05). Van ontstekingscellen, met name macrofagen, is
+    bekend dat ze een belangrijke rol spelen bij wondgenezing en hun verminderde chemotaxis in gedenervateerd weefsel kan
+    verband houden met de waargenomen vertraging in wondsluiting.
+  - We hebben eerder prostaglandine EP(3)-receptoren geïdentificeerd in het linker ventriculaire myocardium. Om de potentiële
+    bijdrage van dit receptorsubtype aan de anti-ischemische eigenschappen van E-type prostaglandines (d.w.z. PGE(1)) te beoordelen,
+    werden twee groepen verdoofde minipigs met open borst onderworpen aan LAD occlusie (1 uur) en reperfusie (3 uur). In één
+    groep werd de selectieve EP(3)receptoragonist M&amp;B 28.767 (2 pmol/kgxmin) geïnfundeerd in de LAD vanaf 20 minuten vóór
+    ischemie tot het einde van de reperfusie. De andere groep kreeg een voertuig. M &amp; B 28.767 veranderde de systemische
+    hemodynamiek niet, maar verminderde de grootte van het infarct (tetrazoliumkleuring) en creatinekinase-afgifte met respectievelijk
+    53% en 48%. Ischemie-geïnduceerde ventriculaire aritmieën waren meestal verminderd. Verdere experimenten analyseerden
+    de effecten van EP(3)receptorstimulatie op normoxisch myocardium. PGE(1), een niet-selectieve agonist voor alle EP-receptorsubtypen,
+    evenals M&amp;B 28.767 (2 pmol/kgxmin van elk in de LAD) verminderde de actiepotentiaalduur (epicardiale monofasische
+    elektroden) en verhinderde bijna de inotrope reactie op intraveneuze isoprenaline. Deze dubbele respons is consistent
+    met de EP(3) -receptorkoppeling met een remmend G-eiwit. Dit werd bevestigd in afzonderlijke experimenten met stabiele
+    ovariumceltransfectanten van de Chinese hamster die de varkensep (3)-receptor tot expressie brengen, waarbij M&amp;B 28.767
+    de door forskoline geïnduceerde toename van cAMP op een concentratieafhankelijke manier remde. Er wordt geconcludeerd
+    dat de bescherming van gereperfuseerd ischemisch myocardium door E-type prostaglandinen wordt gemedieerd door EP(3)-receptoren,
+    wat een gecombineerde activering van repolariserende membraanstromen en een remming van schadelijke effecten veroorzaakt
+    door ischemie-geïnduceerde catecholamine-afgifte lijkt te omvatten.
+  - We voerden een antimicrobieel rentmeesterschapsprogramma uit op een pediatrische intensive care-eenheid. Een onderbroken
+    tijdreeksanalyse toonde een significante vermindering van het niveau en de trend van dagen therapie per 1000 patiëntdagen
+    voor antipseudomonale middelen. Er werd geen toename van ongunstige patiëntresultaten gevonden.
+model-index: null
+config:
+  architectures:
+  - RobertaModel
+  model_type: roberta
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - dense
+  - generated_from_trainer
+  - dataset_size:900000
+  - loss:CosineSimilarityLoss
+  widget:
+  - source_sentence: 'Antibioticaresistentie is een grote bedreiging voor de wereldwijde volksgezondheid. β-lactamasen, die
+      de afbraak van β-lactam-antibiotica katalyseren, zijn een belangrijke oorzaak. Metallo β-lactamases (MBL ''s) vormen
+      een bijzondere uitdaging omdat ze bijna alle β-lactams hydrolyseren en tot op heden is er geen MBL-remmer goedgekeurd
+      voor klinisch gebruik. Moleculaire simulaties kunnen helpen bij het ontdekken van geneesmiddelen, bijvoorbeeld het voorspellen
+      van remmercomplexen, maar empirische moleculaire mechanica (MM) -methoden presteren vaak slecht voor metalloproteïnen.
+      Hier presenteren we een multischaal benadering van model thiol remmer binding aan IMP-1, een klinisch belangrijke MBL
+      met twee katalytische zinkionen, en voorspellen de bindende modus van een 2-mercaptomethyl thiazolidine (MMTZ) remmer.
+      Remmers werden voor het eerst in de IMP-1 actieve site gedokt, waarbij verschillende dockingprogramma'' s en scoringsfuncties
+      op meerdere kristalstructuren werden getest. Complexen werden vervolgens onderworpen aan moleculaire dynamica (MD) simulaties
+      en vervolgens verfijnd door middel van QM/MM optimalisatie met een dichtheid functionele theorie (DFT) methode, B3LYP/6-31G(d),
+      het verhogen van de nauwkeurigheid van de methode met opeenvolgende stappen. Deze workflow werd getest op twee IMP-1:
+      MMTZ-complexen, waarvoor het gereproduceerd kristallografisch waargenomen binding, en toegepast om de binding modus
+      van een derde MMTZ-remmer waarvoor een complexe structuur was kristallografisch hardnekkig voorspellen. We hebben ook
+      een 12-6-4 niet-gebonden interactiemodel getest in MD-simulaties en -optimalisatie met een SCC-DFTB QM/MM-aanpak. De
+      resultaten tonen de beperkingen van empirische modellen voor de behandeling van deze systemen en wijzen op de behoefte
+      aan berekeningen op een hoger niveau, bijvoorbeeld DFT/MM, voor betrouwbare structurele voorspellingen. Deze studie
+      toont een betrouwbare computationele pijplijn aan die kan worden toegepast op het ontwerp van remmers voor MBL ''s en
+      andere zink-metalloenzymsystemen.'
+    sentences:
+    - Levende organismen zijn bestand tegen een grote verscheidenheid aan genetische veranderingen. Genregulatienetwerken
+      en metabole routes zelforganiseren en opnieuw accommoderen om het organisme met stabiliteit en betrouwbaarheid te laten
+      presteren onder vele puntmutaties, genduplicaties en gendeleties. Tegelijkertijd zijn levende organismen evolueerbaar,
+      wat betekent dat dit soort genetische verstoringen het organisme uiteindelijk nieuwe functies kunnen laten verwerven
+      en zich kunnen aanpassen aan nieuwe omgevingen. Het is nog steeds een open probleem om te bepalen hoe robuustheid en
+      evolueerbaarheid op genetisch niveau samenvloeien om stabiele organismen te produceren die nog kunnen veranderen en
+      evolueren. Hier pakken we dit probleem aan door de robuustheid en evolueerbaarheid van het attractorlandschap van genetische
+      regulerende netwerkmodellen te bestuderen in het proces van genduplicatie, gevolgd door divergentie. We laten zien dat
+      een intrinsieke eigenschap van dit soort netwerken is dat, na de divergentie van de ouder- en duplicaatgenen, met een
+      grote waarschijnlijkheid de vorige fenotypen, gecodeerd in het attractorlandschap van het netwerk, worden bewaard en
+      nieuwe kunnen verschijnen. Het bovenstaande is waar in een verscheidenheid van netwerktopologieën en zelfs voor het
+      geval van extreme divergentie waarin het duplicaatgen bijna geen relatie met zijn ouder heeft. Onze resultaten geven
+      aan dat netwerken die dicht bij het zogenaamde "kritieke regime" opereren, tegelijkertijd de maximale robuustheid en
+      evolueerbaarheid vertonen.
+    - We voerden een case-control studie uit in Athene, Griekenland, tussen januari 1990 en april 1991 om het verband tussen
+      voeding en coronaire hartziekten te onderzoeken. De casusreeks omvatte 329 patiënten met elektrocardiografisch bevestigd
+      eerste coronair infarct of een eerste positief coronair arteriogram, of beide, die gedurende een periode van 16 maanden
+      in een groot academisch ziekenhuis werden opgenomen. Controles waren 570 patiënten die in hetzelfde ziekenhuis werden
+      opgenomen voor minder belangrijke aandoeningen waarvan werd aangenomen dat ze geen verband hielden met voeding. De totale
+      energie-inname werd omgekeerd geassocieerd met het risico op coronaire hartziekten, een kwintielenenergieverhoging die
+      overeenkomt met een relatief risico van 0,96. Na controle voor de totale energie-inname, werd vet in de voeding positief
+      gerelateerd aan coronaire hartziekten, en de totale koolhydraten waren negatief gerelateerd aan coronaire hartziekten,
+      de nutriënt-specifieke relatieve risico 's voor een kwintiel toename 1,19 (95% betrouwbaarheidsinterval = 0,96-1,48)
+      en 0,81 (95% betrouwbaarheidsinterval = 0,67-0,97), respectievelijk. Belangrijke vetcomponenten (verzadigd, enkelvoudig
+      onverzadigd en meervoudig onverzadigd vet) leken geen differentiële risicoimplicaties te hebben voor coronaire hartziekten;
+      koken met margarine was echter geassocieerd met een verhoogd relatief risico (1,87; 95% betrouwbaarheidsinterval = 0,82-4,28).
+      Dieetproteïnen, cholesterol en vitamine C werden niet geassocieerd met coronaire hartziekten.
+    - Een DNA double strand break (DSB) is een van de meest cytotoxische DNA-laesies, maar het kan worden gerepareerd door
+      niet-homologe eindverbindingen (NHEJ) of door homologe recombinatie. De keuze tussen deze twee reparatieroutes hangt
+      af van de fase van de celcyclus. Hoewel NHEJ een eenvoudige religatiereactie vormt, zijn de regulerende mechanismen
+      die de activiteit controleren niet volledig gekarakteriseerd. Lif1 is een regulerende subeenheid van de NHEJ-specifieke
+      DNA-ligase IV en interageert met Xrs2 van het MRX-complex, wat een sleutelfactor is bij DSB-herstel. Specifiek, het
+      C-terminale gebied van Lif1, dat een CK2-specifiek fosforylatiemotief bevat, interageert met het FHA-domein van Xrs2
+      tijdens canonieke NHEJ (C-NHEJ). Hierin laten we zien dat Lif1 en Cka2, een katalytische subeenheid van gist CK2, op
+      elkaar inwerken en dat het consensusmotief voor C-terminale fosforylering in Lif1 gefosforyleerd is door recombinant
+      CK2. Deze observaties suggereren dat fosforylering van Lif1 door CK2 op een DSB-site de Lif1-Xrs2-interactie bevordert
+      en C-NHEJ vergemakkelijkt.
+  - source_sentence: Er is bezorgdheid over de lage gevoeligheid van de op guaiac gebaseerde Haemoccult-test bij faecale occulte
+      bloed (fob) screening van de massapopulatie voor de vroege detectie van colorectaal carcinoom. Hemeselect, een immunologische
+      fob-test, is gevoeliger gebleken voor symptomatische colorectale kanker en kan een betrouwbaardere screeningsmethode
+      blijken te zijn. In Brighton en Guildford kregen 4018 asymptomatische proefpersonen in de leeftijd van 50-75 jaar screening
+      aangeboden met Haemoccult en Hemeselect. Een totaal van 1489 (37,7%) voltooide beide tests, waarvan 17 (1,1%) positief
+      waren voor Haemoccult en 145 (9,7%) positief voor Hemeselect (in totaal 148 proefpersonen hadden positieve tests). Zeven
+      proefpersonen (4,7 procent) weigerden te worden onderzocht. Colonisch onderzoek in de rest onthulde negen kankers en
+      49 patiënten met 67 adenomen (32 tumoren van 1 cm of meer). Alle kankers (hertogen A, zes; B, één; C, twee) werden gedetecteerd
+      door Hemeselect (positieve voorspellende waarde 6,2 procent), maar slechts één patiënt was Haemoccult-positief (positieve
+      voorspellende waarde 5,9 procent). Hemeselect detecteerde 65 adenomen (31 van 1 cm of meer) bij 48 patiënten (positieve
+      voorspellende waarde 33,1%) vergeleken met 11 adenomen (zeven van 1 cm of meer) bij acht patiënten die positief waren
+      voor Haemoccult (positieve voorspellende waarde 47,1%). De testspecificiteit voor neoplasie was respectievelijk 94,9
+      en 99,6 procent. Het positieve percentage van Hemeselect is hoog, maar de substantiële positieve voorspellende waarde
+      voor kanker rechtvaardigt voortdurende evaluatie.
+    sentences:
+    - De unieke eigenschappen van nanowires bieden uitstekende vooruitzichten voor het ontwerpen van een nieuwe generatie
+      apparaten en systemen die nieuwe functies tentoonstellen. Dit Overzicht bespreekt recente wetenschappelijke verwezenlijkingen
+      in de voorbereiding van nanowire-biomaterial hybriden en hun potentiële toepassingen als nanosensors, nanoactuators,
+      en nanocarriers. Nanodraden kunnen gemakkelijk worden gefunctionaliseerd met verschillende biochemicaliën via verschillende
+      koppelingschemicaliën. Een dergelijke integratie van nanodraden en biomoleculen leidt tot nieuwe hybride systemen die
+      de herkenning of katalytische eigenschappen van biomaterialen koppelen aan de aantrekkelijke elektronische en structurele
+      kenmerken van nanodraden. Receptor-gefunctionaliseerde nanodraden zijn bijzonder aantrekkelijk voor directe real-time
+      labelvrije elektrische detectie van biomoleculaire interacties. De unieke controle over de microstructuur van nanodraden,
+      en in het bijzonder het ontwerp van multisegment nanodraden, biedt ruimtelijk gedefinieerde gebieden voor de gedefinieerde
+      organisatie van verschillende biomoleculen. Dit staat de resulterende nanowires toe om verscheidene taken gelijktijdig
+      uit te voeren, en opent de deur aan een verscheidenheid van belangrijke toepassingen op het gebied van nanobioelectronics
+      en nanomedicine. Bijvoorbeeld, kunnen de multisegment nanowires die voor nanomedicinetoepassingen worden ontworpen de
+      selectieve het richten, therapie, en weergavefuncties koppelen. Dergelijke ruimtelijk bepaalde verankering van verschillende
+      biorecognitionplaatsen verstrekt ook duidelijke kansen voor de zelfassemblage van nanowires in vooraf bepaalde ontwerpen.
+      De kansen en de uitdagingen betrokken bij het ontwerpen van dergelijke nanowire-biomaterial hybride systemen en apparaten
+      worden besproken in de volgende secties.
+    - 'Pyrethroïde insecticiden zijn zeer insecticide verbindingen die op grote schaal worden gebruikt tegen de Duitse kakkerlak,
+      een belangrijke huishoudelijke insectenplaag. Bij verschillende insectensoorten is er een puntmutatie in het para-type
+      natriumkanaalgen geassocieerd met knockdown-resistentie (kdr). In de huidige studie werd genomisch DNA geanalyseerd
+      in de regio waar de mutaties kdr en super-kdr (een verbeterde vorm van pyrethroïdresistentie) zich bevinden in Blatella
+      germanica (L., 1767) (Blattodea: Blattellidae) verzameld uit Iran. Studies naar het geëxtraheerde DNA van met de hand
+      gevangen Duitse kakkerlakmonsters werden uitgevoerd door polymerasekettingreactie en sequentiebepaling om gerelateerde
+      mutaties te detecteren. De KDR-mutatie, vervanging van G voor C (L1014F), die resulteert in aminozuurvervanging (leucine
+      met fenylalanine), werd gedetecteerd in alle 18 sequentiemonsters van drie verschillende locaties. De super-kdr-mutatie
+      (M918T), die wordt gedetecteerd in super-kdr huisvliegen, werd echter niet gevonden in de sequenties van de huidige
+      studie. De hoge verhouding van de kdr-mutatie in een veldpopulatie van B. germanica in Urmia bevestigt dat de individuen
+      homozygoot zijn. Deze gegevens moeten nuttig zijn bij het ontwerpen en implementeren van een controleprogramma en weerstandsbeheer.'
+    - Mijnwerkers worden beschouwd als een populatie met een risico op HIV als gevolg van risicogedrag in verband met migrerende
+      werkpatronen. Dit was de eerste studie in Mozambique om de prevalentie van HIV en bijbehorend demografisch en risicogedrag
+      te bepalen en het gebruik en de toegang tot preventie en gezondheidszorg te beoordelen onder Mozambikanen die in Zuid-Afrikaanse
+      mijnen werken. Mannen die in de afgelopen 12 maanden in een Zuid-Afrikaanse mijn hadden gewerkt, werden tussen februari
+      en mei 2012 gerekruteerd met behulp van time location sampling (TLS) aan de grens van Ressano Garcia tussen Mozambique
+      en Zuid-Afrika. Demografische en gedragsmatige gegevens werden verzameld door middel van een gestandaardiseerde vragenlijst,
+      en HIV prevalentie werd geschat door het testen van gedroogde bloedvlekken (DBS) met twee enzym immunoassays. In totaal
+      werden 432 in aanmerking komende mijnwerkers aangeworven. De gemiddelde leeftijd was 43 jaar. De meesten waren getrouwd
+      of samenwonend; onder hen had 12,6% twee of meer vrouwen/echtgenoten in Mozambique. In de 12 maanden voorafgaand aan
+      de enquête had 24,7% af en toe een seksuele partner en 6,6% had ten minste één partner die een vrouwelijke sekswerker
+      was. Slechts één op de vijf (18,5%) gebruikte een condoom tijdens de laatste seks. De prevalentie van hiv onder mijnwerkers
+      was 22,3% en 74,6% van degenen die positief testten als onderdeel van de enquête wist niet wat hun status was. De prevalentie
+      van hiv was significant hoger (p = 0,018) bij degenen die onbesneden waren (31,2%) dan bij degenen die besneden waren
+      (18,5%). Meerdere partners (meerdere echtgenoten, grensoverschrijdende relaties en meerdere occasionele partnerschappen),
+      inconsistent condoomgebruik en een groot deel van de geïnfecteerde mijnwerkers die hun HIV-status niet kennen, verhoogt
+      het risico op HIV-overdracht in deze populatie. Combinatiestrategieën met het bevorderen van condoomgebruik, hiv-tests
+      en mannelijke besnijdenis moeten worden versterkt bij mijnwerkers.
+  - source_sentence: Clostridium botulinum type B veroorzaakt naar schatting meer dan 85% van de gevallen van paardenbotulisme
+      in de Verenigde Staten, evenals veel uitbraken bij runderen. In deze studie werd een kwantitatieve real-time polymerasekettingreactie
+      voor detectie van het neurotoxine-gen van C. botulinum type B vergeleken met de bioassay van de muis met behulp van
+      45 positieve en 43 negatieve monsters van paarden, runderen of geassocieerde milieuoorsprong. De gevoeligheid van de
+      qPCR-test was 96%, terwijl de gevoeligheid van de bioassay van de muis 84% was. De specificiteit van de qPCR-assay was
+      95% en de specificiteit van de bioassay van de muis was 100%.
+    sentences:
+    - In dit artikel wordt het effect van thermische bloei van een luchtstraal die zich door de atmosfeer verspreidt, onderzocht
+      en wordt het effect van atmosferische turbulentie niet in aanmerking genomen. De veranderingen van de intensiteitsverdeling,
+      de centroïde positie en de gemiddelde kwadraatbundelbreedte van een luchtstraal die zich door de atmosfeer voortplant,
+      worden bestudeerd met behulp van de vierdimensionale (4D) computercode van de tijdsafhankelijke voortplanting van luchtstralen
+      door de atmosfeer. Er wordt aangetoond dat een luchtstraal zijn vorm en de structuur niet kan behouden wanneer de luchtstraal
+      zich door de atmosfeer voortplant als gevolg van thermische bloei, behalve de korte voortplantingsafstand, of de korte
+      tijd, of het laaglichtvermogen. De thermische bloei resulteert in een centrale dip van de middenkwab en zorgt ervoor
+      dat de middenkwab zich verspreidt en afneemt. In tegenstelling tot de middenkwab, worden de zijkwabben minder beïnvloed
+      door thermische bloei, zodat de maximale intensiteit van de zijkwab groter kan zijn dan die van de middenkwab. De zijwind
+      kan echter het effect van thermische bloei verminderen. Wanneer er de dwarswindsnelheid vx in x-richting bestaat, is
+      de afhankelijkheid van de centroïde positie in x-richting op vx niet monotoon en bestaat er een minimum, maar de centroïde
+      positie in y-richting is bijna onafhankelijk van vx.
+    - Botulisme moet worden overwogen in gevallen waarin zwakte, verlamming of intolerantie voor lichaamsbeweging bij het
+      paard kan worden gezien. Dysfagie kan ook aanwezig zijn, hoewel het geen consistente bevinding is. Potentiële bronnen
+      zijn onder meer aas in hooi, beschimmelde of anderszins verrotte vegetatie of voedergewassen, vogels die materiaal dragen
+      van begraven dieren of andere soortgelijke locaties, en besmette karkassen ter plaatse. Paarden, vooral veulens, kunnen
+      ook last hebben van toxico-infectieus botulisme, een aandoening waarbij het C. botulinum kan koloniseren en toxine in
+      het maagdarmkanaal kan produceren. Wonden kunnen ook het organisme herbergen en anderszins botulisme bevorderen. Diagnose
+      van botulisme is vaak een klinische diagnose die wordt ondersteund door eliminatie van andere mogelijke infectieuze,
+      schadelijke of toxische oorzaken van zwakte van het paard. Definitieve diagnose en type-identificatie in het laboratorium
+      zijn moeilijk en vereisen meestal een geschikt monster van het bronmateriaal. Behandeling is vaak niet lonend, tenzij
+      een geval vroegtijdig wordt geïdentificeerd en de juiste antitoxine direct beschikbaar is. Preventie omvat gezond verstand
+      benaderingen van voeding en verzorging van het paard en, waar mogelijk, verstandig gebruik van vaccinatie in endemische
+      gebieden.
+    - 'Een methode voor kwantificering van in vivo 31P-metabolietconcentraties in menselijke hersenen met 31P magnetische
+      resonantie spectroscopische beeldvorming (MRSI) wordt beschreven. De methode is gebaseerd op vergelijking van de hersenen
+      en kalibratie fantoom metingen, met correcties voor spoel laden en metaboliet magnetische ontspanning. Geschatte metabolietconcentraties
+      voor het centrum semiovale bij 11 normale volwassenen (gemiddelde +/- SD) waren: fosfomonoesters = 3,0 +/- 0,7 mM, anorganisch
+      fosfaat = 0,7 +/- 0,2 mM, fosfodiesters = 10,9 +/- 1,8 mM, fosfocreatine = 2,7 +/- 0,5 mM en adenosinetrifosfaat = 2,9
+      +/- 0,3 mM. Deze waarden zijn vergelijkbaar met eerdere resultaten verkregen uit single-volume gelokaliseerde spectroscopie.'
+  - source_sentence: We gebruikten positronemissietomografie (PET) om de relatie te beoordelen tussen gecombineerde beeldvorming
+      van de cerebrale bloedstroom en zuurstofverbruik 5-18 uur na de eerste middelste cerebrale slagader (MCA) beroerte en
+      neurologische uitkomst na 2 maanden. Alle 18 patiënten konden worden ingedeeld in drie visueel gedefinieerde PET-patronen
+      van perfusie en veranderingen in zuurstofverbruik. Patroon I (7 patiënten) suggereerde uitgebreide onomkeerbare schade
+      en werd consequent geassocieerd met een slechte uitkomst. Patroon II (5) suggereerde voortdurende ischemie en werd geassocieerd
+      met variabele uitkomst. Patroon III (6), met hyperperfusie en weinig of geen metabole verandering, werd geassocieerd
+      met een uitstekend herstel, wat suggereert dat vroege reperfusie gunstig is. Deze relatie tussen PET en uitkomst was
+      zeer significant (p &lt; 0,0005). De resultaten suggereren dat PET binnen 5-18 uur na het begin van de beroerte een
+      goede voorspeller is van de uitkomst in patronen I en III, waarvoor de therapie beperkt lijkt. De afwezigheid van voorspellende
+      waarde voor patroon II suggereert dat het te wijten is aan een omkeerbare ischemische toestand die mogelijk vatbaar
+      is voor therapie. Deze bevindingen kunnen belangrijke implicaties hebben voor het beheer van acute MCA-beroerte en voor
+      de selectie van patiënten voor therapeutische onderzoeken.
+    sentences:
+    - 'Overleving na het begin van dementie is gemeld te variëren van 3 tot meer dan 9 jaar. We onderzochten de mortaliteit
+      bij 3602 deelnemers aan de Cardiovascular Health (CHS) Cognition Study in vier Amerikaanse gemeenschappen die tussen
+      1992 en 1999 werden geëvalueerd op de incidentie van dementie en gedurende 6,5 jaar werden gevolgd. In juni 2000 waren
+      33 van de 62 (53,2%) deelnemers die vasculaire dementie (VaD) ontwikkelden overleden, vergeleken met 79 van de 245 (32,2%)
+      met de ziekte van Alzheimer (AD), 66 van de 151 (43,7%) met zowel AD als VaD, en 429 van de 2318 (18,5%) met normale
+      cognitie. Met behulp van Cox proportionele gevaren regressie met een tijdsafhankelijke covariate voor dementiestatus
+      aangepast aan leeftijd, geslacht en ras, hadden personen met VaD meer dan vier keer zoveel kans om te sterven tijdens
+      de follow-up dan die met normale cognitie (HR: 4.4, 95% CI: 3.1-6.3). De hazard ratio ''s waren 2,1 (95% BI: 1,6-2,7)
+      voor AD en 2,5 (95% BI: 1,9-3,3) voor beide typen. Aangepaste versnelde levensmodellen schatten de mediane overleving
+      van het begin van dementie tot de dood op 3,9 jaar voor mensen met VaD, 7,1 jaar voor AD, 5,4 jaar voor gemengde dementie
+      en 11,0 jaar voor gematchte controles met normale cognitie. Terwijl mensen met VaD voornamelijk stierven aan cerebrovasculaire
+      aandoeningen, stierven mensen met AD/gemengde dementie vaker aan dementie/falen om te gedijen.'
+    - Een canonieke RAS-ERK-signaleringstraject specificeert het lot van de uitscheidingskanaalcel tijdens Caenorhabditis
+      elegans embryogenese. De paralogs ksr-1 en ksr-2 coderen steigerproteïnen die signalering via deze route vergemakkelijken
+      en die redundant handelen om het lot van de uitscheidingskanaal te bevorderen. In een genoombreed RNAi-scherm voor genen
+      die, zoals ksr-2, nodig zijn in combinatie met ksr-1 voor het lot van de uitscheidingskanaalcel, identificeerden we
+      16 "ekl" (versterker van ksr-1 letaliteit) genen die grotendeels maternaal vereist zijn en die moleculaire identiteiten
+      hebben die rollen suggereren in transcriptionele of post-transcriptionele genregulatie. Deze omvatten het Argonaute-gen
+      csr-1 en een specifieke subset van andere genen die betrokken zijn bij endogene kleine RNA-processen, orthologs van
+      meerdere componenten van de NuA4/Tip60 histonacetyltransferase en CCR4/NIET deadenylase-complexen, en geconserveerde
+      enzymen die betrokken zijn bij ubiquitinatie en deubiquitinatie. De identificatie van vier kleine RNA-regulatoren (csr-1,
+      drh-3, ego-1 en ekl-1) die het Ekl-fenotype delen, suggereert dat deze genen een functionele route definiëren die nodig
+      is voor de productie en/of functie van bepaalde kiembaan kleine RNA('s). Deze kleine RNA' s en de andere ekl-genen controleren
+      waarschijnlijk de expressie van een of meer regulatoren van RAS-ERK-signalering die functioneren op of nabij het niveau
+      van kinase-onderdrukker van ras (KSR).
+    - 'Baarmoeder ballon tamponade (UBT) wordt veel gebruikt voor de behandeling van postpartum bloedingen (PPH). Gerandomiseerde
+      studies van UBT zijn schaars: die van geïmproviseerde condooms UBT in omgevingen met weinig middelen vonden meer kwaad
+      dan goed. Baarmoederzuigtamponade (UST) is meer afgestemd op het fysiologische mechanisme van baarmoederhemostase (samentrekking),
+      maar speciaal ontworpen apparaten kunnen onbetaalbaar of niet beschikbaar zijn wanneer dat nodig is. We beschrijven
+      een techniek van UST met behulp van een goedkope Levin zuigkatheter. Het gebruik van de beschreven techniek als laatste
+      redmiddel in drie gevallen van levensbedreigende PPH resulteerde in een snelle stopzetting van de bloeding. We benadrukken
+      de noodzaak van gerandomiseerde onderzoeken om de effectiviteit te bevestigen.'
+  - source_sentence: Aangeboren Myasthenic Syndromen (CMS) zijn zeldzame aandoeningen die optreden als gevolg van defecten
+      in de structuur en in de functie van neuromusculaire knooppunten. Moleculaire genetische diagnose is belangrijk om de
+      meest geschikte therapeutische optie en behandeling te selecteren. Acht patiënten met aangeboren myasthenische syndromen
+      die zich tussen juni 2015 en mei 2018 presenteerden aan de Çukurova University Pediatric Neurology Department Outpatient
+      Clinic werden beoordeeld. Mutaties in de acetylcholine receptor (subunits in epsilon) (CHRNE) in drie en mutaties in
+      de collageen staart van endplate acetylcholinesterase (COLQ) gen in vijf patiënten werden geïdentificeerd; p.W148 mutatie
+      werd gedetecteerd homozygoot te zijn in vier, c.1169A &gt; G nieuwe mutatie in COLQ gen homozygoot in één, c452_454delAGG
+      mutatie homozygoot in de andere patiënt, IVS7 + 2T &gt; C(c.802 + 2T &gt; C) mutatie was homozygoot in een patiënt en
+      heterozygoot samenstelling van c.865 (T.C.LeuP9) en c.872 (GC.Ar161) was homozygoot in een patiënt en heterozygoot van
+      c. De ouders van alle geëvalueerde patiënten waren bloedverwant. Ptosis, oftalmoplegie, gegeneraliseerde hypotonie,
+      bulbaire zwakte en ademhalingscrisis waren de belangrijkste bevindingen op het moment van presentatie. Pyridostigmine
+      is de eerstelijns medicamenteuze therapie bij primaire AChR-deficiëntie. Bèta-adrenerge agonisten, efedrine en albuterol
+      zijn de andere behandelingsopties voor CMS-subtypes veroorzaakt door mutaties in COLQ. Deze studie wijst op de genetische
+      en fenotypische kenmerken van CMS-patiënten in de Turkse bevolking en rapporteert ook eerder niet-gerapporteerde mutaties
+      in de literatuur. CHRNE- en COLQ-genmutaties komen vaak voor bij de Turkse bevolking. Patiënten kunnen ernstige voordelen
+      krijgen en herstellen na de behandeling. De behandeling moet worden gepland op basis van genetische tests en klinische
+      bevindingen.
+    sentences:
+    - Er is toenemend bewijs dat innervatie, mogelijk gemedieerd via neuropeptiden, wondgenezing bevordert. Deze studie presenteert
+      gegevens over de vroege cellulaire gebeurtenissen tijdens genezing in gedenergeerd weefsel. Vrije schuine liesflappen
+      werden grootgebracht op 25 volwassen Sprague-Dawley-ratten. Excisie wonden werden geplaatst in de flap en op twee controleplaatsen,
+      de contralaterale liesstreek en de thorax. De afwezigheid van innervatie in de wonden van de vrije flap werd 10 dagen
+      na de operatie bevestigd door indirecte immunofluorescentie met een pan-neuronale marker. Het cellulaire infiltraat
+      van de wonden werd immunohistochemisch geanalyseerd met een panel van antilichamen tegen rattenmacrofagen en monocyten
+      (ED1), rat-B-lymfocyten (CD45R) en T-lymfocyten (CD2). Het immuungeïnfecteerde cellulaire infiltraat werd gekwantificeerd
+      op 2, 4, 7 en 10 dagen postoperatief. Onze resultaten tonen aan dat gedenerveerde wonden een significant lagere macrofaag
+      en T-lymfocytentelling hebben op dag 4 van wondgenezing (P &lt; 0,05). Van ontstekingscellen, met name macrofagen, is
+      bekend dat ze een belangrijke rol spelen bij wondgenezing en hun verminderde chemotaxis in gedenervateerd weefsel kan
+      verband houden met de waargenomen vertraging in wondsluiting.
+    - We hebben eerder prostaglandine EP(3)-receptoren geïdentificeerd in het linker ventriculaire myocardium. Om de potentiële
+      bijdrage van dit receptorsubtype aan de anti-ischemische eigenschappen van E-type prostaglandines (d.w.z. PGE(1)) te
+      beoordelen, werden twee groepen verdoofde minipigs met open borst onderworpen aan LAD occlusie (1 uur) en reperfusie
+      (3 uur). In één groep werd de selectieve EP(3)receptoragonist M&amp;B 28.767 (2 pmol/kgxmin) geïnfundeerd in de LAD
+      vanaf 20 minuten vóór ischemie tot het einde van de reperfusie. De andere groep kreeg een voertuig. M &amp; B 28.767
+      veranderde de systemische hemodynamiek niet, maar verminderde de grootte van het infarct (tetrazoliumkleuring) en creatinekinase-afgifte
+      met respectievelijk 53% en 48%. Ischemie-geïnduceerde ventriculaire aritmieën waren meestal verminderd. Verdere experimenten
+      analyseerden de effecten van EP(3)receptorstimulatie op normoxisch myocardium. PGE(1), een niet-selectieve agonist voor
+      alle EP-receptorsubtypen, evenals M&amp;B 28.767 (2 pmol/kgxmin van elk in de LAD) verminderde de actiepotentiaalduur
+      (epicardiale monofasische elektroden) en verhinderde bijna de inotrope reactie op intraveneuze isoprenaline. Deze dubbele
+      respons is consistent met de EP(3) -receptorkoppeling met een remmend G-eiwit. Dit werd bevestigd in afzonderlijke experimenten
+      met stabiele ovariumceltransfectanten van de Chinese hamster die de varkensep (3)-receptor tot expressie brengen, waarbij
+      M&amp;B 28.767 de door forskoline geïnduceerde toename van cAMP op een concentratieafhankelijke manier remde. Er wordt
+      geconcludeerd dat de bescherming van gereperfuseerd ischemisch myocardium door E-type prostaglandinen wordt gemedieerd
+      door EP(3)-receptoren, wat een gecombineerde activering van repolariserende membraanstromen en een remming van schadelijke
+      effecten veroorzaakt door ischemie-geïnduceerde catecholamine-afgifte lijkt te omvatten.
+    - We voerden een antimicrobieel rentmeesterschapsprogramma uit op een pediatrische intensive care-eenheid. Een onderbroken
+      tijdreeksanalyse toonde een significante vermindering van het niveau en de trend van dagen therapie per 1000 patiëntdagen
+      voor antipseudomonale middelen. Er werd geen toename van ongunstige patiëntresultaten gevonden.
+  pipeline_tag: sentence-similarity
+  library_name: sentence-transformers
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-25T20:38:33.000Z'
+safetensors:
+  parameters:
+    F32: 125978112
+  total: 125978112
+usedStorage: 503934800
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - RobertaModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: 0
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: 2
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 514
+  model_type: roberta
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 1
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.3.0
+  type_vocab_size: 1
+  use_cache: true
+  vocab_size: 52000
+onnxFiles: {}
+safetensorsSizeMb: 503.9
+approxSizeMb: 503.9
+fetchedAt: '2026-11-26T12:10:23.000Z'

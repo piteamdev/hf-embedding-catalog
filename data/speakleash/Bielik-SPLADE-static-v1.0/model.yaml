@@ -1,0 +1,84 @@
+_id: 6b05de7603b1785212dac88c
+id: speakleash/Bielik-SPLADE-static-v1.0
+private: false
+pipeline_tag: feature-extraction
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- splade
+- sparse-encoder
+- sparse-retrieval
+- information-retrieval
+- polish
+- inference-free
+- static-embeddings
+- feature-extraction
+- pl
+- base_model:speakleash/Bielik-SPLADE-82M-v1.0
+- base_model:finetune:speakleash/Bielik-SPLADE-82M-v1.0
+- license:gemma
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: speakleash/Bielik-SPLADE-static-v1.0
+author: speakleash
+sha: 2c251031913f990284ea755b176d585b9f20834b
+lastModified: '2026-11-25T14:25:01.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  language:
+  - pl
+  license: gemma
+  base_model: speakleash/Bielik-SPLADE-82M-v1.0
+  library_name: sentence-transformers
+  pipeline_tag: feature-extraction
+  tags:
+  - splade
+  - sparse-encoder
+  - sentence-transformers
+  - sparse-retrieval
+  - information-retrieval
+  - polish
+  - inference-free
+  - static-embeddings
+siblings:
+- rfilename: .gitattributes
+- rfilename: GEMMA_PROHIBITED_USE_POLICY.md
+- rfilename: GEMMA_TERMS_OF_USE.md
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: config_sentence_transformers.json
+- rfilename: document_0_MLMTransformer/config.json
+- rfilename: document_0_MLMTransformer/model.safetensors
+- rfilename: document_0_MLMTransformer/sentence_bert_config.json
+- rfilename: document_0_MLMTransformer/special_tokens_map.json
+- rfilename: document_0_MLMTransformer/tokenizer.json
+- rfilename: document_0_MLMTransformer/tokenizer_config.json
+- rfilename: document_1_SpladePooling/config.json
+- rfilename: modules.json
+- rfilename: query_0_SparseStaticExpansion/config.json
+- rfilename: query_0_SparseStaticExpansion/special_tokens_map.json
+- rfilename: query_0_SparseStaticExpansion/static_query.json
+- rfilename: query_0_SparseStaticExpansion/static_query.safetensors
+- rfilename: query_0_SparseStaticExpansion/tokenizer.json
+- rfilename: query_0_SparseStaticExpansion/tokenizer_config.json
+- rfilename: results_cost.png
+- rfilename: results_quality.png
+- rfilename: router_config.json
+- rfilename: speakleash_cyfronet_gaia.png
+- rfilename: static_query_expansion.py
+spaces: []
+createdAt: '2026-11-24T18:59:02.000Z'
+usedStorage: 344433271
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 344.3
+approxSizeMb: 0.0
+fetchedAt: '2026-11-26T12:10:23.000Z'

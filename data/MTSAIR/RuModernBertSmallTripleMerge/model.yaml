@@ -1,0 +1,152 @@
+_id: 6b072c0b124312723d02e329
+id: MTSAIR/RuModernBertSmallTripleMerge
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- modernbert
+- feature-extraction
+- encoder
+- model-merging
+- en
+- ru
+- dataset:ZeroAgency/ru-big-russian-dataset
+- arxiv:2412.13663
+- arxiv:2605.12438
+- base_model:MTSAIR/RuModernBertSmall
+- base_model:finetune:MTSAIR/RuModernBertSmall
+- license:apache-2.0
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: MTSAIR/RuModernBertSmallTripleMerge
+author: MTSAIR
+sha: 05301da6cd818189deb19ca528a509e1f759c1dc
+lastModified: '2026-11-26T07:54:00.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - ModernBertModel
+  model_type: modernbert
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  license: apache-2.0
+  language:
+  - en
+  - ru
+  library_name: transformers
+  pipeline_tag: feature-extraction
+  tags:
+  - modernbert
+  - encoder
+  - model-merging
+  base_model: MTSAIR/RuModernBertSmall
+  base_model_relation: finetune
+  datasets:
+  - ZeroAgency/ru-big-russian-dataset
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-25T18:42:19.000Z'
+safetensors:
+  parameters:
+    F32: 34409920
+  total: 34409920
+usedStorage: 137651960
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - ModernBertModel
+  attention_bias: false
+  attention_dropout: 0.0
+  bos_token_id: 1
+  classifier_activation: gelu
+  classifier_bias: false
+  classifier_dropout: 0.0
+  classifier_pooling: cls
+  cls_token_id: 1
+  decoder_bias: false
+  deterministic_flash_attn: false
+  dtype: float32
+  embedding_dropout: 0.0
+  eos_token_id: 2
+  global_attn_every_n_layers: 4
+  hidden_activation: gelu
+  hidden_size: 320
+  initializer_cutoff_factor: 2.0
+  initializer_range: 0.02
+  intermediate_size: 480
+  layer_types:
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  - sliding_attention
+  - sliding_attention
+  - sliding_attention
+  - full_attention
+  local_attention: 64
+  max_position_embeddings: 8192
+  mlp_bias: false
+  mlp_dropout: 0.0
+  model_type: modernbert
+  norm_bias: false
+  norm_eps: 1.0e-05
+  num_attention_heads: 8
+  num_hidden_layers: 21
+  pad_token_id: 0
+  repad_logits_with_grad: false
+  rope_parameters:
+    full_attention:
+      rope_theta: 160000.0
+      rope_type: default
+    sliding_attention:
+      rope_theta: 10000.0
+      rope_type: default
+  sep_token_id: 2
+  sparse_pred_ignore_index: -100
+  sparse_prediction: false
+  tie_word_embeddings: false
+  transformers_version: 5.24.1
+  vocab_size: 50368
+onnxFiles: {}
+safetensorsSizeMb: 137.7
+approxSizeMb: 137.6
+fetchedAt: '2026-11-26T12:10:23.000Z'

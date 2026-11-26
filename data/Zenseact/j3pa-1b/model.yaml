@@ -1,0 +1,108 @@
+_id: 6b071fa1130689d5dc10489b
+id: Zenseact/j3pa-1b
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- j3pa
+- feature-extraction
+- lidar
+- point-cloud
+- self-supervised-learning
+- autonomous-driving
+- custom_code
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: Zenseact/j3pa-1b
+author: Zenseact
+sha: 43a722db59106181275d924dc0c5d593987a8959
+lastModified: '2026-11-25T18:31:13.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - J3PAModel
+  auto_map:
+    AutoConfig: configuration_j3pa.J3PAConfig
+    AutoModel: modeling_j3pa.J3PAModel
+  model_type: j3pa
+cardData:
+  license: apache-2.0
+  library_name: transformers
+  tags:
+  - lidar
+  - point-cloud
+  - self-supervised-learning
+  - autonomous-driving
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_j3pa.J3PAModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: configuration_j3pa.py
+- rfilename: layers.py
+- rfilename: model.safetensors
+- rfilename: modeling_j3pa.py
+- rfilename: pt_transf.py
+- rfilename: qk_layernorm_rope_triton.py
+- rfilename: rope.py
+- rfilename: rope_triton.py
+- rfilename: space_filling_curves_triton.py
+spaces: []
+createdAt: '2026-11-25T17:49:21.000Z'
+safetensors:
+  parameters:
+    I64: 111616
+    F32: 1014957315
+  total: 1015068931
+usedStorage: 4060844532
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - J3PAModel
+  auto_map:
+    AutoConfig: configuration_j3pa.J3PAConfig
+    AutoModel: modeling_j3pa.J3PAModel
+  dtype: float32
+  model_type: j3pa
+  num_down_layers_per_stage:
+  - 6
+  - 6
+  - 6
+  - 12
+  - 12
+  num_heads_per_stage:
+  - 4
+  - 8
+  - 16
+  - 24
+  - 26
+  num_up_layers_per_stage:
+  - 2
+  - 2
+  - 2
+  - 2
+  qk_layernorm: true
+  sdpa_gate: true
+  stage_dims:
+  - 256
+  - 512
+  - 1024
+  - 1536
+  - 1664
+  transformers_version: 5.8.0
+  voxel_size_conditioning_range: null
+onnxFiles: {}
+safetensorsSizeMb: 4060.8
+approxSizeMb: 4060.3
+fetchedAt: '2026-11-26T12:10:23.000Z'

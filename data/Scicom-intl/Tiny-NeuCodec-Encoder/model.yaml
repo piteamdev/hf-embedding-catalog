@@ -1,0 +1,63 @@
+_id: 6b08e84bf2c8889ad7b2230d
+id: Scicom-intl/Tiny-NeuCodec-Encoder
+private: false
+pipeline_tag: feature-extraction
+library_name: pytorch
+tags:
+- pytorch
+- audio
+- speech
+- codec
+- neucodec
+- distillation
+- text-to-speech
+- voice-cloning
+- feature-extraction
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: Scicom-intl/Tiny-NeuCodec-Encoder
+author: Scicom-intl
+sha: 92cbfd5f78e9966c2cceb517b524fc9343a97657
+lastModified: '2026-11-27T02:18:49.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: pytorch
+  pipeline_tag: feature-extraction
+  tags:
+  - audio
+  - speech
+  - codec
+  - neucodec
+  - distillation
+  - text-to-speech
+  - voice-cloning
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: S2/config.json
+- rfilename: S2/student.pt
+- rfilename: S4/config.json
+- rfilename: S4/student.pt
+- rfilename: figures/audio.png
+- rfilename: figures/cloning.png
+- rfilename: figures/codes.png
+- rfilename: figures/curve.png
+- rfilename: figures/size.png
+- rfilename: figures/speed.png
+- rfilename: tiny_encoder.py
+spaces: []
+createdAt: '2026-11-27T02:17:47.000Z'
+usedStorage: 682405675
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-27T11:58:46.000Z'

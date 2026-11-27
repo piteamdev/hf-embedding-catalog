@@ -1,0 +1,634 @@
+_id: 6b080ac9b5eb646b7c41850c
+id: sairaamv1/small-lm-data-element
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- dual_head_bert
+- feature-extraction
+- bert
+- data-governance
+- schema-matching
+- pii-detection
+- custom_code
+- en
+- license:mit
+- region:us
+downloads: 0
+likes: 1
+modelId: sairaamv1/small-lm-data-element
+author: sairaamv1
+sha: 3e83577a6c8ad2e89c3f6503f225eddf962c8a8a
+lastModified: '2026-11-27T08:44:39.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  architectures:
+  - DualHeadBertForPIIClassification
+  auto_map:
+    AutoConfig: modeling_dual_head.DualHeadConfig
+    AutoModel: modeling_dual_head.DualHeadBertForPIIClassification
+  model_type: dual_head_bert
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  datasets: []
+  language: en
+  library_name: transformers
+  license: mit
+  model_name: sairaamv1/small-lm-data-element
+  tags:
+  - bert
+  - data-governance
+  - schema-matching
+  - pii-detection
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_dual_head.DualHeadBertForPIIClassification
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: __pycache__/modeling_dual_head.cpython-314.pyc
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: modeling_dual_head.py
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-26T10:32:41.000Z'
+safetensors:
+  parameters:
+    F32: 22814086
+  total: 22814086
+usedStorage: 418109064
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - DualHeadBertForPIIClassification
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  gradient_checkpointing: false
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  id2type_label:
+    '0': AML / Sanctions Status
+    '1': Aadhaar Number
+    '2': Academic Performance
+    '3': Account Balance
+    '4': Achievement History
+    '5': Advertising Cookies
+    '6': Advertising ID
+    '7': Age (Derived)
+    '8': Alias / Nickname
+    '9': Alternate Contact Number
+    '10': Analytics Cookies
+    '11': App Permissions
+    '12': Appraisal History
+    '13': Approximate Location
+    '14': Asset Allocation
+    '15': Asset Valuation
+    '16': Astrological Data
+    '17': Attribution Data
+    '18': Audit Logs (User-level)
+    '19': Available Credit
+    '20': Badge Number
+    '21': Bank Account Number
+    '22': Bankruptcy Information
+    '23': Behavioral Biometrics
+    '24': Biometric Authentication Data
+    '25': Biometric Identifiers
+    '26': Bluetooth Connections
+    '27': Booking Details
+    '28': Broker Information
+    '29': Browser Fingerprint
+    '30': Browsing History
+    '31': Campaign Interaction History
+    '32': Cancellation Records
+    '33': Capital Gains
+    '34': Capital Losses
+    '35': Card Details
+    '36': Caste / Community
+    '37': Check-in Data
+    '38': Children Information
+    '39': Churn Prediction Data
+    '40': City
+    '41': Claim History
+    '42': Collateral Information
+    '43': Communication Records
+    '44': Consent Records
+    '45': Content Creation Data
+    '46': Continuing Education
+    '47': Cookie ID
+    '48': Courses Completed
+    '49': Coverage Details
+    '50': Credit History
+    '51': Credit Limit
+    '52': Credit Score (CIBIL)
+    '53': Credit Score (Equifax)
+    '54': Credit Score (Experian)
+    '55': Credit Utilization Ratio
+    '56': Criminal History
+    '57': Customer Lifetime Value
+    '58': Customer Support Interactions
+    '59': Date of Birth
+    '60': Default Records
+    '61': Degree Certificate
+    '62': Degree Number
+    '63': Delivery Address
+    '64': Delivery History
+    '65': Delivery Instructions
+    '66': Delivery Preferences
+    '67': Delivery Time Slots
+    '68': Deposit Amount
+    '69': Device Brand
+    '70': Device ID
+    '71': Device Model
+    '72': Device-bound Credentials
+    '73': Dietary Preferences
+    '74': Digital Signature
+    '75': Digital Wallet ID
+    '76': Disability Severity / Level
+    '77': Disability Status
+    '78': Disability Type
+    '79': Discount Usage
+    '80': Dividend History
+    '81': Download History
+    '82': Drinking Habits
+    '83': Driver’s License Number
+    '84': EPF Number
+    '85': Email Address
+    '86': Emergency Contact Details
+    '87': Employee ID
+    '88': Employer Name
+    '89': Employment Contract
+    '90': Employment History
+    '91': Ethnic Origin
+    '92': Expense Categories
+    '93': Failed Delivery Attempts
+    '94': Family Information
+    '95': Feedback & Reviews
+    '96': Financial Goals
+    '97': First Name
+    '98': Fraud Alerts
+    '99': Full Name
+    '100': Functional Cookies
+    '101': GST Number
+    '102': Game Progress
+    '103': Gaming Device Information
+    '104': Gaming Preferences
+    '105': Gender
+    '106': Genetic Data
+    '107': Graduation Years
+    '108': Graphical Password Data
+    '109': Group Memberships
+    '110': Guarantor Details
+    '111': HSC Document
+    '112': Health Insurance Details
+    '113': Health Records
+    '114': Horoscope Data
+    '115': IBAN
+    '116': IFSC Code
+    '117': IP Address
+    '118': Identity Verification Status
+    '119': In-game Purchases
+    '120': Income Details
+    '121': Industry Type
+    '122': Institution Names
+    '123': Insurance Policy Number
+    '124': Interest in Children
+    '125': Investment Advisor Details
+    '126': Investment Portfolio
+    '127': Investment Preferences
+    '128': Job Title
+    '129': KYC Documents
+    '130': LPG / Gas Consumer Number
+    '131': Last Name
+    '132': Lead Scoring
+    '133': Leaderboard Rankings
+    '134': Learning Progress
+    '135': Lifestyle Choices
+    '136': Listening History
+    '137': Live Stream Participation
+    '138': Loan Details
+    '139': Location History
+    '140': MAC Address
+    '141': MFA Tokens
+    '142': Marital Status
+    '143': Marriage Certificate Date
+    '144': Marriage Certificate Number
+    '145': Medical History
+    '146': Mental Health Data
+    '147': Middle Name
+    '148': Multiplayer Interactions
+    '149': Mutual Fund Holdings
+    '150': Nationality
+    '151': Network Information
+    '152': Nominee Contact Details
+    '153': Nominee Identifier
+    '154': Nominee Name
+    '155': Nominee Relationship
+    '156': Nominee Share Percentage
+    '157': OAuth Tokens
+    '158': Office Address
+    '159': Operating System
+    '160': Operating System Version
+    '161': Order Details
+    '162': PAN
+    '163': PIN
+    '164': PRAN
+    '165': Packaging Preferences
+    '166': Partner Preferences
+    '167': Passport Number
+    '168': Password (Hashed)
+    '169': Payment Records
+    '170': Performance Reviews
+    '171': Permanent Address
+    '172': Philosophical Beliefs
+    '173': Phone Number
+    '174': Physical Attributes
+    '175': Place of Birth
+    '176': Playlist
+    '177': Policy Modifications
+    '178': Political Opinions
+    '179': Portfolio Holdings
+    '180': Precise Location
+    '181': Preferences
+    '182': Preferred Service Areas
+    '183': Premium Payments
+    '184': Price Sensitivity
+    '185': Professional Development
+    '186': Professional License Numbers
+    '187': Professional Qualifications
+    '188': Profile Photo
+    '189': Promotional Offers Used
+    '190': Purchase History
+    '191': Ration Card Number
+    '192': Recurring Payments
+    '193': Refund History
+    '194': Relationship Status
+    '195': Religious Beliefs
+    '196': Renewal History
+    '197': Rescheduling Patterns
+    '198': Residential Address
+    '199': Return History
+    '200': Risk Assessment
+    '201': Risk Rating
+    '202': Risk Tolerance
+    '203': Route Information
+    '204': Routing Number
+    '205': SSC Document
+    '206': SSN (Social Security Number) (US)
+    '207': Salary
+    '208': Search History
+    '209': Security Questions & Answers
+    '210': Segmentation Data
+    '211': Service Completion Status
+    '212': Service Location
+    '213': Service Usage History
+    '214': Session IDs
+    '215': Sexual Orientation
+    '216': Shared Content
+    '217': Sharing Behavior
+    '218': Shipping Address
+    '219': Shopping Cart Contents
+    '220': Skills Assessment
+    '221': Smoking Habits
+    '222': Social Connections
+    '223': Social Influence Score
+    '224': Social Media Activity
+    '225': Social Media Profiles
+    '226': Special Handling Instructions
+    '227': Standing Instructions
+    '228': Strictly Necessary Cookies
+    '229': Subscription Data
+    '230': Survey Responses
+    '231': Tax Identification Number
+    '232': Tax Records
+    '233': Terms Acceptance
+    '234': Third-party Account ID
+    '235': Time Spent Gaming
+    '236': Tracking Information
+    '237': Trading History
+    '238': Training Records
+    '239': Transaction Records
+    '240': UPI ID
+    '241': Underwriting Information
+    '242': Union Membership
+    '243': Usage Patterns
+    '244': User Agent
+    '245': Username / User ID
+    '246': Vehicle Ownership Details
+    '247': Vehicle Registration Number
+    '248': Vehicle Type
+    '249': Verification Metadata
+    '250': Verified Identity Data
+    '251': Viewing History
+    '252': Virtual Currency
+    '253': Virtual Items Owned
+    '254': Voter ID
+    '255': Watchlist
+    '256': WiFi Connections
+    '257': Wishlist Items
+    '258': Work Email
+    '259': Work Phone Number
+  initializer_range: 0.02
+  intermediate_size: 1536
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: dual_head_bert
+  num_attention_heads: 12
+  num_hidden_layers: 6
+  num_type_labels: 260
+  pad_token_id: 0
+  pii_loss_weight: 1.0
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  transformers_version: 5.24.1
+  type_label2id:
+    AML / Sanctions Status: 0
+    Aadhaar Number: 1
+    Academic Performance: 2
+    Account Balance: 3
+    Achievement History: 4
+    Advertising Cookies: 5
+    Advertising ID: 6
+    Age (Derived): 7
+    Alias / Nickname: 8
+    Alternate Contact Number: 9
+    Analytics Cookies: 10
+    App Permissions: 11
+    Appraisal History: 12
+    Approximate Location: 13
+    Asset Allocation: 14
+    Asset Valuation: 15
+    Astrological Data: 16
+    Attribution Data: 17
+    Audit Logs (User-level): 18
+    Available Credit: 19
+    Badge Number: 20
+    Bank Account Number: 21
+    Bankruptcy Information: 22
+    Behavioral Biometrics: 23
+    Biometric Authentication Data: 24
+    Biometric Identifiers: 25
+    Bluetooth Connections: 26
+    Booking Details: 27
+    Broker Information: 28
+    Browser Fingerprint: 29
+    Browsing History: 30
+    Campaign Interaction History: 31
+    Cancellation Records: 32
+    Capital Gains: 33
+    Capital Losses: 34
+    Card Details: 35
+    Caste / Community: 36
+    Check-in Data: 37
+    Children Information: 38
+    Churn Prediction Data: 39
+    City: 40
+    Claim History: 41
+    Collateral Information: 42
+    Communication Records: 43
+    Consent Records: 44
+    Content Creation Data: 45
+    Continuing Education: 46
+    Cookie ID: 47
+    Courses Completed: 48
+    Coverage Details: 49
+    Credit History: 50
+    Credit Limit: 51
+    Credit Score (CIBIL): 52
+    Credit Score (Equifax): 53
+    Credit Score (Experian): 54
+    Credit Utilization Ratio: 55
+    Criminal History: 56
+    Customer Lifetime Value: 57
+    Customer Support Interactions: 58
+    Date of Birth: 59
+    Default Records: 60
+    Degree Certificate: 61
+    Degree Number: 62
+    Delivery Address: 63
+    Delivery History: 64
+    Delivery Instructions: 65
+    Delivery Preferences: 66
+    Delivery Time Slots: 67
+    Deposit Amount: 68
+    Device Brand: 69
+    Device ID: 70
+    Device Model: 71
+    Device-bound Credentials: 72
+    Dietary Preferences: 73
+    Digital Signature: 74
+    Digital Wallet ID: 75
+    Disability Severity / Level: 76
+    Disability Status: 77
+    Disability Type: 78
+    Discount Usage: 79
+    Dividend History: 80
+    Download History: 81
+    Drinking Habits: 82
+    Driver’s License Number: 83
+    EPF Number: 84
+    Email Address: 85
+    Emergency Contact Details: 86
+    Employee ID: 87
+    Employer Name: 88
+    Employment Contract: 89
+    Employment History: 90
+    Ethnic Origin: 91
+    Expense Categories: 92
+    Failed Delivery Attempts: 93
+    Family Information: 94
+    Feedback & Reviews: 95
+    Financial Goals: 96
+    First Name: 97
+    Fraud Alerts: 98
+    Full Name: 99
+    Functional Cookies: 100
+    GST Number: 101
+    Game Progress: 102
+    Gaming Device Information: 103
+    Gaming Preferences: 104
+    Gender: 105
+    Genetic Data: 106
+    Graduation Years: 107
+    Graphical Password Data: 108
+    Group Memberships: 109
+    Guarantor Details: 110
+    HSC Document: 111
+    Health Insurance Details: 112
+    Health Records: 113
+    Horoscope Data: 114
+    IBAN: 115
+    IFSC Code: 116
+    IP Address: 117
+    Identity Verification Status: 118
+    In-game Purchases: 119
+    Income Details: 120
+    Industry Type: 121
+    Institution Names: 122
+    Insurance Policy Number: 123
+    Interest in Children: 124
+    Investment Advisor Details: 125
+    Investment Portfolio: 126
+    Investment Preferences: 127
+    Job Title: 128
+    KYC Documents: 129
+    LPG / Gas Consumer Number: 130
+    Last Name: 131
+    Lead Scoring: 132
+    Leaderboard Rankings: 133
+    Learning Progress: 134
+    Lifestyle Choices: 135
+    Listening History: 136
+    Live Stream Participation: 137
+    Loan Details: 138
+    Location History: 139
+    MAC Address: 140
+    MFA Tokens: 141
+    Marital Status: 142
+    Marriage Certificate Date: 143
+    Marriage Certificate Number: 144
+    Medical History: 145
+    Mental Health Data: 146
+    Middle Name: 147
+    Multiplayer Interactions: 148
+    Mutual Fund Holdings: 149
+    Nationality: 150
+    Network Information: 151
+    Nominee Contact Details: 152
+    Nominee Identifier: 153
+    Nominee Name: 154
+    Nominee Relationship: 155
+    Nominee Share Percentage: 156
+    OAuth Tokens: 157
+    Office Address: 158
+    Operating System: 159
+    Operating System Version: 160
+    Order Details: 161
+    PAN: 162
+    PIN: 163
+    PRAN: 164
+    Packaging Preferences: 165
+    Partner Preferences: 166
+    Passport Number: 167
+    Password (Hashed): 168
+    Payment Records: 169
+    Performance Reviews: 170
+    Permanent Address: 171
+    Philosophical Beliefs: 172
+    Phone Number: 173
+    Physical Attributes: 174
+    Place of Birth: 175
+    Playlist: 176
+    Policy Modifications: 177
+    Political Opinions: 178
+    Portfolio Holdings: 179
+    Precise Location: 180
+    Preferences: 181
+    Preferred Service Areas: 182
+    Premium Payments: 183
+    Price Sensitivity: 184
+    Professional Development: 185
+    Professional License Numbers: 186
+    Professional Qualifications: 187
+    Profile Photo: 188
+    Promotional Offers Used: 189
+    Purchase History: 190
+    Ration Card Number: 191
+    Recurring Payments: 192
+    Refund History: 193
+    Relationship Status: 194
+    Religious Beliefs: 195
+    Renewal History: 196
+    Rescheduling Patterns: 197
+    Residential Address: 198
+    Return History: 199
+    Risk Assessment: 200
+    Risk Rating: 201
+    Risk Tolerance: 202
+    Route Information: 203
+    Routing Number: 204
+    SSC Document: 205
+    SSN (Social Security Number) (US): 206
+    Salary: 207
+    Search History: 208
+    Security Questions & Answers: 209
+    Segmentation Data: 210
+    Service Completion Status: 211
+    Service Location: 212
+    Service Usage History: 213
+    Session IDs: 214
+    Sexual Orientation: 215
+    Shared Content: 216
+    Sharing Behavior: 217
+    Shipping Address: 218
+    Shopping Cart Contents: 219
+    Skills Assessment: 220
+    Smoking Habits: 221
+    Social Connections: 222
+    Social Influence Score: 223
+    Social Media Activity: 224
+    Social Media Profiles: 225
+    Special Handling Instructions: 226
+    Standing Instructions: 227
+    Strictly Necessary Cookies: 228
+    Subscription Data: 229
+    Survey Responses: 230
+    Tax Identification Number: 231
+    Tax Records: 232
+    Terms Acceptance: 233
+    Third-party Account ID: 234
+    Time Spent Gaming: 235
+    Tracking Information: 236
+    Trading History: 237
+    Training Records: 238
+    Transaction Records: 239
+    UPI ID: 240
+    Underwriting Information: 241
+    Union Membership: 242
+    Usage Patterns: 243
+    User Agent: 244
+    Username / User ID: 245
+    Vehicle Ownership Details: 246
+    Vehicle Registration Number: 247
+    Vehicle Type: 248
+    Verification Metadata: 249
+    Verified Identity Data: 250
+    Viewing History: 251
+    Virtual Currency: 252
+    Virtual Items Owned: 253
+    Voter ID: 254
+    Watchlist: 255
+    WiFi Connections: 256
+    Wishlist Items: 257
+    Work Email: 258
+    Work Phone Number: 259
+  type_loss_weight: 1.0
+  type_vocab_size: 2
+  vocab_size: 30522
+  gate_temperature: 1.0620299577713013
+  auto_map:
+    AutoConfig: modeling_dual_head.DualHeadConfig
+    AutoModel: modeling_dual_head.DualHeadBertForPIIClassification
+onnxFiles: {}
+safetensorsSizeMb: 91.3
+approxSizeMb: 91.3
+fetchedAt: '2026-11-27T11:58:46.000Z'

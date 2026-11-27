@@ -1,0 +1,71 @@
+_id: 6b088f1a690e841fd50afa13
+id: AmaLS367/multilingual-e5-small-Focused-CrossRecall
+private: false
+pipeline_tag: sentence-similarity
+library_name: onnx
+tags:
+- onnx
+- safetensors
+- int8
+- sentence-embeddings
+- retrieval
+- cross-lingual
+- memory
+- e5
+- sentence-similarity
+- ru
+- en
+- base_model:intfloat/multilingual-e5-small
+- base_model:quantized:intfloat/multilingual-e5-small
+- license:mit
+- region:us
+downloads: 0
+likes: 0
+modelId: AmaLS367/multilingual-e5-small-Focused-CrossRecall
+author: AmaLS367
+sha: d5a1f6a8982e8838d51d9149a1173c365accb044
+lastModified: '2026-11-26T19:58:00.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: Это счастливый человек
+  sentences:
+  - Это счастливая собака
+  - Это очень счастливый человек
+  - Сегодня солнечный день
+model-index: null
+config: {}
+cardData:
+  license: mit
+  base_model: intfloat/multilingual-e5-small
+  language:
+  - ru
+  - en
+  library_name: onnx
+  pipeline_tag: sentence-similarity
+  tags:
+  - onnx
+  - int8
+  - sentence-embeddings
+  - retrieval
+  - cross-lingual
+  - memory
+  - e5
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: lora/adapter_config.json
+- rfilename: lora/adapter_model.safetensors
+- rfilename: onnx/model_quantized.onnx
+- rfilename: sentencepiece.bpe.model
+spaces: []
+createdAt: '2026-11-26T19:57:14.000Z'
+usedStorage: 128781572
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  onnx/model_quantized.onnx: 118.3
+safetensorsSizeMb: 5.4
+approxSizeMb: 0.0
+fetchedAt: '2026-11-27T11:58:46.000Z'

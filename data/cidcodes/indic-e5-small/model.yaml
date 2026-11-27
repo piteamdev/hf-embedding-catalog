@@ -1,0 +1,151 @@
+_id: 6b08ffd606e083c253df2e07
+id: cidcodes/indic-e5-small
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- onnx
+- safetensors
+- bert
+- embeddings
+- indic
+- romanized
+- transliteration
+- code-mixing
+- hinglish
+- tanglish
+- sentence-similarity
+- hi
+- bn
+- ta
+- te
+- ml
+- mr
+- gu
+- kn
+- pa
+- or
+- as
+- ur
+- ne
+- en
+- dataset:ai4bharat/sangraha
+- arxiv:2004.09813
+- base_model:intfloat/multilingual-e5-small
+- base_model:quantized:intfloat/multilingual-e5-small
+- license:mit
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: cidcodes/indic-e5-small
+author: cidcodes
+sha: 037074ead5cfef8c2be8add585e089b35625f3ad
+lastModified: '2026-11-27T04:43:36.000Z'
+gated: false
+disabled: false
+mask_token: <mask>
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    bos_token: <s>
+    eos_token: </s>
+    unk_token: <unk>
+    sep_token: </s>
+    pad_token: <pad>
+    cls_token: <s>
+    mask_token: <mask>
+cardData:
+  license: mit
+  base_model: intfloat/multilingual-e5-small
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  language:
+  - hi
+  - bn
+  - ta
+  - te
+  - ml
+  - mr
+  - gu
+  - kn
+  - pa
+  - or
+  - as
+  - ur
+  - ne
+  - en
+  tags:
+  - sentence-transformers
+  - embeddings
+  - indic
+  - romanized
+  - transliteration
+  - code-mixing
+  - hinglish
+  - tanglish
+  datasets:
+  - ai4bharat/sangraha
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: onnx/model.onnx
+- rfilename: onnx/model_quantized.onnx
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces:
+- mteb/leaderboard
+- cidcodes/indic-e5-small-demo
+createdAt: '2026-11-27T03:58:14.000Z'
+safetensors:
+  parameters:
+    F32: 46805376
+  total: 46805376
+usedStorage: 421475984
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 384
+  initializer_range: 0.02
+  intermediate_size: 1536
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  position_embedding_type: absolute
+  tie_word_embeddings: true
+  tokenizer_class: XLMRobertaTokenizer
+  transformers_version: 5.24.1
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 65536
+onnxFiles:
+  onnx/model.onnx: 186.8
+  onnx/model_quantized.onnx: 47.4
+safetensorsSizeMb: 187.2
+approxSizeMb: 187.2
+fetchedAt: '2026-11-27T11:58:46.000Z'

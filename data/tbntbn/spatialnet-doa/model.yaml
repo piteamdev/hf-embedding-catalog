@@ -1,0 +1,71 @@
+_id: 6b0947bb3150392760427467
+id: tbntbn/spatialnet-doa
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- pytorch
+- spatialnet_doa
+- feature-extraction
+- audio
+- speech-enhancement
+- direction-of-arrival
+- custom_code
+- region:us
+downloads: 0
+likes: 0
+modelId: tbntbn/spatialnet-doa
+author: tbntbn
+sha: 249af9b17ca3455bae9e5e7202cef94e3f28f23e
+lastModified: '2026-11-27T09:05:01.000Z'
+gated: manual
+disabled: false
+model-index: null
+config:
+  architectures:
+  - SpatialNetModel
+  auto_map:
+    AutoConfig: modeling_spatialnet.SpatialNetConfig
+    AutoModel: modeling_spatialnet.SpatialNetModel
+  model_type: spatialnet_doa
+cardData:
+  library_name: transformers
+  tags:
+  - audio
+  - speech-enhancement
+  - direction-of-arrival
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: modeling_spatialnet.SpatialNetModel
+  pipeline_tag: feature-extraction
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: audio_io.py
+- rfilename: config.json
+- rfilename: doa_film.py
+- rfilename: estimator_doa/__init__.py
+- rfilename: estimator_doa/config.py
+- rfilename: estimator_doa/estimator.py
+- rfilename: estimator_doa/norm_music.py
+- rfilename: estimator_doa/peak_detection.py
+- rfilename: estimator_doa/stft.py
+- rfilename: estimator_doa/visualization.py
+- rfilename: infer.py
+- rfilename: modeling_spatialnet.py
+- rfilename: pytorch_model.bin
+- rfilename: requirements-viz.txt
+- rfilename: requirements.txt
+- rfilename: samples/sample_xvf3000.wav
+- rfilename: spatialnet_layer.py
+spaces: []
+createdAt: '2026-11-27T09:04:59.000Z'
+usedStorage: 12672899
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-27T11:58:46.000Z'

@@ -1,0 +1,184 @@
+_id: 6b07f18b9811a93a72e2e08e
+id: Quakeer444/Kasya-embed-150M
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- modernbert
+- sentence-similarity
+- feature-extraction
+- embeddings
+- mteb
+- russian
+- ru
+- en
+- dataset:epfml/FineWeb2-HQ
+- dataset:deepvk/cultura_ru_edu
+- dataset:wikimedia/wikipedia
+- dataset:HuggingFaceFW/fineweb-edu
+- dataset:codefuse-ai/F2LLM-v2
+- dataset:hotchpotch/wikipedia-multilingual-synthetic-ir-query
+- dataset:miracl/miracl
+- dataset:castorini/mr-tydi
+- dataset:deepvk/ru-WANLI
+- dataset:d0rj/geo-reviews-dataset-2023
+- dataset:zloelias/lenta-ru
+- dataset:mlsa-iai-msu-lab/ru_sci_bench
+- dataset:NiGuLa/Russian_Inappropriate_Messages
+- dataset:its5Q/yandex-q
+- dataset:blinoff/kinopoisk
+- dataset:merionum/ru_paraphraser
+- dataset:mteb/GeoreviewClassification
+- dataset:ai-forever/georeview-clustering-p2p
+- dataset:ai-forever/inappropriateness-classification
+- dataset:ai-forever/kinopoisk-sentiment-classification
+- dataset:ai-forever/ru-reviews-classification
+- dataset:ai-forever/ru-scibench-grnti-classification
+- dataset:ai-forever/ru-scibench-oecd-classification
+- dataset:ai-forever/sensitive-topics-classification
+- dataset:mteb/amazon_massive_intent
+- dataset:mteb/amazon_massive_scenario
+- base_model:deepvk/RuModernBERT-base
+- base_model:finetune:deepvk/RuModernBERT-base
+- license:apache-2.0
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: Quakeer444/Kasya-embed-150M
+author: Quakeer444
+sha: 5c24c9a2f9055e4696950ea118143b572e5e1bb5
+lastModified: '2026-11-26T10:12:19.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+widgetData:
+- source_sentence: Это счастливый человек
+  sentences:
+  - Это счастливая собака
+  - Это очень счастливый человек
+  - Сегодня солнечный день
+model-index: null
+config:
+  architectures:
+  - ModernBertModel
+  model_type: modernbert
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  license: apache-2.0
+  language:
+  - ru
+  - en
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  base_model: deepvk/RuModernBERT-base
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - embeddings
+  - mteb
+  - russian
+  datasets:
+  - epfml/FineWeb2-HQ
+  - deepvk/cultura_ru_edu
+  - wikimedia/wikipedia
+  - HuggingFaceFW/fineweb-edu
+  - codefuse-ai/F2LLM-v2
+  - hotchpotch/wikipedia-multilingual-synthetic-ir-query
+  - miracl/miracl
+  - castorini/mr-tydi
+  - deepvk/ru-WANLI
+  - d0rj/geo-reviews-dataset-2023
+  - zloelias/lenta-ru
+  - mlsa-iai-msu-lab/ru_sci_bench
+  - NiGuLa/Russian_Inappropriate_Messages
+  - its5Q/yandex-q
+  - blinoff/kinopoisk
+  - merionum/ru_paraphraser
+  - mteb/GeoreviewClassification
+  - ai-forever/georeview-clustering-p2p
+  - ai-forever/inappropriateness-classification
+  - ai-forever/kinopoisk-sentiment-classification
+  - ai-forever/ru-reviews-classification
+  - ai-forever/ru-scibench-grnti-classification
+  - ai-forever/ru-scibench-oecd-classification
+  - ai-forever/sensitive-topics-classification
+  - mteb/amazon_massive_intent
+  - mteb/amazon_massive_scenario
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: 2_Dense/config.json
+- rfilename: 2_Dense/model.safetensors
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-26T08:44:59.000Z'
+safetensors:
+  parameters:
+    F32: 149014272
+  total: 149014272
+usedStorage: 598432664
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - ModernBertModel
+  attention_bias: false
+  attention_dropout: 0.0
+  bos_token_id: 50281
+  classifier_activation: gelu
+  classifier_bias: false
+  classifier_dropout: 0.0
+  classifier_pooling: cls
+  cls_token_id: 50281
+  decoder_bias: true
+  deterministic_flash_attn: false
+  embedding_dropout: 0.0
+  eos_token_id: 50282
+  global_attn_every_n_layers: 3
+  global_rope_theta: 160000.0
+  hidden_activation: gelu
+  hidden_size: 768
+  initializer_cutoff_factor: 2.0
+  initializer_range: 0.02
+  intermediate_size: 1152
+  local_attention: 128
+  local_rope_theta: 10000.0
+  max_position_embeddings: 8192
+  mlp_bias: false
+  mlp_dropout: 0.0
+  model_type: modernbert
+  norm_bias: false
+  norm_eps: 1.0e-05
+  num_attention_heads: 12
+  num_hidden_layers: 22
+  pad_token_id: 50283
+  repad_logits_with_grad: false
+  sep_token_id: 50282
+  sparse_pred_ignore_index: -100
+  sparse_prediction: false
+  torch_dtype: float32
+  transformers_version: 4.53.3
+  vocab_size: 50368
+onnxFiles: {}
+safetensorsSizeMb: 598.4
+approxSizeMb: 596.1
+fetchedAt: '2026-11-27T11:58:46.000Z'

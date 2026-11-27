@@ -1,0 +1,56 @@
+_id: 6b092ef3a9938e609d86c792
+id: cimo001/google
+private: false
+pipeline_tag: sentence-similarity
+library_name: onnx
+tags:
+- onnx
+- embedding
+- google
+- sentence-similarity
+- multilingual
+- license:gemma
+- region:us
+downloads: 0
+likes: 1
+modelId: cimo001/google
+author: cimo001
+sha: 1bb665b290a7bcfc625df934252eeba25df26ec6
+lastModified: '2026-11-27T07:19:29.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: gemma
+  base_model: google
+  pipeline_tag: sentence-similarity
+  library_name: onnx
+  language:
+  - multilingual
+  tags:
+  - embedding
+  - google
+  - onnx
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: embeddinggemma-300m/onnx/model.onnx
+- rfilename: embeddinggemma-300m/onnx/model.onnx_data
+- rfilename: embeddinggemma-300m/onnx/model_quantized.onnx
+- rfilename: embeddinggemma-300m/onnx/model_quantized.onnx_data
+- rfilename: embeddinggemma-300m/onnx/tokenizer.model
+- rfilename: embeddinggemma-300m/src/example.py
+- rfilename: embeddinggemma-300m/src/helper.py
+spaces: []
+createdAt: '2026-11-27T07:19:15.000Z'
+usedStorage: 1549148592
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles:
+  embeddinggemma-300m/onnx/model.onnx: 0.5
+  embeddinggemma-300m/onnx/model_quantized.onnx: 0.6
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-27T11:58:46.000Z'

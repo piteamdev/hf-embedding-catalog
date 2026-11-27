@@ -1,0 +1,72 @@
+_id: 6b089957d9154a46509fcd06
+id: JonasWeinert/key-embeddinggemma-2-gguf
+private: false
+pipeline_tag: feature-extraction
+library_name: gguf
+tags:
+- gguf
+- embeddings
+- quantized
+- llama.cpp
+- key-app
+- feature-extraction
+- base_model:google/embeddinggemma-2
+- base_model:quantized:google/embeddinggemma-2
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 0
+likes: 0
+modelId: JonasWeinert/key-embeddinggemma-2-gguf
+author: JonasWeinert
+sha: ac317d907f778d3f57c9cdd2e4ffe6cd6fa154a2
+lastModified: '2026-11-26T20:41:00.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: gguf
+  pipeline_tag: feature-extraction
+  base_model:
+  - google/embeddinggemma-2
+  tags:
+  - gguf
+  - embeddings
+  - quantized
+  - llama.cpp
+  - key-app
+gguf:
+  total: 271002648
+  architecture: gemma-embedding2
+  context_length: 262144
+  causal: false
+  chat_template: '{%- for msg in messages if msg.get(''role'') == ''system'' -%}{%- if msg.get(''content'') is string -%}{{
+    msg[''content''] }}{%- else -%}{%- for item in msg[''content''] if item.get(''type'') == ''text'' -%}{{ item[''text'']
+    }}{%- endfor -%}{%- endif -%}{%- endfor -%}{%- for msg in messages if msg.get(''role'') != ''system'' -%}{%- if msg.get(''content'')
+    is string -%}{{ msg[''content''] }}{%- else -%}{%- set existing_text = msg[''content''] | selectattr(''type'', ''equalto'',
+    ''text'') | map(attribute=''text'') | join -%}{%- set has_manual_placeholders = (''<|image|>'' in existing_text) or (''<|video|>''
+    in existing_text) or (''<|audio|>'' in existing_text) -%}{%- for item in msg[''content''] -%}{%- if item.get(''type'')
+    == ''text'' -%}{{ item[''text''] }}{%- elif not has_manual_placeholders and item.get(''type'') == ''image'' -%}<|image|>{%-
+    elif not has_manual_placeholders and item.get(''type'') == ''video'' -%}<|video|>{%- elif not has_manual_placeholders
+    and item.get(''type'') == ''audio'' -%}<|audio|>{%- endif -%}{%- endfor -%}{%- endif -%}{%- endfor -%}'
+  bos_token: <bos>
+  eos_token: <eos>
+  pooling_type: 1
+  totalFileSize: 309855456
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: embeddinggemma-2-Q8_0.gguf
+spaces: []
+createdAt: '2026-11-26T20:40:55.000Z'
+usedStorage: 309855456
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-27T11:58:46.000Z'

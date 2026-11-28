@@ -1,0 +1,74 @@
+_id: 6b08e84bf2c8889ad7b2230d
+id: Scicom-intl/Tiny-NeuCodec
+private: false
+pipeline_tag: feature-extraction
+library_name: pytorch
+tags:
+- pytorch
+- safetensors
+- audio
+- speech
+- codec
+- neucodec
+- distillation
+- vocoder
+- text-to-speech
+- voice-cloning
+- feature-extraction
+- base_model:neuphonic/neucodec
+- base_model:finetune:neuphonic/neucodec
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: Scicom-intl/Tiny-NeuCodec
+author: Scicom-intl
+sha: c7b83c92ea323ec277812053cf9fc5e828774074
+lastModified: '2026-11-28T03:10:31.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: pytorch
+  base_model: neuphonic/neucodec
+  pipeline_tag: feature-extraction
+  tags:
+  - audio
+  - speech
+  - codec
+  - neucodec
+  - distillation
+  - vocoder
+  - text-to-speech
+  - voice-cloning
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: S2/config.json
+- rfilename: S2/student.pt
+- rfilename: S4/config.json
+- rfilename: S4/student.pt
+- rfilename: decoder-conv/config.json
+- rfilename: decoder-conv/model.safetensors
+- rfilename: decoder-finetuned/config.json
+- rfilename: decoder-finetuned/model.safetensors
+- rfilename: figures/audio.png
+- rfilename: figures/cloning.png
+- rfilename: figures/codes.png
+- rfilename: figures/curve.png
+- rfilename: figures/size.png
+- rfilename: figures/speed.png
+- rfilename: tiny_decoder.py
+- rfilename: tiny_encoder.py
+spaces: []
+createdAt: '2026-11-27T02:17:47.000Z'
+usedStorage: 1622889979
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 940.5
+approxSizeMb: 0.0
+fetchedAt: '2026-11-28T11:35:18.000Z'

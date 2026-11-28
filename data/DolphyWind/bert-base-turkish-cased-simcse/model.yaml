@@ -1,0 +1,106 @@
+_id: 6b098513b10d50ee38f76a1c
+id: DolphyWind/bert-base-turkish-cased-simcse
+private: false
+pipeline_tag: sentence-similarity
+library_name: sentence-transformers
+tags:
+- sentence-transformers
+- safetensors
+- bert
+- sentence-similarity
+- feature-extraction
+- simcse
+- tr
+- dataset:DolphyWind/vngrs-web-corpus-sentences
+- dataset:emrecan/nli_tr_for_simcse
+- base_model:dbmdz/bert-base-turkish-cased
+- base_model:finetune:dbmdz/bert-base-turkish-cased
+- license:mit
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 28
+likes: 1
+modelId: DolphyWind/bert-base-turkish-cased-simcse
+author: DolphyWind
+sha: 5b29ed1fb0f333d3540bd355437ae55c3ce2485e
+lastModified: '2026-11-28T09:47:10.000Z'
+gated: false
+disabled: false
+mask_token: '[MASK]'
+model-index: null
+config:
+  architectures:
+  - BertModel
+  model_type: bert
+  tokenizer_config:
+    unk_token: '[UNK]'
+    sep_token: '[SEP]'
+    pad_token: '[PAD]'
+    cls_token: '[CLS]'
+    mask_token: '[MASK]'
+cardData:
+  language:
+  - tr
+  license: mit
+  library_name: sentence-transformers
+  pipeline_tag: sentence-similarity
+  tags:
+  - sentence-transformers
+  - sentence-similarity
+  - feature-extraction
+  - simcse
+  base_model: dbmdz/bert-base-turkish-cased
+  datasets:
+  - DolphyWind/vngrs-web-corpus-sentences
+  - emrecan/nli_tr_for_simcse
+siblings:
+- rfilename: .gitattributes
+- rfilename: 1_Pooling/config.json
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: config_sentence_transformers.json
+- rfilename: model.safetensors
+- rfilename: modules.json
+- rfilename: sentence_bert_config.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-27T13:26:43.000Z'
+safetensors:
+  parameters:
+    F32: 110617344
+  total: 110617344
+usedStorage: 884983488
+downloadsAllTime: 28
+inferenceProviderMapping: {}
+configJson:
+  add_cross_attention: false
+  architectures:
+  - BertModel
+  attention_probs_dropout_prob: 0.1
+  bos_token_id: null
+  classifier_dropout: null
+  dtype: float32
+  eos_token_id: null
+  hidden_act: gelu
+  hidden_dropout_prob: 0.1
+  hidden_size: 768
+  initializer_range: 0.02
+  intermediate_size: 3072
+  is_decoder: false
+  layer_norm_eps: 1.0e-12
+  max_position_embeddings: 512
+  model_type: bert
+  num_attention_heads: 12
+  num_hidden_layers: 12
+  pad_token_id: 0
+  tie_word_embeddings: true
+  transformers_version: 5.17.0
+  type_vocab_size: 2
+  use_cache: false
+  vocab_size: 32000
+onnxFiles: {}
+safetensorsSizeMb: 442.5
+approxSizeMb: 442.5
+fetchedAt: '2026-11-28T11:35:18.000Z'

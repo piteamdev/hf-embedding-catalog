@@ -1,0 +1,233 @@
+_id: 6b0a0690d2a20bd3cf68c089
+id: huggingface12341/zsz-h23b
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- qwen3_5
+- feature-extraction
+- decision-model
+- zils
+- d3
+- merge
+- custom_code
+- base_model:OmniJev/OneJev1.6-27B
+- base_model:merge:OmniJev/OneJev1.6-27B
+- base_model:joamCriff123/zils-z3-z1123a
+- base_model:merge:joamCriff123/zils-z3-z1123a
+- base_model:perplexity-ai/pplx-decider-v1.2
+- base_model:merge:perplexity-ai/pplx-decider-v1.2
+- license:apache-2.0
+- endpoints_compatible
+- region:us
+downloads: 14
+likes: 0
+modelId: huggingface12341/zsz-h23b
+author: huggingface12341
+sha: ba5df9fd923a49d51a198634735eac09c3b641fd
+lastModified: '2026-11-27T22:41:35.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - Qwen3_5Model
+  auto_map:
+    AutoModel: modeling_d3.D3Model
+  model_type: qwen3_5
+cardData:
+  license: apache-2.0
+  base_model:
+  - joamCriff123/zils-z3-z1123a
+  - OmniJev/OneJev1.6-27B
+  - perplexity-ai/pplx-decider-v1.2
+  library_name: transformers
+  tags:
+  - decision-model
+  - zils
+  - d3
+  - merge
+transformersInfo:
+  auto_model: AutoModel
+  pipeline_tag: feature-extraction
+  processor: AutoProcessor
+siblings:
+- rfilename: .gitattributes
+- rfilename: LICENSE
+- rfilename: NOTICE
+- rfilename: README.md
+- rfilename: config.json
+- rfilename: model-00001-of-00012.safetensors
+- rfilename: model-00002-of-00012.safetensors
+- rfilename: model-00003-of-00012.safetensors
+- rfilename: model-00004-of-00012.safetensors
+- rfilename: model-00005-of-00012.safetensors
+- rfilename: model-00006-of-00012.safetensors
+- rfilename: model-00007-of-00012.safetensors
+- rfilename: model-00008-of-00012.safetensors
+- rfilename: model-00009-of-00012.safetensors
+- rfilename: model-00010-of-00012.safetensors
+- rfilename: model-00011-of-00012.safetensors
+- rfilename: model-00012-of-00012.safetensors
+- rfilename: model.safetensors.index.json
+- rfilename: zils-owner.json
+spaces: []
+createdAt: '2026-11-27T22:39:12.000Z'
+safetensors:
+  parameters:
+    BF16: 26085330160
+  total: 26085330160
+usedStorage: 52170802632
+downloadsAllTime: 14
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - Qwen3_5Model
+  auto_map:
+    AutoModel: modeling_d3.D3Model
+  custom_pipelines:
+    decision:
+      impl: pipeline_d3.D3Pipeline
+      pt:
+      - AutoModel
+      type: text
+  dtype: bfloat16
+  image_token_id: 248056
+  language_model_only: false
+  model_type: qwen3_5
+  text_config:
+    attention_bias: false
+    attention_dropout: 0.0
+    attn_output_gate: true
+    bos_token_id: 248044
+    dtype: bfloat16
+    eos_token_id: 248044
+    full_attention_interval: 4
+    head_dim: 256
+    hidden_act: silu
+    hidden_size: 5120
+    initializer_range: 0.02
+    intermediate_size: 17408
+    layer_types:
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    - linear_attention
+    - linear_attention
+    - linear_attention
+    - full_attention
+    linear_conv_kernel_dim: 4
+    linear_key_head_dim: 128
+    linear_num_key_heads: 16
+    linear_num_value_heads: 48
+    linear_value_head_dim: 128
+    mamba_ssm_dtype: float32
+    max_position_embeddings: 262144
+    model_type: qwen3_5_text
+    mtp_num_hidden_layers: 1
+    mtp_use_dedicated_embeddings: false
+    num_attention_heads: 24
+    num_hidden_layers: 64
+    num_key_value_heads: 4
+    output_gate_type: swish
+    pad_token_id: null
+    partial_rotary_factor: 0.25
+    rms_norm_eps: 1.0e-06
+    rope_parameters:
+      mrope_interleaved: true
+      mrope_section:
+      - 11
+      - 11
+      - 10
+      partial_rotary_factor: 0.25
+      rope_theta: 10000000
+      rope_type: default
+    tie_word_embeddings: false
+    use_cache: true
+    vocab_size: 248320
+  tie_word_embeddings: false
+  transformers_version: 5.17.0
+  video_token_id: 248057
+  vision_config:
+    deepstack_visual_indexes: []
+    depth: 27
+    hidden_act: gelu_pytorch_tanh
+    hidden_size: 1152
+    in_channels: 3
+    initializer_range: 0.02
+    intermediate_size: 4304
+    model_type: qwen3_5_vision
+    num_heads: 16
+    num_position_embeddings: 2304
+    out_hidden_size: 5120
+    patch_size: 16
+    rope_parameters:
+      rope_theta: 10000.0
+      rope_type: axial
+    spatial_merge_size: 2
+    temporal_patch_size: 2
+  vision_end_token_id: 248054
+  vision_start_token_id: 248053
+onnxFiles: {}
+safetensorsSizeMb: 52170.8
+approxSizeMb: 52170.7
+fetchedAt: '2026-11-28T11:35:18.000Z'

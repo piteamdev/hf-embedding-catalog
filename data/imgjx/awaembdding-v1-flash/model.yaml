@@ -1,0 +1,61 @@
+_id: 6b0286a274191f228f25bd62
+id: imgjx/awaembdding-v1-flash
+private: false
+pipeline_tag: sentence-similarity
+library_name: pytorch
+tags:
+- pytorch
+- sentence-similarity
+- feature-extraction
+- text-embedding
+- chinese
+- lightweight
+- zh
+- multilingual
+- license:mit
+- region:us
+downloads: 0
+likes: 1
+modelId: imgjx/awaembdding-v1-flash
+author: imgjx
+sha: 9cc1bf2c44424bc1c468c8219b963d617214d0b7
+lastModified: '2026-11-28T00:10:10.000Z'
+gated: false
+disabled: false
+widgetData:
+- source_sentence: 那是 個快樂的人
+  sentences:
+  - 那是 條快樂的狗
+  - 那是 個非常幸福的人
+  - 今天是晴天
+model-index: null
+config: {}
+cardData:
+  language:
+  - zh
+  - multilingual
+  library_name: pytorch
+  tags:
+  - sentence-similarity
+  - feature-extraction
+  - text-embedding
+  - chinese
+  - lightweight
+  pipeline_tag: sentence-similarity
+  license: mit
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: encode.py
+- rfilename: model.pt
+- rfilename: tokenizer.json
+spaces: []
+createdAt: '2026-11-22T06:07:30.000Z'
+usedStorage: 48433747
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-28T11:35:18.000Z'

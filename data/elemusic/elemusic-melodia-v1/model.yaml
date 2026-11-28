@@ -1,0 +1,64 @@
+_id: 6b0a53805a53241be96ca71e
+id: elemusic/elemusic-melodia-v1
+private: false
+pipeline_tag: feature-extraction
+library_name: scipy
+tags:
+- scipy
+- audio
+- music
+- mir
+- pitch-estimation
+- melody-extraction
+- f0
+- dsp
+- numpy
+- feature-extraction
+- en
+- license:apache-2.0
+- region:us
+downloads: 0
+likes: 0
+modelId: elemusic/elemusic-melodia-v1
+author: elemusic
+sha: 1e9e4b53f2bbcb12fcabb2eb393c0331e213ada5
+lastModified: '2026-11-28T04:57:24.000Z'
+gated: false
+disabled: false
+model-index: null
+config: {}
+cardData:
+  license: apache-2.0
+  library_name: scipy
+  pipeline_tag: feature-extraction
+  language:
+  - en
+  tags:
+  - audio
+  - music
+  - mir
+  - pitch-estimation
+  - melody-extraction
+  - f0
+  - dsp
+  - numpy
+  - scipy
+siblings:
+- rfilename: .gitattributes
+- rfilename: .gitignore
+- rfilename: LICENSE
+- rfilename: README.md
+- rfilename: benchmark_summary.json
+- rfilename: elemusic_melodia.py
+- rfilename: pyproject.toml
+- rfilename: tests/test_elemusic_melodia.py
+spaces: []
+createdAt: '2026-11-28T04:07:28.000Z'
+usedStorage: 0
+downloadsAllTime: 0
+inferenceProviderMapping: {}
+configJson: null
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-28T11:35:18.000Z'

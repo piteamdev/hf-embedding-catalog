@@ -1,0 +1,72 @@
+_id: 6b098c47e47a7d5f942cddb7
+id: nambean/zz-qa-tool-18261
+private: false
+pipeline_tag: feature-extraction
+library_name: transformers
+tags:
+- transformers
+- safetensors
+- llama
+- feature-extraction
+- custom_code
+- license:apache-2.0
+- text-embeddings-inference
+- endpoints_compatible
+- region:us
+downloads: 30
+likes: 0
+modelId: nambean/zz-qa-tool-18261
+author: nambean
+sha: a026c17f1d52ef3319d83db4ac7392b8a25dd324
+lastModified: '2026-11-27T14:00:17.000Z'
+gated: false
+disabled: false
+model-index: null
+config:
+  architectures:
+  - MyModel
+  auto_map:
+    AutoConfig: cfg_mod.MyConfig
+    AutoModel: cfg_mod.MyModel
+  model_type: llama
+  tokenizer_config: {}
+cardData:
+  license: apache-2.0
+  library_name: transformers
+transformersInfo:
+  auto_model: AutoModel
+  custom_class: cfg_mod.MyModel
+  pipeline_tag: feature-extraction
+  processor: AutoTokenizer
+siblings:
+- rfilename: .gitattributes
+- rfilename: README.md
+- rfilename: cfg_mod.py
+- rfilename: config.json
+- rfilename: model.safetensors
+- rfilename: special_tokens_map.json
+- rfilename: tokenizer.json
+- rfilename: tokenizer_config.json
+spaces: []
+createdAt: '2026-11-27T13:57:27.000Z'
+usedStorage: 0
+downloadsAllTime: 30
+inferenceProviderMapping: {}
+configJson:
+  architectures:
+  - MyModel
+  auto_map:
+    AutoConfig: cfg_mod.MyConfig
+    AutoModel: cfg_mod.MyModel
+  model_type: llama
+  hidden_size: 64
+  num_hidden_layers: 1
+  num_attention_heads: 2
+  intermediate_size: 128
+  vocab_size: 32000
+  max_position_embeddings: 2048
+  torch_dtype: float16
+onnxFiles: {}
+safetensorsSizeMb: 0.0
+approxSizeMb: 0.0
+fetchedAt: '2026-11-28T11:35:18.000Z'
